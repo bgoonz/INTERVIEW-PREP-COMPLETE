@@ -5,15 +5,85 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
-   <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-   <!-- jQuery library -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+  <script async defer src="./copy-2-clip.js"></script>
+  <script async defer src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./prism.css">
+  <script async defer src="./prism.js"></script>
+  <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./prism.css">
+  <script async defer src="./prism.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <style>
+    a {
+      color: black;
+      overflow: clip;
+    }
+
+    li {
+      border: 2px solid black !important;
+      font-size: 16px;
+      letter-spacing: 0px;
+      font-weight: 700;
+      line-height: 12px;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      background: #0178c2 !important;
+      color: black !important;
+      border: none;
+      cursor: pointer;
+      justify-content: center;
+      padding: 40px 60px;
+      height: 55px;
+      text-align: center;
+      white-space: normal;
+      border-radius: 8px;
+      min-width: 50em;
+      padding: 1.4em 1.4em 0;
+      box-shadow: 0 0 5px;
+      margin: 1em;
+      display: grid;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+
+    code,
+    pre {
+      position: relative;
+    }
+
+    code,
+    pre {
+      display: block;
+      padding: 20px;
+      background: #f2f2f2;
+      color: #555755;
+    }
+
+    span.command-copy {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      opacity: .6;
+      font-size: 20px;
+      color: #555755;
+    }
+
+    span.command-copy:hover {
+      cursor: pointer;
+    }
+  </style>
   
 </head>
 <body>
+  <ul>
+    <li style="line-height:normal"><a href="./directory.html"> Navigation</a></li>
+  </ul>
+  
+    
+  
   <p>;</p>
 <h3 id="what-is-aria-and-when-should-you-use-it">What is ARIA and when should you use it?</h3>
 <h4 id="answer">Answer</h4>
@@ -28,7 +98,7 @@
   ...
 &lt;/div&gt;</code></pre>
 <p>Credit: W3C's <a href="https://w3c.github.io/aria-practices/examples/combobox/aria1.1pattern/grid-combo.html">ARIA 1.1 Combobox with Grid Popup Example</a></p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Accessible Rich Internet Applications</li>
 <li>Benefits people who use assistive technologies (AT)</li>
@@ -45,7 +115,7 @@
 <h3 id="what-is-the-minimum-recommended-ratio-of-contrast-between-foreground-text-and-background-to-comply-with-wcag-why-does-this-matter">What is the minimum recommended ratio of contrast between foreground text and background to comply with WCAG? Why does this matter?</h3>
 <h4 id="answer">Answer</h4>
 <p>4.5:1 is the calculated contrast ratio between foreground text and background that is recommended by the Web Content Accessibiity Guidelines (WCAG) success criteria (SC) 1.4.3: Contrast (Minimum). This SC was written by the World Wide Web Consortium (W3C) to ensure that people with low vision or color deficiencies are able to read (perceive) important content on a web page. It goes beyond color choices to ensure text stands out on the background it's placed on.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>At least 4.5:1 contrast ratio between foreground text and background</li>
 <li>Benefits people with low vision or color deficiencies</li>
@@ -67,7 +137,7 @@
 </ul>
 <p>Check for issues in your code: * Jest Axe, you can add unit tests for accessibility * React Axe, test your React application with the axe-core accessibility testing library. Results will show in the Chrome DevTools console. * eslint-plugin-jsx-a11y, pairing this plugin with an editor lint plugin, you can bake accessibility standards into your application in real-time.</p>
 <p>Check for individual issues: * Color Contrast checkers * Use a screen reader * Use only keyboard to navigate your site</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>None of the tools will replace manual testing</li>
 <li>Mention of different ways to test accessibility</li>
@@ -83,7 +153,7 @@
 <h3 id="what-is-the-accessibility-tree">What is the Accessibility Tree?</h3>
 <h4 id="answer">Answer</h4>
 <p>The Accessibility Tree is a structure produced by the browser's Accessibility APIs which provides accessibility information to assistive technologies such as screen readers. It runs parallel to the DOM and is similar to the DOM API, but with much fewer nodes, because a lot of that information is only useful for visual presentation. By writing semantic HTML we can take advantage of this process in creating an accessible experience for our users.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Tree structure exposing information to assistive technologies</li>
 <li>Runs parallel to the DOM</li>
@@ -97,7 +167,7 @@
 <h3 id="what-is-the-purpose-of-the-alt-attribute-on-images">What is the purpose of the <code>alt</code> attribute on images?</h3>
 <h4 id="answer">Answer</h4>
 <p>The <code>alt</code> attribute provides alternative information for an image if a user cannot view it. The <code>alt</code> attribute should be used to describe any images except those which only serve a decorative purpose, in which case it should be left empty.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Decorative images should have an empty <code>alt</code> attribute.</li>
 <li>Web crawlers use <code>alt</code> tags to understand image content, so they are considered important for Search Engine Optimization (SEO).</li>
@@ -119,7 +189,7 @@
 <a class="sourceLine" id="cb2-2" title="2"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;myscript.js&quot;</span><span class="ot"> defer</span><span class="kw">&gt;&lt;/script&gt;</span></a>
 <a class="sourceLine" id="cb2-3" title="3"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;myscript.js&quot;</span><span class="ot"> async</span><span class="kw">&gt;&lt;/script&gt;</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Placing a <code>defer</code> script in the <code>&lt;head&gt;</code> allows the browser to download the script while the page is still parsing, and is therefore a better option than placing the script before the end of the body.</li>
 <li>If the scripts rely on each other, use <code>defer</code>.</li>
@@ -156,7 +226,7 @@
 <a class="sourceLine" id="cb4-12" title="12">  <span class="co">// do something with the result</span></a>
 <a class="sourceLine" id="cb4-13" title="13"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li><code>async</code> functions are just syntactic sugar on top of Promises.</li>
 <li>They make asynchronous operations look like synchronous operations in your function.</li>
@@ -210,7 +280,7 @@
 <a class="sourceLine" id="cb6-3" title="3">    <span class="va">Math</span>.<span class="at">min</span>(...<span class="va">Object</span>.<span class="at">keys</span>(recipe).<span class="at">map</span>(k <span class="kw">=&gt;</span> available[k] / recipe[k] <span class="op">||</span> <span class="dv">0</span>))</a>
 <a class="sourceLine" id="cb6-4" title="4">  )</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="what-is-css-bem">What is CSS BEM?</h3>
@@ -247,7 +317,7 @@
 <div class="sourceCode" id="cb10"><pre class="sourceCode css"><code class="sourceCode css"><a class="sourceLine" id="cb10-1" title="1"><span class="fu">.navbar__link.is-active</span> {</a>
 <a class="sourceLine" id="cb10-2" title="2">}</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Alternative solutions to scope issues like CSS-in-JS</li>
 </ul>
@@ -325,7 +395,7 @@
 <li>1000 elements = <code>Infinity</code> (practically) ms</li>
 </ul>
 <p>The execution time rises extremely fast with even just 1 addition to the array.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Be wary of nesting loops as execution time increases exponentially.</li>
 </ul>
@@ -347,7 +417,7 @@
 <div id="cb2" class="sourceCode">
 <div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">const</span> bind <span class="op">=</span> (fn<span class="op">,</span> context) <span class="kw">=&gt;</span> (...<span class="at">args</span>) <span class="kw">=&gt;</span> <span class="va">fn</span>.<span class="at">apply</span>(context<span class="op">,</span> args)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="what-is-the-purpose-of-cache-busting-and-how-can-you-achieve-it">What is the purpose of cache busting and how can you achieve it?</h3>
@@ -360,7 +430,7 @@
 <li><code>src="js/script.js"</code> =&gt; <code>src="js/script.js?v=2"</code></li>
 </ul>
 <p>The browser considers it a different file but prevents the need to change the file name.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://css-tricks.com/strategies-for-cache-busting-css/">Strategies for cache-busting CSS</a></li>
@@ -400,7 +470,7 @@
 <li>Use generators with Promises</li>
 <li>Use async/await (from v7 on)</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>As an efficient JavaScript developer, you have to avoid the constantly growing indentation level, produce clean and readable code and be able to handle complex flows.</li>
 </ul>
@@ -418,7 +488,7 @@
 <a class="sourceLine" id="cb21-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;The name has updated and component re-rendered&quot;</span>)</a>
 <a class="sourceLine" id="cb21-3" title="3"><span class="op">}</span>)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The callback function is invoked after <code>setState</code> finishes and is used for any post action.</li>
 <li>It is recommended to use lifecycle method rather this callback function.</li>
@@ -454,7 +524,7 @@
 <a class="sourceLine" id="cb22-20" title="20">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb22-21" title="21"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Callback refs are preferred over <code>findDOMNode()</code>.</li>
 </ul>
@@ -485,7 +555,7 @@
 <a class="sourceLine" id="cb24-7" title="7"><span class="op">}</span></a>
 <a class="sourceLine" id="cb24-8" title="8"><span class="at">map</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span class="op">,</span> n <span class="kw">=&gt;</span> n <span class="op">*</span> <span class="dv">2</span>) <span class="co">// [2, 4, 6, 8, 10]</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Functions are first-class objects in JavaScript</li>
 <li>Callbacks vs Promises</li>
@@ -511,7 +581,7 @@
 <a class="sourceLine" id="cb25-10" title="10">  )</a>
 <a class="sourceLine" id="cb25-11" title="11"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Children is a prop that allows components to be passed as data to other components.</li>
 <li>The React API provides methods to work with this prop.</li>
@@ -546,7 +616,7 @@
 <a class="sourceLine" id="cb28-5" title="5">        cumbersome<span class="op">!</span></a></code></pre></div>
 </div>
 <p>However, <code>class</code> <em>can</em> be used as a prop without problems, as seen in other libraries like Preact. React currently allows you to use <code>class</code>, but will throw a warning and convert it to <code>className</code> under the hood. There is currently an open thread (as of January 2019) discussing changing <code>className</code> to <code>class</code> to reduce confusion.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="how-do-you-clone-an-object-in-javascript">How do you clone an object in JavaScript?</h3>
@@ -563,7 +633,7 @@
 <li><code>Object.assign({}, obj)</code> is another alternative.</li>
 <li><code>Object.keys(obj).reduce((acc, key) =&gt; (acc[key] = obj[key], acc), {})</code> is another more verbose alternative that shows the concept in greater depth.</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>JavaScript passes objects by reference, meaning that nested objects get their references copied, instead of their values.</li>
 <li>The same method can be used to merge two objects.</li>
@@ -584,7 +654,7 @@
 </ul>
 <p>In JavaScript, all functions are closures because they have access to the outer scope, but most functions don't utilise the usefulness of closures: the persistence of state. Closures are also sometimes called stateful functions because of this.</p>
 <p>In addition, closures are the only way to store private data that can't be accessed from the outside in JavaScript. They are the key to the UMD (Universal Module Definition) pattern, which is frequently used in libraries that only expose a public API but keep the implementation details private, preventing name collisions with other libraries or the user's own code.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Closures are useful because they let you associate data with a function that operates on that data.</li>
 <li>A closure can substitute an object with only a single method.</li>
@@ -642,7 +712,7 @@
 <a class="sourceLine" id="cb30-37" title="37">  )</a>
 <a class="sourceLine" id="cb30-38" title="38"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Primitives like strings and numbers are compared by their value</li>
 <li>Objects on the other hand are compared by their reference (location in memory)</li>
@@ -659,7 +729,7 @@
 <div id="cb1" class="sourceCode">
 <div class="sourceCode" id="cb31"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">const</span> <span class="op">{</span> Provider<span class="op">,</span> Consumer <span class="op">}</span> <span class="op">=</span> <span class="va">React</span>.<span class="at">createContext</span>(defaultValue)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Context provides a way to pass data through a tree of React components, without having to manually pass props.</li>
 <li>Context is designed to share data that is considered <em>global</em> for a tree of React components.</li>
@@ -674,7 +744,7 @@
 <p>Cross-Origin Resource Sharing or CORS is a mechanism that uses additional HTTP headers to grant a browser permission to access resources from a server at an origin different from the website origin.</p>
 <p>An example of a cross-origin request is a web application served from <code>http://mydomain.com</code> that uses AJAX to make a request for <code>http://yourdomain.com</code>.</p>
 <p>For security reasons, browsers restrict cross-origin HTTP requests initiated by JavaScript. <code>XMLHttpRequest</code> and <code>fetch</code> follow the same-origin policy, meaning a web application using those APIs can only request HTTP resources from the same origin the application was accessed, unless the response from the other origin includes the correct CORS headers.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>CORS behavior is not an error,  it's a security mechanism to protect users.</li>
 <li>CORS is designed to prevent a malicious website that a user may unintentionally visit from making a request to a legitimate website to read their personal data or perform actions against their will.</li>
@@ -693,7 +763,7 @@
 <figure>
 <img src="https://www.washington.edu/accesscomputing/webd2/student/unit3/images/boxmodel.gif" alt="alt text" /><figcaption>alt text</figcaption>
 </figure>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>This is a very common question asked during front-end interviews and while it may seem easy, it is critical you know it well!</li>
 <li>Shows a solid understanding of spacing and the DOM</li>
@@ -707,7 +777,7 @@
 <h3 id="what-are-the-advantages-of-using-css-preprocessors">What are the advantages of using CSS preprocessors?</h3>
 <h4 id="answer">Answer</h4>
 <p>CSS preprocessors add useful functionality that native CSS does not have, and generally make CSS neater and more maintainable by enabling DRY (Don't Repeat Yourself) principles. Their terse syntax for nested selectors cuts down on repeated code. They provide variables for consistent theming (however, CSS variables have largely replaced this functionality) and additional tools like color functions (<code>lighten</code>, <code>darken</code>, <code>transparentize</code>, etc), mixins, and loops that make CSS more like a real programming language and gives the developer more power to generate complex CSS.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>They allow us to write more maintainable and scalable CSS</li>
 <li>Some disadvantages of using CSS preprocessors (setup, re-compilation time can be slow etc.)</li>
@@ -733,7 +803,7 @@
 <a class="sourceLine" id="cb33-2" title="2">  <span class="kw">background-color</span>: <span class="cn">red</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb33-3" title="3">}</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://www.w3schools.com/css/css_combinators.asp">W3School's CSS Combinators Page</a></li>
@@ -750,7 +820,7 @@
 <li>Number of tags and pseudo-element selectors</li>
 </ul>
 <p>When two selectors are compared, the comparison is made on a per-column basis (e.g. an id selector will always be higher than any amount of class selectors, as ids have higher specificity than classes). In cases of equal specificity between multiple rules, the rules that comes last in the page's style sheet is deemed more specific and therefore applied to the element.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Specificity matrix: [inline, id, class/pseudo-class/attribute, tag/pseudo-element]</li>
 <li>In cases of equal specificity, last rule is applied</li>
@@ -778,7 +848,7 @@
 <a class="sourceLine" id="cb34-12" title="12">  <span class="co">// Do stuff, this function will be called after a delay of 1 second</span></a>
 <a class="sourceLine" id="cb34-13" title="13"><span class="op">},</span> <span class="dv">1000</span>))<span class="op">;</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Common use case is to make API call only when user is finished typing while searching.</li>
 </ul>
@@ -790,7 +860,7 @@
 <h3 id="what-is-the-dom">What is the DOM?</h3>
 <h4 id="answer">Answer</h4>
 <p>The DOM (Document Object Model) is a cross-platform API that treats HTML and XML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.</li>
 <li>The DOM is constructed progressively in the browser as a page loads, which is why scripts are often placed at the bottom of a page, in the <code>&lt;head&gt;</code> with a <code>defer</code> attribute, or inside a <code>DOMContentLoaded</code> event listener. Scripts that manipulate DOM nodes should be run after the DOM has been constructed to avoid errors.</li>
@@ -805,7 +875,7 @@
 <h3 id="what-is-the-difference-between-the-equality-operators-and">What is the difference between the equality operators <code>==</code> and <code>===</code>?</h3>
 <h4 id="answer">Answer</h4>
 <p>Triple equals (<code>===</code>) checks for strict equality, which means both the type and value must be the same. Double equals (<code>==</code>) on the other hand first performs type coercion so that both operands are of the same type and then applies strict comparison.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Whenever possible, use triple equals to test equality because loose equality <code>==</code> can have unintuitive results.</li>
 <li>Type coercion means the values are converted into the same type.</li>
@@ -825,7 +895,7 @@
 <a class="sourceLine" id="cb35-2" title="2"><span class="kw">const</span> componentElement <span class="op">=</span> <span class="op">&lt;</span>Component /<span class="op">&gt;</span></a>
 <a class="sourceLine" id="cb35-3" title="3"><span class="kw">const</span> domNodeElement <span class="op">=</span> <span class="op">&lt;</span>div /<span class="op">&gt;</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Elements are immutable, plain objects that describe the DOM nodes or components you want to render.</li>
 <li>Components can be either classes or functions, that take props as an input and return an element tree as the output.</li>
@@ -844,7 +914,7 @@
 <li><code>rem</code> units inherit their value from the <code>font-size</code> of the root element (<code>html</code>)</li>
 </ul>
 <p>In most browsers, the <code>font-size</code> of the root element is set to <code>16px</code> by default.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Benefits of using <code>em</code> and <code>rem</code> units</li>
 </ul>
@@ -886,7 +956,7 @@
 <a class="sourceLine" id="cb36-26" title="26">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb36-27" title="27"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Error boundaries only catch errors in the components below them in the tree. An error boundary can't catch an error within itself.</li>
 </ul>
@@ -916,7 +986,7 @@
 <a class="sourceLine" id="cb38-4" title="4">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb38-5" title="5"><span class="op">}</span>)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The difference between event bubbling and capturing</li>
 </ul>
@@ -947,7 +1017,7 @@
 <a class="sourceLine" id="cb40-8" title="8"><span class="op">}</span>)</a></code></pre></div>
 </div>
 <p>With this implementation, <code>on</code> is the way to <em>subscribe</em> to an event, while <code>emit</code> is the way to <em>publish</em> the event.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Follows a publish-subscribe pattern.</li>
 <li>Responds to events that occur by running any callback functions subscribed to the event.</li>
@@ -1007,7 +1077,7 @@
 <a class="sourceLine" id="cb44-2" title="2"><span class="kw">var</span> x <span class="op">=</span> y <span class="op">&gt;=</span> <span class="dv">0</span> <span class="op">?</span> y : <span class="op">-</span>y</a></code></pre></div>
 </div>
 <p>This is both an expression and a statement, because we are declaring a variable <code>x</code> (statement) as an evaluation (expression).</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Function declarations vs function expressions</li>
 </ul>
@@ -1039,7 +1109,7 @@
 <div class="sourceCode" id="cb46"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb46-1" title="1"><span class="op">!!</span><span class="st">&quot;&quot;</span> <span class="co">// false</span></a>
 <a class="sourceLine" id="cb46-2" title="2"><span class="op">!!</span>[] <span class="co">// true</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://developer.mozilla.org/en/docs/Glossary/Truthy">Truthy on MDN</a></li>
@@ -1056,7 +1126,7 @@
 <a class="sourceLine" id="cb47-4" title="4">    []</a>
 <a class="sourceLine" id="cb47-5" title="5">  )</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md">Similar problem</a></li>
@@ -1098,7 +1168,7 @@
 <a class="sourceLine" id="cb49-28" title="28">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb49-29" title="29"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Iterate the array</li>
 <li>Alphabetize each word</li>
@@ -1139,7 +1209,7 @@
 <a class="sourceLine" id="cb51-14" title="14">  <span class="kw">flex</span>: <span class="dv">3</span><span class="op">;</span></a>
 <a class="sourceLine" id="cb51-15" title="15">}</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">MDN docs for basic concepts of flexbox</a></li>
@@ -1157,7 +1227,7 @@
 <div class="sourceCode" id="cb53"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb53-1" title="1"><span class="kw">const</span> approxEqual <span class="op">=</span> (n1<span class="op">,</span> n2<span class="op">,</span> epsilon <span class="op">=</span> <span class="fl">0.0001</span>) <span class="kw">=&gt;</span> <span class="va">Math</span>.<span class="at">abs</span>(n1 <span class="op">-</span> n2) <span class="op">&lt;</span> epsilon</a>
 <a class="sourceLine" id="cb53-2" title="2"><span class="at">approxEqual</span>(<span class="fl">0.1</span> <span class="op">+</span> <span class="fl">0.2</span><span class="op">,</span> <span class="fl">0.3</span>) <span class="co">// true</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>A simple solution to this problem</li>
 </ul>
@@ -1173,7 +1243,7 @@
 <p>In the past, many people specified <code>outline: 0;</code> on the element to remove the focus ring. However, this causes accessibility issues for keyboard users because the focus state may not be clear. When not specified though, it causes an unappealing blue ring to appear around an element.</p>
 <p>In recent times, frameworks like Bootstrap have opted to use a more appealing <code>box-shadow</code> outline to replace the default focus ring. However, this is still not ideal for mouse users.</p>
 <p>The best solution is an upcoming pseudo-selector <code>:focus-visible</code> which can be polyfilled today with JavaScript. It will only show a focus ring if the user is using a keyboard and leave it hidden for mouse users. This keeps both aesthetics for mouse use and accessibility for keyboard use.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://css-tricks.com/focus-visible-and-backwards-compatibility/">:focus-visible</a></li>
@@ -1182,7 +1252,7 @@
 <h3 id="what-is-the-difference-between-the-array-methods-map-and-foreach">What is the difference between the array methods <code>map()</code> and <code>forEach()</code>?</h3>
 <h4 id="answer">Answer</h4>
 <p>Both methods iterate through the elements of an array. <code>map()</code> maps each element to a new element by invoking the callback function on each element and returning a new array. On the other hand, <code>forEach()</code> invokes the callback function for each element but does not return a new array. <code>forEach()</code> is generally used when causing a side effect on each iteration, whereas <code>map()</code> is a common functional programming technique.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Use <code>forEach()</code> if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.</li>
 <li><code>map()</code> is the right choice to keep data immutable where each value of the original array is mapped to a new array.</li>
@@ -1219,7 +1289,7 @@
 <a class="sourceLine" id="cb54-19" title="19">  )<span class="op">;</span></a>
 <a class="sourceLine" id="cb54-20" title="20"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Fragments group multiple elements returned from a component, without adding a DOM element around them.</li>
 </ul>
@@ -1231,7 +1301,7 @@
 <h3 id="what-is-functional-programming">What is functional programming?</h3>
 <h4 id="answer">Answer</h4>
 <p>Functional programming is a paradigm in which programs are built in a declarative manner using pure functions that avoid shared state and mutable data. Functions that always return the same value for the same input and don't produce side effects are the pillar of functional programming. Many programmers consider this to be the best approach to software development as it reduces bugs and cognitive load.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Cleaner, more concise development experience</li>
 <li>Simple function composition</li>
@@ -1263,7 +1333,7 @@
 <li>Client app manually places focus on the main header at the top of the page (almost always this will be the H1 element)</li>
 </ol>
 <p>By doing so, focus is reset to the top of the page, ready for the user to begin exploring the new content. This solution requires inserting the main heading into the start of tabbing order with <code>tabindex="-1"</code>.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Focus issues caused by client-side rendering, instead of server-side</li>
 <li>Focus should not be left on elements no longer visible on the page</li>
@@ -1281,7 +1351,7 @@
 <div id="cb1" class="sourceCode">
 <div class="sourceCode" id="cb55"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb55-1" title="1"><span class="kw">const</span> EnhancedComponent <span class="op">=</span> <span class="at">higherOrderComponent</span>(WrappedComponent)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.</li>
 </ul>
@@ -1298,7 +1368,7 @@
 </div>
 <h4 id="answer">Answer</h4>
 <p>Due to hoisting, the local variable <code>foo</code> is declared before the <code>console.log</code> method is called. This means the local variable <code>foo</code> is passed as an argument to <code>console.log()</code> instead of the global one declared outside of the function. However, since the value is not hoisted with the variable declaration, the output will be <code>undefined</code>, not <code>2</code>.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Hoisting is JavaScript's default behavior of moving declarations to the top</li>
 <li>Mention of <code>strict</code> mode</li>
@@ -1338,7 +1408,7 @@
 <a class="sourceLine" id="cb60-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;hello&quot;</span>)</a>
 <a class="sourceLine" id="cb60-4" title="4"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Hoisting is JavaScript's default behavior of moving declarations to the top</li>
 <li>Functions declarations are hoisted before variable declarations</li>
@@ -1352,7 +1422,7 @@
 <h3 id="can-a-web-page-contain-multiple-header-elements-what-about-footer-elements">Can a web page contain multiple <code>&lt;header&gt;</code> elements? What about <code>&lt;footer&gt;</code> elements?</h3>
 <h4 id="answer">Answer</h4>
 <p>Yes to both. The W3 documents state that the tags represent the header(<code>&lt;header&gt;</code>) and footer(<code>&lt;footer&gt;</code>) areas of their nearest ancestor "section". So not only can the page <code>&lt;body&gt;</code> contain a header and a footer, but so can every <code>&lt;article&gt;</code> and <code>&lt;section&gt;</code> element.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>W3 recommends having as many as you want, but only 1 of each for each "section" of your page, i.e. body, section etc.</li>
 </ul>
@@ -1365,7 +1435,7 @@
 <h4 id="answer">Answer</h4>
 <p>HTML specifications such as <code>HTML5</code> define a set of rules that a document must adhere to in order to be "valid" according to that specification. In addition, a specification provides instructions on how a browser must interpret and render such a document.</p>
 <p>A browser is said to "support" a specification if it handles valid documents according to the rules of the specification. As of yet, no browser supports all aspects of the <code>HTML5</code> specification (although all of the major browser support most of it), and as a result, it is necessary for the developer to confirm whether the aspect they are making use of will be supported by all of the browsers on which they hope to display their content. This is why cross-browser support continues to be a headache for developers, despite the improved specificiations.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li><code>HTML5</code> defines some rules to follow for an invalid <code>HTML5</code> document (i.e., one that contains syntactical errors)</li>
 <li>However, invalid documents may contain anything, so it's impossible for the specification to handle all possibilities comprehensively.</li>
@@ -1396,7 +1466,7 @@
 <a class="sourceLine" id="cb64-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;The link was clicked.&quot;</span>)</a>
 <a class="sourceLine" id="cb64-4" title="4"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>HTML uses lowercase, React uses camelCase.</li>
 </ul>
@@ -1416,7 +1486,7 @@
 <li>Elements must always be closed</li>
 <li>Special characters must be escaped</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Any element can be self-closed</li>
 <li>Tags ands attributes are case-sensitive, usually lowercase</li>
@@ -1434,7 +1504,7 @@
 <li><p><code>&lt;section&gt;</code> is a flexible container for holding content that shares a common informational theme or purpose.</p></li>
 <li><p><code>&lt;footer&gt;</code> is used to hold information that should appear at the end of a section of content and contain additional information about the section. Author's name, copyright information, and related links are typical examples of such content.</p></li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Other semantic elements are <code>&lt;form&gt;</code> and <code>&lt;table&gt;</code></li>
 </ul>
@@ -1456,7 +1526,7 @@
 <li><code>sessionStorage</code> is also scoped on a per-window basis. Two browser tabs with documents from the same origin have separate <code>sessionStorage</code> data.</li>
 <li>Unlike in <code>localStorage</code>, the same scripts from the same origin can't access each other's <code>sessionStorage</code> when opened in different tabs.</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Earlier, this was done with cookies.</li>
 <li>The storage limit is far larger (at least 5MB) than with cookies and its faster.</li>
@@ -1480,7 +1550,7 @@
 <a class="sourceLine" id="cb65-7" title="7">privateVariable <span class="co">// ReferenceError</span></a>
 <a class="sourceLine" id="cb65-8" title="8"><span class="va">myLibrary</span>.<span class="at">publicMethod</span>() <span class="co">// 2</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Used among many popular JavaScript libraries</li>
 <li>Creates a private namespace</li>
@@ -1513,7 +1583,7 @@
 <a class="sourceLine" id="cb67-2" title="2"><span class="kw">const</span> numbersDoubled <span class="op">=</span> <span class="va">numbers</span>.<span class="at">map</span>(n <span class="kw">=&gt;</span> n <span class="op">*</span> <span class="dv">2</span>)</a></code></pre></div>
 </div>
 <p>We declare that the new array is mapped to a new one where each value is doubled.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Declarative programming often works with functions and expressions. Imperative programming frequently uses statements and relies on low-level features that cause mutations, while declarative programming has a strong focus on abstraction and purity.</li>
 <li>Declarative programming is more terse and easier to process at a glance.</li>
@@ -1558,7 +1628,7 @@
 <a class="sourceLine" id="cb69-11" title="11">  )</a>
 <a class="sourceLine" id="cb69-12" title="12"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://reactjs.org/docs/conditional-rendering.html">React docs on Conditional Rendering</a></li>
@@ -1574,7 +1644,7 @@
 <li>Using indexes as keys is not recommended if the order of items may change, as it might negatively impact performance and may cause issues with component state.</li>
 <li>If you extract list items as a separate component then apply keys on the list component instead of the <code>&lt;li&gt;</code> tag.</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Keys give elements in a collection a stable identity and help React identify changes.</li>
 <li>You should avoid using indexes as keys if the order of items may change.</li>
@@ -1593,7 +1663,7 @@
 <div class="sourceCode" id="cb71"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb71-1" title="1"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;header&quot;</span><span class="ot"> role=</span><span class="st">&quot;banner&quot;</span><span class="kw">&gt;</span>Header of the Page<span class="kw">&lt;/div&gt;</span></a>
 <a class="sourceLine" id="cb71-2" title="2"><span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;content&quot;</span><span class="ot"> role=</span><span class="st">&quot;main&quot;</span><span class="kw">&gt;</span>Main Content Goes Here<span class="kw">&lt;/div&gt;</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Identify sections of a page</li>
 <li>Assist users in navigating a page</li>
@@ -1607,7 +1677,7 @@
 <h3 id="what-is-the-difference-between-lexical-scoping-and-dynamic-scoping">What is the difference between lexical scoping and dynamic scoping?</h3>
 <h4 id="answer">Answer</h4>
 <p>Lexical scoping refers to when the location of a function's definition determines which variables you have access to. On the other hand, dynamic scoping uses the location of the function's invocation to determine which variables are available.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Lexical scoping is also known as static scoping.</li>
 <li>Lexical scoping in JavaScript allows for the concept of closures.</li>
@@ -1627,7 +1697,7 @@
 <p><code>componentDidUpdate</code>: Mostly it is used to update the DOM in response to prop or state changes.</p>
 <p><code>componentWillUnmount</code>: It will be used to cancel any outgoing network requests, or remove all event listeners associated with the component.</p>
 <p><code>componentDidCatch</code>: Used in error boundaries, which are components that implement this method. It allows the component to catch JavaScript errors anywhere in the <em>child</em> component tree (below this component), log errors, and display a UI with error information.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="what-are-the-different-phases-of-the-component-lifecycle-in-react">What are the different phases of the component lifecycle in React?</h3>
@@ -1639,13 +1709,13 @@
 <p><strong>Unmounting</strong>: In this last phase, the component is not needed and gets unmounted from the browser DOM. This phase includes the <code>componentWillUnmount</code> lifecycle method.</p>
 <p><strong>Error Handling</strong>: In this phase, the component is called whenever there's an error during rendering, in a lifecycle method, or in the constructor for any child component. This phase includes the <code>componentDidCatch</code> lifecycle method.</p>
 <p><embed src="https://pbs.twimg.com/media/DZ-97vzW4AAbcZj.jpg:large" /></p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="what-does-lifting-state-up-in-react-mean">What does lifting state up in React mean?</h3>
 <h4 id="answer">Answer</h4>
 <p>When several components need to share the same data, then it is recommended to lift the shared state up to their closest common ancestor. For example, if two child components share the same data, it is recommended to move the shared state to parent instead of maintaining the local state in both child components.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="create-a-function-that-masks-a-string-of-characters-with-except-for-the-last-four-4-characters.">Create a function that masks a string of characters with <code>#</code> except for the last four (4) characters.</h3>
@@ -1661,7 +1731,7 @@
 <div class="sourceCode" id="cb73"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb73-1" title="1"><span class="kw">const</span> mask <span class="op">=</span> (str<span class="op">,</span> maskChar <span class="op">=</span> <span class="st">&quot;#&quot;</span>) <span class="kw">=&gt;</span></a>
 <a class="sourceLine" id="cb73-2" title="2">  <span class="va">str</span>.<span class="at">slice</span>(<span class="op">-</span><span class="dv">4</span>).<span class="at">padStart</span>(<span class="va">str</span>.<span class="at">length</span><span class="op">,</span> maskChar)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Short, one-line functional solutions to problems should be preferred provided they are efficient</li>
 </ul>
@@ -1675,7 +1745,7 @@
 <li><code>screen</code>, which only applies to screens (desktops, tablets, mobile etc.)</li>
 <li><code>speech</code>, which only applies to screenreaders</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media">MDN docs for <code>@media</code> rule</a></li>
@@ -1698,7 +1768,7 @@
 <a class="sourceLine" id="cb74-9" title="9">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb74-10" title="10"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The above technique returns a unary function even if the function can take multiple arguments.</li>
 <li>The first function call will be slower than usual because of the overhead created by checking if a cached result exists and setting a result before returning the value.</li>
@@ -1745,7 +1815,7 @@
 <div class="sourceCode" id="cb77"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb77-1" title="1"><span class="op">&lt;</span>button onClick<span class="op">={</span>e <span class="kw">=&gt;</span> <span class="kw">this</span>.<span class="at">handleClick</span>(e)<span class="op">}&gt;</span>Click me&lt;/button<span class="op">&gt;</span></a></code></pre></div>
 </div>
 <p>Note that extra re-rendering can occur using this technique because a new function reference is created on render, which gets passed down to child components and breaks <code>shouldComponentUpdate</code> / <code>PureComponent</code> shallow equality checks to prevent unnecessary re-renders. In cases where performance is important, it is preferred to go with <code>bind</code> in the constructor, or the public class fields syntax approach, because the function reference remains constant.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>You can either bind methods to the component instance context in the constructor, use public class fields syntax, or use inline arrow functions.</li>
 </ul>
@@ -1758,7 +1828,7 @@
 <h3 id="what-is-a-mime-type-and-what-is-it-used-for">What is a MIME type and what is it used for?</h3>
 <h4 id="answer">Answer</h4>
 <p><code>MIME</code> is an acronym for <code>Multi-purpose Internet Mail Extensions</code>. It is used as a standard way of classifying file types over the Internet.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>A <code>MIME type</code> actually has two parts: a type and a subtype that are separated by a slash (/). For example, the <code>MIME type</code> for Microsoft Word files is <code>application/msword</code> (i.e., type is application and the subtype is msword).</li>
 </ul>
@@ -1784,7 +1854,7 @@
 <a class="sourceLine" id="cb78-5" title="5"><span class="va">originalArray</span>.<span class="at">push</span>(<span class="dv">4</span>) <span class="co">// mutates originalArray, now [1, 2, 3, 4]</span></a>
 <a class="sourceLine" id="cb78-6" title="6"><span class="va">originalArray</span>.<span class="at">concat</span>(<span class="dv">4</span>) <span class="co">// returns a new array, does not mutate the original</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>List of mutating and non-mutating array methods</li>
 </ul>
@@ -1796,7 +1866,7 @@
 <h3 id="what-is-the-only-value-not-equal-to-itself-in-javascript">What is the only value not equal to itself in JavaScript?</h3>
 <h4 id="answer">Answer</h4>
 <p><code>NaN</code> (Not-a-Number) is the only value not equal to itself when comparing with any of the comparison operators. <code>NaN</code> is often the result of meaningless math computations, so two <code>NaN</code> values make no sense to be considered equal.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The difference between <code>isNaN()</code> and <code>Number.isNaN()</code></li>
 <li><code>const isNaN = x =&gt; x !== x</code></li>
@@ -1855,7 +1925,7 @@
 <a class="sourceLine" id="cb80-25" title="25"><span class="co">  Value was true.</span></a>
 <a class="sourceLine" id="cb80-26" title="26"><span class="co">*/</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>This is just a convention. However, you should stick to it.</li>
 </ul>
@@ -1868,7 +1938,7 @@
 <h3 id="what-is-the-event-loop-in-node.js">What is the event loop in Node.js?</h3>
 <h4 id="answer">Answer</h4>
 <p>The event loop handles all async callbacks. Callbacks are queued in a loop, while other code runs, and will run one by one when the response for each one has been received.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The event loop allows Node.js to perform non-blocking I/O operations, despite the fact that JavaScript is single-threaded</li>
 </ul>
@@ -1880,7 +1950,7 @@
 <h3 id="what-is-the-difference-between-null-and-undefined">What is the difference between <code>null</code> and <code>undefined</code>?</h3>
 <h4 id="answer">Answer</h4>
 <p>In JavaScript, two values discretely represent nothing - <code>undefined</code> and <code>null</code>. The concrete difference between them is that <code>null</code> is explicit, while <code>undefined</code> is implicit. When a property does not exist or a variable has not been given a value, the value is <code>undefined</code>. <code>null</code> is set as the value to explicitly indicate "no value". In essence, <code>undefined</code> is used when the nothing is not known, and <code>null</code> is used when the nothing is known.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li><code>typeof undefined</code> evaluates to <code>"undefined"</code>.</li>
 <li><code>typeof null</code> evaluates <code>"object"</code>. However, it is still a primitive value and this is considered an implementation bug in JavaScript.</li>
@@ -1954,7 +2024,7 @@
 <a class="sourceLine" id="cb85-6" title="6">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb85-7" title="7"><span class="op">}</span>)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Prototypes are objects that other objects inherit properties and methods from.</li>
 <li>Factory functions offer private properties and methods through a closure but increase memory usage as a tradeoff, while classes do not have private properties or methods but reduce memory impact by reusing a single prototype object.</li>
@@ -1970,7 +2040,7 @@
 <a class="sourceLine" id="cb86-3" title="3"><span class="op">}</span></a>
 <a class="sourceLine" id="cb86-4" title="4"><span class="at">myFunction</span>(<span class="st">&quot;argument1&quot;</span><span class="op">,</span> <span class="st">&quot;argument2&quot;</span>)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li><code>arguments</code> is an array-like object containing information about the arguments supplied to an invoked function.</li>
 <li><code>myFunction.length</code> describes the arity of a function (how many parameters it has, regardless of how many arguments it is supplied).</li>
@@ -1980,7 +2050,7 @@
 <h3 id="does-javascript-pass-by-value-or-by-reference">Does JavaScript pass by value or by reference?</h3>
 <h4 id="answer">Answer</h4>
 <p>JavaScript always passes by value. However, with objects, the value is a reference to the object.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Difference between pass-by-value and pass-by-reference</li>
 </ul>
@@ -1996,7 +2066,7 @@
 <div class="sourceCode" id="cb87"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb87-1" title="1"><span class="op">&lt;</span>button onClick<span class="op">={</span>() <span class="kw">=&gt;</span> <span class="kw">this</span>.<span class="at">handleClick</span>(id)<span class="op">}</span> /&gt;</a>
 <a class="sourceLine" id="cb87-2" title="2"><span class="op">&lt;</span>button onClick<span class="op">={</span><span class="kw">this</span>.<span class="va">handleClick</span>.<span class="at">bind</span>(<span class="kw">this</span><span class="op">,</span> id)<span class="op">}</span> /&gt;</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://reactjs.org/docs/handling-events.html">React docs on Handling Events</a></li>
@@ -2015,7 +2085,7 @@
 <div id="cb2" class="sourceCode">
 <div class="sourceCode" id="cb89"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb89-1" title="1"><span class="kw">const</span> pipe <span class="op">=</span> (...<span class="at">fns</span>) <span class="kw">=&gt;</span> x <span class="kw">=&gt;</span> <span class="va">fns</span>.<span class="at">reduce</span>((v<span class="op">,</span> fn) <span class="kw">=&gt;</span> <span class="at">fn</span>(v)<span class="op">,</span> x)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Function composition is the process of combining two or more functions to produce a new function.</li>
 </ul>
@@ -2031,7 +2101,7 @@
 <div class="sourceCode" id="cb90"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb90-1" title="1"><span class="va">ReactDOM</span>.<span class="at">createPortal</span>(child<span class="op">,</span> container)</a></code></pre></div>
 </div>
 <p>The first argument (<code>child</code>) is any renderable React child, such as an element, string, or fragment. The second argument (<code>container</code>) is a DOM element.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://reactjs.org/docs/portals.html">React docs on Portals</a></li>
@@ -2052,7 +2122,7 @@
 <a class="sourceLine" id="cb92-2" title="2"><span class="op">++</span>i <span class="co">// 1</span></a>
 <a class="sourceLine" id="cb92-3" title="3"><span class="co">// i === 1</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <p>;</p>
 <h3 id="in-which-states-can-a-promise-be">In which states can a Promise be?</h3>
@@ -2064,7 +2134,7 @@
 <li>rejected: meaning that the operation failed.</li>
 </ul>
 <p>A pending promise can either be fulfilled with a value, or rejected with a reason (error). When either of these options happens, the associated handlers queued up by a promise's then method are called.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Official Web Docs - Promise</a></li>
@@ -2082,7 +2152,7 @@
 <a class="sourceLine" id="cb93-6" title="6">  .<span class="at">then</span>(<span class="va">console</span>.<span class="at">log</span>)</a>
 <a class="sourceLine" id="cb93-7" title="7">  .<span class="at">catch</span>(<span class="va">console</span>.<span class="at">error</span>)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Take a look into the other questions regarding <code>Promise</code>s!</li>
 </ul>
@@ -2112,7 +2182,7 @@
 <a class="sourceLine" id="cb94-14" title="14">  <span class="op">}</span></a>
 <a class="sourceLine" id="cb94-15" title="15"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>We can define custom <code>propTypes</code></li>
 <li>Using <code>propTypes</code> is not mandatory. However, it is a good practice and can reduce bugs.</li>
@@ -2123,7 +2193,7 @@
 <h4 id="answer">Answer</h4>
 <p>In the classical inheritance paradigm, object instances inherit their properties and functions from a class, which acts as a blueprint for the object. Object instances are typically created using a constructor and the <code>new</code> keyword.</p>
 <p>In the prototypal inheritance paradigm, object instances inherit directly from other objects and are typically created using factory functions or <code>Object.create()</code>.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">MDN docs for inheritance and the prototype chain</a></li>
@@ -2149,7 +2219,7 @@
 <a class="sourceLine" id="cb96-2" title="2"><span class="kw">const</span> b <span class="op">=</span> (arr<span class="op">,</span> value) <span class="kw">=&gt;</span> (<span class="va">arr</span>.<span class="at">push</span>(value)<span class="op">,</span> arr)</a>
 <a class="sourceLine" id="cb96-3" title="3"><span class="kw">const</span> c <span class="op">=</span> arr <span class="kw">=&gt;</span> <span class="va">arr</span>.<span class="at">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> a <span class="op">-</span> b)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Pure functions are easier to reason about due to their reliability.</li>
 <li>All functions should be pure unless explicitly causing a side effect (i.e. <code>setInnerHTML</code>).</li>
@@ -2198,7 +2268,7 @@
 <a class="sourceLine" id="cb98-21" title="21"><span class="co">*/</span></a></code></pre></div>
 </div>
 <p>In the above example, the base condition is met if <code>filter()</code> returns an empty array. The chained <code>map()</code> won't invoke the callback function which contains the recursive call, thereby breaking the loop.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Recursion is useful when working with data structures containing an unknown number of nested structures.</li>
 <li>Recursion must have a base condition to be met that breaks out of the loop or it will call itself indefinitely.</li>
@@ -2219,7 +2289,7 @@
 </div>
 <h4 id="answer">Answer</h4>
 <p>The first <code>console.log</code> outputs <code>true</code> because JavaScript's compiler performs type conversion and therefore it compares to strings by their value. On the other hand, the second <code>console.log</code> outputs <code>false</code> because Arrays are Objects and Objects are compared by reference.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>JavaScript performs automatic type conversion</li>
 <li>Objects are compared by reference</li>
@@ -2252,7 +2322,7 @@
 <a class="sourceLine" id="cb100-10" title="10"><span class="op">}</span></a></code></pre></div>
 </div>
 <p>Refs can also be used in functional components with the help of closures.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Refs are used to return a reference to an element.</li>
 <li>Refs shouldn't be overused.</li>
@@ -2266,7 +2336,7 @@
 <h3 id="where-and-why-is-the-relnoopener-attribute-used">Where and why is the <code>rel="noopener"</code> attribute used?</h3>
 <h4 id="answer">Answer</h4>
 <p>The <code>rel="noopener"</code> is an attribute used in <code>&lt;a&gt;</code> elements (hyperlinks). It prevents pages from having a <code>window.opener</code> property, which would otherwise point to the page from where the link was opened and would allow the page opened from the hyperlink to manipulate the page where the hyperlink is.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li><code>rel="noopener"</code> is applied to hyperlinks.</li>
 <li><code>rel="noopener"</code> prevents opened links from manipulating the source page.</li>
@@ -2292,7 +2362,7 @@
 <li>Updating: <code>/posts/:id</code> =&gt; PUT</li>
 <li>Destroying: <code>/posts/:id</code> =&gt; DELETE</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Alternatives to this pattern like GraphQL</li>
 </ul>
@@ -2312,7 +2382,7 @@
 </div>
 <h4 id="answer">Answer</h4>
 <p>Because of JavaScript's automatic semicolon insertion (ASI), the compiler places a semicolon after <code>return</code> keyword and therefore it returns <code>undefined</code> without an error being thrown.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Automatic semicolon placement can lead to time-consuming bugs</li>
 </ul>
@@ -2659,7 +2729,7 @@ Size of all files: 461594 K</p>
 <a class="sourceLine" id="cb103-4" title="4"><span class="op">}</span>)()</a></code></pre></div>
 </div>
 <p>In the above cases, the interpreter does not insert a semicolon after <code>3</code>, and therefore it will see the <code>3</code> as attempting object property access or being invoked as a function, which will throw errors.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Semicolons are usually optional in JavaScript but have edge cases where they are required.</li>
 <li>If you don't use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.</li>
@@ -2710,7 +2780,7 @@ Size of all files: 461594 K</p>
 <a class="sourceLine" id="cb109-12" title="12">)</a></code></pre></div>
 </div>
 <p>In the above case, if <code>e.target</code> is not or does not contain an element matching the <code>"button"</code> selector, the function will not be called. This is because the first operand will be falsy, causing the second operand to not be evaluated.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.</li>
 </ul>
@@ -2725,7 +2795,7 @@ Size of all files: 461594 K</p>
 <p>Under HTTP/1.1, at most one request is allowed per TCP connection. With HTTP/1.1, modern browsers open multiple parallel connections (between 2 to 8) but it is limited. With HTTP/2, all requests between the browser and the server are multiplexed on a single TCP connection. This means the cost of opening and closing multiple connections is mitigated, resulting in a better usage of the TCP connection and limits the impact of latency between the client and server. It could then become possible to load tens of images in parallel on the same TCP connection.</p>
 <p>However, according to <a href="https://blog.octo.com/en/http2-arrives-but-sprite-sets-aint-no-dead/">benchmark results</a>, although HTTP/2 offers 50% improvement over HTTP/1.1, in most cases the sprite set is still faster to load than individual images.</p>
 <p>To utilize a spritesheet in CSS, one would use certain properties, such as <code>background-image</code>, <code>background-position</code> and <code>background-size</code> to ultimately alter the <code>background</code> of an element.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li><code>background-image</code>, <code>background-position</code> and <code>background-size</code> can be used to utilize a spritesheet.</li>
 </ul>
@@ -2755,7 +2825,7 @@ Size of all files: 461594 K</p>
 <a class="sourceLine" id="cb110-15" title="15">  <span class="cf">return</span> <span class="co">// ...</span></a>
 <a class="sourceLine" id="cb110-16" title="16"><span class="op">}</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Stateful components have internal state that they depend on.</li>
 <li>Stateful components are class components or function components that use stateful Hooks.</li>
@@ -2769,7 +2839,7 @@ Size of all files: 461594 K</p>
 <h3 id="what-is-a-stateless-component">What is a stateless component?</h3>
 <h4 id="answer">Answer</h4>
 <p>A stateless component is a component whose behavior does not depend on its state. Stateless components can be either functional or class components. Stateless functional components are easier to maintain and test since they are guaranteed to produce the same output given the same props. Stateless functional components should be preferred when lifecycle hooks don't need to be used.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Stateless components are independent of their state.</li>
 <li>Stateless components can be either class or functional components.</li>
@@ -2794,7 +2864,7 @@ Size of all files: 461594 K</p>
 <a class="sourceLine" id="cb112-2" title="2"><span class="va">arr</span>.<span class="at">push</span>(<span class="dv">4</span>)</a>
 <a class="sourceLine" id="cb112-3" title="3"><span class="va">Array</span>.<span class="at">push</span>(arr<span class="op">,</span> <span class="dv">4</span>)</a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>How to create static and instance methods with ES2015 class syntax</li>
 </ul>
@@ -2808,7 +2878,7 @@ Size of all files: 461594 K</p>
 <p>Synchronous means each operation must wait for the previous one to complete.</p>
 <p>Asynchronous means an operation can occur while another operation is still being processed.</p>
 <p>In JavaScript, all code is synchronous due to the single-threaded nature of it. However, asynchronous operations not part of the program (such as <code>XMLHttpRequest</code> or <code>setTimeout</code>) are processed outside of the main thread because they are controlled by native code (browser APIs), but callbacks part of the program will still be executed synchronously.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>JavaScript has a concurrency model based on an "event loop".</li>
 <li>Functions like <code>alert</code> block the main thread so that no user input is registered until the user closes it.</li>
@@ -2886,7 +2956,7 @@ Size of all files: 461594 K</p>
 <a class="sourceLine" id="cb117-12" title="12"><span class="op">}</span></a>
 <a class="sourceLine" id="cb117-13" title="13"><span class="va">obj</span>.<span class="at">doubleArr</span>() <span class="co">// Uncaught TypeError: this.double is not a function</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>In non-strict mode, global <code>this</code> is the global object (<code>window</code> in browsers), while in strict mode global <code>this</code> is <code>undefined</code>.</li>
 <li><code>Function.prototype.call</code> and <code>Function.prototype.apply</code> set the <code>this</code> context of an executing function as the first argument, with <code>call</code> accepting a variadic number of arguments thereafter, and <code>apply</code> accepting an array as the second argument which are fed to the function in a variadic manner.</li>
@@ -2905,7 +2975,7 @@ Size of all files: 461594 K</p>
 <h4 id="answer">Answer</h4>
 <p>It evaluates to <code>"string"</code>.</p>
 <p><code>typeof 0</code> evaluates to the string <code>"number"</code> and therefore <code>typeof "number"</code> evaluates to <code>"string"</code>.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <h5 id="additional-links">Additional links</h5>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof">MDN docs for typeof</a></li>
@@ -2914,7 +2984,7 @@ Size of all files: 461594 K</p>
 <h3 id="what-are-javascript-data-types">What are JavaScript data types?</h3>
 <h4 id="answer">Answer</h4>
 <p>The latest ECMAScript standard defines seven data types, six of them being primitive: <code>Boolean</code>, <code>Null</code>, <code>Undefined</code>, <code>Number</code>, <code>String</code>, <code>Symbol</code> and one non-primitive data type: <code>Object</code>.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Mention of newly added <code>Symbol</code> data type</li>
 <li><code>Array</code>, <code>Date</code> and <code>function</code> are all of type <code>object</code></li>
@@ -2930,7 +3000,7 @@ Size of all files: 461594 K</p>
 <h4 id="answer">Answer</h4>
 <p>The main purpose is to avoid manipulating the DOM directly and keep the state of an application in sync with the UI easily. Additionally, they provide the ability to create components that can be reused when they have similar functionality with minor differences, avoiding duplication which would require multiple changes whenever the structure of a component which is reused in multiple places needs to be updated.</p>
 <p>When working with DOM manipulation libraries like jQuery, the data of an application is generally kept in the DOM itself, often as class names or <code>data</code> attributes. Manipulating the DOM to update the UI involves many extra steps and can introduce subtle bugs over time. Keeping the state separate and letting a framework handle the UI updates when the state changes reduces cognitive load. Saying you want the UI to look a certain way when the state is a certain value is the declarative way of creating an application, instead of the imperative way of manually updating the UI to reflect the new state.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.</li>
 <li>JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.</li>
@@ -2951,7 +3021,7 @@ Size of all files: 461594 K</p>
 <li>Simplifies <code>eval()</code> and <code>arguments</code>.</li>
 <li>Helps make JavaScript more secure.</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Eliminates <code>this</code> coercion, throwing an error when <code>this</code> references a value of <code>null</code> or <code>undefined</code>.</li>
 <li>Throws an error on invalid usage of <code>delete</code>.</li>
@@ -3011,7 +3081,7 @@ Size of all files: 461594 K</p>
 <a class="sourceLine" id="cb121-2" title="2"><span class="va">myObject</span>.<span class="at">prop</span> <span class="op">=</span> <span class="st">&quot;hello!&quot;</span> <span class="co">// No error</span></a>
 <a class="sourceLine" id="cb121-3" title="3">myObject <span class="op">=</span> <span class="st">&quot;hello&quot;</span> <span class="co">// Error</span></a></code></pre></div>
 </div>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>All declarations are hoisted to the top of their scope.</li>
 <li>However, with <code>let</code> and <code>const</code> there is a concept called the temporal dead zone (TDZ). While the declarations are still hoisted, there is a period between entering scope and being declared where they cannot be accessed.</li>
@@ -3059,7 +3129,7 @@ Size of all files: 461594 K</p>
 </div>
 <p>The library/framework uses the virtual DOM as a means to improve performance. When the state of an application changes, the real DOM needs to be updated to reflect it. However, changing real DOM nodes is costly compared to recalculating the virtual DOM. The previous virtual DOM can be compared to the new virtual DOM very quickly in comparison.</p>
 <p>Once the changes between the old VDOM and new VDOM have been calculated by the diffing engine of the framework, the real DOM can be patched efficiently in the least time possible to match the new state of the application.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>Why accessing the DOM can be so costly.</li>
 </ul>
@@ -3071,7 +3141,7 @@ Size of all files: 461594 K</p>
 <h3 id="what-is-wcag-what-are-the-differences-between-a-aa-and-aaa-compliance">What is WCAG? What are the differences between A, AA, and AAA compliance?</h3>
 <h4 id="answer">Answer</h4>
 <p>WCAG stands for "Web Content Accessibility Guidelines". It is a standard describing how to make web content more accessible to people with disabilities They have 12-13 guidelines and for each one, there are testable success criteria, which are at three levels: A, AA, and AAA. The higher the level, the higher the impact on the design of the web content. The higher the level, the web content is essentially more accessible by more users. Depending on where you live/work, there may be regulations requiring websites to meet certain levels of compliance. For instance, in Ontario, Canada, beginning January 1, 2021 all public websites and web content posted after January 1, 2012 must meet AA compliance.</p>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>A guideline for making web content more accessible</li>
 <li>3 different levels (A, AA, and AAA) of compliance for each guideline</li>
@@ -3092,7 +3162,7 @@ Size of all files: 461594 K</p>
 <li>The script can arbitrarily manipulate the DOM of the page the script is executing in, allowing the attacker to insert pieces of content that appear to be a real part of the website.</li>
 <li>The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.</li>
 </ul>
-<h4 id="good-to-hear">Good to hear</h4>
+<h4 id="good-to-hear">Don't forget:</h4>
 <ul>
 <li>On the client, using <code>textContent</code> instead of <code>innerHTML</code> prevents the browser from running the string through the HTML parser which would execute scripts in it.</li>
 <li>On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won't execute the script.</li>
