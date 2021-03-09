@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-context">What is context?</h3>
+<h4 id="answer">Answer</h4>
+<p>Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> <span class="op">{</span> Provider<span class="op">,</span> Consumer <span class="op">}</span> <span class="op">=</span> <span class="va">React</span>.<span class="at">createContext</span>(defaultValue)</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Context provides a way to pass data through a tree of React components, without having to manually pass props.</li>
+<li>Context is designed to share data that is considered <em>global</em> for a tree of React components.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://reactjs.org/docs/context.html">React docs on Context</a></li>
+</ul>
+<!-- tags: (react,javascript) -->
+<!-- expertise: (2) -->
+</body></html>

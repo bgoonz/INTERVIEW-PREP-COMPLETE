@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-the-difference-between-html-and-react-event-handling">What is the difference between HTML and React event handling?</h3>
+<h4 id="answer">Answer</h4>
+<p>In HTML, the attribute name is in all lowercase and is given a string invoking a function defined somewhere:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">&lt;button</span><span class="ot"> onclick=</span><span class="st">&quot;handleClick()&quot;</span><span class="kw">&gt;&lt;/button&gt;</span></a></code></pre></div>
+<p>In React, the attribute name is camelCase and are passed the function reference inside curly braces:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="op">&lt;</span>button onClick<span class="op">={</span>handleClick<span class="op">}</span> /&gt;</a></code></pre></div>
+<p>In HTML, <code>false</code> can be returned to prevent default behavior, whereas in React <code>preventDefault</code> has to be called explicitly.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">&lt;a</span><span class="ot"> href=</span><span class="st">&quot;#&quot;</span><span class="ot"> onclick=</span><span class="st">&quot;console.log(&#39;The link was clicked.&#39;); return false&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">function</span> <span class="at">handleClick</span>(e) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="va">e</span>.<span class="at">preventDefault</span>()</a>
+<a class="sourceLine" id="cb4-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;The link was clicked.&quot;</span>)</a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="op">}</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>HTML uses lowercase, React uses camelCase.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://reactjs.org/docs/handling-events.html">React docs on Handling Events</a></li>
+</ul>
+<!-- tags: (react,javascript,html) -->
+<!-- expertise: (1) -->
+</body></html>

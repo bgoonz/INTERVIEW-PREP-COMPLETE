@@ -113,7 +113,7 @@ _Please read [contribution guidelines](contributing.md) before contributing._
 ## Related
 
 - [CS career questions EU wiki](https://www.reddit.com/r/cscareerquestionsEU/wiki/index)
-- [Few notes about web developer’s interviews](http://blog.sapegin.me/all/coding-interview)
+- [Few notes about web developer's interviews](http://blog.sapegin.me/all/coding-interview)
 - [Finding work wiki](https://wiki.nikitavoloboev.xyz/work/finding-work)
 - [Remote work wiki](https://wiki.nikitavoloboev.xyz/work/remote-work)
 - [Search the last 'Who is hiring?' thread](https://hnjobs.emilburzo.com/)

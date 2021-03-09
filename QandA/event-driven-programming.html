@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-event-driven-programming">What is event-driven programming?</h3>
+<h4 id="answer">Answer</h4>
+<p>Event-driven programming is a paradigm that involves building applications that send and receive events. When the program emits events, the program responds by running any callback functions that are registered to that event and context, passing in associated data to the function. With this pattern, events can be emitted into the wild without throwing errors even if no functions are subscribed to it.</p>
+<p>A common example of this is the pattern of elements listening to DOM events such as <code>click</code> and <code>mouseenter</code>, where a callback function is run when the event occurs.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="va">document</span>.<span class="at">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span> <span class="kw">function</span>(event) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="co">// This callback function is run when the user</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="co">// clicks on the document.</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="op">}</span>)</a></code></pre></div>
+<p>Without the context of the DOM, the pattern may look like this:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> hub <span class="op">=</span> <span class="at">createEventHub</span>()</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="va">hub</span>.<span class="at">on</span>(<span class="st">&quot;message&quot;</span><span class="op">,</span> <span class="kw">function</span>(data) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(<span class="vs">`</span><span class="sc">${</span><span class="va">data</span>.<span class="at">username</span><span class="sc">}</span><span class="vs"> said </span><span class="sc">${</span><span class="va">data</span>.<span class="at">text</span><span class="sc">}</span><span class="vs">`</span>)</a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="va">hub</span>.<span class="at">emit</span>(<span class="st">&quot;message&quot;</span><span class="op">,</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="dt">username</span><span class="op">:</span> <span class="st">&quot;John&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-7" title="7">  <span class="dt">text</span><span class="op">:</span> <span class="st">&quot;Hello?&quot;</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="op">}</span>)</a></code></pre></div>
+<p>With this implementation, <code>on</code> is the way to <em>subscribe</em> to an event, while <code>emit</code> is the way to <em>publish</em> the event.</p>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Follows a publish-subscribe pattern.</li>
+<li>Responds to events that occur by running any callback functions subscribed to the event.</li>
+<li>Show how to create a simple pub-sub implementation with JavaScript.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Overview_of_Events_and_Handlers">MDN docs on Events and Handlers</a></li>
+<li><a href="https://medium.freecodecamp.org/understanding-node-js-event-driven-architecture-223292fcbc2d">Understanding Node.js event-driven architecture</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (2) -->
+</body></html>

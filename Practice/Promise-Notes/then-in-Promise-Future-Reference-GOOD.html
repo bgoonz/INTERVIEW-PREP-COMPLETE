@@ -1,0 +1,136 @@
+<h1 id="how-.then-actually-makes-few-asynchronous-calls-happen-in-particular-order-one-after-another">How .then()
+  actually makes few asynchronous calls happen in particular order one after another</h1>
+<p>A&gt; https://spring.io/understanding/javascript-promises</p>
+<p>A function passed to then can also return another promise. This allows asynchronous operations to be chained
+  together, so that they are guaranteed to happen in the correct order.</p>
+<p>B&gt;
+  https://medium.com/codebuddies/getting-to-know-asynchronous-javascript-callbacks-promises-and-async-await-17e0673281ee
+</p>
+<p>The true power of promises is shown when you have several asynchronous operations that depend on each other. So let's
+  take the case where we have to make a request that depends on the result of another request.</p>
+<h2 id="callback-hell-example">Callback Hell Example</h2>
+<p>Callbacks are a good way to declare what will happen once an I/O operation has a result, but what if you want to use
+  that data in order to make another request? You can only handle the result of the request (if we use the example
+  above) within the callback function provided.</p>
+<div class="sourceCode" id="cb1">
+  <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> request <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;request&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">let</span> result<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="at">request</span>(<span class="st">&#39;http://www.google.com&#39;</span><span class="op">,</span> (error<span class="op">,</span> response<span class="op">,</span> body) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="cf">if</span> (error) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-7" title="7">        <span class="co">// Handle error</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        result <span class="op">=</span> body<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;Request successful&quot;</span>)</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb1-13" title="13"></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="va">console</span>.<span class="at">log</span>(result)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="co">/* OUTPUT</span></a>
+<a class="sourceLine" id="cb1-17" title="17"></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="co">undefined</span></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="co">Request successful</span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="co">*/</span></a></code></pre>
+</div>
+<p>In this example above, the variable “result" will not have a value when printed to the console at the last line. And
+  will output “undefined" to the console because at the time that line is being executed, the callback has not been
+  called. Even if the request were somehow to complete before the result variable is printed to the console (which is
+  almost impossible as though, as inside the callback I am making a network request to google.com server), this code
+  will still run to completion before the callback is executed anyway because that is the nature of the non-blocking I/O
+  model in JavaScript.</p>
+<h2
+  id="because-by-the-non-blocking-architecture-of-js-node-while-the-callback-is-being-executed-making-a-request-to-google.com-in-this-case---the-rest-of-the-code-after-the-callback-functions-block-will-continue-to-get-executed.">
+  Because, by the non-blocking architecture, of JS / Node, while the callback is being executed ( making a request to
+  google.com in this case) - the rest of the code after the callback function's block will continue to get executed.
+</h2>
+<p><code>( See my explanation in - Asynchronous-Non-blocking-Mechanism-in-Node.md)</code></p>
+<p>So if we want to do a second request based on the result of a first one we have to do it inside the callback function
+  of the first request because that is where the result will be available:</p>
+<div class="sourceCode" id="cb2">
+  <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">var</span> request <span class="op">=</span> <span class="at">require</span>(<span class="st">&#39;request&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw">let</span> result<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="at">request</span>(<span class="st">&#39;http://www.google.com&#39;</span><span class="op">,</span> <span class="kw">function</span> (firstError<span class="op">,</span> firstResponse<span class="op">,</span> firstBody) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="cf">if</span>(firstError)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="co">// Handle error.</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-10" title="10">        <span class="at">request</span>(<span class="vs">`https://www.facebook.com`</span><span class="op">,</span> <span class="kw">function</span> (secondError<span class="op">,</span> secondResponse<span class="op">,</span> secondBody) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-11" title="11">            <span class="cf">if</span>(secondError)<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-12" title="12">                <span class="co">// Handle error.</span></a>
+<a class="sourceLine" id="cb2-13" title="13">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-14" title="14">            <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-15" title="15">                result <span class="op">=</span> secondBody<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-16" title="16">                <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;successfully hit facebook server&#39;</span>)</a>
+<a class="sourceLine" id="cb2-17" title="17">            <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-18" title="18">        <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-19" title="19">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-21" title="21"></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="va">console</span>.<span class="at">log</span>(result)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-23" title="23"></a>
+<a class="sourceLine" id="cb2-24" title="24"><span class="co">/* OUTPUT</span></a>
+<a class="sourceLine" id="cb2-25" title="25"></a>
+<a class="sourceLine" id="cb2-26" title="26"><span class="co">undefined</span></a>
+<a class="sourceLine" id="cb2-27" title="27"><span class="co">successfully hit facebook server</span></a>
+<a class="sourceLine" id="cb2-28" title="28"><span class="co">*/</span></a></code></pre>
+</div>
+<p>One thing to note here is the first argument in every callback function will contain an error if something went
+  wrong, or will be empty if all went well. This pattern is called “error first callbacks" and is very common. It is the
+  standard pattern for callback-based APIs in NodeJs. This means that for every callback declared we need to check if
+  there is an error and that just adds to the mess when dealing with nested callbacks.</p>
+<p>This is the anti-pattern that has been named “callback hell".</p>
+<h3
+  id="a-promise-is-an-object-that-wraps-an-asynchronous-operation-and-notifies-when-its-done.-this-sounds-exactly-like-callbacks-but-the-important-differences-are-in-the-usage-of-promises.-instead-of-providing-a-callback-a-promise-has-its-own-methods-.then-which-you-call-to-tell-the-promise-what-will-happen-when-it-is-successful-or-when-it-fails.-the-methods-a-promise-provides-are-then-for-when-a-successful-result-is-available-and-catch-for-when-something-went-wrong.">
+  A promise is an object that wraps an asynchronous operation and notifies when it's done. This sounds exactly like
+  callbacks, but the important differences are in the usage of Promises. Instead of providing a callback, a promise has
+  its own methods (.then) which you call to tell the promise what will happen when it is successful or when it fails.
+  The methods a promise provides are “then(…)" for when a successful result is available and “catch(…)" for when
+  something went wrong.</h3>
+<p>Below is general syntax</p>
+<div class="sourceCode" id="cb3">
+  <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="at">someAsyncOperation</span>(someParams)</a>
+<a class="sourceLine" id="cb3-2" title="2">.<span class="at">then</span>(<span class="kw">function</span>(result)<span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="co">// Do something with the result</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb3-5" title="5">.<span class="at">catch</span>(<span class="kw">function</span>(error)<span class="op">{</span></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="co">// Handle error</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="op">}</span>)<span class="op">;</span></a></code></pre>
+</div>
+<p>So, handle the above case with Promise I am using “axios" that is similar to “request" package but it uses promises
+  instead of callbacks.</p>
+<div class="sourceCode" id="cb4">
+  <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">const</span> axios <span class="op">=</span> <span class="at">require</span>('axios')<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="va">axios</span>.<span class="at">get</span>('http<span class="op">:</span><span class="co">//www.somepage.com&#39;)</span></a>
+<a class="sourceLine" id="cb4-4" title="4">.<span class="at">then</span>(<span class="kw">function</span> (response) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="co">// response being the result of the first request</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="co">// Returns another promise to the next .then(..) in the chain</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="cf">return</span> <span class="va">axios</span>.<span class="at">get</span>(<span class="vs">`http://www.somepage.com/</span><span class="sc">${</span><span class="va">response</span>.<span class="at">someValue</span><span class="sc">}</span><span class="vs">`</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb4-9" title="9">.<span class="at">then</span>(<span class="kw">function</span> response <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="co">// response being the result of the second request</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="co">// Handle response</span></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb4-13" title="13">.<span class="at">catch</span>(<span class="kw">function</span> (error) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-14" title="14">    <span class="co">// Handle error.</span></a>
+<a class="sourceLine" id="cb4-15" title="15"><span class="op">}</span>)<span class="op">;</span></a></code></pre>
+</div>
+<p>Instead of nesting callbacks inside callbacks inside callbacks, you chain .then() calls together making it more
+  readable and easier to follow. Every .then() should either return a new Promise or just a value or object which will
+  be passed to the next .then() in the chain. Another important thing to notice is that even though we are doing two
+  different asynchronous requests we only have one .catch() where we handle our errors. That's because any error that
+  occurs in the Promise chain will stop further execution and an error will end up in the next .catch() in the chain.
+</p>
+<p>A friendly reminder: just like with callback based APIs, this is still asynchronous operations. The code that is
+  executed when the request has finished — that is, the subsequent .then() calls — is put on the event loop just like a
+  callback function would be. This means you cannot access any variables passed to or declared in the Promise chain
+  outside the Promise. The same goes for errors thrown in the Promise chain.</p>
+<h3 id="as-a-side-note-remember-the-general-syntax-of-chaining-together-axios-calls">As a side note, remember the
+  general syntax of chaining together axios calls</h3>
+<p>```JS axios.get('http://google.com') .then((response) =&gt; { // do something with Google res return
+  axios.get('http://apple.com') // response being the result of the first request // do something with Apple res })
+  .catch((err) =&gt; { // handle err })</p>

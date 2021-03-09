@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-a-focus-ring-what-is-the-correct-solution-to-handle-them">What is a focus ring? What is the correct solution to handle them?</h3>
+<h4 id="answer">Answer</h4>
+<p>A focus ring is a visible outline given to focusable elements such as buttons and anchor tags. It varies depending on the vendor, but generally it appears as a blue outline around the element to indicate it is currently focused.</p>
+<p>In the past, many people specified <code>outline: 0;</code> on the element to remove the focus ring. However, this causes accessibility issues for keyboard users because the focus state may not be clear. When not specified though, it causes an unappealing blue ring to appear around an element.</p>
+<p>In recent times, frameworks like Bootstrap have opted to use a more appealing <code>box-shadow</code> outline to replace the default focus ring. However, this is still not ideal for mouse users.</p>
+<p>The best solution is an upcoming pseudo-selector <code>:focus-visible</code> which can be polyfilled today with JavaScript. It will only show a focus ring if the user is using a keyboard and leave it hidden for mouse users. This keeps both aesthetics for mouse use and accessibility for keyboard use.</p>
+<h4 id="good-to-hear">Good to hear</h4>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://css-tricks.com/focus-visible-and-backwards-compatibility/">:focus-visible</a></li>
+</ul>
+<!-- tags: (css) -->
+<!-- expertise: (2) -->
+</body></html>

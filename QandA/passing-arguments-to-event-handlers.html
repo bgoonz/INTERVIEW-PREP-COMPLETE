@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="how-do-you-pass-an-argument-to-an-event-handler-or-callback">How do you pass an argument to an event handler or callback?</h3>
+<h4 id="answer">Answer</h4>
+<p>You can use an arrow function to wrap around an event handler and pass arguments, which is equivalent to calling <code>bind</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="op">&lt;</span>button onClick<span class="op">={</span>() <span class="kw">=&gt;</span> <span class="kw">this</span>.<span class="at">handleClick</span>(id)<span class="op">}</span> /&gt;</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="op">&lt;</span>button onClick<span class="op">={</span><span class="kw">this</span>.<span class="va">handleClick</span>.<span class="at">bind</span>(<span class="kw">this</span><span class="op">,</span> id)<span class="op">}</span> /&gt;</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://reactjs.org/docs/handling-events.html">React docs on Handling Events</a></li>
+</ul>
+<!-- tags: (react,javascript) -->
+<!-- expertise: (1) -->
+</body></html>

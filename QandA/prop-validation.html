@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="how-to-apply-prop-validation-in-react">How to apply prop validation in React?</h3>
+<h4 id="answer">Answer</h4>
+<p>When the application is running in development mode, React will automatically check for all props that we set on components to make sure they are the correct data type. For incorrect data types, it will generate warning messages in the console for development mode. They are stripped in production mode due to their performance impact. Required props are defined with <code>isRequired</code>.</p>
+<p>For example, we define <code>propTypes</code> for component as below:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="im">import</span> PropTypes <span class="im">from</span> <span class="st">&quot;prop-types&quot;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">class</span> User <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="kw">static</span> propTypes <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="dt">name</span><span class="op">:</span> <span class="va">PropTypes</span>.<span class="va">string</span>.<span class="at">isRequired</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="dt">age</span><span class="op">:</span> <span class="va">PropTypes</span>.<span class="va">number</span>.<span class="at">isRequired</span></a>
+<a class="sourceLine" id="cb1-7" title="7">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="cf">return</span> (</a>
+<a class="sourceLine" id="cb1-11" title="11">      <span class="op">&lt;</span>h1<span class="op">&gt;</span>Welcome<span class="op">,</span> <span class="op">{</span><span class="kw">this</span>.<span class="va">props</span>.<span class="at">name</span><span class="op">}</span>&lt;/h1<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-12" title="12">      <span class="op">&lt;</span>h2<span class="op">&gt;</span>Age<span class="op">,</span> <span class="op">{</span><span class="kw">this</span>.<span class="va">props</span>.<span class="at">age</span><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-13" title="13">    )</a>
+<a class="sourceLine" id="cb1-14" title="14">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="op">}</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>We can define custom <code>propTypes</code></li>
+<li>Using <code>propTypes</code> is not mandatory. However, it is a good practice and can reduce bugs.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<!-- tags: (react) -->
+<!-- expertise: (2) -->
+</body></html>
