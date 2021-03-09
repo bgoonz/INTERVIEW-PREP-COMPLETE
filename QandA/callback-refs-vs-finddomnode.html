@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>;
+    <h3 id="which-is-the-preferred-option-between-callback-refs-and-finddomnode">Which is the preferred option between
+        callback refs and findDOMNode()?</h3>
+    <h4 id="answer">Answer</h4>
+    <p>Callback refs are preferred over the <code>findDOMNode()</code> API, due to the fact that
+        <code>findDOMNode()</code> prevents certain improvements in React in the future.
+    </p>
+    <div class="sourceCode" id="cb1">
+        <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// Legacy approach using findDOMNode()</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">class</span> MyComponent <span class="kw">extends</span> Component <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="at">componentDidMount</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="at">findDOMNode</span>(<span class="kw">this</span>).<span class="at">scrollIntoView</span>()</a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">  <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="cf">return</span> <span class="op">&lt;</span>div /<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="co">// Recommended approach using callback refs</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="kw">class</span> MyComponent <span class="kw">extends</span> Component <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-14" title="14">  <span class="at">componentDidMount</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-15" title="15">    <span class="kw">this</span>.<span class="va">node</span>.<span class="at">scrollIntoView</span>()</a>
+<a class="sourceLine" id="cb1-16" title="16">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-17" title="17"></a>
+<a class="sourceLine" id="cb1-18" title="18">  <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-19" title="19">    <span class="cf">return</span> <span class="op">&lt;</span>div ref<span class="op">={</span>node <span class="kw">=&gt;</span> (<span class="kw">this</span>.<span class="at">node</span> <span class="op">=</span> node)<span class="op">}</span> /&gt;</a>
+<a class="sourceLine" id="cb1-20" title="20">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="op">}</span></a></code></pre>
+</div>
+    <h4 id="good-to-hear">Good to hear</h4>
+    <ul>
+        <li>Callback refs are preferred over <code>findDOMNode()</code>.</li>
+    </ul>
+    <h5 id="additional-links">Additional links</h5>
+    <ul>
+        <li><a href="https://reactjs.org/docs/refs-and-the-dom.html#exposing-dom-refs-to-parent-components">React docs
+                on Refs and the DOM</a></li>
+    </ul>
+    <!-- tags: (react,javascript) -->
+    <!-- expertise: (2) -->
+</body>
+
+</html>

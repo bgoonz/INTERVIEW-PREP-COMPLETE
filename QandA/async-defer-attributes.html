@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-are-defer-and-async-attributes-on-a-script-tag">What are <code>defer</code> and <code>async</code> attributes on a <code>&lt;script&gt;</code> tag?</h3>
+<h4 id="answer">Answer</h4>
+<p>If neither attribute is present, the script is downloaded and executed synchronously, and will halt parsing of the document until it has finished executing (default behavior). Scripts are downloaded and executed in the order they are encountered.</p>
+<p>The <code>defer</code> attribute downloads the script while the document is still parsing but waits until the document has finished parsing before executing it, equivalent to executing inside a <code>DOMContentLoaded</code> event listener. <code>defer</code> scripts will execute in order.</p>
+<p>The <code>async</code> attribute downloads the script during parsing the document but will pause the parser to execute the script before it has fully finished parsing. <code>async</code> scripts will not necessarily execute in order.</p>
+<p>Note: both attributes must only be used if the script has a <code>src</code> attribute (i.e. not an inline script).</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;myscript.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;myscript.js&quot;</span><span class="ot"> defer</span><span class="kw">&gt;&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;myscript.js&quot;</span><span class="ot"> async</span><span class="kw">&gt;&lt;/script&gt;</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Placing a <code>defer</code> script in the <code>&lt;head&gt;</code> allows the browser to download the script while the page is still parsing, and is therefore a better option than placing the script before the end of the body.</li>
+<li>If the scripts rely on each other, use <code>defer</code>.</li>
+<li>If the script is independent, use <code>async</code>.</li>
+<li>Use <code>defer</code> if the DOM must be ready and the contents are not placed within a <code>DOMContentLoaded</code> listener.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<!-- Whenever possible, link a more detailed explanation. -->
+<ul>
+<li><a href="http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html">async vs defer attributes</a></li>
+</ul>
+<!-- tags: (html) -->
+<!-- expertise: (1) -->
+</body></html>

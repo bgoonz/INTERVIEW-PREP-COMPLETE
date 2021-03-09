@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>;
+    <h3 id="what-is-a-callback-can-you-show-an-example-using-one">What is a callback? Can you show an example using one?
+    </h3>
+    <h4 id="answer">Answer</h4>
+    <p>Callbacks are functions passed as an argument to another function to be executed once an event has occurred or a
+        certain task is complete, often used in asynchronous code. Callback functions are invoked later by a piece of
+        code but can be declared on initialization without being invoked.</p>
+    <p>As an example, event listeners are asynchronous callbacks that are only executed when a specific event occurs.
+    </p>
+    <div class="sourceCode" id="cb1">
+        <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">onClick</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;The user clicked on the page.&quot;</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="va">document</span>.<span
+        class="at">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span>
+    onClick)</a></code></pre>
+</div>
+<p>However, callbacks can also be synchronous. The following <code>map</code> function takes a callback function
+    that is invoked synchronously for each iteration of the loop (array element).</p>
+<div class="sourceCode" id="cb2">
+    <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> map <span class="op">=</span> (arr<span class="op">,</span> callback) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="kw">const</span> result <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">arr</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="va">result</span>.<span class="at">push</span>(<span class="at">callback</span>(arr[i]<span class="op">,</span> i))</a>
+<a class="sourceLine" id="cb2-5" title="5">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="cf">return</span> result</a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="at">map</span>([<span class="dv">1</span><span
+        class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span><span
+        class="op">,</span> <span class="dv">4</span><span class="op">,</span> <span class="dv">5</span>]<span
+        class="op">,</span> n <span class="kw">=&gt;</span> n <span class="op">*</span> <span class="dv">2</span>) <span
+        class="co">// [2, 4, 6, 8, 10]</span></a></code></pre>
+</div>
+    <h4 id="good-to-hear">Good to hear</h4>
+    <ul>
+        <li>Functions are first-class objects in JavaScript</li>
+        <li>Callbacks vs Promises</li>
+    </ul>
+    <h5 id="additional-links">Additional links</h5>
+    <!-- Whenever possible, link a more detailed explanation. -->
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Callback_function">MDN docs for callbacks</a>
+        </li>
+    </ul>
+    <!-- tags: (javascript) -->
+    <!-- expertise: (1) -->
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-the-difference-between-the-postfix-i-and-prefix-i-increment-operators">What is the difference between the postfix <code>i++</code> and prefix <code>++i</code> increment operators?</h3>
+<h4 id="answer">Answer</h4>
+<p>Both increment the variable value by 1. The difference is what they evaluate to.</p>
+<p>The postfix increment operator evaluates to the value <em>before</em> it was incremented.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-2" title="2">i<span class="op">++</span> <span class="co">// 0</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co">// i === 1</span></a></code></pre></div>
+<p>The prefix increment operator evaluates to the value <em>after</em> it was incremented.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="op">++</span>i <span class="co">// 1</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">// i === 1</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<h5 id="additional-links">Additional links</h5>
+<!-- tags: (javascript) -->
+<!-- expertise: (0) -->
+</body></html>

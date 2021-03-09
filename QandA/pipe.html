@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="create-a-function-pipe-that-performs-left-to-right-function-composition-by-returning-a-function-that-accepts-one-argument.">Create a function <code>pipe</code> that performs left-to-right function composition by returning a function that accepts one argument.</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> square <span class="op">=</span> v <span class="kw">=&gt;</span> v <span class="op">*</span> v</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">const</span> double <span class="op">=</span> v <span class="kw">=&gt;</span> v <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">const</span> addOne <span class="op">=</span> v <span class="kw">=&gt;</span> v <span class="op">+</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">const</span> res <span class="op">=</span> <span class="at">pipe</span>(square<span class="op">,</span> double<span class="op">,</span> addOne)</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="at">res</span>(<span class="dv">3</span>) <span class="co">// 19; addOne(double(square(3)))</span></a></code></pre></div>
+<h4 id="answer">Answer</h4>
+<p>Gather all supplied arguments using the rest operator <code>...</code> and return a unary function that uses <code>Array.prototype.reduce()</code> to run the value through the series of functions before returning the final value.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> pipe <span class="op">=</span> (...<span class="at">fns</span>) <span class="kw">=&gt;</span> x <span class="kw">=&gt;</span> <span class="va">fns</span>.<span class="at">reduce</span>((v<span class="op">,</span> fn) <span class="kw">=&gt;</span> <span class="at">fn</span>(v)<span class="op">,</span> x)</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Function composition is the process of combining two or more functions to produce a new function.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0">What is function composition?</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (2) -->
+</body></html>

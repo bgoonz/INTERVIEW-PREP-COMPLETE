@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-the-this-keyword-and-how-does-it-work">What is the <code>this</code> keyword and how does it work?</h3>
+<h4 id="answer">Answer</h4>
+<p>The <code>this</code> keyword is an object that represents the context of an executing function. Regular functions can have their <code>this</code> value changed with the methods <code>call()</code>, <code>apply()</code> and <code>bind()</code>. Arrow functions implicitly bind <code>this</code> so that it refers to the context of its lexical environment, regardless of whether or not its context is set explicitly with <code>call()</code>.</p>
+<p>Here are some common examples of how <code>this</code> works:</p>
+<h5 id="object-literals">Object literals</h5>
+<p><code>this</code> refers to the object itself inside regular functions if the object precedes the invocation of the function.</p>
+<p>Properties set as <code>this</code> do not refer to the object.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">var</span> myObject <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="dt">property</span><span class="op">:</span> <span class="kw">this</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="dt">regularFunction</span><span class="op">:</span> <span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="cf">return</span> <span class="kw">this</span></a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="dt">arrowFunction</span><span class="op">:</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="cf">return</span> <span class="kw">this</span></a>
+<a class="sourceLine" id="cb1-8" title="8">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="dt">iife</span><span class="op">:</span> (<span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="cf">return</span> <span class="kw">this</span></a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="op">}</span>)()</a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="va">myObject</span>.<span class="at">regularFunction</span>() <span class="co">// myObject</span></a>
+<a class="sourceLine" id="cb1-14" title="14">myObject[<span class="st">&quot;regularFunction&quot;</span>]() <span class="co">// my Object</span></a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="va">myObject</span>.<span class="at">property</span> <span class="co">// NOT myObject; lexical `this`</span></a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="va">myObject</span>.<span class="at">arrowFunction</span>() <span class="co">// NOT myObject; lexical `this`</span></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="va">myObject</span>.<span class="at">iife</span> <span class="co">// NOT myObject; lexical `this`</span></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="kw">const</span> regularFunction <span class="op">=</span> <span class="va">myObject</span>.<span class="at">regularFunction</span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="at">regularFunction</span>() <span class="co">// NOT myObject; lexical `this`</span></a></code></pre></div>
+<h5 id="event-listeners">Event listeners</h5>
+<p><code>this</code> refers to the element listening to the event.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="va">document</span>.<span class="va">body</span>.<span class="at">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span> <span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(<span class="kw">this</span>) <span class="co">// document.body</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="op">}</span>)</a></code></pre></div>
+<h5 id="constructors">Constructors</h5>
+<p><code>this</code> refers to the newly created object.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> Example <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="at">constructor</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="va">console</span>.<span class="at">log</span>(<span class="kw">this</span>) <span class="co">// myExample</span></a>
+<a class="sourceLine" id="cb3-4" title="4">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="kw">const</span> myExample <span class="op">=</span> <span class="kw">new</span> <span class="at">Example</span>()</a></code></pre></div>
+<h5 id="manual">Manual</h5>
+<p>With <code>call()</code> and <code>apply()</code>, <code>this</code> refers to the object passed as the first argument.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">var</span> myFunction <span class="op">=</span> <span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="cf">return</span> <span class="kw">this</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="va">myFunction</span>.<span class="at">call</span>(<span class="op">{</span> <span class="dt">customThis</span><span class="op">:</span> <span class="kw">true</span> <span class="op">}</span>) <span class="co">// { customThis: true }</span></a></code></pre></div>
+<h5 id="unwanted-this">Unwanted <code>this</code></h5>
+<p>Because <code>this</code> can change depending on the scope, it can have unexpected values when using regular functions.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">var</span> obj <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="dt">arr</span><span class="op">:</span> [<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb5-3" title="3">  <span class="at">doubleArr</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="cf">return</span> <span class="kw">this</span>.<span class="va">arr</span>.<span class="at">map</span>(<span class="kw">function</span>(value) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-5" title="5">      <span class="co">// this is now this.arr</span></a>
+<a class="sourceLine" id="cb5-6" title="6">      <span class="cf">return</span> <span class="kw">this</span>.<span class="at">double</span>(value)</a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb5-8" title="8">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb5-9" title="9">  <span class="at">double</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="cf">return</span> value <span class="op">*</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb5-11" title="11">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="op">}</span></a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="va">obj</span>.<span class="at">doubleArr</span>() <span class="co">// Uncaught TypeError: this.double is not a function</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>In non-strict mode, global <code>this</code> is the global object (<code>window</code> in browsers), while in strict mode global <code>this</code> is <code>undefined</code>.</li>
+<li><code>Function.prototype.call</code> and <code>Function.prototype.apply</code> set the <code>this</code> context of an executing function as the first argument, with <code>call</code> accepting a variadic number of arguments thereafter, and <code>apply</code> accepting an array as the second argument which are fed to the function in a variadic manner.</li>
+<li><code>Function.prototype.bind</code> returns a new function that enforces the <code>this</code> context as the first argument which cannot be changed by other functions.</li>
+<li>If a function requires its <code>this</code> context to be changed based on how it is called, you must use the <code>function</code> keyword. Use arrow functions when you want <code>this</code> to be the surrounding (lexical) context.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this"><code>this</code> on MDN</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (2) -->
+</body></html>

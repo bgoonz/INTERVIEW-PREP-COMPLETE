@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-are-promises">What are Promises?</h3>
+<h4 id="answer">Answer</h4>
+<p>The <code>Promise</code> object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. An example can be the following snippet, which after 100ms prints out the result string to the standard output. Also, note the catch, which can be used for error handling. <code>Promise</code>s are chainable.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">new</span> <span class="at">Promise</span>((resolve<span class="op">,</span> reject) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="at">setTimeout</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="at">resolve</span>(<span class="st">&quot;result&quot;</span>)</a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="op">},</span> <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="op">}</span>)</a>
+<a class="sourceLine" id="cb1-6" title="6">  .<span class="at">then</span>(<span class="va">console</span>.<span class="at">log</span>)</a>
+<a class="sourceLine" id="cb1-7" title="7">  .<span class="at">catch</span>(<span class="va">console</span>.<span class="at">error</span>)</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Take a look into the other questions regarding <code>Promise</code>s!</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e772618">Master the JavaScript Interview: What is a Promise?</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (1) -->
+</body></html>

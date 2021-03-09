@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="describe-the-different-ways-to-create-an-object.-when-should-certain-ways-be-preferred-over-others">Describe the different ways to create an object. When should certain ways be preferred over others?</h3>
+<h4 id="answer">Answer</h4>
+<h5 id="object-literal">Object literal</h5>
+<p>Often used to store one occurrence of data.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> person <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;John&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="dt">age</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="at">birthday</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="kw">this</span>.<span class="at">age</span><span class="op">++</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="va">person</span>.<span class="at">birthday</span>() <span class="co">// person.age === 51</span></a></code></pre></div>
+<h5 id="constructor">Constructor</h5>
+<p>Often used when you need to create multiple instances of an object, each with their own data that other instances of the class cannot affect. The <code>new</code> operator must be used before invoking the constructor or the global object will be mutated.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">Person</span>(name<span class="op">,</span> age) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="kw">this</span>.<span class="at">name</span> <span class="op">=</span> name</a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="kw">this</span>.<span class="at">age</span> <span class="op">=</span> age</a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="va">Person</span>.<span class="va">prototype</span>.<span class="at">birthday</span> <span class="op">=</span> <span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="kw">this</span>.<span class="at">age</span><span class="op">++</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="kw">const</span> person1 <span class="op">=</span> <span class="kw">new</span> <span class="at">Person</span>(<span class="st">&quot;John&quot;</span><span class="op">,</span> <span class="dv">50</span>)</a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="kw">const</span> person2 <span class="op">=</span> <span class="kw">new</span> <span class="at">Person</span>(<span class="st">&quot;Sally&quot;</span><span class="op">,</span> <span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="va">person1</span>.<span class="at">birthday</span>() <span class="co">// person1.age === 51</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="va">person2</span>.<span class="at">birthday</span>() <span class="co">// person2.age === 21</span></a></code></pre></div>
+<h5 id="factory-function">Factory function</h5>
+<p>Creates a new object similar to a constructor, but can store private data using a closure. There is also no need to use <code>new</code> before invoking the function or the <code>this</code> keyword. Factory functions usually discard the idea of prototypes and keep all properties and methods as own properties of the object.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> createPerson <span class="op">=</span> (name<span class="op">,</span> age) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="kw">const</span> birthday <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="va">person</span>.<span class="at">age</span><span class="op">++</span></a>
+<a class="sourceLine" id="cb3-3" title="3">  <span class="kw">const</span> person <span class="op">=</span> <span class="op">{</span> name<span class="op">,</span> age<span class="op">,</span> birthday <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-4" title="4">  <span class="cf">return</span> person</a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="kw">const</span> person <span class="op">=</span> <span class="at">createPerson</span>(<span class="st">&quot;John&quot;</span><span class="op">,</span> <span class="dv">50</span>)</a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="va">person</span>.<span class="at">birthday</span>() <span class="co">// person.age === 51</span></a></code></pre></div>
+<h5 id="object.create"><code>Object.create()</code></h5>
+<p>Sets the prototype of the newly created object.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">const</span> personProto <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="at">birthday</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">this</span>.<span class="at">age</span><span class="op">++</span></a>
+<a class="sourceLine" id="cb4-4" title="4">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="kw">const</span> person <span class="op">=</span> <span class="va">Object</span>.<span class="at">create</span>(personProto)</a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="va">person</span>.<span class="at">age</span> <span class="op">=</span> <span class="dv">50</span></a>
+<a class="sourceLine" id="cb4-8" title="8"><span class="va">person</span>.<span class="at">birthday</span>() <span class="co">// person.age === 51</span></a></code></pre></div>
+<p>A second argument can also be supplied to <code>Object.create()</code> which acts as a descriptor for the new properties to be defined.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="va">Object</span>.<span class="at">create</span>(personProto<span class="op">,</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="dt">age</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="dt">value</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="dt">writable</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="dt">enumerable</span><span class="op">:</span> <span class="kw">true</span></a>
+<a class="sourceLine" id="cb5-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="op">}</span>)</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Prototypes are objects that other objects inherit properties and methods from.</li>
+<li>Factory functions offer private properties and methods through a closure but increase memory usage as a tradeoff, while classes do not have private properties or methods but reduce memory impact by reusing a single prototype object.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<!-- Whenever possible, link a more detailed explanation. -->
+<!-- tags: (javascript) -->
+<!-- expertise: (1) -->
+</body></html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-the-reason-for-wrapping-the-entire-contents-of-a-javascript-source-file-in-a-function-that-is-immediately-invoked">What is the reason for wrapping the entire contents of a JavaScript source file in a function that is immediately invoked?</h3>
+<h4 id="answer">Answer</h4>
+<p>This technique is very common in JavaScript libraries. It creates a closure around the entire contents of the file which creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries. The function is immediately invoked so that the namespace (library name) is assigned the return value of the function.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> myLibrary <span class="op">=</span> (<span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="kw">var</span> privateVariable <span class="op">=</span> <span class="dv">2</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="cf">return</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="dt">publicMethod</span><span class="op">:</span> () <span class="kw">=&gt;</span> privateVariable</a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">}</span>)()</a>
+<a class="sourceLine" id="cb1-7" title="7">privateVariable <span class="co">// ReferenceError</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="va">myLibrary</span>.<span class="at">publicMethod</span>() <span class="co">// 2</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>Used among many popular JavaScript libraries</li>
+<li>Creates a private namespace</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">MDN docs for closures</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (1) -->
+</body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="generate-an-array-containing-the-fibonacci-sequence-up-until-the-nth-term.">Generate an array, containing the Fibonacci sequence, up until the nth term.</h3>
+<h4 id="answer">Answer</h4>
+<p>Initialize an empty array of length <code>n</code>. Use <code>Array.prototype.reduce()</code> to add values into the array, using the sum of the last two values, except for the first two.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> fibonacci <span class="op">=</span> n <span class="kw">=&gt;</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  [...<span class="at">Array</span>(n)].<span class="at">reduce</span>(</a>
+<a class="sourceLine" id="cb1-3" title="3">    (acc<span class="op">,</span> val<span class="op">,</span> i) <span class="kw">=&gt;</span> <span class="va">acc</span>.<span class="at">concat</span>(i <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">?</span> acc[i <span class="op">-</span> <span class="dv">1</span>] <span class="op">+</span> acc[i <span class="op">-</span> <span class="dv">2</span>] : i)<span class="op">,</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    []</a>
+<a class="sourceLine" id="cb1-5" title="5">  )</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://github.com/Chalarangelo/30-seconds-of-code/blob/master/snippets_archive/fibonacciUntilNum.md">Similar problem</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (1) -->
+</body></html>

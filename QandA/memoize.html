@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-memoization">What is memoization?</h3>
+<h4 id="answer">Answer</h4>
+<p>Memoization is the process of caching the output of function calls so that subsequent calls are faster. Calling the function again with the same input will return the cached output without needing to do the calculation again.</p>
+<p>A basic implementation in JavaScript looks like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">const</span> memoize <span class="op">=</span> fn <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="kw">const</span> cache <span class="op">=</span> <span class="kw">new</span> <span class="at">Map</span>()</a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="cf">return</span> value <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">const</span> cachedResult <span class="op">=</span> <span class="va">cache</span>.<span class="at">get</span>(value)</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="cf">if</span> (cachedResult <span class="op">!==</span> <span class="kw">undefined</span>) <span class="cf">return</span> cachedResult</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="kw">const</span> result <span class="op">=</span> <span class="at">fn</span>(value)</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="va">cache</span>.<span class="at">set</span>(value<span class="op">,</span> result)</a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="cf">return</span> result</a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="op">}</span></a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>The above technique returns a unary function even if the function can take multiple arguments.</li>
+<li>The first function call will be slower than usual because of the overhead created by checking if a cached result exists and setting a result before returning the value.</li>
+<li>Memoization increases performance on subsequent function calls but still needs to do work on the first call.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<!-- Whenever possible, link a more detailed explanation. -->
+<ul>
+<li><a href="https://www.sitepoint.com/implementing-memoization-in-javascript/">Implementing memoization in JavaScript</a></li>
+</ul>
+<!-- tags: (javascript) -->
+<!-- expertise: (2) -->
+</body></html>

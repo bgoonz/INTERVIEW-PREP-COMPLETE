@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="what-is-the-dom">What is the DOM?</h3>
+<h4 id="answer">Answer</h4>
+<p>The DOM (Document Object Model) is a cross-platform API that treats HTML and XML documents as a tree structure consisting of nodes. These nodes (such as elements and text nodes) are objects that can be programmatically manipulated and any visible changes made to them are reflected live in the document. In a browser, this API is available to JavaScript where DOM nodes can be manipulated to change their styles, contents, placement in the document, or interacted with through event listeners.</p>
+<h4 id="good-to-hear">Good to hear</h4>
+<ul>
+<li>The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.</li>
+<li>The DOM is constructed progressively in the browser as a page loads, which is why scripts are often placed at the bottom of a page, in the <code>&lt;head&gt;</code> with a <code>defer</code> attribute, or inside a <code>DOMContentLoaded</code> event listener. Scripts that manipulate DOM nodes should be run after the DOM has been constructed to avoid errors.</li>
+<li><code>document.getElementById()</code> and <code>document.querySelector()</code> are common functions for selecting DOM nodes.</li>
+<li>Setting the <code>innerHTML</code> property to a new value runs the string through the HTML parser, offering an easy way to append dynamic HTML content to a node.</li>
+</ul>
+<h5 id="additional-links">Additional links</h5>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/DOM">MDN docs for DOM</a></li>
+</ul>
+<!-- tags: (html,javascript) -->
+<!-- expertise: (1) -->
+</body></html>

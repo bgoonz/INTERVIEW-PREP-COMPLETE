@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>;
+    <h3 id="what-is-the-purpose-of-callback-function-as-an-argument-of-setstate">What is the purpose of callback
+        function as an argument of <code>setState</code>?</h3>
+    <h4 id="answer">Answer</h4>
+    <p>The callback function is invoked when <code>setState</code> has finished and the component gets rendered. Since
+        <code>setState</code> is asynchronous, the callback function is used for any post action.
+    </p>
+    <div class="sourceCode" id="cb1">
+        <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="at">setState</span>(<span class="op">{</span> <span class="dt">name</span><span class="op">:</span> <span class="st">&quot;sudheer&quot;</span> <span class="op">},</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;The name has updated and component re-rendered&quot;</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">}</span>)</a></code></pre>
+</div>
+    <h4 id="good-to-hear">Good to hear</h4>
+    <ul>
+        <li>The callback function is invoked after <code>setState</code> finishes and is used for any post action.</li>
+        <li>It is recommended to use lifecycle method rather this callback function.</li>
+    </ul>
+    <h5 id="additional-links">Additional links</h5>
+    <ul>
+        <li><a href="https://reactjs.org/docs/react-component.html#setstate">React docs on <code>setState</code></a>
+        </li>
+    </ul>
+    <!-- tags: (react,javascript) -->
+    <!-- expertise: (1) -->
+</body>
+
+</html>

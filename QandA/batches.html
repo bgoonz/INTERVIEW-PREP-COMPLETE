@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>;
+<h3 id="create-a-function-batches-that-returns-the-maximum-number-of-whole-batches-that-can-be-cooked-from-a-recipe.">Create a function <code>batches</code> that returns the maximum number of whole batches that can be cooked from a recipe.</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="co">It accepts two objects as arguments: the first object is the recipe</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co">for the food, while the second object is the available ingredients.</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">Each ingredient&#39;s value is a number representing how many units there are.</span></a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="co">`batches(recipe, available)`</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co">*/</span></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co">// 0 batches can be made</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="at">batches</span>(</a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">flour</span><span class="op">:</span> <span class="dv">5</span> <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-12" title="12">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">132</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">48</span><span class="op">,</span> <span class="dt">flour</span><span class="op">:</span> <span class="dv">51</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-13" title="13">)</a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="at">batches</span>(</a>
+<a class="sourceLine" id="cb1-15" title="15">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">flour</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> <span class="dt">sugar</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">5</span> <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-16" title="16">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">1288</span><span class="op">,</span> <span class="dt">flour</span><span class="op">:</span> <span class="dv">9</span><span class="op">,</span> <span class="dt">sugar</span><span class="op">:</span> <span class="dv">95</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-17" title="17">)</a>
+<a class="sourceLine" id="cb1-18" title="18"></a>
+<a class="sourceLine" id="cb1-19" title="19"><span class="co">// 1 batch can be made</span></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="at">batches</span>(</a>
+<a class="sourceLine" id="cb1-21" title="21">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span> <span class="dt">cheese</span><span class="op">:</span> <span class="dv">10</span> <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-22" title="22">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">198</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">52</span><span class="op">,</span> <span class="dt">cheese</span><span class="op">:</span> <span class="dv">10</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-23" title="23">)</a>
+<a class="sourceLine" id="cb1-24" title="24"></a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="co">// 2 batches can be made</span></a>
+<a class="sourceLine" id="cb1-26" title="26"><span class="at">batches</span>(</a>
+<a class="sourceLine" id="cb1-27" title="27">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">sugar</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">20</span> <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-28" title="28">  <span class="op">{</span> <span class="dt">milk</span><span class="op">:</span> <span class="dv">5</span><span class="op">,</span> <span class="dt">sugar</span><span class="op">:</span> <span class="dv">120</span><span class="op">,</span> <span class="dt">butter</span><span class="op">:</span> <span class="dv">500</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-29" title="29">)</a></code></pre></div>
+<h4 id="answer">Answer</h4>
+<p>We must have all ingredients of the recipe available, and in quantities that are more than or equal to the number of units required. If just one of the ingredients is not available or lower than needed, we cannot make a single batch.</p>
+<p>Use <code>Object.keys()</code> to return the ingredients of the recipe as an array, then use <code>Array.prototype.map()</code> to map each ingredient to the ratio of available units to the amount required by the recipe. If one of the ingredients required by the recipe is not available at all, the ratio will evaluate to <code>NaN</code>, so the logical OR operator can be used to fallback to <code>0</code> in this case.</p>
+<p>Use the spread <code>...</code> operator to feed the array of all the ingredient ratios into <code>Math.min()</code> to determine the lowest ratio. Passing this entire result into <code>Math.floor()</code> rounds down to return the maximum number of whole batches.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">const</span> batches <span class="op">=</span> (recipe<span class="op">,</span> available) <span class="kw">=&gt;</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="va">Math</span>.<span class="at">floor</span>(</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="va">Math</span>.<span class="at">min</span>(...<span class="va">Object</span>.<span class="at">keys</span>(recipe).<span class="at">map</span>(k <span class="kw">=&gt;</span> available[k] / recipe[k] <span class="op">||</span> <span class="dv">0</span>))</a>
+<a class="sourceLine" id="cb2-4" title="4">  )</a></code></pre></div>
+<h4 id="good-to-hear">Good to hear</h4>
+<h5 id="additional-links">Additional links</h5>
+<!-- Whenever possible, link a more detailed explanation. -->
+<!-- tags: (javascript) -->
+<!-- expertise: (1) -->
+</body></html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>;
+    <h3 id="what-is-the-children-prop">What is the <code>children</code> prop?</h3>
+    <h4 id="answer">Answer</h4>
+    <p><code>children</code> is part of the props object passed to components that allows components to be passed as
+        data to other components, providing the ability to compose components cleanly. There are a number of methods
+        available in the React API to work with this prop, such as <code>React.Children.map</code>,
+        <code>React.Children.forEach</code>, <code>React.Children.count</code>, <code>React.Children.only</code> and
+        <code>React.Children.toArray</code>. A simple usage example of the children prop is as follows:
+    </p>
+    <div class="sourceCode" id="cb1">
+        <pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">GenericBox</span>(<span class="op">{</span> children <span class="op">}</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="cf">return</span> <span class="op">&lt;</span>div className<span class="op">=</span><span class="st">&quot;container&quot;</span><span class="op">&gt;{</span>children<span class="op">}</span>&lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">function</span> <span class="at">App</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="cf">return</span> (</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="op">&lt;</span>GenericBox<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-8" title="8">      <span class="op">&lt;</span>span<span class="op">&gt;</span>Hello&lt;/span<span class="op">&gt;</span> <span class="op">&lt;</span>span<span class="op">&gt;</span>World&lt;/span<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    &lt;/GenericBox<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">  )</a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="op">}</span></a></code></pre>
+    </div>
+    <h4 id="good-to-hear">Good to hear</h4>
+    <ul>
+        <li>Children is a prop that allows components to be passed as data to other components.</li>
+        <li>The React API provides methods to work with this prop.</li>
+    </ul>
+    <h5 id="additional-links">Additional links</h5>
+    <ul>
+        <li><a href="https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx">React docs on Children</a></li>
+    </ul>
+    <!-- tags: (react,javascript) -->
+    <!-- expertise: (2) -->
+</body>
+
+</html>
