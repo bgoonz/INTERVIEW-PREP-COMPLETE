@@ -10,7 +10,7 @@ we can achieve similar chaining using pure javascript. */
 // VERY IMPORTANTLY THE ARROW FUNCTION SYNTAX WILL NOT WORK IN THE BELOW
 
 
-var obj = function(){
+let obj = function () {
 
     this.i = 0; // public property
 

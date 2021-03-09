@@ -15,7 +15,7 @@ Convert character array back to string.
 if (!("splice" in String.prototype)) {
 	String.prototype.splice = function (startIndex, noOfcharToDelete, stringToInsert) {
 
-		var stringCharArr = this.split('');
+		let stringCharArr = this.split( '' );
 
 		// NOTE: Because splice() mutates the actual array (and
 	    // returns the removed values), we need to apply it to
@@ -29,11 +29,11 @@ if (!("splice" in String.prototype)) {
 
 // Test case - 
 
-var myStr = "Katie is sort of cool.";
+let myStr = "Katie is sort of cool.";
 
-var strToDel = "sort of cool";
+let strToDel = "sort of cool";
 
-var splicedStr = myStr.splice(
+let splicedStr = myStr.splice(
             myStr.indexOf( strToDel ),
             strToDel.length,
             "crazy-insane kinds of hot"

@@ -4,10 +4,10 @@ Write a function that takes two or more arrays and returns a new array of unique
 // Straight forward solution
 function uniteSortedArray( arr1, arr2, arr3 ) {
 
-  var finalArr = [];
-  var combinedArr = arr1.concat( arr2 ).concat( arr3 );
+  let finalArr = [];
+  let combinedArr = arr1.concat( arr2 ).concat( arr3 );
 
-  for ( var i = 0; i < combinedArr.length; i++ ) {
+  for ( let i = 0; i < combinedArr.length; i++ ) {
     if ( finalArr.indexOf( combinedArr[ i ] ) === -1 ) {
       finalArr.push( combinedArr[ i ] );
     }

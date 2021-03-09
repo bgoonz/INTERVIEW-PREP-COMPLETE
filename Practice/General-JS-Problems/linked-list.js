@@ -11,7 +11,7 @@ function Node(value, next, prev) {
 
 //Adding Head Node;
 LinkedList.prototype.addToHead = function (value) {
-    var newNode = new Node(value, this.head, null);
+    let newNode = new Node( value, this.head, null );
 
     // If head is present add new node to head.prev
     if (this.head) {
@@ -26,7 +26,7 @@ LinkedList.prototype.addToHead = function (value) {
 
 LinkedList.prototype.addToTail = function (value) {
 
-    var newNode = new Node(value, this.head, null);
+    let newNode = new Node( value, this.head, null );
 
     if (this.tail) {
         this.tail.next = newNode; // if tail is present, then add newNode to be tail.next

@@ -25,7 +25,7 @@ As you can see from below example, the callback is called with null as its first
 This practice is also called the _Node.js error convention_, and this kind of callback implementations are called _error-first callbacks_.
 
 ```js
-var isTrue = function(value, callback) {
+let isTrue = function(value, callback) {
   if (value === true) {
     callback(null, "Value was true.")
   } else {
@@ -33,7 +33,7 @@ var isTrue = function(value, callback) {
   }
 }
 
-var callback = function(error, retval) {
+let callback = function(error, retval) {
   if (error) {
     console.log(error)
     return

@@ -15,7 +15,7 @@ function reverseWords(str) {
   /$/	End of input
   "g" = global: replace *all* leading spaces with empty string.*/
 
-  // var sentence = str.replace(/^\s+|\s+$/g, "");
+  // let sentence = str.replace(/^\s+|\s+$/g, "");
 
   // However, much eazier way to do it, I can do the same with trim() method, to remove whitespace from both sides of a string:
   str = str.trim()

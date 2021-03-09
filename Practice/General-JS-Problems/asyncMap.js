@@ -11,10 +11,10 @@
   */
  
  function asyncMap(tasks, callback) {
- 	var resultsArray = [];
- 	var resultsCount = 0;
+ 	let resultsArray = [];
+ 	let resultsCount = 0;
 
- 	for (var i = 0; i < tasks.length; i++ ) {
+ 	for ( let i = 0; i < tasks.length; i++ ) {
  		(function(i) {
  			tasks[i](function(val) {
  				resultsArray[i] = val;

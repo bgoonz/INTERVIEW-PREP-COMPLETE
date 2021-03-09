@@ -75,7 +75,7 @@ function reverseStr3( str ) {
 //Alternative-4 - Simply pushing the characters from the last position. So, I have to start from index position (str.length -1) i.e. the last index, and after all iteration reach to the first position i.e. index-no 0
 function reverseString4( str ) {
   let temp = []
-  for ( var i = 1, len = str.length; i <= len; i++ ) {
+  for ( let i = 1, len = str.length; i <= len; i++ ) {
     temp.push( str.charAt( len - i ) )
   }
   return temp.join( "" )
@@ -95,7 +95,7 @@ function reverseStringHalfIndex( str ) {
   let halfIndex = Math.floor( len / 2 ) - 1
   let tmp = []
 
-  for ( var i = 0; i <= halfIndex; i++ ) {
+  for ( let i = 0; i <= halfIndex; i++ ) {
     tmp = strArr[ len - i - 1 ]
     strArr[ len - i - 1 ] = strArr[ i ] // So for the first iteration I am doing str[len - 1] = str[0]
     strArr[ i ] = tmp

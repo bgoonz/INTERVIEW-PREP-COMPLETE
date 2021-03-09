@@ -34,7 +34,7 @@ But, if after traversing all the array elements, I still did not encounter a fai
 
 // Test case-1
 
-var array1 = [1, 30, 39, 29, 10, 43];
+let array1 = [ 1, 30, 39, 29, 10, 43 ];
 
 function isBelowThreshold(currentValue) {
   return currentValue < 40;

@@ -1,11 +1,11 @@
 Question 2 of 56
 
 What will be the result of the following line of JavaScript code?
-var result = "a" < 3;
+let result = "a" < 3;
 alert(result);
 Support your answer with detailed reasoning. Be as explicit as possible.
 
-var result = "a" < 3;
+let result = "a" < 3;
 alert(result);
 
 Will output - false
@@ -29,7 +29,7 @@ which is equivalent to NaN < 3 which evaluates to false
 
 Question 14 of 56
 
-var num = -10;
+let num = -10;
 alert(num.toString(2));
 
 Will output >> -1010

@@ -1,10 +1,10 @@
 ### What will the console log in this example?
 
 ```js
-var foo = 1
-var foobar = function() {
+let foo = 1
+let foobar = function() {
   console.log(foo)
-  var foo = 2
+  let foo = 2
 }
 foobar()
 ```

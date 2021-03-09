@@ -34,9 +34,9 @@ The signature of the C++ function had been updated. If you still see your functi
 
 // Solution-1
 
-var myAtoi = function (str) {
+let myAtoi = function ( str ) {
 
-	var integer = /([+-]?\d*)/.exec(str.trim())[0];
+	let integer = /([+-]?\d*)/.exec( str.trim() )[ 0 ];
 
 	return isNaN(+integer) ? 0 : +integer > 2147483647 ? 2147483647 : +integer < -2147483648 ? -2147483648 : +integer;
 
@@ -48,7 +48,7 @@ console.log(myAtoi("-2147483649"));
 
 // Solution-2 , and faster - Crude / dirty version of atoi
 
-var myAtoi1 = function(str) {
+let myAtoi1 = function ( str ) {
 	return Math.max((Math.min((parseInt(str) || 0), 2147483647)), -2147483648);
 }
 

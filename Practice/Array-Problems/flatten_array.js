@@ -4,7 +4,7 @@ const flattened1 = arr => [].concat(...arr)
 
 let myArr1 = [[1], [2], [3, 4], 5]
 let myArr2 = [[1], [2], [[3], 4], 5]
-var myArr3 = [
+let myArr3 = [
   [1, 2],
   [3, 4, 5],
   [6, 7, 8, 9],
@@ -18,7 +18,10 @@ console.log(flattened1(myArr3)) // => [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 
 // Other alternative
 
-var arrays = [["a"], ["b", "c"]]
+let arrays = [
+  [ "a" ],
+  [ "b", "c" ]
+]
 
 console.log(Array.prototype.concat.apply([], arrays)) // => [ 'a', 'b', 'c' ]
 

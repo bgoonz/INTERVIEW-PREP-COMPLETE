@@ -12,7 +12,7 @@ The true power of promises is shown when you have several asynchronous operation
 Callbacks are a good way to declare what will happen once an I/O operation has a result, but what if you want to use that data in order to make another request? You can only handle the result of the request (if we use the example above) within the callback function provided.
 
 ```js
-var request = require('request');
+let request = require('request');
 
 let result;
 
@@ -41,7 +41,7 @@ In this example above, the variable “result" will not have a value when printe
 
 So if we want to do a second request based on the result of a first one we have to do it inside the callback function of the first request because that is where the result will be available:
 ```js
-var request = require('request');
+let request = require('request');
 
 let result;
 

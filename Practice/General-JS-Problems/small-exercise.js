@@ -1,7 +1,7 @@
 /* Problem-Fizz-Buzz - Print your name with the below conditions of dividing by 3 and 5*/
 
 function printName() {
-    for (var i = 1; i <= 100; i++) {
+    for ( let i = 1; i <= 100; i++ ) {
         // Math.floor (Math.random () * (max - min + 1) + min);
         if (i % 3 == 0) {
             console.log("rohan");
@@ -27,7 +27,7 @@ function removeDuplicateFromArr(arr) {
     let uniqueArr = [];
     let isExisting = {};
 
-    for (var i = 0; i < arr.length; i++) {
+    for ( let i = 0; i < arr.length; i++ ) {
         if (!isExisting[arr[i]]) {
             uniqueArr.push(arr[i]);
             isExisting[arr[i]] = true;

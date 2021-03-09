@@ -6,7 +6,7 @@ PAUL NOTE - merge will work ONLY FOR OBJECTS
 const _ = require("lodash");
 const merge = require("lodash/merge");
 
-var data = [
+let data = [
   {
     _id: "5c76bc3a5ff10c6d53ef67b4",
     imported_commodity_objectId: {

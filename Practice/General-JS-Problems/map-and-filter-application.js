@@ -83,16 +83,19 @@ products.forEach((item) => {
 
 console.log(filteredProducts);
 
-var post = {id: 4, content: 'New comment'};
+let post = {
+  id: 4,
+  content: 'New comment'
+};
 
-var comments = [
+let comments = [
  {postId: 4, content: 'awesome'},
  {postId: 3, content: 'nice'},
  {postId: 4, content: 'neat'}
 ];
 // console.log(***********************************************)
 
-var filteredPost = [];
+let filteredPost = [];
 
 comments.forEach((item) => {
 
@@ -109,7 +112,7 @@ filteredPost = comments.filter((item) => (item.postId === post.id));
 
 // console.log(***********************************************)
 
-var users = [
+let users = [
 { name : "ram"},
 { name : "ram"},
 { name : "steve"},

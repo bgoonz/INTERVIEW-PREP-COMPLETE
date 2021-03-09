@@ -49,7 +49,7 @@ let obj = arr.map( ( val, index, arr ) => {
 // console.log(obj);
 
 // Problem-2 - Using map() return full name  from the given array
-var oldArr = [ {
+let oldArr = [ {
   first_name: "Colin",
   last_name: "Toh"
 }, {

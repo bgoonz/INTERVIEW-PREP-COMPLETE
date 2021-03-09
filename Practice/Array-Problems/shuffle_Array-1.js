@@ -38,7 +38,7 @@ shuffleArr_Slow = arr => {
 
   let len = arr.length;
   let shuffledArr = [];
-  var rand;
+  let rand;
 
   while ( len ) {
 

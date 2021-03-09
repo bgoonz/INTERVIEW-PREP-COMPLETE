@@ -18,7 +18,7 @@ let evenNumbersWithFilter = numberArray.filter((item) => (item % 2 === 0));
 
 // Problem 2:- Filter objects with tags javascript
 
-var persons = [
+let persons = [
   {id : 1, name : "John", tags : "javascript"}, 
   {id : 2, name : "Alice", tags : "javascript"}, 
   {id : 3, name : "Roger", tags : "java"},
@@ -39,7 +39,7 @@ let jsTags2 = persons.filter((item) => (item.tags.indexOf("javascript") > -1));
 
 function findNonDuplicates (array) {
 	let models = [];
-	for(var i = 0; i < array.length; i++) {
+	for ( let i = 0; i < array.length; i++ ) {
     if(array.indexOf(array[i]) === i) {
         models.push(array[i]);
    		 }

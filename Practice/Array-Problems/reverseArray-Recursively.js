@@ -8,14 +8,14 @@ function reverseArray(arr, indx, str) {
 /* Learning note on the above function - We start with the end of the array (as the requirement is to reverse the array elements), and with each iteration, we decrement indx AND ALSO update the 'str' parameter by adding the string value of that particular arr[index]. So on the very first iteration will yield 'motorbike'.
 */
 
-var arr1 = ['car', 'boat', 'bike', 'motorbike'];
+let arr1 = [ 'car', 'boat', 'bike', 'motorbike' ];
 console.log(reverseArray(arr1, arr1.length, ""));
 
 // Alternative to reverse an array with the 'z' pattern matching library
 
 require('z');
 
-var myReverse = list => {
+let myReverse = list => {
   return list.matches (
     ()           => [],                          //match empty list (to check list ending)
     (head, tail) => myReverse(tail).concat(head) //match list head/tail to create reversed list recusively

@@ -214,8 +214,8 @@ recursive method (array, n)       | iterative method (array)
 #### Pseudo Code of a Greedy Algorithm to Find Largest Difference of any Two Numbers in an Array.
 ```
 greedy algorithm (array)
-  var largest difference = 0
-  var new difference = find next difference (array[n], array[n+1])
+  let largest difference = 0
+  let new difference = find next difference (array[n], array[n+1])
   largest difference = new difference if new difference is > largest difference
   repeat above two steps until all differences have been found
   return largest difference

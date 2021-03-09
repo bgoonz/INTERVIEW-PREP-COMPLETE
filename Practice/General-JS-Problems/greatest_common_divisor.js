@@ -1,6 +1,6 @@
 // Find the greatest common divisor of two numbers
 function greatestCommonDivisor(a, b) {
-	var divisor = 2,
+	let divisor = 2,
 		greatestDivisor;
 
 	if ( a < 2 || b < 2)

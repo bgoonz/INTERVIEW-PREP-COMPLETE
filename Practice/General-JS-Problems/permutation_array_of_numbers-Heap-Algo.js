@@ -12,7 +12,7 @@ function permutationHeap (array, result, n) {
   if ( n === 1) {
     result(array); // Print out the array
   } else {
-    for (var i = 1; i <= n; i++ ) {
+    for ( let i = 1; i <= n; i++ ) {
       permutationHeap(array, result, n-1) ;
 
       // Now with the below strategy of swapping, Heap-Algo keeps track of which elements we had already removed? Then we could just swap out unremoved elements, so that it is different in each case.
