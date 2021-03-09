@@ -9,7 +9,7 @@ C> Now just bring those last 3 elements into first positon and concatenate the r
 */
 
 function rightRotate (array, k) {
-    var L = array.length;
+    let L = array.length;
     return array.slice(L - k).concat(array.slice(0, L - k));
 };
 

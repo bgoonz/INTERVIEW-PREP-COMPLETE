@@ -14,15 +14,15 @@ My note - The rule to implement the conversion to any roman numeral is based on 
 */
 
 function convertToRoman(decNum) {
-  // var numberToConvert = number;
-  var romanNumber = '';   // This will be the final Roman number that this whole snippet will output
+  // let numberToConvert = number;
+  let romanNumber = ''; // This will be the final Roman number that this whole snippet will output
 
-  var romanNumerals =        ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
-  var decimalNumbers =       [1000, 900, 500,  400, 100,  90,  50,  40,   10,   9,    5,   4,    1];
+  let romanNumerals = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
+  let decimalNumbers = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
 
   // In the above arrangement, I am keeping the largest element first, because, so once I find the highest decimal value v that is less than or equal to the decimal number given in the argument - I only reduce the number within the while loop.
 
-  for (var i = 0; i < romanNumerals.length; i++ ) {
+  for ( let i = 0; i < romanNumerals.length; i++ ) {
       while (decNum >= decimalNumbers[i]) {
               decNum -= decimalNumbers[i];
               romanNumber += romanNumerals[i];
@@ -35,9 +35,9 @@ console.log(convertToRoman(36));
 console.log(convertToRoman(12));
 
 /* //Passing Tests
-var chai = require('chai');
-var expect = chai.expect;
-// var assert = require('assert');
+let chai = require( 'chai' );
+let expect = chai.expect;
+// let assert = require('assert');
 
 expect(convertToRoman(12)).to.equal("XII");
 expect(convertToRoman(5)).to.equal("V");

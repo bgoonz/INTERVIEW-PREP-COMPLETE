@@ -4,14 +4,14 @@
 
 */
 /*function mergeSortedArray(a, b) {
-	for (var i = 0; i < b.length; i++) {
+	for ( let i = 0; i < b.length; i++ ) {
 		a.push(b[i]);
 	}
 	for (i = 0; i < a.length; i++) {
-		for(var j = i+1; j < a.length; j++  )
+		for ( let j = i + 1; j < a.length; j++ )
 		{
 			if(a[i] > a[j]) {
-				var temp = a[i];
+				let temp = a[ i ];
 				a[i] = a[j];
 				a[j] = temp;
 			}
@@ -22,7 +22,7 @@
 }*/
 
 function mergeSortedArray(a, b) {
-	var sorted = [],
+	let sorted = [],
 		indexA = 0,
 		indexB = 0;
 

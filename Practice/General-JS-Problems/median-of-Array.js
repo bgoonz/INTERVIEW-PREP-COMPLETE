@@ -21,8 +21,8 @@ median = arr => {
   }
 }
 
-var input1 = [1,2,3,4,5];
-var input2 = [4,5,6,1,2,3];
+let input1 = [ 1, 2, 3, 4, 5 ];
+let input2 = [ 4, 5, 6, 1, 2, 3 ];
 
 console.log(median(input1));
 

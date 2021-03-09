@@ -1,7 +1,7 @@
 // Problem Statement - The first dimension represents the activity and the second one shows the number of hours spent per day for each.
 // calculates the percentage of the hours spent for each activity and append the percentage to the inner array.
 
-var activities = [
+let activities = [
     ['Work', 9],
     ['Eat', 2],
     ['Commute', 2],

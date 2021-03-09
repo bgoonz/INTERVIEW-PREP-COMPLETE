@@ -6,9 +6,9 @@ function isPrime (number)
 
     //An integer is prime if it is not divisible by any prime less than or equal to its square root
 
-    var q = Math.floor(Math.sqrt(number));
+    let q = Math.floor( Math.sqrt( number ) );
 
-    for (var i = 2; i <= q; i++)
+    for ( let i = 2; i <= q; i++ )
     {
         if (number % i == 0)
         {
@@ -19,9 +19,9 @@ function isPrime (number)
     return true;
 }
 
-var isPalindrome = function (number) {
-    var numToString = number.toString();
-    var checkPalindrome = numToString.split('').reverse().join('');
+let isPalindrome = function ( number ) {
+    let numToString = number.toString();
+    let checkPalindrome = numToString.split( '' ).reverse().join( '' );
 
     if (numToString === checkPalindrome) {
         return true;
@@ -30,7 +30,7 @@ var isPalindrome = function (number) {
     }
 };
 
-for (var i = 1000; true; i--){
+for ( let i = 1000; true; i-- ) {
     if (isPalindrome(i) && isPrime(i)){
         console.log(i);
         break;

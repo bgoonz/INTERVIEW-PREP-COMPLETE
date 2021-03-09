@@ -13,7 +13,7 @@ Here are some common examples of how `this` works:
 Properties set as `this` do not refer to the object.
 
 ```js
-var myObject = {
+let myObject = {
   property: this,
   regularFunction: function() {
     return this
@@ -63,7 +63,7 @@ const myExample = new Example()
 With `call()` and `apply()`, `this` refers to the object passed as the first argument.
 
 ```js
-var myFunction = function() {
+let myFunction = function() {
   return this
 }
 myFunction.call({ customThis: true }) // { customThis: true }
@@ -74,7 +74,7 @@ myFunction.call({ customThis: true }) // { customThis: true }
 Because `this` can change depending on the scope, it can have unexpected values when using regular functions.
 
 ```js
-var obj = {
+let obj = {
   arr: [1, 2, 3],
   doubleArr() {
     return this.arr.map(function(value) {

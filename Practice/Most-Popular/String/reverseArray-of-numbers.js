@@ -1,8 +1,8 @@
 
 
 // reversing an array using a temporary var
-var reverseArray = function (arr) {
-    var reverse = [];
+let reverseArray = function ( arr ) {
+    let reverse = [];
     for (i = arr.length; i >= 0; i--) {
       reverse.push(arr[i])
     }
@@ -20,7 +20,7 @@ var reverseArray = function (arr) {
 
   C> And this way, for the last loop, I will be pulling arr[(arr.((length -1)-(length-1)))] element, i.e. the arr[0] element of the original array, and place it to be the last
   */
-  var reverseArray = function(arr) {
+  let reverseArray = function ( arr ) {
     return arr.map(function(item, index) {
       return arr[arr.length-1-index];
     });
@@ -33,7 +33,7 @@ var reverseArray = function (arr) {
   // Another alternative to reverse an array without using temp variable. While does not require a temp variable, but runs at O(n^2) time.
   // Use splice to replace consecutive elements of the array, starting from index=0 with the last element of the array. So in each loop I pop() the last element of the array and take that element to replace the i-th element of the array starting from left-most begining.
   function inPlaceReverse(arr) {
-    var i = 0;
+    let i = 0;
     while (i < arr.length - 1 ) {
       arr.splice(i, 0, arr.pop());
       i++;

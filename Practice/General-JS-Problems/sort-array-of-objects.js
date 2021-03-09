@@ -2,7 +2,7 @@
 
 // Problem statement - Create a function to sort the objects by the price property in ascending order
 
-var homes = [
+let homes = [
     {
         "h_id": "3",
         "city": "Dallas",

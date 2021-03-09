@@ -8,7 +8,7 @@ foo.a = 'func';
 
 global.a = 'global-variable';
 
-// note in above, I can not use var a = 'global' in my node environment, but can do so in the chrome dev-tool environment. Remember, in browser the global object is window and in node its 'global'
+// note in above, I can not use let a = 'global' in my node environment, but can do so in the chrome dev-tool environment. Remember, in browser the global object is window and in node its 'global'
 
 
 foo();		// => global-variable
@@ -20,7 +20,7 @@ The reason why above gave a console of global-variable, is because we mentioned 
 
 // As expected and explained in ES_2.js file that below will output undefine, as arrow function does not have any this binding
 
-var obj_1 = {
+let obj_1 = {
     a : 'object???',
     foo_1 : () => { console.log(this.a) }
 };
@@ -31,7 +31,7 @@ obj_1.foo_1();		// undefined
 
 // Now, wrapping arrow within a function, would make the regular function to bind the object's this.a value
 
-var obj_2 = {
+let obj_2 = {
     
     a : 'object???',
     

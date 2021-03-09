@@ -9,7 +9,7 @@ if(!Array.prototype.indexOf) {
         } else if (startFromIndex < 0) {
             startFromIndex = Math.max(0, (this.length + startFromIndex));
         }
-        for (var i = startFromIndex; i < this.length; i++ ) {
+        for ( let i = startFromIndex; i < this.length; i++ ) {
             if (this[i] === searchElement)
                 return i;
         }

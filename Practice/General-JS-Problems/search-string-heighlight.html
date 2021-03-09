@@ -31,16 +31,17 @@ Run this html file and put some text in the large input box and then searh for a
   document.getElementById("searchSubmit").onclick=function() {
 
     // get pattern
-    var pattern = document.getElementById("pattern").value;
-    var re = new RegExp(pattern, "g");
+    let pattern = document.getElementById("pattern").value;
+    let re = new RegExp(pattern, "g");
 
     // get string
-    var searchString = document.getElementById("incoming").value;
+    let searchString = document.getElementById("incoming").value;
 
-    var matchArray;
-    var resultString = "<pre>";
-    var first=0;
-    var last=0;
+    let matchArray;
+    let resultString = "
+    <pre>";
+    let first=0;
+    let last=0;
 
     // find each of match of the search pattern
     while((matchArray = re.exec(searchString)) != null) {

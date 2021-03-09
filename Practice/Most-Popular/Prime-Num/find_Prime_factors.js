@@ -23,8 +23,8 @@ In the third iteration, first we divide 3 (as now n has become 3) by 2. Being no
 */
 
 function primeFactors(n) {
-  var factors = [];
-  var divisor = 2;
+  let factors = [];
+  let divisor = 2;
 
   while (n > 2) {
     if (n % divisor == 0 ) {

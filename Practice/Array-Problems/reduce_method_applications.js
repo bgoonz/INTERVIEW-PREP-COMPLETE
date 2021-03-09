@@ -1,10 +1,10 @@
 /* Problem Statement -
 Parse the array and return an object that contains the number of times each string occured in the array*/
 
-var array = ["apple","orange","apple","orange","pear","orange"];
+let array = [ "apple", "orange", "apple", "orange", "pear", "orange" ];
 
 function getWordCount() {
-    var previous = {};
+    let previous = {};
     return array.reduce(function(previous, next) {
        previous[next] = (previous[next] + 1) || 1;
        return previous;

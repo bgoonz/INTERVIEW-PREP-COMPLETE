@@ -125,7 +125,7 @@ And the prevElem can only reach upto 0 i.e so, I have to stop when current value
 
 // print fibonacci series upto a specified number
 
-var output = "0 1"
+let output = "0 1"
 
 let maxFibumber = 10,
   fibNum = 1,

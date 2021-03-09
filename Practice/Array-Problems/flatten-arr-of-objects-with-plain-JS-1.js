@@ -6,7 +6,7 @@ So the solution that ultimately I implemented to solve my problem is in file - f
 
  */
 
-var data = [
+let data = [
   {
     _id: "5c76bc3a5ff10c6d53ef67b4",
     imported_commodity_objectId: {

@@ -27,7 +27,7 @@ Statements appear as instructions that do something but don't produce values.
 
 ```js
 // Assign `x` to the absolute value of `y`.
-var x
+let x
 if (y >= 0) {
   x = y
 } else {
@@ -55,7 +55,7 @@ There is an equivalent version of the set of statements used before as an expres
 
 ```js
 // Assign `x` as the absolute value of `y`.
-var x = y >= 0 ? y : -y
+let x = y >= 0 ? y : -y
 ```
 
 This is both an expression and a statement, because we are declaring a variable `x` (statement) as an evaluation (expression).

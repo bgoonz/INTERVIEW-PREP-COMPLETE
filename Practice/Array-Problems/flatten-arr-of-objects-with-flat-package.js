@@ -1,9 +1,9 @@
 /* Problem Statement - All I am trying to do is to create a new array with a an extra field name of "imported_commodity_name" (from the nested object) from original array (receieved from DB -call) which does not have that extra field
  */
 
-var flatten = require("flat");
+let flatten = require( "flat" );
 
-var data = [
+let data = [
   {
     _id: "5c76bc3a5ff10c6d53ef67b4",
     imported_commodity_objectId: {

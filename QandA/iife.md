@@ -6,7 +6,7 @@ This technique is very common in JavaScript libraries. It creates a closure arou
 
 ```js
 const myLibrary = (function() {
-  var privateVariable = 2
+  let privateVariable = 2
   return {
     publicMethod: () => privateVariable
   }

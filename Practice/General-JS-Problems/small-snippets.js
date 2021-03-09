@@ -1,7 +1,7 @@
 // Find power of a number without using native JS function
 function power (base, exponent) {
-  var result = 1;
-  for(var i=1; i<=exponent; i++) {
+  let result = 1;
+  for ( let i = 1; i <= exponent; i++ ) {
     result = result * base;
   }
   return result;
@@ -10,7 +10,7 @@ function power (base, exponent) {
 
 function factorial (num) {
   let result = 1;
-  for (var i = 0; i < num; i++) {
+  for ( let i = 0; i < num; i++ ) {
     result = result * (num - i);
   }
   return result;
@@ -27,8 +27,8 @@ function factorialRecursively (n) {
 }
 
 // Find square-root of a number without using native JS function
-var squrt = function (num) {
-  var sroot = 1;
+let squrt = function ( num ) {
+    let sroot = 1;
   while (sroot < num) {
     if ( sroot * sroot == num) {
       return sroot;
@@ -41,7 +41,7 @@ var squrt = function (num) {
 
 // Check if a number is any power of 2. Its the same logic as checking if a number is power of 4 (see my file ifPowerOfFour.js ).
 /* Notes - Keep dividing the number by two, i.e, do n = n/2 iteratively until n becomes 1. In any iteration, if n%2 becomes non-zero and n is not 1 then n is not a power of 2. If n becomes 1 then it is a power of 2. */
- var isPowerOfTwo = function (num) {
+ let isPowerOfTwo = function ( num ) {
 	while ( num != 1) {
 	  num = (num / 2);
 

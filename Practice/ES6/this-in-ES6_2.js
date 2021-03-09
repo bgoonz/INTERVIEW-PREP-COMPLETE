@@ -66,7 +66,7 @@ profile_2-tech
 
 // Declare a global variable so all the functions defined in this file will always have access to this variable
 // And then inside the function dont use any 'this' at ll.
-var name = 'tech-name-in-global-variable';
+let name = 'tech-name-in-global-variable';
 
 const profile_3 = {
 

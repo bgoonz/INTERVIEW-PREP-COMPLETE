@@ -13,7 +13,7 @@ When no keyword exists before a variable assignment, it is either assigning a gl
 Below, by the time the the `setTimeout` callback executes, the loop has already finished and the `i` variable is `10`, so all ten callbacks reference the same variable available in the function scope.
 
 ```js
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   setTimeout(() => {
     // logs `10` ten times
     console.log(i)
@@ -21,13 +21,13 @@ for (var i = 0; i < 10; i++) {
 }
 
 /* Solutions with `var` */
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   // Passed as an argument will use the value as-is in
   // that point in time
   setTimeout(console.log, 0, i)
 }
 
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   // Create a new function scope that will use the value
   // as-is in that point in time
   ;(i => {

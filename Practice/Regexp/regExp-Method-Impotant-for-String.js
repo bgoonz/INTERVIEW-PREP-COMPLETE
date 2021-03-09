@@ -7,7 +7,7 @@ So if Only a vowel is found in position-index-0 of the string, then '0' is retur
 
 let str1 = 'My Name is Rohan'
 
-var vowelSearchResult = str1.search(/[aeiuo]/);
+let vowelSearchResult = str1.search( /[aeiuo]/ );
 
 // console.log(vowelSearchResult)  // => 4
 

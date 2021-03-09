@@ -10,13 +10,13 @@ The following snippet:
 
 ```js
 console.log(hoist)
-var hoist = "value"
+let hoist = "value"
 ```
 
 is equivalent to:
 
 ```js
-var hoist
+let hoist
 console.log(hoist)
 hoist = "value"
 ```
@@ -36,7 +36,7 @@ But be wary of function expressions that are assigned to a variable:
 
 ```js
 myFunction() // Error: `myFunction` is not a function
-var myFunction = function() {
+let myFunction = function() {
   console.log("hello")
 }
 ```

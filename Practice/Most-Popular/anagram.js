@@ -69,12 +69,12 @@ isAnagram_1 = ( s1, s2 ) => {
   }
 
   let counter = {}
-  for ( var i of s1 ) {
+  for ( let i of s1 ) {
     let chCode = i.charCodeAt( i )
     // Note above line, I am NOT using s1.charCodeAt(i) - rather I have to invoke the charCodeAt on the exact string element NOT the whole string in this case of for...of loop
     counter[ chCode ] = ( counter[ chCode ] || 0 ) + 1
   }
-  for ( var j of s2 ) {
+  for ( let j of s2 ) {
     let chCodej = j.charCodeAt( j )
     if ( !counter[ chCodej ] ) {
       return false

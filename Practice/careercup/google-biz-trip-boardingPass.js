@@ -27,7 +27,7 @@ E) So, when the Hashmap is fully constructed, the value of cities will cancel ea
 */
 
 
-var map = {
+let map = {
 	tkt1: {
 		departure: 'Los Angeles',
 		arrival: 'San Francisco'
@@ -56,11 +56,11 @@ var map = {
 
 findDepartureArrival = function(map) {
 
-	var hashMap = {};
+	let hashMap = {};
 
-	for (var tkt in map) {
-		var depart = map[tkt].departure;
-		var arriv = map[tkt].arrival;
+	for ( let tkt in map ) {
+	  let depart = map[ tkt ].departure;
+	  let arriv = map[ tkt ].arrival;
 
 		if (!(depart in hashMap))
 			hashMap[depart] = -1;

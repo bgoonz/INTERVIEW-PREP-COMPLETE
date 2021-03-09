@@ -12,7 +12,7 @@ For example, in  ['pear', 'apple', 'orange', 'apple']  the 'apple' element is th
 
 maxRepeatingElem = arr => {
 
-	var counter = {};
+	let counter = {};
 
 	for (let i of arr) {
 

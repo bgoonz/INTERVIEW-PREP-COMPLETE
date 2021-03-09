@@ -13,7 +13,7 @@ function leftRotateArray( array, rotationSteps ) {
   }
   // calculate the number of rotation to do.
   // But still we do this extra step, just to check if there's any need to rotate the array at all, with the code in the next line. Because, if I need to to rotate the array, 5000 times, it would take a while (code's O(n)). And in the end, the rotated array might be back where it started, making all those rotation pointless. So that seems like there are optimizations that can be made.
-  var n = rotationSteps % array.length;
+  let n = rotationSteps % array.length;
 
   // Id n is 0, then no need to rotate at all, we can just return a copy of the array. And in this case of no rotation, the reason I am returning a copy instead of the original array (which could the code more optimized ) is because, the function should always return a copy in order to be consistent. If it sometimes doesn't, we don't know what you're getting.
 
