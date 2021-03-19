@@ -1,0 +1,32 @@
+{
+  "name": "interview-prep",
+  "version": "1.0.0",
+  "description": "for a medium article on interview prep",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE.git"
+  },
+  "keywords": [
+    "interview",
+    "Javascript",
+    "Examples",
+    "Practice",
+    "Problems"
+  ],
+  "author": "Bryan Guner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/issues"
+  },
+  "homepage": "https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-transform-ternary-to-if-else": "^1.0.2",
+    "lodash": "^4.17.21",
+    "underscore": "^1.12.1"
+  }
+}

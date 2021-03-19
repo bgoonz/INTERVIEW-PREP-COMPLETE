@@ -1,0 +1,20 @@
+{
+  "name": "0",
+  "version": "0.0.1",
+  "scripts": {
+    "build:prepare": "rm -rf tmp && mkdir tmp",
+    "build:clean": "rm -rf tmp",
+    "build:plugin": "node ./build-plugin.js ../index.js tmp/plugin.js && babel tmp/plugin.js --extends ./plugin.babelrc -o tmp/plugin.babel.js && uglifyjs -m -o plugin.min.js --source-map url=plugin.min.js.map,includeSources=1 tmp/plugin.babel.js",
+    "build:index": "browserify index.js -t babelify -o tmp/index.bundle.js && uglifyjs -m -o index.min.js --source-map url=index.min.js.map,includeSources=1 tmp/index.bundle.js",
+    "build": "npm run build:prepare && npm run build:plugin && npm run build:index && npm run build:clean"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "pify": "^2.3.0",
+    "uglify-js": "^3.0.4"
+  }
+}
