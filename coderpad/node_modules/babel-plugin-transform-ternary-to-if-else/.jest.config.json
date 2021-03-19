@@ -1,0 +1,5 @@
+{
+  "testMatch": [
+    "<rootDir>/test/**/*.spec.js?(x)"
+  ]
+}
