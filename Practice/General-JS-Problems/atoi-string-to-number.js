@@ -34,7 +34,7 @@ The signature of the C++ function had been updated. If you still see your functi
 
 // Solution-1
 
-let myAtoi = function ( str ) {
+let myAtoi = str => {
 
 	let integer = /([+-]?\d*)/.exec( str.trim() )[ 0 ];
 
@@ -48,7 +48,7 @@ console.log(myAtoi("-2147483649"));
 
 // Solution-2 , and faster - Crude / dirty version of atoi
 
-let myAtoi1 = function ( str ) {
+let myAtoi1 = str => {
 	return Math.max((Math.min((parseInt(str) || 0), 2147483647)), -2147483648);
 }
 

@@ -11,8 +11,11 @@ B> JavaScript's highest integer value that a number can go to without losing pre
 // SOLUTION WITHOUT USING REGEXP AND PARSEINT
 
 myAtoi = str => {
-
-  let i = 0, numSign = '+', number = '', finalOutputNum = 0, base10Multiplier = 1;
+  let i = 0;
+  let numSign = '+';
+  let number = '';
+  let finalOutputNum = 0;
+  let base10Multiplier = 1;
 
   str = str.trim() // remove all whitespaces from both ends
 
@@ -56,7 +59,6 @@ myAtoi = str => {
   }
 
   return ( numSign === '-' ? (-1 * finalOutputNum) : finalOutputNum )
-
 }
 
 console.log(myAtoi("+1")); // => 1

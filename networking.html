@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      cyrillic-ext @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 200;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 200;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 200;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 200;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 200;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/raleway/v19/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      body {
+        zoom: 1.4 justify-content: center;
+        align-items: center;
+        background: url(https://i.gifer.com/76YS.gif);
+        padding: 2em;
+        zoom: 0.85;
+        font-family: 'Raleway', sans-serif;
+        padding: 1em 2em;
+        font-size: 18px;
+        color: #aaa;
+        align-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: flex;
+        text-align: center
+      }
+
+      .btn {
+        font: bold 11px Arial;
+        text-decoration: none;
+        background-color: transparent;
+        color: #ffffff;
+        padding: 2px 6px 2px 6px;
+        border-radius: 10px;
+        border-top: 1px solid #CCCCCC;
+        border-right: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+        border-left: 1px solid #18047a;
+        text-align: center
+      }
+
+      a {
+
+        text-transform: inherit;
+
+        box-shadow: 0 5px 0 darkred;
+        color: white;
+        padding: 1em 1.em;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      a:hover {
+        background-color: #f5f5f5;
+      }
+
+      a:active {
+        box-shadow: none;
+        top: 5px;
+      }
+
+      h1 {
+        font-weight: 900;
+        margin: 0.4em 0;
+        color: rgb(74, 2, 2);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <br>
+    <br>
+    <h1>Peer Contact Information:</h1>
+    <pre>
+<a class="btn" href="mailTo:bryan.guner@gmail.com">Send Email To:    Bryan Guner</a>
+<br>
+
+<a class="btn" href="mailTo:rhishisikk@gmail.com">Send Email To:    rhishisikk@gmail.com</a>
+<br>
+
+<a class="btn" href="mailTo:%20fwilliams0721@gmail.com">Send Email To:    fwilliams0721@gmail.com</a>
+<br>
+
+<a class="btn" href="mailTo:myles.dean242@gmail.com">Send Email To:    Myles Dean</a>
+<br>
+
+<a class="btn" href="mailTo:%20adrianhensondev@gmail.com">Send Email To:    Adrian Henson</a>
+<br>
+
+<a class="btn" href="mailTo:markel_white@yahoo.com">Send Email To:    Markel White</a>
+<br>
+
+<a class="btn" href="mailTo:%20justin-mccoy@lambdaschool.com">Send Email To:    Justin Mccoy</a>
+<br>
+
+<a class="btn" href="mailTo:thropp19@gmail.com">Send Email To:    Zach Thropp</a>
+<br>
+
+<a class="btn" href="mailTo:%20abryan626@gmail.com">Send Email To:    abryan626@gmail.com</a>
+<br>
+
+<a class="btn" href="mailTo:fervelgo@gmail.com">Send Email To:    fervelgo@gmail.com</a>
+<br>
+
+<a class="btn" href="mailTo:cq.henao@gmail.com">Send Email To:    cq.henao@gmail.com</a>
+<br>
+
+
+</pre>
+  </body>
+
+</html>
