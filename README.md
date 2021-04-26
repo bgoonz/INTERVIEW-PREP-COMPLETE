@@ -1,3 +1,17042 @@
+Getting a Gig: A Guide
+=============
+
+# Introduction
+
+# Contents
+
+* Introduction (you read that already)
+* [Your Resume](#your-resume)
+* [Your Cover Letter](#your-cover-letter)
+* [Your Attitude](#your-attitude)
+* [Your Skills](#your-skills)
+  + Building Them
+  + Selling Them
+* [Your Search](#your-search)
+  + Events
+  + Networking
+  + Referrals
+  + Cold Calling
+  + Fellowships
+* [Conclusion](#conclusion)
+
+# Your Resume
+
+Your resume is your personal summary sheet.  Your resume is the thing that gets your foot in the door.  So, there's a few things you should do (and not do) to make it as awesome as you are.
+
+### Make your name **BIG.**
+
+Your name has to stand out from everything else, because you want it to be remembered.  Making it the biggest thing on the page is the easiest thing you can do to make that possible.  I've seen soooo many resumes where the name is at the top, but it's just bolded and centered and they expect that to be enough.  It's not.  
+
+### Remove the objective.
+
+Nobody looks at the objective.  Nobody.  I personally spoke to a bunch of recruiters from various companies and they all said that they never look at them.  Use that space to talk about projects you've done, activities you've done, etc.
+
+### Keep it to a single page.
+
+Recruiters are looking for a short summary of you.  They're reading several resumes a day, and if they see something longer than they typically read, they could pass over yours for something more concise!  If you'd like to say more, put a link to a personal website or portfolio for someone to find it.  A resume is a summary, not a tome.
+
+### Remove irrelevant information.
+
+I know that lifeguarding in high school was a good gig that helped you gain people skills and attention to detail.  But you're in tech.  That doesn't matter as much to tech companies.  Sorry, buddy.  I still think you're great with people.
+When you're a first semester freshman, it's okay to have old high school stuff on there, just because it's less likely that you have other things to put on your resume.  But as soon as you have a college GPA to work with, a club or two, and some volunteer experiences to replace that, do it.
+
+### Don't make it a scavenger hunt.
+
+When an application reviewer (engineer, recruiter, or otherwise) is looking over your resume, don't make it difficult for them to understand who you are and what you know. 
+
+For example, if you have online profiles like GitHub, LinkedIn, Twitter, or even your own personal website, put it on your resume.  Don't make them have to search long and hard for you online if they want to know more!
+
+If you decide to put relevant coursework on your resume, **please**, don't just put course numbers.  Nobody knows what that means.  And nobody is going to go to your university's website to find out exactly what CS229 is.  Put down the course titles instead!
+
+And finally, put down your graduation date.  So many students I've seen don't put it on there because they are hiding the fact that they're a freshman, or they're "technically a junior if you count the credits."  That doesn't matter.  Trust me.  Just put down your graduation date so that the company knows how much experience you have, and how soon they can potentially pull you in for full-time.
+
+### Include only certain personal information.
+
+Companies aren't allowed to ask about your religion, marital status, or race/ethnicity, so you shouldn't include that.  
+
+In terms of contact information: you don't need your mailing address.  That is a thing of the past.  Just like my youth.  Tech companies email, and **maybe** call.  That's all you need!
+Some great things that you might also want to put on there are your personal website (if you have one, which you should), your GitHub profile (if you have one, which you should), and your LinkedIn (if you have one, which you should).
+
+Though there's some who might disagree, you should **include your GPA.**  If your major GPA is significantly higher than your overall GPA, you might want to consider having both.  When you have graduated and have a full-time job, you won't need it as much.  But at this point in your beautiful life, keep it in there.  Some companies care about GPA more than others, so you might as well play it safe and have it there.
+
+# CV Sample
+
+Your cover letter is your written sales pitch.  You've got a resume that summarizes everything.  Now you have to write out a more complete, professional description of you and what you can offer a given company.  Here's a sample cover letter to get you started:
+
+> Dear _________, 
+>
+> I hope your day is going well! My name is _________, and I'm a _________ at _________. I am very interested in working for _________ next _________. Your commitment to _________ and _________ that I saw on the website inspired me! The products you build and the values you stand for make _________ seem like an ideal workplace for me.
+
+A little about me, I [insert relevant work experience, extracurriculars, and projects here]. I think these experiences would make me a great candidate for you.
+
+>
+> Please let me know if there's anything else you need from me. I look forward to hearing from you! I can be reached at _________ and _________.
+>
+> Best regards, 
+> _________
+
+Now, remember, this is just a sample.  You can write a cover letter in any format you'd like.  But, you should be sure to include the following:
+
+* **Who** - Who you are.  Easy enough.
+* **Where** - Where you're coming from.
+* **Why** - Why you're interested in this company, and show that you researched them.
+* **What** - What you can bring to the table.
+* **When** - When you're available to start, and when they can contact you.
+* **How** - How they can reach you.
+
+# Your Attitude
+
+When you're internship/job hunting, it's very easy to feel down if you don't hear back from companies, an interview goes poorly, or you start comparing yourself to people.  It's a tough field we're going into.
+
+So.  I won't spend much time on this.  But I want to emphasize something: **You're brilliant.**  You're in this field for a reason.  When your grades aren't awesome or someone gets something that you wanted, don't feel down on yourself.  So many opportunities will come your way if you just keep working hard and refining your skills.
+
+Mark Twain once said, "Comparison is the death of joy."  When you start to compare your skills to others, it's hard to not feel as good about your own, or to get a little too competitive about your work.  Work hard and don't let others get you down.  It's remarkable how significantly that can improve both your work and your interviewing experience!
+
+When you're talking to companies and recruiters at career fairs and hackathons and over the phone, be confident, not arrogant.  Be grateful for the opportunity they're giving you, and smile!  A great attitude will take you VERY far.
+
+# Your Skills
+
+Obviously, your skills are what a company is buying from you when they hire you.  So, honing in those skills and presenting them in an effective way is *probably* the most important thing in getting a gig.
+
+## Building Them
+
+Chances are, if you've had a data structures and/or algorithms class, you're already going to do pretty well in the technical interviews.  That is, if you can recall the information you learned.
+
+Here's a checklist of things that you should probably be prepared to know in a technical interview:
+
+* Data types
+* Basic Bitwise Operations
+* String Operations
+* Arrays
+* Linked Lists
+  + Singly Linked
+  + Doubly Linked
+  + Circular Linked
+* Queues
+* Stacks
+* Heaps
+* Trees
+  + Binary Trees
+  + Binary Search Trees
+  + Tries
+  + Self Balancing Trees
+* Traversing Trees
+  + Breadth First Search - BFS
+  + Depth First Search - DFS
+  + Preorder, Inorder, Postorder
+* Graphs
+  + Dijkstra's Algorithm / A* Search
+* Hash Maps
+  + Handling Collisions
+* Sorting algorithms
+  + Insertion
+  + Selection
+  + Merge
+  + Quick
+* Time Complexities
+
+This guide isn't for teaching you these skills.  But there are several guides, problem sets, and practice systems out there that can help.
+
+**General Guides**
+
+* [Sorting Algorithms](http://www.sorting-algorithms.com/)
+* [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+* [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
+* [Algorithm Implementations](http://algorithm.zone/)
+* [Top 10 Algorithms for coding interviews](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
+
+**Problem Sets**
+
+* [Data Structures Questions](http://www.geeksforgeeks.org/data-structures/)
+* [FitCoding](http://www.fitcoding.com/)
+* [Google CodeJam Practice Questions](https://code.google.com/codejam/contests.html)
+
+**Online Judging Systems**
+
+* [LeetCode Online Judge](https://oj.leetcode.com/problemset/algorithms/)
+* [HackerRank Online Judge](https://www.hackerrank.com/)
+* [Project Euler](https://projecteuler.net/)
+
+**Mock Interviews**
+
+* [Pramp](https://www.pramp.com) - free
+* [Careercup](http://www.careercup.com/interview) - paid
+* [Gainlo](http://www.gainlo.co/) - paid
+* [Impact Interview](http://www.impactinterview.com/software-engineering-interview-coaching/) - paid
+
+Here's some books that might also be useful.
+
+* [Algorithms, 4th edition, by Robert Sedgewick and Kevin Wayne](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
+* [Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (also referred as CLRS)](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
+* [Think Complexity, by Allen B. Downey](http://greenteapress.com/complexity/thinkcomplexity.pdf)
+* [Problems on Algorithms, 2nd edition, by Ian Parberry and William Gasarch](http://larc.unt.edu/ian/books/free/poa.pdf)
+* [Data Structures and Algorithms in Java](http://rineshpk.weebly.com/uploads/1/8/2/0/1820991/data_structures_and_algorithms_in_javatqw_darksiderg.pdf)
+* [Cracking the Coding Interview, 6th edition, by Gayle Laakmann McDowell](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1443719471&sr=8-1&keywords=coding+interview)
+
+Typically, for an internship or your first job, questions won't get much more specific unless you're applying for a specific role.  For example, if I wanted to be a mobile intern, I might be asked iOS/Android/Windows Phone specific questions, or if I wanted to be a web intern, I might be asked HTML/CSS/JavaScript questions, or if I wanted to be a backend intern, I might be asked about Django or Node or Ruby on Rails.  That definitely depends on the company, and what you're both looking for.
+
+Make sure you're able to implement and use the above data structures without the assistance of an IDE. Typically, onsite technical interviews involve coding on paper or a whiteboard, and phone/video interviews usually involve some kind of collaborative text editor. Yes, that means you won't have access to auto-complete, auto-compiling, or the internet to check for errors. So be ready for that!
+
+## Selling Them
+
+When you're actively emailing and speaking with recruiters, they're going to ask you a lot of questions that are just checkboxes for what they're looking for in terms of skills.
+
+If you've written anything in a language before, **put it on your resume**.  A lot of companies have parsers that look for specific things that, again, will put a tick on those checkboxes before putting you through to the next round of review.  Now, if you've only ever done "Hello, world!" in Python, don't say that you're a Python ninja or whatever.  You don't want to be thrown into an interview that will only hurt your self-confidence.  Speaking from experience.  Trust me.
+
+When a recruiter or engineer is asking you about a certain project you've done, or how you've used a particular language, be as specific as possible.  Tell them **exactly** what you did on that particular project (or internship or what have you).  Tell them how much you contributed, what languages you used, how long was the duration of development for that project, what was the outcome of the project, etc. etc.
+
+For example, don't say, "I'm the webmaster for a club website. Next question."  Okay, Dwight Schrute.  Go back to your beet farm.  Instead, say something more like this: "I developed and currently maintain the website for my university's computer science club. I built it from the ground up with HTML, CSS, JavaScript, and jQuery on the front-end.  It's a static site, so a backend wasn't needed.  The website's main function is to promote the club and give members crucial updates about meetings and events, and I update it regularly via a Python script I wrote."  Oh my, you enchanting software engineer, you.  Let me hire you.
+
+When you're talking to companies about specific things you've done, make sure they know:
+
+* **What?** - What? - What did you make? What does it do? What impact has it made? What was the hardest part? What could you have done better?
+* **Why?** - Why did you make it?  Was it for a hackathon, a school project, an open source contribution, or something else?
+* **How?** - With which technologies did you make this?  Did you use a specific API?  What parts of it did you work on?
+* **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
+* **Who?** - Did you work on this with anyone?  Who did what?  Who is this for?
+
+Your skills are something that you have, and the reason why you have them is because you've used them in some way.  All you have to do to prove yourself is to explain yourself!  No need to gGetting a Gig: A Guide
+=============
+
+# Introduction
+
+Hey friends!
+This is a guide for getting a gig in college as a tech major.  I graduated May 2014 with 10 job offers after having 5 internships throughout my four years of college.  You can do that, too.  Because you're great.
+
+# Contents
+
+* Introduction (you read that already)
+* [Your Resume](#your-resume)
+* [Your Cover Letter](#your-cover-letter)
+* [Your Attitude](#your-attitude)
+* [Your Skills](#your-skills)
+  + Building Them
+  + Selling Them
+* [Your Search](#your-search)
+  + Events
+  + Networking
+  + Referrals
+  + Cold Calling
+  + Fellowships
+* [Conclusion](#conclusion)
+
+# Your Resume
+
+Your resume is your personal summary sheet.  Your resume is the thing that gets your foot in the door.  So, there's a few things you should do (and not do) to make it as awesome as you are.
+
+### Make your name **BIG.**
+
+Your name has to stand out from everything else, because you want it to be remembered.  Making it the biggest thing on the page is the easiest thing you can do to make that possible.  I've seen soooo many resumes where the name is at the top, but it's just bolded and centered and they expect that to be enough.  It's not.  
+
+### Remove the objective.
+
+Nobody looks at the objective.  Nobody.  I personally spoke to a bunch of recruiters from various companies and they all said that they never look at them.  Use that space to talk about projects you've done, activities you've done, etc.
+
+### Keep it to a single page.
+
+Recruiters are looking for a short summary of you.  They're reading several resumes a day, and if they see something longer than they typically read, they could pass over yours for something more concise!  If you'd like to say more, put a link to a personal website or portfolio for someone to find it.  A resume is a summary, not a tome.
+
+### Remove irrelevant information.
+
+I know that lifeguarding in high school was a good gig that helped you gain people skills and attention to detail.  But you're in tech.  That doesn't matter as much to tech companies.  Sorry, buddy.  I still think you're great with people.
+When you're a first semester freshman, it's okay to have old high school stuff on there, just because it's less likely that you have other things to put on your resume.  But as soon as you have a college GPA to work with, a club or two, and some volunteer experiences to replace that, do it.
+
+### Don't make it a scavenger hunt.
+
+When an application reviewer (engineer, recruiter, or otherwise) is looking over your resume, don't make it difficult for them to understand who you are and what you know. 
+
+For example, if you have online profiles like GitHub, LinkedIn, Twitter, or even your own personal website, put it on your resume.  Don't make them have to search long and hard for you online if they want to know more!
+
+If you decide to put relevant coursework on your resume, **please**, don't just put course numbers.  Nobody knows what that means.  And nobody is going to go to your university's website to find out exactly what CS229 is.  Put down the course titles instead!
+
+And finally, put down your graduation date.  So many students I've seen don't put it on there because they are hiding the fact that they're a freshman, or they're "technically a junior if you count the credits."  That doesn't matter.  Trust me.  Just put down your graduation date so that the company knows how much experience you have, and how soon they can potentially pull you in for full-time.
+
+### Include only certain personal information.
+
+Companies aren't allowed to ask about your religion, marital status, or race/ethnicity, so you shouldn't include that.  
+
+In terms of contact information: you don't need your mailing address.  That is a thing of the past.  Just like my youth.  Tech companies email, and **maybe** call.  That's all you need!
+Some great things that you might also want to put on there are your personal website (if you have one, which you should), your GitHub profile (if you have one, which you should), and your LinkedIn (if you have one, which you should).
+
+Though there's some who might disagree, you should **include your GPA.**  If your major GPA is significantly higher than your overall GPA, you might want to consider having both.  When you have graduated and have a full-time job, you won't need it as much.  But at this point in your beautiful life, keep it in there.  Some companies care about GPA more than others, so you might as well play it safe and have it there.
+
+# Your Cover Letter
+
+Your cover letter is your written sales pitch.  You've got a resume that summarizes everything.  Now you have to write out a more complete, professional description of you and what you can offer a given company.  Here's a sample cover letter to get you started:
+
+> Dear _________, 
+>
+> I hope your day is going well! My name is _________, and I'm a _________ at _________. I am very interested in working for _________ next _________. Your commitment to _________ and _________ that I saw on the website inspired me! The products you build and the values you stand for make _________ seem like an ideal workplace for me.
+
+A little about me, I [insert relevant work experience, extracurriculars, and projects here]. I think these experiences would make me a great candidate for you.
+
+>
+> Please let me know if there's anything else you need from me. I look forward to hearing from you! I can be reached at _________ and _________.
+>
+> Best regards, 
+> _________
+
+Now, remember, this is just a sample.  You can write a cover letter in any format you'd like.  But, you should be sure to include the following:
+
+* **Who** - Who you are.  Easy enough.
+* **Where** - Where you're coming from.
+* **Why** - Why you're interested in this company, and show that you researched them.
+* **What** - What you can bring to the table.
+* **When** - When you're available to start, and when they can contact you.
+* **How** - How they can reach you.
+
+# Your Attitude
+
+When you're internship/job hunting, it's very easy to feel down if you don't hear back from companies, an interview goes poorly, or you start comparing yourself to people.  It's a tough field we're going into.
+
+So.  I won't spend much time on this.  But I want to emphasize something: **You're brilliant.**  You're in this field for a reason.  When your grades aren't awesome or someone gets something that you wanted, don't feel down on yourself.  So many opportunities will come your way if you just keep working hard and refining your skills.
+
+Mark Twain once said, "Comparison is the death of joy."  When you start to compare your skills to others, it's hard to not feel as good about your own, or to get a little too competitive about your work.  Work hard and don't let others get you down.  It's remarkable how significantly that can improve both your work and your interviewing experience!
+
+When you're talking to companies and recruiters at career fairs and hackathons and over the phone, be confident, not arrogant.  Be grateful for the opportunity they're giving you, and smile!  A great attitude will take you VERY far.
+
+# Your Skills
+
+Obviously, your skills are what a company is buying from you when they hire you.  So, honing in those skills and presenting them in an effective way is *probably* the most important thing in getting a gig.
+
+## Building Them
+
+Chances are, if you've had a data structures and/or algorithms class, you're already going to do pretty well in the technical interviews.  That is, if you can recall the information you learned.
+
+Here's a checklist of things that you should probably be prepared to know in a technical interview:
+
+* Data types
+* Basic Bitwise Operations
+* String Operations
+* Arrays
+* Linked Lists
+  + Singly Linked
+  + Doubly Linked
+  + Circular Linked
+* Queues
+* Stacks
+* Heaps
+* Trees
+  + Binary Trees
+  + Binary Search Trees
+  + Tries
+  + Self Balancing Trees
+* Traversing Trees
+  + Breadth First Search - BFS
+  + Depth First Search - DFS
+  + Preorder, Inorder, Postorder
+* Graphs
+  + Dijkstra's Algorithm / A* Search
+* Hash Maps
+  + Handling Collisions
+* Sorting algorithms
+  + Insertion
+  + Selection
+  + Merge
+  + Quick
+* Time Complexities
+
+This guide isn't for teaching you these skills.  But there are several guides, problem sets, and practice systems out there that can help.
+
+**General Guides**
+
+* [Sorting Algorithms](http://www.sorting-algorithms.com/)
+* [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+* [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
+* [Algorithm Implementations](http://algorithm.zone/)
+* [Top 10 Algorithms for coding interviews](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
+
+**Problem Sets**
+
+* [Data Structures Questions](http://www.geeksforgeeks.org/data-structures/)
+* [FitCoding](http://www.fitcoding.com/)
+* [Google CodeJam Practice Questions](https://code.google.com/codejam/contests.html)
+
+**Online Judging Systems**
+
+* [LeetCode Online Judge](https://oj.leetcode.com/problemset/algorithms/)
+* [HackerRank Online Judge](https://www.hackerrank.com/)
+* [Project Euler](https://projecteuler.net/)
+
+**Mock Interviews**
+
+* [Pramp](https://www.pramp.com) - free
+* [Careercup](http://www.careercup.com/interview) - paid
+* [Gainlo](http://www.gainlo.co/) - paid
+* [Impact Interview](http://www.impactinterview.com/software-engineering-interview-coaching/) - paid
+
+Here's some books that might also be useful.
+
+* [Algorithms, 4th edition, by Robert Sedgewick and Kevin Wayne](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
+* [Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (also referred as CLRS)](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
+* [Think Complexity, by Allen B. Downey](http://greenteapress.com/complexity/thinkcomplexity.pdf)
+* [Problems on Algorithms, 2nd edition, by Ian Parberry and William Gasarch](http://larc.unt.edu/ian/books/free/poa.pdf)
+* [Data Structures and Algorithms in Java](http://rineshpk.weebly.com/uploads/1/8/2/0/1820991/data_structures_and_algorithms_in_javatqw_darksiderg.pdf)
+* [Cracking the Coding Interview, 6th edition, by Gayle Laakmann McDowell](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1443719471&sr=8-1&keywords=coding+interview)
+
+Typically, for an internship or your first job, questions won't get much more specific unless you're applying for a specific role.  For example, if I wanted to be a mobile intern, I might be asked iOS/Android/Windows Phone specific questions, or if I wanted to be a web intern, I might be asked HTML/CSS/JavaScript questions, or if I wanted to be a backend intern, I might be asked about Django or Node or Ruby on Rails.  That definitely depends on the company, and what you're both looking for.
+
+Make sure you're able to implement and use the above data structures without the assistance of an IDE. Typically, onsite technical interviews involve coding on paper or a whiteboard, and phone/video interviews usually involve some kind of collaborative text editor. Yes, that means you won't have access to auto-complete, auto-compiling, or the internet to check for errors. So be ready for that!
+
+## Selling Them
+
+When you're actively emailing and speaking with recruiters, they're going to ask you a lot of questions that are just checkboxes for what they're looking for in terms of skills.
+
+If you've written anything in a language before, **put it on your resume**.  A lot of companies have parsers that look for specific things that, again, will put a tick on those checkboxes before putting you through to the next round of review.  Now, if you've only ever done "Hello, world!" in Python, don't say that you're a Python ninja or whatever.  You don't want to be thrown into an interview that will only hurt your self-confidence.  Speaking from experience.  Trust me.
+
+When a recruiter or engineer is asking you about a certain project you've done, or how you've used a particular language, be as specific as possible.  Tell them **exactly** what you did on that particular project (or internship or what have you).  Tell them how much you contributed, what languages you used, how long was the duration of development for that project, what was the outcome of the project, etc. etc.
+
+For example, don't say, "I'm the webmaster for a club website. Next question."  Okay, Dwight Schrute.  Go back to your beet farm.  Instead, say something more like this: "I developed and currently maintain the website for my university's computer science club. I built it from the ground up with HTML, CSS, JavaScript, and jQuery on the front-end.  It's a static site, so a backend wasn't needed.  The website's main function is to promote the club and give members crucial updates about meetings and events, and I update it regularly via a Python script I wrote."  Oh my, you enchanting software engineer, you.  Let me hire you.
+
+When you're talking to companies about specific things you've done, make sure they know:
+
+* **What?** - What? - What did you make? What does it do? What impact has it made? What was the hardest part? What could you have done better?
+* **Why?** - Why did you make it?  Was it for a hackathon, a school project, an open source contribution, or something else?
+* **How?** - With which technologies did you make this?  Did you use a specific API?  What parts of it did you work on?
+* **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
+* **Who?** - Did you work on this with anyone?  Who did what?  Who is this for?
+
+Your skills are something that you have, and the reason why you have them is because you've used them in some way.  All you have to do to prove yourself is to explain yourself!  No need to go overboard and brag.  Just be honest, and confident.
+
+# Your Search
+
+You have a resume and cover letter in hand, and you have the skills to make anyone want you.  Now, you just have to find the right gig for you.
+
+## Events
+
+When you're on the hunt for a great internship or first job, the events you go to can really set you apart, and will help you meet people that could potentially help you in the long run.
+
+The biggies that you will definitely run into are:
+
+* Hackathons
+* Meetups
+* Conferences
+* Career Fairs
+
+So, how do you find these events?  They're happening all the time, you just need to know where to look.  Firstly, ask people in the field.  Talk to a mentor, a fellow student, a professor, a colleague... anyone could come through for you!  I remember my first tech event I went to in college was because I ran into a guy that I met orientation day.  And now he and I are coworkers.  Fancy that.  Anyway, people can get you very far.
+
+Otherwise, when people don't work, we always have the glorious internet leading the way.  There's so many resources out there I definitely can't list them all.  So I'll list just a few.
+
+* Your School - Yeah, this is kind of an easy shot, but not a lot of people consider their schools as an event generator, when they should.  Go on to your university's website and find the career fair, find a seminar, find a company presentation, find something that will help you learn and meet people.  You'll probably find a lot of options!
+* [Meetup](http://www.meetup.com) - Meetup is a great place to find groups of people who are interested in the same things you are, who meet regularly.  Look for engineering meetups that are hosted **at** companies.  You'll get to see an office, and meet people who actually work there (in addition to those who might work at other organizations).
+* [Eventbrite](https://www.eventbrite.com/) - Eventbrite is best for finding events that aren't recurring.  You can often find workshops, networking events, parties, and classes there.  I tend to just search for the term, "tech" or "computer" and the results simply flow.  Like a babbling brook.  Or something.
+* [Major League Hacking](https://mlh.io/) - MLH provides a fairly thorough schedule of university hackathons every semester.  Most of the events on their schedule provide travel reimbursement, but there's so many that you'll likely find one near you!
+* [Lanyrd](http://lanyrd.com/) - Lanyrd is a "social conference directory" that is full of conferences based on almost any topic.  Follow your favorite speakers or search for a particular language or technology, and you'll be set.
+
+Like I mentioned before, there's a lot of resources out there for finding events.  Now that you have places to go to, what do you do there?
+WHAT A CLEVER SEGUE.
+
+## Networking
+
+The whole point of going to events (besides learning something, of course) is to network.  Meeting and maintaining relationships with people in this industry is essential.
+
+So, how **do** you just network with people?  How do you make it as natural as eating pie on Pi Day?  I'll show you, Bert.
+
+First of all, don't think of it as networking.  You don't want to get the heebie-jeebies.  Think of it as meeting people who like what you like.  When you're at these events, you'll occasionally see groups of people staying in their own groups, not often reaching out to others.  You're not going to do that.  You're going to be a professional, social butterfly.
+
+Follow generally these steps (as casually or formally as the event calls for) when networking:
+
+1. Introduce yourself.  This seems obvious, but you'd be surprised how often people just sort of slide into a conversation without ever actually providing anyone with their name or title.  Go up to people and tell them who you are.
+
+2. Make small talk about tech.  Again, an obvious tip, but important.  You want to know what this person's skills are, and you want them to know yours.  Someday, they might be looking for someone to help them on a project in a language that you know, or vice-versa.  Get the important details out in the open about each other so that not only you can remember each other, but you can help each other out in the future.  And don't forget to have fun with it!
+
+3. Exchange contact information.  If you have no way of finding the person you're talking to again, and they don't have a way of finding you, then you're just wasting a potentially valuable connection.  Whether you give them a business card or an email address, or even a Twitter handle, keep that information!
+
+4. Follow-up.  This is probably **the most important thing I will tell you in this whole guide.**  Hence the bold letters.  So pretty.  Anyway.  Following up is the guaranteed way of leaving an impression with someone.  Whether you email or tweet or InMail or Facebook message or pigeon mail, just sending a simple, "it was nice to meet you!" message is absolutely **vital** when it comes to networking.  I've actually heard stories of people changing their mind about hiring someone based on a follow-up message.  And following up doesn't stop at the "nice to meet you" message.  At some point down the line, it's great practice to send a "how are you doing?" message to someone you're interested in maintaining a relationship with.  For all three of my mentors that I had in college (and to this day), the way we built our relationship was through these sorts of follow-up messages.  **Do them.**
+
+Networking is about building relationships, and what you can do with those relationships is up to you.  But we're talking about getting a job.  So let's move on to one of the best ways of getting one, with these relationships.
+
+## Referrals
+
+Referrals are your in.  If you can get a referral from an employee of the company you're applying for, that's money.  It pushes you towards the top of the pile of resumes that they're getting every single day.  Using the relationships you've built from networking, all it takes is a simple ask!  You can get a referral from current employees, former ones, interns, former interns, friends of engineers, acquaintances of recruiters... really, anyone who is connected with the company.  If they have a job posting up for a given position, they are looking around for engineers just as much as you're looking around for a great gig!  The company knows that they're going to be speaking with someone potentially really good (because they were recommended by someone trusted), and you get to speak to a company for whom you want to work.  Having a referral is a win for both parties.  
+
+Asking for a referral really depends on your relationship with the referrer.  If you know them in a strictly business setting, you might want to send them a more professional request.  But if you know the referrer pretty well, chances are you know how to ask for a favor.  One thing that you must remember though is to, again, **follow up**!  If you haven't heard back from your referrer, reach out and check on your status.  If they let you know that you're in the system, be gracious and take them for coffee or something.  Common courtesy.  You've got this.
+
+## Cold Calling
+
+A lot of people are fans of cold calling, which is making unsolicited contact with a person at a company and hoping for something good to come of it.  I admit, I'm not one of those people.  Seems spammy.  But, I'll tell you about some ways to do that anyway, to make your cold calls as potentially successful as possible.
+
+First of all, you should have an email for someone at the company you're looking at.  You could ask around your network for contact information for a given person, or you could just go out on a limb and [test some emails to see if they're valid](http://mailtester.com/).  A lot of companies have fairly standard email address templates (firstname.lastname@company.com, for example), so you can just keep sending a few until you find a legitimate one.  If you need names to test out, you can scour LinkedIn or the company's website to try and find something that works.
+
+Once you have a legitimate email on your hands, get to work on making a personalized message to them.  Emphasis on the personal.  When you're cold calling, you can't have just any standard email template where you stick in the company's name where it fits.  You have to clearly let the person know why you're writing, from where you got their information (if it's not just a random guess, of course), why you would be a good fit for the company (where you will **sell** those awesome skills of yours), and why you think the company is great.  Essentially, you're writing a glorified cover letter.
+
+When the email has been sent, you're done.  If you haven't heard back in a week or two, send a follow-up, but if they still haven't replied after that, chances are they won't reply at all.  And that's okay.  It happens.  That's the territory when it comes to cold calling.
+
+## Fellowships
+
+Fellowships are a great way to network with a community and get valuable mentorship that will most certainly help you in the long run.  They vary depending on the program, but typically you'll get assigned a mentor or two, go to several events to network with professionals, and intern for a company that has partnered with the specific fellowship program.
+
+Here's a list of some example fellowship programs.  This is by no means a complete list (feel free to send a pull request or file an issue if there's another you'd like to be added), but it should get you started!
+
+* [Cansbridge Fellowship](http://www.cansbridgefellowship.com/)
+* [CODE2040](http://code2040.org/)
+* [FirstMark Elite](http://firstmarkelite.com/)
+* [First Round Capital](http://www.university.firstround.com/)
+* [Ford-Mozilla Fellows](https://advocacy.mozilla.org/open-web-fellows/)
+* [hackNY Fellows](http://apply.hackny.org/)
+* [Knight-Mozilla Fellows](http://opennews.org/fellowships/)
+* [KPCB Fellows](http://kpcbfellows.com/)
+* [Mayfield Fellows Program](http://stvp.stanford.edu/mayfield-fellows-program/)
+* [NYC Turing Fellows](http://nycturingfellows.org/)
+* [PennApps Fellows](http://www.pennappsfellows.com/)
+* [True Entrepreneur Corps](http://www.trueventures.com/tec/)
+
+In addition to these fellowships, several companies offer special programs for younger students that are similarly geared towards learning and mentorship.  Here's another list that is not complete, but will get you started:
+
+* [Microsoft Explore](http://careers.microsoft.com/careers/en/us/university-programs.aspx) (I'm biased because I did this one, but this program is AWESOME)
+* [Google Engineering Practicum](https://www.google.com/jobs/students/engpracticum)
+* [Facebook University of Engineering](https://www.facebook.com/careers/university/fbueng)
+* [Intel IRISE](http://www.intel.com/content/www/us/en/jobs/locations/united-states/students/internships/intel-early-internship-software-engineering.html)
+* [Qualcomm EIP (Early Identification Program)](https://www.qualcomm.com/company/careers/interns)
+* [Pinterest Engage Software Engineer Intern] (https://careers.pinterest.com/careers/details/pinterest-engage-software-engineer-intern_san-francisco_143952)
+
+o overboard and brag.  Just be honest, and confident.
+
+# Your Search
+
+You have a resume and cover letter in hand, and you have the skills to make anyone want you.  Now, you just have to find the right gig for you.
+
+## Events
+
+When you're on the hunt for a great internship or first job, the events you go to can really set you apart, and will help you meet people that could potentially help you in the long run.
+
+The biggies that you will definitely run into are:
+
+* Hackathons
+* Meetups
+* Conferences
+* Career Fairs
+
+So, how do you find these events?  They're happening all the time, you just need to know where to look.  Firstly, ask people in the field.  Talk to a mentor, a fellow student, a professor, a colleague... anyone could come through for you!  I remember my first tech event I went to in college was because I ran into a guy that I met orientation day.  And now he and I are coworkers.  Fancy that.  Anyway, people can get you very far.
+
+Otherwise, when people don't work, we always have the glorious internet leading the way.  There's so many resources out there I definitely can't list them all.  So I'll list just a few.
+
+* Your School - Yeah, this is kind of an easy shot, but not a lot of people consider their schools as an event generator, when they should.  Go on to your university's website and find the career fair, find a seminar, find a company presentation, find something that will help you learn and meet people.  You'll probably find a lot of options!
+* [Meetup](http://www.meetup.com) - Meetup is a great place to find groups of people who are interested in the same things you are, who meet regularly.  Look for engineering meetups that are hosted **at** companies.  You'll get to see an office, and meet people who actually work there (in addition to those who might work at other organizations).
+* [Eventbrite](https://www.eventbrite.com/) - Eventbrite is best for finding events that aren't recurring.  You can often find workshops, networking events, parties, and classes there.  I tend to just search for the term, "tech" or "computer" and the results simply flow.  Like a babbling brook.  Or something.
+* [Major League Hacking](https://mlh.io/) - MLH provides a fairly thorough schedule of university hackathons every semester.  Most of the events on their schedule provide travel reimbursement, but there's so many that you'll likely find one near you!
+* [Lanyrd](http://lanyrd.com/) - Lanyrd is a "social conference directory" that is full of conferences based on almost any topic.  Follow your favorite speakers or search for a particular language or technology, and you'll be set.
+
+Like I mentioned before, there's a lot of resources out there for finding events.  Now that you have places to go to, what do you do there?
+WHAT A CLEVER SEGUE.
+
+## Networking
+
+The whole point of going to events (besides learning something, of course) is to network.  Meeting and maintaining relationships with people in this industry is essential.
+
+So, how **do** you just network with people?  How do you make it as natural as eating pie on Pi Day?  I'll show you, Bert.
+
+First of all, don't think of it as networking.  You don't want to get the heebie-jeebies.  Think of it as meeting people who like what you like.  When you're at these events, you'll occasionally see groups of people staying in their own groups, not often reaching out to others.  You're not going to do that.  You're going to be a professional, social butterfly.
+
+Follow generally these steps (as casually or formally as the event calls for) when networking:
+
+1. Introduce yourself.  This seems obvious, but you'd be surprised how often people just sort of slide into a conversation without ever actually providing anyone with their name or title.  Go up to people and tell them who you are.
+
+2. Make small talk about tech.  Again, an obvious tip, but important.  You want to know what this person's skills are, and you want them to know yours.  Someday, they might be looking for someone to help them on a project in a language that you know, or vice-versa.  Get the important details out in the open about each other so that not only you can remember each other, but you can help each other out in the future.  And don't forget to have fun with it!
+
+3. Exchange contact information.  If you have no way of finding the person you're talking to again, and they don't have a way of finding you, then you're just wasting a potentially valuable connection.  Whether you give them a business card or an email address, or even a Twitter handle, keep that information!
+
+4. Follow-up.  This is probably **the most important thing I will tell you in this whole guide.**  Hence the bold letters.  So pretty.  Anyway.  Following up is the guaranteed way of leaving an impression with someone.  Whether you email or tweet or InMail or Facebook message or pigeon mail, just sending a simple, "it was nice to meet you!" message is absolutely **vital** when it comes to networking.  I've actually heard stories of people changing their mind about hiring someone based on a follow-up message.  And following up doesn't stop at the "nice to meet you" message.  At some point down the line, it's great practice to send a "how are you doing?" message to someone you're interested in maintaining a relationship with.  For all three of my mentors that I had in college (and to this day), the way we built our relationship was through these sorts of follow-up messages.  **Do them.**
+
+Networking is about building relationships, and what you can do with those relationships is up to you.  But we're talking about getting a job.  So let's move on to one of the best ways of getting one, with these relationships.
+
+## Referrals
+
+Referrals are your in.  If you can get a referral from an employee of the company you're applying for, that's money.  It pushes you towards the top of the pile of resumes that they're getting every single day.  Using the relationships you've built from networking, all it takes is a simple ask!  You can get a referral from current employees, former ones, interns, former interns, friends of engineers, acquaintances of recruiters... really, anyone who is connected with the company.  If they have a job posting up for a given position, they are looking around for engineers just as much as you're looking around for a great gig!  The company knows that they're going to be speaking with someone potentially really good (because they were recommended by someone trusted), and you get to speak to a company for whom you want to work.  Having a referral is a win for both parties.  
+
+Asking for a referral really depends on your relationship with the referrer.  If you know them in a strictly business setting, you might want to send them a more professional request.  But if you know the referrer pretty well, chances are you know how to ask for a favor.  One thing that you must remember though is to, again, **follow up**!  If you haven't heard back from your referrer, reach out and check on your status.  If they let you know that you're in the system, be gracious and take them for coffee or something.  Common courtesy.  You've got this.
+
+## Cold Calling
+
+A lot of people are fans of cold calling, which is making unsolicited contact with a person at a company and hoping for something good to come of it.  I admit, I'm not one of those people.  Seems spammy.  But, I'll tell you about some ways to do that anyway, to make your cold calls as potentially successful as possible.
+
+First of all, you should have an email for someone at the company you're looking at.  You could ask around your network for contact information for a given person, or you could just go out on a limb and [test some emails to see if they're valid](http://mailtester.com/).  A lot of companies have fairly standard email address templates (firstname.lastname@company.com, for example), so you can just keep sending a few until you find a legitimate one.  If you need names to test out, you can scour LinkedIn or the company's website to try and find something that works.
+
+Once you have a legitimate email on your hands, get to work on making a personalized message to them.  Emphasis on the personal.  When you're cold calling, you can't have just any standard email template where you stick in the company's name where it fits.  You have to clearly let the person know why you're writing, from where you got their information (if it's not just a random guess, of course), why you would be a good fit for the company (where you will **sell** those awesome skills of yours), and why you think the company is great.  Essentially, you're writing a glorified cover letter.
+
+When the email has been sent, you're done.  If you haven't heard back in a week or two, send a follow-up, but if they still haven't replied after that, chances are they won't reply at all.  And that's okay.  It happens.  That's the territory when it comes to cold calling.
+
+## Fellowships
+
+Fellowships are a great way to network with a community and get valuable mentorship that will most certainly help you in the long run.  They vary depending on the program, but typically you'll get assigned a mentor or two, go to several events to network with professionals, and intern for a company that has partnered with the specific fellowship program.
+
+Here's a list of some example fellowship programs.  This is by no means a complete list (feel free to send a pull request or file an issue if there's another you'd like to be added), but it should get you started!
+
+* [Cansbridge Fellowship](http://www.cansbridgefellowship.com/)
+* [CODE2040](http://code2040.org/)
+* [FirstMark Elite](http://firstmarkelite.com/)
+* [First Round Capital](http://www.university.firstround.com/)
+* [Ford-Mozilla Fellows](https://advocacy.mozilla.org/open-web-fellows/)
+* [hackNY Fellows](http://apply.hackny.org/)
+* [Knight-Mozilla Fellows](http://opennews.org/fellowships/)
+* [KPCB Fellows](http://kpcbfellows.com/)
+* [Mayfield Fellows Program](http://stvp.stanford.edu/mayfield-fellows-program/)
+* [NYC Turing Fellows](http://nycturingfellows.org/)
+* [PennApps Fellows](http://www.pennappsfellows.com/)
+* [True Entrepreneur Corps](http://www.trueventures.com/tec/)
+
+In addition to these fellowships, several companies offer special programs for younger students that are similarly geared towards learning and mentorship.  Here's another list that is not complete, but will get you started:
+
+* [Microsoft Explore](http://careers.microsoft.com/careers/en/us/university-programs.aspx) (I'm biased because I did this one, but this program is AWESOME)
+* [Google Engineering Practicum](https://www.google.com/jobs/students/engpracticum)
+* [Facebook University of Engineering](https://www.facebook.com/careers/university/fbueng)
+* [Intel IRISE](http://www.intel.com/content/www/us/en/jobs/locations/united-states/students/internships/intel-early-internship-software-engineering.html)
+* [Qualcomm EIP (Early Identification Program)](https://www.qualcomm.com/company/careers/interns)
+* [Pinterest Engage Software Engineer Intern] (https://careers.pinterest.com/careers/details/pinterest-engage-software-engineer-intern_san-francisco_143952)
+
+
+----
+
+<details> <summary>Github/bgoonz-master/bgoonz-master/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/backup.md](Github/bgoonz-master/bgoonz-master/backup.md)
+
+# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="45%"> 
+
+### HI
+---
+
+<img align="right" alt="GIF" src="https://github.com/bgoonz/bgoonz/raw/master/code.gif?raw=true" width="500" height="320" width="28%";">
+
+---
+
+<img src="https://readme-jokes.vercel.app/api" width="500" height="320" width="28%"; />
+
+---
+
+
+
+![img](./activity.JPG)
+
+---
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&langs_count=8&show_icons=true&theme=radical)](https://github.com/bgoonz)
+
+---
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+---
+
+![ViewCount](https://views.whatilearened.today/views/github/bgoonz/views.svg)
+
+---
+
+# Hi, I am Bryan!
+
+</center>
+<center>
+<div style=" border: 1px solid black">
+<img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/bryan-profile-pic.jpg?raw=true" ></img>    <img align="center" src="https://github.com/bgoonz/web-dev-notes-resource-site/blob/ac10e07e3cdc5abcf22f0ed570acaf7a5c400877/core-site/upload/best-prac-250.gif" width="475" height="400"></img>
+</div>
+
+<hr>
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+
+</div>
+
+<hr>
+
+
+---
+
+
+## DAY # 1 WakaTime app:
+
+![img](./wakasuper.png) 
+
+---
+
+---
+### _DAY2_
+---
+
+<div style=" border: 1px solid black">
+
+<img align="center" src="./day2.JPG" ></img>   
+
+
+
+<figcaption>Day # 2 Tracking Coding with WakaTime <a href="https://resume.github.io/?bgoonz"></a></figcaption>
+
+</div>
+
+---
+
+### _DAY3_
+---
+
+<div style=" border: 1px solid black">
+
+<img align="center" src="./day3.PNG" ></img>   
+
+
+
+
+
+</div>
+
+
+---
+
+
+
+
+
+
+
+<div>
+
+
+</div>
+
+---
+<div>
+
+
+
+
+
+---
+
+
+
+[![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 "Ancestrial Solo")
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+---
+
+</center>
+<hr>
+
+
+
+
+
+[Hi I'm Bryan!](#hi-im-bryan)
+- [ ] ✅ [Portfolio:](#portfolio)
+- [ ] ✅- [OR:](#or)
+- [ ] ✅ [Github-Pages](#github-pages)re
+- [ ] ✅ [Github Gists](#github-gists)
+- [ ] ✅ [Web Dev Resource Hub](#web-dev-resource-hub)
+- [ ] ✅ [Mihir\_Beg.com](#mihir_begcom)
+- [ ] ✅ [Interview Prep Static Site](#interview-prep-static-site)
+- [ ] ✅ [Data Structures Repository](#data-structures-repository)
+- [ ] ✅ [Learning React Blog](#learning-react-blog)
+- [ ] ✅ [React Repo:](#react-repo)
+- [ ] ✅ [React Repo](#react-repo-1)
+- [ ] ✅ [_Email_](#email)
+- [ ] ✅ [_Phone_](#phone)
+- [ ] ✅ [Social](#social)
+
+
+
+---
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+
+
+
+---
+
+---
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges)
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+
+---
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
+
+![React](https://img.shields.io/badge/-React-black?style=flat&logo=react) ![Redux](https://img.shields.io/badge/-Redux-lightblue?style=flat&logo=redux)
+
+
+
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3) ![Sass](https://img.shields.io/badge/-Sass-black?style=flat&logo=sass)
+
+
+
+
+![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue)     ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) 
+
+
+
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker)                                 ![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql) ![PostgresQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat&logo=postgresql) ![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git)      ![Ruby](https://img.shields.io/badge/-Ruby-darkred?style=flat&logo=ruby)             ![Material-UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat&logo=Material-UI&logoColor=white)                     
+
+
+
+---
+
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/bgoonz)
+
+*    [**GitHub**](https://github.com/bgoonz)
+*    [**Instagram**](https://www.instagram.com/bgoonz/)
+<img src="https://img.shields.io/badge/instagram-follow%20me-%23E4405F.svg?&style=for-the-badge&logo=instagram" /> 
+*    [**LinkedIn**](https://www.linkedin.com/in/bryan-guner-046199128/)
+
+
+<center>
+
+<div style=" border: 1px solid black">
+
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+
+</div>
+
+<hr>
+</center>
+
+
+---
+Portfolio:
+------------
+
+
+![po](./skills.JPG)
+
+
+[netlify](https://tender-bartik-074feb.netlify.app/)
+
+#### OR:
+
+[Github-Pages](https://bgoonz.github.io/)
+
+---
+
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+[Github Gists](https://gist.github.com/bgoonz)
+
+---
+
+<center>
+
+![resume](./cem.JPG)
+
+
+
+<center>
+<img src="./bryan-guner-resume-2021.jpeg" alt="hr-line" width="78%" height="800px" border="1px solid gold">
+</center>
+
+
+</center>
+
+---
+
+
+
+
+[github-resume](https://resume.github.io/?bgoonz)
+
+
+
+
+---
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+
+
+Web Dev Resource Hub
+----------------------
+
+### My personal Web Development blog and resource sharing site
+
+*   [Live Site](https://goofy-euclid-1cd736.netlify.app/)
+
+
+*   [Main Page](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+
+
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+---
+
+MihirBeg.com
+---------------
+
+
+### Created a dynamic web page for a local musician using the Bootsrtap framework.
+
+-Talk about App Features & Design Process Here-
+
+-   [Live Site](https://eloquent-sammet-ba1810.netlify.app/)
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+---       
+Interview Prep Static Site 
+-----------------------------
+
+### Data Structures Repository
+
+-Hope this helps someone other than me!-
+
+*   [Live Site](https://gracious-raman-474030.netlify.app)
+
+---
+
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+---
+
+Learning React Blog
+--------------------
+https://ecstatic-jang-593fd1.netlify.app/readme
+
+#### React Repo:
+
+[React Repo](https://github.com/bgoonz/React-Practice)
+
+
+---
+
+<a href="https://codesandbox.io/embed/zealous-microservice-ti7em?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"   style="width:100%; height:20px; border:0; border-radius: 4px; overflow:hidden;" rel="React Todo">![Foo](https://codesandbox.io/static/img/play-codesandbox.svg)</a>
+
+
+
+<center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+
+## _Email_
+
+[bryan.guner@gmail.com](#)
+
+## _Phone_
+
+*551-254-5505*
+
+## Social
+
+-   [GitHub](https://github.com/bgoonz)
+-   [code pen](https://codepen.io/bgoonz)
+-   [Instagram](https://www.instagram.com/bgoonz/)
+-   [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
+-   [Replit](https://repl.it/@bgoonz/)
+-   [Redit](https://www.reddit.com/user/bgoonz1)
+-   [runkit](https://runkit.com/bgoonz)
+-   [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)
+</center>
+
+
+![alt](https://sway.office.com/s/xW9h9KBIalj9GLr0/embed")
+
+
+# _MY Interests / Resources_:
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/backup2.md](Github/bgoonz-master/bgoonz-master/backup2.md)
+
+
+<img align="right" alt="GIF" src="https://github.com/bgoonz/bgoonz/raw/master/code.gif?raw=true" width="500" height="320" style="max-width:100%;">
+
+ 
+![img](./activity.JPG)
+
+---
+
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&langs_count=8&show_icons=true&theme=radical)](https://github.com/bgoonz)
+ 
+---
+ 
+ [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+---
+---
+
+# Hi, I am Bryan!
+
+</center>
+<center>
+<div style=" border: 1px solid black">
+<img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/bryan-profile-pic.jpg?raw=true" ></img>    <img align="center" src="https://github.com/bgoonz/web-dev-notes-resource-site/blob/ac10e07e3cdc5abcf22f0ed570acaf7a5c400877/core-site/upload/best-prac-250.gif" width="475" height="400"></img>
+</div>
+
+<hr>
+
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+ 
+</div>
+
+<hr>
+
+ 
+ ---
+ 
+ 
+ ## DAY # 1 WakaTime app:
+ 
+![img](./wakasuper.png) 
+
+---
+
+---
+### _DAY2_
+---
+
+<div style=" border: 1px solid black">
+ 
+<img align="center" src="./day2.JPG" ></img>   
+
+
+
+<figcaption>Day # 2 Tracking Coding with WakaTime <a href="https://resume.github.io/?bgoonz"></a></figcaption>
+
+</div>
+
+---
+
+### _DAY3_
+---
+
+<div style=" border: 1px solid black">
+ 
+<img align="center" src="./day3.PNG" ></img>   
+
+
+
+
+
+</div>
+
+
+---
+
+
+
+
+
+
+
+<div>
+
+
+</div>
+
+---
+<div>
+ 
+
+
+ 
+
+ ---
+ 
+ 
+ 
+ [![](http://img.youtube.com/vi/xGZSWvFess8/0.jpg)](http://www.youtube.com/watch?v=xGZSWvFess8 "Ancestrial Solo")
+ 
+
+ 
+ 
+ 
+
+
+ </div>
+
+
+
+
+
+
+
+
+---
+
+</center>
+<hr>
+
+
+
+
+
+[Hi I'm Bryan!](#hi-im-bryan)
+- [ ] ✅ [Portfolio:](#portfolio)
+- [ ] ✅- [OR:](#or)
+- [ ] ✅ [Github-Pages](#github-pages)re
+- [ ] ✅ [Github Gists](#github-gists)
+- [ ] ✅ [Web Dev Resource Hub](#web-dev-resource-hub)
+- [ ] ✅ [Mihir\_Beg.com](#mihir_begcom)
+- [ ] ✅ [Interview Prep Static Site](#interview-prep-static-site)
+- [ ] ✅ [Data Structures Repository](#data-structures-repository)
+- [ ] ✅ [Learning React Blog](#learning-react-blog)
+- [ ] ✅ [React Repo:](#react-repo)
+- [ ] ✅ [React Repo](#react-repo-1)
+- [ ] ✅ [_Email_](#email)
+- [ ] ✅ [_Phone_](#phone)
+- [ ] ✅ [Social](#social)
+
+
+
+---
+
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+
+
+
+---
+
+---
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Open In Collab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Naereen/badges)
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+
+---
+ ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
+
+![React](https://img.shields.io/badge/-React-black?style=flat&logo=react) ![Redux](https://img.shields.io/badge/-Redux-lightblue?style=flat&logo=redux)
+
+  
+
+ ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3) ![Sass](https://img.shields.io/badge/-Sass-black?style=flat&logo=sass)
+
+ 
+ 
+
+![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue)     ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) 
+
+  
+
+ ![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker)                                 ![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql) ![PostgresQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat&logo=postgresql) ![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git)      ![Ruby](https://img.shields.io/badge/-Ruby-darkred?style=flat&logo=ruby)             ![Material-UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat&logo=Material-UI&logoColor=white)                     
+
+
+
+---
+
+[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/bgoonz)
+
+*    [**GitHub**](https://github.com/bgoonz)
+*    [**Instagram**](https://www.instagram.com/bgoonz/)
+*    [**LinkedIn**](https://www.linkedin.com/in/bryan-guner-046199128/)
+
+
+ <center>
+ 
+<div style=" border: 1px solid black">
+ 
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+
+
+</div>
+
+<hr>
+</center>
+
+
+---
+Portfolio:
+------------
+
+
+![po](./skills.JPG)
+
+
+[netlify](https://tender-bartik-074feb.netlify.app/)
+
+#### OR:
+
+[Github-Pages](https://bgoonz.github.io/)
+
+---
+
+
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+[Github Gists](https://gist.github.com/bgoonz)
+
+---
+
+<center>
+ 
+ ![resume](./cem.JPG)
+
+
+
+<center>
+<img src="./bryan-guner-resume-2021.jpeg" alt="hr-line" width="78%" height="800px" border="1px solid gold">
+</center>
+
+
+</center>
+
+---
+
+
+
+
+[github-resume](https://resume.github.io/?bgoonz)
+
+
+
+
+---
+
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+
+
+Web Dev Resource Hub
+----------------------
+
+### My personal Web Development blog and resource sharing site
+
+*   [Live Site](https://goofy-euclid-1cd736.netlify.app/)
+
+
+*   [Main Page](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+
+
+  
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+---
+
+ MihirBeg.com
+---------------
+
+
+### Created a dynamic web page for a local musician using the Bootsrtap framework.
+
+-Talk about App Features & Design Process Here-
+
+-   [Live Site](https://eloquent-sammet-ba1810.netlify.app/)
+
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+---       
+Interview Prep Static Site 
+-----------------------------
+
+### Data Structures Repository
+
+-Hope this helps someone other than me!-
+
+*   [Live Site](https://gracious-raman-474030.netlify.app)
+
+---
+
+
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+---
+
+Learning React Blog
+--------------------
+https://ecstatic-jang-593fd1.netlify.app/readme
+
+#### React Repo:
+
+[React Repo](https://github.com/bgoonz/React-Practice)
+
+
+---
+
+<a href="https://codesandbox.io/embed/zealous-microservice-ti7em?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"   style="width:100%; height:20px; border:0; border-radius: 4px; overflow:hidden;" rel="React Todo">![Foo](https://codesandbox.io/static/img/play-codesandbox.svg)</a>
+
+
+
+ <center>
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+</center>
+
+
+## _Email_
+
+[bryan.guner@gmail.com](#)
+
+## _Phone_
+
+*551-254-5505*
+
+## Social
+
+-   [GitHub](https://github.com/bgoonz)
+-   [code pen](https://codepen.io/bgoonz)
+-   [Instagram](https://www.instagram.com/bgoonz/)
+-   [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
+-   [Replit](https://repl.it/@bgoonz/)
+-   [Redit](https://www.reddit.com/user/bgoonz1)
+-   [runkit](https://runkit.com/bgoonz)
+-   [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)
+</center>
+
+
+![alt](https://sway.office.com/s/xW9h9KBIalj9GLr0/embed")
+
+
+# _MY Interests / Resources_:
+
+<p class="has-line-data" data-line-start="322" data-line-end="323"><img src="https://sway.office.com/s/xW9h9KBIalj9GLr0/embed%22" alt="alt"></p>
+<h1 class="code-line" data-line-start=325 data-line-end=326 ><a id="_MY_INTERESTS__325"></a><em>MY INTERESTS</em>:</h1>
+<ul>
+<li class="has-line-data" data-line-start="328" data-line-end="329"><a href="#ansible">Ansible</a></li>
+<li class="has-line-data" data-line-start="329" data-line-end="330"><a href="#awesome-lists">Awesome Lists</a></li>
+<li class="has-line-data" data-line-start="330" data-line-end="331"><a href="#continious-integration">CI/CD</a></li>
+<li class="has-line-data" data-line-start="331" data-line-end="332"><a href="#data-science">Data Science</a></li>
+<li class="has-line-data" data-line-start="332" data-line-end="333"><a href="#docker">Docker</a></li>
+<li class="has-line-data" data-line-start="333" data-line-end="334"><a href="#dynamodb">DynamoDB</a></li>
+<li class="has-line-data" data-line-start="334" data-line-end="335"><a href="#elasticsearch">Elasticsearch</a></li>
+<li class="has-line-data" data-line-start="335" data-line-end="336"><a href="#environment-setups">Environment Setups</a></li>
+<li class="has-line-data" data-line-start="336" data-line-end="337"><a href="#epic-github-repos">Epic Github Repos</a></li>
+<li class="has-line-data" data-line-start="337" data-line-end="338"><a href="#golang">Golang</a></li>
+<li class="has-line-data" data-line-start="338" data-line-end="339"><a href="#grafana">Grafana</a></li>
+<li class="has-line-data" data-line-start="339" data-line-end="340"><a href="#great-blogs">Great Blogs</a></li>
+<li class="has-line-data" data-line-start="340" data-line-end="341"><a href="#knowledge-base">Knowledge Base</a></li>
+<li class="has-line-data" data-line-start="341" data-line-end="343"><a href="#kubernetes">Kubernetes</a>
+<ul>
+<li class="has-line-data" data-line-start="342" data-line-end="343"><a href="#kubernetes-storage">Kubernetes Storage</a></li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="343" data-line-end="344"><a href="#machine-learning">Machine Learning</a></li>
+<li class="has-line-data" data-line-start="344" data-line-end="345"><a href="#monitoring">Monitoring</a></li>
+<li class="has-line-data" data-line-start="345" data-line-end="346"><a href="#mongodb">MongoDB</a></li>
+<li class="has-line-data" data-line-start="346" data-line-end="347"><a href="#programming">Programming</a></li>
+<li class="has-line-data" data-line-start="347" data-line-end="348"><a href="#queues">Queues</a></li>
+<li class="has-line-data" data-line-start="348" data-line-end="351"><a href="#self-hosting">Self Hosting</a>
+<ul>
+<li class="has-line-data" data-line-start="349" data-line-end="350"><a href="#email-server-setups">Email Server Setups</a></li>
+<li class="has-line-data" data-line-start="350" data-line-end="351"><a href="#mailscanner-server-setups">Mailscanner Server Setups</a></li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="351" data-line-end="352"><a href="#serverless">Serverless</a></li>
+<li class="has-line-data" data-line-start="352" data-line-end="353"><a href="#sysadmin-references">Sysadmin References</a></li>
+<li class="has-line-data" data-line-start="353" data-line-end="354"><a href="#vpn">VPN</a></li>
+<li class="has-line-data" data-line-start="354" data-line-end="356"><a href="#web-frameworks">Web Frameworks</a></li>
+</ul>
+<h2 class="code-line" data-line-start=356 data-line-end=357 ><a id="Ansible_356"></a>Ansible</h2>
+<ul>
+<li class="has-line-data" data-line-start="357" data-line-end="359"><a href="https://github.com/zimmertr/Bootstrap-Kubernetes-with-LXC">Kubernetes on LXC with Ansible</a></li>
+</ul>
+<h2 class="code-line" data-line-start=359 data-line-end=360 ><a id="Awesome_Lists_359"></a>Awesome Lists</h2>
+<ul>
+<li class="has-line-data" data-line-start="360" data-line-end="361"><a href="https://github.com/exAspArk/awesome-chatops">Awesome ChatOps</a></li>
+<li class="has-line-data" data-line-start="361" data-line-end="362"><a href="https://github.com/binhnguyennus/awesome-scalability">Awesome Scalability</a></li>
+<li class="has-line-data" data-line-start="362" data-line-end="364"><a href="https://github.com/drone/awesome-drone">Awesome Drone</a></li>
+</ul>
+<h2 class="code-line" data-line-start=364 data-line-end=365 ><a id="Epic_Github_Repos_364"></a>Epic Github Repos</h2>
+<ul>
+<li class="has-line-data" data-line-start="365" data-line-end="367"><a href="https://github.com/mlabouardy?tab=repositories">mlabouardy</a></li>
+</ul>
+<h2 class="code-line" data-line-start=367 data-line-end=368 ><a id="Authentication_367"></a>Authentication</h2>
+<ul>
+<li class="has-line-data" data-line-start="368" data-line-end="370"><a href="https://mapr.com/blog/how-secure-elasticsearch-and-kibana/">Nginx ES and Kibana Proxy with LDAP</a></li>
+</ul>
+<h2 class="code-line" data-line-start=370 data-line-end=371 ><a id="Data_Science_370"></a>Data Science</h2>
+<ul>
+<li class="has-line-data" data-line-start="371" data-line-end="373"><a href="https://github.com/bulutyazilim/awesome-datascience">bulutyazilim - datascience awesome list</a></li>
+</ul>
+<h2 class="code-line" data-line-start=373 data-line-end=374 ><a id="Grafana_373"></a>Grafana</h2>
+<ul>
+<li class="has-line-data" data-line-start="374" data-line-end="376"><a href="https://github.com/mlabouardy/grafana-dashboards">Grafana Dashboards @mlabouardy</a></li>
+</ul>
+<h2 class="code-line" data-line-start=376 data-line-end=377 ><a id="Docker_376"></a>Docker</h2>
+<h4 class="code-line" data-line-start=378 data-line-end=379 ><a id="Deploy_Stacks_to_your_Swarm_whale_heart_378"></a>Deploy Stacks to your Swarm: :whale: :heart:</h4>
+<p class="has-line-data" data-line-start="380" data-line-end="381">Logging:</p>
+<ul>
+<li class="has-line-data" data-line-start="382" data-line-end="384"><a href="https://github.com/shazChaudhry/docker-elastic">shazChaudhry Swarm GELF Stack</a></li>
+</ul>
+<p class="has-line-data" data-line-start="384" data-line-end="385">Metrics:</p>
+<ul>
+<li class="has-line-data" data-line-start="386" data-line-end="387"><a href="https://github.com/stefanprodan/swarmprom">StefanProdan - Prometheus, Grafana, cAdvisor, Node Exporter and Alert Manager</a></li>
+<li class="has-line-data" data-line-start="387" data-line-end="389"><a href="https://github.com/mlabouardy/swarm-tick">Mlabouardy - Telegraf, InfluxDB, Chronograf, Kapacitor &amp; Slack</a></li>
+</ul>
+<h4 class="code-line" data-line-start=389 data-line-end=390 ><a id="Awesome_Docker_Repos_389"></a>Awesome Docker Repos</h4>
+<ul>
+<li class="has-line-data" data-line-start="390" data-line-end="391"><a href="https://github.com/jessfraz/dockerfiles">Jess's Dockerfiles</a></li>
+<li class="has-line-data" data-line-start="391" data-line-end="393"><a href="https://github.com/firecat53/dockerfiles">Firecat53's Dockerfiles</a></li>
+</ul>
+<h4 class="code-line" data-line-start=393 data-line-end=394 ><a id="RaspberryPi_ARM_Images_393"></a>RaspberryPi ARM Images:</h4>
+<ul>
+<li class="has-line-data" data-line-start="394" data-line-end="395"><a href="https://hub.docker.com/r/arm32v6/alpine/">arm32v6/alpine:edge</a></li>
+<li class="has-line-data" data-line-start="395" data-line-end="396"><a href="https://hub.docker.com/r/arm32v6/golang/">arm32v6/golang:alpine</a></li>
+<li class="has-line-data" data-line-start="396" data-line-end="397"><a href="https://hub.docker.com/r/arm32v6/haproxy/">arm32v6/haproxy:alpine</a></li>
+<li class="has-line-data" data-line-start="397" data-line-end="398"><a href="https://hub.docker.com/r/arm32v6/node/">arm32v6/node:alpine</a></li>
+<li class="has-line-data" data-line-start="398" data-line-end="399"><a href="https://hub.docker.com/r/arm32v6/openjdk/">arm32v6/openjdk:alpine</a></li>
+<li class="has-line-data" data-line-start="399" data-line-end="400"><a href="https://hub.docker.com/r/arm32v6/postgres/">arm32v6/postgres:alpine</a></li>
+<li class="has-line-data" data-line-start="400" data-line-end="401"><a href="https://hub.docker.com/r/arm32v6/python/">arm32v6/python:2.7-alpine3.6</a></li>
+<li class="has-line-data" data-line-start="401" data-line-end="402"><a href="https://hub.docker.com/r/arm32v6/python/">arm32v6/python:3.6-alpine3.6</a></li>
+<li class="has-line-data" data-line-start="402" data-line-end="403"><a href="https://hub.docker.com/r/arm32v6/rabbitmq/">arm32v6/rabbitmq:alpine</a></li>
+<li class="has-line-data" data-line-start="403" data-line-end="404"><a href="https://hub.docker.com/r/arm32v6/redis/">arm32v6/redis:alpine</a></li>
+<li class="has-line-data" data-line-start="404" data-line-end="405"><a href="https://hub.docker.com/r/arm32v6/ruby/">arm32v6/ruby:alpine3.6</a></li>
+<li class="has-line-data" data-line-start="405" data-line-end="406"><a href="https://hub.docker.com/r/arm32v6/tomcat/">arm32v6/tomcat:alpine</a></li>
+<li class="has-line-data" data-line-start="406" data-line-end="407"><a href="https://hub.docker.com/r/arm32v6/traefik/">arm32v6/traefik:latest</a></li>
+<li class="has-line-data" data-line-start="407" data-line-end="408"><a href="https://hub.docker.com/r/arm32v7/debian/">arm32v7/debian:lates</a></li>
+<li class="has-line-data" data-line-start="408" data-line-end="409"><a href="https://hub.docker.com/r/hypriot/rpi-redis/">hypriot/rpi-redis</a></li>
+<li class="has-line-data" data-line-start="409" data-line-end="410"><a href="https://github.com/jixer/rpi-mongo">jixer/rpi-mongo</a></li>
+<li class="has-line-data" data-line-start="410" data-line-end="411"><a href="https://github.com/alexellis/docker-arm/tree/master/images/armhf">alexellis/armhf</a></li>
+<li class="has-line-data" data-line-start="411" data-line-end="412"><a href="https://github.com/zeiot">zeiot: rpi-prometheus stack</a></li>
+<li class="has-line-data" data-line-start="412" data-line-end="413"><a href="https://hub.docker.com/u/larmog/">larmog</a></li>
+<li class="has-line-data" data-line-start="413" data-line-end="414"><a href="https://github.com/andresvidal/rpi3-mongodb3">Rpi MongoDB</a></li>
+<li class="has-line-data" data-line-start="414" data-line-end="416"><a href="https://github.com/armswarm">ARM Swarm</a></li>
+</ul>
+<h4 class="code-line" data-line-start=416 data-line-end=417 ><a id="Docker_Image_Repositories_416"></a>Docker Image Repositories</h4>
+<ul>
+<li class="has-line-data" data-line-start="417" data-line-end="418"><a href="https://hub.docker.com/u/arm32v6/">Docker Hub: arm32v6</a></li>
+<li class="has-line-data" data-line-start="418" data-line-end="419"><a href="https://hub.docker.com/u/armv7/">Docker Hub: armv7</a></li>
+<li class="has-line-data" data-line-start="419" data-line-end="420"><a href="https://github.com/luvres/armhf">Github: Luvres Armhf</a></li>
+<li class="has-line-data" data-line-start="420" data-line-end="421"><a href="https://github.com/ulsmith/alpine-apache-php7">Apache/PHP7 on Alpine</a></li>
+<li class="has-line-data" data-line-start="421" data-line-end="422"><a href="https://github.com/docker-library/tomcat/blob/master/8.0/jre8-alpine/Dockerfile">Tomcat on Alpine</a></li>
+<li class="has-line-data" data-line-start="422" data-line-end="423"><a href="https://github.com/jwilder/nginx-proxy">Nginx (jwilder)</a></li>
+<li class="has-line-data" data-line-start="423" data-line-end="424"><a href="https://github.com/smebberson/docker-alpine">Alpine Images (smebberson)</a></li>
+<li class="has-line-data" data-line-start="424" data-line-end="425"><a href="https://hub.docker.com/u/sameersbn/">SameerSbn</a></li>
+<li class="has-line-data" data-line-start="425" data-line-end="426"><a href="https://hub.docker.com/u/linuxserver/">Linuxserver.io</a></li>
+<li class="has-line-data" data-line-start="426" data-line-end="427"><a href="https://hub.docker.com/r/nimmis/alpine-apache-php5/">Apache-PHP5</a></li>
+<li class="has-line-data" data-line-start="427" data-line-end="429"><a href="https://github.com/harobed/docker-php-ssmtp">Apache-PHP-Email</a></li>
+</ul>
+<h4 class="code-line" data-line-start=429 data-line-end=430 ><a id="DockerAwesomeLists_429"></a>Docker-Awesome-Lists</h4>
+<ul>
+<li class="has-line-data" data-line-start="430" data-line-end="431"><a href="https://github.com/AdamBien/docklands">Java Docker Services</a></li>
+<li class="has-line-data" data-line-start="431" data-line-end="433"><a href="https://gist.github.com/shouse/a14c44e97a2cd2a1f030">shouse Docker Awesome List</a></li>
+</ul>
+<h4 class="code-line" data-line-start=433 data-line-end=434 ><a id="Docker_Blogs_433"></a>Docker Blogs:</h4>
+<ul>
+<li class="has-line-data" data-line-start="434" data-line-end="435"><a href="https://hub.docker.com/r/emilevauge/whoami/">Whoami used in Traefik Docs</a></li>
+<li class="has-line-data" data-line-start="435" data-line-end="436"><a href="https://github.com/spartakode/my-docker-repos/blob/master/sqlite3/Dockerfile">Sqlite with Docker</a></li>
+<li class="has-line-data" data-line-start="436" data-line-end="437"><a href="https://github.com/mookjp/rails-docker-example">Rails with Postgres and Redis</a></li>
+<li class="has-line-data" data-line-start="437" data-line-end="438"><a href="https://testdriven.io/asynchronous-tasks-with-flask-and-redis-queue">Async Tasks with Flask and Redis</a></li>
+<li class="has-line-data" data-line-start="438" data-line-end="439"><a href="https://github.com/davidmukiibi/docker-flask">Flask and Postgres</a></li>
+<li class="has-line-data" data-line-start="439" data-line-end="441"><a href="http://ict.renevdmark.nl/2016/07/05/elastic-beats-on-raspberry-pi/">Elastic Beats on RaspberryPi</a></li>
+</ul>
+<h4 class="code-line" data-line-start=441 data-line-end=442 ><a id="Docker_Storage_441"></a>Docker Storage</h4>
+<ul>
+<li class="has-line-data" data-line-start="442" data-line-end="443"><a href="https://github.com/rancher/convoy">Rancher Convoy</a></li>
+<li class="has-line-data" data-line-start="443" data-line-end="444"><a href="https://flocker.readthedocs.io/en/latest/flocker-features/storage-backends.html#supported-backends">Flocker</a></li>
+<li class="has-line-data" data-line-start="444" data-line-end="445"><a href="http://node.mu/2017/06/30/scaleio-on-ubuntu-xenial/">EMC ScaleIO</a></li>
+<li class="has-line-data" data-line-start="445" data-line-end="446"><a href="https://github.com/lucj/swarm-rexray-ceph">RexRay Ceph with Ansible</a></li>
+<li class="has-line-data" data-line-start="446" data-line-end="447"><a href="http://containx.io/">ContainX</a></li>
+</ul>
+<h4 class="code-line" data-line-start=449 data-line-end=450 ><a id="OpenFaas_449"></a>OpenFaas:</h4>
+<ul>
+<li class="has-line-data" data-line-start="450" data-line-end="451"><a href="https://github.com/openfaas/faas/releases">FaaS Releases</a></li>
+<li class="has-line-data" data-line-start="451" data-line-end="453"><a href="https://github.com/openfaas/workshop">FaaS Workshop</a></li>
+</ul>
+<h4 class="code-line" data-line-start=453 data-line-end=454 ><a id="Prometheus__Grafana_on_Swarm_453"></a>Prometheus / Grafana on Swarm:</h4>
+<ul>
+<li class="has-line-data" data-line-start="454" data-line-end="455"><a href="https://github.com/stefanprodan/swarmprom">StefanProdan - SwarmProm</a></li>
+<li class="has-line-data" data-line-start="455" data-line-end="456"><a href="https://medium.com/@soumyadipde/monitoring-in-docker-stacks-its-that-easy-with-prometheus-5d71c1042443">Monitoring with Prometheus</a></li>
+<li class="has-line-data" data-line-start="456" data-line-end="457"><a href="https://github.com/uschtwill/docker_monitoring_logging_alerting">UschtWill - Prometheus Grafana Elastalert</a></li>
+<li class="has-line-data" data-line-start="457" data-line-end="458"><a href="https://github.com/chmod666org/docker-swarm-prometheus">Chmod-Org Promethus with Blackbox</a></li>
+<li class="has-line-data" data-line-start="458" data-line-end="460"><a href="https://finestructure.co/blog/2016/5/16/monitoring-with-prometheus-grafana-docker-part-1">Finestructure: Prometheus Tutorial</a></li>
+</ul>
+<h2 class="code-line" data-line-start=460 data-line-end=461 ><a id="Logging__Kibana__Beats_460"></a>Logging / Kibana / Beats</h2>
+<h3 class="code-line" data-line-start=462 data-line-end=463 ><a id="Libraries_462"></a>Libraries</h3>
+<ul>
+<li class="has-line-data" data-line-start="463" data-line-end="465"><a href="https://github.com/Delgan/loguru">Loguru</a> | <a href="https://gist.github.com/M0r13n/0b8c62c603fdbc98361062bd9ebe8153">Flask Example with Loguru</a></li>
+</ul>
+<h3 class="code-line" data-line-start=465 data-line-end=466 ><a id="Frameworks_465"></a>Frameworks</h3>
+<ul>
+<li class="has-line-data" data-line-start="466" data-line-end="467"><a href="https://github.com/shazChaudhry/docker-elastic">shazChaudhry Swarm GELF Stack</a></li>
+</ul>
+<h2 class="code-line" data-line-start=469 data-line-end=470 ><a id="Continious_Integration_469"></a>Continious Integration:</h2>
+<h4 class="code-line" data-line-start=471 data-line-end=472 ><a id="CircleCI_471"></a>Circle-CI</h4>
+<ul>
+<li class="has-line-data" data-line-start="472" data-line-end="474"><a href="https://circleci.com/docs/1.0/language-php/">PHP with Circle-CI</a></li>
+</ul>
+<h4 class="code-line" data-line-start=474 data-line-end=475 ><a id="Concourse_474"></a>Concourse</h4>
+<ul>
+<li class="has-line-data" data-line-start="475" data-line-end="476"><a href="https://concourse.ci/docker-repository.html">Setup Concourse Environment with Docker</a></li>
+<li class="has-line-data" data-line-start="476" data-line-end="477"><a href="https://blog.anynines.com/getting-started-with-concourse-ci-and-docker/">Getting Started with Concourse and Docker</a></li>
+<li class="has-line-data" data-line-start="477" data-line-end="478"><a href="https://github.com/pivotalservices/concourse-pipeline-samples/tree/master/concourse-pipeline-patterns/gated-pipelines">Concourse Gated Pipelines</a></li>
+<li class="has-line-data" data-line-start="478" data-line-end="480"><a href="https://github.com/EugenMayer/concourseci-server-boilerplate">Concourse Boilerplate</a></li>
+</ul>
+<h4 class="code-line" data-line-start=480 data-line-end=481 ><a id="Jenkins_480"></a>Jenkins</h4>
+<ul>
+<li class="has-line-data" data-line-start="481" data-line-end="482"><a href="https://modess.io/jenkins-php/">Modess - PHP with Jenkins</a></li>
+<li class="has-line-data" data-line-start="482" data-line-end="483"><a href="https://code.tutsplus.com/tutorials/setting-up-continuous-integration-continuous-deployment-with-jenkins--cms-21511">CI/CD Nodejs Tutorial with Jenkins</a></li>
+<li class="has-line-data" data-line-start="483" data-line-end="484"><a href="https://medium.com/@mosheezderman/how-to-set-up-ci-cd-pipeline-for-a-node-js-app-with-jenkins-c51581cc783c">CI/CD Nodejs Tutorial with Jenkins @medium</a></li>
+<li class="has-line-data" data-line-start="484" data-line-end="486"><a href="https://github.com/shazChaudhry/docker-swarm-mode">Epic CICD workflow with Jenkins, Gitlab, Sonar, Nexus</a></li>
+</ul>
+<h4 class="code-line" data-line-start=486 data-line-end=487 ><a id="SwarmCi_486"></a>SwarmCi</h4>
+<ul>
+<li class="has-line-data" data-line-start="487" data-line-end="489"><a href="https://github.com/ghostsquad/swarmci">SwarmCI</a></li>
+</ul>
+<h4 class="code-line" data-line-start=489 data-line-end=490 ><a id="TravisCI_489"></a>Travis-CI</h4>
+<ul>
+<li class="has-line-data" data-line-start="490" data-line-end="491"><a href="https://docs.travis-ci.com/user/getting-started/">Getting Started with Travis-CI (Original Docs)</a></li>
+<li class="has-line-data" data-line-start="491" data-line-end="492"><a href="https://github.com/dwyl/learn-travis">Getting Started with Travis-CI (dwyl - nodejs)</a></li>
+<li class="has-line-data" data-line-start="492" data-line-end="493"><a href="https://matthewmoisen.com/blog/how-to-set-up-travis-ci-with-github-for-a-python-project/">Blog Site with Travis-CI (Python)</a></li>
+<li class="has-line-data" data-line-start="493" data-line-end="494"><a href="https://github.com/softwaresaved/build_and_test_examples/blob/master/travis/HelloWorld.md">Build Tests with Python on Travis-CI</a></li>
+<li class="has-line-data" data-line-start="494" data-line-end="496"><a href="https://www.raywenderlich.com/109418/travis-ci-tutorial">Moving app with Travis-CI</a></li>
+</ul>
+<h4 class="code-line" data-line-start=496 data-line-end=497 ><a id="LambCI_496"></a>LambCI</h4>
+<ul>
+<li class="has-line-data" data-line-start="497" data-line-end="499"><a href="https://github.com/lambci/lambci">LambCI</a></li>
+</ul>
+<h2 class="code-line" data-line-start=499 data-line-end=500 ><a id="DynamoDB_499"></a>DynamoDB</h2>
+<h4 class="code-line" data-line-start=501 data-line-end=502 ><a id="DynamoDB_Docs_501"></a>DynamoDB Docs</h4>
+<ul>
+<li class="has-line-data" data-line-start="503" data-line-end="505"><a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.Query.html">AWS DynamoDB: SQL to NoSQL</a></li>
+</ul>
+<h4 class="code-line" data-line-start=505 data-line-end=506 ><a id="DynamoDB_Best_Practices_505"></a>DynamoDB Best Practices</h4>
+<ul>
+<li class="has-line-data" data-line-start="507" data-line-end="508"><a href="https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/">Choosing the Right Partition Key</a></li>
+<li class="has-line-data" data-line-start="508" data-line-end="510"><a href="https://cloudacademy.com/blog/amazon-dynamodb-ten-things/">10 Things you should know</a></li>
+</ul>
+<h4 class="code-line" data-line-start=510 data-line-end=511 ><a id="DynamoDB_General_Info_510"></a>DynamoDB General Info</h4>
+<ul>
+<li class="has-line-data" data-line-start="512" data-line-end="514"><a href="https://medium.com/@yaofei/understand-dynamodb-b278f718ddb8">Understanding DynamoDB</a></li>
+</ul>
+<h2 class="code-line" data-line-start=514 data-line-end=515 ><a id="Elasticsearch_514"></a>Elasticsearch</h2>
+<h4 class="code-line" data-line-start=516 data-line-end=517 ><a id="Elasticsearch_Documentation_516"></a>Elasticsearch Documentation</h4>
+<ul>
+<li class="has-line-data" data-line-start="517" data-line-end="518"><a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/general-recommendations.html">General Recommendation</a></li>
+<li class="has-line-data" data-line-start="518" data-line-end="519"><a href="https://www.elastic.co/blog/how-many-shards-should-i-have-in-my-elasticsearch-cluster">How Many Shards in my Cluster</a></li>
+<li class="has-line-data" data-line-start="519" data-line-end="520"><a href="https://www.elastic.co/blog/managing-time-based-indices-efficiently">Managing Time-Based Indices Efficiently</a></li>
+<li class="has-line-data" data-line-start="520" data-line-end="521"><a href="https://bonsai.io/2016/01/11/ideal-elasticsearch-cluster">Elasticsearch Best Practices (Bonsai.io)</a></li>
+<li class="has-line-data" data-line-start="521" data-line-end="523"><a href="https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-scale-up/">AWS ES - Scaling up my Domain</a></li>
+</ul>
+<h4 class="code-line" data-line-start=523 data-line-end=524 ><a id="Elasticsearch_Cheetsheets_523"></a>Elasticsearch Cheetsheets:</h4>
+<ul>
+<li class="has-line-data" data-line-start="524" data-line-end="526"><a href="https://gist.github.com/ruanbekker/e8a09604b14f37e8d2f743a87b930f93">My ES Cheatsheet</a></li>
+</ul>
+<h4 class="code-line" data-line-start=526 data-line-end=527 ><a id="Elasticsearch_Blogs_526"></a>Elasticsearch Blogs</h4>
+<ul>
+<li class="has-line-data" data-line-start="527" data-line-end="528"><a href="https://qbox.io/blog/maximize-guide-elasticsearch-indexing-performance-part-1">Maximize Elasticsearch Indexing Performance</a></li>
+<li class="has-line-data" data-line-start="528" data-line-end="529"><a href="https://qbox.io/blog/authoritative-guide-elasticsearch-performance-tuning-part-1">Autoritative Guide to ES Performance Tuning</a></li>
+<li class="has-line-data" data-line-start="529" data-line-end="530"><a href="https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/full-text/">Full text Search Queries</a></li>
+<li class="has-line-data" data-line-start="530" data-line-end="532"><a href="https://okfnlabs.org/blog/2013/07/01/elasticsearch-query-tutorial.html">Query Elasticsearch</a></li>
+</ul>
+<h4 class="code-line" data-line-start=532 data-line-end=533 ><a id="Elasticsearch_Tools_532"></a>Elasticsearch Tools</h4>
+<ul>
+<li class="has-line-data" data-line-start="533" data-line-end="535"><a href="https://github.com/mallocator/Elasticsearch-Exporter">Export Data from ES to ES</a></li>
+</ul>
+<h2 class="code-line" data-line-start=535 data-line-end=536 ><a id="Environment_Setups_535"></a>Environment Setups:</h2>
+<ul>
+<li class="has-line-data" data-line-start="536" data-line-end="538"><a href="https://medium.com/aishik/install-golang-the-right-way-4743fee9255f">Golang</a></li>
+</ul>
+<h2 class="code-line" data-line-start=538 data-line-end=539 ><a id="Knowledge_Base_538"></a>Knowledge Base</h2>
+<h2 class="code-line" data-line-start=540 data-line-end=541 ><a id="KB_HTTPS_540"></a>KB HTTPS</h2>
+<ul>
+<li class="has-line-data" data-line-start="541" data-line-end="543"><a href="https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https">How does HTTPS work (Miguel Grinberg)</a></li>
+</ul>
+<h2 class="code-line" data-line-start=543 data-line-end=544 ><a id="Kubernetes_543"></a>Kubernetes</h2>
+<ul>
+<li class="has-line-data" data-line-start="545" data-line-end="546"><a href="https://github.com/ramitsurana/awesome-kubernetes/blob/master/README.md">Awesome Kubernetes</a></li>
+<li class="has-line-data" data-line-start="546" data-line-end="547"><a href="https://cheatsheet.dennyzhang.com/cheatsheet-kubernetes-a4">Kubernetes Cheatsheet</a></li>
+<li class="has-line-data" data-line-start="547" data-line-end="548"><a href="https://kubernetes.io/blog/2019/07/23/get-started-with-kubernetes-using-python/">Getting Started: Python application on Kubernetes</a></li>
+<li class="has-line-data" data-line-start="548" data-line-end="549"><a href="https://semaphoreci.com/blog/kubernetes-deployment">Kubernetes Deployments: The Ultimate Guide</a></li>
+<li class="has-line-data" data-line-start="549" data-line-end="550"><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-prometheus-grafana-and-alertmanager-monitoring-stack-on-digitalocean-kubernetes">Prometheus Monitoring Stack with Kubernetes on DO</a></li>
+<li class="has-line-data" data-line-start="550" data-line-end="551"><a href="https://tech.evaneos.com/traefik-as-an-ingress-controller-on-minikube-with-kustomize-helm-a3b2f44a5c2a">Traefik as an Ingress Controller on Minikube</a></li>
+<li class="has-line-data" data-line-start="551" data-line-end="552"><a href="https://itnext.io/traefik-cluster-as-ingress-controller-for-kubernetes-99fa6c34402">Traefik Ingress with Kubernetes</a></li>
+<li class="has-line-data" data-line-start="552" data-line-end="553"><a href="https://medium.com/faun/manually-connect-to-your-kubernetes-cluster-from-the-outside-d852346a7f0a">Manual Connect your Kubernetes from Outside</a></li>
+<li class="has-line-data" data-line-start="553" data-line-end="554"><a href="https://pascalw.me/blog/2019/07/02/k3s-https-letsencrypt.html">HTTPS Letsencrypt on k3s</a></li>
+<li class="has-line-data" data-line-start="554" data-line-end="555"><a href="https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0">Kubernetes: Nodeport vs Loadbalancer</a></li>
+<li class="has-line-data" data-line-start="555" data-line-end="556"><a href="https://medium.com/kubernetes-tutorials/simple-management-of-prometheus-monitoring-pipeline-with-the-prometheus-operator-b445da0e0d1a">Prometheus Monitoring Pipeline on Kubernetes</a></li>
+<li class="has-line-data" data-line-start="556" data-line-end="557"><a href="https://rancher.com/blog/2018/2018-08-07-cicd-pipeline-k8s-autodevops-rancher-and-gitlab/">Building a Kubernetes CI/CD Pipeline with Rancher</a></li>
+<li class="has-line-data" data-line-start="557" data-line-end="558"><a href="https://medium.com/swlh/universal-cicd-pipeline-on-aws-and-k8s-7b4129fac5d4">Building a Kubernetes CI/CD Pipeline with AWS</a></li>
+<li class="has-line-data" data-line-start="558" data-line-end="559"><a href="https://itnext.io/explore-gitea-drone-ci-cd-on-k3s-4a9e99f8b938">Gitea and Drone CI/CD on k3s</a></li>
+<li class="has-line-data" data-line-start="559" data-line-end="560"><a href="https://github.com/openfaas-incubator/openfaas-linkerd2/blob/master/README.md">Serverless with Kubernetes using OpenFaaS and Linkerd2</a></li>
+<li class="has-line-data" data-line-start="560" data-line-end="561"><a href="https://rancher.com/blog/2019/how-to-manage-kubernetes-with-kubectl/">Managing Kubernetes with kubectl</a></li>
+<li class="has-line-data" data-line-start="561" data-line-end="562"><a href="https://gist.github.com/alexellis/a6ee5f094f86987a0dc508442220c52a">OpenFaas Workshop on k3s</a></li>
+<li class="has-line-data" data-line-start="562" data-line-end="563"><a href="http://collabnix.com/kubernetes-hands-on-lab-4-deploy-application-stack-using-helm-on-play-with-kubernetes-platform/">Kubernetes Hands-On Lab with collabnix</a></li>
+<li class="has-line-data" data-line-start="563" data-line-end="564"><a href="https://medium.com/asl19-developers/create-readwritemany-persistentvolumeclaims-on-your-kubernetes-cluster-3a8db51f98e3">Create ReadWrite Persistent Volumes on Kubernetes</a></li>
+<li class="has-line-data" data-line-start="564" data-line-end="566"><a href="https://medium.com/@mattiaperi/kubernetes-cluster-with-k3s-and-multipass-7532361affa3">Kubernetes Clusters with k3s and multipass</a></li>
+</ul>
+<h3 class="code-line" data-line-start=566 data-line-end=567 ><a id="Kubernetes_Storage_566"></a>Kubernetes Storage</h3>
+<ul>
+<li class="has-line-data" data-line-start="567" data-line-end="568"><a href="https://kadalu.io/docs/quick-start">Kadalu</a></li>
+<li class="has-line-data" data-line-start="568" data-line-end="569"><a href="https://rancher.com/docs/k3s/latest/en/storage/">Rancher: Longhorn Storage</a></li>
+</ul>
+<h2 class="code-line" data-line-start=571 data-line-end=572 ><a id="Golang_571"></a>Golang</h2>
+<ul>
+<li class="has-line-data" data-line-start="573" data-line-end="574"><a href="https://github.com/brianvoe/gofakeit">Generate Fake Random Data with Golang</a></li>
+<li class="has-line-data" data-line-start="574" data-line-end="576"><a href="https://github.com/hoanhan101/ultimate-go">Ultimate Golang Study Guide</a></li>
+</ul>
+<h2 class="code-line" data-line-start=576 data-line-end=577 ><a id="Great_Blogs_576"></a>Great Blogs</h2>
+<ul>
+<li class="has-line-data" data-line-start="578" data-line-end="579"><a href="https://www.exratione.com/blog/">Exratione.com</a></li>
+<li class="has-line-data" data-line-start="579" data-line-end="580"><a href="http://joelabrahamsson.com/elasticsearch-101/">Joelabrahamsson.com</a></li>
+<li class="has-line-data" data-line-start="580" data-line-end="581"><a href="http://bencane.com/">Benjamin Cane</a></li>
+<li class="has-line-data" data-line-start="581" data-line-end="582"><a href="http://mherman.org/">Michael Herman</a></li>
+<li class="has-line-data" data-line-start="582" data-line-end="583"><a href="http://charlesleifer.com/">Charles Leifer</a></li>
+<li class="has-line-data" data-line-start="583" data-line-end="584"><a href="https://www.blog.labouardy.com/">Labouardy</a></li>
+<li class="has-line-data" data-line-start="584" data-line-end="586"><a href="https://tech.marksblogg.com">Mark's Tech Blog</a></li>
+</ul>
+<h2 class="code-line" data-line-start=586 data-line-end=587 ><a id="Linuxkit_586"></a>Linuxkit:</h2>
+<ul>
+<li class="has-line-data" data-line-start="587" data-line-end="589"><a href="https://medium.com/aishik/getting-started-with-linuxkit-and-moby-project-ff7121c4e321">Getting Started with Linuxkit</a></li>
+</ul>
+<h2 class="code-line" data-line-start=589 data-line-end=590 ><a id="Logging_Stacks_589"></a>Logging Stacks</h2>
+<ul>
+<li class="has-line-data" data-line-start="590" data-line-end="592"><a href="https://github.com/shazChaudhry/docker-elastic">shazChaudhry Swarm GELF Stack</a></li>
+</ul>
+<h2 class="code-line" data-line-start=592 data-line-end=593 ><a id="Machine_Learning_592"></a>Machine Learning:</h2>
+<ul>
+<li class="has-line-data" data-line-start="593" data-line-end="595"><a href="https://github.com/GokuMohandas/practicalAI/blob/master/README.md">PracticalAI</a></li>
+</ul>
+<h2 class="code-line" data-line-start=595 data-line-end=596 ><a id="Metrics_595"></a>Metrics:</h2>
+<ul>
+<li class="has-line-data" data-line-start="596" data-line-end="597"><a href="https://github.com/avalente/appmetrics">AppMetrics with Flask</a></li>
+<li class="has-line-data" data-line-start="597" data-line-end="598"><a href="https://github.com/Cue/scales">Scales: Metrics for Python</a></li>
+<li class="has-line-data" data-line-start="598" data-line-end="600"><a href="https://pypi.org/project/graphite-pymetrics/">Graphite: Python Flask Metrics</a></li>
+</ul>
+<h2 class="code-line" data-line-start=600 data-line-end=601 ><a id="MongoDB_600"></a>MongoDB:</h2>
+<ul>
+<li class="has-line-data" data-line-start="601" data-line-end="602"><a href="https://linode.com/docs/databases/mongodb/build-database-clusters-with-mongodb/">Setup MongoDB Cluster</a></li>
+<li class="has-line-data" data-line-start="602" data-line-end="603"><a href="https://github.com/AD7six/mongo-scripts">MongoDB Scripts</a></li>
+<li class="has-line-data" data-line-start="603" data-line-end="604"><a href="https://docs.mongodb.com/v2.4/administration/monitoring/#self-hosted-monitoring-tools">MongoDB Monitoring Tools</a></li>
+<li class="has-line-data" data-line-start="604" data-line-end="605"><a href="https://studio3t.com/knowledge-base/articles/mongodb-users-roles-explained-part-1/">Roles with MongoDB</a></li>
+<li class="has-line-data" data-line-start="605" data-line-end="606"><a href="https://www.guru99.com/mongodb-tutorials.html">Queries: Guru99</a></li>
+<li class="has-line-data" data-line-start="606" data-line-end="607"><a href="https://blog.exploratory.io/an-introduction-to-mongodb-query-for-beginners-bd463319aa4c">Queries: Exploratory</a></li>
+<li class="has-line-data" data-line-start="607" data-line-end="608"><a href="https://www.tutorialspoint.com/mongodb/mongodb_create_database.htm">Queries: Tutorialspoint</a></li>
+<li class="has-line-data" data-line-start="608" data-line-end="610"><a href="https://gist.github.com/rbekker87/5b4cd9ef36b6ae092a6260ab9e621a43">Queries: MongoDB Cheatsheet</a></li>
+</ul>
+<h2 class="code-line" data-line-start=610 data-line-end=611 ><a id="Monitoring_610"></a>Monitoring</h2>
+<ul>
+<li class="has-line-data" data-line-start="611" data-line-end="612"><a href="https://hackernoon.com/monitor-swarm-cluster-with-tick-stack-slack-3aaa6483d44a">Docker Swarm Monitoring Stack: Telegraf, InfluxDB, Chronograf, Kapacitor</a> <a href="https://github.com/mlabouardy/swarm-tick">github source</a></li>
+<li class="has-line-data" data-line-start="612" data-line-end="613"><a href="https://stefanprodan.com/2017/docker-swarm-instrumentation-with-prometheus/">Docker Swarm Monitoring Stack: Prometheus, Grafana, cAdvisor, Node Exporter</a> <a href="https://github.com/stefanprodan/swarmprom">github source</a></li>
+<li class="has-line-data" data-line-start="613" data-line-end="614"><a href="https://finestructure.co/blog/2016/5/16/monitoring-with-prometheus-grafana-docker-part-1">Prometheus Grafana Docker</a></li>
+<li class="has-line-data" data-line-start="614" data-line-end="615"><a href="https://pierrevincent.github.io/2017/12/prometheus-blog-series-part-1-metrics-and-labels/">Prometheus Blog Seros</a></li>
+<li class="has-line-data" data-line-start="615" data-line-end="616"><a href="https://blog.serverdensity.com/monitor-memcached/">Memcached Monitoring</a></li>
+<li class="has-line-data" data-line-start="616" data-line-end="617"><a href="https://raymii.org/s/tutorials/Nagios_Core_4_Installation_on_Ubuntu_12.04.html">Nagios with Nagios Graph</a></li>
+<li class="has-line-data" data-line-start="617" data-line-end="618"><a href="https://medium.com/quiq-blog/better-slack-alerts-from-prometheus-49125c8c672b">Slack Alerts with Prometheus</a></li>
+<li class="has-line-data" data-line-start="618" data-line-end="619"><a href="https://github.com/deanwilson/docker-compose-prometheus">Local Prometheus Stack</a></li>
+<li class="has-line-data" data-line-start="619" data-line-end="621"><a href="https://github.com/chmod666org/docker-swarm-prometheus">Docker Swarm Promethus Setup #1</a>
+<ul>
+<li class="has-line-data" data-line-start="620" data-line-end="621"><a href="https://chmod666.org/2017/08/monitoring-a-docker-swarm-cluster-with-prometheus">Docker Swarm Prometheus Setup #1: Blog</a></li>
+</ul>
+</li>
+<li class="has-line-data" data-line-start="621" data-line-end="622"><a href="https://homelab.business/docker-swarm-monitoring-part-01/">Docker Swarm Promethus Setup #2</a></li>
+<li class="has-line-data" data-line-start="622" data-line-end="623"><a href="https://medium.com/the-telegraph-engineering/how-prometheus-and-the-blackbox-exporter-makes-monitoring-microservice-endpoints-easy-and-free-of-a986078912ee">Docker Swarm Promethus Setup #3 (Blackbox)</a></li>
+<li class="has-line-data" data-line-start="623" data-line-end="625"><a href="https://github.com/fzaninotto/uptime">Uptime (fzaninotto)</a></li>
+</ul>
+<h2 class="code-line" data-line-start=625 data-line-end=626 ><a id="Monitoring_and_Alerting_625"></a>Monitoring and Alerting</h2>
+<ul>
+<li class="has-line-data" data-line-start="626" data-line-end="627"><a href="https://github.com/arachnys/cabot">Cabot (Lightweight Pagerduty)</a></li>
+<li class="has-line-data" data-line-start="627" data-line-end="629"><a href="https://www.nagios.org/">Nagios</a></li>
+</ul>
+<h2 class="code-line" data-line-start=629 data-line-end=630 ><a id="Monitoring_as_Statuspages_629"></a>Monitoring as Statuspages</h2>
+<ul>
+<li class="has-line-data" data-line-start="630" data-line-end="631"><a href="https://github.com/darkpixel/statuspage">Statuspage (darkpixel</a></li>
+<li class="has-line-data" data-line-start="631" data-line-end="633"><a href="https://github.com/cachethq/Cachet">Cachet</a></li>
+</ul>
+<h2 class="code-line" data-line-start=633 data-line-end=634 ><a id="Programming_633"></a>Programming</h2>
+<h4 class="code-line" data-line-start=635 data-line-end=636 ><a id="Golang_635"></a>Golang:</h4>
+<ul>
+<li class="has-line-data" data-line-start="636" data-line-end="637"><a href="http://golangtutorials.blogspot.co.za/2011/05/table-of-contents.html">Golang Tutorials</a></li>
+<li class="has-line-data" data-line-start="637" data-line-end="639"><a href="https://github.com/golang/go/wiki">Golang Wiki</a></li>
+</ul>
+<h4 class="code-line" data-line-start=639 data-line-end=640 ><a id="Java_639"></a>Java:</h4>
+<ul>
+<li class="has-line-data" data-line-start="640" data-line-end="642"><a href="https://wiki.ruanbekker.com/index.php/Java_Spring_Boot_App_Examples">Java Spring Boot Examples</a></li>
+</ul>
+<h4 class="code-line" data-line-start=642 data-line-end=643 ><a id="Python_642"></a>Python</h4>
+<h4 class="code-line" data-line-start=644 data-line-end=645 ><a id="Ruby_644"></a>Ruby:</h4>
+<ul>
+<li class="has-line-data" data-line-start="645" data-line-end="646"><a href="https://learnrubythehardway.org/book">Learn Ruby: Learn Ruby the Hard Way</a></li>
+<li class="has-line-data" data-line-start="646" data-line-end="647"><a href="http://ruby-for-beginners.rubymonstas.org/index.html">Learn Ruby: Ruby for Beginners</a></li>
+<li class="has-line-data" data-line-start="647" data-line-end="648"><a href="https://launchschool.com/books/ruby/read/loops_iterators#forloops">Learn Ruby: Launch School</a></li>
+<li class="has-line-data" data-line-start="648" data-line-end="649"><a href="https://gistpages.com/posts/ruby_arrays_insert_append_length_index_remove">Learn Ruby: Arrays</a></li>
+<li class="has-line-data" data-line-start="649" data-line-end="651"><a href="https://gorails.com/setup/osx/10.12-sierra">Install Ruby Environment on Mac</a></li>
+</ul>
+<h4 class="code-line" data-line-start=651 data-line-end=652 ><a id="Ruby_on_Rails_651"></a>Ruby on Rails:</h4>
+<ul>
+<li class="has-line-data" data-line-start="652" data-line-end="653"><a href="https://www.railstutorial.org/book/beginning">Tutorial: Ruby On Rails</a></li>
+<li class="has-line-data" data-line-start="653" data-line-end="655"><a href="http://codingnudge.com/2017/03/17/tutorial-how-to-run-ruby-on-rails-on-docker-part-1/">Tutorial: ROR on Docker</a></li>
+</ul>
+<h2 class="code-line" data-line-start=655 data-line-end=656 ><a id="Queues_655"></a>Queues</h2>
+<ul>
+<li class="has-line-data" data-line-start="657" data-line-end="658"><a href="https://github.com/roribio/alpine-sqs">Alpine SQS</a></li>
+<li class="has-line-data" data-line-start="658" data-line-end="659"><a href="https://github.com/celery/kombu">Kombu: Messaging library for Python</a></li>
+<li class="has-line-data" data-line-start="659" data-line-end="661"><a href="https://python-rq.org/">Python Job Queues with Redis</a></li>
+</ul>
+<h2 class="code-line" data-line-start=661 data-line-end=662 ><a id="Sysadmin_References_661"></a>Sysadmin References:</h2>
+<ul>
+<li class="has-line-data" data-line-start="662" data-line-end="663"><a href="https://gist.github.com/ruanbekker/3118ed23c25451132becacd3b974db08">Sysadmin Command References</a></li>
+<li class="has-line-data" data-line-start="663" data-line-end="664"><a href="https://medium.com/@chrishantha/linux-performance-observability-tools-19ae2328f87f">Linux Performance Observability Tools</a></li>
+<li class="has-line-data" data-line-start="664" data-line-end="665"><a href="http://bencane.com/2012/08/06/troubleshooting-high-io-wait-in-linux/">Troubleshooting High IO Wait</a></li>
+<li class="has-line-data" data-line-start="665" data-line-end="666"><a href="https://blog.pythian.com/basic-io-monitoring-on-linux/">IO Monitoring in Linux</a></li>
+<li class="has-line-data" data-line-start="666" data-line-end="667"><a href="http://xiayubin.com/blog/2014/01/29/how-i-use-iostat-and-vmstat-for-performance-analysis/">IOStat and VMStat for Performance Monitoring</a></li>
+<li class="has-line-data" data-line-start="667" data-line-end="669"><a href="https://www.tummy.com/articles/isolating-heavy-load/">Debugging Heavy Load</a></li>
+</ul>
+<h2 class="code-line" data-line-start=669 data-line-end=670 ><a id="Self_Hosting_669"></a>Self Hosting</h2>
+<h4 class="code-line" data-line-start=671 data-line-end=672 ><a id="Email_Server_Setups_671"></a>Email Server Setups</h4>
+<ul>
+<li class="has-line-data" data-line-start="672" data-line-end="673"><a href="https://www.exratione.com/2016/05/a-mailserver-on-ubuntu-16-04-postfix-dovecot-mysql/">Extratione: Postfix Dovecot MySQL Virtual Users Postfixadmin</a></li>
+<li class="has-line-data" data-line-start="673" data-line-end="674"><a href="https://www.exratione.com/2019/02/a-mailserver-on-ubuntu-18-04-postfix-dovecot-mysql/">Extratione: Postfix Dovecot MySQL Virtual Users Postfixadmin (Ubuntu 18)</a></li>
+<li class="has-line-data" data-line-start="674" data-line-end="675"><a href="https://linuxize.com/post/set-up-an-email-server-with-postfixadmin/">Linuxsize: Postfix Dovecot MySQL Virtual Users Postfixadmin</a></li>
+<li class="has-line-data" data-line-start="675" data-line-end="676"><a href="https://www.howtoforge.com/postfix_mysql_dovecot_dspam_clamav_postgrey_rbl_debian_etch">Howtoforge: Postfix, MySQL, Dovecto, Dspam</a></li>
+<li class="has-line-data" data-line-start="676" data-line-end="678"><a href="https://linuxize.com/post/set-up-an-email-server-with-postfixadmin/">Linuxsize: VirtualUsers, MySQL, Postfix, Dovecot</a></li>
+</ul>
+<h4 class="code-line" data-line-start=678 data-line-end=679 ><a id="Mailscanner_Server_Setups_678"></a>Mailscanner Server Setups</h4>
+<ul>
+<li class="has-line-data" data-line-start="679" data-line-end="681"><a href="https://syslint.com/blog/tutorial/how-to-install-and-configure-spamassassin-with-postfix-in-debian-8/">Spamassassin with Debian 8</a></li>
+</ul>
+<h4 class="code-line" data-line-start=681 data-line-end=682 ><a id="Financial_681"></a>Financial</h4>
+<ul>
+<li class="has-line-data" data-line-start="682" data-line-end="683"><a href="https://github.com/firefly-iii/firefly-iii">SelfHosted Firefly</a></li>
+</ul>
+<h4 class="code-line" data-line-start=686 data-line-end=687 ><a id="Self_Hosting_Frameworks_686"></a>Self Hosting Frameworks:</h4>
+<ul>
+<li class="has-line-data" data-line-start="687" data-line-end="689"><a href="https://sandstorm.io/">Sandstorm</a></li>
+</ul>
+<h2 class="code-line" data-line-start=689 data-line-end=690 ><a id="Serverless_689"></a>Serverless</h2>
+<ul>
+<li class="has-line-data" data-line-start="691" data-line-end="692"><a href="https://github.com/Miserlou/Zappa">Serverless Zappa</a></li>
+<li class="has-line-data" data-line-start="692" data-line-end="693"><a href="https://github.com/faizanbashir/python-ses-dynamodb-contactform">Serverless Contact Form</a></li>
+<li class="has-line-data" data-line-start="693" data-line-end="695"><a href="https://github.com/danilop/LambdAuth">Serverless Authentication on AWS (danilop)</a></li>
+</ul>
+<h2 class="code-line" data-line-start=695 data-line-end=696 ><a id="VPN_695"></a>VPN:</h2>
+<h4 class="code-line" data-line-start=696 data-line-end=697 ><a id="VPNHowto_696"></a>VPN-Howto:</h4>
+<ul>
+<li class="has-line-data" data-line-start="697" data-line-end="698"><a href="https://www.cyberciti.biz/faq/howto-setup-openvpn-server-on-ubuntu-linux-14-04-or-16-04-lts/">Ubuntu OpenVPN Script</a></li>
+<li class="has-line-data" data-line-start="698" data-line-end="699"><a href="https://github.com/hwdsl2/setup-ipsec-vpn">Ubuntu IPSec Script</a></li>
+<li class="has-line-data" data-line-start="699" data-line-end="700"><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-16-04">DO - Setup OpenVPN on Ubuntu</a></li>
+<li class="has-line-data" data-line-start="700" data-line-end="701"><a href="https://www.elastichosts.com/blog/linux-l2tpipsec-vpn-client/">Elasticshosts - IPSec VPN</a></li>
+<li class="has-line-data" data-line-start="701" data-line-end="703"><a href="https://github.com/bedefaced/vpn-install">PPTP/IPSec/OpenVPN Auto Install</a></li>
+</ul>
+<h2 class="code-line" data-line-start=703 data-line-end=704 ><a id="Website_Templates_703"></a>Website Templates</h2>
+<h4 class="code-line" data-line-start=705 data-line-end=706 ><a id="Resume_Templates_705"></a>Resume Templates</h4>
+<ul>
+<li class="has-line-data" data-line-start="706" data-line-end="708"><a href="https://github.com/johnmarcampbell/resume-site">johnmarcampbell resume-site</a></li>
+</ul>
+<h2 class="code-line" data-line-start=708 data-line-end=709 ><a id="Web_Frameworks_708"></a>Web Frameworks</h2>
+<h4 class="code-line" data-line-start=710 data-line-end=711 ><a id="Python_Flask_710"></a>Python Flask:</h4>
+<ul>
+<li class="has-line-data" data-line-start="711" data-line-end="712"><a href="https://gist.github.com/dAnjou/2874714">Python Flask Upload Example</a></li>
+<li class="has-line-data" data-line-start="712" data-line-end="713"><a href="https://github.com/humiaozuzu/awesome-flask#awesome-flask">Awesome Flask - humiaozuzu</a></li>
+<li class="has-line-data" data-line-start="713" data-line-end="714"><a href="https://github.com/greyli?tab=repositories">Awesome Flask Apps - Greyli</a></li>
+<li class="has-line-data" data-line-start="714" data-line-end="715"><a href="https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https">Flask over HTTPS (MG)</a></li>
+<li class="has-line-data" data-line-start="715" data-line-end="716"><a href="https://speakerdeck.com/mitsuhiko/advanced-flask-patterns-1">Flask Advanced Patterns</a></li>
+<li class="has-line-data" data-line-start="716" data-line-end="718"><a href="https://github.com/tojrobinson/flask-mvc">Flask MVC Boilerplate</a></li>
+</ul>
+
+
+### [Github/bgoonz-master/bgoonz-master/blueprint.md](Github/bgoonz-master/bgoonz-master/blueprint.md)
+
+
+<h1 align="center">Hi 👋, I'm Bryan</h1>
+
+---
+
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)
+
+---
+<div  align="center" style=" border: 1px solid black">
+<img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img> 
+</div>
+
+---
+
+<img align="center" src="https://readme-jokes.vercel.app/api" stye="width:500; height:320;">
+
+
+#### Refresh the page for a new joke!
+
+---
+
+    
+## _Email_
+
+[bryan.guner@gmail.com](#)
+
+## _Phone_
+
+*551-254-5505*
+
+---
+---
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/bryan guner bryan has a account" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="bryan guner bryan has a account" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/20645183" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="20645183" height="30" width="40" /></a>
+<a href="https://codesandbox.com/bgoonz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" alt="bgoonz" height="30" width="40" /></a>
+<a href="https://instagram.com/bgoonz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="bgoonz" height="30" width="40" /></a>
+<a href="https://www.youtube.com/watch?v=xGZSWvFess8" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg" alt="bryan guner" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/bgoonz" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/leetcode.svg" alt="bgoonz" height="30" width="40" /></a>
+</p>
+
+---
+## Social
+
+-   [GitHub](https://github.com/bgoonz)
+-   [Gitlab](https://gitlab.com/bryan.guner.dev)
+-   [Bitbucket](https://bitbucket.org/bgoonz/)
+-   [code pen](https://codepen.io/bgoonz)
+-   [Glitch](https://glitch.com/@bgoonz)
+-   [Replit](https://repl.it/@bgoonz/)
+-   [Redit](https://www.reddit.com/user/bgoonz1)
+-   [runkit](https://runkit.com/bgoonz)
+-   [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)
+-   [Netlify](https://app.netlify.com/user/settings#profile)
+-   [Medium](https://bryanguner.medium.com/)
+-   [webcomponents.dev](https://webcomponents.dev/user/bgoonz)
+-   [npm](https://www.npmjs.com/~bgoonz11)
+-   [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)
+-   [AngelList](https://angel.co/u/bryan-guner)
+-   [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN)               
+
+
+---
+
+
+
+
+
+
+## Blog:
+
+[blog](https://modest-booth-4e17df.netlify.app/)
+
+# Projects:
+
+---
+Web Dev Resource Hub
+----------------------
+
+### My personal Web Development blog and resource sharing site
+
+*   [Live Site](https://web-dev-resource-hub.netlify.app/)
+
+
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+
+
+---
+
+# Mihir_Beg.com
+### Created a dynamic web page for a local musician using the Bootsrtap framework.
+
+-Talk about App Features & Design Process Here-
+
+-   [Live Site](https://eloquent-sammet-ba1810.netlify.app/)
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+
+
+---       
+Interview Prep Static Site 
+-----------------------------
+
+### Data Structures Repository
+
+-Hope this helps someone other than me!-
+
+*   [Live Site](https://ds-algo-official-c3dw6uapg-bgoonz.vercel.app/)
+
+---
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+<hr>
+
+
+---
+
+Learning React Blog
+--------------------
+https://ecstatic-jang-593fd1.netlify.app/readme
+
+#### React Repo:
+
+[React Repo](https://github.com/bgoonz/React-Practice)
+
+
+---
+
+<a href="https://codesandbox.io/embed/zealous-microservice-ti7em?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"   style="width:100%; height:20px; border:0; border-radius: 4px; overflow:hidden;" rel="React Todo">![Foo](https://codesandbox.io/static/img/play-codesandbox.svg)</a>
+---
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+[react-documentation-site](https://documentation-site-react2-peitff669-bgoonz.vercel.app/)
+
+
+[![Edit magical-stallman-ov0d1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-stallman-ov0d1?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&moduleview=1&theme=dark)
+
+
+
+---
+
+## Weekly-Quick-Snips:
+---
+#### Snippet of the Day:
+
+
+---
+### Fibonacci in Python:
+
+```py
+def fib_iter(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    p0 = 0
+    p1 = 1
+    for i in range(n-1):
+        next_val = p0 + p1
+        p0 = p1
+        p1 = next_val
+    return next_val
+for i in range(10):
+    print(f'{i}: {fib_iter(i)}')
+```
+
+
+
+
+ ---
+ 
+ #### Yesterday's Snippet of the day:
+
+---
+
+```py
+def quicksort(l):
+    # One of our base cases is an empty list or list with one element
+    if len(l) == 0 or len(l) == 1:
+        return l
+    # If we have a left list, a pivot point and a right list...
+    # assigns the return values of the partition() function
+    left, pivot, right = partition(l) 
+    # Our sorted list looks like left + pivot + right, but sorted.
+    # Pivot has to be in brackets to be a list, so python can concatenate all the elements to a single list
+    return quicksort(left) + [pivot] + quicksort(right)
+# print(quicksort([]))
+# print(quicksort([1]))
+# print(quicksort([1,2]))
+# print(quicksort([2,1]))
+# print(quicksort([2,2]))
+# print(quicksort([5,3,9,4,8,1,7]))
+# print(quicksort([1,2,3,4,5,6,7]))
+# print(quicksort([9,8,7,6,5,4,3,2,1]))
+```
+---
+<details>
+  
+  <summary>Click to expand!</summary>
+  
+  
+  #### This Week's snippets: 
+  
+  ---
+  
+  
+   >will replace any spaces in file names with an underscore!
+```bash
+ for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+  ## TAKING IT A STEP FURTHER:
+ # Let's do it recursivley:
+  function RecurseDirs ()
+{
+    oldIFS=$IFS
+    IFS=$'\n'
+    for f in "$@"
+    do
+  # YOUR CODE HERE!
+#    for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+        if [[ -d "${f}" ]]; then
+            cd "${f}"
+            RecurseDirs $(ls -1 ".")
+            cd ..
+        fi
+    done
+    IFS=$oldIFS
+}
+RecurseDirs "./"
+  
+```
+  
+  
+ ---
+ ### Copy to clipboard jQuerry
+ > Language: Javascript/Jquery
+
+
+>In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks. 
+
+
+```js
+$(document).ready(function() {
+  $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+
+  $('code span.command-copy').click(function(e) {
+    var text = $(this).parent().text().trim(); //.text();
+    var copyHex = document.createElement('input');
+    copyHex.value = text
+    document.body.appendChild(copyHex);
+    copyHex.select();
+    document.execCommand('copy');
+    console.log(copyHex.value)
+    document.body.removeChild(copyHex);
+  });
+
+
+  $('pre span.command-copy').click(function(e) {
+    var text = $(this).parent().text().trim();
+    var copyHex = document.createElement('input');
+    copyHex.value = text
+    document.body.appendChild(copyHex);
+    copyHex.select();
+    document.execCommand('copy');
+    console.log(copyHex.value)
+    document.body.removeChild(copyHex);
+  });
+})
+
+
+```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ---
+ ### Append Files in PWD
+ 
+ 
+  ```js
+//APPEND-DIR.js
+const fs = require( 'fs' ); let cat = require( 'child_process' ).execSync( 'cat *' ).toString( 'UTF-8' );
+fs.writeFile( 'output.md', cat, ( err ) => { if ( err ) throw err; } );
+```
+ 
+ 
+ ---
+ 
+  ### doesUserFrequentStarbucks.js
+ 
+```js
+const isAppleDevice = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+console.log(isAppleDevice);
+// Result: will return true if user is on an Apple device
+
+```
+---
+ 
+ ### arr-intersection.js
+ 
+```js
+/*
+ function named intersection(firstArr) that takes in an array and
+returns a function. 
+When the function returned by intersection is invoked
+passing in an array (secondArr) it returns a new array containing the elements
+common to both firstArr and secondArr.
+*/
+function intersection(firstArr) {
+  return (secondArr) => {
+    let common = [];
+    for (let i = 0; i < firstArr.length; i++) {
+      let el = firstArr[i];
+      if (secondArr.indexOf(el) > -1) {
+        common.push(el);
+      }
+    }
+    return common;
+  };
+}
+let abc = intersection(["a", "b", "c"]); // returns a function
+console.log(abc(["b", "d", "c"])); // returns [ 'b', 'c' ]
+
+let fame = intersection(["f", "a", "m", "e"]); // returns a function
+console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
+```
+---
+ ### arr-of-cum-partial-sums.js
+ 
+```js
+/*
+First is recurSum(arr, start) which returns the sum of the elements of arr from the index start till the very end.
+Second is partrecurSum() that recursively concatenates the required sum into an array and when we reach the end of the array, it returns the concatenated array.
+*/
+//arr.length -1 = 5 
+//                   arr   [    1,    7,    12,   6,    5,    10   ]
+//                   ind   [    0     1     2     3     4      5   ]
+//                              ↟                              ↟
+//                            start                           end
+
+function recurSum(arr, start = 0, sum = 0) {
+    if(start < arr.length){
+       return recurSum(arr, start+1, sum+arr[start]);
+    };
+    
+    return sum;
+ }
+ 
+ function rPartSumsArr ( arr, partSum = [], start = 0, end = arr.length - 1 ) {
+    if ( start <= end ) {
+       return rPartSumsArr( arr, partSum.concat( recurSum( arr, start ) ), ++start, end );
+    };
+    return partSum.reverse();
+ }
+
+ console.log('------------------------------------------------rPartSumArr------------------------------------------------')
+console.log('rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]: ', rPartSumsArr(arr));
+console.log('rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]: ', rPartSumsArr(arr1));
+console.log('------------------------------------------------rPartSumArr------------------------------------------------')
+/*
+------------------------------------------------rPartSumArr------------------------------------------------
+rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]:  [ 10, 16, 18, 23, 24, 25 ]
+rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
+------------------------------------------------rPartSumArr------------------------------------------------
+*/
+```
+---
+ ### camel2Kabab.js
+ 
+```js
+function camelToKebab(value) {
+  return value.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+}
+```
+---
+ ### camelCase.js
+ 
+```js
+function camel(str) {
+  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
+    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+    return index === 0 ? match.toLowerCase() : match.toUpperCase();
+  });
+}
+```
+---
+ ### concatLinkedLists.js
+ 
+```js
+function addTwoNumbers(l1, l2) {
+  let result = new ListNode(0)
+  let currentNode = result
+  let carryOver = 0
+  while (l1 != null || l2 != null) {
+    let v1 = 0
+    let v2 = 0
+    if (l1 != null) v1 = l1.val
+    if (l2 != null) v2 = l2.val
+    
+    let sum =  v1 + v2 + carryOver
+    carryOver = Math.floor(sum / 10)
+    sum = sum % 10
+    currentNode.next = new ListNode(sum)
+
+    currentNode = currentNode.next
+    if (l1 != null) l1 = l1.next
+    if (l2 != null) l2 = l2.next
+  }
+  
+  if (carryOver > 0) {
+    currentNode.next = new ListNode(carryOver)
+  }
+  
+  return result.next
+};
+```
+---
+
+ ### fast-is-alpha-numeric.js
+ 
+```js
+//Function to test if a character is alpha numeric that is faster than a regular
+//expression in JavaScript
+
+let isAlphaNumeric = (char) => {
+  char = char.toString();
+  let id = char.charCodeAt(0);
+  if (
+    !(id > 47 && id < 58) && // if not numeric(0-9)
+    !(id > 64 && id < 91) && // if not letter(A-Z)
+    !(id > 96 && id < 123) // if not letter(a-z)
+  ) {
+    return false;
+  }
+  return true;
+};
+
+console.log(isAlphaNumeric("A")); //true
+console.log(isAlphaNumeric(2)); //true
+console.log(isAlphaNumeric("z")); //true
+console.log(isAlphaNumeric(" ")); //false
+console.log(isAlphaNumeric("!")); //false
+```
+---
+ ### find-n-replace.js
+ 
+```js
+function replaceWords(str,before,after){
+    if(/^[A-Z]/.test(before)){
+after = after[0].toUpperCase() + after.substring(1)
+    }
+    else{
+        after = after[0].toLowerCase()+ after.substring(1)
+    }
+    return str.replace(before,after)
+}
+console.log(replaceWords("Let us go to the store", "store", "mall"))//"Let us go to the mall"
+console.log(replaceWords("He is Sleeping on the couch", "Sleeping", "sitting")) //"He is Sitting on the couch"
+console.log(replaceWords("His name is Tom", "Tom", "john"))
+//"His name is John"
+```
+---
+ ### flatten-arr.js
+ 
+```js
+
+/*Simple Function to flatten an array into a single layer */
+const flatten = (array) =>
+  array.reduce(
+    (accum, ele) => accum.concat(Array.isArray(ele) ? flatten(ele) : ele),
+    []
+  );
+```
+---
+ ### isWeekDay.js
+ 
+```js
+
+const isWeekday = (date) => date.getDay() % 6 !== 0;
+console.log(isWeekday(new Date(2021, 0, 11)));
+// Result: true (Monday)
+console.log(isWeekday(new Date(2021, 0, 10)));
+// Result: false (Sunday)
+```
+---
+ ### longest-common-prefix.js
+ 
+```js
+
+function longestCommonPrefix(strs) {
+  let prefix = ''
+  if (strs.length === 0) return prefix
+  for (let i = 0; i < strs[0].length; i++) {
+    const character = strs[0][i]
+    for (let j = 0; j < strs.length; j++) {
+      if (strs[j][i] !== character) return prefix
+    }
+    prefix = prefix + character
+  }
+  return prefix
+}
+```
+
+
+
+
+
+
+</details>
+
+
+
+---
+
+
+
+
+---
+
+![skills](./skills.PNG)
+
+---
+
+
+
+---
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/chetanraj/awesome-github-badges)
+
+
+[![forthebadge](https://forthebadge.com/images/badges/certified-snoop-lion.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://bgoonz.github.io/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/bgoonz/ask-me-anything)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/bgoonz/bgoonz/graphs/commit-activity)[![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/Naereen/README.md?pixel)](https://GitHub.com/bgoonz/bgoonz/)[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
+
+![React](https://img.shields.io/badge/-React-black?style=flat&logo=react) ![Redux](https://img.shields.io/badge/-Redux-lightblue?style=flat&logo=redux)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3) ![Sass](https://img.shields.io/badge/-Sass-black?style=flat&logo=sass)
+
+![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue)     ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) 
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker)                                 ![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql) ![PostgresQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat&logo=postgresql) ![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git)      ![Ruby](https://img.shields.io/badge/-Ruby-darkred?style=flat&logo=ruby)             ![Material-UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat&logo=Material-UI&logoColor=white)      
+
+
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.arduino.cc/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://emberjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg" alt="ember" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/mathworks.svg" alt="matlab" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+
+
+<h3 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h3>
+
+
+
+
+- 🔭 Contract Web Development **Relational Concepts**
+
+- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+
+- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+
+- 🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
+
+- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+
+- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+
+- 💬 Ask me about **Anything:**
+
+- 📫 How to reach me **bryan.guner@gmail.com**
+
+- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+---
+
+
+---
+
+
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /></p>
+
+ [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy)
+ 
+
+
+
+
+
+<hr>
+
+# Github Gists
+[Github Gists](https://gist.github.com/bgoonz)
+---
+<details>
+  
+  <summary>Click to expand!</summary>
+  
+  ---
+  
+  ### Find Duplicate Files in Working Directory
+
+```js 
+const Promise = require( 'bluebird' );
+const fs = Promise.promisifyAll( require( 'fs' ) );
+const crypto = require( 'crypto' );
+const path = require( 'path' );
+const pathA = ".";
+const pathB = "/path/to/the/directory/you/want/to/compare/it/to";
+let hashes = [];
+function hashDirIn ( folder ) {
+    var pathPromiseA = fs.readdirAsync( folder ).map( function ( fileName ) {
+        var workPath = path.join( folder, fileName );
+        var statPromise = fs.statAsync( workPath );
+        return Promise.join( statPromise, fileName, function ( statPromise, fileName ) {
+            if ( statPromise.isFile() ) {
+                function makeStream ( file, callback ) {
+                    var result = fs.createReadStream( workPath );
+                    return callback( result );
+                }
+                function process ( stream ) {
+                    var hash = crypto.createHash( 'md5' );
+                    return new Promise( function ( resolve, reject ) {
+                        stream.on( 'data', function updateProcess ( chunk ) {
+                            hash.update( chunk, 'utf8' );
+                        } );
+                        stream.on( 'end', resolve );
+                    } ).then( function publish () {
+                        var digest = hash.digest( 'hex' );
+                        hashes.push( { digest: digest, path: workPath } );
+                    } );
+                }
+                return makeStream( fileName, process );
+            }
+        } );
+    } ).then( function () {
+        if ( i == 1 ) {
+            hashes.sort( function ( a, b ) {
+                if ( a.digest < b.digest ) {
+                    return -1;
+                }
+                if ( a.digest > b.digest ) {
+                    return 1;
+                }
+                return 0;
+            } );
+            var dupe = 1;
+            hashes.map( function ( obj, index ) {
+                if ( index - 1 >= 0 ) {
+                    if ( obj.digest == hashes[ index - 1 ].digest ) {
+                        console.log( "Dupe " + dupe + " found:" );
+                        console.log( obj.path );
+                        console.log( "Equal to:" )
+                        console.log( hashes[ index - 1 ].path + "\n" );
+                        dupe++;
+                    }
+                }
+            } );
+        }
+        i++;
+    } );
+}
+var i = 0;
+hashDirIn( pathA );
+hashDirIn( pathB );
+
+```
+
+
+---
+
+
+###  Node Cheat Sheet
+
+```js
+/*************************
+ * //NODE-JS-CHEAT-SHEET *
+ *************************/
+var http = require('http');
+// An example of a web server written with Node which responds with 'Hello World'.
+// To run the server, put the code into a file called example.js and execute it with the node program.
+http.createServer(function (request, response) {
+response.writeHead(200, {'Content-Type': 'text/plain'});
+response.end('Hello World\n');
+}).listen(8124);
+console.log('Server running at http://127.0.0.1:8124/');
+/* *******************************************************************************************
+* GLOBAL OBJECTS
+* http://nodejs.org/api/globals.html
+* ******************************************************************************************* */
+// In browsers, the top-level scope is the global scope.
+// That means that in browsers if you're in the global scope var something will define a global variable.
+// In Node this is different. The top-level scope is not the global scope; var something inside a Node module will be local to that module.
+__filename;  // The filename of the code being executed. (absolute path)
+__dirname;   // The name of the directory that the currently executing script resides in. (absolute path)
+module;      // A reference to the current module. In particular module.exports is used for defining what a module exports and makes available through require().
+exports;     // A reference to the module.exports that is shorter to type.
+process;     // The process object is a global object and can be accessed from anywhere. It is an instance of EventEmitter.
+Buffer;      // The Buffer class is a global type for dealing with binary data directly.
+* CONSOLE
+* http://nodejs.org/api/console.html
+console.log([data], [...]);             // Prints to stdout with newline.
+console.info([data], [...]);            // Same as console.log.
+console.error([data], [...]);           // Same as console.log but prints to stderr.
+console.warn([data], [...]);            // Same as console.error.
+console.dir(obj);                       // Uses util.inspect on obj and prints resulting string to stdout.
+console.time(label);                    // Mark a time.
+console.timeEnd(label);                 // Finish timer, record output.
+console.trace(label);                   // Print a stack trace to stderr of the current position.
+console.assert(expression, [message]);  // Same as assert.ok() where if the expression evaluates as false throw an AssertionError with message.
+* TIMERS
+* http://nodejs.org/api/timers.html
+setTimeout(callback, delay, [arg], [...]);   // To schedule execution of a one-time callback after delay milliseconds. Optionally you can also pass arguments to the callback.
+clearTimeout(t);                             // Stop a timer that was previously created with setTimeout().
+setInterval(callback, delay, [arg], [...]);  // To schedule the repeated execution of callback every delay milliseconds. Optionally you can also pass arguments to the callback.
+clearInterval(t);                            // Stop a timer that was previously created with setInterval().
+setImmediate(callback, [arg], [...]);        // To schedule the "immediate" execution of callback after I/O events callbacks and before setTimeout and setInterval.
+clearImmediate(immediateObject);             // Stop a timer that was previously created with setImmediate().
+unref();  // Allow you to create a timer that is active but if it is the only item left in the event loop, node won't keep the program running.
+ref();    // If you had previously unref()d a timer you can call ref() to explicitly request the timer hold the program open.
+* MODULES
+* http://nodejs.org/api/modules.html
+var module = require('./module.js');    // Loads the module module.js in the same directory.
+module.require('./another_module.js');  // load another_module as if require() was called from the module itself.
+module.id;        // The identifier for the module. Typically this is the fully resolved filename.
+module.filename;  // The fully resolved filename to the module.
+module.loaded;    // Whether or not the module is done loading, or is in the process of loading.
+module.parent;    // The module that required this one.
+module.children;  // The module objects required by this one.
+exports.area = function (r) {
+return Math.PI * r * r;
+};
+// If you want the root of your module's export to be a function (such as a constructor)
+// or if you want to export a complete object in one assignment instead of building it one property at a time,
+// assign it to module.exports instead of exports.
+module.exports = function(width) {
+return {
+area: function() {
+return width * width;
+}
+* PROCESS
+* http://nodejs.org/api/process.html
+process.on('exit', function(code) {});              // Emitted when the process is about to exit
+process.on('uncaughtException', function(err) {});  // Emitted when an exception bubbles all the way back to the event loop. (should not be used)
+process.stdout;           // A writable stream to stdout.
+process.stderr;           // A writable stream to stderr.
+process.stdin;            // A readable stream for stdin.
+process.argv;             // An array containing the command line arguments.
+process.env;              // An object containing the user environment.
+process.execPath;         // This is the absolute pathname of the executable that started the process.
+process.execArgv;         // This is the set of node-specific command line options from the executable that started the process.
+process.arch;             // What processor architecture you're running on: 'arm', 'ia32', or 'x64'.
+process.config;           // An Object containing the JavaScript representation of the configure options that were used to compile the current node executable.
+process.pid;              // The PID of the process.
+process.platform;         // What platform you're running on: 'darwin', 'freebsd', 'linux', 'sunos' or 'win32'.
+process.title;            // Getter/setter to set what is displayed in 'ps'.
+process.version;          // A compiled-in property that exposes NODE_VERSION.
+process.versions;         // A property exposing version strings of node and its dependencies.
+process.abort();          // This causes node to emit an abort. This will cause node to exit and generate a core file.
+process.chdir(dir);       // Changes the current working directory of the process or throws an exception if that fails.
+process.cwd();            // Returns the current working directory of the process.
+process.exit([code]);     // Ends the process with the specified code. If omitted, exit uses the 'success' code 0.
+process.getgid();         // Gets the group identity of the process.
+process.setgid(id);       // Sets the group identity of the process.
+process.getuid();         // Gets the user identity of the process.
+process.setuid(id);       // Sets the user identity of the process.
+process.getgroups();      // Returns an array with the supplementary group IDs.
+process.setgroups(grps);  // Sets the supplementary group IDs.
+process.initgroups(user, extra_grp);  // Reads /etc/group and initializes the group access list, using all groups of which the user is a member.
+process.kill(pid, [signal]);          // Send a signal to a process. pid is the process id and signal is the string describing the signal to send.
+process.memoryUsage();                // Returns an object describing the memory usage of the Node process measured in bytes.
+process.nextTick(callback);           // On the next loop around the event loop call this callback.
+process.maxTickDepth;                 // Callbacks passed to process.nextTick will usually be called at the end of the current flow of execution, and are thus approximately as fast as calling a function synchronously.
+process.umask([mask]);                // Sets or reads the process's file mode creation mask.
+process.uptime();                     // Number of seconds Node has been running.
+process.hrtime();                     // Returns the current high-resolution real time in a [seconds, nanoseconds] tuple Array.
+* CHILD PROCESS
+* http://nodejs.org/api/child_process.html
+// Node provides a tri-directional popen facility through the child_process module.
+// It is possible to stream data through a child's stdin, stdout, and stderr in a fully non-blocking way.
+ChildProcess;                                                 // Class. ChildProcess is an EventEmitter.
+child.stdin;                                                  // A Writable Stream that represents the child process's stdin
+child.stdout;                                                 // A Readable Stream that represents the child process's stdout
+child.stderr;                                                 // A Readable Stream that represents the child process's stderr.
+child.pid;                                                    // The PID of the child process
+child.connected;                                              // If .connected is false, it is no longer possible to send messages
+child.kill([signal]);                                         // Send a signal to the child process
+child.send(message, [sendHandle]);                            // When using child_process.fork() you can write to the child using child.send(message, [sendHandle]) and messages are received by a 'message' event on the child.
+child.disconnect();                                           // Close the IPC channel between parent and child, allowing the child to exit gracefully once there are no other connections keeping it alive.
+child_process.spawn(command, [args], [options]);              // Launches a new process with the given command, with command line arguments in args. If omitted, args defaults to an empty Array.
+child_process.exec(command, [options], callback);             // Runs a command in a shell and buffers the output.
+child_process.execFile(file, [args], [options], [callback]);  // Runs a command in a shell and buffers the output.
+child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in. 
+* UTIL
+* http://nodejs.org/api/util.html
+// These functions are in the module 'util'. Use require('util') to access them.
+util.format(format, [...]);    // Returns a formatted string using the first argument as a printf-like format. (%s, %d, %j)
+util.debug(string);            // A synchronous output function. Will block the process and output string immediately to stderr.
+util.error([...]);             // Same as util.debug() except this will output all arguments immediately to stderr.
+util.puts([...]);              // A synchronous output function. Will block the process and output all arguments to stdout with newlines after each argument.
+util.print([...]);             // A synchronous output function. Will block the process, cast each argument to a string then output to stdout. (no newlines)
+util.log(string);              // Output with timestamp on stdout.
+util.inspect(object, [opts]);  // Return a string representation of object, which is useful for debugging. (options: showHidden, depth, colors, customInspect)
+util.isArray(object);          // Returns true if the given "object" is an Array. false otherwise.
+util.isRegExp(object);         // Returns true if the given "object" is a RegExp. false otherwise.
+util.isDate(object);           // Returns true if the given "object" is a Date. false otherwise.
+util.isError(object);          // Returns true if the given "object" is an Error. false otherwise.
+util.promisify(fn)             // Takes a function whose last argument is a callback and returns a version that returns promises.
+util.inherits(constructor, superConstructor);  // Inherit the prototype methods from one constructor into another.
+* EVENTS
+* http://nodejs.org/api/events.html
+// All objects which emit events are instances of events.EventEmitter. You can access this module by doing: require("events");
+// To access the EventEmitter class, require('events').EventEmitter.
+// All EventEmitters emit the event 'newListener' when new listeners are added and 'removeListener' when a listener is removed.
+emitter.addListener(event, listener);        // Adds a listener to the end of the listeners array for the specified event.
+emitter.on(event, listener);                 // Same as emitter.addListener().
+emitter.once(event, listener);               // Adds a one time listener for the event. This listener is invoked only the next time the event is fired, after which it is removed.
+emitter.removeListener(event, listener);     // Remove a listener from the listener array for the specified event.
+emitter.removeAllListeners([event]);         // Removes all listeners, or those of the specified event.
+emitter.setMaxListeners(n);                  // By default EventEmitters will print a warning if more than 10 listeners are added for a particular event.
+emitter.listeners(event);                    // Returns an array of listeners for the specified event.
+emitter.emit(event, [arg1], [arg2], [...]);  // Execute each of the listeners in order with the supplied arguments. Returns true if event had listeners, false otherwise.
+EventEmitter.listenerCount(emitter, event);  // Return the number of listeners for a given event.
+* STREAM
+* http://nodejs.org/api/stream.html
+// A stream is an abstract interface implemented by various objects in Node. For example a request to an HTTP server is a stream, as is stdout.
+// Streams are readable, writable, or both. All streams are instances of EventEmitter.
+// The Readable stream interface is the abstraction for a source of data that you are reading from.
+// In other words, data comes out of a Readable stream.
+// A Readable stream will not start emitting data until you indicate that you are ready to receive it.
+// Examples of readable streams include: http responses on the client, http requests on the server, fs read streams
+// zlib streams, crypto streams, tcp sockets, child process stdout and stderr, process.stdin.
+var readable = getReadableStreamSomehow();
+readable.on('readable', function() {});   // When a chunk of data can be read from the stream, it will emit a 'readable' event.
+readable.on('data', function(chunk) {});  // If you attach a data event listener, then it will switch the stream into flowing mode, and data will be passed to your handler as soon as it is available.
+readable.on('end', function() {});        // This event fires when there will be no more data to read.
+readable.on('close', function() {});      // Emitted when the underlying resource (for example, the backing file descriptor) has been closed. Not all streams will emit this.
+readable.on('error', function() {});      // Emitted if there was an error receiving data.
+// The read() method pulls some data out of the internal buffer and returns it. If there is no data available, then it will return null.
+// This method should only be called in non-flowing mode. In flowing-mode, this method is called automatically until the internal buffer is drained.
+readable.read([size]);
+readable.setEncoding(encoding);           // Call this function to cause the stream to return strings of the specified encoding instead of Buffer objects.
+readable.resume();                        // This method will cause the readable stream to resume emitting data events.
+readable.pause();                         // This method will cause a stream in flowing-mode to stop emitting data events.
+readable.pipe(destination, [options]);    // This method pulls all the data out of a readable stream, and writes it to the supplied destination, automatically managing the flow so that the destination is not overwhelmed by a fast readable stream.
+readable.unpipe([destination]);           // This method will remove the hooks set up for a previous pipe() call. If the destination is not specified, then all pipes are removed.
+readable.unshift(chunk);                  // This is useful in certain cases where a stream is being consumed by a parser, which needs to "un-consume" some data that it has optimistically pulled out of the source, so that the stream can be passed on to some other party.
+// The Writable stream interface is an abstraction for a destination that you are writing data to.
+// Examples of writable streams include: http requests on the client, http responses on the server, fs write streams,
+// zlib streams, crypto streams, tcp sockets, child process stdin, process.stdout, process.stderr.
+var writer = getWritableStreamSomehow();
+writable.write(chunk, [encoding], [callback]);  // This method writes some data to the underlying system, and calls the supplied callback once the data has been fully handled.
+writer.once('drain', write);                    // If a writable.write(chunk) call returns false, then the drain event will indicate when it is appropriate to begin writing more data to the stream.
+writable.end([chunk], [encoding], [callback]);  // Call this method when no more data will be written to the stream.
+writer.on('finish', function() {});             // When the end() method has been called, and all data has been flushed to the underlying system, this event is emitted.
+writer.on('pipe', function(src) {});            // This is emitted whenever the pipe() method is called on a readable stream, adding this writable to its set of destinations.
+writer.on('unpipe', function(src) {});          // This is emitted whenever the unpipe() method is called on a readable stream, removing this writable from its set of destinations.
+writer.on('error', function(src) {});           // Emitted if there was an error when writing or piping data.
+// Duplex streams are streams that implement both the Readable and Writable interfaces. See above for usage.
+// Examples of Duplex streams include: tcp sockets, zlib streams, crypto streams.
+// Transform streams are Duplex streams where the output is in some way computed from the input. They implement both the Readable and Writable interfaces. See above for usage.
+// Examples of Transform streams include: zlib streams, crypto streams.
+* FILE SYSTEM
+* http://nodejs.org/api/fs.html
+// To use this module do require('fs').
+// All the methods have asynchronous and synchronous forms.
+fs.rename(oldPath, newPath, callback);  // Asynchronous rename. No arguments other than a possible exception are given to the completion callback.Asynchronous ftruncate. No arguments other than a possible exception are given to the completion callback.
+fs.renameSync(oldPath, newPath);        // Synchronous rename.
+fs.ftruncate(fd, len, callback);        // Asynchronous ftruncate. No arguments other than a possible exception are given to the completion callback.
+fs.ftruncateSync(fd, len);              // Synchronous ftruncate.
+fs.truncate(path, len, callback);       // Asynchronous truncate. No arguments other than a possible exception are given to the completion callback.
+fs.truncateSync(path, len);             // Synchronous truncate.
+fs.chown(path, uid, gid, callback);     // Asynchronous chown. No arguments other than a possible exception are given to the completion callback.
+fs.chownSync(path, uid, gid);           // Synchronous chown.
+fs.fchown(fd, uid, gid, callback);      // Asynchronous fchown. No arguments other than a possible exception are given to the completion callback.
+fs.fchownSync(fd, uid, gid);            // Synchronous fchown.
+fs.lchown(path, uid, gid, callback);    // Asynchronous lchown. No arguments other than a possible exception are given to the completion callback.
+fs.lchownSync(path, uid, gid);          // Synchronous lchown.
+fs.chmod(path, mode, callback);         // Asynchronous chmod. No arguments other than a possible exception are given to the completion callback.
+fs.chmodSync(path, mode);               // Synchronous chmod.
+fs.fchmod(fd, mode, callback);          // Asynchronous fchmod. No arguments other than a possible exception are given to the completion callback.
+fs.fchmodSync(fd, mode);                // Synchronous fchmod.
+fs.lchmod(path, mode, callback);        // Asynchronous lchmod. No arguments other than a possible exception are given to the completion callback.
+fs.lchmodSync(path, mode);              // Synchronous lchmod.
+fs.stat(path, callback);                // Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. 
+fs.statSync(path);                      // Synchronous stat. Returns an instance of fs.Stats.
+fs.lstat(path, callback);               // Asynchronous lstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. lstat() is identical to stat(), except that if path is a symbolic link, then the link itself is stat-ed, not the file that it refers to.
+fs.lstatSync(path);                     // Synchronous lstat. Returns an instance of fs.Stats.
+fs.fstat(fd, callback);                 // Asynchronous fstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. fstat() is identical to stat(), except that the file to be stat-ed is specified by the file descriptor fd.
+fs.fstatSync(fd);                       // Synchronous fstat. Returns an instance of fs.Stats.
+fs.link(srcpath, dstpath, callback);             // Asynchronous link. No arguments other than a possible exception are given to the completion callback.
+fs.linkSync(srcpath, dstpath);                   // Synchronous link.
+fs.symlink(srcpath, dstpath, [type], callback);  // Asynchronous symlink. No arguments other than a possible exception are given to the completion callback. The type argument can be set to 'dir', 'file', or 'junction' (default is 'file') and is only available on Windows (ignored on other platforms)
+fs.symlinkSync(srcpath, dstpath, [type]);        // Synchronous symlink.
+fs.readlink(path, callback);                     // Asynchronous readlink. The callback gets two arguments (err, linkString).
+fs.readlinkSync(path);                           // Synchronous readlink. Returns the symbolic link's string value.
+fs.unlink(path, callback);                       // Asynchronous unlink. No arguments other than a possible exception are given to the completion callback.
+fs.unlinkSync(path);                             // Synchronous unlink.
+fs.realpath(path, [cache], callback);     // Asynchronous realpath. The callback gets two arguments (err, resolvedPath).
+fs.realpathSync(path, [cache]);           // Synchronous realpath. Returns the resolved path.
+fs.rmdir(path, callback);                 // Asynchronous rmdir. No arguments other than a possible exception are given to the completion callback.
+fs.rmdirSync(path);                       // Synchronous rmdir.
+fs.mkdir(path, [mode], callback);         // Asynchronous mkdir. No arguments other than a possible exception are given to the completion callback. mode defaults to 0777.
+fs.mkdirSync(path, [mode]);               // Synchronous mkdir.
+fs.readdir(path, callback);               // Asynchronous readdir. Reads the contents of a directory. The callback gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'.
+fs.readdirSync(path);                     // Synchronous readdir. Returns an array of filenames excluding '.' and '..'.
+fs.close(fd, callback);                   // Asynchronous close. No arguments other than a possible exception are given to the completion callback.
+fs.closeSync(fd);                         // Synchronous close.
+fs.open(path, flags, [mode], callback);   // Asynchronous file open.
+fs.openSync(path, flags, [mode]);         // Synchronous version of fs.open().
+fs.utimes(path, atime, mtime, callback);  // Change file timestamps of the file referenced by the supplied path.
+fs.utimesSync(path, atime, mtime);        // Synchronous version of fs.utimes().
+fs.futimes(fd, atime, mtime, callback);   // Change the file timestamps of a file referenced by the supplied file descriptor.
+fs.futimesSync(fd, atime, mtime);         // Synchronous version of fs.futimes().
+fs.fsync(fd, callback);                   // Asynchronous fsync. No arguments other than a possible exception are given to the completion callback.
+fs.fsyncSync(fd);                         // Synchronous fsync.
+fs.write(fd, buffer, offset, length, position, callback);  // Write buffer to the file specified by fd.
+fs.writeSync(fd, buffer, offset, length, position);        // Synchronous version of fs.write(). Returns the number of bytes written.
+fs.read(fd, buffer, offset, length, position, callback);   // Read data from the file specified by fd.
+fs.readSync(fd, buffer, offset, length, position);         // Synchronous version of fs.read. Returns the number of bytesRead.
+fs.readFile(filename, [options], callback);                // Asynchronously reads the entire contents of a file.
+fs.readFileSync(filename, [options]);                      // Synchronous version of fs.readFile. Returns the contents of the filename. If the encoding option is specified then this function returns a string. Otherwise it returns a buffer.
+fs.writeFile(filename, data, [options], callback);   // Asynchronously writes data to a file, replacing the file if it already exists. data can be a string or a buffer.
+fs.writeFileSync(filename, data, [options]);         // The synchronous version of fs.writeFile.
+fs.appendFile(filename, data, [options], callback);  // Asynchronously append data to a file, creating the file if it not yet exists. data can be a string or a buffer.
+fs.appendFileSync(filename, data, [options]);        // The synchronous version of fs.appendFile.
+fs.watch(filename, [options], [listener]);           // Watch for changes on filename, where filename is either a file or a directory. The returned object is a fs.FSWatcher. The listener callback gets two arguments (event, filename). event is either 'rename' or 'change', and filename is the name of the file which triggered the event.
+fs.exists(path, callback);                           // Test whether or not the given path exists by checking with the file system. Then call the callback argument with either true or false. (should not be used)
+fs.existsSync(path);                                 // Synchronous version of fs.exists. (should not be used)
+// fs.Stats: objects returned from fs.stat(), fs.lstat() and fs.fstat() and their synchronous counterparts are of this type.
+stats.isFile();
+stats.isDirectory()
+stats.isBlockDevice()
+stats.isCharacterDevice()
+stats.isSymbolicLink()  // (only valid with fs.lstat())
+stats.isFIFO()
+stats.isSocket()
+fs.createReadStream(path, [options]);   // Returns a new ReadStream object.
+fs.createWriteStream(path, [options]);  // Returns a new WriteStream object.
+* PATH
+// Use require('path') to use this module.
+// This module contains utilities for handling and transforming file paths.
+// Almost all these methods perform only string transformations.
+// The file system is not consulted to check whether paths are valid.
+path.normalize(p);                    // Normalize a string path, taking care of '..' and '.' parts.
+path.join([path1], [path2], [...]);   // Join all arguments together and normalize the resulting path.
+path.resolve([from ...], to);         // Resolves 'to' to an absolute path.
+path.relative(from, to);              // Solve the relative path from 'from' to 'to'.
+path.dirname(p);                      // Return the directory name of a path. Similar to the Unix dirname command.
+path.basename(p, [ext]);              // Return the last portion of a path. Similar to the Unix basename command.
+path.extname(p);                      // Return the extension of the path, from the last '.' to end of string in the last portion of the path.
+path.sep;                             // The platform-specific file separator. '\\' or '/'.
+path.delimiter;                       // The platform-specific path delimiter, ';' or ':'.
+* HTTP
+* http://nodejs.org/api/http.html
+// To use the HTTP server and client one must require('http').
+http.STATUS_CODES;                                             // A collection of all the standard HTTP response status codes, and the short description of each.
+http.request(options, [callback]);                             // This function allows one to transparently issue requests.
+http.get(options, [callback]);                                 // Set the method to GET and calls req.end() automatically.
+server = http.createServer([requestListener]);                 // Returns a new web server object. The requestListener is a function which is automatically added to the 'request' event.
+server.listen(port, [hostname], [backlog], [callback]);        // Begin accepting connections on the specified port and hostname.
+server.listen(path, [callback]);                               // Start a UNIX socket server listening for connections on the given path.
+server.listen(handle, [callback]);                             // The handle object can be set to either a server or socket (anything with an underlying _handle member), or a {fd: <n>} object.
+server.close([callback]);                                      // Stops the server from accepting new connections. 
+server.setTimeout(msecs, callback);                            // Sets the timeout value for sockets, and emits a 'timeout' event on the Server object, passing the socket as an argument, if a timeout occurs.
+# Node JS Quick Reference
+server.maxHeadersCount;  // Limits maximum incoming headers count, equal to 1000 by default. If set to 0 - no limit will be applied.
+server.timeout;          // The number of milliseconds of inactivity before a socket is presumed to have timed out.
+server.on('request', function (request, response) { });        // Emitted each time there is a request.
+server.on('connection', function (socket) { });                // When a new TCP stream is established.
+server.on('close', function () { });                           // Emitted when the server closes.
+server.on('checkContinue', function (request, response) { });  // Emitted each time a request with an http Expect: 100-continue is received.
+server.on('connect', function (request, socket, head) { });    // Emitted each time a client requests a http CONNECT method.
+server.on('upgrade', function (request, socket, head) { });    // Emitted each time a client requests a http upgrade.
+server.on('clientError', function (exception, socket) { });    // If a client connection emits an 'error' event - it will forwarded here.
+request.write(chunk, [encoding]);                              // Sends a chunk of the body.
+request.end([data], [encoding]);                               // Finishes sending the request. If any parts of the body are unsent, it will flush them to the stream.
+request.abort();                                               // Aborts a request.
+request.setTimeout(timeout, [callback]);                       // Once a socket is assigned to this request and is connected socket.setTimeout() will be called.
+request.setNoDelay([noDelay]);                                 // Once a socket is assigned to this request and is connected socket.setNoDelay() will be called.
+request.setSocketKeepAlive([enable], [initialDelay]);          // Once a socket is assigned to this request and is connected socket.setKeepAlive() will be called.
+request.on('response', function(response) { });                // Emitted when a response is received to this request. This event is emitted only once.
+request.on('socket', function(socket) { });                    // Emitted after a socket is assigned to this request.
+request.on('connect', function(response, socket, head) { });   // Emitted each time a server responds to a request with a CONNECT method. If this event isn't being listened for, clients receiving a CONNECT method will have their connections closed.
+request.on('upgrade', function(response, socket, head) { });   // Emitted each time a server responds to a request with an upgrade. If this event isn't being listened for, clients receiving an upgrade header will have their connections closed.
+request.on('continue', function() { });                        // Emitted when the server sends a '100 Continue' HTTP response, usually because the request contained 'Expect: 100-continue'. This is an instruction that the client should send the request body.
+response.write(chunk, [encoding]);                             // This sends a chunk of the response body. If this merthod is called and response.writeHead() has not been called, it will switch to implicit header mode and flush the implicit headers.
+response.writeContinue();                                      // Sends a HTTP/1.1 100 Continue message to the client, indicating that the request body should be sent.
+response.writeHead(statusCode, [reasonPhrase], [headers]);     // Sends a response header to the request.
+response.setTimeout(msecs, callback);                          // Sets the Socket's timeout value to msecs. If a callback is provided, then it is added as a listener on the 'timeout' event on the response object.
+response.setHeader(name, value);                               // Sets a single header value for implicit headers. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here if you need to send multiple headers with the same name.
+response.getHeader(name);                                      // Reads out a header that's already been queued but not sent to the client. Note that the name is case insensitive.
+response.removeHeader(name);                                   // Removes a header that's queued for implicit sending.
+response.addTrailers(headers);                                 // This method adds HTTP trailing headers (a header but at the end of the message) to the response.
+response.end([data], [encoding]);                              // This method signals to the server that all of the response headers and body have been sent; that server should consider this message complete. The method, response.end(), MUST be called on each response.
+response.statusCode;                                           // When using implicit headers (not calling response.writeHead() explicitly), this property controls the status code that will be sent to the client when the headers get flushed.
+response.headersSent;                                          // Boolean (read-only). True if headers were sent, false otherwise.
+response.sendDate;                                             // When true, the Date header will be automatically generated and sent in the response if it is not already present in the headers. Defaults to true.
+response.on('close', function () { });  // Indicates that the underlying connection was terminated before response.end() was called or able to flush.
+response.on('finish', function() { });  // Emitted when the response has been sent. 
+message.httpVersion;                    // In case of server request, the HTTP version sent by the client. In the case of client response, the HTTP version of the connected-to server.
+message.headers;                        // The request/response headers object.
+message.trailers;                       // The request/response trailers object. Only populated after the 'end' event.
+message.method;                         // The request method as a string. Read only. Example: 'GET', 'DELETE'.
+message.url;                            // Request URL string. This contains only the URL that is present in the actual HTTP request.
+message.statusCode;                     // The 3-digit HTTP response status code. E.G. 404.
+message.socket;                         // The net.Socket object associated with the connection.
+message.setTimeout(msecs, callback);    // Calls message.connection.setTimeout(msecs, callback).
+* URL
+* http://nodejs.org/api/url.html
+// This module has utilities for URL resolution and parsing. Call require('url') to use it.
+url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);  // Take a URL string, and return an object.
+url.format(urlObj);                                          // Take a parsed URL object, and return a formatted URL string.
+url.resolve(from, to);                                       // Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
+* QUERY STRING
+* http://nodejs.org/api/querystring.html
+// This module provides utilities for dealing with query strings. Call require('querystring') to use it.
+querystring.stringify(obj, [sep], [eq]);         // Serialize an object to a query string. Optionally override the default separator ('&') and assignment ('=') characters.
+querystring.parse(str, [sep], [eq], [options]);  // Deserialize a query string to an object. Optionally override the default separator ('&') and assignment ('=') characters.
+* ASSERT
+* http://nodejs.org/api/assert.html
+// This module is used for writing unit tests for your applications, you can access it with require('assert').
+assert.fail(actual, expected, message, operator);     // Throws an exception that displays the values for actual and expected separated by the provided operator.
+assert(value, message); assert.ok(value, [message]);  // Tests if value is truthy, it is equivalent to assert.equal(true, !!value, message);
+assert.equal(actual, expected, [message]);            // Tests shallow, coercive equality with the equal comparison operator ( == ).
+assert.notEqual(actual, expected, [message]);         // Tests shallow, coercive non-equality with the not equal comparison operator ( != ).
+assert.deepEqual(actual, expected, [message]);        // Tests for deep equality.
+assert.notDeepEqual(actual, expected, [message]);     // Tests for any deep inequality.
+assert.strictEqual(actual, expected, [message]);      // Tests strict equality, as determined by the strict equality operator ( === )
+assert.notStrictEqual(actual, expected, [message]);   // Tests strict non-equality, as determined by the strict not equal operator ( !== )
+assert.throws(block, [error], [message]);             // Expects block to throw an error. error can be constructor, RegExp or validation function.
+assert.doesNotThrow(block, [message]);                // Expects block not to throw an error, see assert.throws for details.
+assert.ifError(value);                                // Tests if value is not a false value, throws if it is a true value. Useful when testing the first argument, error in callbacks.
+* OS
+* http://nodejs.org/api/os.html
+// Provides a few basic operating-system related utility functions.
+// Use require('os') to access this module.
+os.tmpdir();             // Returns the operating system's default directory for temp files.
+os.endianness();         // Returns the endianness of the CPU. Possible values are "BE" or "LE".
+os.hostname();           // Returns the hostname of the operating system.
+os.type();               // Returns the operating system name.
+os.platform();           // Returns the operating system platform.
+os.arch();               // Returns the operating system CPU architecture.
+os.release();            // Returns the operating system release.
+os.uptime();             // Returns the system uptime in seconds.
+os.loadavg();            // Returns an array containing the 1, 5, and 15 minute load averages.
+os.totalmem();           // Returns the total amount of system memory in bytes.
+os.freemem();            // Returns the amount of free system memory in bytes.
+os.cpus();               // Returns an array of objects containing information about each CPU/core installed: model, speed (in MHz), and times (an object containing the number of milliseconds the CPU/core spent in: user, nice, sys, idle, and irq).
+os.networkInterfaces();  // Get a list of network interfaces.
+os.EOL;                  // A constant defining the appropriate End-of-line marker for the operating system.
+* BUFFER
+* http://nodejs.org/api/buffer.html
+// Buffer is used to dealing with binary data
+// Buffer is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap
+Buffer.from(size);                                                  // Allocates a new buffer of size octets.
+Buffer.from(array);                                                 // Allocates a new buffer using an array of octets.
+Buffer.from(str, [encoding]);                                       // Allocates a new buffer containing the given str. encoding defaults to 'utf8'.
+Buffer.isEncoding(encoding);                                        // Returns true if the encoding is a valid encoding argument, or false otherwise.
+Buffer.isBuffer(obj);                                               // Tests if obj is a Buffer
+Buffer.concat(list, [totalLength]);                                 // Returns a buffer which is the result of concatenating all the buffers in the list together.
+Buffer.byteLength(string, [encoding]);                              // Gives the actual byte length of a string.
+buf.write(string, [offset], [length], [encoding]);                  // Writes string to the buffer at offset using the given encoding
+buf.toString([encoding], [start], [end]);                           // Decodes and returns a string from buffer data encoded with encoding (defaults to 'utf8') beginning at start (defaults to 0) and ending at end (defaults to buffer.length).
+buf.toJSON();                                                       // Returns a JSON-representation of the Buffer instance, which is identical to the output for JSON Arrays
+buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);  // Does copy between buffers. The source and target regions can be overlapped
+buf.slice([start], [end]);                                          // Returns a new buffer which references the same memory as the old, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer.   
+buf.fill(value, [offset], [end]);                                   // Fills the buffer with the specified value
+buf[index];                                                         // Get and set the octet at index
+buf.length;                                                         // The size of the buffer in bytes, Note that this is not necessarily the size of the contents
+buffer.INSPECT_MAX_BYTES;                                           // How many bytes will be returned when buffer.inspect() is called. This can be overridden by user modules.
+```
+
+
+---
+
+### Trello Board Json to HTML Converter
+
+```html
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>True Trello Printer</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 15%;
+        }
+
+        .panel-body {
+            font-size: 1.2em;
+
+        }
+    </style>
+    <style type="text/css" media="print">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="out">
+        No Trello JSON data found
+    </div>
+
+    </ul>
+    </div>
+
+    <script type="text/html" id="template-output">
+        {{#lists}}
+        <h1> {{name}}</h1>
+        {{#cards}}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>{{name}}</h4>{{{desc}}}
+            </div>
+            <!--div class="panel-body" >
+                
+              </div-->
+            <ul class="list-group">
+
+                {{#actions}}
+                <li class="list-group-item"><tt style="color:gray;">{{date}} </tt> {{{text}}}</li>
+                {{/actions}}
+            </ul>
+        </div>
+        {{/cards}}
+        <hr><br><br>
+        {{/lists}}
+    </script>
+
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js" type="text/javascript">
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.0/marked.min.js
+" type="text/javascript"></script>
+    <script type="text/javascript">
+        function eatData( trelloJson ) {
+            var data = {
+                board: trelloJson.name,
+                lists: [],
+                ref: {}
+            }
+
+            for ( i in trelloJson.lists ) {
+                var list = trelloJson.lists[ i ]
+                if ( list.closed ) {
+                    //continue
+                }
+                data.ref[ list.id ] = {
+                    name: list.name,
+                    cards: []
+                }
+                data.lists.push( data.ref[ list.id ] )
+            }
+
+
+            for ( i in trelloJson.cards ) {
+                var card = trelloJson.cards[ i ]
+                if ( card.closed ) {
+                    //continue
+                }
+
+                data.ref[ card.id ] = {
+                    name: card.name,
+                    desc: marked( card.desc ),
+                    actions: []
+                }
+
+                data.ref[ card.idList ].cards.push( data.ref[ card.id ] )
+
+            }
+
+            for ( i in trelloJson.actions ) {
+                var action = trelloJson.actions[ i ]
+                if ( action.type != "commentCard" ) {
+                    continue
+                }
+
+
+                data.ref[ action.id ] = {
+                    text: marked( action.data.text ),
+                    date: moment( action.date ).format( 'YYYY-MM-DD' )
+                }
+                try {
+                    data.ref[ action.data.card.id ].actions.push( data.ref[ action.id ] )
+                } catch ( e ) {}
+            }
+
+            return data;
+        }
+
+        function showData( data ) {
+            var template = $( '#template-output' ).html()
+            console.log( JSON.stringify( data, null, 2 ) )
+            $( '#out' ).html( Mustache.render( template, data ) )
+        }
+
+        function autorun() {
+            if ( null == data ) {
+                return alert( 'Please insert JSON data from Trello in the code' )
+            }
+            showData( eatData( data ) );
+        }
+        if ( document.addEventListener ) document.addEventListener( "DOMContentLoaded", autorun, false );
+        else if ( document.attachEvent ) document.attachEvent( "onreadystatechange", autorun );
+        else window.onload = autorun;
+
+
+        data = null;
+        
+           data = {?* PASTE JSON DATA HERE!!!!*?
+           }
+
+ 
+    </script>
+</body>
+
+</html>
+
+```
+
+
+</details>
+
+---
+
+
+<details>
+  
+<summary>See More</summary>
+
+
+
+
+
+
+---
+[wakatime](https://wakatime.com/@bgoonz)
+---
+
+---
+[github-resume](https://resume.github.io/?bgoonz)
+---
+
+------
+
+**Technical Skills­­­**
+
+| **Programming**** Languages:** | JavaScript ES-6, NodeJS, React, HTML5, CSS3, SCSS, Bash Shell, Excel, SQL, NoSQL, MATLAB, Python, C++ |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| **Databases:**                 | PostgreSQL, MongoDB                                                                                   |
+| **Cloud:**                     | Docker, AWS, Google App Engine, Netlify, Digital Ocean, Heroku, Azure Cloud Services                  |
+| **OS:**                        | Linux, Windows (WSL), IOS                                                                             |
+| **Agile:**                     | GitHub, BitBucket, Jira, Confluence                                                                   |
+| **IDEs:**                      | VSCode, Visual Studio, Atom, Code Blocks, Sublime Text 3, Brackets                                    |
+
+---
+
+# Experience
+
+| **Relational Concepts:** Hallandale Beach, FL | March 2020 - Present |
+| --------------------------------------------- | -------------------- |
+| **Front End Web Developer**                   |
+|                                               |
+
+- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+- Designed mock-up screens, wireframes, and workflows for intuitive user experience.
+- Migrated existing multi-page user experience into singular page interfaces using React components.
+- Participated in every stage of the design from conception through development and iterative improvement.
+- Produced user stories and internal documentation for future site development and maintenance.
+- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+- Managed all test deployments using a combination of Digital Ocean and Netlify.
+- Produced unit tests using a combination of Mocha and Chai.
+- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+
+| **Environment:** | **JavaScript, JQuery, React, HTML5 &amp; CSS, Bootstrap, DOJO, Google Cloud, Bash Script** |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+
+| **Cembre:** Edison, NJ           | Nov 2019 – Mar 2020 |
+| -------------------------------- | ------------------- |
+| **Product Development Engineer** |
+|                                  |
+
+- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+- Reorganized internal file server structure.
+- Conducted remote / in person system integration and product demonstrations.
+- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+
+| **Environment:** | **Excel, AutoCAD, PowerPoint, Word** |
+| ---------------- | ------------------------------------ |
+
+---
+
+# Education
+
+| **B.S. Electrical Engineering, TCNJ,** Ewing NJ | 2014 – 2019 |
+| ----------------------------------------------- | ----------- |
+
+**Capstone Project – Team Lead**
+
+- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+
+| **Environment:** | **C++, Python, MATLAB, PureData** |
+| ---------------- | --------------------------------- |
+
+
+##                **References and portfolio available upon request**
+
+
+
+
+
+
+---
+Portfolio:
+------------
+
+[netlify](https://tender-bartik-074feb.netlify.app/)
+---
+#### OR:
+
+[Github-Pages](https://bgoonz.github.io/)
+---
+---
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+<hr>
+
+<details>
+
+
+
+### [Github/bgoonz-master/bgoonz-master/CONTRIBUTING.md](Github/bgoonz-master/bgoonz-master/CONTRIBUTING.md)
+
+# Contributing
+
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
+
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+
+## Pull Request Process
+
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+2. Update the README.md with details of changes to the interface, this includes new environment 
+   variables, exposed ports, useful file locations and container parameters.
+3. Increase the version numbers in any examples files and the README.md to the new version that this
+   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
+4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
+   do not have permission to do that, you may request the second reviewer to merge it for you.
+
+## Code of Conduct
+
+### Our Pledge
+
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
+
+### Our Standards
+
+Examples of behavior that contributes to creating a positive environment
+include:
+
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
+
+Examples of unacceptable behavior by participants include:
+
+* The use of sexualized language or imagery and unwelcome sexual attention or
+advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic
+  address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
+
+### Our Responsibilities
+
+Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.
+
+Project maintainers have the right and responsibility to remove, edit, or
+reject comments, commits, code, wiki edits, issues, and other contributions
+that are not aligned to this Code of Conduct, or to ban temporarily or
+permanently any contributor for other behaviors that they deem inappropriate,
+threatening, offensive, or harmful.
+
+### Scope
+
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
+
+### Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
+complaints will be reviewed and investigated and will result in a response that
+is deemed necessary and appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
+
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
+
+### Attribution
+
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available at [http://contributor-covenant.org/version/1/4][version]
+
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@appnest/readme/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@appnest/readme/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@appnest/readme/README.md)
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️--><p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png" alt="Logo" width="150" height="150" />
+</p>
+<h1 align="center">@appnest/readme</h1>
+<p align="center">
+		<a href="https://npmcharts.com/compare/@appnest/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@appnest/readme.svg" height="20"/></a>
+<a href="https://www.npmjs.com/package/@appnest/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/@appnest/readme.svg" height="20"/></a>
+<a href="https://david-dm.org/andreasbm/readme"><img alt="Dependencies" src="https://img.shields.io/david/andreasbm/readme.svg" height="20"/></a>
+<a href="https://github.com/andreasbm/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/andreasbm/readme.svg" height="20"/></a>
+<a href="https://github.com/badges/shields"><img alt="Custom badge" src="https://img.shields.io/badge/custom-badge-f39f37.svg" height="20"/></a>
+<a href="https://github.com/andreasbm/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
+	</p>
+
+<p align="center">
+  <b>Automatically generate a beautiful best-practice README file based on the contents of your repository</b></br>
+  <sub>Use this readme generator to easily generate beautiful readme's like this one! Simply extend your <code>package.json</code> and create a readme blueprint. On Github, the README file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.<sub>
+</p>
+
+<br />
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/demo.gif" alt="Demo" width="800" />
+</p>
+
+* **Simple**: Extremely simple to use - so simple that it almost feels like magic!
+* **Powerful**: Customize almost everything - add your own templates and variables if you like
+* **Awesome**: The tool you don't know you need before you have many different repositories that all need maintenance
+
+<details>
+<summary>📖 Table of Contents</summary>
+<br />
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
+## ➤ Table of Contents
+
+* [➤ Installation](#-installation)
+* [➤ Getting Started (quick)](#-getting-started-quick)
+* [➤ Getting Started (slower)](#-getting-started-slower)
+	* [Blueprint](#blueprint)
+	* [Usage](#usage)
+	* [Configuration](#configuration)
+* [➤ Templates](#-templates)
+	* [Title](#title)
+	* [Logo](#logo)
+	* [Badges](#badges)
+	* [Description](#description)
+	* [Table of Contents](#table-of-contents)
+	* [Contributors](#contributors)
+* [➤ Contributors](#-contributors)
+	* [License](#license)
+* [➤ License](#-license)
+* [➤ Load markdown files](#-load-markdown-files)
+* [➤ Automatic documentation](#-automatic-documentation)
+* [➤ my-button](#-my-button)
+	* [Properties](#properties)
+	* [Slots](#slots)
+* [➤ A bit about this readme](#-a-bit-about-this-readme)
+* [➤ Custom templates](#-custom-templates)
+* [➤ Advanced!](#-advanced)
+	* [Check broken links](#check-broken-links)
+	* [New template syntax](#new-template-syntax)
+	* [Variables](#variables)
+		* [Objects](#objects)
+		* [1D Arrays](#1d-arrays)
+		* [2D Arrays](#2d-arrays)
+	* [Different colored lines](#different-colored-lines)
+	* [Different formatted headings](#different-formatted-headings)
+* [➤ Featured README's](#-featured-readmes)
+* [➤ Future work](#-future-work)
+* [➤ FAQ](#-faq)
+	* [Can I see how my README file is going to look before I commit it?](#can-i-see-how-my-readme-file-is-going-to-look-before-i-commit-it)
+	* [How can I get involved?](#how-can-i-get-involved)
+	* [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
+	* [How can I support you?](#how-can-i-support-you)
+* [➤ Contributors](#-contributors-1)
+* [➤ License](#-license-1)
+</details>
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
+
+## ➤ Installation
+
+```javascript
+npm install @appnest/readme -D
+```
+
+If you don't want to install anything you can use the `npx @appnest/readme generate` command instead.
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#getting-started-quick)
+
+## ➤ Getting Started (quick)
+
+This getting started guide is super quick! Follow these two steps and you will have turned your boring readme into a pretty one.
+
+1. Rename your current `README.md` file to `blueprint.md`.
+2. Run `npx @appnest/readme generate`
+
+That's it! Check out your freshly generated `README.md` file and enjoy the fruits of what you just did.
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#getting-started-slower)
+
+## ➤ Getting Started (slower)
+
+This getting started guide is a little bit longer, but will give you some superpowers. Spend a minute reading this getting started guide and you'll have the best README file in your town very soon.
+
+### Blueprint
+
+First you need to create a `blueprint.md` file. This blueprint is going to be the blueprint for the `README.md` file we will generate later.
+
+Let's start simple. In order to get values from your `package.json` file injected into the README file we use the mustache syntax (`{{ .. }}`). Let's say your `package.json` file looks like this:
+
+```json
+{
+  "name": "@appnest/readme",
+  "version": "1.2.5"
+}
+```
+
+To get the `name` and `version` into your README file you will need to write `{{ pkg.name }}` and `{{ pkg.version }}` in your `blueprint.md` file like this:
+
+```markdown
+Welcome to {{ pkg.name }}. This is version {{ pkg.version }}!
+```
+
+When running `node_modules/.bin/readme generate` the file `README.md` will be generated with the following contents:
+
+```markdown
+Welcome to @appnest/readme. This is version 1.2.5.
+```
+
+### Usage
+
+Run the `node_modules/.bin/readme generate` command and a README file will be generated for you. If you want to go into depth with the readme command, check out the following options or write `node_modules/.bin/readme generate -h` in your terminal if that's your cup of tea.
+
+
+| Option                | Type                                             | Description                                      |
+|-----------------------|--------------------------------------------------|--------------------------------------------------|
+| -c, --config          | string                                           | Path of the configuration file. Defaults to 'blueprint.json |
+| -p, --package         | string                                           | Path of the 'package.json' file. Defaults to 'package.json'. |
+| --pkg.name            | string                                           | Name of the project. Used for the 'title' template. |
+| --pkg.contributors    | {name: string; email: string; url: string; img: string; info: string[];}[] | Contributors of the project. Used for the 'contributors' template. |
+| --pkg.license         | string                                           | License kind. Used for the 'license' template.   |
+| -o, --output          | string                                           | Path of the generated README file. Defaults to 'README.md'. |
+| -h, --help            |                                                  | Display this help message.                       |
+| -i, --input           | string                                           | The blueprint. Defaults to 'blueprint.md'.       |
+| --badges              | {alt: string, url: string, img: string}[]        | Badges. Used for the 'badges' template.          |
+| --text                | string                                           | Text describing your project. Used for the 'description' template. |
+| --demo                | string                                           | Demo url for your project. Used for the 'description' template. |
+| --lineBreak           | string                                           | The linebreak used in the generation of the README file. Defaults to 'rn' |
+| --tab                 | string                                           | The tab used in the generation of the README file. Defaults to 't' |
+| --placeholder         | [string, string]                                 | The placeholder syntax used when looking for templates in the blueprint. Defaults to '["{{", "}}"]. |
+| --line                | string                                           | The line style of the titles. Can also be an URL. Defaults to 'colored'. |
+| --templates           | {name: string, template: string}[]               | User created templates.                          |
+| -s, --silent          | boolean                                          | Whether the console output from the command should be silent. |
+| -d, --dry             | boolean                                          | Whether the command should run as dry. If dry, the output file is notgenerated but outputted to the console instead. |
+| --headingPrefix       | {[key: number]: string}                          | The prefix of the header tags. Defaults to '{1: "➤ ", 2: "➤ "}' |
+| --logo                | {src: string; alt?: string; width?: number; height?: number;} | The logo information. Used for the 'logo' template. |
+| --contributorsPerRow  | number                                           | The amount of contributors pr row when using the 'contributors' template. Defaults to '6' |
+| --documentationConfig | object                                           | Configuration object for automatic documentation template. |
+| --extend              | string                                           | Path to another configuration object that should be extended. |
+| --checkLinks          | boolean                                          | Checks all links for aliveness after the README file has been generated. |
+
+
+### Configuration
+
+To configure this library you'll need to create a `blueprint.json` file. This file is the configuration for the templates we are going to take a look at in the next section. If you want to interpolate values from the configuration file into your README file you can simply reference them without a scope. Eg. if you have the field "link" in your `blueprint.json` you can write `{{ link }}` to reference it.
+
+Great. Now that we have the basics covered, let's continue and see how you can use templates!
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#templates)
+
+## ➤ Templates
+
+If you have come this far you are probably interested to figure out how to use README templates. This library comes with a set of pre-defined templates to make your readme awesome, but you can of course create your own. More about that later, let's not get ahead of our self just yet.
+
+### Title
+
+Let's start with the title template. To generate the title you write `{{ template:title }}` in your blueprint. When you run the `readme` command the template will generate the following:
+
+<h1 align="center">@appnest/readme</h1>
+
+The important thing to note here is that the template automatically reads your `package.json` file and inserts the `name` from the package.
+
+```json
+{
+  "name": "@appnest/readme"
+}
+```
+
+That's cool. Let's go through some of the other built-in templates you might want to add.
+
+### Logo
+
+The logo template adds a logo to your readme and looks like this:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png" alt="Logo" width="150" height="150" />
+</p>
+
+Use the placeholder `{{ template:logo }}` to stamp it. You will need to add the `logo` field to your `blueprint.json`. The logo field requires an `src` field. Optionally you can provide values for `width`, `height` and `alt`. Below is an example on how to add the data for the logo template.
+
+```json
+{
+  "logo": {
+    "src": "https://raw.githubusercontent.com/andreasbm/readme/master/assets/logo-shadow.png",
+    "width": "150"
+  }
+}
+```
+
+### Badges
+
+The badges template adds badges to your readme and looks like this:
+
+<p align="center">
+		<a href="https://npmcharts.com/compare/@appnest/readme?minimal=true"><img alt="Downloads per month" src="https://img.shields.io/npm/dm/@appnest/readme.svg" height="20"/></a>
+<a href="https://www.npmjs.com/package/@appnest/readme"><img alt="NPM Version" src="https://img.shields.io/npm/v/@appnest/readme.svg" height="20"/></a>
+<a href="https://david-dm.org/andreasbm/readme"><img alt="Dependencies" src="https://img.shields.io/david/andreasbm/readme.svg" height="20"/></a>
+<a href="https://github.com/andreasbm/readme/graphs/contributors"><img alt="Contributors" src="https://img.shields.io/github/contributors/andreasbm/readme.svg" height="20"/></a>
+<a href="https://github.com/badges/shields"><img alt="Custom badge" src="https://img.shields.io/badge/custom-badge-f39f37.svg" height="20"/></a>
+<a href="https://github.com/andreasbm/readme/graphs/commit-activity"><img alt="Maintained" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" height="20"/></a>
+	</p>
+
+
+Use the `{{ template:badges }}` placeholder to stamp it. You will need to add the data about how the badges should be generated. For that you can extend the `ids` property in your `blueprint.json` and add the `npm` and `github` ids (both are optional). If you want to add your own badges you can use the `badges` field.
+
+```json
+{
+  "ids": {
+    "github": "andreasbm/readme",
+    "npm": "@appnest/readme"
+  },
+  "badges": [
+    {
+      "alt": "Custom badge",
+      "url": "https://github.com/badges/shields",
+      "img": "https://img.shields.io/badge/custom-badge-f39f37.svg"
+    }
+  ]
+}
+```
+
+If you need some inspiration for badges, check [this website](https://shields.io/) out.
+
+### Description
+
+The description template adds a description to your readme and looks like this:
+
+<p align="center">
+  <b>Automatically generate a beautiful best-practice README file based on the contents of your repository</b></br>
+  <sub>Use this readme generator to easily generate beautiful readme's like this one! Simply extend your <code>package.json</code> and create a readme blueprint. On Github, the README file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression.<sub>
+</p>
+
+<br />
+
+
+Use the `{{ template:description }}` placeholder to stamp it. To use this template you are required to add the field `description` to your `package.json` file. Optionally you can also add the fields `text` and `demo` in your `blueprint.json` file which will be presented below the description.
+
+// package.json
+
+```json
+{
+  "description": "Automatically generate a beautiful best-practice README file based on the contents of your repository"
+}
+```
+
+// blueprint.json
+
+```json
+{
+  "text": "Use this readme generator to easily generate beautiful readme's like this one! Simply extend your <code>package.json</code> and create a readme blueprint. On Github, the README file is like the landing page of your website because it is the first thing visitors see. You want to make a good first impression."
+}
+```
+
+### Table of Contents
+
+The table of contents template adds a table of contents and looks like this:
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+
+## ➤ Table of Contents
+
+* [➤ Table of Contents](#-table-of-contents)
+* [➤ Installation](#-installation)
+* [➤ Getting Started (quick)](#-getting-started-quick)
+* [➤ Getting Started (slower)](#-getting-started-slower)
+	* [Blueprint](#blueprint)
+	* [Usage](#usage)
+	* [Configuration](#configuration)
+* [➤ Templates](#-templates)
+	* [Title](#title)
+	* [Logo](#logo)
+	* [Badges](#badges)
+	* [Description](#description)
+	* [Table of Contents](#table-of-contents)
+	* [Contributors](#contributors)
+* [➤ Contributors](#-contributors)
+	* [License](#license)
+* [➤ License](#-license)
+* [➤ Load markdown files](#-load-markdown-files)
+* [➤ Automatic documentation](#-automatic-documentation)
+* [➤ my-button](#-my-button)
+	* [Properties](#properties)
+	* [Slots](#slots)
+* [➤ A bit about this readme](#-a-bit-about-this-readme)
+* [➤ Custom templates](#-custom-templates)
+* [➤ Advanced!](#-advanced)
+	* [Check broken links](#check-broken-links)
+	* [New template syntax](#new-template-syntax)
+	* [Variables](#variables)
+		* [Objects](#objects)
+		* [1D Arrays](#1d-arrays)
+		* [2D Arrays](#2d-arrays)
+	* [Different colored lines](#different-colored-lines)
+	* [Different formatted headings](#different-formatted-headings)
+* [➤ Featured README's](#-featured-readmes)
+* [➤ Future work](#-future-work)
+* [➤ FAQ](#-faq)
+	* [Can I see how my README file is going to look before I commit it?](#can-i-see-how-my-readme-file-is-going-to-look-before-i-commit-it)
+	* [How can I get involved?](#how-can-i-get-involved)
+	* [I already have a large README file - I don't have time to rewrite everything!](#i-already-have-a-large-readme-file---i-dont-have-time-to-rewrite-everything)
+	* [How can I support you?](#how-can-i-support-you)
+* [➤ Contributors](#-contributors-1)
+* [➤ License](#-license-1)
+
+Use the `{{ template:toc }}` placeholder to stamp it. It has been scientifically proven that this template will save you approximately 392.3 hours during your life-time. Seriously.
+
+### Contributors
+
+The contributors template adds the list of contributors and looks like this:
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
+
+## ➤ Contributors
+	
+
+| [<img alt="Andreas Mehlsen" src="https://avatars1.githubusercontent.com/u/6267397?s=460&v=4" width="100">](https://twitter.com/andreasmehlsen) | [<img alt="You?" src="https://joeschmoe.io/api/v1/random" width="100">](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
+|:--------------------------------------------------:|:--------------------------------------------------:|
+| [Andreas Mehlsen](https://twitter.com/andreasmehlsen) | [You?](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
+| 🔥                                               |                                                  |
+
+
+Use the `{{ template:contributors }}` placeholder to stamp it. Let's sa To use this template your are required to add the `contributors` array to your `package.json` file like this. Only the `name` field is required.
+
+```json
+{
+  "contributors": [
+    {
+      "name": "Andreas Mehlsen",
+      "email": "hello@example.com",
+      "url": "https://twitter.com/andreasmehlsen",
+      "img": "https://avatars1.githubusercontent.com/u/6267397?s=460&v=4",
+      "info": [
+        "🔥"
+      ]
+    },
+    {
+      "name": "You?",
+      "img": "https://joeschmoe.io/api/v1/random",
+      "url": "https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md"
+    }
+  ]
+}
+```
+
+Take note of the `info` array. That one is really exciting! Here you can add lines describing the contributors - for example the role of accomplishments. Take a look [here](https://allcontributors.org/docs/en/emoji-key) for more inspiration of what you could put into the info array.
+
+### License
+
+The license template adds a license section and looks like this:
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)
+
+## ➤ License
+	
+Licensed under [MIT](https://opensource.org/licenses/MIT).
+
+Use the `{{ template:license }}` placeholder to stamp it. To use this template you are required to add the `license` field to your `package.json` file like this.
+
+```json
+{
+  "license": "license"
+}
+```
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#load-markdown-files)
+
+## ➤ Load markdown files
+
+What? You heard right. You can split the contents of your readme into multiple different files to make your life easier. Let's say you have a file called `my-section.md`. To stamp it you'll need to add `{{ load:my-section.md }}`.
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#automatic-documentation)
+
+## ➤ Automatic documentation
+
+Welcome to the future. Here we have **automatic documentation of web components!**. Let's say you have the following web component inside a file called `my-button.js`.
+
+```javascript
+/**
+ * Button used for clicking!
+ * @slot - Default content
+ */
+export class MyButton extends HTMLElement {
+
+  /**
+   * Attributes being observed.
+   * @returns {string[]}
+   */
+  static get observedAttributes() {
+    return ["disabled", "role"];
+  }
+  
+  /**
+   * Disables the element.
+   * @attr
+   * @type {boolean}
+   */
+  disabled = false;
+
+  /**
+   * Role of the element.
+   * @attr
+   * @type {string}
+   */
+  role = "button";
+}
+
+customElements.define("my-button", MyButton);
+```
+
+Then you can get automatic documentation for the web component by simply writing `{{ doc:my-button.js }}` which will result in the following content.
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#my-button)
+
+## ➤ my-button
+
+Button used for clicking!
+
+### Properties
+
+| Property   | Attribute  | Type      | Default  | Description           |
+|------------|------------|-----------|----------|-----------------------|
+| `disabled` | `disabled` | `boolean` | false    | Disables the element. |
+| `role`     | `role`     | `string`  | "button" | Role of the element.  |
+
+### Slots
+
+| Name | Description     |
+|------|-----------------|
+|      | Default content |
+
+
+If you want to learn more about how the documentation is generated, check out [`web-component-analyzer`](https://github.com/runem/web-component-analyzer).
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#a-bit-about-this-readme)
+
+## ➤ A bit about this readme
+
+By now you are probably curious to know how this README file was generated? It was created from the following `blueprint.md` file.
+
+```markdown
+{{ template:logo }}
+{{ template:title }}
+{{ template:badges }}
+{{ template:description }}
+{{ bullets }}
+{{ template:toc }}
+{{ load:readme/1-installation.md }}
+{{ load:readme/2-getting-started.md }}
+{{ load:readme/3-templates.md }}
+{{ load:readme/4-load-markdown.md }}
+{{ load:readme/5-automatic-documentation.md }}
+{{ load:readme/6-this-readme.md }}
+{{ load:readme/7-custom-templates.md }}
+{{ load:readme/8-advanced.md }}
+{{ load:readme/9-featured-readmes.md }}
+{{ load:readme/10-future-work.md }}
+{{ load:readme/11-faq.md }}
+{{ template:contributors }}
+{{ template:license }}
+```
+
+It really couldn't be more simple that this.
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#custom-templates)
+
+## ➤ Custom templates
+
+You are able to create your own templates to keep things as DRY as a hot summer day. To create your own templates you'll first need to add the `templates` array to your `blueprint.json` file like this.
+
+```json
+{
+  "templates": [
+    {
+      "name": "install",
+      "template": "Run `npm install {{ ids.npm }} to install this library!"
+    }
+  ]
+}
+```
+
+Then you can stamp your custom template using the `{{ template:install }}` syntax ("install" here referencing the name of the custom template). The below is an example of what is stamped to the README file using the above template.
+
+Run `npm install @appnest/readme' to install this library!
+
+Be creative! You can for example add a template for code-snippets or [words you keep spelling wrong](https://en.oxforddictionaries.com/spelling/common-misspellings).
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#advanced)
+
+## ➤ Advanced!
+
+Oh! So are you ready to open Pandora's box? Let's do it.
+
+### Check broken links
+
+Add the `checkLinks` field to your `blueprint.json` and you'll be notified about all broken links in your README file. This check use [check-links](https://www.npmjs.com/package/check-links) to check links for aliveness.
+
+```json
+{
+  "checkLinks": true
+}
+```
+
+### New template syntax
+
+If you are in the mood you can change the syntax used for matching with the templates. Let's say you want your placeholders to look like this instead `{[ template:title }]`. Then you'll need to add the `placeholder` array to your `blueprint.json` file with the new syntax being `["{[", "}]"]` like this.
+
+
+```json
+{
+  "placeholder": ["{[", "}]"]
+}
+```
+
+### Variables
+
+If you have a variable from your `blueprint.json` file you want to stamp to your README file just use the `{{ ... }}` syntax as usual without any scopes.
+
+#### Objects
+
+Objects are formatted as a list with the keys being bold. If you for example want to stamp the `dependencies` field from your `package.json` file you write `{{ pkg.dependencies }}` and the dependencies will be stamped in a nice formatted way like this.
+
+* **@types/glob**: ^7.1.1
+* **check-links**: ^1.1.8
+* **colors**: ^1.4.0
+* **commander**: ^5.0.0
+* **fs-extra**: ^9.0.0
+* **glob**: ^7.1.6
+* **path**: ^0.12.7
+* **web-component-analyzer**: 1.0.3
+
+#### 1D Arrays
+
+If you have a 1D array it will be formatted as a list. If you for example want to stamp the the `keywords` field from your `package.json` file you write `{{ pkg.keywords }}` and the keywords will be stamped in a nice formatted way like this:
+
+* opensource
+* project
+* readme
+* template
+* boilerplate
+* nodejs
+* maintaining
+* generator
+
+#### 2D Arrays
+
+If you have a 2D array it will be formatted as a table. This is very convenient for things like documentation of API's. Let's say you have the following in your `blueprint.json`.
+
+```json
+{
+  "properties": [
+    ["Attribute", "Type", "Description"],
+    ["**size**", "'medium', 'large'", "Determines the size" ],
+    ["**active**", "boolean", "Whether the element is active or not" ]
+  ]
+}
+```
+
+Then you can stamp it to your readme by writing `{{ properties }}` and it will be formatted as a table.
+
+
+| Attribute  | Type              | Description                          |
+|------------|-------------------|--------------------------------------|
+| **size**   | 'medium', 'large' | Determines the size                  |
+| **active** | boolean           | Whether the element is active or not |
+
+
+You are welcome!
+
+### Different colored lines
+
+If you want to change the color of the lines above headers you can change the `line` field in the `blueprint.json`. Here's an example if you want a dark line instead of the colored one.
+
+```json
+{
+  "line": "dark"
+}
+```
+
+The following is the dark variant of the line.
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)
+
+Yeah! Dark mode on your `README.md` is awesome indeed. You have other options besides dark mode. Here's all the line styles you can choose from.
+
+* "aqua" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+* "cloudy" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cloudy.png)
+* "colored" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+* "cut" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/cut.png)
+* "dark" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)
+* "fire" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/fire.png)
+* "grass" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/grass.png)
+* "rainbow" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+* "solar" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/solar.png)
+* "vintage" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/vintage.png)
+* "water" ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/water.png)
+
+If you want your own line design you can give the `line` field an url to an image instead. It is recommended that this image is 900px in width. If you prefer no line at all you can give the `line` field the string "none".
+
+### Different formatted headings
+
+If you want to change the prefix in front of the heading you can change the `headingPrefix` in the `blueprint.json` file. Just map the heading level to the desired prefix as shown below.
+
+```json
+{
+  "headingPrefix": {
+    "1": "➜ ",
+    "2": "⭑ "
+  }
+}
+```
+
+If you want some inspiration for symbols you can put infront of the headings you can check out [this](https://unicodes.smpc.io/) website.
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#featured-readmes)
+
+## ➤ Featured README's
+
+If you use this generator for one of your projects I would love to hear about it so I can feature it. Here's a list of some repositories using this generator for their README file.
+
+* [lit-translate](https://github.com/andreasbm/lit-translate)
+* [masonry-layout](https://github.com/andreasbm/masonry-layout)
+* [focus-trap](https://github.com/andreasbm/focus-trap)
+* [web-router](https://github.com/andreasbm/web-router)
+* [web-config](https://github.com/andreasbm/web-config)
+* [ts-lit-plugin](https://github.com/runem/ts-lit-plugin)
+* [blob](https://github.com/andreasbm/blob)
+
+As inspiration for the layout of the generated README files I initially found inspiration from [terkelg's brilliant repository called prompts](https://github.com/terkelg/prompts) - a prime example on how every README file should look! I therefore wanted to mention him here even though he doesn't use this README generator. If you want to see an example of a brilliant README file you should definitely check his repository out.
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#future-work)
+
+## ➤ Future work
+
+That's it for now! Lot's of exiting features a going to be added in the future. If you stumble upon an issue or have a feature request you are very welcome to open a Github issue or pull request. Have a great day!
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#faq)
+
+## ➤ FAQ
+
+### Can I see how my README file is going to look before I commit it?
+
+Yes you definitely can! There are lots of tools out there for editing/previewing Github flavored markdown. I recommend using [https://stackedit.io/app](https://stackedit.io/app) to preview the final result since it is super lightweight and does it job well.
+
+### How can I get involved?
+
+Create an issue or pull-request. You are also very welcome to throw me a message at [@AndreasMehlsen](https://twitter.com/andreasmehlsen).
+
+### I already have a large README file - I don't have time to rewrite everything!
+
+No problem at all! Your first step can be to rename your `README.md` to `blueprint.md` and run `node_modules/.bin/readme generate`. Already then your README should now be well-formatted. Then you can slowly replace the contents when you have time. The low-hanging fruit would be to add the table of contents and license using respectively the `{{ template:toc }}` and `{{ template:license }}` templates.
+
+### How can I support you?
+
+There are lot's of ways to support me! I would be so happy if you gave this repository a star, tweeted about it or told your friends about this little corner of the Internet ❤️
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#contributors)
+
+## ➤ Contributors
+	
+
+| [<img alt="Andreas Mehlsen" src="https://avatars1.githubusercontent.com/u/6267397?s=460&v=4" width="100">](https://twitter.com/andreasmehlsen) | [<img alt="You?" src="https://joeschmoe.io/api/v1/random" width="100">](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
+|:--------------------------------------------------:|:--------------------------------------------------:|
+| [Andreas Mehlsen](https://twitter.com/andreasmehlsen) | [You?](https://github.com/andreasbm/readme/blob/master/CONTRIBUTING.md) |
+| 🔥                                               |                                                  |
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#license)
+
+## ➤ License
+	
+Licensed under [MIT](https://opensource.org/licenses/MIT).
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.scandir/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.scandir/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.scandir/README.md)
+# @nodelib/fs.scandir
+
+> List files and directories inside the specified directory.
+
+## :bulb: Highlights
+
+The package is aimed at obtaining information about entries in the directory.
+
+* :moneybag: Returns useful information: `name`, `path`, `dirent` and `stats` (optional).
+* :gear: On Node.js 10.10+ uses the mechanism without additional calls to determine the entry type. See [`old` and `modern` mode](#old-and-modern-mode).
+* :link: Can safely work with broken symbolic links.
+
+## Install
+
+```console
+npm install @nodelib/fs.scandir
+```
+
+## Usage
+
+```ts
+import * as fsScandir from '@nodelib/fs.scandir';
+
+fsScandir.scandir('path', (error, stats) => { /* … */ });
+```
+
+## API
+
+### .scandir(path, [optionsOrSettings], callback)
+
+Returns an array of plain objects ([`Entry`](#entry)) with information about entry for provided path with standard callback-style.
+
+```ts
+fsScandir.scandir('path', (error, entries) => { /* … */ });
+fsScandir.scandir('path', {}, (error, entries) => { /* … */ });
+fsScandir.scandir('path', new fsScandir.Settings(), (error, entries) => { /* … */ });
+```
+
+### .scandirSync(path, [optionsOrSettings])
+
+Returns an array of plain objects ([`Entry`](#entry)) with information about entry for provided path.
+
+```ts
+const entries = fsScandir.scandirSync('path');
+const entries = fsScandir.scandirSync('path', {});
+const entries = fsScandir.scandirSync(('path', new fsScandir.Settings());
+```
+
+#### path
+
+* Required: `true`
+* Type: `string | Buffer | URL`
+
+A path to a file. If a URL is provided, it must use the `file:` protocol.
+
+#### optionsOrSettings
+
+* Required: `false`
+* Type: `Options | Settings`
+* Default: An instance of `Settings` class
+
+An [`Options`](#options) object or an instance of [`Settings`](#settingsoptions) class.
+
+> :book: When you pass a plain object, an instance of the `Settings` class will be created automatically. If you plan to call the method frequently, use a pre-created instance of the `Settings` class.
+
+### Settings([options])
+
+A class of full settings of the package.
+
+```ts
+const settings = new fsScandir.Settings({ followSymbolicLinks: false });
+
+const entries = fsScandir.scandirSync('path', settings);
+```
+
+## Entry
+
+* `name` — The name of the entry (`unknown.txt`).
+* `path` — The path of the entry relative to call directory (`root/unknown.txt`).
+* `dirent` — An instance of [`fs.Dirent`](./src/types/index.ts) class. On Node.js below 10.10 will be emulated by [`DirentFromStats`](./src/utils/fs.ts) class.
+* `stats` (optional) — An instance of `fs.Stats` class.
+
+For example, the `scandir` call for `tools` directory with one directory inside:
+
+```ts
+{
+	dirent: Dirent { name: 'typedoc', /* … */ },
+	name: 'typedoc',
+	path: 'tools/typedoc'
+}
+```
+
+## Options
+
+### stats
+
+* Type: `boolean`
+* Default: `false`
+
+Adds an instance of `fs.Stats` class to the [`Entry`](#entry).
+
+> :book: Always use `fs.readdir` without the `withFileTypes` option. ??TODO??
+
+### followSymbolicLinks
+
+* Type: `boolean`
+* Default: `false`
+
+Follow symbolic links or not. Call `fs.stat` on symbolic link if `true`.
+
+### `throwErrorOnBrokenSymbolicLink`
+
+* Type: `boolean`
+* Default: `true`
+
+Throw an error when symbolic link is broken if `true` or safely use `lstat` call if `false`.
+
+### `pathSegmentSeparator`
+
+* Type: `string`
+* Default: `path.sep`
+
+By default, this package uses the correct path separator for your OS (`\` on Windows, `/` on Unix-like systems). But you can set this option to any separator character(s) that you want to use instead.
+
+### `fs`
+
+* Type: [`FileSystemAdapter`](./src/adapters/fs.ts)
+* Default: A default FS methods
+
+By default, the built-in Node.js module (`fs`) is used to work with the file system. You can replace any method with your own.
+
+```ts
+interface FileSystemAdapter {
+	lstat?: typeof fs.lstat;
+	stat?: typeof fs.stat;
+	lstatSync?: typeof fs.lstatSync;
+	statSync?: typeof fs.statSync;
+	readdir?: typeof fs.readdir;
+	readdirSync?: typeof fs.readdirSync;
+}
+
+const settings = new fsScandir.Settings({
+	fs: { lstat: fakeLstat }
+});
+```
+
+## `old` and `modern` mode
+
+This package has two modes that are used depending on the environment and parameters of use.
+
+### old
+
+* Node.js below `10.10` or when the `stats` option is enabled
+
+When working in the old mode, the directory is read first (`fs.readdir`), then the type of entries is determined (`fs.lstat` and/or `fs.stat` for symbolic links).
+
+### modern
+
+* Node.js 10.10+ and the `stats` option is disabled
+
+In the modern mode, reading the directory (`fs.readdir` with the `withFileTypes` option) is combined with obtaining information about its entries. An additional call for symbolic links (`fs.stat`) is still present.
+
+This mode makes fewer calls to the file system. It's faster.
+
+## Changelog
+
+See the [Releases section of our GitHub project](https://github.com/nodelib/nodelib/releases) for changelog for each release version.
+
+## License
+
+This software is released under the terms of the MIT license.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.stat/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.stat/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.stat/README.md)
+# @nodelib/fs.stat
+
+> Get the status of a file with some features.
+
+## :bulb: Highlights
+
+Wrapper around standard method `fs.lstat` and `fs.stat` with some features.
+
+* :beginner: Normally follows symbolic link.
+* :gear: Can safely work with broken symbolic link.
+
+## Install
+
+```console
+npm install @nodelib/fs.stat
+```
+
+## Usage
+
+```ts
+import * as fsStat from '@nodelib/fs.stat';
+
+fsStat.stat('path', (error, stats) => { /* … */ });
+```
+
+## API
+
+### .stat(path, [optionsOrSettings], callback)
+
+Returns an instance of `fs.Stats` class for provided path with standard callback-style.
+
+```ts
+fsStat.stat('path', (error, stats) => { /* … */ });
+fsStat.stat('path', {}, (error, stats) => { /* … */ });
+fsStat.stat('path', new fsStat.Settings(), (error, stats) => { /* … */ });
+```
+
+### .statSync(path, [optionsOrSettings])
+
+Returns an instance of `fs.Stats` class for provided path.
+
+```ts
+const stats = fsStat.stat('path');
+const stats = fsStat.stat('path', {});
+const stats = fsStat.stat('path', new fsStat.Settings());
+```
+
+#### path
+
+* Required: `true`
+* Type: `string | Buffer | URL`
+
+A path to a file. If a URL is provided, it must use the `file:` protocol.
+
+#### optionsOrSettings
+
+* Required: `false`
+* Type: `Options | Settings`
+* Default: An instance of `Settings` class
+
+An [`Options`](#options) object or an instance of [`Settings`](#settings) class.
+
+> :book: When you pass a plain object, an instance of the `Settings` class will be created automatically. If you plan to call the method frequently, use a pre-created instance of the `Settings` class.
+
+### Settings([options])
+
+A class of full settings of the package.
+
+```ts
+const settings = new fsStat.Settings({ followSymbolicLink: false });
+
+const stats = fsStat.stat('path', settings);
+```
+
+## Options
+
+### `followSymbolicLink`
+
+* Type: `boolean`
+* Default: `true`
+
+Follow symbolic link or not. Call `fs.stat` on symbolic link if `true`.
+
+### `markSymbolicLink`
+
+* Type: `boolean`
+* Default: `false`
+
+Mark symbolic link by setting the return value of `isSymbolicLink` function to always `true` (even after `fs.stat`).
+
+> :book: Can be used if you want to know what is hidden behind a symbolic link, but still continue to know that it is a symbolic link.
+
+### `throwErrorOnBrokenSymbolicLink`
+
+* Type: `boolean`
+* Default: `true`
+
+Throw an error when symbolic link is broken if `true` or safely return `lstat` call if `false`.
+
+### `fs`
+
+* Type: [`FileSystemAdapter`](./src/adapters/fs.ts)
+* Default: A default FS methods
+
+By default, the built-in Node.js module (`fs`) is used to work with the file system. You can replace any method with your own.
+
+```ts
+interface FileSystemAdapter {
+	lstat?: typeof fs.lstat;
+	stat?: typeof fs.stat;
+	lstatSync?: typeof fs.lstatSync;
+	statSync?: typeof fs.statSync;
+}
+
+const settings = new fsStat.Settings({
+	fs: { lstat: fakeLstat }
+});
+```
+
+## Changelog
+
+See the [Releases section of our GitHub project](https://github.com/nodelib/nodelib/releases) for changelog for each release version.
+
+## License
+
+This software is released under the terms of the MIT license.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.walk/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.walk/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@nodelib/fs.walk/README.md)
+# @nodelib/fs.walk
+
+> A library for efficiently walking a directory recursively.
+
+## :bulb: Highlights
+
+* :moneybag: Returns useful information: `name`, `path`, `dirent` and `stats` (optional).
+* :rocket: On Node.js 10.10+ uses the mechanism without additional calls to determine the entry type for performance reasons. See [`old` and `modern` mode](https://github.com/nodelib/nodelib/blob/master/packages/fs/fs.scandir/README.md#old-and-modern-mode).
+* :gear: Built-in directories/files and error filtering system.
+* :link: Can safely work with broken symbolic links.
+
+## Install
+
+```console
+npm install @nodelib/fs.walk
+```
+
+## Usage
+
+```ts
+import * as fsWalk from '@nodelib/fs.walk';
+
+fsWalk.walk('path', (error, entries) => { /* … */ });
+```
+
+## API
+
+### .walk(path, [optionsOrSettings], callback)
+
+Reads the directory recursively and asynchronously. Requires a callback function.
+
+> :book: If you want to use the Promise API, use `util.promisify`.
+
+```ts
+fsWalk.walk('path', (error, entries) => { /* … */ });
+fsWalk.walk('path', {}, (error, entries) => { /* … */ });
+fsWalk.walk('path', new fsWalk.Settings(), (error, entries) => { /* … */ });
+```
+
+### .walkStream(path, [optionsOrSettings])
+
+Reads the directory recursively and asynchronously. [Readable Stream](https://nodejs.org/dist/latest-v12.x/docs/api/stream.html#stream_readable_streams) is used as a provider.
+
+```ts
+const stream = fsWalk.walkStream('path');
+const stream = fsWalk.walkStream('path', {});
+const stream = fsWalk.walkStream('path', new fsWalk.Settings());
+```
+
+### .walkSync(path, [optionsOrSettings])
+
+Reads the directory recursively and synchronously. Returns an array of entries.
+
+```ts
+const entries = fsWalk.walkSync('path');
+const entries = fsWalk.walkSync('path', {});
+const entries = fsWalk.walkSync('path', new fsWalk.Settings());
+```
+
+#### path
+
+* Required: `true`
+* Type: `string | Buffer | URL`
+
+A path to a file. If a URL is provided, it must use the `file:` protocol.
+
+#### optionsOrSettings
+
+* Required: `false`
+* Type: `Options | Settings`
+* Default: An instance of `Settings` class
+
+An [`Options`](#options) object or an instance of [`Settings`](#settings) class.
+
+> :book: When you pass a plain object, an instance of the `Settings` class will be created automatically. If you plan to call the method frequently, use a pre-created instance of the `Settings` class.
+
+### Settings([options])
+
+A class of full settings of the package.
+
+```ts
+const settings = new fsWalk.Settings({ followSymbolicLinks: true });
+
+const entries = fsWalk.walkSync('path', settings);
+```
+
+## Entry
+
+* `name` — The name of the entry (`unknown.txt`).
+* `path` — The path of the entry relative to call directory (`root/unknown.txt`).
+* `dirent` — An instance of [`fs.Dirent`](./src/types/index.ts) class.
+* [`stats`] — An instance of `fs.Stats` class.
+
+## Options
+
+### basePath
+
+* Type: `string`
+* Default: `undefined`
+
+By default, all paths are built relative to the root path. You can use this option to set custom root path.
+
+In the example below we read the files from the `root` directory, but in the results the root path will be `custom`.
+
+```ts
+fsWalk.walkSync('root'); // → ['root/file.txt']
+fsWalk.walkSync('root', { basePath: 'custom' }); // → ['custom/file.txt']
+```
+
+### concurrency
+
+* Type: `number`
+* Default: `Infinity`
+
+The maximum number of concurrent calls to `fs.readdir`.
+
+> :book: The higher the number, the higher performance and the load on the File System. If you want to read in quiet mode, set the value to `4 * os.cpus().length` (4 is default size of [thread pool work scheduling](http://docs.libuv.org/en/v1.x/threadpool.html#thread-pool-work-scheduling)).
+
+### deepFilter
+
+* Type: [`DeepFilterFunction`](./src/settings.ts)
+* Default: `undefined`
+
+A function that indicates whether the directory will be read deep or not.
+
+```ts
+// Skip all directories that starts with `node_modules`
+const filter: DeepFilterFunction = (entry) => !entry.path.startsWith('node_modules');
+```
+
+### entryFilter
+
+* Type: [`EntryFilterFunction`](./src/settings.ts)
+* Default: `undefined`
+
+A function that indicates whether the entry will be included to results or not.
+
+```ts
+// Exclude all `.js` files from results
+const filter: EntryFilterFunction = (entry) => !entry.name.endsWith('.js');
+```
+
+### errorFilter
+
+* Type: [`ErrorFilterFunction`](./src/settings.ts)
+* Default: `undefined`
+
+A function that allows you to skip errors that occur when reading directories.
+
+For example, you can skip `ENOENT` errors if required:
+
+```ts
+// Skip all ENOENT errors
+const filter: ErrorFilterFunction = (error) => error.code == 'ENOENT';
+```
+
+### stats
+
+* Type: `boolean`
+* Default: `false`
+
+Adds an instance of `fs.Stats` class to the [`Entry`](#entry).
+
+> :book: Always use `fs.readdir` with additional `fs.lstat/fs.stat` calls to determine the entry type.
+
+### followSymbolicLinks
+
+* Type: `boolean`
+* Default: `false`
+
+Follow symbolic links or not. Call `fs.stat` on symbolic link if `true`.
+
+### `throwErrorOnBrokenSymbolicLink`
+
+* Type: `boolean`
+* Default: `true`
+
+Throw an error when symbolic link is broken if `true` or safely return `lstat` call if `false`.
+
+### `pathSegmentSeparator`
+
+* Type: `string`
+* Default: `path.sep`
+
+By default, this package uses the correct path separator for your OS (`\` on Windows, `/` on Unix-like systems). But you can set this option to any separator character(s) that you want to use instead.
+
+### `fs`
+
+* Type: `FileSystemAdapter`
+* Default: A default FS methods
+
+By default, the built-in Node.js module (`fs`) is used to work with the file system. You can replace any method with your own.
+
+```ts
+interface FileSystemAdapter {
+	lstat: typeof fs.lstat;
+	stat: typeof fs.stat;
+	lstatSync: typeof fs.lstatSync;
+	statSync: typeof fs.statSync;
+	readdir: typeof fs.readdir;
+	readdirSync: typeof fs.readdirSync;
+}
+
+const settings = new fsWalk.Settings({
+	fs: { lstat: fakeLstat }
+});
+```
+
+## Changelog
+
+See the [Releases section of our GitHub project](https://github.com/nodelib/nodelib/releases) for changelog for each release version.
+
+## License
+
+This software is released under the terms of the MIT license.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@sindresorhus/is/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@sindresorhus/is/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/@sindresorhus/is/readme.md)
+# is [![Build Status](https://travis-ci.org/sindresorhus/is.svg?branch=master)](https://travis-ci.org/sindresorhus/is)
+
+> Type check values: `is.string('🦄') //=> true`
+
+<img src="header.gif" width="182" align="right">
+
+
+## Install
+
+```
+$ npm install @sindresorhus/is
+```
+
+
+## Usage
+
+```js
+const is = require('@sindresorhus/is');
+
+is('🦄');
+//=> 'string'
+
+is(new Map());
+//=> 'Map'
+
+is.number(6);
+//=> true
+```
+
+When using `is` together with TypeScript, [type guards](http://www.typescriptlang.org/docs/handbook/advanced-types.html#type-guards-and-differentiating-types) are being used to infer the correct type inside if-else statements.
+
+```ts
+import is from '@sindresorhus/is';
+
+const padLeft = (value: string, padding: string | number) => {
+	if (is.number(padding)) {
+		// `padding` is typed as `number`
+		return Array(padding + 1).join(' ') + value;
+	}
+
+	if (is.string(padding)) {
+		// `padding` is typed as `string`
+		return padding + value;
+	}
+
+	throw new TypeError(`Expected 'padding' to be of type 'string' or 'number', got '${is(padding)}'.`);
+}
+
+padLeft('🦄', 3);
+//=> '   🦄'
+
+padLeft('🦄', '🌈');
+//=> '🌈🦄'
+```
+
+
+## API
+
+### is(value)
+
+Returns the type of `value`.
+
+Primitives are lowercase and object types are camelcase.
+
+Example:
+
+- `'undefined'`
+- `'null'`
+- `'string'`
+- `'symbol'`
+- `'Array'`
+- `'Function'`
+- `'Object'`
+
+Note: It will throw an error if you try to feed it object-wrapped primitives, as that's a bad practice. For example `new String('foo')`.
+
+### is.{method}
+
+All the below methods accept a value and returns a boolean for whether the value is of the desired type.
+
+#### Primitives
+
+##### .undefined(value)
+##### .null(value)
+##### .string(value)
+##### .number(value)
+##### .boolean(value)
+##### .symbol(value)
+
+#### Built-in types
+
+##### .array(value)
+##### .function(value)
+##### .buffer(value)
+##### .object(value)
+
+Keep in mind that [functions are objects too](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions).
+
+##### .numericString(value)
+
+Returns `true` for a string that represents a number. For example, `'42'` and `'-8'`.
+
+Note: `'NaN'` returns `false`, but `'Infinity'` and `'-Infinity'` return `true`.
+
+##### .regExp(value)
+##### .date(value)
+##### .error(value)
+##### .nativePromise(value)
+##### .promise(value)
+
+Returns `true` for any object with a `.then()` and `.catch()` method. Prefer this one over `.nativePromise()` as you usually want to allow userland promise implementations too.
+
+##### .generator(value)
+
+Returns `true` for any object that implements its own `.next()` and `.throw()` methods and has a function definition for `Symbol.iterator`.
+
+##### .generatorFunction(value)
+
+##### .asyncFunction(value)
+
+Returns `true` for any `async` function that can be called with the `await` operator.
+
+```js
+is.asyncFunction(async () => {});
+// => true
+
+is.asyncFunction(() => {});
+// => false
+```
+
+##### .boundFunction(value)
+
+Returns `true` for any `bound` function.
+
+```js
+is.boundFunction(() => {});
+// => true
+
+is.boundFunction(function () {}.bind(null));
+// => true
+
+is.boundFunction(function () {});
+// => false
+```
+
+##### .map(value)
+##### .set(value)
+##### .weakMap(value)
+##### .weakSet(value)
+
+#### Typed arrays
+
+##### .int8Array(value)
+##### .uint8Array(value)
+##### .uint8ClampedArray(value)
+##### .int16Array(value)
+##### .uint16Array(value)
+##### .int32Array(value)
+##### .uint32Array(value)
+##### .float32Array(value)
+##### .float64Array(value)
+
+#### Structured data
+
+##### .arrayBuffer(value)
+##### .sharedArrayBuffer(value)
+##### .dataView(value)
+
+#### Emptiness
+
+##### .emptyString(value)
+
+Returns `true` if the value is a `string` and the `.length` is 0.
+
+##### .nonEmptyString(value)
+
+Returns `true` if the value is a `string` and the `.length` is more than 0.
+
+##### .emptyStringOrWhitespace(value)
+
+Returns `true` if `is.emptyString(value)` or if it's a `string` that is all whitespace.
+
+##### .emptyArray(value)
+
+Returns `true` if the value is an `Array` and the `.length` is 0.
+
+##### .nonEmptyArray(value)
+
+Returns `true` if the value is an `Array` and the `.length` is more than 0.
+
+##### .emptyObject(value)
+
+Returns `true` if the value is an `Object` and `Object.keys(value).length` is 0.
+
+Please note that `Object.keys` returns only own enumerable properties. Hence something like this can happen:
+
+```js
+const object1 = {};
+
+Object.defineProperty(object1, 'property1', {
+	value: 42,
+	writable: true,
+	enumerable: false,
+	configurable: true
+});
+
+is.emptyObject(object1);
+// => true
+```
+
+##### .nonEmptyObject(value)
+
+Returns `true` if the value is an `Object` and `Object.keys(value).length` is more than 0.
+
+##### .emptySet(value)
+
+Returns `true` if the value is a `Set` and the `.size` is 0.
+
+##### .nonEmptySet(Value)
+
+Returns `true` if the value is a `Set` and the `.size` is more than 0.
+
+##### .emptyMap(value)
+
+Returns `true` if the value is a `Map` and the `.size` is 0.
+
+##### .nonEmptyMap(value)
+
+Returns `true` if the value is a `Map` and the `.size` is more than 0.
+
+#### Miscellaneous
+
+##### .directInstanceOf(value, class)
+
+Returns `true` if `value` is a direct instance of `class`.
+
+```js
+is.directInstanceOf(new Error(), Error);
+//=> true
+
+class UnicornError extends Error {}
+
+is.directInstanceOf(new UnicornError(), Error);
+//=> false
+```
+
+##### .urlInstance(value)
+
+Returns `true` if `value` is an instance of the [`URL` class](https://developer.mozilla.org/en-US/docs/Web/API/URL).
+
+```js
+const url = new URL('https://example.com');
+
+is.urlInstance(url);
+//=> true
+```
+
+### .url(value)
+
+Returns `true` if `value` is a URL string.
+
+Note: this only does basic checking using the [`URL` class](https://developer.mozilla.org/en-US/docs/Web/API/URL) constructor.
+
+```js
+const url = 'https://example.com';
+
+is.url(url);
+//=> true
+
+is.url(new URL(url));
+//=> false
+```
+
+##### .truthy(value)
+
+Returns `true` for all values that evaluate to true in a boolean context:
+
+```js
+is.truthy('🦄');
+//=> true
+
+is.truthy(undefined);
+//=> false
+```
+
+##### .falsy(value)
+
+Returns `true` if `value` is one of: `false`, `0`, `''`, `null`, `undefined`, `NaN`.
+
+##### .nan(value)
+##### .nullOrUndefined(value)
+##### .primitive(value)
+
+JavaScript primitives are as follows: `null`, `undefined`, `string`, `number`, `boolean`, `symbol`.
+
+##### .integer(value)
+
+##### .safeInteger(value)
+
+Returns `true` if `value` is a [safe integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger).
+
+##### .plainObject(value)
+
+An object is plain if it's created by either `{}`, `new Object()`, or `Object.create(null)`.
+
+##### .iterable(value)
+##### .asyncIterable(value)
+##### .class(value)
+
+Returns `true` for instances created by a class.
+
+##### .typedArray(value)
+
+##### .arrayLike(value)
+
+A `value` is array-like if it is not a function and has a `value.length` that is a safe integer greater than or equal to 0.
+
+```js
+is.arrayLike(document.forms);
+//=> true
+
+function foo() {
+	is.arrayLike(arguments);
+	//=> true
+}
+foo();
+```
+
+##### .inRange(value, range)
+
+Check if `value` (number) is in the given `range`. The range is an array of two values, lower bound and upper bound, in no specific order.
+
+```js
+is.inRange(3, [0, 5]);
+is.inRange(3, [5, 0]);
+is.inRange(0, [-2, 2]);
+```
+
+##### .inRange(value, upperBound)
+
+Check if `value` (number) is in the range of `0` to `upperBound`.
+
+```js
+is.inRange(3, 10);
+```
+
+##### .domElement(value)
+
+Returns `true` if `value` is a DOM Element.
+
+##### .nodeStream(value)
+
+Returns `true` if `value` is a Node.js [stream](https://nodejs.org/api/stream.html).
+
+```js
+const fs = require('fs');
+
+is.nodeStream(fs.createReadStream('unicorn.png'));
+//=> true
+```
+
+##### .observable(value)
+
+Returns `true` if `value` is an `Observable`.
+
+```js
+const {Observable} = require('rxjs');
+
+is.observable(new Observable());
+//=> true
+```
+
+##### .infinite(value)
+
+Check if `value` is `Infinity` or `-Infinity`.
+
+##### .even(value)
+
+Returns `true` if `value` is an even integer.
+
+##### .odd(value)
+
+Returns `true` if `value` is an odd integer.
+
+##### .any(predicate, ...values)
+
+Returns `true` if **any** of the input `values` returns true in the `predicate`:
+
+```js
+is.any(is.string, {}, true, '🦄');
+//=> true
+
+is.any(is.boolean, 'unicorns', [], new Map());
+//=> false
+```
+
+##### .all(predicate, ...values)
+
+Returns `true` if **all** of the input `values` returns true in the `predicate`:
+
+```js
+is.all(is.object, {}, new Map(), new Set());
+//=> true
+
+is.all(is.string, '🦄', [], 'unicorns');
+//=> false
+```
+
+
+## FAQ
+
+### Why yet another type checking module?
+
+There are hundreds of type checking modules on npm, unfortunately, I couldn't find any that fit my needs:
+
+- Includes both type methods and ability to get the type
+- Types of primitives returned as lowercase and object types as camelcase
+- Covers all built-ins
+- Unsurprising behavior
+- Well-maintained
+- Comprehensive test suite
+
+For the ones I found, pick 3 of these.
+
+The most common mistakes I noticed in these modules was using `instanceof` for type checking, forgetting that functions are objects, and omitting `symbol` as a primitive.
+
+
+## Related
+
+- [ow](https://github.com/sindresorhus/ow) - Function argument validation for humans
+- [is-stream](https://github.com/sindresorhus/is-stream) - Check if something is a Node.js stream
+- [is-observable](https://github.com/sindresorhus/is-observable) - Check if a value is an Observable
+- [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
+- [is-ip](https://github.com/sindresorhus/is-ip) - Check if a string is an IP address
+- [is-array-sorted](https://github.com/sindresorhus/is-array-sorted) - Check if an Array is sorted
+- [is-error-constructor](https://github.com/sindresorhus/is-error-constructor) - Check if a value is an error constructor
+- [is-empty-iterable](https://github.com/sindresorhus/is-empty-iterable) - Check if an Iterable is empty
+- [is-blob](https://github.com/sindresorhus/is-blob) - Check if a value is a Blob - File-like object of immutable, raw data
+- [has-emoji](https://github.com/sindresorhus/has-emoji) - Check whether a string has any emoji
+
+
+## Created by
+
+- [Sindre Sorhus](https://github.com/sindresorhus)
+- [Giora Guttsait](https://github.com/gioragutt)
+- [Brandon Smith](https://github.com/brandon93s)
+
+
+## License
+
+MIT
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@szmarczak/http-timer/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@szmarczak/http-timer/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@szmarczak/http-timer/README.md)
+# http-timer
+> Timings for HTTP requests
+
+[![Build Status](https://travis-ci.org/szmarczak/http-timer.svg?branch=master)](https://travis-ci.org/szmarczak/http-timer)
+[![Coverage Status](https://coveralls.io/repos/github/szmarczak/http-timer/badge.svg?branch=master)](https://coveralls.io/github/szmarczak/http-timer?branch=master)
+[![install size](https://packagephobia.now.sh/badge?p=@szmarczak/http-timer)](https://packagephobia.now.sh/result?p=@szmarczak/http-timer)
+
+Inspired by the [`request` package](https://github.com/request/request).
+
+## Usage
+```js
+'use strict';
+const https = require('https');
+const timer = require('@szmarczak/http-timer');
+
+const request = https.get('https://httpbin.org/anything');
+const timings = timer(request);
+
+request.on('response', response => {
+	response.on('data', () => {}); // Consume the data somehow
+	response.on('end', () => {
+		console.log(timings);
+	});
+});
+
+// { start: 1535708511443,
+//   socket: 1535708511444,
+//   lookup: 1535708511444,
+//   connect: 1535708511582,
+//   upload: 1535708511887,
+//   response: 1535708512037,
+//   end: 1535708512040,
+//   phases:
+//    { wait: 1,
+//      dns: 0,
+//      tcp: 138,
+//      request: 305,
+//      firstByte: 150,
+//      download: 3,
+//      total: 597 } }
+```
+
+## API
+
+### timer(request)
+
+Returns: `Object`
+
+- `start` - Time when the request started.
+- `socket` - Time when a socket was assigned to the request.
+- `lookup` - Time when the DNS lookup finished.
+- `connect` - Time when the socket successfully connected.
+- `upload` - Time when the request finished uploading.
+- `response` - Time when the request fired the `response` event.
+- `end` - Time when the response fired the `end` event.
+- `error` - Time when the request fired the `error` event.
+- `phases`
+	- `wait` - `timings.socket - timings.start`
+	- `dns` - `timings.lookup - timings.socket`
+	- `tcp` - `timings.connect - timings.lookup`
+	- `request` - `timings.upload - timings.connect`
+	- `firstByte` - `timings.response - timings.upload`
+	- `download` - `timings.end - timings.response`
+	- `total` - `timings.end - timings.start` or `timings.error - timings.start`
+
+**Note**: The time is a `number` representing the milliseconds elapsed since the UNIX epoch.
+
+## License
+
+MIT
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@types/glob/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@types/glob/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@types/glob/README.md)
+# Installation
+> `npm install --save @types/glob`
+
+# Summary
+This package contains type definitions for Glob (https://github.com/isaacs/node-glob).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/glob.
+
+### Additional Details
+ * Last updated: Mon, 06 Jul 2020 23:50:37 GMT
+ * Dependencies: [@types/minimatch](https://npmjs.com/package/@types/minimatch), [@types/node](https://npmjs.com/package/@types/node)
+ * Global values: none
+
+# Credits
+These definitions were written by [vvakame](https://github.com/vvakame), [voy](https://github.com/voy), [Klaus Meinhardt](https://github.com/ajafff), and [Piotr Błażejewicz](https://github.com/peterblazejewicz).
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@types/minimatch/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@types/minimatch/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@types/minimatch/README.md)
+# Installation
+> `npm install --save @types/minimatch`
+
+# Summary
+This package contains type definitions for Minimatch (https://github.com/isaacs/minimatch).
+
+# Details
+Files were exported from https://www.github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/minimatch
+
+Additional Details
+ * Last updated: Thu, 04 Jan 2018 23:26:01 GMT
+ * Dependencies: none
+ * Global values: none
+
+# Credits
+These definitions were written by vvakame <https://github.com/vvakame>, Shant Marouti <https://github.com/shantmarouti>.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/@types/node/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/@types/node/README.md](Github/bgoonz-master/bgoonz-master/node_modules/@types/node/README.md)
+# Installation
+> `npm install --save @types/node`
+
+# Summary
+This package contains type definitions for Node.js (http://nodejs.org/).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node.
+
+### Additional Details
+ * Last updated: Mon, 15 Mar 2021 18:54:33 GMT
+ * Dependencies: none
+ * Global values: `Buffer`, `__dirname`, `__filename`, `clearImmediate`, `clearInterval`, `clearTimeout`, `console`, `exports`, `global`, `module`, `process`, `queueMicrotask`, `require`, `setImmediate`, `setInterval`, `setTimeout`
+
+# Credits
+These definitions were written by [Microsoft TypeScript](https://github.com/Microsoft), [DefinitelyTyped](https://github.com/DefinitelyTyped), [Alberto Schiabel](https://github.com/jkomyno), [Alvis HT Tang](https://github.com/alvis), [Andrew Makarov](https://github.com/r3nya), [Benjamin Toueg](https://github.com/btoueg), [Bruno Scheufler](https://github.com/brunoscheufler), [Chigozirim C.](https://github.com/smac89), [David Junger](https://github.com/touffy), [Deividas Bakanas](https://github.com/DeividasBakanas), [Eugene Y. Q. Shen](https://github.com/eyqs), [Hannes Magnusson](https://github.com/Hannes-Magnusson-CK), [Hoàng Văn Khải](https://github.com/KSXGitHub), [Huw](https://github.com/hoo29), [Kelvin Jin](https://github.com/kjin), [Klaus Meinhardt](https://github.com/ajafff), [Lishude](https://github.com/islishude), [Mariusz Wiktorczyk](https://github.com/mwiktorczyk), [Mohsen Azimi](https://github.com/mohsen1), [Nicolas Even](https://github.com/n-e), [Nikita Galkin](https://github.com/galkin), [Parambir Singh](https://github.com/parambirs), [Sebastian Silbermann](https://github.com/eps1lon), [Simon Schick](https://github.com/SimonSchick), [Thomas den Hollander](https://github.com/ThomasdenH), [Wilco Bakker](https://github.com/WilcoBakker), [wwwy3y3](https://github.com/wwwy3y3), [Samuel Ainsworth](https://github.com/samuela), [Kyle Uehlein](https://github.com/kuehlein), [Thanik Bhongbhibhat](https://github.com/bhongy), [Marcin Kopacz](https://github.com/chyzwar), [Trivikram Kamat](https://github.com/trivikr), [Minh Son Nguyen](https://github.com/nguymin4), [Junxiao Shi](https://github.com/yoursunny), [Ilia Baryshnikov](https://github.com/qwelias), [ExE Boss](https://github.com/ExE-Boss), [Surasak Chaisurin](https://github.com/Ryan-Willpower), [Piotr Błażejewicz](https://github.com/peterblazejewicz), [Anna Henningsen](https://github.com/addaleax), [Jason Kwok](https://github.com/JasonHK), [Victor Perin](https://github.com/victorperin), and [Yongsheng Zhang](https://github.com/ZYSzys).
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/ansi-regex/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/ansi-regex/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/ansi-regex/readme.md)
+# ansi-regex [![Build Status](https://travis-ci.org/chalk/ansi-regex.svg?branch=master)](https://travis-ci.org/chalk/ansi-regex)
+
+> Regular expression for matching [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
+
+
+## Install
+
+```
+$ npm install ansi-regex
+```
+
+
+## Usage
+
+```js
+const ansiRegex = require('ansi-regex');
+
+ansiRegex().test('\u001B[4mcake\u001B[0m');
+//=> true
+
+ansiRegex().test('cake');
+//=> false
+
+'\u001B[4mcake\u001B[0m'.match(ansiRegex());
+//=> ['\u001B[4m', '\u001B[0m']
+
+'\u001B[4mcake\u001B[0m'.match(ansiRegex({onlyFirst: true}));
+//=> ['\u001B[4m']
+
+'\u001B]8;;https://github.com\u0007click\u001B]8;;\u0007'.match(ansiRegex());
+//=> ['\u001B]8;;https://github.com\u0007', '\u001B]8;;\u0007']
+```
+
+
+## API
+
+### ansiRegex(options?)
+
+Returns a regex for matching ANSI escape codes.
+
+#### options
+
+Type: `object`
+
+##### onlyFirst
+
+Type: `boolean`<br>
+Default: `false` *(Matches any ANSI escape codes in a string)*
+
+Match only the first ANSI escape.
+
+
+## FAQ
+
+### Why do you test for codes not in the ECMA 48 standard?
+
+Some of the codes we run as a test are codes that we acquired finding various lists of non-standard or manufacturer specific codes. We test for both standard and non-standard codes, as most of them follow the same or similar format and can be safely matched in strings without the risk of removing actual string content. There are a few non-standard control codes that do not follow the traditional format (i.e. they end in numbers) thus forcing us to exclude them from the test because we cannot reliably match them.
+
+On the historical side, those ECMA standards were established in the early 90's whereas the VT100, for example, was designed in the mid/late 70's. At that point in time, control codes were still pretty ungoverned and engineers used them for a multitude of things, namely to activate hardware ports that may have been proprietary. Somewhere else you see a similar 'anarchy' of codes is in the x86 architecture for processors; there are a ton of "interrupts" that can mean different things on certain brands of processors, most of which have been phased out.
+
+
+## Maintainers
+
+- [Sindre Sorhus](https://github.com/sindresorhus)
+- [Josh Junon](https://github.com/qix-)
+
+
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-ansi-regex?utm_source=npm-ansi-regex&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/ansi-styles/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/ansi-styles/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/ansi-styles/readme.md)
+# ansi-styles [![Build Status](https://travis-ci.org/chalk/ansi-styles.svg?branch=master)](https://travis-ci.org/chalk/ansi-styles)
+
+> [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors_and_Styles) for styling strings in the terminal
+
+You probably want the higher-level [chalk](https://github.com/chalk/chalk) module for styling your strings.
+
+<img src="screenshot.svg" width="900">
+
+## Install
+
+```
+$ npm install ansi-styles
+```
+
+## Usage
+
+```js
+const style = require('ansi-styles');
+
+console.log(`${style.green.open}Hello world!${style.green.close}`);
+
+
+// Color conversion between 16/256/truecolor
+// NOTE: If conversion goes to 16 colors or 256 colors, the original color
+//       may be degraded to fit that color palette. This means terminals
+//       that do not support 16 million colors will best-match the
+//       original color.
+console.log(style.bgColor.ansi.hsl(120, 80, 72) + 'Hello world!' + style.bgColor.close);
+console.log(style.color.ansi256.rgb(199, 20, 250) + 'Hello world!' + style.color.close);
+console.log(style.color.ansi16m.hex('#abcdef') + 'Hello world!' + style.color.close);
+```
+
+## API
+
+Each style has an `open` and `close` property.
+
+## Styles
+
+### Modifiers
+
+- `reset`
+- `bold`
+- `dim`
+- `italic` *(Not widely supported)*
+- `underline`
+- `inverse`
+- `hidden`
+- `strikethrough` *(Not widely supported)*
+
+### Colors
+
+- `black`
+- `red`
+- `green`
+- `yellow`
+- `blue`
+- `magenta`
+- `cyan`
+- `white`
+- `blackBright` (alias: `gray`, `grey`)
+- `redBright`
+- `greenBright`
+- `yellowBright`
+- `blueBright`
+- `magentaBright`
+- `cyanBright`
+- `whiteBright`
+
+### Background colors
+
+- `bgBlack`
+- `bgRed`
+- `bgGreen`
+- `bgYellow`
+- `bgBlue`
+- `bgMagenta`
+- `bgCyan`
+- `bgWhite`
+- `bgBlackBright` (alias: `bgGray`, `bgGrey`)
+- `bgRedBright`
+- `bgGreenBright`
+- `bgYellowBright`
+- `bgBlueBright`
+- `bgMagentaBright`
+- `bgCyanBright`
+- `bgWhiteBright`
+
+## Advanced usage
+
+By default, you get a map of styles, but the styles are also available as groups. They are non-enumerable so they don't show up unless you access them explicitly. This makes it easier to expose only a subset in a higher-level module.
+
+- `style.modifier`
+- `style.color`
+- `style.bgColor`
+
+###### Example
+
+```js
+console.log(style.color.green.open);
+```
+
+Raw escape codes (i.e. without the CSI escape prefix `\u001B[` and render mode postfix `m`) are available under `style.codes`, which returns a `Map` with the open codes as keys and close codes as values.
+
+###### Example
+
+```js
+console.log(style.codes.get(36));
+//=> 39
+```
+
+## [256 / 16 million (TrueColor) support](https://gist.github.com/XVilka/8346728)
+
+`ansi-styles` uses the [`color-convert`](https://github.com/Qix-/color-convert) package to allow for converting between various colors and ANSI escapes, with support for 256 and 16 million colors.
+
+The following color spaces from `color-convert` are supported:
+
+- `rgb`
+- `hex`
+- `keyword`
+- `hsl`
+- `hsv`
+- `hwb`
+- `ansi`
+- `ansi256`
+
+To use these, call the associated conversion function with the intended output, for example:
+
+```js
+style.color.ansi.rgb(100, 200, 15); // RGB to 16 color ansi foreground code
+style.bgColor.ansi.rgb(100, 200, 15); // RGB to 16 color ansi background code
+
+style.color.ansi256.hsl(120, 100, 60); // HSL to 256 color ansi foreground code
+style.bgColor.ansi256.hsl(120, 100, 60); // HSL to 256 color ansi foreground code
+
+style.color.ansi16m.hex('#C0FFEE'); // Hex (RGB) to 16 million color foreground code
+style.bgColor.ansi16m.hex('#C0FFEE'); // Hex (RGB) to 16 million color background code
+```
+
+## Related
+
+- [ansi-escapes](https://github.com/sindresorhus/ansi-escapes) - ANSI escape codes for manipulating the terminal
+
+## Maintainers
+
+- [Sindre Sorhus](https://github.com/sindresorhus)
+- [Josh Junon](https://github.com/qix-)
+
+## For enterprise
+
+Available as part of the Tidelift Subscription.
+
+The maintainers of `ansi-styles` and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. [Learn more.](https://tidelift.com/subscription/pkg/npm-ansi-styles?utm_source=npm-ansi-styles&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/at-least-node/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/at-least-node/README.md](Github/bgoonz-master/bgoonz-master/node_modules/at-least-node/README.md)
+# at-least-node
+
+![npm](https://img.shields.io/npm/v/at-least-node)
+![node](https://img.shields.io/node/v/at-least-node)
+![NPM](https://img.shields.io/npm/l/at-least-node)
+
+Sometimes you need to check if you're on _at least_ a given Node.js version, but you don't want to pull in the whole [`semver`](https://www.npmjs.com/package/semver) kitchen sink. That's what `at-least-node` is for.
+
+| Package         | Size    |
+| --------------- | ------- |
+| `at-least-node` | 2.6 kB  |
+| `semver`        | 75.5 kB |
+
+```js
+const atLeastNode = require('at-least-node')
+atLeastNode('10.12.0')
+// -> true on Node 10.12.0+, false on anything below that
+```
+
+When passing in a version string:
+
+- You cannot include a leading `v` (i.e. `v10.12.0`)
+- You cannot omit sections (i.e. `10.12`)
+- You cannot use pre-releases (i.e. `1.0.0-beta`)
+- There is no input validation, if you make a mistake, the resulting behavior is undefined
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/balanced-match/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/balanced-match/LICENSE.md](Github/bgoonz-master/bgoonz-master/node_modules/balanced-match/LICENSE.md)
+(MIT)
+
+Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/balanced-match/README.md](Github/bgoonz-master/bgoonz-master/node_modules/balanced-match/README.md)
+
+# balanced-match
+
+Match balanced string pairs, like `{` and `}` or `<b>` and `</b>`. Supports regular expressions as well!
+
+[![build status](https://secure.travis-ci.org/juliangruber/balanced-match.svg)](http://travis-ci.org/juliangruber/balanced-match)
+[![downloads](https://img.shields.io/npm/dm/balanced-match.svg)](https://www.npmjs.org/package/balanced-match)
+
+[![testling badge](https://ci.testling.com/juliangruber/balanced-match.png)](https://ci.testling.com/juliangruber/balanced-match)
+
+## Example
+
+Get the first matching pair of braces:
+
+```js
+var balanced = require('balanced-match');
+
+console.log(balanced('{', '}', 'pre{in{nested}}post'));
+console.log(balanced('{', '}', 'pre{first}between{second}post'));
+console.log(balanced(/\s+\{\s+/, /\s+\}\s+/, 'pre  {   in{nest}   }  post'));
+```
+
+The matches are:
+
+```bash
+$ node example.js
+{ start: 3, end: 14, pre: 'pre', body: 'in{nested}', post: 'post' }
+{ start: 3,
+  end: 9,
+  pre: 'pre',
+  body: 'first',
+  post: 'between{second}post' }
+{ start: 3, end: 17, pre: 'pre', body: 'in{nest}', post: 'post' }
+```
+
+## API
+
+### var m = balanced(a, b, str)
+
+For the first non-nested matching pair of `a` and `b` in `str`, return an
+object with those keys:
+
+* **start** the index of the first match of `a`
+* **end** the index of the matching `b`
+* **pre** the preamble, `a` and `b` not included
+* **body** the match, `a` and `b` not included
+* **post** the postscript, `a` and `b` not included
+
+If there's no match, `undefined` will be returned.
+
+If the `str` contains more `a` than `b` / there are unmatched pairs, the first match that was closed will be used. For example, `{{a}` will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}']`.
+
+### var r = balanced.range(a, b, str)
+
+For the first non-nested matching pair of `a` and `b` in `str`, return an
+array with indexes: `[ <a index>, <b index> ]`.
+
+If there's no match, `undefined` will be returned.
+
+If the `str` contains more `a` than `b` / there are unmatched pairs, the first match that was closed will be used. For example, `{{a}` will match `[ 1, 3 ]` and `{a}}` will match `[0, 2]`.
+
+## Installation
+
+With [npm](https://npmjs.org) do:
+
+```bash
+npm install balanced-match
+```
+
+## License
+
+(MIT)
+
+Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/brace-expansion/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/brace-expansion/README.md](Github/bgoonz-master/bgoonz-master/node_modules/brace-expansion/README.md)
+# brace-expansion
+
+[Brace expansion](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html), 
+as known from sh/bash, in JavaScript.
+
+[![build status](https://secure.travis-ci.org/juliangruber/brace-expansion.svg)](http://travis-ci.org/juliangruber/brace-expansion)
+[![downloads](https://img.shields.io/npm/dm/brace-expansion.svg)](https://www.npmjs.org/package/brace-expansion)
+[![Greenkeeper badge](https://badges.greenkeeper.io/juliangruber/brace-expansion.svg)](https://greenkeeper.io/)
+
+[![testling badge](https://ci.testling.com/juliangruber/brace-expansion.png)](https://ci.testling.com/juliangruber/brace-expansion)
+
+## Example
+
+```js
+var expand = require('brace-expansion');
+
+expand('file-{a,b,c}.jpg')
+// => ['file-a.jpg', 'file-b.jpg', 'file-c.jpg']
+
+expand('-v{,,}')
+// => ['-v', '-v', '-v']
+
+expand('file{0..2}.jpg')
+// => ['file0.jpg', 'file1.jpg', 'file2.jpg']
+
+expand('file-{a..c}.jpg')
+// => ['file-a.jpg', 'file-b.jpg', 'file-c.jpg']
+
+expand('file{2..0}.jpg')
+// => ['file2.jpg', 'file1.jpg', 'file0.jpg']
+
+expand('file{0..4..2}.jpg')
+// => ['file0.jpg', 'file2.jpg', 'file4.jpg']
+
+expand('file-{a..e..2}.jpg')
+// => ['file-a.jpg', 'file-c.jpg', 'file-e.jpg']
+
+expand('file{00..10..5}.jpg')
+// => ['file00.jpg', 'file05.jpg', 'file10.jpg']
+
+expand('{{A..C},{a..c}}')
+// => ['A', 'B', 'C', 'a', 'b', 'c']
+
+expand('ppp{,config,oe{,conf}}')
+// => ['ppp', 'pppconfig', 'pppoe', 'pppoeconf']
+```
+
+## API
+
+```js
+var expand = require('brace-expansion');
+```
+
+### var expanded = expand(str)
+
+Return an array of all possible and valid expansions of `str`. If none are
+found, `[str]` is returned.
+
+Valid expansions are:
+
+```js
+/^(.*,)+(.+)?$/
+// {a,b,...}
+```
+
+A comma separated list of options, like `{a,b}` or `{a,{b,c}}` or `{,a,}`.
+
+```js
+/^-?\d+\.\.-?\d+(\.\.-?\d+)?$/
+// {x..y[..incr]}
+```
+
+A numeric sequence from `x` to `y` inclusive, with optional increment.
+If `x` or `y` start with a leading `0`, all the numbers will be padded
+to have equal length. Negative numbers and backwards iteration work too.
+
+```js
+/^-?\d+\.\.-?\d+(\.\.-?\d+)?$/
+// {x..y[..incr]}
+```
+
+An alphabetic sequence from `x` to `y` inclusive, with optional increment.
+`x` and `y` must be exactly one character, and if given, `incr` must be a
+number.
+
+For compatibility reasons, the string `${` is not eligible for brace expansion.
+
+## Installation
+
+With [npm](https://npmjs.org) do:
+
+```bash
+npm install brace-expansion
+```
+
+## Contributors
+
+- [Julian Gruber](https://github.com/juliangruber)
+- [Isaac Z. Schlueter](https://github.com/isaacs)
+
+## Sponsors
+
+This module is proudly supported by my [Sponsors](https://github.com/juliangruber/sponsors)!
+
+Do you want to support modules like this to improve their quality, stability and weigh in on new features? Then please consider donating to my [Patreon](https://www.patreon.com/juliangruber). Not sure how much of my modules you're using? Try [feross/thanks](https://github.com/feross/thanks)!
+
+## License
+
+(MIT)
+
+Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/braces/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/braces/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/braces/CHANGELOG.md)
+# Release history
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+<details>
+  <summary><strong>Guiding Principles</strong></summary>
+
+- Changelogs are for humans, not machines.
+- There should be an entry for every single version.
+- The same types of changes should be grouped.
+- Versions and sections should be linkable.
+- The latest version comes first.
+- The release date of each versions is displayed.
+- Mention whether you follow Semantic Versioning.
+
+</details>
+
+<details>
+  <summary><strong>Types of changes</strong></summary>
+
+Changelog entries are classified using the following labels _(from [keep-a-changelog](http://keepachangelog.com/)_):
+
+- `Added` for new features.
+- `Changed` for changes in existing functionality.
+- `Deprecated` for soon-to-be removed features.
+- `Removed` for now removed features.
+- `Fixed` for any bug fixes.
+- `Security` in case of vulnerabilities.
+
+</details>
+
+## [3.0.0] - 2018-04-08
+
+v3.0 is a complete refactor, resulting in a faster, smaller codebase, with fewer deps, and a more accurate parser and compiler. 
+
+**Breaking Changes**
+
+- The undocumented `.makeRe` method was removed
+
+**Non-breaking changes**
+
+- Caching was removed
+
+## [2.3.2] - 2018-04-08
+
+- start refactoring
+- cover sets
+- better range handling
+
+## [2.3.1] - 2018-02-17
+
+- Remove unnecessary escape in Regex. (#14)
+
+## [2.3.0] - 2017-10-19
+
+- minor code reorganization
+- optimize regex
+- expose `maxLength` option
+
+## [2.2.1] - 2017-05-30
+
+- don't condense when braces contain extglobs
+
+## [2.2.0] - 2017-05-28
+
+- ensure word boundaries are preserved
+- fixes edge case where extglob characters precede a brace pattern
+
+## [2.1.1] - 2017-04-27
+
+- use snapdragon-node
+- handle edge case
+- optimizations, lint
+
+## [2.0.4] - 2017-04-11
+
+- pass opts to compiler
+- minor optimization in create method
+- re-write parser handlers to remove negation regex
+
+## [2.0.3] - 2016-12-10
+
+- use split-string
+- clear queue at the end
+- adds sequences example
+- add unit tests
+
+## [2.0.2] - 2016-10-21
+
+- fix comma handling in nested extglobs
+
+## [2.0.1] - 2016-10-20
+
+- add comments
+- more tests, ensure quotes are stripped
+
+## [2.0.0] - 2016-10-19
+
+- don't expand braces inside character classes
+- add quantifier pattern
+
+## [1.8.5] - 2016-05-21
+
+- Refactor (#10)
+
+## [1.8.4] - 2016-04-20
+
+- fixes https://github.com/jonschlinkert/micromatch/issues/66
+
+## [1.8.0] - 2015-03-18
+
+- adds exponent examples, tests
+- fixes the first example in https://github.com/jonschlinkert/micromatch/issues/38
+
+## [1.6.0] - 2015-01-30
+
+- optimizations, `bash` mode:
+- improve path escaping
+
+## [1.5.0] - 2015-01-28
+
+- Merge pull request #5 from eush77/lib-files
+
+## [1.4.0] - 2015-01-24
+
+- add extglob tests
+- externalize exponent function
+- better whitespace handling
+
+## [1.3.0] - 2015-01-24
+
+- make regex patterns explicity
+
+## [1.1.0] - 2015-01-11
+
+- don't create a match group with `makeRe`
+
+## [1.0.0] - 2014-12-23
+
+- Merge commit '97b05f5544f8348736a8efaecf5c32bbe3e2ad6e'
+- support empty brace syntax
+- better bash coverage
+- better support for regex strings
+
+## [0.1.4] - 2014-11-14
+
+- improve recognition of bad args, recognize mismatched argument types
+- support escaping
+- remove pathname-expansion
+- support whitespace in patterns
+
+## [0.1.0]
+
+- first commit
+
+[2.3.2]: https://github.com/micromatch/braces/compare/2.3.1...2.3.2
+[2.3.1]: https://github.com/micromatch/braces/compare/2.3.0...2.3.1
+[2.3.0]: https://github.com/micromatch/braces/compare/2.2.1...2.3.0
+[2.2.1]: https://github.com/micromatch/braces/compare/2.2.0...2.2.1
+[2.2.0]: https://github.com/micromatch/braces/compare/2.1.1...2.2.0
+[2.1.1]: https://github.com/micromatch/braces/compare/2.1.0...2.1.1
+[2.1.0]: https://github.com/micromatch/braces/compare/2.0.4...2.1.0
+[2.0.4]: https://github.com/micromatch/braces/compare/2.0.3...2.0.4
+[2.0.3]: https://github.com/micromatch/braces/compare/2.0.2...2.0.3
+[2.0.2]: https://github.com/micromatch/braces/compare/2.0.1...2.0.2
+[2.0.1]: https://github.com/micromatch/braces/compare/2.0.0...2.0.1
+[2.0.0]: https://github.com/micromatch/braces/compare/1.8.5...2.0.0
+[1.8.5]: https://github.com/micromatch/braces/compare/1.8.4...1.8.5
+[1.8.4]: https://github.com/micromatch/braces/compare/1.8.0...1.8.4
+[1.8.0]: https://github.com/micromatch/braces/compare/1.6.0...1.8.0
+[1.6.0]: https://github.com/micromatch/braces/compare/1.5.0...1.6.0
+[1.5.0]: https://github.com/micromatch/braces/compare/1.4.0...1.5.0
+[1.4.0]: https://github.com/micromatch/braces/compare/1.3.0...1.4.0
+[1.3.0]: https://github.com/micromatch/braces/compare/1.2.0...1.3.0
+[1.2.0]: https://github.com/micromatch/braces/compare/1.1.0...1.2.0
+[1.1.0]: https://github.com/micromatch/braces/compare/1.0.0...1.1.0
+[1.0.0]: https://github.com/micromatch/braces/compare/0.1.4...1.0.0
+[0.1.4]: https://github.com/micromatch/braces/compare/0.1.0...0.1.4
+
+[Unreleased]: https://github.com/micromatch/braces/compare/0.1.0...HEAD
+[keep-a-changelog]: https://github.com/olivierlacan/keep-a-changelog
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/braces/README.md](Github/bgoonz-master/bgoonz-master/node_modules/braces/README.md)
+
+# braces [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/braces.svg?style=flat)](https://www.npmjs.com/package/braces) [![NPM monthly downloads](https://img.shields.io/npm/dm/braces.svg?style=flat)](https://npmjs.org/package/braces) [![NPM total downloads](https://img.shields.io/npm/dt/braces.svg?style=flat)](https://npmjs.org/package/braces) [![Linux Build Status](https://img.shields.io/travis/micromatch/braces.svg?style=flat&label=Travis)](https://travis-ci.org/micromatch/braces)
+
+> Bash-like brace expansion, implemented in JavaScript. Safer than other brace expansion libs, with complete support for the Bash 4.3 braces specification, without sacrificing speed.
+
+Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and consider starring the project to show your :heart: and support.
+
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install --save braces
+```
+
+## v3.0.0 Released!!
+
+See the [changelog](CHANGELOG.md) for details.
+
+## Why use braces?
+
+Brace patterns make globs more powerful by adding the ability to match specific ranges and sequences of characters.
+
+* **Accurate** - complete support for the [Bash 4.3 Brace Expansion](www.gnu.org/software/bash/) specification (passes all of the Bash braces tests)
+* **[fast and performant](#benchmarks)** - Starts fast, runs fast and [scales well](#performance) as patterns increase in complexity.
+* **Organized code base** - The parser and compiler are easy to maintain and update when edge cases crop up.
+* **Well-tested** - Thousands of test assertions, and passes all of the Bash, minimatch, and [brace-expansion](https://github.com/juliangruber/brace-expansion) unit tests (as of the date this was written).
+* **Safer** - You shouldn't have to worry about users defining aggressive or malicious brace patterns that can break your application. Braces takes measures to prevent malicious regex that can be used for DDoS attacks (see [catastrophic backtracking](https://www.regular-expressions.info/catastrophic.html)).
+* [Supports lists](#lists) - (aka "sets") `a/{b,c}/d` => `['a/b/d', 'a/c/d']`
+* [Supports sequences](#sequences) - (aka "ranges") `{01..03}` => `['01', '02', '03']`
+* [Supports steps](#steps) - (aka "increments") `{2..10..2}` => `['2', '4', '6', '8', '10']`
+* [Supports escaping](#escaping) - To prevent evaluation of special characters.
+
+## Usage
+
+The main export is a function that takes one or more brace `patterns` and `options`.
+
+```js
+const braces = require('braces');
+// braces(patterns[, options]);
+
+console.log(braces(['{01..05}', '{a..e}']));
+//=> ['(0[1-5])', '([a-e])']
+
+console.log(braces(['{01..05}', '{a..e}'], { expand: true }));
+//=> ['01', '02', '03', '04', '05', 'a', 'b', 'c', 'd', 'e']
+```
+
+### Brace Expansion vs. Compilation
+
+By default, brace patterns are compiled into strings that are optimized for creating regular expressions and matching.
+
+**Compiled**
+
+```js
+console.log(braces('a/{x,y,z}/b')); 
+//=> ['a/(x|y|z)/b']
+console.log(braces(['a/{01..20}/b', 'a/{1..5}/b'])); 
+//=> [ 'a/(0[1-9]|1[0-9]|20)/b', 'a/([1-5])/b' ]
+```
+
+**Expanded**
+
+Enable brace expansion by setting the `expand` option to true, or by using [braces.expand()](#expand) (returns an array similar to what you'd expect from Bash, or `echo {1..5}`, or [minimatch](https://github.com/isaacs/minimatch)):
+
+```js
+console.log(braces('a/{x,y,z}/b', { expand: true }));
+//=> ['a/x/b', 'a/y/b', 'a/z/b']
+
+console.log(braces.expand('{01..10}'));
+//=> ['01','02','03','04','05','06','07','08','09','10']
+```
+
+### Lists
+
+Expand lists (like Bash "sets"):
+
+```js
+console.log(braces('a/{foo,bar,baz}/*.js'));
+//=> ['a/(foo|bar|baz)/*.js']
+
+console.log(braces.expand('a/{foo,bar,baz}/*.js'));
+//=> ['a/foo/*.js', 'a/bar/*.js', 'a/baz/*.js']
+```
+
+### Sequences
+
+Expand ranges of characters (like Bash "sequences"):
+
+```js
+console.log(braces.expand('{1..3}'));                // ['1', '2', '3']
+console.log(braces.expand('a/{1..3}/b'));            // ['a/1/b', 'a/2/b', 'a/3/b']
+console.log(braces('{a..c}', { expand: true }));     // ['a', 'b', 'c']
+console.log(braces('foo/{a..c}', { expand: true })); // ['foo/a', 'foo/b', 'foo/c']
+
+// supports zero-padded ranges
+console.log(braces('a/{01..03}/b'));   //=> ['a/(0[1-3])/b']
+console.log(braces('a/{001..300}/b')); //=> ['a/(0{2}[1-9]|0[1-9][0-9]|[12][0-9]{2}|300)/b']
+```
+
+See [fill-range](https://github.com/jonschlinkert/fill-range) for all available range-expansion options.
+
+### Steppped ranges
+
+Steps, or increments, may be used with ranges:
+
+```js
+console.log(braces.expand('{2..10..2}'));
+//=> ['2', '4', '6', '8', '10']
+
+console.log(braces('{2..10..2}'));
+//=> ['(2|4|6|8|10)']
+```
+
+When the [.optimize](#optimize) method is used, or [options.optimize](#optionsoptimize) is set to true, sequences are passed to [to-regex-range](https://github.com/jonschlinkert/to-regex-range) for expansion.
+
+### Nesting
+
+Brace patterns may be nested. The results of each expanded string are not sorted, and left to right order is preserved.
+
+**"Expanded" braces**
+
+```js
+console.log(braces.expand('a{b,c,/{x,y}}/e'));
+//=> ['ab/e', 'ac/e', 'a/x/e', 'a/y/e']
+
+console.log(braces.expand('a/{x,{1..5},y}/c'));
+//=> ['a/x/c', 'a/1/c', 'a/2/c', 'a/3/c', 'a/4/c', 'a/5/c', 'a/y/c']
+```
+
+**"Optimized" braces**
+
+```js
+console.log(braces('a{b,c,/{x,y}}/e'));
+//=> ['a(b|c|/(x|y))/e']
+
+console.log(braces('a/{x,{1..5},y}/c'));
+//=> ['a/(x|([1-5])|y)/c']
+```
+
+### Escaping
+
+**Escaping braces**
+
+A brace pattern will not be expanded or evaluted if _either the opening or closing brace is escaped_:
+
+```js
+console.log(braces.expand('a\\{d,c,b}e'));
+//=> ['a{d,c,b}e']
+
+console.log(braces.expand('a{d,c,b\\}e'));
+//=> ['a{d,c,b}e']
+```
+
+**Escaping commas**
+
+Commas inside braces may also be escaped:
+
+```js
+console.log(braces.expand('a{b\\,c}d'));
+//=> ['a{b,c}d']
+
+console.log(braces.expand('a{d\\,c,b}e'));
+//=> ['ad,ce', 'abe']
+```
+
+**Single items**
+
+Following bash conventions, a brace pattern is also not expanded when it contains a single character:
+
+```js
+console.log(braces.expand('a{b}c'));
+//=> ['a{b}c']
+```
+
+## Options
+
+### options.maxLength
+
+**Type**: `Number`
+
+**Default**: `65,536`
+
+**Description**: Limit the length of the input string. Useful when the input string is generated or your application allows users to pass a string, et cetera.
+
+```js
+console.log(braces('a/{b,c}/d', { maxLength: 3 }));  //=> throws an error
+```
+
+### options.expand
+
+**Type**: `Boolean`
+
+**Default**: `undefined`
+
+**Description**: Generate an "expanded" brace pattern (alternatively you can use the `braces.expand()` method, which does the same thing).
+
+```js
+console.log(braces('a/{b,c}/d', { expand: true }));
+//=> [ 'a/b/d', 'a/c/d' ]
+```
+
+### options.nodupes
+
+**Type**: `Boolean`
+
+**Default**: `undefined`
+
+**Description**: Remove duplicates from the returned array.
+
+### options.rangeLimit
+
+**Type**: `Number`
+
+**Default**: `1000`
+
+**Description**: To prevent malicious patterns from being passed by users, an error is thrown when `braces.expand()` is used or `options.expand` is true and the generated range will exceed the `rangeLimit`.
+
+You can customize `options.rangeLimit` or set it to `Inifinity` to disable this altogether.
+
+**Examples**
+
+```js
+// pattern exceeds the "rangeLimit", so it's optimized automatically
+console.log(braces.expand('{1..1000}'));
+//=> ['([1-9]|[1-9][0-9]{1,2}|1000)']
+
+// pattern does not exceed "rangeLimit", so it's NOT optimized
+console.log(braces.expand('{1..100}'));
+//=> ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46', '47', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '60', '61', '62', '63', '64', '65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99', '100']
+```
+
+### options.transform
+
+**Type**: `Function`
+
+**Default**: `undefined`
+
+**Description**: Customize range expansion.
+
+**Example: Transforming non-numeric values**
+
+```js
+const alpha = braces.expand('x/{a..e}/y', {
+  transform(value, index) {
+    // When non-numeric values are passed, "value" is a character code.
+    return 'foo/' + String.fromCharCode(value) + '-' + index;
+  }
+});
+console.log(alpha);
+//=> [ 'x/foo/a-0/y', 'x/foo/b-1/y', 'x/foo/c-2/y', 'x/foo/d-3/y', 'x/foo/e-4/y' ]
+```
+
+**Example: Transforming numeric values**
+
+```js
+const numeric = braces.expand('{1..5}', {
+  transform(value) {
+    // when numeric values are passed, "value" is a number
+    return 'foo/' + value * 2;
+  }
+});
+console.log(numeric); 
+//=> [ 'foo/2', 'foo/4', 'foo/6', 'foo/8', 'foo/10' ]
+```
+
+### options.quantifiers
+
+**Type**: `Boolean`
+
+**Default**: `undefined`
+
+**Description**: In regular expressions, quanitifiers can be used to specify how many times a token can be repeated. For example, `a{1,3}` will match the letter `a` one to three times.
+
+Unfortunately, regex quantifiers happen to share the same syntax as [Bash lists](#lists)
+
+The `quantifiers` option tells braces to detect when [regex quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#quantifiers) are defined in the given pattern, and not to try to expand them as lists.
+
+**Examples**
+
+```js
+const braces = require('braces');
+console.log(braces('a/b{1,3}/{x,y,z}'));
+//=> [ 'a/b(1|3)/(x|y|z)' ]
+console.log(braces('a/b{1,3}/{x,y,z}', {quantifiers: true}));
+//=> [ 'a/b{1,3}/(x|y|z)' ]
+console.log(braces('a/b{1,3}/{x,y,z}', {quantifiers: true, expand: true}));
+//=> [ 'a/b{1,3}/x', 'a/b{1,3}/y', 'a/b{1,3}/z' ]
+```
+
+### options.unescape
+
+**Type**: `Boolean`
+
+**Default**: `undefined`
+
+**Description**: Strip backslashes that were used for escaping from the result.
+
+## What is "brace expansion"?
+
+Brace expansion is a type of parameter expansion that was made popular by unix shells for generating lists of strings, as well as regex-like matching when used alongside wildcards (globs).
+
+In addition to "expansion", braces are also used for matching. In other words:
+
+* [brace expansion](#brace-expansion) is for generating new lists
+* [brace matching](#brace-matching) is for filtering existing lists
+
+<details>
+<summary><strong>More about brace expansion</strong> (click to expand)</summary>
+
+There are two main types of brace expansion:
+
+1. **lists**: which are defined using comma-separated values inside curly braces: `{a,b,c}`
+2. **sequences**: which are defined using a starting value and an ending value, separated by two dots: `a{1..3}b`. Optionally, a third argument may be passed to define a "step" or increment to use: `a{1..100..10}b`. These are also sometimes referred to as "ranges".
+
+Here are some example brace patterns to illustrate how they work:
+
+**Sets**
+
+```
+{a,b,c}       => a b c
+{a,b,c}{1,2}  => a1 a2 b1 b2 c1 c2
+```
+
+**Sequences**
+
+```
+{1..9}        => 1 2 3 4 5 6 7 8 9
+{4..-4}       => 4 3 2 1 0 -1 -2 -3 -4
+{1..20..3}    => 1 4 7 10 13 16 19
+{a..j}        => a b c d e f g h i j
+{j..a}        => j i h g f e d c b a
+{a..z..3}     => a d g j m p s v y
+```
+
+**Combination**
+
+Sets and sequences can be mixed together or used along with any other strings.
+
+```
+{a,b,c}{1..3}   => a1 a2 a3 b1 b2 b3 c1 c2 c3
+foo/{a,b,c}/bar => foo/a/bar foo/b/bar foo/c/bar
+```
+
+The fact that braces can be "expanded" from relatively simple patterns makes them ideal for quickly generating test fixtures, file paths, and similar use cases.
+
+## Brace matching
+
+In addition to _expansion_, brace patterns are also useful for performing regular-expression-like matching.
+
+For example, the pattern `foo/{1..3}/bar` would match any of following strings:
+
+```
+foo/1/bar
+foo/2/bar
+foo/3/bar
+```
+
+But not:
+
+```
+baz/1/qux
+baz/2/qux
+baz/3/qux
+```
+
+Braces can also be combined with [glob patterns](https://github.com/jonschlinkert/micromatch) to perform more advanced wildcard matching. For example, the pattern `*/{1..3}/*` would match any of following strings:
+
+```
+foo/1/bar
+foo/2/bar
+foo/3/bar
+baz/1/qux
+baz/2/qux
+baz/3/qux
+```
+
+## Brace matching pitfalls
+
+Although brace patterns offer a user-friendly way of matching ranges or sets of strings, there are also some major disadvantages and potential risks you should be aware of.
+
+### tldr
+
+**"brace bombs"**
+
+* brace expansion can eat up a huge amount of processing resources
+* as brace patterns increase _linearly in size_, the system resources required to expand the pattern increase exponentially
+* users can accidentally (or intentially) exhaust your system's resources resulting in the equivalent of a DoS attack (bonus: no programming knowledge is required!)
+
+For a more detailed explanation with examples, see the [geometric complexity](#geometric-complexity) section.
+
+### The solution
+
+Jump to the [performance section](#performance) to see how Braces solves this problem in comparison to other libraries.
+
+### Geometric complexity
+
+At minimum, brace patterns with sets limited to two elements have quadradic or `O(n^2)` complexity. But the complexity of the algorithm increases exponentially as the number of sets, _and elements per set_, increases, which is `O(n^c)`.
+
+For example, the following sets demonstrate quadratic (`O(n^2)`) complexity:
+
+```
+{1,2}{3,4}      => (2X2)    => 13 14 23 24
+{1,2}{3,4}{5,6} => (2X2X2)  => 135 136 145 146 235 236 245 246
+```
+
+But add an element to a set, and we get a n-fold Cartesian product with `O(n^c)` complexity:
+
+```
+{1,2,3}{4,5,6}{7,8,9} => (3X3X3) => 147 148 149 157 158 159 167 168 169 247 248 
+                                    249 257 258 259 267 268 269 347 348 349 357 
+                                    358 359 367 368 369
+```
+
+Now, imagine how this complexity grows given that each element is a n-tuple:
+
+```
+{1..100}{1..100}         => (100X100)     => 10,000 elements (38.4 kB)
+{1..100}{1..100}{1..100} => (100X100X100) => 1,000,000 elements (5.76 MB)
+```
+
+Although these examples are clearly contrived, they demonstrate how brace patterns can quickly grow out of control.
+
+**More information**
+
+Interested in learning more about brace expansion?
+
+* [linuxjournal/bash-brace-expansion](http://www.linuxjournal.com/content/bash-brace-expansion)
+* [rosettacode/Brace_expansion](https://rosettacode.org/wiki/Brace_expansion)
+* [cartesian product](https://en.wikipedia.org/wiki/Cartesian_product)
+
+</details>
+
+## Performance
+
+Braces is not only screaming fast, it's also more accurate the other brace expansion libraries.
+
+### Better algorithms
+
+Fortunately there is a solution to the ["brace bomb" problem](#brace-matching-pitfalls): _don't expand brace patterns into an array when they're used for matching_.
+
+Instead, convert the pattern into an optimized regular expression. This is easier said than done, and braces is the only library that does this currently.
+
+**The proof is in the numbers**
+
+Minimatch gets exponentially slower as patterns increase in complexity, braces does not. The following results were generated using `braces()` and `minimatch.braceExpand()`, respectively.
+
+| **Pattern**                 | **braces**         | **[minimatch][]**            |
+| ---                         | ---                | ---                          |
+| `{1..9007199254740991}`[^1] | `298 B` (5ms 459μs)|  N/A (freezes)               |
+| `{1..1000000000000000}`     | `41 B` (1ms 15μs)  |  N/A (freezes)               |
+| `{1..100000000000000}`      | `40 B` (890μs)     |  N/A (freezes)               |
+| `{1..10000000000000}`       | `39 B` (2ms 49μs)  |  N/A (freezes)               |
+| `{1..1000000000000}`        | `38 B` (608μs)     |  N/A (freezes)               |
+| `{1..100000000000}`         | `37 B` (397μs)     |  N/A (freezes)               |
+| `{1..10000000000}`          | `35 B` (983μs)     |  N/A (freezes)               |
+| `{1..1000000000}`           | `34 B` (798μs)     |  N/A (freezes)               |
+| `{1..100000000}`            | `33 B` (733μs)     |  N/A (freezes)               |
+| `{1..10000000}`             | `32 B` (5ms 632μs) | `78.89 MB` (16s 388ms 569μs) |
+| `{1..1000000}`              | `31 B` (1ms 381μs) | `6.89 MB` (1s 496ms 887μs)   |
+| `{1..100000}`               | `30 B` (950μs)     | `588.89 kB` (146ms 921μs)    |
+| `{1..10000}`                | `29 B` (1ms 114μs) | `48.89 kB` (14ms 187μs)      |
+| `{1..1000}`                 | `28 B` (760μs)     | `3.89 kB` (1ms 453μs)        |
+| `{1..100}`                  | `22 B` (345μs)     | `291 B` (196μs)              |
+| `{1..10}`                   | `10 B` (533μs)     | `20 B` (37μs)                |
+| `{1..3}`                    | `7 B` (190μs)      | `5 B` (27μs)                 |
+
+### Faster algorithms
+
+When you need expansion, braces is still much faster.
+
+_(the following results were generated using `braces.expand()` and `minimatch.braceExpand()`, respectively)_
+
+| **Pattern**     | **braces**                  | **[minimatch][]**            |
+| ---             | ---                         | ---                          |
+| `{1..10000000}` | `78.89 MB` (2s 698ms 642μs) | `78.89 MB` (18s 601ms 974μs) |
+| `{1..1000000}`  | `6.89 MB` (458ms 576μs)     | `6.89 MB` (1s 491ms 621μs)   |
+| `{1..100000}`   | `588.89 kB` (20ms 728μs)    | `588.89 kB` (156ms 919μs)    |
+| `{1..10000}`    | `48.89 kB` (2ms 202μs)      | `48.89 kB` (13ms 641μs)      |
+| `{1..1000}`     | `3.89 kB` (1ms 796μs)       | `3.89 kB` (1ms 958μs)        |
+| `{1..100}`      | `291 B` (424μs)             | `291 B` (211μs)              |
+| `{1..10}`       | `20 B` (487μs)              | `20 B` (72μs)                |
+| `{1..3}`        | `5 B` (166μs)               | `5 B` (27μs)                 |
+
+If you'd like to run these comparisons yourself, see [test/support/generate.js](test/support/generate.js).
+
+## Benchmarks
+
+### Running benchmarks
+
+Install dev dependencies:
+
+```bash
+npm i -d && npm benchmark
+```
+
+### Latest results
+
+Braces is more accurate, without sacrificing performance.
+
+```bash
+# range (expanded)
+  braces x 29,040 ops/sec ±3.69% (91 runs sampled))
+  minimatch x 4,735 ops/sec ±1.28% (90 runs sampled)
+
+# range (optimized for regex)
+  braces x 382,878 ops/sec ±0.56% (94 runs sampled)
+  minimatch x 1,040 ops/sec ±0.44% (93 runs sampled)
+
+# nested ranges (expanded)
+  braces x 19,744 ops/sec ±2.27% (92 runs sampled))
+  minimatch x 4,579 ops/sec ±0.50% (93 runs sampled)
+
+# nested ranges (optimized for regex)
+  braces x 246,019 ops/sec ±2.02% (93 runs sampled)
+  minimatch x 1,028 ops/sec ±0.39% (94 runs sampled)
+
+# set (expanded) 
+  braces x 138,641 ops/sec ±0.53% (95 runs sampled)
+  minimatch x 219,582 ops/sec ±0.98% (94 runs sampled)
+
+# set (optimized for regex)
+  braces x 388,408 ops/sec ±0.41% (95 runs sampled)
+  minimatch x 44,724 ops/sec ±0.91% (89 runs sampled)
+
+# nested sets (expanded)
+  braces x 84,966 ops/sec ±0.48% (94 runs sampled)
+  minimatch x 140,720 ops/sec ±0.37% (95 runs sampled)
+
+# nested sets (optimized for regex)
+  braces x 263,340 ops/sec ±2.06% (92 runs sampled)
+  minimatch x 28,714 ops/sec ±0.40% (90 runs sampled)
+```
+
+## About
+
+<details>
+<summary><strong>Contributing</strong></summary>
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).
+
+</details>
+
+<details>
+<summary><strong>Running Tests</strong></summary>
+
+Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
+
+```sh
+$ npm install && npm test
+```
+
+</details>
+
+<details>
+<summary><strong>Building docs</strong></summary>
+
+_(This project's readme.md is generated by [verb](https://github.com/verbose/verb-generate-readme), please don't edit the readme directly. Any changes to the readme must be made in the [.verb.md](.verb.md) readme template.)_
+
+To generate the readme, run the following command:
+
+```sh
+$ npm install -g verbose/verb#dev verb-generate-readme && verb
+```
+
+</details>
+
+### Contributors
+
+| **Commits** | **Contributor** |  
+| --- | --- |  
+| 197 | [jonschlinkert](https://github.com/jonschlinkert) |  
+| 4   | [doowb](https://github.com/doowb) |  
+| 1   | [es128](https://github.com/es128) |  
+| 1   | [eush77](https://github.com/eush77) |  
+| 1   | [hemanth](https://github.com/hemanth) |  
+| 1   | [wtgtybhertgeghgtwtg](https://github.com/wtgtybhertgeghgtwtg) |  
+
+### Author
+
+**Jon Schlinkert**
+
+* [GitHub Profile](https://github.com/jonschlinkert)
+* [Twitter Profile](https://twitter.com/jonschlinkert)
+* [LinkedIn Profile](https://linkedin.com/in/jonschlinkert)
+
+### License
+
+Copyright © 2019, [Jon Schlinkert](https://github.com/jonschlinkert).
+Released under the [MIT License](LICENSE).
+
+***
+
+_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.8.0, on April 08, 2019._
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/node_modules/get-stream/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/node_modules/get-stream/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/node_modules/get-stream/readme.md)
+# get-stream [![Build Status](https://travis-ci.com/sindresorhus/get-stream.svg?branch=master)](https://travis-ci.com/github/sindresorhus/get-stream)
+
+> Get a stream as a string, buffer, or array
+
+## Install
+
+```
+$ npm install get-stream
+```
+
+## Usage
+
+```js
+const fs = require('fs');
+const getStream = require('get-stream');
+
+(async () => {
+	const stream = fs.createReadStream('unicorn.txt');
+
+	console.log(await getStream(stream));
+	/*
+	              ,,))))))));,
+	           __)))))))))))))),
+	\|/       -\(((((''''((((((((.
+	-*-==//////((''  .     `)))))),
+	/|\      ))| o    ;-.    '(((((                                  ,(,
+	         ( `|    /  )    ;))))'                               ,_))^;(~
+	            |   |   |   ,))((((_     _____------~~~-.        %,;(;(>';'~
+	            o_);   ;    )))(((` ~---~  `::           \      %%~~)(v;(`('~
+	                  ;    ''''````         `:       `:::|\,__,%%    );`'; ~
+	                 |   _                )     /      `:|`----'     `-'
+	           ______/\/~    |                 /        /
+	         /~;;.____/;;'  /          ___--,-(   `;;;/
+	        / //  _;______;'------~~~~~    /;;/\    /
+	       //  | |                        / ;   \;;,\
+	      (<_  | ;                      /',/-----'  _>
+	       \_| ||_                     //~;~~~~~~~~~
+	           `\_|                   (,~~
+	                                   \~\
+	                                    ~~
+	*/
+})();
+```
+
+## API
+
+The methods returns a promise that resolves when the `end` event fires on the stream, indicating that there is no more data to be read. The stream is switched to flowing mode.
+
+### getStream(stream, options?)
+
+Get the `stream` as a string.
+
+#### options
+
+Type: `object`
+
+##### encoding
+
+Type: `string`\
+Default: `'utf8'`
+
+[Encoding](https://nodejs.org/api/buffer.html#buffer_buffer) of the incoming stream.
+
+##### maxBuffer
+
+Type: `number`\
+Default: `Infinity`
+
+Maximum length of the returned string. If it exceeds this value before the stream ends, the promise will be rejected with a `getStream.MaxBufferError` error.
+
+### getStream.buffer(stream, options?)
+
+Get the `stream` as a buffer.
+
+It honors the `maxBuffer` option as above, but it refers to byte length rather than string length.
+
+### getStream.array(stream, options?)
+
+Get the `stream` as an array of values.
+
+It honors both the `maxBuffer` and `encoding` options. The behavior changes slightly based on the encoding chosen:
+
+- When `encoding` is unset, it assumes an [object mode stream](https://nodesource.com/blog/understanding-object-streams/) and collects values emitted from `stream` unmodified. In this case `maxBuffer` refers to the number of items in the array (not the sum of their sizes).
+
+- When `encoding` is set to `buffer`, it collects an array of buffers. `maxBuffer` refers to the summed byte lengths of every buffer in the array.
+
+- When `encoding` is set to anything else, it collects an array of strings. `maxBuffer` refers to the summed character lengths of every string in the array.
+
+## Errors
+
+If the input stream emits an `error` event, the promise will be rejected with the error. The buffered data will be attached to the `bufferedData` property of the error.
+
+```js
+(async () => {
+	try {
+		await getStream(streamThatErrorsAtTheEnd('unicorn'));
+	} catch (error) {
+		console.log(error.bufferedData);
+		//=> 'unicorn'
+	}
+})()
+```
+
+## FAQ
+
+### How is this different from [`concat-stream`](https://github.com/maxogden/concat-stream)?
+
+This module accepts a stream instead of being one and returns a promise instead of using a callback. The API is simpler and it only supports returning a string, buffer, or array. It doesn't have a fragile type inference. You explicitly choose what you want. And it doesn't depend on the huge `readable-stream` package.
+
+## Related
+
+- [get-stdin](https://github.com/sindresorhus/get-stdin) - Get stdin as a string or buffer
+
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-get-stream?utm_source=npm-get-stream&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/node_modules/lowercase-keys/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/node_modules/lowercase-keys/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/node_modules/lowercase-keys/readme.md)
+# lowercase-keys [![Build Status](https://travis-ci.org/sindresorhus/lowercase-keys.svg?branch=master)](https://travis-ci.org/sindresorhus/lowercase-keys)
+
+> Lowercase the keys of an object
+
+
+## Install
+
+```
+$ npm install lowercase-keys
+```
+
+
+## Usage
+
+```js
+const lowercaseKeys = require('lowercase-keys');
+
+lowercaseKeys({FOO: true, bAr: false});
+//=> {foo: true, bar: false}
+```
+
+
+## API
+
+### lowercaseKeys(object)
+
+Returns a new object with the keys lowercased.
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/README.md](Github/bgoonz-master/bgoonz-master/node_modules/cacheable-request/README.md)
+# cacheable-request
+
+> Wrap native HTTP requests with RFC compliant cache support
+
+[![Build Status](https://travis-ci.org/lukechilds/cacheable-request.svg?branch=master)](https://travis-ci.org/lukechilds/cacheable-request)
+[![Coverage Status](https://coveralls.io/repos/github/lukechilds/cacheable-request/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/cacheable-request?branch=master)
+[![npm](https://img.shields.io/npm/dm/cacheable-request.svg)](https://www.npmjs.com/package/cacheable-request)
+[![npm](https://img.shields.io/npm/v/cacheable-request.svg)](https://www.npmjs.com/package/cacheable-request)
+
+[RFC 7234](http://httpwg.org/specs/rfc7234.html) compliant HTTP caching for native Node.js HTTP/HTTPS requests. Caching works out of the box in memory or is easily pluggable with a wide range of storage adapters.
+
+**Note:** This is a low level wrapper around the core HTTP modules, it's not a high level request library.
+
+## Features
+
+- Only stores cacheable responses as defined by RFC 7234
+- Fresh cache entries are served directly from cache
+- Stale cache entries are revalidated with `If-None-Match`/`If-Modified-Since` headers
+- 304 responses from revalidation requests use cached body
+- Updates `Age` header on cached responses
+- Can completely bypass cache on a per request basis
+- In memory cache by default
+- Official support for Redis, MongoDB, SQLite, PostgreSQL and MySQL storage adapters
+- Easily plug in your own or third-party storage adapters
+- If DB connection fails, cache is automatically bypassed ([disabled by default](#optsautomaticfailover))
+- Adds cache support to any existing HTTP code with minimal changes
+- Uses [http-cache-semantics](https://github.com/pornel/http-cache-semantics) internally for HTTP RFC 7234 compliance
+
+## Install
+
+```shell
+npm install cacheable-request
+```
+
+## Usage
+
+```js
+const http = require('http');
+const CacheableRequest = require('cacheable-request');
+
+// Then instead of
+const req = http.request('http://example.com', cb);
+req.end();
+
+// You can do
+const cacheableRequest = new CacheableRequest(http.request);
+const cacheReq = cacheableRequest('http://example.com', cb);
+cacheReq.on('request', req => req.end());
+// Future requests to 'example.com' will be returned from cache if still valid
+
+// You pass in any other http.request API compatible method to be wrapped with cache support:
+const cacheableRequest = new CacheableRequest(https.request);
+const cacheableRequest = new CacheableRequest(electron.net);
+```
+
+## Storage Adapters
+
+`cacheable-request` uses [Keyv](https://github.com/lukechilds/keyv) to support a wide range of storage adapters.
+
+For example, to use Redis as a cache backend, you just need to install the official Redis Keyv storage adapter:
+
+```
+npm install @keyv/redis
+```
+
+And then you can pass `CacheableRequest` your connection string:
+
+```js
+const cacheableRequest = new CacheableRequest(http.request, 'redis://user:pass@localhost:6379');
+```
+
+[View all official Keyv storage adapters.](https://github.com/lukechilds/keyv#official-storage-adapters)
+
+Keyv also supports anything that follows the Map API so it's easy to write your own storage adapter or use a third-party solution.
+
+e.g The following are all valid storage adapters
+
+```js
+const storageAdapter = new Map();
+// or
+const storageAdapter = require('./my-storage-adapter');
+// or
+const QuickLRU = require('quick-lru');
+const storageAdapter = new QuickLRU({ maxSize: 1000 });
+
+const cacheableRequest = new CacheableRequest(http.request, storageAdapter);
+```
+
+View the [Keyv docs](https://github.com/lukechilds/keyv) for more information on how to use storage adapters.
+
+## API
+
+### new cacheableRequest(request, [storageAdapter])
+
+Returns the provided request function wrapped with cache support.
+
+#### request
+
+Type: `function`
+
+Request function to wrap with cache support. Should be [`http.request`](https://nodejs.org/api/http.html#http_http_request_options_callback) or a similar API compatible request function.
+
+#### storageAdapter
+
+Type: `Keyv storage adapter`<br>
+Default: `new Map()`
+
+A [Keyv](https://github.com/lukechilds/keyv) storage adapter instance, or connection string if using with an official Keyv storage adapter.
+
+### Instance
+
+#### cacheableRequest(opts, [cb])
+
+Returns an event emitter.
+
+##### opts
+
+Type: `object`, `string`
+
+- Any of the default request functions options.
+- Any [`http-cache-semantics`](https://github.com/kornelski/http-cache-semantics#constructor-options) options.
+- Any of the following:
+
+###### opts.cache
+
+Type: `boolean`<br>
+Default: `true`
+
+If the cache should be used. Setting this to false will completely bypass the cache for the current request.
+
+###### opts.strictTtl
+
+Type: `boolean`<br>
+Default: `false`
+
+If set to `true` once a cached resource has expired it is deleted and will have to be re-requested.
+
+If set to `false` (default), after a cached resource's TTL expires it is kept in the cache and will be revalidated on the next request with `If-None-Match`/`If-Modified-Since` headers.
+
+###### opts.maxTtl
+
+Type: `number`<br>
+Default: `undefined`
+
+Limits TTL. The `number` represents milliseconds.
+
+###### opts.automaticFailover
+
+Type: `boolean`<br>
+Default: `false`
+
+When set to `true`, if the DB connection fails we will automatically fallback to a network request. DB errors will still be emitted to notify you of the problem even though the request callback may succeed.
+
+###### opts.forceRefresh
+
+Type: `boolean`<br>
+Default: `false`
+
+Forces refreshing the cache. If the response could be retrieved from the cache, it will perform a new request and override the cache instead.
+
+##### cb
+
+Type: `function`
+
+The callback function which will receive the response as an argument.
+
+The response can be either a [Node.js HTTP response stream](https://nodejs.org/api/http.html#http_class_http_incomingmessage) or a [responselike object](https://github.com/lukechilds/responselike). The response will also have a `fromCache` property set with a boolean value.
+
+##### .on('request', request)
+
+`request` event to get the request object of the request.
+
+**Note:** This event will only fire if an HTTP request is actually made, not when a response is retrieved from cache. However, you should always handle the `request` event to end the request and handle any potential request errors.
+
+##### .on('response', response)
+
+`response` event to get the response object from the HTTP request or cache.
+
+##### .on('error', error)
+
+`error` event emitted in case of an error with the cache.
+
+Errors emitted here will be an instance of `CacheableRequest.RequestError` or `CacheableRequest.CacheError`. You will only ever receive a `RequestError` if the request function throws (normally caused by invalid user input). Normal request errors should be handled inside the `request` event.
+
+To properly handle all error scenarios you should use the following pattern:
+
+```js
+cacheableRequest('example.com', cb)
+  .on('error', err => {
+    if (err instanceof CacheableRequest.CacheError) {
+      handleCacheError(err); // Cache error
+    } else if (err instanceof CacheableRequest.RequestError) {
+      handleRequestError(err); // Request function thrown
+    }
+  })
+  .on('request', req => {
+    req.on('error', handleRequestError); // Request error emitted
+    req.end();
+  });
+```
+
+**Note:** Database connection errors are emitted here, however `cacheable-request` will attempt to re-request the resource and bypass the cache on a connection error. Therefore a database connection error doesn't necessarily mean the request won't be fulfilled.
+
+## License
+
+MIT © Luke Childs
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/camelcase/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/camelcase/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/camelcase/readme.md)
+# camelcase [![Build Status](https://travis-ci.org/sindresorhus/camelcase.svg?branch=master)](https://travis-ci.org/sindresorhus/camelcase)
+
+> Convert a dash/dot/underscore/space separated string to camelCase or PascalCase: `foo-bar` → `fooBar`
+
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-camelcase?utm_source=npm-camelcase&utm_medium=referral&utm_campaign=readme">Get professional support for 'camelcase' with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
+
+---
+
+## Install
+
+```
+$ npm install camelcase
+```
+
+
+## Usage
+
+```js
+const camelCase = require('camelcase');
+
+camelCase('foo-bar');
+//=> 'fooBar'
+
+camelCase('foo_bar');
+//=> 'fooBar'
+
+camelCase('Foo-Bar');
+//=> 'fooBar'
+
+camelCase('Foo-Bar', {pascalCase: true});
+//=> 'FooBar'
+
+camelCase('--foo.bar', {pascalCase: false});
+//=> 'fooBar'
+
+camelCase('foo bar');
+//=> 'fooBar'
+
+console.log(process.argv[3]);
+//=> '--foo-bar'
+camelCase(process.argv[3]);
+//=> 'fooBar'
+
+camelCase(['foo', 'bar']);
+//=> 'fooBar'
+
+camelCase(['__foo__', '--bar'], {pascalCase: true});
+//=> 'FooBar'
+```
+
+
+## API
+
+### camelCase(input, [options])
+
+#### input
+
+Type: `string` `string[]`
+
+String to convert to camel case.
+
+#### options
+
+Type: `Object`
+
+##### pascalCase
+
+Type: `boolean`<br>
+Default: `false`
+
+Uppercase the first character: `foo-bar` → `FooBar`
+
+
+## Security
+
+To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security). Tidelift will coordinate the fix and disclosure.
+
+
+## Related
+
+- [decamelize](https://github.com/sindresorhus/decamelize) - The inverse of this module
+- [uppercamelcase](https://github.com/SamVerschueren/uppercamelcase) - Like this module, but to PascalCase instead of camelCase
+- [titleize](https://github.com/sindresorhus/titleize) - Capitalize every word in string
+- [humanize-string](https://github.com/sindresorhus/humanize-string) - Convert a camelized/dasherized/underscored string into a humanized one
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/check-links/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/check-links/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/check-links/readme.md)
+# check-links
+
+> Robustly checks an array of URLs for liveness.
+
+[![NPM](https://img.shields.io/npm/v/check-links.svg)](https://www.npmjs.com/package/check-links) [![Build Status](https://travis-ci.com/transitive-bullshit/check-links.svg?branch=master)](https://travis-ci.com/transitive-bullshit/check-links) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+For each URL, it first attempts an HTTP HEAD request, and if that fails it will attempt
+an HTTP GET request, retrying several times by default with exponential falloff.
+
+This module handles concurrency and retry logic so you can check the status of thousands
+of links quickly and robustly.
+
+## Install
+
+This module requires `node >= 8`.
+
+```bash
+npm install --save check-links
+```
+
+## Usage
+
+```js
+const checkLinks = require('check-links')
+
+const results = await checkLinks([
+  'https://foo.com',
+  'https://404.com',
+])
+
+results['https://foo.com'] // { status: 'alive', statusCode: 200 }
+results['https://404.com'] // { status: 'dead', statusCode: 404 }
+
+// example using a custom timeout and retry count
+const results2 = await checkLinks([
+  'https://foo.com',
+  'https://404.com',
+], {
+  timeout: 30000,
+  retry: 1
+})
+```
+
+-   Supports HTTP and HTTPS urls.
+-   Defaults to a 30 second timeout per HTTP request with 2 retries.
+-   Defaults to a Mac OS Chrome `user-agent`.
+-   Defaults to following redirects.
+
+## API
+
+<!-- Generated by documentation.js. Update this documentation by updating the source code. -->
+
+### [checkLinks](https://github.com/transitive-bullshit/check-links/blob/cf5fbcf0fc0bd150097034887b7c132384794549/index.js#L34-L51)
+
+Robustly checks an array of URLs for liveness.
+
+For each URL, it first attempts an HTTP HEAD request, and if that fails it will attempt
+an HTTP GET request, retrying several times by default with exponential falloff.
+
+Returns a `Map<String, LivenessResult>` that maps each input URL to an object
+containing `status` and possibly `statusCode`.
+
+`LivenessResult.status` will be one of the following:
+
+-   `alive` if the URL is reachable (2XX status code)
+-   `dead` if the URL is not reachable
+-   `invalid` if the URL was parsed as invalid or used an unsupported protocol
+
+`LivenessResult.statusCode` will contain an integer HTTP status code if that URL resolved
+properly.
+
+Type: `function (urls, opts)`
+
+-   `urls` **[array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>** Array of urls to test
+-   `opts` **[object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)?** Optional configuration options (any extra options are passed to [got](https://github.com/sindresorhus/got#options))
+    -   `opts.concurrency` **[number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)** Maximum number of urls to resolve concurrently (optional, default `8`)
+
+## Related
+
+-   [remark-lint-no-dead-urls](https://github.com/davidtheclark/remark-lint-no-dead-urls) - Remark lint plugin that inspired this module.
+
+## License
+
+MIT © [Travis Fischer](https://github.com/transitive-bullshit)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/cliui/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/cliui/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/cliui/CHANGELOG.md)
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [6.0.0](https://www.github.com/yargs/cliui/compare/v5.0.0...v6.0.0) (2019-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* update deps, drop Node 6
+
+### Code Refactoring
+
+* update deps, drop Node 6 ([62056df](https://www.github.com/yargs/cliui/commit/62056df))
+
+## [5.0.0](https://github.com/yargs/cliui/compare/v4.1.0...v5.0.0) (2019-04-10)
+
+
+### Bug Fixes
+
+* Update wrap-ansi to fix compatibility with latest versions of chalk. ([#60](https://github.com/yargs/cliui/issues/60)) ([7bf79ae](https://github.com/yargs/cliui/commit/7bf79ae))
+
+
+### BREAKING CHANGES
+
+* Drop support for node < 6.
+
+
+
+<a name="4.1.0"></a>
+## [4.1.0](https://github.com/yargs/cliui/compare/v4.0.0...v4.1.0) (2018-04-23)
+
+
+### Features
+
+* add resetOutput method ([#57](https://github.com/yargs/cliui/issues/57)) ([7246902](https://github.com/yargs/cliui/commit/7246902))
+
+
+
+<a name="4.0.0"></a>
+## [4.0.0](https://github.com/yargs/cliui/compare/v3.2.0...v4.0.0) (2017-12-18)
+
+
+### Bug Fixes
+
+* downgrades strip-ansi to version 3.0.1 ([#54](https://github.com/yargs/cliui/issues/54)) ([5764c46](https://github.com/yargs/cliui/commit/5764c46))
+* set env variable FORCE_COLOR. ([#56](https://github.com/yargs/cliui/issues/56)) ([7350e36](https://github.com/yargs/cliui/commit/7350e36))
+
+
+### Chores
+
+* drop support for node < 4 ([#53](https://github.com/yargs/cliui/issues/53)) ([b105376](https://github.com/yargs/cliui/commit/b105376))
+
+
+### Features
+
+* add fallback for window width ([#45](https://github.com/yargs/cliui/issues/45)) ([d064922](https://github.com/yargs/cliui/commit/d064922))
+
+
+### BREAKING CHANGES
+
+* officially drop support for Node < 4
+
+
+
+<a name="3.2.0"></a>
+## [3.2.0](https://github.com/yargs/cliui/compare/v3.1.2...v3.2.0) (2016-04-11)
+
+
+### Bug Fixes
+
+* reduces tarball size ([acc6c33](https://github.com/yargs/cliui/commit/acc6c33))
+
+### Features
+
+* adds standard-version for release management ([ff84e32](https://github.com/yargs/cliui/commit/ff84e32))
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/cliui/README.md](Github/bgoonz-master/bgoonz-master/node_modules/cliui/README.md)
+
+# cliui
+
+[![Build Status](https://travis-ci.org/yargs/cliui.svg)](https://travis-ci.org/yargs/cliui)
+[![Coverage Status](https://coveralls.io/repos/yargs/cliui/badge.svg?branch=)](https://coveralls.io/r/yargs/cliui?branch=)
+[![NPM version](https://img.shields.io/npm/v/cliui.svg)](https://www.npmjs.com/package/cliui)
+[![Standard Version](https://img.shields.io/badge/release-standard%20version-brightgreen.svg)](https://github.com/conventional-changelog/standard-version)
+
+easily create complex multi-column command-line-interfaces.
+
+## Example
+
+```js
+var ui = require('cliui')()
+
+ui.div('Usage: $0 [command] [options]')
+
+ui.div({
+  text: 'Options:',
+  padding: [2, 0, 2, 0]
+})
+
+ui.div(
+  {
+    text: "-f, --file",
+    width: 20,
+    padding: [0, 4, 0, 4]
+  },
+  {
+    text: "the file to load." +
+      chalk.green("(if this description is long it wraps).")
+    ,
+    width: 20
+  },
+  {
+    text: chalk.red("[required]"),
+    align: 'right'
+  }
+)
+
+console.log(ui.toString())
+```
+
+<img width="500" src="screenshot.png">
+
+## Layout DSL
+
+cliui exposes a simple layout DSL:
+
+If you create a single `ui.div`, passing a string rather than an
+object:
+
+* `\n`: characters will be interpreted as new rows.
+* `\t`: characters will be interpreted as new columns.
+* `\s`: characters will be interpreted as padding.
+
+**as an example...**
+
+```js
+var ui = require('./')({
+  width: 60
+})
+
+ui.div(
+  'Usage: node ./bin/foo.js\n' +
+  '  <regex>\t  provide a regex\n' +
+  '  <glob>\t  provide a glob\t [required]'
+)
+
+console.log(ui.toString())
+```
+
+**will output:**
+
+```shell
+Usage: node ./bin/foo.js
+  <regex>  provide a regex
+  <glob>   provide a glob          [required]
+```
+
+## Methods
+
+```js
+cliui = require('cliui')
+```
+
+### cliui({width: integer})
+
+Specify the maximum width of the UI being generated.
+If no width is provided, cliui will try to get the current window's width and use it, and if that doesn't work, width will be set to `80`.
+
+### cliui({wrap: boolean})
+
+Enable or disable the wrapping of text in a column.
+
+### cliui.div(column, column, column)
+
+Create a row with any number of columns, a column
+can either be a string, or an object with the following
+options:
+
+* **text:** some text to place in the column.
+* **width:** the width of a column.
+* **align:** alignment, `right` or `center`.
+* **padding:** `[top, right, bottom, left]`.
+* **border:** should a border be placed around the div?
+
+### cliui.span(column, column, column)
+
+Similar to `div`, except the next row will be appended without
+a new line being created.
+
+### cliui.resetOutput()
+
+Resets the UI elements of the current cliui instance, maintaining the values
+set for `width` and `wrap`.
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/clone-response/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/clone-response/README.md](Github/bgoonz-master/bgoonz-master/node_modules/clone-response/README.md)
+# clone-response
+
+> Clone a Node.js HTTP response stream
+
+[![Build Status](https://travis-ci.org/lukechilds/clone-response.svg?branch=master)](https://travis-ci.org/lukechilds/clone-response)
+[![Coverage Status](https://coveralls.io/repos/github/lukechilds/clone-response/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/clone-response?branch=master)
+[![npm](https://img.shields.io/npm/dm/clone-response.svg)](https://www.npmjs.com/package/clone-response)
+[![npm](https://img.shields.io/npm/v/clone-response.svg)](https://www.npmjs.com/package/clone-response)
+
+Returns a new stream and copies over all properties and methods from the original response giving you a complete duplicate.
+
+This is useful in situations where you need to consume the response stream but also want to pass an unconsumed stream somewhere else to be consumed later.
+
+## Install
+
+```shell
+npm install --save clone-response
+```
+
+## Usage
+
+```js
+const http = require('http');
+const cloneResponse = require('clone-response');
+
+http.get('http://example.com', response => {
+  const clonedResponse = cloneResponse(response);
+  response.pipe(process.stdout);
+
+  setImmediate(() => {
+    // The response stream has already been consumed by the time this executes,
+    // however the cloned response stream is still available.
+    doSomethingWithResponse(clonedResponse);
+  });
+});
+```
+
+Please bear in mind that the process of cloning a stream consumes it. However, you can consume a stream multiple times in the same tick, therefore allowing you to create multiple clones. e.g:
+
+```js
+const clone1 = cloneResponse(response);
+const clone2 = cloneResponse(response);
+// response can still be consumed in this tick but cannot be consumed if passed
+// into any async callbacks. clone1 and clone2 can be passed around and be
+// consumed in the future.
+```
+
+## API
+
+### cloneResponse(response)
+
+Returns a clone of the passed in response.
+
+#### response
+
+Type: `stream`
+
+A [Node.js HTTP response stream](https://nodejs.org/api/http.html#http_class_http_incomingmessage) to clone.
+
+## License
+
+MIT © Luke Childs
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/color-convert/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/color-convert/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/color-convert/CHANGELOG.md)
+# 1.0.0 - 2016-01-07
+
+- Removed: unused speed test
+- Added: Automatic routing between previously unsupported conversions
+([#27](https://github.com/Qix-/color-convert/pull/27))
+- Removed: `xxx2xxx()` and `xxx2xxxRaw()` functions
+([#27](https://github.com/Qix-/color-convert/pull/27))
+- Removed: `convert()` class
+([#27](https://github.com/Qix-/color-convert/pull/27))
+- Changed: all functions to lookup dictionary
+([#27](https://github.com/Qix-/color-convert/pull/27))
+- Changed: `ansi` to `ansi256`
+([#27](https://github.com/Qix-/color-convert/pull/27))
+- Fixed: argument grouping for functions requiring only one argument
+([#27](https://github.com/Qix-/color-convert/pull/27))
+
+# 0.6.0 - 2015-07-23
+
+- Added: methods to handle
+[ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors) 16/256 colors:
+  - rgb2ansi16
+  - rgb2ansi
+  - hsl2ansi16
+  - hsl2ansi
+  - hsv2ansi16
+  - hsv2ansi
+  - hwb2ansi16
+  - hwb2ansi
+  - cmyk2ansi16
+  - cmyk2ansi
+  - keyword2ansi16
+  - keyword2ansi
+  - ansi162rgb
+  - ansi162hsl
+  - ansi162hsv
+  - ansi162hwb
+  - ansi162cmyk
+  - ansi162keyword
+  - ansi2rgb
+  - ansi2hsl
+  - ansi2hsv
+  - ansi2hwb
+  - ansi2cmyk
+  - ansi2keyword
+([#18](https://github.com/harthur/color-convert/pull/18))
+
+# 0.5.3 - 2015-06-02
+
+- Fixed: hsl2hsv does not return `NaN` anymore when using `[0,0,0]`
+([#15](https://github.com/harthur/color-convert/issues/15))
+
+---
+
+Check out commit logs for older releases
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/color-convert/README.md](Github/bgoonz-master/bgoonz-master/node_modules/color-convert/README.md)
+
+# color-convert
+
+[![Build Status](https://travis-ci.org/Qix-/color-convert.svg?branch=master)](https://travis-ci.org/Qix-/color-convert)
+
+Color-convert is a color conversion library for JavaScript and node.
+It converts all ways between `rgb`, `hsl`, `hsv`, `hwb`, `cmyk`, `ansi`, `ansi16`, `hex` strings, and CSS `keyword`s (will round to closest):
+
+```js
+var convert = require('color-convert');
+
+convert.rgb.hsl(140, 200, 100);             // [96, 48, 59]
+convert.keyword.rgb('blue');                // [0, 0, 255]
+
+var rgbChannels = convert.rgb.channels;     // 3
+var cmykChannels = convert.cmyk.channels;   // 4
+var ansiChannels = convert.ansi16.channels; // 1
+```
+
+# Install
+
+```console
+$ npm install color-convert
+```
+
+# API
+
+Simply get the property of the _from_ and _to_ conversion that you're looking for.
+
+All functions have a rounded and unrounded variant. By default, return values are rounded. To get the unrounded (raw) results, simply tack on `.raw` to the function.
+
+All 'from' functions have a hidden property called `.channels` that indicates the number of channels the function expects (not including alpha).
+
+```js
+var convert = require('color-convert');
+
+// Hex to LAB
+convert.hex.lab('DEADBF');         // [ 76, 21, -2 ]
+convert.hex.lab.raw('DEADBF');     // [ 75.56213190997677, 20.653827952644754, -2.290532499330533 ]
+
+// RGB to CMYK
+convert.rgb.cmyk(167, 255, 4);     // [ 35, 0, 98, 0 ]
+convert.rgb.cmyk.raw(167, 255, 4); // [ 34.509803921568626, 0, 98.43137254901961, 0 ]
+```
+
+### Arrays
+All functions that accept multiple arguments also support passing an array.
+
+Note that this does **not** apply to functions that convert from a color that only requires one value (e.g. `keyword`, `ansi256`, `hex`, etc.)
+
+```js
+var convert = require('color-convert');
+
+convert.rgb.hex(123, 45, 67);      // '7B2D43'
+convert.rgb.hex([123, 45, 67]);    // '7B2D43'
+```
+
+## Routing
+
+Conversions that don't have an _explicitly_ defined conversion (in [conversions.js](conversions.js)), but can be converted by means of sub-conversions (e.g. XYZ -> **RGB** -> CMYK), are automatically routed together. This allows just about any color model supported by `color-convert` to be converted to any other model, so long as a sub-conversion path exists. This is also true for conversions requiring more than one step in between (e.g. LCH -> **LAB** -> **XYZ** -> **RGB** -> Hex).
+
+Keep in mind that extensive conversions _may_ result in a loss of precision, and exist only to be complete. For a list of "direct" (single-step) conversions, see [conversions.js](conversions.js).
+
+# Contribute
+
+If there is a new model you would like to support, or want to add a direct conversion between two existing models, please send us a pull request.
+
+# License
+Copyright &copy; 2011-2016, Heather Arthur and Josh Junon. Licensed under the [MIT License](LICENSE).
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/color-name/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/color-name/README.md](Github/bgoonz-master/bgoonz-master/node_modules/color-name/README.md)
+A JSON with color names and its values. Based on http://dev.w3.org/csswg/css-color/#named-colors.
+
+[![NPM](https://nodei.co/npm/color-name.png?mini=true)](https://nodei.co/npm/color-name/)
+
+
+```js
+var colors = require('color-name');
+colors.red //[255,0,0]
+```
+
+<a href="LICENSE"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg" width="120"/></a>
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/colors/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/colors/README.md](Github/bgoonz-master/bgoonz-master/node_modules/colors/README.md)
+# colors.js
+[![Build Status](https://travis-ci.org/Marak/colors.js.svg?branch=master)](https://travis-ci.org/Marak/colors.js)
+[![version](https://img.shields.io/npm/v/colors.svg)](https://www.npmjs.org/package/colors)
+[![dependencies](https://david-dm.org/Marak/colors.js.svg)](https://david-dm.org/Marak/colors.js)
+[![devDependencies](https://david-dm.org/Marak/colors.js/dev-status.svg)](https://david-dm.org/Marak/colors.js#info=devDependencies)
+
+Please check out the [roadmap](ROADMAP.md) for upcoming features and releases.  Please open Issues to provide feedback, and check the `develop` branch for the latest bleeding-edge updates.
+
+## get color and style in your node.js console
+
+![Demo](https://raw.githubusercontent.com/Marak/colors.js/master/screenshots/colors.png)
+
+## Installation
+
+    npm install colors
+
+## colors and styles!
+
+### text colors
+
+  - black
+  - red
+  - green
+  - yellow
+  - blue
+  - magenta
+  - cyan
+  - white
+  - gray
+  - grey
+
+### bright text colors
+
+  - brightRed
+  - brightGreen
+  - brightYellow
+  - brightBlue
+  - brightMagenta
+  - brightCyan
+  - brightWhite
+
+### background colors
+
+  - bgBlack
+  - bgRed
+  - bgGreen
+  - bgYellow
+  - bgBlue
+  - bgMagenta
+  - bgCyan
+  - bgWhite
+  - bgGray
+  - bgGrey
+
+### bright background colors
+
+  - bgBrightRed
+  - bgBrightGreen
+  - bgBrightYellow
+  - bgBrightBlue
+  - bgBrightMagenta
+  - bgBrightCyan
+  - bgBrightWhite
+
+### styles
+
+  - reset
+  - bold
+  - dim
+  - italic
+  - underline
+  - inverse
+  - hidden
+  - strikethrough
+
+### extras
+
+  - rainbow
+  - zebra
+  - america
+  - trap
+  - random
+
+
+## Usage
+
+By popular demand, `colors` now ships with two types of usages!
+
+The super nifty way
+
+```js
+var colors = require('colors');
+
+console.log('hello'.green); // outputs green text
+console.log('i like cake and pies'.underline.red) // outputs red underlined text
+console.log('inverse the color'.inverse); // inverses the color
+console.log('OMG Rainbows!'.rainbow); // rainbow
+console.log('Run the trap'.trap); // Drops the bass
+
+```
+
+or a slightly less nifty way which doesn't extend `String.prototype`
+
+```js
+var colors = require('colors/safe');
+
+console.log(colors.green('hello')); // outputs green text
+console.log(colors.red.underline('i like cake and pies')) // outputs red underlined text
+console.log(colors.inverse('inverse the color')); // inverses the color
+console.log(colors.rainbow('OMG Rainbows!')); // rainbow
+console.log(colors.trap('Run the trap')); // Drops the bass
+
+```
+
+I prefer the first way. Some people seem to be afraid of extending `String.prototype` and prefer the second way. 
+
+If you are writing good code you will never have an issue with the first approach. If you really don't want to touch `String.prototype`, the second usage will not touch `String` native object.
+
+## Enabling/Disabling Colors
+
+The package will auto-detect whether your terminal can use colors and enable/disable accordingly. When colors are disabled, the color functions do nothing. You can override this with a command-line flag:
+
+```bash
+node myapp.js --no-color
+node myapp.js --color=false
+
+node myapp.js --color
+node myapp.js --color=true
+node myapp.js --color=always
+
+FORCE_COLOR=1 node myapp.js
+```
+
+Or in code:
+
+```javascript
+var colors = require('colors');
+colors.enable();
+colors.disable();
+```
+
+## Console.log [string substitution](http://nodejs.org/docs/latest/api/console.html#console_console_log_data)
+
+```js
+var name = 'Marak';
+console.log(colors.green('Hello %s'), name);
+// outputs -> 'Hello Marak'
+```
+
+## Custom themes
+
+### Using standard API
+
+```js
+
+var colors = require('colors');
+
+colors.setTheme({
+  silly: 'rainbow',
+  input: 'grey',
+  verbose: 'cyan',
+  prompt: 'grey',
+  info: 'green',
+  data: 'grey',
+  help: 'cyan',
+  warn: 'yellow',
+  debug: 'blue',
+  error: 'red'
+});
+
+// outputs red text
+console.log("this is an error".error);
+
+// outputs yellow text
+console.log("this is a warning".warn);
+```
+
+### Using string safe API
+
+```js
+var colors = require('colors/safe');
+
+// set single property
+var error = colors.red;
+error('this is red');
+
+// set theme
+colors.setTheme({
+  silly: 'rainbow',
+  input: 'grey',
+  verbose: 'cyan',
+  prompt: 'grey',
+  info: 'green',
+  data: 'grey',
+  help: 'cyan',
+  warn: 'yellow',
+  debug: 'blue',
+  error: 'red'
+});
+
+// outputs red text
+console.log(colors.error("this is an error"));
+
+// outputs yellow text
+console.log(colors.warn("this is a warning"));
+
+```
+
+### Combining Colors
+
+```javascript
+var colors = require('colors');
+
+colors.setTheme({
+  custom: ['red', 'underline']
+});
+
+console.log('test'.custom);
+```
+
+*Protip: There is a secret undocumented style in `colors`. If you find the style you can summon him.*
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/commander/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/commander/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/commander/CHANGELOG.md)
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). (Format adopted after v3.0.0.)
+
+<!-- markdownlint-disable MD024 -->
+
+## [5.1.0] (2020-04-25)
+
+### Added
+
+- support for multiple command aliases, the first of which is shown in the auto-generated help ([#531], [#1236])
+- configuration support in `addCommand()` for `hidden` and `isDefault` ([#1232])
+
+### Fixed
+
+- omit masked help flags from the displayed help ([#645], [#1247])
+- remove old short help flag when change help flags using `helpOption` ([#1248])
+
+### Changed
+
+- remove use of `arguments` to improve auto-generated help in editors ([#1235])
+- rename `.command()` configuration `noHelp` to `hidden` (but not remove old support) ([#1232])
+- improvements to documentation
+- update dependencies
+- update tested versions of node
+- eliminate lint errors in TypeScript ([#1208])
+
+## [5.0.0] (2020-03-14)
+
+### Added
+
+* support for nested commands with action-handlers ([#1] [#764] [#1149])
+* `.addCommand()` for adding a separately configured command ([#764] [#1149])
+* allow a non-executable to be set as the default command ([#742] [#1149])
+* implicit help command when there are subcommands (previously only if executables) ([#1149])
+* customise implicit help command with `.addHelpCommand()` ([#1149])
+* display error message for unknown subcommand, by default ([#432] [#1088] [#1149])
+* display help for missing subcommand, by default ([#1088] [#1149])
+* combined short options as single argument may include boolean flags and value flag and value (e.g. `-a -b -p 80` can be written as `-abp80`) ([#1145])
+* `.parseOption()` includes short flag and long flag expansions ([#1145])
+* `.helpInformation()` returns help text as a string, previously a private routine ([#1169])
+* `.parse()` implicitly uses `process.argv` if arguments not specified ([#1172])
+* optionally specify where `.parse()` arguments "from", if not following node conventions ([#512] [#1172])
+* suggest help option along with unknown command error ([#1179])
+* TypeScript definition for `commands` property of `Command` ([#1184])
+* export `program` property ([#1195])
+* `createCommand` factory method to simplify subclassing ([#1191])
+
+### Fixed
+
+* preserve argument order in subcommands ([#508] [#962] [#1138])
+* do not emit `command:*` for executable subcommands ([#809] [#1149])
+* action handler called whether or not there are non-option arguments ([#1062] [#1149])
+* combining option short flag and value in single argument now works for subcommands ([#1145])
+* only add implicit help command when it will not conflict with other uses of argument ([#1153] [#1149])
+* implicit help command works with command aliases ([#948] [#1149])
+* options are validated whether or not there is an action handler ([#1149])
+
+### Changed
+
+* *Breaking* `.args` contains command arguments with just recognised options removed ([#1032] [#1138])
+* *Breaking* display error if required argument for command is missing ([#995] [#1149])
+* tighten TypeScript definition of custom option processing function passed to `.option()` ([#1119])
+* *Breaking* `.allowUnknownOption()` ([#802] [#1138])
+  * unknown options included in arguments passed to command action handler
+  * unknown options included in `.args`
+* only recognised option short flags and long flags are expanded (e.g. `-ab` or `--foo=bar`) ([#1145])
+* *Breaking* `.parseOptions()` ([#1138])
+  * `args` in returned result renamed `operands` and does not include anything after first unknown option
+  * `unknown` in returned result has arguments after first unknown option including operands, not just options and values
+* *Breaking* `.on('command:*', callback)` and other command events passed (changed) results from `.parseOptions`, i.e. operands and unknown  ([#1138])
+* refactor Option from prototype to class ([#1133])
+* refactor Command from prototype to class ([#1159])
+* changes to error handling ([#1165])
+  * throw for author error, not just display message
+  * preflight for variadic error
+  * add tips to missing subcommand executable
+* TypeScript fluent return types changed to be more subclass friendly, return `this` rather than `Command` ([#1180])
+* `.parseAsync` returns `Promise<this>` to be consistent with `.parse()` ([#1180])
+* update dependencies
+
+### Removed
+
+* removed EventEmitter from TypeScript definition for Command, eliminating implicit peer dependency on `@types/node` ([#1146])
+* removed private function `normalize` (the functionality has been integrated into `parseOptions`) ([#1145])
+* `parseExpectedArgs` is now private ([#1149])
+
+### Migration Tips
+
+If you use `.on('command:*')` or more complicated tests to detect an unrecognised subcommand, you may be able to delete the code and rely on the default behaviour.
+
+If you use `program.args` or more complicated tests to detect a missing subcommand, you may be able to delete the code and rely on the default behaviour.
+
+If you use `.command('*')` to add a default command, you may be be able to switch to `isDefault:true` with a named command.
+
+## [5.0.0-4] (2020-03-03)
+
+(Released in 5.0.0)
+
+## [5.0.0-3] (2020-02-20)
+
+(Released in 5.0.0)
+
+## [5.0.0-2] (2020-02-10)
+
+(Released in 5.0.0)
+
+## [5.0.0-1] (2020-02-08)
+
+(Released in 5.0.0)
+
+## [5.0.0-0] (2020-02-02)
+
+(Released in 5.0.0)
+
+## [4.1.1] (2020-02-02)
+
+### Fixed
+
+* TypeScript definition for `.action()` should include Promise for async ([#1157])
+
+## [4.1.0] (2020-01-06)
+
+### Added
+
+* two routines to change how option values are handled, and eliminate name clashes with command properties ([#933] [#1102])
+  * see storeOptionsAsProperties and passCommandToAction in README
+* `.parseAsync` to use instead of `.parse` if supply async action handlers ([#806] [#1118])
+
+### Fixed
+
+* Remove trailing blanks from wrapped help text ([#1096])
+
+### Changed
+
+* update dependencies
+* extend security coverage for Commander 2.x to 2020-02-03
+* improvements to README
+* improvements to TypeScript definition documentation
+* move old versions out of main CHANGELOG
+* removed explicit use of `ts-node` in tests
+
+## [4.0.1] (2019-11-12)
+
+### Fixed
+
+* display help when requested, even if there are missing required options ([#1091])
+
+## [4.0.0] (2019-11-02)
+
+### Added
+
+* automatically wrap and indent help descriptions for options and commands ([#1051])
+* `.exitOverride()` allows override of calls to `process.exit` for additional error handling and to keep program running ([#1040])
+* support for declaring required options with `.requiredOptions()` ([#1071])
+* GitHub Actions support ([#1027])
+* translation links in README
+
+### Changed
+
+* dev: switch tests from Sinon+Should to Jest with major rewrite of tests ([#1035])
+* call default subcommand even when there are unknown options ([#1047])
+* *Breaking* Commander is only officially supported on Node 8 and above, and requires Node 6 ([#1053])
+
+### Fixed
+
+* *Breaking* keep command object out of program.args when action handler called ([#1048])
+  * also, action handler now passed array of unknown arguments
+* complain about unknown options when program argument supplied and action handler ([#1049])
+  * this changes parameters to `command:*` event to include unknown arguments
+* removed deprecated `customFds` option from call to `child_process.spawn` ([#1052])
+* rework TypeScript declarations to bring all types into imported namespace ([#1081])
+
+### Migration Tips
+
+#### Testing for no arguments
+
+If you were previously using code like:
+
+```js
+if (!program.args.length) ...
+```
+
+a partial replacement is:
+
+```js
+if (program.rawArgs.length < 3) ...
+```
+
+## [4.0.0-1] Prerelease (2019-10-08)
+
+(Released in 4.0.0)
+
+## [4.0.0-0] Prerelease (2019-10-01)
+
+(Released in 4.0.0)
+
+## [2.20.1] (2019-09-29)
+
+### Fixed
+
+* Improve tracking of executable subcommands.
+
+### Changed
+
+* update development dependencies
+
+## [3.0.2] (2019-09-27)
+
+### Fixed
+
+* Improve tracking of executable subcommands.
+
+### Changed
+
+* update development dependencies
+
+## [3.0.1] (2019-08-30)
+
+### Added
+
+* .name and .usage to README ([#1010])
+* Table of Contents to README ([#1010])
+* TypeScript definition for `executableFile` in CommandOptions ([#1028])
+
+### Changed
+
+* consistently use `const` rather than `var` in README ([#1026])
+
+### Fixed
+
+* help for sub commands with custom executableFile ([#1018])
+
+## [3.0.0] / 2019-08-08
+
+* Add option to specify executable file name ([#999])
+  * e.g. `.command('clone', 'clone description', { executableFile: 'myClone' })`
+* Change docs for `.command` to contrast action handler vs git-style executable. ([#938] [#990])
+* **Breaking** Change TypeScript to use overloaded function for `.command`. ([#938] [#990])
+* Change to use straight quotes around strings in error messages (like 'this' instead of `this') ([#915])
+* Add TypeScript "reference types" for node ([#974])
+* Add support for hyphen as an option argument in subcommands ([#697])
+* Add support for a short option flag and its value to be concatenated for action handler subcommands ([#599])
+  * e.g. `-p 80` can also be supplied as `-p80`
+* Add executable arguments to spawn in win32, for git-style executables ([#611])
+  * e.g. `node --harmony myCommand.js clone`
+* Add parent command as prefix of subcommand in help ([#980])
+* Add optional custom description to `.version` ([#963])
+  * e.g. `program.version('0.0.1', '-v, --vers', 'output the current version')`
+* Add `.helpOption(flags, description)` routine to customise help flags and description ([#963])
+  * e.g. `.helpOption('-e, --HELP', 'read more information')`
+* Fix behavior of --no-* options ([#795])
+  * can now define both `--foo` and `--no-foo`
+  * **Breaking** custom event listeners: `--no-foo` on cli now emits `option:no-foo` (previously `option:foo`)
+  * **Breaking** default value: defining `--no-foo` after defining `--foo` leaves the default value unchanged (previously set it to false)
+  * allow boolean default value, such as from environment ([#987])
+* Increment inspector port for spawned subcommands ([#991])
+  * e.g. `node --inspect myCommand.js clone`
+
+### Migration Tips
+
+The custom event for a negated option like `--no-foo` is `option:no-foo` (previously `option:foo`).
+
+```js
+program
+  .option('--no-foo')
+  .on('option:no-foo', () => {
+    console.log('removing foo');
+  });
+```
+
+When using TypeScript, adding a command does not allow an explicit `undefined` for an unwanted executable description (e.g
+for a command with an action handler).
+
+```js
+program
+  .command('action1', undefined, { noHelp: true }) // No longer valid
+  .command('action2', { noHelp: true }) // Correct
+```
+
+## 3.0.0-0 Prerelease / 2019-07-28
+
+(Released as 3.0.0)
+
+## Older versions
+
+* [2.x](./changelogs/CHANGELOG-2.md)
+* [1.x](./changelogs/CHANGELOG-1.md)
+* [0.x](./changelogs/CHANGELOG-0.md)
+
+[#1]: https://github.com/tj/commander.js/issues/1
+[#432]: https://github.com/tj/commander.js/issues/432
+[#508]: https://github.com/tj/commander.js/issues/508
+[#512]: https://github.com/tj/commander.js/issues/512
+[#531]: https://github.com/tj/commander.js/issues/531
+[#599]: https://github.com/tj/commander.js/issues/599
+[#611]: https://github.com/tj/commander.js/issues/611
+[#645]: https://github.com/tj/commander.js/issues/645
+[#697]: https://github.com/tj/commander.js/issues/697
+[#742]: https://github.com/tj/commander.js/issues/742
+[#764]: https://github.com/tj/commander.js/issues/764
+[#795]: https://github.com/tj/commander.js/issues/795
+[#802]: https://github.com/tj/commander.js/issues/802
+[#806]: https://github.com/tj/commander.js/issues/806
+[#809]: https://github.com/tj/commander.js/issues/809
+[#915]: https://github.com/tj/commander.js/issues/915
+[#938]: https://github.com/tj/commander.js/issues/938
+[#948]: https://github.com/tj/commander.js/issues/948
+[#962]: https://github.com/tj/commander.js/issues/962
+[#963]: https://github.com/tj/commander.js/issues/963
+[#974]: https://github.com/tj/commander.js/issues/974
+[#980]: https://github.com/tj/commander.js/issues/980
+[#987]: https://github.com/tj/commander.js/issues/987
+[#990]: https://github.com/tj/commander.js/issues/990
+[#991]: https://github.com/tj/commander.js/issues/991
+[#993]: https://github.com/tj/commander.js/issues/993
+[#995]: https://github.com/tj/commander.js/issues/995
+[#999]: https://github.com/tj/commander.js/issues/999
+[#1010]: https://github.com/tj/commander.js/pull/1010
+[#1018]: https://github.com/tj/commander.js/pull/1018
+[#1026]: https://github.com/tj/commander.js/pull/1026
+[#1027]: https://github.com/tj/commander.js/pull/1027
+[#1028]: https://github.com/tj/commander.js/pull/1028
+[#1032]: https://github.com/tj/commander.js/issues/1032
+[#1035]: https://github.com/tj/commander.js/pull/1035
+[#1040]: https://github.com/tj/commander.js/pull/1040
+[#1047]: https://github.com/tj/commander.js/pull/1047
+[#1048]: https://github.com/tj/commander.js/pull/1048
+[#1049]: https://github.com/tj/commander.js/pull/1049
+[#1051]: https://github.com/tj/commander.js/pull/1051
+[#1052]: https://github.com/tj/commander.js/pull/1052
+[#1053]: https://github.com/tj/commander.js/pull/1053
+[#1062]: https://github.com/tj/commander.js/pull/1062
+[#1071]: https://github.com/tj/commander.js/pull/1071
+[#1081]: https://github.com/tj/commander.js/pull/1081
+[#1088]: https://github.com/tj/commander.js/issues/1088
+[#1091]: https://github.com/tj/commander.js/pull/1091
+[#1096]: https://github.com/tj/commander.js/pull/1096
+[#1102]: https://github.com/tj/commander.js/pull/1102
+[#1118]: https://github.com/tj/commander.js/pull/1118
+[#1119]: https://github.com/tj/commander.js/pull/1119
+[#1133]: https://github.com/tj/commander.js/pull/1133
+[#1138]: https://github.com/tj/commander.js/pull/1138
+[#1145]: https://github.com/tj/commander.js/pull/1145
+[#1146]: https://github.com/tj/commander.js/pull/1146
+[#1149]: https://github.com/tj/commander.js/pull/1149
+[#1153]: https://github.com/tj/commander.js/issues/1153
+[#1157]: https://github.com/tj/commander.js/pull/1157
+[#1159]: https://github.com/tj/commander.js/pull/1159
+[#1165]: https://github.com/tj/commander.js/pull/1165
+[#1169]: https://github.com/tj/commander.js/pull/1169
+[#1172]: https://github.com/tj/commander.js/pull/1172
+[#1179]: https://github.com/tj/commander.js/pull/1179
+[#1180]: https://github.com/tj/commander.js/pull/1180
+[#1184]: https://github.com/tj/commander.js/pull/1184
+[#1191]: https://github.com/tj/commander.js/pull/1191
+[#1195]: https://github.com/tj/commander.js/pull/1195
+[#1208]: https://github.com/tj/commander.js/pull/1208
+[#1232]: https://github.com/tj/commander.js/pull/1232
+[#1235]: https://github.com/tj/commander.js/pull/1235
+[#1236]: https://github.com/tj/commander.js/pull/1236
+[#1247]: https://github.com/tj/commander.js/pull/1247
+[#1248]: https://github.com/tj/commander.js/pull/1248
+
+[Unreleased]: https://github.com/tj/commander.js/compare/master...develop
+[5.1.0]: https://github.com/tj/commander.js/compare/v5.0.0..v5.1.0
+[5.0.0]: https://github.com/tj/commander.js/compare/v4.1.1..v5.0.0
+[5.0.0-4]: https://github.com/tj/commander.js/compare/v5.0.0-3..v5.0.0-4
+[5.0.0-3]: https://github.com/tj/commander.js/compare/v5.0.0-2..v5.0.0-3
+[5.0.0-2]: https://github.com/tj/commander.js/compare/v5.0.0-1..v5.0.0-2
+[5.0.0-1]: https://github.com/tj/commander.js/compare/v5.0.0-0..v5.0.0-1
+[5.0.0-0]: https://github.com/tj/commander.js/compare/v4.1.1..v5.0.0-0
+[4.1.1]: https://github.com/tj/commander.js/compare/v4.1.0..v4.1.1
+[4.1.0]: https://github.com/tj/commander.js/compare/v4.0.1..v4.1.0
+[4.0.1]: https://github.com/tj/commander.js/compare/v4.0.0..v4.0.1
+[4.0.0]: https://github.com/tj/commander.js/compare/v3.0.2..v4.0.0
+[4.0.0-1]: https://github.com/tj/commander.js/compare/v4.0.0-0..v4.0.0-1
+[4.0.0-0]: https://github.com/tj/commander.js/compare/v3.0.2...v4.0.0-0
+[3.0.2]: https://github.com/tj/commander.js/compare/v3.0.1...v3.0.2
+[3.0.1]: https://github.com/tj/commander.js/compare/v3.0.0...v3.0.1
+[3.0.0]: https://github.com/tj/commander.js/compare/v2.20.1...v3.0.0
+[2.20.1]: https://github.com/tj/commander.js/compare/v2.20.0...v2.20.1
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/commander/Readme.md](Github/bgoonz-master/bgoonz-master/node_modules/commander/Readme.md)
+
+# Commander.js
+
+[![Build Status](https://api.travis-ci.org/tj/commander.js.svg?branch=master)](http://travis-ci.org/tj/commander.js)
+[![NPM Version](http://img.shields.io/npm/v/commander.svg?style=flat)](https://www.npmjs.org/package/commander)
+[![NPM Downloads](https://img.shields.io/npm/dm/commander.svg?style=flat)](https://npmcharts.com/compare/commander?minimal=true)
+[![Install Size](https://packagephobia.now.sh/badge?p=commander)](https://packagephobia.now.sh/result?p=commander)
+
+The complete solution for [node.js](http://nodejs.org) command-line interfaces, inspired by Ruby's [commander](https://github.com/commander-rb/commander).
+
+Read this in other languages: English | [简体中文](./Readme_zh-CN.md)
+
+- [Commander.js](#commanderjs)
+  - [Installation](#installation)
+  - [Declaring _program_ variable](#declaring-program-variable)
+  - [Options](#options)
+    - [Common option types, boolean and value](#common-option-types-boolean-and-value)
+    - [Default option value](#default-option-value)
+    - [Other option types, negatable boolean and flag|value](#other-option-types-negatable-boolean-and-flagvalue)
+    - [Custom option processing](#custom-option-processing)
+    - [Required option](#required-option)
+    - [Version option](#version-option)
+  - [Commands](#commands)
+    - [Specify the argument syntax](#specify-the-argument-syntax)
+    - [Action handler (sub)commands](#action-handler-subcommands)
+    - [Stand-alone executable (sub)commands](#stand-alone-executable-subcommands)
+  - [Automated help](#automated-help)
+    - [Custom help](#custom-help)
+    - [.usage and .name](#usage-and-name)
+    - [.help(cb)](#helpcb)
+    - [.outputHelp(cb)](#outputhelpcb)
+    - [.helpInformation()](#helpinformation)
+    - [.helpOption(flags, description)](#helpoptionflags-description)
+    - [.addHelpCommand()](#addhelpcommand)
+  - [Custom event listeners](#custom-event-listeners)
+  - [Bits and pieces](#bits-and-pieces)
+    - [.parse() and .parseAsync()](#parse-and-parseasync)
+    - [Avoiding option name clashes](#avoiding-option-name-clashes)
+    - [TypeScript](#typescript)
+    - [createCommand()](#createcommand)
+    - [Node options such as `--harmony`](#node-options-such-as---harmony)
+    - [Debugging stand-alone executable subcommands](#debugging-stand-alone-executable-subcommands)
+    - [Override exit handling](#override-exit-handling)
+  - [Examples](#examples)
+  - [License](#license)
+  - [Support](#support)
+    - [Commander for enterprise](#commander-for-enterprise)
+
+## Installation
+
+```bash
+npm install commander
+```
+
+## Declaring _program_ variable
+
+Commander exports a global object which is convenient for quick programs.
+This is used in the examples in this README for brevity.
+
+```js
+const { program } = require('commander');
+program.version('0.0.1');
+```
+
+For larger programs which may use commander in multiple ways, including unit testing, it is better to create a local Command object to use.
+
+ ```js
+ const { Command } = require('commander');
+ const program = new Command();
+ program.version('0.0.1');
+ ```
+
+## Options
+
+Options are defined with the `.option()` method, also serving as documentation for the options. Each option can have a short flag (single character) and a long name, separated by a comma or space or vertical bar ('|').
+
+The options can be accessed as properties on the Command object. Multi-word options such as "--template-engine" are camel-cased, becoming `program.templateEngine` etc. See also optional new behaviour to [avoid name clashes](#avoiding-option-name-clashes).
+
+Multiple short flags may optionally be combined in a single argument following the dash: boolean flags, the last flag may take a value, and the value.
+For example `-a -b -p 80` may be written as `-ab -p80` or even `-abp80`.
+
+You can use `--` to indicate the end of the options, and any remaining arguments will be used without being interpreted.
+This is particularly useful for passing options through to another
+command, like: `do -- git --version`.
+
+Options on the command line are not positional, and can be specified before or after other command arguments.
+
+### Common option types, boolean and value
+
+The two most used option types are a boolean flag, and an option which takes a value (declared using angle brackets). Both are `undefined` unless specified on command line.
+
+```js
+const { program } = require('commander');
+
+program
+  .option('-d, --debug', 'output extra debugging')
+  .option('-s, --small', 'small pizza size')
+  .option('-p, --pizza-type <type>', 'flavour of pizza');
+
+program.parse(process.argv);
+
+if (program.debug) console.log(program.opts());
+console.log('pizza details:');
+if (program.small) console.log('- small pizza size');
+if (program.pizzaType) console.log(`- ${program.pizzaType}`);
+```
+
+```bash
+$ pizza-options -d
+{ debug: true, small: undefined, pizzaType: undefined }
+pizza details:
+$ pizza-options -p
+error: option '-p, --pizza-type <type>' argument missing
+$ pizza-options -ds -p vegetarian
+{ debug: true, small: true, pizzaType: 'vegetarian' }
+pizza details:
+- small pizza size
+- vegetarian
+$ pizza-options --pizza-type=cheese
+pizza details:
+- cheese
+```
+
+`program.parse(arguments)` processes the arguments, leaving any args not consumed by the program options in the `program.args` array.
+
+### Default option value
+
+You can specify a default value for an option which takes a value.
+
+```js
+const { program } = require('commander');
+
+program
+  .option('-c, --cheese <type>', 'add the specified type of cheese', 'blue');
+
+program.parse(process.argv);
+
+console.log(`cheese: ${program.cheese}`);
+```
+
+```bash
+$ pizza-options
+cheese: blue
+$ pizza-options --cheese stilton
+cheese: stilton
+```
+
+### Other option types, negatable boolean and flag|value
+
+You can specify a boolean option long name with a leading `no-` to set the option value to false when used.
+Defined alone this also makes the option true by default.
+
+If you define `--foo` first, adding `--no-foo` does not change the default value from what it would
+otherwise be. You can specify a default boolean value for a boolean flag and it can be overridden on command line.
+
+```js
+const { program } = require('commander');
+
+program
+  .option('--no-sauce', 'Remove sauce')
+  .option('--cheese <flavour>', 'cheese flavour', 'mozzarella')
+  .option('--no-cheese', 'plain with no cheese')
+  .parse(process.argv);
+
+const sauceStr = program.sauce ? 'sauce' : 'no sauce';
+const cheeseStr = (program.cheese === false) ? 'no cheese' : `${program.cheese} cheese`;
+console.log(`You ordered a pizza with ${sauceStr} and ${cheeseStr}`);
+```
+
+```bash
+$ pizza-options
+You ordered a pizza with sauce and mozzarella cheese
+$ pizza-options --sauce
+error: unknown option '--sauce'
+$ pizza-options --cheese=blue
+You ordered a pizza with sauce and blue cheese
+$ pizza-options --no-sauce --no-cheese
+You ordered a pizza with no sauce and no cheese
+```
+
+You can specify an option which functions as a flag but may also take a value (declared using square brackets).
+
+```js
+const { program } = require('commander');
+
+program
+  .option('-c, --cheese [type]', 'Add cheese with optional type');
+
+program.parse(process.argv);
+
+if (program.cheese === undefined) console.log('no cheese');
+else if (program.cheese === true) console.log('add cheese');
+else console.log(`add cheese type ${program.cheese}`);
+```
+
+```bash
+$ pizza-options
+no cheese
+$ pizza-options --cheese
+add cheese
+$ pizza-options --cheese mozzarella
+add cheese type mozzarella
+```
+
+### Custom option processing
+
+You may specify a function to do custom processing of option values. The callback function receives two parameters, the user specified value and the
+previous value for the option. It returns the new value for the option.
+
+This allows you to coerce the option value to the desired type, or accumulate values, or do entirely custom processing.
+
+You can optionally specify the default/starting value for the option after the function.
+
+```js
+const { program } = require('commander');
+
+function myParseInt(value, dummyPrevious) {
+  // parseInt takes a string and an optional radix
+  return parseInt(value);
+}
+
+function increaseVerbosity(dummyValue, previous) {
+  return previous + 1;
+}
+
+function collect(value, previous) {
+  return previous.concat([value]);
+}
+
+function commaSeparatedList(value, dummyPrevious) {
+  return value.split(',');
+}
+
+program
+  .option('-f, --float <number>', 'float argument', parseFloat)
+  .option('-i, --integer <number>', 'integer argument', myParseInt)
+  .option('-v, --verbose', 'verbosity that can be increased', increaseVerbosity, 0)
+  .option('-c, --collect <value>', 'repeatable value', collect, [])
+  .option('-l, --list <items>', 'comma separated list', commaSeparatedList)
+;
+
+program.parse(process.argv);
+
+if (program.float !== undefined) console.log(`float: ${program.float}`);
+if (program.integer !== undefined) console.log(`integer: ${program.integer}`);
+if (program.verbose > 0) console.log(`verbosity: ${program.verbose}`);
+if (program.collect.length > 0) console.log(program.collect);
+if (program.list !== undefined) console.log(program.list);
+```
+
+```bash
+$ custom -f 1e2
+float: 100
+$ custom --integer 2
+integer: 2
+$ custom -v -v -v
+verbose: 3
+$ custom -c a -c b -c c
+[ 'a', 'b', 'c' ]
+$ custom --list x,y,z
+[ 'x', 'y', 'z' ]
+```
+
+### Required option
+
+You may specify a required (mandatory) option using `.requiredOption`. The option must have a value after parsing, usually specified on the command line, or perhaps from a default value (say from environment). The method is otherwise the same as `.option` in format, taking flags and description, and optional default value or custom processing.
+
+```js
+const { program } = require('commander');
+
+program
+  .requiredOption('-c, --cheese <type>', 'pizza must have cheese');
+
+program.parse(process.argv);
+```
+
+```bash
+$ pizza
+error: required option '-c, --cheese <type>' not specified
+```
+
+### Version option
+
+The optional `version` method adds handling for displaying the command version. The default option flags are `-V` and `--version`, and when present the command prints the version number and exits.
+
+```js
+program.version('0.0.1');
+```
+
+```bash
+$ ./examples/pizza -V
+0.0.1
+```
+
+You may change the flags and description by passing additional parameters to the `version` method, using
+the same syntax for flags as the `option` method. The version flags can be named anything, but a long name is required.
+
+```js
+program.version('0.0.1', '-v, --vers', 'output the current version');
+```
+
+## Commands
+
+You can specify (sub)commands using `.command()` or `.addCommand()`. There are two ways these can be implemented: using an action handler attached to the command, or as a stand-alone executable file (described in more detail later). The subcommands may be nested ([example](./examples/nestedCommands.js)).
+
+In the first parameter to `.command()` you specify the command name and any command arguments. The arguments may be `<required>` or `[optional]`, and the last argument may also be `variadic...`.
+
+You can use `.addCommand()` to add an already configured subcommand to the program.
+
+For example:
+
+```js
+// Command implemented using action handler (description is supplied separately to `.command`)
+// Returns new command for configuring.
+program
+  .command('clone <source> [destination]')
+  .description('clone a repository into a newly created directory')
+  .action((source, destination) => {
+    console.log('clone command called');
+  });
+
+// Command implemented using stand-alone executable file (description is second parameter to `.command`)
+// Returns `this` for adding more commands.
+program
+  .command('start <service>', 'start named service')
+  .command('stop [service]', 'stop named service, or all if no name supplied');
+
+// Command prepared separately.
+// Returns `this` for adding more commands.
+program
+  .addCommand(build.makeBuildCommand());
+```
+
+Configuration options can be passed with the call to `.command()` and `.addCommand()`. Specifying `true` for `opts.hidden` will remove the command from the generated help output. Specifying `true` for `opts.isDefault` will run the subcommand if no other subcommand is specified ([example](./examples/defaultCommand.js)).
+
+### Specify the argument syntax
+
+You use `.arguments` to specify the arguments for the top-level command, and for subcommands they are usually included in the `.command` call. Angled brackets (e.g. `<required>`) indicate required input. Square brackets (e.g. `[optional]`) indicate optional input.
+
+```js
+const { program } = require('commander');
+
+program
+  .version('0.1.0')
+  .arguments('<cmd> [env]')
+  .action(function (cmd, env) {
+    cmdValue = cmd;
+    envValue = env;
+  });
+
+program.parse(process.argv);
+
+if (typeof cmdValue === 'undefined') {
+  console.error('no command given!');
+  process.exit(1);
+}
+console.log('command:', cmdValue);
+console.log('environment:', envValue || "no environment given");
+```
+
+ The last argument of a command can be variadic, and only the last argument.  To make an argument variadic you
+ append `...` to the argument name. For example:
+
+```js
+const { program } = require('commander');
+
+program
+  .version('0.1.0')
+  .command('rmdir <dir> [otherDirs...]')
+  .action(function (dir, otherDirs) {
+    console.log('rmdir %s', dir);
+    if (otherDirs) {
+      otherDirs.forEach(function (oDir) {
+        console.log('rmdir %s', oDir);
+      });
+    }
+  });
+
+program.parse(process.argv);
+```
+
+The variadic argument is passed to the action handler as an array.
+
+### Action handler (sub)commands
+
+You can add options to a command that uses an action handler.
+The action handler gets passed a parameter for each argument you declared, and one additional argument which is the
+command object itself. This command argument has the values for the command-specific options added as properties.
+
+```js
+const { program } = require('commander');
+
+program
+  .command('rm <dir>')
+  .option('-r, --recursive', 'Remove recursively')
+  .action(function (dir, cmdObj) {
+    console.log('remove ' + dir + (cmdObj.recursive ? ' recursively' : ''))
+  })
+
+program.parse(process.argv)
+```
+
+You may supply an `async` action handler, in which case you call `.parseAsync` rather than `.parse`.
+
+```js
+async function run() { /* code goes here */ }
+
+async function main() {
+  program
+    .command('run')
+    .action(run);
+  await program.parseAsync(process.argv);
+}
+```
+
+A command's options on the command line are validated when the command is used. Any unknown options will be reported as an error.
+
+### Stand-alone executable (sub)commands
+
+When `.command()` is invoked with a description argument, this tells Commander that you're going to use stand-alone executables for subcommands.
+Commander will search the executables in the directory of the entry script (like `./examples/pm`) with the name `program-subcommand`, like `pm-install`, `pm-search`.
+You can specify a custom name with the `executableFile` configuration option.
+
+You handle the options for an executable (sub)command in the executable, and don't declare them at the top-level.
+
+```js
+// file: ./examples/pm
+const { program } = require('commander');
+
+program
+  .version('0.1.0')
+  .command('install [name]', 'install one or more packages')
+  .command('search [query]', 'search with optional query')
+  .command('update', 'update installed packages', {executableFile: 'myUpdateSubCommand'})
+  .command('list', 'list packages installed', {isDefault: true})
+  .parse(process.argv);
+```
+
+If the program is designed to be installed globally, make sure the executables have proper modes, like `755`.
+
+## Automated help
+
+The help information is auto-generated based on the information commander already knows about your program. The default
+help option is `-h,--help`. ([example](./examples/pizza))
+
+```bash
+$ node ./examples/pizza --help
+Usage: pizza [options]
+
+An application for pizzas ordering
+
+Options:
+  -V, --version        output the version number
+  -p, --peppers        Add peppers
+  -c, --cheese <type>  Add the specified type of cheese (default: "marble")
+  -C, --no-cheese      You do not want any cheese
+  -h, --help           display help for command
+```
+
+A `help` command is added by default if your command has subcommands. It can be used alone, or with a subcommand name to show
+further help for the subcommand. These are effectively the same if the `shell` program has implicit help:
+
+```bash
+shell help
+shell --help
+
+shell help spawn
+shell spawn --help
+```
+
+### Custom help
+
+You can display extra information by listening for "--help". ([example](./examples/custom-help))
+
+```js
+program
+  .option('-f, --foo', 'enable some foo');
+
+// must be before .parse()
+program.on('--help', () => {
+  console.log('');
+  console.log('Example call:');
+  console.log('  $ custom-help --help');
+});
+```
+
+Yields the following help output:
+
+```Text
+Usage: custom-help [options]
+
+Options:
+  -f, --foo   enable some foo
+  -h, --help  display help for command
+
+Example call:
+  $ custom-help --help
+```
+
+### .usage and .name
+
+These allow you to customise the usage description in the first line of the help. The name is otherwise
+deduced from the (full) program arguments. Given:
+
+```js
+program
+  .name("my-command")
+  .usage("[global options] command")
+```
+
+The help will start with:
+
+```Text
+Usage: my-command [global options] command
+```
+
+### .help(cb)
+
+Output help information and exit immediately. Optional callback cb allows post-processing of help text before it is displayed.
+
+### .outputHelp(cb)
+
+Output help information without exiting.
+Optional callback cb allows post-processing of help text before it is displayed.
+
+### .helpInformation()
+
+Get the command help information as a string for processing or displaying yourself. (The text does not include the custom help
+from `--help` listeners.)
+
+### .helpOption(flags, description)
+
+Override the default help flags and description.
+
+```js
+program
+  .helpOption('-e, --HELP', 'read more information');
+```
+
+### .addHelpCommand()
+
+You can explicitly turn on or off the implicit help command with `.addHelpCommand()` and `.addHelpCommand(false)`.
+
+You can both turn on and customise the help command by supplying the name and description:
+
+```js
+program.addHelpCommand('assist [command]', 'show assistance');
+```
+
+## Custom event listeners
+
+You can execute custom actions by listening to command and option events.
+
+```js
+program.on('option:verbose', function () {
+  process.env.VERBOSE = this.verbose;
+});
+
+program.on('command:*', function (operands) {
+  console.error(`error: unknown command '${operands[0]}'`);
+  const availableCommands = program.commands.map(cmd => cmd.name());
+  mySuggestBestMatch(operands[0], availableCommands);
+  process.exitCode = 1;
+});
+```
+
+## Bits and pieces
+
+### .parse() and .parseAsync()
+
+The first argument to `.parse` is the array of strings to parse. You may omit the parameter to implicitly use `process.argv`.
+
+If the arguments follow different conventions than node you can pass a `from` option in the second parameter:
+
+- 'node': default, `argv[0]` is the application and `argv[1]` is the script being run, with user parameters after that
+- 'electron': `argv[1]` varies depending on whether the electron application is packaged
+- 'user': all of the arguments from the user
+
+For example:
+
+```js
+program.parse(process.argv); // Explicit, node conventions
+program.parse(); // Implicit, and auto-detect electron
+program.parse(['-f', 'filename'], { from: 'user' });
+```
+
+### Avoiding option name clashes
+
+The original and default behaviour is that the option values are stored
+as properties on the program, and the action handler is passed a
+command object with the options values stored as properties.
+This is very convenient to code, but the downside is possible clashes with
+existing properties of Command.
+
+There are two new routines to change the behaviour, and the default behaviour may change in the future:
+
+- `storeOptionsAsProperties`: whether to store option values as properties on command object, or store separately (specify false) and access using `.opts()`
+- `passCommandToAction`: whether to pass command to action handler,
+or just the options (specify false)
+
+([example](./examples/storeOptionsAsProperties-action.js))
+
+```js
+program
+  .storeOptionsAsProperties(false)
+  .passCommandToAction(false);
+
+program
+  .name('my-program-name')
+  .option('-n,--name <name>');
+
+program
+  .command('show')
+  .option('-a,--action <action>')
+  .action((options) => {
+    console.log(options.action);
+  });
+
+program.parse(process.argv);
+
+const programOptions = program.opts();
+console.log(programOptions.name);
+```
+
+### TypeScript
+
+The Commander package includes its TypeScript Definition file.
+
+If you use `ts-node` and  stand-alone executable subcommands written as `.ts` files, you need to call your program through node to get the subcommands called correctly. e.g.
+
+```bash
+node -r ts-node/register pm.ts
+```
+
+### createCommand()
+
+This factory function creates a new command. It is exported and may be used instead of using `new`, like:
+
+```js
+const { createCommand } = require('commander');
+const program = createCommand();
+```
+
+`createCommand` is also a method of the Command object, and creates a new command rather than a subcommand. This gets used internally
+when creating subcommands using `.command()`, and you may override it to
+customise the new subcommand (examples using [subclass](./examples/custom-command-class.js) and [function](./examples/custom-command-function.js)).
+
+### Node options such as `--harmony`
+
+You can enable `--harmony` option in two ways:
+
+- Use `#! /usr/bin/env node --harmony` in the subcommands scripts. (Note Windows does not support this pattern.)
+- Use the `--harmony` option when call the command, like `node --harmony examples/pm publish`. The `--harmony` option will be preserved when spawning subcommand process.
+
+### Debugging stand-alone executable subcommands
+
+An executable subcommand is launched as a separate child process.
+
+If you are using the node inspector for [debugging](https://nodejs.org/en/docs/guides/debugging-getting-started/) executable subcommands using `node --inspect` et al,
+the inspector port is incremented by 1 for the spawned subcommand.
+
+If you are using VSCode to debug executable subcommands you need to set the `"autoAttachChildProcesses": true` flag in your launch.json configuration.
+
+### Override exit handling
+
+By default Commander calls `process.exit` when it detects errors, or after displaying the help or version. You can override
+this behaviour and optionally supply a callback. The default override throws a `CommanderError`.
+
+The override callback is passed a `CommanderError` with properties `exitCode` number, `code` string, and `message`. The default override behaviour is to throw the error, except for async handling of executable subcommand completion which carries on. The normal display of error messages or version or help
+is not affected by the override which is called after the display.
+
+``` js
+program.exitOverride();
+
+try {
+  program.parse(process.argv);
+} catch (err) {
+  // custom processing...
+}
+```
+
+## Examples
+
+```js
+const { program } = require('commander');
+
+program
+  .version('0.1.0')
+  .option('-C, --chdir <path>', 'change the working directory')
+  .option('-c, --config <path>', 'set config path. defaults to ./deploy.conf')
+  .option('-T, --no-tests', 'ignore test hook');
+
+program
+  .command('setup [env]')
+  .description('run setup commands for all envs')
+  .option("-s, --setup_mode [mode]", "Which setup mode to use")
+  .action(function(env, options){
+    const mode = options.setup_mode || "normal";
+    env = env || 'all';
+    console.log('setup for %s env(s) with %s mode', env, mode);
+  });
+
+program
+  .command('exec <cmd>')
+  .alias('ex')
+  .description('execute the given remote cmd')
+  .option("-e, --exec_mode <mode>", "Which exec mode to use")
+  .action(function(cmd, options){
+    console.log('exec "%s" using %s mode', cmd, options.exec_mode);
+  }).on('--help', function() {
+    console.log('');
+    console.log('Examples:');
+    console.log('');
+    console.log('  $ deploy exec sequential');
+    console.log('  $ deploy exec async');
+  });
+
+program.parse(process.argv);
+```
+
+More Demos can be found in the [examples](https://github.com/tj/commander.js/tree/master/examples) directory.
+
+## License
+
+[MIT](https://github.com/tj/commander.js/blob/master/LICENSE)
+
+## Support
+
+Commander 5.x is fully supported on Long Term Support versions of Node, and is likely to work with Node 6 but not tested.
+(For versions of Node below Node 6, use Commander 3.x or 2.x.)
+
+The main forum for free and community support is the project [Issues](https://github.com/tj/commander.js/issues) on GitHub.
+
+### Commander for enterprise
+
+Available as part of the Tidelift Subscription
+
+The maintainers of Commander and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. [Learn more.](https://tidelift.com/subscription/pkg/npm-commander?utm_source=npm-commander&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/decamelize/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/decamelize/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/decamelize/readme.md)
+# decamelize [![Build Status](https://travis-ci.org/sindresorhus/decamelize.svg?branch=master)](https://travis-ci.org/sindresorhus/decamelize)
+
+> Convert a camelized string into a lowercased one with a custom separator<br>
+> Example: `unicornRainbow` → `unicorn_rainbow`
+
+
+## Install
+
+```
+$ npm install --save decamelize
+```
+
+
+## Usage
+
+```js
+const decamelize = require('decamelize');
+
+decamelize('unicornRainbow');
+//=> 'unicorn_rainbow'
+
+decamelize('unicornRainbow', '-');
+//=> 'unicorn-rainbow'
+```
+
+
+## API
+
+### decamelize(input, [separator])
+
+#### input
+
+Type: `string`
+
+#### separator
+
+Type: `string`<br>
+Default: `_`
+
+
+## Related
+
+See [`camelcase`](https://github.com/sindresorhus/camelcase) for the inverse.
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/decompress-response/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/decompress-response/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/decompress-response/readme.md)
+# decompress-response [![Build Status](https://travis-ci.org/sindresorhus/decompress-response.svg?branch=master)](https://travis-ci.org/sindresorhus/decompress-response)
+
+> Decompress a HTTP response if needed
+
+Decompresses the [response](https://nodejs.org/api/http.html#http_class_http_incomingmessage) from [`http.request`](https://nodejs.org/api/http.html#http_http_request_options_callback) if it's gzipped or deflated, otherwise just passes it through.
+
+Used by [`got`](https://github.com/sindresorhus/got).
+
+
+## Install
+
+```
+$ npm install decompress-response
+```
+
+
+## Usage
+
+```js
+const http = require('http');
+const decompressResponse = require('decompress-response');
+
+http.get('http://sindresorhus.com', response => {
+	response = decompressResponse(response);
+});
+```
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/defer-to-connect/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/defer-to-connect/README.md](Github/bgoonz-master/bgoonz-master/node_modules/defer-to-connect/README.md)
+# defer-to-connect
+
+> The safe way to handle the `connect` socket event
+
+[![Coverage Status](https://coveralls.io/repos/github/szmarczak/defer-to-connect/badge.svg?branch=master)](https://coveralls.io/github/szmarczak/defer-to-connect?branch=master)
+
+Once you receive the socket, it may be already connected (or disconnected).<br>
+To avoid checking that, use `defer-to-connect`. It'll do that for you.
+
+## Usage
+
+```js
+const deferToConnect = require('defer-to-connect');
+
+deferToConnect(socket, () => {
+    console.log('Connected!');
+});
+```
+
+## API
+
+### deferToConnect(socket, connectListener)
+
+Calls `connectListener()` when connected.
+
+### deferToConnect(socket, listeners)
+
+#### listeners
+
+An object representing `connect`, `secureConnect` and `close` properties.
+
+Calls `connect()` when the socket is connected.<br>
+Calls `secureConnect()` when the socket is securely connected.<br>
+Calls `close()` when the socket is destroyed.
+
+## License
+
+MIT
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/duplexer3/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/duplexer3/LICENSE.md](Github/bgoonz-master/bgoonz-master/node_modules/duplexer3/LICENSE.md)
+Copyright (c) 2013, Deoxxa Development
+======================================
+All rights reserved.
+--------------------
+  
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:  
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.  
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.  
+3. Neither the name of Deoxxa Development nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.  
+  
+THIS SOFTWARE IS PROVIDED BY DEOXXA DEVELOPMENT ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL DEOXXA DEVELOPMENT BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/duplexer3/README.md](Github/bgoonz-master/bgoonz-master/node_modules/duplexer3/README.md)
+
+# duplexer3 [![Build Status](https://travis-ci.org/floatdrop/duplexer3.svg?branch=master)](https://travis-ci.org/floatdrop/duplexer3) [![Coverage Status](https://coveralls.io/repos/floatdrop/duplexer3/badge.svg?branch=master&service=github)](https://coveralls.io/github/floatdrop/duplexer3?branch=master)
+
+Like [duplexer2](https://github.com/deoxxa/duplexer2) but using Streams3 without readable-stream dependency
+
+```javascript
+var stream = require("stream");
+
+var duplexer3 = require("duplexer3");
+
+var writable = new stream.Writable({objectMode: true}),
+    readable = new stream.Readable({objectMode: true});
+
+writable._write = function _write(input, encoding, done) {
+  if (readable.push(input)) {
+    return done();
+  } else {
+    readable.once("drain", done);
+  }
+};
+
+readable._read = function _read(n) {
+  // no-op
+};
+
+// simulate the readable thing closing after a bit
+writable.once("finish", function() {
+  setTimeout(function() {
+    readable.push(null);
+  }, 500);
+});
+
+var duplex = duplexer3(writable, readable);
+
+duplex.on("data", function(e) {
+  console.log("got data", JSON.stringify(e));
+});
+
+duplex.on("finish", function() {
+  console.log("got finish event");
+});
+
+duplex.on("end", function() {
+  console.log("got end event");
+});
+
+duplex.write("oh, hi there", function() {
+  console.log("finished writing");
+});
+
+duplex.end(function() {
+  console.log("finished ending");
+});
+```
+
+```
+got data "oh, hi there"
+finished writing
+got finish event
+finished ending
+got end event
+```
+
+## Overview
+
+This is a reimplementation of [duplexer](https://www.npmjs.com/package/duplexer) using the
+Streams3 API which is standard in Node as of v4. Everything largely
+works the same.
+
+
+
+## Installation
+
+[Available via `npm`](https://docs.npmjs.com/cli/install):
+
+```
+$ npm i duplexer3
+```
+
+## API
+
+### duplexer3
+
+Creates a new `DuplexWrapper` object, which is the actual class that implements
+most of the fun stuff. All that fun stuff is hidden. DON'T LOOK.
+
+```javascript
+duplexer3([options], writable, readable)
+```
+
+```javascript
+const duplex = duplexer3(new stream.Writable(), new stream.Readable());
+```
+
+Arguments
+
+* __options__ - an object specifying the regular `stream.Duplex` options, as
+  well as the properties described below.
+* __writable__ - a writable stream
+* __readable__ - a readable stream
+
+Options
+
+* __bubbleErrors__ - a boolean value that specifies whether to bubble errors
+  from the underlying readable/writable streams. Default is `true`.
+
+
+## License
+
+3-clause BSD. [A copy](./LICENSE) is included with the source.
+
+## Contact
+
+* GitHub ([deoxxa](http://github.com/deoxxa))
+* Twitter ([@deoxxa](http://twitter.com/deoxxa))
+* Email ([deoxxa@fknsrs.biz](mailto:deoxxa@fknsrs.biz))
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/emoji-regex/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/emoji-regex/README.md](Github/bgoonz-master/bgoonz-master/node_modules/emoji-regex/README.md)
+# emoji-regex [![Build status](https://travis-ci.org/mathiasbynens/emoji-regex.svg?branch=master)](https://travis-ci.org/mathiasbynens/emoji-regex)
+
+_emoji-regex_ offers a regular expression to match all emoji symbols (including textual representations of emoji) as per the Unicode Standard.
+
+This repository contains a script that generates this regular expression based on [the data from Unicode v12](https://github.com/mathiasbynens/unicode-12.0.0). Because of this, the regular expression can easily be updated whenever new emoji are added to the Unicode standard.
+
+## Installation
+
+Via [npm](https://www.npmjs.com/):
+
+```bash
+npm install emoji-regex
+```
+
+In [Node.js](https://nodejs.org/):
+
+```js
+const emojiRegex = require('emoji-regex');
+// Note: because the regular expression has the global flag set, this module
+// exports a function that returns the regex rather than exporting the regular
+// expression itself, to make it impossible to (accidentally) mutate the
+// original regular expression.
+
+const text = `
+\u{231A}: ⌚ default emoji presentation character (Emoji_Presentation)
+\u{2194}\u{FE0F}: ↔️ default text presentation character rendered as emoji
+\u{1F469}: 👩 emoji modifier base (Emoji_Modifier_Base)
+\u{1F469}\u{1F3FF}: 👩🏿 emoji modifier base followed by a modifier
+`;
+
+const regex = emojiRegex();
+let match;
+while (match = regex.exec(text)) {
+  const emoji = match[0];
+  console.log(`Matched sequence ${ emoji } — code points: ${ [...emoji].length }`);
+}
+```
+
+Console output:
+
+```
+Matched sequence ⌚ — code points: 1
+Matched sequence ⌚ — code points: 1
+Matched sequence ↔️ — code points: 2
+Matched sequence ↔️ — code points: 2
+Matched sequence 👩 — code points: 1
+Matched sequence 👩 — code points: 1
+Matched sequence 👩🏿 — code points: 2
+Matched sequence 👩🏿 — code points: 2
+```
+
+To match emoji in their textual representation as well (i.e. emoji that are not `Emoji_Presentation` symbols and that aren’t forced to render as emoji by a variation selector), `require` the other regex:
+
+```js
+const emojiRegex = require('emoji-regex/text.js');
+```
+
+Additionally, in environments which support ES2015 Unicode escapes, you may `require` ES2015-style versions of the regexes:
+
+```js
+const emojiRegex = require('emoji-regex/es2015/index.js');
+const emojiRegexText = require('emoji-regex/es2015/text.js');
+```
+
+## Author
+
+| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
+|---|
+| [Mathias Bynens](https://mathiasbynens.be/) |
+
+## License
+
+_emoji-regex_ is available under the [MIT](https://mths.be/mit) license.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/end-of-stream/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/end-of-stream/README.md](Github/bgoonz-master/bgoonz-master/node_modules/end-of-stream/README.md)
+# end-of-stream
+
+A node module that calls a callback when a readable/writable/duplex stream has completed or failed.
+
+	npm install end-of-stream
+
+[![Build status](https://travis-ci.org/mafintosh/end-of-stream.svg?branch=master)](https://travis-ci.org/mafintosh/end-of-stream)
+
+## Usage
+
+Simply pass a stream and a callback to the `eos`.
+Both legacy streams, streams2 and stream3 are supported.
+
+``` js
+var eos = require('end-of-stream');
+
+eos(readableStream, function(err) {
+  // this will be set to the stream instance
+	if (err) return console.log('stream had an error or closed early');
+	console.log('stream has ended', this === readableStream);
+});
+
+eos(writableStream, function(err) {
+	if (err) return console.log('stream had an error or closed early');
+	console.log('stream has finished', this === writableStream);
+});
+
+eos(duplexStream, function(err) {
+	if (err) return console.log('stream had an error or closed early');
+	console.log('stream has ended and finished', this === duplexStream);
+});
+
+eos(duplexStream, {readable:false}, function(err) {
+	if (err) return console.log('stream had an error or closed early');
+	console.log('stream has finished but might still be readable');
+});
+
+eos(duplexStream, {writable:false}, function(err) {
+	if (err) return console.log('stream had an error or closed early');
+	console.log('stream has ended but might still be writable');
+});
+
+eos(readableStream, {error:false}, function(err) {
+	// do not treat emit('error', err) as a end-of-stream
+});
+```
+
+## License
+
+MIT
+
+## Related
+
+`end-of-stream` is part of the [mississippi stream utility collection](https://github.com/maxogden/mississippi) which includes more useful stream modules similar to this one.
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/fast-glob/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/fast-glob/README.md](Github/bgoonz-master/bgoonz-master/node_modules/fast-glob/README.md)
+# fast-glob
+
+> It's a very fast and efficient [glob][glob_definition] library for [Node.js][node_js].
+
+This package provides methods for traversing the file system and returning pathnames that matched a defined set of a specified pattern according to the rules used by the Unix Bash shell with some simplifications, meanwhile results are returned in **arbitrary order**. Quick, simple, effective.
+
+## Table of Contents
+
+<details>
+<summary><strong>Details</strong></summary>
+
+* [Highlights](#highlights)
+* [Donation](#donation)
+* [Old and modern mode](#old-and-modern-mode)
+* [Pattern syntax](#pattern-syntax)
+  * [Basic syntax](#basic-syntax)
+  * [Advanced syntax](#advanced-syntax)
+* [Installation](#installation)
+* [API](#api)
+  * [Asynchronous](#asynchronous)
+  * [Synchronous](#synchronous)
+  * [Stream](#stream)
+    * [patterns](#patterns)
+    * [[options]](#options)
+  * [Helpers](#helpers)
+    * [generateTasks](#generatetaskspatterns-options)
+    * [isDynamicPattern](#isdynamicpatternpattern-options)
+    * [escapePath](#escapepathpattern)
+* [Options](#options-3)
+  * [Common](#common)
+    * [concurrency](#concurrency)
+    * [cwd](#cwd)
+    * [deep](#deep)
+    * [followSymbolicLinks](#followsymboliclinks)
+    * [fs](#fs)
+    * [ignore](#ignore)
+    * [suppressErrors](#suppresserrors)
+    * [throwErrorOnBrokenSymbolicLink](#throwerroronbrokensymboliclink)
+  * [Output control](#output-control)
+    * [absolute](#absolute)
+    * [markDirectories](#markdirectories)
+    * [objectMode](#objectmode)
+    * [onlyDirectories](#onlydirectories)
+    * [onlyFiles](#onlyfiles)
+    * [stats](#stats)
+    * [unique](#unique)
+  * [Matching control](#matching-control)
+    * [braceExpansion](#braceexpansion)
+    * [caseSensitiveMatch](#casesensitivematch)
+    * [dot](#dot)
+    * [extglob](#extglob)
+    * [globstar](#globstar)
+    * [baseNameMatch](#basenamematch)
+* [FAQ](#faq)
+  * [What is a static or dynamic pattern?](#what-is-a-static-or-dynamic-pattern)
+  * [How to write patterns on Windows?](#how-to-write-patterns-on-windows)
+  * [Why are parentheses match wrong?](#why-are-parentheses-match-wrong)
+  * [How to exclude directory from reading?](#how-to-exclude-directory-from-reading)
+  * [How to use UNC path?](#how-to-use-unc-path)
+  * [Compatible with `node-glob`?](#compatible-with-node-glob)
+* [Benchmarks](#benchmarks)
+  * [Server](#server)
+  * [Nettop](#nettop)
+* [Changelog](#changelog)
+* [License](#license)
+
+</details>
+
+## Highlights
+
+* Fast. Probably the fastest.
+* Supports multiple and negative patterns.
+* Synchronous, Promise and Stream API.
+* Object mode. Can return more than just strings.
+* Error-tolerant.
+
+## Donation
+
+Do you like this project? Support it by donating, creating an issue or pull request.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)][paypal_mrmlnc]
+
+## Old and modern mode
+
+This package works in two modes, depending on the environment in which it is used.
+
+* **Old mode**. Node.js below 10.10 or when the [`stats`](#stats) option is *enabled*.
+* **Modern mode**. Node.js 10.10+ and the [`stats`](#stats) option is *disabled*.
+
+The modern mode is faster. Learn more about the [internal mechanism][nodelib_fs_scandir_old_and_modern_modern].
+
+## Pattern syntax
+
+> :warning: Always use forward-slashes in glob expressions (patterns and [`ignore`](#ignore) option). Use backslashes for escaping characters.
+
+There is more than one form of syntax: basic and advanced. Below is a brief overview of the supported features. Also pay attention to our [FAQ](#faq).
+
+> :book: This package uses a [`micromatch`][micromatch] as a library for pattern matching.
+
+### Basic syntax
+
+* An asterisk (`*`) — matches everything except slashes (path separators), hidden files (names starting with `.`).
+* A double star or globstar (`**`) — matches zero or more directories.
+* Question mark (`?`) – matches any single character except slashes (path separators).
+* Sequence (`[seq]`) — matches any character in sequence.
+
+> :book: A few additional words about the [basic matching behavior][picomatch_matching_behavior].
+
+Some examples:
+
+* `src/**/*.js` — matches all files in the `src` directory (any level of nesting) that have the `.js` extension.
+* `src/*.??` — matches all files in the `src` directory (only first level of nesting) that have a two-character extension.
+* `file-[01].js` — matches files: `file-0.js`, `file-1.js`.
+
+### Advanced syntax
+
+* [Escapes characters][micromatch_backslashes] (`\\`) — matching special characters (`$^*+?()[]`) as literals.
+* [POSIX character classes][picomatch_posix_brackets] (`[[:digit:]]`).
+* [Extended globs][micromatch_extglobs] (`?(pattern-list)`).
+* [Bash style brace expansions][micromatch_braces] (`{}`).
+* [Regexp character classes][micromatch_regex_character_classes] (`[1-5]`).
+* [Regex groups][regular_expressions_brackets] (`(a|b)`).
+
+> :book: A few additional words about the [advanced matching behavior][micromatch_extended_globbing].
+
+Some examples:
+
+* `src/**/*.{css,scss}` — matches all files in the `src` directory (any level of nesting) that have the `.css` or `.scss` extension.
+* `file-[[:digit:]].js` — matches files: `file-0.js`, `file-1.js`, …, `file-9.js`.
+* `file-{1..3}.js` — matches files: `file-1.js`, `file-2.js`, `file-3.js`.
+* `file-(1|2)` — matches files: `file-1.js`, `file-2.js`.
+
+## Installation
+
+```console
+npm install fast-glob
+```
+
+## API
+
+### Asynchronous
+
+```js
+fg(patterns, [options])
+```
+
+Returns a `Promise` with an array of matching entries.
+
+```js
+const fg = require('fast-glob');
+
+const entries = await fg(['.editorconfig', '**/index.js'], { dot: true });
+
+// ['.editorconfig', 'services/index.js']
+```
+
+### Synchronous
+
+```js
+fg.sync(patterns, [options])
+```
+
+Returns an array of matching entries.
+
+```js
+const fg = require('fast-glob');
+
+const entries = fg.sync(['.editorconfig', '**/index.js'], { dot: true });
+
+// ['.editorconfig', 'services/index.js']
+```
+
+### Stream
+
+```js
+fg.stream(patterns, [options])
+```
+
+Returns a [`ReadableStream`][node_js_stream_readable_streams] when the `data` event will be emitted with matching entry.
+
+```js
+const fg = require('fast-glob');
+
+const stream = fg.stream(['.editorconfig', '**/index.js'], { dot: true });
+
+for await (const entry of stream) {
+	// .editorconfig
+	// services/index.js
+}
+```
+
+#### patterns
+
+* Required: `true`
+* Type: `string | string[]`
+
+Any correct pattern(s).
+
+> :1234: [Pattern syntax](#pattern-syntax)
+>
+> :warning: This package does not respect the order of patterns. First, all the negative patterns are applied, and only then the positive patterns. If you want to get a certain order of records, use sorting or split calls.
+
+#### [options]
+
+* Required: `false`
+* Type: [`Options`](#options-3)
+
+See [Options](#options-3) section.
+
+### Helpers
+
+#### `generateTasks(patterns, [options])`
+
+Returns the internal representation of patterns ([`Task`](./src/managers/tasks.ts) is a combining patterns by base directory).
+
+```js
+fg.generateTasks('*');
+
+[{
+    base: '.', // Parent directory for all patterns inside this task
+    dynamic: true, // Dynamic or static patterns are in this task
+    patterns: ['*'],
+    positive: ['*'],
+    negative: []
+}]
+```
+
+##### patterns
+
+* Required: `true`
+* Type: `string | string[]`
+
+Any correct pattern(s).
+
+##### [options]
+
+* Required: `false`
+* Type: [`Options`](#options-3)
+
+See [Options](#options-3) section.
+
+#### `isDynamicPattern(pattern, [options])`
+
+Returns `true` if the passed pattern is a dynamic pattern.
+
+> :1234: [What is a static or dynamic pattern?](#what-is-a-static-or-dynamic-pattern)
+
+```js
+fg.isDynamicPattern('*'); // true
+fg.isDynamicPattern('abc'); // false
+```
+
+##### pattern
+
+* Required: `true`
+* Type: `string`
+
+Any correct pattern.
+
+##### [options]
+
+* Required: `false`
+* Type: [`Options`](#options-3)
+
+See [Options](#options-3) section.
+
+#### `escapePath(pattern)`
+
+Returns a path with escaped special characters (`*?|(){}[]`, `!` at the beginning of line, `@+!` before the opening parenthesis).
+
+```js
+fg.escapePath('!abc'); // \\!abc
+fg.escapePath('C:/Program Files (x86)'); // C:/Program Files \\(x86\\)
+```
+
+##### pattern
+
+* Required: `true`
+* Type: `string`
+
+Any string, for example, a path to a file.
+
+## Options
+
+### Common options
+
+#### concurrency
+
+* Type: `number`
+* Default: `os.cpus().length`
+
+Specifies the maximum number of concurrent requests from a reader to read directories.
+
+> :book: The higher the number, the higher the performance and load on the file system. If you want to read in quiet mode, set the value to a comfortable number or `1`.
+
+#### cwd
+
+* Type: `string`
+* Default: `process.cwd()`
+
+The current working directory in which to search.
+
+#### deep
+
+* Type: `number`
+* Default: `Infinity`
+
+Specifies the maximum depth of a read directory relative to the start directory.
+
+For example, you have the following tree:
+
+```js
+dir/
+└── one/            // 1
+    └── two/        // 2
+        └── file.js // 3
+```
+
+```js
+// With base directory
+fg.sync('dir/**', { onlyFiles: false, deep: 1 }); // ['dir/one']
+fg.sync('dir/**', { onlyFiles: false, deep: 2 }); // ['dir/one', 'dir/one/two']
+
+// With cwd option
+fg.sync('**', { onlyFiles: false, cwd: 'dir', deep: 1 }); // ['one']
+fg.sync('**', { onlyFiles: false, cwd: 'dir', deep: 2 }); // ['one', 'one/two']
+```
+
+> :book: If you specify a pattern with some base directory, this directory will not participate in the calculation of the depth of the found directories. Think of it as a [`cwd`](#cwd) option.
+
+#### followSymbolicLinks
+
+* Type: `boolean`
+* Default: `true`
+
+Indicates whether to traverse descendants of symbolic link directories.
+
+> :book: If the [`stats`](#stats) option is specified, the information about the symbolic link (`fs.lstat`) will be replaced with information about the entry (`fs.stat`) behind it.
+
+#### fs
+
+* Type: `FileSystemAdapter`
+* Default: `fs.*`
+
+Custom implementation of methods for working with the file system.
+
+```ts
+export interface FileSystemAdapter {
+    lstat?: typeof fs.lstat;
+    stat?: typeof fs.stat;
+    lstatSync?: typeof fs.lstatSync;
+    statSync?: typeof fs.statSync;
+    readdir?: typeof fs.readdir;
+    readdirSync?: typeof fs.readdirSync;
+}
+```
+
+#### ignore
+
+* Type: `string[]`
+* Default: `[]`
+
+An array of glob patterns to exclude matches. This is an alternative way to use negative patterns.
+
+```js
+dir/
+├── package-lock.json
+└── package.json
+```
+
+```js
+fg.sync(['*.json', '!package-lock.json']);            // ['package.json']
+fg.sync('*.json', { ignore: ['package-lock.json'] }); // ['package.json']
+```
+
+#### suppressErrors
+
+* Type: `boolean`
+* Default: `false`
+
+By default this package suppress only `ENOENT` errors. Set to `true` to suppress any error.
+
+> :book: Can be useful when the directory has entries with a special level of access.
+
+#### throwErrorOnBrokenSymbolicLink
+
+* Type: `boolean`
+* Default: `false`
+
+Throw an error when symbolic link is broken if `true` or safely return `lstat` call if `false`.
+
+> :book: This option has no effect on errors when reading the symbolic link directory.
+
+### Output control
+
+#### absolute
+
+* Type: `boolean`
+* Default: `false`
+
+Return the absolute path for entries.
+
+```js
+fg.sync('*.js', { absolute: false }); // ['index.js']
+fg.sync('*.js', { absolute: true });  // ['/home/user/index.js']
+```
+
+> :book: This option is required if you want to use negative patterns with absolute path, for example, `!${__dirname}/*.js`.
+
+#### markDirectories
+
+* Type: `boolean`
+* Default: `false`
+
+Mark the directory path with the final slash.
+
+```js
+fg.sync('*', { onlyFiles: false, markDirectories: false }); // ['index.js', 'controllers']
+fg.sync('*', { onlyFiles: false, markDirectories: true });  // ['index.js', 'controllers/']
+```
+
+#### objectMode
+
+* Type: `boolean`
+* Default: `false`
+
+Returns objects (instead of strings) describing entries.
+
+```js
+fg.sync('*', { objectMode: false }); // ['src/index.js']
+fg.sync('*', { objectMode: true });  // [{ name: 'index.js', path: 'src/index.js', dirent: <fs.Dirent> }]
+```
+
+The object has the following fields:
+
+* name (`string`) — the last part of the path (basename)
+* path (`string`) — full path relative to the pattern base directory
+* dirent ([`fs.Dirent`][node_js_fs_class_fs_dirent]) — instance of `fs.Direct`
+
+> :book: An object is an internal representation of entry, so getting it does not affect performance.
+
+#### onlyDirectories
+
+* Type: `boolean`
+* Default: `false`
+
+Return only directories.
+
+```js
+fg.sync('*', { onlyDirectories: false }); // ['index.js', 'src']
+fg.sync('*', { onlyDirectories: true });  // ['src']
+```
+
+> :book: If `true`, the [`onlyFiles`](#onlyfiles) option is automatically `false`.
+
+#### onlyFiles
+
+* Type: `boolean`
+* Default: `true`
+
+Return only files.
+
+```js
+fg.sync('*', { onlyFiles: false }); // ['index.js', 'src']
+fg.sync('*', { onlyFiles: true });  // ['index.js']
+```
+
+#### stats
+
+* Type: `boolean`
+* Default: `false`
+
+Enables an [object mode](#objectmode) with an additional field:
+
+* stats ([`fs.Stats`][node_js_fs_class_fs_stats]) — instance of `fs.Stats`
+
+```js
+fg.sync('*', { stats: false }); // ['src/index.js']
+fg.sync('*', { stats: true });  // [{ name: 'index.js', path: 'src/index.js', dirent: <fs.Dirent>, stats: <fs.Stats> }]
+```
+
+> :book: Returns `fs.stat` instead of `fs.lstat` for symbolic links when the [`followSymbolicLinks`](#followsymboliclinks) option is specified.
+>
+> :warning: Unlike [object mode](#objectmode) this mode requires additional calls to the file system. On average, this mode is slower at least twice. See [old and modern mode](#old-and-modern-mode) for more details.
+
+#### unique
+
+* Type: `boolean`
+* Default: `true`
+
+Ensures that the returned entries are unique.
+
+```js
+fg.sync(['*.json', 'package.json'], { unique: false }); // ['package.json', 'package.json']
+fg.sync(['*.json', 'package.json'], { unique: true });  // ['package.json']
+```
+
+If `true` and similar entries are found, the result is the first found.
+
+### Matching control
+
+#### braceExpansion
+
+* Type: `boolean`
+* Default: `true`
+
+Enables Bash-like brace expansion.
+
+> :1234: [Syntax description][bash_hackers_syntax_expansion_brace] or more [detailed description][micromatch_braces].
+
+```js
+dir/
+├── abd
+├── acd
+└── a{b,c}d
+```
+
+```js
+fg.sync('a{b,c}d', { braceExpansion: false }); // ['a{b,c}d']
+fg.sync('a{b,c}d', { braceExpansion: true });  // ['abd', 'acd']
+```
+
+#### caseSensitiveMatch
+
+* Type: `boolean`
+* Default: `true`
+
+Enables a [case-sensitive][wikipedia_case_sensitivity] mode for matching files.
+
+```js
+dir/
+├── file.txt
+└── File.txt
+```
+
+```js
+fg.sync('file.txt', { caseSensitiveMatch: false }); // ['file.txt', 'File.txt']
+fg.sync('file.txt', { caseSensitiveMatch: true });  // ['file.txt']
+```
+
+#### dot
+
+* Type: `boolean`
+* Default: `false`
+
+Allow patterns to match entries that begin with a period (`.`).
+
+> :book: Note that an explicit dot in a portion of the pattern will always match dot files.
+
+```js
+dir/
+├── .editorconfig
+└── package.json
+```
+
+```js
+fg.sync('*', { dot: false }); // ['package.json']
+fg.sync('*', { dot: true });  // ['.editorconfig', 'package.json']
+```
+
+#### extglob
+
+* Type: `boolean`
+* Default: `true`
+
+Enables Bash-like `extglob` functionality.
+
+> :1234: [Syntax description][micromatch_extglobs].
+
+```js
+dir/
+├── README.md
+└── package.json
+```
+
+```js
+fg.sync('*.+(json|md)', { extglob: false }); // []
+fg.sync('*.+(json|md)', { extglob: true });  // ['README.md', 'package.json']
+```
+
+#### globstar
+
+* Type: `boolean`
+* Default: `true`
+
+Enables recursively repeats a pattern containing `**`. If `false`, `**` behaves exactly like `*`.
+
+```js
+dir/
+└── a
+    └── b
+```
+
+```js
+fg.sync('**', { onlyFiles: false, globstar: false }); // ['a']
+fg.sync('**', { onlyFiles: false, globstar: true });  // ['a', 'a/b']
+```
+
+#### baseNameMatch
+
+* Type: `boolean`
+* Default: `false`
+
+If set to `true`, then patterns without slashes will be matched against the basename of the path if it contains slashes.
+
+```js
+dir/
+└── one/
+    └── file.md
+```
+
+```js
+fg.sync('*.md', { baseNameMatch: false }); // []
+fg.sync('*.md', { baseNameMatch: true });  // ['one/file.md']
+```
+
+## FAQ
+
+## What is a static or dynamic pattern?
+
+All patterns can be divided into two types:
+
+* **static**. A pattern is considered static if it can be used to get an entry on the file system without using matching mechanisms. For example, the `file.js` pattern is a static pattern because we can just verify that it exists on the file system.
+* **dynamic**. A pattern is considered dynamic if it cannot be used directly to find occurrences without using a matching mechanisms. For example, the `*` pattern is a dynamic pattern because we cannot use this pattern directly.
+
+A pattern is considered dynamic if it contains the following characters (`…` — any characters or their absence) or options:
+
+* The [`caseSensitiveMatch`](#casesensitivematch) option is disabled
+* `\\` (the escape character)
+* `*`, `?`, `!` (at the beginning of line)
+* `[…]`
+* `(…|…)`
+* `@(…)`, `!(…)`, `*(…)`, `?(…)`, `+(…)` (respects the [`extglob`](#extglob) option)
+* `{…,…}`, `{…..…}` (respects the [`braceExpansion`](#braceexpansion) option)
+
+## How to write patterns on Windows?
+
+Always use forward-slashes in glob expressions (patterns and [`ignore`](#ignore) option). Use backslashes for escaping characters. With the [`cwd`](#cwd) option use a convenient format.
+
+**Bad**
+
+```ts
+[
+	'directory\\*',
+	path.join(process.cwd(), '**')
+]
+```
+
+**Good**
+
+```ts
+[
+	'directory/*',
+	path.join(process.cwd(), '**').replace(/\\/g, '/')
+]
+```
+
+> :book: Use the [`normalize-path`][npm_normalize_path] or the [`unixify`][npm_unixify] package to convert Windows-style path to a Unix-style path.
+
+Read more about [matching with backslashes][micromatch_backslashes].
+
+## Why are parentheses match wrong?
+
+```js
+dir/
+└── (special-*file).txt
+```
+
+```js
+fg.sync(['(special-*file).txt']) // []
+```
+
+Refers to Bash. You need to escape special characters:
+
+```js
+fg.sync(['\\(special-*file\\).txt']) // ['(special-*file).txt']
+```
+
+Read more about [matching special characters as literals][picomatch_matching_special_characters_as_literals].
+
+## How to exclude directory from reading?
+
+You can use a negative pattern like this: `!**/node_modules` or `!**/node_modules/**`. Also you can use [`ignore`](#ignore) option. Just look at the example below.
+
+```js
+first/
+├── file.md
+└── second/
+    └── file.txt
+```
+
+If you don't want to read the `second` directory, you must write the following pattern: `!**/second` or `!**/second/**`.
+
+```js
+fg.sync(['**/*.md', '!**/second']);                 // ['first/file.md']
+fg.sync(['**/*.md'], { ignore: ['**/second/**'] }); // ['first/file.md']
+```
+
+> :warning: When you write `!**/second/**/*` it means that the directory will be **read**, but all the entries will not be included in the results.
+
+You have to understand that if you write the pattern to exclude directories, then the directory will not be read under any circumstances.
+
+## How to use UNC path?
+
+You cannot use [Uniform Naming Convention (UNC)][unc_path] paths as patterns (due to syntax), but you can use them as [`cwd`](#cwd) directory.
+
+```ts
+fg.sync('*', { cwd: '\\\\?\\C:\\Python27' /* or //?/C:/Python27 */ });
+fg.sync('Python27/*', { cwd: '\\\\?\\C:\\' /* or //?/C:/ */ });
+```
+
+## Compatible with `node-glob`?
+
+| node-glob    | fast-glob |
+| :----------: | :-------: |
+| `cwd`        | [`cwd`](#cwd) |
+| `root`       | – |
+| `dot`        | [`dot`](#dot) |
+| `nomount`    | – |
+| `mark`       | [`markDirectories`](#markdirectories) |
+| `nosort`     | – |
+| `nounique`   | [`unique`](#unique) |
+| `nobrace`    | [`braceExpansion`](#braceexpansion) |
+| `noglobstar` | [`globstar`](#globstar) |
+| `noext`      | [`extglob`](#extglob) |
+| `nocase`     | [`caseSensitiveMatch`](#casesensitivematch) |
+| `matchBase`  | [`baseNameMatch`](#basenamematch) |
+| `nodir`      | [`onlyFiles`](#onlyfiles) |
+| `ignore`     | [`ignore`](#ignore) |
+| `follow`     | [`followSymbolicLinks`](#followsymboliclinks) |
+| `realpath`   | – |
+| `absolute`   | [`absolute`](#absolute) |
+
+## Benchmarks
+
+### Server
+
+Link: [Vultr Bare Metal][vultr_pricing_baremetal]
+
+* Processor: E3-1270v6 (8 CPU)
+* RAM: 32GB
+* Disk: SSD ([Intel DC S3520 SSDSC2BB240G7][intel_ssd])
+
+You can see results [here][github_gist_benchmark_server] for latest release.
+
+### Nettop
+
+Link: [Zotac bi323][zotac_bi323]
+
+* Processor: Intel N3150 (4 CPU)
+* RAM: 8GB
+* Disk: SSD ([Silicon Power SP060GBSS3S55S25][silicon_power_ssd])
+
+You can see results [here][github_gist_benchmark_nettop] for latest release.
+
+## Changelog
+
+See the [Releases section of our GitHub project][github_releases] for changelog for each release version.
+
+## License
+
+This software is released under the terms of the MIT license.
+
+[bash_hackers_syntax_expansion_brace]: https://wiki.bash-hackers.org/syntax/expansion/brace
+[github_gist_benchmark_nettop]: https://gist.github.com/mrmlnc/f06246b197f53c356895fa35355a367c#file-fg-benchmark-nettop-product-txt
+[github_gist_benchmark_server]: https://gist.github.com/mrmlnc/f06246b197f53c356895fa35355a367c#file-fg-benchmark-server-product-txt
+[github_releases]: https://github.com/mrmlnc/fast-glob/releases
+[glob_definition]: https://en.wikipedia.org/wiki/Glob_(programming)
+[glob_linux_man]: http://man7.org/linux/man-pages/man3/glob.3.html
+[intel_ssd]: https://ark.intel.com/content/www/us/en/ark/products/93012/intel-ssd-dc-s3520-series-240gb-2-5in-sata-6gb-s-3d1-mlc.html
+[micromatch_backslashes]: https://github.com/micromatch/micromatch#backslashes
+[micromatch_braces]: https://github.com/micromatch/braces
+[micromatch_extended_globbing]: https://github.com/micromatch/micromatch#extended-globbing
+[micromatch_extglobs]: https://github.com/micromatch/micromatch#extglobs
+[micromatch_regex_character_classes]: https://github.com/micromatch/micromatch#regex-character-classes
+[micromatch]: https://github.com/micromatch/micromatch
+[node_js_fs_class_fs_dirent]: https://nodejs.org/api/fs.html#fs_class_fs_dirent
+[node_js_fs_class_fs_stats]: https://nodejs.org/api/fs.html#fs_class_fs_stats
+[node_js_stream_readable_streams]: https://nodejs.org/api/stream.html#stream_readable_streams
+[node_js]: https://nodejs.org/en
+[nodelib_fs_scandir_old_and_modern_modern]: https://github.com/nodelib/nodelib/blob/master/packages/fs/fs.scandir/README.md#old-and-modern-mode
+[npm_normalize_path]: https://www.npmjs.com/package/normalize-path
+[npm_unixify]: https://www.npmjs.com/package/unixify
+[paypal_mrmlnc]:https://paypal.me/mrmlnc
+[picomatch_matching_behavior]: https://github.com/micromatch/picomatch#matching-behavior-vs-bash
+[picomatch_matching_special_characters_as_literals]: https://github.com/micromatch/picomatch#matching-special-characters-as-literals
+[picomatch_posix_brackets]: https://github.com/micromatch/picomatch#posix-brackets
+[regular_expressions_brackets]: https://www.regular-expressions.info/brackets.html
+[silicon_power_ssd]: https://www.silicon-power.com/web/product-1
+[unc_path]: https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dtyp/62e862f4-2a51-452e-8eeb-dc4ff5ee33cc
+[vultr_pricing_baremetal]: https://www.vultr.com/pricing/baremetal
+[wikipedia_case_sensitivity]: https://en.wikipedia.org/wiki/Case_sensitivity
+[zotac_bi323]: https://www.zotac.com/ee/product/mini_pcs/zbox-bi323
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/fastq/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/fastq/README.md](Github/bgoonz-master/bgoonz-master/node_modules/fastq/README.md)
+# fastq
+
+![ci][ci-url]
+[![npm version][npm-badge]][npm-url]
+[![Dependency Status][david-badge]][david-url]
+
+Fast, in memory work queue.
+
+Benchmarks (1 million tasks):
+
+* setImmediate: 812ms
+* fastq: 854ms
+* async.queue: 1298ms
+* neoAsync.queue: 1249ms
+
+Obtained on node 12.16.1, on a dedicated server.
+
+If you need zero-overhead series function call, check out
+[fastseries](http://npm.im/fastseries). For zero-overhead parallel
+function call, check out [fastparallel](http://npm.im/fastparallel).
+
+[![js-standard-style](https://raw.githubusercontent.com/feross/standard/master/badge.png)](https://github.com/feross/standard)
+
+  * <a href="#install">Installation</a>
+  * <a href="#usage">Usage</a>
+  * <a href="#api">API</a>
+  * <a href="#license">Licence &amp; copyright</a>
+
+## Install
+
+`npm i fastq --save`
+
+## Usage
+
+```js
+'use strict'
+
+var queue = require('fastq')(worker, 1)
+
+queue.push(42, function (err, result) {
+  if (err) { throw err }
+  console.log('the result is', result)
+})
+
+function worker (arg, cb) {
+  cb(null, 42 * 2)
+}
+```
+
+or
+
+```js
+var queue = require('fastq').promise(worker, 1)
+
+async function worker (arg) {
+  return 42 * 2
+}
+
+async function run () {
+  const result = await queue.push(42)
+  console.log('the result is', result)
+})
+}
+
+run()
+```
+
+### Setting this
+
+```js
+'use strict'
+
+var that = { hello: 'world' }
+var queue = require('fastq')(that, worker, 1)
+
+queue.push(42, function (err, result) {
+  if (err) { throw err }
+  console.log(this)
+  console.log('the result is', result)
+})
+
+function worker (arg, cb) {
+  console.log(this)
+  cb(null, 42 * 2)
+}
+```
+
+## API
+
+* <a href="#fastqueue"><code>fastqueue()</code></a>
+* <a href="#push"><code>queue#<b>push()</b></code></a>
+* <a href="#unshift"><code>queue#<b>unshift()</b></code></a>
+* <a href="#pause"><code>queue#<b>pause()</b></code></a>
+* <a href="#resume"><code>queue#<b>resume()</b></code></a>
+* <a href="#idle"><code>queue#<b>idle()</b></code></a>
+* <a href="#length"><code>queue#<b>length()</b></code></a>
+* <a href="#getQueue"><code>queue#<b>getQueue()</b></code></a>
+* <a href="#kill"><code>queue#<b>kill()</b></code></a>
+* <a href="#killAndDrain"><code>queue#<b>killAndDrain()</b></code></a>
+* <a href="#error"><code>queue#<b>error()</b></code></a>
+* <a href="#concurrency"><code>queue#<b>concurrency</b></code></a>
+* <a href="#drain"><code>queue#<b>drain</b></code></a>
+* <a href="#empty"><code>queue#<b>empty</b></code></a>
+* <a href="#saturated"><code>queue#<b>saturated</b></code></a>
+* <a href="#promise"><code>fastqueue.promise()</code></a>
+
+-------------------------------------------------------
+<a name="fastqueue"></a>
+### fastqueue([that], worker, concurrency)
+
+Creates a new queue.
+
+Arguments:
+
+* `that`, optional context of the `worker` function.
+* `worker`, worker function, it would be called with `that` as `this`,
+  if that is specified.
+* `concurrency`, number of concurrent tasks that could be executed in
+  parallel.
+
+-------------------------------------------------------
+<a name="push"></a>
+### queue.push(task, done)
+
+Add a task at the end of the queue. `done(err, result)` will be called
+when the task was processed.
+
+-------------------------------------------------------
+<a name="unshift"></a>
+### queue.unshift(task, done)
+
+Add a task at the beginning of the queue. `done(err, result)` will be called
+when the task was processed.
+
+-------------------------------------------------------
+<a name="pause"></a>
+### queue.pause()
+
+Pause the processing of tasks. Currently worked tasks are not
+stopped.
+
+-------------------------------------------------------
+<a name="resume"></a>
+### queue.resume()
+
+Resume the processing of tasks.
+
+-------------------------------------------------------
+<a name="idle"></a>
+### queue.idle()
+
+Returns `false` if there are tasks being processed or waiting to be processed.
+`true` otherwise.
+
+-------------------------------------------------------
+<a name="length"></a>
+### queue.length()
+
+Returns the number of tasks waiting to be processed (in the queue).
+
+-------------------------------------------------------
+<a name="getQueue"></a>
+### queue.getQueue()
+
+Returns all the tasks be processed (in the queue). Returns empty array when there are no tasks
+
+-------------------------------------------------------
+<a name="kill"></a>
+### queue.kill()
+
+Removes all tasks waiting to be processed, and reset `drain` to an empty
+function.
+
+-------------------------------------------------------
+<a name="killAndDrain"></a>
+### queue.killAndDrain()
+
+Same than `kill` but the `drain` function will be called before reset to empty.
+
+-------------------------------------------------------
+<a name="error"></a>
+### queue.error(handler)
+
+Set a global error handler. `handler(err, task)` will be called
+when any of the tasks return an error.
+
+-------------------------------------------------------
+<a name="concurrency"></a>
+### queue.concurrency
+
+Property that returns the number of concurrent tasks that could be executed in
+parallel. It can be altered at runtime.
+
+-------------------------------------------------------
+<a name="drain"></a>
+### queue.drain
+
+Function that will be called when the last
+item from the queue has been processed by a worker.
+It can be altered at runtime.
+
+-------------------------------------------------------
+<a name="empty"></a>
+### queue.empty
+
+Function that will be called when the last
+item from the queue has been assigned to a worker.
+It can be altered at runtime.
+
+-------------------------------------------------------
+<a name="saturated"></a>
+### queue.saturated
+
+Function that will be called when the queue hits the concurrency
+limit.
+It can be altered at runtime.
+
+-------------------------------------------------------
+<a name="promise"></a>
+### fastqueue.promise([that], worker(arg), concurrency)
+
+Creates a new queue with `Promise` apis. It also offers all the methods
+and properties of the object returned by [`fastqueue`](#fastqueue) with the modified
+[`push`](#pushPromise) and [`unshift`](#unshiftPromise) methods.
+
+Node v10+ is required to use the promisified version.
+
+Arguments:
+* `that`, optional context of the `worker` function.
+* `worker`, worker function, it would be called with `that` as `this`,
+  if that is specified. It MUST return a `Promise`.
+* `concurrency`, number of concurrent tasks that could be executed in
+  parallel.
+
+<a name="pushPromise"></a>
+#### queue.push(task) => Promise
+
+Add a task at the end of the queue. The returned `Promise`  will be fulfilled
+when the task is processed.
+
+<a name="unshiftPromise"></a>
+#### queue.unshift(task) => Promise
+
+Add a task at the beginning of the queue. The returned `Promise`  will be fulfilled
+when the task is processed.
+
+## License
+
+ISC
+
+[ci-url]: https://github.com/mcollina/fastq/workflows/ci/badge.svg
+[npm-badge]: https://badge.fury.io/js/fastq.svg
+[npm-url]: https://badge.fury.io/js/fastq
+[david-badge]: https://david-dm.org/mcollina/fastq.svg
+[david-url]: https://david-dm.org/mcollina/fastq
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/fill-range/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/fill-range/README.md](Github/bgoonz-master/bgoonz-master/node_modules/fill-range/README.md)
+# fill-range [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8YFZ425KND68) [![NPM version](https://img.shields.io/npm/v/fill-range.svg?style=flat)](https://www.npmjs.com/package/fill-range) [![NPM monthly downloads](https://img.shields.io/npm/dm/fill-range.svg?style=flat)](https://npmjs.org/package/fill-range) [![NPM total downloads](https://img.shields.io/npm/dt/fill-range.svg?style=flat)](https://npmjs.org/package/fill-range) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/fill-range.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/fill-range)
+
+> Fill in a range of numbers or letters, optionally passing an increment or `step` to use, or create a regex-compatible range with `options.toRegex`
+
+Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and consider starring the project to show your :heart: and support.
+
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install --save fill-range
+```
+
+## Usage
+
+Expands numbers and letters, optionally using a `step` as the last argument. _(Numbers may be defined as JavaScript numbers or strings)_.
+
+```js
+const fill = require('fill-range');
+// fill(from, to[, step, options]);
+
+console.log(fill('1', '10')); //=> ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+console.log(fill('1', '10', { toRegex: true })); //=> [1-9]|10
+```
+
+**Params**
+
+* `from`: **{String|Number}** the number or letter to start with
+* `to`: **{String|Number}** the number or letter to end with
+* `step`: **{String|Number|Object|Function}** Optionally pass a [step](#optionsstep) to use.
+* `options`: **{Object|Function}**: See all available [options](#options)
+
+## Examples
+
+By default, an array of values is returned.
+
+**Alphabetical ranges**
+
+```js
+console.log(fill('a', 'e')); //=> ['a', 'b', 'c', 'd', 'e']
+console.log(fill('A', 'E')); //=> [ 'A', 'B', 'C', 'D', 'E' ]
+```
+
+**Numerical ranges**
+
+Numbers can be defined as actual numbers or strings.
+
+```js
+console.log(fill(1, 5));     //=> [ 1, 2, 3, 4, 5 ]
+console.log(fill('1', '5')); //=> [ 1, 2, 3, 4, 5 ]
+```
+
+**Negative ranges**
+
+Numbers can be defined as actual numbers or strings.
+
+```js
+console.log(fill('-5', '-1')); //=> [ '-5', '-4', '-3', '-2', '-1' ]
+console.log(fill('-5', '5')); //=> [ '-5', '-4', '-3', '-2', '-1', '0', '1', '2', '3', '4', '5' ]
+```
+
+**Steps (increments)**
+
+```js
+// numerical ranges with increments
+console.log(fill('0', '25', 4)); //=> [ '0', '4', '8', '12', '16', '20', '24' ]
+console.log(fill('0', '25', 5)); //=> [ '0', '5', '10', '15', '20', '25' ]
+console.log(fill('0', '25', 6)); //=> [ '0', '6', '12', '18', '24' ]
+
+// alphabetical ranges with increments
+console.log(fill('a', 'z', 4)); //=> [ 'a', 'e', 'i', 'm', 'q', 'u', 'y' ]
+console.log(fill('a', 'z', 5)); //=> [ 'a', 'f', 'k', 'p', 'u', 'z' ]
+console.log(fill('a', 'z', 6)); //=> [ 'a', 'g', 'm', 's', 'y' ]
+```
+
+## Options
+
+### options.step
+
+**Type**: `number` (formatted as a string or number)
+
+**Default**: `undefined`
+
+**Description**: The increment to use for the range. Can be used with letters or numbers.
+
+**Example(s)**
+
+```js
+// numbers
+console.log(fill('1', '10', 2)); //=> [ '1', '3', '5', '7', '9' ]
+console.log(fill('1', '10', 3)); //=> [ '1', '4', '7', '10' ]
+console.log(fill('1', '10', 4)); //=> [ '1', '5', '9' ]
+
+// letters
+console.log(fill('a', 'z', 5)); //=> [ 'a', 'f', 'k', 'p', 'u', 'z' ]
+console.log(fill('a', 'z', 7)); //=> [ 'a', 'h', 'o', 'v' ]
+console.log(fill('a', 'z', 9)); //=> [ 'a', 'j', 's' ]
+```
+
+### options.strictRanges
+
+**Type**: `boolean`
+
+**Default**: `false`
+
+**Description**: By default, `null` is returned when an invalid range is passed. Enable this option to throw a `RangeError` on invalid ranges.
+
+**Example(s)**
+
+The following are all invalid:
+
+```js
+fill('1.1', '2');   // decimals not supported in ranges
+fill('a', '2');     // incompatible range values
+fill(1, 10, 'foo'); // invalid "step" argument
+```
+
+### options.stringify
+
+**Type**: `boolean`
+
+**Default**: `undefined`
+
+**Description**: Cast all returned values to strings. By default, integers are returned as numbers.
+
+**Example(s)**
+
+```js
+console.log(fill(1, 5));                    //=> [ 1, 2, 3, 4, 5 ]
+console.log(fill(1, 5, { stringify: true })); //=> [ '1', '2', '3', '4', '5' ]
+```
+
+### options.toRegex
+
+**Type**: `boolean`
+
+**Default**: `undefined`
+
+**Description**: Create a regex-compatible source string, instead of expanding values to an array.
+
+**Example(s)**
+
+```js
+// alphabetical range
+console.log(fill('a', 'e', { toRegex: true })); //=> '[a-e]'
+// alphabetical with step
+console.log(fill('a', 'z', 3, { toRegex: true })); //=> 'a|d|g|j|m|p|s|v|y'
+// numerical range
+console.log(fill('1', '100', { toRegex: true })); //=> '[1-9]|[1-9][0-9]|100'
+// numerical range with zero padding
+console.log(fill('000001', '100000', { toRegex: true }));
+//=> '0{5}[1-9]|0{4}[1-9][0-9]|0{3}[1-9][0-9]{2}|0{2}[1-9][0-9]{3}|0[1-9][0-9]{4}|100000'
+```
+
+### options.transform
+
+**Type**: `function`
+
+**Default**: `undefined`
+
+**Description**: Customize each value in the returned array (or [string](#optionstoRegex)). _(you can also pass this function as the last argument to `fill()`)_.
+
+**Example(s)**
+
+```js
+// add zero padding
+console.log(fill(1, 5, value => String(value).padStart(4, '0')));
+//=> ['0001', '0002', '0003', '0004', '0005']
+```
+
+## About
+
+<details>
+<summary><strong>Contributing</strong></summary>
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).
+
+</details>
+
+<details>
+<summary><strong>Running Tests</strong></summary>
+
+Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
+
+```sh
+$ npm install && npm test
+```
+
+</details>
+
+<details>
+<summary><strong>Building docs</strong></summary>
+
+_(This project's readme.md is generated by [verb](https://github.com/verbose/verb-generate-readme), please don't edit the readme directly. Any changes to the readme must be made in the [.verb.md](.verb.md) readme template.)_
+
+To generate the readme, run the following command:
+
+```sh
+$ npm install -g verbose/verb#dev verb-generate-readme && verb
+```
+
+</details>
+
+### Contributors
+
+| **Commits** | **Contributor** |  
+| --- | --- |  
+| 116 | [jonschlinkert](https://github.com/jonschlinkert) |  
+| 4   | [paulmillr](https://github.com/paulmillr) |  
+| 2   | [realityking](https://github.com/realityking) |  
+| 2   | [bluelovers](https://github.com/bluelovers) |  
+| 1   | [edorivai](https://github.com/edorivai) |  
+| 1   | [wtgtybhertgeghgtwtg](https://github.com/wtgtybhertgeghgtwtg) |  
+
+### Author
+
+**Jon Schlinkert**
+
+* [GitHub Profile](https://github.com/jonschlinkert)
+* [Twitter Profile](https://twitter.com/jonschlinkert)
+* [LinkedIn Profile](https://linkedin.com/in/jonschlinkert)
+
+Please consider supporting me on Patreon, or [start your own Patreon page](https://patreon.com/invite/bxpbvm)!
+
+<a href="https://www.patreon.com/jonschlinkert">
+<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" height="50">
+</a>
+
+### License
+
+Copyright © 2019, [Jon Schlinkert](https://github.com/jonschlinkert).
+Released under the [MIT License](LICENSE).
+
+***
+
+_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.8.0, on April 08, 2019._
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/find-up/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/find-up/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/find-up/readme.md)
+# find-up [![Build Status](https://travis-ci.org/sindresorhus/find-up.svg?branch=master)](https://travis-ci.org/sindresorhus/find-up)
+
+> Find a file or directory by walking up parent directories
+
+
+## Install
+
+```
+$ npm install find-up
+```
+
+
+## Usage
+
+```
+/
+└── Users
+    └── sindresorhus
+        ├── unicorn.png
+        └── foo
+            └── bar
+                ├── baz
+                └── example.js
+```
+
+`example.js`
+
+```js
+const path = require('path');
+const findUp = require('find-up');
+
+(async () => {
+	console.log(await findUp('unicorn.png'));
+	//=> '/Users/sindresorhus/unicorn.png'
+
+	console.log(await findUp(['rainbow.png', 'unicorn.png']));
+	//=> '/Users/sindresorhus/unicorn.png'
+
+	console.log(await findUp(async directory => {
+		const hasUnicorns = await findUp.exists(path.join(directory, 'unicorn.png'));
+		return hasUnicorns && directory;
+	}, {type: 'directory'}));
+	//=> '/Users/sindresorhus'
+})();
+```
+
+
+## API
+
+### findUp(name, options?)
+### findUp(matcher, options?)
+
+Returns a `Promise` for either the path or `undefined` if it couldn't be found.
+
+### findUp([...name], options?)
+
+Returns a `Promise` for either the first path found (by respecting the order of the array) or `undefined` if none could be found.
+
+### findUp.sync(name, options?)
+### findUp.sync(matcher, options?)
+
+Returns a path or `undefined` if it couldn't be found.
+
+### findUp.sync([...name], options?)
+
+Returns the first path found (by respecting the order of the array) or `undefined` if none could be found.
+
+#### name
+
+Type: `string`
+
+Name of the file or directory to find.
+
+#### matcher
+
+Type: `Function`
+
+A function that will be called with each directory until it returns a `string` with the path, which stops the search, or the root directory has been reached and nothing was found. Useful if you want to match files with certain patterns, set of permissions, or other advanced use-cases.
+
+When using async mode, the `matcher` may optionally be an async or promise-returning function that returns the path.
+
+#### options
+
+Type: `object`
+
+##### cwd
+
+Type: `string`<br>
+Default: `process.cwd()`
+
+Directory to start from.
+
+##### type
+
+Type: `string`<br>
+Default: `'file'`<br>
+Values: `'file'` `'directory'`
+
+The type of paths that can match.
+
+##### allowSymlinks
+
+Type: `boolean`<br>
+Default: `true`
+
+Allow symbolic links to match if they point to the chosen path type.
+
+### findUp.exists(path)
+
+Returns a `Promise<boolean>` of whether the path exists.
+
+### findUp.sync.exists(path)
+
+Returns a `boolean` of whether the path exists.
+
+#### path
+
+Type: `string`
+
+Path to a file or directory.
+
+### findUp.stop
+
+A [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) that can be returned by a `matcher` function to stop the search and cause `findUp` to immediately return `undefined`. Useful as a performance optimization in case the current working directory is deeply nested in the filesystem.
+
+```js
+const path = require('path');
+const findUp = require('find-up');
+
+(async () => {
+	await findUp(directory => {
+		return path.basename(directory) === 'work' ? findUp.stop : 'logo.png';
+	});
+})();
+```
+
+
+## Related
+
+- [find-up-cli](https://github.com/sindresorhus/find-up-cli) - CLI for this module
+- [pkg-up](https://github.com/sindresorhus/pkg-up) - Find the closest package.json file
+- [pkg-dir](https://github.com/sindresorhus/pkg-dir) - Find the root directory of an npm package
+- [resolve-from](https://github.com/sindresorhus/resolve-from) - Resolve the path of a module like `require.resolve()` but from a given path
+
+
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-find-up?utm_source=npm-find-up&utm_medium=referral&utm_campaign=readme">Get professional support for 'find-up' with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/fs-extra/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/fs-extra/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/fs-extra/CHANGELOG.md)
+9.1.0 / 2021-01-19
+------------------
+
+- Add promise support for `fs.rm()` ([#841](https://github.com/jprichardson/node-fs-extra/issues/841), [#860](https://github.com/jprichardson/node-fs-extra/pull/860))
+- Upgrade universalify for performance improvments ([#825](https://github.com/jprichardson/node-fs-extra/pull/825))
+
+9.0.1 / 2020-06-03
+------------------
+
+- Fix issue with `ensureFile()` when used with Jest on Windows ([#804](https://github.com/jprichardson/node-fs-extra/issues/804), [#805](https://github.com/jprichardson/node-fs-extra/pull/805))
+- Remove unneeded `process.umask()` call ([#791](https://github.com/jprichardson/node-fs-extra/pull/791))
+- Docs improvements ([#753](https://github.com/jprichardson/node-fs-extra/pull/753), [#795](https://github.com/jprichardson/node-fs-extra/pull/795), [#797](https://github.com/jprichardson/node-fs-extra/pull/797))
+
+9.0.0 / 2020-03-19
+------------------
+
+### Breaking changes
+
+- Requires Node.js version 10 or greater ([#725](https://github.com/jprichardson/node-fs-extra/issues/725), [#751](https://github.com/jprichardson/node-fs-extra/pull/751))
+- Switched `ensureDir*` to use a fork of https://github.com/sindresorhus/make-dir to make use of native recursive `fs.mkdir` where possible ([#619](https://github.com/jprichardson/node-fs-extra/issues/619), [#756](https://github.com/jprichardson/node-fs-extra/pull/756))
+- Properly preserve `atime` for `copy*` with `preserveTimestamps` option ([#633](https://github.com/jprichardson/node-fs-extra/pull/633))
+
+**The following changes, allthough technically breaking, will not affect the vast majority of users:**
+
+- `outputJson` now outputs objects as they were when the function was called, even if they are mutated later ([#702](https://github.com/jprichardson/node-fs-extra/issues/702), [#768](https://github.com/jprichardson/node-fs-extra/pull/768))
+- Cannot pass `null` as an options parameter to `*Json*` methods ([#745](https://github.com/jprichardson/node-fs-extra/issues/745), [#768](https://github.com/jprichardson/node-fs-extra/pull/768))
+
+### Improvements
+
+- Add promise shims for `fs.writev` & `fs.opendir` ([#747](https://github.com/jprichardson/node-fs-extra/pull/747))
+- Better errors for `ensureFile` ([#696](https://github.com/jprichardson/node-fs-extra/issues/696), [#744](https://github.com/jprichardson/node-fs-extra/pull/744))
+- Better file comparison for older Node versions ([#694](https://github.com/jprichardson/node-fs-extra/pull/694))
+
+### Miscellaneous changes
+- Peformance optimizations ([#762](https://github.com/jprichardson/node-fs-extra/issues/762), [#764](https://github.com/jprichardson/node-fs-extra/pull/764))
+- Add missing documentation for aliases ([#758](https://github.com/jprichardson/node-fs-extra/issues/758), [#766](https://github.com/jprichardson/node-fs-extra/pull/766))
+- Update `universalify` dependency ([#767](https://github.com/jprichardson/node-fs-extra/pull/767))
+
+8.1.0 / 2019-06-28
+------------------
+
+- Add support for promisified `fs.realpath.native` in Node v9.2+ ([#650](https://github.com/jprichardson/node-fs-extra/issues/650), [#682](https://github.com/jprichardson/node-fs-extra/pull/682))
+- Update `graceful-fs` dependency ([#700](https://github.com/jprichardson/node-fs-extra/pull/700))
+- Use `graceful-fs` everywhere ([#700](https://github.com/jprichardson/node-fs-extra/pull/700))
+
+8.0.1 / 2019-05-13
+------------------
+
+- Fix bug `Maximum call stack size exceeded` error in `util/stat` ([#679](https://github.com/jprichardson/node-fs-extra/pull/679))
+
+8.0.0 / 2019-05-11
+------------------
+
+**NOTE:** Node.js v6 support is deprecated, and will be dropped in the next major release.
+
+- Use `renameSync()` under the hood in `moveSync()`
+- Fix bug with bind-mounted directories in `copy*()` ([#613](https://github.com/jprichardson/node-fs-extra/issues/613), [#618](https://github.com/jprichardson/node-fs-extra/pull/618))
+- Fix bug in `move()` with case-insensitive file systems
+- Use `fs.stat()`'s `bigint` option in `copy*()` & `move*()` where possible ([#657](https://github.com/jprichardson/node-fs-extra/issues/657))
+
+7.0.1 / 2018-11-07
+------------------
+
+- Fix `removeSync()` on Windows, in some cases, it would error out with `ENOTEMPTY` ([#646](https://github.com/jprichardson/node-fs-extra/pull/646))
+- Document `mode` option for `ensureDir*()` ([#587](https://github.com/jprichardson/node-fs-extra/pull/587))
+- Don't include documentation files in npm package tarball ([#642](https://github.com/jprichardson/node-fs-extra/issues/642), [#643](https://github.com/jprichardson/node-fs-extra/pull/643))
+
+7.0.0 / 2018-07-16
+------------------
+
+- **BREAKING:** Refine `copy*()` handling of symlinks to properly detect symlinks that point to the same file. ([#582](https://github.com/jprichardson/node-fs-extra/pull/582))
+- Fix bug with copying write-protected directories ([#600](https://github.com/jprichardson/node-fs-extra/pull/600))
+- Universalify `fs.lchmod()` ([#596](https://github.com/jprichardson/node-fs-extra/pull/596))
+- Add `engines` field to `package.json` ([#580](https://github.com/jprichardson/node-fs-extra/pull/580))
+
+6.0.1 / 2018-05-09
+------------------
+
+- Fix `fs.promises` `ExperimentalWarning` on Node v10.1.0 ([#578](https://github.com/jprichardson/node-fs-extra/pull/578))
+
+6.0.0 / 2018-05-01
+------------------
+
+- Drop support for Node.js versions 4, 5, & 7 ([#564](https://github.com/jprichardson/node-fs-extra/pull/564))
+- Rewrite `move` to use `fs.rename` where possible ([#549](https://github.com/jprichardson/node-fs-extra/pull/549))
+- Don't convert relative paths to absolute paths for `filter` ([#554](https://github.com/jprichardson/node-fs-extra/pull/554))
+- `copy*`'s behavior when `preserveTimestamps` is `false` has been OS-dependent since 5.0.0, but that's now explicitly noted in the docs ([#563](https://github.com/jprichardson/node-fs-extra/pull/563))
+- Fix subdirectory detection for `copy*` & `move*` ([#541](https://github.com/jprichardson/node-fs-extra/pull/541))
+- Handle case-insensitive paths correctly in `copy*` ([#568](https://github.com/jprichardson/node-fs-extra/pull/568))
+
+5.0.0 / 2017-12-11
+------------------
+
+Significant refactor of `copy()` & `copySync()`, including breaking changes. No changes to other functions in this release.
+
+Huge thanks to **[@manidlou](https://github.com/manidlou)** for doing most of the work on this release.
+
+- The `filter` option can no longer be a RegExp (must be a function). This was deprecated since fs-extra v1.0.0. [#512](https://github.com/jprichardson/node-fs-extra/pull/512)
+- `copy()`'s `filter` option can now be a function that returns a Promise. [#518](https://github.com/jprichardson/node-fs-extra/pull/518)
+- `copy()` & `copySync()` now use `fs.copyFile()`/`fs.copyFileSync()` in environments that support it (currently Node 8.5.0+). Older Node versions still get the old implementation. [#505](https://github.com/jprichardson/node-fs-extra/pull/505)
+- Don't allow copying a directory into itself. [#83](https://github.com/jprichardson/node-fs-extra/issues/83)
+- Handle copying between identical files. [#198](https://github.com/jprichardson/node-fs-extra/issues/198)
+- Error out when copying an empty folder to a path that already exists. [#464](https://github.com/jprichardson/node-fs-extra/issues/464)
+- Don't create `dest`'s parent if the `filter` function aborts the `copy()` operation. [#517](https://github.com/jprichardson/node-fs-extra/pull/517)
+- Fix `writeStream` not being closed if there was an error in `copy()`. [#516](https://github.com/jprichardson/node-fs-extra/pull/516)
+
+4.0.3 / 2017-12-05
+------------------
+
+- Fix wrong `chmod` values in `fs.remove()` [#501](https://github.com/jprichardson/node-fs-extra/pull/501)
+- Fix `TypeError` on systems that don't have some `fs` operations like `lchown` [#520](https://github.com/jprichardson/node-fs-extra/pull/520)
+
+4.0.2 / 2017-09-12
+------------------
+
+- Added `EOL` option to `writeJson*` & `outputJson*` (via upgrade to jsonfile v4)
+- Added promise support to [`fs.copyFile()`](https://nodejs.org/api/fs.html#fs_fs_copyfile_src_dest_flags_callback) in Node 8.5+
+- Added `.js` extension to `main` field in `package.json` for better tooling compatibility. [#485](https://github.com/jprichardson/node-fs-extra/pull/485)
+
+4.0.1 / 2017-07-31
+------------------
+
+### Fixed
+
+- Previously, `ensureFile()` & `ensureFileSync()` would do nothing if the path was a directory. Now, they error out for consistency with `ensureDir()`. [#465](https://github.com/jprichardson/node-fs-extra/issues/465), [#466](https://github.com/jprichardson/node-fs-extra/pull/466), [#470](https://github.com/jprichardson/node-fs-extra/issues/470)
+
+4.0.0 / 2017-07-14
+------------------
+
+### Changed
+
+- **BREAKING:** The promisified versions of `fs.read()` & `fs.write()` now return objects. See [the docs](docs/fs-read-write.md) for details. [#436](https://github.com/jprichardson/node-fs-extra/issues/436), [#449](https://github.com/jprichardson/node-fs-extra/pull/449)
+- `fs.move()` now errors out when destination is a subdirectory of source. [#458](https://github.com/jprichardson/node-fs-extra/pull/458)
+- Applied upstream fixes from `rimraf` to `fs.remove()` & `fs.removeSync()`. [#459](https://github.com/jprichardson/node-fs-extra/pull/459)
+
+### Fixed
+
+- Got `fs.outputJSONSync()` working again; it was broken due to refactoring. [#428](https://github.com/jprichardson/node-fs-extra/pull/428)
+
+Also clarified the docs in a few places.
+
+3.0.1 / 2017-05-04
+------------------
+
+- Fix bug in `move()` & `moveSync()` when source and destination are the same, and source does not exist. [#415](https://github.com/jprichardson/node-fs-extra/pull/415)
+
+3.0.0 / 2017-04-27
+------------------
+
+### Added
+
+- **BREAKING:** Added Promise support. All asynchronous native fs methods and fs-extra methods now return a promise if the callback is not passed. [#403](https://github.com/jprichardson/node-fs-extra/pull/403)
+- `pathExists()`, a replacement for the deprecated `fs.exists`. `pathExists` has a normal error-first callback signature. Also added `pathExistsSync`, an alias to `fs.existsSync`, for completeness. [#406](https://github.com/jprichardson/node-fs-extra/pull/406)
+
+### Removed
+
+- **BREAKING:** Removed support for setting the default spaces for `writeJson()`, `writeJsonSync()`, `outputJson()`, & `outputJsonSync()`. This was undocumented. [#402](https://github.com/jprichardson/node-fs-extra/pull/402)
+
+### Changed
+
+- Upgraded jsonfile dependency to v3.0.0:
+  - **BREAKING:** Changed behavior of `throws` option for `readJsonSync()`; now does not throw filesystem errors when `throws` is `false`.
+- **BREAKING:** `writeJson()`, `writeJsonSync()`, `outputJson()`, & `outputJsonSync()` now output minified JSON by default for consistency with `JSON.stringify()`; set the `spaces` option to `2` to override this new behavior. [#402](https://github.com/jprichardson/node-fs-extra/pull/402)
+- Use `Buffer.allocUnsafe()` instead of `new Buffer()` in environments that support it. [#394](https://github.com/jprichardson/node-fs-extra/pull/394)
+
+### Fixed
+
+- `removeSync()` silently failed on Windows in some cases. Now throws an `EBUSY` error. [#408](https://github.com/jprichardson/node-fs-extra/pull/408)
+
+2.1.2 / 2017-03-16
+------------------
+
+### Fixed
+
+- Weird windows bug that resulted in `ensureDir()`'s callback being called twice in some cases. This bug may have also affected `remove()`. See [#392](https://github.com/jprichardson/node-fs-extra/issues/392), [#393](https://github.com/jprichardson/node-fs-extra/pull/393)
+
+2.1.1 / 2017-03-15
+------------------
+
+### Fixed
+
+- Reverted [`5597bd`](https://github.com/jprichardson/node-fs-extra/commit/5597bd5b67f7d060f5f5bf26e9635be48330f5d7), this broke compatibility with Node.js versions v4+ but less than `v4.5.0`.
+- Remove `Buffer.alloc()` usage in `moveSync()`.
+
+2.1.0 / 2017-03-15
+------------------
+
+Thanks to [Mani Maghsoudlou (@manidlou)](https://github.com/manidlou) & [Jan Peer Stöcklmair (@JPeer264)](https://github.com/JPeer264) for their extraordinary help with this release!
+
+### Added
+- `moveSync()` See [#309], [#381](https://github.com/jprichardson/node-fs-extra/pull/381). ([@manidlou](https://github.com/manidlou))
+- `copy()` and `copySync()`'s `filter` option now gets the destination path passed as the second parameter. [#366](https://github.com/jprichardson/node-fs-extra/pull/366) ([@manidlou](https://github.com/manidlou))
+
+### Changed
+- Use `Buffer.alloc()` instead of deprecated `new Buffer()` in `copySync()`. [#380](https://github.com/jprichardson/node-fs-extra/pull/380) ([@manidlou](https://github.com/manidlou))
+- Refactored entire codebase to use ES6 features supported by Node.js v4+ [#355](https://github.com/jprichardson/node-fs-extra/issues/355). [(@JPeer264)](https://github.com/JPeer264)
+- Refactored docs. ([@manidlou](https://github.com/manidlou))
+
+### Fixed
+
+- `move()` shouldn't error out when source and dest are the same. [#377](https://github.com/jprichardson/node-fs-extra/issues/377), [#378](https://github.com/jprichardson/node-fs-extra/pull/378) ([@jdalton](https://github.com/jdalton))
+
+2.0.0 / 2017-01-16
+------------------
+
+### Removed
+- **BREAKING:** Removed support for Node `v0.12`. The Node foundation stopped officially supporting it
+on Jan 1st, 2017.
+- **BREAKING:** Remove `walk()` and `walkSync()`. `walkSync()` was only part of `fs-extra` for a little
+over two months. Use [klaw](https://github.com/jprichardson/node-klaw) instead of `walk()`, in fact, `walk()` was just
+an alias to klaw. For `walkSync()` use [klaw-sync](https://github.com/mawni/node-klaw-sync). See: [#338], [#339]
+
+### Changed
+- **BREAKING:** Renamed `clobber` to `overwrite`. This affects `copy()`, `copySync()`, and `move()`. [#330], [#333]
+- Moved docs, to `docs/`. [#340]
+
+### Fixed
+- Apply filters to directories in `copySync()` like in `copy()`. [#324]
+- A specific condition when disk is under heavy use, `copy()` can fail. [#326]
+
+
+1.0.0 / 2016-11-01
+------------------
+
+After five years of development, we finally have reach the 1.0.0 milestone! Big thanks goes
+to [Ryan Zim](https://github.com/RyanZim) for leading the charge on this release!
+
+### Added
+- `walkSync()`
+
+### Changed
+- **BREAKING**: dropped Node v0.10 support.
+- disabled `rimaf` globbing, wasn't used. [#280]
+- deprecate `copy()/copySync()` option `filter` if it's a `RegExp`. `filter` should now be a function.
+- inline `rimraf`. This is temporary and was done because `rimraf` depended upon the beefy `glob` which `fs-extra` does not use. [#300]
+
+### Fixed
+- bug fix proper closing of file handle on `utimesMillis()` [#271]
+- proper escaping of files with dollar signs [#291]
+- `copySync()` failed if user didn't own file. [#199], [#301]
+
+
+0.30.0 / 2016-04-28
+-------------------
+- Brought back Node v0.10 support. I didn't realize there was still demand. Official support will end **2016-10-01**.
+
+0.29.0 / 2016-04-27
+-------------------
+- **BREAKING**: removed support for Node v0.10. If you still want to use Node v0.10, everything should work except for `ensureLink()/ensureSymlink()`. Node v0.12 is still supported but will be dropped in the near future as well.
+
+0.28.0 / 2016-04-17
+-------------------
+- **BREAKING**: removed `createOutputStream()`. Use https://www.npmjs.com/package/create-output-stream. See: [#192][#192]
+- `mkdirs()/mkdirsSync()` check for invalid win32 path chars. See: [#209][#209], [#237][#237]
+- `mkdirs()/mkdirsSync()` if drive not mounted, error. See: [#93][#93]
+
+0.27.0 / 2016-04-15
+-------------------
+- add `dereference` option to `copySync()`. [#235][#235]
+
+0.26.7 / 2016-03-16
+-------------------
+- fixed `copy()` if source and dest are the same. [#230][#230]
+
+0.26.6 / 2016-03-15
+-------------------
+- fixed if `emptyDir()` does not have a callback: [#229][#229]
+
+0.26.5 / 2016-01-27
+-------------------
+- `copy()` with two arguments (w/o callback) was broken. See: [#215][#215]
+
+0.26.4 / 2016-01-05
+-------------------
+- `copySync()` made `preserveTimestamps` default consistent with `copy()` which is `false`. See: [#208][#208]
+
+0.26.3 / 2015-12-17
+-------------------
+- fixed `copy()` hangup in copying blockDevice / characterDevice / `/dev/null`. See: [#193][#193]
+
+0.26.2 / 2015-11-02
+-------------------
+- fixed `outputJson{Sync}()` spacing adherence to `fs.spaces`
+
+0.26.1 / 2015-11-02
+-------------------
+- fixed `copySync()` when `clogger=true` and the destination is read only. See: [#190][#190]
+
+0.26.0 / 2015-10-25
+-------------------
+- extracted the `walk()` function into its own module [`klaw`](https://github.com/jprichardson/node-klaw).
+
+0.25.0 / 2015-10-24
+-------------------
+- now has a file walker `walk()`
+
+0.24.0 / 2015-08-28
+-------------------
+- removed alias `delete()` and `deleteSync()`. See: [#171][#171]
+
+0.23.1 / 2015-08-07
+-------------------
+- Better handling of errors for `move()` when moving across devices. [#170][#170]
+- `ensureSymlink()` and `ensureLink()` should not throw errors if link exists. [#169][#169]
+
+0.23.0 / 2015-08-06
+-------------------
+- added `ensureLink{Sync}()` and `ensureSymlink{Sync}()`. See: [#165][#165]
+
+0.22.1 / 2015-07-09
+-------------------
+- Prevent calling `hasMillisResSync()` on module load. See: [#149][#149].
+Fixes regression that was introduced in `0.21.0`.
+
+0.22.0 / 2015-07-09
+-------------------
+- preserve permissions / ownership in `copy()`. See: [#54][#54]
+
+0.21.0 / 2015-07-04
+-------------------
+- add option to preserve timestamps in `copy()` and `copySync()`. See: [#141][#141]
+- updated `graceful-fs@3.x` to `4.x`. This brings in features from `amazing-graceful-fs` (much cleaner code / less hacks)
+
+0.20.1 / 2015-06-23
+-------------------
+- fixed regression caused by latest jsonfile update: See: https://github.com/jprichardson/node-jsonfile/issues/26
+
+0.20.0 / 2015-06-19
+-------------------
+- removed `jsonfile` aliases with `File` in the name, they weren't documented and probably weren't in use e.g.
+this package had both `fs.readJsonFile` and `fs.readJson` that were aliases to each other, now use `fs.readJson`.
+- preliminary walker created. Intentionally not documented. If you use it, it will almost certainly change and break your code.
+- started moving tests inline
+- upgraded to `jsonfile@2.1.0`, can now pass JSON revivers/replacers to `readJson()`, `writeJson()`, `outputJson()`
+
+0.19.0 / 2015-06-08
+-------------------
+- `fs.copy()` had support for Node v0.8, dropped support
+
+0.18.4 / 2015-05-22
+-------------------
+- fixed license field according to this: [#136][#136] and https://github.com/npm/npm/releases/tag/v2.10.0
+
+0.18.3 / 2015-05-08
+-------------------
+- bugfix: handle `EEXIST` when clobbering on some Linux systems. [#134][#134]
+
+0.18.2 / 2015-04-17
+-------------------
+- bugfix: allow `F_OK` ([#120][#120])
+
+0.18.1 / 2015-04-15
+-------------------
+- improved windows support for `move()` a bit. https://github.com/jprichardson/node-fs-extra/commit/92838980f25dc2ee4ec46b43ee14d3c4a1d30c1b
+- fixed a lot of tests for Windows (appveyor)
+
+0.18.0 / 2015-03-31
+-------------------
+- added `emptyDir()` and `emptyDirSync()`
+
+0.17.0 / 2015-03-28
+-------------------
+- `copySync` added `clobber` option (before always would clobber, now if `clobber` is `false` it throws an error if the destination exists).
+**Only works with files at the moment.**
+- `createOutputStream()` added. See: [#118][#118]
+
+0.16.5 / 2015-03-08
+-------------------
+- fixed `fs.move` when `clobber` is `true` and destination is a directory, it should clobber. [#114][#114]
+
+0.16.4 / 2015-03-01
+-------------------
+- `fs.mkdirs` fix infinite loop on Windows. See: See https://github.com/substack/node-mkdirp/pull/74 and https://github.com/substack/node-mkdirp/issues/66
+
+0.16.3 / 2015-01-28
+-------------------
+- reverted https://github.com/jprichardson/node-fs-extra/commit/1ee77c8a805eba5b99382a2591ff99667847c9c9
+
+
+0.16.2 / 2015-01-28
+-------------------
+- fixed `fs.copy` for Node v0.8 (support is temporary and will be removed in the near future)
+
+0.16.1 / 2015-01-28
+-------------------
+- if `setImmediate` is not available, fall back to `process.nextTick`
+
+0.16.0 / 2015-01-28
+-------------------
+- bugfix `fs.move()` into itself. Closes [#104]
+- bugfix `fs.move()` moving directory across device. Closes [#108]
+- added coveralls support
+- bugfix: nasty multiple callback `fs.copy()` bug. Closes [#98]
+- misc fs.copy code cleanups
+
+0.15.0 / 2015-01-21
+-------------------
+- dropped `ncp`, imported code in
+- because of previous, now supports `io.js`
+- `graceful-fs` is now a dependency
+
+0.14.0 / 2015-01-05
+-------------------
+- changed `copy`/`copySync` from `fs.copy(src, dest, [filters], callback)` to `fs.copy(src, dest, [options], callback)` [#100][#100]
+- removed mockfs tests for mkdirp (this may be temporary, but was getting in the way of other tests)
+
+0.13.0 / 2014-12-10
+-------------------
+- removed `touch` and `touchSync` methods (they didn't handle permissions like UNIX touch)
+- updated `"ncp": "^0.6.0"` to `"ncp": "^1.0.1"`
+- imported `mkdirp` => `minimist` and `mkdirp` are no longer dependences, should now appease people who wanted `mkdirp` to be `--use_strict` safe. See [#59]([#59][#59])
+
+0.12.0 / 2014-09-22
+-------------------
+- copy symlinks in `copySync()` [#85][#85]
+
+0.11.1 / 2014-09-02
+-------------------
+- bugfix `copySync()` preserve file permissions [#80][#80]
+
+0.11.0 / 2014-08-11
+-------------------
+- upgraded `"ncp": "^0.5.1"` to `"ncp": "^0.6.0"`
+- upgrade `jsonfile": "^1.2.0"` to `jsonfile": "^2.0.0"` => on write, json files now have `\n` at end. Also adds `options.throws` to `readJsonSync()`
+see https://github.com/jprichardson/node-jsonfile#readfilesyncfilename-options for more details.
+
+0.10.0 / 2014-06-29
+------------------
+* bugfix: upgaded `"jsonfile": "~1.1.0"` to `"jsonfile": "^1.2.0"`, bumped minor because of `jsonfile` dep change
+from `~` to `^`. [#67]
+
+0.9.1 / 2014-05-22
+------------------
+* removed Node.js `0.8.x` support, `0.9.0` was published moments ago and should have been done there
+
+0.9.0 / 2014-05-22
+------------------
+* upgraded `ncp` from `~0.4.2` to `^0.5.1`, [#58]
+* upgraded `rimraf` from `~2.2.6` to `^2.2.8`
+* upgraded `mkdirp` from `0.3.x` to `^0.5.0`
+* added methods `ensureFile()`, `ensureFileSync()`
+* added methods `ensureDir()`, `ensureDirSync()` [#31]
+* added `move()` method. From: https://github.com/andrewrk/node-mv
+
+
+0.8.1 / 2013-10-24
+------------------
+* copy failed to return an error to the callback if a file doesn't exist (ulikoehler [#38], [#39])
+
+0.8.0 / 2013-10-14
+------------------
+* `filter` implemented on `copy()` and `copySync()`. (Srirangan / [#36])
+
+0.7.1 / 2013-10-12
+------------------
+* `copySync()` implemented (Srirangan / [#33])
+* updated to the latest `jsonfile` version `1.1.0` which gives `options` params for the JSON methods. Closes [#32]
+
+0.7.0 / 2013-10-07
+------------------
+* update readme conventions
+* `copy()` now works if destination directory does not exist. Closes [#29]
+
+0.6.4 / 2013-09-05
+------------------
+* changed `homepage` field in package.json to remove NPM warning
+
+0.6.3 / 2013-06-28
+------------------
+* changed JSON spacing default from `4` to `2` to follow Node conventions
+* updated `jsonfile` dep
+* updated `rimraf` dep
+
+0.6.2 / 2013-06-28
+------------------
+* added .npmignore, [#25]
+
+0.6.1 / 2013-05-14
+------------------
+* modified for `strict` mode, closes [#24]
+* added `outputJson()/outputJsonSync()`, closes [#23]
+
+0.6.0 / 2013-03-18
+------------------
+* removed node 0.6 support
+* added node 0.10 support
+* upgraded to latest `ncp` and `rimraf`.
+* optional `graceful-fs` support. Closes [#17]
+
+
+0.5.0 / 2013-02-03
+------------------
+* Removed `readTextFile`.
+* Renamed `readJSONFile` to `readJSON` and `readJson`, same with write.
+* Restructured documentation a bit. Added roadmap.
+
+0.4.0 / 2013-01-28
+------------------
+* Set default spaces in `jsonfile` from 4 to 2.
+* Updated `testutil` deps for tests.
+* Renamed `touch()` to `createFile()`
+* Added `outputFile()` and `outputFileSync()`
+* Changed creation of testing diretories so the /tmp dir is not littered.
+* Added `readTextFile()` and `readTextFileSync()`.
+
+0.3.2 / 2012-11-01
+------------------
+* Added `touch()` and `touchSync()` methods.
+
+0.3.1 / 2012-10-11
+------------------
+* Fixed some stray globals.
+
+0.3.0 / 2012-10-09
+------------------
+* Removed all CoffeeScript from tests.
+* Renamed `mkdir` to `mkdirs`/`mkdirp`.
+
+0.2.1 / 2012-09-11
+------------------
+* Updated `rimraf` dep.
+
+0.2.0 / 2012-09-10
+------------------
+* Rewrote module into JavaScript. (Must still rewrite tests into JavaScript)
+* Added all methods of [jsonfile](https://github.com/jprichardson/node-jsonfile)
+* Added Travis-CI.
+
+0.1.3 / 2012-08-13
+------------------
+* Added method `readJSONFile`.
+
+0.1.2 / 2012-06-15
+------------------
+* Bug fix: `deleteSync()` didn't exist.
+* Verified Node v0.8 compatibility.
+
+0.1.1 / 2012-06-15
+------------------
+* Fixed bug in `remove()`/`delete()` that wouldn't execute the function if a callback wasn't passed.
+
+0.1.0 / 2012-05-31
+------------------
+* Renamed `copyFile()` to `copy()`. `copy()` can now copy directories (recursively) too.
+* Renamed `rmrf()` to `remove()`.
+* `remove()` aliased with `delete()`.
+* Added `mkdirp` capabilities. Named: `mkdir()`. Hides Node.js native `mkdir()`.
+* Instead of exporting the native `fs` module with new functions, I now copy over the native methods to a new object and export that instead.
+
+0.0.4 / 2012-03-14
+------------------
+* Removed CoffeeScript dependency
+
+0.0.3 / 2012-01-11
+------------------
+* Added methods rmrf and rmrfSync
+* Moved tests from Jasmine to Mocha
+
+
+[#344]: https://github.com/jprichardson/node-fs-extra/issues/344    "Licence Year"
+[#343]: https://github.com/jprichardson/node-fs-extra/pull/343      "Add klaw-sync link to readme"
+[#342]: https://github.com/jprichardson/node-fs-extra/pull/342      "allow preserveTimestamps when use move"
+[#341]: https://github.com/jprichardson/node-fs-extra/issues/341    "mkdirp(path.dirname(dest) in move() logic needs cleaning up [question]"
+[#340]: https://github.com/jprichardson/node-fs-extra/pull/340      "Move docs to seperate docs folder [documentation]"
+[#339]: https://github.com/jprichardson/node-fs-extra/pull/339      "Remove walk() & walkSync() [feature-walk]"
+[#338]: https://github.com/jprichardson/node-fs-extra/issues/338    "Remove walk() and walkSync() [feature-walk]"
+[#337]: https://github.com/jprichardson/node-fs-extra/issues/337    "copy doesn't return a yieldable value"
+[#336]: https://github.com/jprichardson/node-fs-extra/pull/336      "Docs enhanced walk sync [documentation, feature-walk]"
+[#335]: https://github.com/jprichardson/node-fs-extra/pull/335      "Refactor move() tests [feature-move]"
+[#334]: https://github.com/jprichardson/node-fs-extra/pull/334      "Cleanup lib/move/index.js [feature-move]"
+[#333]: https://github.com/jprichardson/node-fs-extra/pull/333      "Rename clobber to overwrite [feature-copy, feature-move]"
+[#332]: https://github.com/jprichardson/node-fs-extra/pull/332      "BREAKING: Drop Node v0.12 & io.js support"
+[#331]: https://github.com/jprichardson/node-fs-extra/issues/331    "Add support for chmodr [enhancement, future]"
+[#330]: https://github.com/jprichardson/node-fs-extra/pull/330      "BREAKING: Do not error when copy destination exists & clobber: false [feature-copy]"
+[#329]: https://github.com/jprichardson/node-fs-extra/issues/329    "Does .walk() scale to large directories? [question]"
+[#328]: https://github.com/jprichardson/node-fs-extra/issues/328    "Copying files corrupts [feature-copy, needs-confirmed]"
+[#327]: https://github.com/jprichardson/node-fs-extra/pull/327      "Use writeStream 'finish' event instead of 'close' [bug, feature-copy]"
+[#326]: https://github.com/jprichardson/node-fs-extra/issues/326    "fs.copy fails with chmod error when disk under heavy use [bug, feature-copy]"
+[#325]: https://github.com/jprichardson/node-fs-extra/issues/325    "ensureDir is difficult to promisify [enhancement]"
+[#324]: https://github.com/jprichardson/node-fs-extra/pull/324      "copySync() should apply filter to directories like copy() [bug, feature-copy]"
+[#323]: https://github.com/jprichardson/node-fs-extra/issues/323    "Support for `dest` being a directory when using `copy*()`?"
+[#322]: https://github.com/jprichardson/node-fs-extra/pull/322      "Add fs-promise as fs-extra-promise alternative"
+[#321]: https://github.com/jprichardson/node-fs-extra/issues/321    "fs.copy() with clobber set to false return EEXIST error [feature-copy]"
+[#320]: https://github.com/jprichardson/node-fs-extra/issues/320    "fs.copySync: Error: EPERM: operation not permitted, unlink "
+[#319]: https://github.com/jprichardson/node-fs-extra/issues/319    "Create directory if not exists"
+[#318]: https://github.com/jprichardson/node-fs-extra/issues/318    "Support glob patterns [enhancement, future]"
+[#317]: https://github.com/jprichardson/node-fs-extra/pull/317      "Adding copy sync test for src file without write perms"
+[#316]: https://github.com/jprichardson/node-fs-extra/pull/316      "Remove move()'s broken limit option [feature-move]"
+[#315]: https://github.com/jprichardson/node-fs-extra/pull/315      "Fix move clobber tests to work around graceful-fs bug."
+[#314]: https://github.com/jprichardson/node-fs-extra/issues/314    "move() limit option [documentation, enhancement, feature-move]"
+[#313]: https://github.com/jprichardson/node-fs-extra/pull/313      "Test that remove() ignores glob characters."
+[#312]: https://github.com/jprichardson/node-fs-extra/pull/312      "Enhance walkSync() to return items with path and stats [feature-walk]"
+[#311]: https://github.com/jprichardson/node-fs-extra/issues/311    "move() not work when dest name not provided [feature-move]"
+[#310]: https://github.com/jprichardson/node-fs-extra/issues/310    "Edit walkSync to return items like what walk emits [documentation, enhancement, feature-walk]"
+[#309]: https://github.com/jprichardson/node-fs-extra/issues/309    "moveSync support [enhancement, feature-move]"
+[#308]: https://github.com/jprichardson/node-fs-extra/pull/308      "Fix incorrect anchor link"
+[#307]: https://github.com/jprichardson/node-fs-extra/pull/307      "Fix coverage"
+[#306]: https://github.com/jprichardson/node-fs-extra/pull/306      "Update devDeps, fix lint error"
+[#305]: https://github.com/jprichardson/node-fs-extra/pull/305      "Re-add Coveralls"
+[#304]: https://github.com/jprichardson/node-fs-extra/pull/304      "Remove path-is-absolute [enhancement]"
+[#303]: https://github.com/jprichardson/node-fs-extra/pull/303      "Document copySync filter inconsistency [documentation, feature-copy]"
+[#302]: https://github.com/jprichardson/node-fs-extra/pull/302      "fix(console): depreciated -> deprecated"
+[#301]: https://github.com/jprichardson/node-fs-extra/pull/301      "Remove chmod call from copySync [feature-copy]"
+[#300]: https://github.com/jprichardson/node-fs-extra/pull/300      "Inline Rimraf [enhancement, feature-move, feature-remove]"
+[#299]: https://github.com/jprichardson/node-fs-extra/pull/299      "Warn when filter is a RegExp [feature-copy]"
+[#298]: https://github.com/jprichardson/node-fs-extra/issues/298    "API Docs [documentation]"
+[#297]: https://github.com/jprichardson/node-fs-extra/pull/297      "Warn about using preserveTimestamps on 32-bit node"
+[#296]: https://github.com/jprichardson/node-fs-extra/pull/296      "Improve EEXIST error message for copySync [enhancement]"
+[#295]: https://github.com/jprichardson/node-fs-extra/pull/295      "Depreciate using regular expressions for copy's filter option [documentation]"
+[#294]: https://github.com/jprichardson/node-fs-extra/pull/294      "BREAKING: Refactor lib/copy/ncp.js [feature-copy]"
+[#293]: https://github.com/jprichardson/node-fs-extra/pull/293      "Update CI configs"
+[#292]: https://github.com/jprichardson/node-fs-extra/issues/292    "Rewrite lib/copy/ncp.js [enhancement, feature-copy]"
+[#291]: https://github.com/jprichardson/node-fs-extra/pull/291      "Escape '$' in replacement string for async file copying"
+[#290]: https://github.com/jprichardson/node-fs-extra/issues/290    "Exclude files pattern while copying using copy.config.js [question]"
+[#289]: https://github.com/jprichardson/node-fs-extra/pull/289      "(Closes #271) lib/util/utimes: properly close file descriptors in the event of an error"
+[#288]: https://github.com/jprichardson/node-fs-extra/pull/288      "(Closes #271) lib/util/utimes: properly close file descriptors in the event of an error"
+[#287]: https://github.com/jprichardson/node-fs-extra/issues/287    "emptyDir() callback arguments are inconsistent [enhancement, feature-remove]"
+[#286]: https://github.com/jprichardson/node-fs-extra/pull/286      "Added walkSync function"
+[#285]: https://github.com/jprichardson/node-fs-extra/issues/285    "CITGM test failing on s390"
+[#284]: https://github.com/jprichardson/node-fs-extra/issues/284    "outputFile method is missing a check to determine if existing item is a folder or not"
+[#283]: https://github.com/jprichardson/node-fs-extra/pull/283      "Apply filter also on directories and symlinks for copySync()"
+[#282]: https://github.com/jprichardson/node-fs-extra/pull/282      "Apply filter also on directories and symlinks for copySync()"
+[#281]: https://github.com/jprichardson/node-fs-extra/issues/281    "remove function executes 'successfully' but doesn't do anything?"
+[#280]: https://github.com/jprichardson/node-fs-extra/pull/280      "Disable rimraf globbing"
+[#279]: https://github.com/jprichardson/node-fs-extra/issues/279    "Some code is vendored instead of included [awaiting-reply]"
+[#278]: https://github.com/jprichardson/node-fs-extra/issues/278    "copy() does not preserve file/directory ownership"
+[#277]: https://github.com/jprichardson/node-fs-extra/pull/277      "Mention defaults for clobber and dereference options"
+[#276]: https://github.com/jprichardson/node-fs-extra/issues/276    "Cannot connect to Shared Folder [awaiting-reply]"
+[#275]: https://github.com/jprichardson/node-fs-extra/issues/275    "EMFILE, too many open files on Mac OS with JSON API"
+[#274]: https://github.com/jprichardson/node-fs-extra/issues/274    "Use with memory-fs? [enhancement, future]"
+[#273]: https://github.com/jprichardson/node-fs-extra/pull/273      "tests: rename `remote.test.js` to `remove.test.js`"
+[#272]: https://github.com/jprichardson/node-fs-extra/issues/272    "Copy clobber flag never err even when true [bug, feature-copy]"
+[#271]: https://github.com/jprichardson/node-fs-extra/issues/271    "Unclosed file handle on futimes error"
+[#270]: https://github.com/jprichardson/node-fs-extra/issues/270    "copy not working as desired on Windows [feature-copy, platform-windows]"
+[#269]: https://github.com/jprichardson/node-fs-extra/issues/269    "Copying with preserveTimeStamps: true is inaccurate using 32bit node [feature-copy]"
+[#268]: https://github.com/jprichardson/node-fs-extra/pull/268      "port fix for mkdirp issue #111"
+[#267]: https://github.com/jprichardson/node-fs-extra/issues/267    "WARN deprecated wrench@1.5.9: wrench.js is deprecated!"
+[#266]: https://github.com/jprichardson/node-fs-extra/issues/266    "fs-extra"
+[#265]: https://github.com/jprichardson/node-fs-extra/issues/265    "Link the `fs.stat fs.exists` etc. methods for replace the `fs` module forever?"
+[#264]: https://github.com/jprichardson/node-fs-extra/issues/264    "Renaming a file using move fails when a file inside is open (at least on windows) [wont-fix]"
+[#263]: https://github.com/jprichardson/node-fs-extra/issues/263    "ENOSYS: function not implemented, link [needs-confirmed]"
+[#262]: https://github.com/jprichardson/node-fs-extra/issues/262    "Add .exists() and .existsSync()"
+[#261]: https://github.com/jprichardson/node-fs-extra/issues/261    "Cannot read property 'prototype' of undefined"
+[#260]: https://github.com/jprichardson/node-fs-extra/pull/260      "use more specific path for method require"
+[#259]: https://github.com/jprichardson/node-fs-extra/issues/259    "Feature Request: isEmpty"
+[#258]: https://github.com/jprichardson/node-fs-extra/issues/258    "copy files does not preserve file timestamp"
+[#257]: https://github.com/jprichardson/node-fs-extra/issues/257    "Copying a file on windows fails"
+[#256]: https://github.com/jprichardson/node-fs-extra/pull/256      "Updated Readme "
+[#255]: https://github.com/jprichardson/node-fs-extra/issues/255    "Update rimraf required version"
+[#254]: https://github.com/jprichardson/node-fs-extra/issues/254    "request for readTree, readTreeSync, walkSync method"
+[#253]: https://github.com/jprichardson/node-fs-extra/issues/253    "outputFile does not touch mtime when file exists"
+[#252]: https://github.com/jprichardson/node-fs-extra/pull/252      "Fixing problem when copying file with no write permission"
+[#251]: https://github.com/jprichardson/node-fs-extra/issues/251    "Just wanted to say thank you"
+[#250]: https://github.com/jprichardson/node-fs-extra/issues/250    "`fs.remove()` not removing files (works with `rm -rf`)"
+[#249]: https://github.com/jprichardson/node-fs-extra/issues/249    "Just a Question ... Remove Servers"
+[#248]: https://github.com/jprichardson/node-fs-extra/issues/248    "Allow option to not preserve permissions for copy"
+[#247]: https://github.com/jprichardson/node-fs-extra/issues/247    "Add TypeScript typing directly in the fs-extra package"
+[#246]: https://github.com/jprichardson/node-fs-extra/issues/246    "fse.remove() && fse.removeSync() don't throw error on ENOENT file"
+[#245]: https://github.com/jprichardson/node-fs-extra/issues/245    "filter for empty dir [enhancement]"
+[#244]: https://github.com/jprichardson/node-fs-extra/issues/244    "copySync doesn't apply the filter to directories"
+[#243]: https://github.com/jprichardson/node-fs-extra/issues/243    "Can I request fs.walk() to be synchronous?"
+[#242]: https://github.com/jprichardson/node-fs-extra/issues/242    "Accidentally truncates file names ending with $$ [bug, feature-copy]"
+[#241]: https://github.com/jprichardson/node-fs-extra/pull/241      "Remove link to createOutputStream"
+[#240]: https://github.com/jprichardson/node-fs-extra/issues/240    "walkSync request"
+[#239]: https://github.com/jprichardson/node-fs-extra/issues/239    "Depreciate regular expressions for copy's filter [documentation, feature-copy]"
+[#238]: https://github.com/jprichardson/node-fs-extra/issues/238    "Can't write to files while in a worker thread."
+[#237]: https://github.com/jprichardson/node-fs-extra/issues/237    ".ensureDir(..) fails silently when passed an invalid path..."
+[#236]: https://github.com/jprichardson/node-fs-extra/issues/236    "[Removed] Filed under wrong repo"
+[#235]: https://github.com/jprichardson/node-fs-extra/pull/235      "Adds symlink dereference option to `fse.copySync` (#191)"
+[#234]: https://github.com/jprichardson/node-fs-extra/issues/234    "ensureDirSync fails silent when EACCES: permission denied on travis-ci"
+[#233]: https://github.com/jprichardson/node-fs-extra/issues/233    "please make sure the first argument in callback is error object [feature-copy]"
+[#232]: https://github.com/jprichardson/node-fs-extra/issues/232    "Copy a folder content  to its child folder.  "
+[#231]: https://github.com/jprichardson/node-fs-extra/issues/231    "Adding read/write/output functions for YAML"
+[#230]: https://github.com/jprichardson/node-fs-extra/pull/230      "throw error if src and dest are the same to avoid zeroing out + test"
+[#229]: https://github.com/jprichardson/node-fs-extra/pull/229      "fix 'TypeError: callback is not a function' in emptyDir"
+[#228]: https://github.com/jprichardson/node-fs-extra/pull/228      "Throw error when target is empty so file is not accidentally zeroed out"
+[#227]: https://github.com/jprichardson/node-fs-extra/issues/227    "Uncatchable errors when there are invalid arguments [feature-move]"
+[#226]: https://github.com/jprichardson/node-fs-extra/issues/226    "Moving to the current directory"
+[#225]: https://github.com/jprichardson/node-fs-extra/issues/225    "EBUSY: resource busy or locked, unlink"
+[#224]: https://github.com/jprichardson/node-fs-extra/issues/224    "fse.copy ENOENT error"
+[#223]: https://github.com/jprichardson/node-fs-extra/issues/223    "Suspicious behavior of fs.existsSync"
+[#222]: https://github.com/jprichardson/node-fs-extra/pull/222      "A clearer description of emtpyDir function"
+[#221]: https://github.com/jprichardson/node-fs-extra/pull/221      "Update README.md"
+[#220]: https://github.com/jprichardson/node-fs-extra/pull/220      "Non-breaking feature: add option 'passStats' to copy methods."
+[#219]: https://github.com/jprichardson/node-fs-extra/pull/219      "Add closing parenthesis in copySync example"
+[#218]: https://github.com/jprichardson/node-fs-extra/pull/218      "fix #187 #70 options.filter bug"
+[#217]: https://github.com/jprichardson/node-fs-extra/pull/217      "fix #187 #70 options.filter bug"
+[#216]: https://github.com/jprichardson/node-fs-extra/pull/216      "fix #187 #70 options.filter bug"
+[#215]: https://github.com/jprichardson/node-fs-extra/pull/215      "fse.copy throws error when only src and dest provided [bug, documentation, feature-copy]"
+[#214]: https://github.com/jprichardson/node-fs-extra/pull/214      "Fixing copySync anchor tag"
+[#213]: https://github.com/jprichardson/node-fs-extra/issues/213    "Merge extfs with this repo"
+[#212]: https://github.com/jprichardson/node-fs-extra/pull/212      "Update year to 2016 in README.md and LICENSE"
+[#211]: https://github.com/jprichardson/node-fs-extra/issues/211    "Not copying all files"
+[#210]: https://github.com/jprichardson/node-fs-extra/issues/210    "copy/copySync behave differently when copying a symbolic file [bug, documentation, feature-copy]"
+[#209]: https://github.com/jprichardson/node-fs-extra/issues/209    "In Windows invalid directory name causes infinite loop in ensureDir(). [bug]"
+[#208]: https://github.com/jprichardson/node-fs-extra/pull/208      "fix options.preserveTimestamps to false in copy-sync by default [feature-copy]"
+[#207]: https://github.com/jprichardson/node-fs-extra/issues/207    "Add `compare` suite of functions"
+[#206]: https://github.com/jprichardson/node-fs-extra/issues/206    "outputFileSync"
+[#205]: https://github.com/jprichardson/node-fs-extra/issues/205    "fix documents about copy/copySync [documentation, feature-copy]"
+[#204]: https://github.com/jprichardson/node-fs-extra/pull/204      "allow copy of block and character device files"
+[#203]: https://github.com/jprichardson/node-fs-extra/issues/203    "copy method's argument options couldn't be undefined [bug, feature-copy]"
+[#202]: https://github.com/jprichardson/node-fs-extra/issues/202    "why there is not a walkSync method?"
+[#201]: https://github.com/jprichardson/node-fs-extra/issues/201    "clobber for directories [feature-copy, future]"
+[#200]: https://github.com/jprichardson/node-fs-extra/issues/200    "'copySync' doesn't work in sync"
+[#199]: https://github.com/jprichardson/node-fs-extra/issues/199    "fs.copySync fails if user does not own file [bug, feature-copy]"
+[#198]: https://github.com/jprichardson/node-fs-extra/issues/198    "handle copying between identical files [feature-copy]"
+[#197]: https://github.com/jprichardson/node-fs-extra/issues/197    "Missing documentation for `outputFile` `options` 3rd parameter [documentation]"
+[#196]: https://github.com/jprichardson/node-fs-extra/issues/196    "copy filter: async function and/or function called with `fs.stat` result [future]"
+[#195]: https://github.com/jprichardson/node-fs-extra/issues/195    "How to override with outputFile?"
+[#194]: https://github.com/jprichardson/node-fs-extra/pull/194      "allow ensureFile(Sync) to provide data to be written to created file"
+[#193]: https://github.com/jprichardson/node-fs-extra/issues/193    "`fs.copy` fails silently if source file is /dev/null [bug, feature-copy]"
+[#192]: https://github.com/jprichardson/node-fs-extra/issues/192    "Remove fs.createOutputStream()"
+[#191]: https://github.com/jprichardson/node-fs-extra/issues/191    "How to copy symlinks to target as normal folders [feature-copy]"
+[#190]: https://github.com/jprichardson/node-fs-extra/pull/190      "copySync to overwrite destination file if readonly and clobber true"
+[#189]: https://github.com/jprichardson/node-fs-extra/pull/189      "move.test fix to support CRLF on Windows"
+[#188]: https://github.com/jprichardson/node-fs-extra/issues/188    "move.test failing on windows platform"
+[#187]: https://github.com/jprichardson/node-fs-extra/issues/187    "Not filter each file, stops on first false [feature-copy]"
+[#186]: https://github.com/jprichardson/node-fs-extra/issues/186    "Do you need a .size() function in this module? [future]"
+[#185]: https://github.com/jprichardson/node-fs-extra/issues/185    "Doesn't work on NodeJS v4.x"
+[#184]: https://github.com/jprichardson/node-fs-extra/issues/184    "CLI equivalent for fs-extra"
+[#183]: https://github.com/jprichardson/node-fs-extra/issues/183    "with clobber true, copy and copySync behave differently if destination file is read only [bug, feature-copy]"
+[#182]: https://github.com/jprichardson/node-fs-extra/issues/182    "ensureDir(dir, callback) second callback parameter not specified"
+[#181]: https://github.com/jprichardson/node-fs-extra/issues/181    "Add ability to remove file securely [enhancement, wont-fix]"
+[#180]: https://github.com/jprichardson/node-fs-extra/issues/180    "Filter option doesn't work the same way in copy and copySync [bug, feature-copy]"
+[#179]: https://github.com/jprichardson/node-fs-extra/issues/179    "Include opendir"
+[#178]: https://github.com/jprichardson/node-fs-extra/issues/178    "ENOTEMPTY is thrown on removeSync "
+[#177]: https://github.com/jprichardson/node-fs-extra/issues/177    "fix `remove()` wildcards (introduced by rimraf) [feature-remove]"
+[#176]: https://github.com/jprichardson/node-fs-extra/issues/176    "createOutputStream doesn't emit 'end' event"
+[#175]: https://github.com/jprichardson/node-fs-extra/issues/175    "[Feature Request].moveSync support [feature-move, future]"
+[#174]: https://github.com/jprichardson/node-fs-extra/pull/174      "Fix copy formatting and document options.filter"
+[#173]: https://github.com/jprichardson/node-fs-extra/issues/173    "Feature Request: writeJson should mkdirs"
+[#172]: https://github.com/jprichardson/node-fs-extra/issues/172    "rename `clobber` flags to `overwrite`"
+[#171]: https://github.com/jprichardson/node-fs-extra/issues/171    "remove unnecessary aliases"
+[#170]: https://github.com/jprichardson/node-fs-extra/pull/170      "More robust handling of errors moving across virtual drives"
+[#169]: https://github.com/jprichardson/node-fs-extra/pull/169      "suppress ensureLink & ensureSymlink dest exists error"
+[#168]: https://github.com/jprichardson/node-fs-extra/pull/168      "suppress ensurelink dest exists error"
+[#167]: https://github.com/jprichardson/node-fs-extra/pull/167      "Adds basic (string, buffer) support for ensureFile content [future]"
+[#166]: https://github.com/jprichardson/node-fs-extra/pull/166      "Adds basic (string, buffer) support for ensureFile content"
+[#165]: https://github.com/jprichardson/node-fs-extra/pull/165      "ensure for link & symlink"
+[#164]: https://github.com/jprichardson/node-fs-extra/issues/164    "Feature Request: ensureFile to take optional argument for file content"
+[#163]: https://github.com/jprichardson/node-fs-extra/issues/163    "ouputJson not formatted out of the box [bug]"
+[#162]: https://github.com/jprichardson/node-fs-extra/pull/162      "ensure symlink & link"
+[#161]: https://github.com/jprichardson/node-fs-extra/pull/161      "ensure symlink & link"
+[#160]: https://github.com/jprichardson/node-fs-extra/pull/160      "ensure symlink & link"
+[#159]: https://github.com/jprichardson/node-fs-extra/pull/159      "ensure symlink & link"
+[#158]: https://github.com/jprichardson/node-fs-extra/issues/158    "Feature Request: ensureLink and ensureSymlink methods"
+[#157]: https://github.com/jprichardson/node-fs-extra/issues/157    "writeJson isn't formatted"
+[#156]: https://github.com/jprichardson/node-fs-extra/issues/156    "Promise.promisifyAll doesn't work for some methods"
+[#155]: https://github.com/jprichardson/node-fs-extra/issues/155    "Readme"
+[#154]: https://github.com/jprichardson/node-fs-extra/issues/154    "/tmp/millis-test-sync"
+[#153]: https://github.com/jprichardson/node-fs-extra/pull/153      "Make preserveTimes also work on read-only files. Closes #152"
+[#152]: https://github.com/jprichardson/node-fs-extra/issues/152    "fs.copy fails for read-only files with preserveTimestamp=true [feature-copy]"
+[#151]: https://github.com/jprichardson/node-fs-extra/issues/151    "TOC does not work correctly on npm [documentation]"
+[#150]: https://github.com/jprichardson/node-fs-extra/issues/150    "Remove test file fixtures, create with code."
+[#149]: https://github.com/jprichardson/node-fs-extra/issues/149    "/tmp/millis-test-sync"
+[#148]: https://github.com/jprichardson/node-fs-extra/issues/148    "split out `Sync` methods in documentation"
+[#147]: https://github.com/jprichardson/node-fs-extra/issues/147    "Adding rmdirIfEmpty"
+[#146]: https://github.com/jprichardson/node-fs-extra/pull/146      "ensure test.js works"
+[#145]: https://github.com/jprichardson/node-fs-extra/issues/145    "Add `fs.exists` and `fs.existsSync` if it doesn't exist."
+[#144]: https://github.com/jprichardson/node-fs-extra/issues/144    "tests failing"
+[#143]: https://github.com/jprichardson/node-fs-extra/issues/143    "update graceful-fs"
+[#142]: https://github.com/jprichardson/node-fs-extra/issues/142    "PrependFile Feature"
+[#141]: https://github.com/jprichardson/node-fs-extra/pull/141      "Add option to preserve timestamps"
+[#140]: https://github.com/jprichardson/node-fs-extra/issues/140    "Json file reading fails with 'utf8'"
+[#139]: https://github.com/jprichardson/node-fs-extra/pull/139      "Preserve file timestamp on copy. Closes #138"
+[#138]: https://github.com/jprichardson/node-fs-extra/issues/138    "Preserve timestamps on copying files"
+[#137]: https://github.com/jprichardson/node-fs-extra/issues/137    "outputFile/outputJson: Unexpected end of input"
+[#136]: https://github.com/jprichardson/node-fs-extra/pull/136      "Update license attribute"
+[#135]: https://github.com/jprichardson/node-fs-extra/issues/135    "emptyDir throws Error if no callback is provided"
+[#134]: https://github.com/jprichardson/node-fs-extra/pull/134      "Handle EEXIST error when clobbering dir"
+[#133]: https://github.com/jprichardson/node-fs-extra/pull/133      "Travis runs with `sudo: false`"
+[#132]: https://github.com/jprichardson/node-fs-extra/pull/132      "isDirectory method"
+[#131]: https://github.com/jprichardson/node-fs-extra/issues/131    "copySync is not working iojs 1.8.4 on linux [feature-copy]"
+[#130]: https://github.com/jprichardson/node-fs-extra/pull/130      "Please review additional features."
+[#129]: https://github.com/jprichardson/node-fs-extra/pull/129      "can you review this feature?"
+[#128]: https://github.com/jprichardson/node-fs-extra/issues/128    "fsExtra.move(filepath, newPath) broken;"
+[#127]: https://github.com/jprichardson/node-fs-extra/issues/127    "consider using fs.access to remove deprecated warnings for fs.exists"
+[#126]: https://github.com/jprichardson/node-fs-extra/issues/126    " TypeError: Object #<Object> has no method 'access'"
+[#125]: https://github.com/jprichardson/node-fs-extra/issues/125    "Question: What do the *Sync function do different from non-sync"
+[#124]: https://github.com/jprichardson/node-fs-extra/issues/124    "move with clobber option 'ENOTEMPTY'"
+[#123]: https://github.com/jprichardson/node-fs-extra/issues/123    "Only copy the content of a directory"
+[#122]: https://github.com/jprichardson/node-fs-extra/pull/122      "Update section links in README to match current section ids."
+[#121]: https://github.com/jprichardson/node-fs-extra/issues/121    "emptyDir is undefined"
+[#120]: https://github.com/jprichardson/node-fs-extra/issues/120    "usage bug caused by shallow cloning methods of 'graceful-fs'"
+[#119]: https://github.com/jprichardson/node-fs-extra/issues/119    "mkdirs and ensureDir never invoke callback and consume CPU indefinitely if provided a path with invalid characters on Windows"
+[#118]: https://github.com/jprichardson/node-fs-extra/pull/118      "createOutputStream"
+[#117]: https://github.com/jprichardson/node-fs-extra/pull/117      "Fixed issue with slash separated paths on windows"
+[#116]: https://github.com/jprichardson/node-fs-extra/issues/116    "copySync can only copy directories not files [documentation, feature-copy]"
+[#115]: https://github.com/jprichardson/node-fs-extra/issues/115    ".Copy & .CopySync [feature-copy]"
+[#114]: https://github.com/jprichardson/node-fs-extra/issues/114    "Fails to move (rename) directory to non-empty directory even with clobber: true"
+[#113]: https://github.com/jprichardson/node-fs-extra/issues/113    "fs.copy seems to callback early if the destination file already exists"
+[#112]: https://github.com/jprichardson/node-fs-extra/pull/112      "Copying a file into an existing directory"
+[#111]: https://github.com/jprichardson/node-fs-extra/pull/111      "Moving a file into an existing directory "
+[#110]: https://github.com/jprichardson/node-fs-extra/pull/110      "Moving a file into an existing directory"
+[#109]: https://github.com/jprichardson/node-fs-extra/issues/109    "fs.move across windows drives fails"
+[#108]: https://github.com/jprichardson/node-fs-extra/issues/108    "fse.move directories across multiple devices doesn't work"
+[#107]: https://github.com/jprichardson/node-fs-extra/pull/107      "Check if dest path is an existing dir and copy or move source in it"
+[#106]: https://github.com/jprichardson/node-fs-extra/issues/106    "fse.copySync crashes while copying across devices D: [feature-copy]"
+[#105]: https://github.com/jprichardson/node-fs-extra/issues/105    "fs.copy hangs on iojs"
+[#104]: https://github.com/jprichardson/node-fs-extra/issues/104    "fse.move deletes folders [bug]"
+[#103]: https://github.com/jprichardson/node-fs-extra/issues/103    "Error: EMFILE with copy"
+[#102]: https://github.com/jprichardson/node-fs-extra/issues/102    "touch / touchSync was removed ?"
+[#101]: https://github.com/jprichardson/node-fs-extra/issues/101    "fs-extra promisified"
+[#100]: https://github.com/jprichardson/node-fs-extra/pull/100      "copy: options object or filter to pass to ncp"
+[#99]: https://github.com/jprichardson/node-fs-extra/issues/99      "ensureDir() modes [future]"
+[#98]: https://github.com/jprichardson/node-fs-extra/issues/98      "fs.copy() incorrect async behavior [bug]"
+[#97]: https://github.com/jprichardson/node-fs-extra/pull/97        "use path.join; fix copySync bug"
+[#96]: https://github.com/jprichardson/node-fs-extra/issues/96      "destFolderExists in copySync is always undefined."
+[#95]: https://github.com/jprichardson/node-fs-extra/pull/95        "Using graceful-ncp instead of ncp"
+[#94]: https://github.com/jprichardson/node-fs-extra/issues/94      "Error: EEXIST, file already exists '../mkdirp/bin/cmd.js' on fs.copySync() [enhancement, feature-copy]"
+[#93]: https://github.com/jprichardson/node-fs-extra/issues/93      "Confusing error if drive not mounted [enhancement]"
+[#92]: https://github.com/jprichardson/node-fs-extra/issues/92      "Problems with Bluebird"
+[#91]: https://github.com/jprichardson/node-fs-extra/issues/91      "fs.copySync('/test', '/haha') is different with 'cp -r /test /haha' [enhancement]"
+[#90]: https://github.com/jprichardson/node-fs-extra/issues/90      "Folder creation and file copy is Happening in 64 bit machine but not in 32 bit machine"
+[#89]: https://github.com/jprichardson/node-fs-extra/issues/89      "Error: EEXIST using fs-extra's fs.copy to copy a directory on Windows"
+[#88]: https://github.com/jprichardson/node-fs-extra/issues/88      "Stacking those libraries"
+[#87]: https://github.com/jprichardson/node-fs-extra/issues/87      "createWriteStream + outputFile = ?"
+[#86]: https://github.com/jprichardson/node-fs-extra/issues/86      "no moveSync?"
+[#85]: https://github.com/jprichardson/node-fs-extra/pull/85        "Copy symlinks in copySync"
+[#84]: https://github.com/jprichardson/node-fs-extra/issues/84      "Push latest version to npm ?"
+[#83]: https://github.com/jprichardson/node-fs-extra/issues/83      "Prevent copying a directory into itself [feature-copy]"
+[#82]: https://github.com/jprichardson/node-fs-extra/pull/82        "README updates for move"
+[#81]: https://github.com/jprichardson/node-fs-extra/issues/81      "fd leak after fs.move"
+[#80]: https://github.com/jprichardson/node-fs-extra/pull/80        "Preserve file mode in copySync"
+[#79]: https://github.com/jprichardson/node-fs-extra/issues/79      "fs.copy only .html file empty"
+[#78]: https://github.com/jprichardson/node-fs-extra/pull/78        "copySync was not applying filters to directories"
+[#77]: https://github.com/jprichardson/node-fs-extra/issues/77      "Create README reference to bluebird"
+[#76]: https://github.com/jprichardson/node-fs-extra/issues/76      "Create README reference to typescript"
+[#75]: https://github.com/jprichardson/node-fs-extra/issues/75      "add glob as a dep? [question]"
+[#74]: https://github.com/jprichardson/node-fs-extra/pull/74        "including new emptydir module"
+[#73]: https://github.com/jprichardson/node-fs-extra/pull/73        "add dependency status in readme"
+[#72]: https://github.com/jprichardson/node-fs-extra/pull/72        "Use svg instead of png to get better image quality"
+[#71]: https://github.com/jprichardson/node-fs-extra/issues/71      "fse.copy not working on Windows 7 x64 OS, but, copySync does work"
+[#70]: https://github.com/jprichardson/node-fs-extra/issues/70      "Not filter each file, stops on first false [bug]"
+[#69]: https://github.com/jprichardson/node-fs-extra/issues/69      "How to check if folder exist and read the folder name"
+[#68]: https://github.com/jprichardson/node-fs-extra/issues/68      "consider flag to readJsonSync (throw false) [enhancement]"
+[#67]: https://github.com/jprichardson/node-fs-extra/issues/67      "docs for readJson incorrectly states that is accepts options"
+[#66]: https://github.com/jprichardson/node-fs-extra/issues/66      "ENAMETOOLONG"
+[#65]: https://github.com/jprichardson/node-fs-extra/issues/65      "exclude filter in fs.copy"
+[#64]: https://github.com/jprichardson/node-fs-extra/issues/64      "Announce: mfs - monitor your fs-extra calls"
+[#63]: https://github.com/jprichardson/node-fs-extra/issues/63      "Walk"
+[#62]: https://github.com/jprichardson/node-fs-extra/issues/62      "npm install fs-extra doesn't work"
+[#61]: https://github.com/jprichardson/node-fs-extra/issues/61      "No longer supports node 0.8 due to use of `^` in package.json dependencies"
+[#60]: https://github.com/jprichardson/node-fs-extra/issues/60      "chmod & chown for mkdirs"
+[#59]: https://github.com/jprichardson/node-fs-extra/issues/59      "Consider including mkdirp and making fs-extra '--use_strict' safe [question]"
+[#58]: https://github.com/jprichardson/node-fs-extra/issues/58      "Stack trace not included in fs.copy error"
+[#57]: https://github.com/jprichardson/node-fs-extra/issues/57      "Possible to include wildcards in delete?"
+[#56]: https://github.com/jprichardson/node-fs-extra/issues/56      "Crash when have no access to write to destination file in copy "
+[#55]: https://github.com/jprichardson/node-fs-extra/issues/55      "Is it possible to have any console output similar to Grunt copy module?"
+[#54]: https://github.com/jprichardson/node-fs-extra/issues/54      "`copy` does not preserve file ownership and permissons"
+[#53]: https://github.com/jprichardson/node-fs-extra/issues/53      "outputFile() - ability to write data in appending mode"
+[#52]: https://github.com/jprichardson/node-fs-extra/pull/52        "This fixes (what I think) is a bug in copySync"
+[#51]: https://github.com/jprichardson/node-fs-extra/pull/51        "Add a Bitdeli Badge to README"
+[#50]: https://github.com/jprichardson/node-fs-extra/issues/50      "Replace mechanism in createFile"
+[#49]: https://github.com/jprichardson/node-fs-extra/pull/49        "update rimraf to v2.2.6"
+[#48]: https://github.com/jprichardson/node-fs-extra/issues/48      "fs.copy issue [bug]"
+[#47]: https://github.com/jprichardson/node-fs-extra/issues/47      "Bug in copy - callback called on readStream 'close' - Fixed in ncp 0.5.0"
+[#46]: https://github.com/jprichardson/node-fs-extra/pull/46        "update copyright year"
+[#45]: https://github.com/jprichardson/node-fs-extra/pull/45        "Added note about fse.outputFile() being the one that overwrites"
+[#44]: https://github.com/jprichardson/node-fs-extra/pull/44        "Proposal: Stream support"
+[#43]: https://github.com/jprichardson/node-fs-extra/issues/43      "Better error reporting "
+[#42]: https://github.com/jprichardson/node-fs-extra/issues/42      "Performance issue?"
+[#41]: https://github.com/jprichardson/node-fs-extra/pull/41        "There does seem to be a synchronous version now"
+[#40]: https://github.com/jprichardson/node-fs-extra/issues/40      "fs.copy throw unexplained error ENOENT, utime "
+[#39]: https://github.com/jprichardson/node-fs-extra/pull/39        "Added regression test for copy() return callback on error"
+[#38]: https://github.com/jprichardson/node-fs-extra/pull/38        "Return err in copy() fstat cb, because stat could be undefined or null"
+[#37]: https://github.com/jprichardson/node-fs-extra/issues/37      "Maybe include a line reader? [enhancement, question]"
+[#36]: https://github.com/jprichardson/node-fs-extra/pull/36        "`filter` parameter `fs.copy` and `fs.copySync`"
+[#35]: https://github.com/jprichardson/node-fs-extra/pull/35        "`filter` parameter `fs.copy` and `fs.copySync` "
+[#34]: https://github.com/jprichardson/node-fs-extra/issues/34      "update docs to include options for JSON methods [enhancement]"
+[#33]: https://github.com/jprichardson/node-fs-extra/pull/33        "fs_extra.copySync"
+[#32]: https://github.com/jprichardson/node-fs-extra/issues/32      "update to latest jsonfile [enhancement]"
+[#31]: https://github.com/jprichardson/node-fs-extra/issues/31      "Add ensure methods [enhancement]"
+[#30]: https://github.com/jprichardson/node-fs-extra/issues/30      "update package.json optional dep `graceful-fs`"
+[#29]: https://github.com/jprichardson/node-fs-extra/issues/29      "Copy failing if dest directory doesn't exist. Is this intended?"
+[#28]: https://github.com/jprichardson/node-fs-extra/issues/28      "homepage field must be a string url. Deleted."
+[#27]: https://github.com/jprichardson/node-fs-extra/issues/27      "Update Readme"
+[#26]: https://github.com/jprichardson/node-fs-extra/issues/26      "Add readdir recursive method. [enhancement]"
+[#25]: https://github.com/jprichardson/node-fs-extra/pull/25        "adding an `.npmignore` file"
+[#24]: https://github.com/jprichardson/node-fs-extra/issues/24      "[bug] cannot run in strict mode [bug]"
+[#23]: https://github.com/jprichardson/node-fs-extra/issues/23      "`writeJSON()` should create parent directories"
+[#22]: https://github.com/jprichardson/node-fs-extra/pull/22        "Add a limit option to mkdirs()"
+[#21]: https://github.com/jprichardson/node-fs-extra/issues/21      "touch() in 0.10.0"
+[#20]: https://github.com/jprichardson/node-fs-extra/issues/20      "fs.remove yields callback before directory is really deleted"
+[#19]: https://github.com/jprichardson/node-fs-extra/issues/19      "fs.copy err is empty array"
+[#18]: https://github.com/jprichardson/node-fs-extra/pull/18        "Exposed copyFile Function"
+[#17]: https://github.com/jprichardson/node-fs-extra/issues/17      "Use `require('graceful-fs')` if found instead of `require('fs')`"
+[#16]: https://github.com/jprichardson/node-fs-extra/pull/16        "Update README.md"
+[#15]: https://github.com/jprichardson/node-fs-extra/issues/15      "Implement cp -r but sync aka copySync. [enhancement]"
+[#14]: https://github.com/jprichardson/node-fs-extra/issues/14      "fs.mkdirSync is broken in 0.3.1"
+[#13]: https://github.com/jprichardson/node-fs-extra/issues/13      "Thoughts on including a directory tree / file watcher? [enhancement, question]"
+[#12]: https://github.com/jprichardson/node-fs-extra/issues/12      "copyFile & copyFileSync are global"
+[#11]: https://github.com/jprichardson/node-fs-extra/issues/11      "Thoughts on including a file walker? [enhancement, question]"
+[#10]: https://github.com/jprichardson/node-fs-extra/issues/10      "move / moveFile API [enhancement]"
+[#9]: https://github.com/jprichardson/node-fs-extra/issues/9        "don't import normal fs stuff into fs-extra"
+[#8]: https://github.com/jprichardson/node-fs-extra/pull/8          "Update rimraf to latest version"
+[#6]: https://github.com/jprichardson/node-fs-extra/issues/6        "Remove CoffeeScript development dependency"
+[#5]: https://github.com/jprichardson/node-fs-extra/issues/5        "comments on naming"
+[#4]: https://github.com/jprichardson/node-fs-extra/issues/4        "version bump to 0.2"
+[#3]: https://github.com/jprichardson/node-fs-extra/pull/3          "Hi! I fixed some code for you!"
+[#2]: https://github.com/jprichardson/node-fs-extra/issues/2        "Merge with fs.extra and mkdirp"
+[#1]: https://github.com/jprichardson/node-fs-extra/issues/1        "file-extra npm !exist"
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/fs-extra/README.md](Github/bgoonz-master/bgoonz-master/node_modules/fs-extra/README.md)
+
+Node.js: fs-extra
+=================
+
+`fs-extra` adds file system methods that aren't included in the native `fs` module and adds promise support to the `fs` methods. It also uses [`graceful-fs`](https://github.com/isaacs/node-graceful-fs) to prevent `EMFILE` errors. It should be a drop in replacement for `fs`.
+
+[![npm Package](https://img.shields.io/npm/v/fs-extra.svg)](https://www.npmjs.org/package/fs-extra)
+[![License](https://img.shields.io/npm/l/express.svg)](https://github.com/jprichardson/node-fs-extra/blob/master/LICENSE)
+[![build status](https://img.shields.io/travis/jprichardson/node-fs-extra/master.svg)](http://travis-ci.org/jprichardson/node-fs-extra)
+[![windows Build status](https://img.shields.io/appveyor/ci/jprichardson/node-fs-extra/master.svg?label=windows%20build)](https://ci.appveyor.com/project/jprichardson/node-fs-extra/branch/master)
+[![downloads per month](http://img.shields.io/npm/dm/fs-extra.svg)](https://www.npmjs.org/package/fs-extra)
+[![Coverage Status](https://img.shields.io/coveralls/github/jprichardson/node-fs-extra/master.svg)](https://coveralls.io/github/jprichardson/node-fs-extra)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+Why?
+----
+
+I got tired of including `mkdirp`, `rimraf`, and `ncp` in most of my projects.
+
+
+
+
+Installation
+------------
+
+    npm install fs-extra
+
+
+
+Usage
+-----
+
+`fs-extra` is a drop in replacement for native `fs`. All methods in `fs` are attached to `fs-extra`. All `fs` methods return promises if the callback isn't passed.
+
+You don't ever need to include the original `fs` module again:
+
+```js
+const fs = require('fs') // this is no longer necessary
+```
+
+you can now do this:
+
+```js
+const fs = require('fs-extra')
+```
+
+or if you prefer to make it clear that you're using `fs-extra` and not `fs`, you may want
+to name your `fs` variable `fse` like so:
+
+```js
+const fse = require('fs-extra')
+```
+
+you can also keep both, but it's redundant:
+
+```js
+const fs = require('fs')
+const fse = require('fs-extra')
+```
+
+Sync vs Async vs Async/Await
+-------------
+Most methods are async by default. All async methods will return a promise if the callback isn't passed.
+
+Sync methods on the other hand will throw if an error occurs.
+
+Also Async/Await will throw an error if one occurs.
+
+Example:
+
+```js
+const fs = require('fs-extra')
+
+// Async with promises:
+fs.copy('/tmp/myfile', '/tmp/mynewfile')
+  .then(() => console.log('success!'))
+  .catch(err => console.error(err))
+
+// Async with callbacks:
+fs.copy('/tmp/myfile', '/tmp/mynewfile', err => {
+  if (err) return console.error(err)
+  console.log('success!')
+})
+
+// Sync:
+try {
+  fs.copySync('/tmp/myfile', '/tmp/mynewfile')
+  console.log('success!')
+} catch (err) {
+  console.error(err)
+}
+
+// Async/Await:
+async function copyFiles () {
+  try {
+    await fs.copy('/tmp/myfile', '/tmp/mynewfile')
+    console.log('success!')
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+copyFiles()
+```
+
+
+Methods
+-------
+
+### Async
+
+- [copy](docs/copy.md)
+- [emptyDir](docs/emptyDir.md)
+- [ensureFile](docs/ensureFile.md)
+- [ensureDir](docs/ensureDir.md)
+- [ensureLink](docs/ensureLink.md)
+- [ensureSymlink](docs/ensureSymlink.md)
+- [mkdirp](docs/ensureDir.md)
+- [mkdirs](docs/ensureDir.md)
+- [move](docs/move.md)
+- [outputFile](docs/outputFile.md)
+- [outputJson](docs/outputJson.md)
+- [pathExists](docs/pathExists.md)
+- [readJson](docs/readJson.md)
+- [remove](docs/remove.md)
+- [writeJson](docs/writeJson.md)
+
+### Sync
+
+- [copySync](docs/copy-sync.md)
+- [emptyDirSync](docs/emptyDir-sync.md)
+- [ensureFileSync](docs/ensureFile-sync.md)
+- [ensureDirSync](docs/ensureDir-sync.md)
+- [ensureLinkSync](docs/ensureLink-sync.md)
+- [ensureSymlinkSync](docs/ensureSymlink-sync.md)
+- [mkdirpSync](docs/ensureDir-sync.md)
+- [mkdirsSync](docs/ensureDir-sync.md)
+- [moveSync](docs/move-sync.md)
+- [outputFileSync](docs/outputFile-sync.md)
+- [outputJsonSync](docs/outputJson-sync.md)
+- [pathExistsSync](docs/pathExists-sync.md)
+- [readJsonSync](docs/readJson-sync.md)
+- [removeSync](docs/remove-sync.md)
+- [writeJsonSync](docs/writeJson-sync.md)
+
+
+**NOTE:** You can still use the native Node.js methods. They are promisified and copied over to `fs-extra`. See [notes on `fs.read()`, `fs.write()`, & `fs.writev()`](docs/fs-read-write-writev.md)
+
+### What happened to `walk()` and `walkSync()`?
+
+They were removed from `fs-extra` in v2.0.0. If you need the functionality, `walk` and `walkSync` are available as separate packages, [`klaw`](https://github.com/jprichardson/node-klaw) and [`klaw-sync`](https://github.com/manidlou/node-klaw-sync).
+
+
+Third Party
+-----------
+
+### CLI
+
+[fse-cli](https://www.npmjs.com/package/@atao60/fse-cli) allows you to run `fs-extra` from a console or from [npm](https://www.npmjs.com) scripts.
+
+### TypeScript
+
+If you like TypeScript, you can use `fs-extra` with it: https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/fs-extra
+
+
+### File / Directory Watching
+
+If you want to watch for changes to files or directories, then you should use [chokidar](https://github.com/paulmillr/chokidar).
+
+### Obtain Filesystem (Devices, Partitions) Information
+
+[fs-filesystem](https://github.com/arthurintelligence/node-fs-filesystem) allows you to read the state of the filesystem of the host on which it is run. It returns information about both the devices and the partitions (volumes) of the system.
+
+### Misc.
+
+- [fs-extra-debug](https://github.com/jdxcode/fs-extra-debug) - Send your fs-extra calls to [debug](https://npmjs.org/package/debug).
+- [mfs](https://github.com/cadorn/mfs) - Monitor your fs-extra calls.
+
+
+
+Hacking on fs-extra
+-------------------
+
+Wanna hack on `fs-extra`? Great! Your help is needed! [fs-extra is one of the most depended upon Node.js packages](http://nodei.co/npm/fs-extra.png?downloads=true&downloadRank=true&stars=true). This project
+uses [JavaScript Standard Style](https://github.com/feross/standard) - if the name or style choices bother you,
+you're gonna have to get over it :) If `standard` is good enough for `npm`, it's good enough for `fs-extra`.
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+What's needed?
+- First, take a look at existing issues. Those are probably going to be where the priority lies.
+- More tests for edge cases. Specifically on different platforms. There can never be enough tests.
+- Improve test coverage. See coveralls output for more info.
+
+Note: If you make any big changes, **you should definitely file an issue for discussion first.**
+
+### Running the Test Suite
+
+fs-extra contains hundreds of tests.
+
+- `npm run lint`: runs the linter ([standard](http://standardjs.com/))
+- `npm run unit`: runs the unit tests
+- `npm test`: runs both the linter and the tests
+
+
+### Windows
+
+If you run the tests on the Windows and receive a lot of symbolic link `EPERM` permission errors, it's
+because on Windows you need elevated privilege to create symbolic links. You can add this to your Windows's
+account by following the instructions here: http://superuser.com/questions/104845/permission-to-make-symbolic-links-in-windows-7
+However, I didn't have much luck doing this.
+
+Since I develop on Mac OS X, I use VMWare Fusion for Windows testing. I create a shared folder that I map to a drive on Windows.
+I open the `Node.js command prompt` and run as `Administrator`. I then map the network drive running the following command:
+
+    net use z: "\\vmware-host\Shared Folders"
+
+I can then navigate to my `fs-extra` directory and run the tests.
+
+
+Naming
+------
+
+I put a lot of thought into the naming of these functions. Inspired by @coolaj86's request. So he deserves much of the credit for raising the issue. See discussion(s) here:
+
+* https://github.com/jprichardson/node-fs-extra/issues/2
+* https://github.com/flatiron/utile/issues/11
+* https://github.com/ryanmcgrath/wrench-js/issues/29
+* https://github.com/substack/node-mkdirp/issues/17
+
+First, I believe that in as many cases as possible, the [Node.js naming schemes](http://nodejs.org/api/fs.html) should be chosen. However, there are problems with the Node.js own naming schemes.
+
+For example, `fs.readFile()` and `fs.readdir()`: the **F** is capitalized in *File* and the **d** is not capitalized in *dir*. Perhaps a bit pedantic, but they should still be consistent. Also, Node.js has chosen a lot of POSIX naming schemes, which I believe is great. See: `fs.mkdir()`, `fs.rmdir()`, `fs.chown()`, etc.
+
+We have a dilemma though. How do you consistently name methods that perform the following POSIX commands: `cp`, `cp -r`, `mkdir -p`, and `rm -rf`?
+
+My perspective: when in doubt, err on the side of simplicity. A directory is just a hierarchical grouping of directories and files. Consider that for a moment. So when you want to copy it or remove it, in most cases you'll want to copy or remove all of its contents. When you want to create a directory, if the directory that it's suppose to be contained in does not exist, then in most cases you'll want to create that too.
+
+So, if you want to remove a file or a directory regardless of whether it has contents, just call `fs.remove(path)`. If you want to copy a file or a directory whether it has contents, just call `fs.copy(source, destination)`. If you want to create a directory regardless of whether its parent directories exist, just call `fs.mkdirs(path)` or `fs.mkdirp(path)`.
+
+
+Credit
+------
+
+`fs-extra` wouldn't be possible without using the modules from the following authors:
+
+- [Isaac Shlueter](https://github.com/isaacs)
+- [Charlie McConnel](https://github.com/avianflu)
+- [James Halliday](https://github.com/substack)
+- [Andrew Kelley](https://github.com/andrewrk)
+
+
+
+
+License
+-------
+
+Licensed under MIT
+
+Copyright (c) 2011-2017 [JP Richardson](https://github.com/jprichardson)
+
+[1]: http://nodejs.org/docs/latest/api/fs.html
+
+
+[jsonfile]: https://github.com/jprichardson/node-jsonfile
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/fs.realpath/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/fs.realpath/README.md](Github/bgoonz-master/bgoonz-master/node_modules/fs.realpath/README.md)
+# fs.realpath
+
+A backwards-compatible fs.realpath for Node v6 and above
+
+In Node v6, the JavaScript implementation of fs.realpath was replaced
+with a faster (but less resilient) native implementation.  That raises
+new and platform-specific errors and cannot handle long or excessively
+symlink-looping paths.
+
+This module handles those cases by detecting the new errors and
+falling back to the JavaScript implementation.  On versions of Node
+prior to v6, it has no effect.
+
+## USAGE
+
+```js
+var rp = require('fs.realpath')
+
+// async version
+rp.realpath(someLongAndLoopingPath, function (er, real) {
+  // the ELOOP was handled, but it was a bit slower
+})
+
+// sync version
+var real = rp.realpathSync(someLongAndLoopingPath)
+
+// monkeypatch at your own risk!
+// This replaces the fs.realpath/fs.realpathSync builtins
+rp.monkeypatch()
+
+// un-do the monkeypatching
+rp.unmonkeypatch()
+```
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/get-caller-file/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/get-caller-file/LICENSE.md](Github/bgoonz-master/bgoonz-master/node_modules/get-caller-file/LICENSE.md)
+ISC License (ISC)
+Copyright 2018 Stefan Penner
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/get-caller-file/README.md](Github/bgoonz-master/bgoonz-master/node_modules/get-caller-file/README.md)
+
+# get-caller-file
+
+[![Build Status](https://travis-ci.org/stefanpenner/get-caller-file.svg?branch=master)](https://travis-ci.org/stefanpenner/get-caller-file)
+[![Build status](https://ci.appveyor.com/api/projects/status/ol2q94g1932cy14a/branch/master?svg=true)](https://ci.appveyor.com/project/embercli/get-caller-file/branch/master)
+
+This is a utility, which allows a function to figure out from which file it was invoked. It does so by inspecting v8's stack trace at the time it is invoked.
+
+Inspired by http://stackoverflow.com/questions/13227489
+
+*note: this relies on Node/V8 specific APIs, as such other runtimes may not work*
+
+## Installation
+
+```bash
+yarn add get-caller-file
+```
+
+## Usage
+
+Given:
+
+```js
+// ./foo.js
+const getCallerFile = require('get-caller-file');
+
+module.exports = function() {
+  return getCallerFile(); // figures out who called it
+};
+```
+
+```js
+// index.js
+const foo = require('./foo');
+
+foo() // => /full/path/to/this/file/index.js
+```
+
+
+## Options:
+
+* `getCallerFile(position = 2)`: where position is stack frame whos fileName we want.
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/get-stream/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/get-stream/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/get-stream/readme.md)
+# get-stream [![Build Status](https://travis-ci.org/sindresorhus/get-stream.svg?branch=master)](https://travis-ci.org/sindresorhus/get-stream)
+
+> Get a stream as a string, buffer, or array
+
+
+## Install
+
+```
+$ npm install get-stream
+```
+
+
+## Usage
+
+```js
+const fs = require('fs');
+const getStream = require('get-stream');
+
+(async () => {
+	const stream = fs.createReadStream('unicorn.txt');
+
+	console.log(await getStream(stream));
+	/*
+	              ,,))))))));,
+	           __)))))))))))))),
+	\|/       -\(((((''''((((((((.
+	-*-==//////((''  .     `)))))),
+	/|\      ))| o    ;-.    '(((((                                  ,(,
+	         ( `|    /  )    ;))))'                               ,_))^;(~
+	            |   |   |   ,))((((_     _____------~~~-.        %,;(;(>';'~
+	            o_);   ;    )))(((` ~---~  `::           \      %%~~)(v;(`('~
+	                  ;    ''''````         `:       `:::|\,__,%%    );`'; ~
+	                 |   _                )     /      `:|`----'     `-'
+	           ______/\/~    |                 /        /
+	         /~;;.____/;;'  /          ___--,-(   `;;;/
+	        / //  _;______;'------~~~~~    /;;/\    /
+	       //  | |                        / ;   \;;,\
+	      (<_  | ;                      /',/-----'  _>
+	       \_| ||_                     //~;~~~~~~~~~
+	           `\_|                   (,~~
+	                                   \~\
+	                                    ~~
+	*/
+})();
+```
+
+
+## API
+
+The methods returns a promise that resolves when the `end` event fires on the stream, indicating that there is no more data to be read. The stream is switched to flowing mode.
+
+### getStream(stream, [options])
+
+Get the `stream` as a string.
+
+#### options
+
+Type: `Object`
+
+##### encoding
+
+Type: `string`<br>
+Default: `utf8`
+
+[Encoding](https://nodejs.org/api/buffer.html#buffer_buffer) of the incoming stream.
+
+##### maxBuffer
+
+Type: `number`<br>
+Default: `Infinity`
+
+Maximum length of the returned string. If it exceeds this value before the stream ends, the promise will be rejected with a `getStream.MaxBufferError` error.
+
+### getStream.buffer(stream, [options])
+
+Get the `stream` as a buffer.
+
+It honors the `maxBuffer` option as above, but it refers to byte length rather than string length.
+
+### getStream.array(stream, [options])
+
+Get the `stream` as an array of values.
+
+It honors both the `maxBuffer` and `encoding` options. The behavior changes slightly based on the encoding chosen:
+
+- When `encoding` is unset, it assumes an [object mode stream](https://nodesource.com/blog/understanding-object-streams/) and collects values emitted from `stream` unmodified. In this case `maxBuffer` refers to the number of items in the array (not the sum of their sizes).
+
+- When `encoding` is set to `buffer`, it collects an array of buffers. `maxBuffer` refers to the summed byte lengths of every buffer in the array.
+
+- When `encoding` is set to anything else, it collects an array of strings. `maxBuffer` refers to the summed character lengths of every string in the array.
+
+
+## Errors
+
+If the input stream emits an `error` event, the promise will be rejected with the error. The buffered data will be attached to the `bufferedData` property of the error.
+
+```js
+(async () => {
+	try {
+		await getStream(streamThatErrorsAtTheEnd('unicorn'));
+	} catch (error) {
+		console.log(error.bufferedData);
+		//=> 'unicorn'
+	}
+})()
+```
+
+
+## FAQ
+
+### How is this different from [`concat-stream`](https://github.com/maxogden/concat-stream)?
+
+This module accepts a stream instead of being one and returns a promise instead of using a callback. The API is simpler and it only supports returning a string, buffer, or array. It doesn't have a fragile type inference. You explicitly choose what you want. And it doesn't depend on the huge `readable-stream` package.
+
+
+## Related
+
+- [get-stdin](https://github.com/sindresorhus/get-stdin) - Get stdin as a string or buffer
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/glob-parent/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/glob-parent/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/glob-parent/CHANGELOG.md)
+### [5.1.2](https://github.com/gulpjs/glob-parent/compare/v5.1.1...v5.1.2) (2021-03-06)
+
+
+### Bug Fixes
+
+* eliminate ReDoS ([#36](https://github.com/gulpjs/glob-parent/issues/36)) ([f923116](https://github.com/gulpjs/glob-parent/commit/f9231168b0041fea3f8f954b3cceb56269fc6366))
+
+### [5.1.1](https://github.com/gulpjs/glob-parent/compare/v5.1.0...v5.1.1) (2021-01-27)
+
+
+### Bug Fixes
+
+* unescape exclamation mark ([#26](https://github.com/gulpjs/glob-parent/issues/26)) ([a98874f](https://github.com/gulpjs/glob-parent/commit/a98874f1a59e407f4fb1beb0db4efa8392da60bb))
+
+## [5.1.0](https://github.com/gulpjs/glob-parent/compare/v5.0.0...v5.1.0) (2021-01-27)
+
+
+### Features
+
+* add `flipBackslashes` option to disable auto conversion of slashes (closes [#24](https://github.com/gulpjs/glob-parent/issues/24)) ([#25](https://github.com/gulpjs/glob-parent/issues/25)) ([eecf91d](https://github.com/gulpjs/glob-parent/commit/eecf91d5e3834ed78aee39c4eaaae654d76b87b3))
+
+## [5.0.0](https://github.com/gulpjs/glob-parent/compare/v4.0.0...v5.0.0) (2021-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for node <6 & bump dependencies
+
+### Miscellaneous Chores
+
+* Drop support for node <6 & bump dependencies ([896c0c0](https://github.com/gulpjs/glob-parent/commit/896c0c00b4e7362f60b96e7fc295ae929245255a))
+
+## [4.0.0](https://github.com/gulpjs/glob-parent/compare/v3.1.0...v4.0.0) (2021-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* question marks are valid path characters on Windows so avoid flagging as a glob when alone
+* Update is-glob dependency
+
+### Features
+
+* hoist regexps and strings for performance gains ([4a80667](https://github.com/gulpjs/glob-parent/commit/4a80667c69355c76a572a5892b0f133c8e1f457e))
+* question marks are valid path characters on Windows so avoid flagging as a glob when alone ([2a551dd](https://github.com/gulpjs/glob-parent/commit/2a551dd0dc3235e78bf3c94843d4107072d17841))
+* Update is-glob dependency ([e41fcd8](https://github.com/gulpjs/glob-parent/commit/e41fcd895d1f7bc617dba45c9d935a7949b9c281))
+
+## [3.1.0](https://github.com/gulpjs/glob-parent/compare/v3.0.1...v3.1.0) (2021-01-27)
+
+
+### Features
+
+* allow basic win32 backslash use ([272afa5](https://github.com/gulpjs/glob-parent/commit/272afa5fd070fc0f796386a5993d4ee4a846988b))
+* handle extglobs (parentheses) containing separators ([7db1bdb](https://github.com/gulpjs/glob-parent/commit/7db1bdb0756e55fd14619e8ce31aa31b17b117fd))
+* new approach to braces/brackets handling ([8269bd8](https://github.com/gulpjs/glob-parent/commit/8269bd89290d99fac9395a354fb56fdcdb80f0be))
+* pre-process braces/brackets sections ([9ef8a87](https://github.com/gulpjs/glob-parent/commit/9ef8a87f66b1a43d0591e7a8e4fc5a18415ee388))
+* preserve escaped brace/bracket at end of string ([8cfb0ba](https://github.com/gulpjs/glob-parent/commit/8cfb0ba84202d51571340dcbaf61b79d16a26c76))
+
+
+### Bug Fixes
+
+* trailing escaped square brackets ([99ec9fe](https://github.com/gulpjs/glob-parent/commit/99ec9fecc60ee488ded20a94dd4f18b4f55c4ccf))
+
+### [3.0.1](https://github.com/gulpjs/glob-parent/compare/v3.0.0...v3.0.1) (2021-01-27)
+
+
+### Features
+
+* use path-dirname ponyfill ([cdbea5f](https://github.com/gulpjs/glob-parent/commit/cdbea5f32a58a54e001a75ddd7c0fccd4776aacc))
+
+
+### Bug Fixes
+
+* unescape glob-escaped dirnames on output ([598c533](https://github.com/gulpjs/glob-parent/commit/598c533bdf49c1428bc063aa9b8db40c5a86b030))
+
+## [3.0.0](https://github.com/gulpjs/glob-parent/compare/v2.0.0...v3.0.0) (2021-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* update is-glob dependency
+
+### Features
+
+* update is-glob dependency ([5c5f8ef](https://github.com/gulpjs/glob-parent/commit/5c5f8efcee362a8e7638cf8220666acd8784f6bd))
+
+## [2.0.0](https://github.com/gulpjs/glob-parent/compare/v1.3.0...v2.0.0) (2021-01-27)
+
+
+### Features
+
+* move up to dirname regardless of glob characters ([f97fb83](https://github.com/gulpjs/glob-parent/commit/f97fb83be2e0a9fc8d3b760e789d2ecadd6aa0c2))
+
+## [1.3.0](https://github.com/gulpjs/glob-parent/compare/v1.2.0...v1.3.0) (2021-01-27)
+
+## [1.2.0](https://github.com/gulpjs/glob-parent/compare/v1.1.0...v1.2.0) (2021-01-27)
+
+
+### Reverts
+
+* feat: make regex test strings smaller ([dc80fa9](https://github.com/gulpjs/glob-parent/commit/dc80fa9658dca20549cfeba44bbd37d5246fcce0))
+
+## [1.1.0](https://github.com/gulpjs/glob-parent/compare/v1.0.0...v1.1.0) (2021-01-27)
+
+
+### Features
+
+* make regex test strings smaller ([cd83220](https://github.com/gulpjs/glob-parent/commit/cd832208638f45169f986d80fcf66e401f35d233))
+
+## 1.0.0 (2021-01-27)
+
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/glob-parent/README.md](Github/bgoonz-master/bgoonz-master/node_modules/glob-parent/README.md)
+
+<p align="center">
+  <a href="https://gulpjs.com">
+    <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">
+  </a>
+</p>
+
+# glob-parent
+
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Azure Pipelines Build Status][azure-pipelines-image]][azure-pipelines-url] [![Travis Build Status][travis-image]][travis-url] [![AppVeyor Build Status][appveyor-image]][appveyor-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Gitter chat][gitter-image]][gitter-url]
+
+Extract the non-magic parent path from a glob string.
+
+## Usage
+
+```js
+var globParent = require('glob-parent');
+
+globParent('path/to/*.js'); // 'path/to'
+globParent('/root/path/to/*.js'); // '/root/path/to'
+globParent('/*.js'); // '/'
+globParent('*.js'); // '.'
+globParent('**/*.js'); // '.'
+globParent('path/{to,from}'); // 'path'
+globParent('path/!(to|from)'); // 'path'
+globParent('path/?(to|from)'); // 'path'
+globParent('path/+(to|from)'); // 'path'
+globParent('path/*(to|from)'); // 'path'
+globParent('path/@(to|from)'); // 'path'
+globParent('path/**/*'); // 'path'
+
+// if provided a non-glob path, returns the nearest dir
+globParent('path/foo/bar.js'); // 'path/foo'
+globParent('path/foo/'); // 'path/foo'
+globParent('path/foo'); // 'path' (see issue #3 for details)
+```
+
+## API
+
+### `globParent(maybeGlobString, [options])`
+
+Takes a string and returns the part of the path before the glob begins. Be aware of Escaping rules and Limitations below.
+
+#### options
+
+```js
+{
+  // Disables the automatic conversion of slashes for Windows
+  flipBackslashes: true
+}
+```
+
+## Escaping
+
+The following characters have special significance in glob patterns and must be escaped if you want them to be treated as regular path characters:
+
+- `?` (question mark) unless used as a path segment alone
+- `*` (asterisk)
+- `|` (pipe)
+- `(` (opening parenthesis)
+- `)` (closing parenthesis)
+- `{` (opening curly brace)
+- `}` (closing curly brace)
+- `[` (opening bracket)
+- `]` (closing bracket)
+
+**Example**
+
+```js
+globParent('foo/[bar]/') // 'foo'
+globParent('foo/\\[bar]/') // 'foo/[bar]'
+```
+
+## Limitations
+
+### Braces & Brackets
+This library attempts a quick and imperfect method of determining which path
+parts have glob magic without fully parsing/lexing the pattern. There are some
+advanced use cases that can trip it up, such as nested braces where the outer
+pair is escaped and the inner one contains a path separator. If you find
+yourself in the unlikely circumstance of being affected by this or need to
+ensure higher-fidelity glob handling in your library, it is recommended that you
+pre-process your input with [expand-braces] and/or [expand-brackets].
+
+### Windows
+Backslashes are not valid path separators for globs. If a path with backslashes
+is provided anyway, for simple cases, glob-parent will replace the path
+separator for you and return the non-glob parent path (now with
+forward-slashes, which are still valid as Windows path separators).
+
+This cannot be used in conjunction with escape characters.
+
+```js
+// BAD
+globParent('C:\\Program Files \\(x86\\)\\*.ext') // 'C:/Program Files /(x86/)'
+
+// GOOD
+globParent('C:/Program Files\\(x86\\)/*.ext') // 'C:/Program Files (x86)'
+```
+
+If you are using escape characters for a pattern without path parts (i.e.
+relative to `cwd`), prefix with `./` to avoid confusing glob-parent.
+
+```js
+// BAD
+globParent('foo \\[bar]') // 'foo '
+globParent('foo \\[bar]*') // 'foo '
+
+// GOOD
+globParent('./foo \\[bar]') // 'foo [bar]'
+globParent('./foo \\[bar]*') // '.'
+```
+
+## License
+
+ISC
+
+[expand-braces]: https://github.com/jonschlinkert/expand-braces
+[expand-brackets]: https://github.com/jonschlinkert/expand-brackets
+
+[downloads-image]: https://img.shields.io/npm/dm/glob-parent.svg
+[npm-url]: https://www.npmjs.com/package/glob-parent
+[npm-image]: https://img.shields.io/npm/v/glob-parent.svg
+
+[azure-pipelines-url]: https://dev.azure.com/gulpjs/gulp/_build/latest?definitionId=2&branchName=master
+[azure-pipelines-image]: https://dev.azure.com/gulpjs/gulp/_apis/build/status/glob-parent?branchName=master
+
+[travis-url]: https://travis-ci.org/gulpjs/glob-parent
+[travis-image]: https://img.shields.io/travis/gulpjs/glob-parent.svg?label=travis-ci
+
+[appveyor-url]: https://ci.appveyor.com/project/gulpjs/glob-parent
+[appveyor-image]: https://img.shields.io/appveyor/ci/gulpjs/glob-parent.svg?label=appveyor
+
+[coveralls-url]: https://coveralls.io/r/gulpjs/glob-parent
+[coveralls-image]: https://img.shields.io/coveralls/gulpjs/glob-parent/master.svg
+
+[gitter-url]: https://gitter.im/gulpjs/gulp
+[gitter-image]: https://badges.gitter.im/gulpjs/gulp.svg
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/glob/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/glob/changelog.md](Github/bgoonz-master/bgoonz-master/node_modules/glob/changelog.md)
+## 7.0
+
+- Raise error if `options.cwd` is specified, and not a directory
+
+## 6.0
+
+- Remove comment and negation pattern support
+- Ignore patterns are always in `dot:true` mode
+
+## 5.0
+
+- Deprecate comment and negation patterns
+- Fix regression in `mark` and `nodir` options from making all cache
+  keys absolute path.
+- Abort if `fs.readdir` returns an error that's unexpected
+- Don't emit `match` events for ignored items
+- Treat ENOTSUP like ENOTDIR in readdir
+
+## 4.5
+
+- Add `options.follow` to always follow directory symlinks in globstar
+- Add `options.realpath` to call `fs.realpath` on all results
+- Always cache based on absolute path
+
+## 4.4
+
+- Add `options.ignore`
+- Fix handling of broken symlinks
+
+## 4.3
+
+- Bump minimatch to 2.x
+- Pass all tests on Windows
+
+## 4.2
+
+- Add `glob.hasMagic` function
+- Add `options.nodir` flag
+
+## 4.1
+
+- Refactor sync and async implementations for performance
+- Throw if callback provided to sync glob function
+- Treat symbolic links in globstar results the same as Bash 4.3
+
+## 4.0
+
+- Use `^` for dependency versions (bumped major because this breaks
+  older npm versions)
+- Ensure callbacks are only ever called once
+- switch to ISC license
+
+## 3.x
+
+- Rewrite in JavaScript
+- Add support for setting root, cwd, and windows support
+- Cache many fs calls
+- Add globstar support
+- emit match events
+
+## 2.x
+
+- Use `glob.h` and `fnmatch.h` from NetBSD
+
+## 1.x
+
+- `glob.h` static binding.
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/glob/README.md](Github/bgoonz-master/bgoonz-master/node_modules/glob/README.md)
+
+# Glob
+
+Match files using the patterns the shell uses, like stars and stuff.
+
+[![Build Status](https://travis-ci.org/isaacs/node-glob.svg?branch=master)](https://travis-ci.org/isaacs/node-glob/) [![Build Status](https://ci.appveyor.com/api/projects/status/kd7f3yftf7unxlsx?svg=true)](https://ci.appveyor.com/project/isaacs/node-glob) [![Coverage Status](https://coveralls.io/repos/isaacs/node-glob/badge.svg?branch=master&service=github)](https://coveralls.io/github/isaacs/node-glob?branch=master)
+
+This is a glob implementation in JavaScript.  It uses the `minimatch`
+library to do its matching.
+
+![](logo/glob.png)
+
+## Usage
+
+Install with npm
+
+```
+npm i glob
+```
+
+```javascript
+var glob = require("glob")
+
+// options is optional
+glob("**/*.js", options, function (er, files) {
+  // files is an array of filenames.
+  // If the `nonull` option is set, and nothing
+  // was found, then files is ["**/*.js"]
+  // er is an error object or null.
+})
+```
+
+## Glob Primer
+
+"Globs" are the patterns you type when you do stuff like `ls *.js` on
+the command line, or put `build/*` in a `.gitignore` file.
+
+Before parsing the path part patterns, braced sections are expanded
+into a set.  Braced sections start with `{` and end with `}`, with any
+number of comma-delimited sections within.  Braced sections may contain
+slash characters, so `a{/b/c,bcd}` would expand into `a/b/c` and `abcd`.
+
+The following characters have special magic meaning when used in a
+path portion:
+
+* `*` Matches 0 or more characters in a single path portion
+* `?` Matches 1 character
+* `[...]` Matches a range of characters, similar to a RegExp range.
+  If the first character of the range is `!` or `^` then it matches
+  any character not in the range.
+* `!(pattern|pattern|pattern)` Matches anything that does not match
+  any of the patterns provided.
+* `?(pattern|pattern|pattern)` Matches zero or one occurrence of the
+  patterns provided.
+* `+(pattern|pattern|pattern)` Matches one or more occurrences of the
+  patterns provided.
+* `*(a|b|c)` Matches zero or more occurrences of the patterns provided
+* `@(pattern|pat*|pat?erN)` Matches exactly one of the patterns
+  provided
+* `**` If a "globstar" is alone in a path portion, then it matches
+  zero or more directories and subdirectories searching for matches.
+  It does not crawl symlinked directories.
+
+### Dots
+
+If a file or directory path portion has a `.` as the first character,
+then it will not match any glob pattern unless that pattern's
+corresponding path part also has a `.` as its first character.
+
+For example, the pattern `a/.*/c` would match the file at `a/.b/c`.
+However the pattern `a/*/c` would not, because `*` does not start with
+a dot character.
+
+You can make glob treat dots as normal characters by setting
+`dot:true` in the options.
+
+### Basename Matching
+
+If you set `matchBase:true` in the options, and the pattern has no
+slashes in it, then it will seek for any file anywhere in the tree
+with a matching basename.  For example, `*.js` would match
+`test/simple/basic.js`.
+
+### Empty Sets
+
+If no matching files are found, then an empty array is returned.  This
+differs from the shell, where the pattern itself is returned.  For
+example:
+
+    $ echo a*s*d*f
+    a*s*d*f
+
+To get the bash-style behavior, set the `nonull:true` in the options.
+
+### See Also:
+
+* `man sh`
+* `man bash` (Search for "Pattern Matching")
+* `man 3 fnmatch`
+* `man 5 gitignore`
+* [minimatch documentation](https://github.com/isaacs/minimatch)
+
+## glob.hasMagic(pattern, [options])
+
+Returns `true` if there are any special characters in the pattern, and
+`false` otherwise.
+
+Note that the options affect the results.  If `noext:true` is set in
+the options object, then `+(a|b)` will not be considered a magic
+pattern.  If the pattern has a brace expansion, like `a/{b/c,x/y}`
+then that is considered magical, unless `nobrace:true` is set in the
+options.
+
+## glob(pattern, [options], cb)
+
+* `pattern` `{String}` Pattern to be matched
+* `options` `{Object}`
+* `cb` `{Function}`
+  * `err` `{Error | null}`
+  * `matches` `{Array<String>}` filenames found matching the pattern
+
+Perform an asynchronous glob search.
+
+## glob.sync(pattern, [options])
+
+* `pattern` `{String}` Pattern to be matched
+* `options` `{Object}`
+* return: `{Array<String>}` filenames found matching the pattern
+
+Perform a synchronous glob search.
+
+## Class: glob.Glob
+
+Create a Glob object by instantiating the `glob.Glob` class.
+
+```javascript
+var Glob = require("glob").Glob
+var mg = new Glob(pattern, options, cb)
+```
+
+It's an EventEmitter, and starts walking the filesystem to find matches
+immediately.
+
+### new glob.Glob(pattern, [options], [cb])
+
+* `pattern` `{String}` pattern to search for
+* `options` `{Object}`
+* `cb` `{Function}` Called when an error occurs, or matches are found
+  * `err` `{Error | null}`
+  * `matches` `{Array<String>}` filenames found matching the pattern
+
+Note that if the `sync` flag is set in the options, then matches will
+be immediately available on the `g.found` member.
+
+### Properties
+
+* `minimatch` The minimatch object that the glob uses.
+* `options` The options object passed in.
+* `aborted` Boolean which is set to true when calling `abort()`.  There
+  is no way at this time to continue a glob search after aborting, but
+  you can re-use the statCache to avoid having to duplicate syscalls.
+* `cache` Convenience object.  Each field has the following possible
+  values:
+  * `false` - Path does not exist
+  * `true` - Path exists
+  * `'FILE'` - Path exists, and is not a directory
+  * `'DIR'` - Path exists, and is a directory
+  * `[file, entries, ...]` - Path exists, is a directory, and the
+    array value is the results of `fs.readdir`
+* `statCache` Cache of `fs.stat` results, to prevent statting the same
+  path multiple times.
+* `symlinks` A record of which paths are symbolic links, which is
+  relevant in resolving `**` patterns.
+* `realpathCache` An optional object which is passed to `fs.realpath`
+  to minimize unnecessary syscalls.  It is stored on the instantiated
+  Glob object, and may be re-used.
+
+### Events
+
+* `end` When the matching is finished, this is emitted with all the
+  matches found.  If the `nonull` option is set, and no match was found,
+  then the `matches` list contains the original pattern.  The matches
+  are sorted, unless the `nosort` flag is set.
+* `match` Every time a match is found, this is emitted with the specific
+  thing that matched. It is not deduplicated or resolved to a realpath.
+* `error` Emitted when an unexpected error is encountered, or whenever
+  any fs error occurs if `options.strict` is set.
+* `abort` When `abort()` is called, this event is raised.
+
+### Methods
+
+* `pause` Temporarily stop the search
+* `resume` Resume the search
+* `abort` Stop the search forever
+
+### Options
+
+All the options that can be passed to Minimatch can also be passed to
+Glob to change pattern matching behavior.  Also, some have been added,
+or have glob-specific ramifications.
+
+All options are false by default, unless otherwise noted.
+
+All options are added to the Glob object, as well.
+
+If you are running many `glob` operations, you can pass a Glob object
+as the `options` argument to a subsequent operation to shortcut some
+`stat` and `readdir` calls.  At the very least, you may pass in shared
+`symlinks`, `statCache`, `realpathCache`, and `cache` options, so that
+parallel glob operations will be sped up by sharing information about
+the filesystem.
+
+* `cwd` The current working directory in which to search.  Defaults
+  to `process.cwd()`.
+* `root` The place where patterns starting with `/` will be mounted
+  onto.  Defaults to `path.resolve(options.cwd, "/")` (`/` on Unix
+  systems, and `C:\` or some such on Windows.)
+* `dot` Include `.dot` files in normal matches and `globstar` matches.
+  Note that an explicit dot in a portion of the pattern will always
+  match dot files.
+* `nomount` By default, a pattern starting with a forward-slash will be
+  "mounted" onto the root setting, so that a valid filesystem path is
+  returned.  Set this flag to disable that behavior.
+* `mark` Add a `/` character to directory matches.  Note that this
+  requires additional stat calls.
+* `nosort` Don't sort the results.
+* `stat` Set to true to stat *all* results.  This reduces performance
+  somewhat, and is completely unnecessary, unless `readdir` is presumed
+  to be an untrustworthy indicator of file existence.
+* `silent` When an unusual error is encountered when attempting to
+  read a directory, a warning will be printed to stderr.  Set the
+  `silent` option to true to suppress these warnings.
+* `strict` When an unusual error is encountered when attempting to
+  read a directory, the process will just continue on in search of
+  other matches.  Set the `strict` option to raise an error in these
+  cases.
+* `cache` See `cache` property above.  Pass in a previously generated
+  cache object to save some fs calls.
+* `statCache` A cache of results of filesystem information, to prevent
+  unnecessary stat calls.  While it should not normally be necessary
+  to set this, you may pass the statCache from one glob() call to the
+  options object of another, if you know that the filesystem will not
+  change between calls.  (See "Race Conditions" below.)
+* `symlinks` A cache of known symbolic links.  You may pass in a
+  previously generated `symlinks` object to save `lstat` calls when
+  resolving `**` matches.
+* `sync` DEPRECATED: use `glob.sync(pattern, opts)` instead.
+* `nounique` In some cases, brace-expanded patterns can result in the
+  same file showing up multiple times in the result set.  By default,
+  this implementation prevents duplicates in the result set.  Set this
+  flag to disable that behavior.
+* `nonull` Set to never return an empty set, instead returning a set
+  containing the pattern itself.  This is the default in glob(3).
+* `debug` Set to enable debug logging in minimatch and glob.
+* `nobrace` Do not expand `{a,b}` and `{1..3}` brace sets.
+* `noglobstar` Do not match `**` against multiple filenames.  (Ie,
+  treat it as a normal `*` instead.)
+* `noext` Do not match `+(a|b)` "extglob" patterns.
+* `nocase` Perform a case-insensitive match.  Note: on
+  case-insensitive filesystems, non-magic patterns will match by
+  default, since `stat` and `readdir` will not raise errors.
+* `matchBase` Perform a basename-only match if the pattern does not
+  contain any slash characters.  That is, `*.js` would be treated as
+  equivalent to `**/*.js`, matching all js files in all directories.
+* `nodir` Do not match directories, only files.  (Note: to match
+  *only* directories, simply put a `/` at the end of the pattern.)
+* `ignore` Add a pattern or an array of glob patterns to exclude matches.
+  Note: `ignore` patterns are *always* in `dot:true` mode, regardless
+  of any other settings.
+* `follow` Follow symlinked directories when expanding `**` patterns.
+  Note that this can result in a lot of duplicate references in the
+  presence of cyclic links.
+* `realpath` Set to true to call `fs.realpath` on all of the results.
+  In the case of a symlink that cannot be resolved, the full absolute
+  path to the matched entry is returned (though it will usually be a
+  broken symlink)
+* `absolute` Set to true to always receive absolute paths for matched
+  files.  Unlike `realpath`, this also affects the values returned in
+  the `match` event.
+
+## Comparisons to other fnmatch/glob implementations
+
+While strict compliance with the existing standards is a worthwhile
+goal, some discrepancies exist between node-glob and other
+implementations, and are intentional.
+
+The double-star character `**` is supported by default, unless the
+`noglobstar` flag is set.  This is supported in the manner of bsdglob
+and bash 4.3, where `**` only has special significance if it is the only
+thing in a path part.  That is, `a/**/b` will match `a/x/y/b`, but
+`a/**b` will not.
+
+Note that symlinked directories are not crawled as part of a `**`,
+though their contents may match against subsequent portions of the
+pattern.  This prevents infinite loops and duplicates and the like.
+
+If an escaped pattern has no matches, and the `nonull` flag is set,
+then glob returns the pattern as-provided, rather than
+interpreting the character escapes.  For example,
+`glob.match([], "\\*a\\?")` will return `"\\*a\\?"` rather than
+`"*a?"`.  This is akin to setting the `nullglob` option in bash, except
+that it does not resolve escaped pattern characters.
+
+If brace expansion is not disabled, then it is performed before any
+other interpretation of the glob pattern.  Thus, a pattern like
+`+(a|{b),c)}`, which would not be valid in bash or zsh, is expanded
+**first** into the set of `+(a|b)` and `+(a|c)`, and those patterns are
+checked for validity.  Since those two are valid, matching proceeds.
+
+### Comments and Negation
+
+Previously, this module let you mark a pattern as a "comment" if it
+started with a `#` character, or a "negated" pattern if it started
+with a `!` character.
+
+These options were deprecated in version 5, and removed in version 6.
+
+To specify things that should not match, use the `ignore` option.
+
+## Windows
+
+**Please only use forward-slashes in glob expressions.**
+
+Though windows uses either `/` or `\` as its path separator, only `/`
+characters are used by this glob implementation.  You must use
+forward-slashes **only** in glob expressions.  Back-slashes will always
+be interpreted as escape characters, not path separators.
+
+Results from absolute patterns such as `/foo/*` are mounted onto the
+root setting using `path.join`.  On windows, this will by default result
+in `/foo/*` matching `C:\foo\bar.txt`.
+
+## Race Conditions
+
+Glob searching, by its very nature, is susceptible to race conditions,
+since it relies on directory walking and such.
+
+As a result, it is possible that a file that exists when glob looks for
+it may have been deleted or modified by the time it returns the result.
+
+As part of its internal implementation, this program caches all stat
+and readdir calls that it makes, in order to cut down on system
+overhead.  However, this also makes it even more susceptible to races,
+especially if the cache or statCache objects are reused between glob
+calls.
+
+Users are thus advised not to use a glob result as a guarantee of
+filesystem state in the face of rapid changes.  For the vast majority
+of operations, this is never a problem.
+
+## Glob Logo
+Glob's logo was created by [Tanya Brassie](http://tanyabrassie.com/). Logo files can be found [here](https://github.com/isaacs/node-glob/tree/master/logo).
+
+The logo is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+
+## Contributing
+
+Any change to behavior (including bugfixes) must come with a test.
+
+Patches that fail tests or reduce performance will be rejected.
+
+```
+# to run tests
+npm test
+
+# to re-generate test fixtures
+npm run test-regen
+
+# to benchmark against bash/zsh
+npm run bench
+
+# to profile javascript
+npm run prof
+```
+
+![](oh-my-glob.gif)
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/got/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/got/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/got/readme.md)
+<div align="center">
+	<br>
+	<br>
+	<img width="360" src="media/logo.svg" alt="Got">
+	<br>
+	<br>
+	<br>
+	<p align="center">Huge thanks to <a href="https://moxy.studio"><img src="https://sindresorhus.com/assets/thanks/moxy-logo.svg" width="150"></a> for sponsoring me!
+	</p>
+	<br>
+	<br>
+</div>
+
+> Simplified HTTP requests
+
+[![Build Status: Linux](https://travis-ci.org/sindresorhus/got.svg?branch=master)](https://travis-ci.org/sindresorhus/got) [![Coverage Status](https://coveralls.io/repos/github/sindresorhus/got/badge.svg?branch=master)](https://coveralls.io/github/sindresorhus/got?branch=master) [![Downloads](https://img.shields.io/npm/dm/got.svg)](https://npmjs.com/got) [![Install size](https://packagephobia.now.sh/badge?p=got)](https://packagephobia.now.sh/result?p=got)
+
+Got is a human-friendly and powerful HTTP request library.
+
+It was created because the popular [`request`](https://github.com/request/request) package is bloated: [![Install size](https://packagephobia.now.sh/badge?p=request)](https://packagephobia.now.sh/result?p=request)
+
+Got is for Node.js. For browsers, we recommend [Ky](https://github.com/sindresorhus/ky).
+
+
+## Highlights
+
+- [Promise & stream API](#api)
+- [Request cancelation](#aborting-the-request)
+- [RFC compliant caching](#cache-adapters)
+- [Follows redirects](#followredirect)
+- [Retries on failure](#retry)
+- [Progress events](#onuploadprogress-progress)
+- [Handles gzip/deflate](#decompress)
+- [Timeout handling](#timeout)
+- [Errors with metadata](#errors)
+- [JSON mode](#json)
+- [WHATWG URL support](#url)
+- [Hooks](#hooks)
+- [Instances with custom defaults](#instances)
+- [Composable](advanced-creation.md#merging-instances)
+- [Electron support](#useelectronnet)
+- [Used by ~2000 packages and ~500K repos](https://github.com/sindresorhus/got/network/dependents)
+- Actively maintained
+
+[Moving from Request?](migration-guides.md)
+
+[See how Got compares to other HTTP libraries](#comparison)
+
+## Install
+
+```
+$ npm install got
+```
+
+<a href="https://www.patreon.com/sindresorhus">
+	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
+
+## Usage
+
+```js
+const got = require('got');
+
+(async () => {
+	try {
+		const response = await got('sindresorhus.com');
+		console.log(response.body);
+		//=> '<!doctype html> ...'
+	} catch (error) {
+		console.log(error.response.body);
+		//=> 'Internal server error ...'
+	}
+})();
+```
+
+###### Streams
+
+```js
+const fs = require('fs');
+const got = require('got');
+
+got.stream('sindresorhus.com').pipe(fs.createWriteStream('index.html'));
+
+// For POST, PUT, and PATCH methods `got.stream` returns a `stream.Writable`
+fs.createReadStream('index.html').pipe(got.stream.post('sindresorhus.com'));
+```
+
+
+### API
+
+It's a `GET` request by default, but can be changed by using different methods or in the `options`.
+
+#### got(url, [options])
+
+Returns a Promise for a [`response` object](#response) or a [stream](#streams-1) if `options.stream` is set to true.
+
+##### url
+
+Type: `string` `Object`
+
+The URL to request, as a string, a [`https.request` options object](https://nodejs.org/api/https.html#https_https_request_options_callback), or a [WHATWG `URL`](https://nodejs.org/api/url.html#url_class_url).
+
+Properties from `options` will override properties in the parsed `url`.
+
+If no protocol is specified, it will default to `https`.
+
+##### options
+
+Type: `Object`
+
+Any of the [`https.request`](https://nodejs.org/api/https.html#https_https_request_options_callback) options.
+
+###### baseUrl
+
+Type: `string` `Object`
+
+When specified, `url` will be prepended by `baseUrl`.<br>
+If you specify an absolute URL, it will skip the `baseUrl`.
+
+Very useful when used with `got.extend()` to create niche-specific Got instances.
+
+Can be a string or a [WHATWG `URL`](https://nodejs.org/api/url.html#url_class_url).
+
+Slash at the end of `baseUrl` and at the beginning of the `url` argument is optional:
+
+```js
+await got('hello', {baseUrl: 'https://example.com/v1'});
+//=> 'https://example.com/v1/hello'
+
+await got('/hello', {baseUrl: 'https://example.com/v1/'});
+//=> 'https://example.com/v1/hello'
+
+await got('/hello', {baseUrl: 'https://example.com/v1'});
+//=> 'https://example.com/v1/hello'
+```
+
+###### headers
+
+Type: `Object`<br>
+Default: `{}`
+
+Request headers.
+
+Existing headers will be overwritten. Headers set to `null` will be omitted.
+
+###### stream
+
+Type: `boolean`<br>
+Default: `false`
+
+Returns a `Stream` instead of a `Promise`. This is equivalent to calling `got.stream(url, [options])`.
+
+###### body
+
+Type: `string` `Buffer` `stream.Readable` [`form-data` instance](https://github.com/form-data/form-data)
+
+**Note:** If you provide this option, `got.stream()` will be read-only.
+
+The body that will be sent with a `POST` request.
+
+If present in `options` and `options.method` is not set, `options.method` will be set to `POST`.
+
+The `content-length` header will be automatically set if `body` is a `string` / `Buffer` / `fs.createReadStream` instance / [`form-data` instance](https://github.com/form-data/form-data), and `content-length` and `transfer-encoding` are not manually set in `options.headers`.
+
+###### cookieJar
+
+Type: [`tough.CookieJar` instance](https://github.com/salesforce/tough-cookie#cookiejar)
+
+**Note:** If you provide this option, `options.headers.cookie` will be overridden.
+
+Cookie support. You don't have to care about parsing or how to store them. [Example.](#cookies)
+
+###### encoding
+
+Type: `string` `null`<br>
+Default: `'utf8'`
+
+[Encoding](https://nodejs.org/api/buffer.html#buffer_buffers_and_character_encodings) to be used on `setEncoding` of the response data. If `null`, the body is returned as a [`Buffer`](https://nodejs.org/api/buffer.html) (binary data).
+
+###### form
+
+Type: `boolean`<br>
+Default: `false`
+
+**Note:** If you provide this option, `got.stream()` will be read-only.
+**Note:** `body` must be a plain object. It will be converted to a query string using [`(new URLSearchParams(object)).toString()`](https://nodejs.org/api/url.html#url_constructor_new_urlsearchparams_obj).
+
+If set to `true` and `Content-Type` header is not set, it will be set to `application/x-www-form-urlencoded`.
+
+###### json
+
+Type: `boolean`<br>
+Default: `false`
+
+**Note:** If you use `got.stream()`, this option will be ignored.
+**Note:** `body` must be a plain object or array and will be stringified.
+
+If set to `true` and `Content-Type` header is not set, it will be set to `application/json`.
+
+Parse response body with `JSON.parse` and set `accept` header to `application/json`. If used in conjunction with the `form` option, the `body` will the stringified as querystring and the response parsed as JSON.
+
+###### query
+
+Type: `string` `Object<string, string|number>` [`URLSearchParams`](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
+
+Query string that will be added to the request URL. This will override the query string in `url`.
+
+If you need to pass in an array, you can do it using a `URLSearchParams` instance:
+
+```js
+const got = require('got');
+
+const query = new URLSearchParams([['key', 'a'], ['key', 'b']]);
+
+got('https://example.com', {query});
+
+console.log(query.toString());
+//=> 'key=a&key=b'
+```
+
+And if you need a different array format, you could use the [`query-string`](https://github.com/sindresorhus/query-string) package:
+
+```js
+const got = require('got');
+const queryString = require('query-string');
+
+const query = queryString.stringify({key: ['a', 'b']}, {arrayFormat: 'bracket'});
+
+got('https://example.com', {query});
+
+console.log(query);
+//=> 'key[]=a&key[]=b'
+```
+
+###### timeout
+
+Type: `number` `Object`
+
+Milliseconds to wait for the server to end the response before aborting the request with [`got.TimeoutError`](#gottimeouterror) error (a.k.a. `request` property). By default, there's no timeout.
+
+This also accepts an `object` with the following fields to constrain the duration of each phase of the request lifecycle:
+
+- `lookup` starts when a socket is assigned and ends when the hostname has been resolved. Does not apply when using a Unix domain socket.
+- `connect` starts when `lookup` completes (or when the socket is assigned if lookup does not apply to the request) and ends when the socket is connected.
+- `secureConnect` starts when `connect` completes and ends when the handshaking process completes (HTTPS only).
+- `socket` starts when the socket is connected. See [request.setTimeout](https://nodejs.org/api/http.html#http_request_settimeout_timeout_callback).
+- `response` starts when the request has been written to the socket and ends when the response headers are received.
+- `send` starts when the socket is connected and ends with the request has been written to the socket.
+- `request` starts when the request is initiated and ends when the response's end event fires.
+
+###### retry
+
+Type: `number` `Object`<br>
+Default:
+- retries: `2`
+- methods: `GET` `PUT` `HEAD` `DELETE` `OPTIONS` `TRACE`
+- statusCodes: [`408`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/408) [`413`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/413) [`429`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429) [`500`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500) [`502`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502) [`503`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503) [`504`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504)
+- maxRetryAfter: `undefined`
+- errorCodes: `ETIMEDOUT` `ECONNRESET` `EADDRINUSE` `ECONNREFUSED` `EPIPE` `ENOTFOUND` `ENETUNREACH` `EAI_AGAIN`
+
+An object representing `retries`, `methods`, `statusCodes`, `maxRetryAfter` and `errorCodes` fields for the time until retry, allowed methods, allowed status codes, maximum [`Retry-After`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) time and allowed error codes.
+
+If `maxRetryAfter` is set to `undefined`, it will use `options.timeout`.<br>
+If [`Retry-After`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After) header is greater than `maxRetryAfter`, it will cancel the request.
+
+Delays between retries counts with function `1000 * Math.pow(2, retry) + Math.random() * 100`, where `retry` is attempt number (starts from 1).
+
+The `retries` property can be a `number` or a `function` with `retry` and `error` arguments. The function must return a delay in milliseconds (`0` return value cancels retry).
+
+By default, it retries *only* on the specified methods, status codes, and on these network errors:
+- `ETIMEDOUT`: One of the [timeout](#timeout) limits were reached.
+- `ECONNRESET`: Connection was forcibly closed by a peer.
+- `EADDRINUSE`: Could not bind to any free port.
+- `ECONNREFUSED`: Connection was refused by the server.
+- `EPIPE`: The remote side of the stream being written has been closed.
+- `ENOTFOUND`: Couldn't resolve the hostname to an IP address.
+- `ENETUNREACH`: No internet connection.
+- `EAI_AGAIN`: DNS lookup timed out.
+
+###### followRedirect
+
+Type: `boolean`<br>
+Default: `true`
+
+Defines if redirect responses should be followed automatically.
+
+Note that if a `303` is sent by the server in response to any request type (`POST`, `DELETE`, etc.), Got will automatically request the resource pointed to in the location header via `GET`. This is in accordance with [the spec](https://tools.ietf.org/html/rfc7231#section-6.4.4).
+
+###### decompress
+
+Type: `boolean`<br>
+Default: `true`
+
+Decompress the response automatically. This will set the `accept-encoding` header to `gzip, deflate` unless you set it yourself.
+
+If this is disabled, a compressed response is returned as a `Buffer`. This may be useful if you want to handle decompression yourself or stream the raw compressed data.
+
+###### cache
+
+Type: `Object`<br>
+Default: `false`
+
+[Cache adapter instance](#cache-adapters) for storing cached data.
+
+###### request
+
+Type: `Function`<br>
+Default: `http.request` `https.request` *(depending on the protocol)*
+
+Custom request function. The main purpose of this is to [support HTTP2 using a wrapper](#experimental-http2-support).
+
+###### useElectronNet
+
+Type: `boolean`<br>
+Default: `false`
+
+When used in Electron, Got will use [`electron.net`](https://electronjs.org/docs/api/net/) instead of the Node.js `http` module. According to the Electron docs, it should be fully compatible, but it's not entirely. See [#443](https://github.com/sindresorhus/got/issues/443) and [#461](https://github.com/sindresorhus/got/issues/461).
+
+###### throwHttpErrors
+
+Type: `boolean`<br>
+Default: `true`
+
+Determines if a `got.HTTPError` is thrown for error responses (non-2xx status codes).
+
+If this is disabled, requests that encounter an error status code will be resolved with the `response` instead of throwing. This may be useful if you are checking for resource availability and are expecting error responses.
+
+###### agent
+
+Same as the [`agent` option](https://nodejs.org/api/http.html#http_http_request_url_options_callback) for `http.request`, but with an extra feature:
+
+If you require different agents for different protocols, you can pass a map of agents to the `agent` option. This is necessary because a request to one protocol might redirect to another. In such a scenario, Got will switch over to the right protocol agent for you.
+
+```js
+const got = require('got');
+const HttpAgent = require('agentkeepalive');
+const {HttpsAgent} = HttpAgent;
+
+got('sindresorhus.com', {
+	agent: {
+		http: new HttpAgent(),
+		https: new HttpsAgent()
+	}
+});
+```
+
+###### hooks
+
+Type: `Object<string, Function[]>`
+
+Hooks allow modifications during the request lifecycle. Hook functions may be async and are run serially.
+
+###### hooks.init
+
+Type: `Function[]`<br>
+Default: `[]`
+
+Called with plain [request options](#options), right before their normalization. This is especially useful in conjunction with [`got.extend()`](#instances) and [`got.create()`](advanced-creation.md) when the input needs custom handling.
+
+See the [Request migration guide](migration-guides.md#breaking-changes) for an example.
+
+**Note**: This hook must be synchronous!
+
+###### hooks.beforeRequest
+
+Type: `Function[]`<br>
+Default: `[]`
+
+Called with [normalized](source/normalize-arguments.js) [request options](#options). Got will make no further changes to the request before it is sent. This is especially useful in conjunction with [`got.extend()`](#instances) and [`got.create()`](advanced-creation.md) when you want to create an API client that, for example, uses HMAC-signing.
+
+See the [AWS section](#aws) for an example.
+
+**Note:** If you modify the `body` you will need to modify the `content-length` header too, because it has already been computed and assigned.
+
+###### hooks.beforeRedirect
+
+Type: `Function[]`<br>
+Default: `[]`
+
+Called with [normalized](source/normalize-arguments.js) [request options](#options). Got will make no further changes to the request. This is especially useful when you want to avoid dead sites. Example:
+
+```js
+const got = require('got');
+
+got('example.com', {
+	hooks: {
+		beforeRedirect: [
+			options => {
+				if (options.hostname === 'deadSite') {
+					options.hostname = 'fallbackSite';
+				}
+			}
+		]
+	}
+});
+```
+
+###### hooks.beforeRetry
+
+Type: `Function[]`<br>
+Default: `[]`
+
+Called with [normalized](source/normalize-arguments.js) [request options](#options), the error and the retry count. Got will make no further changes to the request. This is especially useful when some extra work is required before the next try. Example:
+
+```js
+const got = require('got');
+
+got('example.com', {
+	hooks: {
+		beforeRetry: [
+			(options, error, retryCount) => {
+				if (error.statusCode === 413) { // Payload too large
+					options.body = getNewBody();
+				}
+			}
+		]
+	}
+});
+```
+
+###### hooks.afterResponse
+
+Type: `Function[]`<br>
+Default: `[]`
+
+Called with [response object](#response) and a retry function.
+
+Each function should return the response. This is especially useful when you want to refresh an access token. Example:
+
+```js
+const got = require('got');
+
+const instance = got.extend({
+	hooks: {
+		afterResponse: [
+			(response, retryWithMergedOptions) => {
+				if (response.statusCode === 401) { // Unauthorized
+					const updatedOptions = {
+						headers: {
+							token: getNewToken() // Refresh the access token
+						}
+					};
+
+					// Save for further requests
+					instance.defaults.options = got.mergeOptions(instance.defaults.options, updatedOptions);
+
+					// Make a new retry
+					return retryWithMergedOptions(updatedOptions);
+				}
+
+				// No changes otherwise
+				return response;
+			}
+		]
+	},
+	mutableDefaults: true
+});
+```
+
+###### hooks.beforeError
+
+Type: `Function[]`<br>
+Default: `[]`
+
+Called with an `Error` instance. The error is passed to the hook right before it's thrown. This is especially useful when you want to have more detailed errors.
+
+**Note**: Errors thrown while normalizing input options are thrown directly and not part of this hook.
+
+```js	
+const got = require('got');	
+
+got('api.github.com/some-endpoint', {	
+	hooks: {	
+		onError: [	
+			error => {	
+				const {response} = error;	
+ 				if (response && response.body) {	
+					error.name = 'GitHubError';	
+					error.message = `${response.body.message} (${error.statusCode})`;	
+				}
+
+ 				return error;	
+			}	
+		]	
+	}	
+});	
+```
+
+#### Response
+
+The response object will typically be a [Node.js HTTP response stream](https://nodejs.org/api/http.html#http_class_http_incomingmessage), however, if returned from the cache it will be a [response-like object](https://github.com/lukechilds/responselike) which behaves in the same way.
+
+##### request
+
+Type: `Object`
+
+**Note:** This is not a [http.ClientRequest](https://nodejs.org/api/http.html#http_class_http_clientrequest).
+
+- `gotOptions` - The options that were set on this request.
+
+##### body
+
+Type: `string` `Object` *(depending on `options.json`)*
+
+The result of the request.
+
+##### url
+
+Type: `string`
+
+The request URL or the final URL after redirects.
+
+##### requestUrl
+
+Type: `string`
+
+The original request URL.
+
+##### timings
+
+Type: `Object`
+
+The object contains the following properties:
+
+- `start` - Time when the request started.
+- `socket` - Time when a socket was assigned to the request.
+- `lookup` - Time when the DNS lookup finished.
+- `connect` - Time when the socket successfully connected.
+- `upload` - Time when the request finished uploading.
+- `response` - Time when the request fired the `response` event.
+- `end` - Time when the response fired the `end` event.
+- `error` - Time when the request fired the `error` event.
+- `phases`
+	- `wait` - `timings.socket - timings.start`
+	- `dns` - `timings.lookup - timings.socket`
+	- `tcp` - `timings.connect - timings.lookup`
+	- `request` - `timings.upload - timings.connect`
+	- `firstByte` - `timings.response - timings.upload`
+	- `download` - `timings.end - timings.response`
+	- `total` - `timings.end - timings.start` or `timings.error - timings.start`
+
+**Note:** The time is a `number` representing the milliseconds elapsed since the UNIX epoch.
+
+##### fromCache
+
+Type: `boolean`
+
+Whether the response was retrieved from the cache.
+
+##### redirectUrls
+
+Type: `Array`
+
+The redirect URLs.
+
+##### retryCount
+
+Type: `number`
+
+The number of times the request was retried.
+
+#### Streams
+
+**Note:** Progress events, redirect events and request/response events can also be used with promises.
+
+#### got.stream(url, [options])
+
+Sets `options.stream` to `true`.
+
+Returns a [duplex stream](https://nodejs.org/api/stream.html#stream_class_stream_duplex) with additional events:
+
+##### .on('request', request)
+
+`request` event to get the request object of the request.
+
+**Tip:** You can use `request` event to abort request:
+
+```js
+got.stream('github.com')
+	.on('request', request => setTimeout(() => request.abort(), 50));
+```
+
+##### .on('response', response)
+
+The `response` event to get the response object of the final request.
+
+##### .on('redirect', response, nextOptions)
+
+The `redirect` event to get the response object of a redirect. The second argument is options for the next request to the redirect location.
+
+##### .on('uploadProgress', progress)
+##### .on('downloadProgress', progress)
+
+Progress events for uploading (sending a request) and downloading (receiving a response). The `progress` argument is an object like:
+
+```js
+{
+	percent: 0.1,
+	transferred: 1024,
+	total: 10240
+}
+```
+
+If it's not possible to retrieve the body size (can happen when streaming), `total` will be `null`.
+
+```js
+(async () => {
+	const response = await got('sindresorhus.com')
+		.on('downloadProgress', progress => {
+			// Report download progress
+		})
+		.on('uploadProgress', progress => {
+			// Report upload progress
+		});
+
+	console.log(response);
+})();
+```
+
+##### .on('error', error, body, response)
+
+The `error` event emitted in case of a protocol error (like `ENOTFOUND` etc.) or status error (4xx or 5xx). The second argument is the body of the server response in case of status error. The third argument is a response object.
+
+#### got.get(url, [options])
+#### got.post(url, [options])
+#### got.put(url, [options])
+#### got.patch(url, [options])
+#### got.head(url, [options])
+#### got.delete(url, [options])
+
+Sets `options.method` to the method name and makes a request.
+
+### Instances
+
+#### got.extend([options])
+
+Configure a new `got` instance with default `options`. The `options` are merged with the parent instance's `defaults.options` using [`got.mergeOptions`](#gotmergeoptionsparentoptions-newoptions). You can access the resolved options with the `.defaults` property on the instance.
+
+```js
+const client = got.extend({
+	baseUrl: 'https://example.com',
+	headers: {
+		'x-unicorn': 'rainbow'
+	}
+});
+
+client.get('/demo');
+
+/* HTTP Request =>
+ * GET /demo HTTP/1.1
+ * Host: example.com
+ * x-unicorn: rainbow
+ */
+```
+
+```js
+(async () => {
+	const client = got.extend({
+		baseUrl: 'httpbin.org',
+		headers: {
+			'x-foo': 'bar'
+		}
+	});
+	const {headers} = (await client.get('/headers', {json: true})).body;
+	//=> headers['x-foo'] === 'bar'
+
+	const jsonClient = client.extend({
+		json: true,
+		headers: {
+			'x-baz': 'qux'
+		}
+	});
+	const {headers: headers2} = (await jsonClient.get('/headers')).body;
+	//=> headers2['x-foo'] === 'bar'
+	//=> headers2['x-baz'] === 'qux'
+})();
+```
+
+**Tip:** Need more control over the behavior of Got? Check out the [`got.create()`](advanced-creation.md).
+
+#### got.mergeOptions(parentOptions, newOptions)
+
+Extends parent options. Avoid using [object spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#Spread_in_object_literals) as it doesn't work recursively:
+
+```js
+const a = {headers: {cat: 'meow', wolf: ['bark', 'wrrr']}};
+const b = {headers: {cow: 'moo', wolf: ['auuu']}};
+
+{...a, ...b}            // => {headers: {cow: 'moo', wolf: ['auuu']}}
+got.mergeOptions(a, b)  // => {headers: {cat: 'meow', cow: 'moo', wolf: ['auuu']}}
+```
+
+Options are deeply merged to a new object. The value of each key is determined as follows:
+
+- If the new property is set to `undefined`, it keeps the old one.
+- If the parent property is an instance of `URL` and the new value is a `string` or `URL`, a new URL instance is created: [`new URL(new, parent)`](https://developer.mozilla.org/en-US/docs/Web/API/URL/URL#Syntax).
+- If the new property is a plain `Object`:
+	- If the parent property is a plain `Object` too, both values are merged recursively into a new `Object`.
+	- Otherwise, only the new value is deeply cloned.
+- If the new property is an `Array`, it overwrites the old one with a deep clone of the new property.
+- Otherwise, the new value is assigned to the key.
+
+#### got.defaults
+
+Type: `Object`
+
+The default Got options.
+
+## Errors
+
+Each error contains `host`, `hostname`, `method`, `path`, `protocol`, `url` and `gotOptions` properties to make debugging easier.
+
+In Promise mode, the `response` is attached to the error.
+
+#### got.CacheError
+
+When a cache method fails, for example, if the database goes down or there's a filesystem error.
+
+#### got.RequestError
+
+When a request fails. Contains a `code` property with error class code, like `ECONNREFUSED`.
+
+#### got.ReadError
+
+When reading from response stream fails.
+
+#### got.ParseError
+
+When `json` option is enabled, server response code is 2xx, and `JSON.parse` fails. Includes `statusCode` and `statusMessage` properties.
+
+#### got.HTTPError
+
+When the server response code is not 2xx. Includes `body`, `statusCode`, `statusMessage`, and `redirectUrls` properties.
+
+#### got.MaxRedirectsError
+
+When the server redirects you more than ten times. Includes a `statusCode`, `statusMessage`, and `redirectUrls` property which is an array of the URLs Got was redirected to before giving up.
+
+#### got.UnsupportedProtocolError
+
+When given an unsupported protocol.
+
+#### got.CancelError
+
+When the request is aborted with `.cancel()`.
+
+#### got.TimeoutError
+
+When the request is aborted due to a [timeout](#timeout). Includes an `event` property.
+
+## Aborting the request
+
+The promise returned by Got has a [`.cancel()`](https://github.com/sindresorhus/p-cancelable) method which when called, aborts the request.
+
+```js
+(async () => {
+	const request = got(url, options);
+
+	// …
+
+	// In another part of the code
+	if (something) {
+		request.cancel();
+	}
+
+	// …
+
+	try {
+		await request;
+	} catch (error) {
+		if (request.isCanceled) { // Or `error instanceof got.CancelError`
+			// Handle cancelation
+		}
+
+		// Handle other errors
+	}
+})();
+```
+
+<a name="cache-adapters"></a>
+## Cache
+
+Got implements [RFC 7234](http://httpwg.org/specs/rfc7234.html) compliant HTTP caching which works out of the box in-memory and is easily pluggable with a wide range of storage adapters. Fresh cache entries are served directly from the cache, and stale cache entries are revalidated with `If-None-Match`/`If-Modified-Since` headers. You can read more about the underlying cache behavior in the [`cacheable-request` documentation](https://github.com/lukechilds/cacheable-request).
+
+You can use the JavaScript `Map` type as an in-memory cache:
+
+```js
+const got = require('got');
+const map = new Map();
+
+(async () => {
+		let response = await got('sindresorhus.com', {cache: map});
+		console.log(response.fromCache);
+		//=> false
+
+		response = await got('sindresorhus.com', {cache: map});
+		console.log(response.fromCache);
+		//=> true
+})();
+```
+
+Got uses [Keyv](https://github.com/lukechilds/keyv) internally to support a wide range of storage adapters. For something more scalable you could use an [official Keyv storage adapter](https://github.com/lukechilds/keyv#official-storage-adapters):
+
+```
+$ npm install @keyv/redis
+```
+
+```js
+const got = require('got');
+const KeyvRedis = require('@keyv/redis');
+
+const redis = new KeyvRedis('redis://user:pass@localhost:6379');
+
+got('sindresorhus.com', {cache: redis});
+```
+
+Got supports anything that follows the Map API, so it's easy to write your own storage adapter or use a third-party solution.
+
+For example, the following are all valid storage adapters:
+
+```js
+const storageAdapter = new Map();
+// Or
+const storageAdapter = require('./my-storage-adapter');
+// Or
+const QuickLRU = require('quick-lru');
+const storageAdapter = new QuickLRU({maxSize: 1000});
+
+got('sindresorhus.com', {cache: storageAdapter});
+```
+
+View the [Keyv docs](https://github.com/lukechilds/keyv) for more information on how to use storage adapters.
+
+
+## Proxies
+
+You can use the [`tunnel`](https://github.com/koichik/node-tunnel) package with the `agent` option to work with proxies:
+
+```js
+const got = require('got');
+const tunnel = require('tunnel');
+
+got('sindresorhus.com', {
+	agent: tunnel.httpOverHttp({
+		proxy: {
+			host: 'localhost'
+		}
+	})
+});
+```
+
+Check out [`global-tunnel`](https://github.com/np-maintain/global-tunnel) if you want to configure proxy support for all HTTP/HTTPS traffic in your app.
+
+
+## Cookies
+
+You can use the [`tough-cookie`](https://github.com/salesforce/tough-cookie) package:
+
+```js
+const got = require('got');
+const {CookieJar} = require('tough-cookie');
+
+const cookieJar = new CookieJar();
+cookieJar.setCookie('foo=bar', 'https://www.google.com');
+
+got('google.com', {cookieJar});
+```
+
+
+## Form data
+
+You can use the [`form-data`](https://github.com/form-data/form-data) package to create POST request with form data:
+
+```js
+const fs = require('fs');
+const got = require('got');
+const FormData = require('form-data');
+const form = new FormData();
+
+form.append('my_file', fs.createReadStream('/foo/bar.jpg'));
+
+got.post('google.com', {
+	body: form
+});
+```
+
+
+## OAuth
+
+You can use the [`oauth-1.0a`](https://github.com/ddo/oauth-1.0a) package to create a signed OAuth request:
+
+```js
+const got = require('got');
+const crypto  = require('crypto');
+const OAuth = require('oauth-1.0a');
+
+const oauth = OAuth({
+	consumer: {
+		key: process.env.CONSUMER_KEY,
+		secret: process.env.CONSUMER_SECRET
+	},
+	signature_method: 'HMAC-SHA1',
+	hash_function: (baseString, key) => crypto.createHmac('sha1', key).update(baseString).digest('base64')
+});
+
+const token = {
+	key: process.env.ACCESS_TOKEN,
+	secret: process.env.ACCESS_TOKEN_SECRET
+};
+
+const url = 'https://api.twitter.com/1.1/statuses/home_timeline.json';
+
+got(url, {
+	headers: oauth.toHeader(oauth.authorize({url, method: 'GET'}, token)),
+	json: true
+});
+```
+
+
+## Unix Domain Sockets
+
+Requests can also be sent via [unix domain sockets](http://serverfault.com/questions/124517/whats-the-difference-between-unix-socket-and-tcp-ip-socket). Use the following URL scheme: `PROTOCOL://unix:SOCKET:PATH`.
+
+- `PROTOCOL` - `http` or `https` *(optional)*
+- `SOCKET` - Absolute path to a unix domain socket, for example: `/var/run/docker.sock`
+- `PATH` - Request path, for example: `/v2/keys`
+
+```js
+got('http://unix:/var/run/docker.sock:/containers/json');
+
+// Or without protocol (HTTP by default)
+got('unix:/var/run/docker.sock:/containers/json');
+```
+
+
+## AWS
+
+Requests to AWS services need to have their headers signed. This can be accomplished by using the [`aws4`](https://www.npmjs.com/package/aws4) package. This is an example for querying an ["API Gateway"](https://docs.aws.amazon.com/apigateway/api-reference/signing-requests/) with a signed request.
+
+```js
+const AWS = require('aws-sdk');
+const aws4 = require('aws4');
+const got = require('got');
+
+const chain = new AWS.CredentialProviderChain();
+
+// Create a Got instance to use relative paths and signed requests
+const awsClient = got.extend({
+	baseUrl: 'https://<api-id>.execute-api.<api-region>.amazonaws.com/<stage>/',
+	hooks: {
+		beforeRequest: [
+			async options => {
+				const credentials = await chain.resolvePromise();
+				aws4.sign(options, credentials);
+			}
+		]
+	}
+});
+
+const response = await awsClient('endpoint/path', {
+	// Request-specific options
+});
+```
+
+
+## Testing
+
+You can test your requests by using the [`nock`](https://github.com/node-nock/nock) package to mock an endpoint:
+
+```js
+const got = require('got');
+const nock = require('nock');
+
+nock('https://sindresorhus.com')
+	.get('/')
+	.reply(200, 'Hello world!');
+
+(async () => {
+	const response = await got('sindresorhus.com');
+	console.log(response.body);
+	//=> 'Hello world!'
+})();
+```
+
+If you need real integration tests you can use [`create-test-server`](https://github.com/lukechilds/create-test-server):
+
+```js
+const got = require('got');
+const createTestServer = require('create-test-server');
+
+(async () => {
+	const server = await createTestServer();
+	server.get('/', 'Hello world!');
+
+	const response = await got(server.url);
+	console.log(response.body);
+	//=> 'Hello world!'
+
+	await server.close();
+})();
+```
+
+
+## Tips
+
+### User Agent
+
+It's a good idea to set the `'user-agent'` header so the provider can more easily see how their resource is used. By default, it's the URL to this repo. You can omit this header by setting it to `null`.
+
+```js
+const got = require('got');
+const pkg = require('./package.json');
+
+got('sindresorhus.com', {
+	headers: {
+		'user-agent': `my-package/${pkg.version} (https://github.com/username/my-package)`
+	}
+});
+
+got('sindresorhus.com', {
+	headers: {
+		'user-agent': null
+	}
+});
+```
+
+### 304 Responses
+
+Bear in mind; if you send an `if-modified-since` header and receive a `304 Not Modified` response, the body will be empty. It's your responsibility to cache and retrieve the body contents.
+
+### Custom endpoints
+
+Use `got.extend()` to make it nicer to work with REST APIs. Especially if you use the `baseUrl` option.
+
+**Note:** Not to be confused with [`got.create()`](advanced-creation.md), which has no defaults.
+
+```js
+const got = require('got');
+const pkg = require('./package.json');
+
+const custom = got.extend({
+	baseUrl: 'example.com',
+	json: true,
+	headers: {
+		'user-agent': `my-package/${pkg.version} (https://github.com/username/my-package)`
+	}
+});
+
+// Use `custom` exactly how you use `got`
+(async () => {
+	const list = await custom('/v1/users/list');
+})();
+```
+
+**Tip:** Need to merge some instances into a single one? Check out [`got.mergeInstances()`](advanced-creation.md#merging-instances).
+
+### Experimental HTTP2 support
+
+Got provides an experimental support for HTTP2 using the [`http2-wrapper`](https://github.com/szmarczak/http2-wrapper) package:
+
+```js
+const got = require('got');
+const {request} = require('http2-wrapper');
+
+const h2got = got.extend({request});
+
+(async () => {
+	const {body} = await h2got('https://nghttp2.org/httpbin/headers');
+	console.log(body);
+})();
+```
+
+## Comparison
+
+|                       |      `got`     | [`request`][r0] | [`node-fetch`][n0] |  [`axios`][a0]  |  [`superagent`][s0]  |
+|-----------------------|:--------------:|:---------------:|:------------------:|:---------------:|:--------------------:|
+| HTTP/2 support        |        ❔       |        ✖       |          ✖         |        ✖       |          ✔\*\*      |
+| Browser support       |        ✖       |        ✖       |          ✔\*       |        ✔       |          ✔          |
+| Electron support      |        ✔       |        ✖       |          ✖         |        ✖       |          ✖          |
+| Promise API           |        ✔       |        ✔       |          ✔         |        ✔       |          ✔          |
+| Stream API            |        ✔       |        ✔       |    Node.js only    |        ✖       |          ✔          |
+| Request cancelation   |        ✔       |        ✖       |          ✔         |        ✔       |          ✔          |
+| RFC compliant caching |        ✔       |        ✖       |          ✖         |        ✖       |          ✖          |
+| Cookies (out-of-box)  |        ✔       |        ✔       |          ✖         |        ✖       |          ✖          |
+| Follows redirects     |        ✔       |        ✔       |          ✔         |        ✔       |          ✔          |
+| Retries on failure    |        ✔       |        ✖       |          ✖         |        ✖       |          ✔          |
+| Progress events       |        ✔       |        ✖       |          ✖         |  Browser only  |          ✔          |
+| Handles gzip/deflate  |        ✔       |        ✔       |          ✔         |        ✔       |          ✔          |
+| Advanced timeouts     |        ✔       |        ✖       |          ✖         |        ✖       |          ✖          |
+| Timings               |        ✔       |        ✔       |          ✖         |        ✖       |          ✖          |
+| Errors with metadata  |        ✔       |        ✖       |          ✖         |        ✔       |          ✖          |
+| JSON mode             |        ✔       |        ✔       |          ✖         |        ✔       |          ✔          |
+| Custom defaults       |        ✔       |        ✔       |          ✖         |        ✔       |          ✖          |
+| Composable            |        ✔       |        ✖       |          ✖         |        ✖       |          ✔          |
+| Hooks                 |        ✔       |        ✖       |          ✖         |        ✔       |          ✖          |
+| Issues open           | [![][gio]][g1] | [![][rio]][r1]  |   [![][nio]][n1]   |  [![][aio]][a1] |   [![][sio]][s1]    |
+| Issues closed         | [![][gic]][g2] | [![][ric]][r2]  |   [![][nic]][n2]   |  [![][aic]][a2] |   [![][sic]][s2]    |
+| Downloads             | [![][gd]][g3]  |  [![][rd]][r3]  |   [![][nd]][n3]    |  [![][ad]][a3]  |   [![][sd]][s3]     |
+| Coverage              | [![][gc]][g4]  |  [![][rc]][r4]  |   [![][nc]][n4]    |  [![][ac]][a4]  |       unknown       |
+| Build                 | [![][gb]][g5]  |  [![][rb]][r5]  |   [![][nb]][n5]    |  [![][ab]][a5]  |   [![][sb]][s5]     |
+| Bugs                  | [![][gbg]][g6] | [![][rbg]][r6]  |   [![][nbg]][n6]   |  [![][abg]][a6] |   [![][sbg]][s6]    |
+| Dependents            | [![][gdp]][g7] | [![][rdp]][r7]  |   [![][ndp]][n7]   |  [![][adp]][a7] |   [![][sdp]][s7]    |
+| Install size          | [![][gis]][g8] | [![][ris]][r8]  |   [![][nis]][n8]   |  [![][ais]][a8] |   [![][sis]][s8]    |
+
+\* It's almost API compatible with the browser `fetch` API.<br>
+\*\* Need to switch the protocol manually.<br>
+❔ Experimental support.
+
+<!-- GITHUB -->
+[r0]: https://github.com/request/request
+[n0]: https://github.com/bitinn/node-fetch
+[a0]: https://github.com/axios/axios
+[s0]: https://github.com/visionmedia/superagent
+
+<!-- ISSUES OPEN -->
+[gio]: https://badgen.net/github/open-issues/sindresorhus/got?label
+[rio]: https://badgen.net/github/open-issues/request/request?label
+[nio]: https://badgen.net/github/open-issues/bitinn/node-fetch?label
+[aio]: https://badgen.net/github/open-issues/axios/axios?label
+[sio]: https://badgen.net/github/open-issues/visionmedia/superagent?label
+
+[g1]: https://github.com/sindresorhus/got/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+[r1]: https://github.com/request/request/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+[n1]: https://github.com/bitinn/node-fetch/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+[a1]: https://github.com/axios/axios/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+[s1]: https://github.com/visionmedia/superagent/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+
+<!-- ISSUES CLOSED -->
+[gic]: https://badgen.net/github/closed-issues/sindresorhus/got?label
+[ric]: https://badgen.net/github/closed-issues/request/request?label
+[nic]: https://badgen.net/github/closed-issues/bitinn/node-fetch?label
+[aic]: https://badgen.net/github/closed-issues/axios/axios?label
+[sic]: https://badgen.net/github/closed-issues/visionmedia/superagent?label
+
+[g2]: https://github.com/sindresorhus/got/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc
+[r2]: https://github.com/request/request/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc
+[n2]: https://github.com/bitinn/node-fetch/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc
+[a2]: https://github.com/axios/axios/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc
+[s2]: https://github.com/visionmedia/superagent/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc
+
+<!-- DOWNLOADS -->
+[gd]: https://badgen.net/npm/dm/got?label
+[rd]: https://badgen.net/npm/dm/request?label
+[nd]: https://badgen.net/npm/dm/node-fetch?label
+[ad]: https://badgen.net/npm/dm/axios?label
+[sd]: https://badgen.net/npm/dm/superagent?label
+
+[g3]: https://www.npmjs.com/package/got
+[r3]: https://www.npmjs.com/package/request
+[n3]: https://www.npmjs.com/package/node-fetch
+[a3]: https://www.npmjs.com/package/axios
+[s3]: https://www.npmjs.com/package/superagent
+
+<!-- COVERAGE -->
+[gc]: https://badgen.net/coveralls/c/github/sindresorhus/got?label
+[rc]: https://badgen.net/coveralls/c/github/request/request?label
+[nc]: https://badgen.net/coveralls/c/github/bitinn/node-fetch?label
+[ac]: https://badgen.net/coveralls/c/github/mzabriskie/axios?label
+
+[g4]: https://coveralls.io/github/sindresorhus/got
+[r4]: https://coveralls.io/github/request/request
+[n4]: https://coveralls.io/github/bitinn/node-fetch
+[a4]: https://coveralls.io/github/mzabriskie/axios
+
+<!-- BUILD -->
+[gb]: https://badgen.net/travis/sindresorhus/got?label
+[rb]: https://badgen.net/travis/request/request?label
+[nb]: https://badgen.net/travis/bitinn/node-fetch?label
+[ab]: https://badgen.net/travis/axios/axios?label
+[sb]: https://badgen.net/travis/visionmedia/superagent?label
+
+[g5]: https://travis-ci.org/sindresorhus/got
+[r5]: https://travis-ci.org/request/request
+[n5]: https://travis-ci.org/bitinn/node-fetch
+[a5]: https://travis-ci.org/axios/axios
+[s5]: https://travis-ci.org/visionmedia/superagent
+
+<!-- BUGS -->
+[gbg]: https://badgen.net/github/label-issues/sindresorhus/got/bug/open?label
+[rbg]: https://badgen.net/github/label-issues/request/request/Needs%20investigation/open?label
+[nbg]: https://badgen.net/github/label-issues/bitinn/node-fetch/bug/open?label
+[abg]: https://badgen.net/github/label-issues/axios/axios/bug/open?label
+[sbg]: https://badgen.net/github/label-issues/visionmedia/superagent/Bug/open?label
+
+[g6]: https://github.com/sindresorhus/got/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Abug
+[r6]: https://github.com/request/request/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A"Needs+investigation"
+[n6]: https://github.com/bitinn/node-fetch/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Abug
+[a6]: https://github.com/axios/axios/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3Abug
+[s6]: https://github.com/visionmedia/superagent/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3ABug
+
+<!-- DEPENDENTS -->
+[gdp]: https://badgen.net/npm/dependents/got?label
+[rdp]: https://badgen.net/npm/dependents/request?label
+[ndp]: https://badgen.net/npm/dependents/node-fetch?label
+[adp]: https://badgen.net/npm/dependents/axios?label
+[sdp]: https://badgen.net/npm/dependents/superagent?label
+
+[g7]: https://www.npmjs.com/package/got?activeTab=dependents
+[r7]: https://www.npmjs.com/package/request?activeTab=dependents
+[n7]: https://www.npmjs.com/package/node-fetch?activeTab=dependents
+[a7]: https://www.npmjs.com/package/axios?activeTab=dependents
+[s7]: https://www.npmjs.com/package/visionmedia?activeTab=dependents
+
+<!-- INSTALL SIZE -->
+[gis]: https://badgen.net/packagephobia/install/got?label
+[ris]: https://badgen.net/packagephobia/install/request?label
+[nis]: https://badgen.net/packagephobia/install/node-fetch?label
+[ais]: https://badgen.net/packagephobia/install/axios?label
+[sis]: https://badgen.net/packagephobia/install/superagent?label
+
+[g8]: https://packagephobia.now.sh/result?p=got
+[r8]: https://packagephobia.now.sh/result?p=request
+[n8]: https://packagephobia.now.sh/result?p=node-fetch
+[a8]: https://packagephobia.now.sh/result?p=axios
+[s8]: https://packagephobia.now.sh/result?p=superagent
+
+
+## Related
+
+- [gh-got](https://github.com/sindresorhus/gh-got) - Got convenience wrapper to interact with the GitHub API
+- [gl-got](https://github.com/singapore/gl-got) - Got convenience wrapper to interact with the GitLab API
+- [travis-got](https://github.com/samverschueren/travis-got) - Got convenience wrapper to interact with the Travis API
+- [graphql-got](https://github.com/kevva/graphql-got) - Got convenience wrapper to interact with GraphQL
+- [GotQL](https://github.com/khaosdoctor/gotql) - Got convenience wrapper to interact with GraphQL using JSON-parsed queries instead of strings
+
+
+## Maintainers
+
+[![Sindre Sorhus](https://github.com/sindresorhus.png?size=100)](https://sindresorhus.com) | [![Vsevolod Strukchinsky](https://github.com/floatdrop.png?size=100)](https://github.com/floatdrop) | [![Alexander Tesfamichael](https://github.com/AlexTes.png?size=100)](https://github.com/AlexTes) | [![Luke Childs](https://github.com/lukechilds.png?size=100)](https://github.com/lukechilds) | [![Szymon Marczak](https://github.com/szmarczak.png?size=100)](https://github.com/szmarczak) | [![Brandon Smith](https://github.com/brandon93s.png?size=100)](https://github.com/brandon93s)
+---|---|---|---|---|---
+[Sindre Sorhus](https://sindresorhus.com) | [Vsevolod Strukchinsky](https://github.com/floatdrop) | [Alexander Tesfamichael](https://alextes.me) | [Luke Childs](https://github.com/lukechilds) | [Szymon Marczak](https://github.com/szmarczak) | [Brandon Smith](https://github.com/brandon93s)
+
+
+## License
+
+MIT
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/graceful-fs/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/graceful-fs/README.md](Github/bgoonz-master/bgoonz-master/node_modules/graceful-fs/README.md)
+# graceful-fs
+
+graceful-fs functions as a drop-in replacement for the fs module,
+making various improvements.
+
+The improvements are meant to normalize behavior across different
+platforms and environments, and to make filesystem access more
+resilient to errors.
+
+## Improvements over [fs module](https://nodejs.org/api/fs.html)
+
+* Queues up `open` and `readdir` calls, and retries them once
+  something closes if there is an EMFILE error from too many file
+  descriptors.
+* fixes `lchmod` for Node versions prior to 0.6.2.
+* implements `fs.lutimes` if possible. Otherwise it becomes a noop.
+* ignores `EINVAL` and `EPERM` errors in `chown`, `fchown` or
+  `lchown` if the user isn't root.
+* makes `lchmod` and `lchown` become noops, if not available.
+* retries reading a file if `read` results in EAGAIN error.
+
+On Windows, it retries renaming a file for up to one second if `EACCESS`
+or `EPERM` error occurs, likely because antivirus software has locked
+the directory.
+
+## USAGE
+
+```javascript
+// use just like fs
+var fs = require('graceful-fs')
+
+// now go and do stuff with it...
+fs.readFileSync('some-file-or-whatever')
+```
+
+## Global Patching
+
+If you want to patch the global fs module (or any other fs-like
+module) you can do this:
+
+```javascript
+// Make sure to read the caveat below.
+var realFs = require('fs')
+var gracefulFs = require('graceful-fs')
+gracefulFs.gracefulify(realFs)
+```
+
+This should only ever be done at the top-level application layer, in
+order to delay on EMFILE errors from any fs-using dependencies.  You
+should **not** do this in a library, because it can cause unexpected
+delays in other parts of the program.
+
+## Changes
+
+This module is fairly stable at this point, and used by a lot of
+things.  That being said, because it implements a subtle behavior
+change in a core part of the node API, even modest changes can be
+extremely breaking, and the versioning is thus biased towards
+bumping the major when in doubt.
+
+The main change between major versions has been switching between
+providing a fully-patched `fs` module vs monkey-patching the node core
+builtin, and the approach by which a non-monkey-patched `fs` was
+created.
+
+The goal is to trade `EMFILE` errors for slower fs operations.  So, if
+you try to open a zillion files, rather than crashing, `open`
+operations will be queued up and wait for something else to `close`.
+
+There are advantages to each approach.  Monkey-patching the fs means
+that no `EMFILE` errors can possibly occur anywhere in your
+application, because everything is using the same core `fs` module,
+which is patched.  However, it can also obviously cause undesirable
+side-effects, especially if the module is loaded multiple times.
+
+Implementing a separate-but-identical patched `fs` module is more
+surgical (and doesn't run the risk of patching multiple times), but
+also imposes the challenge of keeping in sync with the core module.
+
+The current approach loads the `fs` module, and then creates a
+lookalike object that has all the same methods, except a few that are
+patched.  It is safe to use in all versions of Node from 0.8 through
+7.0.
+
+### v4
+
+* Do not monkey-patch the fs module.  This module may now be used as a
+  drop-in dep, and users can opt into monkey-patching the fs builtin
+  if their app requires it.
+
+### v3
+
+* Monkey-patch fs, because the eval approach no longer works on recent
+  node.
+* fixed possible type-error throw if rename fails on windows
+* verify that we *never* get EMFILE errors
+* Ignore ENOSYS from chmod/chown
+* clarify that graceful-fs must be used as a drop-in
+
+### v2.1.0
+
+* Use eval rather than monkey-patching fs.
+* readdir: Always sort the results
+* win32: requeue a file if error has an OK status
+
+### v2.0
+
+* A return to monkey patching
+* wrap process.cwd
+
+### v1.1
+
+* wrap readFile
+* Wrap fs.writeFile.
+* readdir protection
+* Don't clobber the fs builtin
+* Handle fs.read EAGAIN errors by trying again
+* Expose the curOpen counter
+* No-op lchown/lchmod if not implemented
+* fs.rename patch only for win32
+* Patch fs.rename to handle AV software on Windows
+* Close #4 Chown should not fail on einval or eperm if non-root
+* Fix isaacs/fstream#1 Only wrap fs one time
+* Fix #3 Start at 1024 max files, then back off on EMFILE
+* lutimes that doens't blow up on Linux
+* A full on-rewrite using a queue instead of just swallowing the EMFILE error
+* Wrap Read/Write streams as well
+
+### 1.0
+
+* Update engines for node 0.6
+* Be lstat-graceful on Windows
+* first
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/http-cache-semantics/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/http-cache-semantics/README.md](Github/bgoonz-master/bgoonz-master/node_modules/http-cache-semantics/README.md)
+# Can I cache this? [![Build Status](https://travis-ci.org/kornelski/http-cache-semantics.svg?branch=master)](https://travis-ci.org/kornelski/http-cache-semantics)
+
+`CachePolicy` tells when responses can be reused from a cache, taking into account [HTTP RFC 7234](http://httpwg.org/specs/rfc7234.html) rules for user agents and shared caches.
+It also implements [RFC 5861](https://tools.ietf.org/html/rfc5861), implementing `stale-if-error` and `stale-while-revalidate`.
+It's aware of many tricky details such as the `Vary` header, proxy revalidation, and authenticated responses.
+
+## Usage
+
+Cacheability of an HTTP response depends on how it was requested, so both `request` and `response` are required to create the policy.
+
+```js
+const policy = new CachePolicy(request, response, options);
+
+if (!policy.storable()) {
+    // throw the response away, it's not usable at all
+    return;
+}
+
+// Cache the data AND the policy object in your cache
+// (this is pseudocode, roll your own cache (lru-cache package works))
+letsPretendThisIsSomeCache.set(
+    request.url,
+    { policy, response },
+    policy.timeToLive()
+);
+```
+
+```js
+// And later, when you receive a new request:
+const { policy, response } = letsPretendThisIsSomeCache.get(newRequest.url);
+
+// It's not enough that it exists in the cache, it has to match the new request, too:
+if (policy && policy.satisfiesWithoutRevalidation(newRequest)) {
+    // OK, the previous response can be used to respond to the `newRequest`.
+    // Response headers have to be updated, e.g. to add Age and remove uncacheable headers.
+    response.headers = policy.responseHeaders();
+    return response;
+}
+```
+
+It may be surprising, but it's not enough for an HTTP response to be [fresh](#yo-fresh) to satisfy a request. It may need to match request headers specified in `Vary`. Even a matching fresh response may still not be usable if the new request restricted cacheability, etc.
+
+The key method is `satisfiesWithoutRevalidation(newRequest)`, which checks whether the `newRequest` is compatible with the original request and whether all caching conditions are met.
+
+### Constructor options
+
+Request and response must have a `headers` property with all header names in lower case. `url`, `status` and `method` are optional (defaults are any URL, status `200`, and `GET` method).
+
+```js
+const request = {
+    url: '/',
+    method: 'GET',
+    headers: {
+        accept: '*/*',
+    },
+};
+
+const response = {
+    status: 200,
+    headers: {
+        'cache-control': 'public, max-age=7234',
+    },
+};
+
+const options = {
+    shared: true,
+    cacheHeuristic: 0.1,
+    immutableMinTimeToLive: 24 * 3600 * 1000, // 24h
+    ignoreCargoCult: false,
+};
+```
+
+If `options.shared` is `true` (default), then the response is evaluated from a perspective of a shared cache (i.e. `private` is not cacheable and `s-maxage` is respected). If `options.shared` is `false`, then the response is evaluated from a perspective of a single-user cache (i.e. `private` is cacheable and `s-maxage` is ignored). `shared: true` is recommended for HTTP clients.
+
+`options.cacheHeuristic` is a fraction of response's age that is used as a fallback cache duration. The default is 0.1 (10%), e.g. if a file hasn't been modified for 100 days, it'll be cached for 100\*0.1 = 10 days.
+
+`options.immutableMinTimeToLive` is a number of milliseconds to assume as the default time to cache responses with `Cache-Control: immutable`. Note that [per RFC](http://httpwg.org/http-extensions/immutable.html) these can become stale, so `max-age` still overrides the default.
+
+If `options.ignoreCargoCult` is true, common anti-cache directives will be completely ignored if the non-standard `pre-check` and `post-check` directives are present. These two useless directives are most commonly found in bad StackOverflow answers and PHP's "session limiter" defaults.
+
+### `storable()`
+
+Returns `true` if the response can be stored in a cache. If it's `false` then you MUST NOT store either the request or the response.
+
+### `satisfiesWithoutRevalidation(newRequest)`
+
+This is the most important method. Use this method to check whether the cached response is still fresh in the context of the new request.
+
+If it returns `true`, then the given `request` matches the original response this cache policy has been created with, and the response can be reused without contacting the server. Note that the old response can't be returned without being updated, see `responseHeaders()`.
+
+If it returns `false`, then the response may not be matching at all (e.g. it's for a different URL or method), or may require to be refreshed first (see `revalidationHeaders()`).
+
+### `responseHeaders()`
+
+Returns updated, filtered set of response headers to return to clients receiving the cached response. This function is necessary, because proxies MUST always remove hop-by-hop headers (such as `TE` and `Connection`) and update response's `Age` to avoid doubling cache time.
+
+```js
+cachedResponse.headers = cachePolicy.responseHeaders(cachedResponse);
+```
+
+### `timeToLive()`
+
+Returns approximate time in _milliseconds_ until the response becomes stale (i.e. not fresh).
+
+After that time (when `timeToLive() <= 0`) the response might not be usable without revalidation. However, there are exceptions, e.g. a client can explicitly allow stale responses, so always check with `satisfiesWithoutRevalidation()`.
+`stale-if-error` and `stale-while-revalidate` extend the time to live of the cache, that can still be used if stale.
+
+### `toObject()`/`fromObject(json)`
+
+Chances are you'll want to store the `CachePolicy` object along with the cached response. `obj = policy.toObject()` gives a plain JSON-serializable object. `policy = CachePolicy.fromObject(obj)` creates an instance from it.
+
+### Refreshing stale cache (revalidation)
+
+When a cached response has expired, it can be made fresh again by making a request to the origin server. The server may respond with status 304 (Not Modified) without sending the response body again, saving bandwidth.
+
+The following methods help perform the update efficiently and correctly.
+
+#### `revalidationHeaders(newRequest)`
+
+Returns updated, filtered set of request headers to send to the origin server to check if the cached response can be reused. These headers allow the origin server to return status 304 indicating the response is still fresh. All headers unrelated to caching are passed through as-is.
+
+Use this method when updating cache from the origin server.
+
+```js
+updateRequest.headers = cachePolicy.revalidationHeaders(updateRequest);
+```
+
+#### `revalidatedPolicy(revalidationRequest, revalidationResponse)`
+
+Use this method to update the cache after receiving a new response from the origin server. It returns an object with two keys:
+
+-   `policy` — A new `CachePolicy` with HTTP headers updated from `revalidationResponse`. You can always replace the old cached `CachePolicy` with the new one.
+-   `modified` — Boolean indicating whether the response body has changed.
+    -   If `false`, then a valid 304 Not Modified response has been received, and you can reuse the old cached response body. This is also affected by `stale-if-error`.
+    -   If `true`, you should use new response's body (if present), or make another request to the origin server without any conditional headers (i.e. don't use `revalidationHeaders()` this time) to get the new resource.
+
+```js
+// When serving requests from cache:
+const { oldPolicy, oldResponse } = letsPretendThisIsSomeCache.get(
+    newRequest.url
+);
+
+if (!oldPolicy.satisfiesWithoutRevalidation(newRequest)) {
+    // Change the request to ask the origin server if the cached response can be used
+    newRequest.headers = oldPolicy.revalidationHeaders(newRequest);
+
+    // Send request to the origin server. The server may respond with status 304
+    const newResponse = await makeRequest(newRequest);
+
+    // Create updated policy and combined response from the old and new data
+    const { policy, modified } = oldPolicy.revalidatedPolicy(
+        newRequest,
+        newResponse
+    );
+    const response = modified ? newResponse : oldResponse;
+
+    // Update the cache with the newer/fresher response
+    letsPretendThisIsSomeCache.set(
+        newRequest.url,
+        { policy, response },
+        policy.timeToLive()
+    );
+
+    // And proceed returning cached response as usual
+    response.headers = policy.responseHeaders();
+    return response;
+}
+```
+
+# Yo, FRESH
+
+![satisfiesWithoutRevalidation](fresh.jpg)
+
+## Used by
+
+-   [ImageOptim API](https://imageoptim.com/api), [make-fetch-happen](https://github.com/zkat/make-fetch-happen), [cacheable-request](https://www.npmjs.com/package/cacheable-request) ([got](https://www.npmjs.com/package/got)), [npm/registry-fetch](https://github.com/npm/registry-fetch), [etc.](https://github.com/kornelski/http-cache-semantics/network/dependents)
+
+## Implemented
+
+-   `Cache-Control` response header with all the quirks.
+-   `Expires` with check for bad clocks.
+-   `Pragma` response header.
+-   `Age` response header.
+-   `Vary` response header.
+-   Default cacheability of statuses and methods.
+-   Requests for stale data.
+-   Filtering of hop-by-hop headers.
+-   Basic revalidation request
+-   `stale-if-error`
+
+## Unimplemented
+
+-   Merging of range requests, `If-Range` (but correctly supports them as non-cacheable)
+-   Revalidation of multiple representations
+
+### Trusting server `Date`
+
+Per the RFC, the cache should take into account the time between server-supplied `Date` and the time it received the response. The RFC-mandated behavior creates two problems:
+
+ * Servers with incorrectly set timezone may add several hours to cache age (or more, if the clock is completely wrong).
+ * Even reasonably correct clocks may be off by a couple of seconds, breaking `max-age=1` trick (which is useful for reverse proxies on high-traffic servers).
+
+Previous versions of this library had an option to ignore the server date if it was "too inaccurate". To support the `max-age=1` trick the library also has to ignore dates that pretty accurate. There's no point of having an option to trust dates that are only a bit inaccurate, so this library won't trust any server dates. `max-age` will be interpreted from the time the response has been received, not from when it has been sent. This will affect only [RFC 1149 networks](https://tools.ietf.org/html/rfc1149).
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/inflight/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/inflight/README.md](Github/bgoonz-master/bgoonz-master/node_modules/inflight/README.md)
+# inflight
+
+Add callbacks to requests in flight to avoid async duplication
+
+## USAGE
+
+```javascript
+var inflight = require('inflight')
+
+// some request that does some stuff
+function req(key, callback) {
+  // key is any random string.  like a url or filename or whatever.
+  //
+  // will return either a falsey value, indicating that the
+  // request for this key is already in flight, or a new callback
+  // which when called will call all callbacks passed to inflightk
+  // with the same key
+  callback = inflight(key, callback)
+
+  // If we got a falsey value back, then there's already a req going
+  if (!callback) return
+
+  // this is where you'd fetch the url or whatever
+  // callback is also once()-ified, so it can safely be assigned
+  // to multiple events etc.  First call wins.
+  setTimeout(function() {
+    callback(null, key)
+  }, 100)
+}
+
+// only assigns a single setTimeout
+// when it dings, all cbs get called
+req('foo', cb1)
+req('foo', cb2)
+req('foo', cb3)
+req('foo', cb4)
+```
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/inherits/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/inherits/README.md](Github/bgoonz-master/bgoonz-master/node_modules/inherits/README.md)
+Browser-friendly inheritance fully compatible with standard node.js
+[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).
+
+This package exports standard `inherits` from node.js `util` module in
+node environment, but also provides alternative browser-friendly
+implementation through [browser
+field](https://gist.github.com/shtylman/4339901). Alternative
+implementation is a literal copy of standard one located in standalone
+module to avoid requiring of `util`. It also has a shim for old
+browsers with no `Object.create` support.
+
+While keeping you sure you are using standard `inherits`
+implementation in node.js environment, it allows bundlers such as
+[browserify](https://github.com/substack/node-browserify) to not
+include full `util` package to your client code if all you need is
+just `inherits` function. It worth, because browser shim for `util`
+package is large and `inherits` is often the single function you need
+from it.
+
+It's recommended to use this package instead of
+`require('util').inherits` for any code that has chances to be used
+not only in node.js but in browser too.
+
+## usage
+
+```js
+var inherits = require('inherits');
+// then use exactly as the standard one
+```
+
+## note on version ~1.0
+
+Version ~1.0 had completely different motivation and is not compatible
+neither with 2.0 nor with standard node.js `inherits`.
+
+If you are using version ~1.0 and planning to switch to ~2.0, be
+careful:
+
+* new version uses `super_` instead of `super` for referencing
+  superclass
+* new version overwrites current prototype while old one preserves any
+  existing fields on it
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/is-absolute-url/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/is-absolute-url/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/is-absolute-url/readme.md)
+# is-absolute-url [![Build Status](https://travis-ci.org/sindresorhus/is-absolute-url.svg?branch=master)](https://travis-ci.org/sindresorhus/is-absolute-url)
+
+> Check if an URL is absolute
+
+
+## Install
+
+```sh
+$ npm install --save is-absolute-url
+```
+
+
+## Usage
+
+```js
+var isAbsoluteUrl = require('is-absolute-url');
+
+isAbsoluteUrl('http://sindresorhus.com/foo/bar');
+//=> true
+
+isAbsoluteUrl('//sindresorhus.com');
+//=> false
+
+isAbsoluteUrl('foo/bar');
+//=> false
+```
+
+
+## Related
+
+See [is-relative-url](https://github.com/sindresorhus/is-relative-url) for the inverse.
+
+
+## License
+
+MIT © [Sindre Sorhus](http://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/is-extglob/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/is-extglob/README.md](Github/bgoonz-master/bgoonz-master/node_modules/is-extglob/README.md)
+# is-extglob [![NPM version](https://img.shields.io/npm/v/is-extglob.svg?style=flat)](https://www.npmjs.com/package/is-extglob) [![NPM downloads](https://img.shields.io/npm/dm/is-extglob.svg?style=flat)](https://npmjs.org/package/is-extglob) [![Build Status](https://img.shields.io/travis/jonschlinkert/is-extglob.svg?style=flat)](https://travis-ci.org/jonschlinkert/is-extglob)
+
+> Returns true if a string has an extglob.
+
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install --save is-extglob
+```
+
+## Usage
+
+```js
+var isExtglob = require('is-extglob');
+```
+
+**True**
+
+```js
+isExtglob('?(abc)');
+isExtglob('@(abc)');
+isExtglob('!(abc)');
+isExtglob('*(abc)');
+isExtglob('+(abc)');
+```
+
+**False**
+
+Escaped extglobs:
+
+```js
+isExtglob('\\?(abc)');
+isExtglob('\\@(abc)');
+isExtglob('\\!(abc)');
+isExtglob('\\*(abc)');
+isExtglob('\\+(abc)');
+```
+
+Everything else...
+
+```js
+isExtglob('foo.js');
+isExtglob('!foo.js');
+isExtglob('*.js');
+isExtglob('**/abc.js');
+isExtglob('abc/*.js');
+isExtglob('abc/(aaa|bbb).js');
+isExtglob('abc/[a-z].js');
+isExtglob('abc/{a,b}.js');
+isExtglob('abc/?.js');
+isExtglob('abc.js');
+isExtglob('abc/def/ghi.js');
+```
+
+## History
+
+**v2.0**
+
+Adds support for escaping. Escaped exglobs no longer return true.
+
+## About
+
+### Related projects
+
+* [has-glob](https://www.npmjs.com/package/has-glob): Returns `true` if an array has a glob pattern. | [homepage](https://github.com/jonschlinkert/has-glob "Returns `true` if an array has a glob pattern.")
+* [is-glob](https://www.npmjs.com/package/is-glob): Returns `true` if the given string looks like a glob pattern or an extglob pattern… [more](https://github.com/jonschlinkert/is-glob) | [homepage](https://github.com/jonschlinkert/is-glob "Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a bet")
+* [micromatch](https://www.npmjs.com/package/micromatch): Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch. | [homepage](https://github.com/jonschlinkert/micromatch "Glob matching for javascript/node.js. A drop-in replacement and faster alternative to minimatch and multimatch.")
+
+### Contributing
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).
+
+### Building docs
+
+_(This document was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme) (a [verb](https://github.com/verbose/verb) generator), please don't edit the readme directly. Any changes to the readme must be made in [.verb.md](.verb.md).)_
+
+To generate the readme and API documentation with [verb](https://github.com/verbose/verb):
+
+```sh
+$ npm install -g verb verb-generate-readme && verb
+```
+
+### Running tests
+
+Install dev dependencies:
+
+```sh
+$ npm install -d && npm test
+```
+
+### Author
+
+**Jon Schlinkert**
+
+* [github/jonschlinkert](https://github.com/jonschlinkert)
+* [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
+
+### License
+
+Copyright © 2016, [Jon Schlinkert](https://github.com/jonschlinkert).
+Released under the [MIT license](https://github.com/jonschlinkert/is-extglob/blob/master/LICENSE).
+
+***
+
+_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.1.31, on October 12, 2016._
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/is-fullwidth-code-point/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/is-fullwidth-code-point/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/is-fullwidth-code-point/readme.md)
+# is-fullwidth-code-point [![Build Status](https://travis-ci.org/sindresorhus/is-fullwidth-code-point.svg?branch=master)](https://travis-ci.org/sindresorhus/is-fullwidth-code-point)
+
+> Check if the character represented by a given [Unicode code point](https://en.wikipedia.org/wiki/Code_point) is [fullwidth](https://en.wikipedia.org/wiki/Halfwidth_and_fullwidth_forms)
+
+
+## Install
+
+```
+$ npm install is-fullwidth-code-point
+```
+
+
+## Usage
+
+```js
+const isFullwidthCodePoint = require('is-fullwidth-code-point');
+
+isFullwidthCodePoint('谢'.codePointAt(0));
+//=> true
+
+isFullwidthCodePoint('a'.codePointAt(0));
+//=> false
+```
+
+
+## API
+
+### isFullwidthCodePoint(codePoint)
+
+#### codePoint
+
+Type: `number`
+
+The [code point](https://en.wikipedia.org/wiki/Code_point) of a character.
+
+
+## License
+
+MIT © [Sindre Sorhus](https://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/is-glob/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/is-glob/README.md](Github/bgoonz-master/bgoonz-master/node_modules/is-glob/README.md)
+# is-glob [![NPM version](https://img.shields.io/npm/v/is-glob.svg?style=flat)](https://www.npmjs.com/package/is-glob) [![NPM monthly downloads](https://img.shields.io/npm/dm/is-glob.svg?style=flat)](https://npmjs.org/package/is-glob) [![NPM total downloads](https://img.shields.io/npm/dt/is-glob.svg?style=flat)](https://npmjs.org/package/is-glob) [![Linux Build Status](https://img.shields.io/travis/micromatch/is-glob.svg?style=flat&label=Travis)](https://travis-ci.org/micromatch/is-glob) [![Windows Build Status](https://img.shields.io/appveyor/ci/micromatch/is-glob.svg?style=flat&label=AppVeyor)](https://ci.appveyor.com/project/micromatch/is-glob)
+
+> Returns `true` if the given string looks like a glob pattern or an extglob pattern. This makes it easy to create code that only uses external modules like node-glob when necessary, resulting in much faster code execution and initialization time, and a better user experience.
+
+Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and consider starring the project to show your :heart: and support.
+
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install --save is-glob
+```
+
+You might also be interested in [is-valid-glob](https://github.com/jonschlinkert/is-valid-glob) and [has-glob](https://github.com/jonschlinkert/has-glob).
+
+## Usage
+
+```js
+var isGlob = require('is-glob');
+```
+
+### Default behavior
+
+**True**
+
+Patterns that have glob characters or regex patterns will return `true`:
+
+```js
+isGlob('!foo.js');
+isGlob('*.js');
+isGlob('**/abc.js');
+isGlob('abc/*.js');
+isGlob('abc/(aaa|bbb).js');
+isGlob('abc/[a-z].js');
+isGlob('abc/{a,b}.js');
+//=> true
+```
+
+Extglobs
+
+```js
+isGlob('abc/@(a).js');
+isGlob('abc/!(a).js');
+isGlob('abc/+(a).js');
+isGlob('abc/*(a).js');
+isGlob('abc/?(a).js');
+//=> true
+```
+
+**False**
+
+Escaped globs or extglobs return `false`:
+
+```js
+isGlob('abc/\\@(a).js');
+isGlob('abc/\\!(a).js');
+isGlob('abc/\\+(a).js');
+isGlob('abc/\\*(a).js');
+isGlob('abc/\\?(a).js');
+isGlob('\\!foo.js');
+isGlob('\\*.js');
+isGlob('\\*\\*/abc.js');
+isGlob('abc/\\*.js');
+isGlob('abc/\\(aaa|bbb).js');
+isGlob('abc/\\[a-z].js');
+isGlob('abc/\\{a,b}.js');
+//=> false
+```
+
+Patterns that do not have glob patterns return `false`:
+
+```js
+isGlob('abc.js');
+isGlob('abc/def/ghi.js');
+isGlob('foo.js');
+isGlob('abc/@.js');
+isGlob('abc/+.js');
+isGlob('abc/?.js');
+isGlob();
+isGlob(null);
+//=> false
+```
+
+Arrays are also `false` (If you want to check if an array has a glob pattern, use [has-glob](https://github.com/jonschlinkert/has-glob)):
+
+```js
+isGlob(['**/*.js']);
+isGlob(['foo.js']);
+//=> false
+```
+
+### Option strict
+
+When `options.strict === false` the behavior is less strict in determining if a pattern is a glob. Meaning that
+some patterns that would return `false` may return `true`. This is done so that matching libraries like [micromatch](https://github.com/micromatch/micromatch) have a chance at determining if the pattern is a glob or not.
+
+**True**
+
+Patterns that have glob characters or regex patterns will return `true`:
+
+```js
+isGlob('!foo.js', {strict: false});
+isGlob('*.js', {strict: false});
+isGlob('**/abc.js', {strict: false});
+isGlob('abc/*.js', {strict: false});
+isGlob('abc/(aaa|bbb).js', {strict: false});
+isGlob('abc/[a-z].js', {strict: false});
+isGlob('abc/{a,b}.js', {strict: false});
+//=> true
+```
+
+Extglobs
+
+```js
+isGlob('abc/@(a).js', {strict: false});
+isGlob('abc/!(a).js', {strict: false});
+isGlob('abc/+(a).js', {strict: false});
+isGlob('abc/*(a).js', {strict: false});
+isGlob('abc/?(a).js', {strict: false});
+//=> true
+```
+
+**False**
+
+Escaped globs or extglobs return `false`:
+
+```js
+isGlob('\\!foo.js', {strict: false});
+isGlob('\\*.js', {strict: false});
+isGlob('\\*\\*/abc.js', {strict: false});
+isGlob('abc/\\*.js', {strict: false});
+isGlob('abc/\\(aaa|bbb).js', {strict: false});
+isGlob('abc/\\[a-z].js', {strict: false});
+isGlob('abc/\\{a,b}.js', {strict: false});
+//=> false
+```
+
+## About
+
+<details>
+<summary><strong>Contributing</strong></summary>
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).
+
+</details>
+
+<details>
+<summary><strong>Running Tests</strong></summary>
+
+Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
+
+```sh
+$ npm install && npm test
+```
+
+</details>
+
+<details>
+<summary><strong>Building docs</strong></summary>
+
+_(This project's readme.md is generated by [verb](https://github.com/verbose/verb-generate-readme), please don't edit the readme directly. Any changes to the readme must be made in the [.verb.md](.verb.md) readme template.)_
+
+To generate the readme, run the following command:
+
+```sh
+$ npm install -g verbose/verb#dev verb-generate-readme && verb
+```
+
+</details>
+
+### Related projects
+
+You might also be interested in these projects:
+
+* [assemble](https://www.npmjs.com/package/assemble): Get the rocks out of your socks! Assemble makes you fast at creating web projects… [more](https://github.com/assemble/assemble) | [homepage](https://github.com/assemble/assemble "Get the rocks out of your socks! Assemble makes you fast at creating web projects. Assemble is used by thousands of projects for rapid prototyping, creating themes, scaffolds, boilerplates, e-books, UI components, API documentation, blogs, building websit")
+* [base](https://www.npmjs.com/package/base): Framework for rapidly creating high quality, server-side node.js applications, using plugins like building blocks | [homepage](https://github.com/node-base/base "Framework for rapidly creating high quality, server-side node.js applications, using plugins like building blocks")
+* [update](https://www.npmjs.com/package/update): Be scalable! Update is a new, open source developer framework and CLI for automating updates… [more](https://github.com/update/update) | [homepage](https://github.com/update/update "Be scalable! Update is a new, open source developer framework and CLI for automating updates of any kind in code projects.")
+* [verb](https://www.npmjs.com/package/verb): Documentation generator for GitHub projects. Verb is extremely powerful, easy to use, and is used… [more](https://github.com/verbose/verb) | [homepage](https://github.com/verbose/verb "Documentation generator for GitHub projects. Verb is extremely powerful, easy to use, and is used on hundreds of projects of all sizes to generate everything from API docs to readmes.")
+
+### Contributors
+
+| **Commits** | **Contributor** |  
+| --- | --- |  
+| 47 | [jonschlinkert](https://github.com/jonschlinkert) |  
+| 5  | [doowb](https://github.com/doowb) |  
+| 1  | [phated](https://github.com/phated) |  
+| 1  | [danhper](https://github.com/danhper) |  
+| 1  | [paulmillr](https://github.com/paulmillr) |  
+
+### Author
+
+**Jon Schlinkert**
+
+* [GitHub Profile](https://github.com/jonschlinkert)
+* [Twitter Profile](https://twitter.com/jonschlinkert)
+* [LinkedIn Profile](https://linkedin.com/in/jonschlinkert)
+
+### License
+
+Copyright © 2019, [Jon Schlinkert](https://github.com/jonschlinkert).
+Released under the [MIT License](LICENSE).
+
+***
+
+_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.8.0, on March 27, 2019._
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/is-number/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/is-number/README.md](Github/bgoonz-master/bgoonz-master/node_modules/is-number/README.md)
+# is-number [![NPM version](https://img.shields.io/npm/v/is-number.svg?style=flat)](https://www.npmjs.com/package/is-number) [![NPM monthly downloads](https://img.shields.io/npm/dm/is-number.svg?style=flat)](https://npmjs.org/package/is-number) [![NPM total downloads](https://img.shields.io/npm/dt/is-number.svg?style=flat)](https://npmjs.org/package/is-number) [![Linux Build Status](https://img.shields.io/travis/jonschlinkert/is-number.svg?style=flat&label=Travis)](https://travis-ci.org/jonschlinkert/is-number)
+
+> Returns true if the value is a finite number.
+
+Please consider following this project's author, [Jon Schlinkert](https://github.com/jonschlinkert), and consider starring the project to show your :heart: and support.
+
+## Install
+
+Install with [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install --save is-number
+```
+
+## Why is this needed?
+
+In JavaScript, it's not always as straightforward as it should be to reliably check if a value is a number. It's common for devs to use `+`, `-`, or `Number()` to cast a string value to a number (for example, when values are returned from user input, regex matches, parsers, etc). But there are many non-intuitive edge cases that yield unexpected results:
+
+```js
+console.log(+[]); //=> 0
+console.log(+''); //=> 0
+console.log(+'   '); //=> 0
+console.log(typeof NaN); //=> 'number'
+```
+
+This library offers a performant way to smooth out edge cases like these.
+
+## Usage
+
+```js
+const isNumber = require('is-number');
+```
+
+See the [tests](./test.js) for more examples.
+
+### true
+
+```js
+isNumber(5e3);               // true
+isNumber(0xff);              // true
+isNumber(-1.1);              // true
+isNumber(0);                 // true
+isNumber(1);                 // true
+isNumber(1.1);               // true
+isNumber(10);                // true
+isNumber(10.10);             // true
+isNumber(100);               // true
+isNumber('-1.1');            // true
+isNumber('0');               // true
+isNumber('012');             // true
+isNumber('0xff');            // true
+isNumber('1');               // true
+isNumber('1.1');             // true
+isNumber('10');              // true
+isNumber('10.10');           // true
+isNumber('100');             // true
+isNumber('5e3');             // true
+isNumber(parseInt('012'));   // true
+isNumber(parseFloat('012')); // true
+```
+
+### False
+
+Everything else is false, as you would expect:
+
+```js
+isNumber(Infinity);          // false
+isNumber(NaN);               // false
+isNumber(null);              // false
+isNumber(undefined);         // false
+isNumber('');                // false
+isNumber('   ');             // false
+isNumber('foo');             // false
+isNumber([1]);               // false
+isNumber([]);                // false
+isNumber(function () {});    // false
+isNumber({});                // false
+```
+
+## Release history
+
+### 7.0.0
+
+* Refactor. Now uses `.isFinite` if it exists.
+* Performance is about the same as v6.0 when the value is a string or number. But it's now 3x-4x faster when the value is not a string or number.
+
+### 6.0.0
+
+* Optimizations, thanks to @benaadams.
+
+### 5.0.0
+
+**Breaking changes**
+
+* removed support for `instanceof Number` and `instanceof String`
+
+## Benchmarks
+
+As with all benchmarks, take these with a grain of salt. See the [benchmarks](./benchmark/index.js) for more detail.
+
+```
+# all
+v7.0 x 413,222 ops/sec ±2.02% (86 runs sampled)
+v6.0 x 111,061 ops/sec ±1.29% (85 runs sampled)
+parseFloat x 317,596 ops/sec ±1.36% (86 runs sampled)
+fastest is 'v7.0'
+
+# string
+v7.0 x 3,054,496 ops/sec ±1.05% (89 runs sampled)
+v6.0 x 2,957,781 ops/sec ±0.98% (88 runs sampled)
+parseFloat x 3,071,060 ops/sec ±1.13% (88 runs sampled)
+fastest is 'parseFloat,v7.0'
+
+# number
+v7.0 x 3,146,895 ops/sec ±0.89% (89 runs sampled)
+v6.0 x 3,214,038 ops/sec ±1.07% (89 runs sampled)
+parseFloat x 3,077,588 ops/sec ±1.07% (87 runs sampled)
+fastest is 'v6.0'
+```
+
+## About
+
+<details>
+<summary><strong>Contributing</strong></summary>
+
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](../../issues/new).
+
+</details>
+
+<details>
+<summary><strong>Running Tests</strong></summary>
+
+Running and reviewing unit tests is a great way to get familiarized with a library and its API. You can install dependencies and run tests with the following command:
+
+```sh
+$ npm install && npm test
+```
+
+</details>
+
+<details>
+<summary><strong>Building docs</strong></summary>
+
+_(This project's readme.md is generated by [verb](https://github.com/verbose/verb-generate-readme), please don't edit the readme directly. Any changes to the readme must be made in the [.verb.md](.verb.md) readme template.)_
+
+To generate the readme, run the following command:
+
+```sh
+$ npm install -g verbose/verb#dev verb-generate-readme && verb
+```
+
+</details>
+
+### Related projects
+
+You might also be interested in these projects:
+
+* [is-plain-object](https://www.npmjs.com/package/is-plain-object): Returns true if an object was created by the `Object` constructor. | [homepage](https://github.com/jonschlinkert/is-plain-object "Returns true if an object was created by the `Object` constructor.")
+* [is-primitive](https://www.npmjs.com/package/is-primitive): Returns `true` if the value is a primitive.  | [homepage](https://github.com/jonschlinkert/is-primitive "Returns `true` if the value is a primitive. ")
+* [isobject](https://www.npmjs.com/package/isobject): Returns true if the value is an object and not an array or null. | [homepage](https://github.com/jonschlinkert/isobject "Returns true if the value is an object and not an array or null.")
+* [kind-of](https://www.npmjs.com/package/kind-of): Get the native type of a value. | [homepage](https://github.com/jonschlinkert/kind-of "Get the native type of a value.")
+
+### Contributors
+
+| **Commits** | **Contributor** | 
+| --- | --- |
+| 49 | [jonschlinkert](https://github.com/jonschlinkert) |
+| 5 | [charlike-old](https://github.com/charlike-old) |
+| 1 | [benaadams](https://github.com/benaadams) |
+| 1 | [realityking](https://github.com/realityking) |
+
+### Author
+
+**Jon Schlinkert**
+
+* [LinkedIn Profile](https://linkedin.com/in/jonschlinkert)
+* [GitHub Profile](https://github.com/jonschlinkert)
+* [Twitter Profile](https://twitter.com/jonschlinkert)
+
+### License
+
+Copyright © 2018, [Jon Schlinkert](https://github.com/jonschlinkert).
+Released under the [MIT License](LICENSE).
+
+***
+
+_This file was generated by [verb-generate-readme](https://github.com/verbose/verb-generate-readme), v0.6.0, on June 15, 2018._
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/is-relative-url/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/is-relative-url/readme.md](Github/bgoonz-master/bgoonz-master/node_modules/is-relative-url/readme.md)
+# is-relative-url [![Build Status](https://travis-ci.org/sindresorhus/is-relative-url.svg?branch=master)](https://travis-ci.org/sindresorhus/is-relative-url)
+
+> Check if an URL is relative
+
+
+## Install
+
+```
+$ npm install --save is-relative-url
+```
+
+
+## Usage
+
+```js
+const isRelativeUrl = require('is-relative-url');
+
+isRelativeUrl('foo/bar');
+//=> true
+
+isRelativeUrl('http://sindresorhus.com/foo/bar');
+//=> false
+
+isRelativeUrl('//sindresorhus.com');
+//=> true
+```
+
+
+## Related
+
+See [is-absolute-url](https://github.com/sindresorhus/is-absolute-url) for the inverse.
+
+
+## License
+
+MIT © [Sindre Sorhus](http://sindresorhus.com)
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/json-buffer/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/json-buffer/README.md](Github/bgoonz-master/bgoonz-master/node_modules/json-buffer/README.md)
+# json-buffer
+
+JSON functions that can convert buffers!
+
+[![build status](https://secure.travis-ci.org/dominictarr/json-buffer.png)](http://travis-ci.org/dominictarr/json-buffer)
+
+[![testling badge](https://ci.testling.com/dominictarr/json-buffer.png)](https://ci.testling.com/dominictarr/json-buffer)
+
+JSON mangles buffers by converting to an array...
+which isn't helpful. json-buffers converts to base64 instead,
+and deconverts base64 to a buffer.
+
+``` js
+var JSONB = require('json-buffer')
+var Buffer = require('buffer').Buffer
+
+var str = JSONB.stringify(new Buffer('hello there!'))
+
+console.log(JSONB.parse(str)) //GET a BUFFER back
+```
+
+## License
+
+MIT
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/jsonfile/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/jsonfile/CHANGELOG.md](Github/bgoonz-master/bgoonz-master/node_modules/jsonfile/CHANGELOG.md)
+6.1.0 / 2020-10-31
+------------------
+
+- Add `finalEOL` option to disable writing final EOL ([#115](https://github.com/jprichardson/node-jsonfile/issues/115), [#137](https://github.com/jprichardson/node-jsonfile/pull/137))
+- Update dependency ([#138](https://github.com/jprichardson/node-jsonfile/pull/138))
+
+6.0.1 / 2020-03-07
+------------------
+
+- Update dependency ([#130](https://github.com/jprichardson/node-jsonfile/pull/130))
+- Fix code style ([#129](https://github.com/jprichardson/node-jsonfile/pull/129))
+
+6.0.0 / 2020-02-24
+------------------
+
+- **BREAKING:** Drop support for Node 6 & 8 ([#128](https://github.com/jprichardson/node-jsonfile/pull/128))
+- **BREAKING:** Do not allow passing `null` as options to `readFile()` or `writeFile()` ([#128](https://github.com/jprichardson/node-jsonfile/pull/128))
+- Refactor internals ([#128](https://github.com/jprichardson/node-jsonfile/pull/128))
+
+5.0.0 / 2018-09-08
+------------------
+
+- **BREAKING:** Drop Node 4 support
+- **BREAKING:** If no callback is passed to an asynchronous method, a promise is now returned ([#109](https://github.com/jprichardson/node-jsonfile/pull/109))
+- Cleanup docs
+
+4.0.0 / 2017-07-12
+------------------
+
+- **BREAKING:** Remove global `spaces` option.
+- **BREAKING:** Drop support for Node 0.10, 0.12, and io.js.
+- Remove undocumented `passParsingErrors` option.
+- Added `EOL` override option to `writeFile` when using `spaces`. [#89]
+
+3.0.1 / 2017-07-05
+------------------
+
+- Fixed bug in `writeFile` when there was a serialization error & no callback was passed. In previous versions, an empty file would be written; now no file is written.
+
+3.0.0 / 2017-04-25
+------------------
+
+- Changed behavior of `throws` option for `readFileSync`; now does not throw filesystem errors when `throws` is `false`
+
+2.4.0 / 2016-09-15
+------------------
+### Changed
+- added optional support for `graceful-fs` [#62]
+
+2.3.1 / 2016-05-13
+------------------
+- fix to support BOM. [#45][#45]
+
+2.3.0 / 2016-04-16
+------------------
+- add `throws` to `readFile()`. See [#39][#39]
+- add support for any arbitrary `fs` module. Useful with [mock-fs](https://www.npmjs.com/package/mock-fs)
+
+2.2.3 / 2015-10-14
+------------------
+- include file name in parse error. See: https://github.com/jprichardson/node-jsonfile/pull/34
+
+2.2.2 / 2015-09-16
+------------------
+- split out tests into separate files
+- fixed `throws` when set to `true` in `readFileSync()`. See: https://github.com/jprichardson/node-jsonfile/pull/33
+
+2.2.1 / 2015-06-25
+------------------
+- fixed regression when passing in string as encoding for options in `writeFile()` and `writeFileSync()`. See: https://github.com/jprichardson/node-jsonfile/issues/28
+
+2.2.0 / 2015-06-25
+------------------
+- added `options.spaces` to `writeFile()` and `writeFileSync()`
+
+2.1.2 / 2015-06-22
+------------------
+- fixed if passed `readFileSync(file, 'utf8')`. See: https://github.com/jprichardson/node-jsonfile/issues/25
+
+2.1.1 / 2015-06-19
+------------------
+- fixed regressions if `null` is passed for options. See: https://github.com/jprichardson/node-jsonfile/issues/24
+
+2.1.0 / 2015-06-19
+------------------
+- cleanup: JavaScript Standard Style, rename files, dropped terst for assert
+- methods now support JSON revivers/replacers
+
+2.0.1 / 2015-05-24
+------------------
+- update license attribute https://github.com/jprichardson/node-jsonfile/pull/21
+
+2.0.0 / 2014-07-28
+------------------
+* added `\n` to end of file on write. [#14](https://github.com/jprichardson/node-jsonfile/pull/14)
+* added `options.throws` to `readFileSync()`
+* dropped support for Node v0.8
+
+1.2.0 / 2014-06-29
+------------------
+* removed semicolons
+* bugfix: passed `options` to `fs.readFile` and `fs.readFileSync`. This technically changes behavior, but
+changes it according to docs. [#12][#12]
+
+1.1.1 / 2013-11-11
+------------------
+* fixed catching of callback bug (ffissore / #5)
+
+1.1.0 / 2013-10-11
+------------------
+* added `options` param to methods, (seanodell / #4)
+
+1.0.1 / 2013-09-05
+------------------
+* removed `homepage` field from package.json to remove NPM warning
+
+1.0.0 / 2013-06-28
+------------------
+* added `.npmignore`, #1
+* changed spacing default from `4` to `2` to follow Node conventions
+
+0.0.1 / 2012-09-10
+------------------
+* Initial release.
+
+[#89]: https://github.com/jprichardson/node-jsonfile/pull/89
+[#45]: https://github.com/jprichardson/node-jsonfile/issues/45    "Reading of UTF8-encoded (w/ BOM) files fails"
+[#44]: https://github.com/jprichardson/node-jsonfile/issues/44    "Extra characters in written file"
+[#43]: https://github.com/jprichardson/node-jsonfile/issues/43    "Prettyfy json when written to file"
+[#42]: https://github.com/jprichardson/node-jsonfile/pull/42      "Moved fs.readFileSync within the try/catch"
+[#41]: https://github.com/jprichardson/node-jsonfile/issues/41    "Linux: Hidden file not working"
+[#40]: https://github.com/jprichardson/node-jsonfile/issues/40    "autocreate folder doesn't work from Path-value"
+[#39]: https://github.com/jprichardson/node-jsonfile/pull/39      "Add `throws` option for readFile (async)"
+[#38]: https://github.com/jprichardson/node-jsonfile/pull/38      "Update README.md writeFile[Sync] signature"
+[#37]: https://github.com/jprichardson/node-jsonfile/pull/37      "support append file"
+[#36]: https://github.com/jprichardson/node-jsonfile/pull/36      "Add typescript definition file."
+[#35]: https://github.com/jprichardson/node-jsonfile/pull/35      "Add typescript definition file."
+[#34]: https://github.com/jprichardson/node-jsonfile/pull/34      "readFile JSON parse error includes filename"
+[#33]: https://github.com/jprichardson/node-jsonfile/pull/33      "fix throw->throws typo in readFileSync()"
+[#32]: https://github.com/jprichardson/node-jsonfile/issues/32    "readFile & readFileSync can possible have strip-comments as an option?"
+[#31]: https://github.com/jprichardson/node-jsonfile/pull/31      "[Modify] Support string include is unicode escape string"
+[#30]: https://github.com/jprichardson/node-jsonfile/issues/30    "How to use Jsonfile package in Meteor.js App?"
+[#29]: https://github.com/jprichardson/node-jsonfile/issues/29    "writefile callback if no error?"
+[#28]: https://github.com/jprichardson/node-jsonfile/issues/28    "writeFile options argument broken "
+[#27]: https://github.com/jprichardson/node-jsonfile/pull/27      "Use svg instead of png to get better image quality"
+[#26]: https://github.com/jprichardson/node-jsonfile/issues/26    "Breaking change to fs-extra"
+[#25]: https://github.com/jprichardson/node-jsonfile/issues/25    "support string encoding param for read methods"
+[#24]: https://github.com/jprichardson/node-jsonfile/issues/24    "readFile: Passing in null options with a callback throws an error"
+[#23]: https://github.com/jprichardson/node-jsonfile/pull/23      "Add appendFile and appendFileSync"
+[#22]: https://github.com/jprichardson/node-jsonfile/issues/22    "Default value for spaces in readme.md is outdated"
+[#21]: https://github.com/jprichardson/node-jsonfile/pull/21      "Update license attribute"
+[#20]: https://github.com/jprichardson/node-jsonfile/issues/20    "Add simple caching functionallity"
+[#19]: https://github.com/jprichardson/node-jsonfile/pull/19      "Add appendFileSync method"
+[#18]: https://github.com/jprichardson/node-jsonfile/issues/18    "Add updateFile and updateFileSync methods"
+[#17]: https://github.com/jprichardson/node-jsonfile/issues/17    "seem read & write sync has sequentially problem"
+[#16]: https://github.com/jprichardson/node-jsonfile/pull/16      "export spaces defaulted to null"
+[#15]: https://github.com/jprichardson/node-jsonfile/issues/15    "`jsonfile.spaces` should default to `null`"
+[#14]: https://github.com/jprichardson/node-jsonfile/pull/14      "Add EOL at EOF"
+[#13]: https://github.com/jprichardson/node-jsonfile/issues/13    "Add a final newline"
+[#12]: https://github.com/jprichardson/node-jsonfile/issues/12    "readFile doesn't accept options"
+[#11]: https://github.com/jprichardson/node-jsonfile/pull/11      "Added try,catch to readFileSync"
+[#10]: https://github.com/jprichardson/node-jsonfile/issues/10    "No output or error from writeFile"
+[#9]: https://github.com/jprichardson/node-jsonfile/pull/9        "Change 'js' to 'jf' in example."
+[#8]: https://github.com/jprichardson/node-jsonfile/pull/8        "Updated forgotten module.exports to me."
+[#7]: https://github.com/jprichardson/node-jsonfile/pull/7        "Add file name in error message"
+[#6]: https://github.com/jprichardson/node-jsonfile/pull/6        "Use graceful-fs when possible"
+[#5]: https://github.com/jprichardson/node-jsonfile/pull/5        "Jsonfile doesn't behave nicely when used inside a test suite."
+[#4]: https://github.com/jprichardson/node-jsonfile/pull/4        "Added options parameter to writeFile and writeFileSync"
+[#3]: https://github.com/jprichardson/node-jsonfile/issues/3      "test2"
+[#2]: https://github.com/jprichardson/node-jsonfile/issues/2      "homepage field must be a string url. Deleted."
+[#1]: https://github.com/jprichardson/node-jsonfile/pull/1        "adding an `.npmignore` file"
+
+
+
+
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/jsonfile/README.md](Github/bgoonz-master/bgoonz-master/node_modules/jsonfile/README.md)
+
+Node.js - jsonfile
+================
+
+Easily read/write JSON files in Node.js. _Note: this module cannot be used in the browser._
+
+[![npm Package](https://img.shields.io/npm/v/jsonfile.svg?style=flat-square)](https://www.npmjs.org/package/jsonfile)
+[![build status](https://secure.travis-ci.org/jprichardson/node-jsonfile.svg)](http://travis-ci.org/jprichardson/node-jsonfile)
+[![windows Build status](https://img.shields.io/appveyor/ci/jprichardson/node-jsonfile/master.svg?label=windows%20build)](https://ci.appveyor.com/project/jprichardson/node-jsonfile/branch/master)
+
+<a href="https://github.com/feross/standard"><img src="https://cdn.rawgit.com/feross/standard/master/sticker.svg" alt="Standard JavaScript" width="100"></a>
+
+Why?
+----
+
+Writing `JSON.stringify()` and then `fs.writeFile()` and `JSON.parse()` with `fs.readFile()` enclosed in `try/catch` blocks became annoying.
+
+
+
+Installation
+------------
+
+    npm install --save jsonfile
+
+
+
+API
+---
+
+* [`readFile(filename, [options], callback)`](#readfilefilename-options-callback)
+* [`readFileSync(filename, [options])`](#readfilesyncfilename-options)
+* [`writeFile(filename, obj, [options], callback)`](#writefilefilename-obj-options-callback)
+* [`writeFileSync(filename, obj, [options])`](#writefilesyncfilename-obj-options)
+
+----
+
+### readFile(filename, [options], callback)
+
+`options` (`object`, default `undefined`): Pass in any [`fs.readFile`](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback) options or set `reviver` for a [JSON reviver](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse).
+  - `throws` (`boolean`, default: `true`). If `JSON.parse` throws an error, pass this error to the callback.
+  If `false`, returns `null` for the object.
+
+
+```js
+const jsonfile = require('jsonfile')
+const file = '/tmp/data.json'
+jsonfile.readFile(file, function (err, obj) {
+  if (err) console.error(err)
+  console.dir(obj)
+})
+```
+
+You can also use this method with promises. The `readFile` method will return a promise if you do not pass a callback function.
+
+```js
+const jsonfile = require('jsonfile')
+const file = '/tmp/data.json'
+jsonfile.readFile(file)
+  .then(obj => console.dir(obj))
+  .catch(error => console.error(error))
+```
+
+----
+
+### readFileSync(filename, [options])
+
+`options` (`object`, default `undefined`): Pass in any [`fs.readFileSync`](https://nodejs.org/api/fs.html#fs_fs_readfilesync_path_options) options or set `reviver` for a [JSON reviver](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse).
+- `throws` (`boolean`, default: `true`). If an error is encountered reading or parsing the file, throw the error. If `false`, returns `null` for the object.
+
+```js
+const jsonfile = require('jsonfile')
+const file = '/tmp/data.json'
+
+console.dir(jsonfile.readFileSync(file))
+```
+
+----
+
+### writeFile(filename, obj, [options], callback)
+
+`options`: Pass in any [`fs.writeFile`](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback) options or set `replacer` for a [JSON replacer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify). Can also pass in `spaces`, or override `EOL` string or set `finalEOL` flag as `false` to not save the file with `EOL` at the end.
+
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFile(file, obj, function (err) {
+  if (err) console.error(err)
+})
+```
+Or use with promises as follows:
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFile(file, obj)
+  .then(res => {
+    console.log('Write complete')
+  })
+  .catch(error => console.error(error))
+```
+
+
+**formatting with spaces:**
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFile(file, obj, { spaces: 2 }, function (err) {
+  if (err) console.error(err)
+})
+```
+
+**overriding EOL:**
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFile(file, obj, { spaces: 2, EOL: '\r\n' }, function (err) {
+  if (err) console.error(err)
+})
+```
+
+
+**disabling the EOL at the end of file:**
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFile(file, obj, { spaces: 2, finalEOL: false }, function (err) {
+  if (err) console.log(err)
+})
+```
+
+**appending to an existing JSON file:**
+
+You can use `fs.writeFile` option `{ flag: 'a' }` to achieve this.
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/mayAlreadyExistedData.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFile(file, obj, { flag: 'a' }, function (err) {
+  if (err) console.error(err)
+})
+```
+
+----
+
+### writeFileSync(filename, obj, [options])
+
+`options`: Pass in any [`fs.writeFileSync`](https://nodejs.org/api/fs.html#fs_fs_writefilesync_file_data_options) options or set `replacer` for a [JSON replacer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify). Can also pass in `spaces`, or override `EOL` string or set `finalEOL` flag as `false` to not save the file with `EOL` at the end.
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFileSync(file, obj)
+```
+
+**formatting with spaces:**
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFileSync(file, obj, { spaces: 2 })
+```
+
+**overriding EOL:**
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFileSync(file, obj, { spaces: 2, EOL: '\r\n' })
+```
+
+**disabling the EOL at the end of file:**
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/data.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFileSync(file, obj, { spaces: 2, finalEOL: false })
+```
+
+**appending to an existing JSON file:**
+
+You can use `fs.writeFileSync` option `{ flag: 'a' }` to achieve this.
+
+```js
+const jsonfile = require('jsonfile')
+
+const file = '/tmp/mayAlreadyExistedData.json'
+const obj = { name: 'JP' }
+
+jsonfile.writeFileSync(file, obj, { flag: 'a' })
+```
+
+License
+-------
+
+(MIT License)
+
+Copyright 2012-2016, JP Richardson  <jprichardson@gmail.com>
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/node_modules/keyv/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/node_modules/keyv/README.md](Github/bgoonz-master/bgoonz-master/node_modules/keyv/README.md)
+<h1 align="center">
+	<img width="250" src="https://rawgit.com/lukechilds/keyv/master/media/logo.svg" alt="keyv">
+	<br>
+	<br>
+</h1>
+
+> Simple key-value storage with support for multiple backends
+
+[![Build Status](https://travis-ci.org/lukechilds/keyv.svg?branch=master)](https://travis-ci.org/lukechilds/keyv)
+[![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv?branch=master)
+[![npm](https://img.shields.io/npm/dm/keyv.svg)](https://www.npmjs.com/package/keyv)
+[![npm](https://img.shields.io/npm/v/keyv.svg)](https://www.npmjs.com/package/keyv)
+
+Keyv provides a consistent interface for key-value storage across multiple backends via storage adapters. It supports TTL based expiry, making it suitable as a cache or a persistent key-value store.
+
+## Features
+
+There are a few existing modules similar to Keyv, however Keyv is different because it:
+
+- Isn't bloated
+- Has a simple Promise based API
+- Suitable as a TTL based cache or persistent key-value store
+- [Easily embeddable](#add-cache-support-to-your-module) inside another module
+- Works with any storage that implements the [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) API
+- Handles all JSON types plus `Buffer`
+- Supports namespaces
+- Wide range of [**efficient, well tested**](#official-storage-adapters) storage adapters
+- Connection errors are passed through (db failures won't kill your app)
+- Supports the current active LTS version of Node.js or higher
+
+## Usage
+
+Install Keyv.
+
+```
+npm install --save keyv
+```
+
+By default everything is stored in memory, you can optionally also install a storage adapter.
+
+```
+npm install --save @keyv/redis
+npm install --save @keyv/mongo
+npm install --save @keyv/sqlite
+npm install --save @keyv/postgres
+npm install --save @keyv/mysql
+```
+
+Create a new Keyv instance, passing your connection string if applicable. Keyv will automatically load the correct storage adapter.
+
+```js
+const Keyv = require('keyv');
+
+// One of the following
+const keyv = new Keyv();
+const keyv = new Keyv('redis://user:pass@localhost:6379');
+const keyv = new Keyv('mongodb://user:pass@localhost:27017/dbname');
+const keyv = new Keyv('sqlite://path/to/database.sqlite');
+const keyv = new Keyv('postgresql://user:pass@localhost:5432/dbname');
+const keyv = new Keyv('mysql://user:pass@localhost:3306/dbname');
+
+// Handle DB connection errors
+keyv.on('error', err => console.log('Connection Error', err));
+
+await keyv.set('foo', 'expires in 1 second', 1000); // true
+await keyv.set('foo', 'never expires'); // true
+await keyv.get('foo'); // 'never expires'
+await keyv.delete('foo'); // true
+await keyv.clear(); // undefined
+```
+
+### Namespaces
+
+You can namespace your Keyv instance to avoid key collisions and allow you to clear only a certain namespace while using the same database.
+
+```js
+const users = new Keyv('redis://user:pass@localhost:6379', { namespace: 'users' });
+const cache = new Keyv('redis://user:pass@localhost:6379', { namespace: 'cache' });
+
+await users.set('foo', 'users'); // true
+await cache.set('foo', 'cache'); // true
+await users.get('foo'); // 'users'
+await cache.get('foo'); // 'cache'
+await users.clear(); // undefined
+await users.get('foo'); // undefined
+await cache.get('foo'); // 'cache'
+```
+
+### Custom Serializers
+
+Keyv uses [`json-buffer`](https://github.com/dominictarr/json-buffer) for data serialization to ensure consistency across different backends.
+
+You can optionally provide your own serialization functions to support extra data types or to serialize to something other than JSON.
+
+```js
+const keyv = new Keyv({ serialize: JSON.stringify, deserialize: JSON.parse });
+```
+
+**Warning:** Using custom serializers means you lose any guarantee of data consistency. You should do extensive testing with your serialisation functions and chosen storage engine.
+
+## Official Storage Adapters
+
+The official storage adapters are covered by [over 150 integration tests](https://travis-ci.org/lukechilds/keyv/jobs/260418145) to guarantee consistent behaviour. They are lightweight, efficient wrappers over the DB clients making use of indexes and native TTLs where available.
+
+Database | Adapter | Native TTL | Status
+---|---|---|---
+Redis | [@keyv/redis](https://github.com/lukechilds/keyv-redis) | Yes | [![Build Status](https://travis-ci.org/lukechilds/keyv-redis.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-redis) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-redis/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-redis?branch=master)
+MongoDB | [@keyv/mongo](https://github.com/lukechilds/keyv-mongo) | Yes | [![Build Status](https://travis-ci.org/lukechilds/keyv-mongo.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-mongo) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-mongo/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-mongo?branch=master)
+SQLite | [@keyv/sqlite](https://github.com/lukechilds/keyv-sqlite) | No | [![Build Status](https://travis-ci.org/lukechilds/keyv-sqlite.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-sqlite) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-sqlite/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-sqlite?branch=master)
+PostgreSQL | [@keyv/postgres](https://github.com/lukechilds/keyv-postgres) | No | [![Build Status](https://travis-ci.org/lukechilds/keyv-postgres.svg?branch=master)](https://travis-ci.org/lukechildskeyv-postgreskeyv) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-postgres/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-postgres?branch=master)
+MySQL | [@keyv/mysql](https://github.com/lukechilds/keyv-mysql) | No | [![Build Status](https://travis-ci.org/lukechilds/keyv-mysql.svg?branch=master)](https://travis-ci.org/lukechilds/keyv-mysql) [![Coverage Status](https://coveralls.io/repos/github/lukechilds/keyv-mysql/badge.svg?branch=master)](https://coveralls.io/github/lukechilds/keyv-mysql?branch=master)
+
+## Third-party Storage Adapters
+
+You can also use third-party storage adapters or build your own. Keyv will wrap these storage adapters in TTL functionality and handle complex types internally.
+
+```js
+const Keyv = require('keyv');
+const myAdapter = require('./my-storage-adapter');
+
+const keyv = new Keyv({ store: myAdapter });
+```
+
+Any store that follows the [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) api will work.
+
+```js
+new Keyv({ store: new Map() });
+```
+
+For example, [`quick-lru`](https://github.com/sindresorhus/quick-lru) is a completely unrelated module that implements the Map API.
+
+```js
+const Keyv = require('keyv');
+const QuickLRU = require('quick-lru');
+
+const lru = new QuickLRU({ maxSize: 1000 });
+const keyv = new Keyv({ store: lru });
+```
+
+The following are third-party storage adapters compatible with Keyv:
+
+- [quick-lru](https://github.com/sindresorhus/quick-lru) - Simple "Least Recently Used" (LRU) cache
+- [keyv-file](https://github.com/zaaack/keyv-file) - File system storage adapter for Keyv
+- [keyv-dynamodb](https://www.npmjs.com/package/keyv-dynamodb) - DynamoDB storage adapter for Keyv
+
+## Add Cache Support to your Module
+
+Keyv is designed to be easily embedded into other modules to add cache support. The recommended pattern is to expose a `cache` option in your modules options which is passed through to Keyv. Caching will work in memory by default and users have the option to also install a Keyv storage adapter and pass in a connection string, or any other storage that implements the `Map` API.
+
+You should also set a namespace for your module so you can safely call `.clear()` without clearing unrelated app data.
+
+Inside your module:
+
+```js
+class AwesomeModule {
+	constructor(opts) {
+		this.cache = new Keyv({
+			uri: typeof opts.cache === 'string' && opts.cache,
+			store: typeof opts.cache !== 'string' && opts.cache,
+			namespace: 'awesome-module'
+		});
+	}
+}
+```
+
+Now it can be consumed like this:
+
+```js
+const AwesomeModule = require('awesome-module');
+
+// Caches stuff in memory by default
+const awesomeModule = new AwesomeModule();
+
+// After npm install --save keyv-redis
+const awesomeModule = new AwesomeModule({ cache: 'redis://localhost' });
+
+// Some third-party module that implements the Map API
+const awesomeModule = new AwesomeModule({ cache: some3rdPartyStore });
+```
+
+## API
+
+### new Keyv([uri], [options])
+
+Returns a new Keyv instance.
+
+The Keyv instance is also an `EventEmitter` that will emit an `'error'` event if the storage adapter connection fails.
+
+### uri
+
+Type: `String`<br>
+Default: `undefined`
+
+The connection string URI.
+
+Merged into the options object as options.uri.
+
+### options
+
+Type: `Object`
+
+The options object is also passed through to the storage adapter. Check your storage adapter docs for any extra options.
+
+#### options.namespace
+
+Type: `String`<br>
+Default: `'keyv'`
+
+Namespace for the current instance.
+
+#### options.ttl
+
+Type: `Number`<br>
+Default: `undefined`
+
+Default TTL. Can be overridden by specififying a TTL on `.set()`.
+
+#### options.serialize
+
+Type: `Function`<br>
+Default: `JSONB.stringify`
+
+A custom serialization function.
+
+#### options.deserialize
+
+Type: `Function`<br>
+Default: `JSONB.parse`
+
+A custom deserialization function.
+
+#### options.store
+
+Type: `Storage adapter instance`<br>
+Default: `new Map()`
+
+The storage adapter instance to be used by Keyv.
+
+#### options.adapter
+
+Type: `String`<br>
+Default: `undefined`
+
+Specify an adapter to use. e.g `'redis'` or `'mongodb'`.
+
+### Instance
+
+Keys must always be strings. Values can be of any type.
+
+#### .set(key, value, [ttl])
+
+Set a value.
+
+By default keys are persistent. You can set an expiry TTL in milliseconds.
+
+Returns `true`.
+
+#### .get(key)
+
+Returns the value.
+
+#### .delete(key)
+
+Deletes an entry.
+
+Returns `true` if the key existed, `false` if not.
+
+#### .clear()
+
+Delete all entries in the current namespace.
+
+Returns `undefined`.
+
+## License
+
+MIT © Luke Childs
+
+
+
+
+
+</details><details> <summary>Github/bgoonz-master/bgoonz-master/</summary>
+
+### [Github/bgoonz-master/bgoonz-master/README.md](Github/bgoonz-master/bgoonz-master/README.md)
+
+<h1 align="center">Hi 👋, I'm Bryan</h1>
+
+---
+
+
+<div align="center">
+
+![Profile views](https://views.whatilearened.today/views/github/bgoonz/views.svg)
+
+![daft](./daftpunktocat-thomas.gif)<img align="center" src="https://github.com/bgoonz/bgoonz/blob/master/circle-small-sharp.png?raw=true?raw=true" ></img> 
+
+</div>
+
+---
+<div  align="center" style=" border: 1px solid black">
+
+</div>
+
+---
+
+<div align="center">
+
+
+
+
+<img align="center" src="https://readme-jokes.vercel.app/api" stye="width:500; height:320;">
+
+
+#### Refresh the page for a new joke!
+
+
+
+</div>    
+<div align="center">
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
+
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=bgoonz&show_icons=true&locale=en" alt="bgoonz" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=bgoonz&" alt="bgoonz" /></p>
+
+ [![trophy](https://github-profile-trophy.vercel.app/?username=bgoonz&row=1)](https://github.com/bgoonz/github-profile-trophy)
+ 
+ 
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bgoonz&hide=html,mathematica&langs_count=16)](https://github.com/bgoonz/github-readme-stats)
+
+
+|  |  |
+|:----------------:|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Languages**    | ![](https://img.shields.io/badge/Lang-HTML5-informational?style=flat&logo=HTML5&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-CSS-informational?style=flat&logo=CSS%20Wizardry&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-JavaScript-informational?style=flat&logo=JavaScript&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/Lang-SQL-informational?style=flat&logo=SQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lang-Java-informational?style=flat&logo=Java&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Lang-Python-informational?style=flat&logo=Python&logoColor=white&color=00FF00)   ![](https://img.shields.io/badge/Lang-TypeScript-informational?style=flat&logo=TypeScript&logoColor=white&color=00FF00) |
+| **Libraries**    | ![](https://img.shields.io/badge/Lib-Bootstrap-informational?style=flat&logo=Bootstrap&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Lib-React-informational?style=flat&logo=React&logoColor=white&color=00FF00)  |
+| **Frameworks**   | ![](https://img.shields.io/badge/FW-Redux-informational?style=flat&logo=Redux&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Node.js-informational?style=flat&logo=Node.js&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/FW-Express-informational?style=flat&logoColor=white&color=00FF00)  ![](https://img.shields.io/badge/FW-PowerShell-informational?style=flat&logo=PowerShell&logoColor=white&color=00FF00) |
+| **Databases**    | ![](https://img.shields.io/badge/DB-PostgreSQL-informational?style=flat&logo=PostgreSQL&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/DB-MySQL-informational?style=flat&logo=MySQL&logoColor=white&color=00FF00) |
+| **Testing**      | ![](https://img.shields.io/badge/Test-Jest-informational?style=flat&logo=Jest&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-Cypress-informational?style=flat&logo=Cypress&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Test-JUnit-informational?style=flat&logo=JUnit&logoColor=white&color=00FF00) |
+| **Other**        | ![](https://img.shields.io/badge/Editor-VS%20Code-informational?style=flat&logo=visualstudiocode&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Editor-IntelliJ%20IDEA-informational?style=flat&logo=intellijidea&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Tools-ESLint-informational?style=flat&logo=ESLint&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Postman-informational?style=flat&logo=Postman&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=Git&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&logoColor=white&color=00FF00)  <br />![](https://img.shields.io/badge/OS-Windows%2010-informational?style=flat&logo=Windows&logoColor=white&color=00FF00) <br />![](https://img.shields.io/badge/Code-LESS-informational?style=flat&logoColor=white&color=00FF00) ![](https://img.shields.io/badge/Code-Emmet-informational?style=flat&logoColor=white&color=00FF00) |
+
+
+ <br />
+
+## ➤ Current Projects:
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=Lambda)](https://github.com/bgoonz/Lambda)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=bgoonz.github.io)](https://github.com/bgoonz/bgoonz.github.io)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=WEB-DEV-TOOLS-HUB)](https://github.com/bgoonz/WEB-DEV-TOOLS-HUB)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=bgoonz&repo=DS-ALGO-OFFICIAL)](https://github.com/bgoonz/DS-ALGO-OFFICIAL)
+
+</div>
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_email_)
+
+## ➤ _Email_
+
+#### [bryan.guner@gmail.com](#)
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#_phone_)
+
+## ➤ _Phone_
+
+#### [551-254-5505](551-254-5505)
+
+
+---
+
+## ➤ Connect with me:
+<p align="center">
+  <a href="mailto:bryan.guner@gmail.com"><img src="https://img.icons8.com/color/96/000000/gmail.png" alt="email"/></a><a href="https://www.facebook.com/bryan.guner/"><img src="https://img.icons8.com/color/96/000000/facebook.png" alt="facebook"/></a><a href="https://twitter.com/bgooonz"><img src="https://img.icons8.com/color/96/000000/twitter-squared.png" alt="twitter"/></a><a href="https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/videos"><img src="https://img.icons8.com/color/96/000000/youtube.png" alt="youtube"/></a><a href="https://www.instagram.com/bgoonz/?hl=en"><img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="instagram"/></a><a href="https://www.pinterest.com/bryanguner/_saved/"><img src="https://img.icons8.com/color/96/000000/pinterest--v1.png" alt="pinterest"/></a><a href="https://www.linkedin.com/in/bryan-guner-046199128/"><img src="https://img.icons8.com/color/96/000000/linkedin.png" alt="linkedin"/></a>
+  <a href="https://bryanguner.medium.com/"><img src="https://img.icons8.com/color/96/000000/medium-logo.png" alt="medium"/></a><a href="https://open.spotify.com/user/bgoonz?si=ShH9wYbIQWab5Jz_30BKFw"><img src="https://img.icons8.com/color/96/000000/spotify--v1.png" alt="spotify"/></a>
+  </p>
+<p align="left">
+
+-   [GitHub](https://github.com/bgoonz)
+-   [Gitlab](https://gitlab.com/bryan.guner.dev)
+-   [Bitbucket](https://bitbucket.org/bgoonz/)
+-   [code pen](https://codepen.io/bgoonz)
+-   [Glitch](https://glitch.com/@bgoonz)
+-   [Replit](https://repl.it/@bgoonz/)
+-   [Redit](https://www.reddit.com/user/bgoonz1)
+-   [runkit](https://runkit.com/bgoonz)
+-   [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner)
+-   [Netlify](https://app.netlify.com/user/settings#profile)
+-   [Medium](https://bryanguner.medium.com/)
+-   [webcomponents.dev](https://webcomponents.dev/user/bgoonz)
+-   [npm](https://www.npmjs.com/~bgoonz11)
+-   [Upwork](https://www.upwork.com/freelancers/~01bb1a3627e1e9c630?viewMode=1&s=1110580755057594368)
+-   [AngelList](https://angel.co/u/bryan-guner)
+-   [Quora](https://www.quora.com/q/webdevresourcehub?invite_code=qwZOqbpAhgQ6hjjGl8NN)               
+-   [dev.to](https://dev.to/bgoonz)
+-   [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)
+-   [Notation](https://www.notion.so/Overview-Of-Css-5d88b0bc9a73422a9be1481d599a56ba)
+-   [StackShare](https://stackshare.io/bryanguner)
+-   [Plunk](http://plnkr.co/account/plunks)
+</p>
+
+
+
+
+
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#blog)
+
+##### ➤ [Blog:](https://modest-booth-4e17df.netlify.app/)
+
+
+
+ 
+
+        
+
+> I write articles for:
+- CodeX
+- Analytics Vidhya
+- Star Gazers
+- JavaScript in Plain English
+- Geek Culture
+- Level Up Coding
+- <a href="https://dev.to/bgoonz">
+  <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Bryan C Guner's DEV Community Profile" height="30px" width="30px">
+</a>
+        
+
+<a href="https://dev.to/bgoonz">
+ 
+![medium](./medium.PNG)
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
+
+
+
+<details>
+
+<summary>About Me</summary>
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
+
+![skills](./skills.PNG)
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#projects)
+
+
+
+
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome) [![Made With Love](https://img.shields.io/badge/Made%20With-Love-orange.svg)](https://github.com/chetanraj/awesome-github-badges)
+
+
+[![forthebadge](https://forthebadge.com/images/badges/certified-snoop-lion.svg)](https://forthebadge.com)[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://bgoonz.github.io/)[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/bgoonz/ask-me-anything)[![Gitter](https://badges.gitter.im/bgoonz/community.svg)](https://gitter.im/bgoonz/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/bgoonz/bgoonz/graphs/commit-activity)[![Analytics](https://ga-beacon.appspot.com/UA-38514290-17/github.com/Naereen/Naereen/README.md?pixel)](https://GitHub.com/bgoonz/bgoonz/)[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+[![GitHub followers](https://img.shields.io/github/followers/bgoonz.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/bgoonz?tab=followers)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat&logo=javascript)
+
+![React](https://img.shields.io/badge/-React-black?style=flat&logo=react) ![Redux](https://img.shields.io/badge/-Redux-lightblue?style=flat&logo=redux)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3) ![Sass](https://img.shields.io/badge/-Sass-black?style=flat&logo=sass)
+
+![Express](https://img.shields.io/badge/-Express-blue?style=flat&logo=express) ![Nodejs](https://img.shields.io/badge/-Nodejs-green?style=flat&logo=Node.js)![Python](https://img.shields.io/badge/-Python-lightyellow?style=flat&logo=python&logoColor=blue)     ![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) 
+![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker)                                 ![MySQL](https://img.shields.io/badge/-MySQL-black?style=flat&logo=mysql) ![PostgresQL](https://img.shields.io/badge/-PostgreSQL-blue?style=flat&logo=postgresql) ![Git](https://img.shields.io/badge/-Git-black?style=flat&logo=git)      ![Ruby](https://img.shields.io/badge/-Ruby-darkred?style=flat&logo=ruby)             ![Material-UI](https://img.shields.io/badge/-MaterialUI-0081CB?style=flat&logo=Material-UI&logoColor=white)      
+
+
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.arduino.cc/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://d3js.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg" alt="d3js" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://emberjs.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ember/ember-original-wordmark.svg" alt="ember" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.gatsbyjs.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/gatsbyjs/gatsbyjs-icon.svg" alt="gatsby" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank"> <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/mathworks.svg" alt="matlab" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+
+
+<h3 align="center">A passionate Web Developer, Electrical Engineer, Musician & Producer</h3>
+
+
+
+
+- 🔭 Contract Web Development **Relational Concepts**
+
+- 🌱 I'm currently learning **React/Redux, Python, Java, Express, jQuery**
+
+- 👯 I'm looking to collaborate on [Any web audio or open source educational tools.](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+
+- 🤝 I'm looking for help with [Learning React](https://github.com/bgoonz/React-Practice)
+
+- 👨‍💻 All of my projects are available at [https://bgoonz.github.io/](https://bgoonz.github.io/)
+
+- 📝 I regularly write articles on [medium](https://bryanguner.medium.com/) && [Web-Dev-Resource-Hub](https://web-dev-resource-hub.netlify.app/)
+
+- 💬 Ask me about **Anything:**
+
+- 📫 How to reach me **bryan.guner@gmail.com**
+
+- ⚡ Fun fact **I played Bamboozle Music Festival at the Meadowlands Stadium Complex when I was 14.**
+
+### i really like music :headphones:
+
+
+#### What's the most useful business-related book you've ever read?
+> A Random Walk Down Wall Street
+
+#### What's your favorite non-business book?
+> Hitchhiker's Guide To The Galaxy
+
+#### If money were not an issue, what would you be doing right now?
+> Designing recording software/hardware and using it
+
+#### What words of advice would you give your younger self?
+> Try harder and listen to your parents more (the latter bit of advice would be almost certain to fall on deaf ears lol)
+
+#### What's the most creative thing you've ever done?
+> I built a platform that listens to a guitarist's performance and automatically triggers guitar effects at the appropriate time in the song.
+
+#### Which founders or startups do you most admire?
+> Is it to basic to say Tesla... I know they're prevalent now but I've been an avid fan since as early as 2012.
+
+#### What's your super power?
+> Having really good ideas and forgetting them moments later.
+
+#### What's the best way for people to get in touch with you?
+> A text
+
+#### What aspects of your work are you most passionate about?
+Creating things that change my every day life.
+
+#### What was the most impactful class you took in school?
+> Modern Physics... almost changed my major after that class... but at the end of the day engineering was a much more fiscally secure avenue.
+
+#### What's something you wish you had done years earlier?
+> Learned to code ... and sing
+
+#### What words of wisdom do you live by?
+> *Disclaimer: The following wisdom is very cliche ... but... "Be the change that you wish to see in the world."
+
+> ― Mahatma Gandhi
+
+
+</details>
+
+<details> 
+
+ <summary>🤖 <b>My Programming Stats</b>: </summary>
+<br>
+
+
+[![bgoonz's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=bgoonz)](https://github.com/bgoonz/github-readme-stats)
+
+
+![waka1](https://github.com/bgoonz/bgoonz/blob/master/langs.PNG)
+
+
+![waka2](https://github.com/bgoonz/bgoonz/blob/master/waka.PNG)
+
+
+
+
+</details>
+
+
+
+
+
+
+
+
+<details>
+  
+<summary>See More</summary>
+
+
+
+
+
+
+
+[wakatime](https://wakatime.com/@bgoonz)
+
+
+
+[github-resume](https://resume.github.io/?bgoonz)
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+<!-- start work experience section -->
+<details>
+<summary> Resume </summary>
+
+# ➤ Technical Skills­­­
+
+| **Programming**** Languages:** | JavaScript ES-6,  NodeJS,  React,  HTML5,  CSS3,  SCSS,  Bash Shell,  Excel,  SQL,  NoSQL,  MATLAB,  Python,  C++ |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| **Databases:**                 | PostgreSQL,  MongoDB                                                                                              |
+| **Cloud:**                     | Docker,  AWS,  Google App Engine,  Netlify,  Digital Ocean,  Heroku,  Azure Cloud Services                        |
+| **OS:**                        | Linux,  Windows (WSL),  IOS                                                                                       |
+| **Agile:**                     | GitHub,  BitBucket,  Jira,  Confluence                                                                            |
+| **IDEs:**                      | VSCode,  Visual Studio,  Atom,  Code Blocks,  Sublime Text 3,  Brackets                                           |
+
+---
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#experience)
+
+# ➤ Experience
+
+| **Relational Concepts:** Hallandale Beach,  FL | March 2020 - Present |
+| ---------------------------------------------- | -------------------- |
+| **Front End Web Developer**                    |
+|                                                |
+
+- Responsible for front-end development for a custom real estate application which provides sophisticated and fully customizable filtering to allow investors and real estate professionals to narrow in on exact search targets.
+- Designed mock-up screens,  wireframes,  and workflows for intuitive user experience.
+- Migrated existing multi-page user experience into singular page interfaces using React components.
+- Participated in every stage of the design from conception through development and iterative improvement.
+- Produced user stories and internal documentation for future site development and maintenance.
+- Implemented modern frameworks including Bootstrap and Font-Awesome to give the site an aesthetic overhaul.
+- Managed all test deployments using a combination of Digital Ocean and Netlify.
+- Produced unit tests using a combination of Mocha and Chai.
+- Injected Google Analytics to capture pertinent usage data to produce an insightful dashboard experience.
+
+| **Environment:** | **JavaScript,  JQuery,  React,  HTML5 &amp; CSS,  Bootstrap,  DOJO,  Google Cloud,  Bash Script** |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+
+| **Cembre:** Edison,  NJ          | Nov 2019 – Mar 2020 |
+| -------------------------------- | ------------------- |
+| **Product Development Engineer** |
+|                                  |
+
+- Converted client&#39;s product needs into technical specs to be sent to the development team in Italy.
+- Reorganized internal file server structure.
+- Conducted remote / in person system integration and product demonstrations.
+- Presided over internal and end user software trainings in addition to producing the corresponding documentation.
+- Served as the primary point of contact for troubleshooting railroad hardware and software in the North America.
+
+| **Environment:** | **Excel,  AutoCAD,  PowerPoint,  Word** |
+| ---------------- | --------------------------------------- |
+
+---
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#education)
+
+# ➤ Education
+
+| **B.S. Electrical Engineering,  TCNJ, ** Ewing NJ | 2014 – 2019 |
+| ------------------------------------------------- | ----------- |
+
+**Capstone Project – Team Lead**
+
+- Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency &amp; time domain analysis to track a current performance against prerecorded performance.
+- Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.
+
+| **Environment:** | **C++,  Python,  MATLAB,  PureData** |
+| ---------------- | ------------------------------------ |
+
+</details>
+
+<details>
+
+<summary> My Projects</summary>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project Name</th>
+      <th>Skills used</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href='https://web-dev-resource-hub.netlify.app/'>Web-Dev-Resource-Hub (blog)</a></td>
+      <td>Html, Css, javascript, Python, jQuery,  React,  FireBase,  AWS S3,  Netlify,  Heroku,  NodeJS,  PostgreSQL,  C++,  Web Audio API</td>
+      <td>My blog site contains my resource sharing and blog site ... centered mostly on web development and just a bit of audio production / generally nerdy things I find interesting.</td>
+    </tr>
+       <tr>
+      <td><a href='https://project-showcase-bgoonz.netlify.app/'>Dynamic Guitar Effects Triggering Using A Modified Dynamic Time Warping Algorithm</a></td>
+      <td>C, C++, Python, Java, Pure Data, Matlab</td>
+      <td>Successfully completed and delivered a platform to digitize a guitar signal and perform filtering before executing frequency & time domain analysis to track a current performance against prerecorded performance.Implemented the Dynamic Time Warping algorithm in C++ and Python to autonomously activate or adjust guitar effect at multiple pre-designated section of performance.</td>
+    </tr>
+    <tr>
+      <td><a href="https://trusting-dijkstra-4d3b17.netlify.app/">Data Structures & Algorithms Interactive Learning Site</a></td>
+      <td>HTML, CSS, Javascript,  Python,  Java,  jQuery,  Repl.it-Database API</td>
+      <td>A interactive and comprehensive guide and learning tool for DataStructures and Algorithms ... concentrated on JS but with some examples in Python,  C++ and Java as well</td>
+    </tr>
+    <tr>
+      <td><a href='https://mihirbegmusic.netlify.app/'>MihirBeg.com</a></td>
+      <td>Html, Css, Javascript,  Bootstrap,  FontAwesome,  jQuery</td>
+      <td>A responsive and mobile friendly content promotion site for an Audio Engineer to engage with fans and potential clients</td>
+    </tr>
+    <tr>
+      <td><a href='https://tetris42.netlify.app/'>Tetris-JS</a></td>
+      <td>Html, Css, Javascript</td>
+      <td>The classic game of tetris implemented in plain javascipt and styled with a retro-futureistic theme</td>
+    </tr>
+    <tr>
+      <td><a href="https://githtmlpreview.netlify.app/">Git Html Preview Tool</a></td>
+      <td>Git,  Javascript,  CSS3,  HTML5,  Bootstrap,  BitBucket</td>
+      <td>Loads HTML using CORS proxy,  then process all links,  frames,  scripts and styles,  and load each of them using CORS proxy,  so they can be evaluated by the browser.</td>
+    </tr>
+    <tr>
+      <td><a href='https://project-showcase-bgoonz.netlify.app/'>Mini Project Showcase</a></td>
+      <td>HTML, HTML5, CSS, CSS3, Javascript, jQuery</td>
+      <td>add songs and play music, it also uses to store data in  INDEXEDB Database by which we can play songs, if we not clear the catch then song will remain stored in database.</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+
+<p align="center">
+
+---
+
+
+---
+Portfolio:
+------------
+
+# [netlify](https://portfolio42.netlify.app/)
+---
+
+---
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+<hr>
+
+
+
+
+--------------------
+# [Learning React Blog](https://ecstatic-jang-593fd1.netlify.app/readme)
+
+#### React Repo:
+
+[React Repo](https://github.com/bgoonz/React-Practice)
+
+
+---
+
+<a href="https://codesandbox.io/embed/zealous-microservice-ti7em?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&moduleview=1&theme=dark"   style="width:100%; height:20px; border:0; border-radius: 4px; overflow:hidden;" rel="React Todo">![Foo](https://codesandbox.io/static/img/play-codesandbox.svg)</a>
+---
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+# [react-documentation-site](https://documentation-site-react2-peitff669-bgoonz.vercel.app/)
+
+
+[![Edit magical-stallman-ov0d1](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/magical-stallman-ov0d1?autoresize=1&expanddevtools=1&fontsize=12&hidenavigation=1&moduleview=1&theme=dark)
+
+
+
+
+<div style=" border: 1px solid black">
+<img src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/23b9b236-746e-409c-8e86-30b4385e3b72/hr1-raypham.gif" alt="hr-line" width="100%" height="22">
+</div>
+
+---
+
+
+
+## ➤ Codepens (mostly embeded animations)
+
+# [code-pens-embedded](https://embedable-content.netlify.app/)
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#weekly-quick-snips)
+
+## ➤ Weekly-Quick-Snips:
+---
+#### Snippet of the Day:
+
+
+### replaceAll 
+the method string.replaceAll(search, replaceWith) replaces all appearances of search string with replaceWith.
+```javascript
+
+
+const str = 'this is a JSsnippets example';
+
+const updatedStr = str.replace('example', 'snippet'); // 'this is a  JSsnippets snippet'
+
+
+The tricky part is that replace method replaces only the very first match of the substring we have passed:
+
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replace('example', 'snippet'); //'this is a JSsnippets snippet and examples are great'
+
+In order to go through this, we need to use a global regexp instead:
+
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replace(/example/g, 'snippet'); //'this is a JSsnippets snippet and snippets are greatr'
+
+but now we have new friend in town, replaceAll
+
+const str = 'this is a JSsnippets example and examples are great';
+
+const updatedStr = str.replaceAll('example', 'snippet'); //'this is a JSsnippets snippet and snippets are greatr'
+
+```
+
+
+
+
+
+
+---
+### Fibonacci in Python:
+
+```py
+def fib_iter(n):
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
+    p0 = 0
+    p1 = 1
+    for i in range(n-1):
+        next_val = p0 + p1
+        p0 = p1
+        p1 = next_val
+    return next_val
+for i in range(10):
+    print(f'{i}: {fib_iter(i)}')
+```
+
+
+
+
+ ---
+ 
+ #### Yesterday's Snippet of the day:
+
+---
+
+```py
+def quicksort(l):
+    # One of our base cases is an empty list or list with one element
+    if len(l) == 0 or len(l) == 1:
+        return l
+    # If we have a left list, a pivot point and a right list...
+    # assigns the return values of the partition() function
+    left, pivot, right = partition(l) 
+    # Our sorted list looks like left + pivot + right, but sorted.
+    # Pivot has to be in brackets to be a list, so python can concatenate all the elements to a single list
+    return quicksort(left) + [pivot] + quicksort(right)
+
+
+
+print(quicksort([]))
+
+
+
+print(quicksort([1]))
+
+
+
+print(quicksort([1,2]))
+
+print(quicksort([2,1]))
+
+
+print(quicksort([2,2]))
+
+
+print(quicksort([5,3,9,4,8,1,7]))
+
+
+print(quicksort([1,2,3,4,5,6,7]))
+
+
+print(quicksort([9,8,7,6,5,4,3,2,1]))
+```
+---
+<details>
+  
+  <summary>See Older Snippets!</summary>
+  
+  
+  #### This Week's snippets: 
+  
+  ---
+  
+  
+   >will replace any spaces in file names with an underscore!
+```bash
+ for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+  ## TAKING IT A STEP FURTHER:
+ # Let's do it recursivley:
+  function RecurseDirs ()
+{
+    oldIFS=$IFS
+    IFS=$'\n'
+    for f in "$@"
+    do
+  # YOUR CODE HERE!
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)]
+
+   for file in *; do mv "$file" `echo $file | tr ' ' '_'` ; done
+        if [[ -d "${f}" ]]; then
+            cd "${f}"
+            RecurseDirs $(ls -1 ".")
+            cd ..
+        fi
+    done
+    IFS=$oldIFS
+}
+RecurseDirs "./"
+  
+```
+  
+  
+ ---
+ ### Copy to clipboard jQuerry
+ > Language: Javascript/Jquery
+
+
+>In combination with the script tag :  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> , this snippet will add a copy to clipboard button to all of your embedded <code> blocks. 
+
+
+```js
+$(document).ready(function() {
+  $('code, pre').append('<span class="command-copy" ><i class="fa fa-clipboard" aria-hidden="true"></i></span>');
+
+  $('code span.command-copy').click(function(e) {
+    var text = $(this).parent().text().trim(); //.text();
+    var copyHex = document.createElement('input');
+    copyHex.value = text
+    document.body.appendChild(copyHex);
+    copyHex.select();
+    document.execCommand('copy');
+    console.log(copyHex.value)
+    document.body.removeChild(copyHex);
+  });
+
+
+  $('pre span.command-copy').click(function(e) {
+    var text = $(this).parent().text().trim();
+    var copyHex = document.createElement('input');
+    copyHex.value = text
+    document.body.appendChild(copyHex);
+    copyHex.select();
+    document.execCommand('copy');
+    console.log(copyHex.value)
+    document.body.removeChild(copyHex);
+  });
+})
+
+
+```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ---
+ ### Append Files in PWD
+ 
+ 
+  ```js
+//APPEND-DIR.js
+const fs = require( 'fs' ); let cat = require( 'child_process' ).execSync( 'cat *' ).toString( 'UTF-8' );
+fs.writeFile( 'output.md', cat, ( err ) => { if ( err ) throw err; } );
+```
+ 
+ 
+ ---
+ 
+  ### doesUserFrequentStarbucks.js
+ 
+```js
+const isAppleDevice = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+console.log(isAppleDevice);
+// Result: will return true if user is on an Apple device
+
+```
+---
+ 
+ ### arr-intersection.js
+ 
+```js
+/*
+ function named intersection(firstArr) that takes in an array and
+returns a function. 
+When the function returned by intersection is invoked
+passing in an array (secondArr) it returns a new array containing the elements
+common to both firstArr and secondArr.
+*/
+function intersection(firstArr) {
+  return (secondArr) => {
+    let common = [];
+    for (let i = 0; i < firstArr.length; i++) {
+      let el = firstArr[i];
+      if (secondArr.indexOf(el) > -1) {
+        common.push(el);
+      }
+    }
+    return common;
+  };
+}
+let abc = intersection(["a", "b", "c"]); // returns a function
+console.log(abc(["b", "d", "c"])); // returns [ 'b', 'c' ]
+
+let fame = intersection(["f", "a", "m", "e"]); // returns a function
+console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
+```
+---
+ ### arr-of-cum-partial-sums.js
+ 
+```js
+/*
+First is recurSum(arr, start) which returns the sum of the elements of arr from the index start till the very end.
+Second is partrecurSum() that recursively concatenates the required sum into an array and when we reach the end of the array, it returns the concatenated array.
+*/
+//arr.length -1 = 5 
+//                   arr   [    1,    7,    12,   6,    5,    10   ]
+//                   ind   [    0     1     2     3     4      5   ]
+//                              ↟                              ↟
+//                            start                           end
+
+function recurSum(arr, start = 0, sum = 0) {
+    if(start < arr.length){
+       return recurSum(arr, start+1, sum+arr[start]);
+    };
+    
+    return sum;
+ }
+ 
+ function rPartSumsArr ( arr, partSum = [], start = 0, end = arr.length - 1 ) {
+    if ( start <= end ) {
+       return rPartSumsArr( arr, partSum.concat( recurSum( arr, start ) ), ++start, end );
+    };
+    return partSum.reverse();
+ }
+
+ console.log('------------------------------------------------rPartSumArr------------------------------------------------')
+console.log('rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]: ', rPartSumsArr(arr));
+console.log('rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]: ', rPartSumsArr(arr1));
+console.log('------------------------------------------------rPartSumArr------------------------------------------------')
+/*
+------------------------------------------------rPartSumArr------------------------------------------------
+rPartSumsArr(arr)=[ 1, 1, 5, 2, 6, 10 ]:  [ 10, 16, 18, 23, 24, 25 ]
+rPartSumsArr(arr1)=[ 1, 7, 12, 6, 5, 10 ]:  [ 10, 15, 21, 33, 40, 41 ]
+------------------------------------------------rPartSumArr------------------------------------------------
+*/
+```
+---
+ ### camel2Kabab.js
+ 
+```js
+function camelToKebab(value) {
+  return value.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+}
+```
+---
+ ### camelCase.js
+ 
+```js
+function camel(str) {
+  return str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function (match, index) {
+    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+    return index === 0 ? match.toLowerCase() : match.toUpperCase();
+  });
+}
+```
+---
+ ### concatLinkedLists.js
+ 
+```js
+function addTwoNumbers(l1, l2) {
+  let result = new ListNode(0)
+  let currentNode = result
+  let carryOver = 0
+  while (l1 != null || l2 != null) {
+    let v1 = 0
+    let v2 = 0
+    if (l1 != null) v1 = l1.val
+    if (l2 != null) v2 = l2.val
+    
+    let sum =  v1 + v2 + carryOver
+    carryOver = Math.floor(sum / 10)
+    sum = sum % 10
+    currentNode.next = new ListNode(sum)
+
+    currentNode = currentNode.next
+    if (l1 != null) l1 = l1.next
+    if (l2 != null) l2 = l2.next
+  }
+  
+  if (carryOver > 0) {
+    currentNode.next = new ListNode(carryOver)
+  }
+  
+  return result.next
+};
+```
+---
+
+ ### fast-is-alpha-numeric.js
+ 
+```js
+//Function to test if a character is alpha numeric that is faster than a regular
+//expression in JavaScript
+
+let isAlphaNumeric = (char) => {
+  char = char.toString();
+  let id = char.charCodeAt(0);
+  if (
+    !(id > 47 && id < 58) && // if not numeric(0-9)
+    !(id > 64 && id < 91) && // if not letter(A-Z)
+    !(id > 96 && id < 123) // if not letter(a-z)
+  ) {
+    return false;
+  }
+  return true;
+};
+
+console.log(isAlphaNumeric("A")); //true
+console.log(isAlphaNumeric(2)); //true
+console.log(isAlphaNumeric("z")); //true
+console.log(isAlphaNumeric(" ")); //false
+console.log(isAlphaNumeric("!")); //false
+```
+---
+ ### find-n-replace.js
+ 
+```js
+function replaceWords(str,before,after){
+    if(/^[A-Z]/.test(before)){
+after = after[0].toUpperCase() + after.substring(1)
+    }
+    else{
+        after = after[0].toLowerCase()+ after.substring(1)
+    }
+    return str.replace(before,after)
+}
+console.log(replaceWords("Let us go to the store", "store", "mall"))//"Let us go to the mall"
+console.log(replaceWords("He is Sleeping on the couch", "Sleeping", "sitting")) //"He is Sitting on the couch"
+console.log(replaceWords("His name is Tom", "Tom", "john"))
+//"His name is John"
+```
+---
+ ### flatten-arr.js
+ 
+```js
+
+/*Simple Function to flatten an array into a single layer */
+const flatten = (array) =>
+  array.reduce(
+    (accum, ele) => accum.concat(Array.isArray(ele) ? flatten(ele) : ele),
+    []
+  );
+```
+---
+ ### isWeekDay.js
+ 
+```js
+
+const isWeekday = (date) => date.getDay() % 6 !== 0;
+console.log(isWeekday(new Date(2021, 0, 11)));
+// Result: true (Monday)
+console.log(isWeekday(new Date(2021, 0, 10)));
+// Result: false (Sunday)
+```
+---
+ ### longest-common-prefix.js
+ 
+```js
+
+function longestCommonPrefix(strs) {
+  let prefix = ''
+  if (strs.length === 0) return prefix
+  for (let i = 0; i < strs[0].length; i++) {
+    const character = strs[0][i]
+    for (let j = 0; j < strs.length; j++) {
+      if (strs[j][i] !== character) return prefix
+    }
+    prefix = prefix + character
+  }
+  return prefix
+}
+```
+
+
+
+
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+<hr>
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#github-gists)
+
+# ➤ Github Gists
+[Github Gists](https://gist.github.com/bgoonz)
+---
+
+[list-of-my-websites](https://gist.github.com/bgoonz/659a9b81ac45453bedc0a1a36275b580)
+
+---
+
+
+
+</details>
+
+
+
+
+
+
+</details><details> <summary>Leetcode/</summary>
+
+### [Leetcode/find-work.md](Leetcode/find-work.md)
+# Find work programming [![Lists](https://img.shields.io/badge/-more%20lists-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://github.com/learn-anything/curated-lists)
+
+> Curated list of websites and resources to find work programming
+
+_Please read [contribution guidelines](contributing.md) before contributing._
+
+- [Prepare](#prepare)
+- [Make CV](#make-cv)
+- [Find work](#find-work)
+- [Find work by technology](#find-work-by-technology)
+  - [iOS](#ios)
+  - [Go](#go)
+  - [React](#react)
+  - [Python](#python)
+  - [Rust](#rust)
+  - [Haskell](#haskell)
+- [Find work by country](#find-work-by-country)
+  - [Netherlands](#netherlands)
+  - [Germany](#germany)
+  - [Japan](#japan)
+- [Freelancing](#freelancing)
+- [Related](#related)
+
+## Prepare
+
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university) - Complete computer science study plan to become a software engineer.
+- [Free self taught CS education](https://github.com/ossu/computer-science) - Path to a free self-taught education in Computer Science.
+- [Everything you need to get the job](https://github.com/kdn251/interviews)
+- [LeetCode problems](https://leetcode.com) - Many problems geared for solving actual programming interview questions.
+- [Learn Anything](https://learn-anything.xyz) - Best paths for learning any topic including CS, programming and algorithms.
+- [Algorithms](https://github.com/marcosfede/algorithms) - Solved algorithms and data structures problems in many languages.
+- [30 Seconds of Interviews](https://github.com/fejes713/30-seconds-of-interviews)
+
+## Make CV
+
+- [Awesome CV](https://github.com/posquit0/Awesome-CV) - Great LaTeX template.
+- [Deedy Resume](https://github.com/deedy/Deedy-Resume)
+
+## Find work
+
+- [HN: Who is Hiring](https://kennytilton.github.io/whoishiring/) - Search & filter through monthly `HN: Who is hiring?` postings.
+- [Otta](https://otta.co/) - Discover the most relevant roles for you at all of London's best startups.
+- [findwork.dev](https://findwork.dev) - Jobs aggregator which collects data from Hacker News, Github, Stackoverflow.
+- [Who is Hiring](https://whoishiring.io)
+- [Angel List](https://angel.co/jobs)
+- [LinkedIn Jobs](https://www.linkedin.com/jobs/)
+- [Stack Overflow Jobs](https://stackoverflow.com/jobs)
+- [Glassdoor](https://www.glassdoor.com)
+- [Hired](https://hired.com/)
+- [Unicorn Hunt](https://unicornhunt.io/)
+- [Relocate me](https://relocate.me/)
+- [Landing Jobs](https://landing.jobs/)
+- [Remote OK](https://remoteok.io)
+- [Indeed](https://www.indeed.com)
+- [Loom](http://www.loom.co/) - Connecting companies and top freelancers.
+- [Product Hunt Jobs](https://www.producthunt.com/jobs)
+- [Remote](https://remote.com/) - Remote jobs for anyone, anywhere.
+- [Go Remote](https://goremote.io/)
+- [We Work Remotely](https://weworkremotely.com/)
+- [Hiring Without Whiteboards](https://github.com/poteto/hiring-without-whiteboards)
+- [Key Values](https://www.keyvalues.com/) - Find engineering teams that share your values.
+- [Future Jobs](https://www.futurejobs.io/) - The best machine learning, AI, and data science jobs, in one place.
+- [CalmJobs](http://calmjobs.io/) - Work with companies who values work-life balance.
+- [Xpo Jobs](https://jobs.xpo.network/)
+- [FOSS Jobs](https://www.fossjobs.net/) - Free & Open Source Jobs.
+- [co-hire](https://www.co-hire.com/) - Simple way for technical people to speak directly with technology companies.
+- [EntryLvl](https://entrylevel.io/) - Browse through entry level job opportunities and find your match. ([HN](https://news.ycombinator.com/item?id=22691295))
+- [Y Combinator's list of most active hiring companies on Work at a Startup](https://www.workatastartup.com/job_list?utm_source=hn_jobs)
+- [NoiceJobs: Senior Remote Jobs](https://t.me/NoiceJobs) ([HN](https://news.ycombinator.com/item?id=23500588))
+- [Remoteleaf](https://remoteleaf.com/) - Receive hand-picked remote jobs delivered straight to your inbox.
+
+## Find work by technology
+
+### iOS
+
+- [Swift Jobs](https://www.natashatherobot.com/swift-jobs/)
+- [Xcode Jobs](https://twitter.com/xcodejobs)
+- [iOS Jobs](https://iosjobs.io/)
+- [iOS Indeed Jobs](https://www.indeed.com/q-iOS-developer-jobs.html)
+- [SO iOS Jobs](https://stackoverflow.com/jobs?q=ios)
+- [LinkedIn iOS Jobs](https://www.linkedin.com/jobs/ios-developer-jobs/)
+- [iOS Dev Jobs](https://iosdevjobs.com/) - Has newsletter too.
+
+### Go
+
+- [Go Jobs & Developers](https://www.golangprojects.com)
+- [Stack overflow: Jobs using Go](https://stackoverflow.com/jobs/developer-jobs-using-go?med=site-ui&ref=tag-page_go)
+
+### React
+
+- [Reactiflux Jobs](http://jobs.reactiflux.com/)
+- [Key Values: React Developer Jobs](https://www.keyvalues.com/react-developer-jobs)
+
+### Python
+
+- [Py Jobs](http://www.pyjobs.xyz/) - Search and post Python jobs all over the globe.
+- [Free Python Job Board](http://pythonjobs.github.io/)
+
+### Rust
+
+- [Companies using Rust](https://www.rust-lang.org/en-US/friends.html)
+- [This week in Rust](https://this-week-in-rust.org/) - Weekly Rust newsletter that has Jobs section.
+
+### Haskell
+
+- [Haskell companies](https://github.com/erkmos/haskell-companies) - Curated list of companies using Haskell in industry.
+
+
+## Freelancing
+
+- [The Remote Freelancer](https://github.com/engineerapart/TheRemoteFreelancer) - List of community-curated resources to find topical remote freelance & contract work.
+
+## Related
+
+- [CS career questions EU wiki](https://www.reddit.com/r/cscareerquestionsEU/wiki/index)
+- [Few notes about web developer's interviews](http://blog.sapegin.me/all/coding-interview)
+- [Finding work wiki](https://wiki.nikitavoloboev.xyz/work/finding-work)
+- [Remote work wiki](https://wiki.nikitavoloboev.xyz/work/remote-work)
+- [Search the last 'Who is hiring?' thread](https://hnjobs.emilburzo.com/)
+
+[![CC4](https://img.shields.io/badge/license-CC4-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://creativecommons.org/licenses/by/4.0/)
+[![Lists](https://img.shields.io/badge/-more%20lists-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://github.com/learn-anything/curated-lists)
+[![Contribute](https://img.shields.io/badge/-contribute-0a0a0a.svg?style=flat&colorA=0a0a0a)](contributing.md)
+[![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+
+
+
+
+
+### [Leetcode/README.md](Leetcode/README.md)
+
 # Tech Interview 
 - [Tech Interview](#tech-interview)
 - [<a id="asymptotic-notation"></a>Asymptotic Notation](#asymptotic-notation)
@@ -3732,3 +20771,2044 @@ const myObject = {}
 myObject.prop = "hello!" // No error
 myObject = "hello" // Error
 ```
+
+
+</details><details> <summary>notes-n-resources/</summary>
+
+### [notes-n-resources/awesome-interview-questions.md](notes-n-resources/awesome-interview-questions.md)
+# Awesome Competitive Programming [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+A curated list of awesome `Competitive Programming`, `Algorithm` and `Data Structure` resources.
+
+Created with a view to connecting people to information, this list below contains a complete collection of all the fantastic resources I've collected over the course of my 11-year competitive programming career. I hope you'll find it useful :)
+
+
+
+
+## Table of Contents
+
+* [List of Lists](#list-of-lists)
+* [Syllabuses](#syllabuses)
+* [Tutorial Websites](#tutorial-websites)
+* [Open Courses](#open-courses)
+    * [Open Courses for Algorithms and Data Structures](#open-courses-for-algorithms-and-data-structures)
+* [Books](#books)
+    * [Books for Algorithms](#books-for-algorithms) | [Books for Mathematics](#books-for-mathematics)
+* [Sites for Practice](#sites-for-practice)
+    * [Problem Classifiers](#problem-classifiers) | [Contest Calendars](#contest-calendars)
+* [Camps and Trainings](#camps-and-trainings)
+* [Sites for Questions](#sites-for-questions)
+* [Implementations](#implementations)
+* [Language Specifics](#language-specifics)
+    * [C/C++](#cc) | [Java](#java) | [Miscellaneous](#miscellaneous)
+* [Tools](#tools)
+    * [IDEs](#ides) | [Personal use](#personal-use) | [Contest Preparation](#contest-preparation)
+* [Community](#community)
+    * [Blogs](#blogs) | [Youtube and Livestreams](#youtube-and-livestreams) | [Quora](#quora)
+* [Other Awesome Resources](#other-awesome-resources) 
+    * [Articles](#articles) | [FAQs](#faqs) | [Awesome Lists](#awesome-lists) | [Interview Questions](#interview-questions)
+* [License](#license)
+
+
+## List of Lists
+> Awesome curated lists classified by topics.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Good Blog Post Resources about Algorithm and Data Structures - Codeforces](http://codeforces.com/blog/entry/13529) | A collection of fantastic tutorial blog posts written by Codeforces users. Some intriguing ones include Palindromic Trees, Policy Based Data Structures, and a lot more. |
+| ★★★ | [All of the good tutorials found on codeforces - Codeforces](http://codeforces.com/blog/entry/57282) | Another good collection of tutorial blog posts written by Codeforces users. |
+| ★★★ | [Data Structures and Algorithms - CodeChef Discuss](https://www.quora.com/What-is-a-list-of-data-structures-that-a-competitive-programmer-must-know/answer/Sameer-Gulati-3) | A very complete list of competitive programming resources. A must-have in your browser bookmark. |
+| ★★★ | [How to prepare for ACM - ICPC? - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/) | A detailed walk-through of the preparations for ACM-ICPC. |
+
+
+## Syllabuses
+> Find out what topics you need to learn.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [IOI Syllabus](https://people.ksp.sk/~misof/ioi-syllabus/) | A detailed syllabus on which IOI contestants will be tested. This is still somewhat relevant to ACM-ICPC. |
+| ★★★ | [How to prepare for ACM - ICPC? - GeeksforGeeks](https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/) | A detailed walk-through of the preparations for ACM-ICPC. |
+| ★★☆ | [Programming Camp Syllabus](https://docs.google.com/document/d/1_dc3Ifg7Gg1LxhiqMMmE9UbTsXpdRiYh4pKILYG2eA4/edit) | A list of important topics in competitive programming with exercise problems. |
+| ★★☆ | [Juniors Training Sheet](https://goo.gl/unDETI), by [Mostafa Saad Ibrahim](https://sites.google.com/site/mostafasibrahim/) | ~800 ordered problems for newcomers to be good up to Div2-D |
+
+
+## Tutorial Websites
+> Awesome websites with great tutorials.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Topcoder Data Science Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/) | A list of tutorials written by respected Topcoder members. Many top programmers started learning data sciences from here. |
+| ★★★ | [E-Maxx (Russian)](http://e-maxx.ru/algo/), [(English)](http://cp-algorithms.com/) | A tutorial website widely used and referenced in the Russian-speaking competitive programming community. Most of the articles of the original site have been translated into English, Google Translate works okay for the remaining ones. |
+| ★★☆ | [Algorithms - GeeksforGeeks](https://www.geeksforgeeks.org/fundamentals-of-algorithms/) | A website with a large archive of nicely written articles on different topics. It is a great complimentary resource for algorithm courses. |
+| ★★☆ | [PEGWiki](http://wcipeg.com/wiki/Special:AllPages) | A website with amazing in-depth wiki-like writeups on many topics. It's far better than those on Wikipedia in my opinion. |
+| ★★☆ | [Notes - HackerEarth](https://www.hackerearth.com/practice/notes/trending/) | A great crowdsourcing platform for tutorials. Also visit [Code Monk](https://www.hackerearth.com/practice/codemonk/). |
+| ★★☆ | [USA Computing Olympiad (USACO)](http://www.usaco.org/) | Contains several training pages on its website which are designed to develop one's skills in programming solutions to difficult and varied algorithmic problems at one's own pace. |
+| ★★☆ | [basecs](https://medium.com/basecs) | A blog with in-depth, illustrated tutorials on basic algorithms and data structures. |
+| ★★☆ | [Competitive Programming - Commonlounge](https://www.commonlounge.com/discussion/d4a14f601eb44281b6c579e73d126cca/main?r=acp) | Short video tutorials for beginner and intermediate concepts. Advanced tutorials selected from the best ones available on various CP blogs. |
+| ★☆☆ | [OLYMPIADS IN INFORMATICS](https://www.mii.lt/olympiads_in_informatics/index.html) | An international journal focused on the research and practice of professionals who are working in the field of teaching and learning informatics to talented student. |
+| ★☆☆ | [algolist (Russian)](http://algolist.manual.ru/) | A Russian website devoted to algorithms of all sorts. Some topics listed on this website seems pretty interesting. |
+| ★★☆ | [演算法筆記 (Algorithm Notes) (Chinese)](http://web.ntnu.edu.tw/~algo/) | One of the most popular tutorial websites among the Taiwanese competitive programming community. The maintainer for this website spends immense efforts on researching algorithms. |
+| ★★☆ | [国家集训队论文 1999-2015 (Papers from Chinese IOI training camps) (Chinese)](http://download.csdn.net/album/detail/657/1/1) | Papers from the Chinese IOI training camps. It's interesting for the fact that one can tell different regions emphasize different things. |
+| ★★★ | [Mini-Editorials](https://github.com/mostafa-saad/MyCompetitiveProgramming), by [Mostafa Saad Ibrahim](https://sites.google.com/site/mostafasibrahim/) trainees | Solutions with mini-editorials for many problems, including UVA/SPOJ/IOI/Olympiad problems |
+| ★★☆ | [OI Wiki (Competitive Programming) (Chinese)](https://oi-wiki.org/) | OI Wiki is committed to being a free and open continuously updated programming competition (competitive programming) knowledge integration site. This wiki is a sort of companion or guide for the competitive programmer who's trying to learn something |
+
+
+## Open Courses
+> Consider beginning your competitive programming journey with these awesome courses!
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★☆ | [Code Monk](https://www.hackerearth.com/practice/codemonk/), by HackerEarth | A fantastic step-by-step tutorial on the essential topics in competitive programming. |
+| ★★★ | [Stanford CS 97SI: Introduction to Competitive Programming Contests](http://web.stanford.edu/class/cs97si/) | Offers comprehensive lecture slides and a short list of exercise problems. |
+| ★★☆ | [How to Win Coding Competitions: Secrets of Champions](https://www.edx.org/course/how-to-win-coding-competitions-secrets-of-champions-0) | A course by ITMO University on competitive coding on edX.|
+| ★★☆ | [Codechef's Indian Programming Camp](https://www.youtube.com/playlist?list=PLi0ZM-RCX5nsTc2Z6woHr5qoF6n3b-thO) | Video Lectures from [Codechef's Indian Programming Camp 2016](https://blog.codechef.com/2016/08/03/lectures-from-indian-coding-camp/). Lectures given by top competitive programmers like Sergey Kulik, Kevin Charles Atienza and Anudeep Nekkanti. Primarily focused on exploring these concepts by applying them to actual competitive contest problems. |
+| ★★☆ | [Reykjavik T-414-ÁFLV: A Competitive Programming Course](https://algo.is/competitive-programming-course/) | An awesome course taught by [Bjarki Ágúst Guðmundsson (SuprDewd)](https://algo.is). These lectures feature neat slides and a nice list of problems to practice. |
+| ★★☆ | [NCTU DCP4631: Problem Solving and Programming Techniques](https://sites.google.com/site/mzshieh/courses/problem-solving-and-programming-techniques-spring-2014) | A course on basic topics featuring good lecture slides. |
+| ★☆☆ | [Materials (English)](https://github.com/mostafa-saad/ArabicCompetitiveProgramming) from [Arabic Competitive Programming YouTube Channel](https://www.youtube.com/user/nobody123497) | Some materials (slides & source codes) covering a broad range of algorithmic topics by Mostafa Saad Ibrahim. |
+
+### Open Courses for Algorithms and Data Structures
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [prakhar1989/awesome-courses#algorithms](https://github.com/prakhar1989/awesome-courses#algorithms) | A fantastic list of open courses offered by notable institutions (MIT, Stanford, UC Berkeley ... etc.). |
+| ★★★ | [MIT SMA 5503: Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/) | Lectured by Prof. Charles Leiserson (one of the coauthors of Introduction to Algorithms) and Prof. Erik Demaine (a brilliant professor who has made remarkable breakthroughs in data science), the course offers great materials, accompanied by intuitive and comprehensive analyses. |
+| ★★☆ | [UIUC Algorithm Course](http://jeffe.cs.illinois.edu/teaching/algorithms/) | lecture notes, homeworks, exams, and discussion problems covering a broad range of algorithmic topics |
+
+
+## Books
+> A list of recommended books for competitive programming.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★☆ | [Competitive Programming](https://cpbook.net/), by Steven and Felix Halim | This book contains a collection of relevant data structures, algorithms, and programming tips. It's a well-received book. ... The first edition is free for [download (pdf)](http://www.comp.nus.edu.sg/~stevenha/myteaching/competitive_programming/cp1.pdf). |
+| ★★☆ | [Programming Challenges: The Programming Contest Training Manual](https://www.amazon.com/Programming-Challenges-Contest-Training-Computer/dp/0387001638), by Steven Skiena and Miguel Revilla | This book includes more than 100 programming challenges, as well as the theory and key concepts necessary for approaching them. Problems are organized by topic, and supplemented by complete tutorial material. |
+| ★★☆ | [Competitive Programmer's Handbook](https://cses.fi/book/index.html), by Antti Laaksonen | An introduction to competitive programming for aspiring IOI and ICPC contestants. Free to [download (pdf)](https://cses.fi/book/book.pdf). |
+| ★★☆ | [Computational Geometry: Algorithms and Applications](https://www.amazon.com/Computational-Geometry-Applications-Mark-Berg/dp/3540779736), by Mark de Berg, Otfried Cheong, Marc van Kreveld, Mark Overmars | This is a well-written book which covers a broad range of computational geometry problems. |
+| ★☆☆ | [The Hitchhiker’s Guide to the Programming Contests](http://comscigate.com/Books/contests/icpc.pdf), by Nite Nimajneb | This book is free for [download (pdf)](http://comscigate.com/Books/contests/icpc.pdf). This book covers various topics relevant to competitive programming. |
+| ★★★ | [プログラミングコンテストチャレンジブック (Japanese)](http://goo.gl/M4yfbr), by 秋葉拓哉, 岩田陽一, 北川宜稔 | An absolutely phenomenal book. The contents, organized in a very coherent manner, are nothing short of amazing. ... 培養與鍛鍊程式設計的邏輯腦：世界級程式設計大賽的知識、心得與解題分享 (Chinese Traditional) |
+| ★★☆ | [算法竞赛入门经典 (Chinese)](http://www.tup.com.cn/booksCenter/book_05568701.html), by 刘汝佳 | The Art of Algorithms and Programming Contests (English), 打下好基礎：程式設計與演算法競賽入門經典 (Chinese Traditional) |
+| ★★☆ | [算法竞赛入门经典——训练指南 (Chinese)](https://www.amazon.cn/算法竞赛入门经典-训练指南-刘汝佳/dp/B009SJJGOU), by 刘汝佳, 陈锋 | 提升程式設計的解題思考力─國際演算法程式設計競賽訓練指南 (Chinese Traditional) |
+| ★★★ | [算法艺术与信息学竞赛 (Chinese)](http://goo.gl/O1tr8v), by 刘汝佳, 黄亮 | An old-time classic. It's old but the contents in this book are still considered to be very difficult by today's standards. |
+
+### Books for Algorithms
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms), by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein | Also known as CLRS (taken from name initials), this book is often referred to as the "bible" for algorithms and data structures. It's one of the most popular textbooks for university algorithm courses. This book covered various algorithms and data structures in great detail. The writing is more rigorous and can be difficult to some. |
+| ★★☆ | [Algorithm Design](http://amzn.to/VjhioK), by Jon Kleinberg and Éva Tardos | This book revolves around techniques for designing algorithms. It's well-organized and written in a clear, understandable language. Each chapter is backed with practical examples and helpful exercises. The chapter on network flow is highly praised by lots. ... The lecture slides that accompany the textbook are available on its [official website](http://www.cs.princeton.edu/~wayne/kleinberg-tardos/). |
+| ★★☆ | [The Algorithm Design Manual](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693), by Steven S. Skiena | The book is written in more readable text. Some find it comprehensive than other books. You can also find some good resources (including the author's own video lectures) on its [official website](http://www.algorist.com). |
+| ★★★ | [Algorithms](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X), by Robert Sedgewick and Kevin Wayne | This book is neatly categorized, coupled with elaborate explanations and fantastic illustrations. It is used in some IOI training camps as a textbook. |
+|     | [Algorithms and Data Structures in Action](https://www.manning.com/books/algorithms-and-data-structures-in-action), by Marcello La Rocca | This book provides a different approach to algorithms, balancing theory with a more practical angle, with a section per-chapter focusing on how to apply algorithms to real-world use cases that can be found in your daily work, or in competitive programming; it also presents a blend of classic, advanced, and new algorithms. |
+| ★★★ | [Algorithms](https://jeffe.cs.illinois.edu/teaching/algorithms/), by Jeff Erickson | A free electronic version of a self-published textbook licensed under CC by 4.0. This is a well written book from lecture notes of theoretical computer science courses at the University of Illinois. Covers the main paradigms of backtracking, dynamic programming, greedy, and particularly graphs in depth. |
+
+### Books for Mathematics
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★☆ | [Discrete Mathematics and Its Applications](https://www.amazon.com/Discrete-Mathematics-Applications-Kenneth-Rosen/dp/0072899050), by Kenneth H. Rosen | Discrete Mathematics is closely relevant to competitive programming. This book provides comprehensive materials on a wide range of topics including: Logics and Proofs, Sets, Functions, Sequences, Matrices, Number Theory, Recursion, Counting, Probability, Graphs, Trees and Boolean Alegra to name but a few. |
+| ★★☆ | [Concrete Mathematics: A Foundation for Computer Science](https://www.amazon.com/Concrete-Mathematics-Foundation-Computer-Science/dp/0201558025), by Ronald L. Graham, Donald E. Knuth, Oren Patashnik | The book offers a deeper insight into Discrete Mathematics with more emphases on number-related topics. |
+| ★★☆ | [Linear Algebra and Its Applications](https://www.amazon.com/Linear-Algebra-Its-Applications-5th/dp/032198238X/ref=sr_1_1?ie=UTF8&qid=1455475253&sr=8-1&keywords=Linear+Algebra+and+Its+Applications), by David C. Lay, Steven R. Lay, Judi J. McDonald | The book does a brilliant job at bridging the gap between a physical system (for scientists and engineers) and an abstract system (for mathematicians). |
+| ★★☆ | [Introduction to Probability](http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/book.html), by Charles M. Grinstead, J. Laurie Snell | This is a well-written introductory probabilities book. ... It's free for [download (pdf)](http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/amsbook.mac.pdf) (released under GNU Free Documentation License). |
+| ★★☆ | [How to Solve It: A New Aspect of Mathematical Method](https://www.amazon.com/How-Solve-It-Mathematical-Princeton/dp/069111966X), by G. Polya | An old-time classic. In this book, the author provides a systematic way to solve problems creatively. |
+| ★★☆ | [Intermediate Counting & Probability](https://artofproblemsolving.com/store/item/intermediate-counting), by David Patrick | Topics in counting and probability byformer USA Mathematical Olympiad winner David Patrick , topics  include inclusion-exclusion, 1-1 correspondences, the Pigeonhole Principle, constructive expectation, Fibonacci and Catalan numbers, recursion, conditional probability, generating functions, graph theory, and much more.. |
+
+
+## Sites for Practice
+> Good online judge systems / contest platforms to practice.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Codeforces](http://codeforces.com/) | Codeforces is one of, if not, the most popular contest platforms out there. Currently maintained by Saratov State University, it features regular contests and countless awesome original problems. Additionally, every contest provides immediate helpful tutorials (usually) written by the authors themselves. Codeforces also houses a strong and engaging community. All in all, one would indeed learn and improve tremendously here. |
+| ★★★ | [Topcoder](https://www.topcoder.com/) | Topcoder has been around since 2001. Rich in history, It's considered to be one of the most prestigious organizations when it comes to technology competitions. Hundreds of SRMs gave birth to an abundant problemset. Problems here are typically more challenging than others and Topcoder therefore appeals to many elite programmers. The annual Topcoder Open (TCO) is also a widely-discussed event. |
+| ★★★ | [Google Code Jam](https://code.google.com/codejam/) | Google Code Jam is certainly one of the most highly-esteemed programming competitions. The competition consists of unique programming challenges which must be solved in a fixed amount of time. Competitors may use any programming language and development environment to obtain their solutions. |
+| ★★★ | [AtCoder](https://atcoder.jp) | AtCoder is a new but phenomenal contest platform created by a team of highly-rated Japanese competitive programmers. |
+| ★★☆ | [CodeChef](https://www.codechef.com/) | CodeChef is a non-profit educational initiative of Directi. It's a global competitive programming platform and has a large community of programmers that helps students and professionals test and improve their coding skills. Its objective is to provide a platform for practice, competition and improvement for both students and professional software developers. Apart from this, it aims to reach out to students while they are young and inculcate a culture of programming in India. |
+| ★★★ | [SPOJ](https://www.spoj.com/) | The SPOJ platform is centered around an online judge system. It holds a staggering amount of problems prepared by its community of problem setters or taken from previous programming contests, some of which are great problems for practice (refer to the [Problem classifiers](#problem-classifiers) section). SPOJ also allows advanced users to organize contests under their own rules. |
+| ★★☆ | [Timus](http://acm.timus.ru/) | Timus Online Judge is the largest Russian archive of programming problems with automatic judging system. Problems are mostly collected from contests held at the Ural Federal University, Ural Championships, Ural ACM ICPC Subregional Contests, and Petrozavodsk Training Camps. |
+| ★☆☆ | [HDU](http://acm.hdu.edu.cn/) | HDU is an online judge maintained by Hangzhou Dianzi University. It's home to many classic problems from the Chinese IOI scene. |
+| ★★☆ | [Aizu Online Judge](http://judge.u-aizu.ac.jp/onlinejudge/index.jsp) | Aizu online judge is a contest platform and problem archive hosted by The University of Aizu. It has a lot of great problems from programming competitions in Japan. |
+| ★★☆ | [UVa](https://uva.onlinejudge.org/) | An old-school problem archive / online judge with rich history. Thousands of problems, including many classic ones, are featured here. However, it is strongly advised that you practice with [uHunt](https://uhunt.onlinejudge.org/id/0) following its "Competitive Programming Exercise" section. |
+| ★★☆ | [HackerRank](https://www.hackerrank.com) | HackerRank is a company that focuses on competitive programming challenges for both consumers and businesses. HackerRank's programming challenges can be solved in a variety of programming languages and span multiple computer science domains. |
+| ★★☆ | [POJ](http://poj.org/) | POJ is an online judge with many great problems maintained by Peking University. Most Chinese competitive programmers began their journey here. The platform is really dated so mysterious compilation and run-time issues may occur. |
+| ★★☆ | [Project Euler](https://projecteuler.net/) | Project Euler features a stunning set of good math problems. It also hosts a forum where people can discuss. |
+| ★☆☆ | [Hackerearth](https://www.hackerearth.com/) | HackerEarth is a startup technology company based in Bangalore, India that provides recruitment solutions. |
+| ★☆☆ | [Caribbean Online Judge](http://coj.uci.cu/index.xhtml) | COJ is hosted by University of Informatics Sciences (UCI, by its acronym in Spanish), located in Cuba. Feature ACM ICPC and Progressive contest styles, mostly from Caribbean and Latin American problem setters, also has problem classifier and contest calendar. |
+| ★★☆ | [CS Academy](https://csacademy.com) | New in the competitive programming scene, CS Academy is a growing online judge that hosts competitions once every two weeks. It supports live chat, interactive lessons and an integrated online editor (that actually works). |
+| ★★☆ | [Russian Code Cup](https://www.russiancodecup.ru/en/) | Programming competitions powered by Mail.Ru Group. Competition consists of 3 qualification, 1 elimination and 1 final rounds. For each round contestants are given 4-8 problems which must be solved in a fixed amount of time. |
+| ★★☆ | [CodeFights](https://codesignal.com/) | CodeFights is a website for competitive programming practice and interview preparation. It features daily challenges of varying difficulty, an archive of problems and regular (every 15 minutes) mini-tournaments. Good for beginners. |
+
+### Problem Classifiers
+> Sites classifying programming problems.  
+Choose a category (eg. DP) of interest and practice problems on that topic.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [A2 Online Judge](https://a2oj.com/Categories.jsp) | Mixed |
+| ★★★ | [Problem Classifier](http://problemclassifier.appspot.com/) | SPOJ |
+| ★★☆ | [UVa Online Judge](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8) | CP Book |
+| ★☆☆ | [Codeforces Tags](http://codeforces.com/problemset?tags=dp) | CF (DP) |
+| ★★☆ | [HackerRank](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=warmup) | HackerRank |
+| ★★☆ | [Juniors Training Sheet](https://goo.gl/unDETI), by [Mostafa Saad Ibrahim](https://sites.google.com/site/mostafasibrahim/) | ~800 ordered problems for newcomers to be good up to Div2-D |
+| ★★☆ | [Lucky貓的 UVA（ACM）園地 (Chinese)](http://luckycat.kshs.kh.edu.tw/) | UVa |
+| ★★☆ | [Topcoder problem archive](https://community.topcoder.com/tc?module=ProblemArchive) | List of problems with categories and complexity levels |
+
+### Contest Calendars
+> Calendars for impending programming contests.  
+(Never miss another contest!)
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Programming Contest Calendar - HackerRank](https://www.hackerrank.com/calendar) | Google Calendar export available |
+| ★★☆ | [clist.by](https://clist.by/) | API available for use |
+| ★★☆ | [Coding Calendar (Android App)](https://play.google.com/store/apps/details?id=com.limitskyapps.CodingCalendar) |  |
+| ★★☆ | [Coder's Calendar](https://github.com/nishanthvijayan/CoderCalendar): [Android App](https://play.google.com/store/apps/details?id=com.corphots.coderscalendar), [Chrome Extension](https://chrome.google.com/webstore/detail/coders-calendar/bageaffklfkikjigoclfgengklfnidll), [Firefox Add-on](https://addons.mozilla.org/en-US/firefox/addon/coder-calendar/) |  |
+| ★★★ | [CodeHorizon](http://codehorizon.star-lord.me/): [iOS App](https://itunes.apple.com/in/app/codehorizon/id925056167?mt=8), [Android App](https://play.google.com/store/apps/details?id=com.chintanghate.CodeHorizon) |  |
+
+
+## Sites for Questions
+> These are great sites to ask questions.  
+Paste your codes at [ideone](https://ideone.com/), [pastebin](https://pastebin.com/) or other sites to avoid formatting issues.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Codeforces](http://codeforces.com/) | For quick answers, Codeforces is definitely the go-to place to ask about anything competition-related. |
+| ★★★ | [Competitive Programming - Quora](https://www.quora.com/topic/Competitive-Programming) | You would typically get more elaborate answers on Quora, but you might not have your questions answered straightaway. |
+| ★★☆ | [Theoretical Computer Science Stack Exchange](https://cstheory.stackexchange.com/) | This place is generally for the academics, so don't ask questions about contest problems here. |
+
+
+### Camps and Trainings
+> Online Trainings and Camps.
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Online Free Problem-Solving Coaching](https://codeforces.com/blog/mostafa.saad.fci), by [Mostafa Saad Ibrahim](https://sites.google.com/site/mostafasibrahim/) | See the coaching details and people comments on its nature/quality.|
+
+
+## Implementations
+> Algorithm & Data structure implementations.  
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [CodeLibrary](http://code-library.herokuapp.com/), by Andrey Naumenko (indy256) | CodeLibrary contains a large collection of implementations for algorithms and data structures in Java and C++. You may also visit his [GitHub Repository](https://github.com/indy256/codelibrary). |
+| ★★★ | [spaghetti-source/algorithm](https://github.com/spaghetti-source/algorithm), by Takanori MAEHARA (@tmaehara) | High-quality implementations of many hard algorithms and data structures. |
+| ★★★ | [kth-competitive-programming/kactl](https://github.com/kth-competitive-programming/kactl), by Simon Lindholm (simonlindholm) et al. | A phenomenally organized, documented and tested team notebook from KTH Royal Institute of Technology. One of the most well-crafted team notebooks (contest libraries) I've ever seen. | 
+| ★★☆ | [jaehyunp/stanfordacm](https://github.com/jaehyunp/stanfordacm) | Stanford's team notebook is well maintained and the codes within are of high-quality. |
+| ★★☆ | [ngthanhtrung23/ACM_Notebook_new](https://github.com/ngthanhtrung23/ACM_Notebook_new), by team RR Watameda (I_love_Hoang_Yen, flashmt, nguyenhungtam) from National University of Singapore | RR Watameda represented National University of Singapore for the 2016 ACM-ICPC World Finals. The items in this notebook are pretty standard and well-organized. | 
+| ★★☆ | [bobogei81123/bcw_codebook](https://github.com/bobogei81123/bcw_codebook), by team bcw0x1bd2 (darkhh, bobogei81123, step5) from National Taiwan University | bcw0x1bd2 represented National Taiwan University for the 2016 ACM-ICPC World Finals. This notebook contains robust implementations for advanced data structures and algorithms. |
+| ★☆☆ | [foreverbell/acm-icpc-cheat-sheet](https://github.com/foreverbell/acm-icpc-cheat-sheet), by foreverbell (foreverbell) | A notebook with some advanced data structures and algorithms including some from the China informatics scene. |
+| ★☆☆ | [igor's code archive](http://shygypsy.com/tools/), by Igor Naverniouk (Abednego) | A good notebook by Igor Naverniouk who is currently a software engineer at Google and part of the Google Code Jam team. |
+
+
+## Language Specifics
+> Languages and other miscellaneous knowledge.
+
+### C/C++
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★☆ | [Power up C++ with the Standard Template Library - Topcoder: Part 1](https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/), [Part 2](https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-2/) | An introductory tutorial on basic C++ STLs. |
+| ★★☆ | [Yet again on C++ input/output - Codeforces](http://codeforces.com/blog/entry/5217) | Learn more about C++ I/O optimizations. |
+| ★★☆ | [C++ Tricks - Codeforces](http://codeforces.com/blog/entry/15643) ... [What are some cool C++ tricks to use in a programming contest? - Quora](https://www.quora.com/Competitive-Programming/What-are-some-cool-C++-tricks-to-use-in-a-programming-contest) | Plentiful C++ tricks for competitive programming. Note that some should be used with care. |
+| ★★★ | [C++ STL: Policy based data structures - Codeforces: Part 1](http://codeforces.com/blog/entry/11080), [Part 2](http://codeforces.com/blog/entry/13279) | Detailed introduction to the extra data structures implemented in GNU C++. The official documentation can be found [here](https://gcc.gnu.org/onlinedocs/libstdc++/ext/pb_ds/). |
+| ★☆☆ | [C++11 FAQ (English, Chinese, Russian, Japanese, Korean)](http://www.stroustrup.com/C++11FAQ.html) | A list of FAQs regarding C++11 collected and written by Bjarne Stroustrup, the creator of C++. |
+
+### Java
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★☆ | [How to read input in Java — tutorial - Codeforces](http://codeforces.com/blog/entry/7018) | Learn how to read input faster. This is a must-read for those who intend to use Java for competitive programming |
+| ★★☆ | [How to sort arrays in Java and avoid TLE - Codeforces](http://codeforces.com/blog/entry/7108) | Some tips on how to avoid hitting the worst case of quick sort |
+| ★★☆ | [BigNum arithmetic in Java — Let's outperform BigInteger! - Codeforces](http://codeforces.com/blog/entry/17235) | A basic but faster custom BigInteger class |
+| ★★☆ | [EZ Collections, EZ Life (new Java library for contests) - Codeforces](http://codeforces.com/blog/entry/14328) | A Java library for contests written by Alexey Dergunov (dalex). ArrayList, ArrayDeque, Heap, Sort, HashSet, HashMap, TreeSet, TreeMap, TreeList and pair classes are implemented |
+
+### Miscellaneous
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [Bit Twiddling Hacks](https://graphics.stanford.edu/~seander/bithacks.html) | A huge compiled list of bit manipulation tricks. |
+| ★★★ | [Comparing Floating Point Numbers, 2012 Edition - Random ASCII](https://randomascii.wordpress.com/2012/02/25/comparing-floating-point-numbers-2012-edition/) | Everything you need to know about floating point numbers. A must read especially for geometry topics. |
+| ★★☆ | [Object-Oriented C Style Languages: C++, Objective-C, Java, C# - a side-by-side reference sheet](http://hyperpolyglot.org/cpp) | A detailed side-by-side reference sheet for common syntaxes. |
+
+
+## Tools
+> Awesome tools that will make your life easier.
+
+### IDEs
+
+| ☆ | Name | Platform | Description |
+| --- | --- | --- | --- |
+| ★★★ | [Vim](https://www.vim.org/download.php) | CLI / Cross-Platform | Vim is one of the most popular text editors among advanced programmers. It allows text-editing to be done very efficiently with solely keystrokes. Vim is also highly configurable, extensible and integrates with shells (command lines) really well. The only setback about Vim is that it has a high learning curve for beginners. |
+| ★★★ | [Emacs](https://www.gnu.org/software/emacs/download.html) | CLI / Cross-Platform | Emacs is another popular text editor (or development environment to be more precise). The debate on "Vim vs. Emacs" is constantly brought up due to their popularity. Basically Emacs is more than just a text editor. It has plugins like file managers, web browsers, mail clients and news clients that allows users to performs these tasks directly inside Emacs. Emacs is "heavier" because of this, but it arguably has a relatively easier learning curve for beginners. |
+| ★★★ | [Far Manager](https://www.farmanager.com/download.php?l=en) | Hybrid / Windows | Far Manager is the most widely-used editor in the RU/CIS competitive programming community. It's actually a file manager in its bare bones, but you can install [FarColorer](http://colorer.sourceforge.net/farplugin.html) - a syntax highlighter plugin to program on it. Properly configured, Far Manager allows you to navigate between files very efficiently while writing your codes. |
+| ★★★ | [Code::Blocks](http://codeblocks.org/downloads) | GUI / Cross-Platform | Code::Blocks is the go-to IDE for C/C++. It's a full-fledged, versatile IDE with numerous great features. Code::Blocks is usually provided along with Vim in programming contests. |
+| ★★★ | [IntelliJ IDEA](https://www.jetbrains.com/idea/#chooseYourEdition) | GUI / Cross-Platform | IntelliJ IDEA is certainly one of the best IDEs for Java. It's used by most competitive programmers who use Java as their main language. Be sure to check out [CHelper](https://plugins.jetbrains.com/plugin/7091-chelper), a very handy plugin written for programming contests. |
+| ★★☆ | [Sublime Text](https://www.sublimetext.com/3) | GUI / Cross-Platform | Sublime Text is an extraordinary text editor. Packed with powerful and innovative features like Multiple Carets, Minimaps and Command Palletes, it attracts a strong and engaging community. Sublime Text is highly extensible, so be sure to have [Package Control](https://packagecontrol.io/) installed and explore perhaps one of the largest catalogue of plugins! |
+| ★★☆ | [Eclipse](https://www.eclipse.org/downloads/) | GUI / Cross-Platform | Eclipse is another good IDE for Java. It's an okay alternative to Intellij IDEA (A tad inferior to IDEA by today's standards). Sometimes contests only provide Eclipse for some reason, so this might be a good incentive to try and use Eclipse. |
+| ★★☆ | [CLion](https://www.jetbrains.com/clion/download/) | GUI / Cross-Platform | CLion, produced by JetBrains - the same company who made Intellij IDEA, is a powerful IDE for C++. Free educational licenses are available OR you can try out their [EAP (Early Access Program)](https://confluence.jetbrains.com/display/CLION/Early+Access+Program) which is still free as of Apr, 2018. You may want to turn off its code inspection feature as it will cause quite a bit of lag. |
+| ★☆☆ | Other IDEs | Mixed | [Visual Studio](https://visualstudio.microsoft.com/vs/community/) is the IDE to use in case you want to code in C#. ... Both [Atom](https://atom.io/) and [Visual Studio Code](https://code.visualstudio.com/) are built with Electron (written in JavaScript) and therefore somewhat resource-hogging. ... [CodeLite](https://codelite.org/) is a newly rising IDE. Beware that the load-up and project-creation times can be extraordinary. | 
+
+### Personal use
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [VisuAlgo](https://visualgo.net/en) | A website featuring a large collection of visualization tools for algorithms and data structures. |
+| ★★★ | General Practice Helpers: ... [CHelper](https://plugins.jetbrains.com/plugin/7091-chelper) (IntelliJ IDEA) ([manual](http://codeforces.com/blog/entry/3273)) ... [caide](https://github.com/slycelote/caide) (Visual Studio, CodeLite, standalone command line app) ... [JHelper](http://codeforces.com/blog/entry/13369) (AppCode, CLion) [online-judge-tools](https://github.com/kmyk/online-judge-tools) (Stand alone CLI tool, It is actively maintained.) | Great tools that parse contests, inline library codes and provide testing frameworks. They save you from spending your precious time on switching windows and copy-pasting back and forth. |
+| ★★☆ | Codeforces Parsers: ... [Codeforces Parser](https://github.com/johnathan79717/codeforces-parser) ... [GoCF](https://github.com/sukeesh/GoCF) ... [cfparser](https://github.com/gnull/cfparser) (emacs) [cfparser](https://github.com/ikatanic/cfparser) (cli) | These tools parse Codeforces contest problems and help run sample tests. |
+| ★★★ | [The On-Line Encyclopedia of Integer Sequences (OEIS)](https://oeis.org/) | A stunning encyclopedia with a database of countless integer sequences. It also features a powerful search engine. Sometimes a seemingly difficult combinatorics problem could be equivalent to a simple or studied integer sequence. |
+| ★★☆ | Syntax Highlighters: ... [tohtml.com](https://tohtml.com/) ... [markup.su](http://markup.su/highlighter/) ... [hilite.me](http://hilite.me/) | Very handy for creating slides or team notebooks with pretty, formatted code snippets. Just copy the highlighted code snippets and paste them in your favorite WYSIWYG (What-You-See-Is-What-You-Get) editor! |
+| ★★☆ | Code Sharing: ... [Ideone.com](https://ideone.com/) ... [Pastebin.com](https://pastebin.com/) ... [Ubuntu Pastebin](https://paste.ubuntu.com/) | These tools generate semi-permanent pages for code sharing. Very useful especially when you're trying to get someone else to look into your code. |
+| ★★☆ | [Ineffable](http://codeforces.com/blog/entry/19083) | A simple command-line grader for local grading. |
+| ★★☆ | [uDebug](https://www.udebug.com/) | A platform that provides expected outputs for user-specified inputs to problems on the UVa Online Judge. Some problems also provide additional test cases for debugging. |
+
+### Contest Preparation
+
+| ☆ | Name | Description |
+| --- | --- | --- |
+| ★★★ | [polygon](https://polygon.codeforces.com/) | polygon provides a platform and a rich set of tools for professional contest preparation. ... An example: [Validators with testlib.h - Codeforces](http://codeforces.com/blog/entry/18426) |
+| ★★☆ | [Graph Editor](https://csacademy.com/app/graph_editor/) | A fantastic tool to create and visualize graphs. |
+| ★★☆ | [tcframe](https://github.com/ia-toki/tcframe) | A C++ framework for generating test cases of competitive programming problems. |
+| ★★★ | [Virtual Judge (vjudge)](http://vjudge.net) | Virtual Judge (vjudge) allows users to create virtual contests with problems from notable problem archives. |
+| ★★☆ | [BNU Online Judge](https://www.bnuoj.com/v3/) | BNU Online Judge also allows users to create virtual contests. |
+| ★★☆ | [Kattis](https://open.kattis.com/) | Kattis assists in contest preparation (E-mail them for assistance). |
+
+
+## Community
+> Meet the god-like competitive programmers!  
+Learn helpful tips, tutorials and insights from these people :)
+
+### Blogs
+
+| Name (Handle) | Blog Name |
+| --- | --- |
+| | [Codeforces blogs](http://codeforces.com/) |
+| Petr Mitrichev (Petr) | [Algorithms Weekly](https://petr-mitrichev.blogspot.com/) |
+| Makoto Soejima (rng_58) | [rng_58's blog](https://rng-58.blogspot.com) |
+| Bruce Merry (bmerry) | [Entropy always increases](http://blog.brucemerry.org.za/) |
+| Przemysław Dębiak (Psyho) | [Psyho's blog](http://psyho.gg/) |
+| Anudeep Nekkanti (anudeep2011) | [Namespace Anudeep ;)](https://blog.anudeep2011.com/) |
+| vexorian (vexorian) | [vexorian's blog](http://www.vexorian.com/) |
+| Ashar Fuadi (fushar) | [Fushar's blog](http://fusharblog.com/) |
+| LiJie Chen (WJMZBMR) | [WJMZBMR (Chinese)](http://wjmzbmr.com/) |
+| Huang I-Wen (dreamoon) | [小月的耍廢日誌 (Chinese)](http://dreamoon4.blogspot.com/) |
+| Shiang-Yun Yang (morris1028) | [Morris' Blog (Chinese)](http://morris821028.github.io/) |
+| Yuhao Du (TooDifficuIt, TooSimple, xudyh) | [xudyh (Chinese)](http://xudyh.github.io/) |
+
+### Youtube and Livestreams
+
+| Name (Handle) | Link |
+| --- | --- |
+| Petr Mitrichev (Petr) | [Youtube](https://www.youtube.com/channel/UCdmeooqNtlN7IhrKlq7hGDA) |
+| Gate Lectures by Ravindrababu Ravula | [Youtube](https://www.youtube.com/channel/UCJjC1hn78yZqTf0vdTC6wAQ) |
+| Mostafa Saad Ibrahim (mostafa.saad.fci) | [Competitive Programming Youtube (Arabic Speech-English Text)](https://www.youtube.com/user/nobody123497) |
+| Tushar Roy | [Youtube](https://www.youtube.com/user/tusharroy2525), with many tutorial videos. |
+| GeeksforGeeks | [Youtube](https://www.youtube.com/channel/UC0RhatS1pyxInC00YKjjBqQ) |
+| Algorithms Live! | [Youtube](https://www.youtube.com/channel/UCBLr7ISa_YDy5qeATupf26w)|
+| CodeChef | [Youtube](https://www.youtube.com/user/codechefofficial/featured) |
+| HackerRank | [Youtube](https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww/videos) |
+| IDeserve | [Youtube](https://www.youtube.com/channel/UCMNkvKnD3mo3Jj9eTwJllWw/featured) |
+| code_report | [Youtube](https://www.youtube.com/channel/UC1kBxkk2bcG78YBX7LMl9pQ), with contest updates and problem tutorials of HackerRank, LeetCode, Topcoder and Codeforces. |
+| "Sothe" the Algorithm Wolf | [Youtube](https://www.youtube.com/channel/UCwsapfci2p1oDVO4Q2sJOQw) |
+| Egor Kulikov (Egor) | [Youtube](https://www.youtube.com/channel/UCjlLfxSPkYluCDetlwbLpjQ) |
+| Adam Bardashevich (subscriber) | [Youtube](https://www.youtube.com/channel/UCc4jWVeWjUfpUo8z4PHfopw) |
+| Bohdan Pryshchenko (I_love_Tanya_Romanova) | [Twitch](https://www.twitch.tv/lebron_stream), [Youtube](https://www.youtube.com/channel/UCWqqnonyL7aVeUYl5Yp8TrQ) |
+| Vladimir Smykalov (enot.1.10) | [Twitch](https://www.twitch.tv/enot110), [Youtube](https://www.youtube.com/channel/UCWEVsnIXiD5mgWM0LFwZBzA) |
+| Aleksandar Abas (Alex7) | [Youtube](https://www.youtube.com/channel/UCQ5k0-BMFhfvfJQik1r5ZVw) |
+| Mikhail Tikhomirov (Endagorion) | [Youtube](https://www.youtube.com/user/Endagorion/) |
+| Kamil Debowski (Errichto) | [Youtube](https://www.youtube.com/channel/UCBr_Fu6q9iHYQCh13jmpbrg) |
+| David Harmeyer (SecondThread) | [Youtube](https://www.youtube.com/channel/UCXbCohpE9IoVQUD2Ifg1d1g) |
+| mycodeschool   |  [Youtube](https://www.youtube.com/user/mycodeschool) |
+| William Lin (tmwilliamlin168) | [Youtube](https://www.youtube.com/channel/UCKuDLsO0Wwef53qdHPjbU2Q) |
+
+### Quora
+> Visit [Competitive Programming - Quora](https://www.quora.com/topic/Competitive-Programming) ([Top 10 Most Viewed Writers](https://www.quora.com/topic/Competitive-Programming/writers)).
+
+| Important Community Figures | Description |
+| --- | --- |
+| [Bill Poucher](https://www.quora.com/profile/Bill-Poucher) | Executive Director of [ACM-ICPC](https://icpc.baylor.edu). CS Professor at Baylor University. | 
+| [Michal Forišek (misof)](https://www.quora.com/profile/Michal-Fori%C5%A1ek) | Organizer of [IPSC](https://ipsc.ksp.sk) and [IOI](https://ioinformatics.org/). CS Teacher at Comenius University in Slovakia. Algorithm and CS Education Researcher. Former highly-rated competitive programmer. |
+| [Ahmed Aly (ahmed_aly)](https://www.quora.com/profile/Ahmed-Aly) | Founder of [A2OJ](https://www.quora.com/profile/Ahmed-Aly). [HackerRank](https://www.hackerrank.com) Lead Software Engineer. Former member of the [Google Code Jam](https://code.google.com/codejam/) team. |
+
+| Competitive Programmers |  |  |  
+| --- | --- | --- |  
+| [Thanh Trung Nguyen (I_love_Hoang_Yen)](https://www.quora.com/profile/Thanh-Trung-Nguyen) | [Brian Bi (bbi5291)](https://www.quora.com/profile/Brian-Bi) | [Jonathan Paulson (jonathanpaulson)](https://www.quora.com/profile/Jonathan-Paulson) |  
+| [Miguel Oliveira (mogers)](https://www.quora.com/profile/Miguel-Oliveira-2) | [Egor Suvorov (yeputons)](https://www.quora.com/profile/Egor-Suvorov) | [Michal Danilák (Mimino)](https://www.quora.com/profile/Michal-Danil%C3%A1k) |  
+| [Bohdan Pryshchenko (I_love_Tanya_Romanova)](https://www.quora.com/profile/Bohdan-Pryshchenko) | [Vladimir Novakovski (vnovakovski)](https://www.quora.com/profile/Vladimir-Novakovski) | [Nick Wu (xiaowuc1)](https://www.quora.com/profile/Nick-Wu-4) |  
+| [Cosmin Negruseri](https://www.quora.com/profile/Cosmin-Negruseri) | [Lalit Kundu (darkshadows)](https://www.quora.com/profile/Lalit-Kundu) | [Ashish Kedia (ashish1294)](https://www.quora.com/profile/Ashish-Kedia) |  
+| [Johnny Ho (random.johnnyh)](https://www.quora.com/profile/Johnny-Ho) | [Joshua Pan (lonerz)](https://www.quora.com/profile/Joshua-Pan-1) | [Anudeep Nekkanti (anudeep2011)](https://www.quora.com/profile/Anudeep-Nekkanti) |  
+| [Steven Hao (stevenkplus)](https://www.quora.com/profile/Steven-Hao) | [Raziman T.V. (razimantv)](https://www.quora.com/profile/Raziman-T-V) |  |
+
+
+## Other Awesome Resources
+
+### Articles
+> Informative and helpful articles
+
+| Subject |
+| --- |
+| [Overview of Programming Contests](http://psyho.gg/overview-of-programming-contests/), by Przemysław Dębiak (Psyho) |
+| [The 'science' of training in competitive programming - Codeforces](http://codeforces.com/blog/entry/17842), by Thanh Trung Nguyen (I_love_Hoang_Yen) |
+| [If you ask me how to improve your algorithm competition skill, I will give you the link of this blog. - Codeforces](http://codeforces.com/blog/entry/16599), by Huang I-Wen (dreamoon) |
+| [How to prepare for ACM - ICPC? - GeeksforGeeks](http://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/), by Vishwesh Shrimali |
+| [Complete reference to competitive programming - HackerEarth](https://www.hackerearth.com/getstarted-competitive-programming/), by Ravi Ojha |
+| [Getting started with the sport of competitive programming - HackerEarth](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/), by Triveni Mahatha |
+
+### FAQs
+> Fine answers to frequently-asked questions 
+
+| Question |
+| --- |
+| [How do I start competitive programming? - Quora](https://www.quora.com/How-do-I-start-competitive-programming-5) |
+| [How can I become good at competitive programming? - Quora](https://www.quora.com/How-can-I-become-good-at-competitive-programming-Are-there-any-courses-that-will-take-me-one-step-forward-before-I-start-doing-SPOJ-or-TopCoder-problems) ... [What is the best strategy to improve my skills in competitive programming in 2-3 months? - Quora](https://www.quora.com/What-is-the-best-strategy-to-improve-my-skills-in-competitive-programming-in-2-3-months) ... [What is a good 6 month plan to start and progress through competitive programming? - Quora](https://www.quora.com/What-is-a-good-6-month-plan-to-start-and-progress-through-competitive-programming) |
+| [How is competitive programming different from real-life programming? - Quora](https://www.quora.com/How-is-competitive-programming-different-from-real-life-programming) |
+| [What have you gained from competitive programming? - Quora](https://www.quora.com/What-have-you-gained-from-competitive-programming) |
+
+### Awesome Lists
+> Relevant awesome lists
+
+| Name | Link |
+| --- | --- |
+| C++ Books | [The Definitive C++ Book Guide and List - Stack Overflow](https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list)
+| Java Books | [What are the best books to learn Java? - Quora](https://www.quora.com/What-are-the-best-books-to-learn-Java) |
+| Advanced Java Books | [What is the best book for advanced Java programming? - Quora](https://www.quora.com/What-is-the-best-book-for-advanced-Java-programming) |
+| Algorithms | [tayllan/awesome-algorithms](https://github.com/tayllan/awesome-algorithms) |
+| Algorithm Visualization | [enjalot/algovis](https://github.com/enjalot/algovis) |
+| Math | [rossant/awesome-math](https://github.com/rossant/awesome-math) |
+| C++ | [fffaraz/awesome-cpp](https://github.com/fffaraz/awesome-cpp) |
+| Java | [akullpp/awesome-java](https://github.com/akullpp/awesome-java) |
+| Courses | [prakhar1989/awesome-courses](https://github.com/prakhar1989/awesome-courses) |
+| Free Programming Books | [vhf/free-programming-books](https://github.com/EbookFoundation/free-programming-books) |
+| Community-curated C++ Resources | [Hackr.io](https://hackr.io/tutorials/learn-c-plus-plus) |
+
+### Interview Questions
+| Name | Description |
+| --- | --- |
+| [CareerCup](https://www.careercup.com) | The most popular website for software engineering interview preparation. | 
+| [InterviewBit](https://www.interviewbit.com) | Features intriguing and refreshing game-play designs which are designed to invoke one's interest in practicing. |
+| [Awesome Interviews](https://github.com/MaximAbramchuck/awesome-interview-questions) | A curated list of awesome interview questions |
+| [LeetCode](https://leetcode.com) | Well-organized website for software engineering interview preparation with best explanined solutions.  |
+
+
+
+
+### [notes-n-resources/companies-with-fair-interviews.md](notes-n-resources/companies-with-fair-interviews.md)
+
+# Hiring Without Whiteboards
+
+A list of companies (or teams) that don't do "whiteboard" interviews. "Whiteboards" is used as a metaphor, and is a _symbol_ for the kinds of CS trivia questions that are associated with bad interview practices. Whiteboards are not bad – CS trivia questions are. Using sites like HackerRank/LeetCode _probably_ fall into a similar category.
+
+The companies and teams listed here use interview techniques and questions that resemble day-to-day work. For example, pairing on a real world problem or a paid/unpaid take home exercise. Read (and contribute to) [our recommendations](RECOMMENDATIONS.md) for ways to conduct better interviews.
+
+### tl;dr
+- Discussing a real world problem (with or without whiteboard) is 👍
+- Solving CS trivia, technical puzzles, riddles, brainteasers (with or without whiteboard) is 👎
+
+<a href="https://twitter.com/dhh/status/834146806594433025?lang=en"><img src="https://i.imgur.com/xJV6cF4.png" width="500" /></a>
+
+Please open a [PR](https://github.com/poteto/hiring-without-whiteboards/pull/new/master) to be added.
+
+### Duds
+
+If you've been through an interview with one of these companies recently, and your experience suggests otherwise from their description, please open a [PR](https://github.com/poteto/hiring-without-whiteboards/pull/new/master) to remove them from this list.
+
+### I want to search/sort/filter/group by X!
+
+Check out our [Airtable](https://airtable.com/shr3eGPDm3wGjT2gA)!
+
+Additions to this document that are properly formatted will automatically be pushed and added to Airtable. Keywords from the description will also be extracted. You can see (and contribute!) to the [API here](https://github.com/poteto/hww-api).
+
+### Discussion and other reads
+
+- Discussion: See [HackerNews](https://news.ycombinator.com/item?id=13874026)
+- [Finding a better alternative to the whiteboard interview](https://theoutline.com/post/1256/finding-a-better-alternative-to-the-whiteboard-interview)
+
+---
+
+## A - C
+- [Ableton](https://www.ableton.com/en/about) | Berlin, Germany | Take-home programming task (discussed via Skype), then pair programming and debugging session on-site
+- [Abstract](https://angel.co/abstract/jobs) | San Francisco, CA
+- [Accenture](https://www.accenture.com/us-en/careers) | San Francisco, CA / Los Angeles, CA / New York, NY | Technical phone discussion with architecture manager, followed by behavioral interview focusing on soft skills
+- [Accredible](https://www.accredible.com/careers) | Cambridge, UK / San Francisco, CA / Remote | Take home project, then a pair-programming and discussion onsite / Skype round.
+- [Acko](https://acko.com) | Mumbai, India | Phone interview, followed by a small take home problem. Finally a F2F or skype pair programming session
+- [Acumen](http://www.acumenci.com/joinourteam) | London, UK | Small take home test, and sit in on some sprint rituals on-site
+- [Addstones](https://www.addstones.com) | Paris, FR / Singapore, SG / Bucharest, RO / London, UK | Multiple interviews, discussion of technical background and experiences. Sometimes we do a on-site unsupervised small exercise.
+- [Adnymics](https://adnymics.com) | Munich, DE | Take home project, then work with the team for a day
+- [Adthena](http://adthena.com) | London, UK | Takehome  project and discussion on-site
+- [AdWyze](https://angel.co/adwyze/jobs) | Bangalore, India | Short takehome project + (for fulltime) onsite pairing
+- [AeroFS](https://www.aerofs.com/company/careers) | San Francisco, CA | Short takehome project + phone interview
+- [Affinity](https://affinity.recruiterbox.com/#content) | San Francisco, CA | Implementation of a children's game, then take-home project OR real-world design questions
+- [Ageno](https://ageno.pl) | Bielsko-Biala, Poland | Simple Magento Take-home project and discussion on the real world problems.
+- [AgileMD](https://angel.co/agilemd/jobs) | San Francisco, CA | Takehome project
+- [Agoda](https://careersatagoda.com/departments/technology) | Bangkok, Thailand | Take-home project, then a discussion onsite round.
+- [Agrilyst](https://agrilyst.com) | New York, NY / Remote | Short takehome project & remote pairing
+- [Airbrake](https://airbrake.io) | San Francisco, CA / Remote | Take-home project & pair on a problem similar to daily work
+- [Aiwip](http://aiwip.com) | London, UK | Skype/phone interview followed by takehome project or worksample (or whiteboard)
+- [Ajira](http://ajira.tech) | Chennai, India / Austin, TX | Take home project, then pair programming, technical discussions, cultural fit
+- [Algolia](https://www.algolia.com/careers) | Paris, France / San Francisco, CA | Takehome project & Onsite discussions and presentation
+- [all about apps GmbH](https://www.allaboutapps.at/jobs) | Vienna, Austria | 2-phase technical discussion & examination with department heads and management.
+- [Allegro](https://allegro.pl/praca) | Warsaw, Poland; Poznan, Poland; Torun, Poland; Wroclaw, Poland; Krakow, Poland | Take home, simple project. Series of 2 technical interviews (how to build things, how to solve specific, real world problem) and meeting with a team leader.
+- [Alluvium](https://alluvium.io) | Brooklyn, NY | Take-home assignment, on-site review dovetailing into collaborative project planning for extension.
+- [AlphaSights](https://engineering.alphasights.com) | London, UK / New York, NY / Remote | Initial interview, pair programming then final round with general technical questions
+- [AMAGI](https://amagi.io) | Makati, Philippines | 1) Review of your resume, portfolio, and/or GitHub profile; 2) 1 hour discussion (in-person or Skype) about your goals, experience, personal culture, and how to apply technical solutions to real problems;
+- [Analytical Flavor Systems](https://gastrograph.com) | Manhattan, New York | Code sample or take-home project, both with discussion.
+- [Apollo Agriculture](https://apolloagriculture.com) | Nairobi, Kenya/Remote | Takehome project or Worksample (or whiteboard)
+- [Applied](https://www.beapplied.com) | London, UK | Situational judgement tests focusing on real-world soft skills (online then in structured interview)
+- [Arachnys](https://angel.co/arachnys/jobs/220465-software-engineer) | London, UK | Take home test, real world pair programming
+- [Articulate](https://articulate.com/company/careers) | Remote | Take-home project & pair program on a problem similar to daily work
+- [Artsy](https://www.artsy.net/jobs#engineering) | New York, NY / London, UK / Berlin, Germany / Los Angeles, CA / Hong Kong, Hong Kong / Remote | Our process: 1) Informal chat 2) Application 3) Phone screen 4) In-person interview with 1 lead, 2 individual contributors and 1 non-engineer (30-45 mins each), focusing on your work habits and expertise as demonstrated in your previous work 5) ~4 in-depth professional reference calls (30-45 mins each).
+- [ASI Data Science](https://www.asidatascience.com/careers) | London, UK | Project to work at home, general technical questions, pair programming with engineers
+- [ASOS](https://jobs.asos.com/epostings/index.cfm?fuseaction=app.jobsearch&company_id=30071&version=1&byBusinessUnit=5) | London, UK | Take home or in-person code refactoring exercise, in-person walk-though of solution including software crafstmanship principles and design decisions, in-person freestyle architecture walk-through
+- [Ataccama](https://jobs.ataccama.com) | Prague, Czech Republic | Face to face interview (skype or onsite), coding task for 30 min, meeting with team members
+- [aTech Media](https://atech.media) | London, UK | Face to face interview, review of existing open source contributions or, if none are available, asked to write a library for something that interests them
+- [Aura Frames](https://auraframes.com/jobs?gh_src=2ef5cfa32) | New York, NY / San Francisco, CA | Simplified real-world coding task on Coderpad.io, followed by a few hours onsite writing code in our actual codebase.
+- [Aurora Solar](https://www.aurorasolar.com/careers) | San Francisco, CA |  Our process: 1) Initial phone call 2) 1 hour take home project in CoderPad along with a few essay questions relating to JavaScript, testing, etc. 3) Remote pairing session solving a problem similar to day to day work. 4) In-person interview with additional pairing exercise done on a laptop as well as culture interviews.
+- [Auth0](https://auth0.com/blog/how-we-hire-engineers) | Bellevue, WA / Buenos Aires, Argentina / Remote | Series of interviews, go over technical background and past experiences, take-home project
+- [Auto1](https://www.auto1-group.com/jobs) | Berlin, DE | Series of Skype interviews which covers general technical questions, followed by a take-home assignment
+- [Automattic](https://automattic.com/work-with-us) | Remote | short take-home real-world task, then a few weeks-long real-world, part-time, and paid project on production code
+- [AutoScout24](https://github.com/AutoScout24/hiring) | Munich, Germany | Skype interview followed by home assignment from our day-to-day business and then on-site interview including lunch with a team
+- [Avant](https://avant.com/jobs) | Chicago, IL | Pair programming interviews.
+- [Avarteq GmbH](https://www.avarteq.com/career) | Berlin, Germany / Saarbrücken, Germany | Technical interview with our developers on-site or remote followed by a work sample in a pair programming session or a previous take-home project with a follow-up discussion and detailed feedback.
+- [Avocarrot](https://www.avocarrot.com/company) | Athens, Greece | on-site real world problem discussion and pair programming
+- [Axelerant](https://www.axelerant.com/careers) | Remote | Take-home project, interviews with hr and engineering team.
+- [Axiacore](https://axiacore.com) | Bogota, Colombia | We talk about on how is your process when solving problems.
+- [Axios](https://www.axios.com/about#jobs) | Arlington, VA / New York, NY / San Francisco, CA / Remote | Take-home project, with discussion.
+- [B12](https://boards.greenhouse.io/b12#.WMlLfRIrJTa) | New York, NY | Take-home exercises and pair-programming with the team.
+- [B2W Digital](http://somos.b2wdigital.com/bit) | Rio de Janeiro, Brazil; São Paulo, Brazil | Time-boxed coding exercise at home, on-site pair programming with engineers and live software architecture challenges based on real situations.
+- [Babylon Health iOS Team](https://github.com/Babylonpartners/iOS-Interview-Demo) | London, UK | Take-home project, on-site presentation and discussion, design and product interview.
+- [Backbase](http://careers.backbase.com) | Amsterdam, Netherlands; Cardiff, Wales; London, UK; Atlanta, GA | Takehome project, interviews
+- [Badi](https://jobs.badi.com) | Barcelona, Spain | Phone Screen, Take-home project, then a discussion onsite round.
+- [Badoo](https://team.badoo.com/jobs) | London, UK | Take-home project, then a discussion onsite round.
+- [BAE Systems Applied Intelligence](https://career012.successfactors.eu/sfcareer/jobreqcareer?jobId=46145&company=BAE) | London, UK | Initial interview with experience based technical questions, second interview pair programming on problem similar to daily work
+- [Bakken & Bæck](https://bakkenbaeck.com/jobs) | Oslo, Norway; Amsterdam, Netherlands; Bonn, Germany | Skype interview followed by take-home assignment and a visit to one of our offices
+- [Balabit](https://career.balabit.com) | Budapest, Hungary | Take-home project (medium size, with restrictions, e.g. only stdlib may be used), then discussion on-site
+- [Barracuda View Team](https://www.barracuda.com/company/careers) | Chelmsford, MA / Remote | Phone screen, remote pair programming session, technical discussion interview, culture fit interview
+- [Basecamp](https://basecamp.com/about/jobs) | Chicago, IL / Remote
+- [Beam Dental](https://beam.dental/jobs) | Columbus, OH | Phone Screen, Take Home Project, In-Person Pairing and Cross-Functional Interview
+- [Belka](http://belka.us/lavora-con-no) | Trento, Italy; Munich, Germany | We give you a small task that you can do alone and then we evaluate your work with you
+- [Bemind Interactive](https://bemind.recruitee.com) | Biella, Italy / Latina, Italy / Remote | Series of interviews, discussion about technical background and past experiences, take-home project & pair programming
+- [Bendyworks](https://bendyworks.com/careers) | Madison, WI | Interviews and pair programming on personal projects
+- [Betterment](https://www.betterment.com/careers) | New York, NY | Phone interview followed by on-site pair programming to simulate a Betterment feature build.
+- [BetterPT](https://www.betterpt.com) | New York, NY | Initial phone interview, project using our tech stack, on-site code review/pair programming and "meet the team".
+- [Big Nerd Ranch](https://www.bignerdranch.com/about/careers) | Atlanta, GA & Remote | Interviews and pair programming on an internal project or problem.
+- [BioConnect](https://www.bioconnect.com/company/careers) | Toronto, Canada | Take-home assignment & discussion
+- [bitExpert AG](https://www.bitexpert.de/karriere) | Mannheim, Germany | Interview with experience based technical questions
+- [Bits of Love](https://www.bitsoflove.be/careers) | Bruges, Belgium | In-person interview to evaluate experience and motivation, potentially followed by take-home project.
+- [Blackdot Solutions](http://blackdotsolutions.com) | Cambridge, UK | Take-home project followed by on-site face-to-face walkthru of your code focusing on decisions/reasoning/technology used.
+- [Bleacher Report](http://bleacherreport.com) | San Francisco, CA, USA | Take-home project; on-site discussion about the project and meeting with different teams
+- [Blendle](https://blendle.homerun.co/?lang=en) | Utrecht, The Netherlands | Take-home project & pair program on a problem similar to daily work
+- [blogfoster](https://github.com/blogfoster/join-the-engineering-team) | Berlin, Germany | Take-home project, discussion on-site
+- [Blue Bottle Coffee](https://www.bluebottlecoffee.com/careers) | Oakland, CA | Technical Phone Screen, Take Home Challenge, Technical in-persons.
+- [Bluesoft](http://www.bluesoft.com.br) | São Paulo, Brazil | Takehome project and an interview to evaluate the candidate's previous experience.
+- [Bocoup](https://bocoup.com/careers) | Boston, MA / Remote | Pair programming with personal laptop on typical problem seen at work
+- [Bolste](http://careers.bolste.com) | Phoenix, AZ | Conversational in-person interviews with team members and pair programming through real world problems
+- [BookingSync](https://www.bookingsync.com/en/jobs) | Remote | Small takehome project, interviews over skype with team members.
+- [BoomTown](http://boomtownroi.com) | Charleston, SC / Atlanta, GA / Remote | Conversational in-person interviews with potential team members and managers that revolve around past experience and how that could be applied to future work
+- [Bouvet](http://www.bouvet.no) | Bergen, Norway | Pair programming with senior engineers
+- [brainn.co](https://brainn.co) | São Paulo, BR | Zoom/On-site interview, take-home project and interview with a team leader.
+- [BrainStation-23](http://brainstation-23.com) | Dhaka, BD | A practical project followed by series of in-person interview sessions
+- [Breather](https://breather.com/jobs) | Montreal, Canada | Series of interviews including a conversation about the candidate’s experience and a technical discussion involving real world problems
+- [BrightBytes](http://www.brightbytes.net/careers) | San Francisco, CA | Time-boxed coding exercise at home and on-site pair programming with engineers
+- [BrightHR](https://www.brighthr.com/careers) | Manchester, UK | Telephone conversation, coding exercise at home, on-site pairing with a cultural interview, meet the team.
+- [brightwheel](https://angel.co/brightwheel/jobs) | San Francisco, CA | Take home exercise, and systems design.
+- [Broad Institute's Data Sciences Platform](https://www.broadinstitute.org/data-sciences-platform) | Cambridge, MA | Phone screen, small take home project, both a technical and non-technical discussion panel, and a panel following up on the take home project walking through the solution and making a modification to the original code
+- [Bubblin Superbooks](https://www.bubbl.in/about) | Remote | View code, projects, libraries or any other open source story that you have been a part of, a small take-home project with real code occasionally.
+- [Buffer](https://buffer.com/journey) | Remote | Interviews over video call, code walkthrough of real code focussing on decisions and reasoning, then a 45 day full time, fully paid contract project working on production code.
+- [Bugcrowd](https://www.bugcrowd.com/about/careers/) | San Francisco, CA / Sydney, NSW | Take home exercise, half-day onsite walking through code, and pair programming.
+- [Buhler Group](http://www.buhlergroup.com) | Prague, CZ | Interview with a couple of technical questions. No task needed. Depending on the team there is another round with the guys in the HQ via skype.
+- [Bulb](https://www.bulb.co.uk) | London, UK | Phone screening, followed by a 2-4 hours take home task. If successful, on-site interview to discuss and extend with the reviewer and one other engineer, followed by 2x informal "Meet the team" interviews.
+- [Busbud](https://www.busbud.com/en/careers) | Montreal, Canada | Phone screening, followed by a 2-4 hours take home assignment. If the challenge is a success, on-site or remote interview with team members, including someone who reviewed it, to talk about it and potential next steps if the challenge was a real life task.
+- [Bustle](https://www.bustle.com/labs) | New York City, Ny / Remote | Half day pair programming on a task for production or one of our Open Source projects. We'll also buy you lunch with the team.
+- [busuu](https://www.busuu.com/jobs) | London, UK | Video call to show real code as first stage. In office pair programming, white board real world problem that we've encountered before, and history/experience discussion.
+- [ButterCMS](https://buttercms.com) | Chicago, IL; Remote | Take home exercise and half-day of pair programming
+- [ByBox](https://www.bybox.com/company/careers/) | Remote | Phone interview followed by interview with devs (ideally in person but sometimes Skype) covering technical experience and coding exercise with real code.
+- [CACI Rome](http://careers.caci.com/ListJobs/All/Search/location/rome/state/ny/country/us) | Rome, NY; Remote | Phone interview followed by in-person or Skype screen sharing interview with a coding exercise in either Java, web (Node.js + frontend), or both. Interview format is exclusive to the Rome, NY office and may not be shared by other regional CACI offices.
+- [Cake Solutions](http://www.cakesolutions.net/careers) | Manchester, UK; London, UK; New York, NY | Skype / Hangouts / phone call to explain the technical background, current position and set expectations about the salary, relocation, etc; if all good, what to expect next. Then take-home exercise for roughly 4 hours to demonstrate good thinking and ability to pick up new things, explain & document the solution, finishing with pair programming with senior developers (remote or in person); use the code as a talking point around the more difficult things after getting through the simple starter tasks.
+- [Capgemini UK Java Team](https://www.uk.capgemini.com) | London, UK; Woking, UK; Bristol, UK; Cardiff, Wales; Birmingham, UK; Manchester, UK; Leeds, UK; Rotherham, UK; Liverpool, UK; Newcastle, UK; Edinburgh, Scotland; Glasgow, Scotland | Technical telephone interview (30 minutes), take-home non-CompSci coding exercise (3-4 hours), face-to-face role-played consulting scenario involving a solution architecture and a delivery plan (two hours)
+- [Caravelo](http://www.caravelo.com/softdev) | Barcelona, Spain | Take home project, then technical discussion about the code in-person or Skype and hang out with the team.
+- [Cartegraph](http://www.cartegraph.com/company/careers/) | Dubuque, IA / Remote | Phone screen, hiring manager interview, small take-home coding project, and team code review/interview
+- [CARTO](http://www.carto.com/careers/) | Madrid, Spain | Phone screen, take-home project, team code review/interview, hiring manager interview
+- [Casetext](https://casetext.com/jobs) | San Francisco, CA | Submit code sample for review/discussion, contract for one full day (paid)
+- [CASHLINK](https://cashlink.de) | Frankfurt, Germany | Skype/phone interview, take-home project
+- [Causeway](http://www.causeway.com/content/opportunity) | United Kingdom, India | Skype or Telephonic discussion on approaches and experience in regards to solve projects related work,  then face to face round to write small solutions to common problems in related field.
+- [Centroida](https://centroida.co/contact.html) | Sofia, Bulgaria | Series of interviews, pair programming and take-home projects
+- [Chain.Reaction](http://chainreaction.io) | Budapest, Hungary | Partnership-fit discussion, code-review and trial days.
+- [Chargify](https://chargify.com/jobs) | San Antonio, TX / Remote | Take-home project & pair on a problem similar to daily work
+- [Checkout 51](https://checkout51.com/jobs) | Toronto, Canada | Phone conversation (15-20 minutes) followed by on-site pair programming and discussion focused on understanding decisions made during on-site work
+- [Chesapeake Technology](http://ctic-inc.com/careers/) | Denver, CO / Santa Barbara, CA / Camarillo, CA / Dulles, VA / California, MD / Remote | Phone screen (30 minutes), take home at leisure question based on real development followed by in person review of solution and general technical questions with actual team and opportunity for you to ask questions and provide feedback ( 2-3 hours)
+- [CircleCI](https://circleci.com) | San Francisco, CA / Remote | Take-home project and discussion, followed by on-site interview that includes pair programming on actual CircleCI bugs/feature requests.
+- [City of Boston's Analytics Team](https://boston.gov/analytics) | Boston, MA | Take-home project and in-person or phone/Skype interviews
+- [City of Philadelphia's Office of Open Data & Digital Transformation](https://beta.phila.gov/departments/office-of-open-data-and-digital-transformation/jobs) | Philadelphia, PA | Take-home project
+- [Civis Analytics](https://www.civisanalytics.com/careers) | Chicago, IL | Take-home project and discussion via Skype, followed by pair programming exercise
+- [CJ Affiliate](http://jobs.cj.com/jobs/category/engineering/) | Los Angeles, CA & Westlake Village, CA | Phone coding design exercise (no algorithms), followed by an on-site final interview that includes pair programming on a realistic object-oriented design problem
+- [Clara Lending](https://clara.com/careers) | San Francisco, CA | Phone conversation around technical background and experience, followed by take-home project, pair programming and discussion
+- [Clerkie](https://angel.co/clerkie/jobs) | San Francisco, CA | Phone conversation followed by take-home project
+- [ClickMagick](https://www.clickmagick.com) | Austin, TX / Remote | Phone conversations and examples of Free Software/Open Source work
+- [Clippings](https://clippings.com) | Sofia, Bulgaria | Video screening first, then send us code they've recently wrote, then technical interview. We could ask questions about the code they wrote at home.
+- [Clockwork Consulting](https://www.cwconsult.dk) | Copenhagen, Denmark | Interviews, discussion of technical background and experiences.
+- [Cloudistics](https://www.cloudistics.com/careers) | Reston, VA | Multiple interviews, discussion of technical background and experiences.
+- [Clubhouse](https://www.clubhouse.io/hiring) | New York, NY & Remote | Phone interview, followed by onsite discussions and pair programming
+- [Cogent Labs](https://www.cogent.co.jp) | Tokyo, Japan | On-site or video call conversation around technical background and experience, followed by take-home project that resembles a problem Cogent Labs solves for. This project will serve as the base of discussion with the developers for the second interview.
+- [Cognitect, Inc.](https://www.cognitect.com/jobs) | Remote | Phone interview followed by pair programming.
+- [Cognitran](http://www.cognitran.com/employment-opportunities) | Essex, UK / Szczecin, Poland / Detroit, MI | Skype/phone interview followed by pair programming.
+- [Collabora](https://www.collabora.com/careers.html) | Cambridge, UK / Montreal, Canada / Remote | On-site or video interview, discussion of technical experience and sometimes approach for tackling a hypothetical problem.
+- [COMPEON](https://www.compeon.de/karriere) | Duesseldorf, Germany | Phone interview, followed by onsite discussions and pair programming with our developers
+- [Concordia Publishing House](http://about.cph.org/careers.html) | St Louis, MO | Take-home project followed by discussion of it on-site with future teammates.
+- [Contactlab](http://contactlab.com/en/careers) | Milan, Italy | Recruiter interview, tech interview (technical background and experiences), both on-site.
+- [Contentful](https://www.contentful.com/careers) | Berlin, Germany & SF, USA | Multiple interviews, discussion of technical background & live coding challenge (you can use the internet).
+- [ContentSquare](https://www.contentsquare.com/careers) | Paris, France | Real-world challenges with open discussions.
+- [Cookpad](https://cookpad.com/us) | Tokyo, Japan; Bristol, UK | Interviews, discussion of technical background and experiences, remotely pair with devs.
+- [Coorp Academy](https://www.coorpacademy.com) | Paris, France | Technical interview as an open discussion
+- [CoverHound, Inc.](https://www.coverhound.com) | San Francisco, CA | Open technical discussion, short on-site coding challenge.
+- [Credit Kudos](https://creditkudos.com/jobs) | London, UK | Take-home project and pair programming via Skype or on-site.
+- [CrossBrowserTesting](https://crossbrowsertesting.com) | Memphis, TN | Take home project that resembles a problem support engineers deal with on a daily basis. On-Site interviews in a comfortable environement with a focus on hiring talented people vs exact skill-sets.
+- [Crowdstrike](https://jobs.jobvite.com/careers/crowdstrike/jobs) | Remote | Multiple interviews onsite or remote as appropriate followed by small take-home project.
+- [Crownstone](https://crownstone.rocks/jobs) | Rotterdam, Netherlands | Technical interaction using previously created Github projects, followed by in-person interview with a focus on someone's professional ambition in the short and long term.
+- [cube19](https://www.cube19.com/work-with-us/) | London, UK | Take-home project, then an on-site discussion about the code and previous experience.
+- [Cultivate](https://cultivatehq.com) | Edinburgh, UK | 30 minute pair-programming screening interview on a simple exercise (remote or in-person). Half day pair programming, with 3 or 4 different team members plus informal chat, typically on-site.
+- [Culture Foundry](https://www.culturefoundry.com) | Austin, TX | Paid take-home project
+- [CurrencyTransfer](https://www.currencytransfer.com) | London, UK & Remote | Take-home project
+
+## D - F
+- [Dark Sky](https://darksky.net/jobs) | Cambridge, MA | Phone interviews and a very short, real paid project
+- [Data Theorem](http://www.datatheorem.com) | Palo Alto, CA; Paris, Fr; Bangladesh, India | Phone interview, then a take home project and finally in-person interview.
+- [Datalogue](https://datalogue.github.io/recruiting) | Montreal, Canada | We Ask candidates to contribute meaningfully to an Open source project that reflects the stack they will be working with and send us a link to the PR.
+- [DataMade](https://datamade.us) | Chicago, IL | After submitting an application, selected applicants are moved on to a round of interviews and will be asked to submit a piece of code for review. If you don’t have any code you can share, DataMade will provide a short exercise for you to complete. An in-person (or remote) interview will be scheduled to go over your background, what draws you to DataMade, and your code sample.
+- [Datascope](https://datascope.co/careers) | Chicago, IL | Take home exploratory data project with public data, discussion about the project via video chat, and in-person office visit.
+- [Datlinq](http://www.datlinq.com/en/vacancies) | Rotterdam, Netherlands | Take-home project based on actual work on data done by the team and in-person or Skype interviews
+- [DealTap](https://dealtap.ca) | Toronto, Canada | Technical Interview, Solution Design, Take Home Assignment, then Culture fit interview with the team, and optional pair programming.
+- [Def Method](https://www.defmethod.com) | NYC, NY | Take home test, pair programming with dev on test and client work, receive offer same day as pairing interview
+- [Deliveroo](https://deliveroo.co.uk/careers) | London, UK & Remote | Short take-home project and pair programming
+- [Dentolo](https://angel.co/dentolo) | Berlin, Germany | Phone interview with the HR department, take-home project and technical interview to discuss your skill set + general questions
+- [Deskbookers](https://www.deskbookers.com/en-gb/jobs) | Amsterdam, Netherlands | Phone screen, take-home project, on-site interview
+- [DeSmart](https://www.desmart.com) | Gdynia, Poland | Technical interview, take-home project and talk about your experience
+- [Despark](https://despark.com) | Sofia, Bulgaria & Remote | Culture add interview, sample code review and paid pair programming with team member or take-home project.
+- [Detroit Labs](https://www.detroitlabs.com/careers) | Detroit, MI | Our technical interview starts with a take-home assignment that we will look at during the interview. You'll walk us though your thought process, add functionality if applicable to the interview, and talk about your experience. We believe that showing us your work in a practical setting is more telling of your abilities and what you will bring to the table, than writing code on a whiteboard.
+- [DevMynd](https://www.devmynd.com) | Chicago, IL; San Francisco, CA | Take-home project, take-home project phone review, a few hour-long pairing sessions on real projects.
+- [DG-i](https://www.dg-i.net) | Cologne, Germany | Take-home project and/or discussion on-site about past experiences
+- [DICE](http://www.dice.se) | Stockholm, Sweden | Take-home project and code review at the on-site
+- [Digitally Imported](http://www.di.fm/jobs) | Denver, Colorado & Remote | Video meetings on past experience and high level tech questions, take-home project
+- [Dollar Shave Club](https://www.dollarshaveclub.com) | Venice, California | Phone interview, take-home projects, on-site interview
+- [door2door](http://door2door.io) | Berlin, Germany | Take home challenge + on-site interview + trial day
+- [DoorDash :runner::dash:](https://doordash.com/careers) | San Francisco, CA | Take home project + an on-site interview building off the project!
+- [Draft Fantasy](https://docs.google.com/document/d/1fC_-liTPpYQOoE_5iKj0O3AwSdPggQGnOsjUKahfbkQ/edit?usp=sharing) | Tel Aviv, Israel | Talk about past experience and what the developer has actually built as well as pair programming or a programming exercise.
+- [Drawbotics](https://www.drawbotics.com/en/join-us) | Brussels, Belgium | Take-home project, bootcamp on-site
+- [drchrono](https://www.drchrono.com/careers) | Mountain View, CA | Hackerrank test (but not CS trivia, it's real product problems) & on-site/take-home project w/ presentation
+- [Drivy](https://www.drivy.com) | Paris, France | Phone screening followed by a take-home assignment, "Resume" interview, technical interview, product interview, interview with another team, finalizing the hire
+- [DroneDeploy](https://www.dronedeploy.com/careers.html) | San Francisco, CA | Pair program on a problem similar to daily work
+- [DroneSeed](https://www.droneseed.co/jobs/) | Seattle, WA | Take home assignment of a real problem we've worked on, group code review in subsequent interview.
+- [dubizzle](http://blog.dubizzle.com/uae/job-vacancies) | Dubai, UAE | Take home assignment, general technical questions, pair programming with engineers or tech leads
+- [E-accent](https://www.e-accent.com) | Hilversum, Netherlands; Remote | Skype conversation, take-home assignment
+- [Easy Taxi](http://easytaxi.com.br) | São Paulo, Brazil | Take-home project, interview to evaluate the candidate's previous experience.
+- [Eaze](https://eaze.com/careers) | San Francisco, CA | Take home project, on-site interview building off of the project
+- [eBay Kleinanzeigen](https://careers.ebayinc.com/join-our-team/start-your-search/find-jobs-by-location/detail/germany) | Berlin, Germany | 45 mins technical phone interview, take-home project/review, on-site interview including pair programming with team lead and agile interview with product manager.
+- [Echobind](https://echobind.com/careers) | Boston, MA; Remote | Meet the entire team, share examples of previous work and pair with one team member
+- [Edenspiekermann](https://jobs.edenspiekermann.com) | Amsterdam, Netherlands / Berlin, Germany / Los Angeles, CA / San Francisco, CA / Singapore, Singapore | On-site chat about skills and past experiences, review some code samples or a take-home assignment
+- [EF Education First](https://careers.ef.com) | London, UK; Boston, MA | Short phone interview, take-home project, discussion of project and real world engineering problems, meet the team.
+- [Eidu](http://eidu.com) | Berlin, Germany | Take-home project, discussion of results with team, and test days with pair programming
+- [El Passion](http://www.elpassion.com) | Warsaw, Poland | Take-home project, interview to 1) discuss delivered solution and 2) previous projects
+- [Electric Pulp](https://www.electricpulp.com) | Sioux Falls, SD, USA | Phone interviews with leadership team and technical team leads. We are a tight knit team, so emphasis on a great personal fit is as important as technical prowess.
+- [Elements Interactive](https://www.elements.nl/careers) | Almere, The Netherlands & Barcelona, Spain | Take-home project & discussion via Skype or on-site
+- [Ellucian](https://www.ellucian.com/About-Us/Careers/) | Reston, VA, USA | Discussion of real world problems (from resume, if possible)
+- [elmah.io](https://elmah.io) | Aarhus, Denmark / Remote | Discussion about code and looking at hobby projects (if any)
+- [Elvie](https://www.elvie.com) | London, England | Discussing real code, pairing and a paid day to see how you work with the team. No coding for free or time-restricted take-home projects, code challenges or abstract algorithm tests
+- [eMarketer](https://goo.gl/N7SMKl) | New York, NY | Short phone interview, then come in and meet the team, check out our space, and have a discussion with team members about real-world problems
+- [Emarsys](https://www.emarsys.com) | Budapest, Hungary | Take-home project (small, 1-2 days to solve), then discussion on-site
+- [Endava](http://www.endava.com/en/Careers) | Belgrade, Serbia; Bucharest, Romania; Chisinau, Moldova; Cluj-Napoca, Romania; Iasi, Romania; Pitesti, Romania; Skopje, Macedonia; Sofia, Bulgaria; Frankfurt, Germany; Glasgow, Scotland; Hilversum, Netherlands; London, UK; Oxford, UK; Bogota, Colombia; Atlanta, GA; New Jersey, NJ; New York, NY | On-site discussion about previous experience and technical questions about the target technologies.
+- [Engel & Völkers Technology](https://www.engelvoelkers.com/en/tech/) | Hamburg, Germany | Remote technical interview with an Engineering Manager, followed by a practical coding challenge implemented in 5 hours, ending with a technical discussion with the team on the produced code either remotely or on-site based on geographical practicality.
+- [Enhancv](https://enhancv.com/about.html) | Sofia, Bulgaria | Talk is cheap, show us your code: github profile or other project examples. Explain them in person / remotely. Discuss habits and interests to see if we have a culture fit.
+- [Enigma](https://www.enigma.com) | New York, NY | 2-part takehome project, followed by a pair programming exercise
+- [Enki](https://enki.com) | London, UK | Skype/phone interview followed by takehome project
+- [Ento.com](https://ento.com/blog/ento-interview-process-101) | Melbourne, Australia | On-site interview to talk about your experiences and what you're looking for in your next role, followed by a take-home practical test relevant to the work you'll be undertaking at Ento.
+- [Equal Experts](https://www.equalexperts.com) | London, UK; Manchester, UK; New York, NY; Pune, India; Lisbon, Portugal; Calgary, Canada | Fizzbuzz test done at home followed by Pair Programming session at office and finally face to face technical and attitude interview.
+- [Ericsson](https://www.ericsson.com) | Dublin, Ireland | Skype/phone interview followed by Face 2 Face interview, discussions and architecture questions followed by final small project on a problem similar to daily work.
+- [eShares, Inc](https://esharesinc.com/jobs) | San Francisco, CA; Palo Alto, CA; Seattle, WA; Rio de Janeiro, Brazil; London, UK; New York, NY | Phone call, practical technical screen, on site to meet the team & explore the company
+- [Etix Everywhere](https://www.etixeverywhere.com/en/job-offers) | Luxembourg City, Luxembourg
+- [EURA NOVA](https://euranova.eu) | Mont-Saint-Guibert, Belgium; Marseille, France; Tunis, Tunisia | attitude interview, unpaid take-home project, technical discussion with 1 or 2 technical employees (remote or face 2 face), face 2 face discussion with HR, partner, and technical staff to have a foretaste of the collaboration
+- [Euro Payment Group](http://www.europaymentgroup.com) | Frankfurt, Germany | Take-home project followed by face to face interview
+- [Exoscale](https://exoscale.ch) | Bern, Switzerland | Take-home project. Discussion and presentation. Then entire team meet.
+- [F(x)](https://fdex.com.br) | São Paulo, Brazil | Skype interview, Take-home project and onsite interview to evaluate the candidate
+- [Falcon.io](https://www.falcon.io/jobs/) | Copenhagen, Denmark | Initial call/Skype culture interview. Take-home tech assignment (game) and code review. On-site Interview about your experience and meeting the team.
+- [FATMAP](https://www.fatmap.com) | London, UK; Berlin, Germany; Vilnius, Lithuania | Skype discussion, Take-home project, Face to face
+- [Fauna](https://fauna.com) | San Francisco, CA / Remote | Take home project, then follow up with interviews on-site or remote. Interviews are both technical and non-technical. Technical interviews comprehend the scope of the home project.
+- [Feather](https://feather-cfm.com) | Remote | Take-home challenge, portfolio discussion & team meeting
+- [Findy](https://blog.findy.us/findy-saiyo) | Tokyo, Japan | Tech interview + On-site discussion
+- [FINE](https://www.wearefine.com/careers) | Portland, OR | Small take-home challenge + follow-up discussion
+- [Firemind](https://www.firemind.io) | Maidstone, UK; London, UK; Remote | Small pre-interview challenge on github + discussion face to face in person or via video
+- [Fitbot](https://thefitbot.com/careers.html) | Boulder, CO | Pairing & writing code with the founders for a few hours
+- [Flatfox](https://flatfox.ch) | Zurich, Switzerland | Informal conversation to check mutual fit, small (4h) take-home assignment, discussion in team
+- [Fluidly](https://fluidly.com) | London, UK | Casual 30min phone call. ~1hr take home tech exercise (not pass or fail). 1 stage onsite interview - discussion about experience, 1 hour pair programming on the real code base, then your turn to interview us!
+- [Food52](https://food52.com/jobs) | New York, NY; Remote | Take-home project, discussion on-site or remote, interviews with both technical and non-technical staff
+- [Fooji](https://fooji.com) | Lexington, KY; Remote | Take-home project
+- [Formidable Labs](https://www.formidable.com/careers) | Seattle, WA; London, UK; Remote | Take-home project, remote pair programming, discussion on-site or remote
+- [Fortumo](https://fortumo.com/careers) | Tallinn, Estonia; Tartu, Estonia | After a 30-min call you get a simplified version of a task that has recently been a challenge for the engineering team
+- [Founders](https://founders.as/joinus) | Copenhagen, Denmark | Take Home project + Interviews
+- [Foundry Interactive](http://www.foundryinteractive.com/contact) | Seattle, WA | On-site or remote discussion, paid trial project with pairing and code reviews
+- [fournova](https://www.fournova.com/jobs) | Remote | Take-home project, discussion via video call
+- [FreeAgent](https://www.freeagent.com/company/careers) | Edinburgh, UK | Take-home project, pair programming, discussion and interviews
+- [Freeletics](https://www.freeletics.com/en/corporate/jobs) | Munich, Germany | Small real-world challenge, multiple interviews on-site/remote and social gathering with team.
+- [Freetrade](https://www.freetrade.io/careers) | London, England | Initial hangout with fizz buzz style question followed by an on-site real world coding question and systems design conversation.
+- [FRIDAY](https://friday-jobs.personio.de) | Berlin, Germany | Take-home real-world challenge, interview on-site or remote
+- [Frontside](https://frontside.io/careers) | Austin, Texas | Phone interview with remote pairing session. Followed by in person pairing (paid for the day) and lunch with the team.
+- [Funda](https://www.funda.nl/vacatures) | Amsterdam, The Netherlands | Take Home test + Discussion On-Site/Remote
+- [FundApps](https://www.fundapps.co/about-us/join-our-team) | London, UK | Coffee with an Engineer; take-home kata; code review + on-site pair programming exercise.
+
+## G - I
+- [Gamevy](https://www.gamevycareers.com) | London, UK; Bilbao, ES; Remote | Informal culture discussions, pair programming with our engineers
+- [Garner](https://www.garnercorp.com) | Toronto, Canada | step 1: online chat with hiring manager, step 2: at home assignment solving real-life problem, step 3: on-site pair programming with engineers, step 4: offer
+- [GatherContent](https://gathercontent.com/careers/designer) | Remote | Culture-first interviews, pair programming and remote, informal technical discussions
+- [GeneralUI](https://generalui.com) | Seattle, WA | A short phone screen with questions regarding general knowledge related to the open position, then a half day pair programming interview.
+- [Ginetta](http://jobs.ginetta.net) | Zurich, Switzerland; Braga, Portugal | Culture-first interviews, take home assignment that resembles a real-world problem we often solve, then discussion about the assignment in-person with pair-programming improvement sessions with our developers.
+- [GitHub](https://github.com/about/careers) | Remote; San Francisco, CA; Boulder, CO| Take-home exercise, code review and technical discussions.
+- [GitPrime](https://www.gitprime.com) | Denver, CO; Remote | small short term real-world project, paid project on production code
+- [Glints](https://glints.com/sg/inside/careers/) | Singapore, Singapore; Jakarta, Indonesia | Culture fit interview, take home assignment that resembles a real-world problem, walkthrough about the assignment
+- [GoCardless](https://gocardless.com/about/jobs) | London, UK | Project to work at home, general technical questions, pair programming with engineers
+- [GoDaddy](https://www.godaddy.com/careers/overview) | Sunnyvale, CA | Pair programming with senior engineers
+- [GoJek](https://www.gojek.io) | Bangalore, India; Jakarta, Indonesia; Singapore, SG; Bangkok, Thailand | Take-home exercise, Pair programming with senior engineer, Techinal problem solving and discussion, Cultural Fit
+- [Gower Street Analytics](http://gower.st) | Remote; London, UK | Initial telephone chat, then either a) work with us, fully paid, for a day on real code with the team; or b) pair-programming on a code kata with the team members for four pomodoros. Your choice.
+- [Graffino](https://www.graffino.com) | Sibiu, Romania | Take-home project, discussion on-site
+- [Grafton Studio](https://graftonstudio.com) | Boston, MA | Take-home project, discussion on-site
+- [Gramercy Tech](http://www.gramercytech.com) | New York, NY | Pair programming & discussion on-site
+- [grandcentrix](https://www.grandcentrix.net/jobs) | Cologne, Germany | Take-home project, discussion on-site
+- [Grape](https://www.chatgrape.com/jobs/) | Vienna, Austria / Remote | Github or code samples -> Pair programming -> Skype/phone interview
+- [Graphcool](https://www.graph.cool) | Berlin, Germany | On-site pair programming of a small, isolated real world task
+- [Graphicacy](http://www.graphicacy.com) | Washington, DC | Phone interview; in-person or virtual interview depending on location and availability; two brief technical assignments focused on flexibility, creativity, and general competency
+- [Graphistry](https://www.graphistry.com/careers) | Oakland, CA; San Francisco, CA; Remote | Engineering, culture, and product discussions, and for junior developers, choice of take home or code review.
+- [Grok Interactive](https://www.grok-interactive.com) | San Antonio, TX | Take-home project with code review and a follow-up in-person interview.
+- [Gruntwork](http://www.gruntwork.io) | Remote | Paid, take-home project with pair coding
+- [GTM Sportswear](https://gtmsportswear.com/careers) | Manhattan, KS / Remote | Remote pairing session, then a take-home test.
+- [Happy Team](https://happyteam.io) | Warsaw, Poland; Remote | General technical questions, takehome paid exercise with feedback/discussion during implementation
+- [Happypie](http://www.happypie.com) | Uppsala, Sweden | Takehome excercise with code review after, in-person interview
+- [Hash](https://www.hash.com.br/index.html) | Sao Paulo, Brazil | Take-home project and/or discussion (on-site or remote)
+- [Hashrocket](https://hashrocket.com) | Chicago, IL/Jacksonville Beach, FL | Remote pairing session, paid week pair programming with everyone on the team
+- [Headspring](https://headspring.com/about/careers) | Austin, TX; Houston, TX; Monterrey, Mexico | Take-home situational questionnaire and code exercise, with in-person follow up to discuss and pair for changes
+- [Healthify](https://healthify.us) | Remote & New York City, NY | Take-home project, discussion via Zoom, pair programming with us on our app for a day.
+- [Heetch](https://www.heetch.com) | Paris, France | Values-fit interview (via zoom.us), Take-home project with review, Team Discussions (via zoom.us), on-site day
+- [HE:labs](https://helabs.com) | Rio de Janeiro, Brazil & Remote | Take-home project and discussion via Skype.
+- [HelloFresh](https://www.hellofresh.com/jobs) | Berlin, Germany | Take-home project, discussion via Skype or on-site
+- [Heptio](https://www.heptio.com/jobs) | Seattle, WA; Remote | Take-home project, discussion on-site
+- [Hill Holliday](http://www.hhcc.com/careers) | Boston, MA | Take-home project on GitHub, in-person interview / culture fit interview
+- [Hireology](http://www.hireology.com/careers) | Chicago, IL; Remote | Walk through personal/work projects and discuss experience
+- [Hiventive](https://www.hiventive.com) | Pessac, France | Phone interview, home coding challenge, on-site interview with general programming questions, discussion of proposed solutions and personal experience.
+- [HolidayPirates](https://holidaypirates.group/en/jobs) | Berlin, Germany | Take-home project, discussion via Skype or on-site
+- [HoloBuilder](https://www.holobuilder.com) | Aachen, Germany | Take-home project, discussion via Skype or on-site
+- [Home Chef](https://www.homechef.com/careers) | Chicago, IL; Remote | Get-to-know-you meeting with the team, followed by a half-day collaborative coding session
+- [HomeLight](https://www.homelight.com/engineering) | San Francisco, CA; Scottsdale, AZ; Seattle, WA | Phone screen, take home that is close to production code, onsite with pair programming
+- [HoxHunt](https://jobs.hoxhunt.com) | Helsinki, Finland | Take-home project, pair programming on-site
+- [Human API](http://humanapi.co/company/careers) | Redwood City, CA | Technical phone interview, then on-site pair programming and design discussion
+- [I|O](https://io.co.za/opportunities) | Cape Town, South Africa
+- [Icalia Labs](http://icalialabs.com) | Monterrey, Mexico | Pair programming, cultural fit session
+- [iConstituent](http://iconstituent.com/careers/) | Washington, DC | Take-home project and code review in-person
+- [Ideamotive](https://ideamotive.co) | Warsaw, Poland & Remote | Take-home project, technical interview with developer
+- [IDEO](https://www.ideo.com/jobs) | San Francisco, CA; New York, NY; Chicago, IL; Cambridge, MA | Take home project that resembles a problem IDEO solves for, then pairing session in person or over video chat.
+- [ImmobilienScout24](https://boards.greenhouse.io/scout24) | Berlin, Germany | Take-home project, discussion on-site
+- [Impraise](http://jobs.impraise.com) | Amsterdam, The Netherlands | Take home test, real world pair programming
+- [Incloud](https://jobs.incloud.de) | Darmstadt, Germany | Technical interview with developers, followed by a full day on site with a practical project
+- [Indellient](http://www.indellient.com/careers) | Oakville, Canada | Series of interviews both technical and non-technical
+- [InfluxData](https://www.influxdata.com/careers) | San Francisco, CA & Remote | Technical and non-technical interviews, pair programming, with prospective manager and multiple prospective teammates
+- [InfoSum](https://www.infosum.com) | Basingstoke, UK | On-site unsupervised exercise & discussion.
+- [inKind Capital](https://inkindcapital.com) | Boulder, CO | Discussing real-world problems, pair programming, dinner & drinks with the team
+- [Inmar](https://www.inmar.com/careers) | Winston-Salem, NC; Austin, TX & Remote | Take-home project and conversation-style interviews
+- [Innoplexus](https://www.innoplexus.com/careers/) | Pune, India; Frankfurt, Germany | Take-home projects and On-site pair programming assignment.
+- [Instacart](https://careers.instacart.com) | San Francisco, CA | Take-home real world project, pair programming on-site
+- [InstantPost](https://internshala.com/internships/internship-at-InstantPost) | Bangaluru, India | Remote assignment followed by Technical and Team round interview
+- [Integral.](https://www.integral.io) | Detroit, MI | Initial remote technical screen featuring test-driven development & pair programming, then on-site full day interview that involves pair programming on production code using test-driven development.
+- [Intelipost](https://www.intelipost.com.br) | São Paulo, BR | Take-home project, on-site code review and presentation (skype available if needed), discussion involving real world problems and interviews with different teams
+- [Intercom](https://www.intercom.com/careers) | San Francisco, CA; Chicago, IL; Dublin, Ireland | Real-world technical design and problem discussion, pair programming on-site
+- [Interset](https://interset.com/careers) | Ottawa, Canada | Discussion of technical background and past experience. Relevant take-home project for junior developers
+- [Ithaka](https://www.ithaka.travel) | Mumbai, India | Phone interview followed by a small development task. Finally a phone interview with CEO.
+- [iTrellis](http://itrellis.com) | Seattle, WA | Phone screen, then a take-home project, then pairing (remote or on-site) with 3 developers on the take-home project.
+- [iZettle](https://jobs.izettle.com/jobs) | Stockholm, Sweden | Remote pair programming exercise, propose an architecture for an application and discuss about it in an informal format.
+
+## J - L
+- [Jamasoftware](http://www.jamasoftware.com) | Portland, OR | Initial phone screen with hiring manager. In person pairing on project similar to day-to-day work with a separate cultural interview
+- [Jamit Labs](https://jamitlabs.com/jobs) | Karlsruhe, Germany | Phone interview or on-site interview & take-home code challenge or on-site programming session
+- [Jiminny](https://www.jiminny.com) | Sofia, Bulgaria | Phone screen. Take-home exercise. Follow-up discussion.
+- [Jitbit](https://www.jitbit.com) | Remote; London, UK; Tel-Aviv, Israel | Take-home real-world task
+- [Jobtome](https://weare.jobtome.com/careers) | Stabio, Switzerland | Phone screen introduction with hiring manager. In site (or screen call) with Engineer Manager for a talk on skills and cultural fit.
+- [Journal Tech](https://journaltech.com/jobs) | Los Angeles, CA | Mini take-home project, phone interview, discussion on-site
+- [Journalism++](http://www.jplusplus.org) | Berlin, Germany | Apply through a [relevant online challenge](http://internship.jplusplus.org) to show your technical skills and your capacity to investigate
+- [JustWatch](https://www.justwatch.com/us/talent) | Berlin, Germany | Take-Home project, discussion on-site
+- [K Health](https://www.khealth.ai) | Tel Aviv, Israel | Phone screening to discuss technical background and past experience. Take-home assignment followed by on-site code review and interview. Cultural fit assessment
+- [Kahoot!](https://www.getkahoot.com/jobs) | London, UK / Oslo, Norway | Phone screening to discuss technical background and past experience. Take-home assignment followed by on-site code review and interview. Cultural fit assessment
+- [Kata.ai](https://kata.ai) | Malang, Indonesia / Jakarta, Indonesia | Take-home assignment, then invited to discuss the assignment and interview.
+- [Kayako](https://www.kayako.com) | London, UK / Gurgaon, India | Take-home assignment, series of experience based interviews, cultural fit assessment
+- [Kentik](https://www.kentik.com/careers) | San Francisco, CA | Phone screening to discuss technical background and past experience. Take-home assignment followed by on-site code review and interview. Cultural fit assessment
+- [Keymetrics](https://keymetrics.io) | Paris, France | Phone Interview, Take-home project based on our [API](https://github.com/keymetrics/keymetrics-api), IRL meeting with the whole team
+- [Kindred Group, Native Apps Team](https://careers.kindredplc.com) | Stockholm SE, London UK | On-site/Skype programming task, Interview
+- [Kinnek](https://www.kinnek.com/jointeam) | New York, NY | Phone screen, on-site pairing session, take-home project
+- [Kiwi.com](https://code.kiwi.com) | Brno, Czech Republic | Phone Interview, Take-home projects, On-site code review & interview
+- [KNPLabs](https://knplabs.com) | Nantes, France | First step: screening call directly with the CEO, to discuss company vision, assess cultural fit and experience. Second step: call or IRL interview with a developer and a project facilitator , technical discussions with focus on soft skills. The goal of the interview is for the 2 KNPeers to be able to answer: “Do I want to work with this person ?” If both say yes, the person is hired. If even at least one says no, the person is not hired.
+- [Koddi Inc.](http://www.koddi.com/open-positions) | Fort Worth, TX | Phone Interview(s), take-home project, on-site interview
+- [Kong](https://www.konghq.com/careers) | San Francisco, CA | Phone interview. Pairing and technical interviews. Take home assigment.
+- [Kongregate](http://www.kongregate.com/jobs) | Portland, OR | Phone screening. Take home project. On-site pairing and conversational technical interviews.
+- [Korbit](https://www.korbit.co.kr/about/jobs) | Seoul, South Korea | Take home assignment followed by on-site code review and interview
+- [Lab.Coop](http://lab.coop) | Budapest, Hungary | Partnership-fit discussion, code-review and trial days.
+- [Landing.jobs](https://landing.jobs/at/landing-jobs) | Lisbon, Portugal | Interviews (in-person or remote), Take home coding project
+- [Lanetix](http://engineering.lanetix.com) | San Francisco, CA | [Our Hiring Process](https://engineering.lanetix.com/2015-10-20/hiring-process)
+- [LateRooms](http://careers.laterooms.com) | Manchester, UK | Telephone interview followed by coding problem at home. Suitable submissions proceed to an onsite interview.
+- [Launch Academy](https://launchacademy.com/careers) | Boston, Philadelphia | Nontechnical phone screen, pair programming with team member, and potentially a "guest lecture" for our students
+- [LaunchDarkly](https://launchdarkly.com/careers) | Oakland, CA | Informational phone screen with Eng leadership, take home project, onsite interviews
+- [Learningbank](https://learningbank.dk) | Copenhagen, DK | Take home assignment, followed by on-site code review.
+- [Legalstart.fr](https://www.legalstart.fr) | Paris, France | Telephone interview followed by take-home challenges. Suitable applicants are asked to do further on-pair interviews on site.
+- [Leverton](https://www.leverton.ai) | Berlin, Germany | Initial chat with the HR continued with 1-2 rounds chat with the team; followed by a technical test and finally a chat with the CTO/MD. [Jobs page](http://leverton-jobs.personio.de)
+- [Liberty Mutual](https://www.libertymutualgroup.com/careers) | Seattle, WA; Boston, MA; Indianapolis, IN | Initial interview, discussion on-site, interview with peers
+- [Librato](https://www.librato.com/jobs) | San Francisco, CA; Boston, MA; Austin, TX; Vancouver, Canada; Krakow, Poland | Take home coding project, conversational technical interviews on-site
+- [Lightning Jar](http://lightningjar.agency) | San Antonio, Tx |  Remote pairing session, Initial interview,discussion on-site
+- [Lightricks](http://www.lightricks.com) | Jerusalem, Israel | Initial interview, Take home project, discussion on-site
+- [LinkResearchTools](http://jobs.linkresearchtools.com/job-offers) | Vienna, Austria | Skype interview, mini take-home exercise, discussion on-site / personal interview
+- [Listium](https://listium.com/jobs) | Melbourne, Australia | Design and code proof of concept features with the team
+- [Litmus](https://litmus.com/careers#openings) | Remote | General technical questions, take-home code challenge, discussion, on-site programming session, meet & greet with the team
+- [LittleThings](https://www.littlethings.com/careers.html) | New York, NY | Take home code challenge, Discussion
+- [LoanZen](https://loanzen.in/team.html#Career) | Bengaluru, India | Initial phone interview about experience, a solve-at-home project based on the kind of work we do at our company, on-site interview discussing the submitted solution and a general discussion with the whole team
+- [Lob](https://lob.com/careers) | San Francisco, CA | Initial phone screen followed by an on-site interview. Technical problems discussed during the interview are all simplified versions of problems we've had to solve in production. Our entire interview process and what we're looking for is described in our blog post [How We Interview Engineers](https://lob.com/blog/how-we-interview-engineers).
+- [Locastic](https://www.locastic.com/posao) | Split, Croatia | Take-home code challenge, tehnical discussion & on-site programming session, meet & greet with the team
+- [Locaweb](https://www.locaweb.com.br/carreira) | São Paulo, Brazil | Skype interview, take-home project and discussion on-site
+- [LOGIBALL GmbH](https://logiball.de/en/jobs/) | Berlin, Hannover and Herne in Germany | Interviews and discussion
+- [Logic Soft](https://logicsoft.co.in) | Chennai, India | Phone discussion, F2F pair programming exercise + discussion
+- [LonRes](https://www.lonres.com/public/working-us) | London, United Kingdom | Quick introduction call with tech (Skype), coding task for ≈1 hour, face-to-face interview (or via Skype) and meeting with team members.
+- [LookBookHQ](http://www.lookbookhq.com/about/careers) | Toronto, Canada | On-site discussion, pair programming exercise
+- [Loom](https://www.useloom.com/careers) | San Francisco, CA | Google Hangouts resume dive on past experience, take-home project OR architectural phone screen, on-site interviews (2 technical architecture related to work, 1 or 2 non-technical)
+- [Lydia](https://lydia-app.com/en/company/jobs) | Paris, FR | Mini take-home project, phone interview, discussion on-site
+- [Lyft](https://lyft.com/jobs) | San Francisco, CA | Pair programming on-site with your own personal laptop
+- [Lyoness Austria GmbH](http://www.lyoness-corporate.com/de-AT/Karriere/Jobangebote) | Graz, Austria | Take-Home project, discussion on-site
+
+## M - O
+- [Made Tech](https://www.madetech.com/careers) | London, UK | [Our hiring process](https://github.com/madetech/handbook/tree/master/guides/hiring#20-minute-phone-conversation)
+- [Magnetis](https://magnetis.workable.com) | São Paulo, Brazil & Remote | Phone interview + take home assignment, followed by pair programming and informal meeting with the team.
+- [Major League Soccer](https://careers-mlssoccer.icims.com/jobs/search?ss=1&searchCategory=20285) | New York, NY | Phone interview + short take home project, which is daily work focused. In person interview could involve discussing past projects or pair programming.
+- [MakeMusic](http://www.makemusic.com/careers/) | Boulder, CO; Denver, CO | Phone screen, take home project, remote and on-site interviews for technical and cultural fit
+- [MakeTime](https://maketime.workable.com) | Lexington, KY | Practical exercise and/or a pairing session on site
+- [Mango Solutions](http://www.mango-solutions.com/wp/about-mango/team) | London (UK), Chippenham (UK) | Initial phone interview, followed by on-site interview with take-home assignment
+- [Mapbox](https://www.mapbox.com/jobs) | San Francisco, CA; Washington, DC; Ayacucho, Peru; Bangalore, India; Berlin, Germany; Remote | Conversational interviews, paid onsite project with team.
+- [Mavenlink](https://www.mavenlink.com/careers) | San Francisco, CA; Irvine, CA; Salt Lake City, UT | On-site pairing with multiple engineers. Pairing exercises and pairing on company code.
+- [Maxwell Health](https://www.maxwellhealth.com/careers) | Boston, MA | Take-home exercise or pairing session with team. Then conversational meetings with members of the team.
+- [Me & Company](https://me-company.de/jobs/) | Düsseldorf, Germany | You join us for one or two paid trial days to work on an assignment and to meet the team.
+- [Media Pop](https://mediapop.co) | Singapore, Singapore | Take-home or unsupervised (onsite) real-world assignment
+- [Meetrics](https://www.meetrics.com) | Berlin, Germany | Initial interview, take-home code challenge and review
+- [Meltwater](http://underthehood.meltwater.com/jobs) | Manchester, NH | Small take home exercise that will be presented to the team during a QA style interview
+- [Mention](https://mention.workable.com) | Paris, FR | Take-home small exercise followed up by on site meetings with your future coworkers
+- [Mercatus](https://www.mercatus.com/company/careers) | Toronto, Canada | Practical on-site project similar to daily work
+- [mfind](https://www.mfind.pl/dolacz-do-nas/) | Warsaw, PL | Phone call about technical experience, Take-home project or technical test(depends on experience), Onsite interview with technical lead.
+- [miDrive](https://midrive.com/careers) | London, UK | Phone screen, Take-home project / technical test, Onsite interview with senior and peer.
+- [milch & zucker](https://www.milchundzucker.de) | Gießen, Germany | Interview with direct feedback, applicants providing working sample, code review (product code or personal code of applications)
+- [Mimir](https://mimirhq.com/jobs/) | Indianapolis, Indiana | Take home interview, phone screen, in person interview where you decide how you want to be interviewed (questions, pair programming, etc.)
+- [Minute Media](http://www.minutemedia.com/careers/) | Tel-Aviv, Israel | Phone screening with engineer. On-site real-world challenge questions with two engineers. Sometimes a take-home assignment or existing code sample submission.
+- [Mirumee](https://mirumee.com/jobs) | Wroclaw, Poland; Remote | Pair programming and code review using one of the issues (or Pull Requests) in our open-source Saleor project, general discussion about programming, technology and candidate's experience
+- [Mixmax](https://mixmax.com/careers) | San Francisco, CA | Takehome assignment purely based on their platform, followed by phone interview
+- [MobileCashout](https://www.mobilecashout.com) | Barcelona, Spain; Valencia, Spain | Quick introduction video call with a tech (less than 10-15 minutes). On-site open source contribution to a project of candidates choosing, paired with a tech from the team. Interview and a short questionaire about software design and relevant technologies. Interview and presentation of the company with a HR rep.
+- [Mobilethinking](https://mobilethinking.ch) | Geneva, Switzerland | 1 hour discussion about technical background and past experiences, preferably in-person
+- [Mode](https://about.modeanalytics.com/careers) | San Francisco, CA | Phone interview followed by onsite pair-architecting and discussion
+- [MokaHR](http://mokahr.com) | Beijing, China | Take home project/challenge, then on-site programming session taken from problems we encounter at work
+- [Moneytree Front-end Web Team](https://moneytree.jp) | Tokyo, Japan | Pair programming exercise and social gathering with team
+- [Monzo](https://monzo.com) | London, UK & Remote | Phone interview with another engineer. Take-home assignment. Call to debrief on take-home assignment. Half-day interview (on-site or Hangouts) with three conversational sessions: (1) building on take-home test & real-world system design (verbal and collaborative); (2) digging into knowledge & understanding in 1-2 other relevant technical areas; (3) general background, teams and ways of working.
+- [Moteefe](https://www.moteefe.com/jobs) | London, UK & Remote | Interview with CTO. Take home project/challenge.
+- [Mutual Mobile](https://mutualmobile.com/careers) | Austin, TX; Hyderabad, India | Technical discussion, code test based on actual work you'll be doing, panel style discussions for cross-functional and culture-fit.
+- [Mutual of Omaha](http://www.mutualofomaha.com/careers) | Omaha, NE, USA | Panel Style Interviews analyzing problem solving, ability to adapt well to change, and interpersonal communication skills.
+- [Mutually Human Software](https://www.mutuallyhuman.com) | MI, OH, WA | Collaborative problem analysis and design exercise, pairing exercise
+- [Nanobox](https://nanobox.io) | Lehi, UT; Remote | A phone/video/person-to–person interview with a look at past projects (github, bitbucket, source code, etc.)
+- [Native Instruments](https://www.native-instruments.com) | Berlin, Germany | Takehome programming assignment and personal interviews with part of the hiring team.
+- [Nearsoft Inc](https://nearsoft.com/join-us/) | Hermosillo, Mexico; Chihuahua, Mexico; Mexico City, Mexico | Takehome [logic test](https://nearsoft.com/blog/the-logic-behind-nearsofts-logic-test/), english interview to check communication skills, short technical interview about experience, long technical discussion about languages/tools/practices you will use on daily basis, pair programming session.
+- [Nedap](http://lifeatnedap.com/vacatures) | Groenlo, Netherlands / Remote | A simple conversation, human to human and a small on-site project
+- [Neoteric](https://neoteric.eu/career/) | Gdańsk, Warsaw Poland; Remote | Face2Face conversation, take home exercise & pair programming session
+- [Netflix](https://jobs.netflix.com/jobs/867042) | Los Gatos, CA | Takehome exercise, series of real-world interviews with engineers, HR, engineering managers and our director
+- [Netguru](https://www.netguru.co/career) | Warsaw, Poland; Remote | Takehome exercise & pair programming session
+- [Netlandish](https://www.netlandish.com) | Los Angeles, CA; Remote | Takehome exercise, chat interview, video interview
+- [Netlify](https://www.netlify.com/careers) | San Francisco, CA | Paid takehome project and online/onsite discussion
+- [New Relic](https://newrelic.com/about/careers) | San Francisco, CA | Takehome exercise &/ or pair programming session depending on the team
+- [NewStore](https://www.newstore.com/careers/) | Berlin, Germany; Hannover, Germany; Erfurt, Germany; Boston, MA | Telephone technical interview, code sample submission or takeaway coding exercise, on-site pair programming, design session (1/2 day)
+- [NewVoiceMedia](https://www.newvoicemedia.com/about-newvoicemedia/careers) | Basingstoke, England; Wroclaw, Poland | Telephone interview, takeaway coding exercise, on-site pair programming, code review & technical discussion (1/2 day)
+- [Nexcess.net](https://nexcess.net) | Southfield, MI | We mostly chat to get a feel on both ends if there's a good cultural fit. We ask questions to see what experience you have and how you think as a programmer. At some point we look at some of your code or have you work on some of ours (1 hour).
+- [Nimbl3](https://www.workhiro.com/companies/nimbl3) | Bangkok, Thailand | Takehome exercise and specific role discussion
+- [Niteoweb](http://www.niteoweb.com/careers) | Ljubljana, Slovenia | Join us for a week to see if we fit
+- [Nitro](https://www.gonitro.com/about/jobs) | Dublin, Ireland; San Francisco, CA | Phone Call, Take Home Test, Hiring Manager Phone Interview followed by an onsite discussion
+- [Noa](https://www.noa.one) | Berlin, Germany; San Francisco, CA | 1 technical chat, 2-3 cultural chats with colleagues from different departments in the team, if these work a pair programming exercise
+- [NodeSource](http://nodesource.com/careers) | Remote | A person-to–person walk through of a past project of yours
+- [Nomoko,camera](https://www.nomoko.world/jobs) | Zurich, Switzerland | Three interrogations
+- [Nord Software](https://www.nordsoftware.com/en/jobs) | Helsinki, Finland; Tampere, Finland; Stockholm, Sweden | Take-home exercise & interview with CEO and senior developer
+- [NoRedInk](https://www.noredink.com/jobs) | San Francisco, CA | Take-home exercise & pair programming session
+- [NoviCap](https://novicap.com/en/careers.html) | Barcelona, Spain | Takehome exercise & discussion on-site
+- [Novoda](https://novoda.com/hiring) | London, UK; Liverpool, UK; Berlin, Germany; Barcelona, Spain; Remote | 2 x Pairing sessions & conversational interviews [(public repo)](https://github.com/novoda/dojos)
+- [Novus Partners](https://www.novus.com/jobs) | New York, NY | Take-home exercise & on-site exercises (choice of laptop or whiteboard)
+- [Nozbe](https://nozbe.com/jobs) | Remote | Take-home exercise & interview with the team
+- [npm, Inc](https://npmjs.com/jobs) | Oakland, CA / Remote | No technical challenges. Just interview conversations.
+- [Nubank](https://nubank.workable.com) | São Paulo, BR | Phone conversation, take-home exercise, code walkthrough, on-site code pairing.
+- [numberly](https://www.numberly.com) | Paris, France | Series of interviews, that go over technical background, past experiences and cultural knowledge
+- [numer.ai](https://angel.co/numerai/jobs) | San Francisco, CA
+- [Nutshell](https://www.nutshell.com/jobs) | Ann Arbor, MI, US | Email screen / take-home programming excercise ([public repo](https://github.com/nutshellcrm/join-the-team))
+- [Nyon](https://www.nyon.nl/vacatures) | Amsterdam, The Netherlands | 1. Skype (or real life) interview 2. Take home exercise (3-4 hours) 3. Meet entire team and pair programming sessions
+- [O'Reilly Media](https://oreilly.com/jobs) | Sebastopol, CA; Boston, MA; Remote | Phone conversation, take-home exercise or pair programming session, team interview, all via Google Hangout
+- [Object Partners, Inc.](https://objectpartners.com/careers/) | Minneapolis, MN; Omaha, NE | Phone interview to gauge mutual interest, followed by a slightly more in-depth technical round-table interview
+- [Objective, Inc.](https://www.objectiveinc.com/careers) | Salt Lake City, UT | Take-home programming exercise, then onsite friendly chat with team
+- [OCTO Technology](http://rejoins.octo.com) | Paris, France | HR interview to go over your experiences and cultural knowledge. Then more or less informal discussion with two future team members about architecture design, agile practices, take-home project, pair programming...
+- [Olist](https://olist.com) | Curitiba, Brazil | Take-home project and remote or on-site interviews
+- [Omada Health](https://www.omadahealth.com/jobs) | San Francisco, CA | Take home exercise and/or pair programming session.
+- [Onfido](https://onfido.com/jobs) | London, UK; Lisbon, Portugal | Take-home exercise and on-site interview/discussion with potential team
+- [Ontame.io](https://ontame.io) | Copenhagen, Denmark | Take home exercise and specific role discussion
+- [Opbeat](https://opbeat.com/jobs#seniorbackendengineer) | Copenhagen, Denmark | Pairing on a real-world problem
+- [Openmind](https://www.openmindonline.it) | Monza, Italy | On-site interviews
+- [Optoro](http://www.optoro.com/open_position_item/?oid=134960) | Washington, DC | Take home exercise. Review your code onsite.
+- [Ostmodern](http://www.ostmodern.co.uk) | London, UK | Take-home exercise & discussion on-site
+- [Outbrain](https://www.outbrain.com/jobs) | NYC, Israel | Take-home exercise & discussion
+- [Outlandish](https://outlandish.com) | London, UK | Take-home exercise, real-world pair programming session, friendly chat with team
+- [Outlook iOS & Android](https://github.com/outlook/jobs) | San Francisco, CA / New York, NY | Take-home project & online / onsite discussion
+- [The Nerdery](https://www.nerdery.com/careers) | Minneapolis, MN; Chicago, IL; Phoenix, AZ; Kansas City, KS | Take-home exercise
+- [The Outline](https://boards.greenhouse.io/theoutline) | New York, NY | Take-home exercise
+
+## P - R
+- [PACE Telematics](https://www.pace.car/jobs) | Karlsruhe, Germany | Culture and mindset check, on-site meet and great, small code challenge to see development style and strategy
+- [Paessler AG](https://www.paessler.com/company/career/jobs) | Nuremberg, Germany | Pairing with different engineers on a real problem
+- [Pagar.me](https://pagar.me) | São Paulo, BR | Skype interview, on-site pairing task and-or real world problem solving process / presentation
+- [Pager](https://pager.com) | New York, NY; Remote | Short phone interview, conversational interviews, take-home exercise & discussion
+- [PagerDuty](https://pagerduty.com/careers) | San Francisco, CA / Toronto, Canada / Atlanta, GA | Zoom / on-site pair programming and tasks
+- [Palatinate Tech](https://tech.palatinategroup.com) | London, UK | Hangout/Skype/phone followed by (normally) on-site pairing task
+- [Parabol](http://parabol.co) | New York, NY; Los Angeles, CA; Remote | Culture check followed by compensated, [open-source contribution](https://github.com/ParabolInc/action/projects) skills evaluation
+- [Pariveda Solutions](http://parivedasolutions.com) | Dallas, TX / Houston, TX / Atlana, GA / Washington, DC / New York, NY / Chicago, IL / San Francisco, CA / Seattle, WA / Los Angeles, CA | Personality assessment (Predictive Index) and case study. Programming aptitude test (language independent) for college hires.
+- [PassFort](https://passfort.com/about#jobs) | London, UK | Skype interview, and on-site pairing task
+- [Paws](https://paws.com/careers) | London, UK | Phone screening, take-home project, on-site pairing/discussion on your solution and meet the team.
+- [Paybase](https://paybase.io) | London, UK | Phone screening, Take home project, On-site interview for technical and culture fit, Open Q&A session with team
+- [PayByPhone](https://www.paybyphone.com/careers) | Vancouver, Canada | Remote programming interview, on-site "meet the team"
+- [Peaksware Companies (TrainingPeaks, TrainHeroic, MakeMusic)](https://peaksware.com) | Boulder, CO; Denver, CO | Phone screen, take home project, remote and on-site interviews for technical and cultural fit
+- [PeerStreet](https://info.peerstreet.com/careers) | Los Angeles, CA | Phone, take home project & on-site to meet the team
+- [Pento](https://angel.co/pento/jobs) | Remote | Quick personal interview, take home project
+- [Persgroep, de](https://www.persgroep.nl/werken-bij-it) | Amsterdam, Netherlands | Tech interview (technical background and experiences) and culture fit, both on-site
+- [Pex](https://angel.co/pexeso/jobs) | Los Angeles, CA; Remote | 3 sessions: brief phone conversation (30 min); take home assignment (2 hours); on-site or video discussion without any coding (2 hours)
+- [Phoodster](https://www.phoodster.com) | Stockholm, Sweden | Take-home exercise + on-site discussion
+- [Pillar Technology](http://pillartechnology.com/careers) | Ann Arbor, MI; Columbus, OH; Des Moines, IA | Phone, take home exercise, in-person pairing session and site visit.
+- [Pilot](https://pilot.co/become-a-partner) | Remote | Two calls. Introduction one (30m) + verification of communication skills and remote work experience (15m)
+- [Pivotal](https://pivotal.io/careers) | San Francisco, CA; Los Angeles, CA; New York, NY; Boston, MA; Denver, CO; Atlanta, GA; Chicago, IL; Seattle, WA; Washington, D.C.; London, UK; Sydney, Australia; Toronto, Canada; Paris, France; Berlin, Germany; Tokyo, Japan | Initial remote technical screen featuring pair programming; on-site pair programming interview, generally a full day pairing on production code using test-driven development.
+- [Platform.sh](https://platform.sh) | Paris, International | Remote Interview, Wide-Ranging discussions on many diverse subjects. Remote interviews with team members.
+- [Platform45](https://platform45.com) | Johannesburg, South Africa; Cape Town, South Africa | On-site interview, take-home project and culture fit day
+- [Playlyfe](https://getcatalyst.in/careers) | Bangalore, India | Short personal interview, on-site demonstration of programming in browser devtools followed by discussion about the problem
+- [Pluralsight](https://www.pluralsight.com/careers) | Salt Lake City, UT; San Francisco, CA; Boston, MA; Orlando, FL | Takehome exercise & pair programming session
+- [Pointman](http://pointman.bamboohr.com/jobs/) | Buffalo, NY | Takehome exercise + on-site discussion
+- [Poki](http://jobs.poki.com) | Amsterdam, The Netherlands | Pair programming on-site w/ two engineers where we focus on teamwork, googling relevant documentation and fixing things together.
+- [Polar](http://polar.me/company/careers) | Toronto, Canada | Phone interview, followed by 1-2 onsite pair-programming interviews based on their platform
+- [Popstand](http://www.popstand.com) | Los Angeles, CA | Build MVPs for startups
+- [Popular Pays](http://www.popularpays.com) | Chicago, IL | Phone chat/coffee to determine what will be worked on during a day of pair-programming on a real problem that the candidate thinks best demonstrates their skills.
+- [Pragmateam](https://pragma.team/talent) | Sydney, Australia | Engineering Consultancy And Delivery - Takehome exercise & discussion
+- [PremiumBeat](https://www.premiumbeat.com/careers) | Montreal, Canada | Discussion and general, high level questions
+- [Primary](https://www.primary.com/jobs) | New York, NY / Remote |  Phone chat, take home exercise, pair program and discuss onsite.
+- [PromptWorks](https://www.promptworks.com/jobs) | Philadelphia, PA | Take-home project, pair programming, discussion on-site
+- [Pusher](https://pusher.com/jobs) | London, UK | Solve a real-world problem through a design session with our engineers
+- [Pygmalios](http://pygmalios.com/en) | Bratislava, Slovakia | Take-home project related to business and discussion with our engineers.
+- [Quiet Light Communications](https://quietlightcom.com/positions-web.php) | Rockford, IL, USA | Discussion, work samples and/or small freelance project
+- [Quintype](http://www.workatquintype.com) | Bengaluru, India / San Mateo, USA | Take home project, pair programming, discussion on-site
+- [Quizizz](https://quizizz.com) | Bengaluru, India | Phone chat, real world assignment, discussion w/ developers, pair programming, discussion on-site
+- [Ragnarson](https://ragnarson.com) | Lodz, Poland; Remote | Take-home exercise & pair programming session
+- [Railslove](https://www.railslove.com) | Cologne, Germany | Have a coffee in our office, casual chat with us, pair programming on a real project
+- [Raising IT](https://www.raisingit.com) | London, UK | Coffee with a team member, on-site pair programming and discussion
+- [Rakuten](https://jobs.rakuten.careers/careersection/rakuten_ext_cs/jobdetail.ftl?job=00000751&tz=GMT%2B09%3A00) | Tokyo, Japan | Discuss about relevant experience
+- [Rapyuta Robotics](http://www.rapyuta-robotics.com/pages/jobs.html) | Bengaluru, India / Tokyo, Japan / Zurich, Switzerland | Take-home assignment related to our ongoing projects, series of technical / experience based interviews, candidate presentation
+- [Rayfeed](https://rayfeed.com) | Vancouver, Warsaw | Video-call interview followed by a take-home exercise
+- [Razorpay](https://razorpay.com/jobs) | Bangalore, India | Phone screen, On-site pair programming, and ocassionally a take home project.
+- [ReactiveOps](https://reactiveops.com/careers) | Remote | Start with a brief talk with CTO or VP of Engineering, take home coding challenge, then remote interviews with several people on the engineering team
+- [Reaktor](https://reaktor.com/careers) | New York, NY; Amsterdam, Netherlands; Helsinki, Finland; Tokyo, Japan | Discussion, work samples from previous projects (work or hobby), take-home exercise if needed for further info
+- [Real HQ](https://realhq.com/jobs) | Austin, TX / Chicago, IL / Remote | Phone/video interviews, a take-home coding exercise, and a remote pair programming session.
+- [Realync](https://realync.com/careers) | Chicago, IL / Carmel, IN / Remote | Quick phone interview, then a take home project and finally in person interview (open discussions instead of quizzes - anything technical are real-world problems).
+- [Red Badger](https://red-badger.com/about-us/join-us) | London, UK | Phone & Skype interview, take home exercise, On-site interview
+- [RedCarpet](https://www.redcarpetup.com/jobs) | New Delhi, India | Interview, work sample/take-home project and discussion/code reviews
+- [Reflektive](https://www.reflektive.com/careers/) | San Francisco, CA; Bengaluru, India | A short take home project/assignment, followed by a couple of technical and non-technical discussions online and offline.
+- [Relabe](https://relabe.com) | San Juan, PR | First we screen for cultural fit then check for technical proficiency. 2-3 Interviews max in SJ
+- [Rentify](https://www.rentify.com/jobs) | London, UK | Phone call, take home real-world project, on-site pair programming, product discussion
+- [RentoMojo](https://www.rentomojo.com/about/careers) | Bangalore, India | Short takehome project + phone interview
+- [Resin.io](https://resin.io) | Remote | Take home real-world project and a couple of technical and non-technical discussions
+- [ReSpark](https://www.respark.co.uk) | London, UK | Phone conversation followed by on-site interview w/ task relevant to daily role.
+- [RestaurantOps](https://www.restaurantops.co) | Scottsdale, AZ | Take Home Project & pair programming session
+- [Revlv](https://revlv.net) | Manila, Philippines | Discussion about developer skills, previous projects and experiences.
+- [Rex Software](https://www.rexsoftware.com/careers) | Brisbane, Australia | Take home project, feedback + interview
+- [Rizk.com](https://rizk.com) | Ta' Xbiex, Malta | Take-home assignment, discussion w/ developers
+- [Rockode](http://www.rockode.com) | Bangalore, India | Real world assignment, group hack session, discussions
+- [Rose Digital](http://rosedigital.co) | New York, NY | Phone conversation followed by pair coding components that mirror day to day work, in person discussion about code, take home project if needed for more info
+- [RubyGarage](https://rubygarage.org) | Dnipro, UA | Take-home project, code review and discussion on-site
+- [Runtastic](https://www.runtastic.com) | Linz, Austria; Vienna, Austria | Video call with recruiting staff, take home project, video call for code review, discussion, questions
+
+## S - U
+- [Sahaj Software Solutions](https://www.sahajsoft.com) | Bangalore, India; Chennai, India; San Jose, CA | Take home code + Pairing + Discussion
+- [Salesforce.org Tech & Products](http://www.salesforce.org) | Remote | Phone screen, hands-on programming test solving real-world problems, Google Hangouts video sessions with engineers
+- [Salesloft](https://salesloft.com) | Atlanta, GA | Phone interview, take-home project, cultural-fit interview, technical interview where candidate modifies take-home project
+- [Samsara](https://www.samsara.com/jobs) | San Francisco, CA; Atlanta, GA; London, UK | Phone interview, onsite interview (technical challenges based on real problems we've faced at Samsara)
+- [SC5 Online](https://sc5.io/careers) | Helsinki, Finland; Jyväskylä, Finland | Take-home assignment (intentionally short, takes at most an hour to complete), discussion and review assignments
+- [Segment](https://segment.com) | San Francisco, CA; Vancouver, Canada | Phone interview, take-home assignment (small fun project), onsite interview (technical + core/culture) -> intended to set you up for success
+- [Sensor Tower](https://sensortower.com/jobs) | San Francisco, CA | Phone call, on-site interview including discussion about projects/skills and a short real-world programming challenge
+- [Sensu](https://sensu.io) | Remote | Video call, choice of pairing session or take home programming assignment
+- [Séntisis](http://sentisis.com/trabaja-con-nosotros) | Madrid, Spain; Mexico City, Mexico; Bogotá, Colombia; Santiago de Chile, Chile; Remote | Phone call, on-site/remote interview including discussion about projects/skills and a short real-world pair-programming exercise
+- [SerpApi](https://serpapi.com) | Austin, TX / Remote | Skype core value and culture interview, review of contributions on GitHub or other platforms, and take-home project if online contributions are not enough.
+- [Sertis](https://sertiscorp.com) | Bangkok, Thailand | Technical & culture fit interview, take-home project, follow-up discussion
+- [Setapp Sp. z o.o.](https://setapp.pl/career) | Poznan, Poland | Online/face-to-face discussion with developers about everyday programming dilemmas & reviewing your own code
+- [Sharoo](https://www.sharoo.com/jobs/) | Zurich, Switzerland; Remote | Soft skills interview, take home project, technical interview based on take home project.
+- [Shogun](https://getshogun.com) | Remote | Discussion about software development and past experience, code samples, paid trial period.
+- [Showmax](https://blog.showmax.com/engineering-careers) | Beroun, Czechia; Prague, Czechia; Remote | Take home project, then a pair-programming and discussion onsite / Hangouts round.
+- [ShuttleCloud](https://shuttlecloud.com/jobs) | Chicago, IL / Madrid, Spain | Take-home project, then on-site code walk through and a real world problem discussion.
+- [Signal AI](https://www.signal-ai.com/about-us/careers) | London, UK | Phone screen; take home code exercise; on-site code extension with pair programming and discussion
+- [Simple](https://www.simple.com) | Portland, OR | Discussion about software development and architecture skills and experience.
+- [Simpli.fi](https://www.simpli.fi/about-us/careers) | Fort Worth, TX, USA | Takehome code challenge and review
+- [SimpliField](http://www.welcometothejungle.co/companies/simplifield/jobs) | Lille, France | Interview with the CTO and the developer team
+- [Simply Business](https://www.simplybusiness.co.uk/about-us/careers/tech) | London, UK / Remote | Three stage, one day interview with quick feedback. One of the stages is 1.5h pair-programming session, where interviewee is assigned a task and interviewing developer plays role of Product Owner.
+- [Skyrise Pro](https://www.skyrisepro.com) | Chicago, IL | Take-home coding project, on-site interview including coding enhancements to the take-home project, offsite group activity
+- [Slack](https://slack.com/jobs) | San Francisco, CA | Call with recruiter, 1 week take-home project, call with hiring manager, on-site interview covering high-level system design, best software development practices and culture-fit
+- [Small Improvements](https://www.small-improvements.com/careers) | Berlin, Germany
+- [Social Tables](http://www.socialtables.com) | Washington, DC | Chat about skills and past experiences + bring in a code sample from previous work or side project to discuss
+- [SocialCops](http://www.socialcops.com) | New Delhi, India | A mini project (to be done within 8 days), followed by a discussion with the team you're applying to. Then as the final step, a call with one of the founders.
+- [Softwear](http://nl.softwear.nl/vacatures) | Amsterdam, Netherlands | Writing software for the fashion industry – remotely – in an international team.
+- [Sogilis](http://sogilis.com) | Grenoble, France | Discussion about interests, practices, and motivation. Presentation/code review/pair programming on a personal or professional project.
+- [Sourcegraph](https://about.sourcegraph.com/jobs) | San Francisco, CA & Remote | Tailored to the candidate, often consists of take-home work, discussion of real-world eng challenges, and product familiarity.
+- [Splice](https://jobs.splice.com) | New York, NY; Remote | Call with recruiter, 4 hr take-home project, video interview w two engs on take-home exercise, video call with hiring manager, video call w VPE & principal eng to talk about architecture.
+- [Spreedly](https://www.spreedly.com/jobs) | Durham, NC | Take-home project [related to business](https://engineering.spreedly.com/blog/programming-puzzles-are-not-the-answer-how-spreedly-does-work-samples.html)
+- [Springer Nature (Asia)](https://www.natureasia.com) | Tokyo, Japan | Discussion & Pair programming session
+- [Springer Nature Digital](https://sndigital.springernature.com) | Berlin, Germany; London, UK | Phone chat; take-home project; then a pairing session based on the project, a technical chat, and a chat with non-technical team members
+- [SpronQ](https://www.spronq.nl) | Amsterdam, Netherlands | Takehome coding challenge
+- [Square](https://squareup.com/careers) | San Francisco, CA | Pair programming in a work environment
+- [Srijan Technologies](http://srijan.net) | Delhi, India | General high level questions/discussion followed by Pair programming OR take-home coding challenge
+- [Stardog Union](http://stardog.com) | Washington, DC; Remote | Technical discussion and general interest conversations
+- [Statflo](http://statflo.com) | Toronto, Canada | Phone screening, take home project, on-site interview discussing the take home project, high-level architectural brainstorm, and questions about career and team work.
+- [store2be](https://www.store2be.com/de/jobs/tech) | Berlin, Germany | Skype/on-site interview, take-home project
+- [Storm](https://www.stormx.io/about#jobs) | Seattle, WA; Remote | Phone/skype screen --> Take-home coding assignment --> on-site/skype interview loop to discuss assignment; meet-and-greet with other teams --> +1/-1 based on team consensus
+- [STYLABS](http://www.stylabs.in) | Mumbai, India | Phone Screen, Take-home project and discussion on-site
+- [Subvertical (VerticalChange)](https://verticalchange.com/job_posts) | Remote | Phone screening, live pair programming & personal project code review
+- [Sulvo](https://sulvo.com/careers) | New York, NY / Remote | Interview over video call for cultural fit first, if you pass we proceed with technical interview that doesn't include coding games or challenges
+- [Superplayer](https://superplayer.fm) | Porto Alegre, Brazil | Skype/On-site interview, take-home project and interview with CTO and CEO
+- [SurveySparrow](https://surveysparrow.com/careers) | Kochi, India | Skype interview, take home project and code review, interview with CTO and CEO
+- [SVTi (Sveriges Television)](http://svti.svt.se) | Stockholm, Sweden | On-site interview, take-home project, follow up interview where you walk through how you chose to solve the task.
+- [SweetIQ](https://sweetiq.com/about/careers) | Montreal, Canada | Discussion and general, high level questions
+- [Symphony Commerce](https://www.symphonycommerce.com/careers) | San Francisco, CA / Remote | Take-home project (phone), design discussion, review and critique *our* code, debugging questions
+- [Symplicity](https://www.symplicity.com/about/join-us) | Arlington, VA | Take-home project and code review in-person
+- [SysGarage](http://sysgarage.com) | Buenos Aires, Argentina | Take-home project and real world pair programming
+- [TableCheck](https://corp.tablecheck.com/en/jobs) | Tokyo, Japan | Show us your code! Brief Skype interview and take-home project or pairing for those without code.
+- [Tailor Brands](https://tailorbrands.com/jobs) | Tel Aviv-Yafo, Israel | Discuss knowledge and interests, explore previous work experience, during the technical interview we discuss real-life problems.
+- [tails.com](https://tails.com/careers) | Richmond (London), UK | Live pair programming or take home project with review
+- [Tanooki Labs](http://tanookilabs.com) | New York, NY | Paid half-day take home project with followup review and discussion
+- [Tattoodo](https://www.tattoodo.com) | Copenhagen, Denmark | Takehome exercise
+- [Telus Digital](https://labs.telus.com) | Toronto, Canada; Vancouver, Canada | Discuss knowledge and interest, explore previous work, pair with developers when possible, alternatively take home project.
+- [Ten Thousand Coffees](https://tenthousandcoffees.com) | Toronto, Canada | Take home project, then explain how you solved the project
+- [Tes](https://engineering.tes.com/recruitment/) | Remote; London, UK | Remote pair programming session on React/Node kata with small takehome exercise as prep. Remote interview with senior engineers about previous experience, technical knowledge and interests.
+- [Tesco PLC](https://www.tesco.com) | London, United Kingdom | Pair programming and casual hypothetical system design discussion
+- [Test Double](https://testdouble.com/join/developer) | Remote | Initial conversation, Consulting interview, Technical interview, Pair programming, Takehome exercise.
+- [Textio](https://textio.com/careers/?utm_source=github&utm_medium=forum&utm_campaign=textio-careers-engineering&utm_content=poteto-hiring-without-whiteboards) | Seattle, WA | Initial screen to discuss experience and interest in a role at Textio; then a take-home programming task is discussed during a 1-hour tech screen (on-site or remote); finally a larger take-home project, simulating real work, is discussed during an on-site presentation plus 1-1s; [How we hire](https://textio.ai/how-we-hire-a74cdbadd1e8)
+- [The Book of Everyone](https://thebookofeveryone.workable.com) | Barcelona, Spain | Quick interview, meet the team, pairing with developers on your own project
+- [theScore](http://mobile.thescore.com/careers) | Toronto, Canada | Coding challenge & systems design challenge
+- [Thinkmill](https://www.thinkmill.com.au) | Sydney, Australia | Initial meet and greet interview with Thinkmillers from the relevant team, take home assignment followed by tech review on a followup interview.
+- [Thinslices](http://www.thinslices.com) | Iasi, Romania | Takehome exercise & in person pair programming on a simple Kata.
+- [thoughtbot](https://thoughtbot.com/jobs) | San Francisco, CA; London, UK | [Our interview process](https://thoughtbot.com/playbook/our-company/hiring#interviewing)
+- [ThoughtWorks](https://www.thoughtworks.com/careers) | San Francisco, CA | Interviews with ThoughtWorkers of diverse backgrounds and roles; take home assignment followed by in person pairing session.
+- [Thread](https://www.thread.com/jobs) | London, UK | Take home test, real world architecture design, real world pair programming.
+- [ThreatSpike Labs](https://www.threatspike.com) | London, UK | Take home computing and security related challenges to be completed over a week.
+- [Tilde](http://www.tilde.io) | Portland, OR | Pair programming sessions with each member of the team, working on problems similar to daily work.
+- [Timbuktu](https://www.timbuktutravel.com) | Cape Town, South Africa | On site interview and pair programming exercise
+- [Titanium](https://titanium.codes) | Moldova, Chisinau | High level review of public activity on GitHub/BitBucket/Gitlab (if applicable) and screening via phone, On-site technical & Team fit interview, Formal "Meet the Team" meeting
+- [Toggl](https://toggl.com/jobs) | Remote / Tallinn, Estonia | Online test on basic programming skills, followed by interview (typically includes get-to-know questions and technical skill testing). Depending on the team, there may be a take-home or live coding assignment.  **Paid test week** to work with the team on actual bugs/features.
+- [Torii](https://jobs.jointorii.co) | Raanana, Israel | Take-home fun full-stack-app exercise followed by an on-site review
+- [Toucan Toco](http://toucantoco.com/fr/team#jobs) | Paris, France | Pair-programming and TDD
+- [Touché](https://gotouche.com) | Singapore, Singapore; Barcelona, Spain | Skype / Phone / on-site interview, take-home project, technical interview to discuss the project, team interview.
+- [TrademarkVision](https://trademark.vision) | Brisbane, Australia | On site interview and quick take-home excercise
+- [TrainHeroic](http://trainheroic.com/careers/) | Boulder, CO; Denver, CO | Phone screen, take home project, remote and on-site interviews for technical and cultural fit
+- [TrainingPeaks](http://www.trainingpeaks.com/careers.html) | Boulder, CO; Denver, CO | Phone screen, take home project, remote and on-site interviews for technical and cultural fit
+- [TripStack](http://www.tripstack.com/company/careers/) | Toronto, Canada | Take-home assignment, followed up by a face to face code walk through
+- [Trivago](https://www.trivago.com) | Düsseldorf, Germany | Case Study, Skype Interview, On site Interview with some code review exercises
+- [Trōv](https://boards.greenhouse.io/trov) | Remote | Take-home project with followup interview from actual prospective teammates
+- [Truefit](https://truefit.io/about/) | Pittsburgh, PA | Phone screen, Take-home project, In-person interview with the team that you would join
+- [Truora](https://truora.com)  | Bogotá, Colombia; Cali, Colombia; Remote | Take-home project, followed by phone interview with tech leads to discuss the project.
+- [Truss](https://truss.works/jobs) | San Francisco, CA; Remote | Phone screen/ Take-home project that resembles a problem Truss has seen many times before / Followup interview about the project / Closing Interview, all interviews done remotely
+- [Twistlock](https://www.twistlock.com) | Tel Aviv, Israel | Takehome
+- [uberall](https://uberall.com/en/careers) | Berlin, Germany | 30-min coding on-site, then a trial day
+- [uBiome](https://ubiome.com/careers) | San Francisco, CA / Santiago, Chile | High level screening over the phone or on-site, take home project, code review and discussion
+- [Ubots](http://ubots.com.br) | Porto Alegre, Brazil | Skype/On-site interview, take-home project, technical interview
+- [Unbounce](https://unbounce.com) | Vancouver, BC | Phone screen, take-home project, project discussion, technical interview
+- [Unboxed](https://unboxed.co) | London, UK | Take home feature requests, pairing with developers to extend solution, team-fit interviews, chat with a director
+- [Unearth](http://www.unearthlabs.com/careers) | Seattle, WA | Take home project, team-fit interviews, technical discussion
+- [Unito](https://unito.io/careers/) | Montreal, Canada | Team-fit interviews, technical discussion, take home project
+- [Untappd](https://www.untappd.com) | Wilmington, NC; New York, NY; Los Angeles, CA | Review portfolio - What projects have you worked on? + personality assessment, + interview
+- [Updater](http://www.updater.com/jobs/openings) | New York, NY | Begin-at-home assignment highly relevant to role, presented and discussed during on-site.
+- [Uprise](http://uprise.se) | Uppsala, Sweden | Take-home assignment, code review and discussion on-site
+- [Urban Massage](https://www.urbanmassage.com/jobs) | London, UK | Project done at home, in-person walk through. Meeting the team is an integral part.
+- [UserTesting](https://www.usertesting.com/about-us/jobs) | Atlanta, GA; San Francisco, CA; Mountain View, CA | Initial interview, pair programming, and offer
+- [uSwitch](https://www.uswitch.com/vacancies) | London, UK | Take-home project related to our business area, followed by pairing with developers to extend it
+
+## V - X
+- [Valassis Digital](http://www.valassis.com/digital-advertising) | Seattle, WA; San Francisco, CA; Lansing, MI; Hamburg, Germany | Phone screen, on-site interview with group, paired whiteboard problem solving and discussion, take-home project and follow-up review
+- [Valuemotive](https://valuemotive.com/en/career) | Helsinki, Finland | Code examples from previous projects (work or hobby)  or take-home exercise
+- [Varsity Tutors](https://www.varsitytutors.com) | Remote | Take home assignment, presentation of assignment, live code review with team. Advanced / high-level chat with team based on skillset and role.
+- [Vayu Technology](http://vayu.com.au) | Sydney, Australia; Kathmandu, Nepal | Short interview, general programming questions and short take home challenge.
+- [Venminder, Inc.](https://www.venminder.com) | Elizabethtown, KY; Louisville, KY | Initial phone screen to explain position. If candidate interested they get a take home assignment followed by a non-scripted in-person interview with team members to judge personality fit.
+- [Verve](https://verve.co/careers) | London, UK | An intentionally short, take home exercise that mirrors real project work and incorporates code review elements
+- [Vingle](https://careers.vingle.net) | Seoul, Korea | Written interview, takehome project, in-person, conversational code review and interviews with engineers and engineering managers
+- [virtual7](http://virtual7.de/de/karriere) | Kalrsruhe, Germany | Phone interview and on-site interview based on personal experience.
+- [Visma e-conomic](https://www.e-conomic.dk/om/job) | Copenhagen, Denmark | Take home assignment, assignment presentation and discussion
+- [Voltra Co.](https://voltra.co) | Amsterdam, Netherlands / New York, NY / Remote | Show us your github account, tell us what you know. Let's pair on an OSS PR!
+- [VSX](https://https://vsx.net/jobs) | Dresden, Germany | On-site interview, home coding challenge, presentation/discussion of proposed solutions
+- [VTEX](http://lab.vtex.com/careers) | Rio de Janeiro, Brazil |  Take-home project, Skype interview and then in-person talk.
+- [VTS](https://buildingvts.com) | New York City, New York | Technical Phone Screen, Pair programming on-site & in-person talks with multiple engineers
+- [Waymark](https://waymark.com/jobs) | Detroit, MI | Technical phone screen, take-home project, going over the project in person, follow up day in the office
+- [Wealthsimple](https://www.wealthsimple.com/work-with-us) | Toronto, Canada | Pair programming on a problem similar to daily work, discussion of system design
+- [WeAreHive](http://www.wearehive.co.uk) | London, UK | Just walk us through your best code or we give you a small real-world exercise to do at home.
+- [Webantic](https://webantic.co.uk/careers) | Manchester, UK | Basic TNA self-assessment and real-world problem-solving
+- [Webflow](https://webflow.com) | San Francisco, CA & Remote | Short take-home challenge, followed by a paid 3-5 day freelance contract project
+- [Weebly](http://careers.weebly.com) | San Francisco, CA; Scottsdale, AZ; New York, NY | Phone screens (30 min to 1 hour) by a recruiter, an engineering manager (focused on your past experiences), an engineer (focused on system / db / api design). Followed by a paid 3 day onsite where you work on a project and then present it to a team of engineers.
+- [Weedmaps](https://weedmaps.com/careers) | Irvine, CA; Denver, CO; Tucson, AZ; Madrid, Spain; Remote | Phone screen, Group interview, and possible code review
+- [wemake.services](https://wemake.services) | Remote | Short unpaid take-home challenge, code review, portfolio discussion
+- [Weploy](https://www.weployapp.com/join-our-team/) | Melbourne, Australia; Sydney, Australia | Phase 1: Face to face interview to get to know the candidate. Phase 2: Problem solving session that involves designing a solution to a real-world problem followed by 1/2 day of pairing with a senior dev on implementing the proposed solution.
+- [WeTransfer](https://wetransfer.homerun.co) | Amsterdam, Netherlands | Culture fit and fundamentals chat, skills interview - no whiteboarding! - and take-home project, communication and collaboration interview, meet with the VP of Engineering
+- [Wheely](https://wheely.com/en/careers) | Moscow, Russia | Get to know each other in under 30 minutes on-site or via Skype, take-home challenge, on-site review and interview with the team.
+- [Wildbit](https://wildbit.com) | Philadelphia, PA & Remote | Take-home project followed by interviews.
+- [Wirecard Brasil](https://wirecardbrasil.workable.com) | São Paulo, Brazil | Phone or on-site Cultural Fit interview, take-home coding challenge, code review and discussing in-person.
+- [WorldGaming](https://worldgaming.com) | Toronto, Canada | Technical Interview, Solution Design, Take Home Assignment, then Culture fit interview with the team
+- [woumedia](https://woumedia.com) | Remote | Getting to know each other and aligning expectations. Talking about past experiences, projects you are proud of and latest challenges you faced. It’s followed by a use case study from one of our current projects.
+- [WyeWorks](https://wyeworks.com) | Montevideo, Uruguay | Take-home project and discussion on-site
+- [X-Team](http://x-team.com) | Remote | A short, fun Node.js challenge, followed by a series of culture-based interview questions, followed by a creative mock project with tons of freedom on how to approach, and follow-up questions about the approach they chose to discuss the tradeoffs. Usually a 10-30 day paid training is rewarded to top candidates to prep them for remote communication skills needed to join a team.
+- [XING](https://www.xing.com) | Hamburg, Germany | Take-home coding challenge, on-site review and short interviews with future team.
+
+## Y - \#
+- [1000mercis group](http://www.1000mercis.com/#!/careers/?lang=en) | Paris, France | Series of interviews, that go over technical background, past experiences and cultural knowledge
+- [18F](https://18f.gsa.gov/join/) | Remote; Washington, DC; New York, NY; Chicago, IL; San Francisco, CA | take-home coding exercise (2-4 hours), technical and values-match interviews over video chat
+- [3D Hubs](https://3dhubs.com/jobs) | Amsterdam, The Netherlands | Take-home code challenge from our product's domain followed by discussion remote/on-site, sometimes do an additional on-site pair programming session.
+- [500friends](http://500friends.com/who-we-are/careers) | San Francisco, CA; Remote | Take home challenge followed by onsite expansion of the submission and high level discussions (design exercise or overview of past projects)
+- [500Tech](https://500Tech.com) | Tel Aviv, Israel | Pair programming on a laptop in working env
+- [8th Light](https://8thlight.com) | Chicago, IL; London, UK; Los Angeles, CA; New York, NY | Take home code challenge, discussion, pair programming session
+- [Yhat](https://www.yhat.com/jobs) | Brooklyn, NY | Demo something cool you built and walk us thru the code + design decisions
+- [YLD](https://yld.breezy.hr) | London, UK | Take home-code challenge, pair-programming session and discussion about past experience
+- [Yodas](https://yodas.com) | Binyamina, Israel | Coding tasks over github repository
+- [Yoyo Wallet](http://yoyowallet.com) | London, UK | Take home code challenge, discussion of the code challenge, and general, high level questions
+- [YunoJuno](http://www.yunojuno.com) | London, UK | Code challenge based on a realistic feature request on a real open-source package created and used at YunoJuno; phone/video interview with members of the Product team to explore technical background, experiences, interests, cultural fit; on-site interview, usually with Product Manager and CTO
+- [ZAP Group](https://jobs.kenoby.com/grupozap/) | São Paulo, Brazil | Takehome exercise, series of real-world interviews with engineers, HR, engineering managers and product managers on site.
+- [Zencargo](https://www.zencargo.com/careers) | London, UK | Initial interview with CTO, covering professional experience interests and expectations, followed by one technical interview focused on fundamentals and familiarity with best practices. A further short chat with co-founders to get to know each other - - either onsite or remote.
+- [Zenefits (UI Team)](https://www.zenefits.com/careers) | San Francisco, CA | One technical phone screen focused on JS fundamentals and/or one timeboxed take-home challenge. The onsite is a series of interviews designed to test your understanding of JS, HTML/CSS, design, etc.
+- [Zerodha](https://zerodha.com/careers) | Bengaluru, India | Technical call at the beginning and one take home programming task.
+- [Zype](https://boards.greenhouse.io/zype) | New York, NY & Remote | Skype/Video call with VP of Product and a take-home challenge.
+
+## Also see:
+- [They Whiteboarded Me!](http://they.whiteboarded.me)
+
+
+### [notes-n-resources/interview-q-and-a.md](notes-n-resources/interview-q-and-a.md)
+
+# Full-stack Developer Interview Questions and Answers
+
+## <a name='toc'>Table of Contents</a>
+
+  * [Architecture](#architecture)
+  * [Concurrency](#concurrency)
+  * [Java](#java)
+  * [General Questions](#general)
+  * [WEB](#web)
+  * [SQL](#sql)
+  * [NoSQL](#nosql)
+  * [Transactions](#transcations)
+  * [Scalability](#scalability)
+  * [Load balancing](#load-balancing)
+  * [Cloud computing](#cloud-computing)
+  * [Distributed](#distributed)
+  * [Cache](#cache)
+  * [Networking](#networking)
+  * [Operating system](#os)
+  * [Compilers](#compilers)
+  * [C++](#cpp)
+  * [Javascript](#javascript)
+  * [Python](#python)
+  * [Go](#go)
+  * [Code writing](#codewriting)
+  * [Functional programming](#functional-programming)
+  * [Reactive programming](#reactive-programming)
+  * [Git](#git)
+  * [DevOps](#devOps)
+  * [QA](#qa)
+  * [Agile, Scrum, XP](#agile)
+  * [Algorithms](#algorithms)
+  * [UML](#uml)
+  * [Other](#other)
+  * [Machine learning](#machine-learning)
+  * [Big Data](#big-data)
+  * [Image processing](#image-processing)
+  * [Cryptography](#cryptography)
+  * [Security](#security)
+  * [Android](#android)
+  * [Books](#books)
+
+#### [[⬆]](#toc) <a name='architecture'>Architecture:</a>
+* *Design principles*. ([*DRY*](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [*KISS*](https://en.wikipedia.org/wiki/KISS_principle), [*YAGNI*](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), [*Occam's razor*](https://en.wikipedia.org/wiki/Occam%27s_razor), [*Worse is better*](https://en.wikipedia.org/wiki/Worse_is_better), [*convention over configuration*](https://en.wikipedia.org/wiki/Convention_over_configuration), [*separation of concerns*](https://en.wikipedia.org/wiki/Separation_of_concerns), [*Law of Demeter (principle of least knowledge)*](https://en.wikipedia.org/wiki/Law_of_Demeter), boy scout rule, [*single source of truth*](https://en.wikipedia.org/wiki/Single_source_of_truth), [*single version of truth*](https://en.wikipedia.org/wiki/Single_version_of_the_truth), [*principle of least astonishment*](https://en.wikipedia.org/wiki/Principle_of_least_astonishment), [*let it crash principle*](https://en.wikipedia.org/wiki/Crash-only_software), [*inversion of control*](https://en.wikipedia.org/wiki/Inversion_of_control))
+* [*SOLID*](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
+
+|Rule|Description|
+|:--|:--|
+|[**S**ingle responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)|A module should be responsible to one, and only one, actor.|
+|[**O**pen/closed principle](https://en.wikipedia.org/wiki/Open/closed_principle)|A software artifact should be open for extension but closed for modification.|
+|[**L**iskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)|It should be possible to substitute base class with derived class.|
+|[**I**nterface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle)|Many client-specific interfaces are better than one general-purpose interface.|
+|[**D**ependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)|Depend upon Abstractions but not on concretions. This means that each module should be separated from other using an abstract layer which binds them together. Source code dependency points in the opposite direction compared to the flow of control.|
+
+* [*The Clean Architecture*](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
+* [*Clean Code Cheat Sheet*](https://www.planetgeek.ch/wp-content/uploads/2014/11/Clean-Code-V2.4.pdf)
+* [*One key abstraction*](http://wiki3.cosc.canterbury.ac.nz/index.php/One_key_abstraction)
+* [*Aspect-oriented programming*](https://en.wikipedia.org/wiki/Aspect-oriented_programming)
+* [*The Twelve-Factor App*](http://12factor.net)
+* [*Domain-driven design*](https://en.wikipedia.org/wiki/Domain-driven_design)
+* [*Microservices*](https://en.wikipedia.org/wiki/Microservices) are a style of software architecture that involves delivering systems as a set of very small, granular, independent collaborating services. 
+  * Pros of *microservices* (The services are easy to replace, Services can be implemented using different programming languages, databases, hardware and software environment, depending on what fits best)
+* *Design patterns*.
+  * **Creational**: [*Builder*](https://refactoring.guru/design-patterns/builder), [*Object Pool*](https://en.wikipedia.org/wiki/Object_pool_pattern), [*Factory Method*](https://refactoring.guru/design-patterns/factory-method), [*Singleton*](https://refactoring.guru/design-patterns/singleton), [*Multiton*](https://en.wikipedia.org/wiki/Multiton_pattern), [*Prototype*](https://refactoring.guru/design-patterns/prototype), [*Abstract Factory*](https://refactoring.guru/design-patterns/abstract-factory)
+   * **Structural**: [*Adapter*](https://refactoring.guru/design-patterns/adapter), [*Bridge*](https://refactoring.guru/design-patterns/bridge), [*Composite*](https://refactoring.guru/design-patterns/composite), [*Decorator*](https://refactoring.guru/design-patterns/decorator), [*Facade*](https://refactoring.guru/design-patterns/facade), [*Flyweight*](https://refactoring.guru/design-patterns/flyweight), [*Proxy*](https://refactoring.guru/design-patterns/proxy)
+   * **Behavioral**: [*Chain of Responsibility*](https://refactoring.guru/design-patterns/chain-of-responsibility), [*Command*](https://refactoring.guru/design-patterns/command), [*Interpreter*](https://en.wikipedia.org/wiki/Interpreter_pattern), [*Iterator*](https://refactoring.guru/design-patterns/iterator), [*Mediator*](https://refactoring.guru/design-patterns/mediator), [*Memento*](https://refactoring.guru/design-patterns/memento), [*Observer*](https://refactoring.guru/design-patterns/observer), [*State*](https://refactoring.guru/design-patterns/state), [*Strategy*](https://refactoring.guru/design-patterns/strategy), [*Template Method*](https://refactoring.guru/design-patterns/template-method), [*Visitor*](https://refactoring.guru/design-patterns/visitor)
+* [*Enterprise integration patterns*](https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns), [*SOA patterns*](www.soapatterns.org).
+* [*3-tier architecture*](https://en.wikipedia.org/wiki/Multitier_architecture) (Presentation tier, Application tier, Data tier)
+* *3-layer architecture* (DAO (Repository), Business (Service) layer, Controller)
+* [*REST*](https://en.wikipedia.org/wiki/Representational_state_transfer) (Representational state transfer), [*RPC*](https://en.wikipedia.org/wiki/Remote_procedure_call)
+* [*Idempotent operation*](https://en.wikipedia.org/wiki/Idempotence) (The PUT and DELETE methods are referred to as idempotent, meaning that the operation will produce the same result no matter how many times it is repeated)
+* *Nullipotent operation* (GET method is a safe method (or nullipotent), meaning that calling it produces no side-effects)
+* [*Naked objects*](https://en.wikipedia.org/wiki/Naked_objects), [*Restful objects*](https://en.wikipedia.org/wiki/Restful_Objects).
+* Why do you need *web server* (tomcat, jetty)?
+* [*Inheritance*](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) vs [*Composition*](https://en.wikipedia.org/wiki/Object_composition) (Inheritance - is-a relationship, whether clients will want to use the subclass type as a superclass type. Composition - has-a or part-of relationship).
+* [*Multiple inheritance (diamond) problem*](https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem)
+* Advantages of using *modules*. (reuse, decoupling, namespace)
+* Drawbacks of not using [*separation of concerns*](https://en.wikipedia.org/wiki/Separation_of_concerns)
+  * Adding new features will take an order of magnitude longer
+  * Impossible to optimize
+  * Extremely difficult to test
+  * Fixing and debugging can be a nightmare (fixing something in one place can lead to something else breaking that seems completely unrelated).
+* What is [*uniform access principle*](https://en.wikipedia.org/wiki/Uniform_access_principle)? (client code should not be affected by a decision to implement an attribute as a field or method)
+* [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) (organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations)
+* [GRASP](https://en.wikipedia.org/wiki/GRASP_(object-oriented_design))
+
+#### [[⬆]](#toc) <a name='concurrency'>Concurrency:</a>
+* What is [*deadlock*](https://en.wikipedia.org/wiki/Deadlock), [*livelock*](https://en.wikipedia.org/wiki/Deadlock#Livelock)? (Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does. A livelock is similar to a deadlock, except that the states of the processes involved in the livelock constantly change with regard to one another, none progressing.)
+* [*Deadlock avoidance*](https://www.geeksforgeeks.org/deadlock-prevention). (prevention, detection, avoidance (Mutex hierarchy), and recovery)
+* What is [*starvation*](https://en.wikipedia.org/wiki/Starvation_(computer_science))? (a problem encountered in concurrent computing where a process is perpetually denied necessary resources to process its work)
+* What is [*race condition*](https://en.wikipedia.org/wiki/Race_condition)? (Behavior of software system where the output is dependent on the sequence or timing of other uncontrollable events)
+* What is [*happens-before*](https://en.wikipedia.org/wiki/Happened-before) relation?
+* What is [*thread contention*](https://stackoverflow.com/questions/1970345/what-is-thread-contention)? (Contention is simply when two threads try to access either the same resource or related resources in such a way that at least one of the contending threads runs more slowly than it would if the other thread(s) were not running). Contention occurs when multiple threads try to acquire a lock at the same time
+* What is a [*thread-safe*](https://en.wikipedia.org/wiki/Thread_safety) function? (Can be safely invoked by multiple threads at the same time)
+* [*Publish/Subscribe*](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern
+* What is [*2-phase locking*](https://en.wikipedia.org/wiki/Two-phase_locking)? (Growing phase, shrinking phase. Guarantees serializablity for transactions, doesn't prevent deadlock).
+* What is the difference between *thread* and *process*? (Threads (of the same process) run in a shared memory space, while processes run in separate memory spaces)
+* What is [*false sharing*](https://en.wikipedia.org/wiki/False_sharing), [*cache pollution*](https://en.wikipedia.org/wiki/Cache_pollution), *cache miss*, [*thread affinity*](https://en.wikipedia.org/wiki/Processor_affinity), [*ABA-problem*](https://en.wikipedia.org/wiki/ABA_problem), [*speculative execution*](https://en.wikipedia.org/wiki/Speculative_execution)?
+* What is a
+  * [*obstruction-free*](https://en.wikipedia.org/wiki/Non-blocking_algorithm#Obstruction-freedom) - if all other threads are paused, then any given thread will complete its operation in a bounded number of steps
+  * [*lock-free*](https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom) - if multiple threads are operating on a data structure, then after a bounded number of steps one of them will complete its operation
+  * [*wait-free*](https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom) - every thread operating on a data structure will complete its operation in a bounded number of steps, even if other threads are also operating on the data structure
+
+  algorithm?
+* What is [*sequential consistency*](https://en.wikipedia.org/wiki/Sequential_consistency)? (The result of any execution is the same as if the operations of all the processors were executed in some sequential order, and the operations of each individual processor appear in this sequence in the order specified by its program).
+* What is a [*memory barrier*](https://en.wikipedia.org/wiki/Memory_barrier)? (A memory barrier, also known as a membar, memory fence or fence instruction, is a type of barrier instruction that causes a CPU or compiler to enforce an ordering constraint on memory operations issued before and after the barrier instruction)
+* Synchonization aids in Java
+  * CountDownLatch
+  * CyclicBarrier
+  * Phaser
+  * ReentrantLock
+  * Exchanger
+  * Semaphore
+  * LinkedTransferQueue
+* What is *data race*? (When a program contains two conflicting accesses that are not ordered by a [happens-before](https://docs.oracle.com/javase/specs/jls/se12/html/jls-17.html#jls-17.4.5) relationship, it is said to contain a data race. Two accesses to (reads of or writes to) the same variable are said to be conflicting if at least one of the accesses is a write. But see [this](https://stackoverflow.com/questions/16615140/is-volatile-read-happens-before-volatile-write/16615355#16615355))
+* Java [*memory model*](https://docs.oracle.com/javase/specs/jls/se12/html/jls-17.html#jls-17.4)
+  * A program is correctly synchronized if and only if all sequentially consistent executions are free of data races
+  * Correctly synchronized programs have sequentially consistent semantics. If a program is correctly synchronized, then all executions of the program will appear to be sequentially consistent
+  * Causality requirement for incorrectly synchronized programs: [link](https://pdfs.semanticscholar.org/c132/11697f5c803221533a07bd6db839fa60b7b8.pdf)
+* What is *monitor* in Java? (Each object in Java is associated with a monitor, which a thread can lock or unlock)
+* What is *safe publication*?
+* What is *wait*/*notify*?
+* [*Amdahl's law*](https://en.wikipedia.org/wiki/Amdahl%27s_law)? (Speedup = 1 / (1 - p + p / n))
+* [*Dining philosophers problem*](https://en.wikipedia.org/wiki/Dining_philosophers_problem) (Resource hierarchy (first take lower-indexed fork), arbitrator, communication (dirty/clean forks)).
+* [*Produces/consumer*](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem) problem.
+* [*Readers/writers*](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) problem.
+* [*Transactional memory*](https://en.wikipedia.org/wiki/Software_transactional_memory)
+* [*Coroutine*](https://en.wikipedia.org/wiki/Coroutine)
+
+#### [[⬆]](#toc) <a name='java'>Java:</a>
+* [*PhantomReference*](https://en.wikipedia.org/wiki/Phantom_reference), [*WeakReference*](https://en.wikipedia.org/wiki/Weak_reference), [*SoftReference*](https://en.wikipedia.org/wiki/Soft_reference), *finalize()*, *ReferenceQueue*.
+* How to correctly stop a thread? (Thread.interrupt())
+* What is *Spring*? (Spring Framework is an application container for Java that supplies many useful features, such as Inversion of Control, Dependency Injection, abstract data access, transaction management, and more)
+  * Spring is a framework for dependency injection: a design pattern that allows the developer to build very decoupled systems by injecting dependencies into classes.
+  * It elegantly wraps Java libraries and makes then much easier to use in your application.
+  * Included in the framework are implementations of commonly used patterns such as REST and MVC web framework which are predominately use by in web applications.
+* What is *Spring-Boot*?
+* What is *Hibernate* and JPA (Caches, lazy-loading)?
+* *Garbage collection*. (G1, Young/Old generation collectors combination examples: PS Scavenge/PS MarkSweep, Copy/MarkSweepCompact)
+* How to write *benchmarks*? ([jmh](http://openjdk.java.net/projects/code-tools/jmh/))
+* What are Java 9 modularity?
+* What is OSGI? (Specification describes a modular system and a service platform for the Java programming language that implements a complete and dynamic component model. Each bundle has its own classpath. Dependency hell avoidance. META-INF/MANIFEST.MF contains OSGI-info)
+* Serializable / Externalizable
+* What is a *servlet* (versions of servlet api, Servlet 4.0)?
+* What is a *servlet filter*? How to implement *GZipFilter*? (ResponseWrapper)
+* What is *generics* and PECS (producer extends and consumer super)?
+* What is the difference between <?>, \<Object\>, <? extends Object> and no generic type? [link1](http://stackoverflow.com/questions/8055389/whats-the-difference-between-and-extends-object-in-java-generics) [link2](http://stackoverflow.com/questions/678822/what-is-the-difference-between-and-object-in-java-generics)
+* Explain method signature for [Collections.max(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#max-java.util.Collection-), [Collections.fill(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#fill-java.util.List-T-), [Collections.copy(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#copy-java.util.List-java.util.List-), [Collections.sort(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-java.util.Comparator-)
+* Why are arrays covariant but generics are invariant? [link](http://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant)
+* Major specs: JAX-RS, JAX-WS, JMS, JAXB, XSLT, XPATH, JNDI, JMX, JDBC, XML(SAX, DOM, StAX)
+* [*Performance Diagnostic Methodology*](https://dzone.com/articles/how-to-solve-your-java-performance-problems-part-2)
+
+#### [[⬆]](#toc) <a name='general'>General Questions:</a>
+* [*Polymorphism*](https://en.wikipedia.org/wiki/Polymorphism_(computer_science)) (Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)
+* [*Encapsulation*](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)) (Packing of data and functions into a single component)
+* [*Virtual function*](https://en.wikipedia.org/wiki/Virtual_function) (Overridable function)
+* [*Virtual method table*](https://en.wikipedia.org/wiki/Virtual_method_table)
+* [*Dynamic binding*](https://en.wikipedia.org/wiki/Late_binding) (Actual method implementation invoked is determined at run time based on the class of the object, not the type of the variable or expression)
+* How does [*garbage collector*](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) work? (Mark and sweep: mark: traverse object graph starting from root objects, sweep: garbage collect unmarked objects. Optimizations: young/old generations, incremental mark and sweep)
+* [*Tail recursion*](https://en.wikipedia.org/wiki/Tail_call) (A tail call is a subroutine call performed as the final action of a procedure)
+* [*Semantic versioning*](http://semver.org)
+
+#### [[⬆]](#toc) <a name='web'>WEB:</a>
+* WEB security vulnerabilities ([*XSS*](https://en.wikipedia.org/wiki/Cross-site_scripting), [*CSRF*](https://en.wikipedia.org/wiki/Cross-site_request_forgery), [*session fixation*](https://en.wikipedia.org/wiki/Session_fixation), [*SQL injection*](https://en.wikipedia.org/wiki/SQL_injection), [*man-in-the-middle*](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), [*buffer overflow*](https://en.wikipedia.org/wiki/Buffer_overflow))
+* *CSRF prevention* (CSRF-token)
+* What is [*JSONP*](https://en.wikipedia.org/wiki/JSONP), [*CORS*](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)? (A communication technique used in JavaScript programs running in web browsers to request data from a server in a different domain, something prohibited by typical web browsers because of the same-origin policy)
+* [*HTTPS*](https://en.wikipedia.org/wiki/HTTPS) negotiation steps.
+* What is HTTP Strict Transport Security ([*HSTS*](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security))? (Prevents Man in the Middle attacks)
+* Browser-server communication methods: WebSocket, EventSource, Comet(Polling, Long-Polling, Streaming)
+* [*Character encoding*](https://en.wikipedia.org/wiki/Character_encoding)
+* What is [*role-based access control*](https://en.wikipedia.org/wiki/Role-based_access_control) and [*access control list*](https://en.wikipedia.org/wiki/Access_control_list)?
+* What is session and persistent cookies, sessionStorage and [localStorage](https://en.wikipedia.org/wiki/Web_storage#Local_and_session_storage)?
+* How to implement *remember-me*? (http://jaspan.com/improved_persistent_login_cookie_best_practice)
+* Authentication using cookies, [*JWT*](https://en.wikipedia.org/wiki/JSON_Web_Token) (JSON Web Tokens).
+
+#### [[⬆]](#toc) <a name='sql'>SQL:</a>
+* *SQL join types* (inner join, left/right outer join, full outer join, cross join)
+![Join types](https://habrastorage.org/files/7ff/b2c/3a2/7ffb2c3a25b74dcf9eec013282b9cfb4.png "Join types"))
+* *SQL normal forms* 
+  1. The domain of each attribute contains only atomic values, and the value of each attribute contains only a single value from that domain
+  1. No non-prime attribute in the table is functionally dependent on a proper subset of any candidate key
+  1. Every non-prime attribute is non-transitively dependent on every candidate key in the table. BCNF.Every non-trivial functional dependency in the table is a dependency on a superkey.)
+* *Isolation levels* and Anomalies
+
+|Isolation_level\Anomaly|Lost_update (because of rollback)|Dirty_read|Non_repeatable_reads second_lost_update|Phantoms|Write_skew|
+|:---------------|:-------:|:-------:|:-------:|:-------:|:-------:|
+|Read Uncommitted|-        |may occur|may occur|may occur|may occur|
+|Read Committed  |-        |-        |may occur|may occur|may occur|
+|Repeatable Read |-        |-        |-        |may occur|may occur|
+|Snapshot        |-        |-        |-        |-        |may occur|
+|Serializable    |-        |-        |-        |-        |-        |
+
+#### [[⬆]](#toc) <a name='nosql'>NoSQL:</a>
+* Types of NoSQL databases?
+  * Document Stores (MongoDB, Couchbase)
+  * Key-Value Stores (Redis, Volgemort)
+  * Column Stores (Cassandra)
+  * Graph Stores (Neo4j, Giraph)
+
+#### [[⬆]](#toc) <a name='transactions'>Transactions:</a>
+* [*ACID*](https://en.wikipedia.org/wiki/ACID)
+* [*2-phase commit protocol*](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)
+* [*3-phase commit protocol*](https://en.wikipedia.org/wiki/Three-phase_commit_protocol)
+* What is *pessimistic* / [*optimistic*](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) locking?
+
+#### [[⬆]](#toc) <a name='scalability'>Scalability:</a>
+* Horizontal and vertical scaling.
+* How to scale database? (Data partitioning, sharding(vertical/horizontal), replication(master-slave, master-master)).
+* *Denormalization*.
+* What is *synchronous multimaster replication*? (Each server can accept write requests, and modified data is transmitted from the original server to every other server before each transaction commits)
+* What is *asynchronous multimaster replication*? (Each server works independently, and periodically communicates with the other servers to identify conflicting transactions. The conflicts can be resolved by users or conflict resolution rules)
+* When to use messaging queue?
+* MongoDB, Redis.
+* Hadoop basics.
+
+#### [[⬆]](#toc) <a name='load-balancing'>Load balancing:</a>
+* sticky/non-sticky sessions
+* *Sticky sessions* vs storing sessions in Redis.
+
+#### [[⬆]](#toc) <a name='cloud-computing'>Cloud computing:</a>
+* What is [*cloud computing*](https://en.wikipedia.org/wiki/Cloud_computing)? (Cloud computing platform is a fully automated server platform that allows users to purchase, remotely create, dynamically scale, and administer system)
+* [*Amazon web services*](https://en.wikipedia.org/wiki/Amazon_Web_Services)
+* [*Google Cloud Platform*](https://en.wikipedia.org/wiki/Google_Cloud_Platform)
+* [*Microsoft Azure*](https://en.wikipedia.org/wiki/Microsoft_Azure)
+
+#### [[⬆]](#toc) <a name='distributed'>Distributed:</a>
+* [*Consensus*](https://en.wikipedia.org/wiki/Consensus_(computer_science))
+* [*Raft*](https://en.wikipedia.org/wiki/Raft_(computer_science)) ([In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf))
+* [*Paxos*](https://en.wikipedia.org/wiki/Paxos_(computer_science))
+* What is [*CAP theorem*](https://en.wikipedia.org/wiki/CAP_theorem)? [Illustrated proof](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/). [CAP-FAQ](http://www.the-paper-trail.org/page/cap-faq) (It is impossible for a distributed computer system to simultaneously provide all three of the following guarantees: *consistency*, *availability*, *partition tolerance*). [Gilbert and Lynch's paper](https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf). ["Please stop calling databases CP or AP"](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html)).
+![CAP theorem](http://guide.couchdb.org/draft/consistency/01.png "CAP theorem")
+* What is *map-reduce*? (Word count example)
+* *Sharding counters*.
+* Distributed software:
+  * Distributed streaming platforms: **kafka**
+  * Distributed key-value store: **zookeeper**, **etcd**, **Consul**
+  * Map-reduce: **hadoop**, **spark**
+  * Distributed file system: **hbase**
+  * Cluster management: **kubernetes**, **docker-swarm**, **mesos**
+* [Herlihy’s consensus hierarchy](https://en.wikipedia.org/wiki/Read-modify-write). Every shared object can be assigned a consensus number, which is the maximum number of processes for which the object can solve wait-free consensus in an asynchronous system.
+```
+1 Read-write registers
+2 Test-and-set, swap, fetch-and-add, queue, stack
+⋮ ⋮
+∞ Augmented queue, compare-and-swap, sticky byte
+```
+* [*Consistency models*](https://en.wikipedia.org/wiki/Consistency_model):
+  * [*Sequential consistency*](https://en.wikipedia.org/wiki/Sequential_consistency)
+  * [*Causal consistency*](https://en.wikipedia.org/wiki/Causal_consistency)
+  * [*Eventual consistency*](https://en.wikipedia.org/wiki/Eventual_consistency)
+  * [*Monotonic Read Consistency*](https://en.wikipedia.org/wiki/Consistency_model#Monotonic_Read_Consistency)
+  * [*Monotonic Write Consistency*](https://en.wikipedia.org/wiki/Consistency_model#Monotonic_Write_Consistency)
+  * [*Read-your-writes Consistency*](https://en.wikipedia.org/wiki/Consistency_model#Read-your-writes_Consistency)
+  * [*Writes-follows-reads Consistency*](https://en.wikipedia.org/wiki/Consistency_model#Writes-follows-reads_Consistency)
+* *Consensus number*. Maximum number of threads for which objects of the class can solve consensus problem.
+* [*Logical clock*](https://en.wikipedia.org/wiki/Logical_clock)
+* [*Vector clock*](https://en.wikipedia.org/wiki/Vector_clock)
+
+#### [[⬆]](#toc) <a name='cache'>Cache:</a>
+* What is *write-through* and *write-behind* caching? (write-through (synchronous), write-behind (asynchronous))
+* HTTP cache options?
+
+#### [[⬆]](#toc) <a name='networking'>Networking:</a>
+* OSI model (Physical, Data link, Network, Transport, Session, Presentation, Application)
+* Multithreading vs select
+* [*Switch*](https://en.wikipedia.org/wiki/Network_switch), [*hub*](https://en.wikipedia.org/wiki/Ethernet_hub), [*router*](https://en.wikipedia.org/wiki/Router_(computing))
+* [*TCP congestion*](https://en.wikipedia.org/wiki/TCP_congestion_control)
+* *TCP back-pressure*
+
+#### [[⬆]](#toc) <a name='os'>Operating system:</a>
+* What is [*memory mapped*](https://en.wikipedia.org/wiki/Memory-mapped_file) file and its benefits?
+* *Interprocess communication* methods. (Pipes, Events, Mailboxes/Ports (can be implemented by using shared memory and semaphores), Direct Message Passing).
+* [*Virtual memory*](https://en.wikipedia.org/wiki/Virtual_memory) organization.
+* *Process scheduler*.
+
+#### [[⬆]](#toc) <a name='compilers'>Compilers:</a>
+* [*Recursive descent parser*](https://en.wikipedia.org/wiki/Recursive_descent_parser)
+* [*LL parser*](https://en.wikipedia.org/wiki/LL_parser)
+* [*LR parser*](https://en.wikipedia.org/wiki/LR_parser)
+* [*Context-free grammar*](https://en.wikipedia.org/wiki/Context-free_grammar)
+* [*Chomsky hierarchy*](https://en.wikipedia.org/wiki/Chomsky_hierarchy)
+
+#### [[⬆]](#toc) <a name='cpp'>C++:</a>
+* [*C++ standard*](http://eel.is/c++draft/)
+* [*Memory model*](https://en.cppreference.com/w/cpp/language/memory_model)
+* *Data race*. When an evaluation of an expression writes to a memory location and another evaluation reads or modifies the same memory location, the expressions are said to conflict. A program that has two conflicting evaluations has a data race unless
+  * both evaluations execute on the same thread or in the same signal handler, or
+  * both conflicting evaluations are atomic operations (see std::atomic), or
+  * one of the conflicting evaluations happens-before another (see std::memory_order)
+
+  If a data race occurs, the behavior of the program is undefined.
+* [*SFINAE*](https://en.cppreference.com/w/cpp/language/sfinae) [1](https://cpppatterns.com/patterns/function-template-sfinae.html)
+* [*PImpl*] https://en.cppreference.com/w/cpp/language/pimpl
+
+#### [[⬆]](#toc) <a name='javascript'>Javascript:</a>
+* this keyword
+* How *prototypes* work?
+* inheritance
+* differences between == and === (http://dorey.github.io/JavaScript-Equality-Table/)
+* closures
+* recursion 
+* What is *MVC*, *MVP*, *MVVM*?
+* What is *promise*?
+* What is event *bubbling* and *capturing*? (target.addEventListener(type, listener[, useCapture]))
+* What is *AMD*(Asynchronous Module Design) and *CommonJS*?
+* What is *jQuery*?
+
+#### [[⬆]](#toc) <a name='python'>Python:</a>
+* [Slice notation](https://stackoverflow.com/questions/509211/understanding-slice-notation/509295#509295)
+
+#### [[⬆]](#toc) <a name='go'>Go:</a>
+* [Language Specification](https://golang.org/ref/spec)
+* [Memory Model](https://golang.org/ref/mem)
+
+#### [[⬆]](#toc) <a name='codewriting'>Codewriting:</a>
+* Implement binary search
+```java
+int binarySearch(int[] a, int fromInclusive, int toExclusive, int key) {
+    int low = fromInclusive;
+    int high = toExclusive - 1;
+    while (low <= high) {
+        int mid = (low + high) >>> 1;
+        int midVal = a[mid];
+        if (midVal < key)
+            low = mid + 1;
+        else if (midVal > key)
+            high = mid - 1;
+        else
+            return mid; // key found
+    }
+    return -(low + 1); // key not found
+}
+```
+* Implement quick sort
+```java
+void qSort(int[] a, int fromInclusive, int toInclusive) {
+    int i = fromInclusive;
+    int j = toInclusive;
+    if (i >= j) return;
+    int separator = a[i + random.nextInt(j - i + 1)];
+    do {
+        while (a[i] < separator) ++i;
+        while (a[j] > separator) --j;
+        if (i > j) break;
+        int t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+        ++i;
+        --j;
+    } while (i <= j);
+    qSort(a, fromInclusive, j);
+    qSort(a, i, toInclusive);
+}
+```
+
+#### [[⬆]](#toc) <a name='functional-programming'>Functional programming:</a>
+* [*Referential transparency*](https://en.wikipedia.org/wiki/Referential_transparency)
+* What is [*Monad*](https://en.wikipedia.org/wiki/Monad_(functional_programming))?
+
+#### [[⬆]](#toc) <a name='reactive-programming'>Reactive programming:</a>
+* [*The Reactive Manifesto*](http://www.reactivemanifesto.org) (responsive, resilient, elastic, message driven)
+* [Reactive extensions](http://reactivex.io)
+* What is *asynchronous* and *non-blocking*? [link](https://www.linkedin.com/pulse/java-servlets-asynchronous-non-blocking-aliaksandr-liakh)
+
+#### [[⬆]](#toc) <a name='git'>Git:</a>
+* *Git* workflow? (Master: production-ready state; Develop: latest delivered development changes for the next release; Feature Branches; Release Branches; Hotfixes) ![Git workflow](http://nvie.com/img/git-model@2x.png "Git workflow") http://nvie.com/posts/a-successful-git-branching-model/
+* What is a rebase?
+
+#### [[⬆]](#toc) <a name='devOps'>DevOps:</a>
+* What is *Blue-green Deployment*, *Canary release*, *A/B testing*? [link](https://www.javacodegeeks.com/2016/02/blue-green-deployment.html)
+* What is *Docker*?
+
+#### [[⬆]](#toc) <a name='qa'>QA:</a>
+* What is *unit test*? (A test that purely tests a single unit of functionality)
+* What is *component test*?
+* What is *integration test*? (Examine several parts of a system to make sure that when integrated, these parts behave as expected)
+* What is *user acceptance test*? BDD?
+* Unit tests advantages?
+* Types of tests: acceptance testing, functional testing, smoke testing, regression testing, unit testing, integration testing, stress testing, (Load, Performance, Sanity, Stability, Security, Feature, Progression, Installation, Business).
+* Differences between stub and mock? (A stub is a test double with preprogrammed behavior. Mocks are stubs with preprogrammed expectations)
+* Selenium tests and webdriver.
+* How to test multithreading code?
+* What is *Consumer Driven Contract*? [link](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html)
+* [Types of tests](https://stackify.com/ultimate-guide-performance-testing-and-software-testing)
+
+#### [[⬆]](#toc) <a name='agile'>Agile:</a>
+* What is Agile? (http://agilemanifesto.org/principles.html)
+  * Individuals and interactions over Processes and tools
+  * Working software over Comprehensive documentation
+  * Customer collaboration over Contract negotiation
+  * Responding to change over Following a plan
+* What is Scrum? (Roles: product owner, development team, scrum master. Events: sprint)
+* What are the differences between Scrum and Waterfall? ( http://www.leanagiletraining.com/agile/waterfall-versus-scrum-how-do-they-compare/)
+* What is XP? ()
+* What is Kanban?
+* What is Lean development?
+
+#### [[⬆]](#toc) <a name='algorithms'>Algorithms:</a>
+* What Ο(n), Ω(n), Θ(n)?
+* What is NP, NP-completeness, NP-hardness with examples?
+
+#### [[⬆]](#toc) <a name='other'>Other:</a>
+* How to find memory leak. (Memory snapshot diff).
+* Profiling: sampling and instrumentation.
+* Regular expressions. (Examples)
+* What are your goals to work in our company? (3 categories: professional, financial, social)
+* What is *virtualization*?
+* What is total/partial order?
+* How to work with legacy code? (http://programmers.stackexchange.com/a/122024)
+
+#### [[⬆]](#toc) <a name='machine-learning'>Machine learning:</a>
+* [*Bayes' theorem*](https://en.wikipedia.org/wiki/Bayes%27_theorem):
+
+![equation](http://latex.codecogs.com/svg.latex?\inline&space;\fn_cs&space;P(A|B)&space;=&space;\dfrac{P(B|A)\times&space;P(A)}{P(B)},P(B)&space;=&space;\sum\limits_{i}{P(Ai)\times&space;P(B|Ai)})
+* [*Confidence interval*](https://en.wikipedia.org/wiki/Confidence_interval)
+* [*p-value*](https://en.wikipedia.org/wiki/P-value)
+* [*Overfitting*](https://en.wikipedia.org/wiki/Overfitting)
+* [*Bias–variance tradeoff*](https://en.wikipedia.org/wiki/Bias–variance_tradeoff)
+* [*Backpropagation*](https://en.wikipedia.org/wiki/Backpropagation)
+* [*Reinforcement learning*](https://en.wikipedia.org/wiki/Reinforcement_learning)
+* [*Curse of dimensionality*](https://en.wikipedia.org/wiki/Curse_of_dimensionality)
+* [*Cross-validation*](https://en.wikipedia.org/wiki/Cross-validation_(statistics))
+* [*Bag-of-words*](https://en.wikipedia.org/wiki/Bag-of-words_model), [*Stop words*](https://en.wikipedia.org/wiki/Stop_words), [*n-gram*](https://en.wikipedia.org/wiki/N-gram), [*tf–idf*](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), [*Latent semantic analysis*](https://en.wikipedia.org/wiki/Latent_semantic_analysis)
+* [*Linear regression*](https://en.wikipedia.org/wiki/Linear_regression)
+* [*Logistic regression*](https://en.wikipedia.org/wiki/Logistic_regression)
+* [*Naive Bayes classifier*](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
+* [*Support vector machine*](https://en.wikipedia.org/wiki/Support_vector_machine)
+* [*Principal component analysis*](https://en.wikipedia.org/wiki/Principal_component_analysis)
+* [*Deep learning*](https://en.wikipedia.org/wiki/Deep_learning)
+
+#### [[⬆]](#toc) <a name='big-data'>Big Data:</a>
+* [*Lambda architecture*](https://en.wikipedia.org/wiki/Lambda_architecture)
+* [*HyperLogLog*](https://en.wikipedia.org/wiki/HyperLogLog)
+* [*Event sourcing*](http://microservices.io/patterns/data/event-sourcing.html)
+
+#### [[⬆]](#toc) <a name='image-processing'>Image processing:</a>
+
+#### [[⬆]](#toc) <a name='cryptography'>Cryptography:</a>
+* [*Public-key cryptography*](https://en.wikipedia.org/wiki/Public-key_cryptography)
+* [*Public key certificate*](https://en.wikipedia.org/wiki/Public_key_certificate)
+* [*Blockchain*](https://en.wikipedia.org/wiki/Blockchain)
+* [*Proof-of-work system*](https://en.wikipedia.org/wiki/Proof-of-work_system)
+* [*Secret sharing*](https://en.wikipedia.org/wiki/Secret_sharing)
+* [*RSA*](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+```
+select 2 primes: p,q
+n = p*q
+phi(n) = (p-1)*(q-1)
+select 1<e<phi(n), gcd(e,phi(n))=1
+d=e^-1 mod phi(n)
+(e,n) - public key
+(d,n) - private key
+c = m^e mod n
+m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
+```
+
+#### [[⬆]](#toc) <a name='security'>Security:</a>
+* What is *OpenID and OAuth2.0 and OpenID Connect*?
+* Four main actors in an OAuth system (clients, resource owners, authorization servers, and protected resources)
+* What is *access_token, refresh_token, SAML token, JWT token*?
+* *Sticky session vs Session Replication*.
+* What is hash [*salt*](https://en.wikipedia.org/wiki/Salt_(cryptography))?
+* What is *Federated Authentication* ?
+* What is *CSP* and *SRI hash* ?
+* What is *Clickjacking* and *Cursorjacking* ? How to prevent it ?
+
+#### [[⬆]](#toc) <a name='android'>Android:</a>
+
+#### [[⬆]](#toc) <a name='books'>Books:</a>
+##### C++ programming
+* [The C++ Programming Language, 4th Edition](https://www.amazon.com/C-Programming-Language-4th/dp/0321563840)
+* [Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11 and C++14](https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996) 
+##### Java programming
+* [Effective Java (3rd Edition)](https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997)
+##### Algorithms
+* [Introduction to Algorithms, 3rd Edition](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844)
+* [The Art of Computer Programming](https://www.amazon.co.uk/Art-Computer-Programming-Volumes-1-4a/dp/0321751043)
+* [Network Flows: Theory, Algorithms, and Applications](https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X)
+* [Computational Geometry: Algorithms and Applications](https://www.amazon.com/Computational-Geometry-Applications-Mark-Berg/dp/3540779736)
+* [Algorithms on Strings, Trees, and Sequences](https://www.amazon.com/Algorithms-Strings-Trees-Sequences-Computational/dp/0521585198)
+* [Compilers: Principles, Techniques, and Tools](https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811)
+* [How to Solve It: Modern Heuristics](https://www.amazon.com/How-Solve-Heuristics-Zbigniew-Michalewicz/dp/3540224947)
+* [Scheduling Algorithms](https://www.amazon.com/Scheduling-Algorithms-Peter-Brucker/dp/354069515X)
+##### Concurrent programming
+* [Java Concurrency in Practice](https://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601)
+* [C++ Concurrency in Action, 2nd Edition](https://www.amazon.com/C-Concurrency-Action-Anthony-Williams/dp/1617294691)
+* [The Art of Multiprocessor Programming](https://www.amazon.com/Art-Multiprocessor-Programming-Revised-Reprint/dp/0123973376)
+##### Statistics
+* [Introductory Statistics](https://www.amazon.com/Introductory-Statistics-10th-Neil-Weiss/dp/0321989171)
+* [All of Statistics: A Concise Course in Statistical Inference](https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/1441923225)
+##### Machine Learning
+* [Applied Machine Learning](https://www.amazon.com/Applied-Machine-Learning-David-Forsyth/dp/3030181138)
+* [Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems 2nd Edition](https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646)
+* [The Elements of Statistical Learning: Data Mining, Inference, and Prediction](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+* [Machine Learning: a Concise Introduction](https://www.amazon.com/Machine-Learning-Introduction-Probability-Statistics/dp/1119439191)
+* [Learning From Data](https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069)
+##### Digital Signal Processing
+* [Digital Signal Processing: A Practical Approach, 2nd Edition](https://www.amazon.com/Digital-Signal-Processing-Practical-Approach/dp/0201596199)
+##### Digital Image Processing
+* [Digital Image Processing, 4th Edition](https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728)
+* [The Image Processing Handbook, 7th Edition](https://www.amazon.com/Image-Processing-Handbook-John-Russ/dp/1138747491)
+##### Other
+* [Reactive Programming with RxJava](https://www.amazon.com/Reactive-Programming-RxJava-Asynchronous-Applications/dp/1491931655)
+* [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
+* [Big Data: Principles and best practices of scalable realtime data systems](https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343)
+* [Designing Data-Intensive Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
+* [Kafka: The Definitive Guide](https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1491936169)
+* [Cassandra: The Definitive Guide](https://www.amazon.com/Cassandra-Definitive-Guide-Distributed-Scale/dp/1491933666)
+* [The Linux Programming Interface](https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200)
+* [Hibernate in Action](https://www.amazon.com/Hibernate-Action-Christian-Bauer/dp/193239415X)
+* [The Garbage Collection Handbook](https://www.amazon.com/Garbage-Collection-Handbook-Management-Algorithms/dp/1420082795)
+* [Pro Git](https://git-scm.com/book/en/v2)
+* [Learning JavaScript](https://www.amazon.com/Learning-JavaScript-Essentials-Application-Development/dp/1491914912)
+* [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+* [Release It!: Design and Deploy Production-Ready Software](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395)
+* [Gödel, Escher, Bach: An Eternal Golden Braid](https://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567)
+
+</details><details> <summary>Practice/ES6/</summary>
+
+### [Practice/ES6/Destructuring_Geneal.md](Practice/ES6/Destructuring_Geneal.md)
+### General Object Destructuring Example
+
+```js
+let myObj = {
+    name: "Luke",
+    age: 25,
+    hobbies: "music"
+};
+
+let { name, age, hobbies } = myObj;
+
+console.log(name, age, hobbies);    // => Luke 25 music
+```
+
+Now the variables listed in between the curly braces are assigned the value of their respective properties in myObj.
+
+### The order in which the variables are listed in the curly braces doesn't matter. Additionally, we don't have to list all the properties of an object if we only need one or two.
+
+```js
+console.log(age, name, hobbies);    // => 25 'Luke' 'music'
+
+console.log(hobbies, name, age);    // => music Luke 25
+
+console.log(hobbies, name);    // => music Luke
+
+```
+
+### General Array Destructuring Example
+
+```js
+let arr = ['Jim', 'Bob', 'Sarah', 'Cassie'];
+
+let [ jim, bob, sarah, cassie ] = arr;
+
+console.log(jim, bob, sarah, cassie); //outputs: Jim Bob Sarah Cassie
+```
+
+## Unlike objects, the name we give the variables doesn't matter. Let's change the above example:  So, each of the variable names will ONLY count for the index-positions I fetch.
+
+```js
+let arr = ['Jim', 'Bob', 'Sarah', 'Cassie'];
+
+let [ var1, var2, var3, var4] = arr;
+
+console.log(var1, var2, var3, var4); //outputs: Jim Bob Sarah Cassie
+```
+
+### If I include less variables then there are indexes in the arrays, then just like in Object-destructuring, only that many array element will be included in the returned array, starting from zero-index position and AGAIN without giving any meaning to the the name I give to the variables. So, each of the variable names will ONLY count for the index-positions I fetch.
+
+let arr = ['Jim', 'Bob', 'Sarah', 'Cassie'];
+
+let [ jim, bob, cassie ] = arr;
+
+console.log(jim, bob, cassie); //outputs: Jim Bob Sarah
+
+## Using Spread operator -  It is often used for splitting out a part of an object, but keeping the remaining properties in another object.
+
+```js
+let myObj = {
+
+    name: "Luke",
+    age: 25,
+    hobbies: "music"
+
+};
+
+let { hobbies, ...rest } = myObj;  // => Luke 25 music
+
+console.log(hobbies, rest)  // => music { name: 'Luke', age: 25 }
+
+console.log(hobbies, rest.age)  // => music 25
+
+```
+
+
+
+
+
+</details><details> <summary>Practice/Promise-Notes/</summary>
+
+### [Practice/Promise-Notes/then-in-Promise-Future-Reference-GOOD.md](Practice/Promise-Notes/then-in-Promise-Future-Reference-GOOD.md)
+# How .then() actually makes few asynchronous calls happen in particular order one after another
+
+A> https://spring.io/understanding/javascript-promises
+
+A function passed to then can also return another promise. This allows asynchronous operations to be chained together, so that they are guaranteed to happen in the correct order.
+
+B> https://medium.com/codebuddies/getting-to-know-asynchronous-javascript-callbacks-promises-and-async-await-17e0673281ee
+
+The true power of promises is shown when you have several asynchronous operations that depend on each other. So let's take the case where we have to make a request that depends on the result of another request.
+
+## Callback Hell Example
+Callbacks are a good way to declare what will happen once an I/O operation has a result, but what if you want to use that data in order to make another request? You can only handle the result of the request (if we use the example above) within the callback function provided.
+
+```js
+let request = require('request');
+
+let result;
+
+request('http://www.google.com', (error, response, body) => {
+    if (error) {
+        // Handle error
+    } else {
+        result = body;
+        console.log("Request successful")
+    }
+})
+
+console.log(result);
+
+/* OUTPUT
+
+undefined
+Request successful
+*/
+```
+In this example above, the variable “result" will not have a value when printed to the console at the last line. And will output “undefined" to the console because at the time that line is being executed, the callback has not been called. Even if the request were somehow to complete before the result variable is printed to the console (which is almost impossible as though, as inside the callback I am making a network request to google.com server), this code will still run to completion before the callback is executed anyway because that is the nature of the non-blocking I/O model in JavaScript.
+
+## Because, by the non-blocking architecture, of JS / Node, while the callback is being executed ( making a request to google.com in this case) - the rest of the code after the callback function's block will continue to get executed.
+
+``( See my explanation in - Asynchronous-Non-blocking-Mechanism-in-Node.md)``
+
+So if we want to do a second request based on the result of a first one we have to do it inside the callback function of the first request because that is where the result will be available:
+```js
+let request = require('request');
+
+let result;
+
+request('http://www.google.com', function (firstError, firstResponse, firstBody) {
+    if(firstError){
+        // Handle error.
+    }
+    else {
+        request(`https://www.facebook.com`, function (secondError, secondResponse, secondBody) {
+            if(secondError){
+                // Handle error.
+            }
+            else {
+                result = secondBody;
+                console.log('successfully hit facebook server')
+            }
+        });
+    }
+});
+
+console.log(result);
+
+/* OUTPUT
+
+undefined
+successfully hit facebook server
+*/
+
+```
+One thing to note here is the first argument in every callback function will contain an error if something went wrong, or will be empty if all went well. This pattern is called “error first callbacks" and is very common. It is the standard pattern for callback-based APIs in NodeJs. This means that for every callback declared we need to check if there is an error and that just adds to the mess when dealing with nested callbacks.
+
+This is the anti-pattern that has been named “callback hell".
+
+
+### A promise is an object that wraps an asynchronous operation and notifies when it's done. This sounds exactly like callbacks, but the important differences are in the usage of Promises. Instead of providing a callback, a promise has its own methods (.then) which you call to tell the promise what will happen when it is successful or when it fails. The methods a promise provides are “then(…)" for when a successful result is available and “catch(…)" for when something went wrong.
+
+Below is general syntax
+
+```js
+someAsyncOperation(someParams)
+.then(function(result){
+    // Do something with the result
+})
+.catch(function(error){
+    // Handle error
+});
+
+```
+
+So, handle the above case with Promise I am using “axios" that is similar to “request" package but it uses promises instead of callbacks.
+
+```js
+const axios = require('axios');
+
+axios.get('http://www.somepage.com')
+.then(function (response) {
+    // response being the result of the first request
+    // Returns another promise to the next .then(..) in the chain
+    return axios.get(`http://www.somepage.com/${response.someValue}`);
+})
+.then(function response {
+    // response being the result of the second request
+    // Handle response
+})
+.catch(function (error) {
+    // Handle error.
+});
+
+```
+
+Instead of nesting callbacks inside callbacks inside callbacks, you chain .then() calls together making it more readable and easier to follow. Every .then() should either return a new Promise or just a value or object which will be passed to the next .then() in the chain. Another important thing to notice is that even though we are doing two different asynchronous requests we only have one .catch() where we handle our errors. That's because any error that occurs in the Promise chain will stop further execution and an error will end up in the next .catch() in the chain.
+
+A friendly reminder: just like with callback based APIs, this is still asynchronous operations. The code that is executed when the request has finished — that is, the subsequent .then() calls — is put on the event loop just like a callback function would be. This means you cannot access any variables passed to or declared in the Promise chain outside the Promise. The same goes for errors thrown in the Promise chain.
+
+
+### As a side note, remember the general syntax of chaining together axios calls
+
+```JS
+axios.get('http://google.com')
+    .then((response) => {
+        // do something with Google res
+        return axios.get('http://apple.com')
+        // response being the result of the first request
+        // do something with Apple res
+    })
+    .catch((err) => {
+        // handle err
+    })
+
+
+
+
+
+</details><details> <summary>Resume-CV-Portfolio/general/2021-portfolio/bgoonz.github.io-master/bgoonz.github.io-master/feedbackform/live-form/node_modules/jquery/</summary>
+
+### [Resume-CV-Portfolio/general/2021-portfolio/bgoonz.github.io-master/bgoonz.github.io-master/feedbackform/live-form/node_modules/jquery/README.md](Resume-CV-Portfolio/general/2021-portfolio/bgoonz.github.io-master/bgoonz.github.io-master/feedbackform/live-form/node_modules/jquery/README.md)
+# jQuery
+
+> jQuery is a fast, small, and feature-rich JavaScript library.
+
+For information on how to get started and how to use jQuery, please see [jQuery's documentation](https://api.jquery.com/).
+For source files and issues, please visit the [jQuery repo](https://github.com/jquery/jquery).
+
+If upgrading, please see the [blog post for 3.5.1](https://blog.jquery.com/2020/05/04/jquery-3-5-1-released-fixing-a-regression/). This includes notable differences from the previous version and a more readable changelog.
+
+## Including jQuery
+
+Below are some of the most common ways to include jQuery.
+
+### Browser
+
+#### Script tag
+
+```html
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+```
+
+#### Babel
+
+[Babel](https://babeljs.io/) is a next generation JavaScript compiler. One of the features is the ability to use ES6/ES2015 modules now, even though browsers do not yet support this feature natively.
+
+```js
+import $ from "jquery";
+```
+
+#### Browserify/Webpack
+
+There are several ways to use [Browserify](http://browserify.org/) and [Webpack](https://webpack.github.io/). For more information on using these tools, please refer to the corresponding project's documentation. In the script, including jQuery will usually look like this...
+
+```js
+var $ = require( "jquery" );
+```
+
+#### AMD (Asynchronous Module Definition)
+
+AMD is a module format built for the browser. For more information, we recommend [require.js' documentation](https://requirejs.org/docs/whyamd.html).
+
+```js
+define( [ "jquery" ], function( $ ) {
+
+} );
+```
+
+### Node
+
+To include jQuery in [Node](https://nodejs.org/), first install with npm.
+
+```sh
+npm install jquery
+```
+
+For jQuery to work in Node, a window with a document is required. Since no such window exists natively in Node, one can be mocked by tools such as [jsdom](https://github.com/jsdom/jsdom). This can be useful for testing purposes.
+
+```js
+const { JSDOM } = require( "jsdom" );
+const { window } = new JSDOM( "" );
+const $ = require( "jquery" )( window );
+```
+
+
+
+
+
+</details><details> <summary>Resume-CV-Portfolio/general/2021-portfolio/bgoonz.github.io-master/bgoonz.github.io-master/</summary>
+
+### [Resume-CV-Portfolio/general/2021-portfolio/bgoonz.github.io-master/bgoonz.github.io-master/README.md](Resume-CV-Portfolio/general/2021-portfolio/bgoonz.github.io-master/bgoonz.github.io-master/README.md)
+[https://bgoonz.github.io/](https://bgoonz.github.io/)
+
+
+```
+\___________________________________________________
+bryan_dir:bgoonz.github.io-master_exitstatus:0 ====>
+
+tree -d -L 4
+.
+├── assets
+│   ├── css
+│   │   └── images
+│   ├── js
+│   ├── sass
+│   │   ├── base
+│   │   ├── components
+│   │   ├── layout
+│   │   └── libs
+│   └── webfonts
+└── images
+
+11 directories
+
+```
+
+
+
+
+
+</details><details> <summary>Resume-CV-Portfolio/general/cv-letter-samples/bgoonz-master/</summary>
+
+### [Resume-CV-Portfolio/general/cv-letter-samples/bgoonz-master/README.md](Resume-CV-Portfolio/general/cv-letter-samples/bgoonz-master/README.md)
+![](https://tender-bartik-074feb.netlify.app/assets/images/profile-image.jpg)
+
+
+-   [GitHub](https://github.com/bgoonz)
+-   [Instagram](https://www.instagram.com/bgoonz/)
+-   [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
+
+Hi I'm Bryan!
+=============
+
+![resume](./bryan-guner-resume-2021.jpeg)
+
+
+[github-resume](https://resume.github.io/?bgoonz)
+
+---
+Before I deleted some repositories to clean out my github account I had over 1000 commits in my personal repository in just a few months, I have a lot to learn... but I live and breathe code.
+
+
+
+<table><tr><td><img src='./2020-contributions.JPG'></td><td><img src='./2021.JPG'></td></tr></table>
+
+---
+
+Web Dev Resource Hub
+----------------------
+
+### My personal Web Development blog and resource sharing site
+
+-   [Live Site](https://goofy-euclid-1cd736.netlify.app/)
+-   [Main Page](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+
+Mihir\_Beg.com
+-----------------
+
+### Created a dynamic web page for a local musician using the Bootsrtap framework.
+
+-Talk about App Features & Design Process Here-
+
+-   [Live Site](https://eloquent-sammet-ba1810.netlify.app/)
+
+
+
+Interview Prep Static Site 
+-----------------------------
+
+### Data Structures Repository
+
+-Hope this helps someone other than me!-
+
+-   [Live Site](https://gracious-raman-474030.netlify.app)
+
+
+
+
+
+
+
+
+
+-   ### Email
+
+    [bryan.guner@gmail.com](#)
+
+-   ### Phone
+
+    551-254-5505
+
+-   ### Social
+
+    -   [GitHub](https://github.com/bgoonz)
+    -   [Instagram](https://www.instagram.com/bgoonz/)
+    -   [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
+
+
+
+
+
+</details><details> <summary>Resume-CV-Portfolio/html-resume/</summary>
+
+### [Resume-CV-Portfolio/html-resume/README.md](Resume-CV-Portfolio/html-resume/README.md)
+# html-resume
+
+
+![resume](./screencapture-bg-resume-netlify-app-2021-04-11-22_04_50.png)
+
+
+
+
+
