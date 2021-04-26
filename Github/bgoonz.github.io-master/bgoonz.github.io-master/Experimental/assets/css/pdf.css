@@ -1,0 +1,75 @@
+.open-button {
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 200px;
+}
+
+.open-button a {
+    /* background: rgb(233, 157, 121); */
+    color: rgb(73, 224, 196);
+    border-bottom: 1px solid rgb(73, 224, 196);
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    font-family:'Arial',Verdana,sans-serif;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.2rem;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    transition: 350ms;
+}
+
+.open-button a:before {
+    font-weight: normal;
+    padding: 8px;
+    margin-left: -12px;
+    margin-right: 6px;
+}
+
+.open-button a:hover {
+    color: rgb(171, 167, 167);
+    border-bottom: 5px solid rgb(201, 196, 196);
+
+}
+
+.open-button span {
+    background: #444;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-family: 'Arial', Verdana,sans-serif;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 200px;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.open-button .up {
+    background: #444;
+    margin: -25px auto;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+    transform: translate(0,-50px);
+    transition: 350ms;
+}
+
+.open-button:hover .up {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.about-links {
+    display: flex;
+}
+
+.about-links div {
+    margin: 20px;
+}

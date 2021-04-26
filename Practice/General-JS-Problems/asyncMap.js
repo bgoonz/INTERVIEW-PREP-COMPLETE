@@ -15,8 +15,8 @@
  	let resultsCount = 0;
 
  	for ( let i = 0; i < tasks.length; i++ ) {
- 		(function(i) {
- 			tasks[i](function(val) {
+ 		(i => {
+ 			tasks[i](val => {
  				resultsArray[i] = val;
  				resultsCount++;
  				if (resultsCount === tasks.length) {
@@ -29,34 +29,34 @@
  }
 
  asyncMap([
-  function(cb){
-     setTimeout(function(){
+  cb => {
+     setTimeout(() => {
        cb('one');
      }, 200);
    },
-   function(cb){
-     setTimeout(function(){
+   cb => {
+     setTimeout(() => {
        cb('two');
      }, 100);
    }
   ],
-   function(results){
+   results => {
      // the results array will equal ['one','two'] even though
      // the second function had a shorter timeout.
      console.log(results); // ['one', 'two']
   });asyncMap([
-  function(cb){
-     setTimeout(function(){
+  cb => {
+     setTimeout(() => {
        cb('one');
      }, 200);
    },
-   function(cb){
-     setTimeout(function(){
+   cb => {
+     setTimeout(() => {
        cb('two');
      }, 100);
    }
   ],
-   function(results){     
+   results => {     
      console.log(results);
   });
 

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#name {
+    position: relative;
+    left: 73%;
+    top: 16rem;
+    height: 8rem;
+    width: 33rem;
+    font-size: 2rem;
+    transform: rotate(90deg);
+    background-color: whitesmoke;
+    letter-spacing: 0.3rem;
+    word-spacing: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
+    z-index: 1;
+}
+
+#engineer {
+    position: absolute;
+    /* left: 68%; */
+    top: 2rem;
+    height: 4rem;
+    width: 20rem;
+    font-size: 1rem;
+    /* transform: rotate(90deg); */
+    background-color: whitesmoke;
+    /* letter-spacing: 0.3rem; */
+    /* word-spacing: 1rem; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+#img-grid {
+    left: 9%;
+    position: relative;
+    width: 56rem;
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+#img-grid div {
+/* 
+    position: absolute;
+    top: 27%;
+    left: 50%; */
+    height: 15rem;
+    width: 18rem;
+    margin: 0;
+
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 1rem; */
+
+
+    background-image: url('../images/IMG_6727.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 1.2s ease-in-out;
+}
+
+#projects:hover {
+    transform: scale(1.1); 
+}
+
