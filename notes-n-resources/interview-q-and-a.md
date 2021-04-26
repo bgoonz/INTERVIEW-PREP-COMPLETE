@@ -237,7 +237,7 @@
   * Map-reduce: **hadoop**, **spark**
   * Distributed file system: **hbase**
   * Cluster management: **kubernetes**, **docker-swarm**, **mesos**
-* [Herlihy’s consensus hierarchy](https://en.wikipedia.org/wiki/Read-modify-write). Every shared object can be assigned a consensus number, which is the maximum number of processes for which the object can solve wait-free consensus in an asynchronous system.
+* [Herlihy's consensus hierarchy](https://en.wikipedia.org/wiki/Read-modify-write). Every shared object can be assigned a consensus number, which is the maximum number of processes for which the object can solve wait-free consensus in an asynchronous system.
 ```
 1 Read-write registers
 2 Test-and-set, swap, fetch-and-add, queue, stack
@@ -453,7 +453,7 @@ d=e^-1 mod phi(n)
 c = m^e mod n
 m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 ```
-
+hi
 #### [[⬆]](#toc) <a name='security'>Security:</a>
 * What is *OpenID and OAuth2.0 and OpenID Connect*?
 * Four main actors in an OAuth system (clients, resource owners, authorization servers, and protected resources)
