@@ -1,0 +1,215 @@
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'KoHo', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #22a79c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 50px;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #22a79c;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header,
+footer {
+  background: #014b5f;
+  color: #dddddd;
+}
+
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+
+header h1,
+header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.content-wrap img {
+  width: 200px;
+  height: 200px;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: #ffffff;
+}
+
+h3~p {
+  margin: 0;
+}
+
+.job-description {
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+/* Area of Expertise
+-------------------------*/
+.expertise {
+  background: #ffffff;
+}
+
+h3~p {
+  margin: 0;
+}
+
+.job-description {
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+.exptertise .content-wrap {
+  padding: 0;
+}
+
+
+/* Education
+-------------------------*/
+.education {
+  background: linear-gradient(rgba(168, 245, 241, 0.8), rgba(118, 160, 160, 0.5)),
+    url(../images/haskell_campus_building.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+p+h3 {
+  margin-top: 30px;
+}
+
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 200px;
+  }
+}

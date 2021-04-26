@@ -1,0 +1,118 @@
+body {
+  max-width: 800px;
+  max-height: 1000px;
+  font-family: Source Sans Pro;
+  font-size: 12px;
+  font-size: 1rem;
+  z-index: 0;
+  margin: 0px;
+}
+
+#wrap {
+  margin: 0 auto;
+}
+
+#header {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: .85rem;
+  overflow: hidden;
+}
+
+#header a:hover {
+  color: #ffffff;
+}
+
+#contact {
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+#contact p {
+  margin: auto 0;
+}
+
+#photo {
+  float: right;
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+}
+
+#my-name {
+  font-weight: 800;
+}
+
+#my-age {
+  font-style: italic;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.75rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+  font-weight: 200;
+  clear: both;
+}
+
+h1 span {
+  font-weight: 800;
+  border-radius: 50%;
+  margin: 0;
+}
+
+section span {
+  color: #fff;
+  padding: 10px;
+  color: #27B4B2
+}
+
+#skills,
+#per-exp,
+#pro-exp,
+#diploma {
+  margin: 6px 0;
+  padding: 10px;
+  background-color: #eeeeee;
+  z-index: 0;
+}
+
+#skills span {
+  padding: 0px;
+}
+
+section p {
+  margin: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #27B4B2;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #222222;
+}
+
+.section-title {
+  margin: 6px 0;
+  text-transform: uppercase;
+}
+
+footer {
+  text-align: center;
+  overflow: hidden;
+  clear: both;
+  background-color: #222222;
+  color: #ffffff;
+  margin: 8px 0;
+  height: 100px;
+}
+
+footer p {
+  margin-top: 40px;
+  display: inline-block;
+}
