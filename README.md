@@ -1,6 +1,5 @@
 Job Search Lambda
 =============
-[![Github All Releases](https://bgoonz.github.io/INTERVIEW-PREP-COMPLETE/Resume-CV-Portfolio/general/2021-resume/bryan-guner-resume-2021.pdf)]()
 
 
 
@@ -10,7 +9,8 @@ Job Search Lambda
 
 
 
-##Bryan Guner
+
+## Bryan Guner
 *(Full-stack software developer)*  
 
 [![Portfolio](https://img.shields.io/badge/-❤_Portfolio-f58?style=flat-square&logo=a&logoColor=white&link=https://bgoonz.github.io/)](https://bgoonz.github.io) 
