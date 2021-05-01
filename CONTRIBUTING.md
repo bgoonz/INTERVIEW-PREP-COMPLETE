@@ -38,51 +38,6 @@ We have an official message board with a detailed FAQ and where the community ch
 * [Discuss, the official Atom and Electron message board](https://discuss.atom.io)
 * [Atom FAQ](https://discuss.atom.io/c/faq)
 
-If chat is more your speed, you can join the Atom and Electron Slack team:
-
-* [Join the Atom and Electron Slack Team](https://atom-slack.herokuapp.com/)
-    * Even though Slack is a chat service, sometimes it takes several hours for community members to respond &mdash; please be patient!
-    * Use the `#atom` channel for general questions or discussion about Atom
-    * Use the `#electron` channel for questions about Electron
-    * Use the `#packages` channel for questions or discussion about writing or contributing to Atom packages (both core and community)
-    * Use the `#ui` channel for questions and discussion about Atom UI and themes
-    * There are many other channels available, check the channel list
-
-## What should I know before I get started?
-
-### Atom and Packages
-
-Atom is a large open source project &mdash; it's made up of over [200 repositories](https://github.com/atom). When you initially consider contributing to Atom, you might be unsure about which of those 200 repositories implements the functionality you want to change or report a bug for. This section should help you with that.
-
-Atom is intentionally very modular. Nearly every non-editor UI element you interact with comes from a package, even fundamental things like tabs and the status-bar. These packages are packages in the same way that packages in the [Atom package repository](https://atom.io/packages) are packages, with one difference: they are bundled into the [default distribution](https://github.com/atom/atom/blob/10b8de6fc499a7def9b072739486e68530d67ab4/package.json#L58).
-
-<a id="atom-packages-image"/>
-
-![atom-packages](https://cloud.githubusercontent.com/assets/69169/10472281/84fc9792-71d3-11e5-9fd1-19da717df079.png)
-
-To get a sense for the packages that are bundled with Atom, you can go to `Settings` > `Packages` within Atom and take a look at the Core Packages section.
-
-Here's a list of the big ones:
-
-* [atom/atom](https://github.com/atom/atom) - Atom Core! The core editor component is responsible for basic text editing (e.g. cursors, selections, scrolling), text indentation, wrapping, and folding, text rendering, editor rendering, file system operations (e.g. saving), and installation and auto-updating. You should also use this repository for feedback related to the [Atom API](https://atom.io/docs/api/latest) and for large, overarching design proposals.
-* [tree-view](https://github.com/atom/tree-view) - file and directory listing on the left of the UI.
-* [fuzzy-finder](https://github.com/atom/fuzzy-finder) - the quick file opener.
-* [find-and-replace](https://github.com/atom/find-and-replace) - all search and replace functionality.
-* [tabs](https://github.com/atom/tabs) - the tabs for open editors at the top of the UI.
-* [status-bar](https://github.com/atom/status-bar) - the status bar at the bottom of the UI.
-* [markdown-preview](https://github.com/atom/markdown-preview) - the rendered markdown pane item.
-* [settings-view](https://github.com/atom/settings-view) - the settings UI pane item.
-* [autocomplete-plus](https://github.com/atom/autocomplete-plus) - autocompletions shown while typing. Some languages have additional packages for autocompletion functionality, such as [autocomplete-html](https://github.com/atom/autocomplete-html).
-* [git-diff](https://github.com/atom/git-diff) - Git change indicators shown in the editor's gutter.
-* [language-javascript](https://github.com/atom/language-javascript) - all bundled languages are packages too, and each one has a separate package `language-[name]`. Use these for feedback on syntax highlighting issues that only appear for a specific language.
-* [one-dark-ui](https://github.com/atom/one-dark-ui) - the default UI styling for anything but the text editor. UI theme packages (i.e. packages with a `-ui` suffix) provide only styling and it's possible that a bundled package is responsible for a UI issue. There are other bundled UI themes, such as [one-light-ui](https://github.com/atom/one-light-ui).
-* [one-dark-syntax](https://github.com/atom/one-dark-syntax) - the default syntax highlighting styles applied for all languages. There are other bundled syntax themes, such as [solarized-dark-syntax](https://github.com/atom/solarized-dark-syntax). You should use these packages for reporting issues that appear in many languages, but disappear if you change to another syntax theme.
-* [apm](https://github.com/atom/apm) - the `apm` command line tool (Atom Package Manager). You should use this repository for any contributions related to the `apm` tool and for publishing packages.
-* [atom.io](https://github.com/atom/atom.io) - the repository for feedback on the [Atom.io website](https://atom.io) and the [Atom.io package API](https://github.com/atom/atom/blob/master/docs/apm-rest-api.md) used by [apm](https://github.com/atom/apm).
-
-There are many more, but this list should be a good starting point. For more information on how to work with Atom's official packages, see [Contributing to Atom Packages][contributing-to-official-atom-packages].
-
-Also, because Atom is so extensible, it's possible that a feature you've become accustomed to in Atom or an issue you're encountering isn't coming from a bundled package at all, but rather a [community package](https://atom.io/packages) you've installed. Each community package has its own repository too, the [Atom FAQ](https://discuss.atom.io/c/faq) has instructions on how to [contact the maintainers of any Atom community package or theme.](https://discuss.atom.io/t/i-have-a-question-about-a-specific-atom-community-package-where-is-the-best-place-to-ask-it/25581)
 
 #### Package Conventions
 
@@ -97,11 +52,6 @@ There are a few conventions that have developed over time around packages:
     * UI themes style everything outside of the editor pane &mdash; all of the green areas in the [packages image above](#atom-packages-image)
     * Syntax themes style just the items inside the editor pane, mostly syntax highlighting
 * Packages that add [autocomplete providers](https://github.com/atom/autocomplete-plus/wiki/Autocomplete-Providers) are named `autocomplete-[what-they-autocomplete]` &mdash; ex: [autocomplete-css](https://github.com/atom/autocomplete-css)
-
-### Design Decisions
-
-When we make a significant decision in how we maintain the project and what we can or cannot support, we will document it in the [atom/design-decisions repository](https://github.com/atom/design-decisions). If you have a question around how we do things, check to see if it is documented there. If it is *not* documented there, please open a new topic on [Discuss, the official Atom message board](https://discuss.atom.io) and ask your question.
-
 ## How Can I Contribute?
 
 ### Reporting Bugs
