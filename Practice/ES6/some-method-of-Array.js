@@ -8,7 +8,7 @@ note: stops iterating once it receives a truthy value from your callback.
 example use case:*/
 
 const hasNegativeNumber = [1, 2, 3, -4, 5].some((item) => {
-	return item < 0;
-})
+  return item < 0;
+});
 
 console.log(hasNegativeNumber);

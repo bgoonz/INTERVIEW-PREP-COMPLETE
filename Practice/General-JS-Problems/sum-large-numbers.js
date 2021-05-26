@@ -29,34 +29,33 @@ Understand the problem with below basic example
 
 */
 
-function largeNumSum( a, b ) {
-
+function largeNumSum(a, b) {
   let re = /^0/; // remove all z
 
-  a = a.replace( re, '' ).split( '' ).reverse();
-  b = b.replace( re, '' ).split( '' ).reverse();
+  a = a.replace(re, "").split("").reverse();
+  b = b.replace(re, "").split("").reverse();
 
   let sum = [];
-  let maxLength = Math.max( a.length, b.length );
+  let maxLength = Math.max(a.length, b.length);
 
-  for ( carry = 0, i = 0; i < maxLength; i++ ) {
+  for (carry = 0, i = 0; i < maxLength; i++) {
+    let thisResult = parseInt(a[i] || 0) + parseInt(b[i] || 0) + carry;
 
-    let thisResult = parseInt( a[ i ] || 0 ) + parseInt( b[ i ] || 0 ) + carry;
+    sum[i] = thisResult % 10;
 
-    sum[ i ] = thisResult % 10;
-
-    carry = ( thisResult - sum[ i ] ) / 10;
+    carry = (thisResult - sum[i]) / 10;
   }
 
   // After the above operations are all done under the if function, if I am still left with more carry - then just push that carry to the array
 
-  if ( carry ) {
-    sum.push( carry );
+  if (carry) {
+    sum.push(carry);
   }
-  return sum.reverse().join( '' );
+  return sum.reverse().join("");
 }
 
-let c = "45555555555555555555555555555555555555777777772222222222222222222222222222222222222222222";
+let c =
+  "45555555555555555555555555555555555555777777772222222222222222222222222222222222222222222";
 let d = "99999998888888888888888888888888888888888888888888888888888888899";
 
 let a = "664";
@@ -64,4 +63,4 @@ let b = "491";
 
 // console.log(c + d);
 
-console.log( largeNumSum( a, b ) );
+console.log(largeNumSum(a, b));

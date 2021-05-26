@@ -6,10 +6,14 @@ Use Array.reduce() with the spread operator (...) to perform left-to-right funct
 */
 
 const pipeFunction = (...funcs) =>
-  funcs.reduce((x, y) => (...args) => y(x(...args)))
+  funcs.reduce(
+    (x, y) =>
+      (...args) =>
+        y(x(...args))
+  );
 
 // Example implementation
-const add5 = x => x + 5
-const multiply = (x, y) => x * y
-const multiplyAndAdd5 = pipeFunction(multiply, add5)
-console.log(multiplyAndAdd5(5, 2)) // 15 because ((5 * 2) + 5)
+const add5 = (x) => x + 5;
+const multiply = (x, y) => x * y;
+const multiplyAndAdd5 = pipeFunction(multiply, add5);
+console.log(multiplyAndAdd5(5, 2)); // 15 because ((5 * 2) + 5)

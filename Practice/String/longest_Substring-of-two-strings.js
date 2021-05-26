@@ -9,35 +9,36 @@ C> From within the while loop, return the max-matched-string and update the init
 */
 
 longestSubstring = (s1, s2) => {
+  let longestSubstring = "",
+    tempLongestSubsStr = "";
 
-	let longestSubstring = "", tempLongestSubsStr = "";
+  for (let i = 0; i < s1.length; i++) {
+    for (let j = 0; j < s2.length; j++) {
+      if (s1[i] === s2[j]) {
+        tempLongestSubsStr = s1[i];
 
-	for (let i = 0; i < s1.length; i++) {
+        let subLength = 1;
 
-		for (let j = 0; j < s2.length; j++) {
+        // run a while loop to check how far that match goes. Keep going until the corresponding letters matches
 
-			if (s1[i] === s2[j]) {
+        while (
+          i + subLength < s1.length &&
+          j + subLength < s2.length &&
+          s1[i + subLength] === s2[j + subLength]
+        ) {
+          tempLongestSubsStr += s1[i + subLength];
 
-				tempLongestSubsStr = s1[i];
+          subLength++;
+        }
 
-				let subLength = 1;
-
-				// run a while loop to check how far that match goes. Keep going until the corresponding letters matches
-				
-				while (i + subLength < s1.length && j + subLength < s2.length && s1[i+subLength] === s2[j+subLength]) {
-					
-					tempLongestSubsStr += s1[i+subLength]
-					
-					subLength++;
-				}
-
-				// If this tempLongestSubStr is longer than longestSubstring, update longestSubstring before running the next iteration of the for loop
-				if (tempLongestSubsStr.length > longestSubstring.length) { longestSubstring = tempLongestSubsStr}
-		
-			}
-		}
-	}
-	return longestSubstring;
-}
+        // If this tempLongestSubStr is longer than longestSubstring, update longestSubstring before running the next iteration of the for loop
+        if (tempLongestSubsStr.length > longestSubstring.length) {
+          longestSubstring = tempLongestSubsStr;
+        }
+      }
+    }
+  }
+  return longestSubstring;
+};
 
 console.log(longestSubstring("rohan", "bichan"));

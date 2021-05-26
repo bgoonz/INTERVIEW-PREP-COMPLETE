@@ -8,7 +8,7 @@ const profile = {
   getName: () => {
     console.log(this);
     console.log(this.name);
-  }
+  },
 };
 
 // profile.getName()
@@ -31,10 +31,10 @@ Which would mean that whenever 'this' would be referred in arrow function, it wi
 const profile_1 = {
   name: "tech",
 
-  getName: function() {
+  getName: function () {
     console.log(this);
     console.log(this.name);
-  }
+  },
 };
 
 // profile_1.getName()
@@ -56,7 +56,7 @@ const profile_2 = {
   getName: () => {
     console.log(this);
     console.log(profile.name);
-  }
+  },
 };
 
 // profile_2.getName()
@@ -78,7 +78,7 @@ const profile_3 = {
 
   getName: () => {
     console.log(name);
-  }
+  },
 };
 
 profile_3.getName();

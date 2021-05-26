@@ -10,22 +10,21 @@ B> http://lucasfcosta.com/2016/01/25/Understanding-and-Applying-Memoization.html
 */
 
 let fIndex = 10;
-let timesCalculated = 0
+let timesCalculated = 0;
 
-fibonacci = num => {
+fibonacci = (num) => {
   timesCalculated++;
 
-  if ( num < 2 ) return num;
-  else
-    return fibonacci( num - 1 ) + fibonacci( num - 2 );
-}
+  if (num < 2) return num;
+  else return fibonacci(num - 1) + fibonacci(num - 2);
+};
 
 let startTime = Date.now();
-console.log( 'Result ' + fibonacci( fIndex ) );
+console.log("Result " + fibonacci(fIndex));
 let endTime = Date.now();
 
-console.log( 'Elapsed Time ' + ( endTime - startTime ) + 'ms' );;
-console.log( 'Calculated Fibonacci ' + timesCalculated + ' times' );
+console.log("Elapsed Time " + (endTime - startTime) + "ms");
+console.log("Calculated Fibonacci " + timesCalculated + " times");
 
 /* When calling our fibonacci function with 5 as an argument, for example, this is what happens:
 
@@ -42,38 +41,36 @@ For this to work, I just had to create an object called 'resultsCache' which has
 
 let timesCalculatedMemoization = 0;
 
-fibonacciMemoization = num => {
+fibonacciMemoization = (num) => {
+  let resultsCache = {};
 
-  let resultsCache = {}
-
-  innerFibonacci = num => {
-
+  innerFibonacci = (num) => {
     let result;
 
     // If the result for the input `num` is already on the resultsCache
     // we will use it instead of executing the whole algorithm
-    if ( resultsCache[ num ] !== undefined ) {
+    if (resultsCache[num] !== undefined) {
       // console.log(resultsCache[num]);
-      result = resultsCache[ num ];
+      result = resultsCache[num];
     } else {
-      timesCalculatedMemoization++
+      timesCalculatedMemoization++;
 
-      if ( num < 2 ) result = num;
+      if (num < 2) result = num;
       else {
-        result = innerFibonacci( num - 1 ) + innerFibonacci( num - 2 );
-        resultsCache[ num ] = result;
+        result = innerFibonacci(num - 1) + innerFibonacci(num - 2);
+        resultsCache[num] = result;
       }
     }
     return result;
-  }
-  return innerFibonacci( num );
-}
+  };
+  return innerFibonacci(num);
+};
 
 let startTime2 = Date.now();
-console.log( 'Result ' + fibonacciMemoization( fIndex ) );
+console.log("Result " + fibonacciMemoization(fIndex));
 let endTime2 = Date.now();
 
-console.log( 'Elapsed Time ' + ( endTime2 - startTime2 ) + 'ms' );;
-console.log( 'Calculated Fibonacci ' + timesCalculatedMemoization + ' times' );
+console.log("Elapsed Time " + (endTime2 - startTime2) + "ms");
+console.log("Calculated Fibonacci " + timesCalculatedMemoization + " times");
 
 // For understanding the above, also see caching_function.js execution

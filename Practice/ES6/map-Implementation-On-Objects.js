@@ -2,19 +2,20 @@
 
 // Problem - 1 We've an array of products, that has two properties: `id` and `name`. I want to get all ids, wih map() method:
 
-let products = [ {
+let products = [
+  {
     id: 0,
-    name: 'Product 1'
+    name: "Product 1",
   },
   {
     id: 1,
-    name: 'Product 2'
-  }
+    name: "Product 2",
+  },
 ];
 
-let productsIds = products.map( ( item ) => {
+let productsIds = products.map((item) => {
   return item.id;
-} )
+});
 
 // console.log(productsIds);
 
@@ -37,33 +38,37 @@ Create an object from a given array and the given array is as below
 
 */
 
-let arr = [ 1, 2, 3, 4 ];
+let arr = [1, 2, 3, 4];
 
-let obj = arr.map( ( val, index, arr ) => {
+let obj = arr.map((val, index, arr) => {
   return {
     VALUE: val,
-    INDEX: index
-  }
-} )
+    INDEX: index,
+  };
+});
 
 // console.log(obj);
 
 // Problem-2 - Using map() return full name  from the given array
-let oldArr = [ {
-  first_name: "Colin",
-  last_name: "Toh"
-}, {
-  first_name: "Addy",
-  last_name: "Osmani"
-}, {
-  first_name: "Yehuda",
-  last_name: "Katz"
-} ];
+let oldArr = [
+  {
+    first_name: "Colin",
+    last_name: "Toh",
+  },
+  {
+    first_name: "Addy",
+    last_name: "Osmani",
+  },
+  {
+    first_name: "Yehuda",
+    last_name: "Katz",
+  },
+];
 
 let newArr = [];
 
-oldArr.map( ( item, index ) => {
-  item.full_name = [ item.first_name, item.last_name ].join( ' ' );
+oldArr.map((item, index) => {
+  item.full_name = [item.first_name, item.last_name].join(" ");
   return item;
-} );
-console.log( oldArr );
+});
+console.log(oldArr);

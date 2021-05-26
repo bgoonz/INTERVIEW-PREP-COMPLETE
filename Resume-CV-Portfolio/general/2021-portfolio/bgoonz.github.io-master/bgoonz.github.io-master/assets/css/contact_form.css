@@ -4,7 +4,7 @@
   width: 960px;
   margin: 20px auto;
   padding-top: 20px;
-  font-family: 'Fauna One', serif;
+  font-family: "Fauna One", serif;
 }
 
 #form {
@@ -16,7 +16,6 @@
   width: 350px;
   margin: 20px 250px 0 35px;
   float: left;
-
 }
 
 h3 {
@@ -33,11 +32,11 @@ input {
   padding: 5px;
 }
 
-input[type=button] {
+input[type="button"] {
   background-color: #123456;
   border: 1px solid white;
-  font-family: 'Fauna One', serif;
-  font-Weight: bold;
+  font-family: "Fauna One", serif;
+  font-weight: bold;
   font-size: 18px;
   color: white;
 }
@@ -52,12 +51,12 @@ textarea {
 }
 
 span {
-  color: red
+  color: red;
 }
 
 #note {
   color: black;
-  font-Weight: 400;
+  font-weight: 400;
 }
 
 #returnmessage {

@@ -1,9 +1,9 @@
-function logBase2 (num ) {
-    if ( num == 1) {
-        return 0;
-    } else {
-        return (1 + logBase2( num / 2));
-    }
+function logBase2(num) {
+  if (num == 1) {
+    return 0;
+  } else {
+    return 1 + logBase2(num / 2);
+  }
 }
 
 /* The formulae:-

@@ -16,34 +16,32 @@ Should handle words where the first vowel comes in the end of the word.
 Should handle words without vowels.
 */
 
-translatePigLatin = str => {
+translatePigLatin = (str) => {
+  const re = /[aeiou]/gi;
 
-    const re = /[aeiou]/ig
-
-    if (str[0].match(re)) {
-        return str + 'way'
-    }
-    // now the case when at least on vowel are there in the string
-    else if ( str.match(re) !== null ) {
-        let firstVowelIndex = str.indexOf(str.match(re)[0] || 0)
-        return ( str.substr(firstVowelIndex) + str.substr(0, firstVowelIndex) + 'ay' )
-    }
-    // the case when there's no vowel at all in the string, then just append 'ay' at the end
-    else {
-        return str + 'ay'
-    }
-}
-
+  if (str[0].match(re)) {
+    return str + "way";
+  }
+  // now the case when at least on vowel are there in the string
+  else if (str.match(re) !== null) {
+    let firstVowelIndex = str.indexOf(str.match(re)[0] || 0);
+    return str.substr(firstVowelIndex) + str.substr(0, firstVowelIndex) + "ay";
+  }
+  // the case when there's no vowel at all in the string, then just append 'ay' at the end
+  else {
+    return str + "ay";
+  }
+};
 
 // TESTS
 
-console.log(translatePigLatin("california") === "aliforniacay" )
-console.log(translatePigLatin("paragraphs") === "aragraphspay" )
-console.log(translatePigLatin("glove") === "oveglay" )
-console.log(translatePigLatin("algorithm") === "algorithmway" )
-console.log(translatePigLatin("eight") === "eightway" )
+console.log(translatePigLatin("california") === "aliforniacay");
+console.log(translatePigLatin("paragraphs") === "aragraphspay");
+console.log(translatePigLatin("glove") === "oveglay");
+console.log(translatePigLatin("algorithm") === "algorithmway");
+console.log(translatePigLatin("eight") === "eightway");
 // the below is the case of word where there is no vowels
-console.log(translatePigLatin("rbght") === "rbghtay")
+console.log(translatePigLatin("rbght") === "rbghtay");
 
 /* 1. RETURN VALUE OF match() - If the string matches the expression, it will return an Array containing the entire matched string as the first element, followed by any results captured in parentheses. If there were no matches, null is returned.
 

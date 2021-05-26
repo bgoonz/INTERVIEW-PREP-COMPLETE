@@ -2,23 +2,26 @@
 
 Use recursion. Use Array.concat() with an empty array ([]) and the spread operator (...) to flatten an array. Recursively flatten each element that is an array.*/
 
-const deepFlatten1 = arr => [].concat(...arr.map(toFlatten => {
-
-    return (Array.isArray(toFlatten) ? deepFlatten1(toFlatten) : toFlatten)
-
-}))
+const deepFlatten1 = (arr) =>
+  [].concat(
+    ...arr.map((toFlatten) => {
+      return Array.isArray(toFlatten) ? deepFlatten1(toFlatten) : toFlatten;
+    })
+  );
 
 console.log(deepFlatten1([1, [2], [[3], 4], 5])); // => [ 1, 2, 3, 4, 5 ]
 
 // SOLUTION-2 - Same implementation using reduce() and without using arrow syntax
 
-const deepFlatten2 = arr => {
-	return arr.reduce((flat, yetToFlatten) => {
-		return flat.concat(Array.isArray(yetToFlatten) ? deepFlatten2(yetToFlatten) : yetToFlatten);
-	}, []);
-}
+const deepFlatten2 = (arr) => {
+  return arr.reduce((flat, yetToFlatten) => {
+    return flat.concat(
+      Array.isArray(yetToFlatten) ? deepFlatten2(yetToFlatten) : yetToFlatten
+    );
+  }, []);
+};
 
-let myArr1 = [[1], [2], [3, 4], 5]
+let myArr1 = [[1], [2], [3, 4], 5];
 
 console.log(deepFlatten2(myArr1)); // => [ 1, 2, 3, 4, 5 ]
 
@@ -30,27 +33,25 @@ The empty array [] is the starting accumulator value for the reduce function, th
 
 // SOLUTION-3 - huge (e.g. 200 000 elements) arrays and also works on nested arrays
 
-const flattenLargeArray = function(arr, result = []) {
+const flattenLargeArray = function (arr, result = []) {
+  for (let i = 0, length = arr.length; i < length; i++) {
+    const value = arr[i];
 
-    for (let i = 0, length = arr.length; i < length; i++) {
-
-      const value = arr[i];
-
-      if (Array.isArray(value)) {
-
-        flattenLargeArray(value, result);
-      } else {
-        result.push(value);
-      }
+    if (Array.isArray(value)) {
+      flattenLargeArray(value, result);
+    } else {
+      result.push(value);
     }
-    return result;
-  };
+  }
+  return result;
+};
 
+console.log(flattenLargeArray([1, [1], [[3]]]));
 
-  console.log(flattenLargeArray([1, [1], [[3]]]));
+console.log(
+  flattenLargeArray(Array(2).fill(Array(2).fill(Array(2).fill([1]))))
+);
 
-  console.log(flattenLargeArray(Array(2).fill(Array(2).fill(Array(2).fill([1])))));
+console.log(flattenLargeArray([[1], [2, 3], [4]]));
 
-  console.log(flattenLargeArray([[1],[2,3],[4]]));
-
-  console.log(flattenLargeArray([1, [2], [[3], 4], 5]));
+console.log(flattenLargeArray([1, [2], [[3], 4], 5]));

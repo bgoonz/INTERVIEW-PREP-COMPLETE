@@ -7,13 +7,13 @@ let swap = function (array, index1, index2) {
   return array;
 };
 
-function permutationHeap (array, result, n) {
+function permutationHeap(array, result, n) {
   n = n || array.length; // set n default to array.length
-  if ( n === 1) {
+  if (n === 1) {
     result(array); // Print out the array
   } else {
-    for ( let i = 1; i <= n; i++ ) {
-      permutationHeap(array, result, n-1) ;
+    for (let i = 1; i <= n; i++) {
+      permutationHeap(array, result, n - 1);
 
       // Now with the below strategy of swapping, Heap-Algo keeps track of which elements we had already removed? Then we could just swap out unremoved elements, so that it is different in each case.
       if (n % 2) {
@@ -29,7 +29,7 @@ function output(input) {
   console.log(input);
 }
 
-permutationHeap(['a', 'b', 'c'], output);
+permutationHeap(["a", "b", "c"], output);
 
 /* Time Complexity  - runs in factorial time O(n!) */
 

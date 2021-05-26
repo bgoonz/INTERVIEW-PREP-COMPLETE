@@ -2,16 +2,16 @@
 // calculates the percentage of the hours spent for each activity and append the percentage to the inner array.
 
 let activities = [
-    ['Work', 9],
-    ['Eat', 2],
-    ['Commute', 2],
-    ['Play Game', 2],
-    ['Sleep', 7]
+  ["Work", 9],
+  ["Eat", 2],
+  ["Commute", 2],
+  ["Play Game", 2],
+  ["Sleep", 7],
 ];
 
 for (let i = 0; i < activities.length; i++) {
-        let percentage = ((activities[i][1] / 24) * 100).toFixed();
-        activities[i][2] = percentage + "%";
+  let percentage = ((activities[i][1] / 24) * 100).toFixed();
+  activities[i][2] = percentage + "%";
 }
 
 console.log(activities);

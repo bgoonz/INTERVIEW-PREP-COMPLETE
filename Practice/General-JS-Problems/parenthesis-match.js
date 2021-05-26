@@ -22,71 +22,68 @@ Algorithm:
 – If the popped element from the stack, which is the last opening brace doesn't match the corresponding closing brace in the map, then return false
 – At the end if the stack is not empty then fail  */
 
-let isMatchingBrackets = function ( str ) {
+let isMatchingBrackets = function (str) {
   let stack = [];
   let map = {
-    '(': ')',
-    '[': ']',
-    '{': '}'
-  }
+    "(": ")",
+    "[": "]",
+    "{": "}",
+  };
 
-  for ( let i = 0; i < str.length; i++ ) {
-
+  for (let i = 0; i < str.length; i++) {
     // If character is an opening brace add it to a stack
-    if ( str[ i ] === '(' || str[ i ] === '{' || str[ i ] === '[' ) {
-      stack.push( str[ i ] );
+    if (str[i] === "(" || str[i] === "{" || str[i] === "[") {
+      stack.push(str[i]);
     }
     //  If that character is a closing brace, pop from the stack, which will also reduce the length of the stack each time a closing bracket is encountered.
     else {
       let last = stack.pop();
 
       //If the popped element from the stack, which is the last opening brace doesn't match the corresponding closing brace in the map, then return false
-      if ( str[ i ] !== map[ last ] ) {
-        return false
-      };
+      if (str[i] !== map[last]) {
+        return false;
+      }
     }
   }
   // By the completion of the for loop after checking all the brackets of the str, at the end, if the stack is not empty then fail
-  if ( stack.length !== 0 ) {
-    return false
-  };
+  if (stack.length !== 0) {
+    return false;
+  }
 
   return true;
-}
+};
 
 // console.log(isMatchingBrackets("(){}")); // returns true
 // console.log(isMatchingBrackets("[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]")); // returns true
 // console.log(isMatchingBrackets("({(()))}}"));  // returns false
 
-
 //Alternate-2
-let isParenthesisMatching = ( str ) => {
+let isParenthesisMatching = (str) => {
   let stack = [];
 
   let open = {
-    '{': '}',
-    '[': ']',
-    '(': ')'
+    "{": "}",
+    "[": "]",
+    "(": ")",
   };
 
   let closed = {
-    '}': true,
-    ']': true,
-    ')': true
-  }
+    "}": true,
+    "]": true,
+    ")": true,
+  };
 
-  for ( let i = 0; i < str.length; i++ ) {
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
 
-    let char = str[ i ];
-
-    if ( open[ char ] ) {
-      stack.push( char );
-    } else if ( closed[ char ] ) {
-      if ( open[ stack.pop() ] !== char ) return false;
+    if (open[char]) {
+      stack.push(char);
+    } else if (closed[char]) {
+      if (open[stack.pop()] !== char) return false;
     }
   }
   return stack.length === 0;
-}
+};
 
 // console.log(isParenthesisMatching("(){}"));
 // console.log(isParenthesisMatching("[{()()}({[]})]({}[({})])((((((()[])){}))[]{{{({({({{{{{{}}}}}})})})}}}))[][][]"));
@@ -108,18 +105,17 @@ So for the below given test-case, the first iteration of the function will retur
 Just paste this code, in Chrome DevTool > Source > Snippets > Put a breakpoint at the return value of 'uptoPrevChar' on the second else if iteration > right click on the snippets and run > The continue clicking on 'resume script execution'. NOTE - in Chrome Dev-Tool, use 'var' instead of 'let'
 
 */
-let isBalancedParenthesis = ( str ) => {
-
-  return !str.split( '' ).reduce( ( uptoPrevChar, thisChar ) => {
-    if ( thisChar === '(' || thisChar === '{' || thisChar === '[' ) {
+let isBalancedParenthesis = (str) => {
+  return !str.split("").reduce((uptoPrevChar, thisChar) => {
+    if (thisChar === "(" || thisChar === "{" || thisChar === "[") {
       return ++uptoPrevChar;
-    } else if ( thisChar === ')' || thisChar === '}' || thisChar === ']' ) {
+    } else if (thisChar === ")" || thisChar === "}" || thisChar === "]") {
       return --uptoPrevChar;
     }
 
-    return uptoPrevChar
-  }, 0 );
-}
+    return uptoPrevChar;
+  }, 0);
+};
 
 // Test Cases
 // console.log(isBalancedParenthesis("[()]{}{[()()]()}"));  // returns true
@@ -128,14 +124,19 @@ let isBalancedParenthesis = ( str ) => {
 
 // Solving with reduce() and using ES6
 
-function isBalanced( [ ...str ] ) {
-  return str.reduce( ( uptoPrevChar, thisChar ) => {
-    ( ( thisChar === '(' && uptoPrevChar++ || thisChar === ')' && uptoPrevChar-- ) ) &&
-    ( ( thisChar === '{' && uptoPrevChar++ || thisChar === '}' && uptoPrevChar-- ) ) &&
-    ( ( thisChar === '[' && uptoPrevChar++ || thisChar === ']' && uptoPrevChar-- ) );
+function isBalanced([...str]) {
+  return (
+    str.reduce((uptoPrevChar, thisChar) => {
+      ((thisChar === "(" && uptoPrevChar++) ||
+        (thisChar === ")" && uptoPrevChar--)) &&
+        ((thisChar === "{" && uptoPrevChar++) ||
+          (thisChar === "}" && uptoPrevChar--)) &&
+        ((thisChar === "[" && uptoPrevChar++) ||
+          (thisChar === "]" && uptoPrevChar--));
 
-    return uptoPrevChar;
-  }, 0 ) === 0
+      return uptoPrevChar;
+    }, 0) === 0
+  );
 }
 
 // Test Cases
@@ -155,22 +156,22 @@ isBalanced('foo { bar } }')
 
 */
 
-isBalancedBraces = str => {
+isBalancedBraces = (str) => {
   let count = 0;
 
-  for ( let i of str ) {
-    if ( i === "{" ) count++;
-    else if ( i === "}" ) count--;
+  for (let i of str) {
+    if (i === "{") count++;
+    else if (i === "}") count--;
 
     // Noting from the first test-case it looks like that if a closing curly brace is first encountered, then my function should return 'false'. So as soon as I have a negative value of count, I should return false.
-    if ( count < 0 ) return false;
+    if (count < 0) return false;
   }
   return count === 0;
-}
+};
 
-console.log( isBalancedBraces( '}{' ) ) // false
-console.log( isBalancedBraces( '{{}' ) ) // false
-console.log( isBalancedBraces( '{}{}' ) ) // true
-console.log( isBalancedBraces( 'foo { bar { baz } boo }' ) ) // true
-console.log( isBalancedBraces( 'foo { bar { baz }' ) ) // false
-console.log( isBalancedBraces( 'foo { bar } }' ) ) // false
+console.log(isBalancedBraces("}{")); // false
+console.log(isBalancedBraces("{{}")); // false
+console.log(isBalancedBraces("{}{}")); // true
+console.log(isBalancedBraces("foo { bar { baz } boo }")); // true
+console.log(isBalancedBraces("foo { bar { baz }")); // false
+console.log(isBalancedBraces("foo { bar } }")); // false

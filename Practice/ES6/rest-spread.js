@@ -21,12 +21,12 @@ printArguments("hi", "this", "is", "paul"); // => [ 'hi', 'this', 'is', 'paul' ]
 
 let spreadableObj = {
   key1: "value1",
-  key2: "value2"
+  key2: "value2",
 };
 
 let newObj = {
   ...spreadableObj,
-  key3: "value3"
+  key3: "value3",
 };
 
 console.log(newObj); // => { key1: 'value1', key2: 'value2', key3: 'value3' }

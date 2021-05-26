@@ -12,13 +12,13 @@ html {
 }
 
 body {
-  font-family: 'KoHo', sans-serif;
+  font-family: "KoHo", sans-serif;
   margin: 0;
 }
 
 h1,
 h2 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-weight: 400;
 }
 
@@ -67,7 +67,6 @@ a:hover {
   display: inline-block;
 }
 
-
 /* Header and Footer
 -------------------------*/
 header,
@@ -84,7 +83,7 @@ header {
 
 header h1,
 header h2 {
-  color: #EDF2F4;
+  color: #edf2f4;
   margin: 0;
 }
 
@@ -113,7 +112,6 @@ footer {
   display: inline-block;
 }
 
-
 /* Navigation
 -------------------------*/
 nav {
@@ -133,14 +131,13 @@ nav a {
   font-weight: 700;
 }
 
-
 /* Work Experience
 -------------------------*/
 .work {
   background: #ffffff;
 }
 
-h3~p {
+h3 ~ p {
   margin: 0;
 }
 
@@ -158,7 +155,7 @@ h3~p {
   background: #ffffff;
 }
 
-h3~p {
+h3 ~ p {
   margin: 0;
 }
 
@@ -174,20 +171,20 @@ h3~p {
   padding: 0;
 }
 
-
 /* Education
 -------------------------*/
 .education {
-  background: linear-gradient(rgba(168, 245, 241, 0.8), rgba(118, 160, 160, 0.5)),
+  background: linear-gradient(
+      rgba(168, 245, 241, 0.8),
+      rgba(118, 160, 160, 0.5)
+    ),
     url(../images/haskell_campus_building.jpg) no-repeat fixed;
   background-size: cover;
 }
 
-p+h3 {
+p + h3 {
   margin-top: 30px;
 }
-
-
 
 /* Media Queries
 -------------------------*/

@@ -16,7 +16,11 @@ Output number is 9534330.
 
 /* To match the output of 9534330, looks like, the problem asks that we can not change a single number in the given array, that is, from the given array [3, 30, 34, 5, 9] - a 30 and 34 should remain as 30 and 34 - hence my solution below */
 
-largestNum = arr => arr.map(String).sort((a, b) => (b+a) - (a+b)).reduce((accum, elem) => (accum + elem) ,'')
+largestNum = (arr) =>
+  arr
+    .map(String)
+    .sort((a, b) => b + a - (a + b))
+    .reduce((accum, elem) => accum + elem, "");
 
 console.log(largestNum([3, 30, 34, 5, 9])); // => 9534330
 

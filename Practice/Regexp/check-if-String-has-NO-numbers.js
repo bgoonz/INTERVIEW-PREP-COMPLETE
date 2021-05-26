@@ -1,8 +1,8 @@
-let str1 = "88kl85"
-let str2 = "8885"
-let str3 = "abc"
+let str1 = "88kl85";
+let str2 = "8885";
+let str3 = "abc";
 
-let re = /[^0-9]+$/
+let re = /[^0-9]+$/;
 
 // console.log(str1.match(re))   // => null
 // console.log(str2.match(re))  // => null
@@ -12,15 +12,15 @@ let re = /[^0-9]+$/
 
 // SOLUTION-1
 
-ifStringHasNoNumber = str => str.match(re) !== null
+ifStringHasNoNumber = (str) => str.match(re) !== null;
 
-console.log(ifStringHasNoNumber(str1)) // => false
-console.log(ifStringHasNoNumber(str2)) // => false
-console.log(ifStringHasNoNumber(str3)) // true
+console.log(ifStringHasNoNumber(str1)); // => false
+console.log(ifStringHasNoNumber(str2)); // => false
+console.log(ifStringHasNoNumber(str3)); // true
 
 // SOLUTION-2
 
-let re2 = /[0-9]+$/
+let re2 = /[0-9]+$/;
 
 // console.log(str1.match(re2)) // => [ '85', index: 4, input: '88kl85' ]
 // console.log(str2.match(re2)) // => [ '8885', index: 0, input: '8885' ]
@@ -28,11 +28,11 @@ let re2 = /[0-9]+$/
 
 // Return true if str has no number
 
-ifStringHasNoNumber2 = str => str.match(re2) === null
+ifStringHasNoNumber2 = (str) => str.match(re2) === null;
 
-console.log(ifStringHasNoNumber2(str1)) // => false
-console.log(ifStringHasNoNumber2(str2)) // => false
-console.log(ifStringHasNoNumber2(str3)) // true
+console.log(ifStringHasNoNumber2(str1)); // => false
+console.log(ifStringHasNoNumber2(str2)); // => false
+console.log(ifStringHasNoNumber2(str3)); // true
 
 /* match() method - match() method retrieves the matches when matching a string against a regular expression.
 

@@ -105,7 +105,6 @@ _Please read [contribution guidelines](contributing.md) before contributing._
 
 - [Haskell companies](https://github.com/erkmos/haskell-companies) - Curated list of companies using Haskell in industry.
 
-
 ## Freelancing
 
 - [The Remote Freelancer](https://github.com/engineerapart/TheRemoteFreelancer) - List of community-curated resources to find topical remote freelance & contract work.

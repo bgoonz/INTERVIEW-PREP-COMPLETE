@@ -2,7 +2,7 @@
 
 let str2 = "Fame is the thirst of youth";
 
-let result = str2.match( /the/i );
+let result = str2.match(/the/i);
 
 // console.log(result);  // => [ 'the', index: 8, input: 'Fame is the thirst of youth' ]
 
@@ -14,7 +14,7 @@ let result = str2.match( /the/i );
 
 let str3 = "JavaScript is a programming language";
 
-let result3 = str3.match( /JAVA(SCRIPT)/i );
+let result3 = str3.match(/JAVA(SCRIPT)/i);
 
 // console.log(result3)
 
@@ -37,15 +37,15 @@ let result3 = str3.match( /JAVA(SCRIPT)/i );
 
 When there's a "g" flag, then str.match returns an array of all matches. There are no additional properties in that array, and parentheses do not create any elements. */
 
-let result4 = str3.match( /JAVA(SCRIPT)/ig );
+let result4 = str3.match(/JAVA(SCRIPT)/gi);
 
-console.log( result4 ) // => [ 'JavaScript' ]
+console.log(result4); // => [ 'JavaScript' ]
 /*
 Please note, that's important. If there were no matches, the result is not an empty array, but null.
 
 Keep that in mind to evade pitfalls like trying to find the length of the returned array - If I do that, will get "TypeError: Cannot read property 'length' of null" */
 
-console.log( str3.match( /JAVAMM(SCRIPT)/ig ) ); // => null
+console.log(str3.match(/JAVAMM(SCRIPT)/gi)); // => null
 
 // console.log(str3.match(/JAVAMM(SCRIPT)/ig).length);     // => null
 
@@ -69,11 +69,10 @@ Then do the same after each group of adjacent digit characters and then after gr
 
 */
 
-
-replacer = ( match, p1, p2, p3, offset, string ) => [ p1, p2, p3 ].join( ' - ' );
+replacer = (match, p1, p2, p3, offset, string) => [p1, p2, p3].join(" - ");
 
 // So now in the main replace function I have to pass 3 regExp parenthesized group which will give me 3 matched string by the 3 paranthesized captured group
 
-let newStr = 'abc12345#$*%'.replace( /([^\d]*)(\d*)([^\w*])/, replacer )
+let newStr = "abc12345#$*%".replace(/([^\d]*)(\d*)([^\w*])/, replacer);
 
-console.log( newStr )
+console.log(newStr);

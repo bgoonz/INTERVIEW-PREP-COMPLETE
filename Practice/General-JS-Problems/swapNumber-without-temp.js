@@ -1,9 +1,9 @@
-function swapTemp (a, b) {
-  console.log('before swap: ', 'a: ', a, 'b: ', b);
+function swapTemp(a, b) {
+  console.log("before swap: ", "a: ", a, "b: ", b);
   let temp = a;
   a = b;
   b = temp;
-  console.log('after swap: ', 'a: ', a, 'b: ', b);
+  console.log("after swap: ", "a: ", a, "b: ", b);
 }
 
 // swapTemp(2, 3);
@@ -12,34 +12,34 @@ function swapTemp (a, b) {
 Swap 2 numbers 4 different ways*/
 /*swap number without temp*/
 function swapNumber1(a, b) {
-  console.log('before swap: ', 'a: ', a, 'b: ', b);
+  console.log("before swap: ", "a: ", a, "b: ", b);
   a = a + b;
   b = a - b;
   a = a - b;
-  console.log('after swap: ', 'a: ', a, 'b: ', b);
+  console.log("after swap: ", "a: ", a, "b: ", b);
 }
 // swapNumber1(2, 3);
 
 function swapNumber2(a, b) {
-  console.log('before swap: ', 'a: ', a, 'b: ', b);
+  console.log("before swap: ", "a: ", a, "b: ", b);
   a = a * b;
   b = a / b;
   a = a / b;
-  console.log('after swap: ', 'a: ', a, 'b: ', b);
+  console.log("after swap: ", "a: ", a, "b: ", b);
 }
 // swapNumber2(2, 4);
 
 function swapNumber3(a, b) {
-  console.log('before swap: ', 'a: ', a, 'b: ', b);
-  b = [a, a = b][0];
-  console.log('after swap: ', 'a: ', a, 'b: ', b);
+  console.log("before swap: ", "a: ", a, "b: ", b);
+  b = [a, (a = b)][0];
+  console.log("after swap: ", "a: ", a, "b: ", b);
 }
 // swapNumber3(18, 204);
 
 function swapNumber4(a, b) {
-  console.log('before swap: ', 'a: ', a, 'b: ', b);
-  a = b + (b = a, 0);
-  console.log('after swap: ', 'a: ', a, 'b: ', b);
+  console.log("before swap: ", "a: ", a, "b: ", b);
+  a = b + ((b = a), 0);
+  console.log("after swap: ", "a: ", a, "b: ", b);
 }
 // swapNumber4(34, 584);
 
@@ -48,15 +48,15 @@ function swapNumber4(a, b) {
 a = b + 0 sets a to the original value of b*/
 
 function swapNumberXOR(a, b) {
-  console.log('before swap: ', 'a: ', a, 'b: ', b);
+  console.log("before swap: ", "a: ", a, "b: ", b);
   a ^= b;
   b ^= a;
   a ^= b;
-  console.log('after swap: ', 'a: ', a, 'b: ', b);
+  console.log("after swap: ", "a: ", a, "b: ", b);
 }
 
 // console.log((2).toString(2)); //  outputting 10
- 
+
 // console.log((4).toString(2)); //  outputting 100
 
 // swapNumberXOR(2, 4);
@@ -65,8 +65,6 @@ function swapNumberXOR(a, b) {
 before swap:  a:  2 b:  4
 after swap:  a:  4 b:  2
 */
-
-
 
 /*Explanation of swapNumberXOR()
 
