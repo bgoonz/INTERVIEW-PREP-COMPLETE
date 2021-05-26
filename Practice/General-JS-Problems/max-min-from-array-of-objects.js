@@ -18,33 +18,38 @@ Build two function calls — one for the minimum Y value, and one for the ma
 
 const data = [];
 for (let x = 0; x < 1000; x++) {
-	data.push({ x: x, y: Math.floor(Math.random() * 1000) });	
+  data.push({ x: x, y: Math.floor(Math.random() * 1000) });
 }
 // console.log(data);
 
 // Note in the below function the accumulator is the the variable minY and the first value of this is set to be data[0].y
 
-function getMinYValue () {
-	return data.reduce((minY, thisObj) => thisObj.y < minY ? thisObj.y : minY, data[0].y)
+function getMinYValue() {
+  return data.reduce(
+    (minY, thisObj) => (thisObj.y < minY ? thisObj.y : minY),
+    data[0].y
+  );
 }
 
 function getMaxYValue() {
-	return data.reduce((maxY, thisObj) => thisObj.y > maxY ? thisObj.y : maxY, data[0].y);
+  return data.reduce(
+    (maxY, thisObj) => (thisObj.y > maxY ? thisObj.y : maxY),
+    data[0].y
+  );
 }
 
-// Using Map and spread operaton. First get all the y values from each of the objects within data. 
+// Using Map and spread operaton. First get all the y values from each of the objects within data.
 
-function getYOnly () {
-	return data.map( YVal => YVal.y );
+function getYOnly() {
+  return data.map((YVal) => YVal.y);
 }
 
-
-function getMinValueAlt () {
-	return Math.min(...getYOnly());
+function getMinValueAlt() {
+  return Math.min(...getYOnly());
 }
 
-function getMaxValueAlt () {
-	return Math.max(...getYOnly());
+function getMaxValueAlt() {
+  return Math.max(...getYOnly());
 }
 
 console.log(getMaxValueAlt());

@@ -43,33 +43,32 @@ Capitalize the first letter of each word.
 Join the array into a string.
 */
 
-const camelToTitle = s => {
-
-    // Split the string into an array by single space delimiter
-    return s.trim().split(" ")
+const camelToTitle = (s) => {
+  // Split the string into an array by single space delimiter
+  return s
+    .trim()
+    .split(" ")
     .map(replaceCapWithSpaceAndCap)
-    .map(item => item.toLowerCase().trim())
-    .join(' ')
-    .split(' ')
-    .map(word => `${word[0].toUpperCase()}${word.slice(1)}`)
-    .join(' ')
-}
-
+    .map((item) => item.toLowerCase().trim())
+    .join(" ")
+    .split(" ")
+    .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
+    .join(" ");
+};
 
 // Helper function for adding a space before all uppercase letters using regex
 // means replace each Uppercase letter with a single-space and the letter (no case change of that upper-case letter at this point)
 // This is also a beautiful example how a replace() function takes a callback as its second parameter and  The function's result (return value) will be used as the replacement string.
 
-replaceCapWithSpaceAndCap = s => s.replace(/([A-Z])/, (match, replaceWith) => ` ${replaceWith}`)
+replaceCapWithSpaceAndCap = (s) =>
+  s.replace(/([A-Z])/, (match, replaceWith) => ` ${replaceWith}`);
 
 // Helper function to capitalize the fisrt letter of a word
 
-
 // Test case of the function
-const camelCaseText = "the simplestThings in LIFE are alwaysThe best"
+const camelCaseText = "the simplestThings in LIFE are alwaysThe best";
 
-console.log(camelToTitle(camelCaseText))
-
+console.log(camelToTitle(camelCaseText));
 
 /* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Specifying_a_function_as_a_parameter#Specifying_a_function_as_a_parameter
 

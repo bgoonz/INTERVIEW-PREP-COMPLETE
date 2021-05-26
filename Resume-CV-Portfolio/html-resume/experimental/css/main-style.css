@@ -203,12 +203,12 @@ ul {
   margin-block-end: 0.6em;
 }
 
-li>ol:first-child,
-li>ul:first-child {
+li > ol:first-child,
+li > ul:first-child {
   margin-block-start: 0.6em;
 }
 
-ul>li {
+ul > li {
   list-style: disc;
 }
 
@@ -216,7 +216,7 @@ ul.to-do-list {
   text-indent: -1.7em;
 }
 
-ul.to-do-list>li {
+ul.to-do-list > li {
   list-style: none;
 }
 
@@ -225,7 +225,7 @@ ul.to-do-list>li {
   opacity: 0.375;
 }
 
-ul.toggle>li {
+ul.toggle > li {
   list-style: none;
 }
 
@@ -233,7 +233,7 @@ ul {
   padding-inline-start: 1.7em;
 }
 
-ul>li {
+ul > li {
   padding-left: 0.1em;
 }
 
@@ -241,7 +241,7 @@ ol {
   padding-inline-start: 1.6em;
 }
 
-ol>li {
+ol > li {
   padding-left: 0.2em;
 }
 
@@ -249,7 +249,7 @@ ol>li {
   padding-inline-start: 2em;
 }
 
-.mono ol>li {
+.mono ol > li {
   text-indent: -0.4em;
 }
 
@@ -259,11 +259,11 @@ ol>li {
 }
 
 /* Indent toggle children */
-.toggle>li>details {
+.toggle > li > details {
   padding-left: 1.7em;
 }
 
-.toggle>li>details>summary {
+.toggle > li > details > summary {
   margin-left: -1.1em;
 }
 
@@ -344,12 +344,12 @@ img.icon {
   font-weight: 500;
 }
 
-p>.user {
+p > .user {
   opacity: 0.5;
 }
 
-td>.user,
-td>time {
+td > .user,
+td > time {
   white-space: nowrap;
 }
 
@@ -395,7 +395,7 @@ code {
   word-break: break-all;
 }
 
-.code>code {
+.code > code {
   background: none;
   padding: 0;
   font-size: 100%;
@@ -462,15 +462,19 @@ blockquote {
 }
 
 .sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .code {
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
 }
 
 .serif {
-  font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif;
+  font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo",
+    NanumMyeongjo, Batang, serif;
 }
 
 .mono {
@@ -478,22 +482,32 @@ blockquote {
 }
 
 .pdf .sans {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR';
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol",
+    "Twemoji", "Noto Color Emoji", "Noto Sans CJK SC", "Noto Sans CJK KR";
 }
 
 .pdf .code {
-  font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR';
+  font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono",
+    Menlo, Courier, monospace, "Twemoji", "Noto Color Emoji",
+    "Noto Sans Mono CJK SC", "Noto Sans Mono CJK KR";
 }
 
 .pdf .serif {
-  font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR';
+  font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho",
+    "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC",
+    "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, "Twemoji",
+    "Noto Color Emoji", "Noto Sans CJK SC", "Noto Sans CJK KR";
 }
 
 .pdf .mono {
-  font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR';
+  font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace,
+    "Twemoji", "Noto Color Emoji", "Noto Sans Mono CJK SC",
+    "Noto Sans Mono CJK KR";
 }
 
-.highlight-default {}
+.highlight-default {
+}
 
 .highlight-gray {
   color: rgb(155, 154, 151);

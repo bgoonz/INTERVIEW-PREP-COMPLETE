@@ -5,16 +5,14 @@ Everything should return, also functions that emit side-effects. Try to preserve
 
 let fact = 1;
 
-for (let i = 1; i <= 5; i++ ) {
-    fact *= i;
+for (let i = 1; i <= 5; i++) {
+  fact *= i;
 }
 
-console.log('Fact of 5: ', fact);
+console.log("Fact of 5: ", fact);
 
 //Now the best practice
 
-const factorial = n =>
-   n === 0 ? 1 : n * factorial(n - 1);
+const factorial = (n) => (n === 0 ? 1 : n * factorial(n - 1));
 
-console.log('Factorial of 5 is : ', factorial(5));
-
+console.log("Factorial of 5 is : ", factorial(5));

@@ -3,49 +3,44 @@
 I would have a method where I will pass a function and it will internally maintain a cache object where calculated value will be cached. When I will call the function with same argument, the cached value will be served.
  */
 
-cacheFn = fn => {
-
+cacheFn = (fn) => {
   let cacheObj = {};
 
-  return arg => {
-
-    if ( cacheObj[ arg ] ) {
-
-      return cacheObj[ arg ]
+  return (arg) => {
+    if (cacheObj[arg]) {
+      return cacheObj[arg];
     } else {
-      cahceObj[ arg ] = fn( arg )
-      return cacheObj[ arg ]
+      cahceObj[arg] = fn(arg);
+      return cacheObj[arg];
     }
-  }
-}
-
+  };
+};
 
 // Examples Use cases
 
 // fist simple way to add
-const add = num => num + 10
+const add = (num) => num + 10;
 
 // Now cached way to dd
-memoizedAdd = num => {
+memoizedAdd = (num) => {
+  let cache = {};
 
-  let cache = {}
-
-  return num => {
-    if ( num in cache ) {
-      console.log( "Returning from Cache" );
-      return cache[ num ];
+  return (num) => {
+    if (num in cache) {
+      console.log("Returning from Cache");
+      return cache[num];
     } else {
-      console.log( "Calculated Result, NOT from Cache" );
+      console.log("Calculated Result, NOT from Cache");
       let result = num + 10;
-      cache[ num ] = result;
-      return cache[ num ];
+      cache[num] = result;
+      return cache[num];
     }
-  }
-}
+  };
+};
 
-const newAdd = memoizedAdd()
-console.log( newAdd( 9 ) );
-console.log( newAdd( 9 ) );
+const newAdd = memoizedAdd();
+console.log(newAdd(9));
+console.log(newAdd(9));
 
 /* Explanation of the above - The output will be as follows. Both time it returns the same added number 19. But first time, its returned form calculation from scratch, as the first time there was not caching yet. But next time, it returns from the cached value.
 
@@ -60,7 +55,6 @@ B> cache can remember its values since the returned function has a closure over 
 
 C> It's essential that the memoized function is pure. A pure function will return the same output for a particular input no mater how many times it's called, which makes the cache work as expected.
 */
-
 
 /* General Explanation
 A> For calculating factorial - A function performs the calculations from scratch every time it's called: Like so.

@@ -1,9 +1,9 @@
 // The test() method executes a search for a match between a regular expression and a specified string. Returns true or false. test() returns a boolean, unlike the String.prototype.search() method, which returns the index (or -1 if not found).
 // Simple example that tests if "hello" is contained at the very beginning of a string, returning a boolean result.
 
-let str = 'hello world!';
+let str = "hello world!";
 
-let result = /^hello/.test( str );
+let result = /^hello/.test(str);
 
 console.log(result); // true
 

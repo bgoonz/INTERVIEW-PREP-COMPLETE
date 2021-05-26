@@ -14,21 +14,21 @@ This would take up to O(N * log(N)) time.
 
 */
 
-returnUnique = arr => {
-  let seenObj = {}
+returnUnique = (arr) => {
+  let seenObj = {};
 
   return arr.reduce((finalArr, currentElem) => {
     if (currentElem in seenObj) {
-      return finalArr
+      return finalArr;
     } else {
-      seenObj[currentElem] = true
-      console.log(seenObj)
-      return finalArr.concat(currentElem)
+      seenObj[currentElem] = true;
+      console.log(seenObj);
+      return finalArr.concat(currentElem);
     }
-  }, [])
-}
+  }, []);
+};
 
-console.log(returnUnique([1, 4, 2, 2, 3, 4, 8]))
+console.log(returnUnique([1, 4, 2, 2, 3, 4, 8]));
 
 /* In the last line, finalArr.concat(currentElem), I can NOT use finalArr.push() because of the following - (will get error - "array.push not a function" )
 
@@ -48,16 +48,19 @@ Further Reading
 // Another even more simpler Implementation of above with O(n) performance
 
 const getUnique = (array) => {
-
   // below variable will keep track of already seen numbers in an object,
   // because checking if an object has a certain key is cheap (it takes O(1) time).
-  let objWithOnlyUniqueArrayElements = {}
+  let objWithOnlyUniqueArrayElements = {};
 
-  return array.filter((elem) => !(objWithOnlyUniqueArrayElements[elem] = elem in objWithOnlyUniqueArrayElements))
-}
+  return array.filter(
+    (elem) =>
+      !(objWithOnlyUniqueArrayElements[elem] =
+        elem in objWithOnlyUniqueArrayElements)
+  );
+};
 
-const a1 = [5, 6, 0, 4, 9, 2, 3, 5, 0, 3, 4, 1, 5, 4, 9]
-console.log(getUnique(a1))
+const a1 = [5, 6, 0, 4, 9, 2, 3, 5, 0, 3, 4, 1, 5, 4, 9];
+console.log(getUnique(a1));
 
 /*
 [
@@ -67,4 +70,3 @@ console.log(getUnique(a1))
 
 Explanation - 
  */
-

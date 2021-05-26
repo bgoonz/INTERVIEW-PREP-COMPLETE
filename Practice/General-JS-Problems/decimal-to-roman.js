@@ -15,18 +15,32 @@ My note - The rule to implement the conversion to any roman numeral is based on 
 
 function convertToRoman(decNum) {
   // let numberToConvert = number;
-  let romanNumber = ''; // This will be the final Roman number that this whole snippet will output
+  let romanNumber = ""; // This will be the final Roman number that this whole snippet will output
 
-  let romanNumerals = [ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I' ];
-  let decimalNumbers = [ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ];
+  let romanNumerals = [
+    "M",
+    "CM",
+    "D",
+    "CD",
+    "C",
+    "XC",
+    "L",
+    "XL",
+    "X",
+    "IX",
+    "V",
+    "IV",
+    "I",
+  ];
+  let decimalNumbers = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
 
   // In the above arrangement, I am keeping the largest element first, because, so once I find the highest decimal value v that is less than or equal to the decimal number given in the argument - I only reduce the number within the while loop.
 
-  for ( let i = 0; i < romanNumerals.length; i++ ) {
-      while (decNum >= decimalNumbers[i]) {
-              decNum -= decimalNumbers[i];
-              romanNumber += romanNumerals[i];
-      }
+  for (let i = 0; i < romanNumerals.length; i++) {
+    while (decNum >= decimalNumbers[i]) {
+      decNum -= decimalNumbers[i];
+      romanNumber += romanNumerals[i];
+    }
   }
   return romanNumber.toUpperCase();
 }
@@ -47,21 +61,33 @@ expect(convertToRoman(16)).to.equal("XVI"); */
 
 //SOLUTION-2 SAME SOL AS ABOVE, LITTLE BIT MORE CLEAR
 
-decimalToRoman = num => {
-
-  let lookup = {M:1000, CM:900, D:500, CD:400, C:100, XC:90, L:50, XL:40, X:10, IX:9, V:5, IV:4, I:1};
-  let roman = '';
+decimalToRoman = (num) => {
+  let lookup = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    XC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX: 9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+  let roman = "";
 
   // Exactly like in solution-1 once the condition is met in the for loop, I have to run the while loop multiple times
   for (let i in lookup) {
-
-      while (num >= lookup[i]) {
-          roman += i;
-          num -= lookup[i]
-      }
+    while (num >= lookup[i]) {
+      roman += i;
+      num -= lookup[i];
+    }
   }
   return roman;
-}
+};
 
 console.log(decimalToRoman(36));
 console.log(decimalToRoman(12));

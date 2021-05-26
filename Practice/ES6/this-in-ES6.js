@@ -3,8 +3,8 @@
 let obj = {
   name: "asim",
   sayLater: function () {
-    console.log( `${this.name}` );
-  }
+    console.log(`${this.name}`);
+  },
 };
 
 // obj.sayLater();  // => asim
@@ -15,11 +15,11 @@ let obj = {
 let obj_1 = {
   name: "asim",
   sayLater: function () {
-    setTimeout( function () {
-      console.log( this )
-      console.log( `${this.name}` );
-    }, 500 );
-  }
+    setTimeout(function () {
+      console.log(this);
+      console.log(`${this.name}`);
+    }, 500);
+  },
 };
 
 // obj_1.sayLater();
@@ -41,7 +41,6 @@ Timeout {
 undefined
 */
 
-
 /* EXPLANATION -
 The reason for outputting 'undefined' is that the value of this in a function depends on how the function is called. If its called as obj.sayLater(), the value of this is the calling context which in this case is obj.
 
@@ -58,14 +57,14 @@ It uses the value of 'this' from the surrounding code for its context. i.e. what
 We can re-write our obj to use fat arrow syntax like so: */
 
 let obj_3 = {
-  name: 'ES6_Asim',
+  name: "ES6_Asim",
   sayLater: function () {
-    setTimeout( () => {
-      console.log( this )
-      console.log( `${this.name}` )
-    }, 500 )
-  }
-}
+    setTimeout(() => {
+      console.log(this);
+      console.log(`${this.name}`);
+    }, 500);
+  },
+};
 
 // obj_3.sayLater();
 
@@ -81,14 +80,14 @@ So, if I did not wrapp the above arrow function inside a regular ES-5 function, 
 */
 
 let obj_4 = {
-  name: 'ES6_Asim',
+  name: "ES6_Asim",
   sayLater: () => {
-    setTimeout( () => {
-      console.log( this )
-      console.log( `${this.name}` )
-    }, 500 )
-  }
-}
+    setTimeout(() => {
+      console.log(this);
+      console.log(`${this.name}`);
+    }, 500);
+  },
+};
 
 obj_4.sayLater();
 

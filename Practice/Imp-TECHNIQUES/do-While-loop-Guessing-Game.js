@@ -6,23 +6,21 @@ const MIN = 1;
 const MAX = 10;
 
 const secretNum = Math.floor(Math.random() * (MAX - MIN + 1) + MIN);
-let hint = '' // To string to show hint so the next guess can be narrowed down
+let hint = ""; // To string to show hint so the next guess can be narrowed down
 let guesses = 0;
 
 do {
+  let input = prompt(`Please enter a number between ${MIN} and ${MAX}` + hint);
 
-    let input = prompt(`Please enter a number between ${MIN} and ${MAX}` + hint)
+  guessedNum = parseInt(input);
 
-    guessedNum = parseInt(input);
+  guesses++;
 
-    guesses++
-
-    if (guessedNum < secretNum) {
-        hint = `and hint is the number should be greater than ${guessedNum}`
-    } else if (guessedNum > secretNum) {
-        hint = `and hint is the number should be smaller than ${guessedNum}`
-    } else {
-        alert(`Congrats !! you guessed correctly after ${guesses} guesses`)
-    }
-
-} while (secretNum !== guessedNum)
+  if (guessedNum < secretNum) {
+    hint = `and hint is the number should be greater than ${guessedNum}`;
+  } else if (guessedNum > secretNum) {
+    hint = `and hint is the number should be smaller than ${guessedNum}`;
+  } else {
+    alert(`Congrats !! you guessed correctly after ${guesses} guesses`);
+  }
+} while (secretNum !== guessedNum);

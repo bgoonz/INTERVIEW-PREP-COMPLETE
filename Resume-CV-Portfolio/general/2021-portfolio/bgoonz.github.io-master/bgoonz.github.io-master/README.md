@@ -1,6 +1,5 @@
 [https://bgoonz.github.io/](https://bgoonz.github.io/)
 
-
 ```
 \___________________________________________________
 bryan_dir:bgoonz.github.io-master_exitstatus:0 ====>

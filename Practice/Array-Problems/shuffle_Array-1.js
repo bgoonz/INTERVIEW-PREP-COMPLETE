@@ -11,73 +11,66 @@ To implement the in-place O(n) shuffle, then, pick a random remaining element (f
 
 */
 
-
-shuffleArr = arr => {
-
+shuffleArr = (arr) => {
   let len = arr.length;
   let randomIndex;
 
-  while ( len ) {
-
+  while (len) {
     // generate an index which is between 0 and (currentIndex - 1)
-    randomIndex = Math.floor( Math.random() * len-- );
+    randomIndex = Math.floor(Math.random() * len--);
 
-    [ arr[ len ], arr[ randomIndex ] ] = [ arr[ randomIndex ], arr[ len ] ]
+    [arr[len], arr[randomIndex]] = [arr[randomIndex], arr[len]];
   }
   return arr;
-}
+};
 
-let myArr1 = [ 1, 2, 3, 4, 5 ]
+let myArr1 = [1, 2, 3, 4, 5];
 
-console.log( shuffleArr( myArr1 ) )
+console.log(shuffleArr(myArr1));
 
 /* The much less optimized version.
 Pick a random element from the array (in [0, n - 1]) and then check if you've shuffled that element already. This works, but it becomes increasingly slow as the remaining elements dwindle; I will keep randomly picking elements that have already been shuffled.
 */
-shuffleArr_Slow = arr => {
-
+shuffleArr_Slow = (arr) => {
   let len = arr.length;
   let shuffledArr = [];
   let rand;
 
-  while ( len ) {
-
+  while (len) {
     // Note in the below line I have to use arr.length, because I need to generate this rand number in a continuously decreasing range. But the len variable is being decreased inside the if loop which I dont have access here. However inside the if loop the array arr is being mutated by shrinking it. So arr.length will be reduces as well.
-    rand = Math.floor( Math.random() * arr.length );
+    rand = Math.floor(Math.random() * arr.length);
 
-    if ( rand in arr ) {
-      shuffledArr.push( arr[ rand ] );
-      delete arr[ rand ];
+    if (rand in arr) {
+      shuffledArr.push(arr[rand]);
+      delete arr[rand];
       len--;
     }
   }
   return shuffledArr;
-}
-let myArr2 = [ 1, 2, 3, 4, 5 ]
-console.log( shuffleArr_Slow( myArr2 ) );
+};
+let myArr2 = [1, 2, 3, 4, 5];
+console.log(shuffleArr_Slow(myArr2));
 
 /* Same algo as above with splice() . Still has relatively poor quadratic performance. The problem is that when I remove each element from the original array (array.splice), I have to shift all the subsequent elements down to compact the array. On average, that's n / 2 elements to shift per element to shuffle, giving O(n2).
  */
-shuffleArr_Slow_2 = arr => {
-
+shuffleArr_Slow_2 = (arr) => {
   let len = arr.length;
   let shuffledArr = [];
   let randNum;
 
-  while ( len ) {
-
+  while (len) {
     // Because here, I am not separately decrementing the array within any further if or for loop. So, have to take care of decrementing the random number generation part withing the Math.random() function invocation itself
-    randNum = Math.floor( Math.random() * len-- );
+    randNum = Math.floor(Math.random() * len--);
 
     // noting splice() mutates the array
-    shuffledArr.push( arr.splice( randNum, 1 )[ 0 ] );
+    shuffledArr.push(arr.splice(randNum, 1)[0]);
   }
   return shuffledArr;
-}
+};
 
-let myArr3 = [ 1, 2, 3, 4, 5 ]
+let myArr3 = [1, 2, 3, 4, 5];
 
-console.log( shuffleArr_Slow_2( myArr3 ) )
+console.log(shuffleArr_Slow_2(myArr3));
 
 /* https://stackoverflow.com/questions/21483667
 

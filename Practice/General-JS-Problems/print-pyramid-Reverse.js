@@ -26,27 +26,22 @@ And the resetting of line is required because, the 2 for loops need to run again
 
 */
 
+function pyramidInverted(totalRows) {
+  for (let row = totalRows; row > 0; row--) {
+    let str = "";
 
-function pyramidInverted (totalRows) {
-
-    for (let row = totalRows; row > 0; row-- ) {
-
-        let str = '';
-
-        for (let col1 = totalRows; col1 >= row; col1-- ) {
-            str += '$';
-        }
-
-        for (let col2 = row; col2 >0; col2--) {
-            str += '*#';
-        }
-        console.log(str);
-
+    for (let col1 = totalRows; col1 >= row; col1--) {
+      str += "$";
     }
+
+    for (let col2 = row; col2 > 0; col2--) {
+      str += "*#";
+    }
+    console.log(str);
+  }
 }
 
 // pyramidInverted(5);
-
 
 // SOLUTION-2 - THIS TECHINIQUE SHOULD BE IMPLEMENTED FOR FUTURE PATTERN BUILDING >>
 /* MAIN DIFFERENCE FROM ABOVE CODE - Here, for the second loop, my terminal condition is ( 2n + 1) - Hence, I dont have to do the extra space while printing the line.
@@ -80,24 +75,20 @@ E> For second line - i.e. for second loop >> print col-1's output 2 times (equal
 
 F> For third line - i.e. for third loop >> print col-1's output 3 times and col-2's output 5 times. */
 
-printPyramid = totalRows => {
+printPyramid = (totalRows) => {
+  for (let row = totalRows; row > 0; row--) {
+    let line = "";
 
-    for (let row = totalRows; row > 0; row-- ) {
-
-        let line = ''
-
-        for ( let col1 = totalRows; col1 >= row ; col1--) {
-
-            line = line + ' '
-        }
-
-        for (let col2 = ((2 * row) - 1); col2 > 0 ; col2-- ) {
-
-            line = line + "*"
-        }
-
-        console.log(line);
+    for (let col1 = totalRows; col1 >= row; col1--) {
+      line = line + " ";
     }
-}
 
-printPyramid(5)
+    for (let col2 = 2 * row - 1; col2 > 0; col2--) {
+      line = line + "*";
+    }
+
+    console.log(line);
+  }
+};
+
+printPyramid(5);

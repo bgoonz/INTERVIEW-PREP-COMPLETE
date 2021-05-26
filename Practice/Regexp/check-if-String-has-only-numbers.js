@@ -1,19 +1,18 @@
 // I wanna make sure the input contains ONLY digits and no other letters. Write a function to return true if all the chars of the given string are only digits not even + or -
 
-let str1 = "88kl85"
-let str2 = "8885"
+let str1 = "88kl85";
+let str2 = "8885";
 
 let re = /^[0-9]+$/;
 
-
 // SOLUTION-1
-ifStringIsOnlyNumeric = str => str.match(re) !== null
+ifStringIsOnlyNumeric = (str) => str.match(re) !== null;
 
 // console.log(ifStringIsOnlyNumeric(str1));   // => false
 // console.log(ifStringIsOnlyNumeric(str2));     // => true
 
 // SOLUTION-2
-ifStringIsOnlyNumeric2 = str => re.test(str)
+ifStringIsOnlyNumeric2 = (str) => re.test(str);
 
 // console.log(ifStringIsOnlyNumeric2(str1));   // => false
 // console.log(ifStringIsOnlyNumeric2(str2));     // => true
@@ -38,7 +37,6 @@ PAUL - So here, by including '^'	at the beginning of the input string AND '$' at
 
 */
 
-
 // console.log(str1.match(re));  // => null
 // console.log(str2.match(re));  // => [ '8885', index: 0, input: '8885' ]
 
@@ -47,18 +45,18 @@ PAUL - So here, by including '^'	at the beginning of the input string AND '$' at
 
 // SOLUTION-3 -  to allow both comma and point decimal
 
-let re2 = /^\d+[\.\,]?\d+$/
+let re2 = /^\d+[\.\,]?\d+$/;
 
 let str3 = "88,85";
 
 let str4 = "88.85";
 
-ifStringIsOnlyNumeric3 = str => re2.test(str);
+ifStringIsOnlyNumeric3 = (str) => re2.test(str);
 
-console.log(ifStringIsOnlyNumeric3(str1));    // => false
-console.log(ifStringIsOnlyNumeric3(str2));    // => true
-console.log(ifStringIsOnlyNumeric3(str3));    // => true
-console.log(ifStringIsOnlyNumeric3(str4));    // => true
+console.log(ifStringIsOnlyNumeric3(str1)); // => false
+console.log(ifStringIsOnlyNumeric3(str2)); // => true
+console.log(ifStringIsOnlyNumeric3(str3)); // => true
+console.log(ifStringIsOnlyNumeric3(str4)); // => true
 
 /*
 \d	=>> Matches a digit character. Equivalent to [0-9].
@@ -75,13 +73,13 @@ Meaning in above, I only want to match a single dot or a single comma
 
 // Without using regexp - 48 and 57 are the char codes for "0" and "9", respectively.
 
-ifStringIsOnlyNumeric4 = str => {
+ifStringIsOnlyNumeric4 = (str) => {
   for (let i = 0; i < str.length - 1; i++) {
     let char = str.charCodeAt(i);
-    if ( char < 48 || char > 57 )return false;
+    if (char < 48 || char > 57) return false;
   }
   return true;
-}
+};
 
-console.log(ifStringIsOnlyNumeric4(str1));   // => false
-console.log(ifStringIsOnlyNumeric4(str2));     // => true
+console.log(ifStringIsOnlyNumeric4(str1)); // => false
+console.log(ifStringIsOnlyNumeric4(str2)); // => true

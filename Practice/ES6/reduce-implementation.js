@@ -3,21 +3,20 @@
 prev refers to the first item in the array while next refers to the second item. But take note that if you pass in a initialValue, that prev will take on that initialValue and next will be the first value of the array.
 */
 
-
 // Example 2:- return and array of unique tags from the below dataset
 
 let persons = [
-  {id : 1, name : "John", tags : "javascript"}, 
-  {id : 2, name : "Alice", tags : "javascript"}, 
-  {id : 3, name : "Roger", tags : "java"},
-  {id : 4, name : "Adam", tags : "javascript"},
-  {id : 5, name : "Alex", tags : "java"}
+  { id: 1, name: "John", tags: "javascript" },
+  { id: 2, name: "Alice", tags: "javascript" },
+  { id: 3, name: "Roger", tags: "java" },
+  { id: 4, name: "Adam", tags: "javascript" },
+  { id: 5, name: "Alex", tags: "java" },
 ];
 
-let uniqueTags = persons.reduce( ( acc, personObj ) => {
-    acc[personObj.tags] = 1;
-    return acc;
-},{});
+let uniqueTags = persons.reduce((acc, personObj) => {
+  acc[personObj.tags] = 1;
+  return acc;
+}, {});
 
 // console.log(uniqueTags);;
 // console.log(Object.keys(uniqueTags))
@@ -27,28 +26,28 @@ So here, the initialized emtpy object is constructed with each invocation of the
 */
 
 // Problem - 2 -  Parse the array and return an object that contains the number of times each string occured in the array
-// 
-let arr1 = [ "apple", "orange", "apple", "orange", "pear", "orange" ];
+//
+let arr1 = ["apple", "orange", "apple", "orange", "pear", "orange"];
 
 // Without using reduce()
-function getWordCount (arr) {
-	let obj = {};
+function getWordCount(arr) {
+  let obj = {};
 
-	for (let i = 0; i < arr.length; i++) {
-		let item = arr[ i ];
-        obj[item] = (obj[item] +1 ) || 1;
-	}
-	return obj;
+  for (let i = 0; i < arr.length; i++) {
+    let item = arr[i];
+    obj[item] = obj[item] + 1 || 1;
+  }
+  return obj;
 }
 
 // I assign to the object each of the item of the array as the key, and the value to be the number of occurance. And remember, I assign the value of an object's property as object[property] . And after assignement, I access the value of a property of an object by doing Object.property
 
 // Now doing the same above with reduce
 function getWordCountReduce(arr) {
-	return arr.reduce((counterObj, arrItem) => {
-		counterObj[arrItem] = (counterObj[arrItem] + 1) || 1
-		return counterObj;
-	}, {});
+  return arr.reduce((counterObj, arrItem) => {
+    counterObj[arrItem] = counterObj[arrItem] + 1 || 1;
+    return counterObj;
+  }, {});
 }
 
 console.log(getWordCountReduce(arr1));

@@ -26,54 +26,47 @@ E) So, when the Hashmap is fully constructed, the value of cities will cancel ea
  So, scan through the final hash table to find +1, which is the destination, and -1, which is the departure.
 */
 
-
 let map = {
-	tkt1: {
-		departure: 'Los Angeles',
-		arrival: 'San Francisco'
-	},
+  tkt1: {
+    departure: "Los Angeles",
+    arrival: "San Francisco",
+  },
 
-	tkt2: {
-		departure: 'San Francisco',
-		arrival: 'New York'
-	},
+  tkt2: {
+    departure: "San Francisco",
+    arrival: "New York",
+  },
 
-	tkt3: {
-		departure: 'Moscow',
-		arrival: 'Mali'
-	},
+  tkt3: {
+    departure: "Moscow",
+    arrival: "Mali",
+  },
 
-	tkt4: {
-		departure: 'Barcelona',
-		arrival: 'Moscow'
-	},
+  tkt4: {
+    departure: "Barcelona",
+    arrival: "Moscow",
+  },
 
-	tkt5: {
-		departure: 'New York',
-		arrival: 'Barcelona'
-	}
+  tkt5: {
+    departure: "New York",
+    arrival: "Barcelona",
+  },
 };
 
-findDepartureArrival = function(map) {
+findDepartureArrival = function (map) {
+  let hashMap = {};
 
-	let hashMap = {};
+  for (let tkt in map) {
+    let depart = map[tkt].departure;
+    let arriv = map[tkt].arrival;
 
-	for ( let tkt in map ) {
-	  let depart = map[ tkt ].departure;
-	  let arriv = map[ tkt ].arrival;
+    if (!(depart in hashMap)) hashMap[depart] = -1;
+    else hashMap[depart] = hashMap[depart] - 1;
 
-		if (!(depart in hashMap))
-			hashMap[depart] = -1;
-		else
-			hashMap[depart] = hashMap[depart] - 1;
-
-		if (!(arriv in hashMap))
-			hashMap[arriv] = 1;
-		else
-			hashMap[arriv] = hashMap[arriv] + 1;
-
-	}
-	return hashMap;
-}
+    if (!(arriv in hashMap)) hashMap[arriv] = 1;
+    else hashMap[arriv] = hashMap[arriv] + 1;
+  }
+  return hashMap;
+};
 
 console.log(findDepartureArrival(map));

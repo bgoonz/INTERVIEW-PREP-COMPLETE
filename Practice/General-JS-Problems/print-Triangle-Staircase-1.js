@@ -13,16 +13,16 @@ PROBLEM STATEMENT SPECIAL REQUIREMENT - Observe that its base and height are bot
 */
 
 function printTriangle(rows) {
-	let char = ''
+  let char = "";
 
-	for (let i = 1; i <= rows; i++) {
-		for ( let j = 1; j <= i; j++) {
-			char = char + " # ";
-		}
-		console.log((char));
+  for (let i = 1; i <= rows; i++) {
+    for (let j = 1; j <= i; j++) {
+      char = char + " # ";
+    }
+    console.log(char);
 
-		char = ''; // Reset the char after printing
-	}
+    char = ""; // Reset the char after printing
+  }
 }
 
 printTriangle(7);
@@ -41,9 +41,9 @@ E) After printing, reset char, so for the next line it can print again.
 */
 
 function printTriangle_alt(rows) {
-	for (let row = 1; row <= rows; row++) {
-		console.log("#".repeat(row));
-	}
+  for (let row = 1; row <= rows; row++) {
+    console.log("#".repeat(row));
+  }
 }
 
 // printTriangle_alt(5);
