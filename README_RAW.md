@@ -63,13 +63,13 @@ Though there's some who might disagree, you should **include your GPA.** If your
 
 Your cover letter is your written sales pitch. You've got a resume that summarizes everything. Now you have to write out a more complete, professional description of you and what you can offer a given company. Here's a sample cover letter to get you started:
 
-> Dear ****\_****,
+> Dear \***\*\_\*\***,
 >
-> I hope your day is going well! My name is ****\_****, and I'm a ****\_**** at ****\_****. I am very interested in working for ****\_**** next ****\_****. Your commitment to ****\_**** and ****\_**** that I saw on the website inspired me! The products you build and the values you stand for make ****\_**** seem like an ideal workplace for me.
+> I hope your day is going well! My name is \***\*\_\*\***, and I'm a \***\*\_\*\*** at \***\*\_\*\***. I am very interested in working for \***\*\_\*\*** next \***\*\_\*\***. Your commitment to \***\*\_\*\*** and \***\*\_\*\*** that I saw on the website inspired me! The products you build and the values you stand for make \***\*\_\*\*** seem like an ideal workplace for me.
 
 A little about me, I [insert relevant work experience, extracurriculars, and projects here]. I think these experiences would make me a great candidate for you.
 
-> Please let me know if there's anything else you need from me. I look forward to hearing from you! I can be reached at ****\_**** and ****\_****.
+> Please let me know if there's anything else you need from me. I look forward to hearing from you! I can be reached at \***\*\_\*\*** and \***\*\_\*\***.
 >
 > Best regards,
 >
@@ -263,13 +263,13 @@ Though there's some who might disagree, you should **include your GPA.** If your
 
 Your cover letter is your written sales pitch. You've got a resume that summarizes everything. Now you have to write out a more complete, professional description of you and what you can offer a given company. Here's a sample cover letter to get you started:
 
-> Dear ****\_****,
+> Dear \***\*\_\*\***,
 >
-> I hope your day is going well! My name is ****\_****, and I'm a ****\_**** at ****\_****. I am very interested in working for ****\_**** next ****\_****. Your commitment to ****\_**** and ****\_**** that I saw on the website inspired me! The products you build and the values you stand for make ****\_**** seem like an ideal workplace for me.
+> I hope your day is going well! My name is \***\*\_\*\***, and I'm a \***\*\_\*\*** at \***\*\_\*\***. I am very interested in working for \***\*\_\*\*** next \***\*\_\*\***. Your commitment to \***\*\_\*\*** and \***\*\_\*\*** that I saw on the website inspired me! The products you build and the values you stand for make \***\*\_\*\*** seem like an ideal workplace for me.
 
 A little about me, I [insert relevant work experience, extracurriculars, and projects here]. I think these experiences would make me a great candidate for you.
 
-> Please let me know if there's anything else you need from me. I look forward to hearing from you! I can be reached at ****\_**** and ****\_****.
+> Please let me know if there's anything else you need from me. I look forward to hearing from you! I can be reached at \***\*\_\*\*** and \***\*\_\*\***.
 >
 > Best regards,
 >

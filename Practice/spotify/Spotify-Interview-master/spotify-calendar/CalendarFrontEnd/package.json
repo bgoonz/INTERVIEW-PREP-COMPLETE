@@ -1,0 +1,37 @@
+{
+  "name": "cli",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.3.1",
+    "connected-react-router": "^4.3.0",
+    "firebase": "^5.2.0",
+    "history": "^4.7.2",
+    "material-ui": "^0.20.1",
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.1",
+    "react-icons": "^2.2.7",
+    "react-motion": "^0.5.2",
+    "react-notification-system": "^0.2.17",
+    "react-notification-system-redux": "^1.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:dev": "NODE_ENV=development react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001"
+}

@@ -1,0 +1,11 @@
+Find the kth greatest element in a set
+Construct a distributed system that handles real time event processing
+Looking at a grid, keeping minecraft in mind, how would you be able to determine if you have constructed a bucket or torch.
+Given a string, find the letter that appears the most often in the string.
+Design bit.ly
+Sketch out a design for a site like Twitter
+Reverse a string, reverse only words of a string.
+Check whether 2 strings are anagrams of each other?
+Given an array of numbers, find the longest consecutive subsequence.
+Write a program to partition song titles.
+How would you implement a "like" button on a website?
