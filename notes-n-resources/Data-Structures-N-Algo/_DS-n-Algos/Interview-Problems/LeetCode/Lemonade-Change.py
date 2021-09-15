@@ -1,10 +1,6 @@
 class Solution:
     def lemonadeChange(self, bills: List[int]) -> bool:
-        denom = {
-            5: 0,
-            10: 0,
-            20: 0
-        }
+        denom = {5: 0, 10: 0, 20: 0}
         for i in range(len(bills)):
             denom[bills[i]] += 1
             if bills[i] > 5:
@@ -20,7 +16,7 @@ class Solution:
                         denom[10] -= 1
                         bal -= 10
                         if bal == 0:
-                            continue                
+                            continue
                 if denom[5] > 1:
                     denom[5] -= 2
                     bal -= 10

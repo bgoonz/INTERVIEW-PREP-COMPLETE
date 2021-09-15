@@ -1,4 +1,6 @@
 from collections import deque
+
+
 class Solution:
     def canFinish(self, numCourses, prerequisites) -> bool:
         adjList = [[] for _ in range(numCourses)]

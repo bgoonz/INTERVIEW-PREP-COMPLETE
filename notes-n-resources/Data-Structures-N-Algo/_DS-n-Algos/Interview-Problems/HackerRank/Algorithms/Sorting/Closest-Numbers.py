@@ -12,18 +12,19 @@ def closestNumbers(arr):
     mindif = math.inf
     res = []
     for i in range(1, len(arr)):
-        if ((abs(arr[i-1]-arr[i])) < mindif):
+        if (abs(arr[i - 1] - arr[i])) < mindif:
             res.clear()
-            res.append(arr[i-1])
+            res.append(arr[i - 1])
             res.append(arr[i])
-            mindif = abs(arr[i-1] - arr[i])
-        elif abs(arr[i-1]-arr[i]) == mindif:
-            res.append(arr[i-1])
+            mindif = abs(arr[i - 1] - arr[i])
+        elif abs(arr[i - 1] - arr[i]) == mindif:
+            res.append(arr[i - 1])
             res.append(arr[i])
     return res
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -31,7 +32,7 @@ if __name__ == '__main__':
 
     result = closestNumbers(arr)
 
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
+    fptr.write(" ".join(map(str, result)))
+    fptr.write("\n")
 
     fptr.close()

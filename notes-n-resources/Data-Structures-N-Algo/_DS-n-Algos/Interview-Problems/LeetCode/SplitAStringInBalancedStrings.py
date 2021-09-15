@@ -4,9 +4,9 @@ class Solution:
         rc = 0
         lc = 0
         for i in range(len(s)):
-            if s[i] == 'R':
+            if s[i] == "R":
                 rc += 1
-            if s[i] == 'L':
+            if s[i] == "L":
                 lc += 1
             if rc == lc:
                 c += 1

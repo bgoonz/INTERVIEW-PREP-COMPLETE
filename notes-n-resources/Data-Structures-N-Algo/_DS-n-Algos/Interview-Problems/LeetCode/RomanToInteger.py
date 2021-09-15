@@ -1,57 +1,57 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
         ans = 0
-        prev = ''
+        prev = ""
         for i in range(len(s)):
-            if(s[i]=='M'):
-                if(prev=='C'):
+            if s[i] == "M":
+                if prev == "C":
                     ans += 800
-                    prev = 'M'
+                    prev = "M"
                     continue
                 ans += 1000
-                prev = 'M'
+                prev = "M"
                 continue
-            if(s[i]=='D'):
-                if(prev=='C'):
+            if s[i] == "D":
+                if prev == "C":
                     ans += 300
-                    prev = 'D'
+                    prev = "D"
                     continue
                 ans += 500
-                prev = 'D'
+                prev = "D"
                 continue
-            if(s[i]=='C'):
-                if(prev=='X'):
+            if s[i] == "C":
+                if prev == "X":
                     ans += 80
-                    prev = 'C'
+                    prev = "C"
                     continue
                 ans += 100
-                prev = 'C'
+                prev = "C"
                 continue
-            if(s[i]=='L'):
-                if(prev=='X'):
+            if s[i] == "L":
+                if prev == "X":
                     ans += 30
-                    prev = 'L'
+                    prev = "L"
                     continue
                 ans += 50
-                prev = 'L'
+                prev = "L"
                 continue
-            if(s[i]=='X'):
-                if(prev=='I'):
+            if s[i] == "X":
+                if prev == "I":
                     ans += 8
-                    prev = 'X'
+                    prev = "X"
                     continue
                 ans += 10
-                prev = 'X'
+                prev = "X"
                 continue
-            if(s[i]=='V'):
-                if(prev=='I'):
+            if s[i] == "V":
+                if prev == "I":
                     ans += 3
-                    prev = 'V'
+                    prev = "V"
                     continue
                 ans += 5
-                prev = 'V'
+                prev = "V"
                 continue
-            if(s[i]=='I'):                                   
+            if s[i] == "I":
                 ans += 1
-                prev = 'I'
+                prev = "I"
         return ans

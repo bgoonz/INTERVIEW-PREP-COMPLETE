@@ -10,10 +10,11 @@ from collections import Counter
 # Complete the beautifulPairs function below.
 def beautifulPairs(A, B):
     bp = sum((Counter(A) - Counter(B)).values())
-    return len(A)-bp+1 if bp else len(A)-1
+    return len(A) - bp + 1 if bp else len(A) - 1
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -23,6 +24,6 @@ if __name__ == '__main__':
 
     result = beautifulPairs(A, B)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

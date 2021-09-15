@@ -4,11 +4,12 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         pointer = ListNode(0)
         pointer.next = head
-        
+
         tempnode = pointer
         while tempnode.next != None:
             if tempnode.next.val == val:

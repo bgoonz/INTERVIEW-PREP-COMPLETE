@@ -8,13 +8,13 @@ for T in range(int(input())):
     ans = True
     for i in range(len(S)):
         if i % 2 != 0:
-            if S[i] == '1':
+            if S[i] == "1":
                 ca += 1
                 na -= 1
             else:
                 na -= 1
         else:
-            if S[i] == '1':
+            if S[i] == "1":
                 cb += 1
                 nb -= 1
             else:
@@ -24,7 +24,6 @@ for T in range(int(input())):
             ans = True
             break
         else:
-            ans = False 
+            ans = False
     if ans == False:
         print(2 * N)
-

@@ -7,7 +7,6 @@ import re
 import sys
 
 
-
 #
 # Complete the 'howMany' function below.
 #
@@ -15,6 +14,8 @@ import sys
 # The function accepts STRING sentence as parameter.
 #
 import re
+
+
 def howMany(sentence):
     # Write your code here
     # invalid = ['?', '.', '[', ']', '{', '}', '(', ')', ',', '!']
@@ -24,8 +25,8 @@ def howMany(sentence):
         t = 0
         if l[i].isnumeric():
             continue
-        for j in range(0, len(l[i])-1):
-            if l[i][j].isalpha() != True and l[i][j] != '-':
+        for j in range(0, len(l[i]) - 1):
+            if l[i][j].isalpha() != True and l[i][j] != "-":
                 t = 1
                 break
         if t == 0:

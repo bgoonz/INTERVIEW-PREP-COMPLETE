@@ -10,8 +10,9 @@ import sys
 def stringConstruction(s):
     return len(set(s))
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     q = int(input())
 
@@ -20,6 +21,6 @@ if __name__ == '__main__':
 
         result = stringConstruction(s)
 
-        fptr.write(str(result) + '\n')
+        fptr.write(str(result) + "\n")
 
     fptr.close()

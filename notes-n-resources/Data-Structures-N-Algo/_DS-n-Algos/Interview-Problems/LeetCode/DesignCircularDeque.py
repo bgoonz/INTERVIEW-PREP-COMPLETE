@@ -1,12 +1,11 @@
 class MyCircularDeque:
-
     def __init__(self, k: int):
         """
         Initialize your data structure here. Set the size of the deque to be k.
         """
         self.maxsize = k
         self.size = 0
-        self.decq = [0]*k
+        self.decq = [0] * k
         self.front = self.rear = -1
 
     def insertFront(self, value: int) -> bool:
@@ -19,7 +18,7 @@ class MyCircularDeque:
             if self.front == -1:
                 self.front = self.rear = 0
             else:
-                self.front = (self.front-1)%self.maxsize
+                self.front = (self.front - 1) % self.maxsize
             self.decq[self.front] = value
             self.size += 1
             return True
@@ -34,7 +33,7 @@ class MyCircularDeque:
             if self.rear == -1:
                 self.front = self.rear = 0
             else:
-                self.rear = (self.rear+1)%self.maxsize
+                self.rear = (self.rear + 1) % self.maxsize
             self.decq[self.rear] = value
             self.size += 1
             return True
@@ -50,9 +49,9 @@ class MyCircularDeque:
                 self.front = self.rear = -1
             else:
                 self.decq[self.front] = 0
-                self.front = (self.front+1)%self.maxsize
+                self.front = (self.front + 1) % self.maxsize
             self.size -= 1
-            return True                
+            return True
 
     def deleteLast(self) -> bool:
         """
@@ -65,9 +64,9 @@ class MyCircularDeque:
                 self.front = self.rear = -1
             else:
                 self.decq[self.rear] = 0
-                self.rear = (self.rear-1)%self.maxsize
+                self.rear = (self.rear - 1) % self.maxsize
             self.size -= 1
-            return True       
+            return True
 
     def getFront(self) -> int:
         """
@@ -107,7 +106,6 @@ class MyCircularDeque:
 
 # Another Optimized Solution
 class MyCircularDeque:
-
     def __init__(self, k: int):
         """
         Initialize your data structure here. Set the size of the deque to be k.
@@ -163,13 +161,13 @@ class MyCircularDeque:
         """
         Checks whether the circular deque is empty or not.
         """
-        return len(self.decq)==0
+        return len(self.decq) == 0
 
     def isFull(self) -> bool:
         """
         Checks whether the circular deque is full or not.
         """
-        return len(self.decq)==self.maxsize
+        return len(self.decq) == self.maxsize
 
 
 # Your MyCircularDeque object will be instantiated and called as such:

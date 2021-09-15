@@ -12,19 +12,20 @@ import sys
 def minimumLoss(price):
     m = -math.inf
     dp = [[0 for _ in range(len(price))] for _ in range(len(price))]
-    for i in range(0, len(price)-1):
-        for j in range(i+1, len(price)):
+    for i in range(0, len(price) - 1):
+        for j in range(i + 1, len(price)):
             # print(i, j)
-            dp[i][j] = dp[i][j-1] + (price[j] - price[j-1])
+            dp[i][j] = dp[i][j - 1] + (price[j] - price[j - 1])
             # print(i, j, dp[i][j])
-    for i in range(0, len(price)-1):
-        for j in range(i+1, len(price)):
+    for i in range(0, len(price) - 1):
+        for j in range(i + 1, len(price)):
             if (dp[i][j] > m) and (dp[i][j] < 0):
                 m = dp[i][j]
     return -m
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -32,7 +33,7 @@ if __name__ == '__main__':
 
     result = minimumLoss(price)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
@@ -55,12 +56,15 @@ def minimumLoss(price):
     print(prices)
     sprices = sorted(prices)
     for i in range(1, len(price)):
-        if (sprices[i]-sprices[i-1] < m) and (prices[sprices[i]]<prices[sprices[i-1]]):
-            m = sprices[i] - sprices[i-1]
+        if (sprices[i] - sprices[i - 1] < m) and (
+            prices[sprices[i]] < prices[sprices[i - 1]]
+        ):
+            m = sprices[i] - sprices[i - 1]
     return m
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -68,6 +72,6 @@ if __name__ == '__main__':
 
     result = minimumLoss(price)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

@@ -17,6 +17,7 @@ class Solution:
         else:
             return True
 
+
 # Alternate Approach
 class Solution:
     def isPowerOfThree(self, n: int) -> bool:

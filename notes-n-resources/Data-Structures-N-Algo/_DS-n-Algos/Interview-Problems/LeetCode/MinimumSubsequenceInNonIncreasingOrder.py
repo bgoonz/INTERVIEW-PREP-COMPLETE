@@ -5,7 +5,7 @@ class Solution:
         s = 0
         if len(nums) == 1:
             return nums
-        for i in range(len(nums)+1):
+        for i in range(len(nums) + 1):
             s += nums[i]
-            if s > x-s:
-                return nums[0:i+1]
+            if s > x - s:
+                return nums[0 : i + 1]

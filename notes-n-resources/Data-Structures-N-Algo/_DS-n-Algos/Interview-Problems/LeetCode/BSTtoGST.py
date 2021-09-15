@@ -5,9 +5,11 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def convertBST(self, root: TreeNode) -> TreeNode:
         self.ans = 0
+
         def add(node):
             if not node:
                 return
@@ -15,5 +17,6 @@ class Solution:
             self.ans += node.val
             node.val = self.ans
             add(node.left)
+
         add(root)
         return root

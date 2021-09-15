@@ -10,14 +10,15 @@ import sys
 def jimOrders(orders):
     res = []
     for i in range(len(orders)):
-        orders[i].append(i+1)
-    orders = sorted(orders, key = lambda x: x[0]+x[1])
+        orders[i].append(i + 1)
+    orders = sorted(orders, key=lambda x: x[0] + x[1])
     for i in range(len(orders)):
-        res.append(orders[i][2])     
-    return res  
+        res.append(orders[i][2])
+    return res
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -28,7 +29,7 @@ if __name__ == '__main__':
 
     result = jimOrders(orders)
 
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
+    fptr.write(" ".join(map(str, result)))
+    fptr.write("\n")
 
     fptr.close()

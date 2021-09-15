@@ -4,7 +4,7 @@ import random
 import re
 import sys
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nd = input().split()
 
     n = int(nd[0])
@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     a = list(map(int, input().rstrip().split()))
 
-    a = a[(d%n):n] + a[0:(d%n)]
+    a = a[(d % n) : n] + a[0 : (d % n)]
 
     for i in range(len(a)):
-        print(a[i], end=' ')
+        print(a[i], end=" ")

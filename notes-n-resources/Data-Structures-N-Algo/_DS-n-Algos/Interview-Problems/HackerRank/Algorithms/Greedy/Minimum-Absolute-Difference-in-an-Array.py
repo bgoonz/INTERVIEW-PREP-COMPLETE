@@ -11,12 +11,13 @@ def minimumAbsoluteDifference(arr):
     mn = math.inf
     arr = sorted(arr)
     for i in range(1, len(arr)):
-        if abs(arr[i-1] - arr[i]) < mn:
-            mn = abs(arr[i-1] - arr[i])
+        if abs(arr[i - 1] - arr[i]) < mn:
+            mn = abs(arr[i - 1] - arr[i])
     return mn
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -24,6 +25,6 @@ if __name__ == '__main__':
 
     result = minimumAbsoluteDifference(arr)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

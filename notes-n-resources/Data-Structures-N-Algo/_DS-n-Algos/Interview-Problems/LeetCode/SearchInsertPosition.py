@@ -6,14 +6,17 @@ class Solution:
                 if nums[mid] == target:
                     return mid
                 elif nums[mid] > target:
-                    return binary(nums, low, mid-1, target)
+                    return binary(nums, low, mid - 1, target)
                 else:
-                    return binary(nums, mid+1, high, target)
+                    return binary(nums, mid + 1, high, target)
             else:
-                return high+1
-        return binary(nums, 0, len(nums)-1, target)
+                return high + 1
 
-# Iterative Binary Search 
+        return binary(nums, 0, len(nums) - 1, target)
+
+
+# Iterative Binary Search
+
 
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:

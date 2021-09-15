@@ -7,11 +7,13 @@
 
 ## Recursive Solution
 
-class Solution:                
+
+class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
-        if(root==None):
+        if root == None:
             return []
         po = []
+
         def preorder(x):
             if x:
                 po.append(x.val)
@@ -24,20 +26,20 @@ class Solution:
 
 ## Iterative Solution
 
-class Solution:                
+
+class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
-        if(root==None):
+        if root == None:
             return []
         stack = []
         po = []
         c = root
-        
-        while(c!=None or len(stack)!=0):
-            while(c!=None):
+
+        while c != None or len(stack) != 0:
+            while c != None:
                 stack.append(c)
                 po.append(c.val)
-                c = c.left                
+                c = c.left
             c = stack.pop()
             c = c.right
         return po
-            

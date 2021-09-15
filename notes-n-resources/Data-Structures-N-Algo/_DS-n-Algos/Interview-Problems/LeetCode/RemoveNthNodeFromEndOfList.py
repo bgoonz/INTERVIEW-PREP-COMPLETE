@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         tail = head
@@ -11,15 +12,16 @@ class Solution:
         while tail.next:
             length += 1
             tail = tail.next
-        if(length==1):
+        if length == 1:
             return None
-        if(length==n):
+        if length == n:
             return head.next
         tempnode = head
-        for _ in range(0, length-n-1):
+        for _ in range(0, length - n - 1):
             tempnode = tempnode.next
         tempnode.next = tempnode.next.next
         return head
+
 
 # One Pass
 
@@ -33,8 +35,8 @@ class Solution:
         dummy = fast = slow = ListNode()
         dummy.next = head
         if not head.next:
-            return None 
-        for _ in range(n+1):
+            return None
+        for _ in range(n + 1):
             fast = fast.next
         while fast:
             fast = fast.next

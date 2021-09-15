@@ -7,4 +7,4 @@ class Solution:
                 x += 1
             else:
                 break
-        return strs[0][0:x] if x else ''
+        return strs[0][0:x] if x else ""

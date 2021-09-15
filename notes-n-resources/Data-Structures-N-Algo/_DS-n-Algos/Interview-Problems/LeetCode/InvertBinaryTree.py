@@ -14,6 +14,7 @@ class Solution:
             temp = node.left
             node.left = node.right
             node.right = temp
+
         if root:
             invert(root)
         return root

@@ -7,17 +7,19 @@
 
 ## Recursive Solution
 
+
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
-        if (root==None):
+        if root == None:
             return []
         po = []
+
         def postorder(x):
             if not x:
                 return
             postorder(x.left)
             postorder(x.right)
             po.append(x.val)
+
         postorder(root)
         return po
-

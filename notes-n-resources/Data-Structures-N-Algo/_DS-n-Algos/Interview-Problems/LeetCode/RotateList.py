@@ -4,15 +4,16 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
         if not head:
             return None
-        if not k==0:        
+        if not k == 0:
             tail = head
             length = 1
 
-            while(tail.next):
+            while tail.next:
                 length += 1
                 tail = tail.next
 
@@ -22,7 +23,7 @@ class Solution:
 
             tempnode = head
 
-            for _ in range(0, length-k-1):
+            for _ in range(0, length - k - 1):
                 tempnode = tempnode.next
             a = tempnode.next
             tempnode.next = None

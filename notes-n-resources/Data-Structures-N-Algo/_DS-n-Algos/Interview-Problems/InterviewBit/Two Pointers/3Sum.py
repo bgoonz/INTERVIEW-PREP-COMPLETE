@@ -5,10 +5,10 @@ class Solution:
     def threeSumClosest(self, A, B):
         A.sort()
         cs = math.inf
-        for i in range(0, len(A)-2):
+        for i in range(0, len(A) - 2):
             j = i + 1
             k = len(A) - 1
-            while(j < k):
+            while j < k:
                 s = A[i] + A[j] + A[k]
                 if s == B:
                     return s
