@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "1.5.1",
-    "connected-react-router": "^4.3.0",
+    "connected-react-router": "4.5.0",
     "firebase": "^5.2.0",
     "history": "^4.7.2",
     "material-ui": "0.20.2",
