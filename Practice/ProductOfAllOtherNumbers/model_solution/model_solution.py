@@ -1,7 +1,7 @@
 # Solution that makes use of division
 # import functools
 # import operator
-# 
+#
 # def product_of_all_others(arr):
 #     if len(arr) < 2:
 #         return None
@@ -23,7 +23,6 @@ def product_of_all_others(arr):
         products[i] = product_so_far
         product_so_far *= arr[i]
 
-
     # For each integer, we find the product of all the integers
     # after it. Since each index in products already has the
     # product of all the integers before it, now we're storing
@@ -37,13 +36,12 @@ def product_of_all_others(arr):
     return products
 
 
-# Tests 
-print(getProductsOfAllIntsExceptAtIndex( [1, 2, 3, 4, 5] ))   
+# Tests
+print(getProductsOfAllIntsExceptAtIndex([1, 2, 3, 4, 5]))
 # should print [120, 60, 40, 30, 24]
 
-print(getProductsOfAllIntsExceptAtIndex( [9, 90] ))   
+print(getProductsOfAllIntsExceptAtIndex([9, 90]))
 # should print [90, 9]
 
-print(getProductsOfAllIntsExceptAtIndex( [50] ))   
+print(getProductsOfAllIntsExceptAtIndex([50]))
 # should print None
-

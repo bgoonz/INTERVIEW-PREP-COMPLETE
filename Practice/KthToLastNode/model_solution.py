@@ -9,11 +9,11 @@
 
 # Think about some of the tradeoffs between these two approaches.
 
+
 class ListNode:
     def __init__(self, value):
         self.value = value
         self.next = None
-
 
 
 def kthToLastNode(k, head):
@@ -41,10 +41,10 @@ def kthToLastNode(k, head):
         leftNode = leftNode.next
         rightNode = rightNode.next
 
-
     # since leftNode is k nodes behind rightNode,
     # leftNode is now the kth to last node!
     return leftNode.value
+
 
 a = ListNode("Australian Sheperd")
 b = ListNode("Beagle")
@@ -58,8 +58,6 @@ c.next = d
 d.next = e
 
 # Some tests
-print(kthToLastNode(2, a))   # should print 'Dobermann'
-print(kthToLastNode(5, a))   # should print 'Australian Sheperd'
-print(kthToLastNode(3, c))   # should print 'Cairne Terrier'
-
-
+print(kthToLastNode(2, a))  # should print 'Dobermann'
+print(kthToLastNode(5, a))  # should print 'Australian Sheperd'
+print(kthToLastNode(3, c))  # should print 'Cairne Terrier'
