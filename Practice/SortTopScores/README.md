@@ -1,6 +1,6 @@
 # Sort Top Scores
 
-You wrote a popular game with a highest possible score of 1000. Currently, you're using a sorting method with a runtime of O(n log n). However, your sorting algorithm is slowing down the overall performance of your game, and players are complaining.
+You wrote a popular game with a highest possible score of 1000. Currently, you’re using a sorting method with a runtime of O(n log n). However, your sorting algorithm is slowing down the overall performance of your game, and players are complaining.
 
 Given that your game has a highest possible score, can we take advantage of this fact to write a sorting algorithm that achieves better than O(n log n)?
 

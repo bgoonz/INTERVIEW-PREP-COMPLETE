@@ -12,24 +12,22 @@ Implement a min heap data structure with at least the following methods:
 
 Examples:
 
-```js
-const heap = new Heap();
-console.log(heap.getMin()); // should print 'undefined'
+    const heap = new Heap();
+    console.log(heap.getMin()); // should print 'undefined'
 
-heap.insert(5);
-console.log(heap.getMin()); // should print 5
+    heap.insert(5);
+    console.log(heap.getMin()); // should print 5
 
-heap.insert(100);
-console.log(heap.getMin()); // should print 5
+    heap.insert(100);
+    console.log(heap.getMin()); // should print 5
 
-heap.insert(2);
-console.log(heap.getMin()); // should print 2
+    heap.insert(2);
+    console.log(heap.getMin()); // should print 2
 
-console.log(heap.delete()); // should print 2
-console.log(heap.delete()); // should print 5
-console.log(heap.delete()); // should print 100
+    console.log(heap.delete()); // should print 2
+    console.log(heap.delete()); // should print 5
+    console.log(heap.delete()); // should print 100
 
-console.log(heap.getMin()); // should print 'undefined'
-```
+    console.log(heap.getMin()); // should print 'undefined'
 
 Analyze the time and space complexity of your implementation.

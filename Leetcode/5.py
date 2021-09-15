@@ -16,6 +16,7 @@ Time complexity: O(n^2)
 	Output: "bb"
 """
 
+
 class Solution:
     def longestPalindrome(self, s):
         """

@@ -1,36 +1,43 @@
-# Event App React-Redux Already Packaged
+Event App React-Redux Already Packaged
+======================================
 
-## Website [Demo](https://lower-toonie-23867.herokuapp.com/)
+Website [Demo](https://lower-toonie-23867.herokuapp.com/)
+---------------------------------------------------------
 
-## Setup
+Setup
+-----
 
-- run `npm install`
+-   run `npm install`
 
-## RUN
+RUN
+---
 
-- running dev (hot reloading)
-  - `cd FullStackCalendar && npm run start:dev`
-  - API will be running on port 3001
-  - on seperate terminal, `cd CalendarFrontEnd && npm start`
-  - App will be running on port 3000
-- running production
-  - `cd CalendarFrontEnd && npm run build`
-  - `cp build/* -r ../FullStackCalendar`
-  - `npm start`
+-   running dev (hot reloading)
+    -   `cd FullStackCalendar && npm run start:dev`
+    -   API will be running on port 3001
+    -   on seperate terminal, `cd CalendarFrontEnd && npm start`
+    -   App will be running on port 3000
+-   running production
+    -   `cd CalendarFrontEnd && npm run build`
+    -   `cp build/* -r ../FullStackCalendar`
+    -   `npm start`
 
-# Features
+Features
+========
 
-- Local Persisted Authentication + user have to be logged to create an event
-  - user can only modified and delete polls s/he created
-    - user will be promted with a notification
+-   Local Persisted Authentication + user have to be logged to create an event
+    -   user can only modified and delete polls s/he created
+        -   user will be promted with a notification
 
-## APIs
+APIs
+----
 
-- Rules
-  - all backend routes start with '/api', e.g. localhost:8000/api/polls'
-  - you have to be logged in to access most routes, e.g, post, put and delete routes
+-   Rules
+    -   all backend routes start with ‘/api’, e.g. localhost:8000/api/polls’
+    -   you have to be logged in to access most routes, e.g, post, put and delete routes
 
-## Backend
+Backend
+-------
 
     - Rules
     + all backend routes start with '/api/v1/', e.g. http://localhost:3001/api/polls'

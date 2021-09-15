@@ -2,31 +2,29 @@
 
 Assume we have a Stack class given by the following code:
 
-```js
-class Stack {
-  constructor() {
-    this.items = [];
-  }
+    class Stack {
+      constructor() {
+        this.items = [];
+      }
 
-  push(item) {
-    this.items.push(item);
-  }
+      push(item) {
+        this.items.push(item);
+      }
 
-  pop() {
-    if (this.items.length) {
-      return this.items.pop();
+      pop() {
+        if (this.items.length) {
+          return this.items.pop();
+        }
+        return null;
+      }
+
+      peek() {
+        if (this.items.length) {
+          return this.items[this.items.length - 1];
+        }
+        return null;
+      }
     }
-    return null;
-  }
-
-  peek() {
-    if (this.items.length) {
-      return this.items[this.items.length - 1];
-    }
-    return null;
-  }
-}
-```
 
 We wish to augment this Stack class such that we can always fetch the max value from the Stack in constant time.
 

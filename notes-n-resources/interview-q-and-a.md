@@ -1,6 +1,6 @@
 # Full-stack Developer Interview Questions and Answers
 
-## <a name='toc'>Table of Contents</a>
+## <span id="toc">Table of Contents</span>
 
 - [Architecture](#architecture)
 - [Concurrency](#concurrency)
@@ -40,18 +40,12 @@
 - [Android](#android)
 - [Books](#books)
 
-#### [[⬆]](#toc) <a name='architecture'>Architecture:</a>
+#### [\[⬆\]](#toc) <span id="architecture">Architecture:</span>
 
-- _Design principles_. ([_DRY_](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [_KISS_](https://en.wikipedia.org/wiki/KISS_principle), [_YAGNI_](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), [_Occam's razor_](https://en.wikipedia.org/wiki/Occam%27s_razor), [_Worse is better_](https://en.wikipedia.org/wiki/Worse_is_better), [_convention over configuration_](https://en.wikipedia.org/wiki/Convention_over_configuration), [_separation of concerns_](https://en.wikipedia.org/wiki/Separation_of_concerns), [_Law of Demeter (principle of least knowledge)_](https://en.wikipedia.org/wiki/Law_of_Demeter), boy scout rule, [_single source of truth_](https://en.wikipedia.org/wiki/Single_source_of_truth), [_single version of truth_](https://en.wikipedia.org/wiki/Single_version_of_the_truth), [_principle of least astonishment_](https://en.wikipedia.org/wiki/Principle_of_least_astonishment), [_let it crash principle_](https://en.wikipedia.org/wiki/Crash-only_software), [_inversion of control_](https://en.wikipedia.org/wiki/Inversion_of_control))
+- _Design principles_. ([_DRY_](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [_KISS_](https://en.wikipedia.org/wiki/KISS_principle), [_YAGNI_](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), [_Occam’s razor_](https://en.wikipedia.org/wiki/Occam%27s_razor), [_Worse is better_](https://en.wikipedia.org/wiki/Worse_is_better), [_convention over configuration_](https://en.wikipedia.org/wiki/Convention_over_configuration), [_separation of concerns_](https://en.wikipedia.org/wiki/Separation_of_concerns), [_Law of Demeter (principle of least knowledge)_](https://en.wikipedia.org/wiki/Law_of_Demeter), boy scout rule, [_single source of truth_](https://en.wikipedia.org/wiki/Single_source_of_truth), [_single version of truth_](https://en.wikipedia.org/wiki/Single_version_of_the_truth), [_principle of least astonishment_](https://en.wikipedia.org/wiki/Principle_of_least_astonishment), [_let it crash principle_](https://en.wikipedia.org/wiki/Crash-only_software), [_inversion of control_](https://en.wikipedia.org/wiki/Inversion_of_control))
 - [_SOLID_](<https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)>)
 
-| Rule                                                                                                 | Description                                                                                                                                                                                                                                             |
-| :--------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [**S**ingle responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle) | A module should be responsible to one, and only one, actor.                                                                                                                                                                                             |
-| [**O**pen/closed principle](https://en.wikipedia.org/wiki/Open/closed_principle)                     | A software artifact should be open for extension but closed for modification.                                                                                                                                                                           |
-| [**L**iskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)     | It should be possible to substitute base class with derived class.                                                                                                                                                                                      |
-| [**I**nterface segregation principle](https://en.wikipedia.org/wiki/Interface_segregation_principle) | Many client-specific interfaces are better than one general-purpose interface.                                                                                                                                                                          |
-| [**D**ependency inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle)   | Depend upon Abstractions but not on concretions. This means that each module should be separated from other using an abstract layer which binds them together. Source code dependency points in the opposite direction compared to the flow of control. |
+<table style="width:99%;"><colgroup><col style="width: 28%" /><col style="width: 71%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Rule</th><th style="text-align: left;">Description</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle"><strong>S</strong>ingle responsibility principle</a></td><td style="text-align: left;">A module should be responsible to one, and only one, actor.</td></tr><tr class="even"><td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Open/closed_principle"><strong>O</strong>pen/closed principle</a></td><td style="text-align: left;">A software artifact should be open for extension but closed for modification.</td></tr><tr class="odd"><td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle"><strong>L</strong>iskov substitution principle</a></td><td style="text-align: left;">It should be possible to substitute base class with derived class.</td></tr><tr class="even"><td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Interface_segregation_principle"><strong>I</strong>nterface segregation principle</a></td><td style="text-align: left;">Many client-specific interfaces are better than one general-purpose interface.</td></tr><tr class="odd"><td style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle"><strong>D</strong>ependency inversion principle</a></td><td style="text-align: left;">Depend upon Abstractions but not on concretions. This means that each module should be separated from other using an abstract layer which binds them together. Source code dependency points in the opposite direction compared to the flow of control.</td></tr></tbody></table>
 
 - [_The Clean Architecture_](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [_Clean Code Cheat Sheet_](https://www.planetgeek.ch/wp-content/uploads/2014/11/Clean-Code-V2.4.pdf)
@@ -82,10 +76,10 @@
   - Extremely difficult to test
   - Fixing and debugging can be a nightmare (fixing something in one place can lead to something else breaking that seems completely unrelated).
 - What is [_uniform access principle_](https://en.wikipedia.org/wiki/Uniform_access_principle)? (client code should not be affected by a decision to implement an attribute as a field or method)
-- [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law) (organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations)
+- [Conway’s law](https://en.wikipedia.org/wiki/Conway%27s_law) (organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations)
 - [GRASP](<https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)>)
 
-#### [[⬆]](#toc) <a name='concurrency'>Concurrency:</a>
+#### [\[⬆\]](#toc) <span id="concurrency">Concurrency:</span>
 
 - What is [_deadlock_](https://en.wikipedia.org/wiki/Deadlock), [_livelock_](https://en.wikipedia.org/wiki/Deadlock#Livelock)? (Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does. A livelock is similar to a deadlock, except that the states of the processes involved in the livelock constantly change with regard to one another, none progressing.)
 - [_Deadlock avoidance_](https://www.geeksforgeeks.org/deadlock-prevention). (prevention, detection, avoidance (Mutex hierarchy), and recovery)
@@ -95,7 +89,7 @@
 - What is [_thread contention_](https://stackoverflow.com/questions/1970345/what-is-thread-contention)? (Contention is simply when two threads try to access either the same resource or related resources in such a way that at least one of the contending threads runs more slowly than it would if the other thread(s) were not running). Contention occurs when multiple threads try to acquire a lock at the same time
 - What is a [_thread-safe_](https://en.wikipedia.org/wiki/Thread_safety) function? (Can be safely invoked by multiple threads at the same time)
 - [_Publish/Subscribe_](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) pattern
-- What is [_2-phase locking_](https://en.wikipedia.org/wiki/Two-phase_locking)? (Growing phase, shrinking phase. Guarantees serializablity for transactions, doesn't prevent deadlock).
+- What is [_2-phase locking_](https://en.wikipedia.org/wiki/Two-phase_locking)? (Growing phase, shrinking phase. Guarantees serializablity for transactions, doesn’t prevent deadlock).
 - What is the difference between _thread_ and _process_? (Threads (of the same process) run in a shared memory space, while processes run in separate memory spaces)
 - What is [_false sharing_](https://en.wikipedia.org/wiki/False_sharing), [_cache pollution_](https://en.wikipedia.org/wiki/Cache_pollution), _cache miss_, [_thread affinity_](https://en.wikipedia.org/wiki/Processor_affinity), [_ABA-problem_](https://en.wikipedia.org/wiki/ABA_problem), [_speculative execution_](https://en.wikipedia.org/wiki/Speculative_execution)?
 - What is a
@@ -124,14 +118,14 @@
 - What is _monitor_ in Java? (Each object in Java is associated with a monitor, which a thread can lock or unlock)
 - What is _safe publication_?
 - What is _wait_/_notify_?
-- [_Amdahl's law_](https://en.wikipedia.org/wiki/Amdahl%27s_law)? (Speedup = 1 / (1 - p + p / n))
+- [_Amdahl’s law_](https://en.wikipedia.org/wiki/Amdahl%27s_law)? (Speedup = 1 / (1 - p + p / n))
 - [_Dining philosophers problem_](https://en.wikipedia.org/wiki/Dining_philosophers_problem) (Resource hierarchy (first take lower-indexed fork), arbitrator, communication (dirty/clean forks)).
 - [_Produces/consumer_](https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem) problem.
 - [_Readers/writers_](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) problem.
 - [_Transactional memory_](https://en.wikipedia.org/wiki/Software_transactional_memory)
 - [_Coroutine_](https://en.wikipedia.org/wiki/Coroutine)
 
-#### [[⬆]](#toc) <a name='java'>Java:</a>
+#### [\[⬆\]](#toc) <span id="java">Java:</span>
 
 - [_PhantomReference_](https://en.wikipedia.org/wiki/Phantom_reference), [_WeakReference_](https://en.wikipedia.org/wiki/Weak_reference), [_SoftReference_](https://en.wikipedia.org/wiki/Soft_reference), _finalize()_, _ReferenceQueue_.
 - How to correctly stop a thread? (Thread.interrupt())
@@ -149,15 +143,15 @@
 - What is a _servlet_ (versions of servlet api, Servlet 4.0)?
 - What is a _servlet filter_? How to implement _GZipFilter_? (ResponseWrapper)
 - What is _generics_ and PECS (producer extends and consumer super)?
-- What is the difference between <?>, \<Object\>, <? extends Object> and no generic type? [link1](http://stackoverflow.com/questions/8055389/whats-the-difference-between-and-extends-object-in-java-generics) [link2](http://stackoverflow.com/questions/678822/what-is-the-difference-between-and-object-in-java-generics)
-- Explain method signature for [Collections.max(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#max-java.util.Collection-), [Collections.fill(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#fill-java.util.List-T-), [Collections.copy(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#copy-java.util.List-java.util.List-), [Collections.sort(...)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-java.util.Comparator-)
+- What is the difference between &lt;?&gt;, &lt;Object&gt;, &lt;? extends Object&gt; and no generic type? [link1](http://stackoverflow.com/questions/8055389/whats-the-difference-between-and-extends-object-in-java-generics) [link2](http://stackoverflow.com/questions/678822/what-is-the-difference-between-and-object-in-java-generics)
+- Explain method signature for [Collections.max(…)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#max-java.util.Collection-), [Collections.fill(…)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#fill-java.util.List-T-), [Collections.copy(…)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#copy-java.util.List-java.util.List-), [Collections.sort(…)](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-java.util.Comparator-)
 - Why are arrays covariant but generics are invariant? [link](http://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant)
 - Major specs: JAX-RS, JAX-WS, JMS, JAXB, XSLT, XPATH, JNDI, JMX, JDBC, XML(SAX, DOM, StAX)
 - [_Performance Diagnostic Methodology_](https://dzone.com/articles/how-to-solve-your-java-performance-problems-part-2)
 
-#### [[⬆]](#toc) <a name='general'>General Questions:</a>
+#### [\[⬆\]](#toc) <span id="general">General Questions:</span>
 
-- [_Polymorphism_](<https://en.wikipedia.org/wiki/Polymorphism_(computer_science)>) (Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)
+- [_Polymorphism_](<https://en.wikipedia.org/wiki/Polymorphism_(computer_science)>) (Variable of type Shape could refer to an object of type Square, Circle… Ability of a function to handle objects of many types)
 - [_Encapsulation_](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>) (Packing of data and functions into a single component)
 - [_Virtual function_](https://en.wikipedia.org/wiki/Virtual_function) (Overridable function)
 - [_Virtual method table_](https://en.wikipedia.org/wiki/Virtual_method_table)
@@ -166,7 +160,7 @@
 - [_Tail recursion_](https://en.wikipedia.org/wiki/Tail_call) (A tail call is a subroutine call performed as the final action of a procedure)
 - [_Semantic versioning_](http://semver.org)
 
-#### [[⬆]](#toc) <a name='web'>WEB:</a>
+#### [\[⬆\]](#toc) <span id="web">WEB:</span>
 
 - WEB security vulnerabilities ([_XSS_](https://en.wikipedia.org/wiki/Cross-site_scripting), [_CSRF_](https://en.wikipedia.org/wiki/Cross-site_request_forgery), [_session fixation_](https://en.wikipedia.org/wiki/Session_fixation), [_SQL injection_](https://en.wikipedia.org/wiki/SQL_injection), [_man-in-the-middle_](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), [_buffer overflow_](https://en.wikipedia.org/wiki/Buffer_overflow))
 - _CSRF prevention_ (CSRF-token)
@@ -177,28 +171,21 @@
 - [_Character encoding_](https://en.wikipedia.org/wiki/Character_encoding)
 - What is [_role-based access control_](https://en.wikipedia.org/wiki/Role-based_access_control) and [_access control list_](https://en.wikipedia.org/wiki/Access_control_list)?
 - What is session and persistent cookies, sessionStorage and [localStorage](https://en.wikipedia.org/wiki/Web_storage#Local_and_session_storage)?
-- How to implement _remember-me_? (http://jaspan.com/improved_persistent_login_cookie_best_practice)
+- How to implement _remember-me_? (http://jaspan.com/improved\_persistent\_login\_cookie\_best\_practice)
 - Authentication using cookies, [_JWT_](https://en.wikipedia.org/wiki/JSON_Web_Token) (JSON Web Tokens).
 
-#### [[⬆]](#toc) <a name='sql'>SQL:</a>
+#### [\[⬆\]](#toc) <span id="sql">SQL:</span>
 
-- _SQL join types_ (inner join, left/right outer join, full outer join, cross join)
-  ![Join types](https://habrastorage.org/files/7ff/b2c/3a2/7ffb2c3a25b74dcf9eec013282b9cfb4.png "Join types"))
+- _SQL join types_ (inner join, left/right outer join, full outer join, cross join) ![Join types](https://habrastorage.org/files/7ff/b2c/3a2/7ffb2c3a25b74dcf9eec013282b9cfb4.png "Join types"))
 - _SQL normal forms_
-  1. The domain of each attribute contains only atomic values, and the value of each attribute contains only a single value from that domain
-  1. No non-prime attribute in the table is functionally dependent on a proper subset of any candidate key
-  1. Every non-prime attribute is non-transitively dependent on every candidate key in the table. BCNF.Every non-trivial functional dependency in the table is a dependency on a superkey.)
+  1.  The domain of each attribute contains only atomic values, and the value of each attribute contains only a single value from that domain
+  2.  No non-prime attribute in the table is functionally dependent on a proper subset of any candidate key
+  3.  Every non-prime attribute is non-transitively dependent on every candidate key in the table. BCNF.Every non-trivial functional dependency in the table is a dependency on a superkey.)
 - _Isolation levels_ and Anomalies
 
-| Isolation_level\Anomaly | Lost_update (because of rollback) | Dirty_read | Non_repeatable_reads second_lost_update | Phantoms  | Write_skew |
-| :---------------------- | :-------------------------------: | :--------: | :-------------------------------------: | :-------: | :--------: |
-| Read Uncommitted        |                 -                 | may occur  |                may occur                | may occur | may occur  |
-| Read Committed          |                 -                 |     -      |                may occur                | may occur | may occur  |
-| Repeatable Read         |                 -                 |     -      |                    -                    | may occur | may occur  |
-| Snapshot                |                 -                 |     -      |                    -                    |     -     | may occur  |
-| Serializable            |                 -                 |     -      |                    -                    |     -     |     -      |
+<table style="width:98%;"><colgroup><col style="width: 18%" /><col style="width: 26%" /><col style="width: 8%" /><col style="width: 31%" /><col style="width: 7%" /><col style="width: 8%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Isolation_level</th><th style="text-align: center;">Lost_update (because of rollback)</th><th style="text-align: center;">Dirty_read</th><th style="text-align: center;">Non_repeatable_reads second_lost_update</th><th style="text-align: center;">Phantoms</th><th style="text-align: center;">Write_skew</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;">Read Uncommitted</td><td style="text-align: center;">-</td><td style="text-align: center;">may occur</td><td style="text-align: center;">may occur</td><td style="text-align: center;">may occur</td><td style="text-align: center;">may occur</td></tr><tr class="even"><td style="text-align: left;">Read Committed</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">may occur</td><td style="text-align: center;">may occur</td><td style="text-align: center;">may occur</td></tr><tr class="odd"><td style="text-align: left;">Repeatable Read</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">may occur</td><td style="text-align: center;">may occur</td></tr><tr class="even"><td style="text-align: left;">Snapshot</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">may occur</td></tr><tr class="odd"><td style="text-align: left;">Serializable</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td></tr></tbody></table>
 
-#### [[⬆]](#toc) <a name='nosql'>NoSQL:</a>
+#### [\[⬆\]](#toc) <span id="nosql">NoSQL:</span>
 
 - Types of NoSQL databases?
   - Document Stores (MongoDB, Couchbase)
@@ -206,14 +193,14 @@
   - Column Stores (Cassandra)
   - Graph Stores (Neo4j, Giraph)
 
-#### [[⬆]](#toc) <a name='transactions'>Transactions:</a>
+#### [\[⬆\]](#toc) <span id="transactions">Transactions:</span>
 
 - [_ACID_](https://en.wikipedia.org/wiki/ACID)
 - [_2-phase commit protocol_](https://en.wikipedia.org/wiki/Two-phase_commit_protocol)
 - [_3-phase commit protocol_](https://en.wikipedia.org/wiki/Three-phase_commit_protocol)
 - What is _pessimistic_ / [_optimistic_](https://en.wikipedia.org/wiki/Optimistic_concurrency_control) locking?
 
-#### [[⬆]](#toc) <a name='scalability'>Scalability:</a>
+#### [\[⬆\]](#toc) <span id="scalability">Scalability:</span>
 
 - Horizontal and vertical scaling.
 - How to scale database? (Data partitioning, sharding(vertical/horizontal), replication(master-slave, master-master)).
@@ -224,25 +211,24 @@
 - MongoDB, Redis.
 - Hadoop basics.
 
-#### [[⬆]](#toc) <a name='load-balancing'>Load balancing:</a>
+#### [\[⬆\]](#toc) <span id="load-balancing">Load balancing:</span>
 
 - sticky/non-sticky sessions
 - _Sticky sessions_ vs storing sessions in Redis.
 
-#### [[⬆]](#toc) <a name='cloud-computing'>Cloud computing:</a>
+#### [\[⬆\]](#toc) <span id="cloud-computing">Cloud computing:</span>
 
 - What is [_cloud computing_](https://en.wikipedia.org/wiki/Cloud_computing)? (Cloud computing platform is a fully automated server platform that allows users to purchase, remotely create, dynamically scale, and administer system)
 - [_Amazon web services_](https://en.wikipedia.org/wiki/Amazon_Web_Services)
 - [_Google Cloud Platform_](https://en.wikipedia.org/wiki/Google_Cloud_Platform)
 - [_Microsoft Azure_](https://en.wikipedia.org/wiki/Microsoft_Azure)
 
-#### [[⬆]](#toc) <a name='distributed'>Distributed:</a>
+#### [\[⬆\]](#toc) <span id="distributed">Distributed:</span>
 
 - [_Consensus_](<https://en.wikipedia.org/wiki/Consensus_(computer_science)>)
 - [_Raft_](<https://en.wikipedia.org/wiki/Raft_(computer_science)>) ([In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf))
 - [_Paxos_](<https://en.wikipedia.org/wiki/Paxos_(computer_science)>)
-- What is [_CAP theorem_](https://en.wikipedia.org/wiki/CAP_theorem)? [Illustrated proof](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/). [CAP-FAQ](http://www.the-paper-trail.org/page/cap-faq) (It is impossible for a distributed computer system to simultaneously provide all three of the following guarantees: _consistency_, _availability_, _partition tolerance_). [Gilbert and Lynch's paper](https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf). ["Please stop calling databases CP or AP"](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html)).
-  ![CAP theorem](http://guide.couchdb.org/draft/consistency/01.png "CAP theorem")
+- What is [_CAP theorem_](https://en.wikipedia.org/wiki/CAP_theorem)? [Illustrated proof](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/). [CAP-FAQ](http://www.the-paper-trail.org/page/cap-faq) (It is impossible for a distributed computer system to simultaneously provide all three of the following guarantees: _consistency_, _availability_, _partition tolerance_). [Gilbert and Lynch’s paper](https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf). [“Please stop calling databases CP or AP”](https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html)). ![CAP theorem](http://guide.couchdb.org/draft/consistency/01.png "CAP theorem")
 - What is _map-reduce_? (Word count example)
 - _Sharding counters_.
 - Distributed software:
@@ -251,14 +237,14 @@
   - Map-reduce: **hadoop**, **spark**
   - Distributed file system: **hbase**
   - Cluster management: **kubernetes**, **docker-swarm**, **mesos**
-- [Herlihy's consensus hierarchy](https://en.wikipedia.org/wiki/Read-modify-write). Every shared object can be assigned a consensus number, which is the maximum number of processes for which the object can solve wait-free consensus in an asynchronous system.
+- [Herlihy’s consensus hierarchy](https://en.wikipedia.org/wiki/Read-modify-write). Every shared object can be assigned a consensus number, which is the maximum number of processes for which the object can solve wait-free consensus in an asynchronous system.
 
-```
-1 Read-write registers
-2 Test-and-set, swap, fetch-and-add, queue, stack
-⋮ ⋮
-∞ Augmented queue, compare-and-swap, sticky byte
-```
+<!-- -->
+
+    1 Read-write registers
+    2 Test-and-set, swap, fetch-and-add, queue, stack
+    ⋮ ⋮
+    ∞ Augmented queue, compare-and-swap, sticky byte
 
 - [_Consistency models_](https://en.wikipedia.org/wiki/Consistency_model):
   - [_Sequential consistency_](https://en.wikipedia.org/wiki/Sequential_consistency)
@@ -272,12 +258,12 @@
 - [_Logical clock_](https://en.wikipedia.org/wiki/Logical_clock)
 - [_Vector clock_](https://en.wikipedia.org/wiki/Vector_clock)
 
-#### [[⬆]](#toc) <a name='cache'>Cache:</a>
+#### [\[⬆\]](#toc) <span id="cache">Cache:</span>
 
 - What is _write-through_ and _write-behind_ caching? (write-through (synchronous), write-behind (asynchronous))
 - HTTP cache options?
 
-#### [[⬆]](#toc) <a name='networking'>Networking:</a>
+#### [\[⬆\]](#toc) <span id="networking">Networking:</span>
 
 - OSI model (Physical, Data link, Network, Transport, Session, Presentation, Application)
 - Multithreading vs select
@@ -285,14 +271,14 @@
 - [_TCP congestion_](https://en.wikipedia.org/wiki/TCP_congestion_control)
 - _TCP back-pressure_
 
-#### [[⬆]](#toc) <a name='os'>Operating system:</a>
+#### [\[⬆\]](#toc) <span id="os">Operating system:</span>
 
 - What is [_memory mapped_](https://en.wikipedia.org/wiki/Memory-mapped_file) file and its benefits?
 - _Interprocess communication_ methods. (Pipes, Events, Mailboxes/Ports (can be implemented by using shared memory and semaphores), Direct Message Passing).
 - [_Virtual memory_](https://en.wikipedia.org/wiki/Virtual_memory) organization.
 - _Process scheduler_.
 
-#### [[⬆]](#toc) <a name='compilers'>Compilers:</a>
+#### [\[⬆\]](#toc) <span id="compilers">Compilers:</span>
 
 - [_Recursive descent parser_](https://en.wikipedia.org/wiki/Recursive_descent_parser)
 - [_LL parser_](https://en.wikipedia.org/wiki/LL_parser)
@@ -300,7 +286,7 @@
 - [_Context-free grammar_](https://en.wikipedia.org/wiki/Context-free_grammar)
 - [_Chomsky hierarchy_](https://en.wikipedia.org/wiki/Chomsky_hierarchy)
 
-#### [[⬆]](#toc) <a name='cpp'>C++:</a>
+#### [\[⬆\]](#toc) <span id="cpp">C++:</span>
 
 - [_C++ standard_](http://eel.is/c++draft/)
 - [_Memory model_](https://en.cppreference.com/w/cpp/language/memory_model)
@@ -313,9 +299,9 @@
   If a data race occurs, the behavior of the program is undefined.
 
 - [_SFINAE_](https://en.cppreference.com/w/cpp/language/sfinae) [1](https://cpppatterns.com/patterns/function-template-sfinae.html)
-- [*PImpl*] https://en.cppreference.com/w/cpp/language/pimpl
+- \[_PImpl_\] https://en.cppreference.com/w/cpp/language/pimpl
 
-#### [[⬆]](#toc) <a name='javascript'>Javascript:</a>
+#### [\[⬆\]](#toc) <span id="javascript">Javascript:</span>
 
 - this keyword
 - How _prototypes_ work?
@@ -325,86 +311,82 @@
 - recursion
 - What is _MVC_, _MVP_, _MVVM_?
 - What is _promise_?
-- What is event _bubbling_ and _capturing_? (target.addEventListener(type, listener[, useCapture]))
+- What is event _bubbling_ and _capturing_? (target.addEventListener(type, listener\[, useCapture\]))
 - What is _AMD_(Asynchronous Module Design) and _CommonJS_?
 - What is _jQuery_?
 
-#### [[⬆]](#toc) <a name='python'>Python:</a>
+#### [\[⬆\]](#toc) <span id="python">Python:</span>
 
 - [Slice notation](https://stackoverflow.com/questions/509211/understanding-slice-notation/509295#509295)
 
-#### [[⬆]](#toc) <a name='go'>Go:</a>
+#### [\[⬆\]](#toc) <span id="go">Go:</span>
 
 - [Language Specification](https://golang.org/ref/spec)
 - [Memory Model](https://golang.org/ref/mem)
 
-#### [[⬆]](#toc) <a name='codewriting'>Codewriting:</a>
+#### [\[⬆\]](#toc) <span id="codewriting">Codewriting:</span>
 
 - Implement binary search
 
-```java
-int binarySearch(int[] a, int fromInclusive, int toExclusive, int key) {
-    int low = fromInclusive;
-    int high = toExclusive - 1;
-    while (low <= high) {
-        int mid = (low + high) >>> 1;
-        int midVal = a[mid];
-        if (midVal < key)
-            low = mid + 1;
-        else if (midVal > key)
-            high = mid - 1;
-        else
-            return mid; // key found
-    }
-    return -(low + 1); // key not found
-}
-```
+  int binarySearch(int[] a, int fromInclusive, int toExclusive, int key) {
+  int low = fromInclusive;
+  int high = toExclusive - 1;
+  while (low <= high) {
+  int mid = (low + high) >>> 1;
+  int midVal = a[mid];
+  if (midVal < key)
+  low = mid + 1;
+  else if (midVal > key)
+  high = mid - 1;
+  else
+  return mid; // key found
+  }
+  return -(low + 1); // key not found
+  }
 
 - Implement quick sort
 
-```java
-void qSort(int[] a, int fromInclusive, int toInclusive) {
-    int i = fromInclusive;
-    int j = toInclusive;
-    if (i >= j) return;
-    int separator = a[i + random.nextInt(j - i + 1)];
-    do {
-        while (a[i] < separator) ++i;
-        while (a[j] > separator) --j;
-        if (i > j) break;
-        int t = a[i];
-        a[i] = a[j];
-        a[j] = t;
-        ++i;
-        --j;
-    } while (i <= j);
-    qSort(a, fromInclusive, j);
-    qSort(a, i, toInclusive);
-}
-```
+  void qSort(int[] a, int fromInclusive, int toInclusive) {
+  int i = fromInclusive;
+  int j = toInclusive;
+  if (i >= j) return;
+  int separator = a[i + random.nextInt(j - i + 1)];
+  do {
+  while (a[i] < separator) ++i;
+  while (a[j] > separator) --j;
+  if (i > j) break;
+  int t = a[i];
+  a[i] = a[j];
+  a[j] = t;
+  ++i;
+  --j;
+  } while (i <= j);
+  qSort(a, fromInclusive, j);
+  qSort(a, i, toInclusive);
+  }
 
-#### [[⬆]](#toc) <a name='functional-programming'>Functional programming:</a>
+#### [\[⬆\]](#toc) <span id="functional-programming">Functional programming:</span>
 
 - [_Referential transparency_](https://en.wikipedia.org/wiki/Referential_transparency)
 - What is [_Monad_](<https://en.wikipedia.org/wiki/Monad_(functional_programming)>)?
 
-#### [[⬆]](#toc) <a name='reactive-programming'>Reactive programming:</a>
+#### [\[⬆\]](#toc) <span id="reactive-programming">Reactive programming:</span>
 
 - [_The Reactive Manifesto_](http://www.reactivemanifesto.org) (responsive, resilient, elastic, message driven)
 - [Reactive extensions](http://reactivex.io)
 - What is _asynchronous_ and _non-blocking_? [link](https://www.linkedin.com/pulse/java-servlets-asynchronous-non-blocking-aliaksandr-liakh)
 
-#### [[⬆]](#toc) <a name='git'>Git:</a>
+#### [\[⬆\]](#toc) <span id="git">Git:</span>
 
 - _Git_ workflow? (Master: production-ready state; Develop: latest delivered development changes for the next release; Feature Branches; Release Branches; Hotfixes) ![Git workflow](http://nvie.com/img/git-model@2x.png "Git workflow") http://nvie.com/posts/a-successful-git-branching-model/
 - What is a rebase?
 
-#### [[⬆]](#toc) <a name='devOps'>DevOps:</a>
+#### [\[⬆\]](#toc) <span id="devOps">DevOps:</span>
 
 - What is _Blue-green Deployment_, _Canary release_, _A/B testing_? [link](https://www.javacodegeeks.com/2016/02/blue-green-deployment.html)
 - What is _Docker_?
 
-#### [[⬆]](#toc) <a name='qa'>QA:</a>
+#### [\[⬆\]](#toc) <span id="qa">QA:</span>
 
 - What is _unit test_? (A test that purely tests a single unit of functionality)
 - What is _component test_?
@@ -418,7 +400,7 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 - What is _Consumer Driven Contract_? [link](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html)
 - [Types of tests](https://stackify.com/ultimate-guide-performance-testing-and-software-testing)
 
-#### [[⬆]](#toc) <a name='agile'>Agile:</a>
+#### [\[⬆\]](#toc) <span id="agile">Agile:</span>
 
 - What is Agile? (http://agilemanifesto.org/principles.html)
   - Individuals and interactions over Processes and tools
@@ -431,12 +413,12 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 - What is Kanban?
 - What is Lean development?
 
-#### [[⬆]](#toc) <a name='algorithms'>Algorithms:</a>
+#### [\[⬆\]](#toc) <span id="algorithms">Algorithms:</span>
 
 - What Ο(n), Ω(n), Θ(n)?
 - What is NP, NP-completeness, NP-hardness with examples?
 
-#### [[⬆]](#toc) <a name='other'>Other:</a>
+#### [\[⬆\]](#toc) <span id="other">Other:</span>
 
 - How to find memory leak. (Memory snapshot diff).
 - Profiling: sampling and instrumentation.
@@ -446,11 +428,11 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 - What is total/partial order?
 - How to work with legacy code? (http://programmers.stackexchange.com/a/122024)
 
-#### [[⬆]](#toc) <a name='machine-learning'>Machine learning:</a>
+#### [\[⬆\]](#toc) <span id="machine-learning">Machine learning:</span>
 
-- [_Bayes' theorem_](https://en.wikipedia.org/wiki/Bayes%27_theorem):
+- [_Bayes’ theorem_](https://en.wikipedia.org/wiki/Bayes%27_theorem):
 
-![equation](<http://latex.codecogs.com/svg.latex?\inline&space;\fn_cs&space;P(A|B)&space;=&space;\dfrac{P(B|A)\times&space;P(A)}{P(B)},P(B)&space;=&space;\sum\limits_{i}{P(Ai)\times&space;P(B|Ai)}>)
+equation
 
 - [_Confidence interval_](https://en.wikipedia.org/wiki/Confidence_interval)
 - [_p-value_](https://en.wikipedia.org/wiki/P-value)
@@ -468,15 +450,15 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 - [_Principal component analysis_](https://en.wikipedia.org/wiki/Principal_component_analysis)
 - [_Deep learning_](https://en.wikipedia.org/wiki/Deep_learning)
 
-#### [[⬆]](#toc) <a name='big-data'>Big Data:</a>
+#### [\[⬆\]](#toc) <span id="big-data">Big Data:</span>
 
 - [_Lambda architecture_](https://en.wikipedia.org/wiki/Lambda_architecture)
 - [_HyperLogLog_](https://en.wikipedia.org/wiki/HyperLogLog)
 - [_Event sourcing_](http://microservices.io/patterns/data/event-sourcing.html)
 
-#### [[⬆]](#toc) <a name='image-processing'>Image processing:</a>
+#### [\[⬆\]](#toc) <span id="image-processing">Image processing:</span>
 
-#### [[⬆]](#toc) <a name='cryptography'>Cryptography:</a>
+#### [\[⬆\]](#toc) <span id="cryptography">Cryptography:</span>
 
 - [_Public-key cryptography_](https://en.wikipedia.org/wiki/Public-key_cryptography)
 - [_Public key certificate_](https://en.wikipedia.org/wiki/Public_key_certificate)
@@ -485,21 +467,21 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 - [_Secret sharing_](https://en.wikipedia.org/wiki/Secret_sharing)
 - [_RSA_](<https://en.wikipedia.org/wiki/RSA_(cryptosystem)>)
 
-```
-select 2 primes: p,q
-n = p*q
-phi(n) = (p-1)*(q-1)
-select 1<e<phi(n), gcd(e,phi(n))=1
-d=e^-1 mod phi(n)
-(e,n) - public key
-(d,n) - private key
-c = m^e mod n
-m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
-```
+<!-- -->
+
+    select 2 primes: p,q
+    n = p*q
+    phi(n) = (p-1)*(q-1)
+    select 1<e<phi(n), gcd(e,phi(n))=1
+    d=e^-1 mod phi(n)
+    (e,n) - public key
+    (d,n) - private key
+    c = m^e mod n
+    m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 
 hi
 
-#### [[⬆]](#toc) <a name='security'>Security:</a>
+#### [\[⬆\]](#toc) <span id="security">Security:</span>
 
 - What is _OpenID and OAuth2.0 and OpenID Connect_?
 - Four main actors in an OAuth system (clients, resource owners, authorization servers, and protected resources)
@@ -510,9 +492,9 @@ hi
 - What is _CSP_ and _SRI hash_ ?
 - What is _Clickjacking_ and _Cursorjacking_ ? How to prevent it ?
 
-#### [[⬆]](#toc) <a name='android'>Android:</a>
+#### [\[⬆\]](#toc) <span id="android">Android:</span>
 
-#### [[⬆]](#toc) <a name='books'>Books:</a>
+#### [\[⬆\]](#toc) <span id="books">Books:</span>
 
 ##### C++ programming
 

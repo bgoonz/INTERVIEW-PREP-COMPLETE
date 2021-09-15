@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="create-a-minimal-height-bst-from-sorted-array">
+      Create a Minimal Height BST from Sorted Array
+    </h1>
+    <h2 id="understanding-the-problem">Understanding the Problem</h2>
+    <p>
+      This problem asks us to create a valid binary search tree from a sorted
+      array of integers. More specifically, the resulting binary search tree
+      needs to be of <em>minimal height</em>. Our function should return the
+      root node of the created binary search tree.
+    </p>
+    <p>
+      From the given example where the input is
+      <code>[1, 2, 3, 4, 5, 6, 7]</code>, the expected answer is a binary search
+      tree of height 3. This is the minimal height that can be achieved for an
+      array of 7 seven elements. Try as we might, there’s no way to construct a
+      binary search tree containing all of these elements that has a shorter
+      height.
+    </p>
+    <h2 id="coming-up-with-a-first-pass">Coming Up with a First Pass</h2>
+    <p>
+      A straightforward way to do this would be to take the first element of our
+      array, call that the root, and then iterate through the rest of our array,
+      adding those elements as nodes in the binary search tree. In pseudocode,
+      that might look something like this:
+    </p>
+    <pre><code>def create_min_height_bst(sorted_arr):
+  root = BinaryTreeNode(sorted_arr[0])
+
+  for elem in sorted_arr:
+    root.insert(elem)
+
+  return root</code></pre>
+  </body>
+</html>
