@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def matchingStrings(strings, queries):
     ans = []
     c = Counter(strings)

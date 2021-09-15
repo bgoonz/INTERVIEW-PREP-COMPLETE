@@ -3,19 +3,22 @@ This first solution uses the interval splitting method
 This is achieved by using a dp table.
 Time Complexity: O(n^1.5)
 """
+
+
 class Solution1:
     def numSquares(self, n) -> int:
         if n <= 3:
             return n
-        dp = [0 for _ in range(n+1)]
+        dp = [0 for _ in range(n + 1)]
         dp[1], dp[2], dp[3] = 1, 2, 3
         for i in range(4, len(dp)):
             dp[i] = i
             j = 1
-            while j*j <= i:
-                dp[i] = min(dp[i], 1 + dp[i - j*j])
+            while j * j <= i:
+                dp[i] = min(dp[i], 1 + dp[i - j * j])
                 j += 1
         return dp[-1]
+
 
 """
 Lagrange's 4 square and 3 square theorem
@@ -41,21 +44,22 @@ LOGIC:
 - if all fails, return 3
 """
 
+
 class Solution:
     def numSquares(self, n: int) -> int:
         if ceil(sqrt(n)) == floor(sqrt(n)):
             return 1
-        
+
         while n % 4 == 0:
             n /= 4
         if n % 8 == 7:
             return 4
-        
+
         j = 1
-        while j*j <= n:
-            if ceil(sqrt(n - j*j)) == floor(sqrt(n - j*j)):
+        while j * j <= n:
+            if ceil(sqrt(n - j * j)) == floor(sqrt(n - j * j)):
                 return 2
             j += 1
-        
+
         else:
             return 3

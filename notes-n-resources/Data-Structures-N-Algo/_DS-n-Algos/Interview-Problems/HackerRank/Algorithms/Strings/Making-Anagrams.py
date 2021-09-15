@@ -23,8 +23,9 @@ def makingAnagrams(s1, s2):
         res += s2.get(i)
     return res
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s1 = input()
 
@@ -32,6 +33,6 @@ if __name__ == '__main__':
 
     result = makingAnagrams(s1, s2)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

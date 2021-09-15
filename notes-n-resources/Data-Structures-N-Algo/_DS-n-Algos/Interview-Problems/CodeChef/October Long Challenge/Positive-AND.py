@@ -1,5 +1,6 @@
 def power(n):
-    return n != 0 and ((n & (n-1)) == 0) 
+    return n != 0 and ((n & (n - 1)) == 0)
+
 
 def main():
     for i in range(int(input())):
@@ -13,19 +14,20 @@ def main():
         elif n == 5:
             print("2 3 1 5 4")
             continue
-        elif(power(n)):
+        elif power(n):
             print(-1)
             continue
         else:
             print("2 3 1 5 4")
             i = 6
-            while(i <= n):
+            while i <= n:
                 if power(i):
-                    print(str(i+1) + " " + str(i), end=" ")
+                    print(str(i + 1) + " " + str(i), end=" ")
                     i += 2
                 else:
                     print(i)
                     i += 1
             print("\n")
+
 
 main()

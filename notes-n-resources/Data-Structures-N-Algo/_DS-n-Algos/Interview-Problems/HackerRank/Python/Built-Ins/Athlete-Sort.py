@@ -6,7 +6,7 @@ import random
 import re
 import sys
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nm = input().split()
 
     n = int(nm[0])
@@ -20,8 +20,8 @@ if __name__ == '__main__':
 
     k = int(input())
 
-    arr = sorted(arr, key = lambda x : x[k])
+    arr = sorted(arr, key=lambda x: x[k])
     for i in range(len(arr)):
         for j in range(len(arr[0])):
-            print(arr[i][j], end=' ')
-        print('')
+            print(arr[i][j], end=" ")
+        print("")

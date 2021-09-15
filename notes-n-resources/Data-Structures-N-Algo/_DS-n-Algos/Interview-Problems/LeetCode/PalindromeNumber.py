@@ -4,7 +4,7 @@ class Solution:
         x = str(x)
         x = list(x)
         a = x[::-1]
-        if (str(a)==str(x)):
+        if str(a) == str(x):
             return True
         else:
             return False

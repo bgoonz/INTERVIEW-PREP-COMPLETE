@@ -1,4 +1,4 @@
-#code
+# code
 """
 Given an input stream of N integers. The task is to insert these numbers into a new stream and find the median of the stream formed by each insertion of X to the new stream.
 
@@ -28,23 +28,25 @@ Output:
 
 import heapq
 
+
 def balance(minh, maxh):
-    while abs(len(minh)-len(maxh)) > 1:
+    while abs(len(minh) - len(maxh)) > 1:
         if len(minh) > len(maxh):
             heapq.heappush(maxh, -heapq.heappop(minh))
         else:
             heapq.heappush(minh, -heapq.heappop(maxh))
 
-def main():           
+
+def main():
     N = int(input())
     i = int(input())
     minh = []
     maxh = [-i]
     print(i)
-    for _ in range(N-1):
+    for _ in range(N - 1):
         inp = int(input())
-        if inp < (-1*maxh[0]):
-            heapq.heappush(maxh, -1*inp)
+        if inp < (-1 * maxh[0]):
+            heapq.heappush(maxh, -1 * inp)
         else:
             heapq.heappush(minh, inp)
         balance(minh, maxh)
@@ -53,6 +55,7 @@ def main():
         elif len(maxh) > len(minh):
             print(-maxh[0])
         else:
-            print((minh[0]-maxh[0])//2)
+            print((minh[0] - maxh[0]) // 2)
+
 
 main()

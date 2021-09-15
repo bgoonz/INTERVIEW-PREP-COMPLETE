@@ -8,9 +8,9 @@ import sys
 
 # Complete the luckBalance function below.
 def luckBalance(k, contests):
-    contests = sorted(contests, key = lambda x: x[0])
+    contests = sorted(contests, key=lambda x: x[0])
     luck = 0
-    for i in range(len(contests)-1, -1, -1):
+    for i in range(len(contests) - 1, -1, -1):
         if contests[i][1] == 0:
             luck += contests[i][0]
         else:
@@ -21,8 +21,9 @@ def luckBalance(k, contests):
             luck -= contests[i][0]
     return luck
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     nk = input().split()
 
@@ -37,6 +38,6 @@ if __name__ == '__main__':
 
     result = luckBalance(k, contests)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

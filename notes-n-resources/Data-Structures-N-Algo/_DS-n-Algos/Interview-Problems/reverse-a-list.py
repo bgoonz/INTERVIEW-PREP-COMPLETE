@@ -7,7 +7,6 @@ import re
 import sys
 
 
-
 #
 # Complete the 'reverseArray' function below.
 #
@@ -15,18 +14,20 @@ import sys
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
+
 def reverseArray(arr):
     # Write your code here
     front = 0
-    rev = len(arr)-1
+    rev = len(arr) - 1
     while front < rev:
         arr[front], arr[rev] = arr[rev], arr[front]
         front += 1
         rev -= 1
     return arr
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     arr_count = int(input().strip())
 
@@ -38,7 +39,7 @@ if __name__ == '__main__':
 
     result = reverseArray(arr)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
+    fptr.write("\n".join(map(str, result)))
+    fptr.write("\n")
 
     fptr.close()

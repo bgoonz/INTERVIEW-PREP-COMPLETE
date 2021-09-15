@@ -8,7 +8,7 @@
 def insertNodeAtPosition(head, data, position):
     temp = head
     ptr = 1
-    while ptr!=position:
+    while ptr != position:
         temp = temp.next
         ptr += 1
     sec = temp.next

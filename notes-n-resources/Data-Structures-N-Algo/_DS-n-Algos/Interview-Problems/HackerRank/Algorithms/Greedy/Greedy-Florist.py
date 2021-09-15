@@ -12,13 +12,14 @@ def getMinimumCost(k, c):
     m = 1
     cost = 0
     for i in range(len(c)):
-        if (i+1) > (k*m):
+        if (i + 1) > (k * m):
             m += 1
-        cost = cost + (m*c[i])
-    return cost        
+        cost = cost + (m * c[i])
+    return cost
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     nk = input().split()
 
@@ -30,6 +31,6 @@ if __name__ == '__main__':
 
     minimumCost = getMinimumCost(k, c)
 
-    fptr.write(str(minimumCost) + '\n')
+    fptr.write(str(minimumCost) + "\n")
 
     fptr.close()

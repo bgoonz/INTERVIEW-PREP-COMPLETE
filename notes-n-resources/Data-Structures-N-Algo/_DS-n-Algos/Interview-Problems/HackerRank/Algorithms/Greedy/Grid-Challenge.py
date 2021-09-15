@@ -12,12 +12,14 @@ def gridChallenge(grid):
         grid[i] = sorted(grid[i])
     for i in range(len(grid[0])):
         for j in range(1, len(grid)):
-            if grid[j-1][i] <= grid[j][i]:
+            if grid[j - 1][i] <= grid[j][i]:
                 continue
             return "NO"
     return "YES"
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     t = int(input())
 
@@ -32,6 +34,6 @@ if __name__ == '__main__':
 
         result = gridChallenge(grid)
 
-        fptr.write(result + '\n')
+        fptr.write(result + "\n")
 
     fptr.close()

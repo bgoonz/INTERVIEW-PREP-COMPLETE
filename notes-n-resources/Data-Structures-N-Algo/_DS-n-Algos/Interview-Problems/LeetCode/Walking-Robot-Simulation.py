@@ -7,15 +7,15 @@ class Solution(object):
         ans = 0
 
         for cmd in commands:
-            if cmd == -2:  #left
+            if cmd == -2:  # left
                 di = (di - 1) % 4
-            elif cmd == -1:  #right
+            elif cmd == -1:  # right
                 di = (di + 1) % 4
             else:
                 for k in range(cmd):
-                    if (x+dx[di], y+dy[di]) not in obstacleSet:
+                    if (x + dx[di], y + dy[di]) not in obstacleSet:
                         x += dx[di]
                         y += dy[di]
-                        ans = max(ans, x*x + y*y)
+                        ans = max(ans, x * x + y * y)
 
         return ans

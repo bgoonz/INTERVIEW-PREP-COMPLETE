@@ -12,13 +12,14 @@ def toys(w):
     containers = 1
     x = w[0]
     for i in range(1, len(w)):
-        if w[i] > (x+4):
+        if w[i] > (x + 4):
             x = w[i]
             containers += 1
     return containers
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -26,6 +27,6 @@ if __name__ == '__main__':
 
     result = toys(w)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

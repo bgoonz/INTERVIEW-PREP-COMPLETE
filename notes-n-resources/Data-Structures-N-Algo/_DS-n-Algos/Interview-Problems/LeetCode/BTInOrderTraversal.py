@@ -7,20 +7,21 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         io = []
-        
-        if(root==None):
+
+        if root == None:
             return []
-        
+
         def inorder(x):
-            if(x.left!=None):
+            if x.left != None:
                 inorder(x.left)
             io.append(int(x.val))
-            if(x.right!=None):
+            if x.right != None:
                 inorder(x.right)
-                
+
         inorder(root)
         return io
 
@@ -34,22 +35,21 @@ class Solution:
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
-        
-        if(root==None):
+
+        if root == None:
             return []
         stack = []
         io = []
         c = root
-        
-        while(c!=None or len(stack)!=0):
-            while(c!=None):
+
+        while c != None or len(stack) != 0:
+            while c != None:
                 stack.append(c)
                 c = c.left
             c = stack.pop()
             io.append(c.val)
             c = c.right
         return io
-                
-            

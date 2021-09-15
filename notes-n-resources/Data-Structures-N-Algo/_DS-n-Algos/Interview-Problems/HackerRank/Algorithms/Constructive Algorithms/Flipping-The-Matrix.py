@@ -21,14 +21,18 @@ def flippingMatrix(matrix):
                 seen |= set([(i, j), (ri, rj), (di, dj), (li, lj)])
                 maxes.append(max(gp))
     return sum(maxes)
-        
+
+
 def mirror_row(i, j, n):
     return i, n - j - 1
+
+
 def mirror_col(i, j, n):
     return n - i - 1, j
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     q = int(input())
 
@@ -37,11 +41,11 @@ if __name__ == '__main__':
 
         matrix = []
 
-        for _ in range(2*n):
+        for _ in range(2 * n):
             matrix.append(list(map(int, input().rstrip().split())))
 
         result = flippingMatrix(matrix)
 
-        fptr.write(str(result) + '\n')
+        fptr.write(str(result) + "\n")
 
     fptr.close()

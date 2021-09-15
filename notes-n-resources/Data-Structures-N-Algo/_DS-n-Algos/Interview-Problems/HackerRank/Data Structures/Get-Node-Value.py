@@ -11,9 +11,9 @@ def getNode(head, positionFromTail):
     while ptr:
         length += 1
         ptr = ptr.next
-    if length==1:
+    if length == 1:
         return head.data
     ptr = head
-    for _ in range(0, length-positionFromTail-1):
+    for _ in range(0, length - positionFromTail - 1):
         ptr = ptr.next
     return ptr.data

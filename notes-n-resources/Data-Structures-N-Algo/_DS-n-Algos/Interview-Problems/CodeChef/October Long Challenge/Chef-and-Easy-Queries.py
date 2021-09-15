@@ -9,7 +9,7 @@ for _ in range(int(input())):
     dayFound = 0
     for i in range(n):
         day += 1
-        if(inp[i] + total < k):
+        if inp[i] + total < k:
             print(int(day))
             dayFound = 1
             break

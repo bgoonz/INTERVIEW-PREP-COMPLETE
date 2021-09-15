@@ -7,7 +7,6 @@ import re
 import sys
 
 
-
 #
 # Complete the 'getMinDeletions' function below.
 #
@@ -15,17 +14,19 @@ import sys
 # The function accepts STRING s as parameter.
 #
 
+
 def getMinDeletions(s):
     # Write your code here
     return len(s) - len(set(s))
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
 
     result = getMinDeletions(s)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

@@ -3,14 +3,14 @@ class Solution:
     # @return an integer
     def braces(self, A):
         stack = []
-        ops = set(['*', '+', '-', '/'])
+        ops = set(["*", "+", "-", "/"])
         for i in A:
-            if i == '(':
-                stack.append('(')
+            if i == "(":
+                stack.append("(")
                 continue
-            elif i == ')':
-                if stack.pop() == '(':
-                  return 1
+            elif i == ")":
+                if stack.pop() == "(":
+                    return 1
                 stack.pop()
                 continue
             elif i in ops:

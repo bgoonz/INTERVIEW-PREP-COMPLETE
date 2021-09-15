@@ -20,7 +20,7 @@ def sortedInsert(head, data):
                 dummy = ptr
                 ptr = ptr.next
                 ptr.prev = dummy
-                return head 
+                return head
             if ptr.next.data >= data:
                 print(ptr.next.data, ptr.data, data)
                 temp = DoublyLinkedListNode(data)

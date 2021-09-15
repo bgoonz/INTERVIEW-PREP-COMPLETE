@@ -10,7 +10,7 @@ def insertNodeAtTail(head, data):
         head = SinglyLinkedListNode(data)
         return head
     temp = head
-    while temp.next!=None:
+    while temp.next != None:
         temp = temp.next
     temp.next = SinglyLinkedListNode(data)
     return head

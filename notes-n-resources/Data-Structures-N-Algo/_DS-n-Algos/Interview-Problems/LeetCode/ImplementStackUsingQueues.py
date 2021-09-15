@@ -2,8 +2,9 @@
 ## Faster than 67%
 
 from queue import Queue
-class MyStack:
 
+
+class MyStack:
     def __init__(self):
         """
         Initialize your data structure here.
@@ -21,10 +22,10 @@ class MyStack:
         """
         Removes the element on top of the stack and returns that element.
         """
-        while(self.q1.qsize()>1):
+        while self.q1.qsize() > 1:
             self.q2.put(self.q1.get())
         temp = self.q1.get()
-        while(self.q2.qsize()>0):
+        while self.q2.qsize() > 0:
             self.q1.put(self.q2.get())
         return temp
 
@@ -32,10 +33,10 @@ class MyStack:
         """
         Get the top element.
         """
-        while(self.q1.qsize()>1):
+        while self.q1.qsize() > 1:
             self.q2.put(self.q1.get())
         temp = self.q1.get()
-        while(self.q2.qsize()>0):
+        while self.q2.qsize() > 0:
             self.q1.put(self.q2.get())
         self.q1.put(temp)
         return temp
@@ -46,12 +47,14 @@ class MyStack:
         """
         return self.q1.empty()
 
+
 ## Implementation using Deque
 ## Faster than 100%
 
 from collections import deque
-class MyStack:
 
+
+class MyStack:
     def __init__(self):
         """
         Initialize your data structure here.
@@ -83,6 +86,7 @@ class MyStack:
         Returns whether the stack is empty.
         """
         return False if len(self.q) else True
+
 
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()

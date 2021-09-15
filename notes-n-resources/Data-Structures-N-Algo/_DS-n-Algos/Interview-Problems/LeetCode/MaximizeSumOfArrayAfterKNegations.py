@@ -13,4 +13,4 @@ class Solution:
                     break
             if K == 0:
                 break
-        return sum(A)          
+        return sum(A)

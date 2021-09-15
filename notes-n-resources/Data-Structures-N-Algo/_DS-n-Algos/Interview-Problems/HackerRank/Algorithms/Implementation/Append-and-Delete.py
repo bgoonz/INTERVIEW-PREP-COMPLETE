@@ -13,21 +13,22 @@ def appendAndDelete(s, t, k):
         return "Yes"
     if k > (len(s) + len(t)):
         return "Yes"
-    for i in range(min(len(s),len(t))):
+    for i in range(min(len(s), len(t))):
         if s[i] == t[i]:
-            if x == 0 and i == min(len(s),len(t))-1:
+            if x == 0 and i == min(len(s), len(t)) - 1:
                 x = (len(s) - i) + (len(t) - i)
             continue
         else:
             x = (len(s) - i) + (len(t) - i)
             print(x)
-            break   
-    if x <= k and x%2 == k%2:
+            break
+    if x <= k and x % 2 == k % 2:
         return "Yes"
-    return "No"                    
+    return "No"
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
 
@@ -37,6 +38,6 @@ if __name__ == '__main__':
 
     result = appendAndDelete(s, t, k)
 
-    fptr.write(result + '\n')
+    fptr.write(result + "\n")
 
     fptr.close()

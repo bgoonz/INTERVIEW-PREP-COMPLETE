@@ -4,7 +4,7 @@ class Solution:
         Do not return anything, modify s in-place instead.
         """
         head = 0
-        temp = ''
+        temp = ""
         tail = len(s) - 1
         while head < tail:
             temp = s[head]

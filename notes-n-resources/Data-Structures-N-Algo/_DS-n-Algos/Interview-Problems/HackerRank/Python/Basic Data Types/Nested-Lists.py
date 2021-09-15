@@ -1,12 +1,13 @@
 from operator import itemgetter
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     students = []
     res = []
     for _ in range(int(input())):
         name = input()
         score = float(input())
         students.append([name, score])
-    students = sorted(students, key = itemgetter(1))
+    students = sorted(students, key=itemgetter(1))
     maxg = students[0][1]
     for i in range(len(students)):
         if students[i][1] > maxg:

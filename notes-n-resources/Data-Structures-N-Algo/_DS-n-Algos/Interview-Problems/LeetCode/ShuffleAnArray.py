@@ -1,5 +1,4 @@
 class Solution:
-
     def __init__(self, nums: List[int]):
         self.nums = nums
         shuf = self.nums.copy()
@@ -21,6 +20,7 @@ class Solution:
             j = random.randrange(i, x)
             self.shuf[i], self.shuf[j] = self.shuf[j], self.shuf[i]
         return self.shuf
+
 
 # Your Solution object will be instantiated and called as such:
 # obj = Solution(nums)

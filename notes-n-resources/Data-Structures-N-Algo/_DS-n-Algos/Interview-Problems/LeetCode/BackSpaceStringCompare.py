@@ -3,11 +3,12 @@ class Solution:
         def deleteBackSpace(X):
             stack = []
             for i in X:
-                if not i=='#':
+                if not i == "#":
                     stack.append(i)
-                elif(len(stack)==0):
+                elif len(stack) == 0:
                     continue
                 else:
                     stack.pop()
             return stack
-        return deleteBackSpace(S)==deleteBackSpace(T)
+
+        return deleteBackSpace(S) == deleteBackSpace(T)

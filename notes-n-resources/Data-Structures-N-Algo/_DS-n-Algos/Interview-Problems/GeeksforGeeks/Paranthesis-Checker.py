@@ -3,12 +3,12 @@ for _ in range(int(input())):
     stack = []
     isBalanced = True
     for i in p:
-        if i == '{':
-            stack.append('}')
-        elif i == '[':
-            stack.append(']')
-        elif i == '(':
-            stack.append(')')
+        if i == "{":
+            stack.append("}")
+        elif i == "[":
+            stack.append("]")
+        elif i == "(":
+            stack.append(")")
         else:
             if stack and i == stack.pop():
                 continue

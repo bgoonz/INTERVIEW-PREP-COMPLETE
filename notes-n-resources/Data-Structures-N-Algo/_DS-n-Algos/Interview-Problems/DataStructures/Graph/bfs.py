@@ -1,4 +1,4 @@
-def bfs(g,N):
+def bfs(g, N):
     queue = []
     visited = [False] * (N)
     bfs = []

@@ -1,5 +1,6 @@
 from sys import stdin, stdout
 
+
 def laddus(n, origin, activities):
     score = 0
     for i in range(n):
@@ -21,10 +22,11 @@ def laddus(n, origin, activities):
     else:
         return score // 400
 
+
 for _ in range(int(stdin.readline())):
     n, origin = stdin.readline().split()
     n = int(n)
     activities = []
     for _ in range(n):
         activities.append(stdin.readline())
-    stdout.write(str(laddus(n, origin, activities)) + '\n')
+    stdout.write(str(laddus(n, origin, activities)) + "\n")
