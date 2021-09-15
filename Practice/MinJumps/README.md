@@ -4,9 +4,7 @@ Given an array of integers where each element represents the maximum number of s
 
 Example:
 
-```
-Input: [1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9]
-Output: 3   // going from 1 -> 3 -> 8 -> 9
-```
+    Input: [1, 3, 5, 8, 9, 2, 6, 7, 6, 8, 9]
+    Output: 3   // going from 1 -> 3 -> 8 -> 9
 
 Analyze the time and space complexity of your solution.

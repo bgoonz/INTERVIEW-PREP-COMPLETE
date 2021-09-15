@@ -1,4 +1,5 @@
-# Skills
+Skills
+======
 
 **Programming**
 
@@ -16,7 +17,7 @@ Docker, AWS, Google App Engine, Netlify, Digital Ocean, Heroku, Azure Cloud Serv
 
 **OS:**
 
-Linux, Windows \(WSL\), IOS
+Linux, Windows (WSL), IOS
 
 **Agile:**
 

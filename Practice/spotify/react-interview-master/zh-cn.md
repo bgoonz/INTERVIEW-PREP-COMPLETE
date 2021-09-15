@@ -35,7 +35,7 @@
 
 #### React 的工作原理
 
-React 会创建一个虚拟 DOM(virtual DOM)。当一个组件中的状态改变时，React 首先会通过 "diffing" 算法来标记虚拟 DOM 中的改变，第二步是调节(reconciliation)，会用 diff 的结果来更新 DOM。
+React 会创建一个虚拟 DOM(virtual DOM)。当一个组件中的状态改变时，React 首先会通过 “diffing” 算法来标记虚拟 DOM 中的改变，第二步是调节(reconciliation)，会用 diff 的结果来更新 DOM。
 
 #### 使用 React 有何优点
 
@@ -54,23 +54,23 @@ React 会创建一个虚拟 DOM(virtual DOM)。当一个组件中的状态改变
 #### 类组件(Class component)和函数式组件(Functional component)之间有何不同
 
 - 类组件不仅允许你使用更多额外的功能，如组件自身的状态和生命周期钩子，也能使组件直接访问 `store` 并维持状态
-- 当组件仅是接收 `props`，并将组件自身渲染到页面时，该组件就是一个 '无状态组件(stateless component)'，可以使用一个纯函数来创建这样的组件。这种组件也被称为哑组件(dumb components)或展示组件
+- 当组件仅是接收 `props`，并将组件自身渲染到页面时，该组件就是一个 ‘无状态组件(stateless component)’，可以使用一个纯函数来创建这样的组件。这种组件也被称为哑组件(dumb components)或展示组件
 
 #### (组件的)状态(state)和属性(props)之间有何不同
 
 `State` 是一种数据结构，用于组件挂载时所需数据的默认值。`State` 可能会随着时间的推移而发生突变，但多数时候是作为用户事件行为的结果。
 
-`Props`(properties 的简写)则是组件的配置。`props` 由父组件传递给子组件，并且就子组件而言，`props` 是不可变的(immutable)。组件不能改变自身的 props，但是可以把其子组件的 props 放在一起(统一管理)。Props 也不仅仅是数据--回调函数也可以通过 props 传递。
+`Props`(properties 的简写)则是组件的配置。`props` 由父组件传递给子组件，并且就子组件而言，`props` 是不可变的(immutable)。组件不能改变自身的 props，但是可以把其子组件的 props 放在一起(统一管理)。Props 也不仅仅是数据–回调函数也可以通过 props 传递。
 
 #### 指出(组件)生命周期方法的不同
 
-- `componentWillMount` -- 多用于根组件中的应用程序配置
-- `componentDidMount` -- 在这可以完成所有没有 DOM 就不能做的所有配置，并开始获取所有你需要的数据；如果需要设置事件监听，也可以在这完成
-- `componentWillReceiveProps` -- 这个周期函数作用于特定的 prop 改变导致的 state 转换
-- `shouldComponentUpdate` -- 如果你担心组件过度渲染，`shouldComponentUpdate` 是一个改善性能的地方，因为如果组件接收了新的 `prop`， 它可以阻止(组件)重新渲染。shouldComponentUpdate 应该返回一个布尔值来决定组件是否要重新渲染
-- `componentWillUpdate` -- 很少使用。它可以用于代替组件的 `componentWillReceiveProps` 和 `shouldComponentUpdate`(但不能访问之前的 props)
-- `componentDidUpdate` -- 常用于更新 DOM，响应 prop 或 state 的改变
-- `componentWillUnmount` -- 在这你可以取消网络请求，或者移除所有与组件相关的事件监听器
+- `componentWillMount` – 多用于根组件中的应用程序配置
+- `componentDidMount` – 在这可以完成所有没有 DOM 就不能做的所有配置，并开始获取所有你需要的数据；如果需要设置事件监听，也可以在这完成
+- `componentWillReceiveProps` – 这个周期函数作用于特定的 prop 改变导致的 state 转换
+- `shouldComponentUpdate` – 如果你担心组件过度渲染，`shouldComponentUpdate` 是一个改善性能的地方，因为如果组件接收了新的 `prop`， 它可以阻止(组件)重新渲染。shouldComponentUpdate 应该返回一个布尔值来决定组件是否要重新渲染
+- `componentWillUpdate` – 很少使用。它可以用于代替组件的 `componentWillReceiveProps` 和 `shouldComponentUpdate`(但不能访问之前的 props)
+- `componentDidUpdate` – 常用于更新 DOM，响应 prop 或 state 的改变
+- `componentWillUnmount` – 在这你可以取消网络请求，或者移除所有与组件相关的事件监听器
 
 #### 应该在 React 组件的何处发起 Ajax 请求
 
@@ -78,7 +78,7 @@ React 会创建一个虚拟 DOM(virtual DOM)。当一个组件中的状态改变
 
 #### 何为受控组件(controlled component)
 
-在 HTML 中，类似 `<input>`, `<textarea>` 和 `<select>` 这样的表单元素会维护自身的状态，并基于用户的输入来更新。当用户提交表单时，前面提到的元素的值将随表单一起被发送。但在 React 中会有些不同，包含表单元素的组件将会在 state 中追踪输入的值，并且每次调用回调函数时，如 `onChange` 会更新 state，重新渲染组件。一个输入表单元素，它的值通过 React 的这种方式来控制，这样的元素就被称为"受控元素"。
+在 HTML 中，类似 `<input>`, `<textarea>` 和 `<select>` 这样的表单元素会维护自身的状态，并基于用户的输入来更新。当用户提交表单时，前面提到的元素的值将随表单一起被发送。但在 React 中会有些不同，包含表单元素的组件将会在 state 中追踪输入的值，并且每次调用回调函数时，如 `onChange` 会更新 state，重新渲染组件。一个输入表单元素，它的值通过 React 的这种方式来控制，这样的元素就被称为“受控元素”。
 
 #### 在 React 中，refs 的作用是什么
 
@@ -90,7 +90,7 @@ Refs 可以用于获取一个 DOM 节点或者 React 组件的引用。何时使
 
 练习
 
-<hr />
+---
 
 - 写一个反转其输入的 HOC
 - 写一个从 API 提供数据给传入的组件的 HOC
@@ -125,25 +125,21 @@ Keys 会有助于 React 识别哪些 `items` 改变了，被添加了或者被�
 
 #### 何为 JSX
 
-JSX 是 JavaScript 语法的一种语法扩展，并拥有 JavaScript 的全部功能。JSX 生产 React "元素"，你可以将任何的 JavaScript 表达式封装在花括号里，然后将其嵌入到 JSX 中。在编译完成之后，JSX 表达式就变成了常规的 JavaScript 对象，这意味着你可以在 `if` 语句和 `for` 循环内部使用 JSX，将它赋值给变量，接受它作为参数，并从函数中返回它。
+JSX 是 JavaScript 语法的一种语法扩展，并拥有 JavaScript 的全部功能。JSX 生产 React “元素”，你可以将任何的 JavaScript 表达式封装在花括号里，然后将其嵌入到 JSX 中。在编译完成之后，JSX 表达式就变成了常规的 JavaScript 对象，这意味着你可以在 `if` 语句和 `for` 循环内部使用 JSX，将它赋值给变量，接受它作为参数，并从函数中返回它。
 
 #### 怎么用 React.createElement 重写下面的代码
 
 Question：
 
-```js
-const element = <h1 className="greeting">Hello, world!</h1>;
-```
+    const element = <h1 className="greeting">Hello, world!</h1>;
 
 Answer：
 
-```js
-const element = React.createElement(
-  "h1",
-  { className: "greeting" },
-  "Hello, world!"
-);
-```
+    const element = React.createElement(
+      "h1",
+      { className: "greeting" },
+      "Hello, world!"
+    );
 
 #### 何为 `Children`
 
@@ -190,11 +186,11 @@ Redux thunk 是一个允许你编写返回一个函数而不是一个 action 的
 
 #### 你喜欢 React 的哪些方面
 
-...
+…
 
 #### 你不喜欢 React 的哪些方面
 
-...
+…
 
 #### 示例项目
 

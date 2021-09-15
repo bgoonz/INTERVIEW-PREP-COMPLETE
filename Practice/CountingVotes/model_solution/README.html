@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="counting-votes-walkthrough">Counting Votes Walkthrough</h1>
+    <h2 id="understanding-the-problem">Understanding the Problem</h2>
+    <p>
+      The problem is asking us to figure out the winner of an election given a
+      list of names where each name constitutes a vote for that candidate. What
+      do we need to keep track of in order to handle that?
+    </p>
+    <p>
+      Well, we’ll need to know how many votes each candidate received. Once we
+      know that, we can figure out, based off of who has the most votes, who won
+      the election. We’ll also need to handle the case when there is a tie. The
+      problem states that in such a scenario, of the candidates who have the
+      most votes, the candidate whose name comes last alphabetically wins the
+      election.
+    </p>
+    <p>
+      Let’s go through a few simple examples. If we receive the following list
+      of names <code>['jack', 'jill', 'jill']</code>, then Jill will be declared
+      the election winner. If we have
+      <code>['jack', 'jill', 'jill', 'jack']</code>, then Jill should still win
+      since her name comes after Jack’s alphabetically.
+    </p>
+    <h2 id="coming-up-with-a-strategy">Coming up with a Strategy</h2>
+    <p>
+      Our first step is figuring out how many votes each candidate receives from
+      the list of names. One of the best ways achieve this step is to use a hash
+      table (an Object) to store names as keys and counts as values. So the idea
+      becomes: we’ll iterate over the names in the list, we’ll check to see if
+      our hash table already contains the given name. If it does, we’ll
+      increment its associated count. If it doesn’t, then we’ll add it to the
+      hash table with a count of 1, since that will have been the first time
+      we’ve seen that particular name.
+    </p>
+    <pre><code>def count_votes(votes):
+    initialize hash table to store counts of each name
+    counts = {}
+
+    loop through each name in the `votes` list
+        if the name is in `counts`
+            increment the value associated with the name
+        otherwise, we haven&#39;t seen this name before
+            add it to `counts` with 1 as its value</code></pre>
+    <p>
+      At this point, we’ll have every each name in the hash table along with the
+      total number of times we’ve seen each name. Now we’ll need to figure out
+      which name earned the most votes.
+    </p>
+    <p>
+      To do that, we’ll need to loop through each key-value pair in
+      <code>count</code>; we can figure out who has the most votes the way we
+      always do: by keeping track of the highest number we’ve seen so far and
+      when we see a key-value pair whose value is greater than the value we’ve
+      seen so far, we’ll update the variable. We’ll want to keep a separate
+      variable for the name of the winner in addition to the number of votes
+      they had.
+    </p>
+    <p>That might look like the following:</p>
+    <pre><code>max_votes = 0
+winner = &#39;&#39;
+
+loop through the key-value pairs in `counts`
+    if value &gt; max_votes value
+        max_votes = value
+        winner = key</code></pre>
+    <p>
+      By the end of this iteration, <code>max_votes</code> will hold the
+      key-value pair with the highest number of votes, along with the name
+      associated with those votes. So we can then return that name.
+    </p>
+    <h2 id="implementing-our-strategy">Implementing our Strategy</h2>
+    <p>
+      Let’s combine these two ideas together in code. With what we have so far,
+      our solution might look like this:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> count_votes(votes):</a>
+<a class="sourceLine" id="cb3-2" title="2">    counts <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="cf">for</span> name <span class="kw">in</span> votes:</a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="cf">if</span> name <span class="kw">in</span> counts:</a>
+<a class="sourceLine" id="cb3-6" title="6">            counts[name] <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-8" title="8">            counts[name] <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10">    max_votes <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-11" title="11">    winner <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb3-12" title="12"></a>
+<a class="sourceLine" id="cb3-13" title="13">    <span class="cf">for</span> name, votes <span class="kw">in</span> counts:</a>
+<a class="sourceLine" id="cb3-14" title="14">        <span class="cf">if</span> votes <span class="op">&gt;</span> max_votes:</a>
+<a class="sourceLine" id="cb3-15" title="15">            max_votes <span class="op">=</span> votes</a>
+<a class="sourceLine" id="cb3-16" title="16">            winner <span class="op">=</span> name</a>
+<a class="sourceLine" id="cb3-17" title="17"></a>
+<a class="sourceLine" id="cb3-18" title="18">    <span class="cf">return</span> winner</a></code></pre>
+    </div>
+    <p>
+      This implementation figures out the winner when there is a clear winner
+      amongst the candidates. As of yet, it doesn’t handle ties. How would we
+      handle those? Well, a tie results when we’ve found a candidate who has the
+      same number of votes as the winner. That would seem to imply that we’ll
+      want to perform a separate check to see if the number of votes for the
+      current name we’re iterating on matches the number of votes of the current
+      winner. If so, then we’ll want to set the value of the
+      <code>winner</code> variable to be the name that comes last in the
+      alphabet. Let’s add that logic to our implementation:
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">def</span> count_votes(votes):</a>
+<a class="sourceLine" id="cb4-2" title="2">    counts <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="cf">for</span> name <span class="kw">in</span> votes:</a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="cf">if</span> name <span class="kw">in</span> counts:</a>
+<a class="sourceLine" id="cb4-6" title="6">            counts[name] <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-8" title="8">            counts[name] <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-9" title="9"></a>
+<a class="sourceLine" id="cb4-10" title="10">    max_votes <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    winner <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb4-12" title="12"></a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="cf">for</span> name, votes <span class="kw">in</span> counts:</a>
+<a class="sourceLine" id="cb4-14" title="14">        <span class="co"># check to see if we&#39;ve found a candidate with the same</span></a>
+<a class="sourceLine" id="cb4-15" title="15">        <span class="co"># number of votes as our current winner</span></a>
+<a class="sourceLine" id="cb4-16" title="16">        <span class="cf">if</span> votes <span class="op">==</span> max_votes:</a>
+<a class="sourceLine" id="cb4-17" title="17">            <span class="co"># set the value of `winner` to be the name that</span></a>
+<a class="sourceLine" id="cb4-18" title="18">            <span class="co"># comes later in the alphabet</span></a>
+<a class="sourceLine" id="cb4-19" title="19">            winner <span class="op">=</span> name <span class="cf">if</span> name <span class="op">&gt;</span> winner <span class="cf">else</span> winner</a>
+<a class="sourceLine" id="cb4-20" title="20">        <span class="cf">elif</span> votes <span class="op">&gt;</span> max_votes:</a>
+<a class="sourceLine" id="cb4-21" title="21">            max_votes <span class="op">=</span> votes</a>
+<a class="sourceLine" id="cb4-22" title="22">            winner <span class="op">=</span> name</a>
+<a class="sourceLine" id="cb4-23" title="23"></a>
+<a class="sourceLine" id="cb4-24" title="24">    <span class="cf">return</span> winner</a></code></pre>
+    </div>
+    <p>Cool! This implementation now handles ties correctly.</p>
+    <h2 id="evaluating-and-improving-our-strategy">
+      Evaluating and Improving our Strategy
+    </h2>
+    <p>
+      What’s the runtime of this implementation? As far as space complexity
+      goes, we’re inserting each unique name into a hash table, so in the worst
+      case, the hash table will contain as many entries as there are names in
+      the input list. That introduces a space complexity of O(n).
+    </p>
+    <p>
+      As for time complexity, we perform two linear passes through the data, the
+      first time through the <code>votes</code> array, the second time through
+      all of the key-value pairs in <code>counts</code>. So the overall runtime
+      is O(2n), or O(n).
+    </p>
+    <p>
+      With that being said, do we need to perform two passes through the data?
+      Could we combine both linear passes into a single pass?
+    </p>
+    <p>We can indeed:</p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> count_votes(votes):</a>
+<a class="sourceLine" id="cb5-2" title="2">    counts <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb5-3" title="3">    max_votes <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    winner <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="cf">for</span> name <span class="kw">in</span> votes:</a>
+<a class="sourceLine" id="cb5-7" title="7">        <span class="cf">if</span> name <span class="kw">in</span> counts:</a>
+<a class="sourceLine" id="cb5-8" title="8">            counts[name] <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-9" title="9">        <span class="cf">elif</span> name <span class="kw">not</span> <span class="kw">in</span> counts:</a>
+<a class="sourceLine" id="cb5-10" title="10">            counts[name] <span class="op">=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-11" title="11">        <span class="cf">elif</span> counts[name] <span class="op">&gt;</span> max_votes:</a>
+<a class="sourceLine" id="cb5-12" title="12">            max_votes <span class="op">=</span> counts[name]</a>
+<a class="sourceLine" id="cb5-13" title="13">            winner <span class="op">=</span> name</a>
+<a class="sourceLine" id="cb5-14" title="14">        <span class="cf">elif</span> counts[name] <span class="op">==</span> max_votes:</a>
+<a class="sourceLine" id="cb5-15" title="15">            winner <span class="op">=</span> name <span class="cf">if</span> name <span class="op">&gt;</span> winner <span class="cf">else</span> winner</a>
+<a class="sourceLine" id="cb5-16" title="16"></a>
+<a class="sourceLine" id="cb5-17" title="17">    <span class="cf">return</span> winner</a></code></pre>
+    </div>
+    <p>
+      This implementation achieves the same space complexity and theoretical
+      time complexity, though in practice it will handle large inputs faster
+      than the previous solution since it only performs a single pass through
+      the data.
+    </p>
+  </body>
+</html>

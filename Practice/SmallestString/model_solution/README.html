@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="smallest-string-walkthrough">Smallest String Walkthrough</h1>
+    <h2 id="understanding-the-problem">Understanding the Problem</h2>
+    <p>
+      This problem seems to be a variant of the problem of comparing strings
+      that only contain alphabetic letters. In fact, most languages will already
+      have this functionality provided out of the box. As a first pass, we could
+      simply piggyback off of this capability with something like:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> smallest_string(str1, str2):</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co"># just compare str1 and str2, returning the smallest string</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">return</span> str1 <span class="cf">if</span> str1 <span class="op">&lt;</span> str2 <span class="cf">else</span> str2</a></code></pre>
+    </div>
+    <p>
+      Let’s test this first pass to see if it returns the expected output. When
+      we run this with the test values, we get the following:
+    </p>
+    <pre><code>smallest_string(&quot;a&quot;, &quot;b&quot;)    # returns a
+smallest_string(&quot;a1&quot;, &quot;a2&quot;)  # returns a1
+smallest_string(&quot;a10&quot;, &quot;a2&quot;) # returns a10</code></pre>
+    <p>
+      So it looks like our first pass implementation works for the first two
+      inputs, but it doesn’t work for the last example, where the problem
+      statement states that it should be returning “a2”, not “a10” since we are
+      to treat contiguous numbers as single values. In other words, our function
+      should be treating the “10” in “a10” as a single number and comparing that
+      against “2”. However, with our current implementation, the “10” is not
+      being treated as a single value and instead the code is simply comparing
+      “1” and “2”, and thus returning “a10” since “1” comes before “2”.
+    </p>
+    <p>
+      This seems to be the main hurdle we’ll have to overcome when solving this
+      problem. One question that comes up then is, can we alter our current
+      first-pass implementation to handle this separate case, or would we need
+      to start over from scratch?
+    </p>
+    <p>
+      If we opt to keep the current logic, then we’d have to add some special
+      handling to check if we see any consecutive values in either string. If we
+      ascertain that neither value has consecutive numeric values, then we can
+      probably opt to fallback on the current logic. Otherwise, we’d have to
+      handle that specific case. How might we do that?
+    </p>
+    <h2 id="coming-up-with-a-strategy">Coming Up With A Strategy</h2>
+    <p>
+      While iterating along a string, if we see a number, we’ll want to figure
+      out how many consecutive numbers it contains by iterating over it until we
+      reach the end of it, so that we know its actual value. Then, if there is a
+      number at the same index of the other string, we’ll have to compare both
+      numbers in their entirety and return whichever string contains the smaller
+      number.
+    </p>
+    <p>In pseudocode, that may look something like:</p>
+    <pre><code>def shortest_string(str1, str2):
+    iterate along str1 to see if it contains any consecutive numbers
+        if it does, keep iterating along till we reach the end of the number
+            store the value of the number and the index it starts at in the string
+    do the same thing with str2
+    if there are no consecutive numbers in either string
+        fall back to our first-pass logic and return the smaller string
+    otherwise, check that the consecutive numbers reside at the same index
+        if they don&#39;t, i.e. one string contains a number at this index
+        and the other string contains a letter, return the other string</code></pre>
+    <p>
+      This doesn’t seem very good; it seems like a rather convoluted way of
+      solving the problem, in large part due to the fact that we’re trying to
+      preserve the first-pass logic that we had. Perhaps it is worth considering
+      removing the first-pass logic and starting again from the groud up.
+    </p>
+    <p>
+      We could opt to keep two pointers, one for each string, and then have them
+      iterate over both strings at the same rate, checking each character one by
+      one. The nice thing about this is that as soon as we see the two pointers
+      pointing to different characters, then we can simply return the string
+      whose character comes earlier. In other words, we’ll only traverse the
+      length of the shorter string in the worst case, since we can return from
+      the function as soon as we notice there is a character mismatch between
+      both strings.
+    </p>
+    <p>In code, this might look like this:</p>
+    <pre><code>def shortest_string(str1, str2):
+    initialize variables that start off pointing at the
+    starting indices of each string
+    while neither pointer has reached the end of its respective string
+        check if both characters are letters
+            if both letters are the same
+                advance both indices
+            otherwise, the letters are different
+                return the string whose letter is smaller
+        otherwise, at least one of the characters is a number
+            check if both characters are numbers
+                parse both numbers to figure out their consecutive values
+                return the string with the smaller numeric consecutive value
+            otherwise, one is a letter and the other is a number
+                return the string with the number, since numbers &lt; letters
+    if we&#39;ve reached the end, then one string has run out
+    in that case, the shorter string is the smaller one
+    return the shorter string</code></pre>
+    <p>
+      This outlined strategy seems less convoluted than the previous one. In the
+      worst case, it will perform a single pass through both strings, which is
+      as good as we can hope for.
+    </p>
+    <h2 id="implementing-the-strategy">Implementing the Strategy</h2>
+    <p>
+      Turning the above idea into code. Python has functions
+      <code>isdigit</code> and <code>isalpha</code> that figure out whether a
+      character is a letter or a digit. We can leverage these in our
+      implementation:
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> shortest_string(str1, str2):</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="co"># indices of both strings</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    s1 <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    s2 <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="co"># lengths of both strings</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    len1 <span class="op">=</span> <span class="bu">len</span>(str1) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-7" title="7">    len2 <span class="op">=</span> <span class="bu">len</span>(str2) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-8" title="8"></a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="cf">while</span> s1 <span class="op">&lt;=</span> len1 <span class="kw">and</span> s2 <span class="op">&lt;=</span> len2:</a>
+<a class="sourceLine" id="cb5-10" title="10">        <span class="co"># check if both characters are letters</span></a>
+<a class="sourceLine" id="cb5-11" title="11">        <span class="cf">if</span> str1[s1].isalpha() <span class="kw">and</span> str2[s2].isalpha():</a>
+<a class="sourceLine" id="cb5-12" title="12">            <span class="cf">if</span> str1[s1] <span class="op">==</span> str2[s2]:</a>
+<a class="sourceLine" id="cb5-13" title="13">                s1 <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-14" title="14">                s2 <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb5-15" title="15">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-16" title="16">                <span class="cf">return</span> str1 <span class="cf">if</span> str1[s1] <span class="op">&lt;</span> str2[s2] <span class="cf">else</span> str2</a>
+<a class="sourceLine" id="cb5-17" title="17">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-18" title="18">            <span class="cf">if</span> str1[s1].isdigit() <span class="kw">and</span> str2[s2].isdigit():</a>
+<a class="sourceLine" id="cb5-19" title="19">                <span class="co"># parse both numbers</span></a>
+<a class="sourceLine" id="cb5-20" title="20">                n1, l1 <span class="op">=</span> parse_number(str1, s1)</a>
+<a class="sourceLine" id="cb5-21" title="21">                n2, l2 <span class="op">=</span> parse_number(str2, s2)</a>
+<a class="sourceLine" id="cb5-22" title="22">                <span class="co"># if the numbers are not equal</span></a>
+<a class="sourceLine" id="cb5-23" title="23">                <span class="cf">if</span> n1 <span class="op">!=</span> n2:</a>
+<a class="sourceLine" id="cb5-24" title="24">                    <span class="co"># return the string with the smaller number value</span></a>
+<a class="sourceLine" id="cb5-25" title="25">                    <span class="cf">return</span> str1 <span class="cf">if</span> n1 <span class="op">&lt;</span> n2 <span class="cf">else</span> str2</a>
+<a class="sourceLine" id="cb5-26" title="26">                <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-27" title="27">                    <span class="co"># otherwise, we&#39;ll need to advance the indices by</span></a>
+<a class="sourceLine" id="cb5-28" title="28">                    <span class="co"># the lengths of both consecutive numbers</span></a>
+<a class="sourceLine" id="cb5-29" title="29">                    s1 <span class="op">+=</span> l1</a>
+<a class="sourceLine" id="cb5-30" title="30">                    s2 <span class="op">+=</span> l2</a>
+<a class="sourceLine" id="cb5-31" title="31">            <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb5-32" title="32">                <span class="co"># one letter and one number</span></a>
+<a class="sourceLine" id="cb5-33" title="33">                <span class="cf">return</span> str1 <span class="cf">if</span> str1[s1] <span class="op">&lt;</span> str2[s2] <span class="cf">else</span> str2</a>
+<a class="sourceLine" id="cb5-34" title="34">    <span class="co"># we&#39;ve reached the end of one of the strings</span></a>
+<a class="sourceLine" id="cb5-35" title="35">    <span class="co"># the smallest string is the shorter one</span></a>
+<a class="sourceLine" id="cb5-36" title="36">    <span class="cf">return</span> str1 <span class="cf">if</span> len1 <span class="op">&lt;</span> len2 <span class="cf">else</span> str2</a></code></pre>
+    </div>
+    <p>
+      This implementation should do the trick, in lieu of some testing. We left
+      some logic relegated to a helper function that we haven’t defined yet. The
+      <code>parse_number</code> function will be handed a string and an index in
+      the string where the number to parse starts. It will return the
+      consecutive numeric value of the number it is parsing as well the number’s
+      length. The length is needed in the case that both numbers turn out be the
+      same, in which case we’ll need to advance the string index by the length
+      of the number so that we can continue iterating along the two strings.
+    </p>
+    <p>The <code>parse_number</code> method could look like this:</p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> parse_number(string, index):</a>
+<a class="sourceLine" id="cb6-2" title="2">    number_length <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    number_value <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="co"># loop through the string until we reach a character that isn&#39;t a number</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="co"># we&#39;ll also need to make sure that the index doesn&#39;t run past the string</span></a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="cf">while</span> index <span class="op">&lt;=</span> <span class="bu">len</span>(string) <span class="op">-</span> <span class="dv">1</span> <span class="kw">and</span> string[index].isdigit():</a>
+<a class="sourceLine" id="cb6-7" title="7">        number_length <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb6-8" title="8">        number_value <span class="op">+=</span> string[index]</a>
+<a class="sourceLine" id="cb6-9" title="9">        index <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb6-10" title="10">    <span class="co"># don&#39;t forget to convert the string number to an int type</span></a>
+<a class="sourceLine" id="cb6-11" title="11">    <span class="cf">return</span> (<span class="bu">int</span>(number_value), number_length)</a></code></pre>
+    </div>
+    <h2 id="evaluating-our-implementation">Evaluating our Implementation</h2>
+    <p>
+      Our implementation traverses along both strings at the same time, but
+      returns as soon as it finds a mismatched character between the two
+      strings. Thus, its runtime is proportional to the length of the shorter of
+      the two strings for a runtime of O(n).
+    </p>
+    <p>
+      With regards to space complexity, extra memory is allocated when we run
+      into a number and then need to parse it to figure out its actual value
+      including all the following consecutive numbers. So in the worst case, if
+      both strings contain only numeric characters, then that much additional
+      memory will need to be allocated accordingly, which comes out to O(n)
+      space complexity.
+    </p>
+  </body>
+</html>

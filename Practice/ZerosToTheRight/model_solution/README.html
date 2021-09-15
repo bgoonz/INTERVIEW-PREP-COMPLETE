@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="zeros-to-the-right-walkthrough">Zeros to the Right Walkthrough</h1>
+<h2 id="understanding-the-problem">Understanding the Problem</h2>
+<p>This problem is relatively straightforward to understand. Any 0s that aren’t on the right side of the input array need to get to the right side of the array. Ok, we can do that pretty easily.</p>
+<p>One question we’d want to address first before we start sketching out a strategy is whether we’d want to mutate the input array or whether we should instead create a new array. Well, we’ll definitely want to iterate along the array, and if we opt to mutate the input array, that’s going to make iterating along the array a lot trickier since the array is going to be changing with each iteration step.</p>
+<h2 id="a-first-pass-strategy">A First Pass Strategy</h2>
+<p>So it will probably be a lot easier to simply opt to create and return a new array. With that question answered, a strategy falls into place. We can iterate along the input array, and we’ll keep track of the number of 0s we see as we’re iterating. Every time we see a non-0 integer, we can simply copy it to our output array. Once we’ve traversed the entire input array, all of the non-0 integers will be in the output array and we’ll also know how many 0s we saw in the input array. From there, we can simply push that many 0s onto the end of the output array. Note that the problem asks us to return the number of non-0 integers in the array. Since we’ve been counting the number of 0s we’ve been seeing as we’ve been traversing through the array, to figure out the number of non-0 integers, we can simply subtract the length of the entire array by the number of 0s we’ve seen. So our first pass implementation might look something like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> zeros_to_the_right(arr):</a>
+<a class="sourceLine" id="cb1-2" title="2">    output <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb1-3" title="3">    n_zeros <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="cf">for</span> x <span class="kw">in</span> arr:</a>
+<a class="sourceLine" id="cb1-6" title="6">        <span class="cf">if</span> x <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb1-7" title="7">            n_zeros <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-8" title="8">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb1-9" title="9">            output.append(x)</a>
+<a class="sourceLine" id="cb1-10" title="10"></a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="cf">for</span> _ <span class="kw">in</span> <span class="bu">range</span>(n_zeros):</a>
+<a class="sourceLine" id="cb1-12" title="12">        output.append(<span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb1-13" title="13"></a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="cf">return</span> <span class="bu">len</span>(output) <span class="op">-</span> n_zeros</a></code></pre></div>
+<h2 id="evaluating-our-first-pass-implementation">Evaluating our First Pass Implementation</h2>
+<p>This implementation works as expected. Hooray! Now it’s time to figure out the time and space complexity of this implementation. We have a single traversal over our input array, and we only perform O(1) operations inside this loop, so the for loop incurs an O(n) runtime cost.</p>
+<p>The second for loop incurs a runtime cost proportional to the number of elements we are adding to the output array. In the worst case this would never be more than the length of the entire input array (like in the case that our function receives an input array of all 0s). So as far as time complexity is concerned, our worst case runtime is O(2n).</p>
+<p>As far as space complexity is concerned, we’re creating a new array that has the exact same number of elements as our input array, so the amount of additional memory we’re using is proportional to the number of input elements. Thus our space complexity is O(n).</p>
+<p>So the next question we should ask ourselves is, can we do better than this? As far time complexity is concerned, we’ve <em>technically</em> achieved a linear runtime. It’s not possible to achieve a runtime faster than linear since we can’t get away with not inspecting each array element at least once to see whether an element is a 0 or a non-0 integer value.</p>
+<p>That being said, our first pass solution achieves an O(2n) runtime. Even though this theoretically simplifies down to an O(n) runtime, in practice, actually eliminating unnecessary linear passes does yield significant performance improvements when the input size is very large. So if we’re able to get our implementation down to the point where it only performs one loop through the data, then we should aim for that as our next goal.</p>
+<p>Similarly, the extra memory usage is also not desirable unless we <em>absolutely</em> need it. Let’s think about whether we can get away with not incurring that extra memory cost. So we’re going to see if we can achieve an implementation that only performs <em>one</em> pass through the input data and doesn’t require any extra memory.</p>
+<h2 id="improving-upon-our-first-pass-implementation">Improving Upon our First Pass Implementation</h2>
+<p>If we’re not looking to incur any extra memory, then we’ll have to directly mutate the input array. If we’re looking to do that, then we’ll not want to remove elements from the input array since it makes iterating through the array tricky, along with the fact that removing elements from an array incurs an O(n) runtime in the worst case.</p>
+<p>As an alternative to removing from the array, we can instead swap two elements in the array, which is an O(1) operation. So if the question becomes “which elements are we looking to swap as we’re iterating along the array?”, the answer to that would be that we want to swap 0s on the left side of the array with non-0 values that are on the right side of the array.</p>
+<p>Given that, we can keep track of two indices, one that starts at the left end of the array, the other that starts at the right end. These will be incremented until they meet in the middle. While this is happening, if the left index value is a 0 at the same time that the right index is a non-0, then we’ll swap those two values. Sketching this idea out, it might look something like this:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> zeros_to_the_right(arr):</a>
+<a class="sourceLine" id="cb2-2" title="2">    left <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    right <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="co"># keep iterating until the two indices meet in the middle</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="cf">while</span> left <span class="op">&lt;=</span> right:</a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="co"># if the left index is a 0 and the right index is a non-0</span></a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="cf">if</span> arr[left] <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> arr[right] <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb2-8" title="8">            <span class="co"># swap them</span></a>
+<a class="sourceLine" id="cb2-9" title="9">            arr[left], arr[right] <span class="op">=</span> arr[right], arr[left]</a>
+<a class="sourceLine" id="cb2-10" title="10">            <span class="co"># move the left and right indices towards the middle</span></a>
+<a class="sourceLine" id="cb2-11" title="11">            <span class="co"># of the array so that we make progress</span></a>
+<a class="sourceLine" id="cb2-12" title="12">            left <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-13" title="13">            right <span class="op">-=</span> <span class="dv">1</span></a></code></pre></div>
+<p>Ok, so what about when the left index is a non-0 and/or the right index is a 0? What do we do in those cases? As it stands, this code will very likely not terminate because it will just hang forever on the while loop.</p>
+<p>Well, in a vacuum, when do we want the left index to be incremented? Again, we’re looking to swap 0s on the left with non-0s on the right. So we <em>don’t</em> want the left index to be incremented when it’s on a 0. That means that we <em>do</em> want it to be incremented when it’s a non-0. Likewise, with the right index, we want it to <em>not</em> decrement when it’s on a non-0 value, so we want it to be decremented when it’s a 0. Let’s add this to our implementation:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> zeros_to_the_right(arr):</a>
+<a class="sourceLine" id="cb3-2" title="2">    left <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    right <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="cf">while</span> left <span class="op">&lt;=</span> right:</a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="cf">if</span> arr[left] <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> arr[right] <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb3-6" title="6">            arr[left], arr[right] <span class="op">=</span> arr[right], arr[left]</a>
+<a class="sourceLine" id="cb3-7" title="7">            left <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-8" title="8">            right <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-9" title="9">        <span class="co"># we&#39;re already handling incrementing the left and right</span></a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="co"># indices when we&#39;re swapping, so we need to stick the</span></a>
+<a class="sourceLine" id="cb3-11" title="11">        <span class="co"># new iteration logic in an else statement</span></a>
+<a class="sourceLine" id="cb3-12" title="12">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-13" title="13">            <span class="cf">if</span> arr[left] <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb3-14" title="14">                left <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-15" title="15">            <span class="cf">if</span> arr[right] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb3-16" title="16">                right <span class="op">-=</span> <span class="dv">1</span></a></code></pre></div>
+<p>With that logic added, we’ve ensured that the while loop will terminate and that the input array will be mutated to the desired state with 0s on the right and non-0 values on the left. But we aren’t done yet, since our function needs to return the number of non-0 values in the array.</p>
+<p>At this point, we could perform another walk through the array and count the number of non-0 values we see along the way, but we’re trying to limit the number of walks we do through the array. Can we perform some extra work the first time we walk through the array that would tell us how many non-0 values exist in the array?</p>
+<p>Sure, we can simply increment a counter of non-0 values we encounter as we’re performing our initial traversal through the array. We don’t need to perform a whole other traversal in this case.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">def</span> zeros_to_the_right(arr):</a>
+<a class="sourceLine" id="cb4-2" title="2">    left <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    right <span class="op">=</span> <span class="bu">len</span>(arr) <span class="op">-</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="co"># counter to keep track of number of non-0 values we see</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    n_non_zeros <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb4-7" title="7"></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="cf">while</span> left <span class="op">&lt;=</span> right:</a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="cf">if</span> arr[left] <span class="op">==</span> <span class="dv">0</span> <span class="kw">and</span> arr[right] <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb4-10" title="10">            arr[left], arr[right] <span class="op">=</span> arr[right], arr[left]</a>
+<a class="sourceLine" id="cb4-11" title="11">            left <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-12" title="12">            right <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-13" title="13"></a>
+<a class="sourceLine" id="cb4-14" title="14">            <span class="co"># we encounter a non-0 value in this case</span></a>
+<a class="sourceLine" id="cb4-15" title="15">            <span class="co"># increment our counter</span></a>
+<a class="sourceLine" id="cb4-16" title="16">            n_non_zeros <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-17" title="17"></a>
+<a class="sourceLine" id="cb4-18" title="18">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-19" title="19">            <span class="cf">if</span> arr[left] <span class="op">!=</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb4-20" title="20">                left <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-21" title="21"></a>
+<a class="sourceLine" id="cb4-22" title="22">                <span class="co"># we encounter a non-0 value in this case</span></a>
+<a class="sourceLine" id="cb4-23" title="23">                <span class="co"># increment our counter</span></a>
+<a class="sourceLine" id="cb4-24" title="24">                n_non_zeros <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-25" title="25"></a>
+<a class="sourceLine" id="cb4-26" title="26">            <span class="cf">if</span> arr[right] <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb4-27" title="27">                right <span class="op">-=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb4-28" title="28"></a>
+<a class="sourceLine" id="cb4-29" title="29">    <span class="cf">return</span> n_non_zeros</a></code></pre></div>
+<p>Lo and behold, we’ve implemented a working solution that only performs <em>one</em> traversal through the array that also only allocates a constant amount of extra space! We’re not going to be able to do better than that, so we’ll consider this problem thoroughly solved.</p>
+</body>
+</html>

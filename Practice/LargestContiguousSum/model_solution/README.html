@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="largest-contiguous-sum-walkthrough">
+      Largest Contiguous Sum Walkthrough
+    </h1>
+    <h2 id="understanding-the-problem">Understanding the Problem</h2>
+    <p>
+      The problem statement for this question is pretty terse. Let’s break it
+      down. It’s asking us to find the maximum sum of some contiguous subarray
+      of the input array. The input array can contain both positive and negative
+      integers.
+    </p>
+    <p>
+      Let’s start simple. The problem statement says the array can contain both
+      positive and negative values. Let’s initially loosen the constraints and
+      just assume that our arrays can only contain positive integers. In that
+      case, the largest contiguous sum of any array is just going to be the sum
+      of all the elements in the array, since they’re all positive!
+    </p>
+    <p>
+      Ok, what about if our array only contains negative values? What’s the
+      largest contiguous sum in that case? Say we have something like this:
+    </p>
+    <pre><code>[-9, -18, -3, -99, -70, -1, -15]</code></pre>
+    <p>
+      The largest contiguous sum is going to be one largest negative value,
+      since every number is negative and we’re looking for the largest sum. So
+      with this example, we would need to return just -1, which is the single
+      largest value in the entire array.
+    </p>
+    <p>
+      Ok, with that in mind, let’s look at an example array that contains both
+      positive and negative values:
+    </p>
+    <pre><code>[3, -10, 4]</code></pre>
+    <p>
+      When we had an array of just positive integers, we summed every value in
+      the array. When we had an array of just negative integers, we picked the
+      largest negative value. Let’s try both of those strategies with this array
+      that contains both positive and negative values.
+    </p>
+    <p>
+      The total sum of the entire array is 3 + (-10) + 4 which is -3. The single
+      largest value of this array is 4. So in this case, our answer would be 4.
+      But why? What was it about the elements in this example array that
+      prompted us to end up picking the single largest value over the sum of the
+      entire array? Well, that was because we saw that the overall sum of the
+      entire array yielded a negative value.
+    </p>
+    <p>
+      That’s a bit of handy insight, but it doesn’t seem like we have enough
+      information yet to come up with an algorithm to solve the problem. So
+      let’s continue evaluating some more examples. Let’s take one of the
+      example input arrays: <code>[2, 3, -8, -1, 2, 4, -2, 3]</code>. Summing
+      the entire array gives us a total sum of 3. Picking the largest single
+      value from the array gives us 4. But we’re told that the expected answer
+      for this input array is 7, which is a result of summing up the elements in
+      the subarray <code>[2, 4, -2, 3]</code>, the last 4 elements in the array.
+      How are we supposed to know to sum up that particular subarray?
+    </p>
+    <p>
+      Let’s try this: let’s see what the sum at every step of the array is as we
+      sum up each element in the array one-by-one. If we do that we’ll get the
+      following:
+    </p>
+    <pre><code>[2, 3, -8, -1,  2, 4, -2, 3]
+ 2  5  -3  -4  -2  2   0  3</code></pre>
+    <p>
+      That doesn’t seem to help us much. There sure seem to be a lot of negative
+      sums. Do we want to take those into account? Are they important? After
+      all, we’re looking for the largest sum, and negative sums don’t contribute
+      to that.
+    </p>
+    <p>
+      What if we traversed the array, summing up every value as we walk the
+      array, but then if we see a negative sum, just throw it and start summing
+      again from scratch? Remember, we’re only looking for sums of
+      <em>contiguous</em> subarrays after all, so we don’t need to go jumping
+      around the array to try to find the largest sum; all the values that we’re
+      summing have to be adjacent to one another.
+    </p>
+    <p>If we apply this idea to the same array, we have the following:</p>
+    <pre><code>[2, 3, -8, -1,  2, 4, -2, 3]
+ 2  5   0   0   2  6   4  7
+        ^   ^
+        |   |
+        |   |
+
+these sums are 0 since they&#39;ll yield negative sums</code></pre>
+    <p>
+      Hey! We got the expected output of 7 when we applied this idea to the
+      given array. Let’s check to make sure that this works with other arrays
+      that have positive and negative values.
+    </p>
+    <pre><code>[3, -10, 4]
+ 3   0   4</code></pre>
+    <p>So far so good. Let’s try a larger array:</p>
+    <pre><code>[3, 5, -9, 1, 3, -2, 3, 4, 7, 2, -9, 6, 3, 1, -5, 4]
+ 3  8   0  1  4  2   5  9 16 18   9 15 18 19  14 18</code></pre>
+    <p>
+      The expected output for this array is 19, which we do get when we apply
+      our idea to this array. Ok, so from all these sums, how do we pick the
+      largest? To do that, we can use a variable that will keep track of the
+      largest sum we’ve seen so far and update it if we see a larger sum.
+    </p>
+    <h2 id="coming-up-with-a-strategy">Coming up with a Strategy</h2>
+    <p>
+      So the idea for our algorithm now is to walk along the input array,
+      updating a <code>current_sum</code> variable. If
+      <code>current_sum</code> exceeds the <code>max_sum</code> variable, then
+      we’ll update the <code>max_sum</code> variable with the value of
+      <code>current_sum</code>. If we ever see that our
+      <code>current_sum</code> value is negative, then we’ll set
+      <code>current_sum</code> to 0 and continue traversing the array:
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">def</span> largest_contiguous_sum(arr):</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="co"># variable to keep track of the largest sum</span></a>
+<a class="sourceLine" id="cb7-3" title="3">    max_sum <span class="op">=</span> <span class="op">-</span>Infinity</a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="co"># variable to keep track of the current sum</span></a>
+<a class="sourceLine" id="cb7-5" title="5">    current_sum <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="co"># traverse our array</span></a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="cf">for</span> x <span class="kw">in</span> arr:</a>
+<a class="sourceLine" id="cb7-8" title="8">        <span class="co"># add the current element to our current sum</span></a>
+<a class="sourceLine" id="cb7-9" title="9">        current_sum <span class="op">+=</span> x</a>
+<a class="sourceLine" id="cb7-10" title="10">        <span class="co"># check to see if our current_sum is larger</span></a>
+<a class="sourceLine" id="cb7-11" title="11">        <span class="co"># than the max_sum</span></a>
+<a class="sourceLine" id="cb7-12" title="12">        max_sum <span class="op">=</span> <span class="bu">max</span>(max_sum, current_sum)</a>
+<a class="sourceLine" id="cb7-13" title="13">        <span class="co"># if our current_sum is a negative value</span></a>
+<a class="sourceLine" id="cb7-14" title="14">        <span class="co"># reset it to 0</span></a>
+<a class="sourceLine" id="cb7-15" title="15">        <span class="cf">if</span> current_sum <span class="op">&lt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb7-16" title="16">            current_sum <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-17" title="17">    <span class="co"># return the max_sum</span></a>
+<a class="sourceLine" id="cb7-18" title="18">    <span class="cf">return</span> max_sum</a></code></pre>
+    </div>
+    <h2 id="evaluating-our-implementation">Evaluating our Implementation</h2>
+    <p>
+      The beautiful thing about this algorithm that we just derived (it has a
+      name by the way, it’s called Kadane’s Algorithm), is that it only requires
+      a single pass through the input array and doesn’t require allocating any
+      extra memory. So the rumtime is O(n) and the space complexity is O(1).
+    </p>
+    <p>
+      Is this the best we can do? Well, if we think about it, there’s no way we
+      can solve this problem without inspecting every element at least once,
+      since we’re looking to find the maximum contigous sum. We can only be sure
+      that we’ve found the maximum sum after we’ve inspected every value at
+      least once. So, it would seem our solution is optimal!
+    </p>
+  </body>
+</html>

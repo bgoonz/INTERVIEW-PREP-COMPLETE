@@ -4,25 +4,23 @@ Implement a function `depthFirstForEach`, once as a recursive function, and then
 
 Here is an example tree class:
 
-```js
-class BinaryTreeNode {
-  constructor(value) {
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
+    class BinaryTreeNode {
+      constructor(value) {
+        this.value = value;
+        this.left = null;
+        this.right = null;
+      }
 
-  insertLeft(value) {
-    this.left = new BinaryTreeNode(value);
-    return this.left;
-  }
+      insertLeft(value) {
+        this.left = new BinaryTreeNode(value);
+        return this.left;
+      }
 
-  insertRight(value) {
-    this.right = new BinaryTreeNode(value);
-    return this.right;
-  }
-}
-```
+      insertRight(value) {
+        this.right = new BinaryTreeNode(value);
+        return this.right;
+      }
+    }
 
 For example, given a tree like the following
 
@@ -34,9 +32,7 @@ For example, given a tree like the following
 
 and the following callback function
 
-```js
-const cb = (x) => console.log(x);
-```
+    const cb = (x) => console.log(x);
 
 your `depthFirstForEach` function should start at the root node and print out, in this order, 6, 10, 9, 18, 89.
 

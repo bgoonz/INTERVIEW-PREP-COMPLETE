@@ -1,0 +1,2253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>interview-q-and-a</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="full-stack-developer-interview-questions-and-answers">
+      Full-stack Developer Interview Questions and Answers
+    </h1>
+    <h2 id="table-of-contents"><a name="toc">Table of Contents</a></h2>
+    <ul>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#concurrency">Concurrency</a></li>
+      <li><a href="#java">Java</a></li>
+      <li><a href="#general">General Questions</a></li>
+      <li><a href="#web">WEB</a></li>
+      <li><a href="#sql">SQL</a></li>
+      <li><a href="#nosql">NoSQL</a></li>
+      <li><a href="#transcations">Transactions</a></li>
+      <li><a href="#scalability">Scalability</a></li>
+      <li><a href="#load-balancing">Load balancing</a></li>
+      <li><a href="#cloud-computing">Cloud computing</a></li>
+      <li><a href="#distributed">Distributed</a></li>
+      <li><a href="#cache">Cache</a></li>
+      <li><a href="#networking">Networking</a></li>
+      <li><a href="#os">Operating system</a></li>
+      <li><a href="#compilers">Compilers</a></li>
+      <li><a href="#cpp">C++</a></li>
+      <li><a href="#javascript">Javascript</a></li>
+      <li><a href="#python">Python</a></li>
+      <li><a href="#go">Go</a></li>
+      <li><a href="#codewriting">Code writing</a></li>
+      <li><a href="#functional-programming">Functional programming</a></li>
+      <li><a href="#reactive-programming">Reactive programming</a></li>
+      <li><a href="#git">Git</a></li>
+      <li><a href="#devOps">DevOps</a></li>
+      <li><a href="#qa">QA</a></li>
+      <li><a href="#agile">Agile, Scrum, XP</a></li>
+      <li><a href="#algorithms">Algorithms</a></li>
+      <li><a href="#uml">UML</a></li>
+      <li><a href="#other">Other</a></li>
+      <li><a href="#machine-learning">Machine learning</a></li>
+      <li><a href="#big-data">Big Data</a></li>
+      <li><a href="#image-processing">Image processing</a></li>
+      <li><a href="#cryptography">Cryptography</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#android">Android</a></li>
+      <li><a href="#books">Books</a></li>
+    </ul>
+    <h4 id="architecture">
+      <a href="#toc">[⬆]</a> <a name="architecture">Architecture:</a>
+    </h4>
+    <ul>
+      <li>
+        <em>Design principles</em>. (<a
+          href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself"
+          ><em>DRY</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/KISS_principle"><em>KISS</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it"
+          ><em>YAGNI</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Occam%27s_razor"
+          ><em>Occam’s razor</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Worse_is_better"
+          ><em>Worse is better</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Convention_over_configuration"
+          ><em>convention over configuration</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Separation_of_concerns"
+          ><em>separation of concerns</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Law_of_Demeter"
+          ><em>Law of Demeter (principle of least knowledge)</em></a
+        >, boy scout rule,
+        <a href="https://en.wikipedia.org/wiki/Single_source_of_truth"
+          ><em>single source of truth</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Single_version_of_the_truth"
+          ><em>single version of truth</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Principle_of_least_astonishment"
+          ><em>principle of least astonishment</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Crash-only_software"
+          ><em>let it crash principle</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Inversion_of_control"
+          ><em>inversion of control</em></a
+        >)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)"
+          ><em>SOLID</em></a
+        >
+      </li>
+    </ul>
+    <table>
+      <colgroup>
+        <col style="width: 28%" />
+        <col style="width: 71%" />
+      </colgroup>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left">Rule</th>
+          <th style="text-align: left">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a
+              href="https://en.wikipedia.org/wiki/Single_responsibility_principle"
+              ><strong>S</strong>ingle responsibility principle</a
+            >
+          </td>
+          <td style="text-align: left">
+            A module should be responsible to one, and only one, actor.
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a href="https://en.wikipedia.org/wiki/Open/closed_principle"
+              ><strong>O</strong>pen/closed principle</a
+            >
+          </td>
+          <td style="text-align: left">
+            A software artifact should be open for extension but closed for
+            modification.
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a
+              href="https://en.wikipedia.org/wiki/Liskov_substitution_principle"
+              ><strong>L</strong>iskov substitution principle</a
+            >
+          </td>
+          <td style="text-align: left">
+            It should be possible to substitute base class with derived class.
+          </td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">
+            <a
+              href="https://en.wikipedia.org/wiki/Interface_segregation_principle"
+              ><strong>I</strong>nterface segregation principle</a
+            >
+          </td>
+          <td style="text-align: left">
+            Many client-specific interfaces are better than one general-purpose
+            interface.
+          </td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">
+            <a
+              href="https://en.wikipedia.org/wiki/Dependency_inversion_principle"
+              ><strong>D</strong>ependency inversion principle</a
+            >
+          </td>
+          <td style="text-align: left">
+            Depend upon Abstractions but not on concretions. This means that
+            each module should be separated from other using an abstract layer
+            which binds them together. Source code dependency points in the
+            opposite direction compared to the flow of control.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>
+        <a
+          href="https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html"
+          ><em>The Clean Architecture</em></a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.planetgeek.ch/wp-content/uploads/2014/11/Clean-Code-V2.4.pdf"
+          ><em>Clean Code Cheat Sheet</em></a
+        >
+      </li>
+      <li>
+        <a
+          href="http://wiki3.cosc.canterbury.ac.nz/index.php/One_key_abstraction"
+          ><em>One key abstraction</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Aspect-oriented_programming"
+          ><em>Aspect-oriented programming</em></a
+        >
+      </li>
+      <li>
+        <a href="http://12factor.net"><em>The Twelve-Factor App</em></a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Domain-driven_design"
+          ><em>Domain-driven design</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Microservices"
+          ><em>Microservices</em></a
+        >
+        are a style of software architecture that involves delivering systems as
+        a set of very small, granular, independent collaborating services.
+        <ul>
+          <li>
+            Pros of <em>microservices</em> (The services are easy to replace,
+            Services can be implemented using different programming languages,
+            databases, hardware and software environment, depending on what fits
+            best)
+          </li>
+        </ul>
+      </li>
+      <li>
+        <em>Design patterns</em>.
+        <ul>
+          <li>
+            <strong>Creational</strong>:
+            <a href="https://refactoring.guru/design-patterns/builder"
+              ><em>Builder</em></a
+            >,
+            <a href="https://en.wikipedia.org/wiki/Object_pool_pattern"
+              ><em>Object Pool</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/factory-method"
+              ><em>Factory Method</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/singleton"
+              ><em>Singleton</em></a
+            >,
+            <a href="https://en.wikipedia.org/wiki/Multiton_pattern"
+              ><em>Multiton</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/prototype"
+              ><em>Prototype</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/abstract-factory"
+              ><em>Abstract Factory</em></a
+            >
+          </li>
+          <li>
+            <strong>Structural</strong>:
+            <a href="https://refactoring.guru/design-patterns/adapter"
+              ><em>Adapter</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/bridge"
+              ><em>Bridge</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/composite"
+              ><em>Composite</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/decorator"
+              ><em>Decorator</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/facade"
+              ><em>Facade</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/flyweight"
+              ><em>Flyweight</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/proxy"
+              ><em>Proxy</em></a
+            >
+          </li>
+          <li>
+            <strong>Behavioral</strong>:
+            <a
+              href="https://refactoring.guru/design-patterns/chain-of-responsibility"
+              ><em>Chain of Responsibility</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/command"
+              ><em>Command</em></a
+            >,
+            <a href="https://en.wikipedia.org/wiki/Interpreter_pattern"
+              ><em>Interpreter</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/iterator"
+              ><em>Iterator</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/mediator"
+              ><em>Mediator</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/memento"
+              ><em>Memento</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/observer"
+              ><em>Observer</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/state"
+              ><em>State</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/strategy"
+              ><em>Strategy</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/template-method"
+              ><em>Template Method</em></a
+            >,
+            <a href="https://refactoring.guru/design-patterns/visitor"
+              ><em>Visitor</em></a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Enterprise_Integration_Patterns"
+          ><em>Enterprise integration patterns</em></a
+        >, <a href="www.soapatterns.org"><em>SOA patterns</em></a
+        >.
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Multitier_architecture"
+          ><em>3-tier architecture</em></a
+        >
+        (Presentation tier, Application tier, Data tier)
+      </li>
+      <li>
+        <em>3-layer architecture</em> (DAO (Repository), Business (Service)
+        layer, Controller)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+          ><em>REST</em></a
+        >
+        (Representational state transfer),
+        <a href="https://en.wikipedia.org/wiki/Remote_procedure_call"
+          ><em>RPC</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Idempotence"
+          ><em>Idempotent operation</em></a
+        >
+        (The PUT and DELETE methods are referred to as idempotent, meaning that
+        the operation will produce the same result no matter how many times it
+        is repeated)
+      </li>
+      <li>
+        <em>Nullipotent operation</em> (GET method is a safe method (or
+        nullipotent), meaning that calling it produces no side-effects)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Naked_objects"
+          ><em>Naked objects</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Restful_Objects"
+          ><em>Restful objects</em></a
+        >.
+      </li>
+      <li>Why do you need <em>web server</em> (tomcat, jetty)?</li>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)"
+          ><em>Inheritance</em></a
+        >
+        vs
+        <a href="https://en.wikipedia.org/wiki/Object_composition"
+          ><em>Composition</em></a
+        >
+        (Inheritance - is-a relationship, whether clients will want to use the
+        subclass type as a superclass type. Composition - has-a or part-of
+        relationship).
+      </li>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem"
+          ><em>Multiple inheritance (diamond) problem</em></a
+        >
+      </li>
+      <li>
+        Advantages of using <em>modules</em>. (reuse, decoupling, namespace)
+      </li>
+      <li>
+        Drawbacks of not using
+        <a href="https://en.wikipedia.org/wiki/Separation_of_concerns"
+          ><em>separation of concerns</em></a
+        >
+        <ul>
+          <li>Adding new features will take an order of magnitude longer</li>
+          <li>Impossible to optimize</li>
+          <li>Extremely difficult to test</li>
+          <li>
+            Fixing and debugging can be a nightmare (fixing something in one
+            place can lead to something else breaking that seems completely
+            unrelated).
+          </li>
+        </ul>
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Uniform_access_principle"
+          ><em>uniform access principle</em></a
+        >? (client code should not be affected by a decision to implement an
+        attribute as a field or method)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway’s law</a>
+        (organizations which design systems … are constrained to produce designs
+        which are copies of the communication structures of these organizations)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)"
+          >GRASP</a
+        >
+      </li>
+    </ul>
+    <h4 id="concurrency">
+      <a href="#toc">[⬆]</a> <a name="concurrency">Concurrency:</a>
+    </h4>
+    <ul>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Deadlock"><em>deadlock</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Deadlock#Livelock"
+          ><em>livelock</em></a
+        >? (Deadlock is a situation in which two or more competing actions are
+        each waiting for the other to finish, and thus neither ever does. A
+        livelock is similar to a deadlock, except that the states of the
+        processes involved in the livelock constantly change with regard to one
+        another, none progressing.)
+      </li>
+      <li>
+        <a href="https://www.geeksforgeeks.org/deadlock-prevention"
+          ><em>Deadlock avoidance</em></a
+        >. (prevention, detection, avoidance (Mutex hierarchy), and recovery)
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Starvation_(computer_science)"
+          ><em>starvation</em></a
+        >? (a problem encountered in concurrent computing where a process is
+        perpetually denied necessary resources to process its work)
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Race_condition"
+          ><em>race condition</em></a
+        >? (Behavior of software system where the output is dependent on the
+        sequence or timing of other uncontrollable events)
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Happened-before"
+          ><em>happens-before</em></a
+        >
+        relation?
+      </li>
+      <li>
+        What is
+        <a
+          href="https://stackoverflow.com/questions/1970345/what-is-thread-contention"
+          ><em>thread contention</em></a
+        >? (Contention is simply when two threads try to access either the same
+        resource or related resources in such a way that at least one of the
+        contending threads runs more slowly than it would if the other thread(s)
+        were not running). Contention occurs when multiple threads try to
+        acquire a lock at the same time
+      </li>
+      <li>
+        What is a
+        <a href="https://en.wikipedia.org/wiki/Thread_safety"
+          ><em>thread-safe</em></a
+        >
+        function? (Can be safely invoked by multiple threads at the same time)
+      </li>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern"
+          ><em>Publish/Subscribe</em></a
+        >
+        pattern
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Two-phase_locking"
+          ><em>2-phase locking</em></a
+        >? (Growing phase, shrinking phase. Guarantees serializablity for
+        transactions, doesn’t prevent deadlock).
+      </li>
+      <li>
+        What is the difference between <em>thread</em> and <em>process</em>?
+        (Threads (of the same process) run in a shared memory space, while
+        processes run in separate memory spaces)
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/False_sharing"
+          ><em>false sharing</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Cache_pollution"
+          ><em>cache pollution</em></a
+        >, <em>cache miss</em>,
+        <a href="https://en.wikipedia.org/wiki/Processor_affinity"
+          ><em>thread affinity</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/ABA_problem"
+          ><em>ABA-problem</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Speculative_execution"
+          ><em>speculative execution</em></a
+        >?
+      </li>
+      <li>
+        <p>What is a</p>
+        <ul>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Non-blocking_algorithm#Obstruction-freedom"
+              ><em>obstruction-free</em></a
+            >
+            - if all other threads are paused, then any given thread will
+            complete its operation in a bounded number of steps
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Non-blocking_algorithm#Lock-freedom"
+              ><em>lock-free</em></a
+            >
+            - if multiple threads are operating on a data structure, then after
+            a bounded number of steps one of them will complete its operation
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Non-blocking_algorithm#Wait-freedom"
+              ><em>wait-free</em></a
+            >
+            - every thread operating on a data structure will complete its
+            operation in a bounded number of steps, even if other threads are
+            also operating on the data structure
+          </li>
+        </ul>
+        <p>algorithm?</p>
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Sequential_consistency"
+          ><em>sequential consistency</em></a
+        >? (The result of any execution is the same as if the operations of all
+        the processors were executed in some sequential order, and the
+        operations of each individual processor appear in this sequence in the
+        order specified by its program).
+      </li>
+      <li>
+        What is a
+        <a href="https://en.wikipedia.org/wiki/Memory_barrier"
+          ><em>memory barrier</em></a
+        >? (A memory barrier, also known as a membar, memory fence or fence
+        instruction, is a type of barrier instruction that causes a CPU or
+        compiler to enforce an ordering constraint on memory operations issued
+        before and after the barrier instruction)
+      </li>
+      <li>
+        Synchonization aids in Java
+        <ul>
+          <li>CountDownLatch</li>
+          <li>CyclicBarrier</li>
+          <li>Phaser</li>
+          <li>ReentrantLock</li>
+          <li>Exchanger</li>
+          <li>Semaphore</li>
+          <li>LinkedTransferQueue</li>
+        </ul>
+      </li>
+      <li>
+        What is <em>data race</em>? (When a program contains two conflicting
+        accesses that are not ordered by a
+        <a
+          href="https://docs.oracle.com/javase/specs/jls/se12/html/jls-17.html#jls-17.4.5"
+          >happens-before</a
+        >
+        relationship, it is said to contain a data race. Two accesses to (reads
+        of or writes to) the same variable are said to be conflicting if at
+        least one of the accesses is a write. But see
+        <a
+          href="https://stackoverflow.com/questions/16615140/is-volatile-read-happens-before-volatile-write/16615355#16615355"
+          >this</a
+        >)
+      </li>
+      <li>
+        Java
+        <a
+          href="https://docs.oracle.com/javase/specs/jls/se12/html/jls-17.html#jls-17.4"
+          ><em>memory model</em></a
+        >
+        <ul>
+          <li>
+            A program is correctly synchronized if and only if all sequentially
+            consistent executions are free of data races
+          </li>
+          <li>
+            Correctly synchronized programs have sequentially consistent
+            semantics. If a program is correctly synchronized, then all
+            executions of the program will appear to be sequentially consistent
+          </li>
+          <li>
+            Causality requirement for incorrectly synchronized programs:
+            <a
+              href="https://pdfs.semanticscholar.org/c132/11697f5c803221533a07bd6db839fa60b7b8.pdf"
+              >link</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        What is <em>monitor</em> in Java? (Each object in Java is associated
+        with a monitor, which a thread can lock or unlock)
+      </li>
+      <li>What is <em>safe publication</em>?</li>
+      <li>What is <em>wait</em>/<em>notify</em>?</li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law"
+          ><em>Amdahl’s law</em></a
+        >? (Speedup = 1 / (1 - p + p / n))
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Dining_philosophers_problem"
+          ><em>Dining philosophers problem</em></a
+        >
+        (Resource hierarchy (first take lower-indexed fork), arbitrator,
+        communication (dirty/clean forks)).
+      </li>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem"
+          ><em>Produces/consumer</em></a
+        >
+        problem.
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem"
+          ><em>Readers/writers</em></a
+        >
+        problem.
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Software_transactional_memory"
+          ><em>Transactional memory</em></a
+        >
+      </li>
+      <li>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Coroutine"
+            ><em>Coroutine</em></a
+          >
+        </p>
+      </li>
+    </ul>
+    <h4 id="java"><a href="#toc">[⬆]</a> <a name="java">Java:</a></h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Phantom_reference"
+          ><em>PhantomReference</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Weak_reference"
+          ><em>WeakReference</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Soft_reference"
+          ><em>SoftReference</em></a
+        >, <em>finalize()</em>, <em>ReferenceQueue</em>.
+      </li>
+      <li>How to correctly stop a thread? (Thread.interrupt())</li>
+      <li>
+        What is <em>Spring</em>? (Spring Framework is an application container
+        for Java that supplies many useful features, such as Inversion of
+        Control, Dependency Injection, abstract data access, transaction
+        management, and more)
+        <ul>
+          <li>
+            Spring is a framework for dependency injection: a design pattern
+            that allows the developer to build very decoupled systems by
+            injecting dependencies into classes.
+          </li>
+          <li>
+            It elegantly wraps Java libraries and makes then much easier to use
+            in your application.
+          </li>
+          <li>
+            Included in the framework are implementations of commonly used
+            patterns such as REST and MVC web framework which are predominately
+            use by in web applications.
+          </li>
+        </ul>
+      </li>
+      <li>What is <em>Spring-Boot</em>?</li>
+      <li>What is <em>Hibernate</em> and JPA (Caches, lazy-loading)?</li>
+      <li>
+        <em>Garbage collection</em>. (G1, Young/Old generation collectors
+        combination examples: PS Scavenge/PS MarkSweep, Copy/MarkSweepCompact)
+      </li>
+      <li>
+        How to write <em>benchmarks</em>? (<a
+          href="http://openjdk.java.net/projects/code-tools/jmh/"
+          >jmh</a
+        >)
+      </li>
+      <li>What are Java 9 modularity?</li>
+      <li>
+        What is OSGI? (Specification describes a modular system and a service
+        platform for the Java programming language that implements a complete
+        and dynamic component model. Each bundle has its own classpath.
+        Dependency hell avoidance. META-INF/MANIFEST.MF contains OSGI-info)
+      </li>
+      <li>Serializable / Externalizable</li>
+      <li>
+        What is a <em>servlet</em> (versions of servlet api, Servlet 4.0)?
+      </li>
+      <li>
+        What is a <em>servlet filter</em>? How to implement <em>GZipFilter</em>?
+        (ResponseWrapper)
+      </li>
+      <li>
+        What is <em>generics</em> and PECS (producer extends and consumer
+        super)?
+      </li>
+      <li>
+        What is the difference between &lt;?&gt;, &lt;Object&gt;, &lt;? extends
+        Object&gt; and no generic type?
+        <a
+          href="http://stackoverflow.com/questions/8055389/whats-the-difference-between-and-extends-object-in-java-generics"
+          >link1</a
+        >
+        <a
+          href="http://stackoverflow.com/questions/678822/what-is-the-difference-between-and-object-in-java-generics"
+          >link2</a
+        >
+      </li>
+      <li>
+        Explain method signature for
+        <a
+          href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#max-java.util.Collection-"
+          >Collections.max(…)</a
+        >,
+        <a
+          href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#fill-java.util.List-T-"
+          >Collections.fill(…)</a
+        >,
+        <a
+          href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#copy-java.util.List-java.util.List-"
+          >Collections.copy(…)</a
+        >,
+        <a
+          href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-java.util.Comparator-"
+          >Collections.sort(…)</a
+        >
+      </li>
+      <li>
+        Why are arrays covariant but generics are invariant?
+        <a
+          href="http://stackoverflow.com/questions/18666710/why-are-arrays-covariant-but-generics-are-invariant"
+          >link</a
+        >
+      </li>
+      <li>
+        Major specs: JAX-RS, JAX-WS, JMS, JAXB, XSLT, XPATH, JNDI, JMX, JDBC,
+        XML(SAX, DOM, StAX)
+      </li>
+      <li>
+        <a
+          href="https://dzone.com/articles/how-to-solve-your-java-performance-problems-part-2"
+          ><em>Performance Diagnostic Methodology</em></a
+        >
+      </li>
+    </ul>
+    <h4 id="general-questions">
+      <a href="#toc">[⬆]</a> <a name="general">General Questions:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Polymorphism_(computer_science)"
+          ><em>Polymorphism</em></a
+        >
+        (Variable of type Shape could refer to an object of type Square, Circle…
+        Ability of a function to handle objects of many types)
+      </li>
+      <li>
+        <a
+          href="https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)"
+          ><em>Encapsulation</em></a
+        >
+        (Packing of data and functions into a single component)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Virtual_function"
+          ><em>Virtual function</em></a
+        >
+        (Overridable function)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Virtual_method_table"
+          ><em>Virtual method table</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Late_binding"
+          ><em>Dynamic binding</em></a
+        >
+        (Actual method implementation invoked is determined at run time based on
+        the class of the object, not the type of the variable or expression)
+      </li>
+      <li>
+        How does
+        <a
+          href="https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)"
+          ><em>garbage collector</em></a
+        >
+        work? (Mark and sweep: mark: traverse object graph starting from root
+        objects, sweep: garbage collect unmarked objects. Optimizations:
+        young/old generations, incremental mark and sweep)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Tail_call"
+          ><em>Tail recursion</em></a
+        >
+        (A tail call is a subroutine call performed as the final action of a
+        procedure)
+      </li>
+      <li>
+        <a href="http://semver.org"><em>Semantic versioning</em></a>
+      </li>
+    </ul>
+    <h4 id="web"><a href="#toc">[⬆]</a> <a name="web">WEB:</a></h4>
+    <ul>
+      <li>
+        WEB security vulnerabilities (<a
+          href="https://en.wikipedia.org/wiki/Cross-site_scripting"
+          ><em>XSS</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery"
+          ><em>CSRF</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Session_fixation"
+          ><em>session fixation</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/SQL_injection"
+          ><em>SQL injection</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack"
+          ><em>man-in-the-middle</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Buffer_overflow"
+          ><em>buffer overflow</em></a
+        >)
+      </li>
+      <li><em>CSRF prevention</em> (CSRF-token)</li>
+      <li>
+        What is <a href="https://en.wikipedia.org/wiki/JSONP"><em>JSONP</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing"
+          ><em>CORS</em></a
+        >? (A communication technique used in JavaScript programs running in web
+        browsers to request data from a server in a different domain, something
+        prohibited by typical web browsers because of the same-origin policy)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/HTTPS"><em>HTTPS</em></a>
+        negotiation steps.
+      </li>
+      <li>
+        What is HTTP Strict Transport Security (<a
+          href="https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security"
+          ><em>HSTS</em></a
+        >)? (Prevents Man in the Middle attacks)
+      </li>
+      <li>
+        Browser-server communication methods: WebSocket, EventSource,
+        Comet(Polling, Long-Polling, Streaming)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Character_encoding"
+          ><em>Character encoding</em></a
+        >
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Role-based_access_control"
+          ><em>role-based access control</em></a
+        >
+        and
+        <a href="https://en.wikipedia.org/wiki/Access_control_list"
+          ><em>access control list</em></a
+        >?
+      </li>
+      <li>
+        What is session and persistent cookies, sessionStorage and
+        <a
+          href="https://en.wikipedia.org/wiki/Web_storage#Local_and_session_storage"
+          >localStorage</a
+        >?
+      </li>
+      <li>
+        How to implement <em>remember-me</em>?
+        (http://jaspan.com/improved_persistent_login_cookie_best_practice)
+      </li>
+      <li>
+        Authentication using cookies,
+        <a href="https://en.wikipedia.org/wiki/JSON_Web_Token"><em>JWT</em></a>
+        (JSON Web Tokens).
+      </li>
+    </ul>
+    <h4 id="sql"><a href="#toc">[⬆]</a> <a name="sql">SQL:</a></h4>
+    <ul>
+      <li>
+        <em>SQL join types</em> (inner join, left/right outer join, full outer
+        join, cross join)
+        <img
+          src="https://habrastorage.org/files/7ff/b2c/3a2/7ffb2c3a25b74dcf9eec013282b9cfb4.png"
+          title="Join types"
+          alt="Join types"
+        />)
+      </li>
+      <li>
+        <em>SQL normal forms</em>
+        <ol type="1">
+          <li>
+            The domain of each attribute contains only atomic values, and the
+            value of each attribute contains only a single value from that
+            domain
+          </li>
+          <li>
+            No non-prime attribute in the table is functionally dependent on a
+            proper subset of any candidate key
+          </li>
+          <li>
+            Every non-prime attribute is non-transitively dependent on every
+            candidate key in the table. BCNF.Every non-trivial functional
+            dependency in the table is a dependency on a superkey.)
+          </li>
+        </ol>
+      </li>
+      <li><em>Isolation levels</em> and Anomalies</li>
+    </ul>
+    <table>
+      <colgroup>
+        <col style="width: 18%" />
+        <col style="width: 26%" />
+        <col style="width: 8%" />
+        <col style="width: 31%" />
+        <col style="width: 7%" />
+        <col style="width: 8%" />
+      </colgroup>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left">Isolation_level</th>
+          <th style="text-align: center">Lost_update (because of rollback)</th>
+          <th style="text-align: center">Dirty_read</th>
+          <th style="text-align: center">
+            Non_repeatable_reads second_lost_update
+          </th>
+          <th style="text-align: center">Phantoms</th>
+          <th style="text-align: center">Write_skew</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td style="text-align: left">Read Uncommitted</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">may occur</td>
+          <td style="text-align: center">may occur</td>
+          <td style="text-align: center">may occur</td>
+          <td style="text-align: center">may occur</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Read Committed</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">may occur</td>
+          <td style="text-align: center">may occur</td>
+          <td style="text-align: center">may occur</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Repeatable Read</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">may occur</td>
+          <td style="text-align: center">may occur</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Snapshot</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">may occur</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Serializable</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+          <td style="text-align: center">-</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 id="nosql"><a href="#toc">[⬆]</a> <a name="nosql">NoSQL:</a></h4>
+    <ul>
+      <li>
+        Types of NoSQL databases?
+        <ul>
+          <li>Document Stores (MongoDB, Couchbase)</li>
+          <li>Key-Value Stores (Redis, Volgemort)</li>
+          <li>Column Stores (Cassandra)</li>
+          <li>Graph Stores (Neo4j, Giraph)</li>
+        </ul>
+      </li>
+    </ul>
+    <h4 id="transactions">
+      <a href="#toc">[⬆]</a> <a name="transactions">Transactions:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/ACID"><em>ACID</em></a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Two-phase_commit_protocol"
+          ><em>2-phase commit protocol</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Three-phase_commit_protocol"
+          ><em>3-phase commit protocol</em></a
+        >
+      </li>
+      <li>
+        What is <em>pessimistic</em> /
+        <a href="https://en.wikipedia.org/wiki/Optimistic_concurrency_control"
+          ><em>optimistic</em></a
+        >
+        locking?
+      </li>
+    </ul>
+    <h4 id="scalability">
+      <a href="#toc">[⬆]</a> <a name="scalability">Scalability:</a>
+    </h4>
+    <ul>
+      <li>Horizontal and vertical scaling.</li>
+      <li>
+        How to scale database? (Data partitioning,
+        sharding(vertical/horizontal), replication(master-slave,
+        master-master)).
+      </li>
+      <li><em>Denormalization</em>.</li>
+      <li>
+        What is <em>synchronous multimaster replication</em>? (Each server can
+        accept write requests, and modified data is transmitted from the
+        original server to every other server before each transaction commits)
+      </li>
+      <li>
+        What is <em>asynchronous multimaster replication</em>? (Each server
+        works independently, and periodically communicates with the other
+        servers to identify conflicting transactions. The conflicts can be
+        resolved by users or conflict resolution rules)
+      </li>
+      <li>When to use messaging queue?</li>
+      <li>MongoDB, Redis.</li>
+      <li>Hadoop basics.</li>
+    </ul>
+    <h4 id="load-balancing">
+      <a href="#toc">[⬆]</a> <a name="load-balancing">Load balancing:</a>
+    </h4>
+    <ul>
+      <li>sticky/non-sticky sessions</li>
+      <li><em>Sticky sessions</em> vs storing sessions in Redis.</li>
+    </ul>
+    <h4 id="cloud-computing">
+      <a href="#toc">[⬆]</a> <a name="cloud-computing">Cloud computing:</a>
+    </h4>
+    <ul>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Cloud_computing"
+          ><em>cloud computing</em></a
+        >? (Cloud computing platform is a fully automated server platform that
+        allows users to purchase, remotely create, dynamically scale, and
+        administer system)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services"
+          ><em>Amazon web services</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Google_Cloud_Platform"
+          ><em>Google Cloud Platform</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Microsoft_Azure"
+          ><em>Microsoft Azure</em></a
+        >
+      </li>
+    </ul>
+    <h4 id="distributed">
+      <a href="#toc">[⬆]</a> <a name="distributed">Distributed:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Consensus_(computer_science)"
+          ><em>Consensus</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Raft_(computer_science)"
+          ><em>Raft</em></a
+        >
+        (<a href="https://raft.github.io/raft.pdf"
+          >In Search of an Understandable Consensus Algorithm</a
+        >)
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Paxos_(computer_science)"
+          ><em>Paxos</em></a
+        >
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/CAP_theorem"
+          ><em>CAP theorem</em></a
+        >?
+        <a
+          href="https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/"
+          >Illustrated proof</a
+        >. <a href="http://www.the-paper-trail.org/page/cap-faq">CAP-FAQ</a> (It
+        is impossible for a distributed computer system to simultaneously
+        provide all three of the following guarantees: <em>consistency</em>,
+        <em>availability</em>, <em>partition tolerance</em>).
+        <a href="https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf"
+          >Gilbert and Lynch’s paper</a
+        >.
+        <a
+          href="https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html"
+          >“Please stop calling databases CP or AP”</a
+        >).
+        <img
+          src="http://guide.couchdb.org/draft/consistency/01.png"
+          title="CAP theorem"
+          alt="CAP theorem"
+        />
+      </li>
+      <li>What is <em>map-reduce</em>? (Word count example)</li>
+      <li><em>Sharding counters</em>.</li>
+      <li>
+        Distributed software:
+        <ul>
+          <li>Distributed streaming platforms: <strong>kafka</strong></li>
+          <li>
+            Distributed key-value store: <strong>zookeeper</strong>,
+            <strong>etcd</strong>, <strong>Consul</strong>
+          </li>
+          <li>Map-reduce: <strong>hadoop</strong>, <strong>spark</strong></li>
+          <li>Distributed file system: <strong>hbase</strong></li>
+          <li>
+            Cluster management: <strong>kubernetes</strong>,
+            <strong>docker-swarm</strong>, <strong>mesos</strong>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Read-modify-write"
+          >Herlihy’s consensus hierarchy</a
+        >. Every shared object can be assigned a consensus number, which is the
+        maximum number of processes for which the object can solve wait-free
+        consensus in an asynchronous system.
+      </li>
+    </ul>
+    <pre><code>1 Read-write registers
+2 Test-and-set, swap, fetch-and-add, queue, stack
+⋮ ⋮
+∞ Augmented queue, compare-and-swap, sticky byte</code></pre>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Consistency_model"
+          ><em>Consistency models</em></a
+        >:
+        <ul>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Sequential_consistency"
+              ><em>Sequential consistency</em></a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Causal_consistency"
+              ><em>Causal consistency</em></a
+            >
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Eventual_consistency"
+              ><em>Eventual consistency</em></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Consistency_model#Monotonic_Read_Consistency"
+              ><em>Monotonic Read Consistency</em></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Consistency_model#Monotonic_Write_Consistency"
+              ><em>Monotonic Write Consistency</em></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Consistency_model#Read-your-writes_Consistency"
+              ><em>Read-your-writes Consistency</em></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Consistency_model#Writes-follows-reads_Consistency"
+              ><em>Writes-follows-reads Consistency</em></a
+            >
+          </li>
+        </ul>
+      </li>
+      <li>
+        <em>Consensus number</em>. Maximum number of threads for which objects
+        of the class can solve consensus problem.
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Logical_clock"
+          ><em>Logical clock</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Vector_clock"
+          ><em>Vector clock</em></a
+        >
+      </li>
+    </ul>
+    <h4 id="cache"><a href="#toc">[⬆]</a> <a name="cache">Cache:</a></h4>
+    <ul>
+      <li>
+        What is <em>write-through</em> and <em>write-behind</em> caching?
+        (write-through (synchronous), write-behind (asynchronous))
+      </li>
+      <li>HTTP cache options?</li>
+    </ul>
+    <h4 id="networking">
+      <a href="#toc">[⬆]</a> <a name="networking">Networking:</a>
+    </h4>
+    <ul>
+      <li>
+        OSI model (Physical, Data link, Network, Transport, Session,
+        Presentation, Application)
+      </li>
+      <li>Multithreading vs select</li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Network_switch"
+          ><em>Switch</em></a
+        >, <a href="https://en.wikipedia.org/wiki/Ethernet_hub"><em>hub</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Router_(computing)"
+          ><em>router</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/TCP_congestion_control"
+          ><em>TCP congestion</em></a
+        >
+      </li>
+      <li><em>TCP back-pressure</em></li>
+    </ul>
+    <h4 id="operating-system">
+      <a href="#toc">[⬆]</a> <a name="os">Operating system:</a>
+    </h4>
+    <ul>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Memory-mapped_file"
+          ><em>memory mapped</em></a
+        >
+        file and its benefits?
+      </li>
+      <li>
+        <em>Interprocess communication</em> methods. (Pipes, Events,
+        Mailboxes/Ports (can be implemented by using shared memory and
+        semaphores), Direct Message Passing).
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Virtual_memory"
+          ><em>Virtual memory</em></a
+        >
+        organization.
+      </li>
+      <li><em>Process scheduler</em>.</li>
+    </ul>
+    <h4 id="compilers">
+      <a href="#toc">[⬆]</a> <a name="compilers">Compilers:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Recursive_descent_parser"
+          ><em>Recursive descent parser</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/LL_parser"><em>LL parser</em></a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/LR_parser"><em>LR parser</em></a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Context-free_grammar"
+          ><em>Context-free grammar</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Chomsky_hierarchy"
+          ><em>Chomsky hierarchy</em></a
+        >
+      </li>
+    </ul>
+    <h4 id="c"><a href="#toc">[⬆]</a> <a name="cpp">C++:</a></h4>
+    <ul>
+      <li>
+        <a href="http://eel.is/c++draft/"><em>C++ standard</em></a>
+      </li>
+      <li>
+        <a href="https://en.cppreference.com/w/cpp/language/memory_model"
+          ><em>Memory model</em></a
+        >
+      </li>
+      <li>
+        <p>
+          <em>Data race</em>. When an evaluation of an expression writes to a
+          memory location and another evaluation reads or modifies the same
+          memory location, the expressions are said to conflict. A program that
+          has two conflicting evaluations has a data race unless
+        </p>
+        <ul>
+          <li>
+            both evaluations execute on the same thread or in the same signal
+            handler, or
+          </li>
+          <li>
+            both conflicting evaluations are atomic operations (see
+            std::atomic), or
+          </li>
+          <li>
+            one of the conflicting evaluations happens-before another (see
+            std::memory_order)
+          </li>
+        </ul>
+        <p>If a data race occurs, the behavior of the program is undefined.</p>
+      </li>
+      <li>
+        <a href="https://en.cppreference.com/w/cpp/language/sfinae"
+          ><em>SFINAE</em></a
+        >
+        <a href="https://cpppatterns.com/patterns/function-template-sfinae.html"
+          >1</a
+        >
+      </li>
+      <li>
+        <p>[<em>PImpl</em>] https://en.cppreference.com/w/cpp/language/pimpl</p>
+      </li>
+    </ul>
+    <h4 id="javascript">
+      <a href="#toc">[⬆]</a> <a name="javascript">Javascript:</a>
+    </h4>
+    <ul>
+      <li>this keyword</li>
+      <li>How <em>prototypes</em> work?</li>
+      <li>inheritance</li>
+      <li>
+        differences between == and ===
+        (http://dorey.github.io/JavaScript-Equality-Table/)
+      </li>
+      <li>closures</li>
+      <li>recursion</li>
+      <li>What is <em>MVC</em>, <em>MVP</em>, <em>MVVM</em>?</li>
+      <li>What is <em>promise</em>?</li>
+      <li>
+        What is event <em>bubbling</em> and <em>capturing</em>?
+        (target.addEventListener(type, listener[, useCapture]))
+      </li>
+      <li>
+        What is <em>AMD</em>(Asynchronous Module Design) and <em>CommonJS</em>?
+      </li>
+      <li>What is <em>jQuery</em>?</li>
+    </ul>
+    <h4 id="python"><a href="#toc">[⬆]</a> <a name="python">Python:</a></h4>
+    <ul>
+      <li>
+        <a
+          href="https://stackoverflow.com/questions/509211/understanding-slice-notation/509295#509295"
+          >Slice notation</a
+        >
+      </li>
+    </ul>
+    <h4 id="go"><a href="#toc">[⬆]</a> <a name="go">Go:</a></h4>
+    <ul>
+      <li><a href="https://golang.org/ref/spec">Language Specification</a></li>
+      <li><a href="https://golang.org/ref/mem">Memory Model</a></li>
+    </ul>
+    <h4 id="codewriting">
+      <a href="#toc">[⬆]</a> <a name="codewriting">Codewriting:</a>
+    </h4>
+    <ul>
+      <li>Implement binary search</li>
+    </ul>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode java"
+      ><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">int</span> <span class="fu">binarySearch</span>(<span class="dt">int</span>[] a, <span class="dt">int</span> fromInclusive, <span class="dt">int</span> toExclusive, <span class="dt">int</span> key) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="dt">int</span> low = fromInclusive;</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="dt">int</span> high = toExclusive - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="kw">while</span> (low &lt;= high) {</a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="dt">int</span> mid = (low + high) &gt;&gt;&gt; <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="dt">int</span> midVal = a[mid];</a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="kw">if</span> (midVal &lt; key)</a>
+<a class="sourceLine" id="cb2-8" title="8">            low = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-9" title="9">        <span class="kw">else</span> <span class="kw">if</span> (midVal &gt; key)</a>
+<a class="sourceLine" id="cb2-10" title="10">            high = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-11" title="11">        <span class="kw">else</span></a>
+<a class="sourceLine" id="cb2-12" title="12">            <span class="kw">return</span> mid; <span class="co">// key found</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    }</a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="kw">return</span> -(low + <span class="dv">1</span>); <span class="co">// key not found</span></a>
+<a class="sourceLine" id="cb2-15" title="15">}</a></code></pre>
+    </div>
+    <ul>
+      <li>Implement quick sort</li>
+    </ul>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode java"
+      ><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">void</span> <span class="fu">qSort</span>(<span class="dt">int</span>[] a, <span class="dt">int</span> fromInclusive, <span class="dt">int</span> toInclusive) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="dt">int</span> i = fromInclusive;</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">int</span> j = toInclusive;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="kw">if</span> (i &gt;= j) <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="dt">int</span> separator = a[i + random.<span class="fu">nextInt</span>(j - i + <span class="dv">1</span>)];</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="kw">do</span> {</a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="kw">while</span> (a[i] &lt; separator) ++i;</a>
+<a class="sourceLine" id="cb3-8" title="8">        <span class="kw">while</span> (a[j] &gt; separator) --j;</a>
+<a class="sourceLine" id="cb3-9" title="9">        <span class="kw">if</span> (i &gt; j) <span class="kw">break</span>;</a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="dt">int</span> t = a[i];</a>
+<a class="sourceLine" id="cb3-11" title="11">        a[i] = a[j];</a>
+<a class="sourceLine" id="cb3-12" title="12">        a[j] = t;</a>
+<a class="sourceLine" id="cb3-13" title="13">        ++i;</a>
+<a class="sourceLine" id="cb3-14" title="14">        --j;</a>
+<a class="sourceLine" id="cb3-15" title="15">    } <span class="kw">while</span> (i &lt;= j);</a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="fu">qSort</span>(a, fromInclusive, j);</a>
+<a class="sourceLine" id="cb3-17" title="17">    <span class="fu">qSort</span>(a, i, toInclusive);</a>
+<a class="sourceLine" id="cb3-18" title="18">}</a></code></pre>
+    </div>
+    <h4 id="functional-programming">
+      <a href="#toc">[⬆]</a>
+      <a name="functional-programming">Functional programming:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Referential_transparency"
+          ><em>Referential transparency</em></a
+        >
+      </li>
+      <li>
+        What is
+        <a href="https://en.wikipedia.org/wiki/Monad_(functional_programming)"
+          ><em>Monad</em></a
+        >?
+      </li>
+    </ul>
+    <h4 id="reactive-programming">
+      <a href="#toc">[⬆]</a>
+      <a name="reactive-programming">Reactive programming:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="http://www.reactivemanifesto.org"
+          ><em>The Reactive Manifesto</em></a
+        >
+        (responsive, resilient, elastic, message driven)
+      </li>
+      <li><a href="http://reactivex.io">Reactive extensions</a></li>
+      <li>
+        What is <em>asynchronous</em> and <em>non-blocking</em>?
+        <a
+          href="https://www.linkedin.com/pulse/java-servlets-asynchronous-non-blocking-aliaksandr-liakh"
+          >link</a
+        >
+      </li>
+    </ul>
+    <h4 id="git"><a href="#toc">[⬆]</a> <a name="git">Git:</a></h4>
+    <ul>
+      <li>
+        <em>Git</em> workflow? (Master: production-ready state; Develop: latest
+        delivered development changes for the next release; Feature Branches;
+        Release Branches; Hotfixes)
+        <img
+          src="http://nvie.com/img/git-model@2x.png"
+          title="Git workflow"
+          alt="Git workflow"
+        />
+        http://nvie.com/posts/a-successful-git-branching-model/
+      </li>
+      <li>What is a rebase?</li>
+    </ul>
+    <h4 id="devops"><a href="#toc">[⬆]</a> <a name="devOps">DevOps:</a></h4>
+    <ul>
+      <li>
+        What is <em>Blue-green Deployment</em>, <em>Canary release</em>,
+        <em>A/B testing</em>?
+        <a
+          href="https://www.javacodegeeks.com/2016/02/blue-green-deployment.html"
+          >link</a
+        >
+      </li>
+      <li>What is <em>Docker</em>?</li>
+    </ul>
+    <h4 id="qa"><a href="#toc">[⬆]</a> <a name="qa">QA:</a></h4>
+    <ul>
+      <li>
+        What is <em>unit test</em>? (A test that purely tests a single unit of
+        functionality)
+      </li>
+      <li>What is <em>component test</em>?</li>
+      <li>
+        What is <em>integration test</em>? (Examine several parts of a system to
+        make sure that when integrated, these parts behave as expected)
+      </li>
+      <li>What is <em>user acceptance test</em>? BDD?</li>
+      <li>Unit tests advantages?</li>
+      <li>
+        Types of tests: acceptance testing, functional testing, smoke testing,
+        regression testing, unit testing, integration testing, stress testing,
+        (Load, Performance, Sanity, Stability, Security, Feature, Progression,
+        Installation, Business).
+      </li>
+      <li>
+        Differences between stub and mock? (A stub is a test double with
+        preprogrammed behavior. Mocks are stubs with preprogrammed expectations)
+      </li>
+      <li>Selenium tests and webdriver.</li>
+      <li>How to test multithreading code?</li>
+      <li>
+        What is <em>Consumer Driven Contract</em>?
+        <a
+          href="https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html"
+          >link</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://stackify.com/ultimate-guide-performance-testing-and-software-testing"
+          >Types of tests</a
+        >
+      </li>
+    </ul>
+    <h4 id="agile"><a href="#toc">[⬆]</a> <a name="agile">Agile:</a></h4>
+    <ul>
+      <li>
+        What is Agile? (http://agilemanifesto.org/principles.html)
+        <ul>
+          <li>Individuals and interactions over Processes and tools</li>
+          <li>Working software over Comprehensive documentation</li>
+          <li>Customer collaboration over Contract negotiation</li>
+          <li>Responding to change over Following a plan</li>
+        </ul>
+      </li>
+      <li>
+        What is Scrum? (Roles: product owner, development team, scrum master.
+        Events: sprint)
+      </li>
+      <li>
+        What are the differences between Scrum and Waterfall? (
+        http://www.leanagiletraining.com/agile/waterfall-versus-scrum-how-do-they-compare/)
+      </li>
+      <li>What is XP? ()</li>
+      <li>What is Kanban?</li>
+      <li>What is Lean development?</li>
+    </ul>
+    <h4 id="algorithms">
+      <a href="#toc">[⬆]</a> <a name="algorithms">Algorithms:</a>
+    </h4>
+    <ul>
+      <li>What Ο(n), Ω(n), Θ(n)?</li>
+      <li>What is NP, NP-completeness, NP-hardness with examples?</li>
+    </ul>
+    <h4 id="other"><a href="#toc">[⬆]</a> <a name="other">Other:</a></h4>
+    <ul>
+      <li>How to find memory leak. (Memory snapshot diff).</li>
+      <li>Profiling: sampling and instrumentation.</li>
+      <li>Regular expressions. (Examples)</li>
+      <li>
+        What are your goals to work in our company? (3 categories: professional,
+        financial, social)
+      </li>
+      <li>What is <em>virtualization</em>?</li>
+      <li>What is total/partial order?</li>
+      <li>
+        How to work with legacy code?
+        (http://programmers.stackexchange.com/a/122024)
+      </li>
+    </ul>
+    <h4 id="machine-learning">
+      <a href="#toc">[⬆]</a> <a name="machine-learning">Machine learning:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Bayes%27_theorem"
+          ><em>Bayes’ theorem</em></a
+        >:
+      </li>
+    </ul>
+    <figure>
+      <embed
+        src="http://latex.codecogs.com/svg.latex?\inline&amp;space;\fn_cs&amp;space;P(A%7CB)&amp;space;=&amp;space;\dfrac%7BP(B%7CA)\times&amp;space;P(A)%7D%7BP(B)%7D,P(B)&amp;space;=&amp;space;\sum\limits_%7Bi%7D%7BP(Ai)\times&amp;space;P(B%7CAi)%7D"
+      />
+      <figcaption>equation</figcaption>
+    </figure>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Confidence_interval"
+          ><em>Confidence interval</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/P-value"><em>p-value</em></a>
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Overfitting"
+          ><em>Overfitting</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Bias–variance_tradeoff"
+          ><em>Bias–variance tradeoff</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Backpropagation"
+          ><em>Backpropagation</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Reinforcement_learning"
+          ><em>Reinforcement learning</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Curse_of_dimensionality"
+          ><em>Curse of dimensionality</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Cross-validation_(statistics)"
+          ><em>Cross-validation</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Bag-of-words_model"
+          ><em>Bag-of-words</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Stop_words"
+          ><em>Stop words</em></a
+        >, <a href="https://en.wikipedia.org/wiki/N-gram"><em>n-gram</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf"
+          ><em>tf–idf</em></a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Latent_semantic_analysis"
+          ><em>Latent semantic analysis</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Linear_regression"
+          ><em>Linear regression</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Logistic_regression"
+          ><em>Logistic regression</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier"
+          ><em>Naive Bayes classifier</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Support_vector_machine"
+          ><em>Support vector machine</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Principal_component_analysis"
+          ><em>Principal component analysis</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Deep_learning"
+          ><em>Deep learning</em></a
+        >
+      </li>
+    </ul>
+    <h4 id="big-data">
+      <a href="#toc">[⬆]</a> <a name="big-data">Big Data:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Lambda_architecture"
+          ><em>Lambda architecture</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/HyperLogLog"
+          ><em>HyperLogLog</em></a
+        >
+      </li>
+      <li>
+        <a href="http://microservices.io/patterns/data/event-sourcing.html"
+          ><em>Event sourcing</em></a
+        >
+      </li>
+    </ul>
+    <h4 id="image-processing">
+      <a href="#toc">[⬆]</a> <a name="image-processing">Image processing:</a>
+    </h4>
+    <h4 id="cryptography">
+      <a href="#toc">[⬆]</a> <a name="cryptography">Cryptography:</a>
+    </h4>
+    <ul>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Public-key_cryptography"
+          ><em>Public-key cryptography</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Public_key_certificate"
+          ><em>Public key certificate</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Blockchain"
+          ><em>Blockchain</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Proof-of-work_system"
+          ><em>Proof-of-work system</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/Secret_sharing"
+          ><em>Secret sharing</em></a
+        >
+      </li>
+      <li>
+        <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)"
+          ><em>RSA</em></a
+        >
+      </li>
+    </ul>
+    <pre><code>select 2 primes: p,q
+n = p*q
+phi(n) = (p-1)*(q-1)
+select 1&lt;e&lt;phi(n), gcd(e,phi(n))=1
+d=e^-1 mod phi(n)
+(e,n) - public key
+(d,n) - private key
+c = m^e mod n
+m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m</code></pre>
+    <p>hi</p>
+    <h4 id="security">
+      <a href="#toc">[⬆]</a> <a name="security">Security:</a>
+    </h4>
+    <ul>
+      <li>What is <em>OpenID and OAuth2.0 and OpenID Connect</em>?</li>
+      <li>
+        Four main actors in an OAuth system (clients, resource owners,
+        authorization servers, and protected resources)
+      </li>
+      <li>
+        What is <em>access_token, refresh_token, SAML token, JWT token</em>?
+      </li>
+      <li><em>Sticky session vs Session Replication</em>.</li>
+      <li>
+        What is hash
+        <a href="https://en.wikipedia.org/wiki/Salt_(cryptography)"
+          ><em>salt</em></a
+        >?
+      </li>
+      <li>What is <em>Federated Authentication</em> ?</li>
+      <li>What is <em>CSP</em> and <em>SRI hash</em> ?</li>
+      <li>
+        What is <em>Clickjacking</em> and <em>Cursorjacking</em> ? How to
+        prevent it ?
+      </li>
+    </ul>
+    <h4 id="android"><a href="#toc">[⬆]</a> <a name="android">Android:</a></h4>
+    <h4 id="books"><a href="#toc">[⬆]</a> <a name="books">Books:</a></h4>
+    <h5 id="c-programming">C++ programming</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/C-Programming-Language-4th/dp/0321563840"
+          >The C++ Programming Language, 4th Edition</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996"
+          >Effective Modern C++: 42 Specific Ways to Improve Your Use of C++11
+          and C++14</a
+        >
+      </li>
+    </ul>
+    <h5 id="java-programming">Java programming</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Effective-Java-3rd-Joshua-Bloch/dp/0134685997"
+          >Effective Java (3rd Edition)</a
+        >
+      </li>
+    </ul>
+    <h5 id="algorithms-1">Algorithms</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844"
+          >Introduction to Algorithms, 3rd Edition</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.co.uk/Art-Computer-Programming-Volumes-1-4a/dp/0321751043"
+          >The Art of Computer Programming</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Network-Flows-Theory-Algorithms-Applications/dp/013617549X"
+          >Network Flows: Theory, Algorithms, and Applications</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Computational-Geometry-Applications-Mark-Berg/dp/3540779736"
+          >Computational Geometry: Algorithms and Applications</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Algorithms-Strings-Trees-Sequences-Computational/dp/0521585198"
+          >Algorithms on Strings, Trees, and Sequences</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Compilers-Principles-Techniques-Tools-2nd/dp/0321486811"
+          >Compilers: Principles, Techniques, and Tools</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/How-Solve-Heuristics-Zbigniew-Michalewicz/dp/3540224947"
+          >How to Solve It: Modern Heuristics</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Scheduling-Algorithms-Peter-Brucker/dp/354069515X"
+          >Scheduling Algorithms</a
+        >
+      </li>
+    </ul>
+    <h5 id="concurrent-programming">Concurrent programming</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Java-Concurrency-Practice-Brian-Goetz/dp/0321349601"
+          >Java Concurrency in Practice</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/C-Concurrency-Action-Anthony-Williams/dp/1617294691"
+          >C++ Concurrency in Action, 2nd Edition</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Art-Multiprocessor-Programming-Revised-Reprint/dp/0123973376"
+          >The Art of Multiprocessor Programming</a
+        >
+      </li>
+    </ul>
+    <h5 id="statistics">Statistics</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Introductory-Statistics-10th-Neil-Weiss/dp/0321989171"
+          >Introductory Statistics</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/All-Statistics-Statistical-Inference-Springer/dp/1441923225"
+          >All of Statistics: A Concise Course in Statistical Inference</a
+        >
+      </li>
+    </ul>
+    <h5 id="machine-learning-1">Machine Learning</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Applied-Machine-Learning-David-Forsyth/dp/3030181138"
+          >Applied Machine Learning</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1492032646"
+          >Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow:
+          Concepts, Tools, and Techniques to Build Intelligent Systems 2nd
+          Edition</a
+        >
+      </li>
+      <li>
+        <a href="https://web.stanford.edu/~hastie/Papers/ESLII.pdf"
+          >The Elements of Statistical Learning: Data Mining, Inference, and
+          Prediction</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Machine-Learning-Introduction-Probability-Statistics/dp/1119439191"
+          >Machine Learning: a Concise Introduction</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069"
+          >Learning From Data</a
+        >
+      </li>
+    </ul>
+    <h5 id="digital-signal-processing">Digital Signal Processing</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Digital-Signal-Processing-Practical-Approach/dp/0201596199"
+          >Digital Signal Processing: A Practical Approach, 2nd Edition</a
+        >
+      </li>
+    </ul>
+    <h5 id="digital-image-processing">Digital Image Processing</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Digital-Image-Processing-Rafael-Gonzalez/dp/0133356728"
+          >Digital Image Processing, 4th Edition</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Image-Processing-Handbook-John-Russ/dp/1138747491"
+          >The Image Processing Handbook, 7th Edition</a
+        >
+      </li>
+    </ul>
+    <h5 id="other-1">Other</h5>
+    <ul>
+      <li>
+        <a
+          href="https://www.amazon.com/Reactive-Programming-RxJava-Asynchronous-Applications/dp/1491931655"
+          >Reactive Programming with RxJava</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612"
+          >Design Patterns: Elements of Reusable Object-Oriented Software</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343"
+          >Big Data: Principles and best practices of scalable realtime data
+          systems</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321"
+          >Designing Data-Intensive Applications</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Kafka-Definitive-Real-Time-Stream-Processing/dp/1491936169"
+          >Kafka: The Definitive Guide</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Cassandra-Definitive-Guide-Distributed-Scale/dp/1491933666"
+          >Cassandra: The Definitive Guide</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Linux-Programming-Interface-System-Handbook/dp/1593272200"
+          >The Linux Programming Interface</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Hibernate-Action-Christian-Bauer/dp/193239415X"
+          >Hibernate in Action</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Garbage-Collection-Handbook-Management-Algorithms/dp/1420082795"
+          >The Garbage Collection Handbook</a
+        >
+      </li>
+      <li><a href="https://git-scm.com/book/en/v2">Pro Git</a></li>
+      <li>
+        <a
+          href="https://www.amazon.com/Learning-JavaScript-Essentials-Application-Development/dp/1491914912"
+          >Learning JavaScript</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+          >Clean Code: A Handbook of Agile Software Craftsmanship</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395"
+          >Release It!: Design and Deploy Production-Ready Software</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.amazon.com/G%C3%B6del-Escher-Bach-Eternal-Golden/dp/0465026567"
+          >Gödel, Escher, Bach: An Eternal Golden Braid</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

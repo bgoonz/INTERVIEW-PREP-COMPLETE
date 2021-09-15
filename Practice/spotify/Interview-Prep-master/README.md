@@ -1,16 +1,14 @@
-Before you can even interview, you must first get the opportunity. To prep your resume and get the attention of top
-companies, first check out [this awesome guide](https://github.com/cassidoo/getting-a-gig) by
-[Cassidy Williams](http://www.cassidoo.co/) of [Hackathon Hackers](https://www.facebook.com/groups/hackathonhackers/).
+Before you can even interview, you must first get the opportunity. To prep your resume and get the attention of top companies, first check out [this awesome guide](https://github.com/cassidoo/getting-a-gig) by [Cassidy Williams](http://www.cassidoo.co/) of [Hackathon Hackers](https://www.facebook.com/groups/hackathonhackers/).
 
 ### Things you should know:
 
-- <b>Data Structures</b> - Know how to use them and how to build them from scratch
+- **Data Structures** - Know how to use them and how to build them from scratch
   - Arrays
   - Hash Maps
   - Linked Lists
   - Graphs & Tree variants
   - Stacks & Queues
-- <b>Algorithms</b> - DON'T memorize code. Memorize the concepts.
+- **Algorithms** - DON’T memorize code. Memorize the concepts.
   - Sorts
     - Quick Sort
     - Insertion Sort
@@ -44,7 +42,7 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
 - [Cracking the Coding Interview 6th Edition](http://www.amazon.com/gp/product/0984782850/)
 - [Cracking the PM Interview](http://www.amazon.com/Cracking-PM-Interview-Product-Technology/dp/0984782818/)
 - [Cracking the Tech Career](http://www.amazon.com/Cracking-Tech-Career-Insider-Microsoft/dp/1118968085/)
-- [Elements of Programming Interviews: The Insider's Guide](http://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836/)
+- [Elements of Programming Interviews: The Insider’s Guide](http://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836/)
 
 ### Helpful Cheat Sheets
 
@@ -55,9 +53,9 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
 - [Java Cheat Sheet](http://overapi.com/java/)
 - [Ruby Cheat Sheet](http://overapi.com/ruby/)
 
-### DO YOUR HOMEWORK - Know the company you're interviewing with!
+### DO YOUR HOMEWORK - Know the company you’re interviewing with!
 
-###### Even if you fumble on the technical question, you can gain some redemption with interviewers by asking _very_ insightful questions about the engineering problems they are tackling and prodding about how they are scaling their product. I don't mean "So what language do you guys use?". More like "How did you overcome challenge X when developing service Y?".
+###### Even if you fumble on the technical question, you can gain some redemption with interviewers by asking _very_ insightful questions about the engineering problems they are tackling and prodding about how they are scaling their product. I don’t mean “So what language do you guys use?”. More like “How did you overcome challenge X when developing service Y?”.
 
 - Apple
   - [Apple on CareerCup](http://www.careercup.com/page?pid=apple-interview-questions)
@@ -108,7 +106,7 @@ companies, first check out [this awesome guide](https://github.com/cassidoo/gett
   - [LinkedIn on Glassdoor](http://www.glassdoor.com/Overview/Working-at-LinkedIn-EI_IE34865.11,19.htm)
   - [LinkedIn on StackShare](http://stackshare.io/linkedin/linkedin)
 - Lyft
-  - ["What technology does Lyft use?" on Quora](https://www.quora.com/What-technology-does-Lyft-use)
+  - [“What technology does Lyft use?” on Quora](https://www.quora.com/What-technology-does-Lyft-use)
   - [Lyft blog](http://blog.lyft.com/)
   - [Developer Story: Lyft](http://www.developereconomics.com/developer-story-lyft/)
   - [Lyft on Glassdoor](http://www.glassdoor.com/Overview/Working-at-Lyft-EI_IE700614.11,15.htm)

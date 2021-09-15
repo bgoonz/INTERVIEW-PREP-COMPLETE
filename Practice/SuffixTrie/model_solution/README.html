@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="suffix-trie-walkthrough">Suffix Trie Walkthrough</h1>
+<h2 id="what-even-is-a-suffix-trie">What even is a suffix trie?</h2>
+<p>Tries are a type of tree data structure that are efficient when it comes to storing and searching through strings. They achieve this efficiency by storing either prefixes or suffixes of strings character by character. A suffix trie then is a trie that stores all the suffixes of the strings it contains (a prefix trie would thus be a trie that stored all the prefixes of the strings it contains).</p>
+<p>For example, all the suffixes of the word “cat” would be:</p>
+<ol type="1">
+<li>“t” – the last character in the word</li>
+<li>“at” – the last two characters in the word</li>
+<li>“cat” – the entire word itself; every word is considered a suffix of itself by default</li>
+</ol>
+<p>So a suffix trie that contained the word “cat” would contain all three of the listed suffixes. We could visualize such a trie like so:</p>
+<p>[Image of suffix trie here]</p>
+<h2 id="examining-the-code-thats-already-here">Examining the code that’s already here</h2>
+<p>The provided skeleton class has a root, which is an empty hash table, an ending symbol that we’ll use to mark the end of a string, as well as a <code>populate_trie</code> method that it calls with the input string that is passed to the constructor of the class. The methods that need implementing are the <code>populate_trie</code> method, which will add a given input string to the trie, as well as a <code>contains</code> method, which will return a boolean indicating whether a given input string exists in the trie.</p>
+<h2 id="so-how-do-we-build-this-thing">So how do we build this thing?</h2>
+<p>Let’s start by working on the <code>populate_trie</code> method before we turn our attention to the <code>contains</code> method. One helpful way to think about implementing a method like this is to start with a very simple case, and then work our way up to more general cases, so let’s do that.</p>
+<h3 id="step-1-inserting-a-single-letter">Step 1: Inserting a single letter</h3>
+<p>The problem description prescribes using nested hash tables (objects/dictionaries) in order to represent this trie structure. When walking through how to build this, it helps to start very simple. What does a suffix trie that’s holding a single letter look like? It would look like this:</p>
+<pre><code>{
+    &quot;x&quot;: {&quot;*&quot;: True}
+}</code></pre>
+<p>The keys will be the letters themselves, with their associated value being another hash table that holds all the children nodes of the letter. In this case, a node’s children will be all the letters that come after it in the string. If we just have a solitary letter with no children, this will be denoted by a hash table whose single key-value pair is <code>"*": True</code>.</p>
+<p>For the single letter case, it would suffice to simply do</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> populate_trie(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="co"># in this example, `string` is just a single letter</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="va">self</span>.root[letter] <span class="op">=</span> {<span class="st">&quot;*&quot;</span>: <span class="va">True</span>}</a></code></pre></div>
+<p>where <code>letter</code> is the letter we’re looking to insert. We just need to add a key value pair to the root node whose key is “c” and whose value is <code>{"*": True}</code>.</p>
+<h3 id="step-2-adding-longer-strings">Step 2: Adding longer strings</h3>
+<p>Ok, let’s extend what we currently have so that we can add full-on words, not just single letters. If we want to insert “cat”, what would that look like?</p>
+<p>Let’s start over with an empty trie with nothing in it. Now, to add the word “cat” to the trie, we’ll need to add every letter in the word one character at a time. That might look something like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> populate_trie(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="co"># we&#39;ll keep track of the current node we at in the trie</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="co"># since we&#39;ll be traversing further and further down the</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="co"># trie with every letter we add</span></a>
+<a class="sourceLine" id="cb3-5" title="5">    node <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="cf">for</span> letter <span class="kw">in</span> string:</a>
+<a class="sourceLine" id="cb3-8" title="8">        <span class="co"># add this letter to the current node as a child</span></a>
+<a class="sourceLine" id="cb3-9" title="9">        <span class="co"># by adding the letter as a key with an empty</span></a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="co"># hash table as its value</span></a>
+<a class="sourceLine" id="cb3-11" title="11">        node[letter] <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb3-12" title="12">        <span class="co"># now update the `node` variable since we&#39;re still</span></a>
+<a class="sourceLine" id="cb3-13" title="13">        <span class="co"># traversing down the trie</span></a>
+<a class="sourceLine" id="cb3-14" title="14">        node <span class="op">=</span> node[letter]</a>
+<a class="sourceLine" id="cb3-15" title="15">    <span class="co"># now that we&#39;re done iterating, we have the entire string</span></a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="co"># in the trie; add the end symbol to indicate this string</span></a>
+<a class="sourceLine" id="cb3-17" title="17">    <span class="co"># is complete</span></a>
+<a class="sourceLine" id="cb3-18" title="18">    node[<span class="va">self</span>.end_symbol] <span class="op">=</span> <span class="va">True</span></a></code></pre></div>
+<p>Running this method with the string “cat” will produce the following structure (if you aren’t convinced of this, trace through the code by drawing out its execution using pencil and paper to convince yourself):</p>
+<pre><code>{
+    &quot;c&quot;: {
+        &quot;a&quot;: {
+            &quot;t&quot;: {&quot;*&quot;: True}
+        }
+    }
+}</code></pre>
+<h3 id="step-3-handling-all-suffixes">Step 3: Handling all suffixes</h3>
+<p>That’s good progress! But that’s not everything yet. Remember, our suffix trie should contain <em>every</em> suffix of the word, not just the word by itself.</p>
+<p>Ok, well, that should be pretty simple. We can start off by inserting the whole word like we just did, and then insert the whole word minus the first letter, and then insert the whole word minus the first two letters, etc. We’ll do this until we get to the last letter of the word.</p>
+<p>To do this, we’ll update our <code>populate_trie</code> method like so:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">def</span> populate_trie(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb5-2" title="2">    node <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="co"># we&#39;ll want to keep track of the starting index</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="co"># of the string that we&#39;re going to insert</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    index <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="co"># we&#39;ll keep adding substrings of the input string</span></a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="co"># until we&#39;ve added every single one, that is,</span></a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="co"># until our index has reached the length of the string</span></a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(string):</a>
+<a class="sourceLine" id="cb5-10" title="10">        <span class="co"># iterate through the string starting at `index`</span></a>
+<a class="sourceLine" id="cb5-11" title="11">        <span class="co"># instead of iterating along the whole string</span></a>
+<a class="sourceLine" id="cb5-12" title="12">        <span class="cf">for</span> letter <span class="kw">in</span> string[index:]:</a>
+<a class="sourceLine" id="cb5-13" title="13">            node[letter] <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb5-14" title="14">            node <span class="op">=</span> node[letter]</a>
+<a class="sourceLine" id="cb5-15" title="15">        node[<span class="va">self</span>.end_symbol] <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb5-16" title="16">        <span class="co"># increment the index now that we&#39;ve added this substring</span></a>
+<a class="sourceLine" id="cb5-17" title="17">        index <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
+<p>This updated implementation will now yield the following when we run it with the string “cat”:</p>
+<pre><code>{
+    &quot;c&quot;: {
+        &quot;a&quot;: {
+            &quot;t&quot;: {&quot;*&quot;: True}
+        }
+    },
+    &quot;a&quot;: {
+        &quot;t&quot;: {&quot;*&quot;: True}
+    },
+    &quot;t&quot;: {&quot;*&quot;: True}
+}</code></pre>
+<p>Perfect! That’s exactly what we want our suffix trie to look like when we insert the string “cat”.</p>
+<h3 id="step-4-dealing-with-repeated-letters">Step 4: Dealing with repeated letters</h3>
+<p>What happens when we run this method on a word that has some repeating letters? Let’s say a word like “pogo”. If you go ahead and test this out for yourself, you should see that the resulting trie looks like the following:</p>
+<pre><code>{
+    &quot;p&quot;: {
+          &quot;o&quot;: {
+                &quot;g&quot;: {
+                      &quot;o&quot;: {&quot;*&quot;: True}
+                }
+          }
+    },
+    &quot;o&quot;: {&quot;*&quot;: True}, &lt;--- is this what we&#39;re supposed to get?
+    &quot;g&quot;: {
+          &quot;o&quot;: {&quot;*&quot;: True}
+    }
+}</code></pre>
+<p>Wait, that’s not right.. The root level “o” entry should have a nested “g” and then another “o” nested inside the “g” node, since “ogo” is a suffix of “pogo”.</p>
+<p>So it looks lik we have a problem with our implementation. The problem is that our current implementation isn’t checking for if the letter we’re trying to insert into a node in the trie already exists. So what’s happening here is that we <em>did</em> insert “ogo” at the root level of the trie, and then we continued on, inserting “go”, and finally the last “o”. But, since our code isn’t checking if letters already exist in any given node, the act of inserting the last “o” overwrites the previous “ogo” entry.</p>
+<p>We can remedy this pretty easily by changing our <code>populate_trie</code> to the following:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">def</span> populate_trie(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb8-2" title="2">    node <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb8-3" title="3">    index <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(string):</a>
+<a class="sourceLine" id="cb8-5" title="5">        <span class="cf">for</span> letter <span class="kw">in</span> string[index:]:</a>
+<a class="sourceLine" id="cb8-6" title="6">            <span class="co"># we&#39;ll add a check here to see if the letter already</span></a>
+<a class="sourceLine" id="cb8-7" title="7">            <span class="co"># exists in the current node; if it does, then we</span></a>
+<a class="sourceLine" id="cb8-8" title="8">            <span class="co"># don&#39;t want to overwrite it</span></a>
+<a class="sourceLine" id="cb8-9" title="9">            <span class="cf">if</span> letter <span class="kw">in</span> node:</a>
+<a class="sourceLine" id="cb8-10" title="10">                <span class="co"># only add a new hash table in the case that this</span></a>
+<a class="sourceLine" id="cb8-11" title="11">                <span class="co"># node doesn&#39;t contain the given letter</span></a>
+<a class="sourceLine" id="cb8-12" title="12">                node[letter] <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb8-13" title="13">            node <span class="op">=</span> node[letter]</a>
+<a class="sourceLine" id="cb8-14" title="14">        node[<span class="va">self</span>.end_symbol] <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb8-15" title="15">        index <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
+<p>This change will result in the following:</p>
+<pre><code>{
+    &quot;p&quot;: {
+          &quot;o&quot;: {
+                &quot;g&quot;: {
+                      &quot;o&quot;: {&quot;*&quot;: True}
+                }
+          }
+    },
+    &quot;o&quot;: {  &lt;--- this is what we expected to see
+          &quot;g&quot;: {
+                &quot;o&quot;: {&quot;*&quot;: True}
+          }
+    },
+    &quot;g&quot;: {
+          &quot;o&quot;: {&quot;*&quot;: True}
+    }
+}</code></pre>
+<p>Now our implementation is producing the expected result!</p>
+<h3 id="step-5-implementing-contains">Step 5: Implementing <code>contains</code></h3>
+<p>Phew! That was a lot of work to get <code>populate_trie</code> working! The good news is that we’re more than halfway through at this point. That’s because the <code>contains</code> method looks very similar to the <code>populate_trie</code> method.</p>
+<p>Let’s step back and think about the logic of how we’ll search through the trie for some target string. Since our trie stores individual letters, it makes sense then to traverse our target string, checking along the way if the trie contains the letter in the node we’re currently traversing on.</p>
+<p>Our <code>populate_trie</code> method already performs traversal through the trie, so that’s all logic we can re-use. All that’s left then is to check to see if at each traversal, the letter in the trie matches the letter in the target string in the order that we’re expecting.</p>
+<p>Hashing this idea out into code, we might get something like this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">def</span> contains(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="co"># we&#39;ll also keep track of the current node here so</span></a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="co"># we know where in the trie we are as we&#39;re traversing</span></a>
+<a class="sourceLine" id="cb10-4" title="4">    node <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb10-5" title="5">    <span class="co"># iterate along the input string we&#39;re searching for</span></a>
+<a class="sourceLine" id="cb10-6" title="6">    <span class="co"># in our trie</span></a>
+<a class="sourceLine" id="cb10-7" title="7">    <span class="cf">for</span> letter <span class="kw">in</span> string:</a>
+<a class="sourceLine" id="cb10-8" title="8">        <span class="co"># check if the current letter is not in the current node</span></a>
+<a class="sourceLine" id="cb10-9" title="9">        <span class="cf">if</span> letter <span class="kw">not</span> <span class="kw">in</span> node:</a>
+<a class="sourceLine" id="cb10-10" title="10">             <span class="co"># if it isn&#39;t, then we can stop here, since we know</span></a>
+<a class="sourceLine" id="cb10-11" title="11">             <span class="co"># that the string can&#39;t be in the trie</span></a>
+<a class="sourceLine" id="cb10-12" title="12">             <span class="cf">return</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb10-13" title="13">        <span class="co"># otherwise, continue to traverse down the trie by</span></a>
+<a class="sourceLine" id="cb10-14" title="14">        <span class="co"># setting our `node` variable to be the node containing</span></a>
+<a class="sourceLine" id="cb10-15" title="15">        <span class="co"># the current letter</span></a>
+<a class="sourceLine" id="cb10-16" title="16">        node <span class="op">=</span> node[letter]</a>
+<a class="sourceLine" id="cb10-17" title="17">    <span class="co"># at this point we&#39;ve checked that every letter in the input</span></a>
+<a class="sourceLine" id="cb10-18" title="18">    <span class="co"># string is contained in our trie in the correct order, so</span></a>
+<a class="sourceLine" id="cb10-19" title="19">    <span class="co"># we&#39;ve found the string; let&#39;s finally check to make sure</span></a>
+<a class="sourceLine" id="cb10-20" title="20">    <span class="co"># the word ends with our ending symbol</span></a>
+<a class="sourceLine" id="cb10-21" title="21">    <span class="cf">return</span> <span class="va">self</span>.end_symbol <span class="kw">in</span> node</a></code></pre></div>
+<p>The last line in the above implementation is a bit a formality. After all, if a word in our trie <em>doesn’t</em> end with the ending symbol, well, that was because we forgot to add it ourselves.</p>
+<p>As we can see though, our <code>contains</code> implementation looks a heck of a lot like our <code>populate_trie</code> implementation.</p>
+<h3 id="step-6-cleaning-up-our-code">Step 6: Cleaning up our code</h3>
+<p>There’s a bit we can do here to clean up our implementation to make it more readable and more modular. One thing would be to split off some of the logic of our <code>populate_trie</code> function into a helper method. The helper method will be responsible for inserting a single substring of a given string into our trie, with the substring being delineated by the index of where the substring starts in the original string. So we might end up with something like this:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">def</span> insert_substring_at(<span class="va">self</span>, index, string):</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="co"># we&#39;ll move all of the traversal logic from our</span></a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="co"># `populate_trie` method into this helper</span></a>
+<a class="sourceLine" id="cb11-4" title="4">    node <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb11-5" title="5">    <span class="cf">for</span> letter <span class="kw">in</span> string[index:]:</a>
+<a class="sourceLine" id="cb11-6" title="6">        <span class="cf">if</span> letter <span class="kw">not</span> <span class="kw">in</span> node:</a>
+<a class="sourceLine" id="cb11-7" title="7">            node[letter] <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb11-8" title="8">        node <span class="op">=</span> node[letter]</a>
+<a class="sourceLine" id="cb11-9" title="9">    node[<span class="va">self</span>.end_symbo] <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb11-10" title="10"></a>
+<a class="sourceLine" id="cb11-11" title="11"><span class="kw">def</span> populate_trie(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb11-12" title="12">    <span class="co"># our `populate_trie` method will then just be</span></a>
+<a class="sourceLine" id="cb11-13" title="13">    <span class="co"># responsible for looping through the input string</span></a>
+<a class="sourceLine" id="cb11-14" title="14">    <span class="co"># and passing in the index of each substring as it</span></a>
+<a class="sourceLine" id="cb11-15" title="15">    <span class="co"># does so</span></a>
+<a class="sourceLine" id="cb11-16" title="16">    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="bu">len</span>(string)):</a>
+<a class="sourceLine" id="cb11-17" title="17">        <span class="va">self</span>.insert_substring_at(i, string)</a></code></pre></div>
+<p>This makes our implementation a bit cleaner, since now we have a separate functions, one for handling insertion of individual substrings, and the other responsible for iterating along the string and producing each substring to insert.</p>
+<h3 id="step-7-analyzing-time-and-space-complexity">Step 7: Analyzing time and space complexity</h3>
+<p>To figure out the time complexity goes when it comes to creation, a helpful hint for figuring this out is to look at our <code>populate_trie</code> method before we split off the traversal logic into a helper function.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">def</span> populate_trie(<span class="va">self</span>, string):</a>
+<a class="sourceLine" id="cb12-2" title="2">    node <span class="op">=</span> <span class="va">self</span>.root</a>
+<a class="sourceLine" id="cb12-3" title="3">    index <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb12-4" title="4">    <span class="cf">while</span> index <span class="op">&lt;</span> <span class="bu">len</span>(string):</a>
+<a class="sourceLine" id="cb12-5" title="5">        <span class="cf">for</span> letter <span class="kw">in</span> string[index:]:</a>
+<a class="sourceLine" id="cb12-6" title="6">            node[letter] <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb12-7" title="7">            node <span class="op">=</span> node[letter]</a>
+<a class="sourceLine" id="cb12-8" title="8">        node[<span class="va">self</span>.end_symbol] <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb12-9" title="9">        index <span class="op">+=</span> <span class="dv">1</span></a></code></pre></div>
+<p>Takinga a look at this code, we see that we have a while loop that iterates along the entire length of the input string, followed by a nested for loop along the entire length of the substring. In the worst case, these nested loops will yield an O(m^2) runtime, where m is the length of the input string.</p>
+<p>As far as space complexity goes, we just determined that creation takes O(m^2) time. Then, since we’re sticking all of those m^2 letters in our trie, it turns out that the space complexity of our trie data structure is proportional to our time complexity, so space complexity is also O(m^2) in this case.</p>
+<p>What about searching for some given string in our trie? Well, in that case, we only ever have to perform the same number of checks as there are letters in our target string. The beauty of a trie data structure is that this fact holds true <em>regardless</em> of how many strings are being stored in our trie. We could have a whole bunch of strings in a single trie and runtime for searching for any arbitrary string in the trie would always just be proportional to the length of the target string. Thus, searching through our trie takes O(m) time, where m is the length of whatever target string we’d like to search for.</p>
+<p>So there you have it. That’s a pretty thorough walkthrough of implementing a suffix trie data structure. Remember, the whole point of a trie data structure is to provide fast lookup of strings (think about what the runtime would be if we instead just had a bunch of strings in an array; what would the runtime be to search for a single string in that case?). However, the tradeoff we incur for this fast lookup is slow insertion as well as taking up a relatively large amount of memory.</p>
+</body>
+</html>
