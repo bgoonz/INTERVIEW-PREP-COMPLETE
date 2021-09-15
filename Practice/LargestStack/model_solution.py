@@ -17,6 +17,7 @@ class Stack:
         else:
             return None
 
+
 class MaxStack:
     # We use two Stacks, one to store all the values
     # The other to store just our max values
@@ -50,14 +51,13 @@ class MaxStack:
 
 
 maxStack = MaxStack()
-print(maxStack.getMax())   # should print None
+print(maxStack.getMax())  # should print None
 
 maxStack.push(1)
-print(maxStack.getMax())   # should print 1
+print(maxStack.getMax())  # should print 1
 
 maxStack.push(100)
-print(maxStack.getMax())   # should print 100
+print(maxStack.getMax())  # should print 100
 
 maxStack.pop()
-print(maxStack.getMax())   # should print 1
-
+print(maxStack.getMax())  # should print 1

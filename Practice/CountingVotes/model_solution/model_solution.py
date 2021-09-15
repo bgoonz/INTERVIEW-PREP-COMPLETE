@@ -1,9 +1,10 @@
 # O(n) time complexity and O(n) space complexity
 
+
 def count_votes(arr):
     counts = {}
     max_votes = 0
-    winner = ''
+    winner = ""
 
     # Iterate over entire array
     for vote in arr:
@@ -30,33 +31,29 @@ def count_votes(arr):
 
     return winner
 
-print(
-    count_votes([
-        'veronica',
-        'mary',
-        'alex',
-        'james',
-        'mary',
-        'michael',
-        'alex',
-        'michael',
-    ])
-) # should print 'michael'
 
 print(
-    count_votes([
-        'john',
-        'johnny',
-        'jackie',
-        'johnny',
-        'john',
-        'jackie',
-        'jamie',
-        'jamie',
-        'john',
-        'johnny',
-        'jamie',
-        'johnny',
-        'john',
-    ])
+    count_votes(
+        ["veronica", "mary", "alex", "james", "mary", "michael", "alex", "michael"]
+    )
+)  # should print 'michael'
+
+print(
+    count_votes(
+        [
+            "john",
+            "johnny",
+            "jackie",
+            "johnny",
+            "john",
+            "jackie",
+            "jamie",
+            "jamie",
+            "john",
+            "johnny",
+            "jamie",
+            "johnny",
+            "john",
+        ]
+    )
 )  # should print 'johnny'

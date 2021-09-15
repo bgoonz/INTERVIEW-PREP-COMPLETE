@@ -4,6 +4,7 @@
 # of O(3^n) due to the three recursive calls
 # Successive calls also repeat a lot of work
 
+
 def naive_climb_stairs(n):
     # base case 1
     if n < 0:
@@ -15,27 +16,39 @@ def naive_climb_stairs(n):
 
     # move towards our base case
     else:
-        return naive_climb_stairs(n-1) + naive_climb_stairs(n-2) + naive_climb_stairs(n-3)
+        return (
+            naive_climb_stairs(n - 1)
+            + naive_climb_stairs(n - 2)
+            + naive_climb_stairs(n - 3)
+        )
+
 
 # Recursive solution that utilizes memoization
 #
 # This solution should run much faster than the naive
-# solution, since it isn't repeating work, giving it 
+# solution, since it isn't repeating work, giving it
 # a runtime of O(n).
 #
-# Also takes O(n) additional space over the naive 
+# Also takes O(n) additional space over the naive
 # solution due to the added usage of the cache array
 
+
 def memoized_climb_stairs(n, cache):
-    if n < 0: return 0
-    elif n == 0: return 1
-    elif cache[n] > 1: return cache[n]
+    if n < 0:
+        return 0
+    elif n == 0:
+        return 1
+    elif cache[n] > 1:
+        return cache[n]
     else:
-        cache[n] = memoized_climb_stairs(n-1, cache) + \
-                   memoized_climb_stairs(n-2, cache) + \
-                   memoized_climb_stairs(n-3, cache)
+        cache[n] = (
+            memoized_climb_stairs(n - 1, cache)
+            + memoized_climb_stairs(n - 2, cache)
+            + memoized_climb_stairs(n - 3, cache)
+        )
 
         return cache[n]
+
 
 # Some tests
 print(naive_climb_stairs(10))  # should print 274

@@ -6,12 +6,13 @@
 #    formula `index * 2 + 1`.
 # 2. We can calculate a parent node's right child with the
 #    formula `index * 2 + 2`.
-# 3. Given the index of a child node, the formula to 
+# 3. Given the index of a child node, the formula to
 #    calculate the child's parent's index is
 #    `Math.floor((index - 1) / 2)`.
 
-# Using these forumulas, we can swap the values of parent nodes 
+# Using these forumulas, we can swap the values of parent nodes
 # that are greater then their children node's values and vice versa.
+
 
 class Heap:
     def __init__(self):
@@ -44,7 +45,6 @@ class Heap:
         if len(self.storage) == 0:
             return None
         return self.storage[0]
-
 
     # helper method that checks to see if the value at the given index
     # is in a valid spot in the heap if it isn't, the value will
@@ -85,22 +85,21 @@ class Heap:
             self.storage[index] = swap
             self._siftDown(minChildIndex)
 
+
 heap = Heap()
-print(heap.getMin())    # should print None
+print(heap.getMin())  # should print None
 
 heap.insert(5)
-print(heap.getMin())   # should print 5
+print(heap.getMin())  # should print 5
 
 heap.insert(100)
-print(heap.getMin())   # should print 5
+print(heap.getMin())  # should print 5
 
 heap.insert(2)
-print(heap.getMin())   # should print 2
+print(heap.getMin())  # should print 2
 
-print(heap.delete())   # should print 2
-print(heap.delete())   # should print 5
-print(heap.delete())   # should print 100
+print(heap.delete())  # should print 2
+print(heap.delete())  # should print 5
+print(heap.delete())  # should print 100
 
-print(heap.getMin())   # should print 'undefined'
-
-
+print(heap.getMin())  # should print 'undefined'
