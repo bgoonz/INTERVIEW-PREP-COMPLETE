@@ -13,7 +13,7 @@
 
 function kthToLastNode(k, head) {
   if (k < 1) {
-    throw new Error('Impossible to find less than first to last node: ' + k);
+    throw new Error("Impossible to find less than first to last node: " + k);
   }
 
   let leftNode = head;
@@ -25,7 +25,7 @@ function kthToLastNode(k, head) {
     // then k is greater than the length of the list and there
     // can't be a kth-to-last node! we'll raise an error
     if (!rightNode.next) {
-      throw new Error('k is larger than the length of the linked list: ', k);
+      throw new Error("k is larger than the length of the linked list: ", k);
     }
 
     rightNode = rightNode.next;
@@ -52,11 +52,11 @@ class ListNode {
   }
 }
 
-let a = new ListNode('Australian Sheperd');
-let b = new ListNode('Beagle');
-let c = new ListNode('Cairne Terrier');
-let d = new ListNode('Dobermann');
-let e = new ListNode('English Mastiff');
+let a = new ListNode("Australian Sheperd");
+let b = new ListNode("Beagle");
+let c = new ListNode("Cairne Terrier");
+let d = new ListNode("Dobermann");
+let e = new ListNode("English Mastiff");
 
 a.next = b;
 b.next = c;

@@ -38,31 +38,31 @@ function zerosToTheRight(arr) {
 //     return nonZero;
 // }
 
-console.log('Number of non-zero integers: ', zerosToTheRight([0, 3, 1, 0, -2]));
+console.log("Number of non-zero integers: ", zerosToTheRight([0, 3, 1, 0, -2]));
 // should print:
 // [-2, 3, 1, 0, 0]
 // Number of non-zero integers: 3
 
 console.log(
-  'Number of non-zero integers: ',
+  "Number of non-zero integers: ",
   zerosToTheRight([1, 2, 3, 0, 4, 0, 0])
 );
 // should print:
 // [1, 2, 3, 4, 0, 0, 0]
 // Number of non-zero integers: 4
 
-console.log('Number of non-zero integers: ', zerosToTheRight([4, 1, 2, 5]));
+console.log("Number of non-zero integers: ", zerosToTheRight([4, 1, 2, 5]));
 // should print:
 // [4, 1, 2, 5]
 // Number of non-zero integers: 4
 
-console.log('Number of non-zero integers: ', zerosToTheRight([0, 0, 0, 0, 0]));
+console.log("Number of non-zero integers: ", zerosToTheRight([0, 0, 0, 0, 0]));
 // should print:
 // [0, 0, 0, 0, 0]
 // Number of non-zero integers: 0
 
 console.log(
-  'Number of non-zero integers: ',
+  "Number of non-zero integers: ",
   zerosToTheRight([0, 0, 0, 0, 3, 2, 1])
 );
 // should print:

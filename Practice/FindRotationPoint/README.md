@@ -6,17 +6,17 @@ For example, a rotated list of words might look something like this:
 
 ```js
 const words = [
-  'ptolemaic',
-  'retrograde',
-  'supplant',
-  'undulate',
-  'xenoepist',
-  'asymptote', // <-- rotation happens here
-  'babka',
-  'banoffee',
-  'engender',
-  'karpatka',
-  'othellolagkage',
+  "ptolemaic",
+  "retrograde",
+  "supplant",
+  "undulate",
+  "xenoepist",
+  "asymptote", // <-- rotation happens here
+  "babka",
+  "banoffee",
+  "engender",
+  "karpatka",
+  "othellolagkage",
 ];
 ```
 

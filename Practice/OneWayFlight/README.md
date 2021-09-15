@@ -8,16 +8,16 @@ An example input might look like this:
 
 ```js
 const tickets = [
-  ['PIT', 'ORD'],
-  ['XNA', 'CID'],
-  ['SFO', 'BHM'],
-  ['FLG', 'XNA'],
-  [null, 'LAX'],
-  ['LAX', 'SFO'],
-  ['CID', 'SLC'],
-  ['ORD', null],
-  ['SLC', 'PIT'],
-  ['BHM', 'FLG'],
+  ["PIT", "ORD"],
+  ["XNA", "CID"],
+  ["SFO", "BHM"],
+  ["FLG", "XNA"],
+  [null, "LAX"],
+  ["LAX", "SFO"],
+  ["CID", "SLC"],
+  ["ORD", null],
+  ["SLC", "PIT"],
+  ["BHM", "FLG"],
 ];
 ```
 
