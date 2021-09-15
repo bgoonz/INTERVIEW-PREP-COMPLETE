@@ -7,9 +7,9 @@ The possible opening brackets are `[`, `{`, and `(`. The corresponding closers a
 Examples:
 
 ```js
-balancedBrackets('[]{}()'); // should return true
-balancedBrackets('[{[()]}]'); // should return true
-balancedBrackets('[({}}]'); // should return false
+balancedBrackets("[]{}()"); // should return true
+balancedBrackets("[{[()]}]"); // should return true
+balancedBrackets("[({}}]"); // should return false
 ```
 
 Analyze the time and space complexity of your solution.

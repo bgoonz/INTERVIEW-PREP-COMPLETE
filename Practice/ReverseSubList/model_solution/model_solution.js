@@ -26,11 +26,11 @@ class ListNode {
   }
 }
 
-const a = new ListNode('a');
-const b = new ListNode('b');
-const c = new ListNode('c');
-const d = new ListNode('d');
-const e = new ListNode('e');
+const a = new ListNode("a");
+const b = new ListNode("b");
+const c = new ListNode("c");
+const d = new ListNode("d");
+const e = new ListNode("e");
 
 a.next = b;
 b.next = c;

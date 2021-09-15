@@ -13,7 +13,7 @@ function isAlpha(str) {
 
 function parseNumber(string, index) {
   let numberLength = 0;
-  let numberValue = '';
+  let numberValue = "";
 
   while (index < string.length && isDigit(string[index])) {
     numberLength++;
@@ -61,11 +61,11 @@ function shortestString(str1, str2) {
 }
 
 // Tests
-console.log(shortestString('a', 'b')); // should print "a"
-console.log(shortestString('a1', 'a2')); // should print "a1"
-console.log(shortestString('a10', 'a2')); // should print "a2"
-console.log(shortestString('abcd123', 'abc123')); // should print "abc123"
-console.log(shortestString('abc', 'abcd')); // should print "abc"
-console.log(shortestString('abc123a', 'abc123b')); // should print "abc123a"
-console.log(shortestString('9876', '987')); // should print "987"
-console.log(shortestString('6a', '6b')); // should print "6a"
+console.log(shortestString("a", "b")); // should print "a"
+console.log(shortestString("a1", "a2")); // should print "a1"
+console.log(shortestString("a10", "a2")); // should print "a2"
+console.log(shortestString("abcd123", "abc123")); // should print "abc123"
+console.log(shortestString("abc", "abcd")); // should print "abc"
+console.log(shortestString("abc123a", "abc123b")); // should print "abc123a"
+console.log(shortestString("9876", "987")); // should print "987"
+console.log(shortestString("6a", "6b")); // should print "6a"

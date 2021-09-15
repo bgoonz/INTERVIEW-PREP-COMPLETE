@@ -62,20 +62,20 @@ class TempTracker {
 const tracker = new TempTracker();
 tracker.insert(32);
 
-console.log('mean: ', tracker.getMean()); // should print 32
-console.log('min: ', tracker.getMin()); // should print 32
-console.log('max: ', tracker.getMax()); // should print 32
-console.log('mode: ', tracker.getMode()); // should print 32
+console.log("mean: ", tracker.getMean()); // should print 32
+console.log("min: ", tracker.getMin()); // should print 32
+console.log("max: ", tracker.getMax()); // should print 32
+console.log("mode: ", tracker.getMode()); // should print 32
 
 tracker.insert(135);
 
-console.log('mean: ', tracker.getMean()); // should print 83.5
-console.log('min: ', tracker.getMin()); // should print 32
-console.log('max: ', tracker.getMax()); // should print 135
+console.log("mean: ", tracker.getMean()); // should print 83.5
+console.log("min: ", tracker.getMin()); // should print 32
+console.log("max: ", tracker.getMax()); // should print 135
 
 tracker.insert(135);
 
-console.log('mean: ', tracker.getMean()); // should print 100.66666666666667
-console.log('min: ', tracker.getMin()); // should print 32
-console.log('max: ', tracker.getMax()); // should print 135
-console.log('mode: ', tracker.getMode()); // should print 135
+console.log("mean: ", tracker.getMean()); // should print 100.66666666666667
+console.log("min: ", tracker.getMin()); // should print 32
+console.log("max: ", tracker.getMax()); // should print 135
+console.log("mode: ", tracker.getMode()); // should print 135

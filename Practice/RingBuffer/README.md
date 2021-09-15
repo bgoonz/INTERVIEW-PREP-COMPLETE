@@ -13,18 +13,18 @@ For example:
 ```js
 const buffer = new RingBuffer(3);
 
-buffer.append('a');
-buffer.append('b');
-buffer.append('c');
+buffer.append("a");
+buffer.append("b");
+buffer.append("c");
 
 buffer.allValues(); // should return ['a', 'b', 'c']
 
-buffer.append('d');
+buffer.append("d");
 
 buffer.allValues(); // should return ['d', 'b', 'c']
 
-buffer.append('e');
-buffer.append('f');
+buffer.append("e");
+buffer.append("f");
 
 buffer.allValues(); // should return ['d', 'e', 'f']
 ```

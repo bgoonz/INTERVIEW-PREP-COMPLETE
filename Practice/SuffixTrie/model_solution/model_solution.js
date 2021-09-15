@@ -1,7 +1,7 @@
 class SuffixTrie {
   constructor(string) {
     this.root = {};
-    this.endSymbol = '*';
+    this.endSymbol = "*";
     this.populateTrie(string);
   }
 
