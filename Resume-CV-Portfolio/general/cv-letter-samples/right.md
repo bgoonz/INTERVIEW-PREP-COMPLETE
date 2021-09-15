@@ -2,8 +2,6 @@
 
 [&lt;Go Back&gt;](../right.html)
 
- [bgoonz-master](bgoonz-master/right.html)
+[bgoonz-master](bgoonz-master/right.html)
 
-  
-
-Folders: 2  
+Folders: 2

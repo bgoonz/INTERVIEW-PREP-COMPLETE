@@ -1,36 +1,31 @@
 [![—————————————————–](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#initial-page)
 
-➤ Initial page
-==============
+# ➤ Initial page
 
 [demo](https://bgoonz.github.io/INTERVIEW-PREP-COMPLETE/)
 
-Getting a Gig: A Guide
-======================
+# Getting a Gig: A Guide
 
-Introduction
-============
+# Introduction
 
-Contents
-========
+# Contents
 
--   Introduction (you read that already)
--   [Your Resume](#your-resume)
--   [Your Cover Letter](#your-cover-letter)
--   [Your Attitude](#your-attitude)
--   [Your Skills](#your-skills)
-    -   Building Them
-    -   Selling Them
--   [Your Search](#your-search)
-    -   Events
-    -   Networking
-    -   Referrals
-    -   Cold Calling
-    -   Fellowships
--   [Conclusion](#conclusion)
+- Introduction (you read that already)
+- [Your Resume](#your-resume)
+- [Your Cover Letter](#your-cover-letter)
+- [Your Attitude](#your-attitude)
+- [Your Skills](#your-skills)
+  - Building Them
+  - Selling Them
+- [Your Search](#your-search)
+  - Events
+  - Networking
+  - Referrals
+  - Cold Calling
+  - Fellowships
+- [Conclusion](#conclusion)
 
-Your Resume
-===========
+# Your Resume
 
 Your resume is your personal summary sheet. Your resume is the thing that gets your foot in the door. So, there’s a few things you should do (and not do) to make it as awesome as you are.
 
@@ -68,8 +63,7 @@ In terms of contact information: you don’t need your mailing address. That is 
 
 Though there’s some who might disagree, you should **include your GPA.** If your major GPA is significantly higher than your overall GPA, you might want to consider having both. When you have graduated and have a full-time job, you won’t need it as much. But at this point in your beautiful life, keep it in there. Some companies care about GPA more than others, so you might as well play it safe and have it there.
 
-CV Sample
-=========
+# CV Sample
 
 Your cover letter is your written sales pitch. You’ve got a resume that summarizes everything. Now you have to write out a more complete, professional description of you and what you can offer a given company. Here’s a sample cover letter to get you started:
 
@@ -83,19 +77,18 @@ A little about me, I \[insert relevant work experience, extracurriculars, and pr
 >
 > Best regards,
 >
-> ------------------------------------------------------------------------
+> ---
 
 Now, remember, this is just a sample. You can write a cover letter in any format you’d like. But, you should be sure to include the following:
 
--   **Who** - Who you are. Easy enough.
--   **Where** - Where you’re coming from.
--   **Why** - Why you’re interested in this company, and show that you researched them.
--   **What** - What you can bring to the table.
--   **When** - When you’re available to start, and when they can contact you.
--   **How** - How they can reach you.
+- **Who** - Who you are. Easy enough.
+- **Where** - Where you’re coming from.
+- **Why** - Why you’re interested in this company, and show that you researched them.
+- **What** - What you can bring to the table.
+- **When** - When you’re available to start, and when they can contact you.
+- **How** - How they can reach you.
 
-Your Attitude
-=============
+# Your Attitude
 
 When you’re internship/job hunting, it’s very easy to feel down if you don’t hear back from companies, an interview goes poorly, or you start comparing yourself to people. It’s a tough field we’re going into.
 
@@ -105,93 +98,90 @@ Mark Twain once said, “Comparison is the death of joy.” When you start to co
 
 When you’re talking to companies and recruiters at career fairs and hackathons and over the phone, be confident, not arrogant. Be grateful for the opportunity they’re giving you, and smile! A great attitude will take you VERY far.
 
-Your Skills
-===========
+# Your Skills
 
-Obviously, your skills are what a company is buying from you when they hire you. So, honing in those skills and presenting them in an effective way is *probably* the most important thing in getting a gig.
+Obviously, your skills are what a company is buying from you when they hire you. So, honing in those skills and presenting them in an effective way is _probably_ the most important thing in getting a gig.
 
-Building Them
--------------
+## Building Them
 
 Chances are, if you’ve had a data structures and/or algorithms class, you’re already going to do pretty well in the technical interviews. That is, if you can recall the information you learned.
 
 Here’s a checklist of things that you should probably be prepared to know in a technical interview:
 
--   Data types
--   Basic Bitwise Operations
--   String Operations
--   Arrays
--   Linked Lists
-    -   Singly Linked
-    -   Doubly Linked
-    -   Circular Linked
--   Queues
--   Stacks
--   Heaps
--   Trees
-    -   Binary Trees
-    -   Binary Search Trees
-    -   Tries
-    -   Self Balancing Trees
--   Traversing Trees
-    -   Breadth First Search - BFS
-    -   Depth First Search - DFS
-    -   Preorder, Inorder, Postorder
--   Graphs
-    -   Dijkstra’s Algorithm / A\* Search
--   Hash Maps
-    -   Handling Collisions
--   Sorting algorithms
-    -   Insertion
-    -   Selection
-    -   Merge
-    -   Quick
--   Time Complexities
+- Data types
+- Basic Bitwise Operations
+- String Operations
+- Arrays
+- Linked Lists
+  - Singly Linked
+  - Doubly Linked
+  - Circular Linked
+- Queues
+- Stacks
+- Heaps
+- Trees
+  - Binary Trees
+  - Binary Search Trees
+  - Tries
+  - Self Balancing Trees
+- Traversing Trees
+  - Breadth First Search - BFS
+  - Depth First Search - DFS
+  - Preorder, Inorder, Postorder
+- Graphs
+  - Dijkstra’s Algorithm / A\* Search
+- Hash Maps
+  - Handling Collisions
+- Sorting algorithms
+  - Insertion
+  - Selection
+  - Merge
+  - Quick
+- Time Complexities
 
 This guide isn’t for teaching you these skills. But there are several guides, problem sets, and practice systems out there that can help.
 
 **General Guides**
 
--   [Sorting Algorithms](http://www.sorting-algorithms.com/)
--   [Big-O Cheat Sheet](http://bigocheatsheet.com/)
--   [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
--   [Algorithm Implementations](http://algorithm.zone/)
--   [Top 10 Algorithms for coding interviews](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
+- [Sorting Algorithms](http://www.sorting-algorithms.com/)
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+- [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
+- [Algorithm Implementations](http://algorithm.zone/)
+- [Top 10 Algorithms for coding interviews](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
 
 **Problem Sets**
 
--   [Data Structures Questions](http://www.geeksforgeeks.org/data-structures/)
--   [FitCoding](http://www.fitcoding.com/)
--   [Google CodeJam Practice Questions](https://code.google.com/codejam/contests.html)
+- [Data Structures Questions](http://www.geeksforgeeks.org/data-structures/)
+- [FitCoding](http://www.fitcoding.com/)
+- [Google CodeJam Practice Questions](https://code.google.com/codejam/contests.html)
 
 **Online Judging Systems**
 
--   [LeetCode Online Judge](https://oj.leetcode.com/problemset/algorithms/)
--   [HackerRank Online Judge](https://www.hackerrank.com/)
--   [Project Euler](https://projecteuler.net/)
+- [LeetCode Online Judge](https://oj.leetcode.com/problemset/algorithms/)
+- [HackerRank Online Judge](https://www.hackerrank.com/)
+- [Project Euler](https://projecteuler.net/)
 
 **Mock Interviews**
 
--   [Pramp](https://www.pramp.com) - free
--   [Careercup](http://www.careercup.com/interview) - paid
--   [Gainlo](http://www.gainlo.co/) - paid
--   [Impact Interview](http://www.impactinterview.com/software-engineering-interview-coaching/) - paid
+- [Pramp](https://www.pramp.com) - free
+- [Careercup](http://www.careercup.com/interview) - paid
+- [Gainlo](http://www.gainlo.co/) - paid
+- [Impact Interview](http://www.impactinterview.com/software-engineering-interview-coaching/) - paid
 
 Here’s some books that might also be useful.
 
--   [Algorithms, 4th edition, by Robert Sedgewick and Kevin Wayne](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
--   [Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (also referred as CLRS)](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
--   [Think Complexity, by Allen B. Downey](http://greenteapress.com/complexity/thinkcomplexity.pdf)
--   [Problems on Algorithms, 2nd edition, by Ian Parberry and William Gasarch](http://larc.unt.edu/ian/books/free/poa.pdf)
--   [Data Structures and Algorithms in Java](http://rineshpk.weebly.com/uploads/1/8/2/0/1820991/data_structures_and_algorithms_in_javatqw_darksiderg.pdf)
--   [Cracking the Coding Interview, 6th edition, by Gayle Laakmann McDowell](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1443719471&sr=8-1&keywords=coding+interview)
+- [Algorithms, 4th edition, by Robert Sedgewick and Kevin Wayne](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
+- [Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (also referred as CLRS)](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
+- [Think Complexity, by Allen B. Downey](http://greenteapress.com/complexity/thinkcomplexity.pdf)
+- [Problems on Algorithms, 2nd edition, by Ian Parberry and William Gasarch](http://larc.unt.edu/ian/books/free/poa.pdf)
+- [Data Structures and Algorithms in Java](http://rineshpk.weebly.com/uploads/1/8/2/0/1820991/data_structures_and_algorithms_in_javatqw_darksiderg.pdf)
+- [Cracking the Coding Interview, 6th edition, by Gayle Laakmann McDowell](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1443719471&sr=8-1&keywords=coding+interview)
 
 Typically, for an internship or your first job, questions won’t get much more specific unless you’re applying for a specific role. For example, if I wanted to be a mobile intern, I might be asked iOS/Android/Windows Phone specific questions, or if I wanted to be a web intern, I might be asked HTML/CSS/JavaScript questions, or if I wanted to be a backend intern, I might be asked about Django or Node or Ruby on Rails. That definitely depends on the company, and what you’re both looking for.
 
 Make sure you’re able to implement and use the above data structures without the assistance of an IDE. Typically, onsite technical interviews involve coding on paper or a whiteboard, and phone/video interviews usually involve some kind of collaborative text editor. Yes, that means you won’t have access to auto-complete, auto-compiling, or the internet to check for errors. So be ready for that!
 
-Selling Them
-------------
+## Selling Them
 
 When you’re actively emailing and speaking with recruiters, they’re going to ask you a lot of questions that are just checkboxes for what they’re looking for in terms of skills.
 
@@ -203,40 +193,36 @@ For example, don’t say, “I’m the webmaster for a club website. Next questi
 
 When you’re talking to companies about specific things you’ve done, make sure they know:
 
--   **What?** - What? - What did you make? What does it do? What impact has it made? What was the hardest part? What could you have done better?
--   **Why?** - Why did you make it? Was it for a hackathon, a school project, an open source contribution, or something else?
--   **How?** - With which technologies did you make this? Did you use a specific API? What parts of it did you work on?
--   **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
--   **Who?** - Did you work on this with anyone? Who did what? Who is this for?
+- **What?** - What? - What did you make? What does it do? What impact has it made? What was the hardest part? What could you have done better?
+- **Why?** - Why did you make it? Was it for a hackathon, a school project, an open source contribution, or something else?
+- **How?** - With which technologies did you make this? Did you use a specific API? What parts of it did you work on?
+- **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
+- **Who?** - Did you work on this with anyone? Who did what? Who is this for?
 
-Your skills are something that you have, and the reason why you have them is because you’ve used them in some way. All you have to do to prove yourself is to explain yourself! No need to gGetting a Gig: A Guide
-==================================================================================================================================================================================================================
+# Your skills are something that you have, and the reason why you have them is because you’ve used them in some way. All you have to do to prove yourself is to explain yourself! No need to gGetting a Gig: A Guide
 
-Introduction
-============
+# Introduction
 
 Hey friends! This is a guide for getting a gig in college as a tech major. I graduated May 2014 with 10 job offers after having 5 internships throughout my four years of college. You can do that, too. Because you’re great.
 
-Contents
-========
+# Contents
 
--   Introduction (you read that already)
--   [Your Resume](#your-resume)
--   [Your Cover Letter](#your-cover-letter)
--   [Your Attitude](#your-attitude)
--   [Your Skills](#your-skills)
-    -   Building Them
-    -   Selling Them
--   [Your Search](#your-search)
-    -   Events
-    -   Networking
-    -   Referrals
-    -   Cold Calling
-    -   Fellowships
--   [Conclusion](#conclusion)
+- Introduction (you read that already)
+- [Your Resume](#your-resume)
+- [Your Cover Letter](#your-cover-letter)
+- [Your Attitude](#your-attitude)
+- [Your Skills](#your-skills)
+  - Building Them
+  - Selling Them
+- [Your Search](#your-search)
+  - Events
+  - Networking
+  - Referrals
+  - Cold Calling
+  - Fellowships
+- [Conclusion](#conclusion)
 
-Your Resume
-===========
+# Your Resume
 
 Your resume is your personal summary sheet. Your resume is the thing that gets your foot in the door. So, there’s a few things you should do (and not do) to make it as awesome as you are.
 
@@ -274,8 +260,7 @@ In terms of contact information: you don’t need your mailing address. That is 
 
 Though there’s some who might disagree, you should **include your GPA.** If your major GPA is significantly higher than your overall GPA, you might want to consider having both. When you have graduated and have a full-time job, you won’t need it as much. But at this point in your beautiful life, keep it in there. Some companies care about GPA more than others, so you might as well play it safe and have it there.
 
-Your Cover Letter
-=================
+# Your Cover Letter
 
 Your cover letter is your written sales pitch. You’ve got a resume that summarizes everything. Now you have to write out a more complete, professional description of you and what you can offer a given company. Here’s a sample cover letter to get you started:
 
@@ -289,19 +274,18 @@ A little about me, I \[insert relevant work experience, extracurriculars, and pr
 >
 > Best regards,
 >
-> ------------------------------------------------------------------------
+> ---
 
 Now, remember, this is just a sample. You can write a cover letter in any format you’d like. But, you should be sure to include the following:
 
--   **Who** - Who you are. Easy enough.
--   **Where** - Where you’re coming from.
--   **Why** - Why you’re interested in this company, and show that you researched them.
--   **What** - What you can bring to the table.
--   **When** - When you’re available to start, and when they can contact you.
--   **How** - How they can reach you.
+- **Who** - Who you are. Easy enough.
+- **Where** - Where you’re coming from.
+- **Why** - Why you’re interested in this company, and show that you researched them.
+- **What** - What you can bring to the table.
+- **When** - When you’re available to start, and when they can contact you.
+- **How** - How they can reach you.
 
-Your Attitude
-=============
+# Your Attitude
 
 When you’re internship/job hunting, it’s very easy to feel down if you don’t hear back from companies, an interview goes poorly, or you start comparing yourself to people. It’s a tough field we’re going into.
 
@@ -311,93 +295,90 @@ Mark Twain once said, “Comparison is the death of joy.” When you start to co
 
 When you’re talking to companies and recruiters at career fairs and hackathons and over the phone, be confident, not arrogant. Be grateful for the opportunity they’re giving you, and smile! A great attitude will take you VERY far.
 
-Your Skills
-===========
+# Your Skills
 
-Obviously, your skills are what a company is buying from you when they hire you. So, honing in those skills and presenting them in an effective way is *probably* the most important thing in getting a gig.
+Obviously, your skills are what a company is buying from you when they hire you. So, honing in those skills and presenting them in an effective way is _probably_ the most important thing in getting a gig.
 
-Building Them
--------------
+## Building Them
 
 Chances are, if you’ve had a data structures and/or algorithms class, you’re already going to do pretty well in the technical interviews. That is, if you can recall the information you learned.
 
 Here’s a checklist of things that you should probably be prepared to know in a technical interview:
 
--   Data types
--   Basic Bitwise Operations
--   String Operations
--   Arrays
--   Linked Lists
-    -   Singly Linked
-    -   Doubly Linked
-    -   Circular Linked
--   Queues
--   Stacks
--   Heaps
--   Trees
-    -   Binary Trees
-    -   Binary Search Trees
-    -   Tries
-    -   Self Balancing Trees
--   Traversing Trees
-    -   Breadth First Search - BFS
-    -   Depth First Search - DFS
-    -   Preorder, Inorder, Postorder
--   Graphs
-    -   Dijkstra’s Algorithm / A\* Search
--   Hash Maps
-    -   Handling Collisions
--   Sorting algorithms
-    -   Insertion
-    -   Selection
-    -   Merge
-    -   Quick
--   Time Complexities
+- Data types
+- Basic Bitwise Operations
+- String Operations
+- Arrays
+- Linked Lists
+  - Singly Linked
+  - Doubly Linked
+  - Circular Linked
+- Queues
+- Stacks
+- Heaps
+- Trees
+  - Binary Trees
+  - Binary Search Trees
+  - Tries
+  - Self Balancing Trees
+- Traversing Trees
+  - Breadth First Search - BFS
+  - Depth First Search - DFS
+  - Preorder, Inorder, Postorder
+- Graphs
+  - Dijkstra’s Algorithm / A\* Search
+- Hash Maps
+  - Handling Collisions
+- Sorting algorithms
+  - Insertion
+  - Selection
+  - Merge
+  - Quick
+- Time Complexities
 
 This guide isn’t for teaching you these skills. But there are several guides, problem sets, and practice systems out there that can help.
 
 **General Guides**
 
--   [Sorting Algorithms](http://www.sorting-algorithms.com/)
--   [Big-O Cheat Sheet](http://bigocheatsheet.com/)
--   [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
--   [Algorithm Implementations](http://algorithm.zone/)
--   [Top 10 Algorithms for coding interviews](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
+- [Sorting Algorithms](http://www.sorting-algorithms.com/)
+- [Big-O Cheat Sheet](http://bigocheatsheet.com/)
+- [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
+- [Algorithm Implementations](http://algorithm.zone/)
+- [Top 10 Algorithms for coding interviews](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
 
 **Problem Sets**
 
--   [Data Structures Questions](http://www.geeksforgeeks.org/data-structures/)
--   [FitCoding](http://www.fitcoding.com/)
--   [Google CodeJam Practice Questions](https://code.google.com/codejam/contests.html)
+- [Data Structures Questions](http://www.geeksforgeeks.org/data-structures/)
+- [FitCoding](http://www.fitcoding.com/)
+- [Google CodeJam Practice Questions](https://code.google.com/codejam/contests.html)
 
 **Online Judging Systems**
 
--   [LeetCode Online Judge](https://oj.leetcode.com/problemset/algorithms/)
--   [HackerRank Online Judge](https://www.hackerrank.com/)
--   [Project Euler](https://projecteuler.net/)
+- [LeetCode Online Judge](https://oj.leetcode.com/problemset/algorithms/)
+- [HackerRank Online Judge](https://www.hackerrank.com/)
+- [Project Euler](https://projecteuler.net/)
 
 **Mock Interviews**
 
--   [Pramp](https://www.pramp.com) - free
--   [Careercup](http://www.careercup.com/interview) - paid
--   [Gainlo](http://www.gainlo.co/) - paid
--   [Impact Interview](http://www.impactinterview.com/software-engineering-interview-coaching/) - paid
+- [Pramp](https://www.pramp.com) - free
+- [Careercup](http://www.careercup.com/interview) - paid
+- [Gainlo](http://www.gainlo.co/) - paid
+- [Impact Interview](http://www.impactinterview.com/software-engineering-interview-coaching/) - paid
 
 Here’s some books that might also be useful.
 
--   [Algorithms, 4th edition, by Robert Sedgewick and Kevin Wayne](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
--   [Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (also referred as CLRS)](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
--   [Think Complexity, by Allen B. Downey](http://greenteapress.com/complexity/thinkcomplexity.pdf)
--   [Problems on Algorithms, 2nd edition, by Ian Parberry and William Gasarch](http://larc.unt.edu/ian/books/free/poa.pdf)
--   [Data Structures and Algorithms in Java](http://rineshpk.weebly.com/uploads/1/8/2/0/1820991/data_structures_and_algorithms_in_javatqw_darksiderg.pdf)
--   [Cracking the Coding Interview, 6th edition, by Gayle Laakmann McDowell](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1443719471&sr=8-1&keywords=coding+interview)
+- [Algorithms, 4th edition, by Robert Sedgewick and Kevin Wayne](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
+- [Introduction to Algorithms, 3rd Edition, by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein (also referred as CLRS)](http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844)
+- [Think Complexity, by Allen B. Downey](http://greenteapress.com/complexity/thinkcomplexity.pdf)
+- [Problems on Algorithms, 2nd edition, by Ian Parberry and William Gasarch](http://larc.unt.edu/ian/books/free/poa.pdf)
+- [Data Structures and Algorithms in Java](http://rineshpk.weebly.com/uploads/1/8/2/0/1820991/data_structures_and_algorithms_in_javatqw_darksiderg.pdf)
+- [Cracking the Coding Interview, 6th edition, by Gayle Laakmann McDowell](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/ref=sr_1_1?ie=UTF8&qid=1443719471&sr=8-1&keywords=coding+interview)
 
 Typically, for an internship or your first job, questions won’t get much more specific unless you’re applying for a specific role. For example, if I wanted to be a mobile intern, I might be asked iOS/Android/Windows Phone specific questions, or if I wanted to be a web intern, I might be asked HTML/CSS/JavaScript questions, or if I wanted to be a backend intern, I might be asked about Django or Node or Ruby on Rails. That definitely depends on the company, and what you’re both looking for.
 
 Make sure you’re able to implement and use the above data structures without the assistance of an IDE. Typically, onsite technical interviews involve coding on paper or a whiteboard, and phone/video interviews usually involve some kind of collaborative text editor. Yes, that means you won’t have access to auto-complete, auto-compiling, or the internet to check for errors. So be ready for that!
 
-Selling Them
-------------
+## Selling Them
 
 When you’re actively emailing and speaking with recruiters, they’re going to ask you a lot of questions that are just checkboxes for what they’re looking for in terms of skills.
 
@@ -409,45 +390,42 @@ For example, don’t say, “I’m the webmaster for a club website. Next questi
 
 When you’re talking to companies about specific things you’ve done, make sure they know:
 
--   **What?** - What? - What did you make? What does it do? What impact has it made? What was the hardest part? What could you have done better?
--   **Why?** - Why did you make it? Was it for a hackathon, a school project, an open source contribution, or something else?
--   **How?** - With which technologies did you make this? Did you use a specific API? What parts of it did you work on?
--   **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
--   **Who?** - Did you work on this with anyone? Who did what? Who is this for?
+- **What?** - What? - What did you make? What does it do? What impact has it made? What was the hardest part? What could you have done better?
+- **Why?** - Why did you make it? Was it for a hackathon, a school project, an open source contribution, or something else?
+- **How?** - With which technologies did you make this? Did you use a specific API? What parts of it did you work on?
+- **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
+- **Who?** - Did you work on this with anyone? Who did what? Who is this for?
 
 Your skills are something that you have, and the reason why you have them is because you’ve used them in some way. All you have to do to prove yourself is to explain yourself! No need to go overboard and brag. Just be honest, and confident.
 
-Your Search
-===========
+# Your Search
 
 You have a resume and cover letter in hand, and you have the skills to make anyone want you. Now, you just have to find the right gig for you.
 
-Events
-------
+## Events
 
 When you’re on the hunt for a great internship or first job, the events you go to can really set you apart, and will help you meet people that could potentially help you in the long run.
 
 The biggies that you will definitely run into are:
 
--   Hackathons
--   Meetups
--   Conferences
--   Career Fairs
+- Hackathons
+- Meetups
+- Conferences
+- Career Fairs
 
 So, how do you find these events? They’re happening all the time, you just need to know where to look. Firstly, ask people in the field. Talk to a mentor, a fellow student, a professor, a colleague… anyone could come through for you! I remember my first tech event I went to in college was because I ran into a guy that I met orientation day. And now he and I are coworkers. Fancy that. Anyway, people can get you very far.
 
 Otherwise, when people don’t work, we always have the glorious internet leading the way. There’s so many resources out there I definitely can’t list them all. So I’ll list just a few.
 
--   Your School - Yeah, this is kind of an easy shot, but not a lot of people consider their schools as an event generator, when they should. Go on to your university’s website and find the career fair, find a seminar, find a company presentation, find something that will help you learn and meet people. You’ll probably find a lot of options!
--   [Meetup](http://www.meetup.com) - Meetup is a great place to find groups of people who are interested in the same things you are, who meet regularly. Look for engineering meetups that are hosted **at** companies. You’ll get to see an office, and meet people who actually work there (in addition to those who might work at other organizations).
--   [Eventbrite](https://www.eventbrite.com/) - Eventbrite is best for finding events that aren’t recurring. You can often find workshops, networking events, parties, and classes there. I tend to just search for the term, “tech” or “computer” and the results simply flow. Like a babbling brook. Or something.
--   [Major League Hacking](https://mlh.io/) - MLH provides a fairly thorough schedule of university hackathons every semester. Most of the events on their schedule provide travel reimbursement, but there’s so many that you’ll likely find one near you!
--   [Lanyrd](http://lanyrd.com/) - Lanyrd is a “social conference directory” that is full of conferences based on almost any topic. Follow your favorite speakers or search for a particular language or technology, and you’ll be set.
+- Your School - Yeah, this is kind of an easy shot, but not a lot of people consider their schools as an event generator, when they should. Go on to your university’s website and find the career fair, find a seminar, find a company presentation, find something that will help you learn and meet people. You’ll probably find a lot of options!
+- [Meetup](http://www.meetup.com) - Meetup is a great place to find groups of people who are interested in the same things you are, who meet regularly. Look for engineering meetups that are hosted **at** companies. You’ll get to see an office, and meet people who actually work there (in addition to those who might work at other organizations).
+- [Eventbrite](https://www.eventbrite.com/) - Eventbrite is best for finding events that aren’t recurring. You can often find workshops, networking events, parties, and classes there. I tend to just search for the term, “tech” or “computer” and the results simply flow. Like a babbling brook. Or something.
+- [Major League Hacking](https://mlh.io/) - MLH provides a fairly thorough schedule of university hackathons every semester. Most of the events on their schedule provide travel reimbursement, but there’s so many that you’ll likely find one near you!
+- [Lanyrd](http://lanyrd.com/) - Lanyrd is a “social conference directory” that is full of conferences based on almost any topic. Follow your favorite speakers or search for a particular language or technology, and you’ll be set.
 
 Like I mentioned before, there’s a lot of resources out there for finding events. Now that you have places to go to, what do you do there? WHAT A CLEVER SEGUE.
 
-Networking
-----------
+## Networking
 
 The whole point of going to events (besides learning something, of course) is to network. Meeting and maintaining relationships with people in this industry is essential.
 
@@ -467,15 +445,13 @@ Follow generally these steps (as casually or formally as the event calls for) wh
 
 Networking is about building relationships, and what you can do with those relationships is up to you. But we’re talking about getting a job. So let’s move on to one of the best ways of getting one, with these relationships.
 
-Referrals
----------
+## Referrals
 
 Referrals are your in. If you can get a referral from an employee of the company you’re applying for, that’s money. It pushes you towards the top of the pile of resumes that they’re getting every single day. Using the relationships you’ve built from networking, all it takes is a simple ask! You can get a referral from current employees, former ones, interns, former interns, friends of engineers, acquaintances of recruiters… really, anyone who is connected with the company. If they have a job posting up for a given position, they are looking around for engineers just as much as you’re looking around for a great gig! The company knows that they’re going to be speaking with someone potentially really good (because they were recommended by someone trusted), and you get to speak to a company for whom you want to work. Having a referral is a win for both parties.
 
 Asking for a referral really depends on your relationship with the referrer. If you know them in a strictly business setting, you might want to send them a more professional request. But if you know the referrer pretty well, chances are you know how to ask for a favor. One thing that you must remember though is to, again, **follow up**! If you haven’t heard back from your referrer, reach out and check on your status. If they let you know that you’re in the system, be gracious and take them for coffee or something. Common courtesy. You’ve got this.
 
-Cold Calling
-------------
+## Cold Calling
 
 A lot of people are fans of cold calling, which is making unsolicited contact with a person at a company and hoping for something good to come of it. I admit, I’m not one of those people. Seems spammy. But, I’ll tell you about some ways to do that anyway, to make your cold calls as potentially successful as possible.
 
@@ -485,68 +461,64 @@ Once you have a legitimate email on your hands, get to work on making a personal
 
 When the email has been sent, you’re done. If you haven’t heard back in a week or two, send a follow-up, but if they still haven’t replied after that, chances are they won’t reply at all. And that’s okay. It happens. That’s the territory when it comes to cold calling.
 
-Fellowships
------------
+## Fellowships
 
 Fellowships are a great way to network with a community and get valuable mentorship that will most certainly help you in the long run. They vary depending on the program, but typically you’ll get assigned a mentor or two, go to several events to network with professionals, and intern for a company that has partnered with the specific fellowship program.
 
 Here’s a list of some example fellowship programs. This is by no means a complete list (feel free to send a pull request or file an issue if there’s another you’d like to be added), but it should get you started!
 
--   [Cansbridge Fellowship](http://www.cansbridgefellowship.com/)
--   [CODE2040](http://code2040.org/)
--   [FirstMark Elite](http://firstmarkelite.com/)
--   [First Round Capital](http://www.university.firstround.com/)
--   [Ford-Mozilla Fellows](https://advocacy.mozilla.org/open-web-fellows/)
--   [hackNY Fellows](http://apply.hackny.org/)
--   [Knight-Mozilla Fellows](http://opennews.org/fellowships/)
--   [KPCB Fellows](http://kpcbfellows.com/)
--   [Mayfield Fellows Program](http://stvp.stanford.edu/mayfield-fellows-program/)
--   [NYC Turing Fellows](http://nycturingfellows.org/)
--   [PennApps Fellows](http://www.pennappsfellows.com/)
--   [True Entrepreneur Corps](http://www.trueventures.com/tec/)
+- [Cansbridge Fellowship](http://www.cansbridgefellowship.com/)
+- [CODE2040](http://code2040.org/)
+- [FirstMark Elite](http://firstmarkelite.com/)
+- [First Round Capital](http://www.university.firstround.com/)
+- [Ford-Mozilla Fellows](https://advocacy.mozilla.org/open-web-fellows/)
+- [hackNY Fellows](http://apply.hackny.org/)
+- [Knight-Mozilla Fellows](http://opennews.org/fellowships/)
+- [KPCB Fellows](http://kpcbfellows.com/)
+- [Mayfield Fellows Program](http://stvp.stanford.edu/mayfield-fellows-program/)
+- [NYC Turing Fellows](http://nycturingfellows.org/)
+- [PennApps Fellows](http://www.pennappsfellows.com/)
+- [True Entrepreneur Corps](http://www.trueventures.com/tec/)
 
 In addition to these fellowships, several companies offer special programs for younger students that are similarly geared towards learning and mentorship. Here’s another list that is not complete, but will get you started:
 
--   [Microsoft Explore](http://careers.microsoft.com/careers/en/us/university-programs.aspx) (I’m biased because I did this one, but this program is AWESOME)
--   [Google Engineering Practicum](https://www.google.com/jobs/students/engpracticum)
--   [Facebook University of Engineering](https://www.facebook.com/careers/university/fbueng)
--   [Intel IRISE](http://www.intel.com/content/www/us/en/jobs/locations/united-states/students/internships/intel-early-internship-software-engineering.html)
--   [Qualcomm EIP (Early Identification Program)](https://www.qualcomm.com/company/careers/interns)
--   \[Pinterest Engage Software Engineer Intern\] (https://careers.pinterest.com/careers/details/pinterest-engage-software-engineer-intern\_san-francisco\_143952)
+- [Microsoft Explore](http://careers.microsoft.com/careers/en/us/university-programs.aspx) (I’m biased because I did this one, but this program is AWESOME)
+- [Google Engineering Practicum](https://www.google.com/jobs/students/engpracticum)
+- [Facebook University of Engineering](https://www.facebook.com/careers/university/fbueng)
+- [Intel IRISE](http://www.intel.com/content/www/us/en/jobs/locations/united-states/students/internships/intel-early-internship-software-engineering.html)
+- [Qualcomm EIP (Early Identification Program)](https://www.qualcomm.com/company/careers/interns)
+- \[Pinterest Engage Software Engineer Intern\] (https://careers.pinterest.com/careers/details/pinterest-engage-software-engineer-intern\_san-francisco\_143952)
 
 o overboard and brag. Just be honest, and confident.
 
-Your Search
-===========
+# Your Search
 
 You have a resume and cover letter in hand, and you have the skills to make anyone want you. Now, you just have to find the right gig for you.
 
-Events
-------
+## Events
 
 When you’re on the hunt for a great internship or first job, the events you go to can really set you apart, and will help you meet people that could potentially help you in the long run.
 
 The biggies that you will definitely run into are:
 
--   Hackathons
--   Meetups
--   Conferences
--   Career Fairs
+- Hackathons
+- Meetups
+- Conferences
+- Career Fairs
 
 So, how do you find these events? They’re happening all the time, you just need to know where to look. Firstly, ask people in the field. Talk to a mentor, a fellow student, a professor, a colleague… anyone could come through for you! I remember my first tech event I went to in college was because I ran into a guy that I met orientation day. And now he and I are coworkers. Fancy that. Anyway, people can get you very far.
 
 Otherwise, when people don’t work, we always have the glorious internet leading the way. There’s so many resources out there I definitely can’t list them all. So I’ll list just a few.
 
--   Your School - Yeah, this is kind of an easy shot, but not a lot of people consider their schools as an event generator, when they should. Go on to your university’s website and find the career fair, find a seminar, find a company presentation, find something that will help you learn and meet people. You’ll probably find a lot of options!
--   [Meetup](http://www.meetup.com) - Meetup is a great place to find groups of people who are interested in the same things you are, who meet regularly. Look for engineering meetups that are hosted **at** companies. You’ll get to see an office, and meet people who actually work there (in addition to those who might work at other organizations).
--   [Eventbrite](https://www.eventbrite.com/) - Eventbrite is best for finding events that aren’t recurring. You can often find workshops, networking events, parties, and classes there. I tend to just search for the term, “tech” or “computer” and the results simply flow. Like a babbling brook. Or something.
--   [Major League Hacking](https://mlh.io/) - MLH provides a fairly thorough schedule of university hackathons every semester. Most of the events on their schedule provide travel reimbursement, but there’s so many that you’ll likely find one near you!
--   [Lanyrd](http://lanyrd.com/) - Lanyrd is a “social conference directory” that is full of conferences based on almost any topic. Follow your favorite speakers or search for a particular language or technology, and you’ll be set.
+- Your School - Yeah, this is kind of an easy shot, but not a lot of people consider their schools as an event generator, when they should. Go on to your university’s website and find the career fair, find a seminar, find a company presentation, find something that will help you learn and meet people. You’ll probably find a lot of options!
+- [Meetup](http://www.meetup.com) - Meetup is a great place to find groups of people who are interested in the same things you are, who meet regularly. Look for engineering meetups that are hosted **at** companies. You’ll get to see an office, and meet people who actually work there (in addition to those who might work at other organizations).
+- [Eventbrite](https://www.eventbrite.com/) - Eventbrite is best for finding events that aren’t recurring. You can often find workshops, networking events, parties, and classes there. I tend to just search for the term, “tech” or “computer” and the results simply flow. Like a babbling brook. Or something.
+- [Major League Hacking](https://mlh.io/) - MLH provides a fairly thorough schedule of university hackathons every semester. Most of the events on their schedule provide travel reimbursement, but there’s so many that you’ll likely find one near you!
+- [Lanyrd](http://lanyrd.com/) - Lanyrd is a “social conference directory” that is full of conferences based on almost any topic. Follow your favorite speakers or search for a particular language or technology, and you’ll be set.
 
 Like I mentioned before, there’s a lot of resources out there for finding events. Now that you have places to go to, what do you do there? WHAT A CLEVER SEGUE.
 
-Networking
-----------
+## Networking
 
 The whole point of going to events (besides learning something, of course) is to network. Meeting and maintaining relationships with people in this industry is essential.
 
@@ -566,15 +538,13 @@ Follow generally these steps (as casually or formally as the event calls for) wh
 
 Networking is about building relationships, and what you can do with those relationships is up to you. But we’re talking about getting a job. So let’s move on to one of the best ways of getting one, with these relationships.
 
-Referrals
----------
+## Referrals
 
 Referrals are your in. If you can get a referral from an employee of the company you’re applying for, that’s money. It pushes you towards the top of the pile of resumes that they’re getting every single day. Using the relationships you’ve built from networking, all it takes is a simple ask! You can get a referral from current employees, former ones, interns, former interns, friends of engineers, acquaintances of recruiters… really, anyone who is connected with the company. If they have a job posting up for a given position, they are looking around for engineers just as much as you’re looking around for a great gig! The company knows that they’re going to be speaking with someone potentially really good (because they were recommended by someone trusted), and you get to speak to a company for whom you want to work. Having a referral is a win for both parties.
 
 Asking for a referral really depends on your relationship with the referrer. If you know them in a strictly business setting, you might want to send them a more professional request. But if you know the referrer pretty well, chances are you know how to ask for a favor. One thing that you must remember though is to, again, **follow up**! If you haven’t heard back from your referrer, reach out and check on your status. If they let you know that you’re in the system, be gracious and take them for coffee or something. Common courtesy. You’ve got this.
 
-Cold Calling
-------------
+## Cold Calling
 
 A lot of people are fans of cold calling, which is making unsolicited contact with a person at a company and hoping for something good to come of it. I admit, I’m not one of those people. Seems spammy. But, I’ll tell you about some ways to do that anyway, to make your cold calls as potentially successful as possible.
 
@@ -584,31 +554,30 @@ Once you have a legitimate email on your hands, get to work on making a personal
 
 When the email has been sent, you’re done. If you haven’t heard back in a week or two, send a follow-up, but if they still haven’t replied after that, chances are they won’t reply at all. And that’s okay. It happens. That’s the territory when it comes to cold calling.
 
-Fellowships
------------
+## Fellowships
 
 Fellowships are a great way to network with a community and get valuable mentorship that will most certainly help you in the long run. They vary depending on the program, but typically you’ll get assigned a mentor or two, go to several events to network with professionals, and intern for a company that has partnered with the specific fellowship program.
 
 Here’s a list of some example fellowship programs. This is by no means a complete list (feel free to send a pull request or file an issue if there’s another you’d like to be added), but it should get you started!
 
--   [Cansbridge Fellowship](http://www.cansbridgefellowship.com/)
--   [CODE2040](http://code2040.org/)
--   [FirstMark Elite](http://firstmarkelite.com/)
--   [First Round Capital](http://www.university.firstround.com/)
--   [Ford-Mozilla Fellows](https://advocacy.mozilla.org/open-web-fellows/)
--   [hackNY Fellows](http://apply.hackny.org/)
--   [Knight-Mozilla Fellows](http://opennews.org/fellowships/)
--   [KPCB Fellows](http://kpcbfellows.com/)
--   [Mayfield Fellows Program](http://stvp.stanford.edu/mayfield-fellows-program/)
--   [NYC Turing Fellows](http://nycturingfellows.org/)
--   [PennApps Fellows](http://www.pennappsfellows.com/)
--   [True Entrepreneur Corps](http://www.trueventures.com/tec/)
+- [Cansbridge Fellowship](http://www.cansbridgefellowship.com/)
+- [CODE2040](http://code2040.org/)
+- [FirstMark Elite](http://firstmarkelite.com/)
+- [First Round Capital](http://www.university.firstround.com/)
+- [Ford-Mozilla Fellows](https://advocacy.mozilla.org/open-web-fellows/)
+- [hackNY Fellows](http://apply.hackny.org/)
+- [Knight-Mozilla Fellows](http://opennews.org/fellowships/)
+- [KPCB Fellows](http://kpcbfellows.com/)
+- [Mayfield Fellows Program](http://stvp.stanford.edu/mayfield-fellows-program/)
+- [NYC Turing Fellows](http://nycturingfellows.org/)
+- [PennApps Fellows](http://www.pennappsfellows.com/)
+- [True Entrepreneur Corps](http://www.trueventures.com/tec/)
 
 In addition to these fellowships, several companies offer special programs for younger students that are similarly geared towards learning and mentorship. Here’s another list that is not complete, but will get you started:
 
--   [Microsoft Explore](http://careers.microsoft.com/careers/en/us/university-programs.aspx) (I’m biased because I did this one, but this program is AWESOME)
--   [Google Engineering Practicum](https://www.google.com/jobs/students/engpracticum)
--   [Facebook University of Engineering](https://www.facebook.com/careers/university/fbueng)
--   [Intel IRISE](http://www.intel.com/content/www/us/en/jobs/locations/united-states/students/internships/intel-early-internship-software-engineering.html)
--   [Qualcomm EIP (Early Identification Program)](https://www.qualcomm.com/company/careers/interns)
--   \[Pinterest Engage Software Engineer Intern\] (https://careers.pinterest.com/careers/details/pinterest-engage-software-engineer-intern\_san-francisco\_143952)
+- [Microsoft Explore](http://careers.microsoft.com/careers/en/us/university-programs.aspx) (I’m biased because I did this one, but this program is AWESOME)
+- [Google Engineering Practicum](https://www.google.com/jobs/students/engpracticum)
+- [Facebook University of Engineering](https://www.facebook.com/careers/university/fbueng)
+- [Intel IRISE](http://www.intel.com/content/www/us/en/jobs/locations/united-states/students/internships/intel-early-internship-software-engineering.html)
+- [Qualcomm EIP (Early Identification Program)](https://www.qualcomm.com/company/careers/interns)
+- \[Pinterest Engage Software Engineer Intern\] (https://careers.pinterest.com/careers/details/pinterest-engage-software-engineer-intern\_san-francisco\_143952)

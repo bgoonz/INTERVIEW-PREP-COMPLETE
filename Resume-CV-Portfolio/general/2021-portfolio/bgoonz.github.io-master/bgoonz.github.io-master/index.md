@@ -1,67 +1,60 @@
 <img src="./assets/images/profile-image.jpg" alt="profile-pic" class="profile-img image-cropper" />
 
--   [Home](#intro)
--   [Projects](#one)
--   [About Me](#two)
--   [Get in touch](#three)
+- [Home](#intro)
+- [Projects](#one)
+- [About Me](#two)
+- [Get in touch](#three)
 
--   <a href="https://github.com/bgoonz" class="icon brands fa-github"><span class="label">GitHub</span></a>
--   <a href="https://www.instagram.com/bgoonz/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
--   <a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+- <a href="https://github.com/bgoonz" class="icon brands fa-github"><span class="label">GitHub</span></a>
+- <a href="https://www.instagram.com/bgoonz/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+- <a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
 
-Hi I'm Bryan!
-=============
+# Hi I'm Bryan!
 
-This site is a work in progress... as such, you may need to zoom out to about 50% to see it as intended depending on your browser!
-----------------------------------------------------------------------------------------------------------------------------------
+## This site is a work in progress... as such, you may need to zoom out to about 50% to see it as intended depending on your browser!
 
 Web Developer, Electrical Engineer & Avid Musician/Producer!
 
--   <a href="#one" class="button scrolly">See my Projects</a>
+- <a href="#one" class="button scrolly">See my Projects</a>
 
 <a href="#" class="image"><img src="images/pic01.jpg" /></a>
 
-Web Dev Resource Hub
---------------------
+## Web Dev Resource Hub
 
 ### My personal Web Development blog and resource sharing site
 
--   <a href="https://goofy-euclid-1cd736.netlify.app/" class="button">Live Site</a>
--   <a href="https://goofy-euclid-1cd736.netlify.app/core-site/index.html" class="button">Main Page</a>
+- <a href="https://goofy-euclid-1cd736.netlify.app/" class="button">Live Site</a>
+- <a href="https://goofy-euclid-1cd736.netlify.app/core-site/index.html" class="button">Main Page</a>
 
-Mihir\_Beg.com 
----------------
+## Mihir_Beg.com
 
 ### Created a dynamic web page for a local musician using the Bootsrtap framework.
 
 -Talk about App Features & Design Process Here-
 
--   <a href="https://eloquent-sammet-ba1810.netlify.app/" class="button">Live Site</a>
+- <a href="https://eloquent-sammet-ba1810.netlify.app/" class="button">Live Site</a>
 
 <a href="#" class="image"><img src="images/pic02.jpg" /></a>
 
 <a href="#" class="image"><img src="images/pic03.jpg" /></a>
 
-Interview Prep Static Site 
----------------------------
+## Interview Prep Static Site
 
 ### Data Structures Repository
 
 -Hope this helps someone other than me!-
 
--   <a href="https://gracious-raman-474030.netlify.app/" class="button">Live Site</a>
+- <a href="https://gracious-raman-474030.netlify.app/" class="button">Live Site</a>
 
--   <a href="" class="button">Learn more</a>
+- <a href="" class="button">Learn more</a>
 
 This is an embedded [Microsoft Office](https://office.com) presentation, powered by [Office](https://office.com/webapps).
 
 This is an embedded [Microsoft Office](https://office.com) document, powered by [Office](https://office.com/webapps).
 
-Click the 100% button above (below the ) and select "Page Width" to see to scale!
----------------------------------------------------------------------------------
+## Click the 100% button above (below the ) and select "Page Width" to see to scale!
 
-About Me
---------
+## About Me
 
 -To Do-
 
@@ -107,10 +100,9 @@ Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis m
 
 Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
 
--   <a href="generic.html" class="button">Learn more</a>
+- <a href="generic.html" class="button">Learn more</a>
 
-Get in touch
-------------
+## Get in touch
 
 As of now.... this form actually goes to my email... if you sent me a message before it was operational... I apologize.
 
@@ -120,18 +112,18 @@ Email
 
 Message
 
--   <a href="" class="button submit">Send Message</a>
+- <a href="" class="button submit">Send Message</a>
 
--   ### Email
+- ### Email
 
-    [bryan.guner@gmail.com](#)
+  [bryan.guner@gmail.com](#)
 
--   ### Phone
+- ### Phone
 
-    551-254-5505
+  551-254-5505
 
--   ### Social
+- ### Social
 
-    -   <a href="https://github.com/bgoonz" class="icon brands fa-github"><span class="label">GitHub</span></a>
-    -   <a href="https://www.instagram.com/bgoonz/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-    -   <a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+  - <a href="https://github.com/bgoonz" class="icon brands fa-github"><span class="label">GitHub</span></a>
+  - <a href="https://www.instagram.com/bgoonz/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+  - <a href="https://www.linkedin.com/in/bryan-guner-046199128/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>

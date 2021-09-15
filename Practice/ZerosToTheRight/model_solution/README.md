@@ -1,15 +1,12 @@
-Zeros to the Right Walkthrough
-==============================
+# Zeros to the Right Walkthrough
 
-Understanding the Problem
--------------------------
+## Understanding the Problem
 
 This problem is relatively straightforward to understand. Any 0s that aren’t on the right side of the input array need to get to the right side of the array. Ok, we can do that pretty easily.
 
 One question we’d want to address first before we start sketching out a strategy is whether we’d want to mutate the input array or whether we should instead create a new array. Well, we’ll definitely want to iterate along the array, and if we opt to mutate the input array, that’s going to make iterating along the array a lot trickier since the array is going to be changing with each iteration step.
 
-A First Pass Strategy
----------------------
+## A First Pass Strategy
 
 So it will probably be a lot easier to simply opt to create and return a new array. With that question answered, a strategy falls into place. We can iterate along the input array, and we’ll keep track of the number of 0s we see as we’re iterating. Every time we see a non-0 integer, we can simply copy it to our output array. Once we’ve traversed the entire input array, all of the non-0 integers will be in the output array and we’ll also know how many 0s we saw in the input array. From there, we can simply push that many 0s onto the end of the output array. Note that the problem asks us to return the number of non-0 integers in the array. Since we’ve been counting the number of 0s we’ve been seeing as we’ve been traversing through the array, to figure out the number of non-0 integers, we can simply subtract the length of the entire array by the number of 0s we’ve seen. So our first pass implementation might look something like this:
 
@@ -28,8 +25,7 @@ So it will probably be a lot easier to simply opt to create and return a new arr
 
         return len(output) - n_zeros
 
-Evaluating our First Pass Implementation
-----------------------------------------
+## Evaluating our First Pass Implementation
 
 This implementation works as expected. Hooray! Now it’s time to figure out the time and space complexity of this implementation. We have a single traversal over our input array, and we only perform O(1) operations inside this loop, so the for loop incurs an O(n) runtime cost.
 
@@ -37,14 +33,13 @@ The second for loop incurs a runtime cost proportional to the number of elements
 
 As far as space complexity is concerned, we’re creating a new array that has the exact same number of elements as our input array, so the amount of additional memory we’re using is proportional to the number of input elements. Thus our space complexity is O(n).
 
-So the next question we should ask ourselves is, can we do better than this? As far time complexity is concerned, we’ve *technically* achieved a linear runtime. It’s not possible to achieve a runtime faster than linear since we can’t get away with not inspecting each array element at least once to see whether an element is a 0 or a non-0 integer value.
+So the next question we should ask ourselves is, can we do better than this? As far time complexity is concerned, we’ve _technically_ achieved a linear runtime. It’s not possible to achieve a runtime faster than linear since we can’t get away with not inspecting each array element at least once to see whether an element is a 0 or a non-0 integer value.
 
 That being said, our first pass solution achieves an O(2n) runtime. Even though this theoretically simplifies down to an O(n) runtime, in practice, actually eliminating unnecessary linear passes does yield significant performance improvements when the input size is very large. So if we’re able to get our implementation down to the point where it only performs one loop through the data, then we should aim for that as our next goal.
 
-Similarly, the extra memory usage is also not desirable unless we *absolutely* need it. Let’s think about whether we can get away with not incurring that extra memory cost. So we’re going to see if we can achieve an implementation that only performs *one* pass through the input data and doesn’t require any extra memory.
+Similarly, the extra memory usage is also not desirable unless we _absolutely_ need it. Let’s think about whether we can get away with not incurring that extra memory cost. So we’re going to see if we can achieve an implementation that only performs _one_ pass through the input data and doesn’t require any extra memory.
 
-Improving Upon our First Pass Implementation
---------------------------------------------
+## Improving Upon our First Pass Implementation
 
 If we’re not looking to incur any extra memory, then we’ll have to directly mutate the input array. If we’re looking to do that, then we’ll not want to remove elements from the input array since it makes iterating through the array tricky, along with the fact that removing elements from an array incurs an O(n) runtime in the worst case.
 
@@ -68,7 +63,7 @@ Given that, we can keep track of two indices, one that starts at the left end of
 
 Ok, so what about when the left index is a non-0 and/or the right index is a 0? What do we do in those cases? As it stands, this code will very likely not terminate because it will just hang forever on the while loop.
 
-Well, in a vacuum, when do we want the left index to be incremented? Again, we’re looking to swap 0s on the left with non-0s on the right. So we *don’t* want the left index to be incremented when it’s on a 0. That means that we *do* want it to be incremented when it’s a non-0. Likewise, with the right index, we want it to *not* decrement when it’s on a non-0 value, so we want it to be decremented when it’s a 0. Let’s add this to our implementation:
+Well, in a vacuum, when do we want the left index to be incremented? Again, we’re looking to swap 0s on the left with non-0s on the right. So we _don’t_ want the left index to be incremented when it’s on a 0. That means that we _do_ want it to be incremented when it’s a non-0. Likewise, with the right index, we want it to _not_ decrement when it’s on a non-0 value, so we want it to be decremented when it’s a 0. Let’s add this to our implementation:
 
     def zeros_to_the_right(arr):
         left = 0
@@ -123,4 +118,4 @@ Sure, we can simply increment a counter of non-0 values we encounter as we’re 
 
         return n_non_zeros
 
-Lo and behold, we’ve implemented a working solution that only performs *one* traversal through the array that also only allocates a constant amount of extra space! We’re not going to be able to do better than that, so we’ll consider this problem thoroughly solved.
+Lo and behold, we’ve implemented a working solution that only performs _one_ traversal through the array that also only allocates a constant amount of extra space! We’re not going to be able to do better than that, so we’ll consider this problem thoroughly solved.

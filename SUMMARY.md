@@ -1,5 +1,4 @@
-Table of contents
-=================
+# Table of contents
 
--   [Initial page](README.md)
--   [Skills](untitled-2.md)
+- [Initial page](README.md)
+- [Skills](untitled-2.md)

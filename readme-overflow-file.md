@@ -53,16 +53,16 @@
 
 ### Don’t forget:
 
--   Iterate the array
--   Alphabetize each word
--   Store alphabetize word as the key value in a groupedWords object with the original word as the value
--   Compare alphabetize words to object keys and add additional original words when matches are found
--   Iterate over the return object and output the values, when there is more then one. (single values mean no anagram )
+- Iterate the array
+- Alphabetize each word
+- Store alphabetize word as the key value in a groupedWords object with the original word as the value
+- Compare alphabetize words to object keys and add additional original words when matches are found
+- Iterate over the return object and output the values, when there is more then one. (single values mean no anagram )
 
 ### Additional links
 
--   [Find The Anagrams Gist](https://gist.github.com/tinabme/fe6878f5cff42f60a537262503f9b765)
--   [isAnagram function implementation](https://www.30secondsofcode.org/snippet/isAnagram)
+- [Find The Anagrams Gist](https://gist.github.com/tinabme/fe6878f5cff42f60a537262503f9b765)
+- [isAnagram function implementation](https://www.30secondsofcode.org/snippet/isAnagram)
 
 ### Using flexbox, create a 3-column layout where each column takes up a `col-{n} / 12` ratio of the container.
 
@@ -93,8 +93,8 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
 
 ### Additional links
 
--   [MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
--   [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [MDN docs for basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+- [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ### What does `0.1 + 0.2 === 0.3` evaluate to?
 
@@ -111,12 +111,12 @@ A solution to this problem would be to use a function that determines if two num
 
 ### Don’t forget:
 
--   A simple solution to this problem
+- A simple solution to this problem
 
 ### Additional links
 
--   [A simple helper function to check equality](https://github.com/Chalarangelo/30-seconds-of-code#approximatelyequal)
--   [Fix “0.1 + 0.2 = 0.300000004” in JavaScript](http://blog.blakesimpson.co.uk/read/61-fix-0-1-0-2-0-300000004-in-javascript)
+- [A simple helper function to check equality](https://github.com/Chalarangelo/30-seconds-of-code#approximatelyequal)
+- [Fix “0.1 + 0.2 = 0.300000004” in JavaScript](http://blog.blakesimpson.co.uk/read/61-fix-0-1-0-2-0-300000004-in-javascript)
 
 ### What is a focus ring? What is the correct solution to handle them?
 
@@ -128,7 +128,7 @@ A focus ring is a visible outline given to focusable elements such as buttons an
 
 ### Additional links
 
--   [:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)
+- [:focus-visible](https://css-tricks.com/focus-visible-and-backwards-compatibility/)
 
 ### What is the difference between the array methods `map()` and `forEach()`?
 
@@ -138,14 +138,14 @@ Both methods iterate through the elements of an array. `map()` maps each element
 
 ### Don’t forget:
 
--   Use `forEach()` if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.
--   `map()` is the right choice to keep data immutable where each value of the original array is mapped to a new array.
+- Use `forEach()` if you need to iterate over an array and cause mutations to the elements without needing to return values to generate a new array.
+- `map()` is the right choice to keep data immutable where each value of the original array is mapped to a new array.
 
 ### Additional links
 
--   [MDN docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
--   [MDN docs for map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
--   [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
+- [MDN docs for forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+- [MDN docs for map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [JavaScript — Map vs. ForEach](https://codeburst.io/javascript-map-vs-foreach-f38111822c0f)
 
 ### What are fragments?
 
@@ -175,11 +175,11 @@ Fragments allow a React component to return multiple elements without a wrapper,
 
 ### Don’t forget:
 
--   Fragments group multiple elements returned from a component, without adding a DOM element around them.
+- Fragments group multiple elements returned from a component, without adding a DOM element around them.
 
 ### Additional links
 
--   [React docs on Fragments](https://reactjs.org/docs/fragments.html)
+- [React docs on Fragments](https://reactjs.org/docs/fragments.html)
 
 ### What is functional programming?
 
@@ -189,15 +189,15 @@ Functional programming is a paradigm in which programs are built in a declarativ
 
 ### Don’t forget:
 
--   Cleaner, more concise development experience
--   Simple function composition
--   Features of JavaScript that enable functional programming (`.map`, `.reduce` etc.)
--   JavaScript is multi-paradigm programming language (Object-Oriented Programming and Functional Programming live in harmony)
+- Cleaner, more concise development experience
+- Simple function composition
+- Features of JavaScript that enable functional programming (`.map`, `.reduce` etc.)
+- JavaScript is multi-paradigm programming language (Object-Oriented Programming and Functional Programming live in harmony)
 
 ### Additional links
 
--   [Javascript and Functional Programming: An Introduction](https://hackernoon.com/javascript-and-functional-programming-an-introduction-286aa625e26d)
--   [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+- [Javascript and Functional Programming: An Introduction](https://hackernoon.com/javascript-and-functional-programming-an-introduction-286aa625e26d)
+- [Master the JavaScript Interview: What is Functional Programming?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
 
 ### Describe your thoughts on how a single page web app should handle focus when changing routes
 
@@ -217,14 +217,14 @@ Single page applications make use of client-side rendering. This means that ‘e
 
 ### Don’t forget:
 
--   Focus issues caused by client-side rendering, instead of server-side
--   Focus should not be left on elements no longer visible on the page
--   Challenges faced by screen reader users and users utilising keyboard navigation
--   Careful manual focus management required
+- Focus issues caused by client-side rendering, instead of server-side
+- Focus should not be left on elements no longer visible on the page
+- Challenges faced by screen reader users and users utilising keyboard navigation
+- Careful manual focus management required
 
 ### Additional links
 
--   [Handling Focus on Route Change: Up Your A11y](https://www.upyoura11y.com/handling-focus/)
+- [Handling Focus on Route Change: Up Your A11y](https://www.upyoura11y.com/handling-focus/)
 
 ### What are higher-order components?
 
@@ -236,7 +236,7 @@ A higher-order component (HOC) is a function that takes a component as an argume
 
 ### Don’t forget:
 
--   They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
+- They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
 
 ### Additional links
 
@@ -255,12 +255,12 @@ Due to hoisting, the local variable `foo` is declared before the `console.log` m
 
 ### Don’t forget:
 
--   Hoisting is JavaScript’s default behavior of moving declarations to the top
--   Mention of `strict` mode
+- Hoisting is JavaScript’s default behavior of moving declarations to the top
+- Mention of `strict` mode
 
 ### Additional links
 
--   [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+- [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
 
 ### How does hoisting work in JavaScript?
 
@@ -293,13 +293,13 @@ But be wary of function expressions that are assigned to a variable:
 
 ### Don’t forget:
 
--   Hoisting is JavaScript’s default behavior of moving declarations to the top
--   Functions declarations are hoisted before variable declarations
+- Hoisting is JavaScript’s default behavior of moving declarations to the top
+- Functions declarations are hoisted before variable declarations
 
 ### Additional links
 
--   [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
--   [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
+- [MDN docs for hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+- [Understanding Hoisting in JavaScript](https://scotch.io/tutorials/understanding-hoisting-in-javascript)
 
 ### Can a web page contain multiple `<header>` elements? What about `<footer>` elements?
 
@@ -309,11 +309,11 @@ Yes to both. The W3 documents state that the tags represent the header(`<header>
 
 ### Don’t forget:
 
--   W3 recommends having as many as you want, but only 1 of each for each “section” of your page, i.e. body, section etc.
+- W3 recommends having as many as you want, but only 1 of each for each “section” of your page, i.e. body, section etc.
 
 ### Additional links
 
--   [StackOverflow - Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+- [StackOverflow - Using header or footer tag twice](https://stackoverflow.com/questions/4837269/html5-using-header-or-footer-tag-twice?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 
 ### Discuss the differences between an HTML specification and a browser’s implementation thereof.
 
@@ -323,13 +323,13 @@ HTML specifications such as `HTML5` define a set of rules that a document must a
 
 ### Don’t forget:
 
--   `HTML5` defines some rules to follow for an invalid `HTML5` document (i.e., one that contains syntactical errors)
--   However, invalid documents may contain anything, so it’s impossible for the specification to handle all possibilities comprehensively.
--   Thus, many decisions about how to handle malformed documents are left up to the browser.
+- `HTML5` defines some rules to follow for an invalid `HTML5` document (i.e., one that contains syntactical errors)
+- However, invalid documents may contain anything, so it’s impossible for the specification to handle all possibilities comprehensively.
+- Thus, many decisions about how to handle malformed documents are left up to the browser.
 
 ### Additional links
 
--   [HTML 5.2 WWW Specifications](https://www.w3.org/TR/html52/)
+- [HTML 5.2 WWW Specifications](https://www.w3.org/TR/html52/)
 
 ### What is the difference between HTML and React event handling?
 
@@ -354,11 +354,11 @@ In HTML, `false` can be returned to prevent default behavior, whereas in React `
 
 ### Don’t forget:
 
--   HTML uses lowercase, React uses camelCase.
+- HTML uses lowercase, React uses camelCase.
 
 ### Additional links
 
--   [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
+- [React docs on Handling Events](https://reactjs.org/docs/handling-events.html)
 
 ### What are some differences that XHTML has compared to HTML?
 
@@ -366,12 +366,12 @@ In HTML, `false` can be returned to prevent default behavior, whereas in React `
 
 Some of the key differences are:
 
--   An XHTML element must have an XHTML `<DOCTYPE>`
--   Attributes values must be enclosed in quotes
--   Attribute minimization is forbidden (e.g. one has to use `checked="checked"` instead of `checked`)
--   Elements must always be properly nested
--   Elements must always be closed
--   Special characters must be escaped
+- An XHTML element must have an XHTML `<DOCTYPE>`
+- Attributes values must be enclosed in quotes
+- Attribute minimization is forbidden (e.g. one has to use `checked="checked"` instead of `checked`)
+- Elements must always be properly nested
+- Elements must always be closed
+- Special characters must be escaped
 
 ### Don’t forget:
 
@@ -388,21 +388,21 @@ Sometimes. Due to JavaScript’s automatic semicolon insertion, the interpreter 
 1.  The line starts with `[`
 
     const previousLine = 3;
-    [1, 2, previousLine].map((n) => n * 2);
+    [1, 2, previousLine].map((n) => n \* 2);
 
 1.  The line starts with `(`
 
     const previousLine = 3;
     (function () {
-      // ...
+    // ...
     })();
 
 In the above cases, the interpreter does not insert a semicolon after `3`, and therefore it will see the `3` as attempting object property access or being invoked as a function, which will throw errors.
 
 ### Don’t forget:
 
--   Semicolons are usually optional in JavaScript but have edge cases where they are required.
--   If you don’t use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.
+- Semicolons are usually optional in JavaScript but have edge cases where they are required.
+- If you don’t use semicolons, tools like Prettier will insert semicolons for you in the places where they are required on save in a text editor to prevent errors.
 
 ### Additional links
 
@@ -453,11 +453,11 @@ In the above case, if `e.target` is not or does not contain an element matching 
 
 ### Don’t forget:
 
--   Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.
+- Logical operations do not produce a boolean unless the operand(s) evaluate to a boolean.
 
 ### Additional links
 
--   [JavaScript: What is short-circuit evaluation?](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
+- [JavaScript: What is short-circuit evaluation?](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)
 
 ### What are the advantages of using CSS sprites and how are they utilized?
 
@@ -467,11 +467,11 @@ CSS sprites combine multiple images into one image, limiting the number of HTTP 
 
 ### Don’t forget:
 
--   `background-image`, `background-position` and `background-size` can be used to utilize a spritesheet.
+- `background-image`, `background-position` and `background-size` can be used to utilize a spritesheet.
 
 ### Additional links
 
--   [CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)
+- [CSS Sprites explained by CSS Tricks](https://css-tricks.com/css-sprites/)
 
 ### What is a stateful component in React?
 
@@ -497,13 +497,13 @@ A stateful component is a component whose behavior depends on its state. This me
 
 ### Don’t forget:
 
--   Stateful components have internal state that they depend on.
--   Stateful components are class components or function components that use stateful Hooks.
--   Stateful components have their state initialized in the constructor or with `useState()`.
+- Stateful components have internal state that they depend on.
+- Stateful components are class components or function components that use stateful Hooks.
+- Stateful components have their state initialized in the constructor or with `useState()`.
 
 ### Additional links
 
--   [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+- [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
 ### What is a stateless component?
 
@@ -513,13 +513,13 @@ A stateless component is a component whose behavior does not depend on its state
 
 ### Don’t forget:
 
--   Stateless components are independent of their state.
--   Stateless components can be either class or functional components.
--   Stateless functional components avoid the `this` keyword altogether.
+- Stateless components are independent of their state.
+- Stateless components can be either class or functional components.
+- Stateless functional components avoid the `this` keyword altogether.
 
 ### Additional links
 
--   [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+- [React docs on State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 
 ### Explain the difference between a static method and an instance method.
 
@@ -538,11 +538,11 @@ In this case, the `Array.isArray` method does not make sense as an instance meth
 
 ### Don’t forget:
 
--   How to create static and instance methods with ES2015 class syntax
+- How to create static and instance methods with ES2015 class syntax
 
 ### Additional links
 
--   [Classes on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [Classes on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 ### What is the difference between synchronous and asynchronous code in JavaScript?
 
@@ -552,8 +552,8 @@ Synchronous means each operation must wait for the previous one to complete. Asy
 
 ### Don’t forget:
 
--   JavaScript has a concurrency model based on an “event loop”.
--   Functions like `alert` block the main thread so that no user input is registered until the user closes it.
+- JavaScript has a concurrency model based on an “event loop”.
+- Functions like `alert` block the main thread so that no user input is registered until the user closes it.
 
 ### Additional links
 
@@ -635,14 +635,14 @@ Because `this` can change depending on the scope, it can have unexpected values 
 
 ### Don’t forget:
 
--   In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
--   `Function.prototype.call` and `Function.prototype.apply` set the `this` context of an executing function as the first argument, with `call` accepting a variadic number of arguments thereafter, and `apply` accepting an array as the second argument which are fed to the function in a variadic manner.
--   `Function.prototype.bind` returns a new function that enforces the `this` context as the first argument which cannot be changed by other functions.
--   If a function requires its `this` context to be changed based on how it is called, you must use the `function` keyword. Use arrow functions when you want `this` to be the surrounding (lexical) context.
+- In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
+- `Function.prototype.call` and `Function.prototype.apply` set the `this` context of an executing function as the first argument, with `call` accepting a variadic number of arguments thereafter, and `apply` accepting an array as the second argument which are fed to the function in a variadic manner.
+- `Function.prototype.bind` returns a new function that enforces the `this` context as the first argument which cannot be changed by other functions.
+- If a function requires its `this` context to be changed based on how it is called, you must use the `function` keyword. Use arrow functions when you want `this` to be the surrounding (lexical) context.
 
 ### Additional links
 
--   [`this` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [`this` on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
 
 ### What does the following code evaluate to?
 
@@ -656,7 +656,7 @@ It evaluates to `"string"`. `typeof 0` evaluates to the string `"number"` and th
 
 ### Additional links
 
--   [MDN docs for typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+- [MDN docs for typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ### What are JavaScript data types?
 
@@ -666,14 +666,14 @@ The latest ECMAScript standard defines seven data types, six of them being primi
 
 ### Don’t forget:
 
--   Mention of newly added `Symbol` data type
--   `Array`, `Date` and `function` are all of type `object`
--   Functions in JavaScript are objects with the capability of being callable
+- Mention of newly added `Symbol` data type
+- `Array`, `Date` and `function` are all of type `object`
+- Functions in JavaScript are objects with the capability of being callable
 
 ### Additional links
 
--   [MDN docs for data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
--   [Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
+- [MDN docs for data types and data structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [Understanding Data Types in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript)
 
 ### What is the purpose of JavaScript UI libraries/frameworks like React, Vue, Angular, Hyperapp, etc?
 
@@ -683,12 +683,12 @@ The main purpose is to avoid manipulating the DOM directly and keep the state of
 
 ### Don’t forget:
 
--   The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.
--   JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.
+- The virtual DOM is a representation of the real DOM tree in the form of plain objects, which allows a library to write code as if the entire document is thrown away and rebuilt on each change, while the real DOM only updates what needs to be changed. Comparing the new virtual DOM against the previous one leads to high efficiency as changing real DOM nodes is costly compared to recalculating the virtual DOM.
+- JSX is an extension to JavaScript that provides XML-like syntax to create virtual DOM objects which is transformed to function calls by a transpiler. It simplifies control flow (if statements/ternary expressions) compared to tagged template literals.
 
 ### Additional links
 
--   [Virtual DOM in Hyperapp](https://github.com/hyperapp/hyperapp#view)
+- [Virtual DOM in Hyperapp](https://github.com/hyperapp/hyperapp#view)
 
 ### What does `'use strict'` do and what are some of the key benefits to using it?
 
@@ -696,22 +696,22 @@ The main purpose is to avoid manipulating the DOM directly and keep the state of
 
 Including `'use strict'` at the beginning of your JavaScript source file enables strict mode, which enforces more strict parsing and error handling of JavaScript code. It is considered a good practice and offers a lot of benefits, such as:
 
--   Easier debugging due to eliminating silent errors.
--   Disallows variable redefinition.
--   Prevents accidental global variables.
--   Oftentimes provides increased performance over identical code that is not running in strict mode.
--   Simplifies `eval()` and `arguments`.
--   Helps make JavaScript more secure.
+- Easier debugging due to eliminating silent errors.
+- Disallows variable redefinition.
+- Prevents accidental global variables.
+- Oftentimes provides increased performance over identical code that is not running in strict mode.
+- Simplifies `eval()` and `arguments`.
+- Helps make JavaScript more secure.
 
 ### Don’t forget:
 
--   Eliminates `this` coercion, throwing an error when `this` references a value of `null` or `undefined`.
--   Throws an error on invalid usage of `delete`.
--   Prohibits some syntax likely to be defined in future versions of ECMAScript
+- Eliminates `this` coercion, throwing an error when `this` references a value of `null` or `undefined`.
+- Throws an error on invalid usage of `delete`.
+- Prohibits some syntax likely to be defined in future versions of ECMAScript
 
 ### Additional links
 
--   [MDN docs for strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+- [MDN docs for strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 ### What are the differences between `var`, `let`, `const` and no keyword statements?
 
@@ -768,14 +768,14 @@ When no keyword exists before a variable assignment, it is either assigning a gl
 
 ### Don’t forget:
 
--   All declarations are hoisted to the top of their scope.
--   However, with `let` and `const` there is a concept called the temporal dead zone (TDZ). While the declarations are still hoisted, there is a period between entering scope and being declared where they cannot be accessed.
--   Show a common issue with using `var` and how `let` can solve it, as well as a solution that keeps `var`.
--   `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
+- All declarations are hoisted to the top of their scope.
+- However, with `let` and `const` there is a concept called the temporal dead zone (TDZ). While the declarations are still hoisted, there is a period between entering scope and being declared where they cannot be accessed.
+- Show a common issue with using `var` and how `let` can solve it, as well as a solution that keeps `var`.
+- `var` should be avoided whenever possible and prefer `const` as the default declaration statement for all variables unless they will be reassigned later, then use `let` if so.
 
 ### Additional links
 
--   [`let` vs `const`](https://wesbos.com/let-vs-const/)
+- [`let` vs `const`](https://wesbos.com/let-vs-const/)
 
 ### What is a virtual DOM and why is it used in libraries/frameworks?
 
@@ -817,11 +817,11 @@ The library/framework uses the virtual DOM as a means to improve performance. Wh
 
 ### Don’t forget:
 
--   Why accessing the DOM can be so costly.
+- Why accessing the DOM can be so costly.
 
 ### Additional links
 
--   [The difference between Virtual DOM and DOM](http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
+- [The difference between Virtual DOM and DOM](http://reactkungfu.com/2015/10/the-difference-between-virtual-dom-and-dom/)
 
 ### What is WCAG? What are the differences between A, AA, and AAA compliance?
 
@@ -831,14 +831,14 @@ WCAG stands for “Web Content Accessibility Guidelines”. It is a standard des
 
 ### Don’t forget:
 
--   A guideline for making web content more accessible
--   3 different levels (A, AA, and AAA) of compliance for each guideline
--   Governments are starting to require web content to meet a certain level of compliance by law
+- A guideline for making web content more accessible
+- 3 different levels (A, AA, and AAA) of compliance for each guideline
+- Governments are starting to require web content to meet a certain level of compliance by law
 
 ### Additional links
 
--   [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
--   [How to Meet WCAG](https://www.w3.org/WAI/WCAG21/quickref/)
+- [Web Content Accessibility Guidelines (WCAG) Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
+- [How to Meet WCAG](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ### What is a cross-site scripting attack (XSS) and how do you prevent it?
 
@@ -846,23 +846,22 @@ WCAG stands for “Web Content Accessibility Guidelines”. It is a standard des
 
 XSS refers to client-side code injection where the attacker injects malicious scripts into a legitimate website or web application. This is often achieved when the application does not validate user input and freely injects dynamic HTML content. For example, a comment system will be at risk if it does not validate or escape user input. If the comment contains unescaped HTML, the comment can inject a `<script>` tag into the website that other users will execute against their knowledge.
 
--   The malicious script has access to cookies which are often used to store session tokens. If an attacker can obtain a user’s session cookie, they can impersonate the user.
--   The script can arbitrarily manipulate the DOM of the page the script is executing in, allowing the attacker to insert pieces of content that appear to be a real part of the website.
--   The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
+- The malicious script has access to cookies which are often used to store session tokens. If an attacker can obtain a user’s session cookie, they can impersonate the user.
+- The script can arbitrarily manipulate the DOM of the page the script is executing in, allowing the attacker to insert pieces of content that appear to be a real part of the website.
+- The script can use AJAX to send HTTP requests with arbitrary content to arbitrary destinations.
 
 ### Don’t forget:
 
--   On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
--   On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won’t execute the script.
+- On the client, using `textContent` instead of `innerHTML` prevents the browser from running the string through the HTML parser which would execute scripts in it.
+- On the server, escaping HTML tags will prevent the browser from parsing the user input as actual HTML and therefore won’t execute the script.
 
 ### Additional links
 
--   [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
+- [Cross-Site Scripting Attack (XSS)](https://www.acunetix.com/websitesecurity/cross-site-scripting/)
 
-------------------------------------------------------------------------
+---
 
-ALL Prior Code:
-===============
+# ALL Prior Code:
 
     // Normal promises in regular function:
     function foo() {
@@ -1555,8 +1554,7 @@ notes-n-resources/
 
 ### [notes-n-resources/awesome-interview-questions.md](notes-n-resources/awesome-interview-questions.md)
 
-Awesome Competitive Programming [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-===========================================================================================================================================================================================
+# Awesome Competitive Programming [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 A curated list of awesome `Competitive Programming`, `Algorithm` and `Data Structure` resources.
 
@@ -1564,7 +1562,7 @@ Created with a view to connecting people to information, this list below contain
 
 Practice/ES6/
 
-### [Practice/ES6/Destructuring\_Geneal.md](Practice/ES6/Destructuring_Geneal.md)
+### [Practice/ES6/Destructuring_Geneal.md](Practice/ES6/Destructuring_Geneal.md)
 
 ### General Object Destructuring Example
 
@@ -1596,8 +1594,7 @@ Now the variables listed in between the curly braces are assigned the value of t
 
     console.log(jim, bob, sarah, cassie); //outputs: Jim Bob Sarah Cassie
 
-Unlike objects, the name we give the variables doesn’t matter. Let’s change the above example: So, each of the variable names will ONLY count for the index-positions I fetch.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Unlike objects, the name we give the variables doesn’t matter. Let’s change the above example: So, each of the variable names will ONLY count for the index-positions I fetch.
 
     let arr = ["Jim", "Bob", "Sarah", "Cassie"];
 
@@ -1613,8 +1610,7 @@ let \[ jim, bob, cassie \] = arr;
 
 console.log(jim, bob, cassie); //outputs: Jim Bob Sarah
 
-Using Spread operator - It is often used for splitting out a part of an object, but keeping the remaining properties in another object.
----------------------------------------------------------------------------------------------------------------------------------------
+## Using Spread operator - It is often used for splitting out a part of an object, but keeping the remaining properties in another object.
 
     let myObj = {
       name: "Luke",
@@ -1632,8 +1628,7 @@ Practice/Promise-Notes/
 
 ### [Practice/Promise-Notes/then-in-Promise-Future-Reference-GOOD.md](Practice/Promise-Notes/then-in-Promise-Future-Reference-GOOD.md)
 
-How .then() actually makes few asynchronous calls happen in particular order one after another
-==============================================================================================
+# How .then() actually makes few asynchronous calls happen in particular order one after another
 
 A&gt; https://spring.io/understanding/javascript-promises
 
@@ -1643,8 +1638,7 @@ B&gt; https://medium.com/codebuddies/getting-to-know-asynchronous-javascript-cal
 
 The true power of promises is shown when you have several asynchronous operations that depend on each other. So let’s take the case where we have to make a request that depends on the result of another request.
 
-Callback Hell Example
----------------------
+## Callback Hell Example
 
 Callbacks are a good way to declare what will happen once an I/O operation has a result, but what if you want to use that data in order to make another request? You can only handle the result of the request (if we use the example above) within the callback function provided.
 
@@ -1671,8 +1665,7 @@ Callbacks are a good way to declare what will happen once an I/O operation has a
 
 In this example above, the variable “result” will not have a value when printed to the console at the last line. And will output “undefined” to the console because at the time that line is being executed, the callback has not been called. Even if the request were somehow to complete before the result variable is printed to the console (which is almost impossible as though, as inside the callback I am making a network request to google.com server), this code will still run to completion before the callback is executed anyway because that is the nature of the non-blocking I/O model in JavaScript.
 
-Because, by the non-blocking architecture, of JS / Node, while the callback is being executed ( making a request to google.com in this case) - the rest of the code after the callback function’s block will continue to get executed.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Because, by the non-blocking architecture, of JS / Node, while the callback is being executed ( making a request to google.com in this case) - the rest of the code after the callback function’s block will continue to get executed.
 
 `( See my explanation in - Asynchronous-Non-blocking-Mechanism-in-Node.md)`
 
@@ -1850,70 +1843,65 @@ Resume-CV-Portfolio/general/cv-letter-samples/bgoonz-master/
 
 ![](https://tender-bartik-074feb.netlify.app/assets/images/profile-image.jpg)
 
--   [GitHub](https://github.com/bgoonz)
--   [Instagram](https://www.instagram.com/bgoonz/)
--   [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
+- [GitHub](https://github.com/bgoonz)
+- [Instagram](https://www.instagram.com/bgoonz/)
+- [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
 
-Hi I’m Bryan!
-=============
+# Hi I’m Bryan!
 
 ![resume](./bryan-guner-resume-2021.jpeg)
 
 [github-resume](https://resume.github.io/?bgoonz)
 
-------------------------------------------------------------------------
+---
 
 Before I deleted some repositories to clean out my github account I had over 1000 commits in my personal repository in just a few months, I have a lot to learn… but I live and breathe code.
 
 <table><tbody><tr class="odd"><td><img src="./2020-contributions.JPG" /></td><td><img src="./2021.JPG" /></td></tr></tbody></table>
 
-------------------------------------------------------------------------
+---
 
-Web Dev Resource Hub
---------------------
+## Web Dev Resource Hub
 
 ### My personal Web Development blog and resource sharing site
 
--   [Live Site](https://goofy-euclid-1cd736.netlify.app/)
--   [Main Page](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
+- [Live Site](https://goofy-euclid-1cd736.netlify.app/)
+- [Main Page](https://goofy-euclid-1cd736.netlify.app/core-site/index.html)
 
-Mihir\_Beg.com
---------------
+## Mihir_Beg.com
 
 ### Created a dynamic web page for a local musician using the Bootsrtap framework.
 
 -Talk about App Features & Design Process Here-
 
--   [Live Site](https://eloquent-sammet-ba1810.netlify.app/)
+- [Live Site](https://eloquent-sammet-ba1810.netlify.app/)
 
-Interview Prep Static Site
---------------------------
+## Interview Prep Static Site
 
 ### Data Structures Repository
 
 -Hope this helps someone other than me!-
 
--   [Live Site](https://gracious-raman-474030.netlify.app)
+- [Live Site](https://gracious-raman-474030.netlify.app)
 
--   ### Email
+- ### Email
 
-    [bryan.guner@gmail.com](#)
+  [bryan.guner@gmail.com](#)
 
--   ### Phone
+- ### Phone
 
-    551-254-5505
+  551-254-5505
 
--   ### Social
+- ### Social
 
-    -   [GitHub](https://github.com/bgoonz)
-    -   [Instagram](https://www.instagram.com/bgoonz/)
-    -   [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
+  - [GitHub](https://github.com/bgoonz)
+  - [Instagram](https://www.instagram.com/bgoonz/)
+  - [LinkedIn](https://www.linkedin.com/in/bryan-guner-046199128/)
 
 Resume-CV-Portfolio/html-resume/
 
 ### [Resume-CV-Portfolio/html-resume/README.md](Resume-CV-Portfolio/html-resume/README.md)
 
-html-resume
-===========
+# html-resume
 
 ![resume](./screencapture-bg-resume-netlify-app-2021-04-11-22_04_50.png)

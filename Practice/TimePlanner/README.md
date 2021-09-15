@@ -1,5 +1,4 @@
-Time Planner
-============
+# Time Planner
 
 Implement a time planner that receives the availability of two people and a duration. The time planner should return the earliest time slot that matches the given duration where both people have availability. If there is no common time slot that satisfies these requirements, return an empty array.
 

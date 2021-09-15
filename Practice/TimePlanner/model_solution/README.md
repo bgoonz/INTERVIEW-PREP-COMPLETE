@@ -1,8 +1,6 @@
-Time Planner Walkthrough
-========================
+# Time Planner Walkthrough
 
-Understanding the Problem
--------------------------
+## Understanding the Problem
 
 This problem gives as input two (sorted) lists of tuples that represent time slots of availability for two people who want to find a common time slot of the given duration. Let’s start off by walking through some examples.
 
@@ -30,8 +28,7 @@ With an example like `(4, 15)` and `(16, 27)`, there’s no commonality because 
 
 Now that we understand logically how to pick out common time slots, let’s see if we can come up with a strategy for solving this problem.
 
-Coming Up With A Strategy
--------------------------
+## Coming Up With A Strategy
 
 How do we check for common slots given two time slots in code? Of the two starting times, we want to figure out the larger of the two times to figure out the starting time of the common time slot. Similarly, to figure out the ending time of the common time slot, we want to figure out the smaller of the two ending times. We can use `max` and `min` functions to do this.
 
@@ -63,8 +60,7 @@ Whenever we’re given sorted input, chances are we can make use of that fact in
 
 To facilitate this idea, we could use two indices to keep track of our progress as we’re iterating through both lists in a single loop. We’ll still perform the same logic of determining the starting and ending time of the common time slot by determining the max starting time and min ending time of the two time slots. Then, we’ll decide which index to update by checking which time slot has the smaller ending time.
 
-Implementing and Evaluating Our Strategy
-----------------------------------------
+## Implementing and Evaluating Our Strategy
 
 In pseudocode, that could look like this:
 

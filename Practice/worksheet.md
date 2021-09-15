@@ -1,5 +1,4 @@
-Pair Programming Code Challenge Worksheet
-=========================================
+# Pair Programming Code Challenge Worksheet
 
 1.  Describe the strategy you came up with for your problem as if you were talking about it to someone who didn’t know how to program at all.
 
