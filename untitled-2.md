@@ -1,5 +1,4 @@
-Skills
-======
+# Skills
 
 **Programming**
 

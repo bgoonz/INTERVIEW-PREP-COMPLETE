@@ -2,8 +2,6 @@
 
 [&lt;Go Back&gt;](../right.html)
 
- [live-form](live-form/right.html)
+[live-form](live-form/right.html)
 
-  
-
-Folders: 2  
+Folders: 2

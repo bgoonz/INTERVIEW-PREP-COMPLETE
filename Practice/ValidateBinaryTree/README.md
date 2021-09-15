@@ -1,5 +1,4 @@
-Validate a Binary Tree
-======================
+# Validate a Binary Tree
 
 Given a binary tree like the following:
 

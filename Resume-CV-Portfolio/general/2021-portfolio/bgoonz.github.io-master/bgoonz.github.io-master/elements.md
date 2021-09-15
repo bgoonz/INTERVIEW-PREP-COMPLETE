@@ -1,31 +1,28 @@
 <a href="index.html" class="title">Hyperspace</a>
 
--   [Home](index.html)
--   [Generic](generic.html)
--   <a href="elements.html" class="active">Elements</a>
+- [Home](index.html)
+- [Generic](generic.html)
+- <a href="elements.html" class="active">Elements</a>
 
-Elements
-========
+# Elements
 
-Text
-----
+## Text
 
-This is **bold** and this is **strong**. This is *italic* and this is *emphasized*. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underline">underlined</span> and this is code: `for (;;) { ... }`. Finally, [this is a link](#).
+This is **bold** and this is **strong**. This is _italic_ and this is _emphasized_. This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underline">underlined</span> and this is code: `for (;;) { ... }`. Finally, [this is a link](#).
 
-------------------------------------------------------------------------
+---
 
 Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
 
-------------------------------------------------------------------------
+---
 
-Heading Level 2
----------------
+## Heading Level 2
 
 ### Heading Level 3
 
 #### Heading Level 4
 
-------------------------------------------------------------------------
+---
 
 ### Blockquote
 
@@ -43,20 +40,19 @@ Heading Level 2
 
     print 'It took ' + i + ' iterations to sort the deck.';
 
-Lists
------
+## Lists
 
 ### Unordered
 
--   Dolor pulvinar etiam.
--   Sagittis adipiscing.
--   Felis enim feugiat.
+- Dolor pulvinar etiam.
+- Sagittis adipiscing.
+- Felis enim feugiat.
 
 ### Alternate
 
--   Dolor pulvinar etiam.
--   Sagittis adipiscing.
--   Felis enim feugiat.
+- Dolor pulvinar etiam.
+- Sagittis adipiscing.
+- Felis enim feugiat.
 
 ### Ordered
 
@@ -69,42 +65,40 @@ Lists
 
 ### Icons
 
--   <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
--   <a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
--   <a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
--   <a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
+- <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
+- <a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
+- <a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+- <a href="#" class="icon brands fa-github"><span class="label">Github</span></a>
 
-Actions
--------
+## Actions
 
--   <a href="#" class="button primary">Default</a>
--   <a href="#" class="button">Default</a>
-
-<!-- -->
-
--   <a href="#" class="button primary small">Small</a>
--   <a href="#" class="button small">Small</a>
+- <a href="#" class="button primary">Default</a>
+- <a href="#" class="button">Default</a>
 
 <!-- -->
 
--   <a href="#" class="button primary">Default</a>
--   <a href="#" class="button">Default</a>
+- <a href="#" class="button primary small">Small</a>
+- <a href="#" class="button small">Small</a>
 
 <!-- -->
 
--   <a href="#" class="button primary small">Small</a>
--   <a href="#" class="button small">Small</a>
-
--   <a href="#" class="button primary fit">Default</a>
--   <a href="#" class="button fit">Default</a>
+- <a href="#" class="button primary">Default</a>
+- <a href="#" class="button">Default</a>
 
 <!-- -->
 
--   <a href="#" class="button primary small fit">Small</a>
--   <a href="#" class="button small fit">Small</a>
+- <a href="#" class="button primary small">Small</a>
+- <a href="#" class="button small">Small</a>
 
-Table
------
+- <a href="#" class="button primary fit">Default</a>
+- <a href="#" class="button fit">Default</a>
+
+<!-- -->
+
+- <a href="#" class="button primary small fit">Small</a>
+- <a href="#" class="button small fit">Small</a>
+
+## Table
 
 ### Default
 
@@ -188,40 +182,39 @@ Ante turpis integer aliquet porttitor.
 
 ### Buttons
 
--   <a href="#" class="button primary">Primary</a>
--   <a href="#" class="button">Default</a>
+- <a href="#" class="button primary">Primary</a>
+- <a href="#" class="button">Default</a>
 
 <!-- -->
 
--   <a href="#" class="button large">Large</a>
--   <a href="#" class="button">Default</a>
--   <a href="#" class="button small">Small</a>
+- <a href="#" class="button large">Large</a>
+- <a href="#" class="button">Default</a>
+- <a href="#" class="button small">Small</a>
 
 <!-- -->
 
--   <a href="#" class="button primary fit">Fit</a>
--   <a href="#" class="button fit">Fit</a>
--   <a href="#" class="button fit">Fit</a>
+- <a href="#" class="button primary fit">Fit</a>
+- <a href="#" class="button fit">Fit</a>
+- <a href="#" class="button fit">Fit</a>
 
 <!-- -->
 
--   <a href="#" class="button primary fit small">Fit + Small</a>
--   <a href="#" class="button fit small">Fit + Small</a>
--   <a href="#" class="button fit small">Fit + Small</a>
+- <a href="#" class="button primary fit small">Fit + Small</a>
+- <a href="#" class="button fit small">Fit + Small</a>
+- <a href="#" class="button fit small">Fit + Small</a>
 
 <!-- -->
 
--   <a href="#" class="button primary icon solid fa-download">Icon</a>
--   <a href="#" class="button icon solid fa-upload">Icon</a>
--   <a href="#" class="button icon solid fa-save">Icon</a>
+- <a href="#" class="button primary icon solid fa-download">Icon</a>
+- <a href="#" class="button icon solid fa-upload">Icon</a>
+- <a href="#" class="button icon solid fa-save">Icon</a>
 
 <!-- -->
 
--   <span class="button primary disabled">Disabled</span>
--   <span class="button disabled">Disabled</span>
+- <span class="button primary disabled">Disabled</span>
+- <span class="button disabled">Disabled</span>
 
-Form
-----
+## Form
 
 \- Category - Manufacturing Shipping Administration Human Resources
 
@@ -235,10 +228,9 @@ Email me a copy
 
 Not a robot
 
--   -   
+- -
 
-Image
------
+## Image
 
 ### Fit
 
@@ -268,5 +260,5 @@ Image
 
 <span class="image right">![](images/pic06.jpg)</span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
 
--   © Untitled. All rights reserved.
--   Design: [HTML5 UP](http://html5up.net)
+- © Untitled. All rights reserved.
+- Design: [HTML5 UP](http://html5up.net)

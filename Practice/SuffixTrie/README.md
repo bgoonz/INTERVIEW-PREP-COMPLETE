@@ -1,5 +1,4 @@
-Suffix Trie
-===========
+# Suffix Trie
 
 A suffix trie is a tree data structure that stores suffixes of strings. Visually, you could draw a suffix trie like so:
 

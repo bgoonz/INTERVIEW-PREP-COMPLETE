@@ -1,8 +1,6 @@
-Suffix Trie Walkthrough
-=======================
+# Suffix Trie Walkthrough
 
-What even is a suffix trie?
----------------------------
+## What even is a suffix trie?
 
 Tries are a type of tree data structure that are efficient when it comes to storing and searching through strings. They achieve this efficiency by storing either prefixes or suffixes of strings character by character. A suffix trie then is a trie that stores all the suffixes of the strings it contains (a prefix trie would thus be a trie that stored all the prefixes of the strings it contains).
 
@@ -16,13 +14,11 @@ So a suffix trie that contained the word “cat” would contain all three of th
 
 \[Image of suffix trie here\]
 
-Examining the code that’s already here
---------------------------------------
+## Examining the code that’s already here
 
 The provided skeleton class has a root, which is an empty hash table, an ending symbol that we’ll use to mark the end of a string, as well as a `populate_trie` method that it calls with the input string that is passed to the constructor of the class. The methods that need implementing are the `populate_trie` method, which will add a given input string to the trie, as well as a `contains` method, which will return a boolean indicating whether a given input string exists in the trie.
 
-So how do we build this thing?
-------------------------------
+## So how do we build this thing?
 
 Let’s start by working on the `populate_trie` method before we turn our attention to the `contains` method. One helpful way to think about implementing a method like this is to start with a very simple case, and then work our way up to more general cases, so let’s do that.
 
@@ -81,7 +77,7 @@ Running this method with the string “cat” will produce the following structu
 
 ### Step 3: Handling all suffixes
 
-That’s good progress! But that’s not everything yet. Remember, our suffix trie should contain *every* suffix of the word, not just the word by itself.
+That’s good progress! But that’s not everything yet. Remember, our suffix trie should contain _every_ suffix of the word, not just the word by itself.
 
 Ok, well, that should be pretty simple. We can start off by inserting the whole word like we just did, and then insert the whole word minus the first letter, and then insert the whole word minus the first two letters, etc. We’ll do this until we get to the last letter of the word.
 
@@ -141,7 +137,7 @@ What happens when we run this method on a word that has some repeating letters? 
 
 Wait, that’s not right.. The root level “o” entry should have a nested “g” and then another “o” nested inside the “g” node, since “ogo” is a suffix of “pogo”.
 
-So it looks lik we have a problem with our implementation. The problem is that our current implementation isn’t checking for if the letter we’re trying to insert into a node in the trie already exists. So what’s happening here is that we *did* insert “ogo” at the root level of the trie, and then we continued on, inserting “go”, and finally the last “o”. But, since our code isn’t checking if letters already exist in any given node, the act of inserting the last “o” overwrites the previous “ogo” entry.
+So it looks lik we have a problem with our implementation. The problem is that our current implementation isn’t checking for if the letter we’re trying to insert into a node in the trie already exists. So what’s happening here is that we _did_ insert “ogo” at the root level of the trie, and then we continued on, inserting “go”, and finally the last “o”. But, since our code isn’t checking if letters already exist in any given node, the act of inserting the last “o” overwrites the previous “ogo” entry.
 
 We can remedy this pretty easily by changing our `populate_trie` to the following:
 
@@ -215,7 +211,7 @@ Hashing this idea out into code, we might get something like this:
         # the word ends with our ending symbol
         return self.end_symbol in node
 
-The last line in the above implementation is a bit a formality. After all, if a word in our trie *doesn’t* end with the ending symbol, well, that was because we forgot to add it ourselves.
+The last line in the above implementation is a bit a formality. After all, if a word in our trie _doesn’t_ end with the ending symbol, well, that was because we forgot to add it ourselves.
 
 As we can see though, our `contains` implementation looks a heck of a lot like our `populate_trie` implementation.
 
@@ -261,6 +257,6 @@ Takinga a look at this code, we see that we have a while loop that iterates alon
 
 As far as space complexity goes, we just determined that creation takes O(m^2) time. Then, since we’re sticking all of those m^2 letters in our trie, it turns out that the space complexity of our trie data structure is proportional to our time complexity, so space complexity is also O(m^2) in this case.
 
-What about searching for some given string in our trie? Well, in that case, we only ever have to perform the same number of checks as there are letters in our target string. The beauty of a trie data structure is that this fact holds true *regardless* of how many strings are being stored in our trie. We could have a whole bunch of strings in a single trie and runtime for searching for any arbitrary string in the trie would always just be proportional to the length of the target string. Thus, searching through our trie takes O(m) time, where m is the length of whatever target string we’d like to search for.
+What about searching for some given string in our trie? Well, in that case, we only ever have to perform the same number of checks as there are letters in our target string. The beauty of a trie data structure is that this fact holds true _regardless_ of how many strings are being stored in our trie. We could have a whole bunch of strings in a single trie and runtime for searching for any arbitrary string in the trie would always just be proportional to the length of the target string. Thus, searching through our trie takes O(m) time, where m is the length of whatever target string we’d like to search for.
 
 So there you have it. That’s a pretty thorough walkthrough of implementing a suffix trie data structure. Remember, the whole point of a trie data structure is to provide fast lookup of strings (think about what the runtime would be if we instead just had a bunch of strings in an array; what would the runtime be to search for a single string in that case?). However, the tradeoff we incur for this fast lookup is slow insertion as well as taking up a relatively large amount of memory.
