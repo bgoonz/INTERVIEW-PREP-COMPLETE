@@ -1,9 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #143F6B;
+  background-color: #143f6b;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -27,7 +29,7 @@ body {
 }
 
 .white.active {
-  background-color: #CCC;
+  background-color: #ccc;
 }
 
 .black {

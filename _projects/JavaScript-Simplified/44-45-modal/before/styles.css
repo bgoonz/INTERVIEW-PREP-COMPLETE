@@ -6,7 +6,7 @@
   transform: translate(-50%, -50%);
   border: 1px solid black;
   padding: 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   background-color: white;
 }
 
@@ -17,5 +17,5 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, 0.75);
 }

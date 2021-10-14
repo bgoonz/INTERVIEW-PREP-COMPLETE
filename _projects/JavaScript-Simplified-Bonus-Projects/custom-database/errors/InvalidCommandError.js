@@ -1,7 +1,7 @@
 module.exports = class InvalidCommandError extends Error {
   constructor(commandString) {
-    super(commandString)
+    super(commandString);
 
-    this.name = "InvalidCommandError"
+    this.name = "InvalidCommandError";
   }
-}
+};

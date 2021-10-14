@@ -1,28 +1,28 @@
-const readline = require("readline")
-const parseCommand = require("./parseCommand")
+const readline = require("readline");
+const parseCommand = require("./parseCommand");
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-})
+});
 
 async function start() {
   while (true) {
     try {
-      const commandString = await waitForCommand()
-      printFormattedJSON(await parseCommand(commandString))
+      const commandString = await waitForCommand();
+      printFormattedJSON(await parseCommand(commandString));
     } catch (e) {
-      console.error(`${e.name}: ${e.message}`)
+      console.error(`${e.name}: ${e.message}`);
     }
   }
 }
-start()
+start();
 
 function waitForCommand() {
-  return new Promise(resolve => {
-    rl.question("> ", resolve)
-  })
+  return new Promise((resolve) => {
+    rl.question("> ", resolve);
+  });
 }
 
 function printFormattedJSON(string) {
-  console.log(JSON.stringify(string, null, 2))
+  console.log(JSON.stringify(string, null, 2));
 }

@@ -16,6 +16,5 @@ type MotionSimpleGridProps = Merge<
   SimpleGridProps
 
 export const MotionBox: React.FC<MotionBoxProps> = motion(Box)
-export const MotionSimpleGrid: React.FC<MotionSimpleGridProps> = motion(
-  SimpleGrid
-)
+export const MotionSimpleGrid: React.FC<MotionSimpleGridProps> =
+  motion(SimpleGrid)

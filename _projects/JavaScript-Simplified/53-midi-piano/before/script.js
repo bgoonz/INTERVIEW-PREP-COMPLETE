@@ -10,5 +10,5 @@ const NOTE_DETAILS = [
   { note: "Ab", key: "H", frequency: 415.305 },
   { note: "A", key: "N", frequency: 440 },
   { note: "Bb", key: "J", frequency: 466.164 },
-  { note: "B", key: "M", frequency: 493.883 }
-]
+  { note: "B", key: "M", frequency: 493.883 },
+];

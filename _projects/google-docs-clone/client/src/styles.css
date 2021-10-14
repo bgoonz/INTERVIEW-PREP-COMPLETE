@@ -1,9 +1,11 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   margin: 0;
 }
 
@@ -12,7 +14,7 @@ body {
   min-height: 11in;
   padding: 1in;
   margin: 1rem;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
 }
 
@@ -28,9 +30,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border: none;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 @page {

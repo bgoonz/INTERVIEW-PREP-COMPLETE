@@ -24,10 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("visitBoard", board => {
+Cypress.Commands.add("visitBoard", (board) => {
   cy.visit("/", {
     onBeforeLoad(window) {
-      window.testBoard = board
+      window.testBoard = board;
     },
-  })
-})
+  });
+});

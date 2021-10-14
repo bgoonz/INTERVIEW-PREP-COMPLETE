@@ -1,13 +1,13 @@
-import React from "react"
-import Signup from "./authentication/Signup"
-import { AuthProvider } from "../contexts/AuthContext"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Profile from "./authentication/Profile"
-import Login from "./authentication/Login"
-import PrivateRoute from "./authentication/PrivateRoute"
-import ForgotPassword from "./authentication/ForgotPassword"
-import UpdateProfile from "./authentication/UpdateProfile"
-import Dashboard from "./google-drive/Dashboard"
+import React from "react";
+import Signup from "./authentication/Signup";
+import { AuthProvider } from "../contexts/AuthContext";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Profile from "./authentication/Profile";
+import Login from "./authentication/Login";
+import PrivateRoute from "./authentication/PrivateRoute";
+import ForgotPassword from "./authentication/ForgotPassword";
+import UpdateProfile from "./authentication/UpdateProfile";
+import Dashboard from "./google-drive/Dashboard";
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
         </Switch>
       </AuthProvider>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

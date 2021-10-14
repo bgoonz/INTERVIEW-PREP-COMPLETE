@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -17,19 +19,19 @@ button {
 .btn {
   background-color: var(--background-color);
   color: #222;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border: none;
   outline: none;
   position: relative;
   cursor: pointer;
 
-  --background-color: #E3E3E3;
+  --background-color: #e3e3e3;
   --border-size: 2px;
-  --accent-color: #0AF;
+  --accent-color: #0af;
 }
 
 .btn.btn-border-pop::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -48,11 +50,8 @@ button {
   bottom: calc(var(--border-size) * -2);
 }
 
-
-
-
 .btn.btn-background-slide::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -76,18 +75,13 @@ button {
   z-index: 1;
 }
 
-
 .btn.btn-background-slide:hover,
 .btn.btn-background-slide:focus {
   color: white;
 }
 
-
-
-
-
 .btn.btn-background-circle::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -118,12 +112,8 @@ button {
   color: white;
 }
 
-
-
-
-
 .btn.btn-border-underline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   right: 0;

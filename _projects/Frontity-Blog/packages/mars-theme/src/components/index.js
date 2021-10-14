@@ -20,7 +20,7 @@ const Theme = ({ state }) => {
   const transitions = useTransition(state.router.link, null, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
-    leave: { opacity: 0, display: "none" }
+    leave: { opacity: 0, display: "none" },
   });
 
   return (

@@ -1,13 +1,13 @@
-const isMatch = require("lodash/isMatch")
+const isMatch = require("lodash/isMatch");
 
 module.exports = class WhereCommand {
   constructor(conditions) {
-    this.conditions = conditions
+    this.conditions = conditions;
   }
 
   perform(objects) {
-    return objects.filter(object => {
-      return isMatch(object, this.conditions)
-    })
+    return objects.filter((object) => {
+      return isMatch(object, this.conditions);
+    });
   }
-}
+};

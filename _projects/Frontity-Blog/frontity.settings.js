@@ -4,8 +4,8 @@ const settings = {
     frontity: {
       url: "https://test.frontity.org",
       title: "Test Frontity Blog",
-      description: "WordPress installation for Frontity development"
-    }
+      description: "WordPress installation for Frontity development",
+    },
   },
   packages: [
     {
@@ -17,26 +17,26 @@ const settings = {
             ["Nature", "/category/nature/"],
             ["Travel", "/category/travel/"],
             ["Japan", "/tag/japan/"],
-            ["About Us", "/about-us/"]
+            ["About Us", "/about-us/"],
           ],
           featured: {
             showOnList: true,
-            showOnPost: true
-          }
-        }
-      }
+            showOnPost: true,
+          },
+        },
+      },
     },
     {
       name: "@frontity/wp-source",
       state: {
         source: {
-          api: "https://test.frontity.org/wp-json"
-        }
-      }
+          api: "https://test.frontity.org/wp-json",
+        },
+      },
     },
     "@frontity/tiny-router",
-    "@frontity/html2react"
-  ]
+    "@frontity/html2react",
+  ],
 };
 
 export default settings;
