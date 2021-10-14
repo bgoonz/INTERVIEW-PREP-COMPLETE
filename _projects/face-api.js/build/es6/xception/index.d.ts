@@ -1,1 +1,1 @@
-export * from './TinyXception';
+export * from "./TinyXception";

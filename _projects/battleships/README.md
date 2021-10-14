@@ -1,4 +1,5 @@
 # battleships
+
 pure JavasScript game of BattleShips against the computer
 
 Work In Progress

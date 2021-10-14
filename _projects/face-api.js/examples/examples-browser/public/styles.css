@@ -7,7 +7,7 @@
   display: inline-flex !important;
 }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .page-container {
     padding-left: 0;
     display: flex !important;
@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
 }
-.side-by-side >* {
+.side-by-side > * {
   margin: 0 5px;
 }
 
@@ -65,7 +65,8 @@
   margin-bottom: 10px;
 }
 
-#overlay, .overlay {
+#overlay,
+.overlay {
   position: absolute;
   top: 0;
   left: 0;

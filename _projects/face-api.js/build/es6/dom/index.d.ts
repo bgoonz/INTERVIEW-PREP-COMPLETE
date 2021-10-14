@@ -1,2 +1,2 @@
-export * from './extractFaces';
-export * from './extractFaceTensors';
+export * from "./extractFaces";
+export * from "./extractFaceTensors";

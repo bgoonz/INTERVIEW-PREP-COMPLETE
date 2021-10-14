@@ -1,2 +1,2 @@
-export * from './FaceProcessor';
+export * from "./FaceProcessor";
 //# sourceMappingURL=index.js.map

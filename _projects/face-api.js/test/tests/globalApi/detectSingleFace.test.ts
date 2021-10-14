@@ -1,230 +1,238 @@
-import * as faceapi from '../../../src';
-import { WithAge } from '../../../src/factories/WithAge';
-import { WithFaceExpressions } from '../../../src/factories/WithFaceExpressions';
-import { WithGender } from '../../../src/factories/WithGender';
-import { loadImage } from '../../env';
-import { expectedTinyFaceDetectorBoxes } from '../../expectedTinyFaceDetectorBoxes';
-import { expectFaceDetectionsWithLandmarks } from '../../expectFaceDetectionsWithLandmarks';
-import { expectFullFaceDescriptions } from '../../expectFullFaceDescriptions';
+import * as faceapi from "../../../src";
+import { WithAge } from "../../../src/factories/WithAge";
+import { WithFaceExpressions } from "../../../src/factories/WithFaceExpressions";
+import { WithGender } from "../../../src/factories/WithGender";
+import { loadImage } from "../../env";
+import { expectedTinyFaceDetectorBoxes } from "../../expectedTinyFaceDetectorBoxes";
+import { expectFaceDetectionsWithLandmarks } from "../../expectFaceDetectionsWithLandmarks";
+import { expectFullFaceDescriptions } from "../../expectFullFaceDescriptions";
 import {
   assembleExpectedFullFaceDescriptions,
   describeWithBackend,
   describeWithNets,
   expectAllTensorsReleased,
   ExpectedFullFaceDescription,
-} from '../../utils';
-import { deltas, expectedScores, faceDetectorOptions, withNetArgs } from './consts';
-
+} from "../../utils";
+import {
+  deltas,
+  expectedScores,
+  faceDetectorOptions,
+  withNetArgs,
+} from "./consts";
 
 function expectFaceExpressions(result: WithFaceExpressions<{}> | undefined) {
-  expect(!!result).toBeTruthy()
+  expect(!!result).toBeTruthy();
   if (result) {
-    expect(result.expressions.happy).toBeGreaterThanOrEqual(0.95)
+    expect(result.expressions.happy).toBeGreaterThanOrEqual(0.95);
   }
 }
 
-function expectAgeAndGender(result: WithAge<WithGender<{}>> | undefined, aligned = true) {
-  expect(!!result).toBeTruthy()
+function expectAgeAndGender(
+  result: WithAge<WithGender<{}>> | undefined,
+  aligned = true
+) {
+  expect(!!result).toBeTruthy();
   if (result) {
-    const { age, gender, genderProbability } = result
-    const expectedAge = aligned ? 41 : 37
-    expect(Math.abs(age - expectedAge)).toBeLessThanOrEqual(5)
-    expect(gender).toEqual('male')
-    expect(genderProbability).toBeGreaterThanOrEqual(0.9)
+    const { age, gender, genderProbability } = result;
+    const expectedAge = aligned ? 41 : 37;
+    expect(Math.abs(age - expectedAge)).toBeLessThanOrEqual(5);
+    expect(gender).toEqual("male");
+    expect(genderProbability).toBeGreaterThanOrEqual(0.9);
   }
 }
 
-describeWithBackend('globalApi', () => {
-
-  let imgEl: HTMLImageElement
-  let expectedFullFaceDescriptions: ExpectedFullFaceDescription[]
+describeWithBackend("globalApi", () => {
+  let imgEl: HTMLImageElement;
+  let expectedFullFaceDescriptions: ExpectedFullFaceDescription[];
 
   beforeAll(async () => {
-    imgEl = await loadImage('test/images/faces.jpg')
-    expectedFullFaceDescriptions = await assembleExpectedFullFaceDescriptions(expectedTinyFaceDetectorBoxes)
-  })
+    imgEl = await loadImage("test/images/faces.jpg");
+    expectedFullFaceDescriptions = await assembleExpectedFullFaceDescriptions(
+      expectedTinyFaceDetectorBoxes
+    );
+  });
 
-  function expectFaceDetectionWithLandmarks(result: faceapi.WithFaceLandmarks<faceapi.WithFaceDetection<{}>> | undefined) {
-    expect(!!result).toBeTruthy()
+  function expectFaceDetectionWithLandmarks(
+    result: faceapi.WithFaceLandmarks<faceapi.WithFaceDetection<{}>> | undefined
+  ) {
+    expect(!!result).toBeTruthy();
     if (result) {
       expectFaceDetectionsWithLandmarks(
         [result],
         [expectedFullFaceDescriptions[2]],
         [expectedScores[2]],
         deltas
-      )
+      );
     }
   }
 
-  function expectFullFaceDescription(result: faceapi.WithFaceDescriptor<faceapi.WithFaceLandmarks<faceapi.WithFaceDetection<{}>>> | undefined) {
-    expect(!!result).toBeTruthy()
+  function expectFullFaceDescription(
+    result:
+      | faceapi.WithFaceDescriptor<
+          faceapi.WithFaceLandmarks<faceapi.WithFaceDetection<{}>>
+        >
+      | undefined
+  ) {
+    expect(!!result).toBeTruthy();
     if (result) {
       expectFullFaceDescriptions(
         [result],
         [expectedFullFaceDescriptions[2]],
         [expectedScores[2]],
         deltas
-      )
+      );
     }
   }
 
-  describeWithNets('detectSingleFace', withNetArgs, () => {
+  describeWithNets("detectSingleFace", withNetArgs, () => {
+    describe("without face alignment", () => {
+      it("detectSingleFace.withFaceExpressions()", async () => {
+        const result = await faceapi
+          .detectSingleFace(imgEl, faceDetectorOptions)
+          .withFaceExpressions();
 
-    describe('without face alignment', () => {
+        expectFaceExpressions(result);
+      });
 
-      it('detectSingleFace.withFaceExpressions()', async () => {
+      it("detectSingleFace.withAgeAndGender()", async () => {
+        const result = await faceapi
+          .detectSingleFace(imgEl, faceDetectorOptions)
+          .withAgeAndGender();
+
+        expectAgeAndGender(result, false);
+      });
+
+      it("detectSingleFace.withFaceExpressions().withAgeAndGender()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withFaceExpressions()
+          .withAgeAndGender();
 
-        expectFaceExpressions(result)
-      })
+        expectFaceExpressions(result);
+        expectAgeAndGender(result, false);
+      });
 
-      it('detectSingleFace.withAgeAndGender()', async () => {
+      it("detectSingleFace.withAgeAndGender().withFaceExpressions()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withAgeAndGender()
+          .withFaceExpressions();
 
-        expectAgeAndGender(result, false)
-      })
+        expectFaceExpressions(result);
+        expectAgeAndGender(result, false);
+      });
+    });
 
-      it('detectSingleFace.withFaceExpressions().withAgeAndGender()', async () => {
+    describe("with face alignment", () => {
+      it("detectSingleFace.withFaceLandmarks().withFaceExpressions()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
-          .withFaceExpressions()
-          .withAgeAndGender()
+          .withFaceLandmarks()
+          .withFaceExpressions();
 
-        expectFaceExpressions(result)
-        expectAgeAndGender(result, false)
-      })
+        expectFaceExpressions(result);
+        expectFaceDetectionWithLandmarks(result);
+      });
 
-      it('detectSingleFace.withAgeAndGender().withFaceExpressions()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withAgeAndGender()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
-          .withAgeAndGender()
-          .withFaceExpressions()
+          .withFaceLandmarks()
+          .withAgeAndGender();
 
-        expectFaceExpressions(result)
-        expectAgeAndGender(result, false)
-      })
+        expectAgeAndGender(result);
+        expectFaceDetectionWithLandmarks(result);
+      });
 
-    })
+      it("detectSingleFace.withFaceLandmarks().withFaceDescriptor()", async () => {
+        const result = await faceapi
+          .detectSingleFace(imgEl, faceDetectorOptions)
+          .withFaceLandmarks()
+          .withFaceDescriptor();
 
-    describe('with face alignment', () => {
+        expectFullFaceDescription(result);
+      });
 
-      it('detectSingleFace.withFaceLandmarks().withFaceExpressions()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withFaceExpressions().withAgeAndGender()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withFaceLandmarks()
           .withFaceExpressions()
+          .withAgeAndGender();
 
-        expectFaceExpressions(result)
-        expectFaceDetectionWithLandmarks(result)
-      })
+        expectFaceExpressions(result);
+        expectAgeAndGender(result);
+        expectFaceDetectionWithLandmarks(result);
+      });
 
-      it('detectSingleFace.withFaceLandmarks().withAgeAndGender()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withAgeAndGender().withFaceExpressions()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withFaceLandmarks()
           .withAgeAndGender()
+          .withFaceExpressions();
 
-        expectAgeAndGender(result)
-        expectFaceDetectionWithLandmarks(result)
-      })
+        expectFaceExpressions(result);
+        expectAgeAndGender(result);
+        expectFaceDetectionWithLandmarks(result);
+      });
 
-      it('detectSingleFace.withFaceLandmarks().withFaceDescriptor()', async () => {
-        const result = await faceapi
-          .detectSingleFace(imgEl, faceDetectorOptions)
-          .withFaceLandmarks()
-          .withFaceDescriptor()
-
-        expectFullFaceDescription(result)
-      })
-
-      it('detectSingleFace.withFaceLandmarks().withFaceExpressions().withAgeAndGender()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withFaceExpressions().withFaceDescriptor()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withFaceLandmarks()
           .withFaceExpressions()
-          .withAgeAndGender()
+          .withFaceDescriptor();
 
-        expectFaceExpressions(result)
-        expectAgeAndGender(result)
-        expectFaceDetectionWithLandmarks(result)
-      })
+        expectFaceExpressions(result);
+        expectFullFaceDescription(result);
+      });
 
-      it('detectSingleFace.withFaceLandmarks().withAgeAndGender().withFaceExpressions()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withAgeAndGender().withFaceDescriptor()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withFaceLandmarks()
           .withAgeAndGender()
-          .withFaceExpressions()
+          .withFaceDescriptor();
 
-        expectFaceExpressions(result)
-        expectAgeAndGender(result)
-        expectFaceDetectionWithLandmarks(result)
-      })
+        expectAgeAndGender(result);
+        expectFullFaceDescription(result);
+      });
 
-      it('detectSingleFace.withFaceLandmarks().withFaceExpressions().withFaceDescriptor()', async () => {
-        const result = await faceapi
-          .detectSingleFace(imgEl, faceDetectorOptions)
-          .withFaceLandmarks()
-          .withFaceExpressions()
-          .withFaceDescriptor()
-
-        expectFaceExpressions(result)
-        expectFullFaceDescription(result)
-      })
-
-      it('detectSingleFace.withFaceLandmarks().withAgeAndGender().withFaceDescriptor()', async () => {
-        const result = await faceapi
-          .detectSingleFace(imgEl, faceDetectorOptions)
-          .withFaceLandmarks()
-          .withAgeAndGender()
-          .withFaceDescriptor()
-
-        expectAgeAndGender(result)
-        expectFullFaceDescription(result)
-      })
-
-      it('detectSingleFace.withFaceLandmarks().withFaceExpressions().withAgeAndGender().withFaceDescriptor()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withFaceExpressions().withAgeAndGender().withFaceDescriptor()", async () => {
         const result = await faceapi
           .detectSingleFace(imgEl, faceDetectorOptions)
           .withFaceLandmarks()
           .withFaceExpressions()
           .withAgeAndGender()
-          .withFaceDescriptor()
+          .withFaceDescriptor();
 
-        expectFaceExpressions(result)
-        expectAgeAndGender(result)
-        expectFullFaceDescription(result)
-      })
+        expectFaceExpressions(result);
+        expectAgeAndGender(result);
+        expectFullFaceDescription(result);
+      });
+    });
 
-    })
-
-    describe('no memory leaks', () => {
-
-      it('detectSingleFace.withFaceLandmarks().withFaceDescriptor()', async () => {
+    describe("no memory leaks", () => {
+      it("detectSingleFace.withFaceLandmarks().withFaceDescriptor()", async () => {
         await expectAllTensorsReleased(async () => {
           await faceapi
             .detectSingleFace(imgEl, faceDetectorOptions)
             .withFaceLandmarks()
-            .withFaceDescriptor()
-        })
-      })
+            .withFaceDescriptor();
+        });
+      });
 
-      it('detectSingleFace.withFaceLandmarks().withFaceExpressions().withAgeAndGender().withFaceDescriptor()', async () => {
+      it("detectSingleFace.withFaceLandmarks().withFaceExpressions().withAgeAndGender().withFaceDescriptor()", async () => {
         await expectAllTensorsReleased(async () => {
           await faceapi
             .detectSingleFace(imgEl, faceDetectorOptions)
             .withFaceLandmarks()
             .withFaceExpressions()
             .withAgeAndGender()
-            .withFaceDescriptor()
-        })
-      })
-
-    })
-
-  })
-})
+            .withFaceDescriptor();
+        });
+      });
+    });
+  });
+});

@@ -1,9 +1,12 @@
-import { IPoint, IRect } from '../../../src';
-import { FaceLandmarks5 } from '../../../src/classes/FaceLandmarks5';
-import { WithFaceDetection } from '../../../src/factories/WithFaceDetection';
-import { WithFaceLandmarks } from '../../../src/factories/WithFaceLandmarks';
-import { BoxAndLandmarksDeltas, expectFaceDetectionsWithLandmarks } from '../../expectFaceDetectionsWithLandmarks';
-import { sortBoxes, sortByDistanceToOrigin } from '../../utils';
+import { IPoint, IRect } from "../../../src";
+import { FaceLandmarks5 } from "../../../src/classes/FaceLandmarks5";
+import { WithFaceDetection } from "../../../src/factories/WithFaceDetection";
+import { WithFaceLandmarks } from "../../../src/factories/WithFaceLandmarks";
+import {
+  BoxAndLandmarksDeltas,
+  expectFaceDetectionsWithLandmarks,
+} from "../../expectFaceDetectionsWithLandmarks";
+import { sortBoxes, sortByDistanceToOrigin } from "../../utils";
 
 export const expectedMtcnnBoxes: IRect[] = sortBoxes([
   { x: 70, y: 21, width: 112, height: 112 },
@@ -11,8 +14,8 @@ export const expectedMtcnnBoxes: IRect[] = sortBoxes([
   { x: 221, y: 43, width: 112, height: 111 },
   { x: 247, y: 231, width: 106, height: 107 },
   { x: 566, y: 67, width: 104, height: 104 },
-  { x: 451, y: 176, width: 122, height: 122 }
-])
+  { x: 451, y: 176, width: 122, height: 122 },
+]);
 
 export function expectMtcnnResults(
   results: WithFaceLandmarks<WithFaceDetection<{}>, FaceLandmarks5>[],
@@ -20,10 +23,19 @@ export function expectMtcnnResults(
   expectedScores: number[],
   deltas: BoxAndLandmarksDeltas
 ) {
+  const expectedMtcnnFaceLandmarksSorted = sortByDistanceToOrigin(
+    expectedMtcnnFaceLandmarks,
+    (obj) => obj[0]
+  );
+  const expectedResults = expectedMtcnnBoxes.map((detection, i) => ({
+    detection,
+    landmarks: expectedMtcnnFaceLandmarksSorted[i],
+  }));
 
-  const expectedMtcnnFaceLandmarksSorted = sortByDistanceToOrigin(expectedMtcnnFaceLandmarks, obj => obj[0])
-  const expectedResults = expectedMtcnnBoxes
-    .map((detection, i) => ({ detection, landmarks: expectedMtcnnFaceLandmarksSorted[i] }))
-
-  return expectFaceDetectionsWithLandmarks<FaceLandmarks5>(results, expectedResults, expectedScores, deltas)
+  return expectFaceDetectionsWithLandmarks<FaceLandmarks5>(
+    results,
+    expectedResults,
+    expectedScores,
+    deltas
+  );
 }

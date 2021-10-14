@@ -1,32 +1,34 @@
-import { TfjsImageRecognitionBase } from 'tfjs-image-recognition-base';
+import { TfjsImageRecognitionBase } from "tfjs-image-recognition-base";
 
-import { extractorsFactory } from './extractorsFactory';
-import { TinyFaceFeatureExtractorParams } from './types';
+import { extractorsFactory } from "./extractorsFactory";
+import { TinyFaceFeatureExtractorParams } from "./types";
 
+export function extractParamsTiny(weights: Float32Array): {
+  params: TinyFaceFeatureExtractorParams;
+  paramMappings: TfjsImageRecognitionBase.ParamMapping[];
+} {
+  const paramMappings: TfjsImageRecognitionBase.ParamMapping[] = [];
 
-export function extractParamsTiny(weights: Float32Array): { params: TinyFaceFeatureExtractorParams, paramMappings: TfjsImageRecognitionBase.ParamMapping[] } {
+  const { extractWeights, getRemainingWeights } =
+    TfjsImageRecognitionBase.extractWeightsFactory(weights);
 
-  const paramMappings: TfjsImageRecognitionBase.ParamMapping[] = []
-
-  const {
+  const { extractDenseBlock3Params } = extractorsFactory(
     extractWeights,
-    getRemainingWeights
-  } = TfjsImageRecognitionBase.extractWeightsFactory(weights)
+    paramMappings
+  );
 
-  const {
-    extractDenseBlock3Params
-  } = extractorsFactory(extractWeights, paramMappings)
-
-  const dense0 = extractDenseBlock3Params(3, 32, 'dense0', true)
-  const dense1 = extractDenseBlock3Params(32, 64, 'dense1')
-  const dense2 = extractDenseBlock3Params(64, 128, 'dense2')
+  const dense0 = extractDenseBlock3Params(3, 32, "dense0", true);
+  const dense1 = extractDenseBlock3Params(32, 64, "dense1");
+  const dense2 = extractDenseBlock3Params(64, 128, "dense2");
 
   if (getRemainingWeights().length !== 0) {
-    throw new Error(`weights remaing after extract: ${getRemainingWeights().length}`)
+    throw new Error(
+      `weights remaing after extract: ${getRemainingWeights().length}`
+    );
   }
 
   return {
     paramMappings,
-    params: { dense0, dense1, dense2 }
-  }
+    params: { dense0, dense1, dense2 },
+  };
 }

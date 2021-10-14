@@ -1,7 +1,7 @@
-import logger from './fancyLogger.js'
+import logger from "./fancyLogger.js";
 
 export default function logSecondImplementation() {
-  logger.printLogCount()
-  logger.log('Second File')
-  logger.printLogCount()
+  logger.printLogCount();
+  logger.log("Second File");
+  logger.printLogCount();
 }

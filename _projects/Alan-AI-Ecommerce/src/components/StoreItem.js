@@ -1,16 +1,16 @@
-import { useState } from "react"
-import formatCurrency from "../util/formatCurrency"
-import StoreItemModal from "./StoreItemModal"
+import { useState } from "react";
+import formatCurrency from "../util/formatCurrency";
+import StoreItemModal from "./StoreItemModal";
 
 export default function StoreItem({ item }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   function openModal() {
-    setOpen(true)
+    setOpen(true);
   }
 
   function closeModal() {
-    setOpen(false)
+    setOpen(false);
   }
 
   return (
@@ -43,5 +43,5 @@ export default function StoreItem({ item }) {
       </div>
       <StoreItemModal item={item} open={open} closeModal={closeModal} />
     </>
-  )
+  );
 }

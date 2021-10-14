@@ -1,7 +1,7 @@
-import * as tf from '@tensorflow/tfjs-core';
-import { isTensor4D, Rect, isTensor3D } from 'tfjs-image-recognition-base';
+import * as tf from "@tensorflow/tfjs-core";
+import { isTensor4D, Rect, isTensor3D } from "tfjs-image-recognition-base";
 
-import { FaceDetection } from '../classes/FaceDetection';
+import { FaceDetection } from "../classes/FaceDetection";
 
 /**
  * Extracts the tensors of the image regions containing the detected faces.
@@ -17,29 +17,37 @@ export async function extractFaceTensors(
   imageTensor: tf.Tensor3D | tf.Tensor4D,
   detections: Array<FaceDetection | Rect>
 ): Promise<tf.Tensor3D[]> {
-
   if (!isTensor3D(imageTensor) && !isTensor4D(imageTensor)) {
-    throw new Error('extractFaceTensors - expected image tensor to be 3D or 4D')
+    throw new Error(
+      "extractFaceTensors - expected image tensor to be 3D or 4D"
+    );
   }
 
   if (isTensor4D(imageTensor) && imageTensor.shape[0] > 1) {
-    throw new Error('extractFaceTensors - batchSize > 1 not supported')
+    throw new Error("extractFaceTensors - batchSize > 1 not supported");
   }
 
   return tf.tidy(() => {
-    const [imgHeight, imgWidth, numChannels] = imageTensor.shape.slice(isTensor4D(imageTensor) ? 1 : 0)
+    const [imgHeight, imgWidth, numChannels] = imageTensor.shape.slice(
+      isTensor4D(imageTensor) ? 1 : 0
+    );
 
-    const boxes = detections.map(
-      det => det instanceof FaceDetection
-        ? det.forSize(imgWidth, imgHeight).box
-        : det
-    )
-      .map(box => box.clipAtImageBorders(imgWidth, imgHeight))
+    const boxes = detections
+      .map((det) =>
+        det instanceof FaceDetection
+          ? det.forSize(imgWidth, imgHeight).box
+          : det
+      )
+      .map((box) => box.clipAtImageBorders(imgWidth, imgHeight));
 
     const faceTensors = boxes.map(({ x, y, width, height }) =>
-      tf.slice3d(imageTensor.as3D(imgHeight, imgWidth, numChannels), [y, x, 0], [height, width, numChannels])
-    )
+      tf.slice3d(
+        imageTensor.as3D(imgHeight, imgWidth, numChannels),
+        [y, x, 0],
+        [height, width, numChannels]
+      )
+    );
 
-    return faceTensors
-  })
+    return faceTensors;
+  });
 }

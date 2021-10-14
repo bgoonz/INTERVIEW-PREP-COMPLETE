@@ -1,2 +1,2 @@
-export * from './TinyXception';
+export * from "./TinyXception";
 //# sourceMappingURL=index.js.map

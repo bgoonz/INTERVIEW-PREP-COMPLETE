@@ -16,5 +16,5 @@ body {
 }
 
 .draggable.dragging {
-  opacity: .5;
+  opacity: 0.5;
 }

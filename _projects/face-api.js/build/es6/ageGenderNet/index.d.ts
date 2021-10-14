@@ -1,2 +1,2 @@
-export * from './AgeGenderNet';
-export * from './types';
+export * from "./AgeGenderNet";
+export * from "./types";

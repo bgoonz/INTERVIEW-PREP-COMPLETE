@@ -1,109 +1,126 @@
-import * as tf from '@tensorflow/tfjs-core';
-import { TNetInput } from 'tfjs-image-recognition-base';
+import * as tf from "@tensorflow/tfjs-core";
+import { TNetInput } from "tfjs-image-recognition-base";
 
-import { FaceLandmarks68 } from '../classes/FaceLandmarks68';
-import { extractFaces, extractFaceTensors } from '../dom';
-import { FaceLandmark68Net } from '../faceLandmarkNet/FaceLandmark68Net';
-import { FaceLandmark68TinyNet } from '../faceLandmarkNet/FaceLandmark68TinyNet';
-import { WithFaceDetection } from '../factories/WithFaceDetection';
-import { extendWithFaceLandmarks, WithFaceLandmarks } from '../factories/WithFaceLandmarks';
-import { ComposableTask } from './ComposableTask';
-import { ComputeAllFaceDescriptorsTask, ComputeSingleFaceDescriptorTask } from './ComputeFaceDescriptorsTasks';
-import { nets } from './nets';
+import { FaceLandmarks68 } from "../classes/FaceLandmarks68";
+import { extractFaces, extractFaceTensors } from "../dom";
+import { FaceLandmark68Net } from "../faceLandmarkNet/FaceLandmark68Net";
+import { FaceLandmark68TinyNet } from "../faceLandmarkNet/FaceLandmark68TinyNet";
+import { WithFaceDetection } from "../factories/WithFaceDetection";
+import {
+  extendWithFaceLandmarks,
+  WithFaceLandmarks,
+} from "../factories/WithFaceLandmarks";
+import { ComposableTask } from "./ComposableTask";
+import {
+  ComputeAllFaceDescriptorsTask,
+  ComputeSingleFaceDescriptorTask,
+} from "./ComputeFaceDescriptorsTasks";
+import { nets } from "./nets";
 import {
   PredictAllAgeAndGenderWithFaceAlignmentTask,
   PredictSingleAgeAndGenderWithFaceAlignmentTask,
-} from './PredictAgeAndGenderTask';
+} from "./PredictAgeAndGenderTask";
 import {
   PredictAllFaceExpressionsWithFaceAlignmentTask,
   PredictSingleFaceExpressionsWithFaceAlignmentTask,
-} from './PredictFaceExpressionsTask';
+} from "./PredictFaceExpressionsTask";
 
-export class DetectFaceLandmarksTaskBase<TReturn, TParentReturn> extends ComposableTask<TReturn> {
+export class DetectFaceLandmarksTaskBase<
+  TReturn,
+  TParentReturn
+> extends ComposableTask<TReturn> {
   constructor(
-    protected parentTask: ComposableTask<TParentReturn> | Promise<TParentReturn>,
+    protected parentTask:
+      | ComposableTask<TParentReturn>
+      | Promise<TParentReturn>,
     protected input: TNetInput,
     protected useTinyLandmarkNet: boolean
   ) {
-    super()
+    super();
   }
 
   protected get landmarkNet(): FaceLandmark68Net | FaceLandmark68TinyNet {
     return this.useTinyLandmarkNet
       ? nets.faceLandmark68TinyNet
-      : nets.faceLandmark68Net
+      : nets.faceLandmark68Net;
   }
 }
 
 export class DetectAllFaceLandmarksTask<
   TSource extends WithFaceDetection<{}>
 > extends DetectFaceLandmarksTaskBase<WithFaceLandmarks<TSource>[], TSource[]> {
-
   public async run(): Promise<WithFaceLandmarks<TSource>[]> {
+    const parentResults = await this.parentTask;
+    const detections = parentResults.map((res) => res.detection);
 
-    const parentResults = await this.parentTask
-    const detections = parentResults.map(res => res.detection)
+    const faces: Array<HTMLCanvasElement | tf.Tensor3D> =
+      this.input instanceof tf.Tensor
+        ? await extractFaceTensors(this.input, detections)
+        : await extractFaces(this.input, detections);
 
-    const faces: Array<HTMLCanvasElement | tf.Tensor3D> = this.input instanceof tf.Tensor
-      ? await extractFaceTensors(this.input, detections)
-      : await extractFaces(this.input, detections)
+    const faceLandmarksByFace = (await Promise.all(
+      faces.map((face) => this.landmarkNet.detectLandmarks(face))
+    )) as FaceLandmarks68[];
 
-    const faceLandmarksByFace = await Promise.all(faces.map(
-      face => this.landmarkNet.detectLandmarks(face)
-    )) as FaceLandmarks68[]
-
-    faces.forEach(f => f instanceof tf.Tensor && f.dispose())
+    faces.forEach((f) => f instanceof tf.Tensor && f.dispose());
 
     return parentResults.map((parentResult, i) =>
       extendWithFaceLandmarks<TSource>(parentResult, faceLandmarksByFace[i])
-    )
+    );
   }
 
   withFaceExpressions() {
-    return new PredictAllFaceExpressionsWithFaceAlignmentTask(this, this.input)
+    return new PredictAllFaceExpressionsWithFaceAlignmentTask(this, this.input);
   }
 
   withAgeAndGender() {
-    return new PredictAllAgeAndGenderWithFaceAlignmentTask(this, this.input)
+    return new PredictAllAgeAndGenderWithFaceAlignmentTask(this, this.input);
   }
 
   withFaceDescriptors() {
-    return new ComputeAllFaceDescriptorsTask(this, this.input)
+    return new ComputeAllFaceDescriptorsTask(this, this.input);
   }
 }
 
 export class DetectSingleFaceLandmarksTask<
   TSource extends WithFaceDetection<{}>
->  extends DetectFaceLandmarksTaskBase<WithFaceLandmarks<TSource> | undefined, TSource | undefined> {
-
+> extends DetectFaceLandmarksTaskBase<
+  WithFaceLandmarks<TSource> | undefined,
+  TSource | undefined
+> {
   public async run(): Promise<WithFaceLandmarks<TSource> | undefined> {
-
-    const parentResult = await this.parentTask
+    const parentResult = await this.parentTask;
     if (!parentResult) {
-      return
+      return;
     }
 
-    const { detection } = parentResult
-    const faces: Array<HTMLCanvasElement | tf.Tensor3D> = this.input instanceof tf.Tensor
-      ? await extractFaceTensors(this.input, [detection])
-      : await extractFaces(this.input, [detection])
+    const { detection } = parentResult;
+    const faces: Array<HTMLCanvasElement | tf.Tensor3D> =
+      this.input instanceof tf.Tensor
+        ? await extractFaceTensors(this.input, [detection])
+        : await extractFaces(this.input, [detection]);
 
-    const landmarks = await this.landmarkNet.detectLandmarks(faces[0]) as FaceLandmarks68
+    const landmarks = (await this.landmarkNet.detectLandmarks(
+      faces[0]
+    )) as FaceLandmarks68;
 
-    faces.forEach(f => f instanceof tf.Tensor && f.dispose())
+    faces.forEach((f) => f instanceof tf.Tensor && f.dispose());
 
-    return extendWithFaceLandmarks<TSource>(parentResult, landmarks)
+    return extendWithFaceLandmarks<TSource>(parentResult, landmarks);
   }
 
   withFaceExpressions() {
-    return new PredictSingleFaceExpressionsWithFaceAlignmentTask(this, this.input)
+    return new PredictSingleFaceExpressionsWithFaceAlignmentTask(
+      this,
+      this.input
+    );
   }
 
   withAgeAndGender() {
-    return new PredictSingleAgeAndGenderWithFaceAlignmentTask(this, this.input)
+    return new PredictSingleAgeAndGenderWithFaceAlignmentTask(this, this.input);
   }
 
   withFaceDescriptor() {
-    return new ComputeSingleFaceDescriptorTask(this, this.input)
+    return new ComputeSingleFaceDescriptorTask(this, this.input);
   }
 }

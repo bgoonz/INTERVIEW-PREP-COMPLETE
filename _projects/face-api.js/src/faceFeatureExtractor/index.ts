@@ -1,2 +1,2 @@
-export * from './FaceFeatureExtractor';
-export * from './TinyFaceFeatureExtractor';
+export * from "./FaceFeatureExtractor";
+export * from "./TinyFaceFeatureExtractor";

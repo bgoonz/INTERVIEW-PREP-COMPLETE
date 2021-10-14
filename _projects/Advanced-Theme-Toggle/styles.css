@@ -19,14 +19,14 @@ body {
 }
 
 body.dark {
-  --accent-color: #D0D066;
+  --accent-color: #d0d066;
   --background-color: #333;
   --text-color: white;
 }
 
 .title {
   margin: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .theme-toggle-button {
@@ -37,8 +37,8 @@ body.dark {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding: .5em 1em;
-  border-radius: .3em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
   border: none;
   outline: none;
   transition: var(--transition-delay);
@@ -46,7 +46,7 @@ body.dark {
 }
 
 .theme-toggle-button .icon {
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 .theme-toggle-button:hover,

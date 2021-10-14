@@ -3,10 +3,10 @@ body {
 }
 
 .header {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   display: flex;
   align-items: baseline;
-  padding: .5rem;
+  padding: 0.5rem;
   gap: 1rem;
 }
 
@@ -33,11 +33,11 @@ body {
 .dropdown-menu {
   position: absolute;
   left: 0;
-  top: calc(100% + .25rem);
+  top: calc(100% + 0.25rem);
   background-color: white;
-  padding: .75rem;
-  border-radius: .25rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
   transform: translateY(-10px);
@@ -59,9 +59,9 @@ body {
 .dropdown-links {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
 }
 
 .login-form > input {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
