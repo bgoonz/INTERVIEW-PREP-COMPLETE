@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 // Selection Sort - O(n^2)
 // Parameter:
 //  1. random array
@@ -24,7 +24,7 @@ function selectionSort(array) {
   var length = array.length;
 
   for (var i = 0; i < length; i++) {
-    // Finds the smallest element in the array 
+    // Finds the smallest element in the array
     var smallestIndex = findSmallestIndex(array);
     // Adds the smallest element to new array
     sortedArray.push(array.splice(smallestIndex, 1)[0]);

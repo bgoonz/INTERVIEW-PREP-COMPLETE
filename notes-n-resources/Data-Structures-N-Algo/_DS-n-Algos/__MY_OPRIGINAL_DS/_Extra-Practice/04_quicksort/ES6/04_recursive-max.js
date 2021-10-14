@@ -4,7 +4,7 @@
  * @param {Array} array Array of numbers
  * @returns {number} The argest number
  */
-const max = array => {
+const max = (array) => {
   if (array.length === 2) return array[0] > array[1] ? array[0] : array[1];
   const subMax = max(array.slice(1));
   return array[0] > subMax ? array[0] : subMax;

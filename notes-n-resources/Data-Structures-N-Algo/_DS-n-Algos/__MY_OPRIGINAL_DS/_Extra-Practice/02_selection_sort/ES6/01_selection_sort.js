@@ -25,7 +25,7 @@ const selectionSort = (array) => {
   const length = sortingArray.length;
 
   for (let i = 0; i < length; i++) {
-    // Finds the smallest element in the given array 
+    // Finds the smallest element in the given array
     const smallestIndex = findSmallestIndex(sortingArray);
     // Adds the smallest element to new array
     sortedArray.push(sortingArray.splice(smallestIndex, 1)[0]);

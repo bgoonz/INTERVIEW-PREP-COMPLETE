@@ -11,11 +11,11 @@ function quicksort(array) {
   // recursive case
   let pivot = array[0];
   // sub-array of all the elements less than the pivot
-  let less = array.slice(1).filter(function(el) {
+  let less = array.slice(1).filter(function (el) {
     return el <= pivot;
   });
   // sub-array of all the elements greater than the pivot
-  let greater = array.slice(1).filter(function(el) {
+  let greater = array.slice(1).filter(function (el) {
     return el > pivot;
   });
   return quicksort(less).concat([pivot], quicksort(greater));

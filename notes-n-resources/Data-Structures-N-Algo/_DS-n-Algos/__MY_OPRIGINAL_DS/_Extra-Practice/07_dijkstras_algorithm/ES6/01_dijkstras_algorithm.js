@@ -32,11 +32,11 @@ let processed = [];
  * @param {Object} itCosts Hash table
  * @returns {(string|null)} The lowest node
  */
-const findLowestCostNode = itCosts => {
+const findLowestCostNode = (itCosts) => {
   let lowestCost = Infinity;
   let lowestCostNode = null;
 
-  Object.keys(itCosts).forEach(node => {
+  Object.keys(itCosts).forEach((node) => {
     const cost = itCosts[node];
     // If it's the lowest cost so far and hasn't been processed yet...
     if (cost < lowestCost && processed.indexOf(node) === -1) {
@@ -54,7 +54,7 @@ while (node !== null) {
   const cost = costs[node];
   // Go through all the neighbors of this node
   const neighbors = graph[node];
-  Object.keys(neighbors).forEach(n => {
+  Object.keys(neighbors).forEach((n) => {
     const newCost = cost + neighbors[n];
     // If it's cheaper to get to this neighbor by going through this node
     if (costs[n] > newCost) {

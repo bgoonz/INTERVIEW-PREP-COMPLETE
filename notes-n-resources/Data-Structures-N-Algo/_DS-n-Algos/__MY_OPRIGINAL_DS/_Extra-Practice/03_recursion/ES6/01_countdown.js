@@ -2,7 +2,7 @@
  * Countdown
  * @param {number} i Number
  */
-const countdown = i => {
+const countdown = (i) => {
   console.log(i);
   // base case
   if (i <= 0) return;

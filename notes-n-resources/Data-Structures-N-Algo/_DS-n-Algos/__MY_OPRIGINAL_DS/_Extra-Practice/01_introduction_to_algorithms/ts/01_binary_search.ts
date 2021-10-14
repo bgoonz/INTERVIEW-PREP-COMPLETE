@@ -5,7 +5,7 @@ function binary_search<T>(list: T[], item: T): number | null {
   while (low <= high) {
     let mid: number = Math.floor((low + high) / 2);
     let guess: T = list[mid];
-    if (guess === item) {
+    if (guess === item) {
       return mid;
     }
     if (guess > item) {
