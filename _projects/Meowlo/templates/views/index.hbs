@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meowlo | Online Services Made by Cats</title>
+    <link rel="icon" href="/img/meowlo-favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+</head>
+<body>
+
+    {{>header}}
+
+    <!--Home section, weather app-->
+    <section class="weather-app">
+        <picture>
+            <source media="(max-width: 500px)" srcset="img/home-s.jpg">
+            <source media="(min-width: 500px)" srcset="img/home.jpg">
+            <img src="img/home-s.jpg">
+        </picture>
+    <div class="weather-app__info">
+        <h2>Try our weather service!</h2>
+        <p>Tell us your location, we will show you the weather! (We use Celsius for temperature.)</p>
+        <form>
+            <input placeholder="location">
+            <button class="button">show me weather</button>
+        </form>
+
+        <p id="weather-search-title"></p>
+        <p id="weather-search-results"></p>
+        <h2>Wanna try our other products? Press your paw!</h2>
+        <a href="/products"><img class="paw" src="img/meowlo-paw.svg"></a>
+    </div>
+    </section>
+
+    <!--Pricing section-->
+    <section class="payment">
+        <h1><a id="pricing">Pricing</a></h1>
+        <div class="pricing">
+            <div class="pricing__item">
+                <h2>FREE Plan</h2>
+                <p>Weather report on demand</p>
+                <p>Browser-based to do list</p>
+                <p>The Hangman Game </p>
+                <p>The Meow Song Maker</p>
+                <a href="/products"><img class="paw" src="img/meowlo-paw.svg"></a>
+            </div>
+            <div class="pricing__item recommended">
+                <h2>Silver Plan</h2>
+                <p class="recommended__tag">recommended</p>
+                <p>All of the free service</p>
+                <p>+ cloud-based to do list </p>
+                <p>+ weekly fun kitty videos</p>
+                <p>+ monthly Kitty magazine</p>
+                <h2>10 fish treats/month</h2>
+                <a href="/products"><img class="paw" src="img/meowlo-paw.svg"></a>
+            </div>
+            <div class="pricing__item">
+                <h2>Gold Plan</h2>
+                <p>All of the silver plan service</p>
+                <p>+ 1 daily personal wake up call on demand</p>
+                <p>+ 2 hours of weekly companionship on demand</p>
+                <p>+ 2 tickets to annual Kitty Talent Show</p>
+                <h2>180 fish treats/year</h2>
+                <a href="/products"><img class="paw" src="img/meowlo-paw.svg"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Partners-->
+    <section class="partners-section">
+        <h1>Our Partners</h1>
+        <div class="partners">
+            <div class="partners__item">
+                <a href="https://www.mapbox.com/"><img class="mapbox" src="img/mapbox.png"></a>
+            </div>
+            <div class="partners__item">
+                <a href="https://darksky.net/"><img class="darksky" src="img/darksky.png"></a>
+            </div>
+            <div class="partners__item">
+                <a href="https://mead.io/"><img class="mead" src="img/mead.png"></a>
+            </div>
+            <div class="partners__item">
+                <a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw"><img class="wds" src="img/wds.png"></a>
+            </div>
+        </div>
+    </section>
+
+    {{>footer}}
+    <script src="/js/weatherapp.js"></script>
+</body>
+</html>

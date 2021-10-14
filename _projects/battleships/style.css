@@ -1,0 +1,149 @@
+.grid-user {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: blue;
+}
+
+.grid-computer {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    background-color: lightgreen;
+}
+
+.grid-display {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    background-color: yellow;
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.taken {
+  background-color: black
+}
+
+.destroyer-container {
+  width: 80px;
+  height: 40px;
+  background-color: orange;
+  margin: 10px;
+}
+
+.destroyer-container-vertical {
+  width: 40px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: orange;
+  margin: 10px;
+}
+
+.submarine-container {
+  width: 120px;
+  height: 40px;
+  background-color: pink;
+  margin: 10px;
+}
+
+.submarine-container-vertical {
+  width: 40px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: pink;
+  margin: 10px;
+}
+
+.cruiser-container {
+  width: 120px;
+  height: 40px;
+  background-color: purple;
+  margin: 10px;
+}
+
+.cruiser-container-vertical {
+  width: 40px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: purple;
+  margin: 10px;
+}
+
+.battleship-container {
+  width: 160px;
+  height: 40px;
+  background-color: aqua;
+  margin: 10px;
+}
+
+.battleship-container-vertical {
+  width: 40px;
+  height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+  margin: 10px;
+}
+
+.carrier-container {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  margin: 10px;
+}
+
+.carrier-container-vertical {
+  width: 40px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: green;
+  margin: 10px;
+}
+
+.destroyer {
+  background-color: orange;
+}
+
+.submarine {
+  background-color: pink;
+}
+
+.cruiser {
+  background-color: purple;
+}
+
+.battleship {
+  background-color: aqua;
+}
+
+.carrier {
+  background-color: green;
+}
+
+
+.ship div {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+
+.boom {
+  background-color: red;
+}

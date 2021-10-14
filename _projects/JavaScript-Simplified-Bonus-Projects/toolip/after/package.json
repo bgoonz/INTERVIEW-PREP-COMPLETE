@@ -1,0 +1,16 @@
+{
+  "name": "current-project-2",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
