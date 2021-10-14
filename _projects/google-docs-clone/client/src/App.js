@@ -1,11 +1,11 @@
-import TextEditor from "./TextEditor"
+import TextEditor from "./TextEditor";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
-} from "react-router-dom"
-import { v4 as uuidV4 } from "uuid"
+} from "react-router-dom";
+import { v4 as uuidV4 } from "uuid";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -17,7 +17,7 @@ body {
 }
 
 .subtext {
-  color: #CCC;
+  color: #ccc;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -38,12 +38,12 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  border: 2px solid #BBB;
+  border: 2px solid #bbb;
   user-select: none;
 }
 
 .board > [data-status="hidden"] {
-  background-color: #BBB;
+  background-color: #bbb;
   cursor: pointer;
 }
 

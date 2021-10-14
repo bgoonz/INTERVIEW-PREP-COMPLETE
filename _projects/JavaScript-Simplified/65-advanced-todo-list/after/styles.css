@@ -4,7 +4,7 @@
 }
 
 #new-todo-form > * {
-  margin: .15rem;
+  margin: 0.15rem;
 }
 
 #list {
@@ -27,11 +27,11 @@
 
 [data-list-item-checkbox]:checked ~ [data-list-item-text] {
   text-decoration: line-through;
-  color: #AAA;
+  color: #aaa;
 }
 
 [data-button-delete] {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 button {

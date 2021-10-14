@@ -6,7 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .container {
@@ -58,7 +58,7 @@ label {
   justify-content: center;
   align-items: center;
   word-break: break-all;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .btn {
@@ -66,12 +66,12 @@ label {
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 1rem;
 }
 
 .btn:hover {
-  background-color: #FFFFFF33;
+  background-color: #ffffff33;
 }

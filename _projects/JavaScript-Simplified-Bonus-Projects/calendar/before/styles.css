@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: sans-serif;
 }
@@ -9,7 +11,7 @@
   --green-background: hsl(150, 80%, 30%);
   --border-color: #dadce0;
   --border-size: 1px;
-  --day-padding: .25rem;
+  --day-padding: 0.25rem;
 }
 
 body {
@@ -34,7 +36,7 @@ body {
 }
 
 .header > * {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .header > :last-child {
@@ -44,8 +46,8 @@ body {
 .btn {
   background: none;
   border: 1px solid var(--border-color);
-  border-radius: .25rem;
-  padding: .5rem 1rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 250ms;
@@ -96,7 +98,7 @@ body {
 }
 
 .month-change-btn:first-child {
-  margin-right: -.5rem;
+  margin-right: -0.5rem;
 }
 
 .month-title {
@@ -124,7 +126,7 @@ body {
 }
 
 .non-month-day {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .day-header {
@@ -136,13 +138,13 @@ body {
 
 .week-name {
   text-transform: uppercase;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: bold;
   color: #777;
 }
 
 .day-number {
-  font-size: .9rem;
+  font-size: 0.9rem;
   width: 1.5rem;
   height: 1.5rem;
   display: flex;
@@ -188,7 +190,7 @@ body {
   align-items: center;
   overflow: hidden;
   white-space: nowrap;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
   background: none;
   width: 100%;
@@ -203,8 +205,8 @@ body {
 
 .all-day-event {
   color: white;
-  padding: .15rem .25rem;
-  border-radius: .25rem;
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.25rem;
 }
 
 .all-day-event .event-name {
@@ -212,7 +214,7 @@ body {
 }
 
 .event > * {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .event > :last-child {
@@ -225,20 +227,23 @@ body {
 
 .color-dot {
   border-radius: 50%;
-  width: .5rem;
-  height: .5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   flex-shrink: 0;
 }
 
-.color-dot.blue, .all-day-event.blue {
+.color-dot.blue,
+.all-day-event.blue {
   background-color: var(--blue-background);
 }
 
-.color-dot.red, .all-day-event.red {
+.color-dot.red,
+.all-day-event.red {
   background-color: var(--red-background);
 }
 
-.color-dot.green, .all-day-event.green {
+.color-dot.green,
+.all-day-event.green {
   background-color: var(--green-background);
 }
 
@@ -275,12 +280,12 @@ body {
 }
 
 .modal.show .overlay {
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal .modal-body {
   background-color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 1rem;
   z-index: 1;
   transform: scale(0);
@@ -302,7 +307,7 @@ body {
 }
 
 .modal-title > * {
-  margin-right: .25rem;
+  margin-right: 0.25rem;
 }
 
 .modal-title > :last-child {
@@ -330,7 +335,7 @@ body {
 }
 
 .form-group.checkbox label {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   cursor: pointer;
 }
 
@@ -340,12 +345,12 @@ body {
 
 .form-group label {
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #777;
 }
 
 .form-group input {
-  padding: .25rem .5rem
+  padding: 0.25rem 0.5rem;
 }
 
 .row {
@@ -355,7 +360,7 @@ body {
 .row > * {
   flex-grow: 1;
   flex-basis: 0;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .row > :last-child {
@@ -380,13 +385,13 @@ body {
 }
 
 .color-radio + label::before {
-  content: '';
+  content: "";
   display: block;
   width: 1.75rem;
   height: 1.75rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   cursor: pointer;
-  opacity: .25;
+  opacity: 0.25;
 }
 
 .color-radio:checked + label::before {

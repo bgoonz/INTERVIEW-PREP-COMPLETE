@@ -1,32 +1,32 @@
-import React, { useState } from "react"
-import { Button, Modal, Form } from "react-bootstrap"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faFolderPlus } from "@fortawesome/free-solid-svg-icons"
-import { database } from "../../firebase"
-import { useAuth } from "../../contexts/AuthContext"
-import { ROOT_FOLDER } from "../../hooks/useFolder"
+import React, { useState } from "react";
+import { Button, Modal, Form } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFolderPlus } from "@fortawesome/free-solid-svg-icons";
+import { database } from "../../firebase";
+import { useAuth } from "../../contexts/AuthContext";
+import { ROOT_FOLDER } from "../../hooks/useFolder";
 
 export default function AddFolderButton({ currentFolder }) {
-  const [open, setOpen] = useState(false)
-  const [name, setName] = useState("")
-  const { currentUser } = useAuth()
+  const [open, setOpen] = useState(false);
+  const [name, setName] = useState("");
+  const { currentUser } = useAuth();
 
   function openModal() {
-    setOpen(true)
+    setOpen(true);
   }
 
   function closeModal() {
-    setOpen(false)
+    setOpen(false);
   }
 
   function handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
 
-    if (currentFolder == null) return
+    if (currentFolder == null) return;
 
-    const path = [...currentFolder.path]
+    const path = [...currentFolder.path];
     if (currentFolder !== ROOT_FOLDER) {
-      path.push({ name: currentFolder.name, id: currentFolder.id })
+      path.push({ name: currentFolder.name, id: currentFolder.id });
     }
 
     database.folders.add({
@@ -35,9 +35,9 @@ export default function AddFolderButton({ currentFolder }) {
       userId: currentUser.uid,
       path: path,
       createdAt: database.getCurrentTimestamp(),
-    })
-    setName("")
-    closeModal()
+    });
+    setName("");
+    closeModal();
   }
 
   return (
@@ -54,7 +54,7 @@ export default function AddFolderButton({ currentFolder }) {
                 type="text"
                 required
                 value={name}
-                onChange={e => setName(e.target.value)}
+                onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
           </Modal.Body>
@@ -69,5 +69,5 @@ export default function AddFolderButton({ currentFolder }) {
         </Form>
       </Modal>
     </>
-  )
+  );
 }

@@ -1,16 +1,18 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-  --accent-color: #641BFF;
-  --heading-font-family: 'Poppins', sans-serif;
-  --body-font-family: 'Lato', sans-serif;
+  --accent-color: #641bff;
+  --heading-font-family: "Poppins", sans-serif;
+  --body-font-family: "Lato", sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #F8F9FB;
+  background-color: #f8f9fb;
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -49,13 +51,13 @@ body {
 }
 
 .price-column:first-child {
-  border-top-right-radius: 0; 
-  border-bottom-right-radius: 0; 
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .price-column:last-child {
-  border-top-left-radius: 0; 
-  border-bottom-left-radius: 0; 
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .price-header {
@@ -73,12 +75,12 @@ body {
 
 .dollar-sign {
   font-size: 1.5rem;
-  margin-top: .5rem;
-  margin-right: .25rem;
+  margin-top: 0.5rem;
+  margin-right: 0.25rem;
 }
 
 .per-month {
-  font-size: .75rem;
+  font-size: 0.75rem;
   align-self: flex-end;
   margin-bottom: 1.1rem;
   text-transform: uppercase;
@@ -86,7 +88,7 @@ body {
 
 .plan-name {
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-top: 1rem;
   margin-bottom: 0;
 }
@@ -94,25 +96,25 @@ body {
 .divider {
   height: 1px;
   width: 100%;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .price-column.popular .divider {
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .feature {
   display: flex;
   align-items: center;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .feature img {
   height: 1.1em;
   width: 1.1em;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .feature.inactive {
@@ -122,9 +124,9 @@ body {
 
 .most-popular {
   position: absolute;
-  top: .5rem;
-  left: .5rem;
-  right: .5rem;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -136,7 +138,7 @@ body {
   background-color: var(--accent-color);
   color: white;
   width: 100%;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   cursor: pointer;
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -151,6 +153,7 @@ body {
   color: var(--accent-color);
 }
 
-.cta:hover, .cta:focus {
+.cta:hover,
+.cta:focus {
   transform: scale(1.1);
 }

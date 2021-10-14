@@ -1,6 +1,6 @@
-import React from "react"
-import { Navbar, Nav } from "react-bootstrap"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function NavbarComponent() {
   return (
@@ -14,5 +14,5 @@ export default function NavbarComponent() {
         </Nav.Link>
       </Nav>
     </Navbar>
-  )
+  );
 }

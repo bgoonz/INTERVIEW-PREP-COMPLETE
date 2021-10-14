@@ -24,6 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("getCalculatorButton", text => {
-  cy.contains(".calculator-grid > button", text)
-})
+Cypress.Commands.add("getCalculatorButton", (text) => {
+  cy.contains(".calculator-grid > button", text);
+});

@@ -1,10 +1,12 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 :root {
   --cell-size: 100px;
-  --mark-size: calc(var(--cell-size) * .9);
+  --mark-size: calc(var(--cell-size) * 0.9);
 }
 
 body {
@@ -19,7 +21,7 @@ body {
   align-content: center;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(3, auto)
+  grid-template-columns: repeat(3, auto);
 }
 
 .cell {
@@ -74,9 +76,9 @@ body {
 .cell.x::after,
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after {
-  content: '';
+  content: "";
   position: absolute;
-  width: calc(var(--mark-size) * .15);
+  width: calc(var(--mark-size) * 0.15);
   height: var(--mark-size);
 }
 
@@ -94,7 +96,7 @@ body {
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::before,
 .board.circle .cell:not(.x):not(.circle):hover::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50%;
 }
@@ -107,8 +109,8 @@ body {
 
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after {
-  width: calc(var(--mark-size) * .7);
-  height: calc(var(--mark-size) * .7);
+  width: calc(var(--mark-size) * 0.7);
+  height: calc(var(--mark-size) * 0.7);
   background-color: white;
 }
 
@@ -119,7 +121,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .9);
+  background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
   color: white;
@@ -131,7 +133,7 @@ body {
   font-size: 3rem;
   background-color: white;
   border: 1px solid black;
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   cursor: pointer;
 }
 

@@ -20,7 +20,7 @@
 
 .alert-title {
   font-weight: bold;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 2rem;
 }
 
@@ -34,7 +34,7 @@
   text-align: center;
   padding: 1rem;
   background-color: hsl(100, 80%, 80%);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: hsl(100, 80%, 20%);
 }
 

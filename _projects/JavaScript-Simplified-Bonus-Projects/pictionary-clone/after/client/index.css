@@ -16,7 +16,7 @@ body {
   background-color: #333;
   border: none;
   cursor: pointer;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .submit-btn:hover {
@@ -31,12 +31,12 @@ form {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .form-group > label {
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #555;
 }
 
