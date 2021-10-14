@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <title>Video Suggestions</title>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container my-4">
+    <h1>WDS Video Suggestions</h1>
+    <form data-form class="border-bottom" method="POST" action="/suggestions/create-suggestion">
+      <div data-auth-required class="d-none">
+        <div class="row">
+          <div class="col-12 col-md mb-3">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required class="form-control" />
+          </div>
+          <div class="col-12 col-md mb-3">
+            <label for="tagIds">Tags</label>
+            <select name="tagIds" id="tagIds" class="form-select" multiple>
+              <% tags.forEach(tag => { %>
+                <option value="<%= tag.id %>"><%= tag.name %></option>
+              <% }) %>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="description">Description</label>
+          <textarea name="description" id="description" required class="form-control" maxlength="500"></textarea>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" name="isProject" id="isProject">
+          <label class="form-check-label" for="isProject">Project</label>
+        </div>
+        <input type="hidden" name="firebaseToken" data-token-input>
+        <button data-submit-btn type="submit" class="btn btn-primary mb-3">Create New Suggestion</button>
+      </div>
+      <button type="button" data-logged-out data-sign-in-btn class="btn btn-lg btn-primary mb-3 mt-2">Sign In To Submit Ideas</button>
+    </form>
+    <nav>
+      <ul class="pagination my-3">
+        <% if (!atStart) { %>
+          <li class="page-item"><a class="page-link" href="/suggestions">Back To Start</a></li>
+        <% } %>
+        <% if (hasMore) { %>
+          <li class="page-item"><a class="page-link" href="/suggestions?pageCursor=<%= nextCursor %>">Next Page</a></li>
+        <% } %>
+      </ul>
+    </nav>
+    <div class="row g-3">
+      <% suggestions.forEach(suggestion => { %>
+        <div class="col-12 col-md-6 col-lg-4" data-card-col>
+          <div class="card" data-suggestion-id="<%= suggestion.id %>">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <div class="text-break text-wrap"><%= suggestion.title %></div>
+              <div class="d-flex justify-content-center align-items-center ms-2">
+                <span class="me-3" data-up-vote-count><%= suggestion.votes %></span>
+                <button data-up-vote-btn class="p-0 btn btn-primary fs-4 d-flex align-items-center justify-content-center" style="height: 30px; width: 30px;">+</button>
+                <button data-report-btn class="p-0 ms-3 btn btn-danger fs-4 d-flex align-items-center justify-content-center" style="height: 30px; width: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+                </svg></button>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="text-break text-wrap"><%= suggestion.description %></p>
+              <% if (suggestion.isProject) { %>
+                <div class="badge bg-primary rounded-pill">Project</div>
+              <% } %>
+                
+              <% suggestion.tags.forEach(tag => { %>
+                <div class="badge bg-secondary rounded-pill"><%= tag.name %></div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+    <nav>
+      <ul class="pagination mt-3">
+        <% if (!atStart) { %>
+          <li class="page-item"><a class="page-link" href="/suggestions">Back To Start</a></li>
+        <% } %>
+        <% if (hasMore) { %>
+          <li class="page-item"><a class="page-link" href="/suggestions?pageCursor=<%= nextCursor %>">Next Page</a></li>
+        <% } %>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
