@@ -1,9 +1,9 @@
-import { useRef } from "react"
-import useOnScreen from "./useOnScreen"
+import { useRef } from "react";
+import useOnScreen from "./useOnScreen";
 
 export default function OnScreenComponentComponent() {
-  const headerTwoRef = useRef()
-  const visible = useOnScreen(headerTwoRef, "-100px")
+  const headerTwoRef = useRef();
+  const visible = useOnScreen(headerTwoRef, "-100px");
 
   return (
     <div>
@@ -96,5 +96,5 @@ export default function OnScreenComponentComponent() {
         adipisci!
       </div>
     </div>
-  )
+  );
 }

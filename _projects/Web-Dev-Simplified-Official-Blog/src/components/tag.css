@@ -7,7 +7,7 @@
   outline-color: black;
   outline: 2px auto black;
   outline-offset: 3px;
-  border-radius: .25em;
+  border-radius: 0.25em;
   background-color: hsl(202, 100%, 80%);
 }
 

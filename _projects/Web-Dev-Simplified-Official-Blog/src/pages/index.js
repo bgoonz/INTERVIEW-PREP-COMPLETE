@@ -17,7 +17,7 @@ function BlogIndex(props) {
       if (a.totalCount === b.totalCount) return a.name > b.name ? 1 : -1
       return a.totalCount < b.totalCount ? 1 : -1
     })
-    .map(tag => {
+    .map((tag) => {
       return { ...tag, selected: selectedTags.includes(tag.name) }
     })
   const [searchQuery, setSearchQuery] = useState("")
@@ -26,7 +26,7 @@ function BlogIndex(props) {
       (node.frontmatter.title.toLowerCase().includes(searchQuery) ||
         node.frontmatter.description.toLowerCase().includes(searchQuery)) &&
       (selectedTags.length === 0 ||
-        node.frontmatter.tags.some(tag => selectedTags.includes(tag)))
+        node.frontmatter.tags.some((tag) => selectedTags.includes(tag)))
     )
   })
 
@@ -35,9 +35,9 @@ function BlogIndex(props) {
   }
 
   function handleTagSelect({ target }) {
-    setSelectedTags(prevTags => {
+    setSelectedTags((prevTags) => {
       if (prevTags.includes(target.value)) {
-        return prevTags.filter(tag => target.value !== tag)
+        return prevTags.filter((tag) => target.value !== tag)
       } else {
         return [...prevTags, target.value]
       }
@@ -68,7 +68,7 @@ function BlogIndex(props) {
                 <small>
                   <TagBar
                     marginTop={rhythm(0.25)}
-                    tags={node.frontmatter.tags.map(tag => {
+                    tags={node.frontmatter.tags.map((tag) => {
                       return { name: tag }
                     })}
                   />

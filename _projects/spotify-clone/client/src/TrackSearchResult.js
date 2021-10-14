@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
 export default function TrackSearchResult({ track, chooseTrack }) {
   function handlePlay() {
-    chooseTrack(track)
+    chooseTrack(track);
   }
 
   return (
@@ -17,5 +17,5 @@ export default function TrackSearchResult({ track, chooseTrack }) {
         <div className="text-muted">{track.artist}</div>
       </div>
     </div>
-  )
+  );
 }

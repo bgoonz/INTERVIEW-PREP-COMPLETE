@@ -1,13 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function RecipeIngredientEdit(props) {
-  const {
-    ingredient,
-    handleIngredientChange
-  } = props
+  const { ingredient, handleIngredientChange } = props;
 
   function handleChange(changes) {
-    handleIngredientChange(ingredient.id, { ...ingredient, ...changes })
+    handleIngredientChange(ingredient.id, { ...ingredient, ...changes });
   }
   return (
     <>
@@ -25,5 +22,5 @@ export default function RecipeIngredientEdit(props) {
       />
       <button className="btn btn--danger">&times;</button>
     </>
-  )
+  );
 }

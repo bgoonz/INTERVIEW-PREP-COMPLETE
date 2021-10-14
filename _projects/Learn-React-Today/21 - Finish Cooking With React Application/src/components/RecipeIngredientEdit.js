@@ -1,14 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function RecipeIngredientEdit(props) {
-  const {
-    ingredient,
-    handleIngredientChange,
-    handleIngredientDelete
-  } = props
+  const { ingredient, handleIngredientChange, handleIngredientDelete } = props;
 
   function handleChange(changes) {
-    handleIngredientChange(ingredient.id, { ...ingredient, ...changes })
+    handleIngredientChange(ingredient.id, { ...ingredient, ...changes });
   }
   return (
     <>
@@ -31,5 +27,5 @@ export default function RecipeIngredientEdit(props) {
         &times;
       </button>
     </>
-  )
+  );
 }

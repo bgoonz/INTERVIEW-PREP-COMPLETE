@@ -1,1 +1,1 @@
-declare module "dominos"
+declare module "dominos";

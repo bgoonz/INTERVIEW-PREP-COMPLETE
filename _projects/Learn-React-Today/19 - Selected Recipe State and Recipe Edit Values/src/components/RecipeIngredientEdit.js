@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function RecipeIngredientEdit({ ingredient }) {
   return (
@@ -15,5 +15,5 @@ export default function RecipeIngredientEdit({ ingredient }) {
       />
       <button className="btn btn--danger">&times;</button>
     </>
-  )
+  );
 }

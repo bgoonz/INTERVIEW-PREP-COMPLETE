@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -15,8 +17,8 @@ body {
   border: none;
   outline: none;
   color: white;
-  padding: .5em 1em;
-  border-radius: .3em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
   cursor: pointer;
   position: relative;
 }
@@ -24,7 +26,7 @@ body {
 .btn-load:focus::after {
   --default-transform: translateY(200%);
 
-  content: 'Loading';
+  content: "Loading";
   position: absolute;
   color: black;
   transform: var(--default-transform);
@@ -40,11 +42,11 @@ body {
   }
 
   10% {
-    content: 'Loading.';
+    content: "Loading.";
   }
 
   20% {
-    content: 'Loading..';
+    content: "Loading..";
   }
 
   25% {
@@ -52,41 +54,41 @@ body {
   }
 
   30% {
-    content: 'Loading...';
+    content: "Loading...";
   }
-  
+
   40% {
-    content: 'Loading..';
+    content: "Loading..";
   }
-  
+
   50% {
-    content: 'Loading.';
-    opacity: .6;
+    content: "Loading.";
+    opacity: 0.6;
     transform: var(--default-transform) rotate(0);
   }
-  
+
   60% {
-    content: 'Loading';
+    content: "Loading";
   }
-  
+
   70% {
-    content: 'Loading.';
+    content: "Loading.";
   }
 
   75% {
     transform: var(--default-transform) rotate(-30deg);
   }
-  
+
   80% {
-    content: 'Loading..';
+    content: "Loading..";
   }
 
   90% {
-    content: 'Loading...';
+    content: "Loading...";
   }
 
   100% {
-    content: 'Loaded';
+    content: "Loaded";
     opacity: 1;
     transform: var(--default-transform) rotate(0);
   }

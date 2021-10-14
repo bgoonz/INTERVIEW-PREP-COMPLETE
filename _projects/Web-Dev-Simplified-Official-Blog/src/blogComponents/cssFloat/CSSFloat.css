@@ -1,5 +1,5 @@
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: block;
 }
@@ -11,7 +11,7 @@
 }
 
 .wrapper {
-  padding: .5rem;
+  padding: 0.5rem;
   color: #777;
   margin-bottom: 2rem;
 }

@@ -14,4 +14,4 @@ module.exports = [
     roleId: process.env.LEARN_CSS_TODAY_ROLE_ID,
     courseName: "Learn CSS Today",
   },
-]
+];

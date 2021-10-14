@@ -1,7 +1,7 @@
-import React from "react"
-import Noob from "./1-noob/User"
-import Advanced from "./2-advanced/User"
-import Pro from "./3-pro/User"
+import React from "react";
+import Noob from "./1-noob/User";
+import Advanced from "./2-advanced/User";
+import Pro from "./3-pro/User";
 
 export default function App() {
   return (
@@ -10,5 +10,5 @@ export default function App() {
       <Advanced age={25} />
       <Pro age={25} />
     </>
-  )
+  );
 }

@@ -1,8 +1,10 @@
-header, #footer {
+header,
+#footer {
   background-color: purple;
 }
 
-.header-text, #footer {
+.header-text,
+#footer {
   color: white;
   text-align: center;
 }
@@ -15,6 +17,7 @@ header, #footer {
   font-style: italic;
 }
 
-.article-author, .article-date {
+.article-author,
+.article-date {
   color: grey;
 }

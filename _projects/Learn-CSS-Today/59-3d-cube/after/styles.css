@@ -31,9 +31,10 @@ body {
   width: var(--size);
   height: var(--size);
   position: absolute;
-  background-color: hsla(200, 100%, 50%, .5);
-  border: 1px solid hsla(200, 100%, 10%, .5);
-  transform: rotateY(var(--rotate-y, 0)) rotateX(var(--rotate-x, 0)) translateZ(calc(var(--size) / 2));
+  background-color: hsla(200, 100%, 50%, 0.5);
+  border: 1px solid hsla(200, 100%, 10%, 0.5);
+  transform: rotateY(var(--rotate-y, 0)) rotateX(var(--rotate-x, 0))
+    translateZ(calc(var(--size) / 2));
 }
 
 .right {

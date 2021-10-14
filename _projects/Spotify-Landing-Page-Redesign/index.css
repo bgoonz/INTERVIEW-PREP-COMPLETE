@@ -46,7 +46,7 @@
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgb(188, 58, 128, .1);
+  background-color: rgb(188, 58, 128, 0.1);
   bottom: 5vw;
   left: 5vw;
   z-index: -1;
@@ -57,7 +57,7 @@
   width: 25vw;
   height: 25vw;
   border-radius: 50%;
-  background-color: rgb(52, 87, 178, .1);
+  background-color: rgb(52, 87, 178, 0.1);
   top: 15vh;
   left: 30vw;
   z-index: -1;
@@ -74,11 +74,11 @@
 }
 
 .home-page-circle-3::before {
-  content: '';
+  content: "";
   transform: translate(40%, 40%);
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  background-color: rgb(52, 87, 178, .1);
+  background-color: rgb(52, 87, 178, 0.1);
 }

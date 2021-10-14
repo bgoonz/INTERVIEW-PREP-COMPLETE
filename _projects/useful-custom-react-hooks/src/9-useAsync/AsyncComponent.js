@@ -1,14 +1,14 @@
-import useAsync from "./useAsync"
+import useAsync from "./useAsync";
 
 export default function AsyncComponent() {
   const { loading, error, value } = useAsync(() => {
     return new Promise((resolve, reject) => {
-      const success = false
+      const success = false;
       setTimeout(() => {
-        success ? resolve("Hi") : reject("Error")
-      }, 1000)
-    })
-  })
+        success ? resolve("Hi") : reject("Error");
+      }, 1000);
+    });
+  });
 
   return (
     <div>
@@ -16,5 +16,5 @@ export default function AsyncComponent() {
       <div>{error}</div>
       <div>{value}</div>
     </div>
-  )
+  );
 }

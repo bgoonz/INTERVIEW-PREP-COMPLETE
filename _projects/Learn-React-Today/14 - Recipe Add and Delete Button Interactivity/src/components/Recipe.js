@@ -1,5 +1,5 @@
-import React from 'react'
-import IngredientList from './IngredientList';
+import React from "react";
+import IngredientList from "./IngredientList";
 
 export default function Recipe(props) {
   const {
@@ -9,8 +9,8 @@ export default function Recipe(props) {
     servings,
     instructions,
     ingredients,
-    handleRecipeDelete
-  } = props
+    handleRecipeDelete,
+  } = props;
   return (
     <div className="recipe">
       <div className="recipe__header">
@@ -35,7 +35,9 @@ export default function Recipe(props) {
       </div>
       <div className="recipe__row">
         <span className="recipe__label">Instructions:</span>
-        <div className="recipe__value recipe__instructions recipe__value--indented">{instructions}</div>
+        <div className="recipe__value recipe__instructions recipe__value--indented">
+          {instructions}
+        </div>
       </div>
       <div className="recipe__row">
         <span className="recipe__label">Ingredients:</span>
@@ -44,5 +46,5 @@ export default function Recipe(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -25,7 +25,7 @@
   background-color: #069;
   color: white;
   border-top: 1px solid #024;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .nav-list {
@@ -37,14 +37,14 @@
 }
 
 .nav-list li {
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .sidebar {
   grid-area: sidebar;
   background-color: #024;
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .content {
@@ -61,5 +61,5 @@
   background-color: #069;
   color: white;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }

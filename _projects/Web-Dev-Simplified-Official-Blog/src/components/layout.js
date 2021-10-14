@@ -6,31 +6,38 @@ import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
   componentDidMount() {
-    const form = document.body.querySelector('.formkit-sticky-bar')
-    const queryParams = qs.parse(this.props.location.search, { ignoreQueryPrefix: true })
-    if (queryParams.fromNewsletter === 'true') {
+    const form = document.body.querySelector(".formkit-sticky-bar")
+    const queryParams = qs.parse(this.props.location.search, {
+      ignoreQueryPrefix: true,
+    })
+    if (queryParams.fromNewsletter === "true") {
       navigate(this.props.location.pathname)
-      localStorage.setItem('subscribed-to-newsletter', true)
+      localStorage.setItem("subscribed-to-newsletter", true)
     }
 
-    if (queryParams.fromNewsletter === 'false') {
+    if (queryParams.fromNewsletter === "false") {
       navigate(this.props.location.pathname)
-      localStorage.removeItem('subscribed-to-newsletter')
+      localStorage.removeItem("subscribed-to-newsletter")
     }
-      
-    if (form == null && JSON.parse(localStorage.getItem('subscribed-to-newsletter')) !== true) {
+
+    if (
+      form == null &&
+      JSON.parse(localStorage.getItem("subscribed-to-newsletter")) !== true
+    ) {
       const script = document.createElement("script")
 
       script.src = "https://web-dev-simplified.ck.page/23989b36d2/index.js"
       script.async = true
-      script.dataset.uid = '23989b36d2'
-  
+      script.dataset.uid = "23989b36d2"
+
       document.body.prepend(script)
     }
   }
 
   componentWillUnmount() {
-    const script = document.querySelector('[src="https://web-dev-simplified.ck.page/23989b36d2/index.js"]')
+    const script = document.querySelector(
+      '[src="https://web-dev-simplified.ck.page/23989b36d2/index.js"]'
+    )
     if (script != null) script.remove()
   }
 

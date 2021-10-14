@@ -3,15 +3,15 @@ function createUser(user) {
     ...user,
     id: Date.now(),
     createdAt: new Date(),
-    updatedAt: new Date()
-  }
+    updatedAt: new Date(),
+  };
 }
 
 function updateUser(user) {
   return {
     ...user,
-    updatedAt: new Date()
-  }
+    updatedAt: new Date(),
+  };
 }
 
-module.exports = { createUser, updateUser }
+module.exports = { createUser, updateUser };

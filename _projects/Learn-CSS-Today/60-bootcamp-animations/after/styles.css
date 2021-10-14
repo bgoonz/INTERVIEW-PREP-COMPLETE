@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Montserrat, sans-serif;
-  color: #1B2522;
+  color: #1b2522;
 
   --title-duration: 500ms;
   --sub-title-duration: 500ms;
@@ -21,7 +21,7 @@ body {
 
 .full-screen-header {
   height: 100vh;
-  background-image: url('img/header_image.jpg');
+  background-image: url("img/header_image.jpg");
   background-size: cover;
   background-position-x: 40%;
   background-position-y: center;
@@ -40,8 +40,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1B2522;
-  padding: .5rem 1rem;
+  background-color: #1b2522;
+  padding: 0.5rem 1rem;
 }
 
 .nav-top {
@@ -74,7 +74,7 @@ body {
 }
 
 .nav-list a:hover {
-  color: #CCC;
+  color: #ccc;
 }
 
 .title {
@@ -86,22 +86,23 @@ body {
 
 .sub-title {
   font-size: 1.5rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   margin-bottom: 1rem;
 
-  animation: sub-title-enter var(--sub-title-duration) var(--sub-title-delay) backwards;
+  animation: sub-title-enter var(--sub-title-duration) var(--sub-title-delay)
+    backwards;
 }
 
 .btn {
   background-color: hsl(200, 100%, 50%);
   color: white;
   border-radius: 10000px;
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   text-decoration: none;
   border: none;
   cursor: pointer;
   font-size: inherit;
-  
+
   transition: 100ms;
 }
 
@@ -115,9 +116,11 @@ body {
   bottom: 1rem;
   width: 30px;
 
-  animation:
-    scroll-down-bounce calc(var(--scroll-down-duration) + var(--scroll-down-delay)) 1s alternate infinite linear,
-    scroll-down-enter var(--scroll-down-duration) var(--scroll-down-delay) backwards;
+  animation: scroll-down-bounce
+      calc(var(--scroll-down-duration) + var(--scroll-down-delay)) 1s alternate
+      infinite linear,
+    scroll-down-enter var(--scroll-down-duration) var(--scroll-down-delay)
+      backwards;
 }
 
 .section {
@@ -155,7 +158,7 @@ body {
 }
 
 .section-accent {
-  background-color: #0AF;
+  background-color: #0af;
 }
 
 .form {
@@ -171,12 +174,12 @@ body {
 .form input,
 .form textarea {
   width: 100%;
-  margin-top: .25rem;
-  margin-bottom: .75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
   outline: none;
-  border: 1px solid #1B2522;
-  border-radius: .3em;
-  padding: .5em;
+  border: 1px solid #1b2522;
+  border-radius: 0.3em;
+  padding: 0.5em;
   color: inherit;
   font-family: inherit;
 
@@ -191,7 +194,7 @@ body {
 
 .form input:focus,
 .form textarea:focus {
-  border-color: #0AF;
+  border-color: #0af;
 }
 
 .btn-container {
@@ -199,11 +202,8 @@ body {
 }
 
 .btn-square {
-  border-radius: .3em;
+  border-radius: 0.3em;
 }
-
-
-
 
 .pricing-cards-container {
   display: flex;
@@ -212,9 +212,9 @@ body {
 
 .pricing-card {
   padding: 1rem;
-  background-color: #DCF4FF;
+  background-color: #dcf4ff;
   border: 1px solid black;
-  border-radius: .3em;
+  border-radius: 0.3em;
   margin: 1rem 0;
 
   transition: transform 100ms;
@@ -250,7 +250,7 @@ body {
 
 .plan-name {
   font-size: 1.5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .plan-price {
@@ -259,13 +259,13 @@ body {
 }
 
 .plan-price::after {
-  content: '/mo';
-  font-size: .75rem;
+  content: "/mo";
+  font-size: 0.75rem;
   color: #777;
 }
 
 .feature {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .feature.inactive {
@@ -277,16 +277,15 @@ body {
   margin-bottom: 0;
 }
 
-
 .btn-grow {
-  animation: btn-grow-enter var(--btn-grow-duration) var(--btn-grow-delay) backwards;
+  animation: btn-grow-enter var(--btn-grow-duration) var(--btn-grow-delay)
+    backwards;
 }
 
 .btn-grow:hover {
   transform: scale(1.1);
   box-shadow: 0 2px 5px 1px black;
 }
-
 
 @keyframes scroll-down-bounce {
   from {
@@ -361,7 +360,7 @@ body {
 
   .pricing-card:first-child,
   .pricing-card:last-child {
-    border-radius: .3em;
+    border-radius: 0.3em;
     border-right: 1px solid black;
     border-left: 1px solid black;
     transform-origin: center;

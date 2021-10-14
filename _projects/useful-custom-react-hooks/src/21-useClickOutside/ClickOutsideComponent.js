@@ -1,13 +1,13 @@
-import { useRef, useState } from "react"
-import useClickOutside from "./useClickOutside"
+import { useRef, useState } from "react";
+import useClickOutside from "./useClickOutside";
 
 export default function ClickOutsideComponent() {
-  const [open, setOpen] = useState(false)
-  const modalRef = useRef()
+  const [open, setOpen] = useState(false);
+  const modalRef = useRef();
 
   useClickOutside(modalRef, () => {
-    if (open) setOpen(false)
-  })
+    if (open) setOpen(false);
+  });
 
   return (
     <>
@@ -28,5 +28,5 @@ export default function ClickOutsideComponent() {
         <span>Modal</span>
       </div>
     </>
-  )
+  );
 }

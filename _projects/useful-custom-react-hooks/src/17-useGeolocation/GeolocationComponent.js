@@ -1,11 +1,11 @@
-import useGeolocation from "./useGeolocation"
+import useGeolocation from "./useGeolocation";
 
 export default function GeolocationComponent() {
   const {
     loading,
     error,
     data: { latitude, longitude },
-  } = useGeolocation()
+  } = useGeolocation();
 
   return (
     <>
@@ -15,5 +15,5 @@ export default function GeolocationComponent() {
         {latitude} x {longitude}
       </div>
     </>
-  )
+  );
 }

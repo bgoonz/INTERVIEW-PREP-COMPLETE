@@ -24,7 +24,7 @@ body {
 .header {
   padding: 0 1rem;
   border-bottom: 1px solid #777;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -43,7 +43,7 @@ body {
   padding: 0;
   cursor: pointer;
   align-self: flex-start;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .body {
@@ -55,12 +55,12 @@ body {
 .footer {
   display: flex;
   justify-content: flex-end;
-  padding: .5rem;
+  padding: 0.5rem;
   border-top: 1px solid #777;
 }
 
 .footer .btn {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .footer .btn:last-child {
@@ -68,28 +68,28 @@ body {
 }
 
 .btn {
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font-size: inherit;
-  border-radius: .3em;
+  border-radius: 0.3em;
   border: none;
   color: white;
   cursor: pointer;
 }
 
 .btn.btn-primary {
-  background-color: #1CA;
+  background-color: #1ca;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus {
-  background-color: #0A8;
+  background-color: #0a8;
 }
 
 .btn.btn-danger {
-  background-color: #C33;
+  background-color: #c33;
 }
 
 .btn.btn-danger:hover,
 .btn.btn-danger:focus {
-  background-color: #A11;
+  background-color: #a11;
 }

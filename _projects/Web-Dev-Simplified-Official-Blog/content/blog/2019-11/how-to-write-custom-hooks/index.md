@@ -2,7 +2,7 @@
 title: The Power Of Custom Hooks
 date: "2019-11-11"
 description: "A quick explanation of how to write custom hooks and why they are so useful."
-tags: ['React']
+tags: ["React"]
 ---
 
 Are you tired of your React components being littered with messy `useEffect` hooks? Worse yet, are you tired of having to duplicate your common hook functionality between components? We have all been there where we have our fetch logic duplicated across many different components which is messy and difficult to maintain. This is where custom hooks come in. They are amazing at grouping up common logic like fetching from APIs and they make it incredibly easy to use that logic anywhere in the application with no duplication.
@@ -16,15 +16,13 @@ Getting started with a custom hook is luckily incredibly easy, because they are 
 The first step is to create the custom hook function. I like to put custom hooks in their own file much like a React component since a custom hook is like a component, but it stores logic instead of presentation. This means we will have a file called `useLocalStorage.js` which contains the following code.
 
 ```javascript
-export default function useLocalStorage() {
-
-}
+export default function useLocalStorage() {}
 ```
 
 Before working on the implementation of this function I first want to figure out exactly how this function will be used. Normally when dealing with `localStorage` the code will look something like this.
 
 ```javascript
-const key = 'key'
+const key = "key"
 const [value, setValue] = useState(() => {
   const jsonValue = localStorage.getItem(key)
   if (jsonValue != null) return JSON.parse(jsonValue)
@@ -41,7 +39,7 @@ There is a `useState` at the beginning which will query `localStorage` to get th
 The reason the function version of `useState` is used is because it will check the `localStorage` first before setting the state to the `initialValue`. If `useEffect` was used to check `localStorage` instead like below it would cause the component to render twice. Once when the `initialValue` was set and once after the `useEffect`.
 
 ```javascript
-const key = 'key'
+const key = "key"
 const [value, setValue] = useState(initialValue)
 
 useEffect(() => {
@@ -57,15 +55,13 @@ useEffect(() => {
 Based on the use case above we know that the `useLocalStorage` hook will need a `key` to store the state as well as an `initialValue` to set the state to if there is nothing in `localStorage`. We can thus update our code to look like this.
 
 ```javascript
-export default function useLocalStorage(key, initialValue) {
-
-}
+export default function useLocalStorage(key, initialValue) {}
 ```
 
 Then in the component where `localStorage` is being used the code can be simplified to just one simple line which has the same return values as `useState` since the `useLocalStorage` hook will behave exactly like `useState`.
 
 ```javascript
-const [value, setValue] = useLocalStorage('key', initialValue)
+const [value, setValue] = useLocalStorage("key", initialValue)
 ```
 
 Now all that is left to do is move over the logic for how to handle `localState` into the `useLocalStorage` hook and return `value` and `setValue`.

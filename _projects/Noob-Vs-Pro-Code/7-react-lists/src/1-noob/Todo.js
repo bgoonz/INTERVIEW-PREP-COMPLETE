@@ -1,13 +1,13 @@
-import React from "react"
-import { shape, string, bool, func, number } from "prop-types"
+import React from "react";
+import { shape, string, bool, func, number } from "prop-types";
 
 function Todo({ todo, handleToggleComplete, handleSelect }) {
   function toggleComplete() {
-    handleToggleComplete(todo.id)
+    handleToggleComplete(todo.id);
   }
 
   function onSelect() {
-    handleSelect(todo.id)
+    handleSelect(todo.id);
   }
 
   return (
@@ -20,7 +20,7 @@ function Todo({ todo, handleToggleComplete, handleSelect }) {
       {todo.name}
       <button onClick={onSelect}>Select</button>
     </div>
-  )
+  );
 }
 
 Todo.propTypes = {
@@ -29,8 +29,8 @@ Todo.propTypes = {
   todo: shape({
     id: number,
     name: string,
-    complete: bool
-  })
-}
+    complete: bool,
+  }),
+};
 
-export default Todo
+export default Todo;

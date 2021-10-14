@@ -1,4 +1,4 @@
-const SUITS = ["♠", "♣", "♥", "♦"]
+const SUITS = ["♠", "♣", "♥", "♦"];
 const VALUES = [
   "A",
   "2",
@@ -12,59 +12,59 @@ const VALUES = [
   "10",
   "J",
   "Q",
-  "K"
-]
+  "K",
+];
 
 export default class Deck {
   constructor(cards = freshDeck()) {
-    this.cards = cards
+    this.cards = cards;
   }
 
   get numberOfCards() {
-    return this.cards.length
+    return this.cards.length;
   }
 
   pop() {
-    return this.cards.shift()
+    return this.cards.shift();
   }
 
   push(card) {
-    this.cards.push(card)
+    this.cards.push(card);
   }
 
   shuffle() {
     for (let i = this.numberOfCards - 1; i > 0; i--) {
-      const newIndex = Math.floor(Math.random() * (i + 1))
-      const oldValue = this.cards[newIndex]
-      this.cards[newIndex] = this.cards[i]
-      this.cards[i] = oldValue
+      const newIndex = Math.floor(Math.random() * (i + 1));
+      const oldValue = this.cards[newIndex];
+      this.cards[newIndex] = this.cards[i];
+      this.cards[i] = oldValue;
     }
   }
 }
 
 class Card {
   constructor(suit, value) {
-    this.suit = suit
-    this.value = value
+    this.suit = suit;
+    this.value = value;
   }
 
   get color() {
-    return this.suit === "♣" || this.suit === "♠" ? "black" : "red"
+    return this.suit === "♣" || this.suit === "♠" ? "black" : "red";
   }
 
   getHTML() {
-    const cardDiv = document.createElement("div")
-    cardDiv.innerText = this.suit
-    cardDiv.classList.add("card", this.color)
-    cardDiv.dataset.value = `${this.value} ${this.suit}`
-    return cardDiv
+    const cardDiv = document.createElement("div");
+    cardDiv.innerText = this.suit;
+    cardDiv.classList.add("card", this.color);
+    cardDiv.dataset.value = `${this.value} ${this.suit}`;
+    return cardDiv;
   }
 }
 
 function freshDeck() {
-  return SUITS.flatMap(suit => {
-    return VALUES.map(value => {
-      return new Card(suit, value)
-    })
-  })
+  return SUITS.flatMap((suit) => {
+    return VALUES.map((value) => {
+      return new Card(suit, value);
+    });
+  });
 }

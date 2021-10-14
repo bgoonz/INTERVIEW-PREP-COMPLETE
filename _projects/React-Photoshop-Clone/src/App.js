@@ -1,104 +1,104 @@
-import React, { useState } from 'react';
-import './App.css';
-import Slider from './Slider'
-import SidebarItem from './SidebarItem'
+import React, { useState } from "react";
+import "./App.css";
+import Slider from "./Slider";
+import SidebarItem from "./SidebarItem";
 
 const DEFAULT_OPTIONS = [
   {
-    name: 'Brightness',
-    property: 'brightness',
+    name: "Brightness",
+    property: "brightness",
     value: 100,
     range: {
       min: 0,
-      max: 200
+      max: 200,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Contrast',
-    property: 'contrast',
+    name: "Contrast",
+    property: "contrast",
     value: 100,
     range: {
       min: 0,
-      max: 200
+      max: 200,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Saturation',
-    property: 'saturate',
+    name: "Saturation",
+    property: "saturate",
     value: 100,
     range: {
       min: 0,
-      max: 200
+      max: 200,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Grayscale',
-    property: 'grayscale',
+    name: "Grayscale",
+    property: "grayscale",
     value: 0,
     range: {
       min: 0,
-      max: 100
+      max: 100,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Sepia',
-    property: 'sepia',
+    name: "Sepia",
+    property: "sepia",
     value: 0,
     range: {
       min: 0,
-      max: 100
+      max: 100,
     },
-    unit: '%'
+    unit: "%",
   },
   {
-    name: 'Hue Rotate',
-    property: 'hue-rotate',
+    name: "Hue Rotate",
+    property: "hue-rotate",
     value: 0,
     range: {
       min: 0,
-      max: 360
+      max: 360,
     },
-    unit: 'deg'
+    unit: "deg",
   },
   {
-    name: 'Blur',
-    property: 'blur',
+    name: "Blur",
+    property: "blur",
     value: 0,
     range: {
       min: 0,
-      max: 20
+      max: 20,
     },
-    unit: 'px'
-  }
-]
+    unit: "px",
+  },
+];
 
 function App() {
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0)
-  const [options, setOptions] = useState(DEFAULT_OPTIONS)
-  const selectedOption = options[selectedOptionIndex]
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
+  const [options, setOptions] = useState(DEFAULT_OPTIONS);
+  const selectedOption = options[selectedOptionIndex];
 
   function handleSliderChange({ target }) {
-    setOptions(prevOptions => {
+    setOptions((prevOptions) => {
       return prevOptions.map((option, index) => {
-        if (index !== selectedOptionIndex) return option
-        return { ...option, value: target.value }
-      })
-    })
+        if (index !== selectedOptionIndex) return option;
+        return { ...option, value: target.value };
+      });
+    });
   }
 
   function getImageStyle() {
-    const filters = options.map(option => {
-      return `${option.property}(${option.value}${option.unit})`
-    })
+    const filters = options.map((option) => {
+      return `${option.property}(${option.value}${option.unit})`;
+    });
 
-    return { filter: filters.join(' ') }
+    return { filter: filters.join(" ") };
   }
 
-  console.log(getImageStyle())
+  console.log(getImageStyle());
 
   return (
     <div className="container">
@@ -112,7 +112,7 @@ function App() {
               active={index === selectedOptionIndex}
               handleClick={() => setSelectedOptionIndex(index)}
             />
-          )
+          );
         })}
       </div>
       <Slider
@@ -122,7 +122,7 @@ function App() {
         handleChange={handleSliderChange}
       />
     </div>
-  )
+  );
 }
 
 export default App;

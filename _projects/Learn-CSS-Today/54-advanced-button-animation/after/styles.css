@@ -16,8 +16,8 @@ body {
   background-color: hsl(200, 100%, 50%);
   border: none;
   outline: none;
-  padding: .5em 1em;
-  border-radius: .3em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
   cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ body {
   }
 
   50% {
-    opacity: .75;
+    opacity: 0.75;
   }
 
   100% {
@@ -59,14 +59,14 @@ body {
 
 @keyframes fly-away {
   33% {
-    transform: translate(100px, 50px) rotate(30deg) scale(.9);
+    transform: translate(100px, 50px) rotate(30deg) scale(0.9);
   }
 
   66% {
-    transform: translate(0, 25px) rotate(90deg) scale(.75);
+    transform: translate(0, 25px) rotate(90deg) scale(0.75);
   }
 
   100% {
-    transform: translate(-100px, -75px) rotate(200deg) scale(.25);
+    transform: translate(-100px, -75px) rotate(200deg) scale(0.25);
   }
 }

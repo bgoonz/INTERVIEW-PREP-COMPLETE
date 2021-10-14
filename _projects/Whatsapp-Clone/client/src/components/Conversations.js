@@ -1,9 +1,9 @@
-import React from 'react'
-import { ListGroup } from 'react-bootstrap'
-import { useConversations } from '../contexts/ConversationsProvider';
+import React from "react";
+import { ListGroup } from "react-bootstrap";
+import { useConversations } from "../contexts/ConversationsProvider";
 
 export default function Conversations() {
-  const { conversations, selectConversationIndex } = useConversations()
+  const { conversations, selectConversationIndex } = useConversations();
 
   return (
     <ListGroup variant="flush">
@@ -14,9 +14,9 @@ export default function Conversations() {
           onClick={() => selectConversationIndex(index)}
           active={conversation.selected}
         >
-          {conversation.recipients.map(r => r.name).join(', ')}
+          {conversation.recipients.map((r) => r.name).join(", ")}
         </ListGroup.Item>
       ))}
     </ListGroup>
-  )
+  );
 }

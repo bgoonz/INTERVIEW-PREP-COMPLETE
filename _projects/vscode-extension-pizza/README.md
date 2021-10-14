@@ -14,8 +14,8 @@ If you have any requirements or dependencies, add a section describing those and
 
 In order to make ordering a pizza even quicker utilize these settings to have information automatically populated:
 
-* `pizza.address`: Where do you want your food delivered
-* `pizza.firstName`: Your first name (duh)
-* `pizza.lastName`: Your last name
-* `pizza.email`: Your email (it is required unfortunately)
-* `pizza.phoneNumber`: Your phone number (it is also required unfortunately)
+- `pizza.address`: Where do you want your food delivered
+- `pizza.firstName`: Your first name (duh)
+- `pizza.lastName`: Your last name
+- `pizza.email`: Your email (it is required unfortunately)
+- `pizza.phoneNumber`: Your phone number (it is also required unfortunately)

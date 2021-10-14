@@ -1,7 +1,7 @@
-import useCopyToClipboard from "./useCopyToClipboard"
+import useCopyToClipboard from "./useCopyToClipboard";
 
 export default function CopyToClipboardComponent() {
-  const [copyToClipboard, { success }] = useCopyToClipboard()
+  const [copyToClipboard, { success }] = useCopyToClipboard();
 
   return (
     <>
@@ -10,5 +10,5 @@ export default function CopyToClipboardComponent() {
       </button>
       <input type="text" />
     </>
-  )
+  );
 }

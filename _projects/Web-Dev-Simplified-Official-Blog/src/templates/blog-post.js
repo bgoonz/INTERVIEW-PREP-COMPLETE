@@ -47,7 +47,7 @@ class BlogPostTemplate extends React.Component {
               }}
             >
               <TagBar
-                tags={post.frontmatter.tags.map(tag => {
+                tags={post.frontmatter.tags.map((tag) => {
                   return { name: tag }
                 })}
               />

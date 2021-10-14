@@ -2,12 +2,12 @@
 title: Async Vs Defer - JavaScript Loading Explanation
 date: "2019-12-23"
 description: "An explanation of the difference between standard, async, and defer script tag loading, and which is the best to use."
-tags: ['JavaScript']
+tags: ["JavaScript"]
 ---
 
 How many times have you written `<script src="script.js"></script>`? Probably too many to count, but have you actually thought about how browsers handle that simple line of code? It is surprisingly more complex than it appears, which is why in this article I will be breaking down exactly how `script` tag loading works and most importantly how you can use `async` and `defer` to speed up your JavaScript load times.
 
-*PS: This article is available in video form as well. This video is one of my better explanatory videos so I highly recommend you check it out if you are visual learner. [Click here to view the video.](https://youtu.be/Kpn2ajSa92c)*
+_PS: This article is available in video form as well. This video is one of my better explanatory videos so I highly recommend you check it out if you are visual learner. [Click here to view the video.](https://youtu.be/Kpn2ajSa92c)_
 
 ## How The Browser Parses HTML
 

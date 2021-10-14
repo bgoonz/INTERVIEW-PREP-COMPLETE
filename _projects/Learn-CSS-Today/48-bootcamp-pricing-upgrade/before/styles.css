@@ -5,12 +5,12 @@
 body {
   margin: 0;
   font-family: Cambria;
-  color: #1B2522;
+  color: #1b2522;
 }
 
 .full-screen-header {
   height: 100vh;
-  background-image: url('img/header_image.jpg');
+  background-image: url("img/header_image.jpg");
   background-size: cover;
   background-position-x: 40%;
   background-position-y: center;
@@ -28,8 +28,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1B2522;
-  padding: .5rem 1rem;
+  background-color: #1b2522;
+  padding: 0.5rem 1rem;
 }
 
 .nav-top {
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-list a:hover {
-  color: #CCC;
+  color: #ccc;
 }
 
 .title {
@@ -68,7 +68,7 @@ body {
 
 .sub-title {
   font-size: 1.5rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   margin-bottom: 1rem;
 }
 
@@ -76,7 +76,7 @@ body {
   background-color: hsl(200, 100%, 50%);
   color: white;
   border-radius: 10000px;
-  padding: .25em 1em;
+  padding: 0.25em 1em;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -125,7 +125,7 @@ body {
 }
 
 .section-accent {
-  background-color: #0AF;
+  background-color: #0af;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -157,12 +157,12 @@ body {
 .form input,
 .form textarea {
   width: 100%;
-  margin-top: .25rem;
-  margin-bottom: .75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
   outline: none;
-  border: 1px solid #1B2522;
-  border-radius: .3em;
-  padding: .5em;
+  border: 1px solid #1b2522;
+  border-radius: 0.3em;
+  padding: 0.5em;
   color: inherit;
   font-family: inherit;
 }
@@ -175,7 +175,7 @@ body {
 
 .form input:focus,
 .form textarea:focus {
-  border-color: #0AF;
+  border-color: #0af;
 }
 
 .btn-container {
@@ -183,5 +183,5 @@ body {
 }
 
 .btn-square {
-  border-radius: .3em;
+  border-radius: 0.3em;
 }

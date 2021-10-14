@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react"
-import PropTypes from "prop-types"
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 function Counter({ initialCount }) {
-  const [count, setCount] = useState(initialCount)
+  const [count, setCount] = useState(initialCount);
 
   function incrementCount() {
-    setCount(currCount => currCount + 1)
+    setCount((currCount) => currCount + 1);
   }
 
   function decrementCount() {
-    setCount(currCount => currCount - 1)
+    setCount((currCount) => currCount - 1);
   }
 
   useEffect(() => {
-    console.log(count)
-  }, [count])
+    console.log(count);
+  }, [count]);
 
   return (
     <div>
@@ -22,11 +22,11 @@ function Counter({ initialCount }) {
       {count}
       <button onClick={incrementCount}>+</button>
     </div>
-  )
+  );
 }
 
 Counter.propTypes = {
-  initialCount: PropTypes.number
-}
+  initialCount: PropTypes.number,
+};
 
-export default Counter
+export default Counter;

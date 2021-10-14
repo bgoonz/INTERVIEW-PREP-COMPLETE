@@ -131,4 +131,4 @@ console.log(5)
     incorrectAnswers: ["opacity: 1", "z-index: 10", "order: 4"],
   },
   // #endregion Hard
-]
+];
