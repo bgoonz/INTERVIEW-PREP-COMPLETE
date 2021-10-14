@@ -1,49 +1,46 @@
 class User {
   constructor(id, name) {
-    this.id = id
-    this.name = name
+    this.id = id;
+    this.name = name;
   }
 
   hasAccess() {
-    return this.name === 'Bob'
+    return this.name === "Bob";
   }
 }
 
 class NullUser {
   constructor() {
-    this.id = -1
-    this.name = 'Guest'
+    this.id = -1;
+    this.name = "Guest";
   }
 
   hasAccess() {
-    return false
+    return false;
   }
 }
 
-const users = [
-  new User(1, 'Bob'),
-  new User(2, 'John')
-]
+const users = [new User(1, "Bob"), new User(2, "John")];
 
 function getUser(id) {
-  const user = users.find(user => user.id === id)
+  const user = users.find((user) => user.id === id);
   /*
     We are now checking if the user is null before returning, and instead returning a NullUser object if the user is null. This means that we no longer need to check for null users later in the code and can treat all users that are returned from this function the same whether they exist or not.
   */
   if (user == null) {
-    return new NullUser()
+    return new NullUser();
   } else {
-    return user
+    return user;
   }
 }
 
 function printUser(id) {
-  const user = getUser(id)
-  console.log('Hello ' + user.name)
+  const user = getUser(id);
+  console.log("Hello " + user.name);
 
   if (user.hasAccess()) {
-    console.log('You have access')
+    console.log("You have access");
   } else {
-    console.log('You are not allowed here')
+    console.log("You are not allowed here");
   }
 }

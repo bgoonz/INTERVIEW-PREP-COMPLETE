@@ -1,12 +1,12 @@
-import React from "react"
-import formatCurrency from "../util/formatCurrency"
-import { useCart } from "../context/CartContext"
+import React from "react";
+import formatCurrency from "../util/formatCurrency";
+import { useCart } from "../context/CartContext";
 
 export default function CartItem({ entry }) {
-  const { removeFromCart } = useCart()
+  const { removeFromCart } = useCart();
 
   function removeItem() {
-    removeFromCart(entry.itemId)
+    removeFromCart(entry.itemId);
   }
 
   return (
@@ -40,5 +40,5 @@ export default function CartItem({ entry }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

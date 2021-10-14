@@ -10,15 +10,15 @@ var SsdMobilenetv1_1 = require("../ssdMobilenetv1/SsdMobilenetv1");
 var TinyFaceDetector_1 = require("../tinyFaceDetector/TinyFaceDetector");
 var tinyYolov2_1 = require("../tinyYolov2");
 exports.nets = {
-    ssdMobilenetv1: new SsdMobilenetv1_1.SsdMobilenetv1(),
-    tinyFaceDetector: new TinyFaceDetector_1.TinyFaceDetector(),
-    tinyYolov2: new tinyYolov2_1.TinyYolov2(),
-    mtcnn: new Mtcnn_1.Mtcnn(),
-    faceLandmark68Net: new FaceLandmark68Net_1.FaceLandmark68Net(),
-    faceLandmark68TinyNet: new FaceLandmark68TinyNet_1.FaceLandmark68TinyNet(),
-    faceRecognitionNet: new FaceRecognitionNet_1.FaceRecognitionNet(),
-    faceExpressionNet: new FaceExpressionNet_1.FaceExpressionNet(),
-    ageGenderNet: new AgeGenderNet_1.AgeGenderNet()
+  ssdMobilenetv1: new SsdMobilenetv1_1.SsdMobilenetv1(),
+  tinyFaceDetector: new TinyFaceDetector_1.TinyFaceDetector(),
+  tinyYolov2: new tinyYolov2_1.TinyYolov2(),
+  mtcnn: new Mtcnn_1.Mtcnn(),
+  faceLandmark68Net: new FaceLandmark68Net_1.FaceLandmark68Net(),
+  faceLandmark68TinyNet: new FaceLandmark68TinyNet_1.FaceLandmark68TinyNet(),
+  faceRecognitionNet: new FaceRecognitionNet_1.FaceRecognitionNet(),
+  faceExpressionNet: new FaceExpressionNet_1.FaceExpressionNet(),
+  ageGenderNet: new AgeGenderNet_1.AgeGenderNet(),
 };
 /**
  * Attempts to detect all faces in an image using SSD Mobilenetv1 Network.
@@ -28,7 +28,7 @@ exports.nets = {
  * @returns Bounding box of each face with score.
  */
 exports.ssdMobilenetv1 = function (input, options) {
-    return exports.nets.ssdMobilenetv1.locateFaces(input, options);
+  return exports.nets.ssdMobilenetv1.locateFaces(input, options);
 };
 /**
  * Attempts to detect all faces in an image using the Tiny Face Detector.
@@ -38,7 +38,7 @@ exports.ssdMobilenetv1 = function (input, options) {
  * @returns Bounding box of each face with score.
  */
 exports.tinyFaceDetector = function (input, options) {
-    return exports.nets.tinyFaceDetector.locateFaces(input, options);
+  return exports.nets.tinyFaceDetector.locateFaces(input, options);
 };
 /**
  * Attempts to detect all faces in an image using the Tiny Yolov2 Network.
@@ -48,7 +48,7 @@ exports.tinyFaceDetector = function (input, options) {
  * @returns Bounding box of each face with score.
  */
 exports.tinyYolov2 = function (input, options) {
-    return exports.nets.tinyYolov2.locateFaces(input, options);
+  return exports.nets.tinyYolov2.locateFaces(input, options);
 };
 /**
  * Attempts to detect all faces in an image and the 5 point face landmarks
@@ -59,7 +59,7 @@ exports.tinyYolov2 = function (input, options) {
  * @returns Bounding box of each face with score and 5 point face landmarks.
  */
 exports.mtcnn = function (input, options) {
-    return exports.nets.mtcnn.forward(input, options);
+  return exports.nets.mtcnn.forward(input, options);
 };
 /**
  * Detects the 68 point face landmark positions of the face shown in an image.
@@ -69,7 +69,7 @@ exports.mtcnn = function (input, options) {
  * @returns 68 point face landmarks or array thereof in case of batch input.
  */
 exports.detectFaceLandmarks = function (input) {
-    return exports.nets.faceLandmark68Net.detectLandmarks(input);
+  return exports.nets.faceLandmark68Net.detectLandmarks(input);
 };
 /**
  * Detects the 68 point face landmark positions of the face shown in an image
@@ -81,7 +81,7 @@ exports.detectFaceLandmarks = function (input) {
  * @returns 68 point face landmarks or array thereof in case of batch input.
  */
 exports.detectFaceLandmarksTiny = function (input) {
-    return exports.nets.faceLandmark68TinyNet.detectLandmarks(input);
+  return exports.nets.faceLandmark68TinyNet.detectLandmarks(input);
 };
 /**
  * Computes a 128 entry vector (face descriptor / face embeddings) from the face shown in an image,
@@ -94,7 +94,7 @@ exports.detectFaceLandmarksTiny = function (input) {
  * @returns Face descriptor with 128 entries or array thereof in case of batch input.
  */
 exports.computeFaceDescriptor = function (input) {
-    return exports.nets.faceRecognitionNet.computeFaceDescriptor(input);
+  return exports.nets.faceRecognitionNet.computeFaceDescriptor(input);
 };
 /**
  * Recognizes the facial expressions from a face image.
@@ -104,7 +104,7 @@ exports.computeFaceDescriptor = function (input) {
  * @returns Facial expressions with corresponding probabilities or array thereof in case of batch input.
  */
 exports.recognizeFaceExpressions = function (input) {
-    return exports.nets.faceExpressionNet.predictExpressions(input);
+  return exports.nets.faceExpressionNet.predictExpressions(input);
 };
 /**
  * Predicts age and gender from a face image.
@@ -114,17 +114,35 @@ exports.recognizeFaceExpressions = function (input) {
  * @returns Predictions with age, gender and gender probability or array thereof in case of batch input.
  */
 exports.predictAgeAndGender = function (input) {
-    return exports.nets.ageGenderNet.predictAgeAndGender(input);
+  return exports.nets.ageGenderNet.predictAgeAndGender(input);
 };
-exports.loadSsdMobilenetv1Model = function (url) { return exports.nets.ssdMobilenetv1.load(url); };
-exports.loadTinyFaceDetectorModel = function (url) { return exports.nets.tinyFaceDetector.load(url); };
-exports.loadMtcnnModel = function (url) { return exports.nets.mtcnn.load(url); };
-exports.loadTinyYolov2Model = function (url) { return exports.nets.tinyYolov2.load(url); };
-exports.loadFaceLandmarkModel = function (url) { return exports.nets.faceLandmark68Net.load(url); };
-exports.loadFaceLandmarkTinyModel = function (url) { return exports.nets.faceLandmark68TinyNet.load(url); };
-exports.loadFaceRecognitionModel = function (url) { return exports.nets.faceRecognitionNet.load(url); };
-exports.loadFaceExpressionModel = function (url) { return exports.nets.faceExpressionNet.load(url); };
-exports.loadAgeGenderModel = function (url) { return exports.nets.ageGenderNet.load(url); };
+exports.loadSsdMobilenetv1Model = function (url) {
+  return exports.nets.ssdMobilenetv1.load(url);
+};
+exports.loadTinyFaceDetectorModel = function (url) {
+  return exports.nets.tinyFaceDetector.load(url);
+};
+exports.loadMtcnnModel = function (url) {
+  return exports.nets.mtcnn.load(url);
+};
+exports.loadTinyYolov2Model = function (url) {
+  return exports.nets.tinyYolov2.load(url);
+};
+exports.loadFaceLandmarkModel = function (url) {
+  return exports.nets.faceLandmark68Net.load(url);
+};
+exports.loadFaceLandmarkTinyModel = function (url) {
+  return exports.nets.faceLandmark68TinyNet.load(url);
+};
+exports.loadFaceRecognitionModel = function (url) {
+  return exports.nets.faceRecognitionNet.load(url);
+};
+exports.loadFaceExpressionModel = function (url) {
+  return exports.nets.faceExpressionNet.load(url);
+};
+exports.loadAgeGenderModel = function (url) {
+  return exports.nets.ageGenderNet.load(url);
+};
 // backward compatibility
 exports.loadFaceDetectionModel = exports.loadSsdMobilenetv1Model;
 exports.locateFaces = exports.ssdMobilenetv1;

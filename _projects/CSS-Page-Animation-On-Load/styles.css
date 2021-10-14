@@ -2,7 +2,7 @@ body {
   margin: 0;
   --nav-load-time: 300ms;
   --nav-link-load-time: 500ms;
-  --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time))
+  --article-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
 }
 
 nav {
@@ -40,7 +40,7 @@ nav li:last-child {
 }
 
 nav li:hover {
-  background-color: #FFFFFF44;
+  background-color: #ffffff44;
 }
 
 nav a {

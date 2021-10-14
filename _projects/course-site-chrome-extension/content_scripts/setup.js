@@ -1,11 +1,11 @@
-import setupAutoplay from "./autoplay.js"
+import setupAutoplay from "./autoplay.js";
 
 function setup() {
-  setupAutoplay()
+  setupAutoplay();
 }
 
-setup()
+setup();
 
-chrome.runtime.onMessage.addListener(function(request) {
-  if (request && request.type === "page-changed") setup()
-})
+chrome.runtime.onMessage.addListener(function (request) {
+  if (request && request.type === "page-changed") setup();
+});

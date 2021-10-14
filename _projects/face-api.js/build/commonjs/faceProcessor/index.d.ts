@@ -1,1 +1,1 @@
-export * from './FaceProcessor';
+export * from "./FaceProcessor";

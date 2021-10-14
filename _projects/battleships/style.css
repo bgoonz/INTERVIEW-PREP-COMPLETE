@@ -1,39 +1,39 @@
 .grid-user {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    background-color: blue;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  background-color: blue;
 }
 
 .grid-computer {
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-    background-color: lightgreen;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  background-color: lightgreen;
 }
 
 .grid-display {
-    width: 400px;
-    height: 400px;
-    margin: 20px;
-    background-color: yellow;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  background-color: yellow;
 }
 
 .grid div {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .taken {
-  background-color: black
+  background-color: black;
 }
 
 .destroyer-container {
@@ -136,13 +136,11 @@
   background-color: green;
 }
 
-
 .ship div {
   width: 40px;
   height: 40px;
   display: inline-block;
 }
-
 
 .boom {
   background-color: red;

@@ -15,6 +15,7 @@ Choosing one or more options from the following as per the nature of your Pull r
 - [ ] Documentation Update
 
 # Checklist:
+
 Please tick all the boxes that are fulfilled by your Pull Request.
 
 - [ ] I have named my files and folder, according to this project's guidelines.

@@ -1,21 +1,21 @@
 function getUsers() {
-  return getFetch('https://jsonplaceholder.typicode.com/users')
+  return getFetch("https://jsonplaceholder.typicode.com/users");
 }
 
 function getUserPosts(userId) {
-  return getFetch('https://jsonplaceholder.typicode.com/posts', {
-    userId: userId
-  })
+  return getFetch("https://jsonplaceholder.typicode.com/posts", {
+    userId: userId,
+  });
 }
 
-getUsers().then(users => {
-  users.forEach(user => {
-    getUserPosts(user.id).then(posts => {
-      console.log(user.name)
-      console.log(posts.length)
-    })
-  })
-})
+getUsers().then((users) => {
+  users.forEach((user) => {
+    getUserPosts(user.id).then((posts) => {
+      console.log(user.name);
+      console.log(posts.length);
+    });
+  });
+});
 
 // function getFetch(url, params = {}) {
 //   const queryString = Object.entries(params).map(param => {
@@ -31,6 +31,6 @@ function getFetch(url, params = {}) {
   return axios({
     url: url,
     method: "GET",
-    params: params
-  }).then(res => res.data)
+    params: params,
+  }).then((res) => res.data);
 }

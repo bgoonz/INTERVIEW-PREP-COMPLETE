@@ -15,7 +15,6 @@
 - [ ] I have checked previous issues to avoid duplicates.
 - [ ] This issue will be meaningful for the project.
 
-
 <!-- Uncomment this in case you have a issue related to a bug in existing code.-->
 
 <!--

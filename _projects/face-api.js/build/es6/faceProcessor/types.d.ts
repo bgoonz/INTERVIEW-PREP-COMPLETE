@@ -1,4 +1,4 @@
-import { TfjsImageRecognitionBase } from 'tfjs-image-recognition-base';
+import { TfjsImageRecognitionBase } from "tfjs-image-recognition-base";
 export declare type NetParams = {
-    fc: TfjsImageRecognitionBase.FCParams;
+  fc: TfjsImageRecognitionBase.FCParams;
 };
