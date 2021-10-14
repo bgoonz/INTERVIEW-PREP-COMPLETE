@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import Editor from './Editor'
-import useLocalStorage from '../hooks/useLocalStorage'
+import React, { useState, useEffect } from "react";
+import Editor from "./Editor";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 function App() {
-  const [html, setHtml] = useLocalStorage('html', '')
-  const [css, setCss] = useLocalStorage('css', '')
-  const [js, setJs] = useLocalStorage('js', '')
-  const [srcDoc, setSrcDoc] = useState('')
+  const [html, setHtml] = useLocalStorage("html", "");
+  const [css, setCss] = useLocalStorage("css", "");
+  const [js, setJs] = useLocalStorage("js", "");
+  const [srcDoc, setSrcDoc] = useState("");
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -16,11 +16,11 @@ function App() {
           <style>${css}</style>
           <script>${js}</script>
         </html>
-      `)
-    }, 250)
+      `);
+    }, 250);
 
-    return () => clearTimeout(timeout)
-  }, [html, css, js])
+    return () => clearTimeout(timeout);
+  }, [html, css, js]);
 
   return (
     <>
@@ -55,7 +55,7 @@ function App() {
         />
       </div>
     </>
-  )
+  );
 }
 
 export default App;

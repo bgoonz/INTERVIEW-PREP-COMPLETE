@@ -2,7 +2,7 @@
 title: "Are Online Courses Worth It?"
 date: "2021-08-02"
 description: "Online courses claim to make you a developer quicker and easier, but are they worth the sometimes astronomical cost?"
-tags: ['Non-Technical Discussion']
+tags: ["Non-Technical Discussion"]
 ---
 
 If you were trying to become a software developer 20 years ago the only real option available was to spend tens of thousands or even hundreds of thousands of dollars on a four year college education. Luckily, this is no longer the case, though, as there are countless cheaper options such as bootcamps, online courses, and even entirely free resources like YouTube and freeCodeCamp.
@@ -43,7 +43,7 @@ Now finally we can talk about which course you should take. In general I would s
 
 #### Cheap Courses
 
-A cheap course is any course that cost less than $50 or $100. Places like Udemy are flooded with courses in this price range. These courses are a great option if you are unable to pay much towards online courses, but still want something that is more structured than just browsing YouTube content. These types of courses generally have one of more of the following problems, though. 
+A cheap course is any course that cost less than $50 or $100. Places like Udemy are flooded with courses in this price range. These courses are a great option if you are unable to pay much towards online courses, but still want something that is more structured than just browsing YouTube content. These types of courses generally have one of more of the following problems, though.
 
 1. They are much longer than they need to be which wastes your time.
 2. They are too focused on teaching every single detail of a topic even if the information is outdated or leads to more confusion.

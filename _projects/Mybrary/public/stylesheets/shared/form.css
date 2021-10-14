@@ -7,7 +7,7 @@
 
 .form-row {
   display: flex;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-item {
@@ -32,20 +32,22 @@
 
 .form-item > label {
   font-size: var(--form-label-font-size);
-  margin-bottom: .25rem;
-  margin-left: .25rem;
+  margin-bottom: 0.25rem;
+  margin-left: 0.25rem;
 }
 
-.form-item input, .form-item select, .form-item textarea {
+.form-item input,
+.form-item select,
+.form-item textarea {
   height: 2rem;
-  padding: .25rem .5rem;
-  border-radius: .25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
   border: 1px solid var(--form-input-border-color);
   background-color: var(--form-input-background-color);
   color: var(--color-text-light);
   font-size: 1rem;
   font-weight: normal;
-  font-family: 'Gotham Rounded';
+  font-family: "Gotham Rounded";
   outline: none;
 }
 
@@ -58,12 +60,14 @@
   background-color: black;
 }
 
-.form-item input:focus, .form-item select:focus, .form-item textarea:focus {
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus {
   border-color: var(--form-input-border-color-light);
 }
 
 .filepond--root {
-  font-family: 'Gotham Rounded';
+  font-family: "Gotham Rounded";
   margin-bottom: 0;
 }
 

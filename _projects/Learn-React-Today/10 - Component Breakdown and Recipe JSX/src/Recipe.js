@@ -1,12 +1,7 @@
-import React from 'react'
+import React from "react";
 
 export default function Recipe(props) {
-  const {
-    name,
-    cookTime,
-    servings,
-    instructions
-  } = props
+  const { name, cookTime, servings, instructions } = props;
   return (
     <div>
       <div>
@@ -29,5 +24,5 @@ export default function Recipe(props) {
         <div>{instructions}</div>
       </div>
     </div>
-  )
+  );
 }

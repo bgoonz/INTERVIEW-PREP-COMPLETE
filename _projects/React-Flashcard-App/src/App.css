@@ -1,5 +1,5 @@
 body {
-  background-color: #C8D0D2;
+  background-color: #c8d0d2;
   margin: 0;
 }
 
@@ -15,26 +15,26 @@ body {
   flex-wrap: wrap;
   background-color: white;
   padding: 0 1.5rem;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 .form-group > label {
   color: #777;
-  font-size: .75rem;
-  margin-bottom: .25rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
 }
 
 .btn {
   background-color: hsl(200, 100%, 50%);
   color: white;
-  padding: .5em 1em;
-  border-radius: .3em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
   border: none;
   cursor: pointer;
 }
@@ -55,18 +55,19 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  border-radius: .25rem;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   background-color: white;
   transform-style: preserve-3d;
   transition: 150ms;
   cursor: pointer;
-  transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+    translateY(var(--translate-y, 0));
 }
 
 .card:hover {
   --translate-y: -2px;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .card.flip {
@@ -89,13 +90,13 @@ body {
 }
 
 .flashcard-options {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .flashcard-option {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   color: #555;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .flashcard-option:first-child {

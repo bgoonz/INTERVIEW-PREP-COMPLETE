@@ -1,8 +1,8 @@
-import { useSessionStorage, useLocalStorage } from "./useStorage"
+import { useSessionStorage, useLocalStorage } from "./useStorage";
 
 export default function StorageComponent() {
-  const [name, setName, removeName] = useSessionStorage("name", "Kyle")
-  const [age, setAge, removeAge] = useLocalStorage("age", 26)
+  const [name, setName, removeName] = useSessionStorage("name", "Kyle");
+  const [age, setAge, removeAge] = useLocalStorage("age", 26);
 
   return (
     <div>
@@ -14,5 +14,5 @@ export default function StorageComponent() {
       <button onClick={removeName}>Remove Name</button>
       <button onClick={removeAge}>Remove Age</button>
     </div>
-  )
+  );
 }

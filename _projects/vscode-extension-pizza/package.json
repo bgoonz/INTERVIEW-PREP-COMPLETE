@@ -5,8 +5,8 @@
   "version": "1.0.1",
   "publisher": "WebDevSimplified",
   "repository": {
-		"url": "https://github.com/WebDevSimplified/vscode-extension-pizza"
-	},
+    "url": "https://github.com/WebDevSimplified/vscode-extension-pizza"
+  },
   "icon": "logo.png",
   "engines": {
     "vscode": "^1.46.0"

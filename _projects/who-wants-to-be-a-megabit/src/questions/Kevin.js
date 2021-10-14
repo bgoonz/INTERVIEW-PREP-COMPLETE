@@ -1,13 +1,10 @@
 export default [
   {
-    questionText: "If you want to fill an entire background with an image without distorting the aspect ratio which value of background-size do you use?",
+    questionText:
+      "If you want to fill an entire background with an image without distorting the aspect ratio which value of background-size do you use?",
     codeAnswer: true,
     correctAnswer: "cover",
-    incorrectAnswers: [
-      "fill",
-      "100%",
-      "contain"
-    ]
+    incorrectAnswers: ["fill", "100%", "contain"],
   },
   {
     questionText: "How do you define a custom property in CSS?",
@@ -16,11 +13,12 @@ export default [
     incorrectAnswers: [
       "--custom-property = 10",
       "$custom-property: 10",
-      "$custom-property = 10"
-    ]
+      "$custom-property = 10",
+    ],
   },
   {
-    questionText: "Given the following HTML which CSS will not select the .selected element?",
+    questionText:
+      "Given the following HTML which CSS will not select the .selected element?",
     questionCode: `<div>
     <span></span>
     <span></span>
@@ -33,11 +31,12 @@ export default [
     incorrectAnswers: [
       "div > :nth-child(5n - 7)",
       "div > :nth-last-of-type(2n)",
-      "div > :not(span)"
-    ]
+      "div > :not(span)",
+    ],
   },
   {
-    questionText: "Given the following HTML and CSS what is the color of the element?",
+    questionText:
+      "Given the following HTML and CSS what is the color of the element?",
     questionCode: `<div class="parent">
   <span class="child" style="color: red;"></span>
 </div>
@@ -47,11 +46,7 @@ export default [
 span { color: purple; }
 `,
     correctAnswer: "red",
-    incorrectAnswers: [
-      "blue",
-      "green",
-      "purple"
-    ]
+    incorrectAnswers: ["blue", "green", "purple"],
   },
   {
     questionText: "How do you check grid support in CSS?",
@@ -60,8 +55,8 @@ span { color: purple; }
     incorrectAnswers: [
       "@supports(grid)",
       "@feature(display: grid)",
-      "@feature(grid)"
-    ]
+      "@feature(grid)",
+    ],
   },
   {
     questionText: "What is the border-color of .child?",
@@ -73,11 +68,7 @@ span { color: purple; }
   color: blue;
 }`,
     correctAnswer: "blue",
-    incorrectAnswers: [
-      "red",
-      "yellow",
-      "green",
-    ]
+    incorrectAnswers: ["red", "yellow", "green"],
   },
   {
     questionText: "What is margin-bottom if .child is inside .parent?",
@@ -89,20 +80,12 @@ span { color: purple; }
   margin-bottom: calc(10% + 10px);
 }`,
     correctAnswer: "30px",
-    incorrectAnswers: [
-      "20px",
-      "10px",
-      "25px"
-    ]
+    incorrectAnswers: ["20px", "10px", "25px"],
   },
   {
     questionText: "Which CSS unit is the largest?",
     correctAnswer: "pc",
-    incorrectAnswers: [
-      "px",
-      "Q",
-      "mm"
-    ]
+    incorrectAnswers: ["px", "Q", "mm"],
   },
   {
     questionText: "Which of the following is an invalid color in CSS?",
@@ -111,8 +94,8 @@ span { color: purple; }
     incorrectAnswers: [
       "rgb(0, 0, 0, .5)",
       "hsla(500, 100%, 50%, .6)",
-      "#C1C1C133"
-    ]
+      "#C1C1C133",
+    ],
   },
   {
     questionText: "How do you access the value of a data-attribute in CSS?",
@@ -121,54 +104,35 @@ span { color: purple; }
     incorrectAnswers: [
       "color: attr(data-color);",
       "content: data(data-text);",
-      "color: data(data-color);"
-    ]
+      "color: data(data-color);",
+    ],
   },
   {
     questionText: "Which of the following is not a valid CSS property?",
     correctAnswer: "text-wrap",
-    incorrectAnswers: [
-      "empty-cells",
-      "border-image",
-      "will-change"
-    ]
+    incorrectAnswers: ["empty-cells", "border-image", "will-change"],
   },
   {
     questionText: "Which of the following is not a valid relative CSS unit?",
     correctAnswer: "el",
-    incorrectAnswers: [
-      "ex",
-      "ch",
-      "lh"
-    ]
+    incorrectAnswers: ["ex", "ch", "lh"],
   },
   {
-    questionText: "Which proposed CSS selector can be used to select an anchor tag with a span direct child in it?",
+    questionText:
+      "Which proposed CSS selector can be used to select an anchor tag with a span direct child in it?",
     codeAnswer: true,
     correctAnswer: "a:has(> span)",
-    incorrectAnswers: [
-      "a:contains(span)",
-      "span < a",
-      "a:wraps(span)"
-    ]
+    incorrectAnswers: ["a:contains(span)", "span < a", "a:wraps(span)"],
   },
   {
     questionText: "Which of the following is not an SVG property?",
     codeAnswer: true,
     correctAnswer: "stroke-radius",
-    incorrectAnswers: [
-      "stroke-linejoin",
-      "fill-opacity",
-      "font-family"
-    ]
+    incorrectAnswers: ["stroke-linejoin", "fill-opacity", "font-family"],
   },
   {
     questionText: "Which of these creates a stacking context?",
     correctAnswer: "position: sticky",
-    incorrectAnswers: [
-      "opacity: 1",
-      "z-index: 10",
-      "order: 4"
-    ]
-  }
-]
+    incorrectAnswers: ["opacity: 1", "z-index: 10", "order: 4"],
+  },
+];

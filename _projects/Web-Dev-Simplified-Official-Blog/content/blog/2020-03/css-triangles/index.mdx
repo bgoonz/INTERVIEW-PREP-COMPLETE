@@ -2,7 +2,7 @@
 title: "CSS Triangles"
 date: "2020-03-30"
 description: "Learn all about how triangles can be created and manipulated in CSS."
-tags: ['CSS']
+tags: ["CSS"]
 ---
 
 import TriangleRotated from "../../../../src/blogComponents/cssTriangles/TriangleRotated"
@@ -23,7 +23,7 @@ The first way you probably think of to make a triangle in CSS would be to take a
 }
 
 .triangle::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -20px;
   top: calc(50% - 20px);
@@ -53,7 +53,8 @@ div {
 }
 ```
 
-<div style="
+<div
+  style="
   width: 150px;
   height: 150px;
   background-color: purple;
@@ -64,7 +65,8 @@ div {
   border-left-color: blue;
   border-right-color: pink;
   margin-bottom: 1rem;
-"></div>
+"
+></div>
 
 As you can see we have an element with four colored borders and a purple center. The borders also connect with straight lines on the corners that grow inward in a triangle like shape, but they do not form a full triangle since there is the purple center in the middle. In order to make these borders form complete triangles all we need to do is remove the purple center by removing the width and height of the element.
 
@@ -81,7 +83,8 @@ div {
 }
 ```
 
-<div style="
+<div
+  style="
   width: 0;
   height: 0;
   border-width: 50px;
@@ -91,7 +94,8 @@ div {
   border-left-color: blue;
   border-right-color: pink;
   margin-bottom: 1rem;
-"></div>
+"
+></div>
 
 Now we are left with 4 perfect triangles. This is a good start, but in order to make just one triangle we need to hide three of the borders. Luckily this is pretty easy to do. All we need to do is set their color to transparent.
 
@@ -104,13 +108,15 @@ div {
 }
 ```
 
-<div style="
+<div
+  style="
   width: 0;
   height: 0;
   border: 50px solid transparent;
   border-left-color: blue;
   margin-bottom: 1rem;
-"></div>
+"
+></div>
 
 Now by setting all the borders except one to transparent we are left with a single arrow. This arrow is also pointing in the opposite direction from the border that is colored which is important to note. We set the left border to make an arrow pointing to the right. With this knowledge it is now trivial to make the same arrow setup from the first example without having to worry about overlap or rotation.
 
@@ -123,7 +129,7 @@ Now by setting all the borders except one to transparent we are left with a sing
 }
 
 .triangle::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -80px;
   top: calc(50% - 40px);

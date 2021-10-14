@@ -2,7 +2,7 @@
 title: Why You Should Never Store Derived State
 date: "2019-11-04"
 description: "The quickest way to have corrupt out of sync state is by storing derived state."
-tags: ['React']
+tags: ["React"]
 ---
 
 We have all done it. You are working on a React app when all of a sudden your state becomes out of sync. There are many reasons for this problem, but incorrectly storing derived state is one of the most common and hardest to spot causes.
@@ -14,27 +14,29 @@ So it is bad to mishandle derived state, but what exactly is derived state. In e
 ## How To Spot Derived State
 
 Imagine a component that has state for a list of users with a name and id.
+
 ```javascript
 function User() {
   const [users, setUsers] = useState([
-    { id: 1, name: 'Kyle' },
-    { id: 2, name: 'John' }
+    { id: 1, name: "Kyle" },
+    { id: 2, name: "John" },
   ])
 
   function updateUser(id, name) {
-    setUsers(prevUsers => {
+    setUsers((prevUsers) => {
       const newUsers = [...prevUsers]
-      const user = newUsers.find(user => user.id === id)
+      const user = newUsers.find((user) => user.id === id)
       user.name = name
       return newUsers
     })
   }
 
-  return users.map(user => user.name).join(', ')
+  return users.map((user) => user.name).join(", ")
 }
 ```
 
 This is all good and there is no derived state, but what if this app needed to account for the `selectedUser` as well. One way that many people tackle this problem is by doing this.
+
 ```javascript
 function User() {
   const [users, setUsers] = useState([
@@ -66,31 +68,31 @@ At first glance this code may look correct, and it most likely will work when yo
 ```javascript
 function User() {
   const [users, setUsers] = useState([
-    { id: 1, name: 'Kyle' },
-    { id: 2, name: 'John' }
+    { id: 1, name: "Kyle" },
+    { id: 2, name: "John" },
   ])
   const [selectedUser, setSelectedUser] = useState()
 
   useEffect(() => {
     selectUser(1)
-    updateUser(1, 'Kate')
+    updateUser(1, "Kate")
   }, [])
 
   function selectUser(id) {
-    const user = users.find(user => user.id === id)
+    const user = users.find((user) => user.id === id)
     setSelectedUser({ ...user })
   }
 
   function updateUser(id, name) {
-    setUsers(prevUsers => {
+    setUsers((prevUsers) => {
       const newUsers = [...prevUsers]
-      const user = newUsers.find(user => user.id === id)
+      const user = newUsers.find((user) => user.id === id)
       user.name = name
       return newUsers
     })
   }
 
-  return users.map(user => user.name).join(', ')
+  return users.map((user) => user.name).join(", ")
 }
 ```
 
@@ -99,17 +101,17 @@ After this component runs it will set the `selectedUser` to a copy of user 1 whi
 ```javascript
 function User() {
   const [users, setUsers] = useState([
-    { id: 1, name: 'Kyle' },
-    { id: 2, name: 'John' }
+    { id: 1, name: "Kyle" },
+    { id: 2, name: "John" },
   ])
   const [selectedUserId, setSelectedUserId] = useState()
-  const selectedUser = users.find(user => {
+  const selectedUser = users.find((user) => {
     return user.id === selectedUserId
   })
 
   useEffect(() => {
     selectUser(1)
-    updateUser(1, 'Kate')
+    updateUser(1, "Kate")
   }, [])
 
   function selectUser(id) {
@@ -117,15 +119,15 @@ function User() {
   }
 
   function updateUser(id, name) {
-    setUsers(prevUsers => {
+    setUsers((prevUsers) => {
       const newUsers = [...prevUsers]
-      const user = newUsers.find(user => user.id === id)
+      const user = newUsers.find((user) => user.id === id)
       user.name = name
       return newUsers
     })
   }
 
-  return users.map(user => user.name).join(', ')
+  return users.map((user) => user.name).join(", ")
 }
 ```
 
@@ -137,7 +139,7 @@ The one big downside to not storing data in state is that the data needs to be r
 
 ```javascript
 const selectedUser = useMemo(() => {
-  return users.find(user => user.id === selectedUserId)
+  return users.find((user) => user.id === selectedUserId)
 }, [users, selectedUserId])
 ```
 

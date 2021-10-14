@@ -10,13 +10,11 @@ The script simply checks whether the web server returns a 200 status code.
 
 The output file will be overwritten each time you run the tool.
 
-
 ## Prerequisites
 
 This project uses the third-party library
 [requests](https://requests.readthedocs.io/)
 as well as the `csv` module from the Python standard library.
-
 
 ## How to run the Script
 
@@ -25,12 +23,12 @@ To run this script, type
 ```
 python check_connectivity.py
 ```
+
 in the directory where you have checked out these files.
 (If you have an IDE which lets you run Python files,
 and prefer to use that instead,
 make sure you configure it to set the working directory to
 the one which contains the input file.)
-
 
 ## Development ideas
 

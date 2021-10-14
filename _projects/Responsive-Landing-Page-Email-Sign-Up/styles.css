@@ -1,25 +1,25 @@
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Bold.woff2') format('woff2'),
-		url('fonts/GothamRounded-Bold.woff') format('woff');
-	font-weight: bold;
-	font-style: normal;
+  font-family: "Gotham Rounded";
+  src: url("fonts/GothamRounded-Bold.woff2") format("woff2"),
+    url("fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Light.woff2') format('woff2'),
-		url('fonts/GothamRounded-Light.woff') format('woff');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "Gotham Rounded";
+  src: url("fonts/GothamRounded-Light.woff2") format("woff2"),
+    url("fonts/GothamRounded-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Rounded';
-	src: url('fonts/GothamRounded-Book.woff2') format('woff2'),
-		url('fonts/GothamRounded-Book.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Gotham Rounded";
+  src: url("fonts/GothamRounded-Book.woff2") format("woff2"),
+    url("fonts/GothamRounded-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -67,7 +67,7 @@ body {
 
 .light-header {
   color: white;
-  background-color: #00AAFF;
+  background-color: #00aaff;
   padding-top: 500px;
   margin-top: -500px;
 }
@@ -80,7 +80,7 @@ body {
 
 .logo {
   width: 50px;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .title {
@@ -124,35 +124,36 @@ body {
   background-color: white;
   color: #005681;
   border: 2px solid black;
-  border-radius: .5em;
-  padding: .5em 1em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
   margin-right: 1em;
   outline: none;
   flex-grow: 1;
 }
 
 .email-form input:focus {
-  background-color: #DCF3FF;
+  background-color: #dcf3ff;
 }
 
 .email-form button {
   color: white;
   background-color: #111;
   border: 2px solid white;
-  border-radius: .5em;
-  padding: .5em 1em;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
   max-width: 250px;
   cursor: pointer;
 }
 
-.email-form button:hover, .email-form button:focus {
+.email-form button:hover,
+.email-form button:focus {
   background-color: #333;
 }
 
 .benefits-section {
   grid-area: benefits;
   margin-left: 3rem;
-  justify-self: flex-start
+  justify-self: flex-start;
 }
 
 .benefit {
@@ -263,7 +264,7 @@ body {
 
   .benefit img {
     height: 1.25rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 
   .benefit-detail-title {

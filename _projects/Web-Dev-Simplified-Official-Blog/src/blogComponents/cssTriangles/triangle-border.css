@@ -6,7 +6,7 @@
 }
 
 .triangle-2::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -80px;
   top: calc(50% - 40px);

@@ -2,12 +2,12 @@
 title: How To Learn Any Topic Fast
 date: "2019-11-18"
 description: "A simple step by step guide on how to learn any new technology or topic quickly and efficiently."
-tags: ['Non-Technical Discussion']
+tags: ["Non-Technical Discussion"]
 ---
 
 Web development is one of the quickest moving fields in software development which means there are tons, and I mean tons, of new topics and technologies to learn every year. It is overwhelming having so many new things to learn, but with this simple step by step guide to learning you can confidently and quickly learn any new topic you want.
 
-*If you prefer video I have a YouTube video on this step by step guide you can find [here](https://youtu.be/CJJtA1NTqN4).*
+_If you prefer video I have a YouTube video on this step by step guide you can find [here](https://youtu.be/CJJtA1NTqN4)._
 
 ## Step 1: Research
 
@@ -17,7 +17,7 @@ It is also important that this research is purely about learning the pros/cons o
 
 Lastly, you should become familiar with popular libraries/frameworks that are used with the technology. For example if you wanted to learn Node.js, knowing that Express is a popular web framework would be something you discover in this step.
 
-*If you were researching JWT [this video](https://youtu.be/7Q17ubqLfaM) would be an example of a good research video.*
+_If you were researching JWT [this video](https://youtu.be/7Q17ubqLfaM) would be an example of a good research video._
 
 ## Step 2: Learn How To Implement And Get Started
 
@@ -53,4 +53,4 @@ If you do not have a grand final project you want to build then in this step you
 
 And that is all it takes to learn any new technology in the quickest and most efficient way possible. The most important thing to remember is that learning is not about racing to the end and building your large project right away. Taking the time to parse through each of these steps will make learning much more enjoyable and will be much quicker than jumping in the deep end.
 
-*Again, if you are interested in a video version of this article you can check it out [here](https://youtu.be/CJJtA1NTqN4).*
+_Again, if you are interested in a video version of this article you can check it out [here](https://youtu.be/CJJtA1NTqN4)._

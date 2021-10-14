@@ -1,5 +1,5 @@
-import React from 'react'
-import RecipeIngredientEdit from './RecipeIngredientEdit'
+import React from "react";
+import RecipeIngredientEdit from "./RecipeIngredientEdit";
 
 export default function RecipeEdit() {
   return (
@@ -8,29 +8,25 @@ export default function RecipeEdit() {
         <button className="btn recipe-edit__remove-button">&times;</button>
       </div>
       <div className="recipe-edit__details-grid">
-        <label
-          htmlFor="name"
-          className="recipe-edit__label">
+        <label htmlFor="name" className="recipe-edit__label">
           Name
         </label>
         <input
           type="text"
           name="name"
           id="name"
-          className="recipe-edit__input" />
-        <label
-          htmlFor="cookTime"
-          className="recipe-edit__label">
+          className="recipe-edit__input"
+        />
+        <label htmlFor="cookTime" className="recipe-edit__label">
           Cook Time
         </label>
         <input
           type="text"
           name="cookTime"
           id="cookTime"
-          className="recipe-edit__input" />
-        <label
-          htmlFor="servings"
-          className="recipe-edit__label">
+          className="recipe-edit__input"
+        />
+        <label htmlFor="servings" className="recipe-edit__label">
           Servings
         </label>
         <input
@@ -38,16 +34,16 @@ export default function RecipeEdit() {
           min="1"
           name="servings"
           id="servings"
-          className="recipe-edit__input" />
-        <label
-          htmlFor="instructions"
-          className="recipe-edit__label">
+          className="recipe-edit__input"
+        />
+        <label htmlFor="instructions" className="recipe-edit__label">
           Instructions
         </label>
         <textarea
           name="instructions"
           className="recipe-edit__input"
-          id="instructions"></textarea>
+          id="instructions"
+        ></textarea>
       </div>
       <br />
       <label className="recipe-edit__label">Ingredients</label>
@@ -62,5 +58,5 @@ export default function RecipeEdit() {
         <button className="btn btn--primary">Add Ingredient</button>
       </div>
     </div>
-  )
+  );
 }

@@ -7,11 +7,12 @@
   border: 1px solid hsl(0, 0%, 70%);
   outline: none;
   cursor: pointer;
-  padding: .5em 1em;
-  border-radius: .3em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: hsl(0, 0%, 80%);
   box-shadow: 0 0 5px 0 hsl(0, 0%, 70%);
 }
@@ -22,7 +23,8 @@
   color: white;
 }
 
-.btn.btn-primary:hover, .btn.btn-primary:focus {
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
   background-color: hsl(271, 70%, 40%);
   box-shadow: 0 0 5px 0 hsl(271, 70%, 30%);
 }
@@ -33,7 +35,8 @@
   color: white;
 }
 
-.btn.btn-accent:hover, .btn.btn-accent:focus {
+.btn.btn-accent:hover,
+.btn.btn-accent:focus {
   background-color: hsl(200, 100%, 30%);
   box-shadow: 0 0 5px 0 hsl(200, 100%, 20%);
 }
@@ -44,7 +47,8 @@
   color: white;
 }
 
-.btn.btn-danger:hover, .btn.btn-danger:focus {
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
   background-color: hsl(0, 60%, 40%);
   box-shadow: 0 0 5px 0 hsl(0, 60%, 30%);
 }
@@ -54,7 +58,7 @@
 }
 
 .btn.btn-small {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .btn.btn-pill {
@@ -62,13 +66,22 @@
 }
 
 .btn.btn-custom {
-  background: linear-gradient(to right, hsl(271, 70%, 50%), hsl(200, 100%, 40%));
+  background: linear-gradient(
+    to right,
+    hsl(271, 70%, 50%),
+    hsl(200, 100%, 40%)
+  );
   color: white;
   border-color: #222;
 }
 
-.btn.btn-custom:hover, .btn.btn-custom:focus {
-  background: linear-gradient(to right, hsl(271, 70%, 40%), hsl(200, 100%, 30%));
+.btn.btn-custom:hover,
+.btn.btn-custom:focus {
+  background: linear-gradient(
+    to right,
+    hsl(271, 70%, 40%),
+    hsl(200, 100%, 30%)
+  );
   border-color: black;
   box-shadow: 0 0 5px 0 black;
 }

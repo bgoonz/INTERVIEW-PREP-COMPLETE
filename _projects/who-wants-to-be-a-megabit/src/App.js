@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react"
-import "./app.css"
-import Question from "./components/Question"
-import Sidebar from "./components/Sidebar"
-import QUESTION_LIST from "./questions/Clement"
+import React, { useState, useEffect } from "react";
+import "./app.css";
+import Question from "./components/Question";
+import Sidebar from "./components/Sidebar";
+import QUESTION_LIST from "./questions/Clement";
 
-const RANDOMIZED_QUESTION_ANSWERS_LIST = QUESTION_LIST.map(question => {
+const RANDOMIZED_QUESTION_ANSWERS_LIST = QUESTION_LIST.map((question) => {
   const answers = [question.correctAnswer, ...question.incorrectAnswers].sort(
     () => Math.random() - 0.5
-  )
-  return { ...question, answers }
-})
+  );
+  return { ...question, answers };
+});
 
 export default function App() {
-  const [fiftyFifty, setFiftyFifty] = useState(false)
-  const [questions, setQuestions] = useState(RANDOMIZED_QUESTION_ANSWERS_LIST)
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
-  const currentQuestion = questions[currentQuestionIndex]
+  const [fiftyFifty, setFiftyFifty] = useState(false);
+  const [questions, setQuestions] = useState(RANDOMIZED_QUESTION_ANSWERS_LIST);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const currentQuestion = questions[currentQuestionIndex];
   useEffect(() => {
-    setFiftyFifty(false)
-  }, [currentQuestionIndex])
+    setFiftyFifty(false);
+  }, [currentQuestionIndex]);
 
   return (
     <div className="container-fluid py-4 d-flex flex-column">
@@ -42,5 +42,5 @@ export default function App() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function RecipeIngredientEdit() {
   return (
@@ -7,5 +7,5 @@ export default function RecipeIngredientEdit() {
       <input type="text" />
       <button>&times;</button>
     </>
-  )
+  );
 }

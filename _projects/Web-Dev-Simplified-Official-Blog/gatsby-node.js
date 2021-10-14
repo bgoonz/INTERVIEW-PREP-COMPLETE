@@ -75,7 +75,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         resolve(source, args, context, info) {
           return context.nodeModel
             .getAllNodes({ type: "AuthorJson" })
-            .find(author => author.id === (source.author || "wds"))
+            .find((author) => author.id === (source.author || "wds"))
         },
       }
     },

@@ -45,7 +45,7 @@ module.exports = {
               urlOverrides: [
                 {
                   id: "youtube",
-                  embedURL: videoId =>
+                  embedURL: (videoId) =>
                     `https://www.youtube-nocookie.com/embed/${videoId}`,
                 },
               ],

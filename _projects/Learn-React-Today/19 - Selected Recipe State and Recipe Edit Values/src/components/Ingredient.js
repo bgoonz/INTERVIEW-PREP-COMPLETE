@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function Ingredient({ name, amount }) {
   return (
@@ -6,5 +6,5 @@ export default function Ingredient({ name, amount }) {
       <span>{name}</span>
       <span>{amount}</span>
     </>
-  )
+  );
 }

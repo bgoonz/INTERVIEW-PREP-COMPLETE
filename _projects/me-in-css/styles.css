@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -22,7 +24,8 @@ body {
   align-items: center;
 }
 
-.eyes, .brows {
+.eyes,
+.brows {
   position: absolute;
   width: 195px;
   display: flex;
@@ -44,7 +47,7 @@ body {
 }
 
 .eye::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 41px;
   height: 41px;
@@ -55,7 +58,7 @@ body {
 }
 
 .eye::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -127,7 +130,7 @@ body {
 
 .hair::before,
 .hair::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: hsl(27, 33%, 28%);
   height: 100px;
@@ -146,7 +149,7 @@ body {
 
 .hair-corner::before,
 .hair-corner::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 14px;
   height: 20px;

@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,12 +12,12 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
-  grid-template-areas: 
+  grid-template-areas:
     "image sidebar"
     "slider sidebar";
   height: 100vh;
   width: 100vw;
-  background-color: #DADADA;
+  background-color: #dadada;
 }
 
 .main-image {
@@ -47,7 +49,8 @@ body {
   transition: background-color 150ms;
 }
 
-.sidebar-item:hover, .sidebar-item:focus {
+.sidebar-item:hover,
+.sidebar-item:focus {
   background-color: hsl(265, 100%, 76%);
 }
 
@@ -56,7 +59,7 @@ body {
 }
 
 .sidebar-item::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 80%;
   left: 10%;

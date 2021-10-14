@@ -1,18 +1,18 @@
 .gatsby-highlight-code-line {
-  background-color: #55574A;
+  background-color: #55574a;
   display: block;
   margin-right: -1em;
   margin-left: -1em;
   padding-right: 1em;
   padding-left: 0.75em;
-  border-left: 0.25em solid #00AAFF;
+  border-left: 0.25em solid #00aaff;
 }
 
 /**
  * Add back the container background-color, border-radius, padding, margin
  * and overflow that we removed from <pre>.
  */
- .gatsby-highlight {
+.gatsby-highlight {
   background-color: #272822;
   border-radius: 0.3em;
   margin: 0.5em 0;
@@ -37,9 +37,9 @@
 }
 
 /* Fix inline code block styling */
-:not(.gatsby-highlight) :not(pre)>code[class*="language-"] {
-  padding: .1em .25em;
-  background: #E3E3E3;
+:not(.gatsby-highlight) :not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.25em;
+  background: #e3e3e3;
   text-shadow: none;
   color: #333;
 }
