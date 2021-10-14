@@ -13,14 +13,14 @@ graph.jonny = [];
  * @param {string} name Friend's name
  * @returns {boolean} Result of checking
  */
-const personIsSeller = name => name[name.length - 1] === "m";
+const personIsSeller = (name) => name[name.length - 1] === "m";
 
 /**
  * Find a mango seller
  * @param {string} name Friend's name
  * @returns {boolean} Search results
  */
-const search = name => {
+const search = (name) => {
   let searchQueue = [...graph[name]];
   // This array is how you keep track of which people you've searched before.
   const searched = [];

@@ -2,9 +2,9 @@
  * Class HashTable
  * @param {Object} obj
  */
-const HashTable = function(obj) {
+const HashTable = function (obj) {
   let length = 0;
-  this._items = (function(obj) {
+  this._items = (function (obj) {
     let items = {};
     for (let p in obj) {
       items[p] = obj[p];
@@ -19,7 +19,7 @@ const HashTable = function(obj) {
    * @param {string} value The value to associate to the key
    * @returns {(undefined|Object)} Undefined is object didn't exists before this call
    */
-  this.set = function(key, value) {
+  this.set = function (key, value) {
     let previous = undefined;
 
     if (this.has(key)) {
@@ -38,7 +38,7 @@ const HashTable = function(obj) {
    * @param {string} key The key from which retrieve the value
    * @returns {(undefined|string)} Undefined or associated value
    */
-  this.get = function(key) {
+  this.get = function (key) {
     return this._items.hasOwnProperty(key) ? this._items[key] : undefined;
   };
 
@@ -47,7 +47,7 @@ const HashTable = function(obj) {
    * @param {string} key The key to check
    * @returns {boolean}
    */
-  this.has = function(key) {
+  this.has = function (key) {
     return this._items.hasOwnProperty(key);
   };
 
@@ -57,7 +57,7 @@ const HashTable = function(obj) {
    * @returns {(undefined|string)} Undefined if key doesn't exist and
    * string (previous value) - value of deleted item
    */
-  this.remove = function(key) {
+  this.remove = function (key) {
     if (this.has(key)) {
       let previous = this._items[key];
       length--;
@@ -72,7 +72,7 @@ const HashTable = function(obj) {
    * Returns an array with all the registered keys
    * @returns {Array}
    */
-  this.getKeys = function() {
+  this.getKeys = function () {
     let keys = [];
 
     for (let i in this._items) {
@@ -88,7 +88,7 @@ const HashTable = function(obj) {
    * Returns an array with all the registered values
    * @returns {Array}
    */
-  this.getValues = function() {
+  this.getValues = function () {
     let values = [];
 
     for (let i in this._items) {
@@ -104,7 +104,7 @@ const HashTable = function(obj) {
    * Iterates all entries in the specified iterator callback
    * @param {function} callback A method with 2 parameters: key, value
    */
-  this.each = function(callback) {
+  this.each = function (callback) {
     for (let i in this._items) {
       if (this.has(i)) {
         callback(i, this._items[i]);
@@ -115,7 +115,7 @@ const HashTable = function(obj) {
   /**
    * Deletes all the key-value pairs on the hashmap
    */
-  this.clear = function() {
+  this.clear = function () {
     this._items = {};
     length = 0;
   };
@@ -124,27 +124,27 @@ const HashTable = function(obj) {
    * Gets the count of the entries in the hashtable
    */
   Object.defineProperty(this, "length", {
-    get: function() {
+    get: function () {
       return length;
-    }
+    },
   });
 
   /**
    * Gets an array of all keys in the hashtable
    */
   Object.defineProperty(this, "keys", {
-    get: function() {
+    get: function () {
       return this.getKeys();
-    }
+    },
   });
 
   /**
    * Gets an array of all values in the hashtable
    */
   Object.defineProperty(this, "values", {
-    get: function() {
+    get: function () {
       return this.getValues();
-    }
+    },
   });
 };
 

@@ -4,7 +4,7 @@ const voted = {};
  * Vote check
  * @param {string} name Voter name
  */
-const checkVoter = name => {
+const checkVoter = (name) => {
   if (voted[name]) {
     console.log("kick them out!");
   } else {

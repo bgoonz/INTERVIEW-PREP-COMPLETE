@@ -57,7 +57,7 @@ while (node !== null) {
   const cost = costs[node];
   // Go through all the neighbors of this node
   const neighbors = graph[node];
-  Object.keys(neighbors).forEach(function(n) {
+  Object.keys(neighbors).forEach(function (n) {
     const new_cost = cost + neighbors[n];
     // If it's cheaper to get to this neighbor by going through this node
     if (costs[n] > new_cost) {

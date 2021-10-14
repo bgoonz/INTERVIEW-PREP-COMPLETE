@@ -11,11 +11,11 @@ const gcdOfTwo = (a, b) => (!b ? a : gcdOfTwo(b, a % b));
  * @param {Array} set Set of the numbers
  * @returns {number} GCD (greatest common divisor)
  */
-const gcdOfSet = set => {
+const gcdOfSet = (set) => {
   let result = set[0];
   let newArr = set.slice(1);
 
-  newArr.map(el => {
+  newArr.map((el) => {
     result = gcdOfTwo(result, el);
   });
 

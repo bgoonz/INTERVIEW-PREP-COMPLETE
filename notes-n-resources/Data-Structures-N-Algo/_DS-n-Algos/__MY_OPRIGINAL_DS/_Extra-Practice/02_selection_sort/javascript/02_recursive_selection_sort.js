@@ -3,18 +3,18 @@
  * @param {Array} arr array for searching
  * @return {number} index of the smallest element in array
  */
-const findSmallest = ( arr ) => {
-    let smallest = arr[0];
-    let smallestIndex = 0;
-    let arrLen = arr.length;
+const findSmallest = (arr) => {
+  let smallest = arr[0];
+  let smallestIndex = 0;
+  let arrLen = arr.length;
 
-    for ( let i = 0; i < arrLen; i++ ) {
-        if ( arr[i] < smallest ) {
-            smallest = arr[i];
-            smallestIndex = i;
-        }
+  for (let i = 0; i < arrLen; i++) {
+    if (arr[i] < smallest) {
+      smallest = arr[i];
+      smallestIndex = i;
     }
-    return smallestIndex;
+  }
+  return smallestIndex;
 };
 
 /**
@@ -22,12 +22,12 @@ const findSmallest = ( arr ) => {
  * @param {Array} arr An array of numbers
  * @return {Array} New sorted array
  */
-const selectionSort = ( arr ) => {
-    if ( !arr.length ) return [];
-    let smallest = arr.splice( findSmallest( arr ), 1 );
-    return smallest.concat( selectionSort( arr ) );
+const selectionSort = (arr) => {
+  if (!arr.length) return [];
+  let smallest = arr.splice(findSmallest(arr), 1);
+  return smallest.concat(selectionSort(arr));
 };
 
 let arr = [5, 3, 6, 2, 10];
 
-console.log( selectionSort(arr) );
+console.log(selectionSort(arr));

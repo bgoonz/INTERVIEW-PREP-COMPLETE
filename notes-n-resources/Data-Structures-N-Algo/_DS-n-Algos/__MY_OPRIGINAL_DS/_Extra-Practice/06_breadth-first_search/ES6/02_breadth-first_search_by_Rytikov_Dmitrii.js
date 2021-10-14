@@ -12,7 +12,7 @@ graph.thom = [];
  * @param {string} name Friend's name
  * @returns {boolean} Result of checking
  */
-const isSeller = name => name[name.length - 1] === "m";
+const isSeller = (name) => name[name.length - 1] === "m";
 
 /**
  * Find a mango seller
