@@ -9,7 +9,8 @@
 
 ## Resume
 
-* [Page 1](resume/page-1.md)
+* [Resume](resume/resume/README.md)
+  * [Examples](resume/resume/examples.md)
 
 ## Cover Letter
 
