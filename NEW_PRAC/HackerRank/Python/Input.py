@@ -1,6 +1,6 @@
 # Run in Python 2.7
 
-# >>> input()  
+# >>> input()
 # 1+2
 # 3
 # >>> company = 'HackerRank'

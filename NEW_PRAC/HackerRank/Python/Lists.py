@@ -12,24 +12,24 @@
 # followed by n lines of commands where each command will be of the 7 types listed above. Iterate through each command in order and perform the corresponding operation on your list.
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     N = int(input())
     l = []
     for i in range(N):
         a = input().split()
-        if a[0] == 'insert':
-           l.insert(int(a[1]), int(a[2]))
-        elif a[0] == 'print':
+        if a[0] == "insert":
+            l.insert(int(a[1]), int(a[2]))
+        elif a[0] == "print":
             print(l)
-        elif a[0] == 'remove':
+        elif a[0] == "remove":
             l.remove(int(a[1]))
-        elif a[0] == 'append':
+        elif a[0] == "append":
             l.append(int(a[1]))
-        elif a[0] == 'sort':
+        elif a[0] == "sort":
             l.sort()
-        elif a[0] == 'pop':
+        elif a[0] == "pop":
             l.pop()
-        elif a[0] == 'reverse':
+        elif a[0] == "reverse":
             l.reverse()
 
 # Sample Input 0
@@ -53,4 +53,3 @@ if __name__ == '__main__':
 # [6, 5, 10]
 # [1, 5, 9, 10]
 # [9, 5, 1]
-

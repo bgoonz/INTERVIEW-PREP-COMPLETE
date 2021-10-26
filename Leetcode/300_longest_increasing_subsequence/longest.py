@@ -6,11 +6,9 @@ class Solution(object):
         """
         frontier = []
         for num in nums:
-            if not frontier or num>frontier[-1]:
+            if not frontier or num > frontier[-1]:
                 frontier.append(num)
             else:
                 idx = bisect.bisect_left(frontier, num)
                 frontier[idx] = num
         return len(frontier)
-        
-            

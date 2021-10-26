@@ -1,25 +1,31 @@
 def pop_fun(sets):
     sets.pop()
+
+
 def discard_fun(sets, num):
     sets.discard(num)
+
+
 def remove_fun(sets, num):
     sets.remove(num)
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     n = int(input())
     s = set(map(int, input().split()))
-    N = int(input()) # no. of commands
+    N = int(input())  # no. of commands
     for i in range(N):
         cmd_list = list(input().split())
-        if cmd_list[0] == 'pop':
-            pop_fun(s)    
-        elif cmd_list[0] == 'discard':
+        if cmd_list[0] == "pop":
+            pop_fun(s)
+        elif cmd_list[0] == "discard":
             discard_fun(s, int(cmd_list[1]))
-        elif cmd_list[0] == 'remove':
+        elif cmd_list[0] == "remove":
             remove_fun(s, int(cmd_list[1]))
     sum = 0
     for i in s:
         sum = sum + i
-    print(sum, end = '')
+    print(sum, end="")
 
 # Input
 
@@ -31,10 +37,10 @@ if __name__ == '__main__':
 # discard 9
 # discard 8
 # remove 7
-# pop 
+# pop
 # discard 6
 # remove 5
-# pop 
+# pop
 # discard 5
 
 # Output:

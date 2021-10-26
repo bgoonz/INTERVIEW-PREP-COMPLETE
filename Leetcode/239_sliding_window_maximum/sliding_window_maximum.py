@@ -20,8 +20,6 @@ class Solution:
 
         l = len(nums)
 
-        
-
         while right <= l:
 
             window = nums[left:right]

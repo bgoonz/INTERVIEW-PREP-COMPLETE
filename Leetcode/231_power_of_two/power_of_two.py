@@ -6,10 +6,8 @@ class Solution:
 
     def isPowerOfTwo(self, n):
 
-        if n==0:
+        if n == 0:
 
             return False
 
-        return '1' not in bin(n)[3:]
-
-        
+        return "1" not in bin(n)[3:]

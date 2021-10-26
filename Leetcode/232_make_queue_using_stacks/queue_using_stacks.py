@@ -8,7 +8,7 @@ class Queue:
     # @return nothing
     def push(self, x):
         self.q1.append(x)
-        
+
     # @return nothing
     def pop(self):
         if self.q2:
@@ -22,7 +22,7 @@ class Queue:
                 else:
                     self.q2.append(item)
             self.q2.pop()
-        
+
     # @return an integer
     def peek(self):
         if self.q2:

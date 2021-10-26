@@ -12,13 +12,12 @@ class Stack(object):
         :rtype: nothing
         """
         self.q1.append(x)
-        
 
     def pop(self):
         """
         :rtype: nothing
         """
-        while len(self.q1)>1:
+        while len(self.q1) > 1:
             item = self.q1.pop(0)
             self.q2.append(item)
         val = self.q1.pop(0)
@@ -29,7 +28,7 @@ class Stack(object):
         """
         :rtype: int
         """
-        while len(self.q1)>1:
+        while len(self.q1) > 1:
             item = self.q1.pop(0)
             self.q2.append(item)
         val = self.q1.pop(0)
@@ -41,5 +40,4 @@ class Stack(object):
         """
         :rtype: bool
         """
-        return len(self.q1)==0
-        
+        return len(self.q1) == 0

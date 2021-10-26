@@ -8,6 +8,6 @@ class Solution:
 
     def rotate(self, nums, k):
 
-        k = k%len(nums)
+        k = k % len(nums)
 
-        nums[:] = nums[-k:]+nums[:-k]
+        nums[:] = nums[-k:] + nums[:-k]

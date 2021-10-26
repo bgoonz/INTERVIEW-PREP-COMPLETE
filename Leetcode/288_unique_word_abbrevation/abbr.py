@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class ValidWordAbbr(object):
     def __init__(self, dictionary):
         """
@@ -9,14 +11,14 @@ class ValidWordAbbr(object):
         for word in dictionary:
             shortened = self.shorten(word)
             self.abr[shortened].add(word)
-    
+
     def shorten(self, word):
-        if len(word)<=2:
+        if len(word) <= 2:
             shortened = word
         else:
-            shortened = word[0]+str(len(word)-2)+word[-1]
+            shortened = word[0] + str(len(word) - 2) + word[-1]
         return shortened
-        
+
     def isUnique(self, word):
         """
         check if a word is unique.
@@ -24,9 +26,9 @@ class ValidWordAbbr(object):
         :rtype: bool
         """
         s = self.abr[self.shorten(word)]
-        if word not in s and len(s)>=1:
+        if word not in s and len(s) >= 1:
             return False
-        if word in s and len(s)>1:
+        if word in s and len(s) > 1:
             return False
         return True
 

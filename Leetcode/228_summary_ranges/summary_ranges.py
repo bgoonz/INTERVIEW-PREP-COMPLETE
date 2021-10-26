@@ -10,14 +10,14 @@ class Solution:
             if start is None:
                 start = n
                 continue
-            if n > nums[i-1]+1:
-                if nums[i-1] == start:
+            if n > nums[i - 1] + 1:
+                if nums[i - 1] == start:
                     results.append(str(start))
                 else:
-                    results.append("%d->%d"%(start, nums[i-1]))
+                    results.append("%d->%d" % (start, nums[i - 1]))
                 start = n
         if nums[i] == start:
             results.append(str(start))
         else:
-            results.append("%d->%d"%(start, nums[i]))
+            results.append("%d->%d" % (start, nums[i]))
         return results

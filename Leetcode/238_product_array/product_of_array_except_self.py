@@ -11,11 +11,10 @@ class Solution:
         product = 1
         for num in reversed(nums):
             after.append(product)
-            product = product* num
+            product = product * num
         after = after[::-1]
-        
+
         result = []
         for i in range(len(nums)):
-            result.append(before[i]*after[i])
+            result.append(before[i] * after[i])
         return result
-        

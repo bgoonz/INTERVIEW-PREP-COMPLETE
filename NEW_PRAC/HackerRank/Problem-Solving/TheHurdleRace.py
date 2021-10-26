@@ -11,16 +11,17 @@ def hurdleRace(k, height):
     max_height = max(height)
     if k > max_height:
         return 0
-    return (max_height - k)
+    return max_height - k
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
     nk = input().split()
     n = int(nk[0])
     k = int(nk[1])
     height = list(map(int, input().rstrip().split()))
     result = hurdleRace(k, height)
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
     fptr.close()
 
 # Output Format
@@ -32,4 +33,3 @@ if __name__ == '__main__':
 
 # Sample Output 0
 # 2
-

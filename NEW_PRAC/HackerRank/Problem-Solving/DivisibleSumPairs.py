@@ -11,13 +11,14 @@ def divisibleSumPairs(n, k, ar):
     count = 0
     for i in range(len(ar)):
         for j in range(len(ar)):
-            if i != j and i < j :
+            if i != j and i < j:
                 if (ar[i] + ar[j]) % k == 0:
                     count += 1
     return count
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     nk = input().split()
 
@@ -29,7 +30,7 @@ if __name__ == '__main__':
 
     result = divisibleSumPairs(n, k, ar)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 

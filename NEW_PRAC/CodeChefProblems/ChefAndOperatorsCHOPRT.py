@@ -3,11 +3,11 @@ try:
     n = int(input())
     for i in range(n):
         x, y = list(map(int, input().split()))
-        if(x < y):
+        if x < y:
             print("<")
-        if(x > y):
+        if x > y:
             print(">")
-        if(x == y):
+        if x == y:
             print("=")
 except:
     pass

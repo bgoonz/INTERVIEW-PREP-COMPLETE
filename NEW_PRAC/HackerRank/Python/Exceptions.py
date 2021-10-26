@@ -18,7 +18,7 @@
 # >>> ValueError: invalid literal for int() with base 10: '#'
 
 # Handling Exceptions
-# The statements try and except can be used to handle selected exceptions. 
+# The statements try and except can be used to handle selected exceptions.
 # A try statement may have more than one except clause to specify handlers for different exceptions.
 
 # #Code
@@ -46,13 +46,13 @@
 # 3
 
 # Note:
-# For integer division in Python 3 use //. 
+# For integer division in Python 3 use //.
 
 n = int(input())
 for i in range(n):
     a, b = list(map(str, input().split()))
     try:
-        print(int(a)//int(b))  # Get the integer value (//)
+        print(int(a) // int(b))  # Get the integer value (//)
     except ZeroDivisionError as e:
         print("Error Code:", e)
     except ValueError as e:

@@ -19,6 +19,7 @@
 #         :rtype: int
 #         """
 
+
 class PeekingIterator(object):
     def __init__(self, iterator):
         """
@@ -39,7 +40,7 @@ class PeekingIterator(object):
             return None
         self.cache = self.it.next()
         return self.cache
-        
+
     def next(self):
         """
         :rtype: int

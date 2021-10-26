@@ -9,14 +9,14 @@ class Solution(object):
         courses = set(list(range(numCourses)))
         result = []
         while courses:
-            independants = courses-set([p[0] for p in prerequisites])
+            independants = courses - set([p[0] for p in prerequisites])
             # print independants
             for independant in independants:
                 result.append(independant)
                 courses.remove(independant)
             if not independants:
                 return []
-            for k in range(len(prerequisites)-1, -1, -1):
+            for k in range(len(prerequisites) - 1, -1, -1):
                 x, y = prerequisites[k]
                 if y in independants:
                     del prerequisites[k]

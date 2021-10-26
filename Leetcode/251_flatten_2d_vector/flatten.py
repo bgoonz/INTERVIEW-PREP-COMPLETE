@@ -1,5 +1,4 @@
 class Vector2D(object):
-
     def __init__(self, vec2d):
         """
         Initialize your data structure here.
@@ -12,9 +11,10 @@ class Vector2D(object):
         else:
             self.x = self.y = 0
             self.advance()
-    
+
     def advance(self):
-        if self.end_reached: return
+        if self.end_reached:
+            return
         while True:
             if self.y < len(self.vec[self.x]):
                 break
@@ -23,15 +23,15 @@ class Vector2D(object):
             if self.x >= len(self.vec):
                 self.end_reached = True
                 break
-        
 
     def next(self):
         """
         :rtype: int
         """
         self.advance()
-        if self.end_reached: return None
-        
+        if self.end_reached:
+            return None
+
         val = self.vec[self.x][self.y]
         self.y += 1
         return val
@@ -42,6 +42,7 @@ class Vector2D(object):
         """
         self.advance()
         return not self.end_reached
+
 
 # Your Vector2D object will be instantiated and called as such:
 # i, v = Vector2D(vec2d), []

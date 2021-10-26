@@ -5,12 +5,13 @@
 #         self.left = None
 #         self.right = None
 
+
 class BSTIterator(object):
     def __init__(self, root):
         """
         :type root: TreeNode
         """
-        if not root: 
+        if not root:
             self.stack = []
             return
         self.stack = [root]
@@ -21,7 +22,7 @@ class BSTIterator(object):
         """
         :rtype: bool
         """
-        return len(self.stack)!=0
+        return len(self.stack) != 0
 
     def next(self):
         """
@@ -36,11 +37,10 @@ class BSTIterator(object):
                 self.stack.append(self.stack[-1].left)
         else:
             node = self.stack.pop()
-            while self.stack and node==self.stack[-1].right:
+            while self.stack and node == self.stack[-1].right:
                 node = self.stack.pop()
         return val
-        
-        
+
 
 # Your BSTIterator will be called like this:
 # i, v = BSTIterator(root), []

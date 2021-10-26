@@ -1,6 +1,6 @@
-# Given an array of integers, find and print the maximum number of 
-# integers you can select from the array such that the absolute difference between 
-# any two of the chosen integers is less than or equal to 1. 
+# Given an array of integers, find and print the maximum number of
+# integers you can select from the array such that the absolute difference between
+# any two of the chosen integers is less than or equal to 1.
 # For example, if your array is a = [1,1,2,2,4,4,5,5,5], you can create two subarrays meeting the criterion:
 # [1,1,2,2] and [4,4,5,5,5]. The maximum length subarray has elements.
 
@@ -13,17 +13,20 @@ import re
 import sys
 
 from collections import defaultdict  # This step is important
+
+
 def pickingNumbers(a):
     d = defaultdict(int)
     r_val = 0
     for val in a:
         d[val] += 1
-        r_val = max(r_val, d[val]+d[val+1], d[val]+d[val-1])
+        r_val = max(r_val, d[val] + d[val + 1], d[val] + d[val - 1])
         print(d)
     return r_val
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input().strip())
 
@@ -31,7 +34,7 @@ if __name__ == '__main__':
 
     result = pickingNumbers(a)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
@@ -48,5 +51,5 @@ if __name__ == '__main__':
 
 # Explanation 0
 # We choose the following multiset of integers from the array:
-# {4,3,3}. Each pair in the multiset has an absolute difference <= 1 
+# {4,3,3}. Each pair in the multiset has an absolute difference <= 1
 # (i.e.|4-3| = 1 and |3-3| = 0), so we print the number of chosen integers 3, as our answer/

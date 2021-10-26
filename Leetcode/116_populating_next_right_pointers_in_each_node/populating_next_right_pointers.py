@@ -6,16 +6,18 @@
 #         self.right = None
 #         self.next = None
 
+
 class Solution(object):
     def connect(self, root):
         """
         :type root: TreeLinkNode
         :rtype: nothing
         """
-        if not root: return None
+        if not root:
+            return None
         root.next = None
         self.recurse(root)
-    
+
     def recurse(self, node):
         if not node or not node.left:
             return

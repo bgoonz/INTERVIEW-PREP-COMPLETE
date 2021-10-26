@@ -12,15 +12,15 @@ class Solution(object):
         while p:
             stack.append(p)
             p = p.next
-            cnt +=1
-        cnt = cnt/2
+            cnt += 1
+        cnt = cnt / 2
         p = head
         q = stack.pop()
 
-        while cnt>0:
+        while cnt > 0:
             q.next = p.next
             p.next = q
             p = p.next.next
             q = stack.pop()
-            cnt -=1
+            cnt -= 1
         p.next = None

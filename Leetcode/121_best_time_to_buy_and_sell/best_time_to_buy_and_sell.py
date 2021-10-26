@@ -12,12 +12,12 @@ class Solution(object):
             if price >= current:
                 high = price
             else:
-                if high-low>profit:
+                if high - low > profit:
                     profit = high - low
-                if price<low:
+                if price < low:
                     low = price
                 high = -1
             current = price
-        if high-low>profit:
-            profit = high-low
+        if high - low > profit:
+            profit = high - low
         return profit

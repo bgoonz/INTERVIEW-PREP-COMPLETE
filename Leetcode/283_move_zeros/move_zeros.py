@@ -12,6 +12,5 @@ class Solution(object):
                     nums[i], nums[zero] = nums[zero], nums[i]
                     zero += 1
             else:
-                if zero<0:
+                if zero < 0:
                     zero = i
-                

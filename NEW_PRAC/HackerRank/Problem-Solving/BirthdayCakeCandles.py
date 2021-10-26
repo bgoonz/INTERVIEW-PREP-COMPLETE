@@ -14,8 +14,10 @@ def birthdayCakeCandles(ar):
         if i == max_height:
             count += 1
     return count
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     ar_count = int(input())
 
@@ -23,7 +25,6 @@ if __name__ == '__main__':
 
     result = birthdayCakeCandles(ar)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
-    

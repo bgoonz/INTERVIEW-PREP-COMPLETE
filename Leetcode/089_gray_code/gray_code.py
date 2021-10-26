@@ -8,9 +8,9 @@ class Solution(object):
         num = 0
         while True:
             for i in range(n):
-                m = 1<<i
-                if num^m not in ret:
-                    num = num^m
+                m = 1 << i
+                if num ^ m not in ret:
+                    num = num ^ m
                     ret.append(num)
                     break
             else:

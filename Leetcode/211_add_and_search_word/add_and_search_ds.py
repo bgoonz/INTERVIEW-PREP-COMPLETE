@@ -1,9 +1,8 @@
 class WordDictionary:
     # initialize your data structure here.
-        
+
     def __init__(self):
         self.children = {}
-        
 
     # @param {string} word
     # @return {void}
@@ -14,8 +13,8 @@ class WordDictionary:
             if c not in node.children:
                 node.children[c] = WordDictionary()
             node = node.children[c]
-        node.children['$'] =True
-        
+        node.children["$"] = True
+
     # @param {string} word
     # @return {boolean}
     # Returns if the word is in the data structure. A word could
@@ -24,9 +23,9 @@ class WordDictionary:
         node = self
         if len(word):
             c = word[0]
-            if c == '.':
+            if c == ".":
                 for cc in node.children:
-                    if cc == '$':
+                    if cc == "$":
                         continue
                     if node.children[cc].search(word[1:]):
                         return True
@@ -35,8 +34,8 @@ class WordDictionary:
                 if c not in node.children:
                     return False
                 return node.children[c].search(word[1:])
-        return '$' in self.children
-        
+        return "$" in self.children
+
 
 # Your WordDictionary object will be instantiated and called as such:
 # wordDictionary = WordDictionary()

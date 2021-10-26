@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution:
     # @param {TreeNode} root
     # @return {integer}
@@ -14,12 +15,12 @@ class Solution:
         self.sum = 0
         self.visitNode(root, str(root.val))
         return self.sum
-        
+
     def visitNode(self, node, v):
         if not node.left and not node.right:
             self.sum += int(v)
-            
+
         if node.left:
-            self.visitNode(node.left, v+str(node.left.val))
+            self.visitNode(node.left, v + str(node.left.val))
         if node.right:
-            self.visitNode(node.right, v+str(node.right.val))
+            self.visitNode(node.right, v + str(node.right.val))

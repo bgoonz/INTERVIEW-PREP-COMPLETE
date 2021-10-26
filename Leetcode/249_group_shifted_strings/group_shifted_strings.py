@@ -1,4 +1,6 @@
 import string
+
+
 class Solution(object):
     def groupStrings(self, strings):
         """
@@ -13,15 +15,15 @@ class Solution(object):
                 continue
             found = False
             for group in groups:
-                if len(s)!=len(group[0]): 
+                if len(s) != len(group[0]):
                     continue
-                if len(s)==1:
+                if len(s) == 1:
                     group.append(s)
                     found = True
                     break
-                diff = (ord(s[0]) - ord(group[0][0]) +26)%26
+                diff = (ord(s[0]) - ord(group[0][0]) + 26) % 26
                 for i in range(1, len(s)):
-                    if (ord(s[i]) - ord(group[0][i])+26)%26!= diff:
+                    if (ord(s[i]) - ord(group[0][i]) + 26) % 26 != diff:
                         break
                 else:
                     group.append(s)

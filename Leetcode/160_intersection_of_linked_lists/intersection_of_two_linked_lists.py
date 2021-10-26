@@ -5,9 +5,10 @@ class Solution:
         def len(node):
             i = 0
             while node:
-                i+=1
+                i += 1
                 node = node.next
             return i
+
         diff = len(headA) - len(headB)
         while diff > 0:
             headA = headA.next

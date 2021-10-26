@@ -5,12 +5,12 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        m = {")":"(", "]":"[", "}":"{"}
+        m = {")": "(", "]": "[", "}": "{"}
         for c in s:
             if c in "([{":
                 stack.append(c)
             else:
-                if not stack or stack[-1]!=m[c]:
+                if not stack or stack[-1] != m[c]:
                     return False
                 stack.pop()
         return not stack

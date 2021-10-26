@@ -7,8 +7,10 @@ class Solution(object):
         """
 
     def sub(self, nums):
-        if len(nums) == 0: return [[]]
-        if len(nums) == 1: return [nums]
+        if len(nums) == 0:
+            return [[]]
+        if len(nums) == 1:
+            return [nums]
         pattern = self.sub(nums[1:])
         c = []
         for i in xrange(len(nums)):

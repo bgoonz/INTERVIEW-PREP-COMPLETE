@@ -5,11 +5,18 @@ class Solution(object):
             self.children = children
             self.parent = parent
             self.val = val
+
         def increment_fre(self):
             self.fre += 1
+
         def __repr__(self):
-            return "%s %s, %s %s"%(self.fre, [c.val for c in self.children], self.parent.val, self.val)
-            
+            return "%s %s, %s %s" % (
+                self.fre,
+                [c.val for c in self.children],
+                self.parent.val,
+                self.val,
+            )
+
     def topKFrequent(self, nums, k):
         """
         :type nums: List[int]
@@ -33,13 +40,13 @@ class Solution(object):
                 heap = newheap
             else:
                 if newheap.parent:
-                    if newheap.fre<=newheap.parent.fre:
+                    if newheap.fre <= newheap.parent.fre:
                         continue
                     newheap.parent.children.remove(newheap)
                     newheap.parent = None
                 # insert only when newheap is not root
-                if newheap!=heap:
-                    if newheap.fre<=heap.fre:
+                if newheap != heap:
+                    if newheap.fre <= heap.fre:
                         newheap.parent = heap
                         heap.children.add(newheap)
                     else:
@@ -49,21 +56,21 @@ class Solution(object):
         # print heap
         # get the maximums from the heap
         results = []
-        while heap and len(results)<k:
-            #if not results or heap.fre!=results[-1].fre:
+        while heap and len(results) < k:
+            # if not results or heap.fre!=results[-1].fre:
             results.append(heap)
             heap = self.mergeheap(heap.children)
         results = [result.val for result in results]
         return results
-            
+
     def mergeheap(self, heaps):
         heaps = list(heaps)
         if not heaps:
             return None
-        if len(heaps) ==1:
-            return heaps[0]  
-        elif len(heaps)==2:
-            if heaps[0].fre<=heaps[1].fre:
+        if len(heaps) == 1:
+            return heaps[0]
+        elif len(heaps) == 2:
+            if heaps[0].fre <= heaps[1].fre:
                 heaps[1].children.add(heaps[0])
                 heaps[0].parent = heaps[1]
                 return heaps[1]
@@ -72,6 +79,7 @@ class Solution(object):
                 heaps[1].parent = heaps[0]
                 return heaps[0]
         else:
-            half = len(heaps)/2
-            return self.mergeheap([self.mergeheap(heaps[:half]), self.mergeheap(heaps[half:])])
-            
+            half = len(heaps) / 2
+            return self.mergeheap(
+                [self.mergeheap(heaps[:half]), self.mergeheap(heaps[half:])]
+            )

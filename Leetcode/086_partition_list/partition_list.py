@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
     def partition(self, head, x):
         """
@@ -11,11 +12,11 @@ class Solution(object):
         :type x: int
         :rtype: ListNode
         """
-        cursor= head
+        cursor = head
         precursor = None
         head1 = tail1 = None
         head2 = tail2 = None
-        
+
         while cursor:
             if cursor.val < x:
                 if not head1:
@@ -40,12 +41,3 @@ class Solution(object):
         else:
             tail1.next = head2
             return head1
-            
-                
-                
-                
-                
-                
-                
-                
-                

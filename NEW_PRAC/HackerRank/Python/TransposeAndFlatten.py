@@ -43,7 +43,9 @@ print(my_array.flatten())
 import numpy as np
 
 N, M = list(map(int, input().split()))
-my_array = np.array([input().split() for x in range(N)], int)  # Creating an array of input nos.
+my_array = np.array(
+    [input().split() for x in range(N)], int
+)  # Creating an array of input nos.
 print(np.transpose(my_array))
 print(my_array.flatten())
 
@@ -63,5 +65,3 @@ print(my_array.flatten())
 # [[1 3]
 #  [2 4]]
 # [1 2 3 4]
-
-

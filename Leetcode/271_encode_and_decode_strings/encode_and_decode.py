@@ -1,5 +1,4 @@
 class Codec:
-
     def encode(self, strs):
         """Encodes a list of strings to a single string.
         
@@ -8,7 +7,7 @@ class Codec:
         """
         encoded = ""
         for s in strs:
-            encoded += str(len(s))+"."+s
+            encoded += str(len(s)) + "." + s
         return encoded
 
     def decode(self, s):
@@ -22,14 +21,14 @@ class Codec:
         result = []
         while True:
             idx = s.find(".")
-            if idx<0:
+            if idx < 0:
                 break
             lenlen = int(s[0:idx])
-            ss = s[idx+1:idx+1+lenlen]
+            ss = s[idx + 1 : idx + 1 + lenlen]
             result.append(ss)
-            s = s[idx+1+lenlen:]
+            s = s[idx + 1 + lenlen :]
         return result
-            
+
 
 # Your Codec object will be instantiated and called as such:
 # codec = Codec()

@@ -13,20 +13,27 @@ def print_formatted(number):
     # your code goes here
     w = len(str(bin(number)[2:]))  # It must be formatted with binary value of n
     # print(w)
-    for i in range(1, number+1):
+    for i in range(1, number + 1):
         # print(i, end ='  ')
         octal = str(oct(i))[2:]
         hexadecimal = str(hex(i)[2:]).upper()
         binary = str(bin(i)[2:])
-        print(str(i).rjust(w), octal.rjust(w), hexadecimal.rjust(w), binary.rjust(w), sep = ' ')
+        print(
+            str(i).rjust(w),
+            octal.rjust(w),
+            hexadecimal.rjust(w),
+            binary.rjust(w),
+            sep=" ",
+        )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = int(input())
     print_formatted(n)
 
 # Output Format
-# Print n lines where each line i (in the range 1 <= i <= n) contains the respective decimal, octal, capitalized 
-# hexadecimal, and binary values of i. Each printed value must be formatted to the width of the binary value of n. 
+# Print n lines where each line i (in the range 1 <= i <= n) contains the respective decimal, octal, capitalized
+# hexadecimal, and binary values of i. Each printed value must be formatted to the width of the binary value of n.
 
 # Sample Input
 # 17
@@ -48,4 +55,4 @@ if __name__ == '__main__':
 #    14    16     E  1110
 #    15    17     F  1111
 #    16    20    10 10000
-#    17    21    11 10001     
+#    17    21    11 10001

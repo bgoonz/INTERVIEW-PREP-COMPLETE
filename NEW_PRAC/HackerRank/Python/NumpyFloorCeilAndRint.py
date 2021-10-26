@@ -22,7 +22,7 @@
 # print numpy.rint(my_array)          #[  1.   2.   3.   4.   6.   7.   8.   9.  10.]
 
 # Task
-# You are given a 1-D array, A. 
+# You are given a 1-D array, A.
 # Your task is to print the floor, ceil and rint of all the elements of A.
 
 # Input Format
@@ -44,7 +44,7 @@
 import numpy as np
 
 # Important part of the solution
-np.set_printoptions(sign = ' ') # Turns out numpy has print-formatting settings
+np.set_printoptions(sign=" ")  # Turns out numpy has print-formatting settings
 
 l = np.array(list(map(float, input().rstrip().split())))
-print(np.floor(l), np.ceil(l), np.rint(l), sep = '\n')
+print(np.floor(l), np.ceil(l), np.rint(l), sep="\n")

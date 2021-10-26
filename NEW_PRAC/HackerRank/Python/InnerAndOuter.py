@@ -27,8 +27,8 @@ b = list(map(int, raw_input().split()))
 a = np.array(a)
 b = np.array(b)
 
-print(np.inner(a,b))
-print(np.outer(a,b))
+print(np.inner(a, b))
+print(np.outer(a, b))
 
 # Sample Input
 # 0 1

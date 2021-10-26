@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def generateTrees(self, n):
         """
@@ -12,12 +13,12 @@ class Solution(object):
         :rtype: List[TreeNode]
         """
         return self.buildTree(0, n)
-        
+
     def buildTree(self, n1, n2):
-        if n1==n2:
+        if n1 == n2:
             return [None]
-        if n1+1 == n2:
-            node = TreeNode(n1+1)
+        if n1 + 1 == n2:
+            node = TreeNode(n1 + 1)
             node.left = None
             node.right = None
             return [node]
@@ -25,10 +26,10 @@ class Solution(object):
             results = []
             for x in range(n1, n2):
                 left_list = self.buildTree(n1, x)
-                right_list = self.buildTree(x+1, n2)
+                right_list = self.buildTree(x + 1, n2)
                 for left in left_list:
                     for right in right_list:
-                        node = TreeNode(x+1)
+                        node = TreeNode(x + 1)
                         node.left = left
                         node.right = right
                         results.append(node)

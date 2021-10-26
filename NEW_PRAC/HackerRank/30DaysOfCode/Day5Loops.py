@@ -1,5 +1,5 @@
 # Task
-# Given an integer, n, print its first 10 multiples. Each multiple n x i(where 1 <= i <= 10) 
+# Given an integer, n, print its first 10 multiples. Each multiple n x i(where 1 <= i <= 10)
 # should be printed on a new line in the form: n x i = result.
 
 #!/bin/python3
@@ -11,17 +11,16 @@ import re
 import sys
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     for i in range(1, 11):
-        mul = n*i
-        print(str(n) + ' x '+ str(i) + ' = ' + str(mul), )
+        mul = n * i
+        print(str(n) + " x " + str(i) + " = " + str(mul))
 
 
 # Output Format
 
-# Print 10 lines of output; each line i(where 1<=i<=10) 
+# Print 10 lines of output; each line i(where 1<=i<=10)
 # contains the of result in n x i the form: n x i = result.
 
 # Sample Input
@@ -40,4 +39,3 @@ if __name__ == '__main__':
 # 2 x 8 = 16
 # 2 x 9 = 18
 # 2 x 10 = 20
-

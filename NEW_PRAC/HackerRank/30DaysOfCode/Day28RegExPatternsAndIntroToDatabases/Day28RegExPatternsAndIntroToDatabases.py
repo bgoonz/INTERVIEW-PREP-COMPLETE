@@ -14,11 +14,12 @@ import sys
 
 def compute(firstName, emailID, result):
     # restricted to lowercase letters and first name limit is 20 characters and whole email id limit is 50 characters
-    match = re.search(r'[a-z]{,20}@gmail.com{,50}', emailID)
+    match = re.search(r"[a-z]{,20}@gmail.com{,50}", emailID)
     if match:
         result.append(firstName)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     N = int(input())
 
     result = []
@@ -30,7 +31,7 @@ if __name__ == '__main__':
         emailID = firstNameEmailID[1]
 
         compute(firstName, emailID, result)
-    result = sorted(result);
+    result = sorted(result)
     for i in result:
         print(i)
 

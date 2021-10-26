@@ -1,4 +1,4 @@
-# The NumPy module also comes with a number of built-in routines for linear algebra calculations. 
+# The NumPy module also comes with a number of built-in routines for linear algebra calculations.
 # These can be found in the sub-module linalg.
 
 # linalg.det
@@ -18,7 +18,7 @@
 #                                                 #          [ 0.66666667 -0.33333333]]
 
 # Task :
-# You are given a square matrix with dimensions X. Your task is to find the determinant. 
+# You are given a square matrix with dimensions X. Your task is to find the determinant.
 # Note: Round the answer to 2 places after the decimal.
 
 import numpy as np
@@ -28,7 +28,7 @@ l = []
 for i in range(N):
     l.append(list(map(float, input().split())))
 l = np.array(l).reshape(N, N)
-print(round(np.linalg.det(l), 2), end = '')
+print(round(np.linalg.det(l), 2), end="")
 
 
 # Sample Input

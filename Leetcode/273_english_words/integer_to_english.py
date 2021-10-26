@@ -6,7 +6,7 @@ class Solution(object):
         """
         self.d = {
             1000000000: "Billion",
-            1000000:"Million",
+            1000000: "Million",
             1000: "Thousand",
             100: "Hundred",
             90: "Ninty",
@@ -30,33 +30,33 @@ class Solution(object):
             9: "Nine",
             8: "Eight",
             7: "Seven",
-            6 :"Six",
-            5:"Five",
+            6: "Six",
+            5: "Five",
             4: "Four",
             3: "Three",
             2: "Two",
             1: "One",
         }
         self.keys = sorted(self.d.keys(), reverse=True)
-        
-        if num==0:
+
+        if num == 0:
             return "Zero"
         return self.helper(num)
-        
+
     def helper(self, num):
         s = ""
         i = 0
         while num:
-            while self.keys[i]>num:
-                i+=1
+            while self.keys[i] > num:
+                i += 1
             k = self.keys[i]
             if s:
                 s += " "
-            if k>=100:
-                n = num/k
+            if k >= 100:
+                n = num / k
                 s1 = self.helper(n)
-                s += s1+" "+self.d[k]
-                num = num%k
+                s += s1 + " " + self.d[k]
+                num = num % k
             else:
                 num -= k
                 s += self.d[k]

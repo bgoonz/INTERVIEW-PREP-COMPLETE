@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def buildTree(self, inorder, postorder):
         """
@@ -15,14 +16,15 @@ class Solution(object):
         self.inorder = inorder
         self.postorder = postorder
         return self.recurse(0, len(self.inorder), 0, len(self.postorder))
-        
+
     def recurse(self, inleft, inright, postleft, postright):
-        if inleft==inright:
+        if inleft == inright:
             return None
-        val = self.postorder[postright-1]
+        val = self.postorder[postright - 1]
         idx = self.inorder.index(val)
         node = TreeNode(val)
-        node.left = self.recurse(inleft, idx, postleft, postleft+idx-inleft)
-        node.right = self.recurse(idx+1, inright, postleft+idx-inleft, postright-1)
+        node.left = self.recurse(inleft, idx, postleft, postleft + idx - inleft)
+        node.right = self.recurse(
+            idx + 1, inright, postleft + idx - inleft, postright - 1
+        )
         return node
-        

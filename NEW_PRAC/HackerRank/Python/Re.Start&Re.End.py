@@ -12,22 +12,25 @@
 S = input()
 k = input()
 import re
+
 pattern = re.compile(k)
 r = pattern.search(S)
-if not r: print("(-1, -1)")
+if not r:
+    print("(-1, -1)")
 while r:
     print("({0}, {1})".format(r.start(), r.end() - 1))
-    r = pattern.search(S,r.start() + 1)
+    r = pattern.search(S, r.start() + 1)
 
-# OR 
+# OR
 
 import re
-s = 'aaadaa'
-v = 'aa'
+
+s = "aaadaa"
+v = "aa"
 for i, x in enumerate(s):
     if re.match(v, s[i:]):
-        print((i, i+len(v)- 1)) 
-if re.search(v, s) == None:  
+        print((i, i + len(v) - 1))
+if re.search(v, s) == None:
     print((-1, -1))
 
 # Input Format
@@ -43,6 +46,6 @@ if re.search(v, s) == None:
 # aa
 
 # Sample Output
-# (0, 1)  
+# (0, 1)
 # (1, 2)
 # (4, 5)

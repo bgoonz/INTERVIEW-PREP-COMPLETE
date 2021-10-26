@@ -5,9 +5,7 @@ vowel = "aeiouy"
 consonants = "bcdfghjklmnpqrstvwxz"
 l = []
 for i in n:
-    if(i in consonants):
-        l.append("."+i)
+    if i in consonants:
+        l.append("." + i)
 l = "".join(l)
 print(l)
-
-

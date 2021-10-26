@@ -3,17 +3,17 @@
 
 # Sample Code
 # >>> from collections import Counter
-# >>> 
+# >>>
 # >>> myList = [1,1,2,3,4,5,3,2,3,4,2,1,2,3]
 # >>> print Counter(myList)
 # Counter({2: 4, 3: 4, 1: 3, 4: 2, 5: 1})
 # >>>
 # >>> print Counter(myList).items()
 # [(1, 3), (2, 4), (3, 4), (4, 2), (5, 1)]
-# >>> 
+# >>>
 # >>> print Counter(myList).keys()
 # [1, 2, 3, 4, 5]
-# >>> 
+# >>>
 # >>> print Counter(myList).values()
 # [3, 4, 4, 2, 1]
 
@@ -29,10 +29,11 @@
 # The first line contains X, the number of shoes.
 # The second line contains the space separated list of all the shoe sizes in the shop.
 # The third line contains N, the number of customers.
-# The next N lines contain the space separated values of the shoe size desired by the customer 
+# The next N lines contain the space separated values of the shoe size desired by the customer
 # and x_i, the price of the shoe.
 
 from collections import Counter
+
 X = int(input())
 shoe_sizes = list(map(int, input().split()))
 N = int(input())

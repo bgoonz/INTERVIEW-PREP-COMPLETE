@@ -1,4 +1,6 @@
 from collections import defaultdict
+
+
 class Solution(object):
     def maxSubArrayLen(self, nums, k):
         """
@@ -9,11 +11,10 @@ class Solution(object):
         sums = defaultdict(list)
         sum = 0
         result = 0
-        for i,num in enumerate(nums):
+        for i, num in enumerate(nums):
             sums[sum].append(i)
             sum += num
-            if sum-k in sums:
-                result = max(result,i+1-sums[sum-k][0])
+            if sum - k in sums:
+                result = max(result, i + 1 - sums[sum - k][0])
 
         return result
-        

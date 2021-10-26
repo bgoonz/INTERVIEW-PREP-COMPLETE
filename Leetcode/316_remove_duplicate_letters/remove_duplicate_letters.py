@@ -8,8 +8,7 @@ class Solution(object):
         chrs = sorted(list(all))
         for chr in chrs:
             idx = s.index(chr)
-            if set(s[idx:])==all:
-                s = s[idx:].replace(chr, '')
+            if set(s[idx:]) == all:
+                s = s[idx:].replace(chr, "")
                 return chr + self.removeDuplicateLetters(s)
-        return ''
-            
+        return ""

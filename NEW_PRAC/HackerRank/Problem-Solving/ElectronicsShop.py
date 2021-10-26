@@ -21,21 +21,22 @@ def getMoneySpent(keyboards, drives, b):
     sum = 0
     for i in keyboards:
         for j in drives:
-            if (i + j) <= b  and (i + j) > sum:
+            if (i + j) <= b and (i + j) > sum:
                 sum = i + j
     if sum == 0:
         return -1
     return sum
-    
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     bnm = input().split()
 
     b = int(bnm[0])  # amount she has
 
     n = int(bnm[1])  # prices for keyboards
- 
+
     m = int(bnm[2])  # prices for drives
 
     keyboards = list(map(int, input().rstrip().split()))  # prices for keyboards
@@ -48,7 +49,7 @@ if __name__ == '__main__':
 
     moneySpent = getMoneySpent(keyboards, drives, b)
 
-    fptr.write(str(moneySpent) + '\n')
+    fptr.write(str(moneySpent) + "\n")
 
     fptr.close()
 

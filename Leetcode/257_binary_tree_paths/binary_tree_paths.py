@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def binaryTreePaths(self, root):
         """
@@ -14,7 +15,7 @@ class Solution(object):
         self.paths = []
         self.visit(root, "")
         return self.paths
-    
+
     def visit(self, node, current):
         if not node:
             return
@@ -26,4 +27,3 @@ class Solution(object):
         else:
             self.visit(node.left, current)
             self.visit(node.right, current)
-        

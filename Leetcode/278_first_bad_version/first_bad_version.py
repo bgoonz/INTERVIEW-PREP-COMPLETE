@@ -3,6 +3,7 @@
 # @return a bool
 # def isBadVersion(version):
 
+
 class Solution(object):
     def firstBadVersion(self, n):
         """
@@ -12,11 +13,10 @@ class Solution(object):
         start = 1
         end = n
         while True:
-            if start==end:
+            if start == end:
                 return start
-            candidate = (start+end)/2
+            candidate = (start + end) / 2
             if isBadVersion(candidate):
                 end = candidate
             else:
-                start = candidate+1
-        
+                start = candidate + 1

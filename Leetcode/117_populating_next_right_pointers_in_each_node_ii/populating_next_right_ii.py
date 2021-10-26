@@ -6,6 +6,7 @@
 #         self.right = None
 #         self.next = None
 
+
 class Solution(object):
     def connect(self, root):
         """
@@ -16,7 +17,7 @@ class Solution(object):
             return
         root.next = None
         self.recurse(root)
-    
+
     def recurse(self, root):
         level = []
         if root.left:
@@ -33,11 +34,8 @@ class Solution(object):
         if not level:
             return
         for i in range(len(level)):
-            if i==len(level)-1:
+            if i == len(level) - 1:
                 level[i].next = None
             else:
-                level[i].next = level[i+1]
+                level[i].next = level[i + 1]
         self.recurse(level[0])
-            
-            
-            

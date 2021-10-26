@@ -11,15 +11,15 @@ class Solution(object):
             else:
                 b = stack.pop()
                 a = stack.pop()
-                if token=="+":
-                    stack.append(a+b)
-                elif token=="-":
-                    stack.append(a-b)
-                elif token=="*":
-                    stack.append(a*b)
+                if token == "+":
+                    stack.append(a + b)
+                elif token == "-":
+                    stack.append(a - b)
+                elif token == "*":
+                    stack.append(a * b)
                 else:
-                    if a*b < 0:
-                        stack.append(-(abs(a)/abs(b)))
+                    if a * b < 0:
+                        stack.append(-(abs(a) / abs(b)))
                     else:
-                        stack.append(a/b)
+                        stack.append(a / b)
         return stack[0]

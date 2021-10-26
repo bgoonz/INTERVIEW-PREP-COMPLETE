@@ -28,6 +28,6 @@ try:
     n = int(input())
     for i in range(n):
         t = int(input())
-        print(int(t**0.5))
+        print(int(t ** 0.5))
 except:
     pass

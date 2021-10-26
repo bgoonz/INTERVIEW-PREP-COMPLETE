@@ -1,10 +1,10 @@
 # Print factorial of given no.
 
 # Note: Factorials of can't be stored even in a 64-bit
-# long long variable. Big integers must be used for such calculations. 
-# Languages like Java, Python, Ruby etc. can handle big integers, 
+# long long variable. Big integers must be used for such calculations.
+# Languages like Java, Python, Ruby etc. can handle big integers,
 # but we need to write additional code in C/C++ to handle huge values.
-# We recommend solving this challenge using BigIntegers. 
+# We recommend solving this challenge using BigIntegers.
 
 #!/bin/python3
 
@@ -20,13 +20,13 @@ def extraLongFactorials(n):
     if n == 1 or n == 0:
         fact = 1
     else:
-        for i in range(1,n+1):
+        for i in range(1, n + 1):
             fact *= i
     print(fact)
-    return 
-            
+    return
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = int(input())
 
     extraLongFactorials(n)

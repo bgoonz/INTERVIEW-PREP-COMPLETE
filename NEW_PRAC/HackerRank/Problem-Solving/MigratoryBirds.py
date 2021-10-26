@@ -10,14 +10,15 @@ import sys
 def migratoryBirds(arr):
     count = 0
     id = 1
-    for i in range(1,6):
-        if arr.count(i) > count :
+    for i in range(1, 6):
+        if arr.count(i) > count:
             count = arr.count(i)
             id = i
     return id
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     arr_count = int(input().strip())
 
@@ -25,7 +26,7 @@ if __name__ == '__main__':
 
     result = migratoryBirds(arr)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
@@ -39,4 +40,3 @@ if __name__ == '__main__':
 
 # Sample Output 0
 # 4
-

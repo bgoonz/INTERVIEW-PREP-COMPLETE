@@ -21,8 +21,9 @@ def breakingRecords(scores):
             count_low += 1
     return count_high, count_low
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())  # No. of games
 
@@ -30,13 +31,13 @@ if __name__ == '__main__':
 
     result = breakingRecords(scores)
 
-    fptr.write(' '.join(map(str, result)))
-    fptr.write('\n')
+    fptr.write(" ".join(map(str, result)))
+    fptr.write("\n")
 
     fptr.close()
 
 # Output Format
-# Print two space-seperated integers describing the respective 
+# Print two space-seperated integers describing the respective
 # numbers of times her best (highest) score increased and her worst (lowest) score decreased.
 
 # Sample Input 0
@@ -45,4 +46,3 @@ if __name__ == '__main__':
 
 # Sample Output 0
 # 2 4
-

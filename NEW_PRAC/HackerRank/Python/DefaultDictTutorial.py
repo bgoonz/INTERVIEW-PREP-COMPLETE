@@ -14,8 +14,8 @@
 # ('python', ['awesome', 'language'])
 # ('something-else', ['not relevant'])
 
-# In this challenge, you will be given 2 integers, n and m. There are n words, which might repeat, in word group A. 
-# There are m words belonging to word group B. For each m words, check whether the word has appeared in group A or not. 
+# In this challenge, you will be given 2 integers, n and m. There are n words, which might repeat, in word group A.
+# There are m words belonging to word group B. For each m words, check whether the word has appeared in group A or not.
 # Print the indices of each occurrence of m in group A. If it does not appear, print -1.
 
 # Input Format
@@ -25,7 +25,7 @@
 
 # Output Format
 # Output m lines.
-# The ith line should contain the 1-indexed positions of the occurrences of the ith word separated by spaces. 
+# The ith line should contain the 1-indexed positions of the occurrences of the ith word separated by spaces.
 
 # Sample Input
 # 5 2
@@ -50,9 +50,9 @@ from collections import defaultdict
 
 d = defaultdict(list)
 
-n, m = list(map(int,input().split()))
+n, m = list(map(int, input().split()))
 
-for i in range(1, n+1):
+for i in range(1, n + 1):
     o = str(input())
     d[o].append(i)
 
@@ -62,5 +62,5 @@ for j in range(m):
         print(-1)
     if o in d.keys():
         for i in d[o]:
-            print(i, end = ' ')
+            print(i, end=" ")
         print()

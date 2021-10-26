@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def zigzagLevelOrder(self, root):
         """
@@ -16,10 +17,11 @@ class Solution(object):
         result = []
         for i in range(len(self.levels)):
             level = self.levels[i]
-            if i%2: level = level[::-1]
+            if i % 2:
+                level = level[::-1]
             result.append(level)
         return result
-    
+
     def recurse(self, node, lvl):
         if not node:
             return
@@ -27,6 +29,5 @@ class Solution(object):
             self.levels.append([node.val])
         else:
             self.levels[lvl].append(node.val)
-        self.recurse(node.left, lvl+1)
-        self.recurse(node.right, lvl+1)
-
+        self.recurse(node.left, lvl + 1)
+        self.recurse(node.right, lvl + 1)

@@ -1,5 +1,4 @@
 class Solution(object):
-
     def canWinNim(self, n):
 
         """
@@ -12,13 +11,13 @@ class Solution(object):
 
         self.d = {}
 
-        if n<=3:
+        if n <= 3:
 
             return True
 
         else:
 
-            for k in [n-3, n-2, n-1] :
+            for k in [n - 3, n - 2, n - 1]:
 
                 if k not in self.d:
 

@@ -1,5 +1,7 @@
 # Method - 1
 from collections import Counter
+
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         charCount = Counter(s)
@@ -7,6 +9,7 @@ class Solution:
             if charCount[i] == 1:
                 return s.index(i)
         return -1
+
 
 # Time Complexity - O(n)
 # Space Complexity - O(1)
@@ -18,6 +21,7 @@ class Solution:
             if s.count(i) == 1:
                 return s.index(i)
         return -1
+
 
 # Time Complexity - O(n**2)
 # Space Complexity - O(n)

@@ -10,4 +10,4 @@ class Solution:
 
         import heapq
 
-        return heapq.nlargest(k, nums)[k-1]	
+        return heapq.nlargest(k, nums)[k - 1]

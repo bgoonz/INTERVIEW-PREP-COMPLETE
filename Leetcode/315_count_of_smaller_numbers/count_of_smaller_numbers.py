@@ -8,11 +8,10 @@ class Solution(object):
         s = []
         d = {}
         for pair in pairs:
-            i =bisect.bisect_right(s, pair)
+            i = bisect.bisect_right(s, pair)
             s.insert(i, pair)
             d[pair[1]] = i
-        #print s
-        newpairs = [(j-d[pair[1]], pair[1]) for j,pair in enumerate(s)]
-        newpairs = sorted(newpairs, key = operator.itemgetter(1))
+        # print s
+        newpairs = [(j - d[pair[1]], pair[1]) for j, pair in enumerate(s)]
+        newpairs = sorted(newpairs, key=operator.itemgetter(1))
         return [p[0] for p in newpairs]
-        

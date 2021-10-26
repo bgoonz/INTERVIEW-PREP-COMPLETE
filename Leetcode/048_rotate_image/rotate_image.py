@@ -8,12 +8,12 @@ class Solution:
 
         matrix.reverse()
 
-        for i in range(len(matrix)-1):
+        for i in range(len(matrix) - 1):
 
-                for j in range(i+1, len(matrix)):
+            for j in range(i + 1, len(matrix)):
 
-                        a, b = matrix[j][i] , matrix[i][j]
+                a, b = matrix[j][i], matrix[i][j]
 
-                        matrix[j][i] = b
+                matrix[j][i] = b
 
-                        matrix[i][j] = a
+                matrix[i][j] = a

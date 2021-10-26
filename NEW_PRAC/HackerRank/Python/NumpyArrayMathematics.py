@@ -52,12 +52,12 @@
 # [[ 5 12 21 32]]
 # [[0 0 0 0]]
 # [[1 2 3 4]]
-# [[    1    64  2187 65536]] 
+# [[    1    64  2187 65536]]
 
-# Use // for division in Python 3. 
+# Use // for division in Python 3.
 
 import numpy as np
 
-N, M = map(int,input().split())
-a, b = (np.array([input().split() for _ in range(N)], dtype = int) for _ in range(2))
-print(a+b, a-b, a*b, a//b, a%b, a**b, sep="\n")
+N, M = map(int, input().split())
+a, b = (np.array([input().split() for _ in range(N)], dtype=int) for _ in range(2))
+print(a + b, a - b, a * b, a // b, a % b, a ** b, sep="\n")

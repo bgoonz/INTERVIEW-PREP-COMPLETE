@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
     def reverseBetween(self, head, m, n):
         """
@@ -12,22 +13,22 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        if m==n:
+        if m == n:
             return head
         idx = 1
         h = None
         p = head
         vals = []
         while True:
-            if idx==m:
+            if idx == m:
                 h = p
-            if idx>=m and idx<=n:
+            if idx >= m and idx <= n:
                 vals.append(p.val)
-            if idx==n:
+            if idx == n:
                 break
-            idx = idx +1
+            idx = idx + 1
             p = p.next
-        while h!=p.next:
+        while h != p.next:
             h.val = vals.pop()
             h = h.next
         return head

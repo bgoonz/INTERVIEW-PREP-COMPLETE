@@ -1,11 +1,7 @@
-# A dictionary is a collection which is unordered, changeable and indexed. 
+# A dictionary is a collection which is unordered, changeable and indexed.
 # In Python dictionaries are written with curly brackets, and they have keys and values.
 
-thisdict = {
-    'brand': 'ford',
-    'model': 'mustang',
-    'year': '1964'
-}
+thisdict = {"brand": "ford", "model": "mustang", "year": "1964"}
 # print(thisdict)
 
 # x = thisdict['model']
@@ -49,7 +45,7 @@ thisdict = {
 # print(thisdict)
 
 
-# You cannot copy a dictionary simply by typing dict2 = dict1, because: 
+# You cannot copy a dictionary simply by typing dict2 = dict1, because:
 # dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2.
 # There are ways to make a copy, one way is to use the built-in Dictionary method copy().
 # mydict = thisdict.copy()
@@ -60,7 +56,7 @@ thisdict = {
 # print(mydict)
 
 
-# A dictionary can also contain many dictionaries, 
+# A dictionary can also contain many dictionaries,
 # this is called nested dictionaries.
 # myfamily = {
 #     'child1': {
@@ -103,5 +99,5 @@ thisdict = {
 # }
 # print(myfamily)
 
-thisdict = dict(brand = 'Ford', model = 'Mustang', year = 2018)
+thisdict = dict(brand="Ford", model="Mustang", year=2018)
 print(thisdict)

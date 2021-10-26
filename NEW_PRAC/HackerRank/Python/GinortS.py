@@ -17,11 +17,11 @@ for i in s:
 l = [upper, lower, odd_digit, even_digit]
 for i in l:
     i.sort()
-    ''.join(i)
+    "".join(i)
 final = lower + upper + odd_digit + even_digit
-''.join(final)
+"".join(final)
 for i in final:
-    print(i, end = '')
+    print(i, end="")
 
 # Problem : arrage in following order
 # lowercase > uppercase > odd_digit > even_digit

@@ -4,7 +4,7 @@
 
 # Transformation of Strings
 
-# Code 
+# Code
 # import re
 # def square(match):
 #     number = int(match.group(0))

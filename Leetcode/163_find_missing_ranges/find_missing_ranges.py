@@ -9,11 +9,10 @@ class Solution(object):
         start = lower
         ranges = []
         for num in nums:
-            if num>start:
-                ranges.append((start, num-1))
-            start = num+1
-        if start<=upper:
+            if num > start:
+                ranges.append((start, num - 1))
+            start = num + 1
+        if start <= upper:
             ranges.append((start, upper))
-        result = ["%d"%a if a==b else "%d->%d"%(a,b) for a,b in ranges]
+        result = ["%d" % a if a == b else "%d->%d" % (a, b) for a, b in ranges]
         return result
-            

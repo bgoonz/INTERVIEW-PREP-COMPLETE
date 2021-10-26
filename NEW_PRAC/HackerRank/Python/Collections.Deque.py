@@ -59,16 +59,16 @@ d = deque()
 N = int(input())  # No. of integers
 for i in range(N):
     x = list(map(str, input().split()))
-    if x[0] == 'append':
+    if x[0] == "append":
         d.append(int(x[1]))
-    elif x[0] == 'appendleft':
+    elif x[0] == "appendleft":
         d.appendleft(int(x[1]))
-    elif x[0] == 'pop':
+    elif x[0] == "pop":
         d.pop()
-    elif x[0] == 'popleft':
+    elif x[0] == "popleft":
         d.popleft()
 for i in d:
-    print(i, end = ' ')
+    print(i, end=" ")
 
 
 # Sample Input

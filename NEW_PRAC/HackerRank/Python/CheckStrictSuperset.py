@@ -5,7 +5,8 @@ def is_superset(A, B, count):
         count = count + 1
     return count
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     A = set(map(int, input().split()))  # Set A elements
     n = int(input())  # no. of other sets
     count = 0
@@ -13,9 +14,9 @@ if __name__ == '__main__':
         set_B = set(map(int, input().split()))
         count = is_superset(A, set_B, count)
     if count == n:
-        print(True, end = '')
+        print(True, end="")
     else:
-        print(False, end = '')
+        print(False, end="")
 
 # Input
 # 1 2 3 4 5 6 7 8 9 10 11 12 23 45 84 78

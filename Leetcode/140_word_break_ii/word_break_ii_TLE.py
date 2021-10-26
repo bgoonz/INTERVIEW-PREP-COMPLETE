@@ -8,9 +8,9 @@ class Solution(object):
         if not wordDict:
             return False
         self.memo = {}
-        self.maxlength = max([len(word) for word in wordDict]) 
+        self.maxlength = max([len(word) for word in wordDict])
         return self.recurse(s, wordDict)
-        
+
     def recurse(self, s, wordDict):
         if not s:
             return [""]
@@ -20,9 +20,6 @@ class Solution(object):
         for i in range(1, self.maxlength):
             if s[:i] in wordDict:
                 sub = self.recurse(s[i:], wordDict)
-                results += [s[:i]+" "+substr for substr in sub]
+                results += [s[:i] + " " + substr for substr in sub]
         self.memo = results
         return self.memo
-        
-                
-                

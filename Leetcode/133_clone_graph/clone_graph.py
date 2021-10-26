@@ -4,6 +4,8 @@
 #         self.label = x
 #         self.neighbors = []
 import copy
+
+
 class Solution:
     # @param node, a undirected graph node
     # @return a undirected graph node
@@ -11,7 +13,7 @@ class Solution:
         self.visited = {}
         newnode = self.traverse(node)
         return newnode
-        
+
     def traverse(self, node):
         if not node:
             return None
@@ -19,10 +21,10 @@ class Solution:
             return self.visited[node.label]
         newnode = copy.copy(node)
         self.visited[node.label] = newnode
-        
+
         newnode.neighbors = []
         for neighbor in node.neighbors:
             new_neighbor = self.traverse(neighbor)
             newnode.neighbors.append(new_neighbor)
-        
+
         return newnode

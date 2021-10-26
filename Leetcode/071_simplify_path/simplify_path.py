@@ -9,12 +9,12 @@ class Solution(object):
         parts = []
         for seg in segments:
             seg = seg.strip()
-            if not seg or seg==".":
+            if not seg or seg == ".":
                 continue
-            if seg=="..":
+            if seg == "..":
                 if parts:
                     parts.pop()
             else:
                 parts.append(seg)
-        result = "/"+"/".join(parts)
+        result = "/" + "/".join(parts)
         return result

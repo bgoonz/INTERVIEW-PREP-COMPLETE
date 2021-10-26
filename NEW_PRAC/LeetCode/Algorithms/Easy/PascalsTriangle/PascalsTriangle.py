@@ -6,11 +6,11 @@ class Solution:
             temp2 = [0] + result[-1]
             result.append([temp1[i] + temp2[i] for i in range(len(temp1))])
         return result[:numRows]
-            
-        
+
+
 # Time Complexity - O(n**2)\
 # Space Complexity - O(n)
-        
+
 """
 explanation: Any row can be constructed using the offset sum of the previous row. Example:
 

@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 class Solution(object):
     def longestConsecutive(self, nums):
         """
@@ -10,15 +11,16 @@ class Solution(object):
         _max = 1
         # build bi-directional graph
         for num in nums:
-            if num in d: continue
+            if num in d:
+                continue
             d[num] = []
-            if num-1 in d:
-                d[num].append(num-1)
-                d[num-1].append(num)
-            if num+1 in d:
-                d[num+1].append(num)
-                d[num].append(num+1)
-                
+            if num - 1 in d:
+                d[num].append(num - 1)
+                d[num - 1].append(num)
+            if num + 1 in d:
+                d[num + 1].append(num)
+                d[num].append(num + 1)
+
         # find all connected components
         for num in nums:
             if num in d:
@@ -31,10 +33,7 @@ class Solution(object):
                         if c not in s:
                             q.append(c)
                     del d[item]
-                if len(s)>_max:
+                if len(s) > _max:
                     _max = len(s)
-                
+
         return _max
-                
-                
-                

@@ -4,6 +4,7 @@
 # @return a boolean, whether a knows b
 # def knows(a, b):
 
+
 class Solution(object):
     def findCelebrity(self, n):
         x = 0
@@ -15,4 +16,3 @@ class Solution(object):
         if any(not knows(i, x) for i in xrange(n)):
             return -1
         return x
-        

@@ -7,24 +7,24 @@
 # Code
 
 # >>> from collections import OrderedDict
-# >>> 
+# >>>
 # >>> ordinary_dictionary = {}
 # >>> ordinary_dictionary['a'] = 1
 # >>> ordinary_dictionary['b'] = 2
 # >>> ordinary_dictionary['c'] = 3
 # >>> ordinary_dictionary['d'] = 4
 # >>> ordinary_dictionary['e'] = 5
-# >>> 
+# >>>
 # >>> print ordinary_dictionary
 # {'a': 1, 'c': 3, 'b': 2, 'e': 5, 'd': 4}
-# >>> 
+# >>>
 # >>> ordered_dictionary = OrderedDict()
 # >>> ordered_dictionary['a'] = 1
 # >>> ordered_dictionary['b'] = 2
 # >>> ordered_dictionary['c'] = 3
 # >>> ordered_dictionary['d'] = 4
 # >>> ordered_dictionary['e'] = 5
-# >>> 
+# >>>
 # >>> print ordered_dictionary
 # OrderedDict([('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)])
 
@@ -36,14 +36,16 @@ for i in range(N):
     # print(dictionary)
     l = list(map(str, input().split()))
     if len(l) > 2:  # If l has more than 2 elements
-        l[0] = ''.join(l[0]+' ' + l[1])
-        l.remove(l[1]) # removing the 2nd element
+        l[0] = "".join(l[0] + " " + l[1])
+        l.remove(l[1])  # removing the 2nd element
         # print(l[0])
     if l[0] in dictionary:
-        dictionary[l[0]] = int(dictionary[l[0]]) + int(l[1])  # Adding values in l to the dictionary
+        dictionary[l[0]] = int(dictionary[l[0]]) + int(
+            l[1]
+        )  # Adding values in l to the dictionary
     else:
         dictionary[l[0]] = int(l[1])  # Adding values in l to dictionary
-    
+
 for keys in dictionary:
     print(keys, dictionary[keys])
 

@@ -6,4 +6,7 @@ class Solution(object):
         :rtype: int
         """
         import math
-        return math.factorial(m+n-2)/(math.factorial(m-1)*math.factorial(n-1))
+
+        return math.factorial(m + n - 2) / (
+            math.factorial(m - 1) * math.factorial(n - 1)
+        )

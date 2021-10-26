@@ -4,25 +4,26 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
     def deleteDuplicates(self, head):
         """
         :type head: ListNode
         :rtype: ListNode
         """
-        
+
         newhead = newtail = None
         seen = dict()
         p = head
         pp = None
         while p:
             dup = False
-            while p.next and p.next.val==p.val:
+            while p.next and p.next.val == p.val:
                 dup = True
                 p = p.next
             if not dup:
                 if not newhead:
-                    newhead=newtail= p
+                    newhead = newtail = p
                 else:
                     newtail.next = p
                     newtail = p
@@ -30,4 +31,3 @@ class Solution(object):
         if newtail:
             newtail.next = None
         return newhead
-                
