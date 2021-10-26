@@ -1,5 +1,11 @@
 # Resume
 
+{% embed url="https://1drv.ms/w/s!AkGiZ9n9CRDSqYFT7rowhrSYGPUJvA?e=iSJvhh" %}
+
+{% embed url="https://docs.google.com/document/d/e/2PACX-1vTZGNNL-Qb2bAqAdrUJNUCUoYbmzImH_myNiGrLbl9dXzf08jX4ts9GNIRlNqTebQ/pub?embedded=true" %}
+
+{% embed url="https://drive.google.com/file/d/1HXAxL73NtX8q7tkiaOGh-mNpOmNEHqOS/view?usp=sharing" %}
+
 {% embed url="https://docs.google.com/document/d/e/2PACX-1vSzVg_pFmpn1c-NqFWx4g8hoLrIfkrcJ2sfIBrh3vC6m-ob_RoeHOtYE0YCpf3vLA/pub" %}
 
 | Folder Name    | Folder Path               | Folder Link                                                                   | File name        | File Link                                                                                                                                                                                                        |                                                      Description                                                      | Thumbnail                                                                                                                | Download Link                                                                     | Last modifying user   | Last Modified At             | Preview Link                                                                  | File Size | Created At                   | File Type                                                               | File Extension | Share Status | Commenters | Owner                 | PDF Link | CSV Link | Zip Link | DOCX Link |

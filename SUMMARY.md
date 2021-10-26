@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Home](README.md)
-* [Initial page](<README (1).md>)
+* [Initial page](initial-page.md)
 * [Navigation](navigation.md)
-* [Skills](untitled-2.md)
+* [Skills](skills.md)
 * [Resources](resources/README.md)
   * [Practice Problems:](resources/practice-problems.md)
 
