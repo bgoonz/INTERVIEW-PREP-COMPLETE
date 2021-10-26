@@ -5,4 +5,4 @@ To reach the end of the jump game, 2 conditions have to be satisfied:
 
 So the algorithm loops over the array, maintaining the furthest index reachable.
 If current index>reachable, return False, because the end is not reachable.
-Otherwise, when reachable >= end, return True. 
+Otherwise, when reachable >= end, return True.

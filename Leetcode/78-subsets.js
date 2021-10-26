@@ -2,41 +2,26 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
+var subsets = function(nums) {
+    nums.sort(function(a, b) {
+       return a - b;
+    });
+    var result = [];
+    var results = [result];
+    subsetsHelper(0, nums, result, results);
+    return results;
+};
 
-function subsets(nums) {
-  const list = [];
-  const len = nums.length;
-  const subsetNum = Math.pow(2, len);
-  for (let n = 0; n < subsetNum; n++) {
-    list[n] = [];
-  }
-  for (let i = 0; i < len; i++) {
-    for (let j = 0; j < subsetNum; j++) {
-      if ((j >> i) & 1) {
-        list[j].push(nums[i]);
-      }
+var subsetsHelper = function(start, nums, result, results) {
+    if (start === nums.length) {
+        return;
     }
-  }
-  return list;
-}
 
-console.log(subsets([1, 2, 3]));
-
-// another
-
-/**
- * @param {number[]} nums
- * @return {number[][]}
- */
-
-function subsets(nums) {
-  const subs = [[]];
-  for (let num of nums) {
-    const n = subs.length;
-    for (let i = 0; i < n; i++) {
-      subs.push(subs[i].slice(0));
-      subs[subs.length - 1].push(num);
+    for (var i = start; i < nums.length; i++) {
+        result.push(nums[i]);
+        results.push(result.slice());
+        // start from next element i, not the next element of 'start'
+        subsetsHelper(i + 1, nums, result, results);
+        result.pop(nums[i]);
     }
-  }
-  return subs;
-}
+};

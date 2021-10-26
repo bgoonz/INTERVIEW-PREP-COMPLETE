@@ -5,8 +5,7 @@ Water can only be hold between peaks. If you look at the pattern of pair of peak
 
 So the problem is reduced to 2 passes over the heights array:
 
-
 1. Start from the left, for each pos i, if a[i] > maxheight up to i, put i in lefts.
 2. Start from the right, for each pos j, if a[j] > maxheight from j to end, put j in rights.
 
-Now we can get the pair of peaks that form valleys (mind duplicate pairs with same heights). Calculate the amount of water between 2 peaks is straightforward. 
+Now we can get the pair of peaks that form valleys (mind duplicate pairs with same heights). Calculate the amount of water between 2 peaks is straightforward.
