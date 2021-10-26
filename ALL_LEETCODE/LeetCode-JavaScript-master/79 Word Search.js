@@ -17,44 +17,47 @@
 // Hide Tags Array Backtracking
 // Hide Similar Problems (H) Word Search II
 
+var exist = function (board, word) {
+  var hash = {};
 
-var exist = function(board, word) {
-    var hash = {};
-    
-    for(var i = 0; i < board.length; i++) {
-        for(var j = 0; j < board[0].length; j++) {
-            if(dfs(board, word, 0, i, j)) {
-                return true;
-            }
-        }
+  for (var i = 0; i < board.length; i++) {
+    for (var j = 0; j < board[0].length; j++) {
+      if (dfs(board, word, 0, i, j)) {
+        return true;
+      }
     }
-    
-    function dfs(board, word, w, i, j) {
-        var key = i + ',' + j;
-        if(hash[key]) {
-            return false;
-        }
-        
-        if(w === word.length) {
-            return true;
-        }
-        
-        if(i < 0 || i >= board.length || j < 0 || j >= board[0].length) {
-            return false;
-        }
-        
-        var result = false;
-        
-        if(word[w] === board[i][j]) {
-            hash[key] = true;
-            
-            result = dfs(board, word, w + 1, i+1, j) || dfs(board, word, w + 1, i-1, j) || dfs(board, word, w + 1, i, j+1) || dfs(board, word, w + 1, i, j-1);
-            
-            hash[key] = false;
-        }
-        
-        return result
+  }
+
+  function dfs(board, word, w, i, j) {
+    var key = i + "," + j;
+    if (hash[key]) {
+      return false;
     }
-    
-    return false;
+
+    if (w === word.length) {
+      return true;
+    }
+
+    if (i < 0 || i >= board.length || j < 0 || j >= board[0].length) {
+      return false;
+    }
+
+    var result = false;
+
+    if (word[w] === board[i][j]) {
+      hash[key] = true;
+
+      result =
+        dfs(board, word, w + 1, i + 1, j) ||
+        dfs(board, word, w + 1, i - 1, j) ||
+        dfs(board, word, w + 1, i, j + 1) ||
+        dfs(board, word, w + 1, i, j - 1);
+
+      hash[key] = false;
+    }
+
+    return result;
+  }
+
+  return false;
 };

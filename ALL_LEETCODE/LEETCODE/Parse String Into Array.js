@@ -10,34 +10,31 @@
 // Rule 3: if "{" is inside a delimitor pair (), then "{" isn't part of the delimitor. Output it as is. abc(e{df}}g) =&gt; ["abc", "e{df}}g"]
 // So, parse the given string and assume the given string is always valid and parsable.
 
-
-
 function tokenizeString(str) {
   var result = [];
-  var cur = '';
+  var cur = "";
   var i = 0;
 
-  while(i < str.length){
+  while (i < str.length) {
     var c = str[i];
 
     // Need to take care of [ && [[ && [[[
     // [123] -> ['123'], [[123]] --> ['[123]'], [[[123]]] -> ['[[123]]']
-    if(c === '[' || c === '(' || c === '{') {
-      if(cur !== '') {
+    if (c === "[" || c === "(" || c === "{") {
+      if (cur !== "") {
         result.push(cur);
-        cur = '';
+        cur = "";
       }
       var eq = escapeQuote(str, i + 1, c);
       result.push(eq[0]);
       i = eq[1];
-      
     } else {
       cur += c;
       i++;
     }
   }
 
-  if(cur !== '') {
+  if (cur !== "") {
     result.push(cur);
   }
 
@@ -45,25 +42,26 @@ function tokenizeString(str) {
 
   function escapeQuote(str, i, quoteSym) {
     var quoteCnt = 1;
-    var result = '';
+    var result = "";
 
-    while(i < str.length) {
-      var c = str[i]
-      if(quoteSym === c) {
+    while (i < str.length) {
+      var c = str[i];
+      if (quoteSym === c) {
         quoteCnt++;
-      } else if((quoteSym === '[' && c === ']') 
-        || (quoteSym === '{' && c === '}')
-        || (quoteSym === '(' && c === ')')
-        ) {
+      } else if (
+        (quoteSym === "[" && c === "]") ||
+        (quoteSym === "{" && c === "}") ||
+        (quoteSym === "(" && c === ")")
+      ) {
         quoteCnt--;
       }
 
       i++;
-      
-      if(quoteCnt === 0) {
+
+      if (quoteCnt === 0) {
         break;
       }
-      
+
       result += c;
     }
 
@@ -71,9 +69,8 @@ function tokenizeString(str) {
   }
 }
 
-
 var str = "abc(((edf)))hij{{klmn}}opq[rst]uvw";
 // answer should be ['abc', '((edf))', 'hij', '{klmn}', 'opq', 'rst', 'uvw']
 
 console.log(tokenizeString(str));
-// [ 'abc', '((edf))', 'hij', '{klmn}', 'opq', 'rst', 'uvw' ] 
+// [ 'abc', '((edf))', 'hij', '{klmn}', 'opq', 'rst', 'uvw' ]

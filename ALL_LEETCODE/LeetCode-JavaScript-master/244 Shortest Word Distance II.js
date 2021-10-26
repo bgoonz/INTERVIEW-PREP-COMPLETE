@@ -15,20 +15,19 @@
 // Hide Tags Hash Table Design
 // Show Similar Problems
 
-
 /**
  * @constructor
  * @param {string[]} words
  */
-var WordDistance = function(words) {
-    this.positions = {};
-    
-    for(var i = 0; i < words.length; i++) {
-        var word = words[i];
-        
-        this.positions[word] = this.positions[word] || [];
-        this.positions[word].push(i);
-    }
+var WordDistance = function (words) {
+  this.positions = {};
+
+  for (var i = 0; i < words.length; i++) {
+    var word = words[i];
+
+    this.positions[word] = this.positions[word] || [];
+    this.positions[word].push(i);
+  }
 };
 
 /**
@@ -36,27 +35,27 @@ var WordDistance = function(words) {
  * @param {string} word2
  * @return {integer}
  */
-WordDistance.prototype.shortest = function(word1, word2) {
-    var i = 0;
-    var j = 0;
-    var dist = Infinity;
-    var pos1 = this.positions[word1];
-    var pos2 = this.positions[word2];
-    
-    while(i < pos1.length && j < pos2.length) {
-        var i1 = pos1[i];
-        var i2 = pos2[j];
-        
-        dist = Math.min(dist, Math.abs(i1 - i2));
-        
-        if(i1 < i2) {
-            i++;
-        } else {
-            j++;
-        }
+WordDistance.prototype.shortest = function (word1, word2) {
+  var i = 0;
+  var j = 0;
+  var dist = Infinity;
+  var pos1 = this.positions[word1];
+  var pos2 = this.positions[word2];
+
+  while (i < pos1.length && j < pos2.length) {
+    var i1 = pos1[i];
+    var i2 = pos2[j];
+
+    dist = Math.min(dist, Math.abs(i1 - i2));
+
+    if (i1 < i2) {
+      i++;
+    } else {
+      j++;
     }
-    
-    return dist;
+  }
+
+  return dist;
 };
 
 /**

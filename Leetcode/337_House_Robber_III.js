@@ -6,14 +6,14 @@
 //      3
 //     / \
 //    2   3
-//     \   \ 
+//     \   \
 //      3   1
 // Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
 // Example 2:
 //      3
 //     / \
 //    4   5
-//   / \   \ 
+//   / \   \
 //  1   3   1
 // Maximum amount of money the thief can rob = 4 + 5 = 9.
 
@@ -28,26 +28,25 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var rob = function(root) {
-    var result = robViaDfs(root);
-    return Math.max.apply(null, result);
+var rob = function (root) {
+  var result = robViaDfs(root);
+  return Math.max.apply(null, result);
 };
-
 
 // Array[0] max money when root is selected
 // Array[1] max money when root is Not selected
 function robViaDfs(root) {
-    if (!root) {
-        return [0, 0];
-    }
-    
-    var left = robViaDfs(root.left),
-        right = robViaDfs(root.right),
-        includeRoot,
-        notIncludeRoot;
-    
-    includeRoot = left[1] + right[1] + root.val; // array[1] is value from before of not including root
-    notIncludeRoot = Math.max.apply(null, left) + Math.max.apply(null, right);
-    
-    return [includeRoot, notIncludeRoot];
+  if (!root) {
+    return [0, 0];
+  }
+
+  var left = robViaDfs(root.left),
+    right = robViaDfs(root.right),
+    includeRoot,
+    notIncludeRoot;
+
+  includeRoot = left[1] + right[1] + root.val; // array[1] is value from before of not including root
+  notIncludeRoot = Math.max.apply(null, left) + Math.max.apply(null, right);
+
+  return [includeRoot, notIncludeRoot];
 }

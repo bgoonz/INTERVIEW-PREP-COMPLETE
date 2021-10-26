@@ -10,4 +10,4 @@ if we already solved the sub-problems of 1) and 2), we only need to count the pa
 
 If i is in (I, mid) and j is in (mid, J), then the order of 2 subsequences doesn't matter. We can sort both subsequences, and for each item i in range 1), use 2 cursors in range 2) to find the number of items j, with sums[j]-sum[i] between (lower, upper). Since the subsequence is ordered, the cursors can be reused in the inner loop for the next i.
 
-The time complexity for this solution is O(N*log(N)).
+The time complexity for this solution is O(N\*log(N)).

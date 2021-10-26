@@ -9,11 +9,9 @@
 // Hide Company Tags LinkedIn Facebook
 // Show Tags
 
-
-
 /**
  * Definition for knows()
- * 
+ *
  * @param {integer} person a
  * @param {integer} person b
  * @return {boolean} whether a knows b
@@ -26,34 +24,34 @@
  * @param {function} knows()
  * @return {function}
  */
-var solution = function(knows) {
-    /**
-     * @param {integer} n Total people
-     * @return {integer} The celebrity
-     */
-    return function(n) {
-        var candidate = 0;
-        
-        // iterate through the list,
-        // if candidate is known by i -> continue
-        // if i doesnt know candidate, i becomes the candidate
-        for(var i = 1; i < n; i++) {
-            if(!knows(i, candidate)) {
-                candidate = i;
-            }
-        }
-        
-        for(i = 0; i < n; i++) {
-            if(i === candidate) {
-                continue;
-            }
-            
-            // if candidate is not known by i or candidate know i
-            if(!knows(i, candidate) || knows(candidate, i)) {
-                return -1;
-            }
-        }
-        
-        return candidate;
-    };
+var solution = function (knows) {
+  /**
+   * @param {integer} n Total people
+   * @return {integer} The celebrity
+   */
+  return function (n) {
+    var candidate = 0;
+
+    // iterate through the list,
+    // if candidate is known by i -> continue
+    // if i doesnt know candidate, i becomes the candidate
+    for (var i = 1; i < n; i++) {
+      if (!knows(i, candidate)) {
+        candidate = i;
+      }
+    }
+
+    for (i = 0; i < n; i++) {
+      if (i === candidate) {
+        continue;
+      }
+
+      // if candidate is not known by i or candidate know i
+      if (!knows(i, candidate) || knows(candidate, i)) {
+        return -1;
+      }
+    }
+
+    return candidate;
+  };
 };

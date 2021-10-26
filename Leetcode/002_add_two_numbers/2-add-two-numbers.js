@@ -10,7 +10,7 @@
  * @param {ListNode} l2
  * @return {ListNode}
  */
-const addTwoNumbers = function (l1, l2) {
+const addTwoNumbers = (l1, l2) => {
   const res = new ListNode(null);
   single(l1, l2, res);
   return res.next;

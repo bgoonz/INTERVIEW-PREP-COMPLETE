@@ -11,29 +11,28 @@
 // Hide Tags Array Two Pointers
 // Hide Similar Problems (E) Remove Element
 
-
 /**
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function(nums) {
-    var oc = 1;
-    var sorted = 0;
-    
-    for(var i = 1; i < nums.length; i++) {
-        if(nums[i] === nums[sorted]) {
-            if(oc === 2) {
-                continue;
-            }
-            
-            oc++;
-        } else {
-            oc = 1;
-        }
-        
-        sorted++;
-        nums[sorted] = nums[i];
+var removeDuplicates = function (nums) {
+  var oc = 1;
+  var sorted = 0;
+
+  for (var i = 1; i < nums.length; i++) {
+    if (nums[i] === nums[sorted]) {
+      if (oc === 2) {
+        continue;
+      }
+
+      oc++;
+    } else {
+      oc = 1;
     }
-    
-    return sorted + 1;
+
+    sorted++;
+    nums[sorted] = nums[i];
+  }
+
+  return sorted + 1;
 };

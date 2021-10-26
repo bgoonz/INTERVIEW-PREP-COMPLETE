@@ -1,4 +1,4 @@
-// Leetcode #231 
+// Leetcode #231
 // Language: Javascript
 // Problem: https://leetcode.com/problems/power-of-two/
 // Author: Chihung Yu
@@ -11,11 +11,10 @@
 // Hide Tags Math Bit Manipulation
 // Hide Similar Problems (E) Number of 1 Bits (E) Power of Three (E) Power of Four
 
-
 /**
  * @param {number} n
  * @return {boolean}
  */
-var isPowerOfTwo = function(n) {
-    return n <= 0 ? false : (n & (n-1)) === 0;
+var isPowerOfTwo = function (n) {
+  return n <= 0 ? false : (n & (n - 1)) === 0;
 };

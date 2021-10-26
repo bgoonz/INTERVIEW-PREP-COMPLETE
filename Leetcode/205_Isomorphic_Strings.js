@@ -18,33 +18,31 @@
 // Hide Tags Hash Table
 // Hide Similar Problems (E) Word Pattern
 
-
-
 /**
  * @param {string} s
  * @param {string} t
  * @return {boolean}
  */
-var isIsomorphic = function(s, t) {
-    if(s.length !== t.length) {
-        return false;
-    }
-    
-    var hash1 = {};
-    var hash2 = {};
-    
-    for(var i = 0; i < s.length; i++) {
-        hash1[s[i]] = t[i];
-        hash2[t[i]] = s[i];
-    }
-    
-    var result1 = '';
-    var result2 = '';
-    
-    for(i = 0; i < s.length; i++) {
-        result1 += hash1[s[i]];
-        result2 += hash2[t[i]];
-    }
-    
-    return result1 === t && result2 === s;
+var isIsomorphic = function (s, t) {
+  if (s.length !== t.length) {
+    return false;
+  }
+
+  var hash1 = {};
+  var hash2 = {};
+
+  for (var i = 0; i < s.length; i++) {
+    hash1[s[i]] = t[i];
+    hash2[t[i]] = s[i];
+  }
+
+  var result1 = "";
+  var result2 = "";
+
+  for (i = 0; i < s.length; i++) {
+    result1 += hash1[s[i]];
+    result2 += hash2[t[i]];
+  }
+
+  return result1 === t && result2 === s;
 };

@@ -1,4 +1,5 @@
 Before disabling any content in relation to this takedown notice, GitHub
+
 - contacted the owners of some or all of the affected repositories to give them an opportunity to make changes
 - provided information on how to [submit a DMCA Counter Notice](https://docs.github.com/en/articles/guide-to-submitting-a-dmca-counter-notice).
 

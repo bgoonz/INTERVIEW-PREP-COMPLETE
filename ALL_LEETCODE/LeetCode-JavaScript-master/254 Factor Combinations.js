@@ -4,15 +4,15 @@
 //   = 2 x 4.
 // Write a function that takes an integer n and return all possible combinations of its factors.
 
-// Note: 
+// Note:
 // You may assume that n is always positive.
 // Factors should be greater than 1 and less than n.
-// Examples: 
+// Examples:
 // input: 1
-// output: 
+// output:
 // []
 // input: 37
-// output: 
+// output:
 // []
 // input: 12
 // output:
@@ -35,34 +35,32 @@
 // Hide Tags Backtracking
 // Show Similar Problems
 
-
 /**
  * @param {number} n
  * @return {number[][]}
  */
- 
+
 // reference: http://www.cnblogs.com/airwindow/p/4822572.html
-var getFactors = function(n) {
-    var result = [];
-    gatherResult(n, 2, [], result);
-    return result;
+var getFactors = function (n) {
+  var result = [];
+  gatherResult(n, 2, [], result);
+  return result;
 };
 
 function gatherResult(n, start, currentResult, finalResult) {
-    if(n === 1) {
-        if(currentResult.length > 1) {
-            finalResult.push(currentResult.slice());
-        }
-        
-        return;
+  if (n === 1) {
+    if (currentResult.length > 1) {
+      finalResult.push(currentResult.slice());
     }
-    // i = start will ensure ascending order
-    for(var i = start; i <= n; i++) {
-        if(n%i === 0) {
-            currentResult.push(i);
-            gatherResult(n/i, i, currentResult, finalResult);
-            currentResult.pop();    
-        }
+
+    return;
+  }
+  // i = start will ensure ascending order
+  for (var i = start; i <= n; i++) {
+    if (n % i === 0) {
+      currentResult.push(i);
+      gatherResult(n / i, i, currentResult, finalResult);
+      currentResult.pop();
     }
+  }
 }
-    

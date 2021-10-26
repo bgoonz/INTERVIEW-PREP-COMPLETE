@@ -12,8 +12,6 @@
 // Hide Tags Array Two Pointers
 // Hide Similar Problems (E) Remove Element
 
-
-
 /**
  * @param {number[]} nums
  * @return {void} Do not return anything, modify nums in-place instead.
@@ -30,35 +28,32 @@
 //         while(nums[x] !== 0 && x < nums.length) {
 //             x++;
 //         }
-      
+
 //         if(i <= x) {
 //           i = x + 1;
 //         }
-              
+
 //         while(nums[i] === 0) {
 //           i++;
 //         }
 //     }
 // };
 
-
-
-
 // // Simpler but slower algo
-var moveZeroes = function(nums) {
-    y = 0; // y is none zero pointer
+var moveZeroes = function (nums) {
+  y = 0; // y is none zero pointer
 
-    // y only increase when i found a none zero number
-    // i only swap if i found a none zero number
-    for (var i = 0; i < nums.length; i++) {
-        if (nums[i] !== 0) {
-            var tmp = nums[i];
-            nums[i] = nums[y];
-            nums[y] = tmp;
-            y++;
-        }
+  // y only increase when i found a none zero number
+  // i only swap if i found a none zero number
+  for (var i = 0; i < nums.length; i++) {
+    if (nums[i] !== 0) {
+      var tmp = nums[i];
+      nums[i] = nums[y];
+      nums[y] = tmp;
+      y++;
     }
+  }
 
-    return nums;
+  return nums;
 };
-console.log(moveZeroes([0,1,0,3,12]));
+console.log(moveZeroes([0, 1, 0, 3, 12]));

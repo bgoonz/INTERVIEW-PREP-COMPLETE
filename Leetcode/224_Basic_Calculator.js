@@ -26,22 +26,22 @@ Note: Do not use the eval built-in library function.
 //         ch,
 //         j,
 //         i;
-    
+
 //     stack.push(1);
 //     stack.push(1);
-    
+
 //     for (i = 0; i < len; i++) {
 //         ch = s.charAt(i);
-        
+
 //         if (!isNaN(parseInt(ch))) {
 //             num = parseInt(ch);
-            
+
 //             for (j = i + 1; j < len && !isNaN(parseInt(s.charAt(j))); j++) {
 //                 num = num * 10 + parseInt(s.charAt(j));
 //             }
-            
+
 //             sum += stack.pop() * num;
-            
+
 //             i = j - 1;
 //         } else if (ch === '+' || ch === '(') {
 //             stack.push(stack[stack.length - 1]);
@@ -51,11 +51,9 @@ Note: Do not use the eval built-in library function.
 //             stack.pop();
 //         }
 //     }
-    
+
 //     return sum;
 // };
-
-
 
 /**
 Implement a basic calculator to evaluate a simple expression string.
@@ -75,45 +73,32 @@ Note: Do not use the eval built-in library function.
  * @return {number}
  */
 
-
-
 console.log(calculate("10+20-((2-4)*6-5)*6"));
-var calculate = function(s) {
-
-
-
-
-
-}
+var calculate = function (s) {};
 
 function helper(s, i, sign, finalSum, currentSum) {
-    while(i < s.length) {
-        if(s[i].match(/[0-9]/)) {
-            var num = 0;
+  while (i < s.length) {
+    if (s[i].match(/[0-9]/)) {
+      var num = 0;
 
-            while(i < s.length) {
-                if(s[i].match(/[0-9]/)) {
-                    num *= 10;
-                    num += parseInt(s[i]);
-                    i++                    
-                } else {
-                    break;
-                }
-            }
-        } else if(s[i] === '-') {
-
-        } else if(s[i] === '+') {
-            return num + helper(s, i, sign, finalSum, currentSum);
-        } else if(s[i] === '*') {
-
-        } else if(s[i] === '/') {
-
-        } else if(s[i] === '(') {
-
-        } else if(s[i] === ')') {
-
+      while (i < s.length) {
+        if (s[i].match(/[0-9]/)) {
+          num *= 10;
+          num += parseInt(s[i]);
+          i++;
+        } else {
+          break;
         }
-
-        i++;
+      }
+    } else if (s[i] === "-") {
+    } else if (s[i] === "+") {
+      return num + helper(s, i, sign, finalSum, currentSum);
+    } else if (s[i] === "*") {
+    } else if (s[i] === "/") {
+    } else if (s[i] === "(") {
+    } else if (s[i] === ")") {
     }
+
+    i++;
+  }
 }

@@ -28,51 +28,51 @@
  * @param {TreeNode} root
  * @return {number[][]}
  */
-var zigzagLevelOrder = function(root) {
-    // bfs
-    
-    if(!root) {
-        return [];
-    }
-    
-    var curLevel = [];
-    curLevel.push(root);
-    
-    var fromLeft = true;
-    var result = [];
-    var tmpResult = [];
-    var nextLevel = [];
-    
-    while(curLevel.length > 0) {
-        var len = curLevel.length;
-        
-        for(var i = 0; i < len; i++) {
-            var node = curLevel.pop();
-            tmpResult.push(node.val);
-            
-            if(fromLeft) {
-                if(node.left) {
-                    nextLevel.push(node.left);
-                }
-                if(node.right) {
-                    nextLevel.push(node.right);
-                }
-            } else {
-                if(node.right) {
-                    nextLevel.push(node.right);
-                }
-                if(node.left) {
-                    nextLevel.push(node.left);
-                }
-            }
+var zigzagLevelOrder = function (root) {
+  // bfs
+
+  if (!root) {
+    return [];
+  }
+
+  var curLevel = [];
+  curLevel.push(root);
+
+  var fromLeft = true;
+  var result = [];
+  var tmpResult = [];
+  var nextLevel = [];
+
+  while (curLevel.length > 0) {
+    var len = curLevel.length;
+
+    for (var i = 0; i < len; i++) {
+      var node = curLevel.pop();
+      tmpResult.push(node.val);
+
+      if (fromLeft) {
+        if (node.left) {
+          nextLevel.push(node.left);
         }
-        
-        fromLeft = !fromLeft;
-        curLevel = nextLevel;
-        nextLevel = [];
-        result.push(tmpResult);
-        tmpResult = [];
+        if (node.right) {
+          nextLevel.push(node.right);
+        }
+      } else {
+        if (node.right) {
+          nextLevel.push(node.right);
+        }
+        if (node.left) {
+          nextLevel.push(node.left);
+        }
+      }
     }
-    
-    return result;
+
+    fromLeft = !fromLeft;
+    curLevel = nextLevel;
+    nextLevel = [];
+    result.push(tmpResult);
+    tmpResult = [];
+  }
+
+  return result;
 };

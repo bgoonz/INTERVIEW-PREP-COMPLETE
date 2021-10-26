@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-const lengthOfLongestSubstring = function (s) {
+const lengthOfLongestSubstring = s => {
   // var p=0, q=0; //p: start of the sub, q: end of the queue
 
   //hashmap in js????? Array.indexOf

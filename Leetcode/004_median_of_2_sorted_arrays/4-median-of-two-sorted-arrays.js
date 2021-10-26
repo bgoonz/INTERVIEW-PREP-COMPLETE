@@ -4,7 +4,7 @@
  * @return {number}
  */
 
-const findMedianSortedArrays = function (A, B) {
+const findMedianSortedArrays = (A, B) => {
   let m = A.length,
     n = B.length;
 

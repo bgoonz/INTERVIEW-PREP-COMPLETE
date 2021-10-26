@@ -13,37 +13,34 @@
 
 // There can be other solutions as well like (2, 2, 6), (2, 4, 4), (2, 3, 5).. etc.
 
-
-
-function snakeAndLadder(moves, n){
+function snakeAndLadder(moves, n) {
   var visited = Array(n).fill(false);
   visited[0] = true;
   var queue = [];
   queue.push(0);
 
   var dist = 0;
-  
-  while(queue.length > 0) {
+
+  while (queue.length > 0) {
     var len = queue.length;
 
-    for(var j = 0; j < len; j++) {
+    for (var j = 0; j < len; j++) {
       var move = queue.shift();
-      
-      if(move === n - 1) {
+
+      if (move === n - 1) {
         return dist;
       }
-      
-      for(var i = move + 1; i <= move + 6; i++) {
-        
-        if(!visited[i]) {
-          visited[i] = true;  
-        
-          if(moves[i] !== -1) {
+
+      for (var i = move + 1; i <= move + 6; i++) {
+        if (!visited[i]) {
+          visited[i] = true;
+
+          if (moves[i] !== -1) {
             newMove = moves[i];
           } else {
             newMove = i;
           }
-          
+
           queue.push(newMove);
         }
       }
@@ -51,19 +48,18 @@ function snakeAndLadder(moves, n){
 
     dist++;
   }
-  
+
   return -1;
 }
 
 var moves = [];
 var n = 100;
-for(var i = 0; i < n; i++){
+for (var i = 0; i < n; i++) {
   moves.push(-1);
 }
 
 moves[2] = 53;
 moves[41] = 99;
 moves[54] = 40;
-
 
 console.log(snakeAndLadder(moves, n));

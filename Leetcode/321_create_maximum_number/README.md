@@ -12,16 +12,16 @@ Then it occurs to me that I can deal with num1 and num2 independantly: If I find
 
 So in the end, the solution is:
 
-	For i in range(0, len(num1)):
-		find largest subsequence of length i from num1
-		find largest subsequence of length (k-i) from num2
-		merge the 2 by picking the larger value from the left side of 2 subsequences
+    For i in range(0, len(num1)):
+    	find largest subsequence of length i from num1
+    	find largest subsequence of length (k-i) from num2
+    	merge the 2 by picking the larger value from the left side of 2 subsequences
 
 There is one more detail, during the merge, if s[0]==s[1], then what? The intuition is "it doesn't matter, to pick either one is ok", but actually, it matters:
 
-	355555
+    355555
     366666
 
 If I pick the first 3, the result is 355555366666, else, the result is 366666355555.
 
-You have to compare the whole sequence to decide which num to pick.   
+You have to compare the whole sequence to decide which num to pick.

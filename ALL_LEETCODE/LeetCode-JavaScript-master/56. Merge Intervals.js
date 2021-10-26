@@ -8,40 +8,39 @@
 // Hide Tags Array Sort
 // Hide Similar Problems (H) Insert Interval (E) Meeting Rooms (M) Meeting Rooms II
 
- /**
-  * Definition for an interval.
-  * function Interval(start, end) {
-  *     this.start = start;
-  *     this.end = end;
-  * }
-  */
- /**
-  * @param {Interval[]} intervals
-  * @return {Interval[]}
-  */
+/**
+ * Definition for an interval.
+ * function Interval(start, end) {
+ *     this.start = start;
+ *     this.end = end;
+ * }
+ */
+/**
+ * @param {Interval[]} intervals
+ * @return {Interval[]}
+ */
 
+var merge = function (intervals) {
+  var res = [];
 
- var merge = function(intervals) {
-     var res = [];
-     
-     intervals.sort((i1, i2) => i1.start > i2.start ? 1 : -1 );
-     
-     if(intervals.length) {
-         res.push(intervals[0]);
-     }
-     
-     for(var i = 1; i < intervals.length; i++) {
-         var interval = intervals[i];
-         var last = res.pop();
-         
-         if(interval.start > last.end) {
-             res.push(last);
-             res.push(interval);
-         } else {
-             last.end = Math.max(last.end, interval.end);
-             res.push(last);
-         }
-     }
-     
-     return res;
- };
+  intervals.sort((i1, i2) => (i1.start > i2.start ? 1 : -1));
+
+  if (intervals.length) {
+    res.push(intervals[0]);
+  }
+
+  for (var i = 1; i < intervals.length; i++) {
+    var interval = intervals[i];
+    var last = res.pop();
+
+    if (interval.start > last.end) {
+      res.push(last);
+      res.push(interval);
+    } else {
+      last.end = Math.max(last.end, interval.end);
+      res.push(last);
+    }
+  }
+
+  return res;
+};
