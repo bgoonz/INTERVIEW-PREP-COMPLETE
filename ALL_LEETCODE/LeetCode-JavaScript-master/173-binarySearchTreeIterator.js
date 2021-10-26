@@ -11,40 +11,40 @@
  * @param {TreeNode} root - root of the binary search tree
  */
 // Is there a better solution?
-var BSTIterator = function(root) {
-    this.stack = [];
-    this.pushStack(root);
+var BSTIterator = function (root) {
+  this.stack = [];
+  this.pushStack(root);
 };
 
 /**
  * @this BSTIterator
  * @returns {boolean} - whether we have a next smallest number
  */
-BSTIterator.prototype.hasNext = function() {
-    return this.stack.length > 0 ? true : false;
+BSTIterator.prototype.hasNext = function () {
+  return this.stack.length > 0 ? true : false;
 };
 
 /**
  * @this BSTIterator
  * @returns {number} - the next smallest number
  */
-BSTIterator.prototype.next = function() {
-    var small = this.stack.pop();
-    if (small.right) {
-        this.pushStack(small.right);
-    }
-    return small.val;
+BSTIterator.prototype.next = function () {
+  var small = this.stack.pop();
+  if (small.right) {
+    this.pushStack(small.right);
+  }
+  return small.val;
 };
 
-BSTIterator.prototype.pushStack = function(node) {
-    while (node) {
-        this.stack.push(node);
-        node = node.left;
-    }
+BSTIterator.prototype.pushStack = function (node) {
+  while (node) {
+    this.stack.push(node);
+    node = node.left;
+  }
 };
 
 /**
  * Your BSTIterator will be called like this:
  * var i = new BSTIterator(root), a = [];
  * while (i.hasNext()) a.push(i.next());
-*/
+ */

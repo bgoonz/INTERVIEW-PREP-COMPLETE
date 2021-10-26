@@ -10,36 +10,36 @@
 // string convert(string text, int nRows);
 // convert("PAYPALISHIRING", 3) should return "PAHNAPLSIIGYIR".
 
-
 /**
  * @param {string} s
  * @param {number} numRows
  * @return {string}
  */
-var convert = function(s, numRows) {
-  if(s === null || s.length === 0 || numRows <= 0) {
+var convert = function (s, numRows) {
+  if (s === null || s.length === 0 || numRows <= 0) {
     return "";
   }
-  
-  if(numRows === 1) {
+
+  if (numRows === 1) {
     return s;
   }
-  
-  var res = '';
+
+  var res = "";
   var size = 2 * numRows - 2;
-  
-  for(var i = 0; i < numRows; i++) {
-    for(var j = i; j < s.length; j += size) {
+
+  for (var i = 0; i < numRows; i++) {
+    for (var j = i; j < s.length; j += size) {
       res += s[j];
-      
-      if(i !== 0 && i !== numRows - 1) { // except first and last row
+
+      if (i !== 0 && i !== numRows - 1) {
+        // except first and last row
         var tmp = j + size - 2 * i;
-        if(tmp < s.length) {
+        if (tmp < s.length) {
           res += s[tmp];
         }
       }
     }
   }
-  
+
   return res;
 };

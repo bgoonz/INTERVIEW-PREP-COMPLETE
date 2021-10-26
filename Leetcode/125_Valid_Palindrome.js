@@ -13,56 +13,54 @@
 // Hide Tags Two Pointers String
 // Hide Similar Problems (E) Palindrome Linked List
 
-
 /**
  * @param {string} s
  * @return {boolean}
  */
-var isPalindrome = function(s) {
-    s = s.toLowerCase();
-    var beg = 0;
-    var end = s.length - 1;
-    
-    while(beg < end) {
-        if(!s[beg].match(/[a-z0-9]/)) {
-            beg++;
-        } else if(!s[end].match(/[a-z0-9]/)) {
-            end--;
-        } else if(s[beg] !== s[end]) {
-            return false;
-        } else {
-            end--;
-            beg++;
-        }
+var isPalindrome = function (s) {
+  s = s.toLowerCase();
+  var beg = 0;
+  var end = s.length - 1;
+
+  while (beg < end) {
+    if (!s[beg].match(/[a-z0-9]/)) {
+      beg++;
+    } else if (!s[end].match(/[a-z0-9]/)) {
+      end--;
+    } else if (s[beg] !== s[end]) {
+      return false;
+    } else {
+      end--;
+      beg++;
     }
-    
-    return true;
+  }
+
+  return true;
 };
 
-
 /**
  * @param {string} s
  * @return {boolean}
  */
-var isPalindrome = function(s) {
-    var head = 0;
-    var tail = s.length - 1;
-    
-    s = s.toLowerCase();
-    
-    while(head < tail) {
-        while(s[head] && !s[head].match(/[a-z0-9]/)) {
-            head++;
-        }
-        while(s[tail] && !s[tail].match(/[a-z0-9]/)) {
-            tail--;
-        }
-        if(head < tail && s[head] !== s[tail]) {
-            return false;
-        }
-        head++;
-        tail--;
+var isPalindrome = function (s) {
+  var head = 0;
+  var tail = s.length - 1;
+
+  s = s.toLowerCase();
+
+  while (head < tail) {
+    while (s[head] && !s[head].match(/[a-z0-9]/)) {
+      head++;
     }
-    
-    return true;
+    while (s[tail] && !s[tail].match(/[a-z0-9]/)) {
+      tail--;
+    }
+    if (head < tail && s[head] !== s[tail]) {
+      return false;
+    }
+    head++;
+    tail--;
+  }
+
+  return true;
 };

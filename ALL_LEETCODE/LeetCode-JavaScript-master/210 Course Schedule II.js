@@ -23,7 +23,6 @@
 // Hide Tags Depth-first Search Breadth-first Search Graph Topological Sort
 // Hide Similar Problems (M) Course Schedule (H) Alien Dictionary (M) Minimum Height Trees
 
-
 // 160ms
 
 /**
@@ -31,68 +30,69 @@
  * @param {number[][]} prerequisites
  * @return {number[]}
  */
-var findOrder = function(numCourses, prerequisites) {
-    var courseWithOtherCoursesDependOn = {};
-    var courseDependsOnOtherCourses = {};
-    
-    prerequisites.forEach((prerequisite)=> {
-        var prereqCourse = prerequisite[1];
-        var courseToTake = prerequisite[0]
-        
-        
-        courseWithOtherCoursesDependOn[prereqCourse] = courseWithOtherCoursesDependOn[prereqCourse] || new Set();
-        courseWithOtherCoursesDependOn[prereqCourse].add(courseToTake);
-        
-        courseDependsOnOtherCourses[prereqCourse] = courseDependsOnOtherCourses[prereqCourse] || new Set();
-        courseDependsOnOtherCourses[courseToTake] = courseDependsOnOtherCourses[courseToTake] || new Set();
-        courseDependsOnOtherCourses[courseToTake].add(prereqCourse);
-    });
-    
-    var courseWithNoDependencies = [];
-    
-    for(var i in courseDependsOnOtherCourses) {
-        if(courseDependsOnOtherCourses[i].size === 0) {
-            courseWithNoDependencies.push(i);
-        }
-    }
-    
+var findOrder = function (numCourses, prerequisites) {
+  var courseWithOtherCoursesDependOn = {};
+  var courseDependsOnOtherCourses = {};
 
-    // pretty much the same as Course Schedule I. Just need to add those non root
-    var courseOrders = [];
-    var hasCourseOrders = {};
-    
-    while(courseWithNoDependencies.length > 0) {
-        var rootCourse = courseWithNoDependencies.shift();
-        
-        courseOrders.push(parseInt(rootCourse));
-        hasCourseOrders[parseInt(rootCourse)] = true;
-        
-        if(courseWithOtherCoursesDependOn[rootCourse]) {
-            courseWithOtherCoursesDependOn[rootCourse].forEach((childCourse)=> {
-                courseDependsOnOtherCourses[childCourse].delete(parseInt(rootCourse));
-                
-                if(courseDependsOnOtherCourses[childCourse].size === 0) {
-                    courseWithNoDependencies.push(childCourse + '');
-                }
-            });
-        }
+  prerequisites.forEach((prerequisite) => {
+    var prereqCourse = prerequisite[1];
+    var courseToTake = prerequisite[0];
+
+    courseWithOtherCoursesDependOn[prereqCourse] =
+      courseWithOtherCoursesDependOn[prereqCourse] || new Set();
+    courseWithOtherCoursesDependOn[prereqCourse].add(courseToTake);
+
+    courseDependsOnOtherCourses[prereqCourse] =
+      courseDependsOnOtherCourses[prereqCourse] || new Set();
+    courseDependsOnOtherCourses[courseToTake] =
+      courseDependsOnOtherCourses[courseToTake] || new Set();
+    courseDependsOnOtherCourses[courseToTake].add(prereqCourse);
+  });
+
+  var courseWithNoDependencies = [];
+
+  for (var i in courseDependsOnOtherCourses) {
+    if (courseDependsOnOtherCourses[i].size === 0) {
+      courseWithNoDependencies.push(i);
     }
-    
-    for(i in courseDependsOnOtherCourses) {
-        if(courseDependsOnOtherCourses[i].size !== 0) {
-            return [];
+  }
+
+  // pretty much the same as Course Schedule I. Just need to add those non root
+  var courseOrders = [];
+  var hasCourseOrders = {};
+
+  while (courseWithNoDependencies.length > 0) {
+    var rootCourse = courseWithNoDependencies.shift();
+
+    courseOrders.push(parseInt(rootCourse));
+    hasCourseOrders[parseInt(rootCourse)] = true;
+
+    if (courseWithOtherCoursesDependOn[rootCourse]) {
+      courseWithOtherCoursesDependOn[rootCourse].forEach((childCourse) => {
+        courseDependsOnOtherCourses[childCourse].delete(parseInt(rootCourse));
+
+        if (courseDependsOnOtherCourses[childCourse].size === 0) {
+          courseWithNoDependencies.push(childCourse + "");
         }
+      });
     }
-    
-    if(courseOrders.length < numCourses) {
-        for(i = 0; i < numCourses; i++) {
-            if(!hasCourseOrders[i]) {
-                courseOrders.push(i);
-            }
-        }
+  }
+
+  for (i in courseDependsOnOtherCourses) {
+    if (courseDependsOnOtherCourses[i].size !== 0) {
+      return [];
     }
-    
-    return courseOrders;
+  }
+
+  if (courseOrders.length < numCourses) {
+    for (i = 0; i < numCourses; i++) {
+      if (!hasCourseOrders[i]) {
+        courseOrders.push(i);
+      }
+    }
+  }
+
+  return courseOrders;
 };
 
-console.log(findOrder(3, [[1,0]]));
+console.log(findOrder(3, [[1, 0]]));

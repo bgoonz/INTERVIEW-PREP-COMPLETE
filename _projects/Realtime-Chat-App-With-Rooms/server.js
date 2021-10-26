@@ -40,12 +40,10 @@ io.on("connection", (socket) => {
     socket.to(room).broadcast.emit("user-connected", name);
   });
   socket.on("send-chat-message", (room, message) => {
-    socket
-      .to(room)
-      .broadcast.emit("chat-message", {
-        message: message,
-        name: rooms[room].users[socket.id],
-      });
+    socket.to(room).broadcast.emit("chat-message", {
+      message: message,
+      name: rooms[room].users[socket.id],
+    });
   });
   socket.on("disconnect", () => {
     getUserRooms(socket).forEach((room) => {

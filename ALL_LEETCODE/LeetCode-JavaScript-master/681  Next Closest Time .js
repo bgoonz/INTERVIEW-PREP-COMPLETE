@@ -13,9 +13,6 @@
 // Output: "22:22"
 // Explanation: The next closest time choosing from digits 2, 3, 5, 9, is 22:22. It may be assumed that the returned time is next day's time since it is smaller than the input time numerically.
 
-
-
-
 // Approach #1: Simulation [Accepted]
 // Intuition and Algorithm
 
@@ -27,49 +24,49 @@
  * @param {string} time
  * @return {string}
  */
-var nextClosestTime = function(time) {
-    let cur = 60 * parseInt(time.substring(0, 2));
-    cur += parseInt(time.substring(3));
-    const allowed = new Set();
+var nextClosestTime = function (time) {
+  let cur = 60 * parseInt(time.substring(0, 2));
+  cur += parseInt(time.substring(3));
+  const allowed = new Set();
 
-    for(var i = 0; i < time.length; i++) {
-  	    if (time[i] !== ':') {
-  		    allowed.add(parseInt(time[i]));
-  	    }
+  for (var i = 0; i < time.length; i++) {
+    if (time[i] !== ":") {
+      allowed.add(parseInt(time[i]));
     }
-    
-    while(true) {
-        cur = (cur + 1) % (24*60);
-        var curTime = [
-            Math.floor(cur / 60 / 10), // hour 24 -> 2
-            Math.floor(cur / 60) % 10, // hour 24 -> 4
-            Math.floor((cur % 60) / 10), // minutes 59 -> 5
-            cur % 60 % 10, // minutes 59 -> 9
-        ];
+  }
 
-        for(i = 0; i < curTime.length; i++) {
-            var t = curTime[i];            
-            if (!allowed.has(t)) {
-                break;
-            }
-            if (i === curTime.length - 1) {
-                let hour = Math.floor(cur / 60);
-                let min = cur % 60;
-                
-                if (hour < 10) {
-                    hour = '0' + hour;
-                } else {
-                    hour = '' + hour;
-                }
-                
-                if (min < 10) {
-                    min = '0' + min;
-                } else {
-                    min = '' + min;
-                }
-                
-                return hour + ':' + min;
-            }
+  while (true) {
+    cur = (cur + 1) % (24 * 60);
+    var curTime = [
+      Math.floor(cur / 60 / 10), // hour 24 -> 2
+      Math.floor(cur / 60) % 10, // hour 24 -> 4
+      Math.floor((cur % 60) / 10), // minutes 59 -> 5
+      (cur % 60) % 10, // minutes 59 -> 9
+    ];
+
+    for (i = 0; i < curTime.length; i++) {
+      var t = curTime[i];
+      if (!allowed.has(t)) {
+        break;
+      }
+      if (i === curTime.length - 1) {
+        let hour = Math.floor(cur / 60);
+        let min = cur % 60;
+
+        if (hour < 10) {
+          hour = "0" + hour;
+        } else {
+          hour = "" + hour;
         }
+
+        if (min < 10) {
+          min = "0" + min;
+        } else {
+          min = "" + min;
+        }
+
+        return hour + ":" + min;
+      }
     }
+  }
 };

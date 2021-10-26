@@ -7,33 +7,29 @@
  * @param {number} k
  * @return {boolean}
  */
-var containsNearbyDuplicate = function(nums, k) {
-    if(k <= 0){
-        return false;
-    }
-    
-    if(nums === null || nums.length === 0){
-        return false;
-    }
-    
-    var hash = {};
-    
-    for(var i = 0; i < nums.length; i++){
-        var val = nums[i];
-        if(hash[val] !== undefined){
-            if((i - hash[val]) <= k){
-                return true;
-            } else {
-                hash[val] = i;
-            }
-        } else {
-            hash[val] = i;
-        }
-        
-        
-    }
-
+var containsNearbyDuplicate = function (nums, k) {
+  if (k <= 0) {
     return false;
+  }
+
+  if (nums === null || nums.length === 0) {
+    return false;
+  }
+
+  var hash = {};
+
+  for (var i = 0; i < nums.length; i++) {
+    var val = nums[i];
+    if (hash[val] !== undefined) {
+      if (i - hash[val] <= k) {
+        return true;
+      } else {
+        hash[val] = i;
+      }
+    } else {
+      hash[val] = i;
+    }
+  }
+
+  return false;
 };
-
-

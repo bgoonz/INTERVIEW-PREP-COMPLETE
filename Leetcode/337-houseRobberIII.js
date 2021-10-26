@@ -18,48 +18,55 @@
  * @param {TreeNode} root
  * @return {number}
  */
- var rob = function(root) {
-     var result = robDFS(root);
-     return Math.max(result[0], result[1]);
- };
-
- var robDFS = function(root) {
-     if (!root) return [0, 0];
-     var result = [];
-     var leftResults = robDFS(root.left);
-     var rightResults = robDFS(root.right);
-     result[0] = root.val + leftResults[1] + rightResults[1];
-     result[1] = Math.max(leftResults[0], leftResults[1]) + Math.max(rightResults[0], rightResults[1]);
-     return result;
- };
-
-
-// not right, why?
-var rob = function(root) {
-    var cachedResult = {};
-    return robHelper(root, cachedResult);
+var rob = function (root) {
+  var result = robDFS(root);
+  return Math.max(result[0], result[1]);
 };
 
-var robHelper = function(root, cachedResult) {
-    if (!root)  return 0;
-    if (cachedResult.hasOwnProperty(root))  {
-        return cachedResult[root];
-    }
-    var val = 0;
+var robDFS = function (root) {
+  if (!root) return [0, 0];
+  var result = [];
+  var leftResults = robDFS(root.left);
+  var rightResults = robDFS(root.right);
+  result[0] = root.val + leftResults[1] + rightResults[1];
+  result[1] =
+    Math.max(leftResults[0], leftResults[1]) +
+    Math.max(rightResults[0], rightResults[1]);
+  return result;
+};
 
-    if (root.left !== null) {
-        val += robHelper(root.left.left, cachedResult) + robHelper(root.left.right, cachedResult);
-            console.log(root, val);
-    }
+// not right, why?
+var rob = function (root) {
+  var cachedResult = {};
+  return robHelper(root, cachedResult);
+};
 
-    if (root.right !== null) {
-        val += robHelper(root.right.left, cachedResult) + robHelper(root.right.right, cachedResult);
-            console.log(root, val);
+var robHelper = function (root, cachedResult) {
+  if (!root) return 0;
+  if (cachedResult.hasOwnProperty(root)) {
+    return cachedResult[root];
+  }
+  var val = 0;
 
-    }
+  if (root.left !== null) {
+    val +=
+      robHelper(root.left.left, cachedResult) +
+      robHelper(root.left.right, cachedResult);
+    console.log(root, val);
+  }
 
-    val = Math.max(val + root.val, robHelper(root.left, cachedResult) + robHelper(root.right, cachedResult));
-    cachedResult[root] = val;
+  if (root.right !== null) {
+    val +=
+      robHelper(root.right.left, cachedResult) +
+      robHelper(root.right.right, cachedResult);
+    console.log(root, val);
+  }
 
-    return val;
+  val = Math.max(
+    val + root.val,
+    robHelper(root.left, cachedResult) + robHelper(root.right, cachedResult)
+  );
+  cachedResult[root] = val;
+
+  return val;
 };

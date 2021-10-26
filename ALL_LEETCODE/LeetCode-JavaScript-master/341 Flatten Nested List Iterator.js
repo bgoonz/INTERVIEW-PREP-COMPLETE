@@ -16,8 +16,6 @@
 // Hide Tags Stack Design
 // Hide Similar Problems (M) Flatten 2D Vector (M) Zigzag Iterator
 
-
-
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -48,48 +46,47 @@
  * @constructor
  * @param {NestedInteger[]} nestedList
  */
-var NestedIterator = function(nestedList) {
-    this.stack = [];
-    
-    for(var i = nestedList.length; i--;) {
-        this.stack.push(nestedList[i]);
-    }
-};
+var NestedIterator = function (nestedList) {
+  this.stack = [];
 
+  for (var i = nestedList.length; i--; ) {
+    this.stack.push(nestedList[i]);
+  }
+};
 
 /**
  * @this NestedIterator
  * @returns {boolean}
  */
-NestedIterator.prototype.hasNext = function() {
-    // keep looping until we found insert an integer in the stack
-    while(this.stack.length > 0) {
-        var next = this.stack[this.stack.length - 1];
-        
-        if(next.isInteger()) {
-            return true;
-        }
-        
-        this.stack.pop();
-        var list = next.getList();
-        for(var i = list.length; i--;) {
-            this.stack.push(list[i]);
-        }
+NestedIterator.prototype.hasNext = function () {
+  // keep looping until we found insert an integer in the stack
+  while (this.stack.length > 0) {
+    var next = this.stack[this.stack.length - 1];
+
+    if (next.isInteger()) {
+      return true;
     }
-        
-    return false;
+
+    this.stack.pop();
+    var list = next.getList();
+    for (var i = list.length; i--; ) {
+      this.stack.push(list[i]);
+    }
+  }
+
+  return false;
 };
 
 /**
  * @this NestedIterator
  * @returns {integer}
  */
-NestedIterator.prototype.next = function() {
-    return this.stack.pop();
+NestedIterator.prototype.next = function () {
+  return this.stack.pop();
 };
 
 /**
  * Your NestedIterator will be called like this:
  * var i = new NestedIterator(nestedList), a = [];
  * while (i.hasNext()) a.push(i.next());
-*/
+ */

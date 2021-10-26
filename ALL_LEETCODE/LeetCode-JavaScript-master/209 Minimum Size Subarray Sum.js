@@ -15,7 +15,6 @@
 // Hide Tags Array Two Pointers Binary Search
 // Hide Similar Problems (H) Minimum Window Substring (M) Maximum Size Subarray Sum Equals k
 
-
 /**
  * @param {number} s
  * @param {number[]} nums
@@ -23,24 +22,24 @@
  */
 
 // O(n) solution
-var minSubArrayLen = function(s, nums) {
-    var sum = 0;
-    var left = 0;
-    var right = 0;
-    var minLen = Infinity;
-    
-    while(right < nums.length) {
-        while(right < nums.length && sum < s) {
-            sum += nums[right++];
-        }
-        
-        while(sum >= s) {
-            minLen = Math.min(minLen, right - left);
-            sum -= nums[left++];
-        }
+var minSubArrayLen = function (s, nums) {
+  var sum = 0;
+  var left = 0;
+  var right = 0;
+  var minLen = Infinity;
+
+  while (right < nums.length) {
+    while (right < nums.length && sum < s) {
+      sum += nums[right++];
     }
-    
-    return minLen > nums.length ? 0 : minLen;
+
+    while (sum >= s) {
+      minLen = Math.min(minLen, right - left);
+      sum -= nums[left++];
+    }
+  }
+
+  return minLen > nums.length ? 0 : minLen;
 };
 
 // The O(NlogN) solution is to sum up the array

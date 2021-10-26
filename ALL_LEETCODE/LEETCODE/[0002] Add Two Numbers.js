@@ -18,38 +18,36 @@
  * @return {ListNode}
  */
 
-
-
 // value reverse helps to asslign the first digit or both linklist
-var addTwoNumbers = function(l1, l2) {
-    const answer = new ListNode(0);
-    var node = answer;
-    var carry = 0;
-    while(l1 !== null || l2 !== null || carry !== 0) {
-        var val = 0;
-        if (carry !== 0) {
-            val += carry;
-        }
-        carry = 0;
-        if (l1 !== null) {
-            val += l1.val;
-        }
-        if (l2 !== null) {
-            val += l2.val;
-        }
-        if (val > 9) {
-            val -= 10;
-            carry = 1;
-        }
-        node.next = new ListNode(val);
-        node = node.next;
-        if (l1 !== null) {
-            l1 = l1.next;
-        }
-        if (l2 !== null) {
-            l2 = l2.next;
-        }
+var addTwoNumbers = function (l1, l2) {
+  const answer = new ListNode(0);
+  var node = answer;
+  var carry = 0;
+  while (l1 !== null || l2 !== null || carry !== 0) {
+    var val = 0;
+    if (carry !== 0) {
+      val += carry;
     }
+    carry = 0;
+    if (l1 !== null) {
+      val += l1.val;
+    }
+    if (l2 !== null) {
+      val += l2.val;
+    }
+    if (val > 9) {
+      val -= 10;
+      carry = 1;
+    }
+    node.next = new ListNode(val);
+    node = node.next;
+    if (l1 !== null) {
+      l1 = l1.next;
+    }
+    if (l2 !== null) {
+      l2 = l2.next;
+    }
+  }
 
-    return answer.next;
+  return answer.next;
 };

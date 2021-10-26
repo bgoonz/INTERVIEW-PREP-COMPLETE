@@ -7,4 +7,4 @@ We will do insertion sort with binary search to find the place to insert, we nee
 
 `C2-C1` is the number of smaller element after N
 
-But we need to output the counts in original sequence, this can be done by carrying the original index with the number, and finally sorting by this index. 
+But we need to output the counts in original sequence, this can be done by carrying the original index with the number, and finally sorting by this index.

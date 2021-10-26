@@ -7,30 +7,28 @@ function* RateLimiter(rate, per, cbFunc) {
   var rate = rate;
   var per = per;
   var allowance = rate;
-  
-  
-  while(true){
+
+  while (true) {
     var currentTime = Date.now();
-    var elapsedTime = (currentTime - lastTime)/SECOND_IN_MS;    
+    var elapsedTime = (currentTime - lastTime) / SECOND_IN_MS;
     lastTime = currentTime;
-    allowance += elapsedTime*(rate/per);
-    
-    
-    if(allowance > rate) {
-      allowance = rate; 
-    } 
-    
-    if(allowance < 1.0) {
-      yield cbFunc(false); 
+    allowance += elapsedTime * (rate / per);
+
+    if (allowance > rate) {
+      allowance = rate;
+    }
+
+    if (allowance < 1.0) {
+      yield cbFunc(false);
     } else {
       allowance -= 1;
       yield cbFunc(true);
     }
-  } 
+  }
 }
 
-var rl = RateLimiter(RATE, PER, function(output){
-  console.log(output)
+var rl = RateLimiter(RATE, PER, function (output) {
+  console.log(output);
 });
 
 rl.next();
@@ -41,7 +39,7 @@ rl.next();
 
 rl.next();
 
-setTimeout(()=>{
+setTimeout(() => {
   rl.next();
   rl.next();
-},PER/RATE*SECOND_IN_MS);
+}, (PER / RATE) * SECOND_IN_MS);

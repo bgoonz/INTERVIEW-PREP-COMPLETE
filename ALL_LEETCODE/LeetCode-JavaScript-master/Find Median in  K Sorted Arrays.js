@@ -1,9 +1,9 @@
-var data  = [
-  [1,2,3,4,5,6,7,19],
-  [2,3,5,7,8,10,11],
-  [2,3,5,7,8,9],
-  [10,13,15,17,18,100],
-  [5,8,100,1002,1033,1044]
+var data = [
+  [1, 2, 3, 4, 5, 6, 7, 19],
+  [2, 3, 5, 7, 8, 10, 11],
+  [2, 3, 5, 7, 8, 9],
+  [10, 13, 15, 17, 18, 100],
+  [5, 8, 100, 1002, 1033, 1044],
 ];
 
 findMedianInKSortedArrays(data);
@@ -11,32 +11,28 @@ findMedianInKSortedArrays(data);
 function findMedianInKSortedArrays(arrs) {
   var len = 0;
 
-  for(var i = 0; i < arrs.length; i++) {
+  for (var i = 0; i < arrs.length; i++) {
     len += arrs[i].length;
   }
 
-  var kth = Math.floor(len/arrs.length);
+  var kth = Math.floor(len / arrs.length);
   var list = [];
-
-
 }
-
 
 function findMedianInKArrs(arrs) {
   var len = 0;
-  for(var i = 0; i < arrs.length; i++) {
+  for (var i = 0; i < arrs.length; i++) {
     len = arrs[i].length;
   }
 
   findKthInKArrs(arrs, len);
 }
 
-
 function findKthInKArrs(arrs, n) {
   var min = Infinity;
   var max = -Infinity;
 
-  for(var i = 0; i < arrs.length; i++) {
+  for (var i = 0; i < arrs.length; i++) {
     min = Math.min(arrs[i][0], min);
     max = Math.max(arrs[i][arrs[i].length - 1], max);
   }
@@ -44,53 +40,35 @@ function findKthInKArrs(arrs, n) {
   var removed = 0;
   var dividers = [];
 
-  for(var i = 0; i < arrs.length; i++) {
-
-  }
+  for (var i = 0; i < arrs.length; i++) {}
 }
-
-
-
-
 
 function findKth(a, m, b, n, k) {
-    // always assume that m is equal or smaller than n
-    if(m > n) {
-        return findKth(b, n, a, m, k);
-    }
-    
-    if(m === 0) {
-        return b[k-1];
-    }
-    
-    if(k === 1) {
-        return Math.min(a[0],b[0]);
-    }
-    
-    // divide k into two parts
-    var pa = Math.min(parseInt(k/2), m);
-    var pb = k - pa;
-    
-    if(a[pa - 1] < b[pb - 1]) {
-        return findKth(a.slice(pa), m - pa, b, n, k - pa);
-    } else if(a[pa - 1] > b[pb - 1]) {
-        return findKth(a, m, b.slice(pb), n - pb, k - pb);
-    } else {
-        return a[pa - 1];
-    }
+  // always assume that m is equal or smaller than n
+  if (m > n) {
+    return findKth(b, n, a, m, k);
+  }
+
+  if (m === 0) {
+    return b[k - 1];
+  }
+
+  if (k === 1) {
+    return Math.min(a[0], b[0]);
+  }
+
+  // divide k into two parts
+  var pa = Math.min(parseInt(k / 2), m);
+  var pb = k - pa;
+
+  if (a[pa - 1] < b[pb - 1]) {
+    return findKth(a.slice(pa), m - pa, b, n, k - pa);
+  } else if (a[pa - 1] > b[pb - 1]) {
+    return findKth(a, m, b.slice(pb), n - pb, k - pb);
+  } else {
+    return a[pa - 1];
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // function findMedian(arrs) {
 //   var n = 0;

@@ -42,25 +42,24 @@
 //     arr[j] = tmp;
 // }
 
+var sortColors = function (nums) {
+  var redIdx = 0;
+  var blueIdx = nums.length - 1;
+  var i = 0;
 
-var sortColors = function(nums) {
-    var redIdx = 0;
-    var blueIdx = nums.length - 1;
-    var i = 0;
-    
-    while(i <= blueIdx) {
-        if(nums[i] === 0) {
-            swap(nums, i++, redIdx++);
-        } else if(nums[i] === 2) {
-            swap(nums, i, blueIdx--);
-        } else {
-            i++;
-        }
+  while (i <= blueIdx) {
+    if (nums[i] === 0) {
+      swap(nums, i++, redIdx++);
+    } else if (nums[i] === 2) {
+      swap(nums, i, blueIdx--);
+    } else {
+      i++;
     }
-    
-    function swap(nums, i, j) {
-        var tmp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = tmp;
-    }
+  }
+
+  function swap(nums, i, j) {
+    var tmp = nums[i];
+    nums[i] = nums[j];
+    nums[j] = tmp;
+  }
 };

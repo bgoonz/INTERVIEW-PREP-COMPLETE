@@ -9,8 +9,6 @@
 // Show Tags
 // Show Similar Problems
 
-
-
 // Leetcode #198
 // Language: Javascript
 // Problem: https://leetcode.com/problems/house-robber/
@@ -19,39 +17,37 @@
  * @param {number[]} nums
  * @return {number}
  */
-var rob = function(nums) {
-    if(nums === null){
-        return nums;
-    }
-    
-    var even = 0;
-    var odd = 0;
-    
-    for(var i = 0; i < nums.length; i++){
-        if(i%2 === 0){
-            even = Math.max(even + nums[i], odd);
-        } else {
-            odd = Math.max(odd + nums[i], even);
-        }
-    }
-    
-    return Math.max(even,odd);
-};
+var rob = function (nums) {
+  if (nums === null) {
+    return nums;
+  }
 
+  var even = 0;
+  var odd = 0;
+
+  for (var i = 0; i < nums.length; i++) {
+    if (i % 2 === 0) {
+      even = Math.max(even + nums[i], odd);
+    } else {
+      odd = Math.max(odd + nums[i], even);
+    }
+  }
+
+  return Math.max(even, odd);
+};
 
 // var rob = function(nums) {
 //     var dp = [];
-    
+
 //     if(!nums || nums.length === 0) {
 //         return 0;
 //     }
 //     // dp[i] is the max amount can rob on ith house
-    
+
 //     for(var i = 0; i < nums.length; i++){
 //         var num = nums[i];
 //         dp[i] = Math.max((dp[i-2] || 0) + num, (dp[i-1] || 0));
 //     }
-    
+
 //     return dp[nums.length - 1];
 // };
-

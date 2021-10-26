@@ -541,211 +541,214 @@
 - [ALL Prior Code:](#all-prior-code)#### LeetCode Solutions in JavaScript
 
 ---
+
 ---
 
 ##### Easy
-* [7. Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/) - [Solution](./Easy/7-reverseInteger.js)
-* [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) - [Solution](./Easy/8-stringToInteger.js)
-* [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) - [Solution](./Easy/9-palindromeNumber.js)
-* [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - [Solution](./Easy/13-romanToInteger.js)
-* [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) - [Solution](./Easy/14-longestCommonPrefix.js)
-* [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) - [Solution](./Easy/19-removeNthNodeFromEndofList.js)
-* [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) - [Solution](./Easy/20-validParentheses.js)
-* [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) - [Solution](./Easy/21-mergeSortedLists.js)
-* [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) - [Solution](./Easy/24-swapNodesPairs.js)
-* [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) - [Solution](./Easy/28-implementstrStr.js)
-* [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) - [Solution](./Easy/26-removeDuplicatesSortedArray.js)
-* [27. Remove Element](https://leetcode.com/problems/remove-element/) - [Solution](./Easy/27-removeElement.js)
-* [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) - [Solution](./Easy/36-validSudoku.js)
-* [38. Count and Say](https://leetcode.com/problems/count-and-say/) - [Solution](./Easy/38-countandSay.js)
-* [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) - [Solution](./Easy/53-maximumSubarray.js)
-* [66. Plus One](https://leetcode.com/problems/plus-one/) - [Solution](./Easy/66-plusOne.js)
-* [67. Add Binary](https://leetcode.com/problems/add-binary/) - [Solution](./Easy/67-addBinary.js)
-* [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) - [Solution](./Easy/70-climbChairs.js)
-* [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) - [Solution](./Easy/83-removeDuplicatesFromSortedList.js)
-* [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) - [Solution](./Easy/88-mergeSortedArray.js)
-* [100. Same Tree](https://leetcode.com/problems/same-tree/) - [Solution](./Easy/100-sameTree.js)
-* [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) - [Solution](./Easy/101-symmetricTree.js)
-* [102. Binary Tree Level Order Traversal	](https://leetcode.com/problems/binary-tree-level-order-traversal/) - [Solution](./Easy/102-binaryTreeLevelOrder.js)
-* [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) - [Solution](./Easy/104-maxDepth.js)
-* [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) - [Solution](./Easy/107-binaryTreeLevelTraversalII.js)
-* [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) - [Solution](./Easy/110-balancedBinaryTree.js)
-* [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) - [Solution](./Easy/111-minimumDepthBinaryTree.js)
-* [112. Path Sum](https://leetcode.com/problems/path-sum/) - [Solution](./Easy/112-pathSum.js)
-* [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) - [Solution](./Easy/118-pascalTriangle.js)
-* [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) - [Solution](./Easy/119-pascalTriangleII.js)
-* [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) - [Solution](./Easy/125-validPalindrome.js)
-* [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) - [Solution](./Easy/160-IntersectionofTwoLinkedLists.js)
-* [165. Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) - [Solution](./Easy/165-compareVersionNumbers.js)
-* [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) - [Solution](./Easy/167-twoSummII.js)
-* [169. Majority Element](https://leetcode.com/problems/majority-element/) - [Solution](./Easy/169-majorityElement.js)
-* [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) - [Solution](./Easy/172-factorialTrailingZeroes.js)
-* [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/) - [Solution](./Easy/190-reverseBits.js)
-* [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) - [Solution](./Easy/191-numerOneBits.js)
-* [198. House Robber](https://leetcode.com/problems/house-robber/) - [Solution](./Easy/198-houseRobber.js)
-* [202. Happy Number](https://leetcode.com/problems/happy-number/) - [Solution](./Easy/202-happyNumber.js)
-* [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) - [Solution](./Easy/203-removeLinkedListElements.js)
-* [204. Count Primes](https://leetcode.com/problems/count-primes/) - [Solution](./Easy/204-countPrimes.js)
-* [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) - [Solution](./Easy/205-isomorphicStrings.js)
-* [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [Solution](./Easy/206-reversedLinkedList.js)
-* [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) - [Solution](./Easy/217-containsDuplicate.js)
-* [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) - [Solution](./Easy/219-containsDuplicateII.js)
-* [223. Rectangle Area](https://leetcode.com/problems/rectangle-area/) - [Solution](./Easy/223-rectangleArea.js)
-* [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) - [Solution](./Easy/225-stackUsingQueues.js)
-* [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) - [Solution](./Easy/226-invertBinaryTree.js)
-* [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) - [Solution](./Easy/228-summaryRanges.js)
-* [231. Power of Two](https://leetcode.com/problems/power-of-two/) - [Solution](./Easy/231-powerOfTwo.js)
-* [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) - [Solution](./Easy/232-implementQueueUsingStack.js)
-* [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) - [Solution](./Easy/234-palindromeLinkedList.js)
-* [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - [Solution](./Easy/235-lcaBST.js)
-* [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) - [Solution](./Easy/237-deleteLinkedListNode.js)
-* [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) - [Solution](./Easy/242-anagram.js)
-* [243. Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance) - [Solution](./Medium/245-shortestWordDist.js)
-* [258. Add Digits](https://leetcode.com/problems/add-digits/) - [Solution](./Easy/258-addDigits.js)
-* [263. Ugly Number](https://leetcode.com/problems/ugly-number/) - [Solution](./Easy/263-uglyNumber.js)
-* [278. First Bad Version](https://leetcode.com/problems/first-bad-version/) - [Solution](./Easy/278-firstBadVersion.js)
-* [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) - [Solution](./Easy/283-moveZeros.js)
-* [290. Word Pattern](https://leetcode.com/problems/word-pattern/) - [Solution](./Easy/290-wordPattern.js)
-* [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) - [Solution](./Easy/299-bullsandCows.js)
-* [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) - [Solution](./Easy/303-rangeSumQuery.js)
-* [326. Power of Three](https://leetcode.com/problems/power-of-three/) - [Solution](./Easy/326-powerOfThree.js)
-* [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) - [Solution](./Easy/328-oddevenLinkedList.js)
-* [342. Power of Four](https://leetcode.com/problems/power-of-four/) - [Solution](./Easy/342-powerOfFour.js)
-* [344. Reverse String](https://leetcode.com/problems/reverse-string/) - [Solution](./Easy/344-reverseString.js)
-* [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) - [Solution](./Easy/349-intersectionTwoArrays.js)
-* [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) - [Solution](./Easy/349-intersectionTwoArraysII.js)
-* [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) - [Solution](./Easy/367-perfectSquare.js)
-* [412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/?tab=Solutions) - [Solution](./Easy/412-fizzBuzz.js)
+
+- [7. Reverse Integer](https://oj.leetcode.com/problems/reverse-integer/) - [Solution](./Easy/7-reverseInteger.js)
+- [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) - [Solution](./Easy/8-stringToInteger.js)
+- [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) - [Solution](./Easy/9-palindromeNumber.js)
+- [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - [Solution](./Easy/13-romanToInteger.js)
+- [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) - [Solution](./Easy/14-longestCommonPrefix.js)
+- [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) - [Solution](./Easy/19-removeNthNodeFromEndofList.js)
+- [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) - [Solution](./Easy/20-validParentheses.js)
+- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) - [Solution](./Easy/21-mergeSortedLists.js)
+- [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) - [Solution](./Easy/24-swapNodesPairs.js)
+- [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/) - [Solution](./Easy/28-implementstrStr.js)
+- [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) - [Solution](./Easy/26-removeDuplicatesSortedArray.js)
+- [27. Remove Element](https://leetcode.com/problems/remove-element/) - [Solution](./Easy/27-removeElement.js)
+- [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) - [Solution](./Easy/36-validSudoku.js)
+- [38. Count and Say](https://leetcode.com/problems/count-and-say/) - [Solution](./Easy/38-countandSay.js)
+- [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) - [Solution](./Easy/53-maximumSubarray.js)
+- [66. Plus One](https://leetcode.com/problems/plus-one/) - [Solution](./Easy/66-plusOne.js)
+- [67. Add Binary](https://leetcode.com/problems/add-binary/) - [Solution](./Easy/67-addBinary.js)
+- [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) - [Solution](./Easy/70-climbChairs.js)
+- [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) - [Solution](./Easy/83-removeDuplicatesFromSortedList.js)
+- [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) - [Solution](./Easy/88-mergeSortedArray.js)
+- [100. Same Tree](https://leetcode.com/problems/same-tree/) - [Solution](./Easy/100-sameTree.js)
+- [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) - [Solution](./Easy/101-symmetricTree.js)
+- [102. Binary Tree Level Order Traversal ](https://leetcode.com/problems/binary-tree-level-order-traversal/) - [Solution](./Easy/102-binaryTreeLevelOrder.js)
+- [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) - [Solution](./Easy/104-maxDepth.js)
+- [107. Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) - [Solution](./Easy/107-binaryTreeLevelTraversalII.js)
+- [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) - [Solution](./Easy/110-balancedBinaryTree.js)
+- [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) - [Solution](./Easy/111-minimumDepthBinaryTree.js)
+- [112. Path Sum](https://leetcode.com/problems/path-sum/) - [Solution](./Easy/112-pathSum.js)
+- [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/) - [Solution](./Easy/118-pascalTriangle.js)
+- [119. Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/) - [Solution](./Easy/119-pascalTriangleII.js)
+- [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) - [Solution](./Easy/125-validPalindrome.js)
+- [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) - [Solution](./Easy/160-IntersectionofTwoLinkedLists.js)
+- [165. Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) - [Solution](./Easy/165-compareVersionNumbers.js)
+- [167. Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) - [Solution](./Easy/167-twoSummII.js)
+- [169. Majority Element](https://leetcode.com/problems/majority-element/) - [Solution](./Easy/169-majorityElement.js)
+- [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) - [Solution](./Easy/172-factorialTrailingZeroes.js)
+- [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/) - [Solution](./Easy/190-reverseBits.js)
+- [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) - [Solution](./Easy/191-numerOneBits.js)
+- [198. House Robber](https://leetcode.com/problems/house-robber/) - [Solution](./Easy/198-houseRobber.js)
+- [202. Happy Number](https://leetcode.com/problems/happy-number/) - [Solution](./Easy/202-happyNumber.js)
+- [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) - [Solution](./Easy/203-removeLinkedListElements.js)
+- [204. Count Primes](https://leetcode.com/problems/count-primes/) - [Solution](./Easy/204-countPrimes.js)
+- [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) - [Solution](./Easy/205-isomorphicStrings.js)
+- [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) - [Solution](./Easy/206-reversedLinkedList.js)
+- [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) - [Solution](./Easy/217-containsDuplicate.js)
+- [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) - [Solution](./Easy/219-containsDuplicateII.js)
+- [223. Rectangle Area](https://leetcode.com/problems/rectangle-area/) - [Solution](./Easy/223-rectangleArea.js)
+- [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) - [Solution](./Easy/225-stackUsingQueues.js)
+- [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) - [Solution](./Easy/226-invertBinaryTree.js)
+- [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) - [Solution](./Easy/228-summaryRanges.js)
+- [231. Power of Two](https://leetcode.com/problems/power-of-two/) - [Solution](./Easy/231-powerOfTwo.js)
+- [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) - [Solution](./Easy/232-implementQueueUsingStack.js)
+- [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) - [Solution](./Easy/234-palindromeLinkedList.js)
+- [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - [Solution](./Easy/235-lcaBST.js)
+- [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/) - [Solution](./Easy/237-deleteLinkedListNode.js)
+- [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) - [Solution](./Easy/242-anagram.js)
+- [243. Shortest Word Distance](https://leetcode.com/problems/shortest-word-distance) - [Solution](./Medium/245-shortestWordDist.js)
+- [258. Add Digits](https://leetcode.com/problems/add-digits/) - [Solution](./Easy/258-addDigits.js)
+- [263. Ugly Number](https://leetcode.com/problems/ugly-number/) - [Solution](./Easy/263-uglyNumber.js)
+- [278. First Bad Version](https://leetcode.com/problems/first-bad-version/) - [Solution](./Easy/278-firstBadVersion.js)
+- [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) - [Solution](./Easy/283-moveZeros.js)
+- [290. Word Pattern](https://leetcode.com/problems/word-pattern/) - [Solution](./Easy/290-wordPattern.js)
+- [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) - [Solution](./Easy/299-bullsandCows.js)
+- [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) - [Solution](./Easy/303-rangeSumQuery.js)
+- [326. Power of Three](https://leetcode.com/problems/power-of-three/) - [Solution](./Easy/326-powerOfThree.js)
+- [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/) - [Solution](./Easy/328-oddevenLinkedList.js)
+- [342. Power of Four](https://leetcode.com/problems/power-of-four/) - [Solution](./Easy/342-powerOfFour.js)
+- [344. Reverse String](https://leetcode.com/problems/reverse-string/) - [Solution](./Easy/344-reverseString.js)
+- [349. Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) - [Solution](./Easy/349-intersectionTwoArrays.js)
+- [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/) - [Solution](./Easy/349-intersectionTwoArraysII.js)
+- [367. Valid Perfect Square](https://leetcode.com/problems/valid-perfect-square/) - [Solution](./Easy/367-perfectSquare.js)
+- [412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz/?tab=Solutions) - [Solution](./Easy/412-fizzBuzz.js)
 
 ##### Medium
-* [1. Two Sum](https://leetcode.com/problems/two-sum/) - [Solution](./Medium/1-twoSum.js)
-* [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Solution](./Medium/2-addTwoNumbers.js)
-* [3. Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/) -  [Solution](./Medium/3-lengthOfLongestSubstring.js)
-* [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) -  [Solution](./Medium/5-longestPalindromicSubstring.js)
-* [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) -  [Solution](./Medium/11-containerMostWater.js)
-* [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) -  [Solution](./Medium/12-integerToRoman.js)
-* [15. 3Sum](https://leetcode.com/problems/3sum/) -  [Solution](./Medium/15-3sum.js)
-* [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) -  [Solution](./Medium/16-3sumClosest.js)
-* [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) -  [Solution](./Medium/17-LetterCombinationsPhoneNumber.js)
-* [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) -  [Solution](./Medium/22-generateParentheses.js)
-* [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) -  [Solution](./Medium/29-DivideTwoIntegers.js)
-* [31. Next Permutation](https://leetcode.com/problems/next-permutation/) -  [Solution](./Medium/31-nextPermutation.js)
-* [31. Next Permutation](https://leetcode.com/problems/next-permutation/) -  [Solution](./Medium/31-nextPermutation.js)
-* [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) -  [Solution](./Medium/33-searchRotatedSortedArray.js)
-* [34. Search for a Range](https://leetcode.com/problems/search-for-a-range/) -  [Solution](./Medium/34-searchforRange.js)
-* [39. Combination Sum](https://oj.leetcode.com/problems/combination-sum/) -  [Solution](./Medium/39-combinationSum.js)
-* [40. Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/) -  [Solution](./Medium/40-combinationSumII.js)
-* [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/) -  [Solution](./Medium/43-multiplyStrings.js)
-* [46. Permutations](https://leetcode.com/problems/permutations/) -  [Solution](./Medium/46-permutations.js)
-* [47. Permutations II](https://leetcode.com/problems/permutations-ii/) -  [Solution](./Medium/47-permutationsII.js)
-* [48. Rotate Image](https://leetcode.com/problems/rotate-image/) -  [Solution](./Medium/48-rotateImage.js)
-* [49. Group Anagrams](https://leetcode.com/problems/anagrams/) -  [Solution](./Medium/49-groupAnagrams.js)
-* [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) - [Solution](./Medium/50-powerxn.js)
-* [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) - [Solution](./Medium/54-spiralMatrix.js)
-* [55. Jump Game](https://leetcode.com/problems/jump-game/) - [Solution](./Medium/55-jumpGame.js)
-* [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) - [Solution](./Medium/59-spiralMatrixII.js)
-* [60. Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) - [Solution](./Medium/60-permutationSequence.js)
-* [61. Rotate List](https://leetcode.com/problems/rotate-list/) - [Solution](./Medium/61-rotateList.js)
-* [62.	Unique Paths](https://leetcode.com/problems/unique-paths/) - [Solution](./Medium/62-uniquePaths.js)
-* [63.	Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) - [Solution](./Medium/63-uniquePathsII.js)
-* [64.	Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) - [Solution](./Medium/64-minimumPathSum.js)
-* [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) - [Solution](./Medium/69-sqrtx.js)
-* [71. Simplify Path](https://leetcode.com/problems/simplify-path/) - [Solution](./Medium/71-simplifyPath.js)
-* [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) - [Solution](./Medium/73-setMatrixZeroes.js)
-* [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) - [Solution](./Medium/74-search2DMatrix.js)
-* [75. Sort Colors](https://leetcode.com/problems/sort-colors/) - [Solution](./Medium/75-sortColors.js)
-* [77. Combinations](https://leetcode.com/problems/combinations/) - [Solution](./Medium/77-combinations.js)
-* [78. Subsets](https://leetcode.com/problems/subsets/) - [Solution](./Medium/78-subsets.js)
-* [79. Word Search](https://leetcode.com/problems/word-search/) - [Solution](./Medium/79-wordSearch.js)
-* [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) - [Solution](./Medium/80-removeDuplicatesII.js)
-* [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) - [Solution](./Medium/81-searchRotatedSortedArrayII.js)
-* [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) - [Solution](./Medium/82-removeDuplicatesListII.js)
-* [86. Partition List](https://leetcode.com/problems/partition-list/) - [Solution](./Medium/86-partition-List.js)
-* [89. Gray Code](https://leetcode.com/problems/gray-code/) - [Solution](./Medium/89-grayCode.js)
-* [90. Subsets II ](https://leetcode.com/problems/subsets-ii/) - [Solution](./Medium/90-subsetsII.js)
-* [91. Decode Ways ](https://leetcode.com/problems/decode-ways/) - [Solution](./Medium/91-decodeways.js)
-* [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) - [Solution](./Medium/92-reverseLinkedListII.js)
-* [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) - [Solution](./Medium/93-restoreIPAddresses.js)
-* [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) - [Solution](./Medium/94-binaryTreeInorder.js)
-* [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) - [Solution](./Medium/96-uniqueBinarySearchTrees.js)
-* [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - [Solution](./Medium/98-validateBST.js)
-* [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) - [Solution](./Medium/103-BSTZigzagLevelTraversal.js)
-* [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) - [Solution](./Medium/105-constructBinaryTree.js)
-* [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) - [Solution](./Medium/106-constructBinaryTree.js)
-* [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) - [Solution](./Medium/108-convertSortedArraytoBST.js)
-* [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) - [Solution](./Medium/109-convertSortedListToBST.js)
-* [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/) - [Solution](./Medium/113-pathSumII.js)
-* [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) - [Solution](./Medium/114-flattenTree.js)
-* [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) - [Solution](./Medium/116-PopulatingNextRightPointersinEachNode.js)
-* [120. Triangle](https://leetcode.com/problems/triangle/) - [Solution](./Medium/120-triangle.js)
-* [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) - [Solution](./Medium/121-bestTimeToBuySellStock.js)
-* [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) - [Solution](./Medium/122-bestTimeToBuySellStockII.js)
-* [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) - [Solution](./Medium/129-sumRootToLeafNumbers.js)
-* [127. Word Ladder](https://leetcode.com/problems/word-ladder/) - [Solution](./Medium/127-wordLadder.js)
-* [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) - [Solution](./Medium/130-surroundedRegions.js)
-* [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) - [Solution](./Medium/131-palindromePartitioning.js)
-* [134. Gas Station](https://leetcode.com/problems/gas-station/) - [Solution](./Medium/134-gasStation.js)
-* [136. Single Number](https://leetcode.com/problems/single-number/) - [Solution](./Medium/136-singleNumber.js)
-* [139. Word Break](https://leetcode.com/problems/word-break/) - [Solution](./Medium/139-wordBreak.js)
-* [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) - [Solution](./Medium/141-linkedListCycle.js)
-* [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) - [Solution](./Medium/142-linkedListCycleII.js)
-* [143. Reorder List](https://leetcode.com/problems/reorder-list/) - [Solution](./Medium/143-reorderList.js)
-* [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) - [Solution](./Medium/144-binaryTreePreorder.js)
-* [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) - [Solution](./Medium/147-insertionSortList.js)
-* [148. Sort List](https://leetcode.com/problems/sort-list/) - [Solution](./Medium/148-sortList.js)
-* [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - [Solution](./Medium/150-reversePolishNotation.js)
-* [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) - [Solution](./Medium/151-reverseWordsInAString.js)
-* [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) - [Solution](./Medium/152-MaxProductSubarray.js)
-* [153.	Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) - [Solution](./Medium/153-findMinimumInRotatedSortedArray.js)
-* [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/) - [Solution](./Medium/162-findPeakElement.js)
-* [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) - [Solution](./Medium/173-binarySearchTreeIterator.js)
-* [179. Largest Number](https://leetcode.com/problems/largest-number/) - [Solution](./Medium/179-largestNumber.js)
-* [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) - [Solution](./Medium/199-binaryTreeRightSideView.js)
-* [213. House Robber II](https://leetcode.com/problems/house-robber-ii/) - [Solution](./Medium/213-houseRobberII.js)
-* [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) - [Solution](./Medium/215-KthLargestElementInArray.js)
-* [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) - [Solution](./Medium/216-CombinationSumIII.js)
-* [221. Maximal Square](https://leetcode.com/problems/maximal-square/) - [Solution](./Medium/221-maximalSquare.js)
-* [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) - [Solution](./Medium/227-calculatorII.js)
-* [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/) - [Solution](./Medium/229-majorityElementII.js)
-* [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) - [Solution](./Medium/230-kthSmallestElementinBST.js)
-* [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) - [Solution](./Medium/236-lcaBinaryTree.js)
-* [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) - [Solution](./Medium/238-productExceptSelf.js)
-* [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) - [Solution](./Medium/240-Search2DMatrixII.js)
-* [241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) - [Solution](./Medium/241-differentWaysAddParentheses.js)
-* [244. Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) - [Solution](./Medium/245-shortestWordDistII.js)
-* [245. Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii) - [Solution](./Medium/245-shortestWordDistIII.js)
-* [260. Single Number III](https://leetcode.com/problems/single-number-iii/) - [Solution](./Medium/260-singleNumberIII.js)
-* [268. Missing Number](https://leetcode.com/problems/missing-number/) - [Solution](./Medium/268-missingNumber.js)
-* [274. H-Index](https://leetcode.com/problems/h-index/) - [Solution](./Medium/274-hIndex.js)
-* [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) - [Solution](./Medium/284-peekingIterator.java)
-* [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - [Solution](./Medium/300-longestIncreasingSubsequence.js)
-* [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) - [Solution](./Medium/309-bestTimeStockCooldown.js)
-* [318. Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) - [Solution](./Medium/318-maximumProductWordLengths.js)
-* [319. Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) - [Solution](./Medium/319-bulbSwitcher.js)
-* [331. Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) - [Solution](./Medium/331-verifyBinaryTree.js)
-* [337. House Robber III](https://leetcode.com/problems/house-robber-iii/) - [Solution](./Medium/337-houseRobberIII.js)
-* [338. Counting Bits](https://leetcode.com/problems/counting-bits/) - [Solution](./Medium/338-countingBits.js)
-* [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) - [Solution](./Medium/247-topKFrequentElements.js)
-* [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) - [Solution](./Medium/515-largestValEachTree.js)
+
+- [1. Two Sum](https://leetcode.com/problems/two-sum/) - [Solution](./Medium/1-twoSum.js)
+- [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) - [Solution](./Medium/2-addTwoNumbers.js)
+- [3. Longest Substring Without Repeating Characters](https://oj.leetcode.com/problems/longest-substring-without-repeating-characters/) - [Solution](./Medium/3-lengthOfLongestSubstring.js)
+- [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) - [Solution](./Medium/5-longestPalindromicSubstring.js)
+- [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) - [Solution](./Medium/11-containerMostWater.js)
+- [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) - [Solution](./Medium/12-integerToRoman.js)
+- [15. 3Sum](https://leetcode.com/problems/3sum/) - [Solution](./Medium/15-3sum.js)
+- [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/) - [Solution](./Medium/16-3sumClosest.js)
+- [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) - [Solution](./Medium/17-LetterCombinationsPhoneNumber.js)
+- [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) - [Solution](./Medium/22-generateParentheses.js)
+- [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) - [Solution](./Medium/29-DivideTwoIntegers.js)
+- [31. Next Permutation](https://leetcode.com/problems/next-permutation/) - [Solution](./Medium/31-nextPermutation.js)
+- [31. Next Permutation](https://leetcode.com/problems/next-permutation/) - [Solution](./Medium/31-nextPermutation.js)
+- [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) - [Solution](./Medium/33-searchRotatedSortedArray.js)
+- [34. Search for a Range](https://leetcode.com/problems/search-for-a-range/) - [Solution](./Medium/34-searchforRange.js)
+- [39. Combination Sum](https://oj.leetcode.com/problems/combination-sum/) - [Solution](./Medium/39-combinationSum.js)
+- [40. Combination Sum II](https://oj.leetcode.com/problems/combination-sum-ii/) - [Solution](./Medium/40-combinationSumII.js)
+- [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/) - [Solution](./Medium/43-multiplyStrings.js)
+- [46. Permutations](https://leetcode.com/problems/permutations/) - [Solution](./Medium/46-permutations.js)
+- [47. Permutations II](https://leetcode.com/problems/permutations-ii/) - [Solution](./Medium/47-permutationsII.js)
+- [48. Rotate Image](https://leetcode.com/problems/rotate-image/) - [Solution](./Medium/48-rotateImage.js)
+- [49. Group Anagrams](https://leetcode.com/problems/anagrams/) - [Solution](./Medium/49-groupAnagrams.js)
+- [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) - [Solution](./Medium/50-powerxn.js)
+- [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) - [Solution](./Medium/54-spiralMatrix.js)
+- [55. Jump Game](https://leetcode.com/problems/jump-game/) - [Solution](./Medium/55-jumpGame.js)
+- [59. Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) - [Solution](./Medium/59-spiralMatrixII.js)
+- [60. Permutation Sequence](https://leetcode.com/problems/permutation-sequence/) - [Solution](./Medium/60-permutationSequence.js)
+- [61. Rotate List](https://leetcode.com/problems/rotate-list/) - [Solution](./Medium/61-rotateList.js)
+- [62. Unique Paths](https://leetcode.com/problems/unique-paths/) - [Solution](./Medium/62-uniquePaths.js)
+- [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) - [Solution](./Medium/63-uniquePathsII.js)
+- [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) - [Solution](./Medium/64-minimumPathSum.js)
+- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) - [Solution](./Medium/69-sqrtx.js)
+- [71. Simplify Path](https://leetcode.com/problems/simplify-path/) - [Solution](./Medium/71-simplifyPath.js)
+- [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) - [Solution](./Medium/73-setMatrixZeroes.js)
+- [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) - [Solution](./Medium/74-search2DMatrix.js)
+- [75. Sort Colors](https://leetcode.com/problems/sort-colors/) - [Solution](./Medium/75-sortColors.js)
+- [77. Combinations](https://leetcode.com/problems/combinations/) - [Solution](./Medium/77-combinations.js)
+- [78. Subsets](https://leetcode.com/problems/subsets/) - [Solution](./Medium/78-subsets.js)
+- [79. Word Search](https://leetcode.com/problems/word-search/) - [Solution](./Medium/79-wordSearch.js)
+- [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) - [Solution](./Medium/80-removeDuplicatesII.js)
+- [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) - [Solution](./Medium/81-searchRotatedSortedArrayII.js)
+- [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) - [Solution](./Medium/82-removeDuplicatesListII.js)
+- [86. Partition List](https://leetcode.com/problems/partition-list/) - [Solution](./Medium/86-partition-List.js)
+- [89. Gray Code](https://leetcode.com/problems/gray-code/) - [Solution](./Medium/89-grayCode.js)
+- [90. Subsets II ](https://leetcode.com/problems/subsets-ii/) - [Solution](./Medium/90-subsetsII.js)
+- [91. Decode Ways ](https://leetcode.com/problems/decode-ways/) - [Solution](./Medium/91-decodeways.js)
+- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) - [Solution](./Medium/92-reverseLinkedListII.js)
+- [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/) - [Solution](./Medium/93-restoreIPAddresses.js)
+- [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) - [Solution](./Medium/94-binaryTreeInorder.js)
+- [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) - [Solution](./Medium/96-uniqueBinarySearchTrees.js)
+- [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) - [Solution](./Medium/98-validateBST.js)
+- [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) - [Solution](./Medium/103-BSTZigzagLevelTraversal.js)
+- [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) - [Solution](./Medium/105-constructBinaryTree.js)
+- [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) - [Solution](./Medium/106-constructBinaryTree.js)
+- [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) - [Solution](./Medium/108-convertSortedArraytoBST.js)
+- [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) - [Solution](./Medium/109-convertSortedListToBST.js)
+- [113. Path Sum II](https://leetcode.com/problems/path-sum-ii/) - [Solution](./Medium/113-pathSumII.js)
+- [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) - [Solution](./Medium/114-flattenTree.js)
+- [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) - [Solution](./Medium/116-PopulatingNextRightPointersinEachNode.js)
+- [120. Triangle](https://leetcode.com/problems/triangle/) - [Solution](./Medium/120-triangle.js)
+- [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) - [Solution](./Medium/121-bestTimeToBuySellStock.js)
+- [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) - [Solution](./Medium/122-bestTimeToBuySellStockII.js)
+- [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) - [Solution](./Medium/129-sumRootToLeafNumbers.js)
+- [127. Word Ladder](https://leetcode.com/problems/word-ladder/) - [Solution](./Medium/127-wordLadder.js)
+- [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) - [Solution](./Medium/130-surroundedRegions.js)
+- [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) - [Solution](./Medium/131-palindromePartitioning.js)
+- [134. Gas Station](https://leetcode.com/problems/gas-station/) - [Solution](./Medium/134-gasStation.js)
+- [136. Single Number](https://leetcode.com/problems/single-number/) - [Solution](./Medium/136-singleNumber.js)
+- [139. Word Break](https://leetcode.com/problems/word-break/) - [Solution](./Medium/139-wordBreak.js)
+- [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) - [Solution](./Medium/141-linkedListCycle.js)
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) - [Solution](./Medium/142-linkedListCycleII.js)
+- [143. Reorder List](https://leetcode.com/problems/reorder-list/) - [Solution](./Medium/143-reorderList.js)
+- [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) - [Solution](./Medium/144-binaryTreePreorder.js)
+- [147. Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) - [Solution](./Medium/147-insertionSortList.js)
+- [148. Sort List](https://leetcode.com/problems/sort-list/) - [Solution](./Medium/148-sortList.js)
+- [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - [Solution](./Medium/150-reversePolishNotation.js)
+- [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) - [Solution](./Medium/151-reverseWordsInAString.js)
+- [152. Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) - [Solution](./Medium/152-MaxProductSubarray.js)
+- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) - [Solution](./Medium/153-findMinimumInRotatedSortedArray.js)
+- [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/) - [Solution](./Medium/162-findPeakElement.js)
+- [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) - [Solution](./Medium/173-binarySearchTreeIterator.js)
+- [179. Largest Number](https://leetcode.com/problems/largest-number/) - [Solution](./Medium/179-largestNumber.js)
+- [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) - [Solution](./Medium/199-binaryTreeRightSideView.js)
+- [213. House Robber II](https://leetcode.com/problems/house-robber-ii/) - [Solution](./Medium/213-houseRobberII.js)
+- [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) - [Solution](./Medium/215-KthLargestElementInArray.js)
+- [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/) - [Solution](./Medium/216-CombinationSumIII.js)
+- [221. Maximal Square](https://leetcode.com/problems/maximal-square/) - [Solution](./Medium/221-maximalSquare.js)
+- [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) - [Solution](./Medium/227-calculatorII.js)
+- [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/) - [Solution](./Medium/229-majorityElementII.js)
+- [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) - [Solution](./Medium/230-kthSmallestElementinBST.js)
+- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) - [Solution](./Medium/236-lcaBinaryTree.js)
+- [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) - [Solution](./Medium/238-productExceptSelf.js)
+- [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) - [Solution](./Medium/240-Search2DMatrixII.js)
+- [241. Different Ways to Add Parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/) - [Solution](./Medium/241-differentWaysAddParentheses.js)
+- [244. Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii) - [Solution](./Medium/245-shortestWordDistII.js)
+- [245. Shortest Word Distance III](https://leetcode.com/problems/shortest-word-distance-iii) - [Solution](./Medium/245-shortestWordDistIII.js)
+- [260. Single Number III](https://leetcode.com/problems/single-number-iii/) - [Solution](./Medium/260-singleNumberIII.js)
+- [268. Missing Number](https://leetcode.com/problems/missing-number/) - [Solution](./Medium/268-missingNumber.js)
+- [274. H-Index](https://leetcode.com/problems/h-index/) - [Solution](./Medium/274-hIndex.js)
+- [284. Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) - [Solution](./Medium/284-peekingIterator.java)
+- [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) - [Solution](./Medium/300-longestIncreasingSubsequence.js)
+- [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) - [Solution](./Medium/309-bestTimeStockCooldown.js)
+- [318. Maximum Product of Word Lengths](https://leetcode.com/problems/maximum-product-of-word-lengths/) - [Solution](./Medium/318-maximumProductWordLengths.js)
+- [319. Bulb Switcher](https://leetcode.com/problems/bulb-switcher/) - [Solution](./Medium/319-bulbSwitcher.js)
+- [331. Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/) - [Solution](./Medium/331-verifyBinaryTree.js)
+- [337. House Robber III](https://leetcode.com/problems/house-robber-iii/) - [Solution](./Medium/337-houseRobberIII.js)
+- [338. Counting Bits](https://leetcode.com/problems/counting-bits/) - [Solution](./Medium/338-countingBits.js)
+- [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) - [Solution](./Medium/247-topKFrequentElements.js)
+- [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/) - [Solution](./Medium/515-largestValEachTree.js)
 
 ##### Hard
-* [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) -  [Solution](./Hard/23-MergeKSortedLists.js)
-* [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) -  [Solution](./Hard/25-reverseNodesInKGroup.js)
-* [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) -  [Solution](./Hard/32-longestValidParentheses.js)
-* [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/) -  [Solution](./Hard/41-firstMissingPositive.js)
-* [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/) -  [Solution](./Hard/45-jumpGameII.js)
-* [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) -  [Solution](./Hard/56-MergeIntervals.js)
-* [57. Insert Interval](https://leetcode.com/problems/insert-interval/) -  [Solution](./Hard/57-insertInterval.js)
-* [65. Valid Number](https://leetcode.com/problems/valid-number/) -  [Solution](./Hard/65-validNumber.js)
-* [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) -  [Solution](./Hard/115-distinctSubsequences.js)
-* [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) -  [Solution](./Hard/117-populatingNextRightII.js)
-* [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) -  [Solution](./Hard/123-bestTimeBuySellStockIII.js)
-* [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) -  [Solution](./Hard/132-palindromePartitioningII.js)
-* [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) -  [Solution](./Hard/145-binaryTreePostorder.js)
-* [154.	Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) - [Solution](./Hard/154-findMinimumInRotatedSortedArray-II.js)
-* [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) - [Solution](./Hard/273-integerToEnglish.js)
-* [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) - [Solution](./Hard/287-findDuplicateNumber.js)
 
+- [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) - [Solution](./Hard/23-MergeKSortedLists.js)
+- [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) - [Solution](./Hard/25-reverseNodesInKGroup.js)
+- [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) - [Solution](./Hard/32-longestValidParentheses.js)
+- [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/) - [Solution](./Hard/41-firstMissingPositive.js)
+- [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/) - [Solution](./Hard/45-jumpGameII.js)
+- [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) - [Solution](./Hard/56-MergeIntervals.js)
+- [57. Insert Interval](https://leetcode.com/problems/insert-interval/) - [Solution](./Hard/57-insertInterval.js)
+- [65. Valid Number](https://leetcode.com/problems/valid-number/) - [Solution](./Hard/65-validNumber.js)
+- [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/) - [Solution](./Hard/115-distinctSubsequences.js)
+- [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) - [Solution](./Hard/117-populatingNextRightII.js)
+- [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) - [Solution](./Hard/123-bestTimeBuySellStockIII.js)
+- [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/) - [Solution](./Hard/132-palindromePartitioningII.js)
+- [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/) - [Solution](./Hard/145-binaryTreePostorder.js)
+- [154. Find Minimum in Rotated Sorted Array II](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/) - [Solution](./Hard/154-findMinimumInRotatedSortedArray-II.js)
+- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/) - [Solution](./Hard/273-integerToEnglish.js)
+- [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) - [Solution](./Hard/287-findDuplicateNumber.js)
 
 # <span id="asymptotic-notation"></span>Asymptotic Notation
 
@@ -1276,6 +1279,7 @@ If neither attribute is present, the script is downloaded and executed synchrono
 - [async vs defer attributes](http://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
 
 ### What is an `async` function?
+
 ```js
     async function foo() {
       ...
@@ -1286,20 +1290,19 @@ If neither attribute is present, the script is downloaded and executed synchrono
 ### Answer
 
 An `async` function is a function that allows you to pause the function’s execution while it waits for (`await`s) a promise to resolve. It’s an abstraction on top of the Promise API that makes asynchronous operations _look_ like they’re synchronous. `async` functions automatically return a Promise object. Whatever you `return` from the `async` function will be the promise’s _resolution_. If instead you `throw` from the body of an `async` function, that will be how your async function _rejects_ the promise it returns. Most importantly, `async` functions are able to use the `await` keyword in their function body, which **pauses the function** until the operation after the `await` completes, and allows it to return that operation’s result to a variable synchronously.
+
 ```js
-
-    // Normal promises in regular function:
-    function foo() {
-      promiseCall().then((result) => {
-        // do something with the result
-      });
-    }
-    // async functions
-    async function foo() {
-      const result = await promiseCall();
-      // do something with the result
-    }
-
+// Normal promises in regular function:
+function foo() {
+  promiseCall().then((result) => {
+    // do something with the result
+  });
+}
+// async functions
+async function foo() {
+  const result = await promiseCall();
+  // do something with the result
+}
 ```
 
 ### Don’t forget:
@@ -1314,46 +1317,46 @@ An `async` function is a function that allows you to pause the function’s exec
 - [MDN Docs - await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
 
 ### Create a function `batches` that returns the maximum number of whole batches that can be cooked from a recipe.
+
 ```js
-    /**
+/**
     It accepts two objects as arguments: the first object is the recipe
     for the food, while the second object is the available ingredients.
     Each ingredient's value is a number representing how many units there are.
     `batches(recipe, available)`
     */
-    // 0 batches can be made
-    batches(
-      { milk: 100, butter: 50, flour: 5 },
-      { milk: 132, butter: 48, flour: 51 }
-    );
-    batches(
-      { milk: 100, flour: 4, sugar: 10, butter: 5 },
-      { milk: 1288, flour: 9, sugar: 95 }
-    );
-    // 1 batch can be made
-    batches(
-      { milk: 100, butter: 50, cheese: 10 },
-      { milk: 198, butter: 52, cheese: 10 }
-    );
-    // 2 batches can be made
-    batches(
-      { milk: 2, sugar: 40, butter: 20 },
-      { milk: 5, sugar: 120, butter: 500 }
-    );
-
+// 0 batches can be made
+batches(
+  { milk: 100, butter: 50, flour: 5 },
+  { milk: 132, butter: 48, flour: 51 }
+);
+batches(
+  { milk: 100, flour: 4, sugar: 10, butter: 5 },
+  { milk: 1288, flour: 9, sugar: 95 }
+);
+// 1 batch can be made
+batches(
+  { milk: 100, butter: 50, cheese: 10 },
+  { milk: 198, butter: 52, cheese: 10 }
+);
+// 2 batches can be made
+batches(
+  { milk: 2, sugar: 40, butter: 20 },
+  { milk: 5, sugar: 120, butter: 500 }
+);
 ```
+
 ### Answer
 
 We must have all ingredients of the recipe available, and in quantities that are more than or equal to the number of units required. If just one of the ingredients is not available or lower than needed, we cannot make a single batch. Use `Object.keys()` to return the ingredients of the recipe as an array, then use `Array.prototype.map()` to map each ingredient to the ratio of available units to the amount required by the recipe. If one of the ingredients required by the recipe is not available at all, the ratio will evaluate to `NaN`, so the logical OR operator can be used to fallback to `0` in this case. Use the spread `...` operator to feed the array of all the ingredient ratios into `Math.min()` to determine the lowest ratio. Passing this entire result into `Math.floor()` rounds down to return the maximum number of whole batches.
 
 ```js
-    
-    const batches = (recipe, available) =>
-      Math.floor(
-        Math.min(...Object.keys(recipe).map((k) => available[k] / recipe[k] || 0))
-      );
-
+const batches = (recipe, available) =>
+  Math.floor(
+    Math.min(...Object.keys(recipe).map((k) => available[k] / recipe[k] || 0))
+  );
 ```
+
 ### Don’t forget:
 
 ### Additional links
@@ -1363,34 +1366,38 @@ We must have all ingredients of the recipe available, and in quantities that are
 ### Answer
 
 The BEM methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. BEM stands for Block Element Modifier which is an explanation for its structure. A Block is a standalone component that is reusable across projects and acts as a “namespace” for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
+
 ```css
-    /* block component */
-    .block {
-    }
-    /* element */
-    .block__element {
-    }
-    /* modifier */
-    .block__element--modifier {
-    }
+/* block component */
+.block {
+}
+/* element */
+.block__element {
+}
+/* modifier */
+.block__element--modifier {
+}
 ```
+
 Here is an example with the class names on markup:
+
 ```html
-    <nav class="navbar">
-      <a href="/" class="navbar__link navbar__link--active"></a>
-      <a href="/" class="navbar__link"></a>
-      <a href="/" class="navbar__link"></a>
-    </nav>
+<nav class="navbar">
+  <a href="/" class="navbar__link navbar__link--active"></a>
+  <a href="/" class="navbar__link"></a>
+  <a href="/" class="navbar__link"></a>
+</nav>
 ```
+
 In this case, `navbar` is the Block, `navbar__link` is an Element that makes no sense outside of the `navbar` component, and `navbar__link--active` is a Modifier that indicates a different state for the `navbar__link` Element. Since Modifiers are verbose, many opt to use `is-*` flags instead as modifiers.
 
     <a href="/" class="navbar__link is-active"></a>
 
 These must be chained to the Element and never alone however, or there will be scope issues.
-```css
-    .navbar__link.is-active {
-    }
 
+```css
+.navbar__link.is-active {
+}
 ```
 
 ### Don’t forget:
@@ -1408,57 +1415,67 @@ These must be chained to the Element and never alone however, or there will be s
 Big O notation is used in Computer Science to describe the time complexity of an algorithm. The best algorithms will execute the fastest and have the simplest complexity. Algorithms don’t always perform the same and may vary based on the data they are supplied. While in some cases they will execute quickly, in other cases they will execute slowly, even with the same number of elements to deal with. In these examples, the base time is 1 element = `1ms`.
 
 ### O(1)
+
 ```js
-    arr[arr.length - 1];
+arr[arr.length - 1];
 ```
+
 - 1000 elements = `1ms` Constant time complexity. No matter how many elements the array has, it will theoretically take (excluding real-world variation) the same amount of time to execute.
 
 ### O(N)
+
 ```js
-    arr.filter(fn);
+arr.filter(fn);
 ```
+
 - 1000 elements = `1000ms` Linear time complexity. The execution time will increase linearly with the number of elements the array has. If the array has 1000 elements and the function takes 1ms to execute, 7000 elements will take 7ms to execute. This is because the function must iterate through all elements of the array before returning a result.
 
 ### O(\[1, N\])
+
 ```js
-    arr.some(fn);
+arr.some(fn);
 ```
+
 - 1000 elements = `1ms <= x <= 1000ms` The execution time varies depending on the data supplied to the function, it may return very early or very late. The best case here is O(1) and the worst case is O(N).
 
 ### O(NlogN)
+
 ```js
-    arr.sort(fn);
+arr.sort(fn);
 ```
+
 - 1000 elements ~= `10000ms` Browsers usually implement the quicksort algorithm for the `sort()` method and the average time complexity of quicksort is O(NlgN). This is very efficient for large collections.
 
 ### O(N^2)
+
 ```js
-    for (let i = 0; i < arr.length; i++) {
-      for (let j = 0; j < arr.length; j++) {
-        // ...
-      }
-    }
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length; j++) {
+    // ...
+  }
+}
 ```
+
 - 1000 elements = `1000000ms` The execution time rises quadratically with the number of elements. Usually the result of nesting loops.
 
 ### O(N!)
 
 ```js
-    
-    const permutations = (arr) => {
-      if (arr.length <= 2) return arr.length === 2 ? [arr, [arr[1], arr[0]]] : arr;
-      return arr.reduce(
-        (acc, item, i) =>
-          acc.concat(
-            permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((val) => [
-              item,
-              ...val,
-            ])
-          ),
-        []
-      );
-    };
+const permutations = (arr) => {
+  if (arr.length <= 2) return arr.length === 2 ? [arr, [arr[1], arr[0]]] : arr;
+  return arr.reduce(
+    (acc, item, i) =>
+      acc.concat(
+        permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((val) => [
+          item,
+          ...val,
+        ])
+      ),
+    []
+  );
+};
 ```
+
 - 1000 elements = `Infinity` (practically) ms The execution time rises extremely fast with even just 1 addition to the array.
 
 ### Don’t forget:
@@ -1470,28 +1487,31 @@ Big O notation is used in Computer Science to describe the time complexity of an
 - [Big O Notation in JavaScript](https://medium.com/cesars-tech-insights/big-o-notation-javascript-25c79f50b19b)
 
 ### Create a standalone function `bind` that is functionally equivalent to the method `Function.prototype.bind`.
+
 ```js
-    function example() {
-      console.log(this);
-    }
-  
-``` 
-  
----
-    
-```js  
-    const boundExample = bind(example, { a: true });
-    boundExample.call({ b: true }); // logs { a: true }
+function example() {
+  console.log(this);
+}
 ```
+
+---
+
+```js
+const boundExample = bind(example, { a: true });
+boundExample.call({ b: true }); // logs { a: true }
+```
+
 ### Answer
 
 Return a function that accepts an arbitrary number of arguments by gathering them with the rest `...` operator. From that function, return the result of calling the `fn` with `Function.prototype.apply` to apply the context and the array of arguments to the function.
+
 ```js
-    const bind =
-      (fn, context) =>
-      (...args) =>
-        fn.apply(context, args);
+const bind =
+  (fn, context) =>
+  (...args) =>
+    fn.apply(context, args);
 ```
+
 ### Don’t forget:
 
 ### Additional links
@@ -1511,32 +1531,36 @@ Browsers have a cache to temporarily store files on websites so they don’t nee
 - [Strategies for cache-busting CSS](https://css-tricks.com/strategies-for-cache-busting-css/)
 
 ### How can you avoid callback hells?
+
 ```js
-    getData(function (a) {
-      getMoreData(a, function (b) {
-        getMoreData(b, function (c) {
-          getMoreData(c, function (d) {
-            getMoreData(d, function (e) {
-              // ...
-            });
-          });
+getData(function (a) {
+  getMoreData(a, function (b) {
+    getMoreData(b, function (c) {
+      getMoreData(c, function (d) {
+        getMoreData(d, function (e) {
+          // ...
         });
       });
     });
+  });
+});
 ```
+
 ### Answer
 
 Refactoring the functions to return promises and using `async/await` is usually the best option. Instead of supplying the functions with callbacks that cause deep nesting, they return a promise that can be `await`ed and will be resolved once the data has arrived, allowing the next line of code to be evaluated in a sync-like fashion. The above code can be restructured like so:
+
 ```js
-    async function asyncAwaitVersion() {
-      const a = await getData();
-      const b = await getMoreData(a);
-      const c = await getMoreData(b);
-      const d = await getMoreData(c);
-      const e = await getMoreData(d);
-      // ...
-    }
+async function asyncAwaitVersion() {
+  const a = await getData();
+  const b = await getMoreData(a);
+  const c = await getMoreData(b);
+  const d = await getMoreData(c);
+  const e = await getMoreData(d);
+  // ...
+}
 ```
+
 There are lots of ways to solve the issue of callback hells:
 
 - Modularization: break callbacks into independent functions
@@ -1558,11 +1582,13 @@ There are lots of ways to solve the issue of callback hells:
 ### Answer
 
 The callback function is invoked when `setState` has finished and the component gets rendered. Since `setState` is asynchronous, the callback function is used for any post action.
+
 ```js
-    setState({ name: "sudheer" }, () => {
-      console.log("The name has updated and component re-rendered");
-    });
+setState({ name: "sudheer" }, () => {
+  console.log("The name has updated and component re-rendered");
+});
 ```
+
 ### Don’t forget:
 
 - The callback function is invoked after `setState` finishes and is used for any post action.
@@ -1577,27 +1603,26 @@ The callback function is invoked when `setState` has finished and the component 
 ### Answer
 
 Callback refs are preferred over the `findDOMNode()` API, due to the fact that `findDOMNode()` prevents certain improvements in React in the future.
+
 ```js
-
-    // Legacy approach using findDOMNode()
-    class MyComponent extends Component {
-      componentDidMount() {
-        findDOMNode(this).scrollIntoView();
-      }
-      render() {
-        return <div />;
-      }
-    }
-    // Recommended approach using callback refs
-    class MyComponent extends Component {
-      componentDidMount() {
-        this.node.scrollIntoView();
-      }
-      render() {
-        return <div ref={(node) => (this.node = node)} />;
-      }
-    }
-
+// Legacy approach using findDOMNode()
+class MyComponent extends Component {
+  componentDidMount() {
+    findDOMNode(this).scrollIntoView();
+  }
+  render() {
+    return <div />;
+  }
+}
+// Recommended approach using callback refs
+class MyComponent extends Component {
+  componentDidMount() {
+    this.node.scrollIntoView();
+  }
+  render() {
+    return <div ref={(node) => (this.node = node)} />;
+  }
+}
 ```
 
 ### Don’t forget:
@@ -1615,25 +1640,25 @@ Callback refs are preferred over the `findDOMNode()` API, due to the fact that `
 Callbacks are functions passed as an argument to another function to be executed once an event has occurred or a certain task is complete, often used in asynchronous code. Callback functions are invoked later by a piece of code but can be declared on initialization without being invoked. As an example, event listeners are asynchronous callbacks that are only executed when a specific event occurs.
 
 ```js
-   
-    function onClick() {
-      console.log("The user clicked on the page.");
-    }
-    document.addEventListener("click", onClick);
+function onClick() {
+  console.log("The user clicked on the page.");
+}
+document.addEventListener("click", onClick);
 ```
+
 However, callbacks can also be synchronous. The following `map` function takes a callback function that is invoked synchronously for each iteration of the loop (array element).
 
 ```js
-   
-    const map = (arr, callback) => {
-      const result = [];
-      for (let i = 0; i < arr.length; i++) {
-        result.push(callback(arr[i], i));
-      }
-      return result;
-    };
-    map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
+const map = (arr, callback) => {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i], i));
+  }
+  return result;
+};
+map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
 ```
+
 ### Don’t forget:
 
 - Functions are first-class objects in JavaScript
@@ -1650,18 +1675,16 @@ However, callbacks can also be synchronous. The following `map` function takes a
 `children` is part of the props object passed to components that allows components to be passed as data to other components, providing the ability to compose components cleanly. There are a number of methods available in the React API to work with this prop, such as `React.Children.map`, `React.Children.forEach`, `React.Children.count`, `React.Children.only` and `React.Children.toArray`. A simple usage example of the children prop is as follows:
 
 ```js
-   
-    function GenericBox({ children }) {
-      return <div className="container">{children}</div>;
-    }
-    function App() {
-      return (
-        <GenericBox>
-          <span>Hello</span> <span>World</span>
-        </GenericBox>
-      );
-    }
-
+function GenericBox({ children }) {
+  return <div className="container">{children}</div>;
+}
+function App() {
+  return (
+    <GenericBox>
+      <span>Hello</span> <span>World</span>
+    </GenericBox>
+  );
+}
 ```
 
 ### Don’t forget:
@@ -1680,30 +1703,31 @@ However, callbacks can also be synchronous. The following `map` function takes a
 React’s philosophy in the beginning was to align with the browser DOM API rather than HTML, since that more closely represents how elements are created. Setting a `class` on an element meant using the `className` API:
 
 ```js
-   
-    const element = document.createElement("div");
-    element.className = "hello";
+const element = document.createElement("div");
+element.className = "hello";
 ```
+
 Additionally, before ES5, reserved words could not be used in objects:
 
 ```js
-   
-    const element = {
-      attributes: {
-        class: "hello",
-      },
-    };
+const element = {
+  attributes: {
+    class: "hello",
+  },
+};
 ```
+
 In IE8, this will throw an error. In modern environments, destructuring will throw an error if trying to assign to a variable:
 
 ```js
-   
+
     const { class } = this.props // Error
     const { className } = this.props // All good
     const { class: className } =
         this.props // All good, but
             cumbersome!
 ```
+
 However, `class` _can_ be used as a prop without problems, as seen in other libraries like Preact. React currently allows you to use `class`, but will throw a warning and convert it to `className` under the hood. There is currently an open thread (as of January 2019) discussing changing `className` to `class` to reduce confusion.
 
 ### Don’t forget:
@@ -1717,10 +1741,10 @@ However, `class` _can_ be used as a prop without problems, as seen in other libr
 Using the object spread operator `...`, the object’s own enumerable properties can be copied into the new object. This creates a shallow clone of the object.
 
 ```js
-   
-    const obj = { a: 1, b: 2 };
-    const shallowClone = { ...obj };
+const obj = { a: 1, b: 2 };
+const shallowClone = { ...obj };
 ```
+
 With this technique, prototypes are ignored. In addition, nested objects are not cloned, but rather their references get copied, so nested objects still refer to the same objects as the original. Deep-cloning is much more complex in order to effectively clone any type of object (Date, RegExp, Function, Set, etc) that may be nested within the object. Other alternatives include:
 
 - `JSON.parse(JSON.stringify(obj))` can be used to deep-clone a simple object, but it is CPU-intensive and only accepts valid JSON (therefore it strips functions and does not allow circular references).
@@ -1764,40 +1788,40 @@ A closure is a function defined inside another function and has access to its le
 ### Answer
 
 Even though two different objects can have the same properties with equal values, they are not considered equal when compared using `==` or `===`. This is because they are being compared by their reference (location in memory), unlike primitive values which are compared by value. In order to test if two objects are equal in structure, a helper function is required. It will iterate through the own properties of each object to test if they have the same values, including nested objects. Optionally, the prototypes of the objects may also be tested for equivalence by passing `true` as the 3rd argument. Note: this technique does not attempt to test equivalence of data structures other than plain objects, arrays, functions, dates and primitive values.
-```js
-    function isDeepEqual(obj1, obj2, testPrototypes = false) {
-      if (obj1 === obj2) {
-        return true;
-      }
-      if (typeof obj1 === "function" && typeof obj2 === "function") {
-        return obj1.toString() === obj2.toString();
-      }
-      if (obj1 instanceof Date && obj2 instanceof Date) {
-        return obj1.getTime() === obj2.getTime();
-      }
-      if (
-        Object.prototype.toString.call(obj1) !==
-          Object.prototype.toString.call(obj2) ||
-        typeof obj1 !== "object"
-      ) {
-        return false;
-      }
-      const prototypesAreEqual = testPrototypes
-        ? isDeepEqual(
-            Object.getPrototypeOf(obj1),
-            Object.getPrototypeOf(obj2),
-            true
-          )
-        : true;
-      const obj1Props = Object.getOwnPropertyNames(obj1);
-      const obj2Props = Object.getOwnPropertyNames(obj2);
-      return (
-        obj1Props.length === obj2Props.length &&
-        prototypesAreEqual &&
-        obj1Props.every((prop) => isDeepEqual(obj1[prop], obj2[prop]))
-      );
-    }
 
+```js
+function isDeepEqual(obj1, obj2, testPrototypes = false) {
+  if (obj1 === obj2) {
+    return true;
+  }
+  if (typeof obj1 === "function" && typeof obj2 === "function") {
+    return obj1.toString() === obj2.toString();
+  }
+  if (obj1 instanceof Date && obj2 instanceof Date) {
+    return obj1.getTime() === obj2.getTime();
+  }
+  if (
+    Object.prototype.toString.call(obj1) !==
+      Object.prototype.toString.call(obj2) ||
+    typeof obj1 !== "object"
+  ) {
+    return false;
+  }
+  const prototypesAreEqual = testPrototypes
+    ? isDeepEqual(
+        Object.getPrototypeOf(obj1),
+        Object.getPrototypeOf(obj2),
+        true
+      )
+    : true;
+  const obj1Props = Object.getOwnPropertyNames(obj1);
+  const obj2Props = Object.getOwnPropertyNames(obj2);
+  return (
+    obj1Props.length === obj2Props.length &&
+    prototypesAreEqual &&
+    obj1Props.every((prop) => isDeepEqual(obj1[prop], obj2[prop]))
+  );
+}
 ```
 
 ### Don’t forget:
@@ -1817,9 +1841,9 @@ Even though two different objects can have the same properties with equal values
 Context provides a way to pass data through the component tree without having to pass props down manually at every level. For example, authenticated user, locale preference, UI theme need to be accessed in the application by many components.
 
 ```js
-    
-    const { Provider, Consumer } = React.createContext(defaultValue);
+const { Provider, Consumer } = React.createContext(defaultValue);
 ```
+
 ### Don’t forget:
 
 - Context provides a way to pass data through a tree of React components, without having to manually pass props.
@@ -1886,11 +1910,11 @@ The General Sibling Selector `~` selects all elements that are siblings of a spe
     }
 
 The Adjacent Sibling Selector `+` selects all elements that are the adjacent siblings of a specified element. The following example will select all `<p>` elements that are placed immediately after `<div>` elements:
-```css
-    div + p {
-      background-color: red;
-    }
 
+```css
+div + p {
+  background-color: red;
+}
 ```
 
 ### Don’t forget:
@@ -1927,24 +1951,23 @@ Assuming the browser has already determined the set of rules for an element, eac
 Debouncing is a process to add some delay before executing a function. It is commonly used with DOM event listeners to improve the performance of page. It is a technique which allow us to “group” multiple sequential calls in a single one. A raw DOM event listeners can easily trigger 20+ events per second. A debounced function will only be called once the delay has passed.
 
 ```js
-    
-    const debounce = (func, delay) => {
-      let debounceTimer;
-      return function () {
-        const context = this;
-        const args = arguments;
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(() => func.apply(context, args), delay);
-      };
-    };
-    window.addEventListere(
-      "scroll",
-      debounce(function () {
-        // Do stuff, this function will be called after a delay of 1 second
-      }, 1000)
-    );
-
+const debounce = (func, delay) => {
+  let debounceTimer;
+  return function () {
+    const context = this;
+    const args = arguments;
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(context, args), delay);
+  };
+};
+window.addEventListere(
+  "scroll",
+  debounce(function () {
+    // Do stuff, this function will be called after a delay of 1 second
+  }, 1000)
+);
 ```
+
 ### Don’t forget:
 
 - Common use case is to make API call only when user is finished typing while searching.
@@ -1993,7 +2016,7 @@ Triple equals (`===`) checks for strict equality, which means both the type and 
 An element is a plain JavaScript object that represents a DOM node or component. Elements are pure and never mutated, and are cheap to create. A component is a function or class. Components can have state and take props as input and return an element tree as output (although they can represent generic containers or wrappers and don’t necessarily have to emit DOM). Components can initiate side effects in lifecycle methods (e.g. AJAX requests, DOM mutations, interfacing with 3rd party libraries) and may be expensive to create.
 
 ```js
-    
+
     const Component = () => "Hello";
     const componentElement = <Component />;
     const domNodeElement = <div />;
@@ -2079,14 +2102,15 @@ Event delegation is a technique of delegating events to a single common ancestor
   });
 
 Event delegation involves using a condition to ensure the child target matches our desired element:
-```js
 
-    document.addEventListener("click", (e) => {
-      if (e.target.closest("button")) {
-        handleButtonClick();
-      }
-    });
+```js
+document.addEventListener("click", (e) => {
+  if (e.target.closest("button")) {
+    handleButtonClick();
+  }
+});
 ```
+
 ### Don’t forget:
 
 - The difference between event bubbling and capturing
@@ -2100,7 +2124,8 @@ Event delegation involves using a condition to ensure the child target matches o
 ### Answer
 
 Event-driven programming is a paradigm that involves building applications that send and receive events. When the program emits events, the program responds by running any callback functions that are registered to that event and context, passing in associated data to the function. With this pattern, events can be emitted into the wild without throwing errors even if no functions are subscribed to it. A common example of this is the pattern of elements listening to DOM events such as `click` and `mouseenter`, where a callback function is run when the event occurs.
-```js
+
+````js
 
     document.addEventListener("click", function (event) {
       // This callback function is run when the user
@@ -2110,7 +2135,7 @@ Event-driven programming is a paradigm that involves building applications that 
 Without the context of the DOM, the pattern may look like this:
 
 ```js
-    
+
     const hub = createEventHub();
     hub.on("message", function (data) {
       console.log(`${data.username} said ${data.text}`);
@@ -2224,14 +2249,15 @@ There is a shortcut for this using the logical NOT `!` operator. Using `!` once 
 Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add values into the array, using the sum of the last two values, except for the first two.
 
 ```js
-    
+
     const fibonacci = (n) =>
       [...Array(n)].reduce(
         (acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i),
         []
       );
 
-```
+````
+
 ### Don’t forget:
 
 ### Additional links
@@ -2240,8 +2266,8 @@ Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add v
 
 ### Given an array of words, write a method to output matching sets of anagrams.
 
-```js
-    
+````js
+
     const words = [
       "rates",
       "rat",
@@ -2258,7 +2284,7 @@ Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add v
 ### Answer
 
 ```js
-    
+
     const words = [
       "rates",
       "rat",
@@ -2295,7 +2321,7 @@ Initialize an empty array of length `n`. Use `Array.prototype.reduce()` to add v
       }
     }
 
-```
+````
 
 ### Don’t forget:
 
@@ -2335,7 +2361,7 @@ Set the `.row` parent to `display: flex;` and use the `flex` shorthand property 
       flex: 3;
     }
 
-```
+````
 
 ### Don’t forget:
 
@@ -2355,7 +2381,7 @@ It evaluates to `false` because JavaScript uses the IEEE 754 standard for Math a
 A solution to this problem would be to use a function that determines if two numbers are approximately equal by defining an error margin (epsilon) value that the difference between two values should be less than.
 
 ```js
-    
+
     const approxEqual = (n1, n2, epsilon = 0.0001) => Math.abs(n1 - n2) < epsilon;
     approxEqual(0.1 + 0.2, 0.3); // true
 
@@ -2423,7 +2449,7 @@ Fragments allow a React component to return multiple elements without a wrapper,
       );
     }
 
-```
+````
 
 ### Don’t forget:
 
@@ -2485,9 +2511,9 @@ Single page applications make use of client-side rendering. This means that ‘e
 A higher-order component (HOC) is a function that takes a component as an argument and returns a new component. It is a pattern that is derived from React’s compositional nature. Higher-order components are like **pure components** because they accept any dynamically provided child component, but they won’t modify or copy any behavior from their input components.
 
 ```js
-    
-    const EnhancedComponent = higherOrderComponent(WrappedComponent);
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ```
+
 ### Don’t forget:
 
 - They can be used for state abstraction and manipulation, props manipulation, render high jacking, etc.
@@ -2502,6 +2528,7 @@ A higher-order component (HOC) is a function that takes a component as an argume
       var foo = 2;
     };
     foobar();
+
 ```
 ### Answer
 
@@ -2682,8 +2709,8 @@ With HTML5, web pages can store data locally within the user’s browser. The da
 
 This technique is very common in JavaScript libraries. It creates a closure around the entire contents of the file which creates a private namespace and thereby helps avoid potential name clashes between different JavaScript modules and libraries. The function is immediately invoked so that the namespace (library name) is assigned the return value of the function.
 
-```js
-    
+````js
+
     const myLibrary = (function () {
       var privateVariable = 2;
       return {
@@ -2714,7 +2741,7 @@ These two types of programming can roughly be summarized as:
 ### Imperative
 
 ```js
-    
+
     const numbers = [1, 2, 3, 4, 5];
     const numbersDoubled = [];
     for (let i = 0; i < numbers.length; i++) {
@@ -2726,7 +2753,7 @@ We manually loop over the numbers of the array and assign the new index as the n
 ### Declarative
 
 ```js
-    
+
     const numbers = [1, 2, 3, 4, 5];
     const numbersDoubled = numbers.map((n) => n * 2);
 
@@ -2773,7 +2800,7 @@ Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statemen
       );
     }
 
-```
+````
 
 ### Don’t forget:
 
@@ -2787,8 +2814,8 @@ Logical AND `&&` and the ternary `? :` operator replace the `if`/`else` statemen
 
 Keys are a special string attribute that helps React identify which items have been changed, added or removed. They are used when rendering array elements to give them a stable identity. Each element’s key must be unique (e.g. IDs from the data or indexes as a last resort).
 
-```js
-    
+````js
+
     const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
 
 - Using indexes as keys is not recommended if the order of items may change, as it might negatively impact performance and may cause issues with component state.
@@ -2878,10 +2905,11 @@ When several components need to share the same data, then it is recommended to l
 > There are many ways to solve this problem, this is just one one of them. Using `String.prototype.slice()` we can grab the last 4 characters of the string by passing `-4` as an argument. Then, using `String.prototype.padStart()`, we can pad the string to the original length with the repeated mask character.
 
 ```js
-    
+
     const mask = (str, maskChar = "#") =>
       str.slice(-4).padStart(str.length, maskChar);
-```
+````
+
 ### Don’t forget:
 
 - Short, one-line functional solutions to problems should be preferred provided they are efficient
@@ -2910,8 +2938,8 @@ When several components need to share the same data, then it is recommended to l
 
 Memoization is the process of caching the output of function calls so that subsequent calls are faster. Calling the function again with the same input will return the cached output without needing to do the calculation again. A basic implementation in JavaScript looks like this:
 
-```js
-    
+````js
+
     const memoize = (fn) => {
       const cache = new Map();
       return (value) => {
@@ -2940,7 +2968,7 @@ Memoization is the process of caching the output of function calls so that subse
 In JavaScript classes, the methods are not bound by default. This means that their `this` context can be changed (in the case of an event handler, to the element that is listening to the event) and will not refer to the component instance. To solve this, `Function.prototype.bind()` can be used to enforce the `this` context as the component instance.
 
 ```js
-    
+
     constructor(props) {
       super(props);
       this.handleClick = this.handleClick.bind(this);
@@ -3040,7 +3068,8 @@ The two terms can be contrasted as:
       // use the data object
       console.log(data);
     });
-```
+````
+
 ### Answer
 
 Advantages include:
@@ -3121,8 +3150,8 @@ In JavaScript, two values discretely represent nothing - `undefined` and `null`.
 
 Often used to store one occurrence of data.
 
-```js
-    
+````js
+
     const person = {
       name: "John",
       age: 50,
@@ -3153,7 +3182,7 @@ Often used when you need to create multiple instances of an object, each with th
 Creates a new object similar to a constructor, but can store private data using a closure. There is also no need to use `new` before invoking the function or the `this` keyword. Factory functions usually discard the idea of prototypes and keep all properties and methods as own properties of the object.
 
 ```js
-    
+
     const createPerson = (name, age) => {
       const birthday = () => person.age++;
       const person = { name, age, birthday };
@@ -3167,7 +3196,7 @@ Creates a new object similar to a constructor, but can store private data using 
 Sets the prototype of the newly created object.
 
 ```js
-    
+
     const personProto = {
       birthday() {
         this.age++;
@@ -3186,7 +3215,8 @@ A second argument can also be supplied to `Object.create()` which acts as a desc
         enumerable: true,
       },
     });
-```
+````
+
 ### Don’t forget:
 
 - Prototypes are objects that other objects inherit properties and methods from.
@@ -3204,7 +3234,8 @@ Parameters are the variable names of the function definition, while arguments ar
       console.log(arguments[0]); // "argument1"
     }
     myFunction("argument1", "argument2");
-```
+
+````
 ### Don’t forget:
 
 - `arguments` is an array-like object containing information about the arguments supplied to an invoked function.
@@ -3244,7 +3275,7 @@ You can use an arrow function to wrap around an event handler and pass arguments
 ### Create a function `pipe` that performs left-to-right function composition by returning a function that accepts one argument.
 
 ```js
-    
+
     const square = (v) => v * v;
     const double = (v) => v * 2;
     const addOne = (v) => v + 1;
@@ -3256,12 +3287,13 @@ You can use an arrow function to wrap around an event handler and pass arguments
 Gather all supplied arguments using the rest operator `...` and return a unary function that uses `Array.prototype.reduce()` to run the value through the series of functions before returning the final value.
 
 ```js
-    
+
     const pipe =
       (...fns) =>
       (x) =>
         fns.reduce((v, fn) => fn(v), x);
-```
+````
+
 ### Don’t forget:
 
 - Function composition is the process of combining two or more functions to produce a new function.
@@ -3335,6 +3367,7 @@ The `Promise` object represents the eventual completion (or failure) of an async
     })
       .then(console.log)
       .catch(console.error);
+
 ```
 ### Don’t forget:
 
@@ -3397,19 +3430,19 @@ A pure function is a function that satisfies these two conditions:
 ### Pure
 
 ```js
-    
-    const a = (x, y) => x + y;
-    const b = (arr, value) => arr.concat(value);
-    const c = (arr) => [...arr].sort((a, b) => a - b);
+const a = (x, y) => x + y;
+const b = (arr, value) => arr.concat(value);
+const c = (arr) => [...arr].sort((a, b) => a - b);
 ```
+
 ### Impure
 
 ```js
-    
-    const a = (x, y) => x + y + Math.random();
-    const b = (arr, value) => (arr.push(value), arr);
-    const c = (arr) => arr.sort((a, b) => a - b);
+const a = (x, y) => x + y + Math.random();
+const b = (arr, value) => (arr.push(value), arr);
+const c = (arr) => arr.sort((a, b) => a - b);
 ```
+
 ### Don’t forget:
 
 - Pure functions are easier to reason about due to their reliability.
@@ -3427,23 +3460,22 @@ A pure function is a function that satisfies these two conditions:
 Comments must be wrapped inside curly braces `{}` and use the `/* */` syntax.
 
 ```js
-    
-    const tree = (
-      <div>
-        {/* Comment */}
-        <p>Text</p>
-      </div>
-    );
-
+const tree = (
+  <div>
+    {/* Comment */}
+    <p>Text</p>
+  </div>
+);
 ```
+
 ### What is recursion and when is it useful?
 
 ### Answer
 
 Recursion is the repeated application of a process. In JavaScript, recursion involves functions that call themselves repeatedly until they reach a base condition. The base condition breaks out of the recursion loop because otherwise the function would call itself indefinitely. Recursion is very useful when working with data structures that contain nesting where the number of levels deep is unknown. For example, you may have a thread of comments returned from a database that exist in a flat array but need to be nested for display in the UI. Each comment is either a top-level comment (no parent) or is a reply to a parent comment. Comments can be a reply of a reply of a reply… we have no knowledge beforehand the number of levels deep a comment may be. This is where recursion can help.
 
-```js
-    
+````js
+
     const nest = (items, id = null, link = "parent_id") =>
       items
         .filter((item) => item[link] === id)
@@ -3478,13 +3510,14 @@ In the above example, the base condition is met if `filter()` returns an empty a
 ### What is the output of the following code?
 
 ```js
-    
+
     const a = [1, 2, 3];
     const b = [1, 2, 3];
     const c = "1,2,3";
     console.log(a == c);
     console.log(a == b);
-```
+````
+
 ### Answer
 
 The first `console.log` outputs `true` because JavaScript’s compiler performs type conversion and therefore it compares to strings by their value. On the other hand, the second `console.log` outputs `false` because Arrays are Objects and Objects are compared by reference.
@@ -3577,7 +3610,7 @@ REST (REpresentational State Transfer) is a software design pattern for network 
       }
     }
 
-```
+````
 
 ### Answer
 
@@ -3600,14 +3633,14 @@ Sometimes. Due to JavaScript’s automatic semicolon insertion, the interpreter 
 1.  The line starts with `[`
 
 ```js
-    
+
     const previousLine = 3;
     [1, 2, previousLine].map((n) => n \* 2);
 
 1.  The line starts with `(`
 
 ```js
-    
+
     const previousLine = 3;
     (function () {
     // ...
@@ -3648,7 +3681,7 @@ This remains true for multiple operations because of left-to-right evaluation.
 A common use case for this behavior is setting default values. If the first operand is falsy the second operand will be evaluated.
 
 ```js
-    
+
     const options = {};
     const setting = options.setting || "default";
     setting; // "default"
@@ -3659,7 +3692,7 @@ Another common use case is only evaluating an expression if the first operand is
 
 ```js
 
-  
+
     // Instead of:
     addEventListener("click", (e) => {
       if (e.target.closest("button")) {
@@ -3672,7 +3705,8 @@ Another common use case is only evaluating an expression if the first operand is
       (e) => e.target.closest("button") && handleButtonClick(e)
     );
 
-```
+````
+
 In the above case, if `e.target` is not or does not contain an element matching the `"button"` selector, the function will not be called. This is because the first operand will be falsy, causing the second operand to not be evaluated.
 
 ### Don’t forget:
@@ -3703,27 +3737,22 @@ CSS sprites combine multiple images into one image, limiting the number of HTTP 
 
 A stateful component is a component whose behavior depends on its state. This means that two separate instances of the component if given the same props will not necessarily render the same output, unlike pure function components.
 
-
-
 ```js
-
-  
-    // Stateful class component
-    class App extends Component {
-      constructor(props) {
-        super(props);
-        this.state = { count: 0 };
-      }
-      render() {
-        // ...
-      }
-    }
-    // Stateful function component
-    function App() {
-      const [count, setCount] = useState(0);
-      return; // ...
-    }
-
+// Stateful class component
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+  render() {
+    // ...
+  }
+}
+// Stateful function component
+function App() {
+  const [count, setCount] = useState(0);
+  return; // ...
+}
 ```
 
 ### Don’t forget:
@@ -3763,15 +3792,15 @@ Static methods belong to a class and don’t act on instances, while instance me
 
 In this case, the `Array.isArray` method does not make sense as an instance method of arrays because we already know the value is an array when working with it. Instance methods could technically work as static methods, but provide terser syntax:
 
+````js
 
 ```js
 
-```js
-    
     const arr = [1, 2, 3];
     arr.push(4);
     Array.push(arr, 4);
-```
+````
+
 ### Don’t forget:
 
 - How to create static and instance methods with ES2015 class syntax
@@ -3802,53 +3831,57 @@ The `this` keyword is an object that represents the context of an executing func
 ### Object literals
 
 `this` refers to the object itself inside regular functions if the object precedes the invocation of the function. Properties set as `this` do not refer to the object.
-```js  
-    var myObject = {
-      property: this,
-      regularFunction: function () {
-        return this;
-      },
-      arrowFunction: () => {
-        return this;
-      },
-      iife: (function () {
-        return this;
-      })(),
-    };
-    myObject.regularFunction(); // myObject
-    myObject["regularFunction"](); // my Object
-    myObject.property; // NOT myObject; lexical `this`
-    myObject.arrowFunction(); // NOT myObject; lexical `this`
-    myObject.iife; // NOT myObject; lexical `this`
-    const regularFunction = myObject.regularFunction;
-    regularFunction(); // NOT myObject; lexical `this`
+
+```js
+var myObject = {
+  property: this,
+  regularFunction: function () {
+    return this;
+  },
+  arrowFunction: () => {
+    return this;
+  },
+  iife: (function () {
+    return this;
+  })(),
+};
+myObject.regularFunction(); // myObject
+myObject["regularFunction"](); // my Object
+myObject.property; // NOT myObject; lexical `this`
+myObject.arrowFunction(); // NOT myObject; lexical `this`
+myObject.iife; // NOT myObject; lexical `this`
+const regularFunction = myObject.regularFunction;
+regularFunction(); // NOT myObject; lexical `this`
 ```
+
 ### Event listeners
 
 `this` refers to the element listening to the event.
-```js
 
-    document.body.addEventListener("click", function () {
-      console.log(this); // document.body
-    });
+```js
+document.body.addEventListener("click", function () {
+  console.log(this); // document.body
+});
 ```
+
 ### Constructors
 
 `this` refers to the newly created object.
-```js  
-    class Example {
-      constructor() {
-        console.log(this); // myExample
-      }
-    }
-  
-``` 
-  
----
-    
-```js  
-    const myExample = new Example();
+
+```js
+class Example {
+  constructor() {
+    console.log(this); // myExample
+  }
+}
 ```
+
+---
+
+```js
+const myExample = new Example();
+```
+
 ### Manual
 
 With `call()` and `apply()`, `this` refers to the object passed as the first argument.
@@ -3861,21 +3894,23 @@ With `call()` and `apply()`, `this` refers to the object passed as the first arg
 ### Unwanted `this`
 
 Because `this` can change depending on the scope, it can have unexpected values when using regular functions.
-```js  
-    var obj = {
-      arr: [1, 2, 3],
-      doubleArr() {
-        return this.arr.map(function (value) {
-          // this is now this.arr
-          return this.double(value);
-        });
-      },
-      double() {
-        return value * 2;
-      },
-    };
-    obj.doubleArr(); // Uncaught TypeError: this.double is not a function
+
+```js
+var obj = {
+  arr: [1, 2, 3],
+  doubleArr() {
+    return this.arr.map(function (value) {
+      // this is now this.arr
+      return this.double(value);
+    });
+  },
+  double() {
+    return value * 2;
+  },
+};
+obj.doubleArr(); // Uncaught TypeError: this.double is not a function
 ```
+
 ### Don’t forget:
 
 - In non-strict mode, global `this` is the global object (`window` in browsers), while in strict mode global `this` is `undefined`.
@@ -3969,45 +4004,48 @@ When no keyword exists before a variable assignment, it is either assigning a gl
 `var` was the default statement to declare a variable until ES2015. It creates a function-scoped variable that can be reassigned and redeclared. However, due to its lack of block scoping, it can cause issues if the variable is being reused in a loop that contains an asynchronous callback because the variable will continue to exist outside of the block scope. Below, by the time the the `setTimeout` callback executes, the loop has already finished and the `i` variable is `10`, so all ten callbacks reference the same variable available in the function scope.
 
 ```js
-    for (var i = 0; i < 10; i++) {
-      setTimeout(() => {
-        // logs `10` ten times
-        console.log(i);
-      });
-    }
-    /* Solutions with `var` */
-    for (var i = 0; i < 10; i++) {
-      // Passed as an argument will use the value as-is in
-      // that point in time
-      setTimeout(console.log, 0, i);
-    }
-    for (var i = 0; i < 10; i++) {
-      // Create a new function scope that will use the value
-      // as-is in that point in time
-      ((i) => {
-        setTimeout(() => {
-          console.log(i);
-        });
-      })(i);
-    }
+for (var i = 0; i < 10; i++) {
+  setTimeout(() => {
+    // logs `10` ten times
+    console.log(i);
+  });
+}
+/* Solutions with `var` */
+for (var i = 0; i < 10; i++) {
+  // Passed as an argument will use the value as-is in
+  // that point in time
+  setTimeout(console.log, 0, i);
+}
+for (var i = 0; i < 10; i++) {
+  // Create a new function scope that will use the value
+  // as-is in that point in time
+  ((i) => {
+    setTimeout(() => {
+      console.log(i);
+    });
+  })(i);
+}
 ```
+
 ### let
 
 `let` was introduced in ES2015 and is the new preferred way to declare variables that will be reassigned later. Trying to redeclare a variable again will throw an error. It is block-scoped so that using it in a loop will keep it scoped to the iteration.
+
 ```js
-    for (let i = 0; i < 10; i++) {
-      setTimeout(() => {
-        // logs 0, 1, 2, 3, ...
-        console.log(i);
-      });
-    }
+for (let i = 0; i < 10; i++) {
+  setTimeout(() => {
+    // logs 0, 1, 2, 3, ...
+    console.log(i);
+  });
+}
 ```
+
 ### const
 
 `const` was introduced in ES2015 and is the new preferred default way to declare all variables if they won’t be reassigned later, even for objects that will be mutated (as long as the reference to the object does not change). It is block-scoped and cannot be reassigned.
 
-```js
-    
+````js
+
     const myObject = {};
     myObject.prop = "hello!"; // No error
     myObject = "hello"; // Error
@@ -4108,7 +4146,7 @@ XSS refers to client-side code injection where the attacker injects malicious sc
 ---
 
 # ALL Prior Code
-  
+
   ```js
 ```js
 
@@ -4162,175 +4200,172 @@ XSS refers to client-side code injection where the attacker injects malicious sc
         // ...
       }
     }
-  
-``` 
-  
+
+````
+
 ---
-    
-```js  
-    const permutations = arr => {
-      if (arr.length <= 2) return arr.length === 2 ? [arr, [arr[1], arr[0]]] : arr
-      return arr.reduce(
-        (acc, item, i) =>
-          acc.concat(
-            permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map(val => [
-              item,
-              ...val
-            ])
-          ),
-        []
-      )
-    }
-    function example() {
-      console.log(this)
-    }
-  
-``` 
-  
+
+```js
+const permutations = (arr) => {
+  if (arr.length <= 2) return arr.length === 2 ? [arr, [arr[1], arr[0]]] : arr;
+  return arr.reduce(
+    (acc, item, i) =>
+      acc.concat(
+        permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((val) => [
+          item,
+          ...val,
+        ])
+      ),
+    []
+  );
+};
+function example() {
+  console.log(this);
+}
+```
+
 ---
-    
-```js  
-    const boundExample = bind(example, { a: true })
-    boundExample.call({ b: true }) // logs { a: true }
-  
-``` 
-  
+
+```js
+const boundExample = bind(example, { a: true });
+boundExample.call({ b: true }); // logs { a: true }
+```
+
 ---
-    
-```js  
-    const bind = (fn, context) => (...args) => fn.apply(context, args)
-    getData(function(a) {
-      getMoreData(a, function(b) {
-        getMoreData(b, function(c) {
-          getMoreData(c, function(d) {
-            getMoreData(d, function(e) {
-              // ...
-            })
-          })
-        })
-      })
-    })
-    async function asyncAwaitVersion() {
-      const a = await getData()
-      const b = await getMoreData(a)
-      const c = await getMoreData(b)
-      const d = await getMoreData(c)
-      const e = await getMoreData(d)
-      // ...
-    }
-    setState({ name: "sudheer" }, () => {
-      console.log("The name has updated and component re-rendered")
-    })
-    // Legacy approach using findDOMNode()
-    class MyComponent extends Component {
-      componentDidMount() {
-        findDOMNode(this).scrollIntoView()
-      }
-      render() {
-        return <div />
-      }
-    }
-    // Recommended approach using callback refs
-    class MyComponent extends Component {
-      componentDidMount() {
-        this.node.scrollIntoView()
-      }
-      render() {
-        return <div ref={node => (this.node = node)} />
-      }
-    }
-    function onClick() {
-      console.log("The user clicked on the page.")
-    }
-    document.addEventListener("click",
-        onClick)
-    const map = (arr, callback) => {
-      const result = []
-      for (let i = 0; i < arr.length; i++) {
-        result.push(callback(arr[i], i))
-      }
-      return result
-    }
-    map([1, 2, 3, 4, 5], n => n * 2) // [2, 4, 6, 8, 10]
-    function GenericBox({ children }) {
-      return <div className="container">{children}</div>
-    }
-    function App() {
-      return (
-        <GenericBox>
-          <span>Hello</span> <span>World</span>
-        </GenericBox>
-      )
-    }
-  
-``` 
-  
+
+```js
+const bind =
+  (fn, context) =>
+  (...args) =>
+    fn.apply(context, args);
+getData(function (a) {
+  getMoreData(a, function (b) {
+    getMoreData(b, function (c) {
+      getMoreData(c, function (d) {
+        getMoreData(d, function (e) {
+          // ...
+        });
+      });
+    });
+  });
+});
+async function asyncAwaitVersion() {
+  const a = await getData();
+  const b = await getMoreData(a);
+  const c = await getMoreData(b);
+  const d = await getMoreData(c);
+  const e = await getMoreData(d);
+  // ...
+}
+setState({ name: "sudheer" }, () => {
+  console.log("The name has updated and component re-rendered");
+});
+// Legacy approach using findDOMNode()
+class MyComponent extends Component {
+  componentDidMount() {
+    findDOMNode(this).scrollIntoView();
+  }
+  render() {
+    return <div />;
+  }
+}
+// Recommended approach using callback refs
+class MyComponent extends Component {
+  componentDidMount() {
+    this.node.scrollIntoView();
+  }
+  render() {
+    return <div ref={(node) => (this.node = node)} />;
+  }
+}
+function onClick() {
+  console.log("The user clicked on the page.");
+}
+document.addEventListener("click", onClick);
+const map = (arr, callback) => {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(callback(arr[i], i));
+  }
+  return result;
+};
+map([1, 2, 3, 4, 5], (n) => n * 2); // [2, 4, 6, 8, 10]
+function GenericBox({ children }) {
+  return <div className="container">{children}</div>;
+}
+function App() {
+  return (
+    <GenericBox>
+      <span>Hello</span> <span>World</span>
+    </GenericBox>
+  );
+}
+```
+
 ---
-    
-```js  
-    const element = document.createElement("div")
-    element.className = "hello"
-    const element = {
-      attributes: {
-        class: "hello"
-      }
-    }
-  
-``` 
-  
+
+```js
+const element = document.createElement("div");
+element.className = "hello";
+const element = {
+  attributes: {
+    class: "hello",
+  },
+};
+```
+
 ---
-    
-```js  
+
+```js
     const { class } = this.props // Error
     const { className } = this.props // All good
     const { class: className } =
         this.props // All good, but
     const obj = { a: 1, b: 2 }
-  
-``` 
-  
+
+```
+
 ---
-    
-```js  
-    const shallowClone = { ...obj }
-    function isDeepEqual(obj1, obj2, testPrototypes = false) {
-      if (obj1 === obj2) {
-        return true
-      }
-      if (typeof obj1 === "function" && typeof obj2 === "function") {
-        return obj1.toString() === obj2.toString()
-      }
-      if (obj1 instanceof Date && obj2 instanceof Date) {
-        return obj1.getTime() === obj2.getTime()
-      }
-      if (
-        Object.prototype.toString.call(obj1) !==
-          Object.prototype.toString.call(obj2) ||
-        typeof obj1 !== "object"
-      ) {
-        return false
-      }
-      const prototypesAreEqual = testPrototypes
-        ? isDeepEqual(
-            Object.getPrototypeOf(obj1),
-            Object.getPrototypeOf(obj2),
-            true
-          )
-        : true
-      const obj1Props = Object.getOwnPropertyNames(obj1)
-      const obj2Props = Object.getOwnPropertyNames(obj2)
-      return (
-        obj1Props.length === obj2Props.length &&
-        prototypesAreEqual &&
-        obj1Props.every(prop => isDeepEqual(obj1[prop], obj2[prop]))
+
+```js
+const shallowClone = { ...obj };
+function isDeepEqual(obj1, obj2, testPrototypes = false) {
+  if (obj1 === obj2) {
+    return true;
+  }
+  if (typeof obj1 === "function" && typeof obj2 === "function") {
+    return obj1.toString() === obj2.toString();
+  }
+  if (obj1 instanceof Date && obj2 instanceof Date) {
+    return obj1.getTime() === obj2.getTime();
+  }
+  if (
+    Object.prototype.toString.call(obj1) !==
+      Object.prototype.toString.call(obj2) ||
+    typeof obj1 !== "object"
+  ) {
+    return false;
+  }
+  const prototypesAreEqual = testPrototypes
+    ? isDeepEqual(
+        Object.getPrototypeOf(obj1),
+        Object.getPrototypeOf(obj2),
+        true
       )
-    }
-  
-``` 
-  
+    : true;
+  const obj1Props = Object.getOwnPropertyNames(obj1);
+  const obj2Props = Object.getOwnPropertyNames(obj2);
+  return (
+    obj1Props.length === obj2Props.length &&
+    prototypesAreEqual &&
+    obj1Props.every((prop) => isDeepEqual(obj1[prop], obj2[prop]))
+  );
+}
+```
+
 ---
-    
-```js  
+
+```js
     const { Provider, Consumer } = React.createContext(defaultValue)
     const debounce = (func, delay) => {
       let debounceTimer;
@@ -4482,84 +4517,77 @@ XSS refers to client-side code injection where the attacker injects malicious sc
     var myFunction = function() {
       console.log("hello")
     }
-  
-``` 
-  
+
+```
+
 ---
-    
-```js  
-    const myLibrary = (function() {
-      var privateVariable = 2
-      return {
-        publicMethod: () => privateVariable
-      }
-    })()
-    privateVariable // ReferenceError
-    myLibrary.publicMethod() // 2
-    const numbers = [1, 2, 3, 4, 5]
-    const numbersDoubled = []
-    for (let i = 0; i < numbers.length; i++) {
-      numbersDoubled[i] = numbers[i] * 2
-    }
-  
-``` 
-  
+
+```js
+const myLibrary = (function () {
+  var privateVariable = 2;
+  return {
+    publicMethod: () => privateVariable,
+  };
+})();
+privateVariable; // ReferenceError
+myLibrary.publicMethod(); // 2
+const numbers = [1, 2, 3, 4, 5];
+const numbersDoubled = [];
+for (let i = 0; i < numbers.length; i++) {
+  numbersDoubled[i] = numbers[i] * 2;
+}
+```
+
 ---
-    
-```js  
-    const numbers = [1, 2, 3, 4, 5]
-    const numbersDoubled = numbers.map(n => n * 2)
-    function App({ messages, isVisible }) {
-      return (
-        <div>
-          if (messages.length > 0) {
-            <h2>You have {messages.length} unread messages.</h2>
-          } else {
-            <h2>You have no unread messages.</h2>
-          }
-          if (isVisible) {
-            <p>I am visible.</p>
-          }
-        </div>
-      )
-    }
-    function App({ messages, isVisible }) {
-      return (
-        <div>
-          {messages.length > 0 ? (
-            <h2>You have {messages.length} unread messages.</h2>
-          ) : (
-            <h2>You have no unread messages.</h2>
-          )}
-          {isVisible && <p>I am visible.</p>}
-        </div>
-      )
-    }
-  
-``` 
-  
+
+```js
+const numbers = [1, 2, 3, 4, 5];
+const numbersDoubled = numbers.map((n) => n * 2);
+function App({ messages, isVisible }) {
+  return (
+    <div>
+      if (messages.length > 0){" "}
+      {<h2>You have {messages.length} unread messages.</h2>} else{" "}
+      {<h2>You have no unread messages.</h2>}
+      if (isVisible) {<p>I am visible.</p>}
+    </div>
+  );
+}
+function App({ messages, isVisible }) {
+  return (
+    <div>
+      {messages.length > 0 ? (
+        <h2>You have {messages.length} unread messages.</h2>
+      ) : (
+        <h2>You have no unread messages.</h2>
+      )}
+      {isVisible && <p>I am visible.</p>}
+    </div>
+  );
+}
+```
+
 ---
-    
-```js  
-    const todoItems = todos.map(todo => <li key={todo.id}>{todo.text}</li>)
-    const mask = (str, maskChar = "#") =>
-      str.slice(-4).padStart(str.length, maskChar)
-    const memoize = fn => {
-      const cache = new Map()
-      return value => {
-        const cachedResult = cache.get(value)
-        if (cachedResult !== undefined) return cachedResult
-        const result = fn(value)
-        cache.set(value, result)
-        return result
-      }
-    }
-  
-``` 
-  
+
+```js
+const todoItems = todos.map((todo) => <li key={todo.id}>{todo.text}</li>);
+const mask = (str, maskChar = "#") =>
+  str.slice(-4).padStart(str.length, maskChar);
+const memoize = (fn) => {
+  const cache = new Map();
+  return (value) => {
+    const cachedResult = cache.get(value);
+    if (cachedResult !== undefined) return cachedResult;
+    const result = fn(value);
+    cache.set(value, result);
+    return result;
+  };
+};
+```
+
 ---
-    
-```js  
+
+```js
     constructor(props) {
       super(props);
       this.handleClick = this.handleClick.bind(this);
@@ -4630,40 +4658,38 @@ XSS refers to client-side code injection where the attacker injects malicious sc
     Person.prototype.birthday = function() {
       this.age++
     }
-  
-``` 
-  
+
+```
+
 ---
-    
-```js  
-    const person1 = new Person("John", 50)
-    const person2 = new Person("Sally", 20)
-    person1.birthday() // person1.age === 51
-    person2.birthday() // person2.age === 21
-    const createPerson = (name, age) => {
-      const birthday = () => person.age++
-      const person = { name, age, birthday }
-      return person
-    }
-  
-``` 
-  
+
+```js
+const person1 = new Person("John", 50);
+const person2 = new Person("Sally", 20);
+person1.birthday(); // person1.age === 51
+person2.birthday(); // person2.age === 21
+const createPerson = (name, age) => {
+  const birthday = () => person.age++;
+  const person = { name, age, birthday };
+  return person;
+};
+```
+
 ---
-    
-```js  
-    const person = createPerson("John", 50)
-    person.birthday() // person.age === 51
-    const personProto = {
-      birthday() {
-        this.age++
-      }
-    }
-  
-``` 
-  
+
+```js
+const person = createPerson("John", 50);
+person.birthday(); // person.age === 51
+const personProto = {
+  birthday() {
+    this.age++;
+  },
+};
+```
+
 ---
-    
-```js  
+
+```js
     const person = Object.create(personProto)
     person.age = 50
     person.birthday() // person.age === 51
@@ -4714,12 +4740,12 @@ XSS refers to client-side code injection where the attacker injects malicious sc
     //     )
     //   }
     // }
-  
-``` 
-  
+
+```
+
 ---
-    
-```js  
+
+```js
     const a = (x, y) => x + y
     const b = (arr, value) => arr.concat(value)
     const c = arr => [...arr].sort((a, b) => a - b)
@@ -4765,150 +4791,148 @@ XSS refers to client-side code injection where the attacker injects malicious sc
         message: "hello"
       }
     }
-  
-``` 
-  
+
+```
+
 ---
-    
-```js  
-    const previousLine = 3
-    ;[1, 2, previousLine].map(n => n * 2)
-    const previousLine = 3
-    ;(function() {
-      // ...
-    })()
-    true || false
-    false && true
-    true || nonexistentFunction()
-    false && nonexistentFunction()
-    true || nonexistentFunction() || window.nothing.wouldThrowError
-    true || window.nothing.wouldThrowError
-    true
-    const options = {}
-  
-``` 
-  
+
+```js
+const previousLine = 3;
+[1, 2, previousLine].map((n) => n * 2);
+const previousLine = 3;
+(function () {
+  // ...
+})();
+true || false;
+false && true;
+true || nonexistentFunction();
+false && nonexistentFunction();
+true || nonexistentFunction() || window.nothing.wouldThrowError;
+true || window.nothing.wouldThrowError;
+true;
+const options = {};
+```
+
 ---
-    
-```js  
-    const setting = options.setting || "default"
-    setting // "default"
-    // Instead of:
-    addEventListener("click", e => {
-      if (e.target.closest("button")) {
-        handleButtonClick(e)
-      }
-    })
-    // You can take advantage of short-circuit evaluation:
-    addEventListener(
-      "click",
-      e => e.target.closest("button") && handleButtonClick(e)
-    )
-    // Stateful class component
-    class App extends Component {
-      constructor(props) {
-        super(props)
-        this.state = { count: 0 }
-      }
-      render() {
-        // ...
-      }
-    }
-    // Stateful function component
-    function App() {
-      const [count, setCount] = useState(0)
-      return // ...
-    }
-    Array.isArray // static method of Array
-    Array.prototype.push // instance method of Array
-    const arr = [1, 2, 3]
-    arr.push(4)
-    Array.push(arr, 4)
-    var myObject = {
-      property: this,
-      regularFunction: function() {
-        return this
-      },
-      arrowFunction: () => {
-        return this
-      },
-      iife: (function() {
-        return this
-      })()
-    }
-    myObject.regularFunction() // myObject
-    myObject["regularFunction"]() // my Object
-    myObject.property // NOT myObject; lexical `this`
-    myObject.arrowFunction() // NOT myObject; lexical `this`
-    myObject.iife // NOT myObject; lexical `this`
-    const regularFunction = myObject.regularFunction
-    regularFunction() // NOT myObject; lexical `this`
-    document.body.addEventListener("click", function() {
-      console.log(this) // document.body
-    })
-    class Example {
-      constructor() {
-        console.log(this) // myExample
-      }
-    }
-  
-``` 
-  
+
+```js
+const setting = options.setting || "default";
+setting; // "default"
+// Instead of:
+addEventListener("click", (e) => {
+  if (e.target.closest("button")) {
+    handleButtonClick(e);
+  }
+});
+// You can take advantage of short-circuit evaluation:
+addEventListener(
+  "click",
+  (e) => e.target.closest("button") && handleButtonClick(e)
+);
+// Stateful class component
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+  render() {
+    // ...
+  }
+}
+// Stateful function component
+function App() {
+  const [count, setCount] = useState(0);
+  return; // ...
+}
+Array.isArray; // static method of Array
+Array.prototype.push; // instance method of Array
+const arr = [1, 2, 3];
+arr.push(4);
+Array.push(arr, 4);
+var myObject = {
+  property: this,
+  regularFunction: function () {
+    return this;
+  },
+  arrowFunction: () => {
+    return this;
+  },
+  iife: (function () {
+    return this;
+  })(),
+};
+myObject.regularFunction(); // myObject
+myObject["regularFunction"](); // my Object
+myObject.property; // NOT myObject; lexical `this`
+myObject.arrowFunction(); // NOT myObject; lexical `this`
+myObject.iife; // NOT myObject; lexical `this`
+const regularFunction = myObject.regularFunction;
+regularFunction(); // NOT myObject; lexical `this`
+document.body.addEventListener("click", function () {
+  console.log(this); // document.body
+});
+class Example {
+  constructor() {
+    console.log(this); // myExample
+  }
+}
+```
+
 ---
-    
-```js  
-    const myExample = new Example()
-    var myFunction = function() {
-      return this
-    }
-    myFunction.call({ customThis: true }) // { customThis: true }
-    var obj = {
-      arr: [1, 2, 3],
-      doubleArr() {
-        return this.arr.map(function(value) {
-          // this is now this.arr
-          return this.double(value)
-        })
-      },
-      double() {
-        return value * 2
-      }
-    }
-    obj.doubleArr() // Uncaught TypeError: this.double is not a function
-    typeof typeof 0
-    for (var i = 0; i < 10; i++) {
-      setTimeout(() => {
-        // logs `10` ten times
-        console.log(i)
-      })
-    }
-    /* Solutions with `var` */
-    for (var i = 0; i < 10; i++) {
-      // Passed as an argument will use the value as-is in
-      // that point in time
-      setTimeout(console.log, 0, i)
-    }
-    for (var i = 0; i < 10; i++) {
-      // Create a new function scope that will use the value
-      // as-is in that point in time
-      ;(i => {
-        setTimeout(() => {
-          console.log(i)
-        })
-      })(i)
-    }
-    for (let i = 0; i < 10; i++) {
-      setTimeout(() => {
-        // logs 0, 1, 2, 3, ...
-        console.log(i)
-      })
-    }
-  
-``` 
-  
+
+```js
+const myExample = new Example();
+var myFunction = function () {
+  return this;
+};
+myFunction.call({ customThis: true }); // { customThis: true }
+var obj = {
+  arr: [1, 2, 3],
+  doubleArr() {
+    return this.arr.map(function (value) {
+      // this is now this.arr
+      return this.double(value);
+    });
+  },
+  double() {
+    return value * 2;
+  },
+};
+obj.doubleArr(); // Uncaught TypeError: this.double is not a function
+typeof typeof 0;
+for (var i = 0; i < 10; i++) {
+  setTimeout(() => {
+    // logs `10` ten times
+    console.log(i);
+  });
+}
+/* Solutions with `var` */
+for (var i = 0; i < 10; i++) {
+  // Passed as an argument will use the value as-is in
+  // that point in time
+  setTimeout(console.log, 0, i);
+}
+for (var i = 0; i < 10; i++) {
+  // Create a new function scope that will use the value
+  // as-is in that point in time
+  ((i) => {
+    setTimeout(() => {
+      console.log(i);
+    });
+  })(i);
+}
+for (let i = 0; i < 10; i++) {
+  setTimeout(() => {
+    // logs 0, 1, 2, 3, ...
+    console.log(i);
+  });
+}
+```
+
 ---
-    
-```js  
-    const myObject = {}
-    myObject.prop = "hello!" // No error
-    myObject = "hello" // Error
+
+```js
+const myObject = {};
+myObject.prop = "hello!"; // No error
+myObject = "hello"; // Error
+```
