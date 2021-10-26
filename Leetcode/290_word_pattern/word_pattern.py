@@ -9,11 +9,11 @@ class Solution(object):
         if len(words) != len(pattern):
             return False
         d = {}
-        for i,c in enumerate(pattern):
+        for i, c in enumerate(pattern):
             if c not in d:
                 d[c] = words[i]
             else:
-                if d[c]!= words[i]:
+                if d[c] != words[i]:
                     return False
         values = set()
         for k in d:
@@ -21,4 +21,3 @@ class Solution(object):
                 return False
             values.add(d[k])
         return True
-        

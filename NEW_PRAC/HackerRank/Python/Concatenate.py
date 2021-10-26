@@ -5,22 +5,22 @@
 # array_1 = numpy.array([1,2,3])
 # array_2 = numpy.array([4,5,6])
 # array_3 = numpy.array([7,8,9])
-# print numpy.concatenate((array_1, array_2, array_3))    
+# print numpy.concatenate((array_1, array_2, array_3))
 
 # #Output
 # [1 2 3 4 5 6 7 8 9]
 
-# If an array has more than one dimension, it is possible to specify the axis along which multiple arrays are concatenated. 
+# If an array has more than one dimension, it is possible to specify the axis along which multiple arrays are concatenated.
 # By default, it is along the first dimension.
 
 # import numpy
 # array_1 = numpy.array([[1,2,3],[0,0,0]])
 # array_2 = numpy.array([[0,0,0],[7,8,9]])
-# print numpy.concatenate((array_1, array_2), axis = 1)   
+# print numpy.concatenate((array_1, array_2), axis = 1)
 
 # #Output
 # [[1 2 3 0 0 0]
-#  [0 0 0 7 8 9]]    
+#  [0 0 0 7 8 9]]
 
 # Task
 # You are given two integer arrays of size N x P
@@ -34,12 +34,12 @@
 # Sample Input
 # 4 3 2
 # 1 2
-# 1 2 
+# 1 2
 # 1 2
 # 1 2
 # 3 4
 # 3 4
-# 3 4 
+# 3 4
 
 # axis = 0 for adding as a row
 # axis = 1 for adding as a columns
@@ -48,12 +48,12 @@ import numpy as np
 
 N, M, P = list(map(int, input().split()))
 a = []
-for i in range(N+M):
+for i in range(N + M):
     arr = list(map(int, input().split()))
     a.append(arr)
 
 arr_final = np.array([a])
-print(np.concatenate((arr_final), axis = 0))
+print(np.concatenate((arr_final), axis=0))
 
 # Output Format
 # Print the concatenated array of size (N + M) x P.
@@ -65,4 +65,4 @@ print(np.concatenate((arr_final), axis = 0))
 #  [1 2]
 #  [3 4]
 #  [3 4]
-#  [3 4]] 
+#  [3 4]]

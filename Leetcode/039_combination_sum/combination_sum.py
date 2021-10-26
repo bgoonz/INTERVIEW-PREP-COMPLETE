@@ -14,32 +14,32 @@ class Solution(object):
                 result.append(history)
             else:
                 if not history:
-                    if num<candidates[0]:
+                    if num < candidates[0]:
                         continue
                     idx = 0
                 else:
-                    idx = history[-1][0]+1
-                    
-                if idx>=len(candidates):
+                    idx = history[-1][0] + 1
+
+                if idx >= len(candidates):
                     continue
-                if candidates[idx]>num:
+                if candidates[idx] > num:
                     continue
                 while True:
                     cnt = 1
-                    while num>=cnt*candidates[idx]:
-                        newnum = num-cnt*candidates[idx]
+                    while num >= cnt * candidates[idx]:
+                        newnum = num - cnt * candidates[idx]
                         newhistory = history[:]
                         newhistory.append((idx, cnt))
                         q.append((newnum, newhistory))
-                        cnt+=1
+                        cnt += 1
                     idx += 1
-                    if idx>=len(candidates) or candidates[idx]>num:
+                    if idx >= len(candidates) or candidates[idx] > num:
                         break
         ret = []
         for r in result:
             l = []
             for idx, cnt in r:
-                l.extend([candidates[idx]]*cnt)
+                l.extend([candidates[idx]] * cnt)
             ret.append(l)
-            
+
         return ret

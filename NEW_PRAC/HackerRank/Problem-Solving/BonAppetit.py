@@ -17,14 +17,15 @@ def bonAppetit(bill, k, b):
     b_actual = sum(x for x in bill) / 2
     b_charged = b
     if b_actual == b_charged:
-        print('Bon Appetit', end = '')  # if Brian did not overcharge
+        print("Bon Appetit", end="")  # if Brian did not overcharge
     else:
-        print(int(b_charged - b_actual), end = '')  # Brian must refund to Anna
+        print(int(b_charged - b_actual), end="")  # Brian must refund to Anna
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     nk = input().rstrip().split()
 
-    n = int(nk[0]) # no. of items ordered
+    n = int(nk[0])  # no. of items ordered
 
     k = int(nk[1])  # Index of the item Anna doesn't eat
 
@@ -53,5 +54,3 @@ if __name__ == '__main__':
 
 # Sample Output 1
 # Bon Appetit
-
-

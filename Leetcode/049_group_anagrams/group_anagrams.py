@@ -4,17 +4,17 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        if len(strs)==0:
+        if len(strs) == 0:
             return []
 
-        d={}
+        d = {}
         for s in strs:
-            k="".join(sorted(s))
+            k = "".join(sorted(s))
             if not d.has_key(k):
                 d[k] = []
             d[k].append(s)
-        result=[]
-        for k,v in d.items():
+        result = []
+        for k, v in d.items():
             v.sort()
             result.append(v)
         return result

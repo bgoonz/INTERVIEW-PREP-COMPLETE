@@ -5,11 +5,11 @@ import os
 import random
 import re
 import sys
-  
+
 # M # No of attributes
 # K # Sort the data on Kth attribute
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nm = input().split()
 
     n = int(nm[0])  # No. of rows
@@ -19,18 +19,20 @@ if __name__ == '__main__':
     arr = []  # For making a nested Lists
 
     for _ in range(n):
-        arr.append(list(map(int, input().rstrip().split()))) # Stores in a nested list
+        arr.append(list(map(int, input().rstrip().split())))  # Stores in a nested list
 
     k = int(input())  # sort the data of kth column
 
-    arr.sort(key = lambda x: x[k])  # for sorting the nested list based on a specific column 
+    arr.sort(
+        key=lambda x: x[k]
+    )  # for sorting the nested list based on a specific column
 
     for i in range(n):
         for j in range(m):
-            print(arr[i][j], end = ' ')
-        print('\n', end = '')
+            print(arr[i][j], end=" ")
+        print("\n", end="")
 
-    
+
 # Input :
 
 # 5 3

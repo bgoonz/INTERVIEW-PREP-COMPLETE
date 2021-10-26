@@ -32,7 +32,7 @@ import numpy as np
 P = list(map(float, input().split()))
 P = np.array(P)
 x = int(input())
-print(np.polyval(P, x), end = '')
+print(np.polyval(P, x), end="")
 
 # Sample Input
 # 1.1 2 3

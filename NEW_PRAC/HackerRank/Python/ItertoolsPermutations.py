@@ -1,7 +1,7 @@
 # itertools.permutations(iterable[, r])
 
 # This tool returns successive r length permutations of elements in an iterable.
-# If r is not specified or is None, then r defaults to the length of the 
+# If r is not specified or is None, then r defaults to the length of the
 # iterable, and all possible full length permutations are generated.
 # Permutations are printed in a lexicographic sorted order. So, if the input iterable is sorted, the permutation tuples will be produced in a sorted order.
 
@@ -9,10 +9,10 @@
 # >>> from itertools import permutations
 # >>> print permutations(['1','2','3'])
 # <itertools.permutations object at 0x02A45210>
-# >>> 
+# >>>
 # >>> print list(permutations(['1','2','3']))
 # [('1', '2', '3'), ('1', '3', '2'), ('2', '1', '3'), ('2', '3', '1'), ('3', '1', '2'), ('3', '2', '1')]
-# >>> 
+# >>>
 # >>> print list(permutations(['1','2','3'],2))
 # [('1', '2'), ('1', '3'), ('2', '1'), ('2', '3'), ('3', '1'), ('3', '2')]
 # >>>
@@ -27,12 +27,13 @@
 # A single line containing the space separated string S and the integer value k.
 
 from itertools import permutations
+
 S, k = list(map(str, input().split()))
 
 l = list(permutations(S, int(k)))
 l.sort()
 for i in l:
-    i = ''.join(i)
+    i = "".join(i)
     print(i)
 
 # Output Format

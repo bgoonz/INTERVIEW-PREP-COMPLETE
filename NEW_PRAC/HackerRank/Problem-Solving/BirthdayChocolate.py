@@ -22,7 +22,7 @@ def birthday(s, d, m):
     count = 0
     sum_l = 0
     if len(s) == 1:
-        sum_l = s[0] 
+        sum_l = s[0]
         if sum_l == d:  # if sum is equal Ron's day
             count += 1
     elif len(s) == 2:
@@ -30,19 +30,22 @@ def birthday(s, d, m):
         if sum_l == d:  # if sum is equal Ron's day
             count += 1
     elif len(s) > 2:
-        for i in range(len(s) - m+1):
-            sum_l = sum(s[i:i+m])  # Adding values each time
+        for i in range(len(s) - m + 1):
+            sum_l = sum(s[i : i + m])  # Adding values each time
             if sum_l == d:  # if sum is equal to Ron's day
                 count += 1
                 sum_l = 0
-    return count      
+    return count
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input().strip())  # no. of squares in the chocolate bar
 
-    s = list(map(int, input().rstrip().split()))  # no. on each of the squares of chocolate
+    s = list(
+        map(int, input().rstrip().split())
+    )  # no. on each of the squares of chocolate
 
     dm = input().rstrip().split()
 
@@ -52,7 +55,7 @@ if __name__ == '__main__':
 
     result = birthday(s, d, m)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
@@ -67,4 +70,3 @@ if __name__ == '__main__':
 
 # Sample Output 0
 # 2
-

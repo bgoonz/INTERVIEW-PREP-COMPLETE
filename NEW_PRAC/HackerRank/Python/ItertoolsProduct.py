@@ -31,7 +31,7 @@
 
 # AxB = [(1, 3), (1, 4), (2, 3), (2, 4)]
 
-# Note: 
+# Note:
 # A and B are sorted lists, and the cartesian product's tuples should be output in sorted order.
 
 # Input Format
@@ -43,8 +43,8 @@ from itertools import product
 
 a = list(map(int, input().split()))
 b = list(map(int, input().split()))
-for i in product(a,b):
-    print(i, end = ' ')
+for i in product(a, b):
+    print(i, end=" ")
 # print(list(product(a,b)))
 
 # Output Format

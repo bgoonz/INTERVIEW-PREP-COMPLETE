@@ -34,23 +34,23 @@
 
 # You are given a 2-D array of size X.
 # Your task is to find:
-# The mean along axis 
+# The mean along axis
 # The var along axis
-# The std along axis 
+# The std along axis
 
 import numpy as np
 
-np.set_printoptions(legacy='1.13')
+np.set_printoptions(legacy="1.13")
 row, cols = map(int, raw_input().split())
 
 l = []
 for i in range(row):
-    arr = list(map(float,raw_input().split()))
-    l.append(arr)    
+    arr = list(map(float, raw_input().split()))
+    l.append(arr)
 l = np.array(l).reshape(row, cols)
-print(np.array(np.mean(l, axis = 1)))
-print(np.array(np.var(l, axis = 0)))
-a = np.array(np.std(l, axis = None))
+print(np.array(np.mean(l, axis=1)))
+print(np.array(np.var(l, axis=0)))
+a = np.array(np.std(l, axis=None))
 print(a)
 
 # Input :

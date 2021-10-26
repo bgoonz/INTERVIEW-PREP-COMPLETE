@@ -12,14 +12,15 @@ class Solution(object):
         while cursor:
             cursor = cursor.next
             n += 1
-        k = k%n
-        if k==0: return head
-            
+        k = k % n
+        if k == 0:
+            return head
+
         fast = slow = head
         for i in range(k):
             if fast:
                 fast = fast.next
-            else: 
+            else:
                 break
         preslow = None
         prefast = None

@@ -1,5 +1,4 @@
 class Solution(object):
-
     def subsets(self, nums):
 
         """
@@ -14,7 +13,7 @@ class Solution(object):
 
         result = []
 
-        for i in range(len(nums)+1):
+        for i in range(len(nums) + 1):
 
             for combi in itertools.combinations(nums, i):
 

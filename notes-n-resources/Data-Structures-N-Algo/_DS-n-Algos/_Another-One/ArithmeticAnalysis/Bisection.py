@@ -1,7 +1,9 @@
 import math
 
 
-def bisection(function, a, b):  # finds where the function becomes 0 in [a,b] using bolzano
+def bisection(
+    function, a, b
+):  # finds where the function becomes 0 in [a,b] using bolzano
 
     start = a
     end = b
@@ -9,7 +11,9 @@ def bisection(function, a, b):  # finds where the function becomes 0 in [a,b] us
         return a
     elif function(b) == 0:
         return b
-    elif function(a) * function(b) > 0:  # if none of these are root and they are both positive or negative,
+    elif (
+        function(a) * function(b) > 0
+    ):  # if none of these are root and they are both positive or negative,
         # then his algorithm can't find the root
         print("couldn't find root in [a,b]")
         return
@@ -27,7 +31,7 @@ def bisection(function, a, b):  # finds where the function becomes 0 in [a,b] us
 
 
 def f(x):
-    return math.pow(x, 3) - 2*x - 5
+    return math.pow(x, 3) - 2 * x - 5
 
 
 print(bisection(f, 1, 1000))

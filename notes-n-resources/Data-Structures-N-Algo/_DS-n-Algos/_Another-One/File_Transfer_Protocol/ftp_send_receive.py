@@ -9,28 +9,32 @@
 """
 
 from ftplib import FTP
-ftp = FTP('xxx.xxx.x.x')  # Enter the ip address or the domain name here
-ftp.login(user='username', passwd='password')
-ftp.cwd('/Enter the directory here/')
+
+ftp = FTP("xxx.xxx.x.x")  # Enter the ip address or the domain name here
+ftp.login(user="username", passwd="password")
+ftp.cwd("/Enter the directory here/")
 
 """
 	The file which will be received via the FTP server
 	Enter the location of the file where the file is received
 """
 
+
 def ReceiveFile():
-	FileName = 'example.txt'   """ Enter the location of the file """
-	LocalFile = open(FileName, 'wb')
-	ftp.retrbinary('RETR ' + FileName, LocalFile.write, 1024)
-	ftp.quit()
-	LocalFile.close()
+    FileName = "example.txt" """ Enter the location of the file """
+    LocalFile = open(FileName, "wb")
+    ftp.retrbinary("RETR " + FileName, LocalFile.write, 1024)
+    ftp.quit()
+    LocalFile.close()
+
 
 """
 	The file which will be sent via the FTP server
 	The file send will be send to the current working directory
 """
 
+
 def SendFile():
-	FileName = 'example.txt'   """ Enter the name of the file """
-	ftp.storbinary('STOR ' + FileName, open(FileName, 'rb'))
-	ftp.quit()
+    FileName = "example.txt" """ Enter the name of the file """
+    ftp.storbinary("STOR " + FileName, open(FileName, "rb"))
+    ftp.quit()

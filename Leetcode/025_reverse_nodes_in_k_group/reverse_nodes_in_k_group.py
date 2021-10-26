@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     # @param {ListNode} head
     # @param {integer} k
@@ -30,12 +31,12 @@ class Solution:
                     tail.next = h
                 tail = t
         return head
-    
+
     def reverseGroup(self, head, ptr):
         newtail = head
         p1 = head
         p2 = head.next
-        
+
         newtail.next = None  # just to be safe
         while p2 != ptr:
             temp = p2

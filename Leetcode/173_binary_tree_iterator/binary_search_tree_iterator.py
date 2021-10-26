@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class BSTIterator:
     # @param root, a binary search tree's root node
     def __init__(self, root):
@@ -12,7 +13,7 @@ class BSTIterator:
             self.head = self.tail = None
         else:
             self.head, self.tail = self.flatten(root)
-    
+
     def flatten(self, node):
         if not node.left:
             head = node
@@ -27,10 +28,10 @@ class BSTIterator:
             node.right = h
             tail = t
         return head, tail
-    
+
     # @return a boolean, whether we have a next smallest number
     def hasNext(self):
-        return self.head 
+        return self.head
 
     # @return an integer, the next smallest number
     def next(self):
@@ -39,7 +40,7 @@ class BSTIterator:
         val = self.head.val
         self.head = self.head.right
         return val
-        
+
 
 # Your BSTIterator will be called like this:
 # i, v = BSTIterator(root), []

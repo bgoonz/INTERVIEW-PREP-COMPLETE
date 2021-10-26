@@ -10,7 +10,7 @@ class Solution(object):
         while True:
             if not l1 and not l2:
                 break
-            
+
             if not l1:
                 val1 = 0
             else:
@@ -21,26 +21,25 @@ class Solution(object):
             else:
                 val2 = l2.val
                 l2 = l2.next
-            
-            if carry+val1+val2>=10:
-                val = (carry+val1+val2)%10
+
+            if carry + val1 + val2 >= 10:
+                val = (carry + val1 + val2) % 10
                 carry = 1
             else:
-                val = (carry+val1+val2)
+                val = carry + val1 + val2
                 carry = 0
-                
-                
+
             node = ListNode(val)
             if not head:
                 head = tail = node
             else:
                 tail.next = node
                 tail = node
-                
+
         if carry:
             node = ListNode(1)
             tail.next = node
             tail = node
         tail.next = None
-        
+
         return head

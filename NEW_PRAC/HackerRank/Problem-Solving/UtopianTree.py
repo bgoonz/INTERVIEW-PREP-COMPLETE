@@ -22,17 +22,18 @@ def utopianTree(n):
     # Each spring it doubles in height
     # Each summer, its height increases by 1 meter
     height = 0
-    for i in range(n+1):
+    for i in range(n + 1):
         if i == 0:
             height = 1
-        elif i%2 == 1:  # 1,3,5
-            height =  height * 2 
+        elif i % 2 == 1:  # 1,3,5
+            height = height * 2
         else:
             height += 1
     return height
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     t = int(input())  # The no. of test cases
 
@@ -41,7 +42,7 @@ if __name__ == '__main__':
 
         result = utopianTree(n)
 
-        fptr.write(str(result) + '\n')
+        fptr.write(str(result) + "\n")
 
     fptr.close()
 

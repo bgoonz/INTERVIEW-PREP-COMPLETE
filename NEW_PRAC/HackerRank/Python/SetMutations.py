@@ -34,7 +34,7 @@
 # >>> print H
 # set(['c', 'e', 'H', 'n', 'r', 'R']
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     A = int(input())
     A_element = set(map(int, input().split()))
@@ -43,18 +43,17 @@ if __name__ == '__main__':
     for x in range(N):
         operation_length = list(input().split())
         N_element = set(map(int, input().split()))
-        if operation_length[0] == 'intersection_update':
+        if operation_length[0] == "intersection_update":
             A_element.intersection_update(N_element)
-        elif operation_length[0] == 'update':
+        elif operation_length[0] == "update":
             A_element.update(N_element)
-        elif operation_length[0] == 'symmetric_difference_update':
+        elif operation_length[0] == "symmetric_difference_update":
             A_element.symmetric_difference_update(N_element)
-        elif operation_length[0] == 'difference_update':
+        elif operation_length[0] == "difference_update":
             A_element.difference_update(N_element)
-    sum_A = 0 
+    sum_A = 0
     for x in A_element:
         sum_A += x
     print(sum_A)
-    
+
 # N performs some operations on set A
-    

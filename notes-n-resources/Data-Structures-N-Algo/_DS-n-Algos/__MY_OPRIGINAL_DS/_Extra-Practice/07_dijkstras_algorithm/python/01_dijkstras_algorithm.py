@@ -28,6 +28,7 @@ parents["fin"] = None
 
 processed = []
 
+
 def find_lowest_cost_node(costs):
     lowest_cost = float("inf")
     lowest_cost_node = None
@@ -40,6 +41,7 @@ def find_lowest_cost_node(costs):
             lowest_cost = cost
             lowest_cost_node = node
     return lowest_cost_node
+
 
 # Find the lowest-cost node that you haven't processed yet.
 node = find_lowest_cost_node(costs)
@@ -63,4 +65,3 @@ while node is not None:
 
 print("Cost from the start to each node:")
 print(costs)
-

@@ -5,6 +5,6 @@ class Solution(object):
         :rtype: str
         """
         rs = []
-        for i in range(len(s)-1, -1,-1):
+        for i in range(len(s) - 1, -1, -1):
             rs.append(s[i])
-        return ''.join(rs)
+        return "".join(rs)

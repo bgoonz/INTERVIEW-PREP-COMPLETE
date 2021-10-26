@@ -1,4 +1,3 @@
-
 # any()
 
 # This expression returns True if any element of the iterable is true.
@@ -15,8 +14,8 @@
 
 # all()
 
-# This expression returns True if all of the elements of the iterable are true. 
-# If the iterable is empty, it will return True. 
+# This expression returns True if all of the elements of the iterable are true.
+# If the iterable is empty, it will return True.
 
 # Code
 
@@ -24,6 +23,7 @@
 # True
 # >>> all(['a'<'b','c'<'b'])
 # False
+
 
 def check_palindrome(n):
     rev = 0  # check the reverse of the no.
@@ -35,19 +35,20 @@ def check_palindrome(n):
         return True
     return False
 
-if __name__ == '__main__':        
+
+if __name__ == "__main__":
     N = int(input())  # N is total no. of integers in list
     N_elements = set(map(int, input().split()))  # set of elements
     count = 0
     for x in N_elements:  # Iterating through list
         if x <= 0:  # If x is less than 0
-            count = - 999
-        if all([check_palindrome(x) == True, x >= 0] ):
+            count = -999
+        if all([check_palindrome(x) == True, x >= 0]):
             count += 1
     if count > 0:
-        print(True, end = '')
+        print(True, end="")
     else:
-        print(False, end = '')  # Prints false
+        print(False, end="")  # Prints false
 
 # Input:
 # 5
@@ -61,4 +62,3 @@ if __name__ == '__main__':
 # n = int(input())
 # arr = input().split(" ")
 # print(all(int(i)>=0 for i in arr) and any(i == i[::-1]for i in arr))
-

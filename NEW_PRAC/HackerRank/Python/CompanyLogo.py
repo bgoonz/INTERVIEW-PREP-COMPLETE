@@ -17,19 +17,22 @@ import sys
 def takeSecond(elem):
     return elem[1]
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     s = list(input())
     # print(s)
     s_set = set(s)
     s_set = sorted(s_set)  # To sort values in a set <-- Use this <------
     # print(s_set)
-    s_list = [[x,s.count(x)] for x in s_set]
-    s_list.sort(key = takeSecond, reverse = True)  # It applies the takeSecond function to it to sort using the 2nd element in array
-    
+    s_list = [[x, s.count(x)] for x in s_set]
+    s_list.sort(
+        key=takeSecond, reverse=True
+    )  # It applies the takeSecond function to it to sort using the 2nd element in array
+
     for x, y in s_list[0:3]:
         print(x, y)
-        
-    
+
+
 # Sample Input 0
 # aabbbccde
 
@@ -37,4 +40,3 @@ if __name__ == '__main__':
 # b 3
 # a 2
 # c 2
-

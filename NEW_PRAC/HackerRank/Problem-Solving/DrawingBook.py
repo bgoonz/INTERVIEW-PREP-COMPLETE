@@ -9,14 +9,16 @@
 import os
 import sys
 
-def pageCount(n, p):
-    if n//2 - p// 2 >  p//2 :  # Page_count from last is greater
-        return (p//2)
-    else:
-        return (n//2 - p//2)
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+def pageCount(n, p):
+    if n // 2 - p // 2 > p // 2:  # Page_count from last is greater
+        return p // 2
+    else:
+        return n // 2 - p // 2
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())  # Total no. of pages
 
@@ -24,13 +26,13 @@ if __name__ == '__main__':
 
     result = pageCount(n, p)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
 # Output Format
 
-# Print an integer denoting the minimum number of pages Brie must turn to get to page p. 
+# Print an integer denoting the minimum number of pages Brie must turn to get to page p.
 
 # Sample Input 0
 # 6
@@ -45,5 +47,3 @@ if __name__ == '__main__':
 
 # Sample Output 1
 # 0
-
-

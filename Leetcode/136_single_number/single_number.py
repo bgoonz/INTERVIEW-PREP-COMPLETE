@@ -6,5 +6,5 @@ class Solution(object):
         """
         n = 0
         for num in nums:
-            n = n^num
+            n = n ^ num
         return n

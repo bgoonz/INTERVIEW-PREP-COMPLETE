@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def sortedArrayToBST(self, nums):
         """
@@ -13,16 +14,16 @@ class Solution(object):
         """
         tree = self.recurse(nums)
         return tree
-        
+
     def recurse(self, nums):
         if not nums:
             return None
-        if len(nums)==1:
+        if len(nums) == 1:
             node = TreeNode(nums[0])
             node.left = node.right = None
-        mid = len(nums)/2
+        mid = len(nums) / 2
         left = self.recurse(nums[:mid])
-        right = self.recurse(nums[mid+1:])
+        right = self.recurse(nums[mid + 1 :])
         node = TreeNode(nums[mid])
         node.left = left
         node.right = right

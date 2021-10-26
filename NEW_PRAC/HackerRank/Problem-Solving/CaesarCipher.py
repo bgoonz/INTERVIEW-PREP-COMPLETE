@@ -1,6 +1,6 @@
-# Julius Caesar protected his confidential information by encrypting it using a cipher. 
-# Caesar's cipher shifts each letter by a number of letters. If the shift takes you past the 
-# end of the alphabet, just rotate back to the front of the alphabet. 
+# Julius Caesar protected his confidential information by encrypting it using a cipher.
+# Caesar's cipher shifts each letter by a number of letters. If the shift takes you past the
+# end of the alphabet, just rotate back to the front of the alphabet.
 # In the case of a rotation by 3, w, x, y and z would map to z, a, b and c.
 
 # Original alphabet:      abcdefghijklmnopqrstuvwxyz
@@ -32,30 +32,28 @@ def caesarCipher(s, k):
     l = []
     k = k % 26
     for i in s:
-        if(i in a and ord(i) in range(97, 123)) :
-            mod_val = 96 + ((ord(i) + k) % 96 )
+        if i in a and ord(i) in range(97, 123):
+            mod_val = 96 + ((ord(i) + k) % 96)
             if mod_val > 122:
                 mod_val = 96 + (mod_val % 122)
                 l.append(chr(mod_val))
             else:
                 l.append(chr(mod_val))
-        if(i in a and ord(i) in range(65, 91)):
-            mod_val = 64 + ((ord(i) + k ) % 64)
+        if i in a and ord(i) in range(65, 91):
+            mod_val = 64 + ((ord(i) + k) % 64)
             if mod_val > 90:
                 mod_val = 64 + (mod_val % 90)
                 l.append(chr(mod_val))
             else:
                 l.append(chr(mod_val))
-        if(i not in a):
+        if i not in a:
             l.append(i)
-    str = ''.join(l)
+    str = "".join(l)
     return str
 
 
-            
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())
 
@@ -65,7 +63,7 @@ if __name__ == '__main__':
 
     result = caesarCipher(s, k)
 
-    fptr.write(result + '\n')
+    fptr.write(result + "\n")
 
     fptr.close()
 

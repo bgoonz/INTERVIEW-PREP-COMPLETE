@@ -1,8 +1,8 @@
-#code
+# code
 T = int(input())
 for i in range(T):
     N = int(input())
-    string = ''
+    string = ""
     for i in range(N):
         name = str(input())
         if len(string) == 0:

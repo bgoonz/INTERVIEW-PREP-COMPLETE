@@ -5,6 +5,8 @@
 #         self.end = e
 
 import operator
+
+
 class Solution(object):
     def canAttendMeetings(self, intervals):
         """
@@ -12,7 +14,7 @@ class Solution(object):
         :rtype: bool
         """
         intervals.sort(key=operator.attrgetter("start"))
-        for i in range(len(intervals)-1):
-            if intervals[i].end>intervals[i+1].start:
+        for i in range(len(intervals) - 1):
+            if intervals[i].end > intervals[i + 1].start:
                 return False
         return True

@@ -13,15 +13,15 @@ def circularArrayRotation(a, k, queries):
     # k - rotation count
     n = len(a)
     k = k % n
-    a = a[n-k:] + a[:n-k]
+    a = a[n - k :] + a[: n - k]
     result = []
     for i in queries:
         result.append(a[i])
     return result
 
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     nkq = input().split()
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
     result = circularArrayRotation(a, k, queries)
 
-    fptr.write('\n'.join(map(str, result)))
-    fptr.write('\n')
+    fptr.write("\n".join(map(str, result)))
+    fptr.write("\n")
 
     fptr.close()

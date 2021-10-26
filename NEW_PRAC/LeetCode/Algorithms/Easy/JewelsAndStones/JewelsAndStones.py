@@ -5,4 +5,3 @@ class Solution:
             if i in J:
                 count += 1
         return count
-        

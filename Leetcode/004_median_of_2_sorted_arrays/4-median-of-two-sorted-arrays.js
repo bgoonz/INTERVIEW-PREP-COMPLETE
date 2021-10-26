@@ -5,17 +5,17 @@
  */
 
 const findMedianSortedArrays = (A, B) => {
-  let m = A.length,
-    n = B.length;
+  let m = A.length;
+  let n = B.length;
 
   if (m > n) {
     return findMedianSortedArrays(B, A);
   }
 
-  let imin = 0,
-    imax = m,
-    i,
-    j;
+  let imin = 0;
+  let imax = m;
+  let i;
+  let j;
   while (imin <= imax) {
     i = (imin + imax) >> 1;
     j = ((m + n + 1) >> 1) - i;

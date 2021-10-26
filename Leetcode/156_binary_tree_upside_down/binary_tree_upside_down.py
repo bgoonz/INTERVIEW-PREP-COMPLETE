@@ -5,16 +5,18 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def upsideDownBinaryTree(self, root):
         """
         :type root: TreeNode
         :rtype: TreeNode
         """
-        if not root: return root
+        if not root:
+            return root
         newroot, oldroot = self.recurse(root)
         return newroot
-    
+
     def recurse(self, root):
         if not root.left:
             return root, root
@@ -23,5 +25,5 @@ class Solution(object):
         oldroot.right = root
         root.left = None
         root.right = None
-        
+
         return newroot, root

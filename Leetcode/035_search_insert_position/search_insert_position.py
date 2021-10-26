@@ -6,4 +6,5 @@ class Solution(object):
         :rtype: int
         """
         import bisect
+
         return bisect.bisect_left(nums, target)

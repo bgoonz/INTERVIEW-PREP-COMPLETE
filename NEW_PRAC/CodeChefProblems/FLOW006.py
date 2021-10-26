@@ -12,7 +12,7 @@
 
 # Example
 # Input
-# 3 
+# 3
 # 12345
 # 31203
 # 2123
@@ -22,7 +22,7 @@
 # 9
 # 8
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         n = int(input())
         for i in range(n):

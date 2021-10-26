@@ -22,12 +22,12 @@ def diagonalDifference(arr):
         prim_diagonal = prim_diagonal + arr[i][i]
 
     for j in range(len(arr)):
-        secondary_diagonal = secondary_diagonal + arr[len(arr)-j-1][j]
+        secondary_diagonal = secondary_diagonal + arr[len(arr) - j - 1][j]
     return int(abs(prim_diagonal - secondary_diagonal))
 
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input().strip())
 
@@ -38,6 +38,6 @@ if __name__ == '__main__':
 
     result = diagonalDifference(arr)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()

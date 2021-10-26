@@ -1,11 +1,11 @@
 class Solution(object):
     def search(self, nums, target):
-        l, r = 0, len(nums)-1
+        l, r = 0, len(nums) - 1
         while l <= r:
-            mid = l + (r-l)//2
+            mid = l + (r - l) // 2
             if nums[mid] == target:
                 return True
-            while l < mid and nums[l] == nums[mid]: # tricky part
+            while l < mid and nums[l] == nums[mid]:  # tricky part
                 l += 1
             # the first half is ordered
             if nums[l] <= nums[mid]:

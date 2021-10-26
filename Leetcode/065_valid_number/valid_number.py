@@ -7,29 +7,29 @@ class Solution(object):
         s = s.strip()
         if " " in s:
             return False
-        if s.startswith('0') or s.lower().startswith('0b'):
+        if s.startswith("0") or s.lower().startswith("0b"):
             try:
                 int(s, 2)
             except:
                 pass
             else:
                 return True
-        if s.startswith('0'):
+        if s.startswith("0"):
             try:
-               int(s, 8)
+                int(s, 8)
             except:
                 pass
             else:
-                return True 
-        if s.lower().startswith('0x'):
+                return True
+        if s.lower().startswith("0x"):
             try:
-               int(s, 16)
+                int(s, 16)
             except:
                 pass
             else:
                 return True
         try:
-           int(s, 10)
+            int(s, 10)
         except:
             pass
         else:
@@ -40,5 +40,5 @@ class Solution(object):
             pass
         else:
             return True
-            
+
         return False

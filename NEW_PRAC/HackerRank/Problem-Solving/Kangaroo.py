@@ -9,14 +9,15 @@ import sys
 # Complete the kangaroo function below.
 def kangaroo(x1, v1, x2, v2):
     if v1 == v2:
-        return 'NO'
-    k = (x1-x2)/ (v2-v1)
+        return "NO"
+    k = (x1 - x2) / (v2 - v1)
     if k in range(0, 10001):
-        return 'YES'
-    return 'NO'
+        return "YES"
+    return "NO"
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     x1V1X2V2 = input().split()  # taking the values
 
@@ -30,7 +31,7 @@ if __name__ == '__main__':
 
     result = kangaroo(x1, v1, x2, v2)
 
-    fptr.write(result + '\n')
+    fptr.write(result + "\n")
 
     fptr.close()
 

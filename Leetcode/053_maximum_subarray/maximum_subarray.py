@@ -13,13 +13,13 @@ class Solution(object):
                 maxsum = sum
             if sum < 0:
                 sum = 0
-                
-            if i>=0:
+
+            if i >= 0:
                 if current is None:
                     current = 0
                 current = current + i
             elif current is not None:
-                if maxsum is None or current >maxsum:
+                if maxsum is None or current > maxsum:
                     maxsum = current
                 current = 0
         return maxsum

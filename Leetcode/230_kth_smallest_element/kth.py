@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def kthSmallest(self, root, k):
         """
@@ -14,7 +15,7 @@ class Solution(object):
         """
         _, val = self._recurse(root, k)
         return val
-        
+
     def _recurse(self, node, k):
         # returns (Found or not, residue of k)
         # left tree
@@ -24,13 +25,13 @@ class Solution(object):
                 return True, val
             else:
                 k = val
-                
+
         # deals with self
-        if k==1:
+        if k == 1:
             return True, node.val
         else:
-            k = k-1
-            
+            k = k - 1
+
         # check the right tree
         if node.right:
             found, val = self._recurse(node.right, k)
@@ -38,7 +39,5 @@ class Solution(object):
                 return True, val
             else:
                 k = val
-        
+
         return False, k
-            
-            

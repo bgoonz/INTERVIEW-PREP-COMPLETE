@@ -16,17 +16,18 @@ import sys
 def countingValleys(n, s):
     count = 0
     count_valley = 0
-    for i in s:       
-        if i == 'U':
+    for i in s:
+        if i == "U":
             count += 1
-        elif i == 'D':
+        elif i == "D":
             count -= 1
-        if count == 0 and i == 'U':
+        if count == 0 and i == "U":
             count_valley += 1
     return count_valley
-        
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     n = int(input())  # No. of steps taken
 
@@ -34,7 +35,7 @@ if __name__ == '__main__':
 
     result = countingValleys(n, s)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 

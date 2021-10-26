@@ -16,26 +16,27 @@ def angryProfessor(k, a):
         if int(i) <= 0:
             count += 1
     if count < k:
-        return ('YES')
-    return ('NO')
+        return "YES"
+    return "NO"
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     t = int(input())  # no. of test cases
 
     for t_itr in range(t):
         nk = input().split()
 
-        n = int(nk[0]) # no. of students
+        n = int(nk[0])  # no. of students
 
-        k = int(nk[1]) # cancellation threshold
+        k = int(nk[1])  # cancellation threshold
 
         a = list(map(int, input().rstrip().split()))  # n separated integers
 
         result = angryProfessor(k, a)
 
-        fptr.write(result + '\n')
+        fptr.write(result + "\n")
 
     fptr.close()
 
@@ -49,4 +50,3 @@ if __name__ == '__main__':
 # Sample Output
 # YES
 # NO
-

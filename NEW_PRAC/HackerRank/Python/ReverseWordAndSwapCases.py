@@ -1,9 +1,9 @@
 def reverce(sentence):
-  arr = sentence.split()
-  reversedArr = arr[:: -1]
-  reversedSentence = " ".join(reversedArr)
+    arr = sentence.split()
+    reversedArr = arr[::-1]
+    reversedSentence = " ".join(reversedArr)
 
-  return reversedSentence.swapcase()
+    return reversedSentence.swapcase()
 
 
 sentence = "rUns dOg"

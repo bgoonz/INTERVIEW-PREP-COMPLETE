@@ -7,8 +7,9 @@ import os
 import sys
 import argparse
 
+
 class FileSplitter(object):
-    BLOCK_FILENAME_FORMAT = 'block_{0}.dat'
+    BLOCK_FILENAME_FORMAT = "block_{0}.dat"
 
     def __init__(self, filename):
         self.filename = filename
@@ -16,7 +17,7 @@ class FileSplitter(object):
 
     def write_block(self, data, block_number):
         filename = self.BLOCK_FILENAME_FORMAT.format(block_number)
-        file = open(filename, 'w')
+        file = open(filename, "w")
         file.write(data)
         file.close()
         self.block_filenames.append(filename)
@@ -25,7 +26,7 @@ class FileSplitter(object):
         return self.block_filenames
 
     def split(self, block_size, sort_key=None):
-        file = open(self.filename, 'r')
+        file = open(self.filename, "r")
         i = 0
 
         while True:
@@ -39,7 +40,7 @@ class FileSplitter(object):
             else:
                 lines.sort(key=sort_key)
 
-            self.write_block(''.join(lines), i)
+            self.write_block("".join(lines), i)
             i += 1
 
     def cleanup(self):
@@ -66,14 +67,16 @@ class FilesArray(object):
         self.buffers = {i: None for i in range(self.num_buffers)}
 
     def get_dict(self):
-        return {i: self.buffers[i] for i in range(self.num_buffers) if i not in self.empty}
+        return {
+            i: self.buffers[i] for i in range(self.num_buffers) if i not in self.empty
+        }
 
     def refresh(self):
         for i in range(self.num_buffers):
             if self.buffers[i] is None and i not in self.empty:
                 self.buffers[i] = self.files[i].readline()
 
-                if self.buffers[i] == '':
+                if self.buffers[i] == "":
                     self.empty.add(i)
 
         if len(self.empty) == self.num_buffers:
@@ -93,7 +96,7 @@ class FileMerger(object):
         self.merge_strategy = merge_strategy
 
     def merge(self, filenames, outfilename, buffer_size):
-        outfile = open(outfilename, 'w', buffer_size)
+        outfile = open(outfilename, "w", buffer_size)
         buffers = FilesArray(self.get_file_handles(filenames, buffer_size))
 
         while buffers.refresh():
@@ -104,10 +107,9 @@ class FileMerger(object):
         files = {}
 
         for i in range(len(filenames)):
-            files[i] = open(filenames[i], 'r', buffer_size)
+            files[i] = open(filenames[i], "r", buffer_size)
 
         return files
-
 
 
 class ExternalSort(object):
@@ -121,7 +123,7 @@ class ExternalSort(object):
 
         merger = FileMerger(NWayMerge())
         buffer_size = self.block_size / (num_blocks + 1)
-        merger.merge(splitter.get_block_filenames(), filename + '.out', buffer_size)
+        merger.merge(splitter.get_block_filenames(), filename + ".out", buffer_size)
 
         splitter.cleanup()
 
@@ -130,32 +132,29 @@ class ExternalSort(object):
 
 
 def parse_memory(string):
-    if string[-1].lower() == 'k':
+    if string[-1].lower() == "k":
         return int(string[:-1]) * 1024
-    elif string[-1].lower() == 'm':
+    elif string[-1].lower() == "m":
         return int(string[:-1]) * 1024 * 1024
-    elif string[-1].lower() == 'g':
+    elif string[-1].lower() == "g":
         return int(string[:-1]) * 1024 * 1024 * 1024
     else:
         return int(string)
 
 
-
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-m',
-                        '--mem',
-                        help='amount of memory to use for sorting',
-                        default='100M')
-    parser.add_argument('filename',
-                        metavar='<filename>',
-                        nargs=1,
-                        help='name of file to sort')
+    parser.add_argument(
+        "-m", "--mem", help="amount of memory to use for sorting", default="100M"
+    )
+    parser.add_argument(
+        "filename", metavar="<filename>", nargs=1, help="name of file to sort"
+    )
     args = parser.parse_args()
 
     sorter = ExternalSort(parse_memory(args.mem))
     sorter.sort(args.filename[0])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

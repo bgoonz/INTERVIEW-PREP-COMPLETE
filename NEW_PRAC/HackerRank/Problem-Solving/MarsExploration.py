@@ -1,13 +1,13 @@
 # Sami's spaceship crashed on Mars! She sends a series of SOS messages to Earth for help.
 
-# Letters in some of the SOS messages are altered by cosmic radiation during transmission. 
-# Given the signal received by Earth as a string, s, determine how many letters of Sami's 
+# Letters in some of the SOS messages are altered by cosmic radiation during transmission.
+# Given the signal received by Earth as a string, s, determine how many letters of Sami's
 # SOS have been changed by radiation.
-# For example, Earth receives SOSTOT. Sami's original message was SOSSOS. 
+# For example, Earth receives SOSTOT. Sami's original message was SOSSOS.
 # Two of the message characters were changed in transit.
 
 # Function Description
-# Complete the marsExploration function in the editor below. 
+# Complete the marsExploration function in the editor below.
 # It should return an integer representing the number of letters changed during transmission.
 # marsExploration has the following parameter(s):
 #     s: the string as received on Earth
@@ -30,30 +30,31 @@ import sys
 def marsExploration(s):
     count = 0
     for i in range(len(s)):
-        if i%3 == 0 and s[i] == 'S':
+        if i % 3 == 0 and s[i] == "S":
             continue
-        elif i%3 == 1 and s[i] == 'O':
+        elif i % 3 == 1 and s[i] == "O":
             continue
-        elif i%3 == 2 and s[i] == 'S':
+        elif i % 3 == 2 and s[i] == "S":
             continue
         else:
             count += 1
     return count
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
 
     result = marsExploration(s)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
 
 # Output Format
-# Print the number of letters in Sami's message that were altered by 
+# Print the number of letters in Sami's message that were altered by
 # cosmic radiation.
 
 # Sample Input 0
@@ -80,7 +81,7 @@ if __name__ == '__main__':
 # Explanation 1
 # s= SOSSOT, and signal length |s|=6. Sami sent 2 SOS messages (i.e.: 6/3 = 2).
 
-# Expected Signal: SOSSOS     
+# Expected Signal: SOSSOS
 # Received Signal: SOSSOT
 # Difference:           X
 
@@ -94,4 +95,3 @@ if __name__ == '__main__':
 
 # Explanation 2
 # Since no character is altered, we print 0.
-

@@ -15,12 +15,17 @@ class NumMatrix(object):
             sum = row0[0]
             for i in range(1, len(matrix)):
                 sum += matrix[i][0]
-                row = [sum] + [0]*(len(matrix[0])-1)
+                row = [sum] + [0] * (len(matrix[0]) - 1)
                 self.sums.append(row)
             for i in range(1, len(matrix)):
                 for j in range(1, len(matrix[0])):
-                    self.sums[i][j] = matrix[i][j] + self.sums[i-1][j] + self.sums[i][j-1] - self.sums[i-1][j-1]
-            #print self.sums
+                    self.sums[i][j] = (
+                        matrix[i][j]
+                        + self.sums[i - 1][j]
+                        + self.sums[i][j - 1]
+                        - self.sums[i - 1][j - 1]
+                    )
+            # print self.sums
 
     def sumRegion(self, row1, col1, row2, col2):
         """
@@ -31,16 +36,18 @@ class NumMatrix(object):
         :type col2: int
         :rtype: int
         """
-        if not self.matrix: return 0
+        if not self.matrix:
+            return 0
         sum = self.sums[row2][col2]
-        if row1>0:
-            sum -= self.sums[row1-1][col2]
-        if col1>0:
-            sum -= self.sums[row2][col1-1]
-        if row1>0 and col1>0:
-            sum += self.sums[row1-1][col1-1]
+        if row1 > 0:
+            sum -= self.sums[row1 - 1][col2]
+        if col1 > 0:
+            sum -= self.sums[row2][col1 - 1]
+        if row1 > 0 and col1 > 0:
+            sum += self.sums[row1 - 1][col1 - 1]
         return sum
-        
+
+
 # Your NumMatrix object will be instantiated and called as such:
 # numMatrix = NumMatrix(matrix)
 # numMatrix.sumRegion(0, 1, 2, 3)

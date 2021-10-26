@@ -3,7 +3,7 @@ class Solution:
     # @param {string} t
     # @return {boolean}
     def isIsomorphic(self, s, t):
-        if len(s)!=len(t):
+        if len(s) != len(t):
             return False
         d1 = {}
         d2 = {}
@@ -12,9 +12,9 @@ class Solution:
                 d1[c] = t[i]
                 d2[t[i]] = c
             else:
-                if c in d1 and d1[c]!=t[i]:
+                if c in d1 and d1[c] != t[i]:
                     return False
-                if t[i] in d2 and d2[t[i]]!=c:
+                if t[i] in d2 and d2[t[i]] != c:
                     return False
-                    
+
         return True

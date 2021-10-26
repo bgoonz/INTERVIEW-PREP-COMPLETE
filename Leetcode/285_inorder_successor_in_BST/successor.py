@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def inorderSuccessor(self, root, p):
         """
@@ -17,16 +18,14 @@ class Solution(object):
             while node.left:
                 node = node.left
             return node
-            
+
         node = root
         left_root = None
-        
-        while node!=p:
-            if node.val<p.val:
+
+        while node != p:
+            if node.val < p.val:
                 node = node.right
             else:
                 left_root = node
                 node = node.left
         return left_root
-        
-                

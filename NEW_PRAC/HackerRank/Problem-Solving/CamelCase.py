@@ -1,4 +1,4 @@
-# Alice wrote a sequence of words in CamelCase as a string 
+# Alice wrote a sequence of words in CamelCase as a string
 # of letters, s, having the following properties:
 
 # 1. It is a concatenation of one or more words consisting of English letters.
@@ -10,7 +10,7 @@
 # For example, s = oneTwoThree. There are 3 words in the string.
 
 # Function Description
-# Complete the camelcase function in the editor below. 
+# Complete the camelcase function in the editor below.
 # It must return the integer number of words in the input string.
 # camelcase has the following parameter(s):
 
@@ -30,7 +30,7 @@ import sys
 # Complete the camelcase function below.
 def camelcase(s):
     count = 0
-    if s =="":
+    if s == "":
         return count
     else:
         count += 1
@@ -38,14 +38,16 @@ def camelcase(s):
         if i.isupper() == True:
             count += 1
     return count
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
 
     result = camelcase(s)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 

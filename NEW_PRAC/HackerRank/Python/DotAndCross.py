@@ -25,15 +25,15 @@ N = int(raw_input())
 A = []
 B = []
 for i in range(N):
-    A.append(map(int,raw_input().split()))
+    A.append(map(int, raw_input().split()))
 A = np.array(A).reshape(N, N)
 for i in range(N):
-    B.append(map(int,raw_input().split()))
+    B.append(map(int, raw_input().split()))
 B = np.array(B).reshape(N, N)
 C = []
-for i in range(N*N):
+for i in range(N * N):
     C.append(0)
-C = np.array(C).reshape(N,N)
+C = np.array(C).reshape(N, N)
 for i in range(N):
     for j in range(N):
         for k in range(N):
@@ -50,4 +50,3 @@ print(C)
 # Sample Output
 # [[ 7 10]
 #  [15 22]]
-

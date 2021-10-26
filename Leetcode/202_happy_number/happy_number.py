@@ -6,8 +6,8 @@ class Solution:
         appeared.add(n)
         while True:
             digits = [int(c) for c in str(n)]
-            newval = sum([digit**2 for digit in digits])
-            if newval ==1:
+            newval = sum([digit ** 2 for digit in digits])
+            if newval == 1:
                 return True
             if newval in appeared:
                 return False

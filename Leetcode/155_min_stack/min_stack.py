@@ -9,20 +9,18 @@ class MinStack:
     def push(self, x):
         self.nums.append(x)
         if self.mins:
-            if x<self.nums[self.mins[-1]]:
-                self.mins.append(len(self.nums)-1)
+            if x < self.nums[self.mins[-1]]:
+                self.mins.append(len(self.nums) - 1)
             else:
                 self.mins.append(self.mins[-1])
         else:
             self.mins.append(0)
-        
-        
+
     # @return nothing
     def pop(self):
         if self.nums:
             del self.nums[-1]
             del self.mins[-1]
-        
 
     # @return an integer
     def top(self):

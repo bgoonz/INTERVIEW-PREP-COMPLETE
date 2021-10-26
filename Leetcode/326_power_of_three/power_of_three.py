@@ -4,15 +4,16 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        if n<=0:
+        if n <= 0:
             return False
         import math
+
         root = int(math.sqrt(n))
         i = 1
-        while i<root:
-            i*=3
-        if i!=root:
-            root = i/3
-        if n%(root*root):
+        while i < root:
+            i *= 3
+        if i != root:
+            root = i / 3
+        if n % (root * root):
             return False
-        return n/(root*root) in (1,3)
+        return n / (root * root) in (1, 3)

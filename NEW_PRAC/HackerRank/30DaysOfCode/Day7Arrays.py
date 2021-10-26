@@ -1,6 +1,6 @@
 # Task
-# Given an array, A, of N integers, print A's elements in reverse order as a 
-# single line of space-separated numbers. 
+# Given an array, A, of N integers, print A's elements in reverse order as a
+# single line of space-separated numbers.
 
 # Input Format
 # The first line contains an integer, N (the size of our array).
@@ -14,16 +14,16 @@ import random
 import re
 import sys
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
 
     arr = list(map(int, input().rstrip().split()))
     arr.reverse()
     for i in arr:
-        print(i, end=' ')
+        print(i, end=" ")
 
 # Output Format
-# Print the elements of array A in reverse order as a single line of 
+# Print the elements of array A in reverse order as a single line of
 # space-separated numbers.
 
 # Sample Input

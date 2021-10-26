@@ -5,7 +5,7 @@ from __future__ import print_function
 import bisect
 
 try:
-    raw_input          # Python 2
+    raw_input  # Python 2
 except NameError:
     raw_input = input  # Python 3
 
@@ -22,10 +22,12 @@ def interpolation_search(sorted_collection, item):
     right = len(sorted_collection) - 1
 
     while left <= right:
-        point = left + ((item - sorted_collection[left]) * (right - left)) // (sorted_collection[right] - sorted_collection[left])
-        
-        #out of range check
-        if point<0 or point>=len(sorted_collection):
+        point = left + ((item - sorted_collection[left]) * (right - left)) // (
+            sorted_collection[right] - sorted_collection[left]
+        )
+
+        # out of range check
+        if point < 0 or point >= len(sorted_collection):
             return None
 
         current_item = sorted_collection[point]
@@ -49,19 +51,26 @@ def interpolation_search_by_recursion(sorted_collection, item, left, right):
     :param item: item value to search
     :return: index of found item or None if item is not found
     """
-    point = left + ((item - sorted_collection[left]) * (right - left)) // (sorted_collection[right] - sorted_collection[left])
+    point = left + ((item - sorted_collection[left]) * (right - left)) // (
+        sorted_collection[right] - sorted_collection[left]
+    )
 
-    #out of range check
-    if point<0 or point>=len(sorted_collection):
+    # out of range check
+    if point < 0 or point >= len(sorted_collection):
         return None
 
     if sorted_collection[point] == item:
         return point
     elif sorted_collection[point] > item:
-        return interpolation_search_by_recursion(sorted_collection, item, left, point-1)
+        return interpolation_search_by_recursion(
+            sorted_collection, item, left, point - 1
+        )
     else:
-        return interpolation_search_by_recursion(sorted_collection, item, point+1, right)
-      
+        return interpolation_search_by_recursion(
+            sorted_collection, item, point + 1, right
+        )
+
+
 def __assert_sorted(collection):
     """Check if collection is sorted, if not - raises :py:class:`ValueError`
     :param collection: collection
@@ -76,24 +85,24 @@ def __assert_sorted(collection):
     ValueError: Collection must be sorted
     """
     if collection != sorted(collection):
-        raise ValueError('Collection must be sorted')
+        raise ValueError("Collection must be sorted")
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import sys
 
-    user_input = raw_input('Enter numbers separated by comma:\n').strip()
-    collection = [int(item) for item in user_input.split(',')]
+    user_input = raw_input("Enter numbers separated by comma:\n").strip()
+    collection = [int(item) for item in user_input.split(",")]
     try:
         __assert_sorted(collection)
     except ValueError:
-        sys.exit('Sequence must be sorted to apply interpolation search')
+        sys.exit("Sequence must be sorted to apply interpolation search")
 
-    target_input = raw_input('Enter a single number to be found in the list:\n')
+    target_input = raw_input("Enter a single number to be found in the list:\n")
     target = int(target_input)
     result = interpolation_search(collection, target)
     if result is not None:
-        print('{} found at positions: {}'.format(target, result))
+        print("{} found at positions: {}".format(target, result))
     else:
-        print('Not found')
+        print("Not found")

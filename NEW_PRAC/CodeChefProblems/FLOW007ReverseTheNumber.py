@@ -3,7 +3,7 @@
 # If an Integer N, write a program to reverse the given number.
 
 # Input
-# The first line contains an integer T, total number of testcases. Then follow T lines, 
+# The first line contains an integer T, total number of testcases. Then follow T lines,
 # each line contains an integer N.
 
 # Output

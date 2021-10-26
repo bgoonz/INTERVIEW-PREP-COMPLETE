@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def postorderTraversal(self, root):
         """
@@ -27,5 +28,3 @@ class Solution(object):
                     stack.append(current.left)
                     current.left = None
         return result
-            
-        

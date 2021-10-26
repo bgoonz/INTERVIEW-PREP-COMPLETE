@@ -1,7 +1,7 @@
 from collections import Counter
 
-class Solution(object):
 
+class Solution(object):
     def getHint(self, secret, guess):
 
         """
@@ -22,7 +22,7 @@ class Solution(object):
 
         counter2 = Counter()
 
-        for i,c in enumerate(secret):
+        for i, c in enumerate(secret):
 
             if guess[i] == secret[i]:
 
@@ -30,16 +30,14 @@ class Solution(object):
 
             else:
 
-                counter1[c]+=1
+                counter1[c] += 1
 
-                counter2[guess[i]]+=1
+                counter2[guess[i]] += 1
 
         for k in counter1:
 
             if k in counter2:
 
-                b+= min(counter1[k], counter2[k])
+                b += min(counter1[k], counter2[k])
 
-        return "%dA%dB"%(a, b)
-
-            
+        return "%dA%dB" % (a, b)

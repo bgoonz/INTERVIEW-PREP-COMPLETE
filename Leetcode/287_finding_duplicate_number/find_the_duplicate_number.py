@@ -12,7 +12,7 @@
 
 #  exist, and give an O(n)-time, O(1)-space algorithm for finding some
 
-#  duplicated element.  You must not modify the array elements during this 
+#  duplicated element.  You must not modify the array elements during this
 
 #  process."
 
@@ -310,8 +310,8 @@
 
 # runs in time O(n).
 
-class Solution(object):
 
+class Solution(object):
     def findDuplicate(self, nums):
 
         """
@@ -324,8 +324,6 @@ class Solution(object):
 
         # File: FindDuplicate.py
 
-
-
         # The "tortoise and hare" step.  We start at the end of the array and try
 
         # to find an intersection point in the cycle.
@@ -334,25 +332,19 @@ class Solution(object):
 
         fast = len(nums) - 1
 
-    
-
         # Keep advancing 'slow' by one step and 'fast' by two steps until they
 
         # meet inside the loop.
 
         while True:
 
-            slow = nums[slow]-1
+            slow = nums[slow] - 1
 
-            fast = nums[nums[fast]-1]-1
-
-    
+            fast = nums[nums[fast] - 1] - 1
 
             if slow == fast:
 
                 break
-
-    
 
         # Start up another pointer from the end of the array and march it forward
 
@@ -362,14 +354,12 @@ class Solution(object):
 
         while True:
 
-            slow   = nums[slow]-1
+            slow = nums[slow] - 1
 
-            finder = nums[finder]-1
-
-    
+            finder = nums[finder] - 1
 
             # If the two hit, the intersection index is the duplicate element.
 
             if slow == finder:
 
-                return slow +1
+                return slow + 1

@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
     def swapPairs(self, head):
         """
@@ -12,7 +13,7 @@ class Solution(object):
         """
         if not head or not head.next:
             return head
-        
+
         newHead = None
         tail = None
         p1 = head
@@ -25,9 +26,9 @@ class Solution(object):
             else:
                 newHead = p2
             tail = p1
-            
+
             p1 = p1.next
             if p1:
                 p2 = p1.next
-                
+
         return newHead

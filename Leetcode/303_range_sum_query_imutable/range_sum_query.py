@@ -1,5 +1,4 @@
 class NumArray(object):
-
     def __init__(self, nums):
 
         """
@@ -22,8 +21,6 @@ class NumArray(object):
 
             self.sums.append(sum)
 
-        
-
     def sumRange(self, i, j):
 
         """
@@ -38,15 +35,17 @@ class NumArray(object):
 
         """
 
-        if i>j: return 0
+        if i > j:
+            return 0
 
-        elif i == j: return self.nums[i]
+        elif i == j:
+            return self.nums[i]
 
         else:
 
-            if j+1 <len(self.sums):
+            if j + 1 < len(self.sums):
 
-                return self.sums[j+1]-self.sums[i]
+                return self.sums[j + 1] - self.sums[i]
 
             else:
 

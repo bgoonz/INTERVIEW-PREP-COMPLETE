@@ -4,7 +4,8 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        if not root: return []
+        if not root:
+            return []
         stack1 = [root]
         stack2 = []
         while stack1:

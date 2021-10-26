@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution(object):
     def deleteDuplicates(self, head):
         """
@@ -12,10 +13,10 @@ class Solution(object):
         """
         if not head:
             return head
-        
+
         current = head
         p = head.next
-        
+
         while p:
             if p.val != current.val:
                 current.next = p
@@ -23,8 +24,3 @@ class Solution(object):
             p = p.next
         current.next = p
         return head
-                
-    
-    
-    
-    

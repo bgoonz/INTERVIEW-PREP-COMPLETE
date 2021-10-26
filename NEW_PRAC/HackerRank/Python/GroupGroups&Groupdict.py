@@ -4,7 +4,7 @@
 
 # >>> import re
 # >>> m = re.match(r'(\w+)@(\w+)\.(\w+)','username@hackerrank.com')
-# >>> m.group(0)       # The entire match 
+# >>> m.group(0)       # The entire match
 # 'username@hackerrank.com'
 # >>> m.group(1)       # The first parenthesized subgroup.
 # 'username'
@@ -24,14 +24,15 @@
 # ('username', 'hackerrank', 'com')
 
 # groupdict()
-# A groupdict() expression returns a dictionary containing all the named subgroups of the match, keyed by the subgroup name. 
+# A groupdict() expression returns a dictionary containing all the named subgroups of the match, keyed by the subgroup name.
 # Code
 # >>> m = re.match(r'(?P<user>\w+)@(?P<website>\w+)\.(?P<extension>\w+)','myname@hackerrank.com')
 # >>> m.groupdict()
 # {'website': 'hackerrank', 'user': 'myname', 'extension': 'com'}
 
 import re
-m = re.search(r'([a-zA-Z0-9])\1+', input())  # \1 Gives one more repeating character
+
+m = re.search(r"([a-zA-Z0-9])\1+", input())  # \1 Gives one more repeating character
 print(m[1] if m else -1)
 
 # \1+ matches the same text as most recently matched by the 1st capturing group

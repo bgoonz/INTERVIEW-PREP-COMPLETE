@@ -1,5 +1,5 @@
 def sortColors(self, nums):
-    red, white, blue = 0, 0, len(nums)-1
+    red, white, blue = 0, 0, len(nums) - 1
 
     while white <= blue:
         if nums[white] == 0:

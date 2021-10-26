@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 class Solution(object):
     def countComponents(self, n, edges):
         """
@@ -7,7 +8,7 @@ class Solution(object):
         :type edges: List[List[int]]
         :rtype: int
         """
-        if n==0:
+        if n == 0:
             return 0
         if not edges:
             return n
@@ -16,11 +17,11 @@ class Solution(object):
         for x, y in edges:
             edge_map[x].append(y)
             edge_map[y].append(x)
-        
+
         components = 0
         left = set(range(n))
         while left:
-            components+=1
+            components += 1
             q = [left.pop()]
             while q:
                 v = q.pop(0)
@@ -28,6 +29,5 @@ class Solution(object):
                     if vv in left:
                         q.append(vv)
                         left.remove(vv)
-                    
+
         return components
-            

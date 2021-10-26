@@ -9,7 +9,7 @@ class Solution:
         self.qv = q.val
         self.visit(root)
         return self.result
-        
+
     def visit(self, node):
         vals = [node.val]
         if node.left:

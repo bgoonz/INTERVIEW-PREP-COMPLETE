@@ -8,11 +8,12 @@ import sys
 
 # Complete the repeatedString function below.
 def repeatedString(s, n):
-    sum = (s.count('a')* (n//len(s)))
-    return (sum) + (s[:(n % len(s))].count('a'))
+    sum = s.count("a") * (n // len(s))
+    return (sum) + (s[: (n % len(s))].count("a"))
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
 
@@ -20,7 +21,6 @@ if __name__ == '__main__':
 
     result = repeatedString(s, n)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
-

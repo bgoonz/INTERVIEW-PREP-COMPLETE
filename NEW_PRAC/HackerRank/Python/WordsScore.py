@@ -1,5 +1,6 @@
 def is_vowel(letter):
-    return letter in ['a', 'e', 'i', 'o', 'u', 'y']
+    return letter in ["a", "e", "i", "o", "u", "y"]
+
 
 def score_words(words):
     score = 0
@@ -15,6 +16,7 @@ def score_words(words):
             l.append(1)
     return sum(l)
     # return score
+
 
 n = int(input())
 words = input().split()

@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def closestValue(self, root, target):
         """
@@ -20,16 +21,16 @@ class Solution(object):
         while True:
             if node is None:
                 break
-            if node.val==target:
+            if node.val == target:
                 return node.val
-            elif node.val>target:
-                if diff>node.val-target:
-                    diff = node.val-target
+            elif node.val > target:
+                if diff > node.val - target:
+                    diff = node.val - target
                     closest = node.val
                 node = node.left
             else:
-                if diff>target-node.val:
-                    diff = target-node.val
+                if diff > target - node.val:
+                    diff = target - node.val
                     closest = node.val
                 node = node.right
         return closest

@@ -13,7 +13,6 @@ class Solution(object):
     #     height.pop()
     #     return ans
 
-
     def largestRectangleArea(self, heights):
 
         """
@@ -24,7 +23,7 @@ class Solution(object):
 
         """
 
-        heights.insert(0,0)
+        heights.insert(0, 0)
 
         heights.append(0)
 
@@ -34,26 +33,24 @@ class Solution(object):
 
         for i, height in enumerate(heights):
 
-            if not stack or heights[stack[-1]]<=height:
+            if not stack or heights[stack[-1]] <= height:
 
                 stack.append(i)
 
             else:
 
-                while stack and heights[stack[-1]]>height:
+                while stack and heights[stack[-1]] > height:
 
-                    maxarea = max(maxarea, heights[stack[-1]]*(i-stack[-2]-1))
+                    maxarea = max(maxarea, heights[stack[-1]] * (i - stack[-2] - 1))
 
                     stack.pop()
 
                 stack.append(i)
         right = stack[-1]
         stack.pop()
-        while len(stack)>1:
-            offset = right-stack[-1]
-            maxarea = max(maxarea, heights[stack[-1]]*offset)
+        while len(stack) > 1:
+            offset = right - stack[-1]
+            maxarea = max(maxarea, heights[stack[-1]] * offset)
             stack.pop()
-            
-        return maxarea
 
-                    
+        return maxarea

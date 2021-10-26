@@ -2,7 +2,7 @@
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
 # """
-#class NestedInteger(object):
+# class NestedInteger(object):
 #    def isInteger(self):
 #        """
 #        @return True if this NestedInteger holds a single integer, rather than a nested list.
@@ -23,8 +23,8 @@
 #        :rtype List[NestedInteger]
 #        """
 
-class NestedIterator(object):
 
+class NestedIterator(object):
     def __init__(self, nestedList):
         """
         Initialize your data structure here.
@@ -32,7 +32,7 @@ class NestedIterator(object):
         """
         self.list = self.flatten(nestedList)
         self.index = 0
-        
+
     def flatten(self, nestedList):
         result = []
         for item in nestedList:
@@ -57,6 +57,7 @@ class NestedIterator(object):
         :rtype: bool
         """
         return self.index < len(self.list)
+
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

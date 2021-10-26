@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def levelOrderBottom(self, root):
         """
@@ -14,7 +15,7 @@ class Solution(object):
         self.levels = []
         self.recurse(root, 0)
         return self.levels[::-1]
-    
+
     def recurse(self, node, lvl):
         if not node:
             return
@@ -22,6 +23,5 @@ class Solution(object):
             self.levels.append([node.val])
         else:
             self.levels[lvl].append(node.val)
-        self.recurse(node.left, lvl+1)
-        self.recurse(node.right, lvl+1)
-        
+        self.recurse(node.left, lvl + 1)
+        self.recurse(node.right, lvl + 1)

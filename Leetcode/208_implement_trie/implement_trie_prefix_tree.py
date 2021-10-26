@@ -2,10 +2,9 @@ class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
         self.children = {}
-        
+
 
 class Trie:
-
     def __init__(self):
         self.root = TrieNode()
 
@@ -18,8 +17,8 @@ class Trie:
             if c not in node.children:
                 node.children[c] = TrieNode()
             node = node.children[c]
-        node.children['$']=True
-        
+        node.children["$"] = True
+
     # @param {string} word
     # @return {boolean}
     # Returns if the word is in the trie.
@@ -29,8 +28,8 @@ class Trie:
             if c not in node.children:
                 return False
             node = node.children[c]
-        return '$' in node.children
-        
+        return "$" in node.children
+
     # @param {string} prefix
     # @return {boolean}
     # Returns if there is any word in the trie

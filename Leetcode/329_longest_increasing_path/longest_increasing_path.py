@@ -1,5 +1,4 @@
 class Solution(object):
-
     def longestIncreasingPath(self, matrix):
 
         """
@@ -16,16 +15,15 @@ class Solution(object):
 
             if (x, y) not in self.dp:
 
-                self.dp[(x, y)] = 1+max(
-
-                    dp(x+1, y) if x+1<len(matrix) and matrix[x+1][y]<matrix[x][y] else 0,
-
-                    dp(x-1, y) if x>0 and matrix[x-1][y]<matrix[x][y] else 0,
-
-                    dp(x, y+1) if y+1<len(matrix[0]) and matrix[x][y+1]<matrix[x][y] else 0,
-
-                    dp(x, y-1) if y>0 and matrix[x][y-1]<matrix[x][y] else 0
-
+                self.dp[(x, y)] = 1 + max(
+                    dp(x + 1, y)
+                    if x + 1 < len(matrix) and matrix[x + 1][y] < matrix[x][y]
+                    else 0,
+                    dp(x - 1, y) if x > 0 and matrix[x - 1][y] < matrix[x][y] else 0,
+                    dp(x, y + 1)
+                    if y + 1 < len(matrix[0]) and matrix[x][y + 1] < matrix[x][y]
+                    else 0,
+                    dp(x, y - 1) if y > 0 and matrix[x][y - 1] < matrix[x][y] else 0,
                 )
 
             return self.dp[(x, y)]

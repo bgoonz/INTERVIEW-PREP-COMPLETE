@@ -6,4 +6,4 @@ class Solution(object):
         """
         if not s:
             return ""
-        return ' '.join(reversed(s.strip().split()))
+        return " ".join(reversed(s.strip().split()))

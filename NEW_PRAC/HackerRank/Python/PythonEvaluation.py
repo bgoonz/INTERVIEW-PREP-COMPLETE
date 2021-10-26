@@ -1,4 +1,4 @@
-# It helps in evaluating an expression. 
+# It helps in evaluating an expression.
 # The expression can be a Python statement, or a code object. --->
 
 # >>> eval("9 + 5")
@@ -7,7 +7,7 @@
 # >>> eval("x + 3")
 # 5
 
-# eval() can also be used to work with Python keywords or defined 
+# eval() can also be used to work with Python keywords or defined
 # functions and variables. These would normally be stored as strings.  -->
 
 # >>> type(eval("len"))

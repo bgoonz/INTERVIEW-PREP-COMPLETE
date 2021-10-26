@@ -5,7 +5,7 @@ from __future__ import print_function
 import queue
 
 try:
-    raw_input          # Python 2
+    raw_input  # Python 2
 except NameError:
     raw_input = input  # Python 3
 
@@ -21,8 +21,8 @@ def build_tree():
     print("\n********Press N to stop entering at any point of time********\n")
     print("Enter the value of the root node: ", end="")
     check = raw_input().strip().lower()
-    if check == 'n':
-        return None 
+    if check == "n":
+        return None
     data = int(check)
     q = queue.Queue()
     tree_node = TreeNode(data)
@@ -31,7 +31,7 @@ def build_tree():
         node_found = q.get()
         print("Enter the left node of %s: " % node_found.data, end="")
         check = raw_input().strip().lower()
-        if check == 'n':
+        if check == "n":
             return tree_node
         left_data = int(check)
         left_node = TreeNode(left_data)
@@ -39,7 +39,7 @@ def build_tree():
         q.put(left_node)
         print("Enter the right node of %s: " % node_found.data, end="")
         check = raw_input().strip().lower()
-        if check == 'n':
+        if check == "n":
             return tree_node
         right_data = int(check)
         right_node = TreeNode(right_data)
@@ -85,7 +85,7 @@ def level_order(node):
             q.put(node_dequeued.right)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("\n********* Binary Tree Traversals ************\n")
 
     node = build_tree()

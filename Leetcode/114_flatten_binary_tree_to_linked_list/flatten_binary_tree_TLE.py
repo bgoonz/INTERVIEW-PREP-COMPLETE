@@ -7,7 +7,7 @@ class Solution(object):
         if not root:
             return None
         self.recurse(root)
-        
+
     def recurse(self, root):
         # return the head and tail of flattened list
         if not root.left and not root.right:
@@ -22,9 +22,8 @@ class Solution(object):
             return root, last
         else:
             l, llast = self.recurse(root.left)
-            r, rlast= self.recurse(root.right)
+            r, rlast = self.recurse(root.right)
             root.right = l
             llast.right = r
             rlast.right = None
             return root, rlast
-            

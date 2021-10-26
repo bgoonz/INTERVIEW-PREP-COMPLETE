@@ -4,7 +4,8 @@ class Solution(object):
         :type head: ListNode
         :rtype: TreeNode
         """
-        if not head: return None
+        if not head:
+            return None
         if not head.next:
             node = TreeNode(head.val)
             node.left = None

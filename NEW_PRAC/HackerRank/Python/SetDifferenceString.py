@@ -1,4 +1,3 @@
-
 # >>> s = set("Hacker")
 # >>> print s.difference("Rank")
 # set(['c', 'r', 'e', 'H'])
@@ -19,7 +18,7 @@
 # set(['H', 'c', 'r', 'e'])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     eng = input()
     eng_stu = set(map(int, input().split()))
     fre = input()

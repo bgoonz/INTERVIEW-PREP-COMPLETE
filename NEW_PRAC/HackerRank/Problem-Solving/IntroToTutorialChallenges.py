@@ -1,5 +1,5 @@
 # Sample Challenge
-# This is a simple challenge to get things started. Given a sorted array (arr) and a number (V), 
+# This is a simple challenge to get things started. Given a sorted array (arr) and a number (V),
 # can you print the index location of V in the array?
 # For example, if arr = [1,2,3] and V = 3, you would print 2 for a zero-based index array.
 # If you are going to use the provided code for I/O, this next section is for you.
@@ -17,8 +17,8 @@ def introTutorial(V, arr):
     return arr.index(V)
 
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     V = int(input())  # Value to be searched
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
     result = introTutorial(V, arr)
 
-    fptr.write(str(result) + '\n')
+    fptr.write(str(result) + "\n")
 
     fptr.close()
 
@@ -45,6 +45,5 @@ if __name__ == '__main__':
 # 1
 
 # Explanation 0
-# V = 4 . The value 4 is the 2nd element in the array, but its index is 1 since in this case, 
+# V = 4 . The value 4 is the 2nd element in the array, but its index is 1 since in this case,
 # array indices start from 0(see array definition under Input Format).
-

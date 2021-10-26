@@ -1,6 +1,7 @@
 from collections import defaultdict
-class TwoSum(object):
 
+
+class TwoSum(object):
     def __init__(self):
         """
         initialize your data structure here
@@ -12,7 +13,7 @@ class TwoSum(object):
         Add the number to an internal data structure.
         :rtype: nothing
         """
-        self.numbers[number]+=1
+        self.numbers[number] += 1
 
     def find(self, value):
         """
@@ -21,13 +22,13 @@ class TwoSum(object):
         :rtype: bool
         """
         for n in self.numbers:
-            m = value-n
-            if m!=n and m in self.numbers:
+            m = value - n
+            if m != n and m in self.numbers:
                 return True
-            if m==n and self.numbers[n]>1:
+            if m == n and self.numbers[n] > 1:
                 return True
         return False
-                
+
 
 # Your TwoSum object will be instantiated and called as such:
 # twoSum = TwoSum()

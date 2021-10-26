@@ -12,7 +12,7 @@ def weightedUniformStrings(s, queries):
     length = 0
     weights = set()
     for x in s:
-        weight = ord(x) - ord('a') + 1
+        weight = ord(x) - ord("a") + 1
         weights.add(weight)
         if x == prev:
             length += 1
@@ -24,14 +24,15 @@ def weightedUniformStrings(s, queries):
     list_l = []
     for c in queries:
         if c in weights:
-            list_l.append('Yes')
+            list_l.append("Yes")
         else:
-            list_l.append('No')
-    
+            list_l.append("No")
+
     return list_l
 
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+if __name__ == "__main__":
+    fptr = open(os.environ["OUTPUT_PATH"], "w")
 
     s = input()
 
@@ -45,8 +46,8 @@ if __name__ == '__main__':
 
     result = weightedUniformStrings(s, queries)
 
-    fptr.write('\n'.join(result))
-    fptr.write('\n')
+    fptr.write("\n".join(result))
+    fptr.write("\n")
 
     fptr.close()
 
