@@ -1,10 +1,6 @@
 # Resume
 
-{% embed url="https://1drv.ms/w/s!AkGiZ9n9CRDSqYFT7rowhrSYGPUJvA?e=iSJvhh" %}
-
-{% embed url="https://docs.google.com/document/d/e/2PACX-1vTZGNNL-Qb2bAqAdrUJNUCUoYbmzImH_myNiGrLbl9dXzf08jX4ts9GNIRlNqTebQ/pub?embedded=true" %}
-
-{% embed url="https://drive.google.com/file/d/1HXAxL73NtX8q7tkiaOGh-mNpOmNEHqOS/view?usp=sharing" %}
+{% embed url="https://drive.google.com/file/d/1mIll2xB2PSEkM9z_LdvrRhiZZu_svtoL/view?usp=sharing" %}
 
 {% embed url="https://docs.google.com/document/d/e/2PACX-1vSzVg_pFmpn1c-NqFWx4g8hoLrIfkrcJ2sfIBrh3vC6m-ob_RoeHOtYE0YCpf3vLA/pub" %}
 
