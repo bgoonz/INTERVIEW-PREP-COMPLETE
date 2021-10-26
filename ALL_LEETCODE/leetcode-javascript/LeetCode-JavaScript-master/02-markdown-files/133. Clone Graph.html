@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>133. Clone Graph</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="clone-graph"><a href="https://leetcode.com/problems/clone-graph/description/">133. Clone Graph</a></h2>
+<h3 id="problem">Problem:</h3>
+<p>Given the head of a graph, return a deep copy (clone) of the graph. Each node in the graph contains a <code>label</code> (<code>int</code>) and a list (<code>List[UndirectedGraphNode]</code>) of its <code>neighbors</code>. There is an edge between the given node and each of the nodes in its neighbors.</p>
+<p>OJ’s undirected graph serialization (so you can understand error output):</p>
+<p>Nodes are labeled uniquely.</p>
+<p>We use <code>#</code> as a separator for each node, and <code>,</code> as a separator for node label and each neighbor of the node.</p>
+<p>As an example, consider the serialized graph <code>{0,1,2#1,2#2,2}</code>.</p>
+<p>The graph has a total of three nodes, and therefore contains three parts as separated by <code>#</code>.</p>
+<ol type="1">
+<li>First node is labeled as <code>0</code>. Connect node <code>0</code> to both nodes <code>1</code> and <code>2</code>.</li>
+<li>Second node is labeled as <code>1</code>. Connect node <code>1</code> to node <code>2</code>.</li>
+<li>Third node is labeled as <code>2</code>. Connect node <code>2</code> to node <code>2</code> (itself), thus forming a self-cycle.</li>
+</ol>
+<p>Visually, the graph looks like the following:</p>
+<pre><code>       1
+      / \
+     /   \
+    0 --- 2
+         / \
+         \_/
+</code></pre>
+<p><strong>Note</strong>: The information about the tree serialization is only meant so that you can understand error output if you get a wrong answer. You don’t need to understand the serialization to solve the problem.</p>
+<h3 id="solution">Solution:</h3>
+<p>DFS. Cache the visited node before entering the next recursion.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="co"> * Definition for undirected graph.</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co"> * function UndirectedGraphNode(label) {</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="co"> *     this.label = label;</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co"> *     this.neighbors = [];   // Array of UndirectedGraphNode</span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="co"> * }</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{UndirectedGraphNode}</span><span class="co"> graph</span></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="co"> * </span><span class="an">@return</span><span class="co"> {UndirectedGraphNode}</span></a>
+<a class="sourceLine" id="cb2-12" title="12"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="kw">var</span> cloneGraph <span class="op">=</span> <span class="kw">function</span>(graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-14" title="14">  <span class="kw">const</span> cache <span class="op">=</span> <span class="op">{}</span></a>
+<a class="sourceLine" id="cb2-15" title="15">  <span class="cf">return</span> <span class="at">_clone</span>(graph)</a>
+<a class="sourceLine" id="cb2-16" title="16"></a>
+<a class="sourceLine" id="cb2-17" title="17">  <span class="kw">function</span> <span class="at">_clone</span> (graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-18" title="18">    <span class="cf">if</span> (<span class="op">!</span>graph) <span class="op">{</span> <span class="cf">return</span> graph <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-19" title="19">    <span class="kw">const</span> label <span class="op">=</span> <span class="va">graph</span>.<span class="at">label</span></a>
+<a class="sourceLine" id="cb2-20" title="20">    <span class="cf">if</span> (<span class="op">!</span>cache[label]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-21" title="21">      cache[label] <span class="op">=</span> <span class="kw">new</span> <span class="at">UndirectedGraphNode</span>(label)</a>
+<a class="sourceLine" id="cb2-22" title="22">      cache[label].<span class="at">neighbors</span> <span class="op">=</span> <span class="va">graph</span>.<span class="va">neighbors</span>.<span class="at">map</span>(_clone)</a>
+<a class="sourceLine" id="cb2-23" title="23">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-24" title="24">    <span class="cf">return</span> cache[label]</a>
+<a class="sourceLine" id="cb2-25" title="25">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-26" title="26"><span class="op">};</span></a></code></pre></div>
+<p><em>Template generated via <a href="https://github.com/crimx/crx-leetmark">Leetmark</a>.</em></p>
+</body>
+</html>

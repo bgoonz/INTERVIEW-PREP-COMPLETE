@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>038. Count and Say</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="count-and-say"><a href="https://leetcode.com/problems/count-and-say/description/">38. Count and Say</a></h2>
+<h3 id="problem">Problem:</h3>
+<p>The count-and-say sequence is the sequence of integers with the first five terms as following:</p>
+<pre><code>1.     1
+2.     11
+3.     21
+4.     1211
+5.     111221</code></pre>
+<p><code>1</code> is read off as <code>"one 1"</code> or <code>11</code>. <code>11</code> is read off as <code>"two 1s"</code> or <code>21</code>. <code>21</code> is read off as <code>"one 2</code>, then <code>one 1"</code> or <code>1211</code>.</p>
+<p>Given an integer n, generate the nth term of the count-and-say sequence.</p>
+<p>Note: Each term of the sequence of integers will be represented as a string.</p>
+<p>Example 1:</p>
+<pre><code>Input: 1
+Output: &quot;1&quot;</code></pre>
+<p>Example 2:</p>
+<pre><code>Input: 4
+Output: &quot;1211&quot;</code></pre>
+<h3 id="solution">Solution:</h3>
+<p>Just loop and grow the sequence.</p>
+<h4 id="one">ONE</h4>
+<p>JavaScript specific.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> n</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {string}</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="kw">var</span> countAndSay <span class="op">=</span> <span class="kw">function</span>(n) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-6" title="6">  <span class="kw">let</span> num <span class="op">=</span> <span class="st">&#39;1&#39;</span></a>
+<a class="sourceLine" id="cb4-7" title="7"></a>
+<a class="sourceLine" id="cb4-8" title="8">  <span class="cf">while</span> (<span class="op">--</span>n <span class="op">&gt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    num <span class="op">=</span> <span class="va">num</span>.<span class="at">match</span>(<span class="ss">/</span><span class="sc">(\d)\1*</span><span class="ss">/g</span>).<span class="at">map</span>(x <span class="kw">=&gt;</span> <span class="va">x</span>.<span class="at">length</span> <span class="op">+</span> x[<span class="dv">0</span>]).<span class="at">join</span>(<span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb4-10" title="10">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-11" title="11"></a>
+<a class="sourceLine" id="cb4-12" title="12">  <span class="cf">return</span> num</a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="op">};</span></a></code></pre></div>
+<h4 id="two">TWO</h4>
+<p>General solution.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{number}</span><span class="co"> n</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="co"> * </span><span class="an">@return</span><span class="co"> {string}</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="kw">var</span> countAndSay <span class="op">=</span> <span class="kw">function</span>(n) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-6" title="6">  <span class="kw">let</span> num <span class="op">=</span> <span class="st">&#39;1&#39;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8">  <span class="cf">while</span> (<span class="op">--</span>n <span class="op">&gt;</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="kw">let</span> newNum <span class="op">=</span> <span class="st">&#39;&#39;</span></a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">,</span> accu <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">num</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++,</span> accu<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-11" title="11">      <span class="cf">if</span> (num[i] <span class="op">!==</span> num[i<span class="op">+</span><span class="dv">1</span>]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-12" title="12">        newNum <span class="op">+=</span> accu <span class="op">+</span> num[i]</a>
+<a class="sourceLine" id="cb5-13" title="13">        accu <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb5-14" title="14">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-15" title="15">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-16" title="16">    num <span class="op">=</span> newNum</a>
+<a class="sourceLine" id="cb5-17" title="17">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-18" title="18"></a>
+<a class="sourceLine" id="cb5-19" title="19">  <span class="cf">return</span> num</a>
+<a class="sourceLine" id="cb5-20" title="20"><span class="op">};</span></a></code></pre></div>
+<p><em>Template generated via <a href="https://github.com/crimx/crx-leetmark">Leetmark</a>.</em></p>
+</body>
+</html>
