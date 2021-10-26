@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>072. Edit Distance</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="edit-distance"><a href="https://leetcode.com/problems/edit-distance/description/">72. Edit Distance</a></h2>
+<h3 id="problem">Problem:</h3>
+<p>Given two words <em>word1</em> and <em>word2</em>, find the minimum number of operations required to convert <em>word1</em> to <em>word2</em>.</p>
+<p>You have the following 3 operations permitted on a word:</p>
+<ol type="1">
+<li>Insert a character</li>
+<li>Delete a character</li>
+<li>Replace a character</li>
+</ol>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input: word1 = &quot;horse&quot;, word2 = &quot;ros&quot;
+Output: 3
+Explanation: 
+horse -&gt; rorse (replace &#39;h&#39; with &#39;r&#39;)
+rorse -&gt; rose (remove &#39;r&#39;)
+rose -&gt; ros (remove &#39;e&#39;)</code></pre>
+<p><strong>Example 2:</strong></p>
+<pre><code>Input: word1 = &quot;intention&quot;, word2 = &quot;execution&quot;
+Output: 5
+Explanation: 
+intention -&gt; inention (remove &#39;t&#39;)
+inention -&gt; enention (replace &#39;i&#39; with &#39;e&#39;)
+enention -&gt; exention (replace &#39;n&#39; with &#39;x&#39;)
+exention -&gt; exection (replace &#39;n&#39; with &#39;c&#39;)
+exection -&gt; execution (insert &#39;u&#39;)</code></pre>
+<h3 id="solution">Solution:</h3>
+<p>DP.</p>
+<p>Define <code>f(i, j)</code> to be the min edit distance from <code>word1[0...i)</code> to <code>word2[0...j)</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="at">f</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="at">f</span>(<span class="dv">0</span><span class="op">,</span> j) <span class="op">=</span> <span class="at">f</span>(<span class="dv">0</span><span class="op">,</span> j<span class="dv">-1</span>) <span class="op">+</span> <span class="dv">1</span> <span class="co">// can only insert</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="at">f</span>(i<span class="op">,</span> <span class="dv">0</span>) <span class="op">=</span> <span class="at">f</span>(i<span class="dv">-1</span><span class="op">,</span> <span class="dv">0</span>) <span class="op">+</span> <span class="dv">1</span> <span class="co">// can only delete</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="at">f</span>(i<span class="op">,</span> j) <span class="op">=</span> <span class="at">min</span>(</a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="at">f</span>(i<span class="op">,</span> j<span class="dv">-1</span>) <span class="op">+</span> <span class="dv">1</span> <span class="co">// insert</span></a>
+<a class="sourceLine" id="cb3-6" title="6">  <span class="at">f</span>(i<span class="dv">-1</span><span class="op">,</span> j) <span class="op">+</span> <span class="dv">1</span> <span class="co">// delete</span></a>
+<a class="sourceLine" id="cb3-7" title="7">  <span class="at">f</span>(i<span class="dv">-1</span><span class="op">,</span> j<span class="dv">-1</span>) <span class="op">+</span> (word1[i<span class="dv">-1</span>] <span class="op">!==</span> word2[j<span class="dv">-1</span>] <span class="op">?</span> <span class="dv">1</span> : <span class="dv">0</span>) <span class="co">// replace or do nothing</span></a>
+<a class="sourceLine" id="cb3-8" title="8">)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> word1</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> word2</span></a>
+<a class="sourceLine" id="cb4-4" title="4"><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co"> */</span></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="kw">var</span> minDistance <span class="op">=</span> <span class="kw">function</span>(word1<span class="op">,</span> word2) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-7" title="7">  <span class="kw">const</span> len1 <span class="op">=</span> <span class="va">word1</span>.<span class="at">length</span></a>
+<a class="sourceLine" id="cb4-8" title="8">  <span class="kw">const</span> len2 <span class="op">=</span> <span class="va">word2</span>.<span class="at">length</span></a>
+<a class="sourceLine" id="cb4-9" title="9"></a>
+<a class="sourceLine" id="cb4-10" title="10">  <span class="cf">if</span>(len1 <span class="op">&lt;=</span> <span class="dv">0</span> <span class="op">||</span> len2 <span class="op">&lt;=</span> <span class="dv">0</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="cf">return</span> len1 <span class="op">+</span> len2</a>
+<a class="sourceLine" id="cb4-12" title="12">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-13" title="13"></a>
+<a class="sourceLine" id="cb4-14" title="14">  <span class="kw">const</span> dp <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb4-15" title="15"></a>
+<a class="sourceLine" id="cb4-16" title="16">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;=</span> len1<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-17" title="17">    dp[i] <span class="op">=</span> [i]</a>
+<a class="sourceLine" id="cb4-18" title="18">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-19" title="19"></a>
+<a class="sourceLine" id="cb4-20" title="20">  <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;=</span> len2<span class="op">;</span> j<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-21" title="21">    dp[<span class="dv">0</span>][j] <span class="op">=</span> j</a>
+<a class="sourceLine" id="cb4-22" title="22">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-23" title="23"></a>
+<a class="sourceLine" id="cb4-24" title="24">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> len1<span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-25" title="25">    <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> j <span class="op">&lt;=</span> len2<span class="op">;</span> j<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-26" title="26">      dp[i][j] <span class="op">=</span> <span class="va">Math</span>.<span class="at">min</span>(</a>
+<a class="sourceLine" id="cb4-27" title="27">        dp[i][j<span class="dv">-1</span>] <span class="op">+</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-28" title="28">        dp[i<span class="dv">-1</span>][j] <span class="op">+</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-29" title="29">        dp[i<span class="dv">-1</span>][j<span class="dv">-1</span>] <span class="op">+</span> (word1[i<span class="dv">-1</span>] <span class="op">===</span> word2[j<span class="dv">-1</span>] <span class="op">?</span> <span class="dv">0</span> : <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb4-30" title="30">      )</a>
+<a class="sourceLine" id="cb4-31" title="31">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-32" title="32">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-33" title="33"></a>
+<a class="sourceLine" id="cb4-34" title="34">  <span class="cf">return</span> dp[len1][len2]</a>
+<a class="sourceLine" id="cb4-35" title="35"><span class="op">};</span></a></code></pre></div>
+<p><em>Template generated via <a href="https://github.com/crimx/crx-leetmark">Leetmark</a>.</em></p>
+</body>
+</html>
