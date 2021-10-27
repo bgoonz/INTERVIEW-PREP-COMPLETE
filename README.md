@@ -1,15 +1,12 @@
 ---
 description: https://bryan-guner.gitbook.io/job-search/
+cover: .gitbook/assets/7238F1A2-92EB-41CF-88AE-ECFDA825806A.JPEG
 coverY: 0
 ---
 
 # Home
 
-&#x20;            ![](<.gitbook/assets/image (1).png>)                                   ![](<.gitbook/assets/image (4).png>)                                ![](<.gitbook/assets/image (3).png>)                       ![](<.gitbook/assets/image (2).png>)
-
-|                                                                     |                                                                                                          |                                                                                                           |                                                                                          |
-| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [https://bgoonz-blog.netlify.app/](https://bgoonz-blog.netlify.app) | [https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg](https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg) | [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/) | [https://github.com/bgoonz?tab=repositories](https://github.com/bgoonz?tab=repositories) |
+<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td></td><td><img src=".gitbook/assets/image (5).png" alt=""></td><td><img src=".gitbook/assets/image (8).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td></td></tr></tbody></table>
 
 {% hint style="info" %}
 \----------------------------------------------------------------------------------------
@@ -17,9 +14,7 @@ coverY: 0
 
 {% embed url="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" %}
 
-{% hint style="info" %}
-\----------------------------------------------------------------------------------------
-{% endhint %}
+
 
 {% embed url="https://calendar.google.com/calendar/ical/lambdaschool.com_br8fstpfc8fmdr2t48d9qh859c%40group.calendar.google.com/public/basic.ics" %}
 
@@ -41,229 +36,11 @@ Calendar
 \--------------------------------------------------------------------------------------------
 {% endhint %}
 
-
-
-{% tabs %}
-{% tab title="Blog" %}
-
-
-
-
 {% embed url="https://codesandbox.io/embed/morning-dust-b1cwm?fontsize=14&hidenavigation=1&theme=dark" %}
-{% endtab %}
-
-{% tab title="Resume" %}
-
-
-
 
 {% embed url="https://drive.google.com/file/d/1mIll2xB2PSEkM9z_LdvrRhiZZu_svtoL/view?usp=sharing" %}
-{% endtab %}
 
-{% tab title="Untitled" %}
-
-{% endtab %}
-
-{% tab title="Untitled" %}
-
-{% endtab %}
-
-{% tab title="Untitled" %}
-
-{% endtab %}
-
-{% tab title="Untitled" %}
 {% embed url="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg" %}
-{% endtab %}
-{% endtabs %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% hint style="info" %}
 \----------------------------------------------------------------------------------------
