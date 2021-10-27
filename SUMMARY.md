@@ -10,6 +10,7 @@
 ## Resume
 
 * [Resume](resume/resume/README.md)
+  * [William's Feedback:](resume/resume/williams-feedback.md)
   * [Examples](resume/resume/examples.md)
 
 ## Cover Letter
@@ -18,7 +19,7 @@
 
 ## Portfolio
 
-* [Page 11](portfolio/page-11.md)
+* [Portfolio](portfolio/page-11.md)
 
 ## Tools/Resources
 
