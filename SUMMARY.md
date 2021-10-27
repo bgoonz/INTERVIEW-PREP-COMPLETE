@@ -14,7 +14,7 @@
 
 ## Cover Letter
 
-* [Page 10](cover-letter/page-10.md)
+* [Cover Letter](cover-letter/page-10.md)
 
 ## Portfolio
 
@@ -23,3 +23,7 @@
 ## Tools/Resources
 
 * [Tools/Resources](tools-resources/tools-resources.md)
+
+## 📈 Slack\&Lambda
+
+* [Pinned Messages:](slack-and-lambda/pinned-messages.md)
