@@ -1,5 +1,6 @@
 ---
 description: https://bryan-guner.gitbook.io/job-search/
+coverY: 0
 ---
 
 # Home
@@ -23,6 +24,12 @@ description: https://bryan-guner.gitbook.io/job-search/
 {% embed url="https://calendar.google.com/calendar/ical/lambdaschool.com_br8fstpfc8fmdr2t48d9qh859c%40group.calendar.google.com/public/basic.ics" %}
 
 {% embed url="https://calendar.google.com/calendar/embed?bgcolor=%23616161&color=%238E24AA&ctz=America%2FNew_York&height=1000&src=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&wkst=2" %}
+Agenda
+{% endembed %}
+
+{% embed url="https://calendar.google.com/calendar/embed?bgcolor=%23616161&color=%238E24AA&ctz=America%2FNew_York&height=1000&src=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&wkst=2" %}
+Calendar
+{% endembed %}
 
 {% hint style="info" %}
 \--------------------------------------------------------------------------------------------
@@ -34,7 +41,229 @@ description: https://bryan-guner.gitbook.io/job-search/
 \--------------------------------------------------------------------------------------------
 {% endhint %}
 
+
+
+{% tabs %}
+{% tab title="Blog" %}
+
+
+
+
 {% embed url="https://codesandbox.io/embed/morning-dust-b1cwm?fontsize=14&hidenavigation=1&theme=dark" %}
+{% endtab %}
+
+{% tab title="Resume" %}
+
+
+
+
+{% embed url="https://drive.google.com/file/d/1mIll2xB2PSEkM9z_LdvrRhiZZu_svtoL/view?usp=sharing" %}
+{% endtab %}
+
+{% tab title="Untitled" %}
+
+{% endtab %}
+
+{% tab title="Untitled" %}
+
+{% endtab %}
+
+{% tab title="Untitled" %}
+
+{% endtab %}
+
+{% tab title="Untitled" %}
+{% embed url="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg" %}
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {% hint style="info" %}
 \----------------------------------------------------------------------------------------
