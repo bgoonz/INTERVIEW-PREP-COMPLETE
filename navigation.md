@@ -1,5 +1,21 @@
 # Navigation
 
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
+{% content-ref url="skills.md" %}
+[skills.md](skills.md)
+{% endcontent-ref %}
+
+
+
+
+
+
+
+
+
 {% embed url="https://docs.google.com/spreadsheets/d/e/2PACX-1vTcJsYCXD3PNX9Af4YO9XWVa-yCL48y4SvNtihD4KGJh_cPDY2A57z8WkVvXlWpfPcYFL6L_SE0mf7g/pubhtml?amp%3Bheaders=false&widget=true" %}
 
 {% embed url="https://calendly.com/lambda-outcomes" %}
