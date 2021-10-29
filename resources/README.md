@@ -3,20 +3,8 @@
 
 
 {% tabs %}
-{% tab title="Job Search Resources (Old Version)" %}
-
-
-{% embed url="https://codesandbox.io/s/interview-prep-nrwm7?file=%2Findex.html" %}
-{% endtab %}
-
 {% tab title="Invites" %}
-
-
-
-
 {% embed url="https://discord.com/invite/9K84yNM" %}
-
-
 
 
 
@@ -24,17 +12,55 @@
 {% endtab %}
 
 {% tab title="Quizzes & Prep" %}
-[https://codesandbox.io/s/interview-prep-forked-gq9c8?file=/index.html](https://codesandbox.io/s/interview-prep-forked-gq9c8?file=/index.html)
+{% embed url="https://codesandbox.io/s/interview-prep-forked-gq9c8?file=%2Findex.html" %}
 {% endtab %}
 
 {% tab title="My Websites" %}
+{% embed url="https://codesandbox.io/s/ds-algo-oefhd?file=%2Findex.html" %}
+**ds-algo-practice**
+{% endembed %}
+
+{% embed url="https://codesandbox.io/s/the-algos-3in54?file=%2Findex.html" %}
+The Algos Open Source
+{% endembed %}
+
+{% embed url="https://codesandbox.io/s/leetcode-6553b?file=%2Findex.html" %}
+Leetcode
+{% endembed %}
+
+
+
 {% embed url="https://codesandbox.io/s/js-beginners-18usn?file=%2Findex.html" %}
+Javascript... review
+{% endembed %}
+
+
+
+{% embed url="https://codesandbox.io/s/interview-prep-nrwm7?file=%2Findex.html" %}
+
+
 {% endtab %}
 {% endtabs %}
 
+## Search Awesome Lists:
+
+{% embed url="https://codesandbox.io/s/search-awesome-lists-b471x?file=%2Findex.html" %}
+
+## Lambda Resources
 
 
 
+{% tabs %}
+{% tab title="Cold Outreach" %}
+
+
+{% embed url="https://airtable.com/shrDZgl0o92rMugIh" %}
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 
 
