@@ -4,7 +4,10 @@
 * [Navigation](navigation.md)
 * [Skills](skills.md)
 * [Resources](resources/README.md)
+  * [Links](resources/links.md)
   * [Practice Problems:](resources/practice-problems.md)
+  * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
+  * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
 
 ## Resume
 
@@ -19,8 +22,7 @@
 ## Portfolio
 
 * [Portfolio](portfolio/page-11.md)
-* [Resources](portfolio/resources.md)
-* [Page 1](portfolio/page-1.md)
+* [Git Repo](portfolio/git-repo.md)
 
 ## Tools/Resources
 
@@ -75,4 +77,5 @@
 
 ## Notes
 
-* [Notes](notes/notes.md)
+* [Notes](notes/notes/README.md)
+  * [Page 5](notes/notes/page-5.md)

@@ -1,5 +1,41 @@
 # Resources
 
+{% embed url="https://discord.com/invite/9K84yNM" %}
+
+{% embed url="https://codesandbox.io/s/interview-prep-nrwm7?file=%2Findex.html" %}
+
+
+
+
+
+{% embed url="https://join.slack.com/t/coding-coach/shared_invite/zt-azgyhra9-TxZ1b4tiYuNtDuPGwE2stw" %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Free Certifications
 
 **Free Certifications**
@@ -72,8 +108,6 @@
 
 ### Security <a href="ca4de541-d743-46ad-82e3-3819f3149ef9" id="ca4de541-d743-46ad-82e3-3819f3149ef9"></a>
 
-
-
 |                                |                                                                                                                         |      |             |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ---- | ----------- |
 | Provider                       | Description                                                                                                             | Link | Expiration  |
@@ -85,8 +119,6 @@
 | SkillFront                     | Free ISO/IEC 27001 Information Security Associate™                                                                      | Link | Unlimited   |
 
 ### Project Management <a href="0f56d83f-8263-49d2-b763-f30e2cc885f6" id="0f56d83f-8263-49d2-b763-f30e2cc885f6"></a>
-
-
 
 |                  |                                                                                                                                    |      |            |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ---- | ---------- |
@@ -100,8 +132,6 @@
 | SkillFront       | Free Certified Associate In Scrum Fundamentals™ (CASF™)                                                                            | Link | Unlimited  |
 
 ### Marketing <a href="bd62fde1-0b7c-43e5-9e43-e736bcdafbd8" id="bd62fde1-0b7c-43e5-9e43-e736bcdafbd8"></a>
-
-
 
 |                 |                                                                                                                                                             |      |              |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------------ |
@@ -117,8 +147,6 @@
 ### Database <a href="ce4d9d2a-9856-43ba-9bbe-488e5ddf1be5" id="ce4d9d2a-9856-43ba-9bbe-488e5ddf1be5"></a>
 
 ### Others <a href="a02c852b-91bb-462f-92a2-667a3b776874" id="a02c852b-91bb-462f-92a2-667a3b776874"></a>
-
-
 
 |                    |                                                                                                                                                                                                                                                                     |      |            |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ---------- |
