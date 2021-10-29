@@ -38,7 +38,7 @@
 
 ## Tutorials
 
-* [Untitled](tutorials/untitled.md)
+* [Job Search Guide](tutorials/job-search-guide.md)
 
 ***
 
