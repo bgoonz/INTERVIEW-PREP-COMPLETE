@@ -43,3 +43,9 @@
 ***
 
 * [Page 3](page-3.md)
+
+## Applications & Job Postings
+
+* [Postings:](applications-and-job-postings/postings.md)
+* [My Applications](applications-and-job-postings/my-applications.md)
+* [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want.md)
