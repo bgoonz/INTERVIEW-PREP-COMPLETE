@@ -24,10 +24,6 @@
 * [Portfolio](portfolio/page-11.md)
 * [Git Repo](portfolio/git-repo.md)
 
-## Tools/Resources
-
-* [Tools/Resources](tools-resources/tools-resources.md)
-
 ## 📈 Slack\&Lambda
 
 * [Pinned Items:](slack-and-lambda/pinned-items.md)
