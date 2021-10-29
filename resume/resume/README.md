@@ -1,4 +1,4 @@
-# 📄 Resume
+# Resume
 
 {% embed url="https://drive.google.com/file/d/1mIll2xB2PSEkM9z_LdvrRhiZZu_svtoL/view?usp=sharing" %}
 

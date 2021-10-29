@@ -27,3 +27,32 @@ _ _
 &#x20;
 
 **Operating Systems**:          Linux, Windows (WSL), IOS
+
+
+
+
+
+## More:
+
+
+
+
+
+
+
+
+
+|                        |                               |                              |                           |                        |
+| ---------------------- | ----------------------------- | ---------------------------- | ------------------------- | ---------------------- |
+| JavaScript             | Agile Methodologies           | LabVIEW                      | Microsoft Office          | PostgreSQL             |
+| React.js               | Tools & Technologies          | HTML5                        | Google Analytics          | MongoDB                |
+| Electrical Engineering | Python (Programming Language) | Cascading Style Sheets (CSS) | Amazon Web Services (AWS) | Multivariable Calculus |
+| Control Systems        | Python                        | AJAX                         | Bootstrap                 | Express.js             |
+| Algorithms             | HTML                          | jQuery                       | Next.js                   | API Development        |
+| Signal Processing      | Microsoft Excel               | PostgreSQL                   | GatsbyJS                  |                        |
+| Web Development        | MATLAB                        | SQL                          | Algolia                   |                        |
+| Test Cases             | Embedded Systems              | MongoDB                      | Digital Signal Processing |                        |
+| Product Design         | Microsoft Word                | Node.js                      | API                       |                        |
+| Software Documentation | Git                           | Scss                         | Python                    |                        |
+
+*

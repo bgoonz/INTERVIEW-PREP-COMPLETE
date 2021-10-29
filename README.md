@@ -1,7 +1,7 @@
 ---
 description: https://bryan-guner.gitbook.io/job-search/
-cover: .gitbook/assets/7238F1A2-92EB-41CF-88AE-ECFDA825806A.JPEG
-coverY: 0
+cover: .gitbook/assets/background (1).jpg
+coverY: 247.49063670411982
 ---
 
 # Home
