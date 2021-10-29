@@ -49,3 +49,13 @@
 * [Postings:](applications-and-job-postings/postings.md)
 * [My Applications](applications-and-job-postings/my-applications.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want.md)
+
+## Job Boards
+
+* [Job Boards](job-boards/job-boards/README.md)
+  * [Less Promising Job Boards](job-boards/job-boards/less-promising-job-boards.md)
+  * [LIST OF BOARDS](job-boards/job-boards/list-of-boards.md)
+
+## Networking
+
+* [Events](networking/events.md)
