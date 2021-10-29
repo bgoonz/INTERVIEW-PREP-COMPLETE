@@ -38,7 +38,7 @@
 
 ## DS\_ALGO\_Prac
 
-* [Page 2](ds\_algo\_prac/page-2.md)
+* [Leetcode:](ds\_algo\_prac/leetcode.md)
 
 ## Tutorials
 
