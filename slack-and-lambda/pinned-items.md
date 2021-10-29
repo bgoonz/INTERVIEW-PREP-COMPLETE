@@ -1,0 +1,27 @@
+# Pinned Items:
+
+## \*Schedule can also be found on the [Job Search Office Hours Calendar](https://calendar.google.com/calendar/u/0/r?cid=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)!
+
+* Take another look, if you haven't already, at [Getting Started in the Job Search](https://www.notion.so/Getting-Started-in-Job-Search-d0cd969ab1c147ccbe0ba1c2c6685241)  guide ![:book:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f4d6%402x.png)
+* Fill out the [Job Search Intent Form](https://airtable.com/shrz3tX6QTJqUS5ay) if you haven’t already done so ![:white\_check\_mark:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F2705%402x.png)
+* Start looking for jobs (Use this [Sourcing 1 Pager](https://docs.google.com/document/d/1CBIHvb97LQppwWx2mSlYWVIjNdl42EdCYnXYljUot9c/edit?usp=sharing) for some great resources to try out) and onboard any job opportunities you are interested in to your [Job Tracker](https://careers.lambdaschool.com/jobtracker) so we can start your job search in an organized manner ![:organizer:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Forganizer%2F458064967bf8b540.png)
+
+Please add the [**Lambda Job Search Program Schedule**](https://calendar.google.com/calendar/u/0?cid=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)** **to your calendar so you can start planning ahead to attend all the awesome job search sessions we have in store for you the next couple weeks ![:eyes:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f440%402x.png) For those of you that won’t be able to attend the live sessions **we will be recording each session and sharing them in this channel. **Feel free to utilize your [Job Search Support Session](https://calendly.com/beto-garza) (won't kickoff till November 1st) or the Job Search Office Hours to cover any topics of the recorded sessions with our team and your fellow graduates.What you need to do this weekend: ![:arrow\_down:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F2b07-fe0f%402x.png)
+
+1. Take another look, if you haven't already, at [Getting Started in Your Job Search](https://www.notion.so/Getting-Started-in-Job-Search-d0cd969ab1c147ccbe0ba1c2c6685241) guide ![:book:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f4d6%402x.png)
+2. Fill out the [Job Search Intent Form](https://airtable.com/shrz3tX6QTJqUS5ay) if you haven’t already done so ![:white\_check\_mark:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F2705%402x.png)&#x20;
+3. Come prepared for Monday's kickoff session with ![:three:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F0033-fe0f-20e3%402x.png) [job opportunities](https://careers.lambdaschool.com/jobfinder) you want a custom outreach plan created for (Make sure you have applied to them first and uploaded them to your [Job Tracker](https://careers.lambdaschool.com/jobtracker))
+
+**Here are some facts to get you pumped up for tomorrow... **![:ricflair:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fricflair%2F1e8164693e916561.gif)1. Outreach is the key difference in getting a job in **3 months vs. 8 months**, which equates to roughly $21,000 in salary! ![:fly-money-fly:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Ffly-money-fly%2F900d312f4e765223.gif)\
+2\. Lambda grads with **1 interview in the first 30 days are 3x more likely to get a job in 90 days. **This interview doesn't have to be at your dream company, in fact, it is better if it isn't. If you only work toward one goal, let it be this! ![:this:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fthis-9784%2F86aab44216e769fe.gif)\
+3\. Every time you submit a [Custom Outreach Message](https://airtable.com/shrDZgl0o92rMugIh) request our team will create a personalized outreach plan for you to use with any job opportunity and find the contact information for the best point of contact(s) at the company you should reach out to. ![:pencil2:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F270f-fe0f%402x.png)\
+
+
+
+
+
+
+
+
+
+

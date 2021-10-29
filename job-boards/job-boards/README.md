@@ -2,6 +2,8 @@
 
 {% embed url="https://angel.co/profile/edit/overview" %}
 
+{% embed url="https://authenticjobs.com" %}
+
 
 
 #### Start with these Recommended Job Boards ⤵️

@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Home](README.md)
-* [Initial page](initial-page.md)
 * [Navigation](navigation.md)
 * [Skills](skills.md)
 * [Resources](resources/README.md)
@@ -9,7 +8,7 @@
 
 ## Resume
 
-* [📄 Resume](resume/resume/README.md)
+* [Resume](resume/resume/README.md)
   * [William's Feedback:](resume/resume/williams-feedback.md)
   * [Examples](resume/resume/examples.md)
 
@@ -29,8 +28,11 @@
 
 ## 📈 Slack\&Lambda
 
+* [Pinned Items:](slack-and-lambda/pinned-items.md)
 * [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [Slack Announcements](slack-and-lambda/slack-announcements.md)
+* [Recordings](slack-and-lambda/recordings.md)
+* [People](slack-and-lambda/people.md)
 
 ## DS\_ALGO\_Prac
 
@@ -46,7 +48,7 @@
 
 ## Applications & Job Postings
 
-* [📬 Postings:](applications-and-job-postings/postings.md)
+* [Postings:](applications-and-job-postings/postings.md)
 * [My Applications](applications-and-job-postings/my-applications.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
@@ -62,3 +64,15 @@
 ## Networking
 
 * [Events](networking/events.md)
+
+## Lambda Guidance & Meetings
+
+* [Meetings:](lambda-guidance-and-meetings/meetings.md)
+
+## MISC
+
+* [Articles To Read](misc/articles-to-read.md)
+
+## Notes
+
+* [Notes](notes/notes.md)
