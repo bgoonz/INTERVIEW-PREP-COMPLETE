@@ -63,8 +63,8 @@
 [.](./)
 {% endcontent-ref %}
 
-{% content-ref url="skills.md" %}
-[skills.md](skills.md)
+{% content-ref url="skills/" %}
+[skills](skills/)
 {% endcontent-ref %}
 
 {% content-ref url="resume/resume/" %}
@@ -91,8 +91,8 @@
 [pinned-messages.md](slack-and-lambda/pinned-messages.md)
 {% endcontent-ref %}
 
-{% content-ref url="skills.md" %}
-[skills.md](skills.md)
+{% content-ref url="skills/" %}
+[skills](skills/)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference/" %}
