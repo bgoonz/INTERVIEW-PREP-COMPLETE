@@ -36,6 +36,7 @@
 ## DS\_ALGO\_Prac
 
 * [Leetcode:](ds\_algo\_prac/leetcode.md)
+* [Hash Tables](ds\_algo\_prac/hash-tables.md)
 
 ## Tutorials
 
