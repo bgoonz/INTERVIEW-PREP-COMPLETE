@@ -2,18 +2,23 @@
 
 
 
-| Navigation                      | Leetcode:                 | Stackbit                    |
-| ------------------------------- | ------------------------- | --------------------------- |
-| Running-List-Of-MISC-Resources: | Meetings:                 | Notes                       |
-| Job-Boards                      | Pinned-Messages:          | Recordings                  |
-| Examples                        | LIST-OF-BOARDS            | Page-3                      |
-| Skills                          | Portfolio                 | Postings:                   |
-| My-Applications                 | Resume                    | Resources                   |
-| Jobs-I-Really-Want              | Less-Promising-Job-Boards | Job-Search-Guide            |
-| Cover-Letter                    | Page-5                    | Developer-Advocate-(Remote) |
-| Practice-Problems:              | Pinned-Items:             | Home                        |
-| Page-4                          | People                    | Git-Repo                    |
-| Events                          | Slack-Announcements       | Articles-To-Read            |
+
+
+<table data-header-hidden><thead><tr><th data-type="users" data-multiple></th></tr></thead><tbody><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></tbody></table>
+
+
+
+
+
+
+
+
+
+|   |   |   |
+| - | - | - |
+|   |   |   |
+|   |   |   |
+|   |   |   |
 
 
 
