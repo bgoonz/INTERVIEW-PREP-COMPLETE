@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 * [Navigation](navigation.md)
+* [Useful Downloads](useful-downloads.md)
 * [Skills](skills.md)
 * [Resources](resources/README.md)
   * [Links](resources/links.md)
