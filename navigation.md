@@ -1,5 +1,59 @@
 # Navigation
 
+
+
+| Navigation                      | Leetcode:                 | Stackbit                    |
+| ------------------------------- | ------------------------- | --------------------------- |
+| Running-List-Of-MISC-Resources: | Meetings:                 | Notes                       |
+| Job-Boards                      | Pinned-Messages:          | Recordings                  |
+| Examples                        | LIST-OF-BOARDS            | Page-3                      |
+| Skills                          | Portfolio                 | Postings:                   |
+| My-Applications                 | Resume                    | Resources                   |
+| Jobs-I-Really-Want              | Less-Promising-Job-Boards | Job-Search-Guide            |
+| Cover-Letter                    | Page-5                    | Developer-Advocate-(Remote) |
+| Practice-Problems:              | Pinned-Items:             | Home                        |
+| Page-4                          | People                    | Git-Repo                    |
+| Events                          | Slack-Announcements       | Articles-To-Read            |
+
+
+
+| [Broken link](broken-reference "mention")                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Pinned Items](slack-and-lambda/pinned-items.md)                                                                                                   |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+|                                                                                                                                                    |
+| - \[https://bryan-guner.gitbook.io/job-search/Pinned-Items:]\(https://bryan-guner.gitbook.io/job-search/Pinned-Items:)                             |
+| - \[https://bryan-guner.gitbook.io/job-search/People]\(https://bryan-guner.gitbook.io/job-search/People)                                           |
+| - \[https://bryan-guner.gitbook.io/job-search/Stackbit]\(https://bryan-guner.gitbook.io/job-search/Stackbit)                                       |
+| - \[https://bryan-guner.gitbook.io/job-search/Notes]\(https://bryan-guner.gitbook.io/job-search/Notes)                                             |
+| - \[https://bryan-guner.gitbook.io/job-search/Recordings]\(https://bryan-guner.gitbook.io/job-search/Recordings)                                   |
+| - \[https://bryan-guner.gitbook.io/job-search/Page-3]\(https://bryan-guner.gitbook.io/job-search/Page-3)                                           |
+| - \[https://bryan-guner.gitbook.io/job-search/Postings:]\(https://bryan-guner.gitbook.io/job-search/Postings:)                                     |
+| - \[https://bryan-guner.gitbook.io/job-search/Resources]\(https://bryan-guner.gitbook.io/job-search/Resources)                                     |
+| - \[https://bryan-guner.gitbook.io/job-search/Job-Search-Guide]\(https://bryan-guner.gitbook.io/job-search/Job-Search-Guide)                       |
+| - \[https://bryan-guner.gitbook.io/job-search/Developer-Advocate-(Remote)]\(https://bryan-guner.gitbook.io/job-search/Developer-Advocate-(Remote)) |
+| - \[https://bryan-guner.gitbook.io/job-search/Home]\(https://bryan-guner.gitbook.io/job-search/Home)                                               |
+| - \[https://bryan-guner.gitbook.io/job-search/Git-Repo]\(https://bryan-guner.gitbook.io/job-search/Git-Repo)                                       |
+| - \[https://bryan-guner.gitbook.io/job-search/Links]\(https://bryan-guner.gitbook.io/job-search/Links)                                             |
+| - \[https://bryan-guner.gitbook.io/job-search/Articles-To-Read]\(https://bryan-guner.gitbook.io/job-search/Articles-To-Read)                       |
+| - \[https://bryan-guner.gitbook.io/job-search/Slack-Announcements]\(https://bryan-guner.gitbook.io/job-search/Slack-Announcements)                 |
+| - \[https://bryan-guner.gitbook.io/job-search/William's-Feedback:]\(https://bryan-guner.gitbook.io/job-search/William's-Feedback:)                 |
+|                                                                                                                                                    |
+
 {% content-ref url="./" %}
 [.](./)
 {% endcontent-ref %}
@@ -36,29 +90,9 @@
 [skills.md](skills.md)
 {% endcontent-ref %}
 
-
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ##
 
@@ -98,12 +132,6 @@ On a weekly basis, you're aiming for 10-10-10: 10 quality applications, 10 outre
     * We encourage you to take the [CodeSignal GCA](https://app.codesignal.com/signup?certifiedInvite=TGy6wcugpm4LMFEQX) every two weeks. Your most updated score will be saved and we'll use it to refer you to the right partner opportunities.
 
 [Getting Started in Job Search](https://www.notion.so/Getting-Started-in-Job-Search-f626bedc1db14988a99ce43b1c1db58e)
-
-
-
-
-
-
 
 {% embed url="https://docs.google.com/spreadsheets/d/e/2PACX-1vTcJsYCXD3PNX9Af4YO9XWVa-yCL48y4SvNtihD4KGJh_cPDY2A57z8WkVvXlWpfPcYFL6L_SE0mf7g/pubhtml?amp%3Bheaders=false&widget=true" %}
 
