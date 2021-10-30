@@ -1,8 +1,12 @@
 # Resume
 
-{% embed url="https://drive.google.com/file/d/1mIll2xB2PSEkM9z_LdvrRhiZZu_svtoL/view?usp=sharing" %}
+{% content-ref url="examples.md" %}
+[examples.md](examples.md)
+{% endcontent-ref %}
 
-{% embed url="https://docs.google.com/document/d/e/2PACX-1vSzVg_pFmpn1c-NqFWx4g8hoLrIfkrcJ2sfIBrh3vC6m-ob_RoeHOtYE0YCpf3vLA/pub" %}
+
+
+{% embed url="https://drive.google.com/file/d/1mIll2xB2PSEkM9z_LdvrRhiZZu_svtoL/view?usp=sharing" %}
 
 | Folder Name    | Folder Path               | Folder Link                                                                   | File name        | File Link                                                                                                                                                                                                        |                                                      Description                                                      | Thumbnail                                                                                                                | Download Link                                                                     | Last modifying user   | Last Modified At             | Preview Link                                                                  | File Size | Created At                   | File Type                                                               | File Extension | Share Status | Commenters | Owner                 | PDF Link | CSV Link | Zip Link | DOCX Link |
 | -------------- | ------------------------- | ----------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------------------- | ---------------------------- | ----------------------------------------------------------------------------- | --------- | ---------------------------- | ----------------------------------------------------------------------- | -------------- | ------------ | ---------- | --------------------- | -------- | -------- | -------- | --------- |
