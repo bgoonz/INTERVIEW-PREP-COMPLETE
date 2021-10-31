@@ -1,21 +1,11 @@
-# Resources
+# 🍕 Resources
 
-
-
-{% tabs %}
-{% tab title="Invites" %}
 {% embed url="https://discord.com/invite/9K84yNM" %}
 
-
-
 {% embed url="https://join.slack.com/t/coding-coach/shared_invite/zt-azgyhra9-TxZ1b4tiYuNtDuPGwE2stw" %}
-{% endtab %}
 
-{% tab title="Quizzes & Prep" %}
 {% embed url="https://codesandbox.io/s/interview-prep-forked-gq9c8?file=%2Findex.html" %}
-{% endtab %}
 
-{% tab title="My Websites" %}
 {% embed url="https://codesandbox.io/s/ds-algo-oefhd?file=%2Findex.html" %}
 **ds-algo-practice**
 {% endembed %}
@@ -28,19 +18,11 @@ The Algos Open Source
 Leetcode
 {% endembed %}
 
-
-
 {% embed url="https://codesandbox.io/s/js-beginners-18usn?file=%2Findex.html" %}
 Javascript... review
 {% endembed %}
 
-
-
 {% embed url="https://codesandbox.io/s/interview-prep-nrwm7?file=%2Findex.html" %}
-
-
-{% endtab %}
-{% endtabs %}
 
 ## Search Awesome Lists:
 
@@ -48,53 +30,11 @@ Javascript... review
 
 ## Lambda Resources
 
-
-
-{% tabs %}
-{% tab title="Cold Outreach" %}
-
-
 {% embed url="https://airtable.com/shrDZgl0o92rMugIh" %}
-{% endtab %}
-
-{% tab title="Second Tab" %}
-
-{% endtab %}
-{% endtabs %}
-
-
-
-
-
-
-
-
-
-
 
 ## Companies That Don't Whiteboard:
 
-
-
 {% embed url="https://gist.github.com/bgoonz/27794781525376aea5e772cf304bce0e" %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Free Certifications
 

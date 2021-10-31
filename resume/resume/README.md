@@ -1,4 +1,4 @@
-# Resume
+# 😎 Resume
 
 {% content-ref url="examples.md" %}
 [examples.md](examples.md)

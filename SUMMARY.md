@@ -5,7 +5,7 @@
 * [Useful Downloads](useful-downloads.md)
 * [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
-* [Resources](resources/README.md)
+* [🍕 Resources](resources/README.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
   * [Practice Problems:](resources/practice-problems.md)
@@ -14,13 +14,13 @@
 
 ## Resume
 
-* [Resume](resume/resume/README.md)
+* [😎 Resume](resume/resume/README.md)
   * [William's Feedback:](resume/resume/williams-feedback.md)
   * [Examples](resume/resume/examples.md)
 
 ## Cover Letter
 
-* [Cover Letter](cover-letter/page-10.md)
+* [📰 Cover Letter](cover-letter/page-10.md)
 
 ## Portfolio
 
@@ -30,17 +30,17 @@
 
 ## 📈 Slack\&Lambda
 
-* [Pinned Items:](slack-and-lambda/pinned-items.md)
+* [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
 * [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [Slack Announcements](slack-and-lambda/slack-announcements.md)
-* [Recordings](slack-and-lambda/recordings.md)
+* [📺 Recordings](slack-and-lambda/recordings.md)
 * [People](slack-and-lambda/people.md)
 
-## DS\_ALGO\_Prac
+## 🖋 Interview Prep
 
-* [Interview Questions.](ds\_algo\_prac/interview-questions..md)
-* [Leetcode:](ds\_algo\_prac/leetcode.md)
-* [Hash Tables](ds\_algo\_prac/hash-tables.md)
+* [Interview Questions.](interview-prep/interview-questions..md)
+* [Leetcode:](interview-prep/leetcode.md)
+* [Hash Tables](interview-prep/hash-tables.md)
 
 ## Tutorials
 
@@ -71,11 +71,11 @@
 
 ## Lambda Guidance & Meetings
 
-* [Meetings:](lambda-guidance-and-meetings/meetings.md)
+* [🙋♂ Meetings:](lambda-guidance-and-meetings/meetings.md)
 
 ## MISC
 
-* [Articles To Read](misc/articles-to-read.md)
+* [📖 Articles To Read](misc/articles-to-read.md)
 
 ## Notes
 
