@@ -6,6 +6,7 @@
 * [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
 * [Resources](resources/README.md)
+  * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
   * [Practice Problems:](resources/practice-problems.md)
   * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
@@ -36,6 +37,7 @@
 
 ## DS\_ALGO\_Prac
 
+* [Interview Questions.](ds\_algo\_prac/interview-questions..md)
 * [Leetcode:](ds\_algo\_prac/leetcode.md)
 * [Hash Tables](ds\_algo\_prac/hash-tables.md)
 
