@@ -5,7 +5,7 @@
 * [Useful Downloads](useful-downloads.md)
 * [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
-* [🍕 Resources](resources/README.md)
+* [Resources](resources/README.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
   * [Practice Problems:](resources/practice-problems.md)
@@ -14,13 +14,13 @@
 
 ## Resume
 
-* [😎 Resume](resume/resume/README.md)
+* [Resume](resume/resume/README.md)
   * [William's Feedback:](resume/resume/williams-feedback.md)
   * [Examples](resume/resume/examples.md)
 
 ## Cover Letter
 
-* [📰 Cover Letter](cover-letter/page-10.md)
+* [Cover Letter](cover-letter/page-10.md)
 
 ## Portfolio
 
@@ -30,25 +30,28 @@
 
 ## 📈 Slack\&Lambda
 
-* [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
-* [Pinned Messages:](slack-and-lambda/pinned-messages.md)
+* [Pinned Items:](slack-and-lambda/pinned-items.md)
+* [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [Slack Announcements](slack-and-lambda/slack-announcements.md)
-* [📺 Recordings](slack-and-lambda/recordings.md)
+* [Recordings](slack-and-lambda/recordings.md)
 * [People](slack-and-lambda/people.md)
 
 ## 🖋 Interview Prep
 
-* [Interview Questions.](interview-prep/interview-questions..md)
+* [Interview Questions.](interview-prep/interview-questions./README.md)
+  * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets.md)
 * [Leetcode:](interview-prep/leetcode.md)
 * [Hash Tables](interview-prep/hash-tables.md)
 * [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
-* [Page 1](interview-prep/page-1.md)
+* [Python](interview-prep/python.md)
 * [More Practice:](interview-prep/more-practice.md)
 
 ## Tutorials
 
-* [Job Search Guide](tutorials/untitled.md)
+* [Job Search Guide](tutorials/untitled/README.md)
+  * [Page 2](tutorials/untitled/page-2.md)
+  * [Page 2](tutorials/untitled/page-2-1.md)
 
 ***
 
@@ -75,11 +78,11 @@
 
 ## Lambda Guidance & Meetings
 
-* [🙋♂ Meetings:](lambda-guidance-and-meetings/meetings.md)
+* [Meetings:](lambda-guidance-and-meetings/meetings.md)
 
 ## MISC
 
-* [📖 Articles To Read](misc/articles-to-read.md)
+* [Articles To Read](misc/articles-to-read.md)
 
 ## Notes
 

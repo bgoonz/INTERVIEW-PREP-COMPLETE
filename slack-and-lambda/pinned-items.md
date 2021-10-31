@@ -1,4 +1,4 @@
-# 📍 Pinned Items:
+# Pinned Items:
 
 ## \*Schedule can also be found on the [Job Search Office Hours Calendar](https://calendar.google.com/calendar/u/0/r?cid=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)!
 
