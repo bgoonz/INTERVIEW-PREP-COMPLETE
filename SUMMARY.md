@@ -24,8 +24,9 @@
 
 ## Portfolio
 
+* [Showcase](portfolio/showcase.md)
+* [💾 Git Repo](portfolio/git-repo.md)
 * [Portfolio](portfolio/page-11.md)
-* [Git Repo](portfolio/git-repo.md)
 
 ## 📈 Slack\&Lambda
 
