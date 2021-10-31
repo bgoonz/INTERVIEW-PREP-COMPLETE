@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/leetcode-patterns/static/css/main.64a01e81.chunk.css",
+    "main.js": "/leetcode-patterns/static/js/main.8d1a22d0.chunk.js",
+    "main.js.map": "/leetcode-patterns/static/js/main.8d1a22d0.chunk.js.map",
+    "runtime-main.js": "/leetcode-patterns/static/js/runtime-main.e042a733.js",
+    "runtime-main.js.map": "/leetcode-patterns/static/js/runtime-main.e042a733.js.map",
+    "static/css/2.dee60294.chunk.css": "/leetcode-patterns/static/css/2.dee60294.chunk.css",
+    "static/js/2.1f9d90b7.chunk.js": "/leetcode-patterns/static/js/2.1f9d90b7.chunk.js",
+    "static/js/2.1f9d90b7.chunk.js.map": "/leetcode-patterns/static/js/2.1f9d90b7.chunk.js.map",
+    "index.html": "/leetcode-patterns/index.html",
+    "precache-manifest.888f92d8bde9ade3e066562ccbd70506.js": "/leetcode-patterns/precache-manifest.888f92d8bde9ade3e066562ccbd70506.js",
+    "service-worker.js": "/leetcode-patterns/service-worker.js",
+    "static/css/2.dee60294.chunk.css.map": "/leetcode-patterns/static/css/2.dee60294.chunk.css.map",
+    "static/css/main.64a01e81.chunk.css.map": "/leetcode-patterns/static/css/main.64a01e81.chunk.css.map",
+    "static/js/2.1f9d90b7.chunk.js.LICENSE.txt": "/leetcode-patterns/static/js/2.1f9d90b7.chunk.js.LICENSE.txt",
+    "static/media/Educative.png": "/leetcode-patterns/static/media/Educative.d8fc9f7c.png",
+    "static/media/Hackernoon.png": "/leetcode-patterns/static/media/Hackernoon.2355a8b0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e042a733.js",
+    "static/css/2.dee60294.chunk.css",
+    "static/js/2.1f9d90b7.chunk.js",
+    "static/css/main.64a01e81.chunk.css",
+    "static/js/main.8d1a22d0.chunk.js"
+  ]
+}

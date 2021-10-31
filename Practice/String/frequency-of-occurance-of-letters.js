@@ -1,19 +1,17 @@
 // Problem - Given a string output a hashMap showing index positions of each letter occuring in the string. And the index positions should be an array
 
-letterFrequencyMap = str => {
+letterFrequencyMap = (str) => {
+  let letterMap = {};
 
-	let letterMap = {}	
+  str.forEach((letter, index) => {
+    letterMap[letter] = letterMap[letter] || [];
+    letterMap[letter].push(index);
+  });
 
-	str.forEach((letter, index) => {
+  return letterMap;
+};
 
-		letterMap[letter] = letterMap[letter] || [];
-		letterMap[letter].push(index);
-	})
-
-	return letterMap;
-}
-
-let str = "rohhanr".split('')
+let str = "rohhanr".split("");
 
 console.log(str);
 

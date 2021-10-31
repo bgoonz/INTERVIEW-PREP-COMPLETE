@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>readme</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="react-interview-questions">React Interview Questions</h1>
+    <p>
+      Chinese version
+      <a href="https://github.com/Pau1fitz/react-interview/blob/master/zh-cn.md"
+        >here</a
+      >.
+    </p>
+    <p>Below is a list of common React interview questions.</p>
+    <ul>
+      <li><a href="#how-does-react-work">How does React work?</a></li>
+      <li>
+        <a href="#what-are-the-advantages-of-using-react"
+          >What are the advantages of using React?</a
+        >
+      </li>
+      <li>
+        <a
+          href="#what-is-the-difference-between-a-presentational-component-and-a-container-component"
+          >What is the difference between a Presentational component and a
+          Container component?</a
+        >
+      </li>
+      <li>
+        <a
+          href="#what-are-the-differences-between-a-class-component-and-functional-component"
+          >What are the differences between a class component and functional
+          component?</a
+        >
+      </li>
+      <li>
+        <a href="#what-is-the-difference-between-state-and-props"
+          >What is the difference between state and props?</a
+        >
+      </li>
+      <li>
+        <a href="#what-are-the-different-lifecycle-methods"
+          >What are the different lifecycle methods?</a
+        >
+      </li>
+      <li><a href="#react-hooks">React hooks</a></li>
+      <li>
+        <a href="#where-in-a-react-component-should-you-make-an-ajax-request"
+          >Where in a React component should you make an AJAX request?</a
+        >
+      </li>
+      <li>
+        <a href="#what-are-controlled-components"
+          >What are controlled components?</a
+        >
+      </li>
+      <li>
+        <a href="#what-are-refs-used-for-in-react"
+          >What are refs used for in React?</a
+        >
+      </li>
+      <li>
+        <a href="#what-is-a-higher-order-component"
+          >What is a higher order component?</a
+        >
+      </li>
+      <li>
+        <a href="#what-advantages-are-there-in-using-arrow-functions"
+          >What advantages are there in using arrow functions?</a
+        >
+      </li>
+      <li>
+        <a
+          href="#why-is-it-advised-to-pass-a-callback-function-to-setState-as-opposed-to-an-object"
+          >Why is it advised to pass a callback function to setState as opposed
+          to an object?</a
+        >
+      </li>
+      <li>
+        <a href="#what-is-the-alternative-of-binding-this-in-the-constructor"
+          >What is the alternative of binding <code>this</code> in the
+          constructor?</a
+        >
+      </li>
+      <li>
+        <a href="#how-would-you-prevent-a-component-from-rendering"
+          >How would you prevent a component from rendering?</a
+        >
+      </li>
+      <li>
+        <a href="#when-rendering-a-list-what-is-a-key-and-what-is-its-purpose"
+          >When rendering a list what is a key and what is its purpose?</a
+        >
+      </li>
+      <li>
+        <a href="#what-is-the-purpose-of-superprops"
+          >What is the purpose of super(props)?</a
+        >
+      </li>
+      <li><a href="#what-is-jsx">What is JSX?</a></li>
+      <li>
+        <a href="#what-is-equivalent-of-the-following-using-React.createElement"
+          >What is equivalent of the following using React.createElement?</a
+        >
+      </li>
+      <li>
+        <a href="#what-is-children">What is <code>Children</code>?</a>
+      </li>
+      <li><a href="#what-is-state-in-react">What is state in react?</a></li>
+      <li>
+        <a href="#why-would-you-eject-from-create-react-app"
+          >Why would you eject from create-react-app?</a
+        >
+      </li>
+      <li><a href="#what-is-redux">What is redux?</a></li>
+      <li><a href="#what-is-a-store-in-redux">What is a store in redux?</a></li>
+      <li><a href="#what-is-an-action">What is an action?</a></li>
+      <li><a href="#what-is-a-reducer">What is a reducer?</a></li>
+      <li>
+        <a href="#what-is-redux-thunk-used-for"
+          >What is redux thunk used for?</a
+        >
+      </li>
+      <li><a href="#what-is-a-pure-function">What is a pure function?</a></li>
+      <li>
+        <a href="#what-do-you-like-about-react"
+          >What do you like about React?</a
+        >
+      </li>
+      <li>
+        <a href="#what-dont-you-like-about-react"
+          >What don’t you like about React?</a
+        >
+      </li>
+      <li><a href="#example-projects">Example projects</a></li>
+    </ul>
+    <h4 id="how-does-react-work">How does React work?</h4>
+    <p>
+      React creates a virtual DOM. When state changes in a component it firstly
+      runs a “diffing” algorithm, which identifies what has changed in the
+      virtual DOM. The second step is reconciliation, where it updates the DOM
+      with the results of diff.
+    </p>
+    <h4 id="what-are-the-advantages-of-using-react">
+      What are the advantages of using React?
+    </h4>
+    <ul>
+      <li>
+        It is easy to know how a component is rendered, you just need to look at
+        the render function.
+      </li>
+      <li>
+        JSX makes it easy to read the code of your components. It is also really
+        easy to see the layout, or how components are plugged/combined with each
+        other.
+      </li>
+      <li>
+        You can render React on the server-side. This improves SEO and
+        performance.
+      </li>
+      <li>It is easy to test.</li>
+      <li>
+        You can use React with any framework you wish as it is only a view
+        layer.
+      </li>
+    </ul>
+    <h4
+      id="what-is-the-difference-between-a-presentational-component-and-a-container-component"
+    >
+      What is the difference between a Presentational component and a Container
+      component?
+    </h4>
+    <p>
+      Presentational components are concerned with how things look. They
+      generally receive data and callbacks exclusively via props. These
+      components rarely have their own state, but when they do it generally
+      concerns UI state, as opposed to data state.
+    </p>
+    <p>
+      Container components are more concerned with how things work. These
+      components provide the data and behavior to presentational or other
+      container components. They define actions and provide these as callbacks
+      to the presentational components. They are also often stateful as they
+      serve as data sources.
+    </p>
+    <h4
+      id="what-are-the-differences-between-a-class-component-and-functional-component"
+    >
+      What are the differences between a class component and functional
+      component?
+    </h4>
+    <ul>
+      <li>
+        <p>
+          Class components allows you to use additional features such as local
+          state and lifecycle hooks. Also, to enable your component to have
+          direct access to your store and thus holds state.
+        </p>
+      </li>
+      <li>
+        <p>
+          When your component just receives props and renders them to the page,
+          this is a ‘stateless component’, for which a pure function can be
+          used. These are also called dumb components or presentational
+          components.
+        </p>
+      </li>
+    </ul>
+    <h4 id="what-is-the-difference-between-state-and-props">
+      What is the difference between state and props?
+    </h4>
+    <p>
+      State is a data structure that starts with a default value when a
+      Component mounts. It may be mutated across time, mostly as a result of
+      user events.
+    </p>
+    <p>
+      Props (short for properties) are a Component’s configuration. They are
+      received from above and immutable as far as the Component receiving them
+      is concerned. A Component cannot change its props, but it is responsible
+      for putting together the props of its child Components. Props do not have
+      to just be data - callback functions may be passed in as props.
+    </p>
+    <h4 id="what-are-the-different-lifecycle-methods">
+      What are the different lifecycle methods?
+    </h4>
+    <ul>
+      <li>
+        <code>componentWillMount</code> (deprecated) - this is most commonly
+        used for App configuration in your root component.
+      </li>
+      <li>
+        <code>componentDidMount</code> - here you want to do all the setup you
+        couldn’t do without a DOM, and start getting all the data you need. Also
+        if you want to set up eventListeners etc. this lifecycle hook is a good
+        place to do that.
+      </li>
+      <li>
+        <code>componentWillReceiveProps</code> (deprecated) - this lifecyclye
+        acts on particular prop changes to trigger state transitions.
+      </li>
+      <li>
+        <code>shouldComponentUpdate</code> - if you’re worried about wasted
+        renders <code>shouldComponentUpdate</code> is a great place to improve
+        performance as it allows you to prevent a rerender if component receives
+        new <code>prop</code>. <code>shouldComponentUpdate</code> should always
+        return a boolean and based on what this is will determine if the
+        component is rerendered or not.
+      </li>
+      <li>
+        <code>componentWillUpdate</code> (deprecated) - rarely used. It can be
+        used instead of <code>componentWillReceiveProps</code> on a component
+        that also has <code>shouldComponentUpdate</code> (but no access to
+        previous props).
+      </li>
+      <li>
+        <code>componentDidUpdate</code> - also commonly used to update the DOM
+        in response to prop or state changes.
+      </li>
+      <li>
+        <code>componentWillUnmount</code> - enables you can cancel any outgoing
+        network requests, or remove all event listeners associated with the
+        component.
+      </li>
+    </ul>
+    <h4 id="react-hooks">React Hooks</h4>
+    <p>
+      Hooks let you use more of React’s features without having to use classes.
+      The first hook that you will most likely encounter is
+      <code>useState</code>. <code>useState</code> is a Hook that lets you add
+      React state to function components. It returns an array with a getter and
+      a setter. The syntax looks like
+      <code>const [count, setCount] = React.useState(0);</code>. The equivalent
+      when using a class component would be.
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode js"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">this</span>.<span class="at">state</span> <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="dt">count</span><span class="op">:</span> <span class="dv">0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">};</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="op">&lt;</span>button onClick<span class="op">={</span>() <span class="kw">=&gt;</span> <span class="kw">this</span>.<span class="at">setState</span>(<span class="op">{</span> <span class="dt">count</span><span class="op">:</span> <span class="kw">this</span>.<span class="va">state</span>.<span class="at">count</span> <span class="op">+</span> <span class="dv">1</span> <span class="op">}</span>)<span class="op">}&gt;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  Increase Count</a>
+<a class="sourceLine" id="cb1-7" title="7">&lt;/button<span class="op">&gt;;</span></a></code></pre>
+    </div>
+    <p>
+      The next hook you will most likely encounter is <code>useEffect</code>.
+      The Effect Hook lets you perform side effects in function components. By
+      passing an empty array as the second argument to <code>useEffect</code> is
+      equivalent to using <code>componentDidMount</code>. If you pass a value to
+      the array it will only call the <code>useEffect</code> function when the
+      value in the array updates.
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode js"
+      ><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="at">useEffect</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="co">// do stuff when the component mounts</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="op">},</span> [])<span class="op">;</span></a></code></pre>
+    </div>
+    <h4 id="where-in-a-react-component-should-you-make-an-ajax-request">
+      Where in a React component should you make an AJAX request?
+    </h4>
+    <p>
+      <code>componentDidMount</code> is where an AJAX request should be made in
+      a React component. This method will be executed when the component
+      “mounts” (is added to the DOM) for the first time. This method is only
+      executed once during the component’s life. Importantly, you can’t
+      guarantee the AJAX request will have resolved before the component mounts.
+      If it doesn’t, that would mean that you’d be trying to setState on an
+      unmounted component, which would not work. Making your AJAX request in
+      <code>componentDidMount</code> will guarantee that there is a component to
+      update.
+    </p>
+    <h4 id="what-are-controlled-components">What are controlled components?</h4>
+    <p>
+      In HTML, form elements such as <code>&lt;input&gt;</code>,
+      <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> typically
+      maintain their own state and update it based on user input. When a user
+      submits a form the values from the aforementioned elements are sent with
+      the form. With React it works differently. The component containing the
+      form will keep track of the value of the input in it’s state and will
+      re-render the component each time the callback function e.g. <code
+        >onChange</code
+      >
+      is fired as the state will be updated. An input form element whose value
+      is controlled by React in this way is called a “controlled component”.
+    </p>
+    <h4 id="what-are-refs-used-for-in-react">
+      What are refs used for in React?
+    </h4>
+    <p>
+      Refs are used to get reference to a DOM node or an instance of a component
+      in React. Good examples of when to use refs are for managing focus/text
+      selection, triggering imperative animations, or integrating with
+      third-party DOM libraries. You should avoid using string refs and inline
+      ref callbacks. Callback refs are advised by React.
+    </p>
+    <h4 id="what-is-a-higher-order-component">
+      What is a higher order component?
+    </h4>
+    <p>
+      A higher-order component is a function that takes a component and returns
+      a new component. HOC’s allow you to reuse code, logic and bootstrap
+      abstraction. The most common is probably Redux’s
+      <code>connect</code> function. Beyond simply sharing utility libraries and
+      simple composition, HOCs are the best way to share behavior between React
+      Components. If you find yourself writing a lot of code in different places
+      that does the same thing, you may be able to refactor that code into a
+      reusable HOC.
+    </p>
+    <p>Exercises</p>
+    <hr />
+    <ul>
+      <li>Write an HOC that reverses it’s input.</li>
+      <li>
+        Write an HOC that supplies data from an API to it’s Passed Component.
+      </li>
+      <li>
+        Write an HOC that implements shouldComponentUpdate to avoid
+        reconciliation.
+      </li>
+      <li>
+        Write an HOC that uses React.Children.toArray to sort the children
+        passed to it’s Passed Component.
+      </li>
+    </ul>
+    <h4 id="what-advantages-are-there-in-using-arrow-functions">
+      What advantages are there in using arrow functions?
+    </h4>
+    <ul>
+      <li>
+        Scope safety: Until arrow functions, every new function defined its own
+        this value (a new object in the case of a constructor, undefined in
+        strict mode function calls, the base object if the function is called as
+        an “object method”, etc.). An arrow function does not create its own
+        this, the this value of the enclosing execution context is used.
+      </li>
+      <li>Compactness: Arrow functions are easier to read and write.</li>
+      <li>
+        Clarity: When almost everything is an arrow function, any regular
+        function immediately sticks out for defining the scope. A developer can
+        always look up the next-higher function statement to see what the Object
+        is.
+      </li>
+    </ul>
+    <h4
+      id="why-is-it-advised-to-pass-a-callback-function-to-setstate-as-opposed-to-an-object"
+    >
+      Why is it advised to pass a callback function to setState as opposed to an
+      object?
+    </h4>
+    <p>
+      Because <code>this.props</code> and <code>this.state</code> may be updated
+      asynchronously, you should not rely on their values for calculating the
+      next state.
+    </p>
+    <h4 id="what-is-the-alternative-of-binding-this-in-the-constructor">
+      What is the alternative of binding <code>this</code> in the constructor?
+    </h4>
+    <p>
+      You can use property initializers to correctly bind callbacks. This is
+      enabled by default in create react app. you can use an arrow function in
+      the callback. The problem here is that a new callback is created each time
+      the component renders.
+    </p>
+    <h4 id="how-would-you-prevent-a-component-from-rendering">
+      How would you prevent a component from rendering?
+    </h4>
+    <p>
+      Returning null from a component’s render method means nothing will be
+      displayed, but it does not affect the firing of the component’s lifecycle
+      methods.
+    </p>
+    <p>
+      If the amount of times the component re-renders is an issue, there are two
+      options available. Manually implementing a check in the
+      <code>shouldComponentUpdate</code> lifecycle method hook.
+    </p>
+    <pre><code>shouldComponentUpdate(nextProps, nextState){
+  // Do some check here
+  return resultOFCheckAsBoolean
+}</code></pre>
+    <p>
+      Or using React.PureComponent instead of React.Component
+      React.PureComponent implements <code>shouldComponentUpdate()</code> with a
+      shallow prop and state comparison. This enables you to avoid re-rendering
+      the component with the same props and state.
+    </p>
+    <h4 id="when-rendering-a-list-what-is-a-key-and-what-is-its-purpose">
+      When rendering a list what is a key and what is it’s purpose?
+    </h4>
+    <p>
+      Keys help React identify which items have changed, are added, or are
+      removed. Keys should be given to the elements inside the array to give the
+      elements a stable identity. The best way to pick a key is to use a string
+      that uniquely identifies a list item among its siblings. Most often you
+      would use IDs from your data as keys. When you don’t have stable IDs for
+      rendered items, you may use the item index as a key as a last resort. It
+      is not recommend to use indexes for keys if the items can reorder, as that
+      would be slow.
+    </p>
+    <h4 id="what-is-the-purpose-of-superprops">
+      What is the purpose of super(props)?
+    </h4>
+    <p>
+      A child class constructor cannot make use of <code>this</code> until
+      <code>super()</code> has been called. Also, ES2015 class constructors have
+      to call <code>super()</code> if they are subclasses. The reason for
+      passing <code>props</code> to <code>super()</code> is to enable you to
+      access <code>this.props</code> in the constructor.
+    </p>
+    <h4 id="what-is-jsx">What is JSX?</h4>
+    <p>
+      JSX is a syntax extension to JavaScript and comes with the full power of
+      JavaScript. JSX produces React “elements”. You can embed any JavaScript
+      expression in JSX by wrapping it in curly braces. After compilation, JSX
+      expressions become regular JavaScript objects. This means that you can use
+      JSX inside of if statements and for loops, assign it to variables, accept
+      it as arguments, and return it from functions:
+    </p>
+    <h4 id="what-is-equivalent-of-the-following-using-react.createelement">
+      What is equivalent of the following using React.createElement?
+    </h4>
+    <p>Question:</p>
+    <pre><code>const element = (
+  &lt;h1 className=&quot;greeting&quot;&gt;
+    Hello, world!
+  &lt;/h1&gt;
+);</code></pre>
+    <p>Answer:</p>
+    <pre><code>const element = React.createElement(
+  &#39;h1&#39;,
+  {className: &#39;greeting&#39;},
+  &#39;Hello, world!&#39;
+);</code></pre>
+    <h4 id="what-is-children">What is <code>Children</code>?</h4>
+    <p>
+      In JSX expressions that contain both an opening tag and a closing tag, the
+      content between those tags is passed to components automatically as a
+      special prop: <code>props.children</code>.
+    </p>
+    <p>
+      There are a number of methods available in the React API to work with this
+      <code>prop</code>. These include <code>React.Children.map</code>,
+      <code>React.Children.forEach</code>, <code>React.Children.count</code>,
+      <code>React.Children.only</code>, <code>React.Children.toArray</code>.
+    </p>
+    <h4 id="what-is-state-in-react">What is state in react?</h4>
+    <p>
+      State is similar to props, but it is private and fully controlled by the
+      component. State is essentially an object that holds data and determines
+      how the component renders and behaves.
+    </p>
+    <h4 id="why-would-you-eject-from-create-react-app">
+      Why would you eject from create-react-app?
+    </h4>
+    <p>Until you eject you are unable to configure webpack or babel presets.</p>
+    <h4 id="what-is-redux">What is redux?</h4>
+    <p>
+      The basic idea of redux is that the entire application state is kept in a
+      single store. The store is simply a javascript object. The only way to
+      change the state is by sending actions from your application and then
+      writing reducers for these actions that modify the state. The entire state
+      transition is kept inside reducers and should not have any side-effects.
+    </p>
+    <h4 id="what-is-a-store-in-redux">What is a store in redux?</h4>
+    <p>
+      The store is a javascript object that holds application state. Along with
+      this it also has the following responsibilities:
+    </p>
+    <ul>
+      <li>Allows access to state via <code>getState()</code>;</li>
+      <li>Allows state to be updated via <code>dispatch(action)</code>;</li>
+      <li>Registers listeners via <code>subscribe(listener)</code>;</li>
+      <li>
+        Handles unregistering of listeners via the function returned by
+        <code>subscribe(listener)</code>.
+      </li>
+    </ul>
+    <h4 id="what-is-an-action">What is an action?</h4>
+    <p>
+      Actions are plain javascript objects. They must have a type indicating the
+      type of action being performed. In essence, actions are payloads of
+      information that send data from your application to your store.
+    </p>
+    <h4 id="what-is-a-reducer">What is a reducer?</h4>
+    <p>
+      A reducer is simply a pure function that takes the previous state and an
+      action, and returns the next state.
+    </p>
+    <h4 id="what-is-redux-thunk-used-for">What is Redux Thunk used for?</h4>
+    <p>
+      Redux thunk is middleware that allows you to write action creators that
+      return a function instead of an action. The thunk can then be used to
+      delay the dispatch of an action if a certain condition is met. This allows
+      you to handle the asynchronous dispatching of actions.
+    </p>
+    <h4 id="what-is-a-pure-function">What is a pure function?</h4>
+    <p>
+      A pure function is a function that doesn’t depend on and doesn’t modify
+      the states of variables out of its scope. Essentially, this means that a
+      pure function will always return the same result given same parameters.
+    </p>
+    <h4 id="what-do-you-like-about-react">What do you like about react?</h4>
+    <p>…..</p>
+    <h4 id="what-dont-you-like-about-react">
+      What don’t you like about react?
+    </h4>
+    <p>…..</p>
+    <h4 id="example-projects">Example projects</h4>
+    <ul>
+      <li>
+        <a href="https://github.com/Pau1fitz/react-spotify">React Spotify</a>
+      </li>
+      <li>
+        <a href="https://github.com/andrewngu/sound-redux">React Soundcloud</a>
+      </li>
+    </ul>
+    <h4 id="example-tests">Example Tests</h4>
+    <ul>
+      <li>
+        <a
+          href="https://developerjobsboard.co.uk/2018/07/28/an-example-senior-react-redux-developer-task/"
+          >Senior React Dev Test</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

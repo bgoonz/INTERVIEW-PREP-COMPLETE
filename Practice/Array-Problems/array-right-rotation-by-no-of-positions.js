@@ -8,9 +8,9 @@ B> So, for rotation, chop this array into 2 pieces the last 3 elements, and the 
 C> Now just bring those last 3 elements into first positon and concatenate the rest of the elements to this.
 */
 
-function rightRotate (array, k) {
-    let L = array.length;
-    return array.slice(L - k).concat(array.slice(0, L - k));
-};
+function rightRotate(array, k) {
+  let L = array.length;
+  return array.slice(L - k).concat(array.slice(0, L - k));
+}
 
-console.log(rightRotate([1,2,3,4,5,6,7], 3));
+console.log(rightRotate([1, 2, 3, 4, 5, 6, 7], 3));

@@ -1,14 +1,14 @@
 // Problem-1 - Find the n-th fibonacci number iteratively (using ES6 destructuring) - BEST LOOKING STANDARD SOLUTION WITH DESTRUCTURING
-n_th_fibonacci = n => {
-  let [a, b] = [0, 1]
+n_th_fibonacci = (n) => {
+  let [a, b] = [0, 1];
 
   while (--n) {
-    ;[a, b] = [b, b + a]
+    [a, b] = [b, b + a];
   }
-  return b
-}
+  return b;
+};
 
-console.log(n_th_fibonacci(10)) // => 55
+console.log(n_th_fibonacci(10)); // => 55
 
 /* Explanation of the above -  The two numbers a and b are initialized as 1 and 0, and in every iteration of the loop (counting backwards from n to 0), b becomes the sum of the two numbers ( its current value and prrevious value of the series ) and the lower number a becomes the previous value of the higher number b. When n reaches 0, the higher of the two numbers is returned and, it resolves to the nth number in the Fibonacci sequence.
 
@@ -23,15 +23,15 @@ FibNumber =     1   1   2   3   5   8   13  21  34  55
 
 GOOD STANDARD SOLUTION-Refer to this for general implementation - (following the same approach as above solution) -
 */
-n_th_fibonacci = n => {
-  let [a, b] = [0, 1]
-  let fibSeries = [1]
+n_th_fibonacci = (n) => {
+  let [a, b] = [0, 1];
+  let fibSeries = [1];
 
   while (--n) {
-    ;[a, b] = [b, b + a]
-    fibSeries.push(b)
+    [a, b] = [b, b + a];
+    fibSeries.push(b);
   }
-  return fibSeries
-}
+  return fibSeries;
+};
 
-console.log(n_th_fibonacci(10)) // => [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
+console.log(n_th_fibonacci(10)); // => [ 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]

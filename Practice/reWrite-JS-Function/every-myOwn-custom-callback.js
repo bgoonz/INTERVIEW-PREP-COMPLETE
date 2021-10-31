@@ -2,14 +2,13 @@
 provided function.*/
 
 Array.prototype.myEvery = function (callback, context) {
-
-	for (let i = 0; i < this.length; i++) {
-		if (!callback.call(context, this[i], i, this)) {
-			return false;
-		}
-	}
-	return true;
-}
+  for (let i = 0; i < this.length; i++) {
+    if (!callback.call(context, this[i], i, this)) {
+      return false;
+    }
+  }
+  return true;
+};
 
 /*Note on why I have to return false inside the for loop and the final boolean value of true outside the for loop -
 
@@ -34,7 +33,7 @@ But, if after traversing all the array elements, I still did not encounter a fai
 
 // Test case-1
 
-let array1 = [ 1, 30, 39, 29, 10, 43 ];
+let array1 = [1, 30, 39, 29, 10, 43];
 
 function isBelowThreshold(currentValue) {
   return currentValue < 40;

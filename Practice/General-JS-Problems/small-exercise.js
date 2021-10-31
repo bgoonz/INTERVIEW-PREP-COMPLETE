@@ -1,19 +1,18 @@
 /* Problem-Fizz-Buzz - Print your name with the below conditions of dividing by 3 and 5*/
 
 function printName() {
-    for ( let i = 1; i <= 100; i++ ) {
-        // Math.floor (Math.random () * (max - min + 1) + min);
-        if (i % 3 == 0) {
-            console.log("rohan");
-        } else if (i % 5) {
-            console.log("paul");
-        } else if ((i % 3 == 0) && (i % 5 == 0) ) {
-            console.log("rohan paul");
-        }
-        else {
-            console.log(i);
-        }
+  for (let i = 1; i <= 100; i++) {
+    // Math.floor (Math.random () * (max - min + 1) + min);
+    if (i % 3 == 0) {
+      console.log("rohan");
+    } else if (i % 5) {
+      console.log("paul");
+    } else if (i % 3 == 0 && i % 5 == 0) {
+      console.log("rohan paul");
+    } else {
+      console.log(i);
     }
+  }
 }
 
 // printName();
@@ -24,24 +23,24 @@ A> Create a new object/ associated array and also a new fresh empty array, to wh
 B> If i find an element for the first time (which also means the below if condition will return false when checking for isExisting) i will set its value as true (that will tell me element added once.). if i find a element in the exists object, i will not insert it into the return array.*/
 
 function removeDuplicateFromArr(arr) {
-    let uniqueArr = [];
-    let isExisting = {};
+  let uniqueArr = [];
+  let isExisting = {};
 
-    for ( let i = 0; i < arr.length; i++ ) {
-        if (!isExisting[arr[i]]) {
-            uniqueArr.push(arr[i]);
-            isExisting[arr[i]] = true;
-        }
+  for (let i = 0; i < arr.length; i++) {
+    if (!isExisting[arr[i]]) {
+      uniqueArr.push(arr[i]);
+      isExisting[arr[i]] = true;
     }
-    return uniqueArr;
+  }
+  return uniqueArr;
 }
 
 // console.log(removeDuplicateFromArr([1,3,3,3,1,5,6,7,8,1]));
 
 // Problem Statement - Generate Random between in a given Range
 
-function randomGenerator (min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function randomGenerator(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 /* Explanation of Math.floor(Math.random() * (max - min + 1)) + min - By adding 1, I am making the maximum inclusive ( the minimum is inclusive anyway). Because, the Math.random() function returns a floating-point, pseudo-random number in the range from 0 inclusive up to but not including 1. the formula can generate the correct amount of numbers but they always start at 0 because the range from Math.random starts from 0. https://teamtreehouse.com/community/need-an-explanation
@@ -64,6 +63,6 @@ Another great visual explanation at - https://stackoverflow.com/questions/152780
  */
 
 // Beautiful single line - remove Duplicates from array with ES6 Sets and Spread
-let removeDuplicatesFromArrAlt = arr => [...new Set(arr)];
+let removeDuplicatesFromArrAlt = (arr) => [...new Set(arr)];
 
-console.log(removeDuplicatesFromArrAlt([1,3,3,3,1,5,6,7,8,1]));
+console.log(removeDuplicatesFromArrAlt([1, 3, 3, 3, 1, 5, 6, 7, 8, 1]));

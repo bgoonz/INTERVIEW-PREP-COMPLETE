@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meowlo | Products</title>
+    <link rel="icon" href="/img/meowlo-favicon.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/products.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+    <!--The Hangman Game-->
+        <section class="hangman">
+            <div class="hangman__info">
+                <h1>The Hangman Game</h1>
+                <p>Press your paws on keyboard to make a guess!</p>
+                <p>Sorry this game won't work on mobile. Switch to desktop to play!</p>
+            </div>
+
+            <div class="wrapper">
+                <div id="hangman-word" class="puzzle"></div>
+                <div id ="hangman-status"></div>
+                <button id="reset" class="button">Reset</button>
+            </div>
+        </section>
+    <!--The browser-based to-do list-->
+        <section>
+            <div class="todo">
+                <h1>Browser-based To-to List</h1>
+                <p>Write your to-do list, nobody else will see those but you (unless you share devices with others!) as this will be saved in your browser only.</p>
+                <div class="actions">
+                    <input id ="search-text" class="input" type="text" placeholder="search your todo">
+                    <label class="checkbox">
+                        <input id="hide-completed" type="checkbox">Hide Completed Tasks
+                    </label>
+                </div>
+
+                <div id="todos"></div>
+                <form id="new-todo">
+                    <input id="input-text" class="input" type="text" placeholder="type a new list for todos" name="text">
+                    <button id="todo-button" class="button" type="submit">Add new item</button>
+                </form>
+            </div>
+        </section>
+    <!--The Meow Song Maker-->
+      <section class="meow">
+        <div class="meow__info">
+          <h1>The Meow Song Maker</h1>
+          <h3>Tap your paws to make a kitty song!</h3>
+        </div>
+
+        <div class="meow-balls"></div>
+
+        <div class="keys">
+          <div class="key1">
+            <audio src="./sounds/meow1.mp3" class="sound"></audio>
+          </div>
+          <div class="key2">
+            <audio src="./sounds/meow2.mp3" class="sound"></audio>
+          </div>
+          <div class="key3">
+            <audio src="./sounds/meow3.mp3" class="sound"></audio>
+          </div>
+          <div class="key4">
+            <audio src="./sounds/meow4.mp3" class="sound"></audio>
+          </div>
+          <div class="key5">
+            <audio src="./sounds/meow5.mp3" class="sound"></audio>
+          </div>
+        </div>
+      </section>
+
+    {{>footer}}
+    <script src="js/hangman.js"></script>
+    <script src="js/uuidv4.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/meow.js"></script>
+</body>
+</html>

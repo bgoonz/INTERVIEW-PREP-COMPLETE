@@ -15,7 +15,7 @@ body {
 #header {
   background-color: #222222;
   color: #ffffff;
-  font-size: .85rem;
+  font-size: 0.85rem;
   overflow: hidden;
 }
 
@@ -66,7 +66,7 @@ h1 span {
 section span {
   color: #fff;
   padding: 10px;
-  color: #27B4B2
+  color: #27b4b2;
 }
 
 #skills,
@@ -89,7 +89,7 @@ section p {
 
 a {
   text-decoration: none;
-  color: #27B4B2;
+  color: #27b4b2;
   font-weight: 600;
 }
 

@@ -1,0 +1,114 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: max-content;
+  font-size: 1rem;
+}
+
+.container {
+  padding: 1rem;
+  /* This makes it look more centered at least for now */
+  padding-bottom: 1.25rem;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #00aaff;
+  color: white;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: start;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-label {
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.footer-link {
+  color: #333;
+}
+
+/* CHECKBOX */
+
+.switch {
+  position: relative;
+  display: inline-block;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  user-select: none;
+}
+
+.switch-label::before,
+.switch-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.switch-label::before {
+  width: 100%;
+  height: 100%;
+  background-color: #dedede;
+  border-radius: 9999em;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.switch-label::after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+  -webkit-transition: left 0.25s ease;
+  transition: left 0.25s ease;
+}
+
+.switch-input:checked + .switch-label::before {
+  background-color: #00aaff;
+}
+
+.switch-input:checked + .switch-label::after {
+  left: 24px;
+}

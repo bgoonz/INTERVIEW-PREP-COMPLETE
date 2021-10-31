@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script async src="./form.js"></script>
-  <link rel="stylesheet" href="./form.css">
-</head>
-<body>
-  
-  <div class="container">
-    <form <form action="https://liveformhq.com/form/bfba7c80-a2f6-41a6-9c61-b2ad3d8e48c5" method="POST" accept-charset="utf-8" class="ajax-form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script async src="./form.js"></script>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        <form
+        action="https://liveformhq.com/form/bfba7c80-a2f6-41a6-9c61-b2ad3d8e48c5"
+        method="POST"
+        accept-charset="utf-8"
+        class="ajax-form"
+      >
+        <input type="hidden" name="_utf8" value="✓" />
 
-<input type="hidden" name="_utf8" value="✓">
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://liveformhq.com/form-test/bfba7c80-a2f6-41a6-9c61-b2ad3d8e48c5#thank-you"
+        />
 
-  <input type="hidden" name="_redirect" value="https://liveformhq.com/form-test/bfba7c80-a2f6-41a6-9c61-b2ad3d8e48c5#thank-you">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="form-control" type="text" id="name" name="name" />
+        </div>
 
-  <div class="form-group">
-    <label for="name">Name</label>
-    <input class='form-control' type="text" id="name" name="name">
-  </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input class="form-control" type="text" id="email" name="email" />
+        </div>
 
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input class='form-control' type="text" id="email" name="email">
-  </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message"></textarea>
+        </div>
 
-  <div class="form-group">
-    <label for="message">Message</label>
-    <textarea class='form-control' id="message" name="message"></textarea>
-  </div>
-
-  <button type="submit">Submit</button>
-</form>
-     <div class="form-thank-you">
-         <h3>Thank you for contacting me!</h3>
-         <p>I'll be in touch with you shortly</p>
-     </div>  
-</div>
-<script>
-  $.get("https://api.liveformhq.com/v1/forms/bfba7c80-a2f6-41a6-9c61-b2ad3d8e48c5/messages", {
-    api_key: "a230a702-6ad9-492c-8ecc-6b35b53781e1"
-  },
-  function(messages) {
-    console.log(messages)
-  });
-</script>
-</body>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="form-thank-you">
+        <h3>Thank you for contacting me!</h3>
+        <p>I'll be in touch with you shortly</p>
+      </div>
+    </div>
+    <script>
+      $.get(
+        "https://api.liveformhq.com/v1/forms/bfba7c80-a2f6-41a6-9c61-b2ad3d8e48c5/messages",
+        {
+          api_key: "a230a702-6ad9-492c-8ecc-6b35b53781e1",
+        },
+        function (messages) {
+          console.log(messages);
+        }
+      );
+    </script>
+  </body>
 </html>

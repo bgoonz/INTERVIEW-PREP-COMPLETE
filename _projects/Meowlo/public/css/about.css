@@ -1,0 +1,51 @@
+.story {
+  background-color: hsla(39, 63%, 85%, 0.7);
+  padding: 1rem;
+}
+
+.staff {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0.5rem;
+}
+
+.staff-tile {
+  background-color: var(--light-yellow);
+  padding-bottom: 1rem;
+}
+
+.staff-tile img {
+  filter: grayscale(100%) opacity(85%);
+}
+
+.staff-tile img:hover {
+  filter: grayscale(0%) opacity(100%);
+}
+
+.staff-tile:hover {
+  box-shadow: 3px 3px 5px var(--light-blue);
+  transform: scale(1.03);
+}
+
+.staff-tile__info {
+  margin: 0.5rem;
+}
+
+@media only screen and (min-width: 780px) {
+  .about-page {
+    position: relative;
+  }
+
+  .story {
+    width: 400px;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .staff {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}

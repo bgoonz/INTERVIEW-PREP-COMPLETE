@@ -1,0 +1,28 @@
+{
+  "name": "my-frontity-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@frontity/core": "^1.8.0",
+    "@frontity/html2react": "^1.4.0",
+    "@frontity/mars-theme": "./packages/mars-theme",
+    "@frontity/tiny-router": "^1.2.1",
+    "@frontity/wp-source": "^1.8.4",
+    "frontity": "^1.11.1",
+    "react-spring": "^8.0.27"
+  }
+}

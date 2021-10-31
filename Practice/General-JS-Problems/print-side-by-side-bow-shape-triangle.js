@@ -23,26 +23,25 @@
 Side by triangel bow shaped
 */
 
-bowShapedTriangle = maxNum  => {
+bowShapedTriangle = (maxNum) => {
+  let triangle_1 = "";
 
-	let triangle_1 = '';
-	
-	// First build the triangle upto maxNum of rows with maxNum of *
-	for (let i = 0; i < maxNum; i++) {
-		triangle_1 += '*'
-		console.log(triangle_1);
-	}
+  // First build the triangle upto maxNum of rows with maxNum of *
+  for (let i = 0; i < maxNum; i++) {
+    triangle_1 += "*";
+    console.log(triangle_1);
+  }
 
-	// Then just reduce the trianlge starting from next line and and counting from maxNum - 1. As after the 10 '*' the next line should print 9 '*'
-	for (let i = maxNum - 1; i  >= 1 ; i-- ) {
-		triangle_1 = triangle_1.slice(0, -1);
-		console.log(triangle_1);
-	}
-}
+  // Then just reduce the trianlge starting from next line and and counting from maxNum - 1. As after the 10 '*' the next line should print 9 '*'
+  for (let i = maxNum - 1; i >= 1; i--) {
+    triangle_1 = triangle_1.slice(0, -1);
+    console.log(triangle_1);
+  }
+};
 
-bowShapedTriangle(10)
+bowShapedTriangle(10);
 
-// String.slice method - The slice() method extracts a section of a string and returns it as a new string, without modifying the original string. 
+// String.slice method - The slice() method extracts a section of a string and returns it as a new string, without modifying the original string.
 
 // str.slice(beginIndex[, endIndex])
 

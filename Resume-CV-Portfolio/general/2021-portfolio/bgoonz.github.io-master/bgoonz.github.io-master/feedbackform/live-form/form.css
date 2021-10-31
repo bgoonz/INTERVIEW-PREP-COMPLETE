@@ -47,26 +47,26 @@ textarea {
   margin: 0 0 27px;
   background: #eee;
   outline: none;
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .ajax-form input:focus,
 .ajax-form textarea:focus {
-  border: 3px solid #2735A7;
+  border: 3px solid #2735a7;
   color: #424651;
 }
 
 .ajax-form input[type="submit"] {
-  border: 3px solid #2735A7;
-  color: #2735A7;
+  border: 3px solid #2735a7;
+  color: #2735a7;
 }
 
 .ajax-form input[type="submit"]:hover {
-  background-color: #2735A7;
-  border: 3px solid #2735A7;
+  background-color: #2735a7;
+  border: 3px solid #2735a7;
   color: white;
 }
 
@@ -80,7 +80,7 @@ textarea {
 }
 
 .email {
-  float: right
+  float: right;
 }
 
 .message {
@@ -92,7 +92,7 @@ textarea {
 }
 
 .error {
-  border: 3px solid #ED1941 !important;
+  border: 3px solid #ed1941 !important;
 }
 
 .form-thank-you {
@@ -106,11 +106,9 @@ textarea {
 }
 
 @media (max-width: 577px) {
-
   .name,
   .email {
     width: 100%;
     float: none;
   }
-
 }

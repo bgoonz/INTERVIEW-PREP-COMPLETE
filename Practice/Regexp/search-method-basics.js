@@ -1,4 +1,3 @@
-let aString = 'Mozilla';
+let aString = "Mozilla";
 
-console.log(aString.search(/[aeiou]/));  // => 1
-
+console.log(aString.search(/[aeiou]/)); // => 1

@@ -1,0 +1,183 @@
+:root {
+  --color-base-hue: 200;
+  --color-success-hue-offset: 100;
+  --color-danger-hue-offset: 180;
+  --color-danger-hue: calc(
+    var(--color-base-hue) - var(--color-danger-hue-offset)
+  );
+  --color-success-hue: calc(
+    var(--color-base-hue) - var(--color-success-hue-offset)
+  );
+  --color-text-light: hsl(var(--color-base-hue), 100%, 87%);
+  --color-background: hsl(var(--color-base-hue), 100%, 8%);
+  --color-border: hsl(var(--color-base-hue), 100%, 50%);
+  --color-text-success: hsl(var(--color-success-hue), 100%, 58%);
+  --color-text-danger: hsl(var(--color-danger-hue), 100%, 83%);
+}
+
+body {
+  background: var(--color-background);
+  font-family: "Gotham Rounded";
+  color: var(--color-text-light);
+  font-size: 2rem;
+}
+
+code,
+pre {
+  text-align: left;
+  color: inherit;
+}
+
+.container-fluid {
+  min-height: 100vh;
+}
+
+.btn {
+  border: 3px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: inherit;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: transparent;
+  color: var(--color-text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-success {
+  border-color: var(--color-text-success) !important;
+  background-color: var(--color-text-success) !important;
+  color: var(--color-background) !important;
+  cursor: default !important;
+}
+
+.btn-danger {
+  border-color: var(--color-text-danger) !important;
+  background-color: var(--color-text-danger) !important;
+  color: var(--color-background) !important;
+  cursor: default !important;
+}
+
+.btn:disabled:hover {
+  cursor: not-allowed;
+  color: var(--color-text-light);
+}
+
+.btn:not(:disabled):hover {
+  color: white;
+  background-color: var(--color-border);
+}
+
+.bordered-container {
+  border: 3px solid var(--color-border);
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-max-content {
+  width: max-content;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.question {
+  min-height: 30vh;
+}
+
+.sidebar-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0 0.75rem;
+}
+
+.divider.show {
+  background-color: var(--color-text-light);
+  height: 2px;
+  width: 100%;
+}
+
+.perk {
+  height: 156px;
+  width: 156px;
+}
+
+.perk.fifty {
+  position: relative;
+}
+
+.perk.fifty::before {
+  content: "50";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  line-height: 1;
+  font-size: 1.5em;
+}
+
+.perk.fifty::after {
+  content: "50";
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  line-height: 1;
+  font-size: 1.5em;
+}
+
+.diagonal-line {
+  position: absolute;
+  width: 156px;
+  transform: translateY(-50%) rotate(-45deg);
+  height: 6px;
+  background-color: var(--color-text-light);
+}
+
+.perk.google {
+  font-size: 2em;
+}
+
+.perk.google:disabled {
+  color: white !important;
+}
+
+.google svg * {
+  transition: fill 0.15s ease-in-out;
+}
+
+.google:not(:disabled):hover svg * {
+  fill: white;
+}
+
+.perk.timer:disabled {
+  opacity: 1;
+}
+
+.perk:disabled {
+  opacity: 0.25;
+}
+
+.success-text {
+  color: var(--color-text-success) !important;
+}
+
+.success-bg {
+  background-color: var(--color-text-success) !important;
+}
+
+.danger-bg {
+  background-color: var(--color-text-danger) !important;
+}
+
+.danger-text {
+  color: var(--color-text-danger) !important;
+}

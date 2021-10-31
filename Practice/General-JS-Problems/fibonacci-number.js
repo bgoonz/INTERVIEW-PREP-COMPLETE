@@ -34,9 +34,9 @@ F(7) = 8 + 5 = 13
  */
 
 // Same as above, using ternary operator - AND THIS IS THE STANDARD SOLUTION
-fibonacci = n => {
-  return n < 2 ? n : fibonacci( n - 1 ) + fibonacci1( n - 2 )
-}
+fibonacci = (n) => {
+  return n < 2 ? n : fibonacci(n - 1) + fibonacci1(n - 2);
+};
 
 // console.log(fibonacci(10));
 
@@ -55,13 +55,13 @@ A number is Fibonacci if and only if one or both of (5*n2 + 4) or (5*n2 – 4) i
 */
 
 // Problem Statement-2 - Find the n-th fibonacci number iteratively
-function fibonacciIterative( num ) {
-  for ( let i = 2; i <= num; i++ ) {
-    f = a + b
-    b = f
-    a = f - a // At this step I had to lift up b to make it equal to a. But now a has become (a+b). Hence the deduction by 'b' i.e b = f - b
+function fibonacciIterative(num) {
+  for (let i = 2; i <= num; i++) {
+    f = a + b;
+    b = f;
+    a = f - a; // At this step I had to lift up b to make it equal to a. But now a has become (a+b). Hence the deduction by 'b' i.e b = f - b
   }
-  return f
+  return f;
 }
 
 // console.log(fibonacciIterative(10));
@@ -74,29 +74,29 @@ FibNumber =     1   1   2   3   5   8   13  21  34  55
 
 GOOD STANDARD SOLUTION-Refer to this for general implementation - (following the same approach as above solution) -
 */
-function printFibSeries( num ) {
-  const fibSequence = [ 1 ]
+function printFibSeries(num) {
+  const fibSequence = [1];
 
   let currentElem = 1,
-    prevElem = 0 // The final Fib series here will be starting with zero
+    prevElem = 0; // The final Fib series here will be starting with zero
 
-  if ( num === 1 ) {
-    return fibSequence
+  if (num === 1) {
+    return fibSequence;
   }
 
-  let iterationCounter = num - 1
+  let iterationCounter = num - 1;
 
-  while ( iterationCounter ) {
-    currentElem = currentElem + prevElem
+  while (iterationCounter) {
+    currentElem = currentElem + prevElem;
 
-    prevElem = currentElem - prevElem
+    prevElem = currentElem - prevElem;
     // At this step I had to lift up prevElem to make it equal to currElem. But now currentElem has become (currentElem + prevElem). Hence the deduction by 'prevElem' i.e prevElem = currentElem - prevElem;
 
-    fibSequence.push( currentElem )
+    fibSequence.push(currentElem);
 
-    iterationCounter--
+    iterationCounter--;
   }
-  return fibSequence
+  return fibSequence;
 }
 
 // console.log(printFibSeries(10));
@@ -125,21 +125,21 @@ And the prevElem can only reach upto 0 i.e so, I have to stop when current value
 
 // print fibonacci series upto a specified number
 
-let output = "0 1"
+let output = "0 1";
 
 let maxFibumber = 10,
   fibNum = 1,
-  smallerNum = 0
-sum = 0
+  smallerNum = 0;
+sum = 0;
 
-for ( let i = 2; i <= maxFibumber; i++ ) {
-  sum = smallerNum + fibNum
+for (let i = 2; i <= maxFibumber; i++) {
+  sum = smallerNum + fibNum;
 
-  fibNum = sum
+  fibNum = sum;
 
-  smallerNum = sum - smallerNum
+  smallerNum = sum - smallerNum;
 
-  output += " " + fibNum
+  output += " " + fibNum;
 }
 
 // console.log(output);
@@ -150,32 +150,32 @@ for ( let i = 2; i <= maxFibumber; i++ ) {
 FORMULAE - A number 'n' is Fibonacci if and only if one or both of (5*n2 + 4) or (5*n2 – 4) is a perfect square
 */
 
-function isPerfectSquare( num ) {
-  let squareRoot = Math.sqrt( num )
-  return squareRoot * squareRoot === num
+function isPerfectSquare(num) {
+  let squareRoot = Math.sqrt(num);
+  return squareRoot * squareRoot === num;
 }
 
 // Alternative to find perfect square. The logic is num % 1 will return 1 (i.e. true) only if the num is an integer but will return zero if the num is a decimal. And only a perfect-square number's square-root will be an integer. All other number's square-root will be a decimal value.
 
-function isPerfectSquare_Alt( num ) {
-  return Math.sqrt( num ) % 1 === 0
+function isPerfectSquare_Alt(num) {
+  return Math.sqrt(num) % 1 === 0;
 }
 
-function isFibonacciNumber( num ) {
+function isFibonacciNumber(num) {
   if (
-    isPerfectSquare_Alt( 5 * ( num * num ) + 4 ) ||
-    isPerfectSquare_Alt( 5 * ( num * num ) - 4 )
+    isPerfectSquare_Alt(5 * (num * num) + 4) ||
+    isPerfectSquare_Alt(5 * (num * num) - 4)
   ) {
-    return "The number " + num + " is a Fibonacci number"
+    return "The number " + num + " is a Fibonacci number";
   } else {
-    return "The number " + num + " is NOT a Fibonacci number"
+    return "The number " + num + " is NOT a Fibonacci number";
   }
 }
 
 // A utility function to check all fibonacci less than a given num
-function printIfFibonacci( num ) {
-  for ( let i = 0; i <= num; i++ ) {
-    console.log( isFibonacciNumber( i ) )
+function printIfFibonacci(num) {
+  for (let i = 0; i <= num; i++) {
+    console.log(isFibonacciNumber(i));
   }
 }
 

@@ -11,27 +11,27 @@ Fix a character at the first posi­tion and then use swap() to put every char­a
 Make recur­sive call to rest of the characters.
 Use swap to revert the string back to its orig­i­nal form for next iteration. */
 
-function swap (array, index1, index2) {
+function swap(array, index1, index2) {
   let temp = array[index1];
   array[index1] = array[index2];
   array[index2] = temp;
   return array;
 }
 
-function permuteBacktrack (array, startIndex, endIndex) {
-    if (startIndex === endIndex) {
-        console.log(array.join(''));
-    } else {
-        for ( let i = startIndex; i <= endIndex; i++ ) {
-            swap(array, startIndex, i);
-            permuteBacktrack(array, startIndex + 1, endIndex);
-            swap(array, i, startIndex);
-        }
+function permuteBacktrack(array, startIndex, endIndex) {
+  if (startIndex === endIndex) {
+    console.log(array.join(""));
+  } else {
+    for (let i = startIndex; i <= endIndex; i++) {
+      swap(array, startIndex, i);
+      permuteBacktrack(array, startIndex + 1, endIndex);
+      swap(array, i, startIndex);
     }
+  }
 }
 
-let alphabets = [ 'A', 'B', 'C' ];
-permuteBacktrack(alphabets, 0, alphabets.length-1); // ABC, ACB, BAC, BCA, CBA, CAB
+let alphabets = ["A", "B", "C"];
+permuteBacktrack(alphabets, 0, alphabets.length - 1); // ABC, ACB, BAC, BCA, CBA, CAB
 
 /* Explanation - take a look at this geeksforgeeks photo to understand the recursive flow - https://www.geeksforgeeks.org/wp-content/uploads/NewPermutation.gif
 

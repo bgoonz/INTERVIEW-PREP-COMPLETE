@@ -1,17 +1,15 @@
 // Problem Statement - famous Interview Question - what the below function would print
 
-
 const profile_fatArrow = {
+  name: "profile_1-1tech",
 
-    name: 'profile_1-1tech',
+  getName: () => {
+    console.log(this);
+    console.log(this.name);
+  },
+};
 
-    getName: () => {
-      console.log(this);
-      console.log(this.name);
-    }
-  }
-
-profile_fatArrow.getName()
+profile_fatArrow.getName();
 
 /*OUTPUT
 {}
@@ -21,14 +19,13 @@ undefined
 // To fix the above problem, convert the ES6 fat-arrow function to regular ES-5 function
 
 const profile_1 = {
+  name: "profile_2-tech",
 
-	name: 'profile_2-tech',
-
-	getName: function () {
-		console.log(this);
-		console.log(this.name);
-	}
-}
+  getName: function () {
+    console.log(this);
+    console.log(this.name);
+  },
+};
 
 // profile_1.getName()
 
@@ -44,16 +41,15 @@ profile_2-tech
 // So in the below solution, I am not using any 'this' at all
 
 const profile_2 = {
+  name: "profile_2-tech",
 
-	name: 'profile_2-tech',
+  getName: () => {
+    console.log(this);
+    console.log(profile_2.name);
+  },
+};
 
-	getName: () => {
-		console.log(this);
-		console.log(profile_2.name);
-	}
-}
-
-profile_2.getName()
+profile_2.getName();
 /*OUTPUT
 
 {}
@@ -61,24 +57,21 @@ profile_2-tech
 
 */
 
-
 // ALTERNATIVE - 2 - To fix the above problem, i.e. WHILE KEEPING THE ARROW SYNTAX OUTPUT THE EXPECTED OUPUT
 
 // Declare a global variable so all the functions defined in this file will always have access to this variable
 // And then inside the function dont use any 'this' at ll.
-let name = 'tech-name-in-global-variable';
+let name = "tech-name-in-global-variable";
 
 const profile_3 = {
-
-  name: 'profile_3-tech',
+  name: "profile_3-tech",
 
   getName: () => {
     console.log(name);
-  }
-}
+  },
+};
 
-profile_3.getName() // => 'tech-name-in-global-variable'
-
+profile_3.getName(); // => 'tech-name-in-global-variable'
 
 /* KEY EXPLANATION - Like regular functions, Arrow function does not have a 'this' or their own, only regular function and global scope have 'this' of their own.
 

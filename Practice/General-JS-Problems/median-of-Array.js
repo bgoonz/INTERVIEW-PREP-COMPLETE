@@ -6,23 +6,22 @@ output = 3
 input = [4,5,6,1,2,3]
 output = 3.5 */
 
-median = arr => {
-
+median = (arr) => {
   let sortedArr = arr.sort((a, b) => a - b);
 
   let len = sortedArr.length;
 
   if (sortedArr.length % 2 !== 0) {
-    let index1 = Math.floor(len / 2)
+    let index1 = Math.floor(len / 2);
     return sortedArr[index1];
   } else {
     let index2 = len / 2;
-    return (((sortedArr[index2] + sortedArr[index2 - 1]) / 2).toFixed(1));
+    return ((sortedArr[index2] + sortedArr[index2 - 1]) / 2).toFixed(1);
   }
-}
+};
 
-let input1 = [ 1, 2, 3, 4, 5 ];
-let input2 = [ 4, 5, 6, 1, 2, 3 ];
+let input1 = [1, 2, 3, 4, 5];
+let input2 = [4, 5, 6, 1, 2, 3];
 
 console.log(median(input1));
 

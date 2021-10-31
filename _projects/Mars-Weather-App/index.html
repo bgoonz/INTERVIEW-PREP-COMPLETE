@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>My New Pen!</title>
+
+    <!-- Google fonts   -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/index.processed.css" />
+
+    <!-- Scripts -->
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main class="mars-current-weather">
+      <h1 class="main-title">Latest weather at Elysium Plantitia</h1>
+      <div class="date">
+        <h2 class="section-title section-title--date">
+          Sol&nbsp;<span data-current-sol></span>
+        </h2>
+        <p class="date__day" data-current-date></p>
+      </div>
+
+      <div class="temp">
+        <h2 class="section-title">Temperature</h2>
+        <p class="reading temp__high">
+          High:
+          <span data-current-temp-high></span>
+          °<span data-temp-unit>C</span>
+        </p>
+        <p class="reading temp__low">
+          Low:
+          <span data-current-temp-low></span>
+          °<span data-temp-unit>C</span>
+        </p>
+      </div>
+
+      <div class="wind">
+        <h2 class="section-title">Wind</h2>
+        <p class="reading">
+          <span data-wind-speed></span>
+          <span data-speed-unit>kph</span>
+        </p>
+        <div class="wind__direction">
+          <p class="wind__dir sr-only">
+            <span data-wind-direction-text></span>deg
+          </p>
+          <div class="wind__arrow" data-wind-direction-arrow></div>
+        </div>
+      </div>
+
+      <div class="info">
+        <p>
+          InSight is taking daily weather measurements (temperature, wind,
+          pressure) on the surface of Mars at Elysium Planitia, a flat, smooth
+          plain near Mars’ equator.
+        </p>
+        <p>
+          This is only a part of InSight’s mission.
+          <a href="https://mars.nasa.gov/insight/mission/overview/"
+            >Click here</a
+          >
+          to find out more.
+        </p>
+      </div>
+
+      <div class="unit">
+        <span>°C</span>
+        <button
+          data-unit-toggle
+          class="unit__toggle"
+          role="switch"
+          aria-checked="false"
+          aria-label="celsius"
+        ></button>
+        <span>°F</span>
+      </div>
+    </main>
+
+    <div class="previous-weather" data-previous-weather-container>
+      <label class="show-previous-weather-label" for="weather-toggle"
+        ><span>&#8593;</span></label
+      >
+      <input
+        type="checkbox"
+        aria-label="show previous weather"
+        id="weather-toggle"
+        class="show-previous-weather-toggle"
+        data-previous-weather-toggle
+      />
+      <h2 class="main-title previous-weather__title">Previous 7 days</h2>
+
+      <div class="previous-days" data-previous-sols></div>
+    </div>
+
+    <template data-previous-sol-template>
+      <div class="previous-day">
+        <h3 class="previous-day__sol">Sol <span data-sol></span></h3>
+        <p class="previous-day__date" data-date></p>
+        <p class="previous-day__temp previous-day__temp--high">
+          High:
+          <span data-temp-high></span>
+          °<span data-temp-unit>C</span>
+        </p>
+        <p class="previous-day__temp previous-day__temp--low">
+          Low:
+          <span data-temp-low></span>
+          °<span data-temp-unit>C</span>
+        </p>
+        <button class="more-info" data-select-button>more info</button>
+      </div>
+    </template>
+  </body>
+</html>

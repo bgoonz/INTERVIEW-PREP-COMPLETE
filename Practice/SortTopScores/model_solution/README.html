@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="sort-top-scores-walkthrough">Sort Top Scores Walkthrough</h1>
+    <h2 id="understanding-the-problem">Understanding the Problem</h2>
+    <p>
+      This problems asks us, given that we receive the highest possible score as
+      a parameter to our function, can we use that fact to sort an unsorted
+      array of integers in faster than O(n log n) time in the worst case?
+    </p>
+    <p>
+      We assume any general sorting algorithm achieves an O(n log n) time in the
+      worst case. However, sorting algorithms have to be able to handle a wide
+      variety of cases, including those where there is no upper bound on the
+      data they’re sorting. So this question is asking if we can make use of the
+      knowledge of the highest possible score to achieve a faster sorting
+      runtime.
+    </p>
+    <p>
+      To that end, we’re looking to achieve an O(n) runtime (since there’s no
+      way to sort data without at least looking at every element at least once).
+      How can we do that? How does knowing the highest possible score help us?
+    </p>
+    <h2 id="coming-up-with-a-strategy">Coming up with a Strategy</h2>
+    <p>
+      So we have an upper bound on all of the integer values that we’re looking
+      to sort. Every element then is less than or equal to the upper bound
+      value. Here’s an idea: since we know the upper bound, could we simply
+      count the number of times every integer shows up in the unsorted array?
+    </p>
+    <p>
+      For example, given the following array:
+      <code>[10, 3, 9, 4, 7, 6, 8, 8, 8, 9, 3, 0, 10, 9, 9, 0, 4, 2, 7, 1]</code
+      >, where 10 is the upper bound of the array, we can count the number of
+      times each element shows up in an array where each index element in the
+      <code>counts</code> array holds the number of times that index number
+      shows up in the array of unsorted data. That would look like the
+      following:
+    </p>
+    <pre><code>[2, 1, 0, 2, 2, 0, 1, 2, 3, 4, 2]</code></pre>
+    <p>
+      where there are two 0s, no 2s, four 10s, etc. in the unsorted array. Then,
+      to yield the final array of sorted data, we would walk along the array of
+      counts and populate the final sorted array.
+    </p>
+    <p>The pseudocode for this idea looks like the following:</p>
+    <pre><code>initialize a `counts` array of the range [0, highestPossibleScore]
+iterate along the inputs array
+for each element in the input array
+    counts[element] += 1
+at this point, the counts array has the counts
+iterate along the counts array
+for each count in counts
+    append `count` number of the current index to the result array
+return the result array</code></pre>
+    <p>
+      The entire crux of this strategy relies on the fact that we know the upper
+      bound of the data. Without this knowledge, we wouldn’t be able to
+      construct the counts array because we wouldn’t know the range of counts
+      we’d have to allocate for it.
+    </p>
+    <h2 id="implementing-the-strategy">Implementing the Strategy</h2>
+    <p>
+      Turning the above pseudocode into code, it will look something like the
+      following:
+    </p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> sort_top_scores(arr, highest):</a>
+<a class="sourceLine" id="cb3-2" title="2">    result <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb3-3" title="3">    counts <span class="op">=</span> [<span class="dv">0</span> <span class="cf">for</span> _ <span class="bu">range</span>(highest)]</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="cf">for</span> score <span class="kw">in</span> scores:</a>
+<a class="sourceLine" id="cb3-5" title="5">        counts[score] <span class="op">+=</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="cf">for</span> score <span class="kw">in</span> <span class="bu">range</span>(highest):</a>
+<a class="sourceLine" id="cb3-7" title="7">        count <span class="op">=</span> counts[score]</a>
+<a class="sourceLine" id="cb3-8" title="8">        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(count):</a>
+<a class="sourceLine" id="cb3-9" title="9">            result.append(score)</a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="cf">return</span> result</a></code></pre>
+    </div>
+    <h2 id="evaluating-the-implementation">Evaluating the Implementation</h2>
+  </body>
+</html>
