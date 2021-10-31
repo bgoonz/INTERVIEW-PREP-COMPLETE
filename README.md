@@ -1,12 +1,16 @@
 ---
 description: https://bryan-guner.gitbook.io/job-search/
-cover: .gitbook/assets/background (1).jpg
-coverY: 247.49063670411982
+cover: .gitbook/assets/Animation.gif
+coverY: 0
 ---
 
 # Home
 
-## [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
+{% content-ref url="navigation.md" %}
+[navigation.md](navigation.md)
+{% endcontent-ref %}
+
+## [https://bryan-guner.gitbook.io/job-search/](./#https-bryan-guner.gitbook.io-job-search)
 
 ## Certification:
 
