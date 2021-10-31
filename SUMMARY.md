@@ -41,6 +41,10 @@
 * [Interview Questions.](interview-prep/interview-questions..md)
 * [Leetcode:](interview-prep/leetcode.md)
 * [Hash Tables](interview-prep/hash-tables.md)
+* [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
+  * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
+* [Page 1](interview-prep/page-1.md)
+* [More Practice:](interview-prep/more-practice.md)
 
 ## Tutorials
 
