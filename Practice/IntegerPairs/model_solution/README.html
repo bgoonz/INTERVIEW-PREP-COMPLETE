@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+    <style type="text/css">
+      a.sourceLine {
+        display: inline-block;
+        line-height: 1.25;
+      }
+      a.sourceLine {
+        pointer-events: none;
+        color: inherit;
+        text-decoration: inherit;
+      }
+      a.sourceLine:empty {
+        height: 1.2em;
+      }
+      .sourceCode {
+        overflow: visible;
+      }
+      code.sourceCode {
+        white-space: pre;
+        position: relative;
+      }
+      div.sourceCode {
+        margin: 1em 0;
+      }
+      pre.sourceCode {
+        margin: 0;
+      }
+      @media screen {
+        div.sourceCode {
+          overflow: auto;
+        }
+      }
+      @media print {
+        code.sourceCode {
+          white-space: pre-wrap;
+        }
+        a.sourceLine {
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+      pre.numberSource a.sourceLine {
+        position: relative;
+        left: -4em;
+      }
+      pre.numberSource a.sourceLine::before {
+        content: attr(title);
+        position: relative;
+        left: -1em;
+        text-align: right;
+        vertical-align: baseline;
+        border: none;
+        pointer-events: all;
+        display: inline-block;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding: 0 4px;
+        width: 4em;
+        color: #aaaaaa;
+      }
+      pre.numberSource {
+        margin-left: 3em;
+        border-left: 1px solid #aaaaaa;
+        padding-left: 4px;
+      }
+      div.sourceCode {
+      }
+      @media screen {
+        a.sourceLine::before {
+          text-decoration: underline;
+        }
+      }
+      code span.al {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Alert */
+      code span.an {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Annotation */
+      code span.at {
+        color: #7d9029;
+      } /* Attribute */
+      code span.bn {
+        color: #40a070;
+      } /* BaseN */
+      code span.bu {
+      } /* BuiltIn */
+      code span.cf {
+        color: #007020;
+        font-weight: bold;
+      } /* ControlFlow */
+      code span.ch {
+        color: #4070a0;
+      } /* Char */
+      code span.cn {
+        color: #880000;
+      } /* Constant */
+      code span.co {
+        color: #60a0b0;
+        font-style: italic;
+      } /* Comment */
+      code span.cv {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* CommentVar */
+      code span.do {
+        color: #ba2121;
+        font-style: italic;
+      } /* Documentation */
+      code span.dt {
+        color: #902000;
+      } /* DataType */
+      code span.dv {
+        color: #40a070;
+      } /* DecVal */
+      code span.er {
+        color: #ff0000;
+        font-weight: bold;
+      } /* Error */
+      code span.ex {
+      } /* Extension */
+      code span.fl {
+        color: #40a070;
+      } /* Float */
+      code span.fu {
+        color: #06287e;
+      } /* Function */
+      code span.im {
+      } /* Import */
+      code span.in {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Information */
+      code span.kw {
+        color: #007020;
+        font-weight: bold;
+      } /* Keyword */
+      code span.op {
+        color: #666666;
+      } /* Operator */
+      code span.ot {
+        color: #007020;
+      } /* Other */
+      code span.pp {
+        color: #bc7a00;
+      } /* Preprocessor */
+      code span.sc {
+        color: #4070a0;
+      } /* SpecialChar */
+      code span.ss {
+        color: #bb6688;
+      } /* SpecialString */
+      code span.st {
+        color: #4070a0;
+      } /* String */
+      code span.va {
+        color: #19177c;
+      } /* Variable */
+      code span.vs {
+        color: #4070a0;
+      } /* VerbatimString */
+      code span.wa {
+        color: #60a0b0;
+        font-weight: bold;
+        font-style: italic;
+      } /* Warning */
+    </style>
+  </head>
+  <body>
+    <h1 id="integer-pairs-walkthrough">Integer Pairs Walkthrough</h1>
+    <h2 id="understanding-the-problem">Understanding the Problem</h2>
+    <p>
+      The problem states that we want to find and print all of the pairs of
+      values in a given array that sum up to some input value. So for example,
+      given an array <code>[1, 4]</code> and input value 5, our function should
+      print out <code>1 4</code> since those two array values sum up to the
+      input value.
+    </p>
+    <p>
+      If we instead got an array <code>[9, 7]</code> and input value 3, our
+      function shouldn’t print anything, since 9 and 7 don’t sum up to 3. We’ll
+      also want to make sure our function can handle an input array of just one
+      element.
+    </p>
+    <h2 id="coming-up-with-a-strategy">Coming up with a Strategy</h2>
+    <p>
+      The naive solution would be to perform a nested for loop that iterates
+      over every array element and performs another loop over the entire array
+      to check if any of the other elements sum up to the input value. Something
+      like this:
+    </p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> integer_pairs(arr, k):</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="cf">for</span> x <span class="kw">in</span> arr:</a>
+<a class="sourceLine" id="cb1-3" title="3">        <span class="cf">for</span> y <span class="kw">in</span> arr:</a>
+<a class="sourceLine" id="cb1-4" title="4">            <span class="co"># check if x + y sums up to k</span></a>
+<a class="sourceLine" id="cb1-5" title="5">            <span class="cf">if</span> x <span class="op">+</span> y <span class="op">==</span> k:</a>
+<a class="sourceLine" id="cb1-6" title="6">                <span class="bu">print</span>(x, y)</a></code></pre>
+    </div>
+    <p>
+      Because of the nested loops that each iterate over the entire array, this
+      strategy exhibits an O(n^2) runtime.
+    </p>
+    <p>
+      We can do better if we opt to sort the array first. That would allow us to
+      then perform the checking of whether two elements sum up to
+      <code>k</code> in a single linear pass. The pseudocode for such a strategy
+      might look like the following:
+    </p>
+    <pre><code>def integer_pairs(arr, k):
+    sort the input arr
+    we&#39;ll keep two indices, one on the left side, the other on the right
+    left = 0, right = len(arr) - 1
+    loop so long as left and right indices haven&#39;t met
+        sum = arr[left] + arr[right]
+        check if sum == k
+        if it does
+            print out the two values
+            increment the left index
+            decrement the right index
+        if it doesn&#39;t
+            figure out whether to move left or right indices
+            if sum &lt; k
+                we&#39;ll want to increment the left index
+            otherwise
+                we&#39;ll want to decrement the right index
+    if we haven&#39;t found any pairs at this point
+        print(&quot;No pairs found&quot;)</code></pre>
+    <p>
+      The above implementation will yield an O(n log n) implementation due to
+      the sorting. The rest of the code only performs a single pass of the data,
+      so there’s a total of two linear passes through the array. The above
+      strategy also only allocates a constant number of variables, so the
+      resulting space complexity if O(1).
+    </p>
+    <h2 id="evaluating-our-strategy-and-coming-up-with-a-better-one">
+      Evaluating our Strategy (And Coming Up with a Better One)
+    </h2>
+    <p>
+      Can we do better than this in the runtime department? Could we achieve an
+      O(n) runtime, perhaps at the expense of space complexity? It turns out we
+      can. Problems that ask us to find <em>complements</em>, i.e., two elements
+      that somehow combine to form some value, usually benefit from using a hash
+      table (an Object) to store values we haven’t seen yet while we’re
+      traversing a collection.
+    </p>
+    <p>
+      In the case of this problem, we can iterate along the elements in the
+      input array and, if we see that <code>k - current_element</code> exists in
+      the hash table, then we’ve found the complement of
+      <code>current_element</code> that sums up to <code>k</code>. Otherwise,
+      we’ll want to insert the current element into the hash table because it
+      might be the complement of another element in the array that we just
+      haven’t reached yet while iterating.
+    </p>
+    <p>Sketching the above out in code looks like this:</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> integer_pairs(arr, k):</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="co"># dict where we&#39;ll store values as we&#39;re iterating</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="bu">hash</span> <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="cf">for</span> elem <span class="kw">in</span> arr:</a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="co"># check to see if the complement of elem exists in the hash</span></a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="cf">if</span> k <span class="op">-</span> elem <span class="kw">in</span> <span class="bu">hash</span>:</a>
+<a class="sourceLine" id="cb3-8" title="8">            <span class="co"># we&#39;ve found two elements that sum up to k</span></a>
+<a class="sourceLine" id="cb3-9" title="9">            <span class="bu">print</span>(elem, k <span class="op">-</span> elem)</a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb3-11" title="11">            <span class="co"># elem doesn&#39;t have a complement in the hash</span></a>
+<a class="sourceLine" id="cb3-12" title="12">            <span class="co"># add it to the hash</span></a>
+<a class="sourceLine" id="cb3-13" title="13">            <span class="bu">hash</span>[elem] <span class="op">=</span> <span class="va">True</span></a></code></pre>
+    </div>
+    <p>
+      Nice! This strategy will yield an O(n) runtime with an O(n) space
+      complexity, which is generally more preferred than a solution that
+      exhibits a slower runtime but better space complexity. Memory is
+      relatively plentiful and people are impatient, after all.
+    </p>
+    <p>
+      There are a few more things we need to account for, though. What if we
+      don’t find any pairs? We want our implementation to return a “No pairs
+      found” message in that case. We can tack that on pretty easily by adding a
+      flag that we’ll initialize to False and then toggle to True as soon as
+      we’ve found at least a single pair:
+    </p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"
+      ><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">def</span> integer_pairs(arr, k):</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="bu">hash</span> <span class="op">=</span> {}</a>
+<a class="sourceLine" id="cb4-3" title="3">    found <span class="op">=</span> <span class="va">False</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="cf">for</span> elem <span class="kw">in</span> arr:</a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="cf">if</span> k <span class="op">-</span> elem <span class="kw">in</span> <span class="bu">hash</span>:</a>
+<a class="sourceLine" id="cb4-7" title="7">            found <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb4-8" title="8">            <span class="bu">print</span>(elem, k <span class="op">-</span> elem)</a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="cf">else</span>:</a>
+<a class="sourceLine" id="cb4-10" title="10">            <span class="bu">hash</span>[elem] <span class="op">=</span> <span class="va">True</span></a>
+<a class="sourceLine" id="cb4-11" title="11"></a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="cf">if</span> <span class="kw">not</span> found:</a>
+<a class="sourceLine" id="cb4-13" title="13">        <span class="bu">print</span>(<span class="st">&quot;No pairs found&quot;</span>)</a></code></pre>
+    </div>
+    <p>
+      This solution will also adequately handle the case where we’re handed a
+      single-element array as input. In that case, we should just always print
+      “No pairs found”, which is what will happen with this implementation.
+    </p>
+  </body>
+</html>

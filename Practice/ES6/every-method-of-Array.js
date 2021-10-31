@@ -7,8 +7,8 @@ final return value: false after the first item that failed to meet your criteria
 note: stops iterating once it receives a falsy value from your callback.
 example use case:*/
 
-const allPositiveNumbers = [1 , 2, 3].every((item) => {
-	return item > 0;
-})
+const allPositiveNumbers = [1, 2, 3].every((item) => {
+  return item > 0;
+});
 
 console.log(allPositiveNumbers);

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="suffix-trie">Suffix Trie</h1>
+    <p>
+      A suffix trie is a tree data structure that stores suffixes of strings.
+      Visually, you could draw a suffix trie like so:
+    </p>
+    <p>[Suffix trie drawing here]</p>
+    <p>
+      In code, we can represent such a data structure using nested hash tables.
+      For example, for the string “babc”, it would look like this:
+    </p>
+    <pre><code>{
+    &quot;c&quot;: {&quot;*&quot;: True},
+    &quot;b&quot;: {
+        &quot;c&quot;: {&quot;*&quot;, True},
+        &quot;a&quot;: {
+            &quot;b&quot;: {
+                &quot;c&quot;: {&quot;*&quot;, True}
+            }
+        }
+    },
+    &quot;a&quot;: {
+        &quot;b&quot;: {
+            &quot;c&quot;: {&quot;*&quot;: True}
+        }
+    }
+}</code></pre>
+    <p>
+      Write a class for a such a suffix trie data structure. This class should
+      have a root property representing the root node of the trie. It should
+      support creation from an initial string passed to the constructor as well
+      as searching of strings.
+    </p>
+    <p>
+      The creation method will be called when the class is instantiated and
+      should populate the root node with a subtries containing all of the
+      suffixes of the given string. Note that every string added to the trie
+      should end with the “endSymbol” character “*”.
+    </p>
+    <pre><code>trie = SuffixTrie(&quot;pogo&quot;)
+print(trie.root)  # should print the following
+{
+    &quot;p&quot;: {
+        &quot;o&quot;: {
+            &quot;g&quot;: {
+                &quot;o&quot;: {&#39;*&#39;: True}
+            }
+        }
+    },
+    &quot;o&quot;: {
+        &quot;g&quot;: {
+            &quot;o&quot;: {&#39;*&#39;: True}
+        },
+        &quot;*&quot;: True},
+    &quot;g&quot;: {
+        &quot;o&quot;: {&#39;*&#39;: True}
+    }
+}
+
+print(trie.contains(&quot;ogo&quot;))  # should print True</code></pre>
+  </body>
+</html>

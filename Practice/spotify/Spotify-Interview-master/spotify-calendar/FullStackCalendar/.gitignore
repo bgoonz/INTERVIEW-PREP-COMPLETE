@@ -1,0 +1,4 @@
+node_modules
+auth.js
+.env
+src/firebase-conf

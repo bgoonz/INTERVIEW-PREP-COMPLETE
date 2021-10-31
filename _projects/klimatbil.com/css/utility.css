@@ -1,0 +1,399 @@
+/*  Wrappers
+================================================== */
+.page-wrapper {
+  width: 100vw;
+}
+
+.content-wrapper {
+  margin-top: 15vh;
+  width: 100%;
+}
+
+/*  Top bar
+================================================== */
+.top-bar {
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  height: 15vh;
+}
+
+.top-bar-logo {
+  flex-basis: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.top-bar-logo img {
+  padding: 1.5rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  cursor: pointer;
+}
+
+.top-bar-logo h1 {
+  font-size: 3rem;
+  margin-left: 0;
+  align-self: center;
+  cursor: pointer;
+}
+
+.nav-bar-toggle {
+  height: 100%;
+  flex-basis: 30%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-line {
+  position: absolute;
+  height: 4px;
+  background-color: rgb(70, 70, 70);
+  width: 40px;
+  border-radius: 10px;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.28, 1.25);
+}
+
+.hamburger-top {
+  transform: translate(0, -11px);
+}
+
+.hamburger-bottom {
+  transform: translate(0, 11px);
+}
+
+.nav-bar-toggle.close .hamburger-top {
+  transform: rotate(45deg);
+}
+
+.nav-bar-toggle.close .hamburger-middle {
+  width: 0;
+}
+
+.nav-bar-toggle.close .hamburger-bottom {
+  transform: rotate(-45deg);
+}
+
+/*  Navigation bar
+================================================== */
+.nav-bar {
+  position: fixed;
+  background-color: #f5f5f5;
+  transition-property: all;
+  text-align: center;
+  color: #505050;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  z-index: 5;
+  height: 33.6rem;
+}
+
+.nav-bar ul {
+  margin: 0;
+}
+
+.nav-bar-active {
+  /* On it's way in */
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  top: 15vh;
+}
+
+.nav-bar-inactive {
+  /* On it's way out */
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  top: -33.6rem;
+}
+
+.nav-link {
+  font-size: 3rem;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  background-color: #f5f5f5;
+}
+
+.nav-link:hover {
+  background-color: #cacaca;
+  cursor: pointer;
+}
+
+.overlap-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition-property: all;
+  transition-duration: 0.5s;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.half-opaque-background {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.transparent-background {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.overlap-hide {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/*  Page ribbon
+================================================== */
+.page-ribbon {
+  display: flex;
+  font-size: 1.5rem;
+  height: 2em;
+  background-color: #85c040;
+  color: #f5f5f5;
+  text-shadow: 0 0 2px #000000;
+  align-items: center;
+  padding-left: 1em;
+}
+
+/*  Dropdown
+================================================== */
+.dropdown {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: rgb(220, 220, 220);
+}
+
+.dropdown-toggle {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 0.8em;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Mostly confusing for mobile users */
+/* .dropdown-toggle:hover
+{
+    cursor: pointer;
+    background-color: rgb(160, 160, 160);
+} */
+
+.dropdown-arrow path {
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+
+/*  Page banner
+================================================== */
+.page-banner {
+  width: 100%;
+  height: 12rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-banner h2 {
+  position: relative;
+  top: 8rem;
+}
+
+.page-banner.compensate {
+  background-image: url("../img/klimatkompensera-banner.png");
+}
+
+/*  Landing page
+================================================== */
+.landing-background {
+  background-image: url("../img/landing-page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+}
+
+.landing-text {
+  text-align: center;
+  padding-top: 45vh;
+}
+
+/*  Compensate button
+================================================== */
+.compensate-button {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15vh;
+  background-color: rgb(126, 190, 52);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 15vh;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.compensate-button a {
+  color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: 0 0 6px #303030;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+.compensate-button:hover {
+  background-color: rgb(70, 131, 0);
+}
+
+/*  Compensation page
+================================================== */
+.fuel-input-form {
+  display: flex;
+  background-color: #f5f5f5;
+  font-size: 1.5rem;
+  height: 8em;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fuel-amount-input {
+  height: 100%;
+  text-align: center;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fuel-amount-input input,
+.custom-donation-input input {
+  -webkit-appearance: none;
+  height: 50%;
+  border: 1px solid gray;
+  color: #444444;
+  padding-bottom: 0;
+  font-size: 1.8em;
+  background: white;
+  outline: none;
+}
+
+.fuel-amount-input input[type="number"],
+.custom-donation-input input[type="number"] {
+  width: 40%;
+  padding-left: 0.2em;
+  border-right: 0px;
+  z-index: 1; /* Place over unit input field */
+}
+
+/* Unit label */
+.fuel-amount-input input[type="text"],
+.custom-donation-input input[type="text"] {
+  width: 30%;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+  border-left: 0px;
+  margin: 0 0 0 -7px;
+  text-align: right;
+}
+
+.custom-donation-input {
+  height: 70px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fuel-type-input {
+  height: 80%;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.fuel-type-button {
+  height: 80%;
+  width: 20vw;
+  background-color: rgb(220, 220, 220);
+}
+
+.fuel-type-button:hover {
+  background-color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+
+.fuel-type-button.toggled {
+  background-color: #85c040;
+}
+
+.fuel-type-button h3 {
+  font-size: 2.5rem;
+  margin-top: 0.5em;
+  color: #444444;
+}
+
+.fuel-type-button div {
+  color: #444444;
+}
+
+.compensation-info {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.compensation-info li {
+  padding: 0.5em;
+}
+
+.compensation-info a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.compensation-info li:nth-child(odd) {
+  background-color: rgb(213, 231, 191);
+}
+
+.more-info-link {
+  text-align: right;
+  font-size: 1.1rem;
+  margin-right: 1em;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  color: blue;
+  text-decoration: underline;
+}
+
+.more-info-link a {
+  background-color: rgb(220, 220, 220);
+}
+
+.more-info-link a:hover {
+  background-color: rgb(160, 160, 160);
+}

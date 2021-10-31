@@ -7,17 +7,18 @@ This is a list of items: cherries, limes, oranges, apples.
 ['cherries','limes','oranges','apples']
 */
 
-let sentence = 'This is one sentence. This is a sentence with a list of items:' +
-    'cherries, oranges, apples, bananas. That was the list of items.';
+let sentence =
+  "This is one sentence. This is a sentence with a list of items:" +
+  "cherries, oranges, apples, bananas. That was the list of items.";
 
-let start = sentence.indexOf( ':' );
-let end = sentence.indexOf( '.', start + 1 );
+let start = sentence.indexOf(":");
+let end = sentence.indexOf(".", start + 1);
 
-let extractedList = sentence.substring( ( start + 1 ), end ).split( ',' );
+let extractedList = sentence.substring(start + 1, end).split(",");
 
-extractedList.forEach(function(elmnt, indx, arry) {
-    arry[indx] = elmnt.trim();
-})
+extractedList.forEach(function (elmnt, indx, arry) {
+  arry[indx] = elmnt.trim();
+});
 
 console.log(extractedList);
 
@@ -26,11 +27,11 @@ let name = "Abe Lincoln";
 let re = /(\S+)\s(\S+)/;
 
 // Alternatively, I could also define re as /^(\w+)\s(\w+)$/;
-let swappedName = name.replace( re, "$2, $1" );
+let swappedName = name.replace(re, "$2, $1");
 console.log(swappedName);
 
 // Alternative solution to Problem-2
 let name = "abe Lincoln";
 let re = /^(\w+)\s(\w+)$/;
-let result = re.exec( name );
-let swappedName = result[ 2 ] + ", " + result[ 1 ];
+let result = re.exec(name);
+let swappedName = result[2] + ", " + result[1];

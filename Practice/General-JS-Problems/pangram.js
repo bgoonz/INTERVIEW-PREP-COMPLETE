@@ -18,26 +18,23 @@ C> Then iterate throught the Hash's key, and if I find any key's value to be fal
 */
 
 isPangram = (str) => {
+  let alphabets = {};
 
-	let alphabets = {};
+  str = str.replace(/ /g, "").toLowerCase();
 
-	str = str.replace(/ /g, '').toLowerCase();
+  for (let i = 65; i <= 90; i++) {
+    alphabets[String.fromCharCode(i)] = false;
+  }
 
-	
-	for (let i = 65; i <= 90; i++ ) {
+  if (str.length < 26) {
+    return false;
+  } else {
+    for (let j = 0; j < str.length; j++) {
+      alphabets[str[j]] = true;
+    }
+  }
 
-		alphabets[String.fromCharCode(i)] = false;
-	}
-
-	if (str.length < 26) {
-		return false
-	} else {
-		for (let j = 0; j < str.length; j++) {
-			alphabets[str[j]] = true;
-		}
-	}
-
-	return true;
-}
+  return true;
+};
 
 console.log(isPangram("The quick brown fox jumps over the lazy dog")); // should return true

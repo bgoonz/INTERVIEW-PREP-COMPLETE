@@ -9,7 +9,7 @@ indexOf_firstPrinciple = (arr, elem) => {
       return i;
     }
   }
-  return -1
-}
+  return -1;
+};
 
 console.log(indexOf_firstPrinciple([1, 2, 3], 1));

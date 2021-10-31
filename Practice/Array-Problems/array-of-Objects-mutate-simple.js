@@ -2,21 +2,21 @@ const events = [
   {
     name: "First Event",
     metadata: {
-      type: "public"
-    }
+      type: "public",
+    },
   },
   {
     name: "Event 2",
     metadata: {
-      type: "private"
-    }
+      type: "private",
+    },
   },
   {
     name: "Third Event",
     metadata: {
-      type: "closed"
-    }
-  }
+      type: "closed",
+    },
+  },
 ];
 
 /* FROM BLOG POST - https://medium.freecodecamp.org/handling-state-in-react-four-immutable-approaches-to-consider-d1f5c00249d5
@@ -24,7 +24,7 @@ const events = [
 Note, here I am NOT mutating the original array.
 The basic idea is to create a new empty object for each item in the array and assign the properties from old objects to them, respectively. This means we get an object with a new reference, so we are not going to modify the Original One.
   */
-const mappedEvents = events.map(e => {
+const mappedEvents = events.map((e) => {
   if (e.name) {
     e = { ...e, name: "Second Event Mutated" };
   }

@@ -1,6 +1,6 @@
 isPrime1 = (num) => {
   if (isNaN(num) || !isFinite(num) || num % 1 !== 0 || num < 2) {
-    return false
+    return false;
   }
 
   /* Explanation of (num % 1 !== 0)  -  This is the standard way to check if a number is a decimal - The logic for (num % 1 !== 0) >>>> ( num % 1 ) will return 0 only if the num is an integer (whole number) but will return a non-zero for all decimal. And so immediately return false in this program.
@@ -9,16 +9,16 @@ console.log(19 % 1)  // => 0
 console.log(19.2 % 1)		// => 0.19999999999999993
 */
 
-  let maxNumToCheckForPrimeness = Math.floor(Math.sqrt(num))
+  let maxNumToCheckForPrimeness = Math.floor(Math.sqrt(num));
 
   for (let i = 2; i <= maxNumToCheckForPrimeness; i++)
     if (num % i === 0) {
-      return false
+      return false;
     }
-  return true
-}
+  return true;
+};
 
-console.log(isPrime1(19))
+console.log(isPrime1(19));
 
 /* Decrease complexity of algorithm from O(n) to O(sqrt(n)) by running the loop until square root of number
 
@@ -44,7 +44,7 @@ const isPrime_cool = (n) =>
   ![...Array(n).keys()]
     .slice(2)
     .map((i) => !(n % i))
-    .includes(true) && ![0, 1].includes(n)
+    .includes(true) && ![0, 1].includes(n);
 
 /* Explanation -
  A> [...Array(5)]  // =>  Creates an array with 5 elements each set as 'undefined'

@@ -10,24 +10,22 @@ For example, in  ['pear', 'apple', 'orange', 'apple']  the 'apple' element is th
 
 */
 
-maxRepeatingElem = arr => {
+maxRepeatingElem = (arr) => {
+  let counter = {};
 
-	let counter = {};
+  for (let i of arr) {
+    counter[i] == null ? (counter[i] = 1) : counter[i]++;
+  }
 
-	for (let i of arr) {
+  // Find the key given the max value from a key-value pair of object
+  return Object.keys(counter).reduce((a, b) =>
+    counter[a] > counter[b] ? a : b
+  );
 
-		(counter[i] == null ) ? ( counter[i] = 1 ) : counter[i]++
-		
-	}
+  // Alternative to find the key given the max value from a key-value pair of object - i.e. I could replace the above return with the below
+  // return Object.keys(counter).find(i => counter[i] === Math.max(...Object.values(counter)));
+};
 
-	// Find the key given the max value from a key-value pair of object
-	return Object.keys(counter).reduce((a, b) => counter[a] > counter[b] ? a : b)
-	
-	// Alternative to find the key given the max value from a key-value pair of object - i.e. I could replace the above return with the below
-	// return Object.keys(counter).find(i => counter[i] === Math.max(...Object.values(counter)));	
-}
-
-
-let myArr = ['pear', 'apple', 'orange', 'apple'];
+let myArr = ["pear", "apple", "orange", "apple"];
 
 console.log(maxRepeatingElem(myArr));

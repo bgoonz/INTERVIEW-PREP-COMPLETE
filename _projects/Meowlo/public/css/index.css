@@ -1,0 +1,140 @@
+picture {
+  background-color: var(--light-yellow);
+}
+
+input {
+  font-family: "Quicksand", Helvetica, sans-serif;
+  font-size: 1rem;
+  border: 1px solid var(--blue);
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  padding-bottom: 1.8rem;
+}
+
+.paw {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.paw:hover {
+  filter: invert(100%);
+}
+
+.weather-app__info {
+  background-color: var(--light-yellow);
+  padding: 1rem;
+}
+
+.payment {
+  margin-top: 2rem;
+}
+
+.pricing {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.pricing__item {
+  background-color: var(--light-yellow);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.pricing__item:hover {
+  box-shadow: 3px 3px 5px var(--blue);
+}
+
+.recommended {
+  position: relative;
+}
+
+.recommended:hover {
+  transform: scale(1.1);
+}
+
+.recommended__tag {
+  color: white;
+  font-size: 1em;
+  background-color: var(--blue);
+  padding: 0.8rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transform: rotate(20deg);
+}
+
+.partners-section {
+  margin-top: 2rem;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partners__item img:hover {
+  filter: invert(100%);
+  border-radius: 100%;
+}
+
+.darksky:hover {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.mapbox:hover {
+  background-color: hsla(50, 95%, 40%, 1);
+}
+
+.mead:hover {
+  background-color: hsla(180, 95%, 80%, 1);
+}
+
+.wds:hover {
+  background-color: hsla(20, 100%, 50%, 1);
+}
+
+@media only screen and (min-width: 500px) {
+  .weather-app {
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+
+  .weather-app__info {
+    padding: 2rem;
+  }
+
+  .pricing {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .recommended__tag {
+    font-size: 1.1rem;
+    padding: 1rem;
+    top: -2.5rem;
+    right: -1rem;
+  }
+
+  .partners {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1130px) {
+  .weather-app__info {
+    padding: 6rem;
+  }
+
+  .recommended__tag {
+    font-size: 1.2rem;
+    padding: 1rem;
+    top: 1rem;
+    right: 1rem;
+  }
+}

@@ -9,14 +9,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -26,14 +26,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -43,7 +43,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -51,7 +51,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -61,7 +61,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -69,7 +69,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -79,7 +79,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -87,7 +87,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -97,7 +97,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -105,7 +105,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -115,7 +115,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -123,7 +123,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -133,7 +133,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -141,7 +141,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -151,7 +151,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -159,7 +159,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -169,7 +169,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -177,7 +177,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -187,7 +187,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -195,7 +195,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -205,14 +205,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -222,14 +222,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -239,7 +239,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -247,7 +247,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -257,7 +257,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -265,7 +265,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -275,7 +275,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -283,7 +283,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -293,7 +293,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -301,7 +301,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -311,7 +311,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -319,7 +319,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -329,7 +329,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -337,7 +337,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -347,7 +347,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -355,7 +355,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -365,7 +365,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -373,7 +373,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -383,7 +383,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -391,7 +391,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -401,14 +401,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -418,14 +418,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -435,7 +435,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -443,7 +443,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -453,7 +453,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -461,7 +461,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -471,7 +471,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -479,7 +479,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -489,7 +489,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -497,7 +497,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -507,7 +507,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -515,7 +515,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -525,7 +525,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -533,7 +533,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -543,7 +543,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -551,7 +551,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -561,7 +561,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -569,7 +569,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -579,7 +579,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -587,7 +587,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -597,14 +597,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -614,14 +614,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -631,7 +631,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -639,7 +639,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -649,7 +649,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -657,7 +657,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -667,7 +667,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -675,7 +675,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -685,7 +685,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -693,7 +693,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -703,7 +703,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -711,7 +711,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -721,7 +721,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -729,7 +729,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -739,7 +739,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -747,7 +747,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -757,7 +757,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -765,7 +765,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -775,7 +775,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -783,7 +783,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -793,14 +793,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -810,14 +810,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -827,7 +827,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -835,7 +835,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -845,7 +845,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -853,7 +853,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -863,7 +863,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -871,7 +871,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -881,7 +881,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -889,7 +889,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -899,7 +899,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -907,7 +907,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -917,7 +917,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -925,7 +925,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -935,7 +935,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -943,7 +943,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -953,7 +953,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -961,7 +961,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -971,7 +971,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -979,7 +979,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -989,14 +989,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -1006,14 +1006,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -1023,7 +1023,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -1031,7 +1031,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -1041,7 +1041,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -1049,7 +1049,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -1059,7 +1059,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -1067,7 +1067,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -1077,7 +1077,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -1085,7 +1085,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -1095,7 +1095,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -1103,7 +1103,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -1113,7 +1113,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -1121,7 +1121,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -1131,7 +1131,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -1139,7 +1139,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -1149,7 +1149,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -1157,7 +1157,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -1167,7 +1167,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -1175,7 +1175,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -1185,14 +1185,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -1202,14 +1202,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -1219,7 +1219,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -1227,7 +1227,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -1237,7 +1237,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -1245,7 +1245,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -1255,7 +1255,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -1263,7 +1263,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -1273,7 +1273,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -1281,7 +1281,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -1291,7 +1291,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -1299,7 +1299,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -1309,7 +1309,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -1317,7 +1317,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -1327,7 +1327,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -1335,7 +1335,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -1345,7 +1345,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -1353,7 +1353,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -1363,7 +1363,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -1371,7 +1371,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77dc4c11ce1434b0029e7e",
@@ -1381,14 +1381,14 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 22,
       imported_date: "2019-02-28T00:00:00.000Z",
       no_of_vessels_per_day: 223,
       createdAt: "2019-02-28T13:04:12.748Z",
       updatedAt: "2019-02-28T13:04:21.203Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77d37169e8d22c8a18e622",
@@ -1398,14 +1398,14 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       qty_in_mts: 55,
       imported_date: "2019-02-27T18:30:00.000Z",
       no_of_vessels_per_day: 555,
       createdAt: "2019-02-28T12:26:25.488Z",
       updatedAt: "2019-02-28T12:26:33.223Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc39fd5e29188237cbdc",
@@ -1415,7 +1415,7 @@ module.exports = {
         type: "Commodity",
         createdAt: "2019-02-14T07:56:52.310Z",
         updatedAt: "2019-02-27T11:05:55.121Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T18:30:00.000Z",
       qty_in_mts: 991,
@@ -1423,7 +1423,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:21.215Z",
       updatedAt: "2019-02-28T12:28:18.559Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc2cfd5e29188237cbdb",
@@ -1433,7 +1433,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 291,
@@ -1441,7 +1441,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:08.415Z",
       updatedAt: "2019-02-28T12:57:14.783Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc27fd5e29188237cbda",
@@ -1451,7 +1451,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:57:37.736Z",
         updatedAt: "2019-02-28T12:53:50.876Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9122,
@@ -1459,7 +1459,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:47:03.843Z",
       updatedAt: "2019-02-28T12:57:19.528Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bc19fd5e29188237cbd9",
@@ -1469,7 +1469,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9101,
@@ -1477,7 +1477,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:46:49.398Z",
       updatedAt: "2019-02-28T13:27:31.438Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baf9fd5e29188237cbd8",
@@ -1487,7 +1487,7 @@ module.exports = {
         type: "Energy",
         createdAt: "2019-02-19T14:15:10.421Z",
         updatedAt: "2019-02-19T14:15:10.421Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 8,
@@ -1495,7 +1495,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:42:01.789Z",
       updatedAt: "2019-02-28T13:00:46.371Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77baedfd5e29188237cbd7",
@@ -1505,7 +1505,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 9,
@@ -1513,7 +1513,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:49.877Z",
       updatedAt: "2019-02-28T13:00:28.981Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77badefd5e29188237cbd6",
@@ -1523,7 +1523,7 @@ module.exports = {
         type: "Industrial Material",
         createdAt: "2019-02-19T14:15:50.690Z",
         updatedAt: "2019-02-19T14:15:50.690Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-27T00:00:00.000Z",
       qty_in_mts: 9,
@@ -1531,7 +1531,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:41:34.173Z",
       updatedAt: "2019-02-28T10:41:34.173Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77bab1fd5e29188237cbd5",
@@ -1541,7 +1541,7 @@ module.exports = {
         type: "Minerals",
         createdAt: "2019-02-19T14:15:31.140Z",
         updatedAt: "2019-02-19T14:15:31.140Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 89,
@@ -1549,7 +1549,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T10:40:49.716Z",
       updatedAt: "2019-02-28T10:40:49.716Z",
-      __v: 0
+      __v: 0,
     },
     {
       _id: "5c77995691b93d6ac6e105bc",
@@ -1559,7 +1559,7 @@ module.exports = {
         type: "Precious Metals",
         createdAt: "2019-02-14T07:59:21.995Z",
         updatedAt: "2019-02-14T07:59:21.995Z",
-        __v: 0
+        __v: 0,
       },
       imported_date: "2019-02-28T00:00:00.000Z",
       qty_in_mts: 898,
@@ -1567,7 +1567,7 @@ module.exports = {
       port: null,
       createdAt: "2019-02-28T08:18:30.364Z",
       updatedAt: "2019-02-28T13:20:14.968Z",
-      __v: 0
-    }
-  ]
+      __v: 0,
+    },
+  ],
 };

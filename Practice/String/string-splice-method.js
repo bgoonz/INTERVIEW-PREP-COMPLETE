@@ -10,36 +10,36 @@ Perform array-based splicing.
 Convert character array back to string.
 */
 
-// it's a good idea to at least check for the presence of the property before adding it, 
+// it's a good idea to at least check for the presence of the property before adding it,
 
 if (!("splice" in String.prototype)) {
-	String.prototype.splice = function (startIndex, noOfcharToDelete, stringToInsert) {
+  String.prototype.splice = function (
+    startIndex,
+    noOfcharToDelete,
+    stringToInsert
+  ) {
+    let stringCharArr = this.split("");
 
-		let stringCharArr = this.split( '' );
+    // NOTE: Because splice() mutates the actual array (and
+    // returns the removed values), we need to apply it to
+    // an existing array to which we have an existing
+    // reference.
+    Array.prototype.splice.apply(stringCharArr, arguments);
 
-		// NOTE: Because splice() mutates the actual array (and
-	    // returns the removed values), we need to apply it to
-	    // an existing array to which we have an existing
-	    // reference.
-		Array.prototype.splice.apply(stringCharArr, arguments)
-
-		return stringCharArr.join('')
-	}
+    return stringCharArr.join("");
+  };
 }
 
-// Test case - 
+// Test case -
 
 let myStr = "Katie is sort of cool.";
 
 let strToDel = "sort of cool";
 
 let splicedStr = myStr.splice(
-            myStr.indexOf( strToDel ),
-            strToDel.length,
-            "crazy-insane kinds of hot"
-        );
+  myStr.indexOf(strToDel),
+  strToDel.length,
+  "crazy-insane kinds of hot"
+);
 
-console.log(
-            "New str:",
-            splicedStr
-        );
+console.log("New str:", splicedStr);

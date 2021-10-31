@@ -34,13 +34,17 @@ The signature of the C++ function had been updated. If you still see your functi
 
 // Solution-1
 
-let myAtoi = str => {
+let myAtoi = (str) => {
+  let integer = /([+-]?\d*)/.exec(str.trim())[0];
 
-	let integer = /([+-]?\d*)/.exec( str.trim() )[ 0 ];
-
-	return isNaN(+integer) ? 0 : +integer > 2147483647 ? 2147483647 : +integer < -2147483648 ? -2147483648 : +integer;
-
-}
+  return isNaN(+integer)
+    ? 0
+    : +integer > 2147483647
+    ? 2147483647
+    : +integer < -2147483648
+    ? -2147483648
+    : +integer;
+};
 
 console.log(myAtoi("-2147483649"));
 
@@ -48,9 +52,9 @@ console.log(myAtoi("-2147483649"));
 
 // Solution-2 , and faster - Crude / dirty version of atoi
 
-let myAtoi1 = str => {
-	return Math.max((Math.min((parseInt(str) || 0), 2147483647)), -2147483648);
-}
+let myAtoi1 = (str) => {
+  return Math.max(Math.min(parseInt(str) || 0, 2147483647), -2147483648);
+};
 
 console.log(myAtoi1("-2147483649"));
 
@@ -60,15 +64,14 @@ And otherwise (when parseInt(str) is a number ) >> Math.min((parseInt(str) || 0)
 */
 
 // Solution-3 - Crude / dirty version of atoi
-atoi_crude = str => {
-
+atoi_crude = (str) => {
   let finalInteger = parseInt(str);
 
-  if (finalInteger > 2147483647 ) {
-    finalInteger = 2147483647
-  } else if ( finalInteger < -2147483648) {
-    finalInteger = - 2147483648
+  if (finalInteger > 2147483647) {
+    finalInteger = 2147483647;
+  } else if (finalInteger < -2147483648) {
+    finalInteger = -2147483648;
   }
 
   return isNaN(finalInteger) ? 0 : finalInteger;
-}
+};

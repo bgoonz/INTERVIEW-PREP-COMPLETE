@@ -1,0 +1,33 @@
+{
+  "name": "WDS Course Site Extension",
+  "description": "Adds additional functionality to Web Dev Simplified's course platform.",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "https://courses.webdevsimplified.com/courses/*",
+    "webRequest",
+    "webNavigation",
+    "storage"
+  ],
+  "background": {
+    "page": "background/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://courses.webdevsimplified.com/courses/*"],
+      "js": ["script.js"]
+    }
+  ],
+  "icons": {
+    "16": "logos/logo-16.png",
+    "32": "logos/logo-16.png",
+    "48": "logos/logo-48.png",
+    "64": "logos/logo-64.png",
+    "128": "logos/logo-128.png"
+  },
+  "web_accessible_resources": ["content_scripts/*", "utils/*", "globals.js"]
+}

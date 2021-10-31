@@ -13,6 +13,6 @@ Meaning, when I have one of more parenthesized-submatch in my regular expression
 
 // super basic implementation of $n - Switching words in a string - given "Rohan Paul" output "Paul, Rohan"
 
-switchWords = str => str.replace(/(\w+)\s(\w+)/, `$2, $1`)
+switchWords = (str) => str.replace(/(\w+)\s(\w+)/, `$2, $1`);
 
-console.log(switchWords("Rohan Paul"))
+console.log(switchWords("Rohan Paul"));

@@ -6,62 +6,58 @@ Run this html file and put some text in the large input box and then searh for a
 
 <!DOCTYPE html>
 <html>
-<head>
-<title>Searching for string</title>
-<style>
-.found
-{
-  background-color: #ff0;
-}
-</style>
-</head>
-<body>
-  <form id="textsearch">
-    <textarea id="incoming" cols="150" rows="10">
-    </textarea>
-  <p>
-    Search pattern: <input id="pattern" type="text" />
-  </p>
-  </form>
-  <button id="searchSubmit">Search for pattern</button>
-  <div id="searchResult"></div>
+  <head>
+    <title>Searching for string</title>
+    <style>
+      .found {
+        background-color: #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="textsearch">
+      <textarea id="incoming" cols="150" rows="10"> </textarea>
+      <p>Search pattern: <input id="pattern" type="text" /></p>
+    </form>
+    <button id="searchSubmit">Search for pattern</button>
+    <div id="searchResult"></div>
 
-  <script>
+    <script>
 
-  document.getElementById("searchSubmit").onclick=function() {
+      document.getElementById("searchSubmit").onclick=function() {
 
-    // get pattern
-    let pattern = document.getElementById("pattern").value;
-    let re = new RegExp(pattern, "g");
+        // get pattern
+        let pattern = document.getElementById("pattern").value;
+        let re = new RegExp(pattern, "g");
 
-    // get string
-    let searchString = document.getElementById("incoming").value;
+        // get string
+        let searchString = document.getElementById("incoming").value;
 
-    let matchArray;
-    let resultString = "
-    <pre>";
-    let first=0;
-    let last=0;
+        let matchArray;
+        let resultString = "
+        <pre>";
+        let first=0;
+        let last=0;
 
-    // find each of match of the search pattern
-    while((matchArray = re.exec(searchString)) != null) {
-      last = matchArray.index;
+        // find each of match of the search pattern
+        while((matchArray = re.exec(searchString)) != null) {
+          last = matchArray.index;
 
-      // get all the string upto this match and concatenate
-      resultString += searchString.substring(first, last);
+          // get all the string upto this match and concatenate
+          resultString += searchString.substring(first, last);
 
-      // Then to the above concatenated string add the match with class
-      resultString += "<span class='found'>" + matchArray[0] + "</span>";
-      first = re.lastIndex;
-    }
+          // Then to the above concatenated string add the match with class
+          resultString += "<span class='found'>" + matchArray[0] + "</span>";
+          first = re.lastIndex;
+        }
 
-    // finish off the full input string
-    resultString += searchString.substring(first, searchString.length);
-    resultString += "<pre>";
+        // finish off the full input string
+        resultString += searchString.substring(first, searchString.length);
+        resultString += "<pre>";
 
-    // insert into page
-    document.getElementById("searchResult").innerHTML = resultString;
-  }
-  </script>
-</body>
+        // insert into page
+        document.getElementById("searchResult").innerHTML = resultString;
+      }
+    </script>
+  </body>
 </html>

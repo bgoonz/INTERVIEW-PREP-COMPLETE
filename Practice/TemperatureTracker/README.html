@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>README</title>
+    <style type="text/css">
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="temperature-tracker">Temperature Tracker</h1>
+    <p>
+      Write a class TempTracker that tracks the max, min, mean, and mode of
+      temperature values as they are inserted into the tracker. This class
+      should have the following methods:
+    </p>
+    <ul>
+      <li>insert() - records a new temperature.</li>
+      <li>getMax() - returns the highest temperature we’ve seen so far.</li>
+      <li>getMin() - returns the lowest temperature we’ve seen so far.</li>
+      <li>
+        getMean() - returns the mean of all temperatures we’ve seen so far.
+      </li>
+      <li>getMode() - returns a mode of all temperatures we’ve seen so far.</li>
+    </ul>
+    <p>
+      Favor speeding up the get methods over the insert method. Aim to get each
+      of the get methods down to constant runtime.
+    </p>
+    <p>
+      getMean() should return a float. The rest of the methods can return
+      integers. Temperatures should be recorded in Fahrenheit, so we can assume
+      a range of 0 to 140.
+    </p>
+    <p>If there is more than one mode, return any of the modes.</p>
+    <p>
+      Analyze the time and space complexity of the methods in your solution.
+    </p>
+  </body>
+</html>

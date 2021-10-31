@@ -39,7 +39,7 @@ _Please read [contribution guidelines](contributing.md) before contributing._
 ## Find work
 
 - [HN: Who is Hiring](https://kennytilton.github.io/whoishiring/) - Search & filter through monthly `HN: Who is hiring?` postings.
-- [Otta](https://otta.co/) - Discover the most relevant roles for you at all of London's best startups.
+- [Otta](https://otta.co/) - Discover the most relevant roles for you at all of London’s best startups.
 - [findwork.dev](https://findwork.dev) - Jobs aggregator which collects data from Hacker News, Github, Stackoverflow.
 - [Who is Hiring](https://whoishiring.io)
 - [Angel List](https://angel.co/jobs)
@@ -65,7 +65,7 @@ _Please read [contribution guidelines](contributing.md) before contributing._
 - [FOSS Jobs](https://www.fossjobs.net/) - Free & Open Source Jobs.
 - [co-hire](https://www.co-hire.com/) - Simple way for technical people to speak directly with technology companies.
 - [EntryLvl](https://entrylevel.io/) - Browse through entry level job opportunities and find your match. ([HN](https://news.ycombinator.com/item?id=22691295))
-- [Y Combinator's list of most active hiring companies on Work at a Startup](https://www.workatastartup.com/job_list?utm_source=hn_jobs)
+- [Y Combinator’s list of most active hiring companies on Work at a Startup](https://www.workatastartup.com/job_list?utm_source=hn_jobs)
 - [NoiceJobs: Senior Remote Jobs](https://t.me/NoiceJobs) ([HN](https://news.ycombinator.com/item?id=23500588))
 - [Remoteleaf](https://remoteleaf.com/) - Receive hand-picked remote jobs delivered straight to your inbox.
 
@@ -105,7 +105,6 @@ _Please read [contribution guidelines](contributing.md) before contributing._
 
 - [Haskell companies](https://github.com/erkmos/haskell-companies) - Curated list of companies using Haskell in industry.
 
-
 ## Freelancing
 
 - [The Remote Freelancer](https://github.com/engineerapart/TheRemoteFreelancer) - List of community-curated resources to find topical remote freelance & contract work.
@@ -113,12 +112,9 @@ _Please read [contribution guidelines](contributing.md) before contributing._
 ## Related
 
 - [CS career questions EU wiki](https://www.reddit.com/r/cscareerquestionsEU/wiki/index)
-- [Few notes about web developer's interviews](http://blog.sapegin.me/all/coding-interview)
+- [Few notes about web developer’s interviews](http://blog.sapegin.me/all/coding-interview)
 - [Finding work wiki](https://wiki.nikitavoloboev.xyz/work/finding-work)
 - [Remote work wiki](https://wiki.nikitavoloboev.xyz/work/remote-work)
-- [Search the last 'Who is hiring?' thread](https://hnjobs.emilburzo.com/)
+- [Search the last ‘Who is hiring?’ thread](https://hnjobs.emilburzo.com/)
 
-[![CC4](https://img.shields.io/badge/license-CC4-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://creativecommons.org/licenses/by/4.0/)
-[![Lists](https://img.shields.io/badge/-more%20lists-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://github.com/learn-anything/curated-lists)
-[![Contribute](https://img.shields.io/badge/-contribute-0a0a0a.svg?style=flat&colorA=0a0a0a)](contributing.md)
-[![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)
+[![CC4](https://img.shields.io/badge/license-CC4-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://creativecommons.org/licenses/by/4.0/) [![Lists](https://img.shields.io/badge/-more%20lists-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://github.com/learn-anything/curated-lists) [![Contribute](https://img.shields.io/badge/-contribute-0a0a0a.svg?style=flat&colorA=0a0a0a)](contributing.md) [![Twitter](http://bit.ly/nikitatweet)](https://twitter.com/nikitavoloboev)

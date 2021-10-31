@@ -10,45 +10,45 @@ Loop over the number of chunks
 Cut the array with given size and push into the chunked_arr. */
 
 chunk_2 = (arr, chunkSize) => {
+  let chunkedArr = [];
 
-    let chunkedArr = []
+  // Count the number of chunks. i.e. the number of inner nested arrays, ie. the number of elements of the chunkedArr
 
-    // Count the number of chunks. i.e. the number of inner nested arrays, ie. the number of elements of the chunkedArr
+  let numOfChunks = Math.ceil(arr.length / chunkSize);
 
-    let numOfChunks = Math.ceil(arr.length / chunkSize);
+  for (let i = 0; i < numOfChunks; i++) {
+    chunkedArr.push(arr.splice(0, chunkSize));
+    // If I had used above slice() instead of splice() - then would get the ouput - [ [ 1, 2 ], [ 1, 2 ], [ 1, 2 ] ]
+    // Because, the slice() is non-mutative and so the original array length will never be reduced
+  }
+  return chunkedArr;
+};
 
-    for (let i = 0; i < numOfChunks; i++) {
-        chunkedArr.push(arr.splice(0, chunkSize));
-        // If I had used above slice() instead of splice() - then would get the ouput - [ [ 1, 2 ], [ 1, 2 ], [ 1, 2 ] ]
-        // Because, the slice() is non-mutative and so the original array length will never be reduced
-    }
-    return chunkedArr
-}
-
-console.log(chunk_2([1, 2, 3, 4, 5], 2))
+console.log(chunk_2([1, 2, 3, 4, 5], 2));
 
 /* SOLUTION-2-with Math.ceil() - EXACT SAME AS ABOVE, BUT USING ES-6 SYNTAX OF CREATING THE ARRAY with Array.from and then filling up this created array
 with sliced array from the original */
 
 chunk_3 = (arr, chunkSize) => {
+  return Array.from({ length: Math.ceil(arr.length / chunkSize) }, () => {
+    return arr.splice(0, chunkSize);
+  });
+};
 
-    return Array.from({length: Math.ceil(arr.length/chunkSize)}, () => {
-        return arr.splice(0, chunkSize)
-    })
-}
-
-console.log(chunk_3([1, 2, 3, 4, 5], 2))
+console.log(chunk_3([1, 2, 3, 4, 5], 2));
 
 // SOLUTION-3-USING slice() instead of splice() - BEAUTIFUL EXAMPLE IMPLEMENTING THE FUNCTIONALITY OF SPLICE() METHOD WITH SLICE() METHOD
 
 chunk_3_slice = (arr, chunkSize) => {
+  return Array.from(
+    { length: Math.ceil(arr.length / chunkSize) },
+    (_elem, index) => {
+      return arr.slice(index * chunkSize, index * chunkSize + chunkSize);
+    }
+  );
+};
 
-    return Array.from({length: Math.ceil(arr.length/chunkSize)}, (_elem, index) => {
-        return arr.slice(index*chunkSize, index*chunkSize + chunkSize)
-    })
-}
-
-console.log(chunk_3_slice([1, 2, 3, 4, 5], 2))
+console.log(chunk_3_slice([1, 2, 3, 4, 5], 2));
 
 /* EXPLANATION OF THE ABOVE SLICE METHOD -
 

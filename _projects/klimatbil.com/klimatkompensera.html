@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+    <title>Klimatbil | Klimatkompensera</title>
+
+    <!-- Meta
+    ================================================== -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Marcus Otterström" />
+    <meta name="description" content="Klimatbil erbjuder dig ett enkelt sätt att klimatkompensera utsläppen från dina fordon. Billigt, snabbt och enkelt!" />
+    <meta name="keywords" content="klimatbil,klimatkompensera,enkelt,bil,fordon,klimatkompensera enkelt,klimatkompensera bil,klimatkompensera fordon,klimat,kompensera,miljö,miljöbil" />
+    <meta name="theme-color" content="#85c040" />
+
+    <meta property="og:site_name" content="Klimatbil" />
+    <meta property="og:title" content="Klimatbil | Klimatkompensera" />
+    <meta property="og:description" content="Klimatbil erbjuder dig ett enkelt sätt att klimatkompensera utsläppen från dina fordon. Billigt, snabbt och enkelt!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://klimatbil.com/" />
+    <meta property="og:locale" content="sv_SE" />
+    <meta property="og:image" content="https://preview.ibb.co/iXbS7f/klimatbil-uf-logo.png" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Links
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Important Styles
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/utility.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Top bar
+        ================================================== -->
+        <div class="top-bar">
+            <div class="top-bar-logo">
+                <img src="img/logo-128.png" alt="Logotyp för Klimatbil" onclick="SetWindowLocationTo('https://www.klimatbil.com')" />
+                <h1 onclick="SetWindowLocationTo('https://www.klimatbil.com/')">Klimatbil</h1>
+            </div>
+            <div id="js-nav-hamburger" class="nav-bar-toggle noSelectionHighlight" onclick="ToggleNavBar();">
+                <span class="hamburger-line hamburger-top"></span>
+                <span class="hamburger-line hamburger-middle"></span>
+                <span class="hamburger-line hamburger-bottom"></span>
+            </div>
+        </div>
+
+        <!-- Navigation bar
+        ================================================== -->
+        <nav class="nav-bar nav-bar-inactive" id="js-nav-bar">
+            <ul>
+                <li class="nav-link" onclick="SetWindowLocationTo('https://klimatbil.com')">Hem</li>
+                <li class="nav-link" onclick="SetWindowLocationTo('https://klimatbil.com/klimatkompensera')">Klimatkompensera</li>
+                <li class="nav-link" onclick="SetWindowLocationTo('https://klimatbil.com/om-oss')">Om klimatbil</li>
+                <li class="nav-link" onclick="SetWindowLocationTo('https://klimatbil.com/beräkningsmetodik')">Beräkningsmetodik</li>
+            </ul>
+        </nav>
+
+        <div class="overlap-background transparent-background" id="js-overlap-background"></div>
+        <div class="overlap-hide hidden noSelectionHighlight" id="js-overlap-hide" onclick="ToggleNavBar()"></div>
+
+        <!-- Page content
+        ================================================== -->
+        <div class="content-wrapper">
+            <!-- This div allows the compensate button to fit perfectly to the bottom of the page -->
+            <div style="min-height: 65vh; margin-bottom: 2vh">
+                <div class="page-banner compensate">
+                    <h2>Klimatkompensera</h2>
+                </div>
+                
+                <div class="page-ribbon"><b>Hur mycket har du tankat?</b></div>
+
+                <form class="fuel-input-form" onsubmit="document.getElementById('js-checkout-button').focus(); return false;">
+                    <div class="fuel-amount-input">
+                        <input id="js-liter-input" type="number" step="0.01" oninput="
+                            if(value.length > 5){value = value.slice(0, 5)} /* Ensures user can't input more than 5 characters */
+                            UpdateTotal()" 
+                        />
+
+                        <input type="text" value="liter" readonly="readonly" onclick="document.getElementById('js-liter-input').focus();" />
+                    </div>
+
+                    <div class="fuel-type-input">
+                        <div id="js-gasoline-button" class="fuel-type-button toggled" onclick="ToggleFuelType(this)">
+                            <h3>B</h3>
+                            <div><b>Bensin</b></div>
+                        </div>
+        
+                        <div id="js-diesel-button" class="fuel-type-button" onclick="ToggleFuelType(this)">
+                            <h3>D</h3>
+                            <div><b>Diesel</b></div>
+                        </div>
+                    </div>
+
+                    <!-- Makes it possible to submit the form by pressing enter on the input -->
+                    <input type="submit" style="position: absolute; left: -9999px"/>
+                </form>
+
+                <div class="dropdown">
+                    <div class="dropdown-toggle" onclick="ToggleDropdown(this.parentElement)">
+                        <span>Information om kompensationen</span>
+                        <div class="dropdown-arrow">
+                            <svg height="10" width="10">
+                                <path transform="rotate(0, 5, 5)" d="M0 0 L10 0 L5 10 Z" fill="#444444" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-content hidden">
+                        <ul class="compensation-info">
+                            <li>Pengarna går till <a href="om-oss.html" target="_blank">vår samarbetspartner</a> som återplanterar träd i Amazonas regnskog.</li>
+                            <li><span class="js-liter-amount">0.00</span>L <span class="js-active-fuel-type">bensin</span> motsvarar <span id="js-co2-emission">0.0000</span> ton koldioxidutsläpp,
+                                 vilket motsvarar den årliga koldioxidupptagningen av <span class="js-tree-amount">0.0</span> träd.</li>
+                            <li>Att plantera <span class="js-tree-amount">0.0</span> träd kostar <span class="js-total-amount">0</span> kronor.</li>
+                        </ul>
+
+                        <div class="more-info-link">
+                            <a href="beräkningsmetodik.html" target="_blank">Mer om vår beräkningsmetodik</a> <!-- Todo: replace with svg path or icon -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="dropdown-toggle" onclick="ToggleDropdown(this.parentElement)">
+                        <span>Kompensera för en valfri summa istället?</span>
+                        <div class="dropdown-arrow">
+                            <svg height="10" width="10">
+                                <path transform="rotate(0, 5, 5)" d="M0 0 L10 0 L5 10 Z" fill="#444444" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-content hidden">
+                        <div class="custom-donation-input">
+                            <input id="js-money-input" type="number" step="0.01" oninput="UpdateTotal()"></input>
+                            <input type="text" value="SEK" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="" method="POST" id="js-payment-form">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="js-payment-script"
+                    data-key="pk_test_bG7vG8DfCvej8dpMZMByDgPZ"
+                    data-amount="0"
+                    data-name="Klimatkompensation"
+                    data-description="Klimatbil UF"
+                    data-image="https://preview.ibb.co/iXbS7f/klimatbil-uf-logo.png"
+                    data-locale="sv_SE"
+                    data-label="Betala med kort"
+                    data-currency="sek">
+                </script>
+
+                <!-- Loaded here because it removes the default stripe button on startup -->
+                <script src="js/klimatkompensera.js"></script>
+
+                <button type="submit" id="js-checkout-button" class="compensate-button" style="height: 18vh;">
+                    <a>Bekräfta kompensationen för <span id="js-custom-donation-amount" class="js-total-amount">0</span>kr</a>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript
+    ================================================== -->
+    <script src="js/main.js"></script>
+
+    <!-- Secondary Styles
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+
+    <!-- McAfee trust mark
+    ================================================== -->
+    <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+</body>
+</html>

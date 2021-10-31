@@ -28,25 +28,22 @@ And the resetting of line is required because, the 2 for loops need to run again
 
 */
 
-function pyramid (totalRows) {
+function pyramid(totalRows) {
+  for (let row = 0; row < totalRows; row++) {
+    let line = "";
 
-    for (let row = 0; row < totalRows; row++ ) {
-
-        let line = '';
-
-        // loop for first column-1 where I will print a single space
-        for (let col1 = 0; col1 < totalRows - row; col1++) {
-            line += " "
-        }
-
-        // loop for second column-2 where I will print "* + single space "
-        for (let col2 = 0; col2 <= row; col2++) {
-            line += "* ";
-        }
-        console.log(line);
-        line = '';
+    // loop for first column-1 where I will print a single space
+    for (let col1 = 0; col1 < totalRows - row; col1++) {
+      line += " ";
     }
 
+    // loop for second column-2 where I will print "* + single space "
+    for (let col2 = 0; col2 <= row; col2++) {
+      line += "* ";
+    }
+    console.log(line);
+    line = "";
+  }
 }
 
 pyramid(5);
@@ -77,25 +74,20 @@ E> For second line - i.e. for second loop >> print col-1's output 4 times and co
 
 F> For third line - i.e. for third loop >> print col-1's output 3 times and col-2's output 3 times. */
 
-printPyramid = totalRows => {
+printPyramid = (totalRows) => {
+  for (let row = 0; row < totalRows; row++) {
+    let line = "";
 
-    for (let row = 0; row < totalRows; row++ ) {
-
-        let line = ''
-
-        for ( let col1 = 0; col1 < totalRows - row; col1++) {
-
-            line = line + ' '
-
-        }
-
-        for (let col2 = 0; col2 <= (( 2 * row) + 1); col2++ ) {
-
-              line = line + "*"
-        }
-
-        console.log(line);
+    for (let col1 = 0; col1 < totalRows - row; col1++) {
+      line = line + " ";
     }
-}
 
-printPyramid(5)
+    for (let col2 = 0; col2 <= 2 * row + 1; col2++) {
+      line = line + "*";
+    }
+
+    console.log(line);
+  }
+};
+
+printPyramid(5);

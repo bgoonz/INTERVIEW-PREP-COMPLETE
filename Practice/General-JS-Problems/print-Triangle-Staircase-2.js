@@ -14,25 +14,20 @@ Input Variable : Number of rows
 Observe that its base and height are both equal to number or totalRows (given as an argument to the function)
  */
 
-printTriangleStaircase = totalRows => {
+printTriangleStaircase = (totalRows) => {
+  for (let row = 0; row < totalRows; row++) {
+    let line = "";
 
-  for (let row = 0; row < totalRows; row++ ) {
+    for (let col1 = 0; col1 < totalRows - row; col1++) {
+      line = line + "";
+    }
 
-      let line = ''
+    for (let col2 = 0; col2 <= row; col2++) {
+      line = line + "*";
+    }
 
-      for ( let col1 = 0; col1 < totalRows - row; col1++) {
-
-          line = line + ''
-
-      }
-
-      for (let col2 = 0; col2 <= row; col2++ ) {
-
-            line = line + "*"
-      }
-
-      console.log(line);
+    console.log(line);
   }
-}
+};
 
-printTriangleStaircase(5)
+printTriangleStaircase(5);
