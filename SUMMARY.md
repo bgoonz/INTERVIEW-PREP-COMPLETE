@@ -2,8 +2,8 @@
 
 * [🏡 Home](README.md)
 * [🗺 Navigation](navigation.md)
-* [Useful Downloads](useful-downloads.md)
-* [Skills](skills/README.md)
+* [📥 Useful Downloads](useful-downloads.md)
+* [🛠 Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
 * [🙏 Resources](resources/README.md)
   * [Orientation:](resources/orientation.md)
@@ -21,6 +21,7 @@
 ## Cover Letter
 
 * [📒 Cover Letter](cover-letter/page-10.md)
+* [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 
 ## Portfolio
 
@@ -32,14 +33,21 @@
 
 * [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
 * [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
-* [Slack Announcements](slack-and-lambda/slack-announcements.md)
+* [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 People](slack-and-lambda/people.md)
 
+## Aux-Resources
+
+* [Youtube](aux-resources/youtube.md)
+
 ## 🖋 Interview Prep
 
-* [Interview Questions.](interview-prep/interview-questions./README.md)
+* [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets.md)
+* [Python-VS-JS Cheat Sheet](interview-prep/python-vs-js-cheat-sheet.md)
+* [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
+* [Types Of Data Structures](interview-prep/types-of-data-structures.md)
 * [👨💻 Leetcode:](ds\_algo\_prac/leetcode.md)
 * [Hash Tables](interview-prep/hash-tables.md)
 * [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
@@ -50,12 +58,12 @@
 ## Tutorials
 
 * [Job Search Guide](tutorials/untitled/README.md)
-  * [Page 2](tutorials/untitled/page-2.md)
-  * [Page 2](tutorials/untitled/page-2-1.md)
+  * [Common Questions](tutorials/untitled/page-2.md)
+  * [Self Introduction](tutorials/untitled/page-2-1.md)
 
 ***
 
-* [Page 3](page-3.md)
+* [Getting Started](page-3.md)
 
 ## Applications & Job Postings
 
@@ -65,6 +73,7 @@
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
     * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
+  * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
 
 ## Job Boards
 
