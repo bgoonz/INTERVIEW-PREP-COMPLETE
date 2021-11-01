@@ -1,4 +1,4 @@
-# Recordings
+# 📺 Recordings
 
 {% embed url="https://www.loom.com/share/7c99c4ca9e2d4377b84e5c1cc2a8aea7" %}
 
