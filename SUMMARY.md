@@ -35,7 +35,7 @@
 * [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 
 ## Aux-Resources
 
@@ -44,15 +44,16 @@
 ## 🖋 Interview Prep
 
 * [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
-  * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets.md)
-* [Python-VS-JS Cheat Sheet](interview-prep/python-vs-js-cheat-sheet.md)
+  * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/README.md)
+    * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
+    * [🐍 Python](interview-prep/interview-questions./cheat-sheets/python.md)
+  * [Front End Questions](interview-prep/interview-questions./front-end-questions.md)
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
-* [👨💻 Leetcode:](ds\_algo\_prac/leetcode.md)
-* [Hash Tables](interview-prep/hash-tables.md)
-* [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
+* [👨💻 👨💻 Leetcode:](ds\_algo\_prac/leetcode.md)
+* [🥅 Hash Tables](interview-prep/hash-tables.md)
+* [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
-* [🐍 Python](interview-prep/python.md)
 * [More Practice:](interview-prep/more-practice.md)
 
 ## Tutorials

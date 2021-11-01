@@ -8,25 +8,25 @@ coverY: 0
 
 # 🏡 Home
 
+## 🏡 Home
+
 {% content-ref url="navigation.md" %}
 [navigation.md](navigation.md)
 {% endcontent-ref %}
 
-## [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
+### [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
 
 ![](.gitbook/assets/github.png)
 
-##
+###
 
-## Certification:
+### Certification:
 
 {% embed url="https://codesandbox.io/s/badge-wf3yh" %}
 
 <table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td><img src=".gitbook/assets/image (1).png" alt=""></td><td><img src=".gitbook/assets/image (5).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
 
-## Social:
-
-
+### Social:
 
 | [GitHub](https://github.com/bgoonz)                                                                 | [Gitlab](https://gitlab.com/bryan.guner.dev)                                         | [Bitbucket](https://bitbucket.org/bgoonz/)        | [Medium](https://bryanguner.medium.com)                                   | [code pen](https://codepen.io/bgoonz)                                        |
 | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
@@ -37,8 +37,6 @@ coverY: 0
 | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)             | [Netlify](https://app.netlify.com/user/settings#profile)                             | [Stackblitz](https://stackblitz.com/@bgoonz)      | [Vercel](https://vercel.com/bgoonz)                                       | [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured) |
 | [wordpress](https://web-dev-hub.com)                                                                | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)                                  | [Vinmeo](https://vimeo.com/user128661018)         | [js fiddle](https://jsfiddle.net/user/bgoonz/)                            | [hashnode](https://hashnode.com/@bgoonz/joinme)                              |
 | [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646)           | [Gittee](https://gitee.com/bgoonz)                                                   | [Wakatime](https://wakatime.com/@bgoonz42)        | [Hubpages](https://hubpages.com/@bryanguner)                              | [Gitbook](https://bryan-guner.gitbook.io/web-dev-hub-docs/)                  |
-
-
 
 {% hint style="info" %}
 \----------------------------------------------------------------------------------------
@@ -78,116 +76,107 @@ Calendar
 \----------------------------------------------------------------------------------------
 {% endhint %}
 
+## Table of contents
 
+* [🏡 Home](./)
+* [🗺 Navigation](navigation.md)
+* [📥 Useful Downloads](useful-downloads.md)
+* [🛠 Skills](skills/)
+  * [My Stack](skills/my-stack.md)
+* [🙏 Resources](resources/)
+  * [Orientation:](resources/orientation.md)
+  * [Links](resources/links.md)
+  * [Practice Problems:](resources/practice-problems.md)
+  * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
+  * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
 
+### Resume
 
+* [📰 Resume](resume/resume/)
+  * [Examples](resume/resume/examples.md)
+  * [Advice](resume/resume/advice.md)
 
+### Cover Letter
 
+* [📒 Cover Letter](cover-letter/page-10.md)
+* [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 
+### Portfolio
 
+* [💼 Showcase](portfolio/showcase.md)
+* [💾 Git Repo](portfolio/git-repo.md)
+* [🖼 Portfolio](portfolio/page-11.md)
 
+### 📈 Slack\&Lambda
 
-# Table of contents
+* [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
+* [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
+* [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
+* [📺 Recordings](slack-and-lambda/recordings.md)
+* [🧑🤝🧑 People](slack-and-lambda/people.md)
 
-* [🏡 Home](./README.md)
-* [🗺 Navigation](./navigation.md)
-* [📥 Useful Downloads](./useful-downloads.md)
-* [🛠 Skills](./skills/README.md)
-  * [My Stack](./skills/my-stack.md)
-* [🙏 Resources](./resources/README.md)
-  * [Orientation:](./resources/orientation.md)
-  * [Links](./resources/links.md)
-  * [Practice Problems:](./resources/practice-problems.md)
-  * [❄ Cold Outreach Generator](./resources/cold-outreach-generator.md)
-  * [Running List Of MISC Resources:](./resources/running-list-of-misc-resources.md)
+### Aux-Resources
 
-## Resume
+* [Youtube](aux-resources/youtube.md)
 
-* [📰 Resume](./resume/resume/README.md)
-  * [Examples](./resume/resume/examples.md)
-  * [Advice](./resume/resume/advice.md)
+### 🖋 Interview Prep
 
-## Cover Letter
+* [⁉ Interview Questions.](interview-prep/interview-questions./)
+  * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/)
+* [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
+* [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
+* [Types Of Data Structures](interview-prep/types-of-data-structures.md)
+* [👨💻 Leetcode:](ds\_algo\_prac/leetcode.md)
+* [Hash Tables](interview-prep/hash-tables.md)
+* [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/)
+  * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
+* [🐍 Python](interview-prep/interview-questions./cheat-sheets/python.md)
+* [More Practice:](interview-prep/more-practice.md)
 
-* [📒 Cover Letter](./cover-letter/page-10.md)
-* [Example Of Developer Bio](./cover-letter/example-of-developer-bio.md)
+### Tutorials
 
-## Portfolio
-
-* [💼 Showcase](./portfolio/showcase.md)
-* [💾 Git Repo](./portfolio/git-repo.md)
-* [🖼 Portfolio](./portfolio/page-11.md)
-
-## 📈 Slack\&Lambda
-
-* [📍 Pinned Items:](./slack-and-lambda/pinned-items.md)
-* [📌 Pinned Messages:](./slack-and-lambda/pinned-messages.md)
-* [❇ Slack Announcements](./slack-and-lambda/slack-announcements.md)
-* [📺 Recordings](./slack-and-lambda/recordings.md)
-* [🧑🤝🧑 People](./slack-and-lambda/people.md)
-
-## Aux-Resources
-
-* [Youtube](./aux-resources/youtube.md)
-
-## 🖋 Interview Prep
-
-* [⁉ Interview Questions.](./interview-prep/interview-questions./README.md)
-  * [Cheat Sheets](./interview-prep/interview-questions./cheat-sheets.md)
-* [Python-VS-JS Cheat Sheet](./interview-prep/python-vs-js-cheat-sheet.md)
-* [Common Knowledge Questions](./interview-prep/common-knowledge-questions.md)
-* [Types Of Data Structures](./interview-prep/types-of-data-structures.md)
-* [👨💻 Leetcode:](./ds\_algo\_prac/leetcode.md)
-* [Hash Tables](./interview-prep/hash-tables.md)
-* [DS\_ALGO Practice:](./interview-prep/ds\_algo-practice/README.md)
-  * [Python Subpage](./interview-prep/ds\_algo-practice/python-subpage.md)
-* [🐍 Python](./interview-prep/python.md)
-* [More Practice:](./interview-prep/more-practice.md)
-
-## Tutorials
-
-* [Job Search Guide](./tutorials/untitled/README.md)
-  * [Common Questions](./tutorials/untitled/page-2.md)
-  * [Self Introduction](./tutorials/untitled/page-2-1.md)
+* [Job Search Guide](tutorials/untitled/)
+  * [Common Questions](tutorials/untitled/page-2.md)
+  * [Self Introduction](tutorials/untitled/page-2-1.md)
 
 ***
 
-* [Getting Started](./page-3.md)
+* [Getting Started](page-3.md)
 
-## Applications & Job Postings
+### Applications & Job Postings
 
-* [👔 Postings:](./applications-and-job-postings/postings.md)
-* [My Applications](./applications-and-job-postings/my-applications.md)
-* [😅 Jobs I Really Want](./applications-and-job-postings/jobs-i-really-want/README.md)
-  * [Stackbit](./applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
-    * [Developer Advocate (Remote)](./applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
-    * [Page 4](./applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
-  * [Emails](./applications-and-job-postings/jobs-i-really-want/emails.md)
+* [👔 Postings:](applications-and-job-postings/postings.md)
+* [My Applications](applications-and-job-postings/my-applications.md)
+* [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/)
+  * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/)
+    * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
+    * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
+  * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
 
-## Job Boards
+### Job Boards
 
-* [📋 Job Boards](./job-boards/job-boards/README.md)
-  * [Less Promising Job Boards](./job-boards/job-boards/less-promising-job-boards.md)
-  * [LIST OF BOARDS](./job-boards/job-boards/list-of-boards.md)
+* [📋 Job Boards](job-boards/job-boards/)
+  * [Less Promising Job Boards](job-boards/job-boards/less-promising-job-boards.md)
+  * [LIST OF BOARDS](job-boards/job-boards/list-of-boards.md)
 
-## Networking
+### Networking
 
-* [🗓 Events](./networking/events.md)
+* [🗓 Events](networking/events.md)
 
-## Lambda Guidance & Meetings
+### Lambda Guidance & Meetings
 
-* [📥 Meetings:](./lambda-guidance-and-meetings/meetings.md)
+* [📥 Meetings:](lambda-guidance-and-meetings/meetings.md)
 
-## MISC
+### MISC
 
-* [🗞 Articles To Read](./misc/articles-to-read.md)
+* [🗞 Articles To Read](misc/articles-to-read.md)
 
-## Notes
+### Notes
 
-* [📓 Notes](./notes/notes/README.md)
-  * [Page 5](./notes/notes/page-5.md)
+* [📓 Notes](notes/notes/)
+  * [Page 5](notes/notes/page-5.md)
 
-## 🖨 Interviewing
+### 🖨 Interviewing
 
-* [General](./interviewing/general.md)
-* [🖥 JS](./interviewing/js.md)
+* [General](interviewing/general.md)
+* [🖥 JS](interviewing/js.md)
