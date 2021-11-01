@@ -1,2 +1,2 @@
-# 😅 Jobs I Really Want
+# Jobs I Really Want
 

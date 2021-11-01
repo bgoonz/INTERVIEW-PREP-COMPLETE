@@ -1,4 +1,4 @@
-# 📓 Notes
+# Notes
 
 #### Job Boards and The Hunt <a href="a7fb" id="a7fb"></a>
 

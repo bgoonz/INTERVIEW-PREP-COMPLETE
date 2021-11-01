@@ -1,11 +1,12 @@
 # Table of contents
 
-* [🏡 Home](README.md)
+* [Home](README.md)
+* [🏡 Home](<README (1).md>)
 * [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
-* [🛠 Skills](skills/README.md)
+* [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
-* [🙏 Resources](resources/README.md)
+* [Resources](resources/README.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
   * [Practice Problems:](resources/practice-problems.md)
@@ -14,28 +15,33 @@
 
 ## Resume
 
-* [📰 Resume](resume/resume/README.md)
+* [Resume](resume/resume/README.md)
   * [Examples](resume/resume/examples.md)
   * [Advice](resume/resume/advice.md)
 
+## Job Postings
+
+* [Jobs To Apply To:](job-postings/jobs-to-apply-to.md)
+
 ## Cover Letter
 
-* [📒 Cover Letter](cover-letter/page-10.md)
+* [Cover Letter](cover-letter/page-10.md)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 
 ## Portfolio
 
-* [💼 Showcase](portfolio/showcase.md)
+* [Showcase](portfolio/showcase.md)
 * [💾 Git Repo](portfolio/git-repo.md)
 * [🖼 Portfolio](portfolio/page-11.md)
 
 ## 📈 Slack\&Lambda
 
-* [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
-* [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
+* [Pinned Items:](slack-and-lambda/pinned-items.md)
+* [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 
 ## Aux-Resources
 
@@ -50,7 +56,7 @@
   * [Front End Questions](interview-prep/interview-questions./front-end-questions.md)
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
-* [👨💻 👨💻 Leetcode:](ds\_algo\_prac/leetcode.md)
+* [👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
@@ -58,19 +64,19 @@
 
 ## Tutorials
 
-* [Job Search Guide](tutorials/untitled/README.md)
-  * [Common Questions](tutorials/untitled/page-2.md)
-  * [Self Introduction](tutorials/untitled/page-2-1.md)
+* [Custom Outreach Message Generator](tutorials/custom-outreach-message-generator/README.md)
+  * [Common Questions](tutorials/custom-outreach-message-generator/page-2.md)
+  * [Self Introduction](tutorials/custom-outreach-message-generator/page-2-1.md)
 
 ***
 
-* [Getting Started](page-3.md)
+* [Technical Interview Tutorial](page-3.md)
 
 ## Applications & Job Postings
 
-* [👔 Postings:](applications-and-job-postings/postings.md)
+* [Postings:](applications-and-job-postings/postings.md)
 * [My Applications](applications-and-job-postings/my-applications.md)
-* [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
+* [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
     * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
@@ -88,15 +94,16 @@
 
 ## Lambda Guidance & Meetings
 
-* [📥 Meetings:](lambda-guidance-and-meetings/meetings.md)
+* [Meetings:](lambda-guidance-and-meetings/meetings.md)
+* [Page 1](lambda-guidance-and-meetings/page-1.md)
 
 ## MISC
 
-* [🗞 Articles To Read](misc/articles-to-read.md)
+* [Articles To Read](misc/articles-to-read.md)
 
 ## Notes
 
-* [📓 Notes](notes/notes/README.md)
+* [Notes](notes/notes/README.md)
   * [Page 5](notes/notes/page-5.md)
 
 ## 🖨 Interviewing
