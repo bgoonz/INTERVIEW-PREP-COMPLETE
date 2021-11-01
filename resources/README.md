@@ -1,4 +1,4 @@
-# Resources
+# 🙏 Resources
 
 {% embed url="https://discord.com/invite/9K84yNM" %}
 

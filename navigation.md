@@ -1,4 +1,4 @@
-# Navigation
+# 🗺 Navigation
 
 {% content-ref url="./" %}
 [.](./)

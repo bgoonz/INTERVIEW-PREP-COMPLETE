@@ -6,7 +6,7 @@ cover: .gitbook/assets/background (1).jpg
 coverY: 0
 ---
 
-# Home
+# 🏡 Home
 
 {% content-ref url="navigation.md" %}
 [navigation.md](navigation.md)
