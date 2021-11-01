@@ -1,6 +1,8 @@
 ---
-description: https://bryan-guner.gitbook.io/job-search/
-cover: .gitbook/assets/Animation.gif
+description: >-
+  https://bryan-guner.gitbook.io/job-search/                                             
+  https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE
+cover: .gitbook/assets/background (1).jpg
 coverY: 0
 ---
 
@@ -10,7 +12,11 @@ coverY: 0
 [navigation.md](navigation.md)
 {% endcontent-ref %}
 
-## [https://bryan-guner.gitbook.io/job-search/](./#https-bryan-guner.gitbook.io-job-search)
+## [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
+
+![](.gitbook/assets/github.png)
+
+##
 
 ## Certification:
 

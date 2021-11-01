@@ -17,6 +17,7 @@
 * [Resume](resume/resume/README.md)
   * [William's Feedback:](resume/resume/williams-feedback.md)
   * [Examples](resume/resume/examples.md)
+  * [Advice](resume/resume/advice.md)
 
 ## Cover Letter
 
@@ -25,13 +26,13 @@
 ## Portfolio
 
 * [Showcase](portfolio/showcase.md)
-* [💾 Git Repo](portfolio/git-repo.md)
+* [Git Repo](portfolio/git-repo.md)
 * [Portfolio](portfolio/page-11.md)
 
 ## 📈 Slack\&Lambda
 
 * [Pinned Items:](slack-and-lambda/pinned-items.md)
-* [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
+* [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [Recordings](slack-and-lambda/recordings.md)
 * [People](slack-and-lambda/people.md)
@@ -40,7 +41,7 @@
 
 * [Interview Questions.](interview-prep/interview-questions./README.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets.md)
-* [Leetcode:](interview-prep/leetcode.md)
+* [Leetcode:](ds\_algo\_prac/leetcode.md)
 * [Hash Tables](interview-prep/hash-tables.md)
 * [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
@@ -88,3 +89,8 @@
 
 * [Notes](notes/notes/README.md)
   * [Page 5](notes/notes/page-5.md)
+
+## 🖨 Interviewing
+
+* [General](interviewing/general.md)
+* [JS](interviewing/js.md)
