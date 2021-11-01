@@ -48,21 +48,37 @@
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
+{% content-ref url="tutorials/untitled/" %}
+[untitled](tutorials/untitled/)
+{% endcontent-ref %}
 
+{% content-ref url="interview-prep/ds_algo-practice/python-subpage.md" %}
+[python-subpage.md](interview-prep/ds\_algo-practice/python-subpage.md)
+{% endcontent-ref %}
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
+{% content-ref url="resume/resume/examples.md" %}
+[examples.md](resume/resume/examples.md)
+{% endcontent-ref %}
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
+{% content-ref url="interview-prep/common-knowledge-questions.md" %}
+[common-knowledge-questions.md](interview-prep/common-knowledge-questions.md)
+{% endcontent-ref %}
 
-
-
-
-
-
-
-
-
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 
 
