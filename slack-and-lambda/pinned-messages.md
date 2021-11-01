@@ -1,4 +1,4 @@
-# 📌 Pinned Messages:
+# Pinned Messages:
 
 ![](https://ca.slack-edge.com/ESZCHB482-U0259NF2NTZ-71effe5c424a-24) [Shelby Schisler](https://app.slack.com/team/U0259NF2NTZ) **HOW TO TELL IF A JOB IS A SCAM** **@channel**\
 We’ve had an influx of questions surrounding this topic recently and wanted to share some quick things to check if you’re worried about a potential scam.**10 signs of a scam:**\

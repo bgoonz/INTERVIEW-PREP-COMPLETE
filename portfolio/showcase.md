@@ -1,2 +1,2 @@
-# 💼 Showcase
+# Showcase
 

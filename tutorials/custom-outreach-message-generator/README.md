@@ -1,9 +1,15 @@
 ---
+description: >-
+  helps expedite the process of reaching out to any company by using our help
+  finding the right person's contact information and creating a customized
+  outreach message plan for you!
 cover: ../../.gitbook/assets/background.jpg
 coverY: 0
 ---
 
-# Job Search Guide
+# Custom Outreach Message Generator
+
+The [**Custom Outreach Message Generator**](https://airtable.com/shryGIBnZrpOlqddp) helps expedite the process of reaching out to any company by using our help finding the right person's contact information and creating a customized outreach message plan for you!
 
 ### Week 1 of Your Job Search:
 

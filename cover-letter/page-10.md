@@ -1,4 +1,4 @@
-# 📒 Cover Letter
+# Cover Letter
 
 
 

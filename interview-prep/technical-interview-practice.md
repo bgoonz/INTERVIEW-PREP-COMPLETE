@@ -1,8 +1,4 @@
----
-description: https://github.com/bgoonz/Leetcode-JS-PY-MD
----
-
-# Leetcode:
+# 👨💻 Technical Interview Practice
 
 {% embed url="https://codesandbox.io/s/leetcode-egdpt?file=%2Findex.html" %}
 
