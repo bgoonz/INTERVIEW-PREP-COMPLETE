@@ -77,7 +77,7 @@
 | [You Need A Budget](https://www.youneedabudget.com) | Budgeting Application                          | Ruby, Mobile, Web                                    | ✓                                  | <p><span data-gb-custom-inline data-tag="emoji" data-code="2328">⌨</span> <a href="https://www.youneedabudget.com/careers/">Jobs</a><br><span data-gb-custom-inline data-tag="emoji" data-code="1f6aa">🚪</span> <a href="https://www.glassdoor.com/Reviews/You-Need-A-Budget-Reviews-E1026556.htm">Glassdoor</a></p>                                                                                                                                                                                                                            |
 | [Zapier](https://zapier.com)                        | App connectors                                 | Python, Node, Web                                    | ✓                                  | <p><span data-gb-custom-inline data-tag="emoji" data-code="2328">⌨</span> <a href="https://zapier.com/jobs/">Jobs</a><br><span data-gb-custom-inline data-tag="emoji" data-code="1f6aa">🚪</span> <a href="https://www.glassdoor.com.au/Overview/Working-at-Zapier-EI_IE1196705.11,17.htm">Glassdoor</a></p>                                                                                                                                                                                                                                     |
 
-![](<../.gitbook/assets/image (7).png>)
+![](<../.gitbook/assets/image (8).png>)
 
 {% embed url="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5PZMEKOGmx9K324qQ6KQzdKLo6J2u4cEoGNZddpivBhswTO3TDsrIqZI0w1GvlVAPdJbChHvm4uDJ/pubhtml?amp%3Bheaders=false&widget=true" %}
 
