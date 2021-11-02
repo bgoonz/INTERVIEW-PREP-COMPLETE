@@ -1,7 +1,5 @@
 # Remote Positions
 
-
-
 | Company                                             | Business/products                              | Tech stack/skills                                    | Globally-competitive compensation? | Job page & other links                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | --------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [10up](https://10up.com)                            | Web consulting                                 | WordPress, PHP, Node, Web                            | ✗                                  | <p><span data-gb-custom-inline data-tag="emoji" data-code="2328">⌨</span> <a href="https://10up.com/careers/">Jobs</a><br><span data-gb-custom-inline data-tag="emoji" data-code="1f6aa">🚪</span> <a href="https://www.glassdoor.com.au/Overview/Working-at-10Up-EI_IE775906.11,15.htm">Glassdoor</a></p>                                                                                                                                                                                                                                       |
@@ -79,15 +77,13 @@
 | [You Need A Budget](https://www.youneedabudget.com) | Budgeting Application                          | Ruby, Mobile, Web                                    | ✓                                  | <p><span data-gb-custom-inline data-tag="emoji" data-code="2328">⌨</span> <a href="https://www.youneedabudget.com/careers/">Jobs</a><br><span data-gb-custom-inline data-tag="emoji" data-code="1f6aa">🚪</span> <a href="https://www.glassdoor.com/Reviews/You-Need-A-Budget-Reviews-E1026556.htm">Glassdoor</a></p>                                                                                                                                                                                                                            |
 | [Zapier](https://zapier.com)                        | App connectors                                 | Python, Node, Web                                    | ✓                                  | <p><span data-gb-custom-inline data-tag="emoji" data-code="2328">⌨</span> <a href="https://zapier.com/jobs/">Jobs</a><br><span data-gb-custom-inline data-tag="emoji" data-code="1f6aa">🚪</span> <a href="https://www.glassdoor.com.au/Overview/Working-at-Zapier-EI_IE1196705.11,17.htm">Glassdoor</a></p>                                                                                                                                                                                                                                     |
 
-&#x20;
-
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 {% embed url="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5PZMEKOGmx9K324qQ6KQzdKLo6J2u4cEoGNZddpivBhswTO3TDsrIqZI0w1GvlVAPdJbChHvm4uDJ/pubhtml?amp%3Bheaders=false&widget=true" %}
 
-![](../.gitbook/assets/2ZLaE4LbSM.png)
+![](<../.gitbook/assets/2ZLaE4LbSM (3).png>)
 
-## &#x20;More Companies
+## More Companies
 
 | Name                                         | Website                                                              | Region                                       |
 | -------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------- |
@@ -709,8 +705,6 @@
 | Zip.co                                       | https://zip.co/us/                                                   | USA, Canada                                  |
 | Zup                                          | https://zup.com.br/                                                  | Brazil                                       |
 
-
-
 Notes:
 
 * _Web_ covers the usual front-end skills, _Mobile_ usually means iOS and Android, and _DevOps_ is listed for companies where this is one of the main focus areas.
@@ -744,8 +738,6 @@ Notes:
 * [Stack Overflow remote job listings](https://stackoverflow.com/jobs?allowsremote=true)
 * [WeWorkRemotely](https://weworkremotely.com)
 * [Working Nomads](http://www.workingnomads.co/jobs)
-
-
 
 ### Articles & Posts
 

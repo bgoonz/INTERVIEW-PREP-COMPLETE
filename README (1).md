@@ -22,7 +22,7 @@ coverY: 0
 
 {% embed url="https://codesandbox.io/s/badge-wf3yh" %}
 
-<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td><img src=".gitbook/assets/image (1).png" alt=""></td><td><img src=".gitbook/assets/image (5).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7) (1).png" alt=""></td><td><img src=".gitbook/assets/image (1).png" alt=""></td><td><img src=".gitbook/assets/image (5).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
 
 ### Social:
 
@@ -119,7 +119,7 @@ Calendar
 
 ### 🖋 Interview Prep
 
-* [⁉ Interview Questions.](interview-prep/interview-questions./)
+* [⁉ Interview Questions.](interview-prep/interview-questions.)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/)
 * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)

@@ -1,7 +1,5 @@
 # Job Search Advice
 
-
-
 ## YOUR RESUME <a href="your-resume" id="your-resume"></a>
 
 Your resume is your personal summary sheet. Your resume is the thing that gets your foot in the door. So, there's a few things you should do (and not do) to make it as awesome as you are.
@@ -232,7 +230,7 @@ When you're talking to companies about specific things you've done, make sure th
 
 ### Docker <a href="docker_376" id="docker_376"></a>
 
-**Deploy Stacks to your Swarm: :whale: :heart:**
+**Deploy Stacks to your Swarm: **:whale:** **:heart:
 
 Logging:
 
@@ -2221,4 +2219,3 @@ const componentElement = < Component / >
     const domNodeElement = < div / >
     
 ```
-
