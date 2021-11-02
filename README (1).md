@@ -8,8 +8,8 @@ coverY: 0
 
 ## 🏡 Home
 
-{% content-ref url="navigation.md" %}
-[navigation.md](navigation.md)
+{% content-ref url="navigation-1.md" %}
+[navigation-1.md](navigation-1.md)
 {% endcontent-ref %}
 
 ### [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
@@ -77,7 +77,7 @@ Calendar
 ## Table of contents
 
 * [🏡 Home](<README (1).md>)
-* [🗺 Navigation](navigation.md)
+* [🗺 Navigation](navigation-1.md)
 * [📥 Useful Downloads](useful-downloads.md)
 * [🛠 Skills](skills/)
   * [My Stack](skills/my-stack.md)
