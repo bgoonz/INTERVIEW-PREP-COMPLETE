@@ -7,11 +7,12 @@
 * [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
 * [Resources](resources/README.md)
+  * [Job Search Advice](resources/job-search-advice.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
   * [Practice Problems:](resources/practice-problems.md)
-  * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
   * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
+  * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
 
 ## Resume
 
@@ -22,6 +23,7 @@
 ## Job Postings
 
 * [Jobs To Apply To:](job-postings/jobs-to-apply-to.md)
+* [Remote Positions](job-postings/remote-positions.md)
 
 ## Cover Letter
 
