@@ -2,7 +2,8 @@
 
 * [Home](README.md)
 * [🏡 Home](<README (1).md>)
-* [🗺 Navigation](navigation.md)
+* [Navigation](navigation.md)
+* [🗺 Navigation](navigation-1.md)
 * [📥 Useful Downloads](useful-downloads.md)
 * [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
