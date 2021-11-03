@@ -52,7 +52,7 @@ hi
 
 {% embed url="https://codesandbox.io/s/badge-wf3yh" %}
 
-<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7) (1).png" alt=""></td><td><img src=".gitbook/assets/image (1).png" alt=""></td><td><img src=".gitbook/assets/image (5) (1).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td><img src=".gitbook/assets/image (1).png" alt=""></td><td><img src=".gitbook/assets/image (5).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
 
 ### Social:
 
@@ -207,4 +207,4 @@ Calendar
 ### 🖨 Interviewing
 
 * [General](interviewing/general.md)
-* [🖥 JS](interviewing/js/)
+* [🖥 JS](interviewing/js.md)
