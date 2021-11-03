@@ -191,4 +191,4 @@ Calendar
 ### 🖨 Interviewing
 
 * [General](interviewing/general.md)
-* [🖥 JS](interviewing/js.md)
+* [🖥 JS](interviewing/js/)
