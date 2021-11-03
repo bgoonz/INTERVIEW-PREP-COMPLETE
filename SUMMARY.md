@@ -113,4 +113,17 @@
 ## 🖨 Interviewing
 
 * [General](interviewing/general.md)
-* [🖥 JS](interviewing/js.md)
+* [🖥 General](interviewing/js/README.md)
+  * [Solutions For Beginners](interviewing/js/solutions-for-beginners.md)
+  * [Adding CSS To Your HTML](interviewing/js/adding-css-to-your-html.md)
+  * [Most Common Javascript Errors](interviewing/js/most-common-javascript-errors.md)
+  * [CSS Interview Prep Quiz](interviewing/js/css-interview-prep-quiz.md)
+  * [Modules in Javascript](interviewing/js/modules-in-javascript.md)
+  * [Cheatsheet Compilation](interviewing/js/cheatsheet-compilation.md)
+  * [The ExpressJS Way To Write APIs](interviewing/js/the-expressjs-way-to-write-apis.md)
+  * [Resources)](interviewing/js/resources.md)
+  * [scrap](interviewing/js/scrap.md)
+  * [Machine Learner](interviewing/js/machine-learner.md)
+  * [The Penultimate Web Developer’s Cheat Sheet](interviewing/js/the-penultimate-web-developers-cheat-sheet.md)
+  * [Here’s the expanded list:](interviewing/js/heres-the-expanded-list.md)
+  * [The Complete JavaScript Reference Guide](interviewing/js/the-complete-javascript-reference-guide.md)
