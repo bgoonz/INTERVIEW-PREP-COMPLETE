@@ -8,7 +8,9 @@ Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Ja
 
 #### Heroku lets you deploy, run and manage applications written in Ruby, Node.js, Java, Python, Clojure, Scala, Go and PHP. An application is a collection of _source code_ written in one of these languages, perhaps a framework, and some _dependency description_ that instructs a build system as to which additional dependencies are needed in order to build and run the application.
 
-![](https://cdn-images-1.medium.com/max/800/0\*gAOfoFENBTwE5mqJ.gif)#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
+\#### This is a quick tutorial explaining how to get a static website hosted on Heroku.
+
+![](https://cdn-images-1.medium.com/max/800/0\*gAOfoFENBTwE5mqJ.gif)
 
 > Heroku hosts apps on the internet, not static websites. To get it to run your static portfolio, personal blog, etc., you need to trick Heroku into thinking your website is a PHP app.
 
@@ -45,6 +47,8 @@ On GitHub, go ahead and create a new repository for your application, like this:
 ![](https://cdn-images-1.medium.com/max/800/0\*pyHPJP0kjAV9sij1.PNG)To upload your local code into a repository, you need to run the commands that are listed on GitHub after you click \`Create repository\` button:![](https://cdn-images-1.medium.com/max/800/0\*C7nOWV7ygqTRdqcu.PNG)\*\*!\*\* Before we do this, we must ignore some files. We want to upload to the repository only the code that we write, without the dependencies (the installed modules).
 
 For that, we need to create a new file `.gitignore` and inside it write the file that we want to ignore.
+
+
 
 ![](https://cdn-images-1.medium.com/max/800/0\*T-9QyGzUdWvFuA-D.PNG)Now, we can write the commands listed in the picture above (the one from GitHub).
 

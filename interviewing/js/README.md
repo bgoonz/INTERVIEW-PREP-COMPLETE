@@ -1,6 +1,4 @@
-# 🖥 JS
-
-
+# 🖥 General
 
 * Explain event delegation.
 * Explain how `this` works in JavaScript.

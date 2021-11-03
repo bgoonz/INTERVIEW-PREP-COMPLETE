@@ -113,7 +113,9 @@
 ## 🖨 Interviewing
 
 * [General](interviewing/general.md)
+* [Inspiration](interviewing/inspiration.md)
 * [🖥 General](interviewing/js/README.md)
+  * [Page 2](interviewing/js/page-2.md)
   * [Solutions For Beginners](interviewing/js/solutions-for-beginners.md)
   * [Adding CSS To Your HTML](interviewing/js/adding-css-to-your-html.md)
   * [Most Common Javascript Errors](interviewing/js/most-common-javascript-errors.md)
@@ -127,3 +129,10 @@
   * [The Penultimate Web Developer’s Cheat Sheet](interviewing/js/the-penultimate-web-developers-cheat-sheet.md)
   * [Here’s the expanded list:](interviewing/js/heres-the-expanded-list.md)
   * [The Complete JavaScript Reference Guide](interviewing/js/the-complete-javascript-reference-guide.md)
+  * [This is really cool!](interviewing/js/this-is-really-cool.md)
+  * [Solutions For Beginners](interviewing/js/solutions-for-beginners-1.md)
+  * [Job Boards and The Hunt](interviewing/js/job-boards-and-the-hunt.md)
+  * [Libraries](interviewing/js/libraries.md)
+  * [Machine Learner](interviewing/js/machine-learner-1.md)
+  * [Here’s the expanded list:](interviewing/js/heres-the-expanded-list-1.md)
+  * [The Complete JavaScript Reference Guide](interviewing/js/the-complete-javascript-reference-guide-1.md)

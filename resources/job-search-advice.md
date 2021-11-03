@@ -1,3 +1,8 @@
+---
+cover: ../.gitbook/assets/3.jpg
+coverY: 0
+---
+
 # Job Search Advice
 
 ## YOUR RESUME <a href="your-resume" id="your-resume"></a>
@@ -115,6 +120,9 @@ This guide isn't for teaching you these skills. But there are several guides, pr
 **General Guides**
 
 * [Sorting Algorithms](http://www.sorting-algorithms.com)
+
+{% embed url="https://codesandbox.io/s/different-sorting-ecogc" %}
+
 * [Big-O Cheat Sheet](http://bigocheatsheet.com)
 * [Data Structures and Algorithms Overview](http://www.dsalgo.com/2013/02/index.php.html?m=1)
 * [Algorithm Implementations](http://algorithm.zone)

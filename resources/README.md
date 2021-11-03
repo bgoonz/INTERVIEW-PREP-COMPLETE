@@ -2,6 +2,16 @@
 
 {% embed url="https://discord.com/invite/9K84yNM" %}
 
+i
+
+{% content-ref url="../" %}
+[..](../)
+{% endcontent-ref %}
+
+hi
+
+
+
 {% embed url="https://join.slack.com/t/coding-coach/shared_invite/zt-azgyhra9-TxZ1b4tiYuNtDuPGwE2stw" %}
 
 {% embed url="https://codesandbox.io/s/interview-prep-forked-gq9c8?file=%2Findex.html" %}
