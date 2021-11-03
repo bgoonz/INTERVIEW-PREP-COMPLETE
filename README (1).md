@@ -6,7 +6,23 @@ coverY: 0
 
 # 🏡 Home
 
+
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
+
+
 {% embed url="https://replit.com/@bgoonz/javascript-beginners-tutorial#.replit" %}
+
+hi
+
+{% content-ref url="./" %}
+[.](./)
+{% endcontent-ref %}
+
+hi
 
 
 
