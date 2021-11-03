@@ -52,11 +52,13 @@
 
 ## 🖋 Interview Prep
 
+* [General Advice & Tips](interview-prep/general-advice-and-tips.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/README.md)
     * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
     * [🐍 Python](interview-prep/interview-questions./cheat-sheets/python.md)
   * [Front End Questions](interview-prep/interview-questions./front-end-questions.md)
+* [37-Essential-Js-Questions](interview-prep/37-essential-js-questions.md)
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
 * [📈 Rubric](interview-prep/rubric.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
@@ -64,6 +66,7 @@
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
+* [FANG PREP (medium article)](interview-prep/fang-prep-medium-article.md)
 * [More Practice:](interview-prep/more-practice.md)
 
 ## Tutorials
@@ -114,7 +117,7 @@
 
 * [General](interviewing/general.md)
 * [Inspiration](interviewing/inspiration.md)
-* [🖥 General](interviewing/js/README.md)
+* [🖥 General](interviewing/js.md)
   * [Page 2](interviewing/js/page-2.md)
   * [Solutions For Beginners](interviewing/js/solutions-for-beginners.md)
   * [Adding CSS To Your HTML](interviewing/js/adding-css-to-your-html.md)
