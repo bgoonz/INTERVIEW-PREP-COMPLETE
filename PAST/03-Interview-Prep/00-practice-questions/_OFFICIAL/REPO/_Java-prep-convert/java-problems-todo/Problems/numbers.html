@@ -1,0 +1,2102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://nickguner.atlassian.net/wiki/plugins/viewsource/viewpagesrc.action?pageId=875823124 -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>View Source</title>
+  <link rel="canonical" href="https://nickguner.atlassian.net/wiki/pages/viewpage.action?pageId=$action.page.id">
+  <script>
+    window.WRM = window.WRM || {}; window.WRM._unparsedData = window.WRM._unparsedData || {}; window.WRM._unparsedErrors = window.WRM._unparsedErrors || {};
+    WRM._unparsedData[ "com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path" ] = "\"/wiki\"";
+    WRM._unparsedData[ "com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources" ] = "false";
+    if ( window.WRM._dataArrived ) window.WRM._dataArrived();</script>
+  <link type="text/css" rel="stylesheet" href="./numbers_files/aui-reset.css" data-wrm-external=""
+    data-wrm-key="com.atlassian.auiplugin:aui-reset" data-wrm-batch-type="resource" media="all">
+  <link type="text/css" rel="stylesheet" href="./numbers_files/aui-page-typography.css" data-wrm-external=""
+    data-wrm-key="com.atlassian.auiplugin:aui-page-typography" data-wrm-batch-type="resource" media="all">
+  <link type="text/css" rel="stylesheet" href="./numbers_files/batch.css" data-wrm-key="_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./numbers_files/batch(1).css" data-wrm-key="plugin.viewsource,-_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./numbers_files/batch(2).css" data-wrm-key="page,-_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./numbers_files/batch(3).css" media="print" data-wrm-key="page,-_super"
+    data-wrm-batch-type="context">
+  <link type="text/css" rel="stylesheet" href="./numbers_files/batch(4).css" data-wrm-key="editor-content,-_super"
+    data-wrm-batch-type="context" media="all">
+  <!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="//d2cyaw4z41y1zi.cloudfront.net/nickguner.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/264105304/h/d4e4e19c4669223aa75450869203638e/_/download/contextbatch/css/editor-content,-_super/batch.css?conditionalComment=lte+IE+9&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="editor-content,-_super" data-wrm-batch-type="context" media="all">
+<![endif]-->
+  <link type="text/css" rel="stylesheet" href="./numbers_files/colors.css" media="all">
+
+</head>
+
+<body class="mceContentBody aui-theme-default wiki-content fullsize">
+  <p>&nbsp;</p> <img class="editor-inline-macro" src="./numbers_files/macro" data-macro-name="toc"
+    data-macro-id="9b521095-8bc0-48b1-942a-254c31de5e31" data-macro-schema-version="1">
+  <h2>BiggestFromArray</h2>
+  <h3><code>makeBiggestNumberFromIntArray</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>BiggestFromArray</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="d85df260-a408-4157-902e-215a6e02d225"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int makeBiggestNumberFromIntArray(int[] a)
+{
+    String[] sa = Arrays.stream(a).mapToObj(String::valueOf).toArray(String[]::new);
+    Arrays.sort(sa, (s1, s2) -&gt; {
+        String leftRight = s1 + s2;
+        String rightLeft = s2 + s1;
+        return rightLeft.compareTo(leftRight);
+    });
+    String s = Arrays.stream(sa).collect(Collectors.joining());
+    return Integer.valueOf(s);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="e5d65191-887f-478f-9057-defb05477c32"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = makeBiggestNumberFromIntArray(new int[] {7, 9, 91, 73}) == 991773;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>ClockAngle</h2>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>ClockAngle</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2311589c-bd46-4197-9a34-f19aef0c38d4"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>The minute hand moves 360 degrees in 60 minutes(or 6 degree in one minute)
+The hour hand moves 360 degrees in 12 hours (720 mins), or 0.5 degrees per minute.
+In h hours and m minutes:
+  the hour hand will move (h * 60 + m) * 0.5 degrees
+  the minute hand will move (h * 60 + m) * 6 degrees
+Assume 12:00 as the reference point
+In h hours and m minutes:
+  the hour hand will move (h * 60 + m) * 0.5 degrees
+  the minute hand will move (h * 60 + m) * 6 degrees, or 6 * m
+For them to superimpose, both angles should be equal
+0.5 * (60H + M) = 6*M
+60H + M = 12M
+60H = 11M
+M = 5.45H
+Thus, as H varies from 1 to 11, hands will overlap 11 times in 12 hours
+H   M
+-----
+1   1:05.45
+2   2:10.90
+3   3:16.36</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="89b09e06-1b4b-4a7a-a203-aa7c26cab7f8"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int angle(double hour, double min)
+{
+    if(hour &lt; 0 || hour &gt; 12 || min &lt; 0 || min &gt; 60)
+    {
+        return -1;
+    }
+    if(hour == 12)
+    {
+        hour = 0;
+    }
+    if(min == 60)
+    {
+        min = 0;
+    }
+    int hourAngle = (int)(0.5 * (hour * 60 + min));
+    int minAngle = (int)(6 * min);
+    int angle = Math.abs(hourAngle - minAngle);
+    angle = Math.min(360 - angle, angle);
+    return angle;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8e767067-8227-4c08-aa18-77330afbe60b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = angle(1, 5.45) == 0;
+    if(!check)
+    {
+        return false;
+    }
+    check = angle(2, 10.9) == 0;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>EggDrop</h2>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>EggDrop</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="b43d3848-22a1-491d-bcb8-8dd8bc349114"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>1st Egg If first egg breaks -&gt; 2nd egg                  Drops
+--------------------------------------------------------------
+14      1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;10-&gt;11-&gt;12-&gt;13       1+13=14
+27      15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;21-&gt;22-&gt;23-&gt;24-&gt;25-&gt;26  2+2=14
+39
+50
+60
+69
+77
+84
+90                                                      9+5=14
+95                                                      10+4=14
+99                                                      11+3=14
+102                                                     12+2=14
+104                                                     13+1=14
+105                                                     14+0=14
+We can see how this becomes the consecutive range sum problem where n = 14
+Thus,
+n(n + 1)/2 = 14*15/2 = 105
+n*n + n - 210 = 0
+a = 1, b = 1, c = -210
+Using quadratic equation:
+x = (-b +/- SQRT(b^2 - 4ac)) / 2a
+n = (-1 + Sqrt(1 + 840)) / 2 = 14</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="f21919f3-d3df-4dcb-ad65-f714ed770317"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int drops(int N)
+{
+    //  a = 1, b = 1, c = -2N
+    int sqrt = (int)Math.sqrt(1 + 8 * N); // SQRT(b^2 - 4ac)
+    return (-1 + sqrt)/ 2;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0095337c-4f82-411d-9ceb-8d97a95f5f7b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = drops(105) == 14;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>ExcelColumn</h2>
+  <h3><code>numberToExcelColumn</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>ExcelColumn</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="427d6af1-6a19-4e94-b697-680971c3058c"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static String numberToExcelColumn(int n)
+{
+    StringBuilder sb = new StringBuilder();
+    while(n &gt; 0)
+    {
+        int rem = n % 26;
+        // if rem == 0, the 'Z' must be there
+        if(rem == 0)
+        {
+            sb.append("Z");
+            n = n / 26 - 1;
+        }
+        else
+        {
+            sb.append((char) (rem - 1 + 'A'));
+            n /= 26;
+        }
+    }
+    return sb.reverse().toString();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="9579cccd-c453-4875-85bb-cf68e9ee7fa0"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = numberToExcelColumn(26).equals("Z");
+    if(!check)
+    {
+        return false;
+    }
+    check = numberToExcelColumn(52).equals("AZ");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Notes:</p>
+  <ol>
+    <li>
+      <p>Make sure to use following <code>(char)</code> cast and syntax: <code>sb.append((char) (rem - 1 + 'A'));</code>
+      </p>
+    </li>
+  </ol>
+  <h2>FactorialTrailingZeros</h2>
+  <h3><code>trailingZerosInFactorial</code><br></h3>
+  <table data-layout="default" class="confluenceTable">
+    <colgroup>
+      <col style="width: 760.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>FactorialTrailingZeros</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3a73c3a0-fe53-4315-8dfb-cd993f2f1ac1"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int trailingZerosInFactorial(int n)
+{
+    if(n &lt; 0)
+    {
+        return -1;
+    }
+    int count = 0;
+    while(n &gt; 0)
+    {
+        count += n / 5;
+        n /= 5;
+    }
+    return count;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>NumberFromIntsArray</h2>
+  <h3><code>letToRight</code></h3>
+  <h3><code>rightToLeft</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 633.0px;">
+      <col style="width: 985.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>FromArray</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="f8d12a79-04ba-4aab-ae87-42f065e17256"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int letToRight(int [] a)
+{
+    int val = 0;
+    for(int v : a)
+    {
+        val = val * 10 + v;
+    }
+    return val;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="497a731f-8d5b-423d-bf2c-995415d08cc0"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int rightToLeft(int [] a)
+{
+    int val = 0; int pos = 0;
+    for(int i = a.length - 1; i &gt;= 0; --i)
+    {
+        val += Math.pow(10, pos++) * a[i];
+    }
+    return val;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="464068b8-6918-49bd-9123-92e85fb1691c"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = fromArrayOfOneDigitIntsLeftToRight(new int[] {3, 4, 5, 6}) == 3456;
+    if(!check)
+    {
+        return false;
+    }
+    check = fromArrayOfOneDigitIntsRightToLeft(new int[] {3, 4, 5, 6}) == 3456;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>GasStations</h2>
+  <h3><code>startingStation</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 861.0px;">
+      <col style="width: 757.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>GasStations</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8fcf9f99-1d03-4c55-a600-c30174f9f8f7"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>Input is provided in a 2D array, for example:
+{4, 6},
+{6, 5},
+{1, 3},
+{7, 4},
+Where the first value is the amount of petrol and the next value is the distance to the next station.
+To make it easier, we convert each coordinate to a Unit {petrol, distance}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="f8afd27a-ab2c-43b4-a25b-b2a231c49fa8"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>public class GasStations
+{
+    private static class Unit
+    {
+        int petrol;
+        int distance;
+        Unit(int petrol, int distance)
+        {
+            this.petrol = petrol;
+            this.distance = distance;
+        }
+    }
+
+    static int startingStation(int[][] data)
+    {
+        List&lt;Unit&gt; units = Arrays.stream(data).map((int[] a) -&gt; 
+                                              new Unit(a[0], a[1])).collect(Collectors.toList());
+
+        int supply = 0;
+
+        for(int i = 0; i &lt; units.size(); ++i)
+        {
+            Unit unit = units.get(i);
+            if(unit.distance &gt; unit.petrol + supply)
+            {
+                continue;
+            }
+
+            //  Check if we can visit all stations from "good" starting point
+            int j = 0;
+            for(; j &lt; units.size(); ++j)
+            {
+                Unit currentUnit = units.get((i + j) % units.size());
+                if(currentUnit.distance &gt; currentUnit.petrol + supply)
+                {
+                    break;
+                }
+                supply += currentUnit.petrol - currentUnit.distance;
+            }
+
+            //  if we could visit all stations
+            if(j == units.size())
+            {
+                return i;
+            }
+            //  Try competing tour from the next station
+            supply = 0;
+        }
+        return -1;
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6155f93e-ac4d-44ba-84c2-35b33b3e2173"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = startingStation(new int[][] {{4, 6}, {6, 5}, {1, 3}, {7, 4}}) == 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Notes:</p>
+  <ol>
+    <li>
+      <p>When<code> j </code>is equal to <code>units.size()</code>, we completed the joirney</p>
+    </li>
+    <li>
+      <p>Use <code>units.get((i + j) % units.size())</code> to determine the current unit.</p>
+    </li>
+  </ol>
+  <h2><br>GCD</h2>
+  <h3><code>findGcd</code></h3>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Gcd</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="821b752a-8cb2-448e-ad3a-58d5ee06bd2b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int findGcd(int a, int b)
+{
+    int gcd = Math.min(Math.abs(a), Math.abs(b));
+    while(gcd &gt; 0)
+    {
+        if(a % gcd == 0 &amp;&amp; b % gcd == 0)
+        {
+            break;
+        }
+        gcd--;
+    }
+    return gcd;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a11a247a-c74f-487d-b7b2-89ec7016c59e"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = findGcd(8, 36) == 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>GcdFromArray</h2>
+  <h3><code>gcdFromArray</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>GcdFromArray</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="aeadb8ac-4d09-4820-afa3-4b04ac051a33"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int gcdFromArray(int[] a)
+{
+    int minGcd = Integer.MAX_VALUE;
+    for(int i = 0; i &lt; a.length - 1; ++i)
+    {
+        for(int j = i + 1; j &lt; a.length; ++j)
+        {
+            minGcd = Math.min(minGcd, gcd(a[i], a[j]));
+        }
+    }
+    return minGcd;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="beb24eb1-d033-49ec-a309-5d240e6825ee"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = gcdFromArray(new int[] {12, 36, 24, 8}) == 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>IsPalndrome</h2>
+  <h3><code>isPalindrome</code></h3>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>IsPalindrome</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="fd59f43a-9954-4573-ab1d-8a38e9debce9"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean isPalindrome(int n)
+{
+    int original = n;
+    int reversed = 0;
+    while(n &gt; 0)
+    {
+        reversed = reversed * 10 + n % 10;
+        n /= 10;
+    }
+    return reversed == original;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0be4df30-2565-46d8-b232-cbf15757bf0c"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = isPalindrome(123321);
+    if(!check)
+    {
+        return false;
+    }
+    check = isPalindrome(12345);
+    if(check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Josephus</h2>
+  <h3><code>josephus</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Josephus</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="42e2e5ef-690f-4288-ba14-f9b05b87a88f"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int josephus(int n, int k)
+{
+    List&lt;Integer&gt; list = IntStream.rangeClosed(1, n).boxed().collect(Collectors.toList());
+    int i = -1;
+    while (list.size() &gt; 1)
+    {
+        list.remove((i + k) % list.size());
+        i = (i + k) % (list.size() + 1) - 1;
+    }
+    return list.get(0);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="b580f521-a4ee-458a-8cae-baa35d2a84e1"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = josephus(5, 2) == 3;
+    if(!check)
+    {
+        return false;
+    }
+    check = josephus(7, 3) == 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>JourneyStartAmount</h2>
+  <h3><code>amountAtStartOfJourney</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 881.0px;">
+      <col style="width: 737.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>JourneyStartAmount</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a9dd5e55-afee-482f-a450-8c954048ebb5"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>A traveler visits multiple cities.
+He can work daily and make some money. He also spends some money on each day.
+An array is given depicting his daily savings (earnings – expenses) over the course of his journey.
+How much minimum money he should start with in order to have at least some saving ( &gt; 0) 
+at the end of each day.
+ Examples: arr[] = { 10, -5, 7, -8, 5, -9 }
+ He had to have 10 before the start of the last day in order to have 1 left after spending 9
+ At the end of the journey he has $1 left.
+ Thus:
+ 1 - (-9) = 10
+ 10 - 5 = 5
+ 5 - (-8) = 13
+ 13 - 7 = 6
+ 6 - (-5) = 11
+ 11 - 10 = 1</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="26231aa9-ab73-4660-a7e8-1a0098fc4398"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int amountAtStartOfJourney(int [] a)
+{
+    int sum = 1;
+    for(int i = a.length - 1; i &gt;= 0; i--)
+    {
+        sum -= a[i];
+    }
+    return sum;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4a3d35ac-f038-41b0-8f91-211147f1439b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = amountAtStartOfJourney(new int[] {10, -5, 7, -8, 5, -9}) == 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>MakeChange</h2>
+  <h3><code>makeChangeWithLeastNumberOfCoins</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 726.0px;">
+      <col style="width: 892.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0c52531d-42fb-4008-bfad-ce123818c29a"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int makeChangeWithLeastNumberOfCoins(int initialAmount, int[] denoms)
+{
+    //  denoms must be sorted
+    Arrays.sort(denoms);
+    int amountRemaining = initialAmount;
+    int coins = 0;
+    for(int i = denoms.length - 1; i &gt;= 0; --i)
+    {
+        int denom = denoms[i];
+        while(amountRemaining &gt;= denom)
+        {
+            coins += amountRemaining / denom;
+            amountRemaining %= denom;
+        }
+    }
+    return coins;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="85858d7d-a917-41fe-bde6-de8c1d155645"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = makeChangeWithLeastNumberOfCoins(99, new int[]{10, 1, 5}) == 14;
+    if (!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>MinValueFromSequence</h2>
+  <h3><code>compute</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>MinValueFromSequence</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="7a5ea495-bd7f-4fb7-b8d8-9891090a8356"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>Given a pattern containing only I’s and D’s. I for increasing and D for decreasing.
+Devise an algorithm to print the minimum number following that pattern.
+Digits from 1-9 can’t repeat.
+Examples:
+Input: D        Output: 21
+Input: I        Output: 12
+Input: DD       Output: 321
+Input: II       Output: 123
+Input: DIDI     Output: 21435
+Input: IIDDD    Output: 126543
+Input: DDIDDIID Output: 321654798
+Number of digits in output is one more than number of characters in input.
+Note that the first character of input corresponds to two digits in output.
+The tricky part occurs when 'D' is encountered at index other than 0.
+In such a case we have to track the nearest 'I' to the left of 'D'
+and increment each number in the output vector by 1 in between ‘I’ and ‘D’.</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2bd9797d-fa33-4451-b460-4addb8da94a7"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int compute(String s)
+{
+    List&lt;Integer&gt; result = new ArrayList&lt;&gt;();
+    int nextNumber = 3;
+    int posOfLastI = 0;
+    if(s.charAt(0) == 'I')
+    {
+        result.add(1);
+        result.add(2);
+    }
+    else
+    {
+        result.add(2);
+        result.add(1);
+    }
+    for(int i = 1; i &lt; s.length(); ++i)
+    {
+        if(s.charAt(i) == 'I')
+        {
+            result.add(nextNumber++);
+            posOfLastI = i + 1;
+        }
+        else
+        {
+            result.add(result.get(i));
+            for(int j = posOfLastI; j &lt;= i; ++j)
+            {
+                result.set(j, result.get(j) + 1);
+            }
+            nextNumber++;
+        }
+    }
+    int num = 0;
+    for(int i : result)
+    {
+        num = num * 10 + i;
+    }
+    return num;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="9523b4c3-2240-462b-9621-87706e4d2297"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = compute("D") == 21;
+    if(!check)
+    {
+        return false;
+    }
+    check = compute("I") == 12;
+    if(!check)
+    {
+        return false;
+    }
+    check = compute("IIDDD") == 126543;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>NumberToWords</h2>
+  <h3><code>convert</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>NumberToWords</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0be37501-e741-4b6c-83c2-7ff21752be1b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>public class NumberToWords
+{
+    static String[] numNames = {
+            "",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine",
+            "ten",
+            "eleven",
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen",
+            "sixteen",
+            "seventeen",
+            "eighteen",
+            "nineteen"
+    };
+    static String[] tenNames = {
+            "",
+            "ten",
+            "twenty",
+            "thirty",
+            "forty",
+            "fifty",
+            "sixty",
+            "seventy",
+            "eighty",
+            "ninety",
+    };
+    static String[] bigNumNames = {
+            "",
+            "thousand",
+            "million",
+            "billion",
+            "trillion",
+            "quadrillion",
+            "quintillion"
+    };
+
+    static String convert(long num)
+    {
+        if(num == 0)
+        {
+            return "zero";
+        }
+
+        String prefix = "";
+        if(num &lt; 0)
+        {
+            prefix = "negative";
+            num = -num;
+        }
+
+        String current = "";
+        int bigNumPlace = 0;
+
+        do
+        {
+            long n = num % 1000;
+            if(n != 0)
+            {
+                String s = convertLessThan1000(n);
+                current = s + bigNumNames[bigNumPlace++] + current;
+            }
+            num /= 1000;
+        } while (num &gt; 0);
+        return prefix + current;
+    }
+
+    private static String convertLessThan1000(long n)
+    {
+        if(n &lt; 100)
+        {
+            return convertLessThan100(n);
+        }
+
+        long hundreds = n / 100;
+        long rem = n % 100;
+        return numNames[(int)hundreds] + "hundred" + convertLessThan100(rem);
+    }
+
+    private static String convertLessThan100(long n)
+    {
+        if(n &lt; 20)
+        {
+            return convertLessThan20(n);
+        }
+
+        long tens = n / 10;
+        long rem = n % 10;
+        return tenNames[(int)tens] + convertLessThan20(rem);
+    }
+
+    private static String convertLessThan20(long n)
+    {
+        return numNames[(int)n];
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="76534e6f-ec49-49f0-8b39-366fd07da844"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = convert(-12_345_678_901L).equals("negativetwelvebillionthreehundredfortyfivemillionsixhundredseventyeightthousandninehundredone");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>PowerOf10</h2>
+  <h3><code>isPowerOf10</code></h3>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>PowerOf10</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="c6176f70-c840-486d-8729-cd8156f67264"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean isPowerOf10(int n)
+{
+    for(int i = 1; i &lt;= n; i *= 10)
+    {
+        if(i == n)
+        {
+            return true;
+        }
+        if(i &gt; Integer.MAX_VALUE / 10)
+        {
+            return false;
+        }
+    }
+    return false;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0b887d4b-d7f5-41de-b36c-b4dcf50421a0"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = isPowerOf10(1) &amp;&amp;
+                    isPowerOf10(10) &amp;&amp;
+                    isPowerOf10(100) &amp;&amp;
+                    isPowerOf10(1000) &amp;&amp;
+                    isPowerOf10(1000000);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>PrimeFactorization</h2>
+  <h3><code>primeFactorsOfProduct</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 664.0px;">
+      <col style="width: 954.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>PrimeFactorization</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="79ab4a39-0b50-4e29-9e62-d3f2d19315f7"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] primeFactorsOfProduct(int n)
+{
+    if(n &lt; 2)
+    {
+        return new int[0];
+    }
+    List&lt;Integer&gt; factors = new ArrayList&lt;&gt;();
+    for(int i = 2; i &lt;= n; ++i)
+    {
+        while(n % i == 0)
+        {
+            factors.add(i);
+            n /= i;
+        }
+    }
+    return factors.stream().mapToInt(x -&gt; x).toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p></p>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="99582c74-b8cb-4c2a-91e4-0a6cf8407c30"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = Arrays.equals(new int[] {2, 2, 2, 2}, primeFactorsOfProduct(16));
+    if(!check)
+    {
+        return false;
+    }
+    check = Arrays.equals(new int[] {2, 5}, primeFactorsOfProduct(10));
+    if(!check)
+    {
+        return false;
+    }
+    check = Arrays.equals(new int[] {2, 2, 3}, primeFactorsOfProduct(12));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>Primes</h2>
+  <h3><code>isPrime</code></h3>
+  <h3><code>genPrimes</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Primes</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="c5e5893e-860d-45a1-9d47-e3282bf08e1e"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean isPrime(int n)
+{
+    //  1.  2 is the first prime number
+    //  2.  use &lt;= when comparing Sqrt. Consider number 9
+    if(n &lt; 2)
+    {
+        return false;
+    }
+    if(n == 2)
+    {
+        return true;
+    }
+    if(n % 2 == 0)
+    {
+        return false;
+    }
+    for(int i = 3; i &lt;= Math.sqrt(n); i += 2)
+    {
+        if(n % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+static int[] genPrimes(int n)
+{
+    if(n &lt; 1)
+    {
+        return new int[0];
+    }
+    int[] primes = new int[n];
+    primes[0] = 2;
+    int idx = 1;
+    int candidate = 3;
+    while(idx &lt; n)
+    {
+        boolean isPrime = true;
+        for(int i = 0; primes[i] &lt;= Math.sqrt(candidate); ++i)
+        {
+            if(candidate % primes[i] == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime)
+        {
+            primes[idx++] = candidate;
+        }
+        candidate += 2;
+    }
+    return primes;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="36f95821-285b-48cc-97a0-8e71c843f876"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = isPrime(71);
+    if(!check)
+    {
+        return false;
+    }
+    check = isPrime(81);
+    if(check)
+    {
+        return false;
+    }
+    check = Arrays.equals(new int[] {2, 3, 5, 7, 11, 13, 17}, genPrimes(7));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Random7</h2>
+  <h3><code>rand7UsingRand5</code><br></h3>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Random7</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="bf1a008c-cb32-4a21-8e2b-6cfa36873b3d"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int rand7UsingRand5()
+{
+    while(true)
+    {
+        int r01 = rand5();
+        if(r01 &lt; 4)
+        {
+            int r = rand5() * 2 + r01 % 2;
+            if(r &lt; 7)
+            {
+                return r;
+            }
+        }
+    }
+}
+
+private static int rand5()
+{
+    return (int)(Math.random() * 5);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6db7b23a-b660-47cb-b4ef-481135995c5a"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    System.out.println(rand7UsingRand5());
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>RomanNumeral</h2>
+  <h3><code>romanNumeral</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>RomanNumeral</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="7fb2d4d4-f630-43e3-bd44-4dd75ab823c9"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static String romanNumeral(int n)
+{
+    String[] romSym = {"M","CM","D","CD", "C","XC","L","XL","X","IX","V","IV","I"};
+    int[] decimals = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    StringBuilder sb = new StringBuilder();
+    for(int i = 0; i &lt; decimals.length; ++i)
+    {
+        while(n &gt;= decimals[i])
+        {
+            sb.append(romSym[i]);
+            n -= decimals[i];
+        }
+        if(n == 0)
+        {
+            break;
+        }
+    }
+    return sb.toString();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="82254ee9-6344-4664-a248-f7c32aacfad3"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = romanNumeral(4998).equals("MMMMCMXCVIII");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>SquareRoot</h2>
+  <h3><code>squareRoot</code></h3>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>SquareRoot</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="dc8e6a85-d8be-48ef-bfd5-b60f615f5d87"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int squareRoot(int n)
+{
+    if(n &lt; 2)
+    {
+        return n;
+    }
+    int low = 1, high = n / 2;
+    while(low &lt;= high)
+    {
+        int mid = (low + high) / 2;
+        int sqr = mid * mid;
+        if(sqr == n)
+        {
+            return mid;
+        }
+        else if(sqr &lt; n)
+        {
+            low = mid + 1;
+        }
+        else
+        {
+            high = mid - 1;
+        }
+    }
+    return -1;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="ecf09531-297f-4c00-938c-27d7e0df1cd7"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = squareRoot(81) == 9;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>StairCaseHeight</h2>
+  <h3><code>see EggDrop.drops</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>StairCaseHeight</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="02d7417e-05e3-4f2b-88e8-73322f135b95"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>See EggDrop.drops</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="bd0ec314-c5c3-4e2a-aae9-16473265b88a"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = drops(55) == 10;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>StringToNumber</h2>
+  <h3><code>numericStringToNum</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 811.0px;">
+      <col style="width: 807.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>StringToNumber</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="e002180a-cc13-4f77-b5b1-6b9226b16f08"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int numericStringToNum(String s)
+{
+    char[] a = s.toCharArray();
+    int n = 0;
+    for(char c : a)
+    {
+        n = n * 10 + c - '0';
+    }
+    return n;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="298d4287-812f-42fd-a8bd-9a64ed3f5cf4"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = 12345 == numericStringToNum("12345");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>ToBinary</h2>
+  <h3><code>toBinary</code><br></h3>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>ToBinary</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="fb91f7f2-1388-45d6-a148-dbe977136486"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static String toBinary(int n)
+{
+    StringBuilder sb = new StringBuilder();
+    while(n &gt; 0)
+    {
+        sb.append(n % 2);
+        n /= 2;
+    }
+    return sb.reverse().toString();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a6e01cf4-97ad-46c6-85c6-235b1437a170"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = toBinary(14).equals("1110");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p><br></p>
+  <p>&nbsp;</p>
+
+
+
+  <div id="recorder_overlay"
+    style="position: fixed; width: 100%; height: 100%; top: 0; display: none; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 9999999; cursor: pointer; "
+    onclick="this.style.display=&#39;none&#39;"></div>
+</body>
+
+</html>

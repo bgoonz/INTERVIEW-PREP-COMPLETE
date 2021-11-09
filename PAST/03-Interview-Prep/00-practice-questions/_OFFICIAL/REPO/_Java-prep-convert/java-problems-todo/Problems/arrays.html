@@ -1,0 +1,2380 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://nickguner.atlassian.net/wiki/plugins/viewsource/viewpagesrc.action?pageId=858718211 -->
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>View Source</title>  <link rel="canonical" href="https://nickguner.atlassian.net/wiki/pages/viewpage.action?pageId=$action.page.id">
+  <script>
+    window.WRM = window.WRM || {}; window.WRM._unparsedData = window.WRM._unparsedData || {}; window.WRM._unparsedErrors = window.WRM._unparsedErrors || {};
+    WRM._unparsedData[ "com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path" ] = "\"/wiki\"";
+    WRM._unparsedData[ "com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources" ] = "false";
+    if ( window.WRM._dataArrived ) window.WRM._dataArrived();</script>
+  <link type="text/css" rel="stylesheet" href="./arrays_files/aui-reset.css" data-wrm-external=""
+    data-wrm-key="com.atlassian.auiplugin:aui-reset" data-wrm-batch-type="resource" media="all">
+  <link type="text/css" rel="stylesheet" href="./arrays_files/aui-page-typography.css" data-wrm-external=""
+    data-wrm-key="com.atlassian.auiplugin:aui-page-typography" data-wrm-batch-type="resource" media="all">
+  <link type="text/css" rel="stylesheet" href="./arrays_files/batch.css" data-wrm-key="_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./arrays_files/batch(1).css" data-wrm-key="plugin.viewsource,-_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./arrays_files/batch(2).css" data-wrm-key="page,-_super"
+    data-wrm-batch-type="context" media="all">
+  <link type="text/css" rel="stylesheet" href="./arrays_files/batch(3).css" media="print" data-wrm-key="page,-_super"
+    data-wrm-batch-type="context">
+  <link type="text/css" rel="stylesheet" href="./arrays_files/batch(4).css" data-wrm-key="editor-content,-_super"
+    data-wrm-batch-type="context" media="all">
+  <!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="//d2cyaw4z41y1zi.cloudfront.net/nickguner.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/264105304/h/d4e4e19c4669223aa75450869203638e/_/download/contextbatch/css/editor-content,-_super/batch.css?conditionalComment=lte+IE+9&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="editor-content,-_super" data-wrm-batch-type="context" media="all">
+<![endif]-->
+  <link type="text/css" rel="stylesheet" href="./arrays_files/colors.css" media="all">
+
+</head>
+
+<body class="mceContentBody aui-theme-default wiki-content fullsize">
+  <p>&nbsp;</p> <img class="editor-inline-macro" src="./arrays_files/macro" data-macro-name="toc"
+    data-macro-id="398e395e-06fb-41af-97a1-e48bb2c20d0f" data-macro-schema-version="1">
+  <h2>AllUnique</h2>
+  <h3><code>allUniqueWithSet</code></h3>
+  <h3><code>allUniqueWithArray</code></h3>
+  <h3><code>allUniqueWithStreams</code></h3>
+  <p></p>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 480.0px;">
+      <col style="width: 480.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>AllUnique</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="fa2d984e-e5ad-4fb5-b32f-143ee891a7d0"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean allUniqueWithSet(int[] a)
+{
+    Set&lt;Integer&gt; checkSet = new HashSet&lt;&gt;();
+    for(int v : a)
+    {
+        if(checkSet.contains(v))
+        {
+            return false;
+        }
+        checkSet.add(v);
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="5b3b1bc6-d275-4349-a95a-4fcf6a05306e"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean allUniqueWithArray(int[] a)
+{
+    boolean[] check = new boolean[256];
+    for(int v : a)
+    {
+        if(check[v])
+        {
+            return false;
+        }
+        check[v] = true;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="04321d1f-9c53-413c-924e-7af6eaabfbbb"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean allUniqueWithStreams(int[] a)
+{
+    Set&lt;Integer&gt; set = Arrays.stream(a)
+                            .boxed()
+                            .collect(Collectors.toSet());
+    return set.size() == a.length;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3b31c44d-eab1-4a27-9d94-a40706005d4b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int[] a2 = {1, 2, 3, 4, 5, 1, 2, 8, 9};
+    boolean b1 = allUniqueWithSet(a1);
+    boolean b2 = allUniqueWithSet(a2);
+    boolean b3 = allUniqueWithStreams(a1);
+    boolean b4 = allUniqueWithStreams(a2);
+    boolean b5 = allUniqueWithArray(a1);
+    boolean b6 = allUniqueWithArray(a2);
+    return b1 &amp;&amp; b3 &amp;&amp; b5 &amp;&amp; !b2 &amp;&amp; !b4 &amp;&amp; !b6;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>BinarySearch</h2>
+  <h3><code>binarySearch</code></h3>
+  <h3><code>binarySearchWithStreams</code></h3>
+  <h3><code>binarySearchWithInsertPos</code></h3>
+  <h4>See also <a
+      href="https://nickguner.atlassian.net/wiki/spaces/DEV/pages/875528233/Recursion+Problems#BinarySearch">Recursion -
+      BinarySearrch</a><br></h4>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>BinarySearch</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3eaa55e6-1538-4f9e-b0f7-5732ea7ac807"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int binarySearch(int[] a, int val)
+{
+    int left = 0, right = a.length - 1;
+    while(left &lt;= right)
+    {
+        int mid = (left + right) / 2;
+        if(a[mid] == val)
+        {
+            return mid;
+        }
+        else if(a[mid] &gt; val)
+        {
+            right = mid - 1;
+        }
+        else
+        {
+            left = mid + 1;
+        }
+    }
+    return -1;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="1bc97d2d-8663-402c-a2de-7f0b190189fa"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int binarySearchWithStreams(int[] a, int val)
+{
+    List&lt;Integer&gt; list = Arrays.stream(a)
+                              .boxed()
+                              .collect(Collectors.toList());
+    return Collections.binarySearch(list, val);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="f84af4ea-021c-4a9e-bd67-5db38a12fb26"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int binarySearchWithInsertPos(int[] a, int val)
+{
+    int left = 0, right = a.length - 1;
+    while(left &lt;= right)
+    {
+        int mid = (left + right) / 2;
+        if(a[mid] == val)
+        {
+            return mid;
+        }
+        else if(a[mid] &gt; val)
+        {
+            right = mid - 1;
+        }
+        else
+        {
+            left = mid + 1;
+        }
+    }
+    return -left;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="16fc876a-b28f-4157-9c85-4ad908527f1b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+            // 0  1  2  3  4   5   6   7   8   9
+    int[] a = {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    boolean check = binarySearch(a, 1) == 0 &amp;&amp;
+                    binarySearch(a, 15) == 7 &amp;&amp;
+                    binarySearch(a, 10) == -1;
+    if(!check)
+    {
+        return false;
+    }
+    check = binarySearchWithInsertPos(a, 10) == -5;
+    if(!check)
+    {
+        return false;
+    }
+    check = binarySearchWithStreams(a, 1) == 0 &amp;&amp;
+            binarySearchWithStreams(a, 15) == 7 &amp;&amp;
+            binarySearchWithStreams(a, 10) &lt; 0;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Notes:</p>
+  <ol>
+    <li>
+      <p>Use&nbsp;<code>left&nbsp;&lt;=&nbsp;right</code></p>
+    </li>
+    <li>
+      <p>Use <code>right = mid - 1;</code> and <code>left = mid + 1;</code></p>
+    </li>
+  </ol>
+  <h2>CountSum</h2>
+  <h3><code>countTwoSum</code></h3>
+  <h3><code>countTwoSumWithSet</code></h3>
+  <h3><code>countFourSum</code></h3>
+  <h3><code>lengthShortestSubarrayExceedingTarget</code></h3>
+  <h3><code>threeSumClosestButLess</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>CountSum</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4bc4f008-55af-4b74-ac4d-24af9b9fa88e"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int countTwoSum(int[] a, int target)
+{
+    Arrays.sort(a);
+    int count = 0;
+    int left = 0, right = a.length - 1;
+    while(left &lt; right)
+    {
+        int sum = a[left] + a[right];
+        if(sum == target)
+        {
+            count++;
+            left++;
+            right--;
+        }
+        else if(sum &lt; target)
+        {
+            left++;
+        }
+        else
+        {
+            right--;
+        }
+    }
+    return count;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="52e4ee7b-8ff1-41cb-8a80-10819117ca82"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int countTwoSumWithSet(int[] a, int target)
+{
+    // Note: Does not require sort
+    Set&lt;Integer&gt; set = new HashSet&lt;&gt;();
+    set.add(a[0]);
+    int sumCount = 0;
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        int val = target - a[i];
+        if(set.contains(val))
+        {
+            sumCount++;
+        }
+        set.add(a[i]);
+    }
+    return sumCount;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a2175501-3061-4e9c-8412-9d839ce008e5"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static Set&lt;List&lt;Integer&gt;&gt; countFourSum(int[] a, int target)
+{
+    Set&lt;List&lt;Integer&gt;&gt; result = new HashSet&lt;&gt;();
+    Arrays.sort(a);
+    for(int i = 0; i &lt; a.length - 2; ++i)
+    {
+        for(int j = i + 1; j &lt; a.length - 1; ++j)
+        {
+            int k = j + 1;
+            int l = a.length - 1;
+            while(k &lt; l)
+            {
+                int sum = a[i] + a[j] + a[k] + a[l];
+                if(sum == target)
+                {
+                    result.add(Arrays.asList(a[i], a[j], a[k],a[l]));
+                    k++;
+                    l--;
+                }
+                else if(sum &lt; target)
+                {
+                    k++;
+                }
+                else
+                {
+                    l--;
+                }
+            }
+        }
+    }
+    return result;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6c9ddc47-75a6-4325-a638-99dce2cc06b9"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static List&lt;Integer&gt; threeSumClosestButLess(int[] a, int target)
+{
+    List&lt;Integer&gt; result = new ArrayList&lt;&gt;();
+    Arrays.sort(a);
+    int min = Integer.MAX_VALUE;
+    for(int i = 0; i &lt; a.length; ++i)
+    {
+        int j = i + 1;
+        int k = a.length - 1;
+        while (j &lt; k)
+        {
+            int sum = a[i] + a[j] + a[k];
+            int diff = target - sum;
+            if(diff == 0)
+            {
+                result = Arrays.asList(a[i], a[j], a[k]);
+                return result;
+            }
+            if(diff &gt; 0)
+            {
+                if(diff &lt; min)
+                {
+                    min = diff;
+                    result = Arrays.asList(a[i], a[j], a[k]);
+                }
+            }
+            if(sum &lt; target)
+            {
+                j++;
+            }
+            else
+            {
+                k--;
+            }
+        }
+    }
+    return result;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6b8bb56d-1150-4fd9-b47c-10c0117cd2e1"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>Count number of sub-arrays that add to a given sum
+Input Array = {33, 9, 4, 20, 3, 10, 5}, target = 33
+3 subarrays [33], [9, 4, 20], [20, 3, 10] add up to 33</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4c736f79-c083-4144-8c36-b1deb251f018"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int numberOfConsecutiveSubarraySums(int[] a, int target)
+{
+    int count = 0;
+    for(int i = 0; i &lt; a.length; ++i)
+    {
+        int sum = a[i];
+        for(int j = i + 1; j &lt; a.length; ++j)
+        {
+            if(sum &gt;= target)
+            {
+                if(sum == target)
+                {
+                    count++;
+                }
+                break;
+            }
+            sum += a[j];
+        }
+    }
+    return count;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="c4991290-3d64-4619-a0aa-b469aaf597c8"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int lengthShortestSubarrayExceedingTarget(int[] a, int target)
+{
+    //  {1, 4, 45, 6, 0, 19}, 51 -&gt; Shortest subarray size = 3 {4, 45, 6}
+    int min = Integer.MAX_VALUE;
+    for(int i = 0; i &lt; a.length; ++i)
+    {
+        int sum = a[i];
+        for(int j = i + 1; j &lt; a.length; ++j)
+        {
+            if(sum &gt; target)
+            {
+                min = Math.min(min, j - i);
+                break;
+            }
+            sum += a[j];
+        }
+    }
+    return min == Integer.MAX_VALUE ? -1 : min;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="5a95b4d8-2d86-4d71-a602-662b13e20695"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a1 = {9, 1, 8, 2, 7, 3, 6, 4, 5};
+    boolean check = countTwoSum(a1, 10) == 4;
+    if(!check)
+    {
+        return  false;
+    }
+    check = countTwoSumWithSet(a1, 10) == 4;
+    if(!check)
+    {
+        return  false;
+    }
+    int[] a2 = {1, 2, 3, 4, 3, 4, 5, -2};
+    Set&lt;List&lt;Integer&gt;&gt; result = countFourSum(a2, 10);
+    check = result.size() == 2 &amp;&amp; result.contains(Arrays.asList(-2, 3, 4, 5)) &amp;&amp;
+            result.contains(Arrays.asList(1, 2, 3, 4));
+    if(!check)
+    {
+        return  false;
+    }
+    check = numberOfConsecutiveSubarraySums(new int[] {33, 9, 4, 20, 3, 10, 5}, 33) == 3;
+    if(!check)
+    {
+        return  false;
+    }
+    check = Arrays.equals(new int[] {2, 6, 9},
+            threeSumClosestButLess(new int[] {4, 1, 8, 3, 6, 2, 9}, 17));
+    if(!check)
+    {
+        return  false;
+    }
+    check = lengthShortestSubarrayExceedingTarget(new int[] {1, 4, 45, 6, 0, 19}, 51) == 3;
+    if(!check)
+    {
+        return  false;
+    }
+    
+    check = lengthShortestSubarrayExceedingTarget(new int[] {1, 4, 45, 6, 0, 19}, 51) == 3 &amp;&amp;
+        lengthShortestSubarrayExceedingTarget(new int[] {1, 11, 100, 1, 0, 200, 3, 2, 1, 250}, 299) == 4 &amp;&amp;
+        lengthShortestSubarrayExceedingTarget(new int[] {1, 4, 45, 6, 52, 19}, 51) == 1;
+    if(!check)
+    {
+        return  false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>DuplicatesAndMissing</h2>
+  <h3><code>missingNumberInSortedConsecutiveArray</code></h3>
+  <h3><code>duplicateInRange_1_to_N_1</code></h3>
+  <h3><code>duplicateInRange_0_to_N_2</code></h3>
+  <h3><code>removeAllDuplicates</code></h3>
+  <h3><code>removeAllDuplicatesWithStreams</code></h3>
+  <h3><code>findLonelyNumber</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>DuplicatesAndMissing</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="1629e3ad-399b-4a1c-af58-b59992fa6094"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int missingNumberInSortedConsecutiveArray(int[] a)
+{
+    int startVal = a[0], endVal = a[a.length - 1];
+    int expectedSum = endVal * (endVal + 1) / 2 - startVal * (startVal - 1) / 2;
+    int actualSum = Arrays.stream(a).sum();
+    return expectedSum - actualSum;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a43261c9-9e93-45a5-89ca-98379831677a"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int duplicateInRange_1_to_N_1(int[] a)
+{
+    // {4, 2, 1, 3, 2};
+    int n = a.length - 1;
+    int expectedSum = n * (n + 1) / 2;
+    int actualSum = Arrays.stream(a).sum();
+    return actualSum - expectedSum;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="756f67f4-f6c9-4d69-a034-f039303c7031"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int duplicateInRange_0_to_N_2(int[] a)
+{
+    // {0, 2, 1, 3, 2}
+    int n = a.length - 2;
+    int expectedSum = n * (n + 1) / 2;
+    int actualSum = Arrays.stream(a).sum();
+    return actualSum - expectedSum;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="50915b1b-d9ff-45d2-a5a8-75b0adb435fe"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] removeAllDuplicates(int[] a)
+{
+    if(a == null || a.length &lt; 2)
+    {
+        return a;
+    }
+    int pos = 1;
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        int j;
+        for(j = 0; j &lt; pos; ++j)
+        {
+            if(a[i] == a[j])
+            {
+                break;
+            }
+        }
+        if(j == pos)
+        {
+            a[pos++] = a[i];
+        }
+    }
+    return Arrays.copyOf(a, pos);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="da3a3db6-ef64-40f1-8bc6-c724492ae1dc"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] removeAllDuplicatesWithStreams(int[] a)
+{
+    return Arrays.stream(a).distinct().toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="99e64274-94a8-49c1-a85c-694474c5b156"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int findLonelyNumber(int[] a)
+{
+    int v = a[0];
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        v ^= a[i];
+    }
+    return v;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="02a5f760-67a7-460c-befd-ed54ad2bb16f"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = missingNumberInSortedConsecutiveArray(new int[] {4, 5, 6, 8, 9, 10, 11, 12, 13, 14}) == 7;
+    if(!check)
+    {
+        return false;
+    }
+    check = duplicateInRange_1_to_N_1(new int[] {4, 2, 1, 3, 2}) == 2;
+    if(!check)
+    {
+        return false;
+    }
+    check = duplicateInRange_0_to_N_2(new int[] {0, 2, 1, 3, 2}) == 2;
+    if(!check)
+    {
+        return false;
+    }
+    check = Arrays.equals(new int[] {0, 1, 2}, removeAllDuplicates(new int[] {0, 1, 0, 0, 0, 1, 1, 2, 0, 1}));
+    if(!check)
+    {
+        return false;
+    }
+    check = Arrays.equals(new int[] {0, 1, 2}, removeAllDuplicatesWithStreams(new int[] {0, 1, 0, 0, 0, 1, 1, 2, 0, 1}));
+    if(!check)
+    {
+        return false;
+    }
+    check = findLonelyNumber(new int[] {0, 1, 2, 3, 0, 1, 3}) == 2;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Fibonacci</h2>
+  <h3><code>fibonacci</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Fibonacci</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="dff0e725-c687-46be-aee1-ff5866b6af3d"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int fibonacci(int n)
+{
+    // n: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+    //f(n): 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+    if(n &lt; 0)
+    {
+        return -1;
+    }
+    if(n &lt; 2)
+    {
+        return n;
+    }
+    int[] a = new int[n + 1];
+    a[0] = 0;
+    a[1] = 1;
+    for(int i = 2; i &lt;= n; ++i)
+    {
+        a[i] = a[i - 1] + a[i - 2];
+    }
+    return a[n];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="ace07e56-4672-4e2f-9fa7-aef6cf27eb40"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = fibonacci(14) == 377;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>KthElement</h2>
+  <h3><code>getSecondMax</code></h3>
+  <h3><code>getSecondMaxWithStreams</code></h3>
+  <h3><code>getKthLargestWithSort</code></h3>
+  <h3><code>getKthLargestWithStreamsUsingSkip</code></h3>
+  <h3><code>getKthLargestWithStreamsUsingLimit</code></h3>
+  <h3><code>getKthSmallestWithStreamsUsingSkip</code></h3>
+  <h3><code>getKthSmallestWithStreamsUsingLimit</code></h3>
+  <p></p>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>KthElement</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a196050e-ff9c-4e22-a5e2-0fa0cee84770"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getSecondMax(int [] a)
+{
+    int max = Integer.MIN_VALUE, secondMax = Integer.MIN_VALUE;
+    for(int v : a)
+    {
+        if(v &gt; max)
+        {
+            secondMax = max;
+            max = v;
+        }
+        else if(v &gt; secondMax)
+        {
+            secondMax = v;
+        }
+    }
+    return secondMax;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="be8702ce-cda5-4c6a-aba3-ab99784a2346"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getSecondMaxWithStreams(int [] a)
+{
+    return Arrays.stream(a)
+            .boxed()
+            .sorted(Comparator.reverseOrder())
+            .mapToInt(x -&gt; x)
+            .limit(2)
+            .toArray()[1];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a807e1fa-c88a-4057-b667-550b638849cc"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getKthLargestWithSort(int[] a, int k)
+{
+    Arrays.sort(a);
+    return a[a.length - k];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="e0c7e4ae-bd1d-4b0c-994f-7a660bcb59ec"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getKthLargestWithStreamsUsingSkip(int[] a, int k)
+{
+    return Arrays.stream(a).sorted().skip(a.length - k).toArray()[0];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="d2204b58-9d41-4f9f-8a7e-e49b85e52fb5"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getKthLargestWithStreamsUsingLimit(int[] a, int k)
+{
+    return Arrays.stream(a)
+            .boxed()
+            .sorted(Comparator.reverseOrder())
+            .mapToInt(x -&gt; x)
+            .limit(k)
+            .toArray()[k - 1];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4618a200-7e0c-4cbe-af04-2ebdb833a6e9"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getKthSmallestWithStreamsUsingSkip(int[] a, int k)
+{
+    return Arrays.stream(a).sorted().skip(k - 1).toArray()[0];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="c1deace8-7ae3-456e-b5be-94a1caedbde4"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int getKthSmallestWithStreamsUsingLimit(int[] a, int k)
+{
+    return Arrays.stream(a).sorted().limit(k).toArray()[k - 1];
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="87e5b15f-c2ac-4d12-8100-5cf7e56c89cc"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    boolean check = getKthLargestWithSort(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 1) == 9;
+    if(!check)
+    {
+        return false;
+    }
+    check = getKthLargestWithSort(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 4) == 6;
+    if(!check)
+    {
+        return false;
+    }
+    check = getKthLargestWithStreamsUsingSkip(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 1) == 9;
+    if(!check)
+    {
+        return false;
+    }
+    check = getKthLargestWithStreamsUsingSkip(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 4) == 6;
+    if(!check)
+    {
+        return false;
+    }
+    check = getKthLargestWithStreamsUsingLimit(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 4) == 6;
+    if(!check)
+    {
+        return false;
+    }
+    check = getKthSmallestWithStreamsUsingLimit(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 4) == 4;
+    if(!check)
+    {
+        return false;
+    }
+    check = getKthSmallestWithStreamsUsingSkip(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, 4) == 4;
+    if(!check)
+    {
+        return false;
+    }
+    check = getSecondMax(new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1}) == 8;
+    if(!check)
+    {
+        return false;
+    }
+    check = getSecondMaxWithStreams(new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1}) == 8;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>MaxDifference</h2>
+  <h3><code>maxDifference</code></h3>
+  <h3><code>maxDifferenceWithStreams</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 852.0px;">
+      <col style="width: 769.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>MaxDifference</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="b0f24847-8319-421e-add7-5d3fc08f6c96"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int maxDifference(int[] a)
+{
+    if (a == null || a.length == 0)
+    {
+        return -1;
+    }
+    int min = a[0], max = a[0];
+    for (int i = 1; i &lt; a.length; ++i)
+    {
+        min = Math.min(min, a[i]);
+        max = Math.max(max, a[i]);
+    }
+    return max - min;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="19718c31-bbd8-434f-82ba-809ef9090dbf"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int maxDifferenceWithStreams(int[] a)
+{
+    return Arrays.stream(a).max().getAsInt() - Arrays.stream(a).min().getAsInt();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6eaa2af7-ee61-49c3-867d-9a6065ab160c"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = {6, -5, 0, 7, 25, 14, -4, 18};
+    return maxDifference(a) == 30 &amp;&amp; 
+           maxDifferenceWithStreams(a) == 30;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>MaxSumInArray</h2>
+  <p></p>
+  <table data-layout="wide" class="confluenceTable">
+    <colgroup>
+      <col style="width: 352.0px;">
+      <col style="width: 408.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>MaxSumInArray</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="590a1217-bfa6-4472-92d0-8c4da3c456f3"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int maxSumInArray(int[] a)
+{
+    int sum = 0, maxSum = 0;
+    for(int v : a)
+    {
+        sum += v;
+        maxSum = Math.max(maxSum, sum);
+        if(sum &lt; 0)
+        {
+            sum = 0;
+        }
+    }
+    return maxSum;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="84ad1314-55a9-4c7b-866a-2e06f4a5187e"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = {-4, 3, 2, 7, -8, 11, 1, -3};
+    boolean check = maxSumInArray(a) == 16;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>MedianTwoSortedArrays</h2>
+  <h3><code>medianWithoutCreatingArrays</code></h3>
+  <h3><code>medianWithCreatingArrays</code></h3>
+  <h3><code>mergeSortedArrays</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 977.0px;">
+      <col style="width: 644.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>MedianTwoSortedArrays</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="05d68cdf-bcb6-4d21-854a-d463a87d5100"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static double medianWithoutCreatingArrays(int [] a, int [] b)
+{
+    int len = a.length + b.length;
+    int mid = len / 2;
+    int aPos = 0, bPos = 0;
+    int val1 = 0, val2 = 0;
+    while(aPos + bPos &lt;= mid)
+    {
+        val1 = val2;
+        if(aPos &lt; a.length &amp;&amp; bPos &lt; b.length)
+        {
+            if(a[aPos] &lt; b[bPos])
+            {
+                val2 = a[aPos++];
+            }
+            else
+            {
+                val2 = b[bPos++];
+            }
+        }
+        else if(aPos &lt; a.length)
+        {
+            val2 = a[aPos++];
+        }
+        else
+        {
+            val2 = b[bPos++];
+        }
+    }
+    if(len % 2 == 1)
+    {
+        return val2;
+    }
+    else
+    {
+        return (val1 + val2) / 2.0;
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="c662781a-3f60-47bd-8dc3-30b02283fae6"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>public static double medianWithCreatingArrays(int [] a, int [] b)
+{
+    int[] c = MergeSortedArrays.mergeSortedArrays(a, b);
+    if(c.length % 2 == 1)
+    {
+        return c[c.length / 2];
+    }
+    else
+    {
+        int first = c[c.length / 2 - 1];
+        int second = c[c.length / 2];
+        return (first + second) / 2.0;
+    }
+}
+
+private static int[] mergeSortedArrays(int[] a, int[] b)
+{
+    int[] c = new int[a.length + b.length];
+    int aPos = 0, bPos = 0, cPos = 0;
+    while(aPos &lt; a.length &amp;&amp; bPos &lt; b.length)
+    {
+        if(a[aPos] &lt; b[bPos])
+        {
+            c[cPos++] = a[aPos++];
+        }
+        else
+        {
+            c[cPos++] = b[bPos++];
+        }
+    }
+    while(aPos &lt; a.length)
+    {
+        c[cPos++] = a[aPos++];
+    }
+    while(bPos &lt; b.length)
+    {
+        c[cPos++] = b[bPos++];
+    }
+    return c;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4bbb56f7-ed99-424a-aa8d-16d03885d37f"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = {1, 3, 5, 7, 9};
+    int[] b = {2, 4, 6, 8};
+    int[] c = {1, 3, 5, 7};
+    boolean check = medianWithCreatingArrays(a, b) == 5.0;
+    if(!check)
+    {
+        return false;
+    }
+    check = medianWithoutCreatingArrays(a, b) == 5.0;
+    if(!check)
+    {
+        return false;
+    }
+    check = medianWithoutCreatingArrays(b, c) == 4.5;
+    if(!check)
+    {
+        return false;
+    }
+    check = medianWithoutCreatingArrays(c, b) == 4.5;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>RectangleArea</h2>
+  <h3><code>minRectangleArea</code></h3>
+  <h3><code>areaOfOverlappingRectangle</code></h3>
+  <p></p>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 991.0px;">
+      <col style="width: 630.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>MinAreaRectangle</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="66bc9cbf-b6ee-43b4-b9fc-f2154db1bc25"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>Given a set of points in the x and y axes,
+determine the minimum area of a rectangle formed from these points,
+with sides parallel to the x and y axes.
+If there is a rectangle, there should be 2 points for the diagonal (x1, y1) and (x2, y2).
+There should also be two other points corresponding to the two diagonal points: (x1, y2) and (x2, y1).
+Filter out entries that do not have at least 2 y coordinates</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="e00d15f2-29e8-48d2-8c00-b0d50eedf048"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int minRectangleArea(int[][] points)
+{
+    Map&lt;Integer, Set&lt;Integer&gt;&gt; map = Arrays.stream(points).collect(
+            HashMap::new,
+            (m, item) -&gt; m.computeIfAbsent(item[0], a -&gt; new HashSet&lt;&gt;()).add(item[1]),
+            HashMap::putAll);
+    map = map.entrySet().stream()
+            .filter(e -&gt; e.getValue().size() &gt; 1)
+            .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+    int minArea = Integer.MAX_VALUE;
+    for(int i = 0; i &lt; points.length - 1; ++i)
+    {
+        for(int j = i + 1; j &lt; points.length; j++)
+        {
+            int x1 = points[i][0];
+            int y1 = points[i][1];
+            int x2 = points[j][0];
+            int y2 = points[j][1];
+            if(x1 != x2 &amp;&amp; y1 != y2 &amp;&amp; map.containsKey(x1) &amp;&amp; map.containsKey(x2))
+            {
+                if(map.get(x1).contains(y1) &amp;&amp; map.get(x1).contains(y2) &amp;&amp;
+                        map.get(x2).contains(y1) &amp;&amp; map.get(x2).contains(y2))
+                {
+                    int area = Math.abs((x1 - x2) * (y1 - y2));
+                    minArea = Math.min(minArea, area);
+                }
+            }
+        }
+    }
+    return minArea;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="5e564065-d1ef-464a-8422-8f0e87c2b3de"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int areaOfOverlappingRectangle(int[][] r1, int[][] r2)
+{
+    int[] xInterval1 = new int[] {r1[0][0], r1[1][0]};
+    int[] yInterval1 = new int[] {r1[0][1], r1[1][1]};
+    int[] xInterval2 = new int[] {r2[0][0], r2[1][0]};
+    int[] yInterval2 = new int[] {r2[0][1], r2[1][1]};
+    int w = xInterval2[0] &gt; xInterval1[0] ? xInterval1[1] - xInterval2[0] : xInterval2[1] - xInterval1[0];
+    int h = yInterval2[1] &gt; yInterval1[0] ? yInterval1[1] - yInterval2[0] : yInterval2[1] - yInterval1[0];
+    if(w &gt; 0 &amp;&amp; h &gt; 0)
+    {
+        return w * h;
+    }
+    return 0;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="c98b24a4-2d23-41b8-8791-5371de80430e"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[][] points = {
+            {2, 1},
+            {2, 3},
+            {3, 5},
+            {5, 1},
+            {5, 3},
+            {7, 2},
+            {8, 5},
+            {2, 4},
+            {2, 5},
+            {5, 4},
+            {5, 5},
+    };
+    boolean check = minRectangleArea(points) == 3;
+    if(!check)
+    {
+        return false;
+    }
+    int[][] r1 = {
+            {1, 1},
+            {4, 4},
+    };
+    int [][] r2 = {
+            {3, 3},
+            {6, 5},
+    };
+    check = areaOfOverlappingRectangle(r1, r2) == 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>Partition</h2>
+  <h3><code>negativeBeforePositive</code></h3>
+  <h3><code>negativeBeforePositiveWithStreams</code></h3>
+  <p></p>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Partition</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="490f7f05-7e29-4fc9-96a5-9c5ef540e326"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static void negativeBeforePositive(int[] a)
+{
+    int start = 0, end = a.length - 1;
+    while(start &lt; end)
+    {
+        while(a[start] &lt; 0) start++;
+        while(a[end] &gt; 0) end--;
+        if(start &lt; end)
+        {
+            int temp = a[start];
+            a[start++] = a[end];
+            a[end--] = temp;
+        }
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="7c49f766-a704-4aae-bdf0-37ab40fa61bd"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] negativeBeforePositiveWithStreams(int[] a)
+{
+    Map&lt;Boolean, List&lt;Integer&gt;&gt; map = Arrays.stream(a)
+                                      .boxed()
+                                      .collect(Collectors.partitioningBy(x -&gt; x &gt; 0));
+    int[] pos = map.get(true).stream().mapToInt(i -&gt; i).toArray();
+    int[] neg = map.get(false).stream().mapToInt(i -&gt; i).toArray();
+    int[] result = new int[a.length];
+    System.arraycopy(neg, 0, result, 0, neg.length);
+    System.arraycopy(pos, 0, result, neg.length, pos.length);
+    return result;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="612e1542-7681-494c-ac56-ef9ffbce16f1"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = {4, 5, -1, -2, 7, -5, -9};
+    negativeBeforePositive(a);
+    int[] b = negativeBeforePositiveWithStreams(new int[] {4, 5, -1, -2, 7, -5, -9});
+    return Arrays.equals(a, new int[] {-9, -5, -1, -2, 7, 5, 4}) &amp;&amp;
+            Arrays.equals(b, new int[] {-1, -2, -5, -9, 4, 5, 7});
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>PushZeros</h2>
+  <h3><code>pushToBack</code></h3>
+  <h3><code>pushToBackWithStreams</code></h3>
+  <h3><code>pushToFront</code></h3>
+  <h3><code>pushToFrontWithStreams</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>PushZeros</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="d3b9f669-5833-42a4-b83e-ee4f5bfab930"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static void pushToBack(int[] a)
+{
+    int pos = 0;
+    for(int v : a)
+    {
+        if(v != 0)
+        {
+            a[pos++] = v;
+        }
+    }
+    if(pos &lt; a.length)
+    {
+        Arrays.fill(a, pos, a.length, 0);
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2742547b-2211-43a3-8226-8c50a8dc52bc"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] pushToBackWithStreams(int[] a)
+{
+    int[] nonZeros = Arrays.stream(a).filter(x -&gt; x != 0).toArray();
+    int[] result = new int[a.length];
+    System.arraycopy(nonZeros, 0, result, 0, nonZeros.length);
+    return result;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="1fda3cae-5963-44cf-8e64-070bc7628995"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static void pushToFront(int[] a)
+{
+    int pos = a.length - 1;
+    for(int i = a.length - 1; i &gt;= 0; --i)
+    {
+        if(a[i] != 0)
+        {
+            a[pos--] = a[i];
+        }
+    }
+    while(pos &gt;= 0)
+    {
+        a[pos--] = 0;
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="b7d72dda-9f9c-4e50-80de-2d69ffa0d915"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] pushToFrontWithStreams(int[] a)
+{
+    int [] nonZeros = Arrays.stream(a).filter(i -&gt; i != 0).toArray();
+    int numZeros = (int)Arrays.stream(a).filter(i -&gt; i == 0).count();
+    int[] result = new int[a.length];
+    Arrays.fill(result, 0, numZeros, 0);
+    System.arraycopy(nonZeros, 0, result, numZeros, nonZeros.length);
+    return result;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="80c7d85d-12a2-4f64-84e5-a8d5ab08934f"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = {1, 2, 0, 3, 0, 4, 5, 0, 6};
+    pushToBack(a);
+    boolean check = Arrays.equals(a, new int[] {1, 2, 3, 4, 5, 6, 0, 0, 0});
+    if(!check)
+    {
+        return false;
+    }
+    a = new int[]{1, 2, 0, 3, 0, 4, 5, 0, 6};
+    pushToFront(a);
+    check = Arrays.equals(a, new int[] {0, 0, 0, 1, 2, 3, 4, 5, 6});
+    if(!check)
+    {
+        return false;
+    }
+    a = new int[]{1, 2, 0, 3, 0, 4, 5, 0, 6};
+    a = pushToBackWithStreams(a);
+    check = Arrays.equals(a, new int[] {1, 2, 3, 4, 5, 6, 0, 0, 0});
+    if(!check)
+    {
+        return false;
+    }
+    a = new int[]{1, 2, 0, 3, 0, 4, 5, 0, 6};
+    a = pushToFrontWithStreams(a);
+    return Arrays.equals(a, new int[] {0, 0, 0, 1, 2, 3, 4, 5, 6});
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>RandomInts</h2>
+  <h3><code>generateArrayRandomInts</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>RandomInts</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="5febd80f-7690-4f80-936d-7e6e945be499"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] generateArrayRandomInts(int size, int from, int to)
+{
+    return new Random().ints(size, from, to).toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="13bced59-30ab-4529-a4ff-79df9cc41c2b"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] random = generateRandomInts(5, 3, 9);
+    boolean check = random.length == 5;
+    if(!check)
+    {
+        return false;
+    }
+    check = random[0] &gt;= 3 &amp;&amp; random[0] &lt;= 9 &amp;&amp; random[1] &gt;= 3 &amp;&amp; 
+            random[1] &lt;= 9 &amp;&amp; random[2] &gt;= 3 &amp;&amp; random[2] &lt;= 9;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>RandomSubset</h2>
+  <h3><code>generateRandomSubset</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>RandomSubset</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8b4f3859-87bd-435d-accb-023735b04ad8"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] generateRandomSubset(int[] a, int m)
+{
+    int [] result = new int[m];
+    for(int i = 0; i &lt; m; ++i)
+    {
+        int randomIdx = randomRange(i, a.length);
+        result[i] = a[randomIdx];
+        a[randomIdx] = a[i];
+    }
+    return result;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="9ee201de-6777-4ed3-9d04-d8098cd2fe60"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static void main(String... args)
+{
+    int[] cards = IntStream.rangeClosed(1, 52).toArray();
+    cards = RandomSubset.generateRandomSubset(cards, 6);
+    System.out.println(Arrays.toString(cards));
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>RemoveValue</h2>
+  <h3><code>removeValue</code></h3>
+  <h3><code>removeValueWithStreams</code></h3>
+  <h3><code>removeValueWithIterator</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>RemoveValue</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0679df59-c5bf-4a87-92e7-be43ebe8db01"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] removeValue(int[] a, int val)
+{
+    int pos = 0;
+    for(int v : a)
+    {
+        if(v != val)
+        {
+            a[pos++] = v;
+        }
+    }
+    return Arrays.copyOf(a, pos);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a1339a81-ad03-4248-ba72-27ff00f38223"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] removeValueWithStreams(int[] a, int val)
+{
+    return Arrays.stream(a).filter(x -&gt; x != val).toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="1a460de0-1c4e-482a-8836-c5338e55ff0c"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] removeValueWithIterator(int[] a, int val)
+{
+    List&lt;Integer&gt; list = Arrays.stream(a).boxed().collect(Collectors.toList());
+    Iterator&lt;Integer&gt; iter = list.iterator();
+    while(iter.hasNext())
+    {
+        if(iter.next() == val)
+        {
+            iter.remove();
+        }
+    }
+    return list.stream().mapToInt(i -&gt; i).toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="48e1f18b-62b2-4649-a97e-0f974327e522"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = removeValue(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}, 5);
+    int[] b = removeValueWithStreams(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}, 5);
+    int[] c = removeValueWithIterator(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}, 5);
+    return Arrays.equals(a, new int[] {9, 8, 7, 6, 4, 3, 2, 1}) &amp;&amp;
+            Arrays.equals(b, new int[] {9, 8, 7, 6, 4, 3, 2, 1}) &amp;&amp;
+            Arrays.equals(c, new int[] {9, 8, 7, 6, 4, 3, 2, 1});
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>ReverseAndRotate</h2>
+  <h3><code>reverseInPlace</code></h3>
+  <h3><code>reverseWithStreams</code></h3>
+  <h3><code>reverseWithArraysSetAll</code></h3>
+  <h3><code>rotate</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Reverse</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="55b269dd-67e2-40b2-b181-1f4ef34b7e5d"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>private static void reverse(int[] a, int start, int end)
+{
+    while(start &lt; end)
+    {
+        int temp = a[start];
+        a[start++] = a[end];
+        a[end--] = temp;
+    }
+}
+static void reverseInPlace(int[] a)
+{
+    reverse(a, 0, a.length - 1);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="78367ccd-0dd1-4513-b4ec-1b171ae4d4ac"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] reverseWithStreams(int... a)
+{
+    List&lt;Integer&gt; list = Arrays.stream(a).boxed().collect(Collectors.toList());
+    Collections.reverse(list);
+    return list.stream().mapToInt(x -&gt; x).toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3cd1cb54-bb0b-42d9-b768-27ef244b6583"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] reverseWithArraysSetAll(int... a)
+{
+    int[] reversed = new int[a.length];
+    Arrays.setAll(reversed, i -&gt; a[a.length - 1 - i]);
+    return reversed;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="719c21ac-e4ac-41f0-8d88-602c352e659a"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static void rotate(int[] a, int m)
+{
+    if(a == null || a.length &lt; m)
+    {
+        return;
+    }
+    reverse(a, 0, m - 1);
+    reverse(a, m, a.length - 1);
+    reverse(a, 0, a.length - 1);
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="7c0d9c07-41de-4876-a1f2-24aa4fa0de74"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int findMinInRotatedArray(int... a)
+{
+    //  If the previously sorted array is rotated, a[0] &gt; a[a.length - 1]
+    //  If a[0] &lt; a[a.length - 1], the array is not rotated and a[0] is the min
+    int start = 0, end = a.length - 1;
+    while(start &lt;= end)
+    {
+        if(a[start] &lt;= a[end])
+        {
+            return a[start];
+        }
+        int mid = (start + end) / 2;
+        if(a[mid] &gt;= a[start])
+        {
+            start = mid + 1;
+        }
+        else
+        {
+            end = mid;
+        }
+    }
+    return -1;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a63897f2-9fc7-4c09-967c-fa58c2409bb0"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean testsPass()
+{
+    int[] a = {1, 2, 3, 4, 5, 6};
+    reverseInPlace(a);
+    boolean check = Arrays.equals(new int[] {6, 5, 4, 3, 2, 1}, a);
+    if(!check)
+    {
+        return false;
+    }
+    check = Arrays.equals(reverseWithStreams(1, 2, 3, 4, 5, 6),
+            new int[] {6, 5, 4, 3 , 2, 1});
+    if(!check)
+    {
+        return false;
+    }
+    check = Arrays.equals(reverseWithArraysSetAll(1, 2, 3, 4, 5, 6),
+            new int[] {6, 5, 4, 3 , 2, 1});
+    if(!check)
+    {
+        return false;
+    }
+    int[] a1 = {1, 2, 3, 4, 5, 6, 7};
+    rotate(a1, 3);
+    check = Arrays.equals(a1, new int[] {4, 5, 6, 7, 1, 2, 3});
+    if(!check)
+    {
+        return false;
+    }
+    check = findMinInRotatedArray(3,4,5,6,1,2) == 1
+            &amp;&amp; findMinInRotatedArray(new int[]{4,1,2,3}) == 1
+            &amp;&amp; findMinInRotatedArray(new int[]{1,2,3,4,5,6}) == 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h2><br>ShuffleCards</h2>
+  <h3><code>shuffle</code></h3>
+  <h3><code>shuffleWithStreams</code></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 813.0px;">
+      <col style="width: 808.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>ShuffleCards</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="40613fdb-70e3-44a2-8e4a-ce93e7039ec7"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static void shuffle(int[] cards)
+{
+    int len = cards.length;
+    for(int i = 0; i &lt; len; ++i)
+    {
+        int randomIdx = randomRange(i, len);
+        int temp = cards[i];
+        cards[i] = cards[randomIdx];
+        cards[randomIdx] = temp;
+    }
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="08fdde0b-da8b-42e3-9446-6d92d64c6040"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static int[] shuffleWithStreams(int[] cards)
+{
+    List&lt;Integer&gt; list = Arrays.stream(cards)
+                           .boxed()
+                           .collect(Collectors.toList());
+    Collections.shuffle(list);
+    return list.stream().mapToInt(a -&gt; a).toArray();
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="09d568dd-3be8-4978-aff7-ae09b9fb2e2f"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>public static void main(String... args)
+{
+    int[] cards = IntStream.rangeClosed(1, 10).toArray();
+    ShuffleCards.shuffle(cards);
+    System.out.println(Arrays.toString(cards));
+    cards = IntStream.rangeClosed(1, 10).toArray();
+    ShuffleCards.shuffleWithStreams(cards);
+    System.out.println(Arrays.toString(cards));
+}</pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><br></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3><br></h3>
+  <p><br></p>
+  <p>&nbsp;</p>
+
+
+
+  <div id="recorder_overlay"
+    style="position: fixed; width: 100%; height: 100%; top: 0; display: none; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 9999999; cursor: pointer; "
+    onclick="this.style.display=&#39;none&#39;"></div>
+</body>
+
+</html>
