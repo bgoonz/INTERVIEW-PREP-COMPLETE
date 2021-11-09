@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ruby-on-rails-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="ruby-on-rails-assessment">Ruby on Rails Assessment</h2>
+<h4 id="q1.-when-rendering-a-partial-in-a-view-how-would-you-pass-local-variables-for-rendering">Q1. When rendering a partial in a view, how would you pass local variables for rendering?</h4>
+<ul>
+<li>[ ] <code>&lt;%= render partial: "nav", selected: "about"}%&gt;</code></li>
+<li>[ ] <code>&lt;%= render partial: "nav", local_variabels: {selected: "about"} %&gt;</code></li>
+<li>[ ] <code>&lt;%= render partial: "nav", locals: {selected: "about"}</code></li>
+<li>[ ] <code>&lt;%= render partial: "nav", locals: {selected: "about"}</code></li>
+</ul>
+<h4 id="q2.-within-a-rails-controller-which-code-will-prevent-the-parent-controllers-before_action-get_feature-from-running">Q2. Within a Rails controller, which code will prevent the parent controller’s before_action <code>:get_feature:</code> from running?</h4>
+<ul>
+<li>[ ] <code>skip_before_action :get_feature</code></li>
+<li>[x] <code>skip :get_feature, except: []</code></li>
+<li>[ ] <code>prevent_action :get_feature</code></li>
+<li>[ ] <code>redis_cache_store</code></li>
+</ul>
+<h4 id="q3.-which-statement-correctly-describes-a-difference-between-the-form-helper-methods-form_tag-and-form_for">Q3. Which statement correctly describes a difference between the form helper methods <code>form_tag</code> and <code>form_for</code>?</h4>
+<ul>
+<li>[ ] The <code>form_tag</code> method is for basic forms, while the <code>form_for</code> method is for multipart forms that include file uploads.</li>
+<li>[ ] The <code>form_tag</code> method is for HTTP requests, while the <code>form_for</code> method is for AJAX requests.</li>
+<li>[x] The <code>form_tag</code> method typically expects a URL as its first argument, while the <code>form_for</code> method typically expects a model object.</li>
+<li>[ ] The <code>form_tag</code> method is evaluated at runtime, while the <code>form_for</code> method is precompiled and cached.</li>
+</ul>
+<h4 id="q4.-what-is-before_action-formerly-known-as-before_filter">Q4. What is <code>before_action</code> (formerly known as <code>before_filter</code>)?</h4>
+<ul>
+<li>[ ] A trigger that is executed before an alteration of an object’s state</li>
+<li>[ ] A method that is executed before an ActiveRecord model is saved</li>
+<li>[ ] A callback that fires before an event is handled</li>
+<li>[x] A method in a controller that is executed before the controller action method</li>
+</ul>
+<h4 id="q5.-which-module-can-you-use-to-encapsulate-a-cohesive-chunk-of-functionality-into-a-mixin">Q5. Which module can you use to encapsulate a cohesive chunk of functionality into a mixin?</h4>
+<ul>
+<li>[ ] <code>ActiveSupport::Concern</code></li>
+<li>[ ] <code>RailsHelper.CommonClass</code></li>
+<li>[ ] <code>ActiveJob::Mixin</code></li>
+<li>[ ] <code>ActiveSupport::Module</code></li>
+</ul>
+<h4 id="q6.-in-rails-which-code-would-you-use-to-define-a-route-that-handles-both-the-put-and-patch-rest-http-verbs">Q6. In Rails, which code would you use to define a route that handles both the <code>PUT</code> and <code>PATCH</code> <code>REST HTTP</code> verbs?</h4>
+<ul>
+<li>[ ] put :items, include: patch</li>
+<li>[ ] put ‘items’, to: ‘items#update’</li>
+<li>[ ] match ‘items’, to ‘items#update’, via: [:put, :patch]</li>
+<li>[ ] match :items, using: put &amp;&amp; patch</li>
+</ul>
+<h4 id="q7.-which-choice-includes-standard-rest-http-verbs">Q7. Which choice includes standard REST HTTP verbs?</h4>
+<ul>
+<li>[x] GET, POST, PATCH, DELETE</li>
+<li>[ ] REDIRECT, RENDER, SESSION, COOKIE</li>
+<li>[ ] INDEX, SHOW, NEW, CREATE, EDIT, UPDATE, DESTROY</li>
+<li>[ ] CREATE, READ, UPDATE, DELETE</li>
+</ul>
+<h4 id="q8.-which-activerecord-query-prevents-sql-injection">Q8. Which ActiveRecord query prevents SQL injection?</h4>
+<ul>
+<li>[ ] <code>Product.where("name = #{@keyword}")</code></li>
+<li>[ ] <code>Product.where("name = " &lt;&lt; @keyword}</code></li>
+<li>[x] <code>Product.where("name = ?", @keyword</code></li>
+<li>[ ] <code>Product.where("name = " + h(@keyword)</code></li>
+</ul>
+<h4 id="q9.-given-this-code-which-statement-about-the-database-table-documents-could-be-expected-to-be-true">Q9. Given this code, which statement about the database table “documents” could be expected to be <em>true</em>?</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> <span class="dt">Document</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    belongs_to <span class="st">:documentable</span>, <span class="st">polymorphic: </span><span class="dv">true</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-4" title="4"></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">class</span> <span class="dt">Product</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    has_many <span class="st">:documents</span>, <span class="st">as: :documentable</span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="kw">class</span> <span class="dt">Service</span> &lt; <span class="dt">ActiveRecord</span>::<span class="dt">Base</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    has_many <span class="st">:documents</span>, <span class="st">as: :documentable</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="kw">end</span></a></code></pre></div>
+<ul>
+<li>[ ] It would include a column for <code>:type</code>.</li>
+<li>[ ] It would include columns for <code>:documentable_id</code> and <code>:documentable_type</code>.</li>
+<li>[ ] It would include columns for <code>:documentable</code> and <code>:type</code>.</li>
+<li>[ ] It would include a column for <code>:polymorphic_type</code>.</li>
+</ul>
+<h4 id="q10.-are-instance-variables-set-within-a-controller-method-accessible-within-a-view">Q10. Are instance variables set within a controller method accessible within a view?</h4>
+<ul>
+<li>[ ] Yes, any instance variables that are set in an action method on a controller can be accessed and displayed in a view.</li>
+<li>[ ] Yes, instance variables set within an action method are accessible within a view, but only when render is explicitly called inside the action method.</li>
+<li>[ ] No, instance variables in a controller are private and are not accessible.</li>
+<li>[ ] No, instance variables can never be set in a controller action method.</li>
+</ul>
+<h4 id="q11.-when-a-validation-of-a-field-in-a-rails-model-fails-where-are-the-messages-for-validation-errors-stored">Q11. When a validation of a field in a Rails model fails, where are the messages for validation errors stored?</h4>
+<ul>
+<li>[ ] <code>my_model.errors[:field]</code></li>
+<li>[ ] <code>my_model.get_errors_for(:field)</code></li>
+<li>[ ] <code>my_model.field.error</code></li>
+<li>[ ] <code>my_model.all_errors.select(:field)</code></li>
+</ul>
+<h4 id="q12.-if-a-database-table-of-users-contains-the-following-rows-and-id-is-the-primary-key-which-statement-would-return-only-an-object-whose-last_name-is-cordero">Q12. If a database table of users contains the following rows, and <code>id</code> is the primary key, which statement would return only an object whose <code>last_name</code> is “Cordero”?</h4>
+<pre><code>------------------------------
+id first_name last_name
+1 Alice Anderson
+2 Bob Buckner
+3 Carrie Cordero
+4 Devon Dupre
+5 Carrie Eastman
+------------------------------</code></pre>
+<ul>
+<li>[ ] <code>User.where(first_name: "Carrie")</code></li>
+<li>[ ] <code>User.not.where(id: [1, 2, 4, 5])</code></li>
+<li>[ ] <code>User.find_by(first_name: "Cordero")</code></li>
+<li>[x] <code>User.find(3)</code></li>
+</ul>
+<h4 id="q13.-how-would-you-generate-a-drop-down-menu-that-allows-the-user-to-select-from-a-collection-of-product-names">Q13. How would you generate a drop-down menu that allows the user to select from a collection of product names?</h4>
+<ul>
+<li>[ ] <code>&lt;%= select_tag(@products) %&gt;</code></li>
+<li>[ ] <code>&lt;%= collection_select(@products) %&gt;</code></li>
+<li>[ ] <code>&lt;select name="product_id"&gt; &lt;%= @products.each do |product| %&gt; &lt;option value="&lt;%= product.id %&gt;"/&gt; &lt;% end %&gt;&lt;/select&gt;</code></li>
+<li>[x] <code>&lt;%= collection_select(:product, :product_id, Product.all, :id, :name) %&gt;</code></li>
+</ul>
+<h4 id="q14.-for-a-rails-validator-how-would-you-define-an-error-message-for-the-model-attribute-address-with-the-message-this-address-is-invalid">Q14. For a Rails validator, how would you define an error message for the model attribute <code>address</code> with the message “This address is invalid”?</h4>
+<ul>
+<li>[ ] <code>model.errors = This address is invalid</code></li>
+<li>[ ] <code>errors(model, :address) &lt;&lt; "This address is invalid"</code></li>
+<li>[ ] <code>display_error_for(model, :address, "This address is invalid")</code></li>
+<li>[ ] <code>model.errors[:address] &lt;&lt; "This address is invald"</code></li>
+</ul>
+<h4 id="q15.-given-the-url-helper-product_pathproduct-which-statement-would-be-expected-to-be-false">Q15. Given the URL helper product_path(<span class="citation" data-cites="product">@product</span>), which statement would be expected to be false?</h4>
+<ul>
+<li>[ ] <code>If sent using the PATCH HTTP method, the URL could be used to update a product in the database.If sent using the PATCH HTTP method, the URL could be used to update a product in the database.</code></li>
+<li>[ ] <code>If sent using the POST HTTP method, the URL would create a new product in the database.If sent using the POST HTTP method, the URL would create a new product in the database.</code></li>
+<li>[ ] <code>If sent using the GET HTTP method, the URL would execute the show action in ProductsController.If sent using the GET HTTP method, the URL would execute the null action in ProductsController.</code></li>
+<li>[ ] <code>If sent using the DELETE HTTP method, the URL would call the destroy action by default.</code></li>
+</ul>
+<h4 id="q16.-given-this-code-which-choice-would-be-expected-to-be-a-true-statement-if-the-user-requests-the-index-action">Q16. Given this code, which choice would be expected to be a true statement if the user requests the index action?</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode rb"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> <span class="dt">DocumentsController</span> &lt; <span class="dt">ApplicationController</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  before_action <span class="st">:require_login</span></a>
+<a class="sourceLine" id="cb3-3" title="3">  <span class="kw">def</span> index</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="ot">@documents</span> = <span class="dt">Document</span>.visible.sorted</a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="kw">end</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>The user's documents will be loaded.The user's documents will be loaded.</code></li>
+<li>[ ] <code>The index action will run normally because :index is not listed as an argument to before_action.The null action will run normally because null is not listed as an argument to null.</code></li>
+<li>[ ] <code>The require_login method will automatically log in the user before running the index action.The null method will automatically log in the user before running the null action.</code></li>
+<li>[ ] <code>The index action will not be run if the require_login method calls render or redirect_to.</code></li>
+</ul>
+<h4 id="q17.-which-statement-correctly-describes-a-difference-between-the-form-helper-methods-form_tag-and-form_for">Q17. Which statement correctly describes a difference between the form helper methods form_tag and form_for?</h4>
+<ul>
+<li>[ ] <code>The form_tag method typically expects a URL as its first argument, while the form_for method typically expects a model object.The null method typically expects a URL as its first argument, while the null method typically expects a model object.</code></li>
+<li>[ ] <code>The form_tag method is evaluated at runtime, while the form_for method is precompiled and cached.The null method is evaluated at runtime, while the null method is precompiled and cached.</code></li>
+<li>[ ] <code>The form_tag method is for HTTP requests, while the form_for method is for AJAX requests.The null method is for HTTP requests, while the null method is for AJAX requests.</code></li>
+<li>[ ] <code>The form_tag method is for basic forms, while the form_for method is for multipart forms that include file uploads.</code></li>
+</ul>
+<h4 id="q18.-in-rails-how-would-you-cache-a-partial-template-that-is-rendered">Q18. In Rails, how would you cache a partial template that is rendered?</h4>
+<ul>
+<li>[ ] <code>render partial: ‘shared/menu’, cached: truenull</code></li>
+<li>[ ] <code>render_with_cache partial: ‘shared/menu’null</code></li>
+<li>[ ] <code>render partial: ‘shared/menu’null</code></li>
+<li>[ ] <code>render partial: ‘shared/menu’, cached_with_variables: {}</code></li>
+</ul>
+<h4 id="q19.-what-is-the-reason-for-using-concerns-in-rails">Q19. What is the reason for using Concerns in Rails?</h4>
+<ul>
+<li>[ ] <code>to allow modularity and code reuse in models, controllers, and other classesto allow modularity and code reuse in models, controllers, and other classes</code></li>
+<li>[ ] <code>to separate class methods from modelsto separate class methods from models</code></li>
+<li>[ ] <code>to increase security of Rails applicationsto increase security of Rails applications</code></li>
+<li>[ ] <code>to refactor Rails views</code></li>
+</ul>
+<h4 id="q20.-when-using-an-activerecord-model-which-method-will-create-the-model-instance-in-memory-and-save-it-to-the-database">Q20. When using an ActiveRecord model, which method will create the model instance in memory and save it to the database?</h4>
+<ul>
+<li>[ ] <code>buildnull</code></li>
+<li>[ ] <code>newnull</code></li>
+<li>[ ] <code>createnull</code></li>
+<li>[ ] <code>save</code></li>
+</ul>
+<h4 id="q21.-you-are-using-an-existing-database-that-has-a-table-named-coffee_orders.-what-would-the-activerecord-model-be-named-in-order-to-use-that-table">Q21. You are using an existing database that has a table named coffee_orders. What would the ActiveRecord model be named in order to use that table?</h4>
+<ul>
+<li>[ ] <code>CoffeeOrdersnull</code></li>
+<li>[ ] <code>Coffee_Ordersnull</code></li>
+<li>[ ] <code>Coffee_Ordernull</code></li>
+<li>[ ] <code>CoffeeOrder</code></li>
+</ul>
+<h4 id="q22.-in-activerecord-what-is-the-difference-between-the-has_many-and-has_many-through-associations">Q22. In ActiveRecord, what is the difference between the has_many and has_many :through associations?</h4>
+<ul>
+<li>[ ] <code>The has_many: through association is the one-to-many equivalent to the belongs_to one-to-one association.The null association is the one-to-many equivalent to the null one-to-one association.</code></li>
+<li>[ ] <code>Both associations are identical, and has_many: through is maintained only for legacy purposes.Both associations are identical, and null is maintained only for legacy purposes.</code></li>
+<li>[ ] <code>The has_many association is a one-to-many association, while has_many: through is a one-to-one association that matches through a third model.The null association is a one-to-many association, while null is a one-to-one association that matches through a third model.</code></li>
+<li>[ ] <code>Both are one-to-many associations but with has_many :through, the declaring model can associate through a third model.</code></li>
+</ul>
+<h3 id="q23.-how-do-you-add-ruby-code-inside-rails-views-and-have-its-result-outputted-in-the-html-file">Q23. How do you add Ruby code inside Rails views and have its result outputted in the HTML file?</h3>
+<ul>
+<li>[ ] <code>Create an embedded Ruby file (.html.erb) and surround the Ruby code with &lt;% %&gt;.Create an embedded Ruby file (.html.erb) and surround the Ruby code with null.</code></li>
+<li>[ ] <code>Insert Ruby code inside standard HTML files and surround it with &lt;% %&gt;. The web server will handle the rest.Insert Ruby code inside standard HTML files and surround it with null. The web server will handle the rest.</code></li>
+<li>[ ] <code>Create an embedded Ruby file (.html.erb) and surround the Ruby code with &lt;%= %&gt;.Create an embedded Ruby file (.html.erb) and surround the Ruby code with null.</code></li>
+<li>[ ] <code>Put the code in an .rb file and include it in a &lt;link&gt; tag of an HTML file.</code></li>
+</ul>
+<h4 id="q24.-how-would-you-render-a-view-using-a-different-layout-in-an-erb-html-view">Q24. How would you render a view using a different layout in an ERB HTML view?</h4>
+<ul>
+<li>[ ] <code>&lt;% render 'view_mobile' %&gt;null</code></li>
+<li>[ ] <code>&lt;% render 'view', use_layout: 'mobile' %&gt;null</code></li>
+<li>[ ] <code>&lt;% render 'view', layout: 'mobile' %&gt;null</code></li>
+<li>[ ] <code>&lt;% render_with_layout 'view', 'mobile' %&gt;</code></li>
+</ul>
+</body>
+</html>

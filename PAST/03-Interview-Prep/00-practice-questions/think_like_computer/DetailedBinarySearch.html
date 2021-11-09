@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>DetailedBinarySearch</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="detailed-binary-search">Detailed Binary Search</h1>
+<p><strong>Translator: <a href="https://github.com/Kevin-free">Kevin</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>First, let me tell you a joke cheerful:</p>
+<p>One day Adong went to the library and borrowed N books. When he went out of the library, the alarm went off, so the security guard stopped Adong to check which books were not registered for loan. ADong is going to go through each book under the alarm to find the book that caused the alarm, but the security guard’s disdainful look: Can’t you even do a binary search? Then the security divided the books into two piles, let the first pile pass the alarm, the alarm sounded; then divided the pile into two piles … Finally, after checking logN times, the security successfully found the one that caused the alarm The book showed a smug and ridiculous smile. So Adong left with the remaining books.</p>
+<p>Since then, the library has lost N-1 books.</p>
+<p>Binary search is not easy. The mogul Knuth (the one who invented the KMP algorithm) said that binary search: <strong>Although the basic idea of binary search is comparatively straightforward, the details can be surprisingly tricky…</strong> Many people like to talk about integer overflow bugs, but the real pit of binary search is not the detail problem at all, but whether to add one to or subtract one from <code>mid</code>, whether to use<code>&lt;=</code>in while <code>&lt;</code>.</p>
+<p>If you don’t understand these details correctly, writing dichotomy is definitely metaphysical programming, and if there is a bug, you can only rely on bodhisattva to bless it. <strong>I deliberately wrote a poem to celebrate the algorithm, summarize the main content of this article, and suggest to save:</strong></p>
+<p><img src="../pictures/DetailedBinarySearch/verse.jpg" /></p>
+<p>This article explores some of the most commonly used binary search scenarios: finding a number, finding the left boundary, and finding the right boundary. Moreover, we are going to go into details, such as whether the inequality sign should be accompanied by an equal sign, whether mid should be increased by one, and so on. Analyze the differences in these details and the reasons for these differences to ensure that you can write the correct binary search algorithm flexibly and accurately.</p>
+<h3 id="zero-binary-search-framework">Zero, binary search framework</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">int</span> <span class="fu">binarySearch</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="dt">int</span> left = <span class="dv">0</span>, right = ...;</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">while</span>(...) {</a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb1-6" title="6">        <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb1-7" title="7">            ...</a>
+<a class="sourceLine" id="cb1-8" title="8">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb1-9" title="9">            left = ...</a>
+<a class="sourceLine" id="cb1-10" title="10">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb1-11" title="11">            right = ...</a>
+<a class="sourceLine" id="cb1-12" title="12">        }</a>
+<a class="sourceLine" id="cb1-13" title="13">    }</a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="kw">return</span> ...;</a>
+<a class="sourceLine" id="cb1-15" title="15">}</a></code></pre></div>
+<p><strong>A technique for analyzing binary search is: do not appear else, but write everything clearly with else if, so that all details can be clearly displayed</strong>. This article will use else if to make it clear, and readers can simplify it after understanding.</p>
+<p>The section marked with <code>...</code>, is the place where details may occur. When you see a binary search code, pay attention to these places first. The following sections use examples to analyze what changes can be made in these places.</p>
+<p>In addition, it is necessary to prevent overflow when calculating mid. <code>left + (right-left) / 2</code> is the same as<code>(left + right) / 2</code> in the code, but it effectively prevents <code>left</code> and<code>right</code>. Too large a direct addition causes an overflow.</p>
+<h3 id="first-find-a-number-basic-binary-search">First, find a number (basic binary search)</h3>
+<p>This scenario is the simplest and certainly the most familiar to everyone, that is, searching for a number, if it exists, returns its index, otherwise it returns -1.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">int</span> <span class="fu">binarySearch</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="dt">int</span> left = <span class="dv">0</span>; </a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="dt">int</span> right = nums.<span class="fu">length</span> - <span class="dv">1</span>; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb2-4" title="4"></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="kw">while</span>(left &lt;= right) {</a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="kw">if</span>(nums[mid] == target)</a>
+<a class="sourceLine" id="cb2-8" title="8">            <span class="kw">return</span> mid; </a>
+<a class="sourceLine" id="cb2-9" title="9">        <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &lt; target)</a>
+<a class="sourceLine" id="cb2-10" title="10">            left = mid + <span class="dv">1</span>; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb2-11" title="11">        <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target)</a>
+<a class="sourceLine" id="cb2-12" title="12">            right = mid - <span class="dv">1</span>; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    }</a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-15" title="15">}</a></code></pre></div>
+<p><strong>1. Why is &lt;= instead of &lt; in the condition of the while loop?</strong></p>
+<p>Answer: Because the initial assignment of <code>right</code> is<code>nums.length-1</code>, which is the index of the last element, not <code>nums.length</code>.</p>
+<p>These two may appear in binary search with different functions. The difference is that the former is equivalent to the both closed interval <code>[left, right]</code>, and the latter is equivalent to the left closed right opening interval <code>[left, right)</code>, because An index size of <code>nums.length</code> is out of bounds.</p>
+<p>In our algorithm, we use the interval where <code>[left, right]</code>is closed at both ends. <strong>This interval is actually the interval for each search</strong>.</p>
+<p>When should you stop searching? Of course, you can terminate when the target value is found:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1">    <span class="kw">if</span>(nums[mid] == target)</a>
+<a class="sourceLine" id="cb3-2" title="2">        <span class="kw">return</span> mid; </a></code></pre></div>
+<p>But if not found, you need to terminate the while loop and return -1. When should the while loop terminate? <strong>It should be terminated when the search interval is empty</strong>, which means that if you don’t have to find it, it means you haven’t found it.</p>
+<p>The termination condition of <code>while (left &lt;= right)</code> is <code>left == right + 1</code>, written in the form of an interval is<code>[right + 1, right]</code>, or with a specific number in it <code>[3, 2]</code>, It can be seen that <strong>the interval is empty at this time</strong>, because no number is greater than or equal to 3 and less than or equal to 2. So the termination of the while loop is correct at this time, just return -1.</p>
+<p>The termination condition of <code>while (left &lt;right)</code> is <code>left == right</code>, written in the interval form is <code>[left, right]</code>, or a specific number is entered in <code>[2, 2]</code>, ** this The interval is not empty **, and there is a number 2, but at this time the while loop terminates. That is to say, the interval <code>[2, 2]</code>is omitted, and the index 2 is not searched. If it returns -1 at this time, it is wrong.</p>
+<p>Of course, if you have to use <code>while (left &lt;right)</code>, we already know the cause of the error, so just patch it:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1">    <span class="co">//...</span></a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="kw">while</span>(left &lt; right) {</a>
+<a class="sourceLine" id="cb4-3" title="3">        <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb4-4" title="4">    }</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="kw">return</span> nums[left] == target ? left : -<span class="dv">1</span>;</a></code></pre></div>
+<p><strong>2. Why <code>left = mid + 1</code> and<code>right = mid-1</code>? I think some code is <code>right = mid</code> or<code>left = mid</code>. Without these additions, additions, subtractions, what’s going on, how to judge</strong>?</p>
+<p>Answer: This is also a difficult point of binary search, but as long as you understand the previous content, you can easily judge.</p>
+<p>The concept of “search interval” was just clarified, and the search interval of this algorithm is closed at both ends, that is, <code>[left, right]</code>. So when we find that the index <code>mid</code> is not the<code>target</code> we are looking for, where should we search next?</p>
+<p>Of course, search for <code>[left, mid-1]</code> or <code>[mid + 1, right]</code>, right? <strong>Because <code>mid</code> has already been searched, it should be removed from the search interval</strong>.</p>
+<p><strong>3. What are the flaws of this algorithm</strong>?</p>
+<p>Answer: At this point, you should have mastered all the details of the algorithm, and the reasons for doing so. However, this algorithm has limitations.</p>
+<p>For example, to give you an ordered array <code>nums = [1,2,2,2,3]</code>, and <code>target</code> is 2, the index returned by this algorithm is 2, yes. But if I want to get the left border of <code>target</code>, which is index 1, or I want to get the right border of<code>target</code>, which is index 3, then this algorithm cannot handle it.</p>
+<p>Such a requirement is very common. <strong>You might say, find a target and then search linearly left or right? Yes, but it is not good, because it is difficult to guarantee the complexity of the logarithm of binary search</strong>.</p>
+<p>Our subsequent algorithms will discuss these two binary search algorithms.</p>
+<h3 id="second-binary-search-to-find-the-left-border">Second, binary search to find the left border</h3>
+<p>Here are the most common forms of code, where the tags are details that need attention:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">int</span> <span class="fu">left_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">if</span> (nums.<span class="fu">length</span> == <span class="dv">0</span>) <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="dt">int</span> left = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="dt">int</span> right = nums.<span class="fu">length</span>; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    </a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="kw">while</span> (left &lt; right) { <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb5-7" title="7">        <span class="dt">int</span> mid = (left + right) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb5-8" title="8">        <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb5-9" title="9">            right = mid;</a>
+<a class="sourceLine" id="cb5-10" title="10">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb5-11" title="11">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb5-12" title="12">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb5-13" title="13">            right = mid; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb5-14" title="14">        }</a>
+<a class="sourceLine" id="cb5-15" title="15">    }</a>
+<a class="sourceLine" id="cb5-16" title="16">    <span class="kw">return</span> left;</a>
+<a class="sourceLine" id="cb5-17" title="17">}</a></code></pre></div>
+<p><strong>1.Why is <code>&lt;</code> instead of <code>&lt;=</code> in while?</strong></p>
+<p>Answer: Use the same method, because <code>right = nums.length</code> instead of<code>nums.length-1</code>. So the “search interval” of each loop is <code>[left, right)</code></p>
+<p>The condition of <code>while (left &lt;right)</code> termination is <code>left == right</code>. At this time, the search interval<code>[left, left)</code>is empty, so it can terminate correctly.</p>
+<p>PS: First of all, here is a difference between searching the left and right boundaries and the above algorithm, which is also asked by many readers: <strong>Is the <code>right</code> just now not<code>nums.length-1</code>, why do you have to write it as <code>nums. length</code> makes the “search interval” turn left closed right open</strong>?</p>
+<p>Because the binary search for searching the left and right borders is more common, I will take this example as an example to ensure that you can understand this type of code in the future. You have to use the wording that is closed at both ends, but it is simpler. I will write related code later to unify the three types of binary search with a wording that is closed at both ends. You can look back patiently.</p>
+<p><strong>2. Why is there no operation that returns -1? What if the value of <code>target</code> does not exist in<code>nums</code>?</strong></p>
+<p>Answer: Because you have to go step by step, first understand what the special meaning of this “left side border” is:</p>
+<p><img src="../pictures/DetailedBinarySearch/1.jpg" /></p>
+<p>For this array, the algorithm returns 1. The meaning of this 1 can be interpreted as follows: There is 1 element less than 2 in <code>nums</code>.</p>
+<p>For example, for an ordered array <code>nums = [2,3,5,7]</code>, <code>target = 1</code>, the algorithm will return 0, which means: there are 0 elements in<code>nums</code> that are less than 1.</p>
+<p>For another example, <code>nums = [2,3,5,7], target = 8</code>, the algorithm will return 4, meaning: There are 4 elements in<code>nums</code> that are less than 8.</p>
+<p>In summary, it can be seen that the value returned by the function (that is, the value of the <code>left</code> variable) is a closed interval<code>[0, nums.length]</code>, so we simply add two lines of code to return at the correct time- 1:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">while</span> (left &lt; right) {</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="co">//...</span></a>
+<a class="sourceLine" id="cb6-3" title="3">}</a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="co">// target is greater than all numbers</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="kw">if</span> (left == nums.<span class="fu">length</span>) <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="co">// Similar to the previous algorithm</span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="kw">return</span> nums[left] == target ? left : -<span class="dv">1</span>;</a></code></pre></div>
+<p><strong>3. Why is <code>left = mid + 1</code> and<code>right = mid</code>? Not the same as the previous algorithm</strong>?</p>
+<p>A: This is very easy to explain, because our “search interval” is <code>[left, right)</code>, which is left closed and right open, so after <code>nums [mid]</code> is detected, the next search interval should be removed from the <code>mid</code> segment Into two intervals, namely <code>[left, mid)</code>or<code>[mid + 1, right)</code>.</p>
+<p><strong>4. Why can the algorithm search the left border</strong>?</p>
+<p>Answer: The key lies in the handling of <code>nums [mid] == target</code>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb7-1" title="1">    <span class="kw">if</span> (nums[mid] == target)</a>
+<a class="sourceLine" id="cb7-2" title="2">        right = mid;</a></code></pre></div>
+<p>It can be seen that when you find the target, do not return immediately. Instead, narrow the upper bound of the “search interval” <code>right</code>, and continue searching in the interval <code>[left, mid)</code>, that is, continue to shrink to the left to lock the left boundary.</p>
+<p><strong>5. Why does it return <code>left</code> instead of<code>right</code></strong>?</p>
+<p>Answer: It’s all the same, because the condition for termination of while is <code>left == right</code>.</p>
+<p><strong>6. Can I find a way to change <code>right</code> to<code>nums.length-1</code>, that is, continue to use the “search interval” with both sides closed? This can be unified to some extent with the first binary search</strong>.</p>
+<p>A: Of course, as long as you understand the concept of “search interval”, you can effectively avoid missing elements, and you can do whatever you want. Below we modify strictly according to logic:</p>
+<p>Because you have to close both ends of the search interval, <code>right</code> should be initialized to<code>nums.length-1</code>, and the termination condition of while should be <code>left == right + 1</code>, which means that<code>&lt;=</code>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb8-1" title="1"><span class="dt">int</span> <span class="fu">left_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="co">// search interval is [left, right]</span></a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span> - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="kw">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb8-5" title="5">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb8-6" title="6">        <span class="co">// if else ...</span></a>
+<a class="sourceLine" id="cb8-7" title="7">    }</a></code></pre></div>
+<p>Because the search interval is closed at both ends, and now the left boundary is searched, the update logic for <code>left</code> and<code>right</code> is as follows:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb9-2" title="2">    <span class="co">// search interval is [mid+1, right]</span></a>
+<a class="sourceLine" id="cb9-3" title="3">    left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb9-4" title="4">} <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="co">// search interval is [left, mid-1]</span></a>
+<a class="sourceLine" id="cb9-6" title="6">    right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb9-7" title="7">} <span class="kw">else</span> <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb9-8" title="8">    <span class="co">// shrink right border</span></a>
+<a class="sourceLine" id="cb9-9" title="9">    right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb9-10" title="10">}</a></code></pre></div>
+<p>Since the exit condition of while is <code>left == right + 1</code>, when<code>target</code> is larger than all the elements in <code>nums</code>, the following conditions exist to make the index out of bounds:</p>
+<p><img src="../pictures/DetailedBinarySearch/2.jpg" /></p>
+<p>Therefore, the code that finally returns the result should check for out of bounds:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">if</span> (left &gt;= nums.<span class="fu">length</span> || nums[left] != target)</a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb10-3" title="3"><span class="kw">return</span> left;</a></code></pre></div>
+<p>At this point, the entire algorithm has been written. The complete code is as follows:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb11-1" title="1"><span class="dt">int</span> <span class="fu">left_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span> - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="co">// search interval is [left, right]</span></a>
+<a class="sourceLine" id="cb11-4" title="4">    <span class="kw">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb11-5" title="5">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb11-6" title="6">        <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb11-7" title="7">            <span class="co">// search interval is [mid+1, right]</span></a>
+<a class="sourceLine" id="cb11-8" title="8">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb11-9" title="9">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb11-10" title="10">            <span class="co">// search interval is [left, mid-1]</span></a>
+<a class="sourceLine" id="cb11-11" title="11">            right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb11-12" title="12">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb11-13" title="13">            <span class="co">// shrink right border</span></a>
+<a class="sourceLine" id="cb11-14" title="14">            right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb11-15" title="15">        }</a>
+<a class="sourceLine" id="cb11-16" title="16">    }</a>
+<a class="sourceLine" id="cb11-17" title="17">    <span class="co">// check out of bounds</span></a>
+<a class="sourceLine" id="cb11-18" title="18">    <span class="kw">if</span> (left &gt;= nums.<span class="fu">length</span> || nums[left] != target)</a>
+<a class="sourceLine" id="cb11-19" title="19">        <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb11-20" title="20">    <span class="kw">return</span> left;</a>
+<a class="sourceLine" id="cb11-21" title="21">}</a></code></pre></div>
+<p>This is unified with the first binary search algorithm, which are both “search intervals” with both ends closed, and the value of the <code>left</code> variable is also returned at the end. As long as you hold the logic of binary search, let’s see which one you like and which one you like.</p>
+<h3 id="third-binary-search-to-find-the-right-border">Third, binary search to find the right border</h3>
+<p>Similar to the algorithm for finding the left boundary, there are two ways to write it, or the common left-close and right-open method is written first. There are only two differences from the search of the left boundary, which are marked:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb12-1" title="1"><span class="dt">int</span> <span class="fu">right_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="kw">if</span> (nums.<span class="fu">length</span> == <span class="dv">0</span>) <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb12-3" title="3">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span>;</a>
+<a class="sourceLine" id="cb12-4" title="4">    </a>
+<a class="sourceLine" id="cb12-5" title="5">    <span class="kw">while</span> (left &lt; right) {</a>
+<a class="sourceLine" id="cb12-6" title="6">        <span class="dt">int</span> mid = (left + right) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb12-7" title="7">        <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb12-8" title="8">            left = mid + <span class="dv">1</span>; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb12-9" title="9">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb12-10" title="10">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb12-11" title="11">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb12-12" title="12">            right = mid;</a>
+<a class="sourceLine" id="cb12-13" title="13">        }</a>
+<a class="sourceLine" id="cb12-14" title="14">    }</a>
+<a class="sourceLine" id="cb12-15" title="15">    <span class="kw">return</span> left - <span class="dv">1</span>; <span class="co">// attention</span></a>
+<a class="sourceLine" id="cb12-16" title="16">}</a></code></pre></div>
+<p><strong>1. Why can this algorithm find the right border</strong>?</p>
+<p>Answer: Similarly, the key point is here:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb13-2" title="2">    left = mid + <span class="dv">1</span>;</a></code></pre></div>
+<p>When <code>nums [mid] == target</code>, do not return immediately, but increase the lower bound of the“ search interval ”<code>left</code>, so that the interval continuously shrinks to the right to achieve the purpose of locking the right boundary.</p>
+<p><strong>2. Why does it return <code>left-1</code> instead of<code>left</code>? And I think that since it is searching for the right border, it should return <code>right</code> only</strong>.</p>
+<p>Answer: First, the termination condition of the while loop is <code>left == right</code>, so<code>left</code> and <code>right</code> are the same. You have to embody the characteristics of the right side and return<code>right-1</code>.Answer: First, the termination condition of the while loop is <code>left == right</code>, so<code>left</code> and <code>right</code> are the same. You have to embody the characteristics of the right side and return<code>right-1</code>.</p>
+<p>As for why it should be reduced by one, this is a special point in the search for the right border. The key is to judge in this condition:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb14-2" title="2">    left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb14-3" title="3">    <span class="co">// think it: mid = left - 1</span></a></code></pre></div>
+<p><img src="../pictures/DetailedBinarySearch/3.jpg" /></p>
+<p>Because our update to <code>left</code> must be<code>left = mid + 1</code>, which means that at the end of the while loop, <code>nums [left]</code> must not be equal to <code>target</code>, and<code>nums [left-1]</code>may be <code>target</code>.</p>
+<p>As for why the update of <code>left</code> must be<code>left = mid + 1</code>, the search is the same as the left border, so I won’t go into details.</p>
+<p><strong>3. Why is there no operation that returns -1? What if the value of <code>target</code> does not exist in<code>nums</code>?</strong></p>
+<p>A: Similar to the previous search of the left boundary, because the termination condition of while is <code>left == right</code>, that is, the range of<code>left</code> is <code>[0, nums.length]</code>, so you can add two lines of code returns -1 correctly:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">while</span> (left &lt; right) {</a>
+<a class="sourceLine" id="cb15-2" title="2">    <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb15-3" title="3">}</a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="kw">if</span> (left == <span class="dv">0</span>) <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb15-5" title="5"><span class="kw">return</span> nums[left-<span class="dv">1</span>] == target ? (left-<span class="dv">1</span>) : -<span class="dv">1</span>;</a></code></pre></div>
+<p><strong>4. Is it also possible to unify the “search interval” of this algorithm into a form with both ends closed? In this way, the three writing methods are completely unified, and they can be written with closed eyes later</strong>.</p>
+<p>Answer: Of course, it is similar to searching for the unified writing on the left border. In fact, you only need to change two places:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb16-1" title="1"><span class="dt">int</span> <span class="fu">right_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb16-2" title="2">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span> - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb16-3" title="3">    <span class="kw">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb16-4" title="4">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb16-5" title="5">        <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb16-6" title="6">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb16-7" title="7">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb16-8" title="8">            right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb16-9" title="9">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb16-10" title="10">            <span class="co">// here~ change to shrink left bounds</span></a>
+<a class="sourceLine" id="cb16-11" title="11">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb16-12" title="12">        }</a>
+<a class="sourceLine" id="cb16-13" title="13">    }</a>
+<a class="sourceLine" id="cb16-14" title="14">    <span class="co">// here~ change to check right out of bounds, see below </span></a>
+<a class="sourceLine" id="cb16-15" title="15">    <span class="kw">if</span> (right &lt; <span class="dv">0</span> || nums[right] != target)</a>
+<a class="sourceLine" id="cb16-16" title="16">        <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb16-17" title="17">    <span class="kw">return</span> right;</a>
+<a class="sourceLine" id="cb16-18" title="18">}</a></code></pre></div>
+<p>When <code>target</code> is smaller than all elements,<code>right</code> will be reduced to -1, so you need to prevent it from going out of bounds at the end:</p>
+<p><img src="../pictures/DetailedBinarySearch/4.jpg" /></p>
+<p>At this point, the two ways of searching for the binary search on the right side of the boundary have also been completed. In fact, it is easier to remember the unification of the “search interval” with both ends closed, right?</p>
+<h3 id="fourth-unified-logic">Fourth, unified logic</h3>
+<p>Let’s tease out the causal logic of these detailed differences:</p>
+<h4 id="firstly-we-implement-a-basic-binary-search-algorithm">Firstly, we implement a basic binary search algorithm:</h4>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb17-1" title="1">Because we initialize `right <span class="op">=</span> nums.length <span class="op">-</span> <span class="dv">1</span>`, it decided our search interval <span class="kw">is</span> `[left,right]`, <span class="kw">and</span> it also decided `left <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span>` <span class="kw">and</span> `right <span class="op">=</span> mid <span class="op">-</span> <span class="dv">1</span>`.</a>
+<a class="sourceLine" id="cb17-2" title="2"></a>
+<a class="sourceLine" id="cb17-3" title="3">Since we only need to find a index of `target`, so when `nums[mid] <span class="op">==</span> target`, we can <span class="cf">return</span> immediately.</a></code></pre></div>
+<h4 id="secondly-we-implement-binary-search-to-find-left-border">Secondly, we implement binary search to find left border:</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb18-1" title="1">Because we initialize `right <span class="op">=</span> nums.length`, it decided our search interval <span class="kw">is</span> `[left,right)`, <span class="kw">and</span> it also decided `while (left <span class="op">&lt;</span> right)` ,<span class="kw">and</span> `left <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span>` <span class="kw">and</span> `right <span class="op">=</span> mid`.</a>
+<a class="sourceLine" id="cb18-2" title="2"></a>
+<a class="sourceLine" id="cb18-3" title="3">Since we need to find the left border, so when `nums[mid] <span class="op">==</span> target`, we shouldn<span class="st">&#39;t return immediately, we need to tighten the right border to lock the left border.</span></a></code></pre></div>
+<h4 id="thirdly-we-implement-binary-search-to-find-right-border">Thirdly, we implement binary search to find right border:</h4>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb19-1" title="1">Because we initialize `right <span class="op">=</span> nums.length`, it decided our search interval <span class="kw">is</span> `[left,right)`, </a>
+<a class="sourceLine" id="cb19-2" title="2"></a>
+<a class="sourceLine" id="cb19-3" title="3">it also decided `while(left <span class="op">&lt;</span> right)`, </a>
+<a class="sourceLine" id="cb19-4" title="4">`left <span class="op">=</span> mid <span class="op">+</span> <span class="dv">1</span>` <span class="kw">and</span> `right  <span class="op">=</span> mid`.</a>
+<a class="sourceLine" id="cb19-5" title="5"></a>
+<a class="sourceLine" id="cb19-6" title="6">Since we need to find the left border, so when `nums[mid] <span class="op">==</span> target`, we shouldn<span class="st">&#39;t return immediately, we need to tighten the left border to lock the right border.</span></a></code></pre></div>
+<p>For the binary search to find the left and right boundaries, the common method is to use the left and right open “search intervals”. <strong>We also unified the “search intervals” into closed ends on the basis of logic, which is easy to remember. Just modify two places. There are three ways of writing</strong>:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb20-1" title="1"><span class="dt">int</span> <span class="fu">binary_search</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb20-2" title="2">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span> - <span class="dv">1</span>; </a>
+<a class="sourceLine" id="cb20-3" title="3">    <span class="kw">while</span>(left &lt;= right) {</a>
+<a class="sourceLine" id="cb20-4" title="4">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb20-5" title="5">        <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb20-6" title="6">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-7" title="7">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb20-8" title="8">            right = mid - <span class="dv">1</span>; </a>
+<a class="sourceLine" id="cb20-9" title="9">        } <span class="kw">else</span> <span class="kw">if</span>(nums[mid] == target) {</a>
+<a class="sourceLine" id="cb20-10" title="10">            <span class="co">// Return directly</span></a>
+<a class="sourceLine" id="cb20-11" title="11">            <span class="kw">return</span> mid;</a>
+<a class="sourceLine" id="cb20-12" title="12">        }</a>
+<a class="sourceLine" id="cb20-13" title="13">    }</a>
+<a class="sourceLine" id="cb20-14" title="14">    <span class="co">// Return directly</span></a>
+<a class="sourceLine" id="cb20-15" title="15">    <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-16" title="16">}</a>
+<a class="sourceLine" id="cb20-17" title="17"></a>
+<a class="sourceLine" id="cb20-18" title="18"><span class="dt">int</span> <span class="fu">left_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb20-19" title="19">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span> - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-20" title="20">    <span class="kw">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb20-21" title="21">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb20-22" title="22">        <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb20-23" title="23">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-24" title="24">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb20-25" title="25">            right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-26" title="26">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb20-27" title="27">            <span class="co">// Don&#39;t return! Lock left border</span></a>
+<a class="sourceLine" id="cb20-28" title="28">            right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-29" title="29">        }</a>
+<a class="sourceLine" id="cb20-30" title="30">    }</a>
+<a class="sourceLine" id="cb20-31" title="31">    <span class="co">// Check whether left border out of bounds lastly</span></a>
+<a class="sourceLine" id="cb20-32" title="32">    <span class="kw">if</span> (left &gt;= nums.<span class="fu">length</span> || nums[left] != target)</a>
+<a class="sourceLine" id="cb20-33" title="33">        <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-34" title="34">    <span class="kw">return</span> left;</a>
+<a class="sourceLine" id="cb20-35" title="35">}</a>
+<a class="sourceLine" id="cb20-36" title="36"></a>
+<a class="sourceLine" id="cb20-37" title="37"></a>
+<a class="sourceLine" id="cb20-38" title="38"><span class="dt">int</span> <span class="fu">right_bound</span>(<span class="dt">int</span>[] nums, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb20-39" title="39">    <span class="dt">int</span> left = <span class="dv">0</span>, right = nums.<span class="fu">length</span> - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-40" title="40">    <span class="kw">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb20-41" title="41">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb20-42" title="42">        <span class="kw">if</span> (nums[mid] &lt; target) {</a>
+<a class="sourceLine" id="cb20-43" title="43">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-44" title="44">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] &gt; target) {</a>
+<a class="sourceLine" id="cb20-45" title="45">            right = mid - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-46" title="46">        } <span class="kw">else</span> <span class="kw">if</span> (nums[mid] == target) {</a>
+<a class="sourceLine" id="cb20-47" title="47">            <span class="co">// Don&#39;t return! Lock right border</span></a>
+<a class="sourceLine" id="cb20-48" title="48">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-49" title="49">        }</a>
+<a class="sourceLine" id="cb20-50" title="50">    }</a>
+<a class="sourceLine" id="cb20-51" title="51">    <span class="co">// Check whether right border out of bounds lastly</span></a>
+<a class="sourceLine" id="cb20-52" title="52">    <span class="kw">if</span> (right &lt; <span class="dv">0</span> || nums[right] != target)</a>
+<a class="sourceLine" id="cb20-53" title="53">        <span class="kw">return</span> -<span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb20-54" title="54">    <span class="kw">return</span> right;</a>
+<a class="sourceLine" id="cb20-55" title="55">}</a></code></pre></div>
+<p>If you can understand the above, then congratulations, the details of the binary search algorithm are nothing more than that.</p>
+<p>Through this article, you learned:</p>
+<ol type="1">
+<li><p>When analyzing the binary search code, do not appear else, expand all into else if for easy understanding.</p></li>
+<li><p>Pay attention to the termination conditions of “search interval” and while. If there are missing elements, remember to check at the end.</p></li>
+<li><p>If you need to define the left and right “search interval” to search the left and right boundaries, you only need to modify it when <code>nums [mid] == target</code>, and you need to subtract one when searching the right side.</p></li>
+<li><p>If the “search interval” is unified to be closed at both ends, it is easy to remember, as long as you slightly change the code and return logic at the condition of <code>nums [mid] == target</code>, <strong>it is recommended to take a small book As a binary search template</strong>.</p></li>
+</ol>
+</body>
+</html>

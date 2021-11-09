@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Framework and thoughts about learning data structure and algorithm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="framework-and-thoughts-about-learning-data-structure-and-algorithm">Framework and thoughts about learning data structure and algorithm</h1>
+<p>Translator: <a href="https://github.com/foreversolar">ForeverSolar</a></p>
+<p>Author: <a href="https://github.com/labuladong">labuladong</a></p>
+<p>This is a revision of a long time ago article “framework thinking of learning data structure and algorithm”. This article will cover all the previous contents, and will give many code examples to teach you how to use framework thinking.</p>
+<p>First of all, we are talking about common data structures. I am not engaged in algorithm competitions, so I can only solve conventional problems. In addition, the following is a summary of my personal experience. No algorithm book can cover these things, so please try to understand my point of view and don’t dwell on the details, because this article hopes to build an overview of framework thinking of data structure and algorithm.</p>
+<p>The framework thinking that from the whole to the details, from the top to the bottom and from the abstract to the concrete is universal. We think in this way can be more effective not only in learning data structure and algorithm, but also in learning any other knowledge.</p>
+<h3 id="storage-mode-of-data-structure">1.Storage mode of data structure</h3>
+<p><strong>There are only two ways to store data structure: array (sequential storage) and linked list (linked storage)</strong>。</p>
+<p>Wait..what about other data structure such as hash table, stack, queue, heap, tree, graph and so on?</p>
+<p>When we analyze problems, we must have the idea of recursion, from top to bottom, from abstract to concrete. Those data structures belong to the 「superstructure」, while arrays and lists are the 「structural basis」. Because those diversified data structures, the source of which are all special operations on linked lists or arrays, just have different APIs.</p>
+<p>For example, 「queue」 and 「stack」 data structures can be implemented with both linked lists and arrays. Using array to realize, we need to deal with the problem of expanding and shrinking capacity; using linked list to realize, there is no such problem, but more memory space is needed to store node pointers.</p>
+<p>Graph can be implemented with both linked lists and arrays. An adjacency table is a linked list, and an adjacency matrix is a two-dimensional array. Adjacency matrix can judge the connectivity quickly and solve some problems by matrix operation, but if the graph is sparse, it is very time-consuming. Adjacency table is more space-saving, but the efficiency of many operations is certainly less than adjacency matrix.</p>
+<p>Hashtable maps keys to a large array through hash function. And to solve hash conflict, Chaining needs linked list feature, with simple operation, but needs extra space to store pointer; linear exploration method needs array feature, to address continuously, and does not need storage space of pointer, but the operation is slightly more complex.</p>
+<p>The implementation of “tree” with array is “heap”, because “heap” is a complete binary tree, and the storage with array does not need node pointer, and the operation is relatively simple; the implementation with linked list is a very common kind of “tree”, because it is not necessarily a complete binary tree, so it is not suitable to use array storage. For this reason, based on the tree structure of the list, various ingenious designs are derived, such as binary search tree, AVL tree, red black tree, interval tree, B tree, etc., to deal with different problems.</p>
+<p>Friends who know about redis database may also know that redis provides lists, strings, collections and other common data structures. However, for each data structure, there are at least two underlying storage methods to facilitate the use of appropriate storage methods according to the actual situation of data storage.</p>
+<p>In conclusion, there are many kinds of data structures. Even you can invent your own data structures, but the underlying storage is nothing but arrays or linked lists. <strong>The advantages and disadvantages of the two are as follows:</strong></p>
+<p><strong>Array</strong> is compact and continuous storage, which can be accessed randomly. It can find corresponding elements quickly through index and save storage space relatively. But just because of the continuous storage, the memory space must be allocated enough at one time, so if the array is to be expanded, it needs to reallocate a larger space, and then copy all the data, the time complexity O (n); and if you want to insert and delete in the middle of the array, you must move all the data behind each time to maintain the continuity, the time complexity O (n).</p>
+<p>Because the elements of the <strong>linked list</strong> are not continuous, but the pointer points to the position of the next element, so there is no expansion of the array; if you know the precursor and the hind drive of an element, the operation pointer can delete the element or insert a new element, with time complexity of O (1). But because the storage space is not continuous, you can’t calculate the address of the corresponding element according to an index, so you can’t access it randomly; and because each element must store a pointer to the location of the front and back elements, it will consume relatively more storage space.</p>
+<h3 id="basic-operation-of-data-structure">2.Basic operation of data structure</h3>
+<p>For any data structure, its basic operation is no more than traversal + access, and more specific point are: add, delete, search and modify.</p>
+<p><strong>There are many kinds of data structures, but their purpose is to add, delete, search and modify them as efficiently as possible</strong> in different application scenarios. Isn’t that the mission of data structure?</p>
+<p>How to traverse + access? We still see from the highest level that traversal and access of various data structures are in two forms: linear and nonlinear.</p>
+<p>Linear is represented by for / while iteration, and nonlinear is represented by recursion. Furthermore, there are only the following frameworks:</p>
+<p>Array traversal framework, typical linear iterative structure：</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">void</span> <span class="fu">traverse</span>(<span class="dt">int</span>[] arr) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; arr.<span class="fu">length</span>; i++) {</a>
+<a class="sourceLine" id="cb1-3" title="3">        <span class="co">// iteratively visit arr[i]</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    }</a>
+<a class="sourceLine" id="cb1-5" title="5">}</a></code></pre></div>
+<p>Linked list traversal framework has both iterative and recursive structure：</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/* Basic node of the single linked list */</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">class</span> ListNode {</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="dt">int</span> val;</a>
+<a class="sourceLine" id="cb2-4" title="4">    ListNode next;</a>
+<a class="sourceLine" id="cb2-5" title="5">}</a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="dt">void</span> <span class="fu">traverse</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">for</span> (ListNode p = head; p != <span class="kw">null</span>; p = p.<span class="fu">next</span>) {</a>
+<a class="sourceLine" id="cb2-9" title="9">        <span class="co">// iteratively p.val</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    }</a>
+<a class="sourceLine" id="cb2-11" title="11">}</a>
+<a class="sourceLine" id="cb2-12" title="12"></a>
+<a class="sourceLine" id="cb2-13" title="13"><span class="dt">void</span> <span class="fu">traverse</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="co">// recusively head.val</span></a>
+<a class="sourceLine" id="cb2-15" title="15">    <span class="fu">traverse</span>(head.<span class="fu">next</span>)</a>
+<a class="sourceLine" id="cb2-16" title="16">}</a></code></pre></div>
+<p>Binary tree traversal framework, typical nonlinear recursive traversal structure：</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="co">/* Basic node of the binary tree */</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">class</span> <span class="bu">TreeNode</span> {</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">int</span> val;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="bu">TreeNode</span> left, right;</a>
+<a class="sourceLine" id="cb3-5" title="5">}</a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="dt">void</span> <span class="fu">traverse</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="fu">traverse</span>(root.<span class="fu">left</span>)</a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="fu">traverse</span>(root.<span class="fu">right</span>)</a>
+<a class="sourceLine" id="cb3-10" title="10">}</a></code></pre></div>
+<p>Do you think the recursive traversal of binary tree is similar to that of linked list? Take a look at the binary tree structure and single linked list structure, is it similar? If there are more forks, will you traverse the n-tree?</p>
+<p>The binary tree framework can be extended to the n-tree traversal framework：</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/* Basic node of the N-tree */</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">class</span> <span class="bu">TreeNode</span> {</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">int</span> val;</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="bu">TreeNode</span>[] children;</a>
+<a class="sourceLine" id="cb4-5" title="5">}</a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="dt">void</span> <span class="fu">traverse</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="kw">for</span> (<span class="bu">TreeNode</span> child : root.<span class="fu">children</span>)</a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="fu">traverse</span>(child)</a>
+<a class="sourceLine" id="cb4-10" title="10">}</a></code></pre></div>
+<p>N-tree traversal can be extended to graph traversal, because graph is a combination of several n-tree. Do you think a circle can appear in a graph? This is very easy to do. Just mark it visited with a Boolean array.</p>
+<p><strong>The so-called framework is a trick. No matter add, delete, insert or modify, these codes are never separated from the structure. You can take this structure as the outline and add code on the framework according to specific problems. The following will give specific examples.</strong></p>
+<h3 id="guidelines-of-algorithm-exercises">3.Guidelines of Algorithm Exercises</h3>
+<p>First of all, it should be clear that <strong>data structure is a tool, and algorithm is a method to solve specific problems through appropriate tools</strong>. That is to say, before learning algorithms, at least we need to understand the common data structures and their characteristics and defects.</p>
+<p>So how to practice in leetcode? <strong>Do binary tree exercises first! Do binary tree exercises first! Do binary tree exercises first!</strong> Because binary tree exercises are the easiest to train framework thinking, and most of the algorithm skills are essentially tree traversal problems.</p>
+<p>According to many readers’ questions, we are not without ideas to solve problems, but without understanding what we mean by “framework”. <strong>Don’t look down on following lines of broken code, almost all the topics of binary trees are a set of this framework.</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">void</span> <span class="fu">traverse</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="co">// pre order traverse</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="fu">traverse</span>(root.<span class="fu">left</span>)</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="co">// middle order traverse</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="fu">traverse</span>(root.<span class="fu">right</span>)</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="co">// post order traverse</span></a>
+<a class="sourceLine" id="cb5-7" title="7">}</a></code></pre></div>
+<p>For example, I can show the solution of a few problems at random, regardless of the specific code logic, just to see how the framework works in it.</p>
+<p>Leetcode No.124 , hard level. This exercise requires to find the maximum sum of paths in the binary tree. The main code is as follows:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb6-1" title="1"><span class="dt">int</span> ans = INT_MIN;</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="dt">int</span> oneSideMax(TreeNode* root) {</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="cf">if</span> (root == <span class="kw">nullptr</span>) <span class="cf">return</span> <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="dt">int</span> left = max(<span class="dv">0</span>, oneSideMax(root-&gt;left));</a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="dt">int</span> right = max(<span class="dv">0</span>, oneSideMax(root-&gt;right));</a>
+<a class="sourceLine" id="cb6-6" title="6">    ans = max(ans, left + right + root-&gt;val);</a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="cf">return</span> max(left, right) + root-&gt;val;</a>
+<a class="sourceLine" id="cb6-8" title="8">}</a></code></pre></div>
+<p>You see, this is a post order traversal.</p>
+<p>Leetcode No.105, medium level. This exercise requires to rebuild a binary tree according to the results of traversal in the pre order and middle order. It’s a classic problem. The main code is as follows</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb7-1" title="1"><span class="bu">TreeNode</span> <span class="fu">buildTree</span>(<span class="dt">int</span>[] preorder, <span class="dt">int</span> preStart, <span class="dt">int</span> preEnd, </a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="dt">int</span>[] inorder, <span class="dt">int</span> inStart, <span class="dt">int</span> inEnd, <span class="bu">Map</span>&lt;<span class="bu">Integer</span>, <span class="bu">Integer</span>&gt; inMap) {</a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="kw">if</span>(preStart &gt; preEnd || inStart &gt; inEnd) <span class="kw">return</span> <span class="kw">null</span>;</a>
+<a class="sourceLine" id="cb7-5" title="5"></a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="bu">TreeNode</span> root = <span class="kw">new</span> <span class="bu">TreeNode</span>(preorder[preStart]);</a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="dt">int</span> inRoot = inMap.<span class="fu">get</span>(root.<span class="fu">val</span>);</a>
+<a class="sourceLine" id="cb7-8" title="8">    <span class="dt">int</span> numsLeft = inRoot - inStart;</a>
+<a class="sourceLine" id="cb7-9" title="9"></a>
+<a class="sourceLine" id="cb7-10" title="10">    root.<span class="fu">left</span> = <span class="fu">buildTree</span>(preorder, preStart + <span class="dv">1</span>, preStart + numsLeft, </a>
+<a class="sourceLine" id="cb7-11" title="11">                          inorder, inStart, inRoot - <span class="dv">1</span>, inMap);</a>
+<a class="sourceLine" id="cb7-12" title="12">    root.<span class="fu">right</span> = <span class="fu">buildTree</span>(preorder, preStart + numsLeft + <span class="dv">1</span>, preEnd, </a>
+<a class="sourceLine" id="cb7-13" title="13">                          inorder, inRoot + <span class="dv">1</span>, inEnd, inMap);</a>
+<a class="sourceLine" id="cb7-14" title="14">    <span class="kw">return</span> root;</a>
+<a class="sourceLine" id="cb7-15" title="15">}</a></code></pre></div>
+<p>Don’t be scared by so many parameters of this function, just to control the array index. In essence, this algorithm is also a preorder traversal.</p>
+<p>Leetcode No.99 , hard level. This exercise requires to recover a BST, the main code is as follows：</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb8-1" title="1"><span class="dt">void</span> traverse(TreeNode* node) {</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="cf">if</span> (!node) <span class="cf">return</span>;</a>
+<a class="sourceLine" id="cb8-3" title="3">    traverse(node-&gt;left);</a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="cf">if</span> (node-&gt;val &lt; prev-&gt;val) {</a>
+<a class="sourceLine" id="cb8-5" title="5">        s = (s == NULL) ? prev : s;</a>
+<a class="sourceLine" id="cb8-6" title="6">        t = node;</a>
+<a class="sourceLine" id="cb8-7" title="7">    }</a>
+<a class="sourceLine" id="cb8-8" title="8">    prev = node;</a>
+<a class="sourceLine" id="cb8-9" title="9">    traverse(node-&gt;right);</a>
+<a class="sourceLine" id="cb8-10" title="10">}</a></code></pre></div>
+<p>This is just a middle order traversal. There should be no need to explain what it means for a BST middle order traversal.</p>
+<p>As you can see, the problem of hard level is not much difficulty, but also so regular. Just write out the framework and add something to the corresponding position. That’s the idea.</p>
+<p>For a person who understands binary trees, it won’t take long to do exercises of a binary tree. So if you can’t or are afraid of working out questions, you can start from the binary tree. The first 10 may be a little uncomfortable. If you do another 20 with the framework, you may have some understanding. If you finish that, and then do any backtracking, dynamic programming or divide-and-conquer topic, you will find that <strong>as long as recursion is involved, it’s all a tree problem.</strong></p>
+<p>More examples:</p>
+<p><a href="../动态规划系列/动态规划详解进阶.md">Dynamic programming</a> said that the problem of collecting changes, the violent solution is to traverse an n-tree:</p>
+<p><img src="../pictures/动态规划详解进阶/5.jpg" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">def</span> coinChange(coins: List[<span class="bu">int</span>], amount: <span class="bu">int</span>):</a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3">    <span class="kw">def</span> dp(n):</a>
+<a class="sourceLine" id="cb9-4" title="4">        <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>: <span class="cf">return</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb9-5" title="5">        <span class="cf">if</span> n <span class="op">&lt;</span> <span class="dv">0</span>: <span class="cf">return</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb9-6" title="6"></a>
+<a class="sourceLine" id="cb9-7" title="7">        res <span class="op">=</span> <span class="bu">float</span>(<span class="st">&#39;INF&#39;</span>)</a>
+<a class="sourceLine" id="cb9-8" title="8">        <span class="cf">for</span> coin <span class="kw">in</span> coins:</a>
+<a class="sourceLine" id="cb9-9" title="9">            subproblem <span class="op">=</span> dp(n <span class="op">-</span> coin)</a>
+<a class="sourceLine" id="cb9-10" title="10">            <span class="co"># no solution for sub questions </span></a>
+<a class="sourceLine" id="cb9-11" title="11">            <span class="cf">if</span> subproblem <span class="op">==</span> <span class="dv">-1</span>: <span class="cf">continue</span></a>
+<a class="sourceLine" id="cb9-12" title="12">            res <span class="op">=</span> <span class="bu">min</span>(res, <span class="dv">1</span> <span class="op">+</span> subproblem)</a>
+<a class="sourceLine" id="cb9-13" title="13">        <span class="cf">return</span> res <span class="cf">if</span> res <span class="op">!=</span> <span class="bu">float</span>(<span class="st">&#39;INF&#39;</span>) <span class="cf">else</span> <span class="dv">-1</span></a>
+<a class="sourceLine" id="cb9-14" title="14">    </a>
+<a class="sourceLine" id="cb9-15" title="15">    <span class="cf">return</span> dp(amount)</a></code></pre></div>
+<p>What if I can’t read so much code? Directly extract the framework, you can see the core idea：</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" title="1"><span class="co"># a traverse problem of n-tree</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="kw">def</span> dp(n):</a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="cf">for</span> coin <span class="kw">in</span> coins:</a>
+<a class="sourceLine" id="cb10-4" title="4">        dp(n <span class="op">-</span> coin)</a></code></pre></div>
+<p>In fact, many dynamic planning problems are traversing a tree. If you are familiar with the traversal operation of the tree, you at least know how to transform ideas into code and how to extract the core ideas of other people’s solutions.</p>
+<p>Look at the backtracking algorithm again. The detailed explanation of the backtracking algorithm in the previous article simply says that the backtracking algorithm is a forward and backward traversal problem of n-tree, without exception.</p>
+<p>For example, the main code of N Queen Problem is as follows:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb11-1" title="1"><span class="dt">void</span> <span class="fu">backtrack</span>(<span class="dt">int</span>[] nums, <span class="bu">LinkedList</span>&lt;<span class="bu">Integer</span>&gt; track) {</a>
+<a class="sourceLine" id="cb11-2" title="2">    <span class="kw">if</span> (track.<span class="fu">size</span>() == nums.<span class="fu">length</span>) {</a>
+<a class="sourceLine" id="cb11-3" title="3">        res.<span class="fu">add</span>(<span class="kw">new</span> <span class="bu">LinkedList</span>(track));</a>
+<a class="sourceLine" id="cb11-4" title="4">        <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb11-5" title="5">    }</a>
+<a class="sourceLine" id="cb11-6" title="6">    </a>
+<a class="sourceLine" id="cb11-7" title="7">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; nums.<span class="fu">length</span>; i++) {</a>
+<a class="sourceLine" id="cb11-8" title="8">        <span class="kw">if</span> (track.<span class="fu">contains</span>(nums[i]))</a>
+<a class="sourceLine" id="cb11-9" title="9">            <span class="kw">continue</span>;</a>
+<a class="sourceLine" id="cb11-10" title="10">        track.<span class="fu">add</span>(nums[i]);</a>
+<a class="sourceLine" id="cb11-11" title="11">        <span class="co">// go to next decision level</span></a>
+<a class="sourceLine" id="cb11-12" title="12">        <span class="fu">backtrack</span>(nums, track);</a>
+<a class="sourceLine" id="cb11-13" title="13">        track.<span class="fu">removeLast</span>();</a>
+<a class="sourceLine" id="cb11-14" title="14">    }</a>
+<a class="sourceLine" id="cb11-15" title="15"></a>
+<a class="sourceLine" id="cb11-16" title="16"><span class="co">/* extract n-tree traverse framework */</span></a>
+<a class="sourceLine" id="cb11-17" title="17"><span class="dt">void</span> <span class="fu">backtrack</span>(<span class="dt">int</span>[] nums, <span class="bu">LinkedList</span>&lt;<span class="bu">Integer</span>&gt; track) {</a>
+<a class="sourceLine" id="cb11-18" title="18">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; nums.<span class="fu">length</span>; i++) {</a>
+<a class="sourceLine" id="cb11-19" title="19">        <span class="fu">backtrack</span>(nums, track);</a>
+<a class="sourceLine" id="cb11-20" title="20">}</a></code></pre></div>
+<p><strong>To sum up, for those who are afraid of algorithms, you can do the exercises of the relevant topics of the tree first, try to see the problems from the framework, rather than the details.</strong></p>
+<p>From the perspective of framework, we can extract and expand based on the framework, which can not only understand the core logic quickly when we look at other people’s solutions, but also help us find the direction of thinking when we write our solutions.</p>
+<p>Of course, if the details are wrong, you can’t get the right answer, but as long as there is a framework, you can’t be wrong too much, because your direction is right.</p>
+<p>This kind of thinking is very important. Sometimes I write the solution according to the process of finding the state transition equation summarized in the dynamic planning explanation. To be honest, I don’t know why it’s right. Anyway, it’s right…</p>
+<p><strong>This is the power of framework, which can ensure that you can still write the right program even when you are sleepy; even if you can’t do anything, you can be a higher level than others.</strong></p>
+<h3 id="summary">4.Summary</h3>
+<p>The basic storage mode of data structure is chain and order. The basic operation is to add, delete, search and modify. The traversal mode is nothing but iteration and recursion.</p>
+<p>It is suggested to start from “tree” and finish these dozens of questions in combination with frame thinking. The understanding of tree structure should be in place. At this time, if you look at the topics of backtracking, dynamic rules, divide and conquer, you may have a deeper understanding of the ideas.</p>
+</body>
+</html>

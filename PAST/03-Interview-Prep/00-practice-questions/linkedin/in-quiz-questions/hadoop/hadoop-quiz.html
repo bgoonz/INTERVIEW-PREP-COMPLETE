@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hadoop-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="hadoop-assessment">Hadoop Assessment</h2>
+<h4 id="q1.-partitioner-controls-the-partitioning-of-what-data">Q1. Partitioner controls the partitioning of what data?</h4>
+<ul>
+<li>[ ] final keys</li>
+<li>[ ] final values</li>
+<li>[x] intermediate keys</li>
+<li>[ ] intermediate values</li>
+</ul>
+<h4 id="q2.-sql-windowing-functions-are-implemented-in-hive-using-which-keywords">Q2. SQL Windowing functions are implemented in Hive using which keywords?</h4>
+<ul>
+<li>[ ] UNION DISTINCT, RANK</li>
+<li>[x] OVER, RANK</li>
+<li>[ ] OVER, EXCEPT</li>
+<li>[ ] UNION DISTINCT, RANK</li>
+</ul>
+<h4 id="q3.-rather-than-adding-a-secondary-sort-to-a-slow-reduce-job-it-is-hadoop-best-practice-to-perform-which-optimization">Q3. Rather than adding a Secondary Sort to a slow Reduce job, it is Hadoop best practice to perform which optimization?</h4>
+<ul>
+<li>[ ] Add a partitioned shuffle to the Map job.</li>
+<li>[x] Add a partitioned shuffle to the Reduce job.</li>
+<li>[ ] Break the Reduce job into multiple, chained Reduce jobs.</li>
+<li>[ ] Break the Reduce job into multiple, chained Map jobs.</li>
+</ul>
+<h4 id="q4.-hadoop-auth-enforces-authentication-on-protected-resources.-once-authentication-has-been-established-it-sets-what-type-of-authenticating-cookie">Q4. Hadoop Auth enforces authentication on protected resources. Once authentication has been established, it sets what type of authenticating cookie?</h4>
+<ul>
+<li>[ ] encrypted HTTP</li>
+<li>[ ] unsigned HTTP</li>
+<li>[ ] compressed HTTP</li>
+<li>[x] signed HTTP</li>
+</ul>
+<h4 id="q5.-mapreduce-jobs-can-be-written-in-which-language">Q5. MapReduce jobs can be written in which language?</h4>
+<ul>
+<li>[x] Java or Python</li>
+<li>[ ] SQL only</li>
+<li>[ ] SQL or Java</li>
+<li>[ ] Python or SQL</li>
+</ul>
+<h4 id="q6.-to-perform-local-aggregation-of-the-intermediate-outputs-mapreduce-users-can-optionally-specify-which-object">Q6. To perform local aggregation of the intermediate outputs, MapReduce users can optionally specify which object?</h4>
+<ul>
+<li>[ ] Reducer</li>
+<li>[x] Combiner</li>
+<li>[ ] Mapper</li>
+<li>[ ] Counter</li>
+</ul>
+<h4 id="q7.-to-verify-job-status-look-for-the-value-_-in-the-_.">Q7. To verify job status, look for the value <strong>_</strong> in the <strong>_</strong>.</h4>
+<ul>
+<li>[ ] SUCCEEDED; syslog</li>
+<li>[x] SUCCEEDED; stdout</li>
+<li>[ ] DONE; syslog</li>
+<li>[ ] DONE; stdout</li>
+</ul>
+<h4 id="q8.-which-line-of-code-implements-a-reducer-method-in-mapreduce-2.0">Q8. Which line of code implements a Reducer method in MapReduce 2.0?</h4>
+<ul>
+<li>[x] public void reduce(Text key, Iterator<IntWritable> values, Context context){…}</li>
+<li>[ ] public static void reduce(Text key, IntWritable[] values, Context context){…}</li>
+<li>[ ] public static void reduce(Text key, Iterator<IntWritable> values, Context context){…}</li>
+<li>[ ] public void reduce(Text key, IntWritable[] values, Context context){…}</li>
+</ul>
+<h4 id="q9.-to-get-the-total-number-of-mapped-input-records-in-a-map-job-task-you-should-review-the-value-of-which-counter">Q9. To get the total number of mapped input records in a map job task, you should review the value of which counter?</h4>
+<ul>
+<li>[ ] FileInputFormatCounter</li>
+<li>[ ] FileSystemCounter</li>
+<li>[ ] JobCounter</li>
+<li>[x] TaskCounter (NOT SURE)</li>
+</ul>
+<h4 id="q10.-hadoop-core-supports-which-cap-capabilities">Q10. Hadoop Core supports which CAP capabilities?</h4>
+<ul>
+<li>[x] A, P</li>
+<li>[ ] C, A</li>
+<li>[ ] C, P</li>
+<li>[ ] C, A, P</li>
+</ul>
+<h4 id="q11.-what-are-the-primary-phases-of-a-reducer">Q11. What are the primary phases of a Reducer?</h4>
+<ul>
+<li>[ ] combine, map, and reduce</li>
+<li>[x] shuffle, sort, and reduce</li>
+<li>[ ] reduce, sort, and combine</li>
+<li>[ ] map, sort, and combine</li>
+</ul>
+<h4 id="q12.-to-set-up-hadoop-workflow-with-synchronization-of-data-between-jobs-that-process-tasks-both-on-disk-and-in-memory-use-the-_-service-which-is-_.">Q12. To set up Hadoop workflow with synchronization of data between jobs that process tasks both on disk and in memory, use the <strong>_</strong> service, which is <strong>_</strong>.</h4>
+<ul>
+<li>[ ] Oozie; open source</li>
+<li>[ ] Oozie; commercial software</li>
+<li>[ ] Zookeeper; commercial software</li>
+<li>[x] Zookeeper; open source</li>
+</ul>
+<h4 id="q13.-for-high-availability-use-multiple-nodes-of-which-type">Q13. For high availability, use multiple nodes of which type?</h4>
+<ul>
+<li>[ ] data</li>
+<li>[x] name</li>
+<li>[ ] memory</li>
+<li>[ ] worker</li>
+</ul>
+<h4 id="q14.-datanode-supports-which-type-of-drives">Q14. DataNode supports which type of drives?</h4>
+<ul>
+<li>[x] hot swappable</li>
+<li>[ ] cold swappable</li>
+<li>[ ] warm swappable</li>
+<li>[ ] non-swappable</li>
+</ul>
+<h4 id="q15.-which-method-is-used-to-implement-spark-jobs">Q15. Which method is used to implement Spark jobs?</h4>
+<ul>
+<li>[ ] on disk of all workers</li>
+<li>[ ] on disk of the master node</li>
+<li>[ ] in memory of the master node</li>
+<li>[x] in memory of all workers</li>
+</ul>
+<h4 id="q16.-in-a-mapreduce-job-where-does-the-map-function-run">Q16. In a MapReduce job, where does the map() function run?</h4>
+<ul>
+<li>[ ] on the reducer nodes of the cluster</li>
+<li>[x] on the data nodes of the cluster (NOT SURE)</li>
+<li>[ ] on the master node of the cluster</li>
+<li>[ ] on every node of the cluster</li>
+</ul>
+<h4 id="q17.-to-reference-a-master-file-for-lookups-during-mapping-what-type-of-cache-should-be-used">Q17. To reference a master file for lookups during Mapping, what type of cache should be used?</h4>
+<ul>
+<li>[x] distributed cache</li>
+<li>[ ] local cache</li>
+<li>[ ] partitioned cache</li>
+<li>[ ] cluster cache</li>
+</ul>
+<h4 id="q18.-skip-bad-records-provides-an-option-where-a-certain-set-of-bad-input-records-can-be-skipped-when-processing-what-type-of-data">Q18. Skip bad records provides an option where a certain set of bad input records can be skipped when processing what type of data?</h4>
+<ul>
+<li>[ ] cache inputs</li>
+<li>[ ] reducer inputs</li>
+<li>[ ] intermediate values</li>
+<li>[x] map inputs</li>
+</ul>
+</body>
+</html>
