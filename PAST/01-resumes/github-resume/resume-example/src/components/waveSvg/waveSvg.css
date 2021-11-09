@@ -1,0 +1,28 @@
+.container-wave svg path {
+  stroke: none;
+  fill: #CCCCCC;
+}
+
+.container-wave svg {
+  background: #f9f7f6;
+  margin-bottom: -10px;
+}
+
+.resume-section:nth-of-type(even) .container-wave svg path {
+  stroke: #f9f7f6;
+  fill: #f9f7f6;
+}
+
+.resume-section:nth-of-type(odd) .container-wave svg path {
+  stroke: #CCCCCC;
+}
+
+.resume-section:nth-of-type(even) .container-wave svg {
+  background: #CCCCCC;
+}
+@media only screen and (max-width: 992px) {
+  .container-wave {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
+}

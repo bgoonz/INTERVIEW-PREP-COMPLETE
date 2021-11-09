@@ -1,0 +1,247 @@
+<h1 id="example-graph">Example Graph</h1>
+<h3 id="visual-aid">Visual Aid</h3>
+<hr />
+<h2 id="picture-alt"><img src="https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/graphs/images/graphs.png" alt="picture alt" /></h2>
+<hr />
+<h3 id="example-code">Example Code</h3>
+<hr />
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> GraphNode <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">this</span>.<span class="at">neighbors</span> <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw">let</span> a <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;a&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="kw">let</span> b <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;b&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="kw">let</span> c <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;c&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="kw">let</span> d <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;d&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="kw">let</span> e <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;e&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="kw">let</span> f <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;f&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="va">a</span>.<span class="at">neighbors</span> <span class="op">=</span> [b<span class="op">,</span> c<span class="op">,</span> e]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="va">c</span>.<span class="at">neighbors</span> <span class="op">=</span> [b<span class="op">,</span> d]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="va">e</span>.<span class="at">neighbors</span> <span class="op">=</span> [a]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="va">f</span>.<span class="at">neighbors</span> <span class="op">=</span> [e]<span class="op">;</span></a></code></pre></div>
+<hr />
+<hr />
+<h1 id="basics">Basics</h1>
+<ul>
+<li>A graph is <strong>any</strong> collection of nodes and edges.
+<ul>
+<li>Much more relaxed in structure than a tree.</li>
+</ul></li>
+<li>It doesn’t have to have a root node (so not every node can be accessed from a single node)</li>
+<li>It could have cycles (a group of nodes whose paths begin and end at the same node)</li>
+<li>Any number of edges may leave a node</li>
+</ul>
+<hr />
+<h1 id="ways-to-reference-a-graph-data-structure">Ways To Reference a Graph Data Structure</h1>
+<h2 id="visual-reference">Visual Reference</h2>
+<hr />
+<h2 id="picture-alt-1"><img src="https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/graphs/images/adj_matrix_graph.png" alt="picture alt" /></h2>
+<hr />
+<h2 id="adjacency-matrix">Adjacency Matrix</h2>
+<hr />
+<p>The row index will corespond to the source of an edge and the column index will correspond to the edges destination.</p>
+<ul>
+<li>When the edges have a direction, <code>matrix[i][j]</code> may not be the same as <code>matrix[j][i]</code></li>
+<li>It is common to say that a node is adjacent to itself so matrix[x][x] is true for any node</li>
+<li>Will be O(n^2) space complexity</li>
+</ul>
+<hr />
+<h3 id="a-2d-array-as-the-method-of-storing-the-location-of-nodes">A 2D Array as the method of storing the location of Nodes</h3>
+<p>let matrix = [</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>A</strong></th>
+<th><strong>B</strong></th>
+<th><strong>C</strong></th>
+<th><strong>D</strong></th>
+<th><strong>E</strong></th>
+<th><strong>F</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>A</strong></td>
+<td>[True,</td>
+<td>True,</td>
+<td>True,</td>
+<td>False,</td>
+<td>True,</td>
+<td>False]</td>
+</tr>
+<tr class="even">
+<td><strong>B</strong></td>
+<td>[False,</td>
+<td>True,</td>
+<td>False,</td>
+<td>False,</td>
+<td>False,</td>
+<td>False]</td>
+</tr>
+<tr class="odd">
+<td><strong>C</strong></td>
+<td>[False,</td>
+<td>True,</td>
+<td>True,</td>
+<td>True,</td>
+<td>False,</td>
+<td>False]</td>
+</tr>
+<tr class="even">
+<td><strong>D</strong></td>
+<td>[False,</td>
+<td>False,</td>
+<td>False,</td>
+<td>True,</td>
+<td>False,</td>
+<td>False]</td>
+</tr>
+<tr class="odd">
+<td><strong>E</strong></td>
+<td>[True,</td>
+<td>False,</td>
+<td>False,</td>
+<td>False,</td>
+<td>True,</td>
+<td>False]</td>
+</tr>
+<tr class="even">
+<td><strong>F</strong></td>
+<td>[False,</td>
+<td>False,</td>
+<td>False,</td>
+<td>False,</td>
+<td>True,</td>
+<td>True]</td>
+</tr>
+</tbody>
+</table>
+<p>];</p>
+<hr />
+<h2 id="adjacency-list">Adjacency List</h2>
+<hr />
+<p>Seeks to solve the shortcomings of the matrix implementation. It uses an object where keys represent node labels and values associated with that key are the adjacent nodes.</p>
+<hr />
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">let</span> graph <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="dt">a</span><span class="op">:</span> [<span class="st">&quot;b&quot;</span><span class="op">,</span> <span class="st">&quot;c&quot;</span><span class="op">,</span> <span class="st">&quot;e&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="dt">b</span><span class="op">:</span> []<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-4" title="4">  <span class="dt">c</span><span class="op">:</span> [<span class="st">&quot;b&quot;</span><span class="op">,</span> <span class="st">&quot;d&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-5" title="5">  <span class="dt">d</span><span class="op">:</span> []<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="dt">e</span><span class="op">:</span> [<span class="st">&quot;a&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-7" title="7">  <span class="dt">f</span><span class="op">:</span> [<span class="st">&quot;e&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="op">};</span></a></code></pre></div>
+<hr />
+<h1 id="graph-traversal">Graph Traversal</h1>
+<h2 id="depth-first">Depth First</h2>
+<hr />
+<h3 id="with-a-node-class">With a Node Class</h3>
+<hr />
+<h4 id="node-class-example">Node Class Example</h4>
+<ul>
+<li>There may not always be a suitable root-like starting point. But in this example all the nodes can be traversed to in some way from the “f” node</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">class</span> GraphNode <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="at">constructor</span>(val) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="kw">this</span>.<span class="at">val</span> <span class="op">=</span> val<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="kw">this</span>.<span class="at">neighbors</span> <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="op">}</span></a>
+<a class="sourceLine" id="cb3-7" title="7"></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="kw">let</span> a <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;a&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="kw">let</span> b <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;b&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="kw">let</span> c <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;c&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="kw">let</span> d <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;d&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="kw">let</span> e <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;e&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="kw">let</span> f <span class="op">=</span> <span class="kw">new</span> <span class="at">GraphNode</span>(<span class="st">&quot;f&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="va">a</span>.<span class="at">neighbors</span> <span class="op">=</span> [e<span class="op">,</span> c<span class="op">,</span> b]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="va">c</span>.<span class="at">neighbors</span> <span class="op">=</span> [b<span class="op">,</span> d]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="va">e</span>.<span class="at">neighbors</span> <span class="op">=</span> [a]<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="va">f</span>.<span class="at">neighbors</span> <span class="op">=</span> [e]<span class="op">;</span></a></code></pre></div>
+<hr />
+<hr />
+<h4 id="recursive-traversal">Recursive Traversal</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">function</span> <span class="at">depthFirstRecur</span>(node<span class="op">,</span> visited <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>()) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="cf">if</span> (<span class="va">visited</span>.<span class="at">has</span>(<span class="va">node</span>.<span class="at">val</span>)) <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(<span class="va">node</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5">  <span class="va">visited</span>.<span class="at">add</span>(<span class="va">node</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7">  <span class="va">node</span>.<span class="va">neighbors</span>.<span class="at">forEach</span>((neighbor) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="at">depthFirstRecur</span>(neighbor<span class="op">,</span> visited)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9">  <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="op">}</span></a>
+<a class="sourceLine" id="cb4-11" title="11"></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="at">depthFirstRecur</span>(f)<span class="op">;</span> <span class="co">// starting with f as it is a node that can reach all other nodes</span></a></code></pre></div>
+<h4 id="iterative-traversal">Iterative Traversal</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">function</span> <span class="at">depthFirstIter</span>(node) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="kw">let</span> visited <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3">  <span class="kw">let</span> stack <span class="op">=</span> [node]<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-4" title="4"></a>
+<a class="sourceLine" id="cb5-5" title="5">  <span class="cf">while</span> (<span class="va">stack</span>.<span class="at">length</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="kw">let</span> node <span class="op">=</span> <span class="va">stack</span>.<span class="at">pop</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="cf">if</span> (<span class="va">visited</span>.<span class="at">has</span>(<span class="va">node</span>.<span class="at">val</span>)) <span class="cf">continue</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="va">console</span>.<span class="at">log</span>(<span class="va">node</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-11" title="11">    <span class="va">visited</span>.<span class="at">add</span>(<span class="va">node</span>.<span class="at">val</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12"></a>
+<a class="sourceLine" id="cb5-13" title="13">    <span class="va">stack</span>.<span class="at">push</span>(...<span class="va">node</span>.<span class="at">neighbors</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-14" title="14">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-15" title="15"><span class="op">}</span></a>
+<a class="sourceLine" id="cb5-16" title="16"></a>
+<a class="sourceLine" id="cb5-17" title="17"><span class="at">depthFirstIter</span>(f)<span class="op">;</span></a></code></pre></div>
+<hr />
+<hr />
+<h3 id="with-an-adjacency-list">With an Adjacency List</h3>
+<hr />
+<h4 id="adjacency-list-example">Adjacency List Example</h4>
+<p>Remember that the nodes are stored as strings in an array in an object.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">let</span> graph <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="dt">a</span><span class="op">:</span> [<span class="st">&quot;b&quot;</span><span class="op">,</span> <span class="st">&quot;c&quot;</span><span class="op">,</span> <span class="st">&quot;e&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-3" title="3">  <span class="dt">b</span><span class="op">:</span> []<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-4" title="4">  <span class="dt">c</span><span class="op">:</span> [<span class="st">&quot;b&quot;</span><span class="op">,</span> <span class="st">&quot;d&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-5" title="5">  <span class="dt">d</span><span class="op">:</span> []<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-6" title="6">  <span class="dt">e</span><span class="op">:</span> [<span class="st">&quot;a&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-7" title="7">  <span class="dt">f</span><span class="op">:</span> [<span class="st">&quot;e&quot;</span>]<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="op">};</span></a></code></pre></div>
+<hr />
+<hr />
+<h4 id="recursive-example">Recursive Example</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">function</span> <span class="at">depthFirstRecur</span>(node<span class="op">,</span> graph<span class="op">,</span> visited <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>()) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  <span class="cf">if</span> (<span class="va">visited</span>.<span class="at">has</span>(node)) <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(node)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-5" title="5">  <span class="va">visited</span>.<span class="at">add</span>(node)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-6" title="6"></a>
+<a class="sourceLine" id="cb7-7" title="7">  graph[node].<span class="at">forEach</span>((neighbor) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-8" title="8">    <span class="at">depthFirstRecur</span>(neighbor<span class="op">,</span> graph<span class="op">,</span> visited)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-9" title="9">  <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="op">}</span></a>
+<a class="sourceLine" id="cb7-11" title="11"></a>
+<a class="sourceLine" id="cb7-12" title="12"><span class="at">depthFirstRecur</span>(<span class="st">&quot;f&quot;</span><span class="op">,</span> graph)<span class="op">;</span></a></code></pre></div>
+<hr />
+<h4 id="dynamic-recursive-example">Dynamic Recursive Example</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">function</span> <span class="at">depthFirst</span>(graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="kw">let</span> visited <span class="op">=</span> <span class="kw">new</span> <span class="at">Set</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-3" title="3"></a>
+<a class="sourceLine" id="cb8-4" title="4">  <span class="cf">for</span> (<span class="kw">let</span> node <span class="kw">in</span> graph) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="at">_depthFirstRecur</span>(node<span class="op">,</span> graph<span class="op">,</span> visited)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb8-8" title="8"></a>
+<a class="sourceLine" id="cb8-9" title="9"><span class="kw">function</span> <span class="at">_depthFirstRecur</span>(node<span class="op">,</span> graph<span class="op">,</span> visited) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-10" title="10">  <span class="cf">if</span> (<span class="va">visited</span>.<span class="at">has</span>(node)) <span class="cf">return</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-11" title="11"></a>
+<a class="sourceLine" id="cb8-12" title="12">  <span class="va">console</span>.<span class="at">log</span>(node)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-13" title="13">  <span class="va">visited</span>.<span class="at">add</span>(node)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-14" title="14"></a>
+<a class="sourceLine" id="cb8-15" title="15">  graph[node].<span class="at">forEach</span>((neighbor) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-16" title="16">    <span class="at">_depthFirstRecur</span>(neighbor<span class="op">,</span> graph<span class="op">,</span> visited)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-17" title="17">  <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-18" title="18"><span class="op">}</span></a>
+<a class="sourceLine" id="cb8-19" title="19"></a>
+<a class="sourceLine" id="cb8-20" title="20"><span class="at">depthFirst</span>(graph)<span class="op">;</span></a></code></pre></div>

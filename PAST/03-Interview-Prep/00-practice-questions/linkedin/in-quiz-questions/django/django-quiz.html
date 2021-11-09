@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>django-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>Q1. To cache your entire site for an application in Django, you add all except which of these settings?</p>
+<pre><code>- django.middleware.common.CommonMiddleware
+- django.middleware.cache.UpdateCacheMiddleware
+- django.middleware.cache.FetchFromCacheMiddleware
+👍 - django.middleware.cache.AcceleratedCacheMiddleware</code></pre>
+<p>Q2. In which programming language is Django written?</p>
+<pre><code>- C++
+- Java
+👍 - Python
+- Ruby</code></pre>
+<p>Q3. To automatically provide a value for a field, or to do validation that requires access to more than a single field, you should override the<strong>_</strong> method in the<strong>_</strong> class.</p>
+<pre><code>- validate(); Model
+- group(); Model
+- validate(); Form
+👍 - clean(); Field</code></pre>
+<p>Q4. A client wants their site to be able to load “Rick &amp; Morty” episodes by number or by title—e.g., shows/3/3 or shows/picklerick. Which URL pattern do you recommend?</p>
+<pre><code>- url(r&#39;shows/&lt;int:season&gt;/&lt;int:episode&gt;/&#39;, views.episode_number)
+👍 - path(&#39;shows/&lt;int:season&gt;/&lt;int:episode&gt;/&#39;, views.episode_number),
+- path(&#39;shows/&lt;int:season&gt;/&lt;int:episode&gt;&#39;, views.episode_number),
+- url(r&#39;^show/(?P&lt;season&gt;[0-9]+)/(?P&lt;episode&gt;[0-9]+)/$&#39;, views.episode_number),</code></pre>
+<p>Q5. How do you determine at startup time if a piece of middleware should be used?</p>
+<pre><code>👍 - Raise MiddlewareNotUsed in the __init__ function of your middleware.
+- Implement the not_used method in your middleware class.
+- List the middleware beneath an entry of django.middleware.IgnoredMiddleware.
+- Write code to remove the middleware from the settings in [app]/__init__.py.</code></pre>
+<p>Q6. How do you turn off Django’s automatic HTML escaping for part of a web page?</p>
+<pre><code>- Place that section between paragraph tags containing the autoescape=off switch.
+- Wrap that section between { percentage mark autoescape off percentage mark} and {percentage mark endautoescape percentage mark} tags.
+- Wrap that section between {percentage mark autoescapeoff percentage mark} and {percentage mark endautoescapeoff percentage mark} tags.
+👍 - You don&#39;t need to do anything—autoescaping is off by default.</code></pre>
+<p>Q7. Which step would NOT help you troubleshoot the error “django-admin: command not found”?</p>
+<pre><code>- Check that the bin folder inside your Django directory is on your system path.
+- Make sure you have activated the virtual environment you have set up containing Django.
+- Check that you have installed Django.
+👍 - Make sure that you have created a Django project.</code></pre>
+<p>Q8. Every time a user is saved, their quiz_score needs to be recalculated. Where might be an ideal place to add this logic?</p>
+<pre><code>- template
+👍 - model
+- database
+- view</code></pre>
+<p>Q9. What is the correct way to begin a class called “Rainbow” in Python?</p>
+<pre><code>- Rainbow {}
+- export Rainbow:
+👍 - class Rainbow:
+- def Rainbow:</code></pre>
+<p>Q10. You have inherited a Django project and need to get it running locally. It comes with a requirements.txt file containing all its dependencies. Which command should you use?</p>
+<pre><code>- django-admin startproject requirements.txt
+- python install -r requirements.txt
+👍 - pip install -r requirements.txt
+- pip install Django</code></pre>
+<p>Q11. Which best practice is NOT relevant to migrations?</p>
+<pre><code>👍 - To make sure that your migrations are up to date, you should run updatemigrations before running your tests.
+- You should back up your production database before running a migration.
+- Your migration code should be under source control.
+- If a project has a lot of data, you should test against a staging copy before running the migration on production.</code></pre>
+<p>Q12. What will this URL pattern match? url(r’^$’, views.hello)</p>
+<pre><code>- a string beginning with the letter Ra string beginning with the letter R
+👍 - an empty string at the server root
+- a string containing ^ and $a string containing ^ and $
+- an empty string anywhere in the URLan empty string anywhere in the URL</code></pre>
+<p>Q13. What is the typical order of an HTTP request/response cycle in Django?</p>
+<pre><code>👍 - URL &gt; view &gt; template
+- form &gt; model &gt; view
+- template &gt; view &gt; model
+- URL &gt; template &gt; view &gt; model</code></pre>
+<p>Q14. Django’s class-based generic views provide which classes that implement common web development tasks?</p>
+<pre><code>- concrete
+- thread-safe
+👍 - abstract
+- dynamic</code></pre>
+<p>Q15. Which skills do you need to maintain a set of Django templates?</p>
+<pre><code>- template syntax
+👍 - HTML and template syntax
+- Python, HTML, and template syntax
+- Python and template syntax</code></pre>
+<p>Q17. How would you define the relationship between a star and a constellation in a Django model?</p>
+<pre><code>👍-  class Star(models.Model):
+        name = models.CharField(max_length=100)
+    class Constellation(models.Model):
+        stars = models.ManyToManyField(Star)
+
+-   class Star(models.Model):
+        constellation = models.ForeignKey(Constellation, on_delete=models.CASCADE)
+    class Constellation(models.Model):
+        stars = models.ForeignKey(Star, on_delete=models.CASCADE)
+
+-   class Star(models.Model):
+        name = models.CharField(max_length=100)
+    class Constellation(models.Model):
+        stars = models.OneToManyField(Star)
+
+-   class Star(models.Model):
+        constellation = models.ManyToManyField(Constellation)
+    class Constellation(models.Model):
+        name = models.CharField(max_length=100)</code></pre>
+<p>Q18. Which is NOT a valid step in configuring your Django 2.x instance to serve up static files such as images or CSS?</p>
+<pre><code>👍 - In your urls file, add a pattern that includes the name of your static directory.
+- Create a directory named static inside your app directory.
+- Create a directory named after the app under the static directory, and place static files inside.
+- Use the template tag {percentage mark load static percentage mark}.</code></pre>
+<p>Q19. What is the correct way to make a variable available to all of your templates?</p>
+<pre><code>- Set a session variable.
+- Use a global variable.
+- Add a dictionary to the template context.
+👍 - Use RequestContext.</code></pre>
+<p>Q20. Should you create a custom user model for new projects?</p>
+<pre><code>- No. Using a custom user model could break the admin interface and some third-party apps.
+- Yes. It is easier to make changes once it goes into production.
+👍 - No. Django&#39;s built-in models.User class has been tried and tested—no point in reinventing the wheel.
+- Yes, as there is no other option.</code></pre>
+<p>Q21. You want to create a page that allows editing of two classes connected by a foreign key (e.g., a question and answer that reside in separate tables). What Django feature can you use?</p>
+<pre><code>👍 - actions
+- admin
+- mezcal
+- inlines</code></pre>
+<p>Q22. Why are QuerySets considered “lazy”?</p>
+<pre><code>- The results of a QuerySet are not ordered.
+👍 - QuerySets do not create any database activity until they are evaluated.
+- QuerySets do not load objects into memory until they are needed.
+- Using QuerySets, you cannot execute more complex queries.</code></pre>
+<p>Q23. You receive a <code>MultiValueDictKeyError</code> when trying to access a request parameter with the following code: request.GET[‘search_term’]. Which solution will NOT help you in this scenario?</p>
+<pre><code>👍 - Switch to using POST instead of GET as the request method.
+- Make sure the input field in your form is also named &quot;search_term&quot;.
+- Use MultiValueDict&#39;s GET method instead of hitting the dictionary directly like this: request.GET.get(&#39;search_term&#39;, &#39;&#39;).
+- Check if the search_term parameter is present in the request before attempting to access it.</code></pre>
+Q24. Which function of Django’s Form class will render a form’s fields as a series of
+<p>
+<p>tags?</p>
+<pre><code>- show_fields()
+👍 - as_p()
+- as_table()
+- fields()</code></pre>
+<p>Q25. You have found a bug in Django and you want to submit a patch. Which is the correct procedure?</p>
+<pre><code>- Fork the Django repository GitHub.
+- Submit a pull request.
+👍 - all of these answers.
+- Run Django&#39;s test suite.</code></pre>
+<p>Q26. Django supplies sensible default values for settings. In which Python module can you find these settings?</p>
+<ul>
+<li>django.utils.default_settings.py</li>
+<li>django.utils.global_settings.py</li>
+<li>django.conf.default_settings.py 👍 - django.conf.global_settings.py</li>
+</ul>
+<p>Q27. Which variable name is best according to PEP 8 guidelines?</p>
+<ul>
+<li>numFingers</li>
+<li>number-of-Fingers 👍 - number_of_fingers</li>
+<li>finger_num</li>
+</ul>
+<p>Q28. A project has accumulated 500 migrations. Which course of action would you pursue?</p>
+<ul>
+<li>Manually merge your migration files to reduce the number</li>
+<li>Don’t worry about the number</li>
+<li>Try to minimize the number of migrations 👍 - Use squashmigrations to reduce the number</li>
+</ul>
+<p>Q29. What does an F() object allow you when dealing with models? 👍 - perform db operations without fetching a model object</p>
+<ul>
+<li>define db transaction isolation levels</li>
+<li>use aggregate functions more easily</li>
+<li>build reusable QuerySets</li>
+</ul>
+<p>Q30. Which is not a django filed type for integers?</p>
+<ul>
+<li>SmallIntegerField 👍 - NegativeIntegerField</li>
+<li>BigAutoField</li>
+<li>PositiveIntegerField</li>
+</ul>
+<p>Q31. Which will show the currently installed version?</p>
+<ul>
+<li>print (django.version)</li>
+<li>import django django.getVersion() 👍 - import django django.get_version()</li>
+<li>python -c django –version</li>
+</ul>
+<p>Q32. You should use the http method ** to read data and ** to update or create data</p>
+<ul>
+<li>read;write</li>
+<li>get; post</li>
+<li>post; get 👍 - get; patch</li>
+</ul>
+<p>Q33. When should you employ the POST method over GET for submitting data?</p>
+<ul>
+<li>when efficiency is important</li>
+<li>for caching data</li>
+<li>help your browser with debugging 👍 - data may be sensitive</li>
+</ul>
+<p>Q34. When to use the Django sites framework? 👍 - if your single installation powers more than one site</p>
+<ul>
+<li>if you need to serve static as well as dynamic content</li>
+<li>if you want your app have a fully qualified domain name</li>
+<li>if you are expecting more than 10.000 users</li>
+</ul>
+<p>Q35. Which infrastructure do you need: title=models.charfield(max_length=100, validators=[validate_spelling])</p>
+<ul>
+<li>inizialized array called validators 👍 - a validators file containing a function called validate_spelling imported at the top of model</li>
+<li>a validators file containing a function called validate imported at the top of model</li>
+<li>spelling package imported at the top of model</li>
+</ul>
+<p>Q36. What decorator is used to require that a view accepts only the get and head methods? 👍 - require_safe()</p>
+<ul>
+<li>require_put()</li>
+<li>require_post()</li>
+<li>require_get()</li>
+</ul>
+<p>Q37. How would you define the relation between a book and an author - book has only one author.</p>
+<ul>
+<li>class Author (models.model): book=models.foreignkey(Book,on_delete=models.cascade) class Book(models.model): name=models.charfield(max_length=100)</li>
+</ul>
+<p>👍 - class Author (models.model): name=models.charfield(max_length=100) class Book(models.model): author=models.foreignkey(Author,on_delete=models.cascade)</p>
+<ul>
+<li><p>class Author (models.model): name=models.charfield(max_length=100) class Book(models.model): author=models.foreignkey(Author)</p></li>
+<li><p>class Author (models.model): name=models.charfield(max_length=100) class Book(models.model): author=models.foreignkey(Author,on_delete=models.cascade)</p></li>
+<li><p>class Author (models.model): name=models.charfield(max_length=100) class Book(models.model): author=Author.name</p></li>
+</ul>
+<p>Q38. What is a callable that takes a value and raises an error if the value fails? 👍 - validator</p>
+<ul>
+<li>deodorizer</li>
+<li>mediator</li>
+<li>regular expression</li>
+</ul>
+<p>Q39. To secure an API endpoint, making it accessible to registered users only, you can replace the rest_framework.permissions.allowAny value in the default_permissions section of your settings.py to</p>
+<ul>
+<li>rest_framework.permissions.IsAdminUser 👍 - rest_framework.permissions.IsAuthenticated</li>
+<li>rest_framework.permissions.IsAuthorized</li>
+<li>rest_framework.permissions.IsRegistered</li>
+</ul>
+<p>Q40. Which command would you use to apply a migration?</p>
+<ul>
+<li>makemigration -update_db</li>
+<li>applymigration 👍-migrate</li>
+</ul>
+<p>Q41. Which type of class allows QuerySets and model instances to be converted to native Python data types for use in APIs?</p>
+<ul>
+<li>objectwriters 👍- serializers</li>
+<li>picklers</li>
+<li>viewsets</li>
+</ul>
+<p>Q42. How should the code end? { percentage if spark &gt;= 50 percentage } Lots of spark {percentage elif spark == 42 percentage} The answer</p>
+<ul>
+<li>{ percentage else percentage} 👍- {percentage endif percentage}</li>
+<li>Nothing needed</li>
+<li>{percentage end percentage}</li>
+</ul>
+<p>Q43 Which code block will create a serializer? from rest_framework import serializers from .models import Planet</p>
+<ul>
+<li><p>[x] class PlanetSerializer(serializers.ModelSerializer): class Meta: model=Planet fields=(‘name’,‘position’, ‘mass’, ‘rings’)</p></li>
+<li><p>[] from rest_framework import serializers from .models import Planet class PlanetSerializer(): class Meta: fields=(‘name’,‘position’, ‘mass’, ‘rings’) model=Planet</p></li>
+<li><p>[] from django.db import serializers from .models import Planet class PlanetSerializer(serializers.ModelSerializer): fields=(‘name’,‘position’, ‘mass’, ‘rings’) model=Sandwich</p></li>
+<li><p>[] from django.db import serializers from .models import Planet class PlanetSerializer(serializers.ModelSerializer): class Meta: fields=(‘name’) model=Planet</p></li>
+</ul>
+<p>Q44 Which class allows you to automatically create a Serializer class with fields and validators that correspond to your model’s fields?</p>
+<ul>
+<li>[x] ModelSerializer</li>
+<li>[] Model</li>
+<li>[] DataSerializer</li>
+<li>[] ModelToSerializer</li>
+</ul>
+<p>Q45 Which command to access the built-in admin tool for the first time?</p>
+<ul>
+<li>[] django-admin setup</li>
+<li>[] django-admin runserver</li>
+<li>[] python manage.py createuser</li>
+<li>[x] python manage.py createsuperuser</li>
+</ul>
+<p>Q46. Virtual environments are for managing dependencies. Which granularity works best?</p>
+<ul>
+<li>[x] you should set up a new virtualenv for each Django project</li>
+<li>[] They should not be used</li>
+<li>[] Use the same venv for all your Django work</li>
+<li>[] Use a new venv for each Django app</li>
+</ul>
+<p>Q47. What executes various Django commands such as running a webserver or creating an app?</p>
+<ul>
+<li>[] migrate.py</li>
+<li>[] wsgi.py</li>
+<li>[x] manage.py</li>
+<li>[] runserver</li>
+</ul>
+<p>Q48. What do Django best practice suggest should be “fat”?</p>
+<ul>
+<li>[x] models</li>
+<li>[] controllers</li>
+<li>[] programmers</li>
+<li>[] clients</li>
+</ul>
+</body>
+</html>

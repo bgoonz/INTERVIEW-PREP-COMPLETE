@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="bootstrap-js-philosophy">2.0 BOOTSTRAP JS PHILOSOPHY</h2>
+<p>These are the high-level design rules which guide the development of Bootstrap’s plugin apis.</p>
+<hr />
+<h3 id="data-attribute-api">DATA-ATTRIBUTE API</h3>
+<p>We believe you should be able to use all plugins provided by Bootstrap purely through the markup API without writing a single line of javascript.</p>
+<p>We acknowledge that this isn’t always the most performant and sometimes it may be desirable to turn this functionality off altogether. Therefore, as of 2.0 we provide the ability to disable the data attribute API by unbinding all events on the body namespaced with <code>'data-api'</code>. This looks like this:</p>
+<pre><code>$(&#39;body&#39;).off(&#39;.data-api&#39;)</code></pre>
+<p>To target a specific plugin, just include the plugins name as a namespace along with the data-api namespace like this:</p>
+<pre><code>$(&#39;body&#39;).off(&#39;.alert.data-api&#39;)</code></pre>
+<hr />
+<h3 id="programatic-api">PROGRAMATIC API</h3>
+<p>We also believe you should be able to use all plugins provided by Bootstrap purely through the JS API.</p>
+<p>All public APIs should be single, chainable methods, and return the collection acted upon.</p>
+<pre><code>$(&quot;.btn.danger&quot;).button(&quot;toggle&quot;).addClass(&quot;fat&quot;)</code></pre>
+<p>All methods should accept an optional options object, a string which targets a particular method, or null which initiates the default behavior:</p>
+<pre><code>$(&quot;#myModal&quot;).modal() // initialized with defaults
+$(&quot;#myModal&quot;).modal({ keyboard: false }) // initialized with now keyboard
+$(&quot;#myModal&quot;).modal(&#39;show&#39;) // initializes and invokes show immediately afterqwe2</code></pre>
+<hr />
+<h3 id="options">OPTIONS</h3>
+<p>Options should be sparse and add universal value. We should pick the right defaults.</p>
+<p>All plugins should have a default object which can be modified to effect all instance’s default options. The defaults object should be available via <code>$.fn.plugin.defaults</code>.</p>
+<pre><code>$.fn.modal.defaults = { … }</code></pre>
+<p>An options definition should take the following form:</p>
+<pre><code>*noun*: *adjective* - describes or modifies a quality of an instance</code></pre>
+<p>examples:</p>
+<pre><code>backdrop: true
+keyboard: false
+placement: &#39;top&#39;</code></pre>
+<hr />
+<h3 id="events">EVENTS</h3>
+<p>All events should have an infinitive and past participle form. The infinitive is fired just before an action takes place, the past participle on completion of the action.</p>
+<pre><code>show | shown
+hide | hidden</code></pre>
+<hr />
+<h3 id="constructors">CONSTRUCTORS</h3>
+<p>Each plugin should expose it’s raw constructor on a <code>Constructor</code> property – accessed in the following way:</p>
+<pre><code>$.fn.popover.Constructor</code></pre>
+<hr />
+<h3 id="data-accessor">DATA ACCESSOR</h3>
+<p>Each plugin stores a copy of the invoked class on an object. This class instance can be accessed directly through jQuery’s data API like this:</p>
+<pre><code>$(&#39;[rel=popover]&#39;).data(&#39;popover&#39;) instanceof $.fn.popover.Constructor</code></pre>
+<hr />
+<h3 id="data-attributes">DATA ATTRIBUTES</h3>
+<p>Data attributes should take the following form:</p>
+<ul>
+<li>data-{{verb}}={{plugin}} - defines main interaction</li>
+<li>data-target || href^=# - defined on “control” element (if element controls an element other than self)</li>
+<li>data-{{noun}} - defines class instance options</li>
+</ul>
+<p>examples:</p>
+<pre><code>// control other targets
+data-toggle=&quot;modal&quot; data-target=&quot;#foo&quot;
+data-toggle=&quot;collapse&quot; data-target=&quot;#foo&quot; data-parent=&quot;#bar&quot;
+
+// defined on element they control
+data-spy=&quot;scroll&quot;
+
+data-dismiss=&quot;modal&quot;
+data-dismiss=&quot;alert&quot;
+
+data-toggle=&quot;dropdown&quot;
+
+data-toggle=&quot;button&quot;
+data-toggle=&quot;buttons-checkbox&quot;
+data-toggle=&quot;buttons-radio&quot;</code></pre>
+</body>
+</html>

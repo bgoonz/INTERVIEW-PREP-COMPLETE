@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>android-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h4 id="q1.-to-add-features-components-and-permissions-to-your-android-app-which-file-needs-to-be-edited">Q1. To add features, components, and permissions to your Android app, which file needs to be edited?</h4>
+<ul>
+<li>[x] AndroidManifest.xml</li>
+<li>[ ] Components.xml</li>
+<li>[ ] AppManifest.xml</li>
+<li>[ ] ComponentManifest.xml</li>
+</ul>
+<h4 id="q2.-which-xml-attribute-should-be-used-to-make-an-image-view-accessible">Q2. Which XML attribute should be used to make an Image View accessible?</h4>
+<ul>
+<li>[ ] android:talkBack</li>
+<li>[ ] android:labelFor</li>
+<li>[ ] android:hint</li>
+<li>[x] android:contentDescription</li>
+</ul>
+<h4 id="q3.-you-launch-your-app-and-when-you-navigate-to-a-new-screen-it-crashes-which-action-will-not-help-you-diagnose-the-issue">Q3. You launch your app, and when you navigate to a new screen it crashes, Which action will NOT help you diagnose the issue?</h4>
+<ul>
+<li>[ ] Set breakpoints and then step through the code line by line</li>
+<li>[ ] Use the profiler tools in Android Studio to detect anomalies CPU, and network usage.</li>
+<li>[x] Add a Thread.sleep()call before you start the new activity.</li>
+<li>[ ] inspect the logs in Logcat.</li>
+</ul>
+<h4 id="q4.-why-might-push-notifications-stop-working">Q4. Why might push notifications stop working?</h4>
+<ul>
+<li>[x] all of these answers</li>
+<li>[ ] The device token is not being sent to push provider correctly.</li>
+<li>[ ] Google Play Services is not installed on the deivce/emulator.</li>
+<li>[ ] Battery optimization is turned on on the device.</li>
+</ul>
+<h4 id="q5.-what-is-correct-set-of-classes-needed-to-implement-a-recyclerview-of-items-that-displays-a-list-of-widgets-vertically">Q5. What is correct set of classes needed to implement a RecyclerView of items that displays a list of widgets vertically?</h4>
+<pre><code>      RecycleView
+      RecyclerView.Adapter
+      RecyclerView.ViewHolder&lt;T extends BaseViewHolder&gt;
+      LinearLayoutManager</code></pre>
+<pre><code>      RecycleView
+      RecyclerView.Adapter
+      RecyclerView.ViewHolder
+      LinearLayoutManager</code></pre>
+<pre><code>      RecycleView
+x    RecyclerView.Adapter&lt;VH extends ViewHolder&gt;
+      RecyclerView.ViewHolder
+      LinearLayoutManager</code></pre>
+<h4 id="q6.-the-android-system-kills-process-when-it-needs-to-free-up-memory.-the-likelihood-of-the-system-killing-a-given-process-depends-on-the-state-of-the-process-and-the-activity-at-the-time.-with-combination-of-process-and-activity-state-is-most-likely-to-be-killed">Q6. The Android system kills process when it needs to free up memory. The likelihood of the system killing a given process depends on the state of the process and the activity at the time. With combination of process and activity state is most likely to be killed?</h4>
+<ul>
+<li>[x] Process:In the background;Activity:Is stopped</li>
+<li>[ ] Process:In the background;Activity:Is paused</li>
+<li>[ ] Process:In the foreground;Activity:Is started</li>
+<li>[ ] Process:In the foreground;Activity:Is paused</li>
+</ul>
+<h4 id="q7.-you-have-created-a-nextactivity-class-that-relies-on-a-string-containing-some-data-that-pass-inside-the-intent-which-code-snippet-allows-you-to-launch-your-activity">Q7. You have created a NextActivity class that relies on a string containing some data that pass inside the intent Which code snippet allows you to launch your activity?</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb4-1" title="1">        Intent(<span class="kw">this</span>, NextActivity::<span class="kw">class</span>.java).also { intent -&gt;</a>
+<a class="sourceLine" id="cb4-2" title="2">            startActivity(intent)</a>
+<a class="sourceLine" id="cb4-3" title="3">        }</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb5-1" title="1">        Intent(<span class="kw">this</span>, NextActivity::<span class="kw">class</span>.java).apply {</a>
+<a class="sourceLine" id="cb5-2" title="2">            put(EXTRA_NEXT, <span class="st">&quot;some data&quot;</span>)</a>
+<a class="sourceLine" id="cb5-3" title="3">        }.also { intent -&gt;</a>
+<a class="sourceLine" id="cb5-4" title="4">            activityStart(intent)</a>
+<a class="sourceLine" id="cb5-5" title="5">        }</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb6-1" title="1">        Intent(<span class="kw">this</span>, NextActivity::<span class="kw">class</span>.java).apply {</a>
+<a class="sourceLine" id="cb6-2" title="2">            putExtra(EXTRA_NEXT, <span class="st">&quot;some data&quot;</span>)</a>
+<a class="sourceLine" id="cb6-3" title="3">x      }.also { intent -&gt;</a>
+<a class="sourceLine" id="cb6-4" title="4">            startActivity(intent)</a>
+<a class="sourceLine" id="cb6-5" title="5">        }</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb7-1" title="1">        Intent(<span class="kw">this</span>, NextActivity::<span class="kw">class</span>.java).apply {</a>
+<a class="sourceLine" id="cb7-2" title="2">            put(EXTRA_NEXT, <span class="st">&quot;some data&quot;</span>)</a>
+<a class="sourceLine" id="cb7-3" title="3">        }.also { intent -&gt;</a>
+<a class="sourceLine" id="cb7-4" title="4">            activityStart(intent)</a>
+<a class="sourceLine" id="cb7-5" title="5">        }</a></code></pre></div>
+<h4 id="q8.-you-want-to-include-about-and-setting-modules-in-your-project.-which-files-accurately-reflects-their-inclusion">Q8. You want to include about and setting modules in your project. Which files accurately reflects their inclusion?</h4>
+<ul>
+<li>[ ] in build.gradle:include ‘:app’,‘:about’ ‘:settings’</li>
+<li>[x] in settings.gradle:include ‘:app’,‘:about’ ‘:settings’</li>
+<li>[ ] in settings.gradle:include ‘:about’,‘:settings’</li>
+<li>[ ] in gradle.properties:include ‘:app’,‘:about’ ‘:settings’</li>
+</ul>
+<h4 id="q9.-what-is-the-benifit-of-using-visiblefortesting-annotation">Q9. What is the benifit of using <span class="citation" data-cites="VisibleForTesting">@VisibleForTesting</span> annotation?</h4>
+<ul>
+<li>[x] to denote that a class, methos, or field has its visibility relaxed to make code testable</li>
+<li>[ ] to denote that a class, method, or field is visible only in the test code</li>
+<li>[ ] to denote that a class, method, or field has its visibility increased to make code less testable</li>
+<li>[ ] to throw a run-time error if a class, methos, or field with this annotation is accessed improperly</li>
+</ul>
+<h4 id="q10.-how-would-you-specify-in-your-build.gradle-file-that-your-app-required-at-least-api-level-21-to-run-but-that-it-can-be-tested-on-api-level-28">Q10. How would you specify in your build.gradle file that your app required at least API level 21 to run, but that it can be tested on API level 28?</h4>
+<pre class="gradle"><code>      defaultConfig {
+        ...
+        minApiVersion 21
+        targetApiVersion 28
+      }</code></pre>
+<pre class="gradle"><code>      defaultConfig {
+        ...
+        targetSdkVersion 21
+        testSdkVersion 28
+      }</code></pre>
+<pre class="gradle"><code>      defaultConfig {
+        ...
+        minSdkVersion 21
+        testApiVersion 28
+      }</code></pre>
+<pre class="gradle"><code>      defaultConfig {
+        ...
+x      minSdkVersion 21
+        targetSdkVersion 28
+      }</code></pre>
+<h4 id="q11.-when-will-an-activitys-onactivityresultbe-called">Q11. When will an activity’s onActivityResult()be called?</h4>
+<ul>
+<li>[ ] when calling finish()in the parent activity</li>
+<li>[ ] when placing an app into the background by sitching to another app</li>
+<li>[ ] When onStop() is called in the target activity</li>
+<li>[x] when calling finish() in the target activity</li>
+</ul>
+<h4 id="q12.-you-need-to-remove-an-event-based-on-its-id-from-your-api-which-code-snippet-defines-that-request-in-retrofit">Q12. You need to remove an Event based on it;s id from your API, Which code snippet defines that request in Retrofit?</h4>
+<ul>
+<li>[ ] <span class="citation" data-cites="DELETE">@DELETE</span>(“events) fun deleteEvent(<span class="citation" data-cites="Path">@Path</span>(”id") id: Long): Call<Unit></li>
+<li>[ ] <span class="citation" data-cites="DELETE">@DELETE</span>(“events/{id}”) fun deleteEvent(<span class="citation" data-cites="Path">@Path</span>(“id”) id: Long): Call<Unit> (correct)</li>
+<li>[ ] <span class="citation" data-cites="REMOVE">@REMOVE</span>(“events/{id}”) fun deleteEvent(<span class="citation" data-cites="Path">@Path</span>(“id”) id: Long): Call<Unit></li>
+<li>[ ] <span class="citation" data-cites="DELETE">@DELETE</span>(“events/{id}”) fun deleteEvent(<span class="citation" data-cites="Path">@Path</span>(“id”) id: Long): Call<Unit> (correct)</li>
+</ul>
+<h4 id="q13.-when-would-you-use-a-product-flavour-in-your-build-setup">Q13. When would you use a product flavour in your build setup?</h4>
+<ul>
+<li>[ ] when you need to have the app’s strings present in multiple lanuages</li>
+<li>[ ] when you have to provide different versions of your app based on the physical device size</li>
+<li>[ ] when you want to provide different versions of your app based on the device screen density</li>
+<li>[x] when you want to provide different version of your app with custom configuration and resources</li>
+</ul>
+<h4 id="q14.-given-the-fragment-below-how-would-you-get-access-to-a-textview-with-an-id-of-text_home-contained-in-the-layout-file-of-a-fragment-class">Q14. Given the fragment below, how would you get access to a TextView with an ID of text_home contained in the layout file of a Fragment class?</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode kotlin"><code class="sourceCode kotlin"><a class="sourceLine" id="cb12-1" title="1">    <span class="kw">private</span> lateinit <span class="kw">var</span> <span class="va">textView</span>: TextView</a>
+<a class="sourceLine" id="cb12-2" title="2"></a>
+<a class="sourceLine" id="cb12-3" title="3">    <span class="kw">override</span> <span class="kw">fun</span> <span class="fu">onCreateView</span>(...): <span class="dt">View?</span> {</a>
+<a class="sourceLine" id="cb12-4" title="4">        <span class="kw">val</span> <span class="va">root</span> = inflator.inflator(R&gt;layout.fragment_home, container, <span class="kw">false</span>)</a>
+<a class="sourceLine" id="cb12-5" title="5">        textView = ??</a>
+<a class="sourceLine" id="cb12-6" title="6"></a>
+<a class="sourceLine" id="cb12-7" title="7">        <span class="kw">return</span> root</a>
+<a class="sourceLine" id="cb12-8" title="8">    }</a></code></pre></div>
+<ul>
+<li>[ ] root.getById(R.id.text_home)</li>
+<li>[ ] findViewByID(R.id.text_home)</li>
+<li>[x] root.findViewById(R.id.text_home)</li>
+<li>[ ] root.find(R.id.text_home)</li>
+</ul>
+<h4 id="q15.-why-do-you-use-the-androidjunitrunner-when-running-ui-tests">Q15. Why do you use the AndroidJUnitRunner when running UI tests?</h4>
+<ul>
+<li>[x] The test runner facilitates loading your test package and the app under test onto a device or emulator, runs the test, and reports the results.</li>
+<li>[ ] The test runner creating screenshots of each screen that displayed while tests are executed.</li>
+<li>[ ] The test runner facilitates parallelization of test classes by providing for each test class.</li>
+<li>[ ] The test runner facilitates interacting with visible elements on a device, regardless of the activity or fragment that has focus.</li>
+</ul>
+<h4 id="q16.-wwhat-allows-you-to-properly-restore-a-users-state-when-an-activity-is-restarted">Q16. WWhat allows you to properly restore a user’s state when an activity is restarted?</h4>
+<ul>
+<li>[ ] the onSaveInstance()method</li>
+<li>[ ] all of these answers</li>
+<li>[ ] persistent storage</li>
+<li>[ ] ViewModel objects</li>
+</ul>
+<h4 id="q17.-given-the-defination-below.-how-would-you-get-access-a-textview-with-an-id-of-text_home-contained-in-thr-layout-file-of-a-fragment-class">Q17. Given the defination below. how would you get access a TextView with an ID of text_home contained in thr layout file of a Fragment class?</h4>
+<ul>
+<li>[ ] root.find(R.id.text_home)</li>
+<li>[ ] findViewById(R.id.text_home)</li>
+<li>[ ] root.getById(R.id.text_home)</li>
+<li>[x] root.findViewById(R.id.text_home)</li>
+</ul>
+<h4 id="q18.-if-the-main-thread-is-blocked-for-too-long-the-system-displays-the___dialog">Q18. IF the main thread is blocked for too long, the system displays the___dialog?</h4>
+<ul>
+<li>[ ] Thread Not Responding</li>
+<li>[ ] Application Paused</li>
+<li>[x] Application Not Responding</li>
+<li>[ ] Application Blocked</li>
+</ul>
+<h4 id="q19.-how-would-you-retrive-the-value-of-a-users-email-from-sharedpreferances-while-ensuring-that-the-returned-value-is-not-null">Q19. How would you retrive the value of a user’s email from SharedPreferances while ensuring that the returned value is not null?</h4>
+<ul>
+<li>[ ] getPreferances(this).getString(Email,"")</li>
+<li>[ ] getDefaultSharedPrefarances(this).getString(EMAIL,null)</li>
+<li>[ ] getDefaultSharedPreferances(this).getString(EMAIL,"")</li>
+<li>[ ] getPreferances(this).getString(EMAIL,null)</li>
+</ul>
+<h4 id="q20.-why-is-it-problematic-to-define-sizes-using-pixels-on-android">Q20. Why is it problematic to define sizes using pixels on Android?</h4>
+<ul>
+<li>[ ] Although screen pixel density vary,this does not impact the use of pixels to define sizes.</li>
+<li>[ ] Large devices always have more pixels so your UI elements will be effected if you define them with pixels.</li>
+<li>[ ] The same number of pixels may corresponds to different physical sizes, affecting the appearance of your UI elements.</li>
+<li>[x] Different devices have different understanding of what a pixel is , affecting the appearance of your UI elements</li>
+</ul>
+<h4 id="q20.-you-need-to-get-a-listing-devices-that-are-attached-to-your-computer-with-usb-debugging-enable.-which-command-would-execute-using-the-android-debug-bridge">Q20. You need to get a listing devices that are attached to your computer with USB debugging enable. Which command would execute using the Android Debug Bridge?</h4>
+<ul>
+<li>[ ] list devices</li>
+<li>[x] adb devices</li>
+<li>[ ] list avd</li>
+<li>[ ] dir devices</li>
+</ul>
+<h4 id="q21.-which-drawable-defination-allows-you-to-achieve-the-shape-below">Q21. Which drawable defination allows you to achieve the shape below?</h4>
+<figure>
+<img src="image/shape.png" alt="img" /><figcaption>img</figcaption>
+</figure>
+<div class="sourceCode" id="cb13"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb13-1" title="1">      <span class="kw">&lt;shape</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="ot">          android:shape=</span><span class="st">&quot;oval&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb13-3" title="3">          <span class="kw">&lt;stroke</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="ot">              android:width=</span><span class="st">&quot;4dp&quot;</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="ot">              android:color=</span><span class="st">&quot;@android:color/white&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb13-6" title="6">          <span class="kw">&lt;solid</span><span class="ot"> android:color=</span><span class="st">&quot;@android:color/black&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb13-7" title="7">      <span class="kw">&lt;/shape&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb14-1" title="1">      <span class="kw">&lt;oval</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb14-2" title="2">          <span class="kw">&lt;stroke</span><span class="ot"> android:width=</span><span class="st">&quot;4dp&quot;</span><span class="ot"> android:color=</span><span class="st">&quot;@android:color/black&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb14-3" title="3">          <span class="kw">&lt;solid</span><span class="ot"> android:color=</span><span class="st">&quot;@android:color/white&quot;</span><span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb14-4" title="4">      <span class="kw">&lt;/oval&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb15-1" title="1">      <span class="kw">&lt;shape</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="ot">          android:shape=</span><span class="st">&quot;oval&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb15-3" title="3">          <span class="kw">&lt;stroke</span></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="ot">x</span>            <span class="er">android:width</span><span class="ot">=</span><span class="st">&quot;4dp&quot;</span></a>
+<a class="sourceLine" id="cb15-5" title="5"><span class="ot">              android:color=</span><span class="st">&quot;@android:color/black&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb15-6" title="6">          <span class="kw">&lt;solid</span><span class="ot"> android:color=</span><span class="st">&quot;@android:color/white&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb15-7" title="7">      <span class="kw">&lt;/shape&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb16-1" title="1">      <span class="kw">&lt;shape</span><span class="ot"> xmlns:android=</span><span class="st">&quot;http://schemas.android.com/apk/res/android&quot;</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="ot">          android:shape=</span><span class="st">&quot;oval&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb16-3" title="3">          <span class="kw">&lt;stroke</span></a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="ot">              android:width=</span><span class="st">&quot;4dp&quot;</span></a>
+<a class="sourceLine" id="cb16-5" title="5"><span class="ot">              android:color=</span><span class="st">&quot;@android:color/white&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb16-6" title="6">          <span class="kw">&lt;solid</span><span class="ot"> android:color=</span><span class="st">&quot;@android:color/white&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb16-7" title="7">      <span class="kw">&lt;/shape&gt;</span></a></code></pre></div>
+<h4 id="q22.-to-persist-a-small-collection-of-key-value-data-what-should-you-use">Q22. To persist a small collection of key-value data, what should you use?</h4>
+<ul>
+<li>[ ] external file storage</li>
+<li>[x] SharedPereferences</li>
+<li>[ ] SQLite</li>
+<li>[ ] internal file storage</li>
+</ul>
+<h4 id="q22.-you-need-to-retrive-a-list-of-photos-from-an-api.-which-code-snippet-defines-an-html-get-request-in-retrofit">Q22. You need to retrive a list of photos from an API. Which code snippet defines an HTML GET request in Retrofit?</h4>
+<ul>
+<li>[ ] <span class="citation" data-cites="GET">@GET</span>(“photo/{id}”} fun listPhotos(<span class="citation" data-cites="Path">@Path</span>(“id”) id:Long?) : Call<Photo></li>
+<li>[ ] <span class="citation" data-cites="LIST">@LIST</span>(“photo”) fun listPhotos() : Call&lt;List<Photo>&gt;</li>
+<li>[ ] <span class="citation" data-cites="GET">@GET</span>(“photo”) fun listPhotos() : Call<Photo></li>
+<li>[x] <span class="citation" data-cites="GET">@GET</span>(“photo”) fun listPhotos() : Call&lt;List<Photo>&gt;</li>
+</ul>
+<h4 id="q23.-given-the-test-class-below-which-code-snippet-would-be-a-correct-assertion">Q23. Given the test class below, which code snippet would be a correct assertion?</h4>
+<ul>
+<li>[ ] assertThat(resultAdd).is(2.0)</li>
+<li>[x] assertNotNull(resultAdd)</li>
+<li>[ ] assertThat(resultAdd).isWqualTo(2.0)</li>
+<li>[ ] assertThat(resultAdd)</li>
+</ul>
+<h4 id="q24.-what-tag-should-you-use-to-add-a-reusable-view-component-to-a-layour-file">Q24. What tag should you use to add a reusable view component to a layour file?</h4>
+<ul>
+<li>[ ] <code>&lt;merge/&gt;</code></li>
+<li>[x] <code>&lt;include/&gt;</code></li>
+<li>[ ] <code>&lt;layout/&gt;</code></li>
+<li>[ ] <code>&lt;add/&gt;</code></li>
+</ul>
+<h4 id="q25.-you-want-to-provide-a-different-drawable-for-devices-that-are-in-landscape-mode-and-whose-language-is-set-to-french.-which-directory-is-named-correctly">Q25. You want to provide a different drawable for devices that are in landscape mode and whose language is set to French. which directory is named correctly?</h4>
+<ul>
+<li>[ ] fr-land-drawable</li>
+<li>[x] drawable-fr-land</li>
+<li>[ ] drawable-french-land</li>
+<li>[ ] french-land-drawable</li>
+</ul>
+<h4 id="q26.-why-might-you-need-to-include-the-following-permission-to-your-app">Q26. Why might you need to include the following permission to your app?</h4>
+<p>android.permission.ACCESS_NETWORK_STATE</p>
+<ul>
+<li>[ ] to monitor the location of the devices so that you don’t attempt to make network calls when the user is stationary</li>
+<li>[x] to request the ability to make network calls from your app</li>
+<li>[ ] to monitor the network state of the device so that you can display an in-app banner to the user</li>
+<li>[ ] to monitor the network state of the devices so that you don’t attempt to make network calls when the network is unavailable</li>
+</ul>
+<h4 id="q27.-which-image-best-corresponds-to-the-following-linearlayout">Q27. Which image best corresponds to the following <code>LinearLayout</code>?</h4>
+<div class="sourceCode" id="cb17"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">&lt;LinearLayout</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="ot">    android:layout_width=</span><span class="st">&quot;match_parent&quot;</span></a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="ot">    android:layout_height=</span><span class="st">&quot;match_parent&quot;</span></a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="ot">    android:orientation=</span><span class="st">&quot;horizontal&quot;</span></a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="ot">    android:gravity=</span><span class="st">&quot;center&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb17-6" title="6">    <span class="kw">&lt;Button</span></a>
+<a class="sourceLine" id="cb17-7" title="7"><span class="ot">        android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb17-8" title="8"><span class="ot">        android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb17-9" title="9"><span class="ot">        android:text=</span><span class="st">&quot;Button&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb17-10" title="10">    <span class="kw">&lt;Button</span></a>
+<a class="sourceLine" id="cb17-11" title="11"><span class="ot">        android:layout_width=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb17-12" title="12"><span class="ot">        android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb17-13" title="13"><span class="ot">        android:text=</span><span class="st">&quot;Button&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb17-14" title="14"><span class="kw">&lt;/LinearLayout&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ] A <img src="image/00.jpeg" alt="img" /></li>
+<li>[ ] B <img src="image/01.jpeg" alt="img" /></li>
+<li>[x] C <img src="image/02.jpeg" alt="img" /></li>
+<li>[ ] D <img src="image/03.jpeg" alt="img" /></li>
+</ul>
+<h4 id="q28.-you-want-to-open-the-default-dialer-app-on-a-device.-what-is-wrong-with-this-code">Q28. You want to open the default Dialer app on a device. What is wrong with this code?</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb18-1" title="1">val dialerIntent = <span class="fu">Intent</span>()</a>
+<a class="sourceLine" id="cb18-2" title="2">val et = <span class="fu">findViewById</span>(R.<span class="fu">id</span>.<span class="fu">some_edit_text</span>)</a>
+<a class="sourceLine" id="cb18-3" title="3">dialerIntent.<span class="fu">action</span> = Intent.<span class="fu">ACTION_DIAL</span></a>
+<a class="sourceLine" id="cb18-4" title="4">dialerIntent.<span class="fu">data</span> = Uri.<span class="fu">parse</span>(<span class="st">&quot;tel:&quot;</span> + et.<span class="fu">getText</span>()?.<span class="fu">toString</span>())</a>
+<a class="sourceLine" id="cb18-5" title="5"><span class="fu">startActivity</span>(dialerIntent)</a></code></pre></div>
+<ul>
+<li>[x] <code>startActivityWithResult()</code> should be used instead of <code>startActivity()</code> when using <code>Intent.ACTION_DIAL</code>.</li>
+<li>[ ] For <code>Intent.ACTION_DIAL</code>, the <code>Intent</code> option <code>Intent.FLAG_ACTIVITY_NEW_TASK</code> must be added when using this <code>dialerIntent</code>.</li>
+<li>[ ] The <code>dialerIntent</code> will cause an ActivityNotFoundException to be thrown on devices that do not support <code>Intent.ACTION_DIAL</code>.</li>
+<li>[ ] The permission <code>android.permission.CALL_PHONE</code> must be requested first before <code>Intent.ACTION_DIAL</code> can be used.</li>
+</ul>
+<h4 id="q29.-when-should-you-store-files-in-the-assets-directory">Q29. When should you store files in the <code>/assets</code> directory?</h4>
+<ul>
+<li>[x] when you need access to the original file names and file hierarchy</li>
+<li>[ ] when you need access to the file with its <code>resource ID</code>, like <code>R.assets.filename</code></li>
+<li>[ ] when you have XML files that define tween animations</li>
+<li>[ ] when you need to access the file in its raw form using <code>Resources.openRawResource()</code></li>
+</ul>
+<h4 id="q30.-you-want-to-allow-users-to-take-pictures-in-your-app.-which-is-not-an-advantage-of-creating-an-appropriate-intent-instead-of-requesting-the-camera-permission-directly">Q30. You want to allow users to take pictures in your app. Which is <em>not</em> an advantage of creating an appropriate <code>intent</code>, instead of requesting the camera permission directly?</h4>
+<ul>
+<li>[ ] Users can select their favorite photo apps to take pictures.</li>
+<li>[ ] You do not have to make a permission request in your app to take a picture.</li>
+<li>[x] You have full control over the user experience. The app that handles the camera <code>intent</code> will respect your design choices.</li>
+<li>[ ] You do not have to design the UI. The app that handles the camera <code>intent</code> will provide the UI.</li>
+</ul>
+<h4 id="q31.-when-would-you-use-the-activitycompat.shouldshowrequestpermissionrationale-function">Q31. When would you use the <code>ActivityCompat.shouldShowRequestPermissionRationale()</code> function?</h4>
+<ul>
+<li>[ ] when a user first opens your app and you want to provide an explanation for the use of a given permission</li>
+<li>[ ] when a user has previously denied the request for a given permission and selects “Tell me more”</li>
+<li>[ ] when a user has previously denied the request for a given permission and you want to provide an explanation for its use</li>
+<li>[x] when a user has previously denied the request for a given permission and selected “Don’t ask again,” but you need the permission for your app to function</li>
+</ul>
+<h4 id="q32.-you-would-like-to-enable-analytics-tracking-only-in-release-builds.-how-can-you-create-a-new-field-in-the-generated-buildconfig-class-to-store-that-value">Q32. You would like to enable analytics tracking only in <code>release</code> builds. How can you create a new field in the generated <code>BuildConfig</code> class to store that value?</h4>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb19"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb19-1" title="1">buildTypes {</a>
+<a class="sourceLine" id="cb19-2" title="2">    debug {</a>
+<a class="sourceLine" id="cb19-3" title="3">        buildConfig &#39;boolean&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;false&#39;</a>
+<a class="sourceLine" id="cb19-4" title="4">    }</a>
+<a class="sourceLine" id="cb19-5" title="5">    release {</a>
+<a class="sourceLine" id="cb19-6" title="6">        buildConfig &#39;boolean&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;true&#39;</a>
+<a class="sourceLine" id="cb19-7" title="7">    }</a>
+<a class="sourceLine" id="cb19-8" title="8">}</a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb20"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb20-1" title="1">buildTypes {</a>
+<a class="sourceLine" id="cb20-2" title="2">    debug {</a>
+<a class="sourceLine" id="cb20-3" title="3">        buildConfig &#39;String&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;false&#39;</a>
+<a class="sourceLine" id="cb20-4" title="4">    }</a>
+<a class="sourceLine" id="cb20-5" title="5">    release {</a>
+<a class="sourceLine" id="cb20-6" title="6">        buildConfig &#39;String&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;true&#39;</a>
+<a class="sourceLine" id="cb20-7" title="7">    }</a>
+<a class="sourceLine" id="cb20-8" title="8">}</a></code></pre></div>
+<ul>
+<li>[x]</li>
+</ul>
+<div class="sourceCode" id="cb21"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb21-1" title="1">buildTypes {</a>
+<a class="sourceLine" id="cb21-2" title="2">    debug {</a>
+<a class="sourceLine" id="cb21-3" title="3">        buildConfigField &#39;boolean&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;false&#39;</a>
+<a class="sourceLine" id="cb21-4" title="4">    }</a>
+<a class="sourceLine" id="cb21-5" title="5">    release {</a>
+<a class="sourceLine" id="cb21-6" title="6">        buildConfigField &#39;boolean&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;true&#39;</a>
+<a class="sourceLine" id="cb21-7" title="7">    }</a>
+<a class="sourceLine" id="cb21-8" title="8">}</a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb22"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb22-1" title="1">buildTypes {</a>
+<a class="sourceLine" id="cb22-2" title="2">    debug {</a>
+<a class="sourceLine" id="cb22-3" title="3">        buildConfigField &#39;boolean&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;true&#39;</a>
+<a class="sourceLine" id="cb22-4" title="4">    }</a>
+<a class="sourceLine" id="cb22-5" title="5">    release {</a>
+<a class="sourceLine" id="cb22-6" title="6">        buildConfigField &#39;boolean&#39;, &#39;ENABLE_ANALYTICS&#39;, &#39;false&#39;</a>
+<a class="sourceLine" id="cb22-7" title="7">    }</a>
+<a class="sourceLine" id="cb22-8" title="8">}</a></code></pre></div>
+<h4 id="q33.-to-optimize-your-apk-size-what-image-codec-should-you-use">Q33. To optimize your APK size, what image codec should you use?</h4>
+<ul>
+<li>[ ] JPG</li>
+<li>[ ] PNG</li>
+<li>[ ] MPEG</li>
+<li>[x] WebP</li>
+</ul>
+<h4 id="q34.-you-have-built-code-to-make-a-network-call-and-tested-that-it-works-in-your-development-environment.-however-when-you-publish-it-to-the-play-console-the-networking-call-fails-to-work.-what-will-not-help-you-troubleshoot-this-issue">Q34. You have built code to make a network call and tested that it works in your development environment. However, when you publish it to the Play console, the networking call fails to work. What will <em>not</em> help you troubleshoot this issue?</h4>
+<ul>
+<li>[ ] checking whether <code>ProGuard</code> -keepclassmembers have been added to the network data transfer objects (DTOs) in question</li>
+<li>[x] using the profiler tools in Android Studio to detect anomalies in CPU, memory, and network usage</li>
+<li>[ ] checking for exceptions in the sever logs or server console</li>
+<li>[ ] checking that the network data transfer object has <code>@SerizlizedName</code> applied to its member properties</li>
+</ul>
+<h4 id="q35.-which-code-snippet-would-achieve-the-layout-displayed-below">Q35. Which code snippet would achieve the layout displayed below?</h4>
+<figure>
+<img src="image/04.jpeg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb23"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">&lt;androidx.constraintlayout.widget.ConstraintLayout</span></a>
+<a class="sourceLine" id="cb23-2" title="2">    <span class="er">...</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb23-3" title="3"></a>
+<a class="sourceLine" id="cb23-4" title="4">    <span class="kw">&lt;TextView</span></a>
+<a class="sourceLine" id="cb23-5" title="5"><span class="ot">        android:id=</span><span class="st">&quot;@+id/text_dashboard&quot;</span></a>
+<a class="sourceLine" id="cb23-6" title="6"><span class="ot">        android:layout_width=</span><span class="st">&quot;match_parent&quot;</span></a>
+<a class="sourceLine" id="cb23-7" title="7"><span class="ot">        android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb23-8" title="8"><span class="ot">        android:layout_marginTop=</span><span class="st">&quot;16dp&quot;</span></a>
+<a class="sourceLine" id="cb23-9" title="9"><span class="ot">        android:padding=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb23-10" title="10"><span class="ot">        android:textAlignment=</span><span class="st">&quot;center&quot;</span></a>
+<a class="sourceLine" id="cb23-11" title="11"><span class="ot">        android:text=</span><span class="st">&quot;Dashboard&quot;</span></a>
+<a class="sourceLine" id="cb23-12" title="12"><span class="ot">        app:layout_constraintEnd_toEndOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb23-13" title="13"><span class="ot">        app:layout_constraintStart_toStartOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb23-14" title="14"><span class="ot">        app:layout_constraintTop_toTopOf=</span><span class="st">&quot;parent&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb23-15" title="15"></a>
+<a class="sourceLine" id="cb23-16" title="16"><span class="kw">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></a></code></pre></div>
+<ul>
+<li>[x]</li>
+</ul>
+<div class="sourceCode" id="cb24"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">&lt;androidx.constraintlayout.widget.ConstraintLayout</span></a>
+<a class="sourceLine" id="cb24-2" title="2">    <span class="er">...</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb24-3" title="3"></a>
+<a class="sourceLine" id="cb24-4" title="4">    <span class="kw">&lt;TextView</span></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="ot">        android:id=</span><span class="st">&quot;@+id/text_dashboard&quot;</span></a>
+<a class="sourceLine" id="cb24-6" title="6"><span class="ot">        android:layout_width=</span><span class="st">&quot;match_parent&quot;</span></a>
+<a class="sourceLine" id="cb24-7" title="7"><span class="ot">        android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb24-8" title="8"><span class="ot">        android:layout_marginStart=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb24-9" title="9"><span class="ot">        android:layout_marginEnd=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb24-10" title="10"><span class="ot">        android:textAlignment=</span><span class="st">&quot;center&quot;</span></a>
+<a class="sourceLine" id="cb24-11" title="11"><span class="ot">        android:text=</span><span class="st">&quot;Dashboard&quot;</span></a>
+<a class="sourceLine" id="cb24-12" title="12"><span class="ot">        app:layout_constraintEnd_toEndOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb24-13" title="13"><span class="ot">        app:layout_constraintStart_toStartOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb24-14" title="14"><span class="ot">        app:layout_constraintTop_toTopOf=</span><span class="st">&quot;parent&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb24-15" title="15"></a>
+<a class="sourceLine" id="cb24-16" title="16"><span class="kw">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb25"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">&lt;androidx.constraintlayout.widget.ConstraintLayout</span></a>
+<a class="sourceLine" id="cb25-2" title="2">    <span class="er">...</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb25-3" title="3"></a>
+<a class="sourceLine" id="cb25-4" title="4">    <span class="kw">&lt;TextView</span></a>
+<a class="sourceLine" id="cb25-5" title="5"><span class="ot">        android:id=</span><span class="st">&quot;@+id/text_dashboard&quot;</span></a>
+<a class="sourceLine" id="cb25-6" title="6"><span class="ot">        android:layout_width=</span><span class="st">&quot;match_parent&quot;</span></a>
+<a class="sourceLine" id="cb25-7" title="7"><span class="ot">        android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb25-8" title="8"><span class="ot">        android:layout_marginStart=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb25-9" title="9"><span class="ot">        android:layout_marginTop=</span><span class="st">&quot;16dp&quot;</span></a>
+<a class="sourceLine" id="cb25-10" title="10"><span class="ot">        android:layout_marginEnd=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb25-11" title="11"><span class="ot">        android:padding=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb25-12" title="12"><span class="ot">        android:textAlignment=</span><span class="st">&quot;center&quot;</span></a>
+<a class="sourceLine" id="cb25-13" title="13"><span class="ot">        android:text=</span><span class="st">&quot;Dashboard&quot;</span></a>
+<a class="sourceLine" id="cb25-14" title="14"><span class="ot">        app:layout_constraintEnd_toEndOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb25-15" title="15"><span class="ot">        app:layout_constraintStart_toStartOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb25-16" title="16"><span class="ot">        app:layout_constraintTop_toTopOf=</span><span class="st">&quot;parent&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb25-17" title="17"></a>
+<a class="sourceLine" id="cb25-18" title="18"><span class="kw">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb26"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb26-1" title="1"><span class="kw">&lt;androidx.constraintlayout.widget.ConstraintLayout</span></a>
+<a class="sourceLine" id="cb26-2" title="2">    <span class="er">...</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb26-3" title="3"></a>
+<a class="sourceLine" id="cb26-4" title="4">    <span class="kw">&lt;TextView</span></a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="ot">        android:id=</span><span class="st">&quot;@+id/text_dashboard&quot;</span></a>
+<a class="sourceLine" id="cb26-6" title="6"><span class="ot">        android:layout_width=</span><span class="st">&quot;match_parent&quot;</span></a>
+<a class="sourceLine" id="cb26-7" title="7"><span class="ot">        android:layout_height=</span><span class="st">&quot;wrap_content&quot;</span></a>
+<a class="sourceLine" id="cb26-8" title="8"><span class="ot">        android:layout_marginStart=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb26-9" title="9"><span class="ot">        android:layout_marginTop=</span><span class="st">&quot;16dp&quot;</span></a>
+<a class="sourceLine" id="cb26-10" title="10"><span class="ot">        android:layout_marginEnd=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb26-11" title="11"><span class="ot">        android:padding=</span><span class="st">&quot;8dp&quot;</span></a>
+<a class="sourceLine" id="cb26-12" title="12"><span class="ot">        android:text=</span><span class="st">&quot;Dashboard&quot;</span></a>
+<a class="sourceLine" id="cb26-13" title="13"><span class="ot">        app:layout_constraintEnd_toEndOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb26-14" title="14"><span class="ot">        app:layout_constraintStart_toStartOf=</span><span class="st">&quot;parent&quot;</span></a>
+<a class="sourceLine" id="cb26-15" title="15">    <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb26-16" title="16"></a>
+<a class="sourceLine" id="cb26-17" title="17"><span class="kw">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span></a></code></pre></div>
+<h4 id="q36.-which-source-set-is-not-available-to-you-by-default-when-android-studio-creates-a-new-project">Q36. Which source set is <em>not</em> available to you by default when Android Studio creates a new project?</h4>
+<ul>
+<li>[ ] test</li>
+<li>[ ] androidTest</li>
+<li>[ ] app</li>
+<li>[x] main</li>
+</ul>
+<h4 id="q37.-which-definition-will-prevent-other-apps-from-accessing-your-activity-class-via-an-intent">Q37. Which definition will prevent other apps from accessing your <code>Activity</code> class via an <code>intent</code>?</h4>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb27"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb27-1" title="1">    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.ExampleActivity&quot;</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<ul>
+<li>[x]</li>
+</ul>
+<div class="sourceCode" id="cb28"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb28-1" title="1">    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.ExampleActivity&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb28-2" title="2">        <span class="kw">&lt;intent-filter&gt;</span></a>
+<a class="sourceLine" id="cb28-3" title="3">            <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.action.SEND&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb28-4" title="4">        <span class="kw">&lt;/intent-filter&gt;</span></a>
+<a class="sourceLine" id="cb28-5" title="5">    <span class="kw">&lt;/activity&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb29"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb29-1" title="1">    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.ExampleActivity&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb29-2" title="2">        <span class="kw">&lt;intent-filter&gt;</span></a>
+<a class="sourceLine" id="cb29-3" title="3">            <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.action.MAIN&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb29-4" title="4">            <span class="kw">&lt;category</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.category.LAUNCHER&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb29-5" title="5">        <span class="kw">&lt;/intent-filter&gt;</span></a>
+<a class="sourceLine" id="cb29-6" title="6">    <span class="kw">&lt;/activity&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb30"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb30-1" title="1">    <span class="kw">&lt;activity</span><span class="ot"> android:name=</span><span class="st">&quot;.ExampleActivity&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb30-2" title="2">        <span class="kw">&lt;intent-filter&gt;</span></a>
+<a class="sourceLine" id="cb30-3" title="3">            <span class="kw">&lt;action</span><span class="ot"> android:name=</span><span class="st">&quot;android.intent.action.VIEW&quot;</span> <span class="kw">/&gt;</span></a>
+<a class="sourceLine" id="cb30-4" title="4">        <span class="kw">&lt;/intent-filter&gt;</span></a>
+<a class="sourceLine" id="cb30-5" title="5">    <span class="kw">&lt;/activity&gt;</span></a></code></pre></div>
+<h4 id="q38.-to-preserve-on-device-memory-how-might-you-determine-that-the-users-device-has-limited-storage-capabilities">Q38. To preserve on-device memory, how might you determine that the user’s device has limited storage capabilities?</h4>
+<ul>
+<li>[x] Use the <code>ActivityManager.isLowRamDevice()</code> method to find out whether a device defines itself as “low RAM.”</li>
+<li>[ ] Use the <code>Activity.islowRam()</code> method to find out whether a device defines itself as “low RAM.”</li>
+<li>[ ] Use the <code>ConnectivityManager.hasLowMemory()</code> method to find out whether a device defines itself as “low RAM.”</li>
+<li>[ ] Make an image download request and check the remaining device storage usage.</li>
+</ul>
+<h4 id="q39.-what-is-not-a-good-way-to-reuse-android-code">Q39. What is <em>not</em> a good way to reuse Android code?</h4>
+<ul>
+<li>[ ] Use a common Gradle module shared by different Android projects.</li>
+<li>[ ] Prefer to build custom views or fragments over activities.</li>
+<li>[ ] Prefer to build activities instead of fragments.</li>
+<li>[x] Break down UI layouts into common elements and use <code>&lt;include/&gt;</code> to include them in other layout XML files.</li>
+</ul>
+<h4 id="q40.-which-layout-is-best-for-large-complex-hierarchies">Q40. Which layout is best for large, complex hierarchies?</h4>
+<ul>
+<li>[ ] LinearLayout</li>
+<li>[ ] ConstraintLayout</li>
+<li>[ ] FrameLayout</li>
+<li>[ ] RelativeLayout</li>
+</ul>
+<h4 id="q41.-why-do-developers-often-put-app-initialization-code-in-the-application-class">Q41. Why do developers often put app initialization code in the Application class?</h4>
+<ul>
+<li>[ ] The Application class is instantiated before any other class when the process for the application is created.</li>
+<li>[ ] The Application class is instantiated after any permissions requests when the process for the application is created.</li>
+<li>[ ] The Application class is created each time a new Activity is launched, making it ideal for initialization code.</li>
+<li>[ ] The Application class is created each time a background service is called, making it ideal for initialization code.</li>
+</ul>
+<h4 id="q42.-what-folder-should-you-use-for-your-apps-launcher-icons">Q42. What folder should you use for your app’s launcher icons?</h4>
+<ul>
+<li>[ ] /drawable</li>
+<li>[ ] /icon</li>
+<li>[ ] /mipmap</li>
+<li>[ ] /launcher</li>
+</ul>
+<h4 id="q43.-which-drawable-definition-allows-you-to-achieve-the-shape-below">Q43. Which drawable definition allows you to achieve the shape below?</h4>
+<figure>
+<img src="image/43.jpeg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb31"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb31-1" title="1">    <span class="kw">&lt;shape</span><span class="ot"> xmlns:android-</span><span class="er">&quot;http://schemas.android.com/apk/res/android&quot;</span></a>
+<a class="sourceLine" id="cb31-2" title="2">        <span class="er">android:shape-&quot;oval&quot;&gt;</span></a>
+<a class="sourceLine" id="cb31-3" title="3">        <span class="er">&lt;gradient</span></a>
+<a class="sourceLine" id="cb31-4" title="4">               <span class="er">android:startColor-&quot;@android:color/white&quot;</span></a>
+<a class="sourceLine" id="cb31-5" title="5">               <span class="er">android:endColor-&quot;@android:color/black&quot;</span></a>
+<a class="sourceLine" id="cb31-6" title="6">               <span class="er">android:angle-&quot;45&quot;/&gt;</span></a>
+<a class="sourceLine" id="cb31-7" title="7">    <span class="er">&lt;/shape&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb32"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb32-1" title="1">    <span class="kw">&lt;rectangle</span><span class="ot"> xmlns:android-</span><span class="er">&quot;http://schemas.android.com/apk/res/android&quot;&gt;</span></a>
+<a class="sourceLine" id="cb32-2" title="2">       <span class="er">&lt;gradient</span></a>
+<a class="sourceLine" id="cb32-3" title="3">          <span class="er">android:startColor-&quot;@android:color/white&quot;</span></a>
+<a class="sourceLine" id="cb32-4" title="4">          <span class="er">android:endColor-&quot;android:color/black&quot;</span></a>
+<a class="sourceLine" id="cb32-5" title="5">          <span class="er">android:angle-&quot;135&quot;/&gt;</span></a>
+<a class="sourceLine" id="cb32-6" title="6">    <span class="er">&lt;/rectangle&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb33-1" title="1">    <span class="kw">&lt;shape</span><span class="ot"> xmlns:android-</span><span class="er">&quot;http://schemas.android.com/apk/res/android&quot;</span></a>
+<a class="sourceLine" id="cb33-2" title="2">       <span class="er">android:shape-&quot;rectangle&quot;&gt;</span></a>
+<a class="sourceLine" id="cb33-3" title="3">       <span class="er">&lt;gradient</span></a>
+<a class="sourceLine" id="cb33-4" title="4">          <span class="er">android:startColor-&quot;@android:color/white&quot;</span></a>
+<a class="sourceLine" id="cb33-5" title="5">          <span class="er">android:endColor-&quot;@android:color/black&quot;</span></a>
+<a class="sourceLine" id="cb33-6" title="6">          <span class="er">android:angle-&quot;135&quot;/&gt;</span></a>
+<a class="sourceLine" id="cb33-7" title="7">    <span class="er">&lt;/shape&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb34"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb34-1" title="1">    <span class="kw">&lt;shape</span><span class="ot"> xmlns:android-</span><span class="er">&quot;http://schemas.android.com/apk/res/android&quot;</span></a>
+<a class="sourceLine" id="cb34-2" title="2">       <span class="er">android:shape-&quot;rectangle&quot;&gt;</span></a>
+<a class="sourceLine" id="cb34-3" title="3">       <span class="er">&lt;gradient</span></a>
+<a class="sourceLine" id="cb34-4" title="4">          <span class="er">android:startColor-&quot;@android:color/white&quot;</span></a>
+<a class="sourceLine" id="cb34-5" title="5">          <span class="er">android:endColor-&quot;@android:color/black&quot;</span></a>
+<a class="sourceLine" id="cb34-6" title="6">          <span class="er">android:angle-&quot;98&quot;/&gt;</span></a>
+<a class="sourceLine" id="cb34-7" title="7">    <span class="er">&lt;/shape&gt;</span></a></code></pre></div>
+<h4 id="q44.-given-the-constraintlayout-below-which-statement-is-true">Q44. Given the ConstraintLayout below, which statement is true?</h4>
+<figure>
+<img src="image/44.jpeg" alt="img" /><figcaption>img</figcaption>
+</figure>
+<ul>
+<li>[ ] View B is not horizontally constrained.</li>
+<li>[ ] View C has too many constraints.</li>
+<li>[ ] View B is not vertically constrained.</li>
+<li>[ ] View C is constrained to the parent.</li>
+</ul>
+</body>
+</html>

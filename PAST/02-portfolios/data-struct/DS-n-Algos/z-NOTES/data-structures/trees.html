@@ -1,0 +1,68 @@
+<h1 id="trees">Trees</h1>
+<h3 id="projected-time">Projected Time</h3>
+<p>about 2 hours</p>
+<ul>
+<li>Lesson Materials - 30-50 minutes</li>
+<li>Independent Practice - 60-90 minutes</li>
+</ul>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><a href="/data-structures/intro-to-data-structures.md">Intro to Data Structures</a></li>
+<li><a href="/javascript/javascript-1-variables.md">JavaScript 1 - Variables, Strings, Numbers</a></li>
+<li><a href="/javascript/javascript-2-arrays-functions.md">JavaScript 2 - Arrays, Functions</a></li>
+<li><a href="/javascript/javascript-3-conditionals.md">JavaScript 3 - Conditionals, Comparisons, Booleans</a></li>
+<li><a href="/javascript/javascript-4-loops.md">JavaScript 4 - Loops</a></li>
+<li><a href="/javascript/javascript-5-switch.md">JavaScript 5 - Switch Statements</a></li>
+<li><a href="/javascript/javascript-6-object-literals.md">JavaScript 6 - Object Literals</a></li>
+<li><a href="/javascript/javascript-7-oop.md">JavaScript 7 - Object-Oriented Programming</a></li>
+<li><a href="/runtime-complexity/runtime-complexity.md">Runtime Complexity</a></li>
+</ul>
+<h3 id="motivation">Motivation</h3>
+<ul>
+<li><p>Trees are the type of data structure that will allow you to store and process objects and tasks dealing with numbers, strings and everything in between. The motivation here is to understand that a tree is a type of data structure that represents data in a top down arrangement, similar to a hierarchy.</p></li>
+<li><p>https://google.com uses a type of tree called a ‘trie’ to auto-complete what you are typing into the search bar. By seeing the first few letters you’ve typed, it can check it’s record tree of possible letters that can come after. So if you type “how do I”, their record tree for “how do I” has child nodes each contain a possible following set of characters, like “learn to draw” or “tie a tie” or “build a shelf”. The same can be said for auto-complete in many texting apps.</p></li>
+<li><p>When records are kept in order in a binary search tree (or BST), everything on one side of any branch is a lower value, and everything on the other side is a higher value, so finding something again is extremely efficient.</p></li>
+<li><p>Companies that care about spacial positioning are likely to use something called quadtrees or octrees which are the 2d &amp; 3d parallels of a BST (so you may see this used for optimizing physics simulations e.g. in game engines like <a href="https://unity3d.com/">Unity</a> and <a href="https://www.unrealengine.com/en-US/what-is-unreal-engine-4">Unreal</a>.)</p></li>
+<li><p><a href="https://www.agari.com/">Agari</a> used <a href="https://en.wikipedia.org/wiki/Radix_tree">Radix tries</a> to optimize their IP address search engine - their efficiency went from 0(n) (searching an array) to O(log n).</p></li>
+</ul>
+<h3 id="objectives">Objectives</h3>
+<p><strong>Participants will be able to:</strong> identify, implement and differentiate: trees, binary tree traversal, binary heaps, &amp; tries.</p>
+<h3 id="specific-things-to-learn">Specific Things to Learn</h3>
+<ul>
+<li>Trees</li>
+<li>Binary Search Trees</li>
+<li>B Trees</li>
+<li>Tries</li>
+<li>Heaps</li>
+</ul>
+<h3 id="materials">Materials</h3>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1O_mK6z7q69RLvqVFmoqfmEr4XKFSYVibgf-E08hxApw/edit?usp=sharing">Techtonica: Trees Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=7vw2iIdqHlM">binary search trees (video)</a> - 7 minutes</li>
+<li><a href="https://www.geeksforgeeks.org/b-tree-set-1-introduction-2/">B trees</a> -5 min read</li>
+<li><a href="https://youtu.be/zIjfhVPRZCg">tries (video)</a>- 5 minutes</li>
+<li><a href="https://youtu.be/-urNrIAQnNo">tries explained (video)</a> - 9 minutes</li>
+<li><a href="https://youtu.be/t0Cq6tVNRBA">heaps (video)</a> - 10 minutes</li>
+<li><a href="https://youtu.be/DuDz6B4cqVc">Data Structures: Crash Course Computer Science #14 (video)</a> (Trees are explained 8 minutes into the video - 1 min total)</li>
+<li><a href="https://webdocs.cs.ualberta.ca/~holte/T26/tree-as-array.html">Tree Implementation in an Array</a>(5 min read)</li>
+<li><a href="https://www.youtube.com/watch?v=oSWTXtMglKE">Data Structures: Trees (video)</a>(10 min video)</li>
+</ul>
+<h3 id="lesson">Lesson</h3>
+<p>Work through the materials provided in ‘materials’. This should take 30-50 minutes.</p>
+<h4 id="notes">Notes:</h4>
+<ul>
+<li><p><strong>Trees</strong> associate every object to a node in a tree, and the number of children stemming from that node are referred to as its degree. There are several types of trees, including Binary Search Trees (BST) and with Binary Search Trees you can perform insertions, deletions, and retrievals.</p></li>
+<li><p><strong>Trees are a common interview question</strong>. They can be used when you want to store data that takes the shape of a hierarchy. Unlike arrays, and linked lists, trees are a non-linear data structure. Organizing keys in the form of a tree allows us to search for a given key quicker than a linked list, but slower than searching through an array.</p></li>
+<li><p><strong>Self-balancing search trees</strong> and <strong>Red-Black trees</strong> produce an upper bound of O(Log n)for search. Trees also provide a faster key insertion and deletion time than arrays, but slightly slower than unordered linked lists.</p></li>
+<li><p>The common uses of trees include manipulating hierarchical data, making information easy to search (tree traversal), manipulating sorted lists of data, compositing digital images for visual effects, and router algorithms.</p></li>
+</ul>
+<h3 id="independent-practice">Independent Practice</h3>
+<p><a href="https://www.pdfdrive.com/cracking-the-coding-interview-e52072841.html">Cracking the Coding Interview 6th Ed.</a>, Ch.4 | Trees &amp; Graphs pages 100 - 107</p>
+<ul>
+<li>Read pages 100 - 107</li>
+<li>Implement 3 of the Interview Challenges found on pages 109 - 111</li>
+</ul>
+<h3 id="challenge">Challenge</h3>
+<p>Ask a mentor, volunteer, or apprentice for a code review of your Tree implementation.</p>
+<h3 id="check-for-understanding">Check for Understanding</h3>
+<p>Create a cheat sheet about the types of trees, binary tree traversal, binary heaps, tries, graphs, and graph search.</p>

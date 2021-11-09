@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README-id</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="coding-interview-university">Coding Interview University</h1>
+<p>Versi asli: <a href="../README.md">Bahasa Inggris</a></p>
+<h2 id="ringkasan-apa-ini">Ringkasan apa ini?</h2>
+<p>Ini adalah rencana studi multi-bulan saya untuk beralih dari pengembang web (otodidak, tanpa gelar Ilmu Komputer) menjadi insinyur perangkat lunak untuk perusahaan besar.</p>
+<figure>
+<img src="https://d3j2pkmjtin6ou.cloudfront.net/coding-at-the-whiteboard-silicon-valley.png" alt="Menulis kode di papan tulis - dikutip dari serial TV Silicon Valley oleh HBO" /><figcaption>Menulis kode di papan tulis - dikutip dari serial TV Silicon Valley oleh HBO</figcaption>
+</figure>
+<p>Ini dimaksudkan untuk <strong>teknisi perangkat lunak baru</strong> atau mereka yang beralih dari pengembangan perangkat lunak/web ke rekayasa perangkat lunak (yang memerlukan pengetahuan ilmu komputer). Jika Anda memiliki pengalaman bertahun-tahun dan mengklaim pengalaman rekayasa perangkat lunak bertahun-tahun, nantikan wawancara yang lebih sulit.</p>
+<p>Jika Anda memiliki pengalaman pengembangan perangkat lunak/web selama bertahun-tahun, perhatikan bahwa perusahaan perangkat lunak besar seperti Google, Amazon, Facebook, dan Microsoft memandang rekayasa perangkat lunak berbeda dari pengembangan perangkat lunak/web, dan mereka memerlukan pengetahuan ilmu komputer.</p>
+<p>Jika Anda ingin menjadi insinyur keandalan atau insinyur operasi, pelajari lebih lanjut dari daftar opsional (jaringan, keamanan).</p>
+<hr />
+<h2 id="daftar-isi">Daftar Isi</h2>
+<ul>
+<li><a href="#ringkasan-apa-ini">Apa ini?</a></li>
+<li><a href="#mengapa-menggunakan-ini">Mengapa menggunakan ini?</a></li>
+<li><a href="#bagaimana-cara-menggunakannya">Bagaimana cara menggunakannya</a></li>
+<li><a href="#jangan-merasa-anda-kurang-pintar">Jangan merasa anda kurang pintar</a></li>
+<li><a href="#tentang-sumber-video">Tentang Sumber Video</a></li>
+<li><a href="#proses-interview-dan-preparasi-wawancara-secara-umum">Proses Interview dan Preparasi Wawancara Secara Umum</a></li>
+<li><a href="#pilih-satu-bahasa-pemrograman-untuk-wawancara">Pilih Satu Bahasa Pemrograman untuk Wawancara</a></li>
+<li><a href="#daftar-buku">Daftar Buku</a></li>
+<li><a href="#sebelum-anda-mulai">Sebelum Anda Mulai</a></li>
+<li><a href="#apa-yang-tidak-akan-dibahas">Apa yang Tidak Akan Dibahas</a></li>
+<li><a href="#ilmu-prasyarat">Ilmu Prasyarat</a></li>
+<li><a href="#rencana-harian">Rencana Harian</a></li>
+<li><a href="#kompleksitas-algoritma--big-o--analisis-asimptotik">Kompleksitas Algoritma / Big-O / Analisis Asimptotik</a></li>
+<li><a href="#struktur-data">Struktur Data</a>
+<ul>
+<li><a href="#arrays">Arrays</a></li>
+<li><a href="#linked-lists">Linked Lists</a></li>
+<li><a href="#stack">Stack</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#hash-table">Hash table</a></li>
+</ul></li>
+<li><a href="#lebih-banyak-pengetahuan">Lebih Banyak Pengetahuan</a>
+<ul>
+<li><a href="#pencarian-biner">Pencarian Biner</a></li>
+<li><a href="#operasi-bitwise">Operasi Bitwise</a></li>
+</ul></li>
+<li><a href="#trees">Trees</a>
+<ul>
+<li><a href="#trees---catatan--latar-belakang">Trees - Catatan &amp; Latar Belakang</a></li>
+<li><a href="#binary-search-trees-bsts">Binary search trees: BSTs</a></li>
+<li><a href="#heap-/-prioritas-antrian-/-biner-heap">Heap / Prioritas Antrian / Biner Heap</a></li>
+</ul></li>
+<li><a href="#penyortiran">Penyortiran</a>
+<ul>
+<li>selection</li>
+<li>insertion</li>
+<li>heapsort</li>
+<li>quicksort</li>
+<li>merge sort</li>
+</ul></li>
+<li><a href="#graphs">Graphs</a>
+<ul>
+<li>directed</li>
+<li>undirected</li>
+<li>adjacency matrix</li>
+<li>adjacency list</li>
+<li>traversals: BFS, DFS</li>
+</ul></li>
+<li><a href="#bahkan-lebih-banyak-pengetahuan">Bahkan Lebih Banyak Pengetahuan</a>
+<ul>
+<li><a href="#pengulangan-(recursion)">Pengulangan (Recursion)</a></li>
+<li><a href="#pemrograman-dinamis">Pemrograman Dinamis</a></li>
+<li><a href="#pemrograman-berorientasi-objek">Pemrograman Berorientasi Objek</a></li>
+<li><a href="#pola-desain-(design-patterns)">Pola desain (Design patterns)</a></li>
+<li><a href="#kombinatorik-(n-pilih-k)-&amp;-probabilitas">Kombinatorik (n pilih k) &amp; Probabilitas</a></li>
+<li><a href="#algoritma-np,-np-complete-dan-approximation">Algoritma NP, NP-Complete dan Approximation</a></li>
+<li><a href="#cache">Cache</a></li>
+<li><a href="#proses-dan-thread">Proses dan Thread</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#penjadwalan">Penjadwalan</a></li>
+<li><a href="#pencarian-&amp;-manipulasi-string">Pencarian &amp; manipulasi string</a></li>
+<li><a href="#tries">Tries</a></li>
+<li><a href="#angka-floating-point">Angka Floating Point</a></li>
+<li><a href="#unicode">Unicode</a></li>
+<li><a href="#endianness">Endianness</a></li>
+<li><a href="#jaringan">Jaringan</a></li>
+</ul></li>
+<li><a href="#Perancangan-Sistem,-Skalabilitas,-Penganganan-Data">Perancangan Sistem, Skalabilitas, Penganganan Data</a> (jika anda memiliki pengalaman 4 tahun lebih)</li>
+<li><a href="#ulasan-akhir">Ulasan Akhir</a></li>
+<li><a href="#latihan-pertanyaan-pemrograman">Latihan Pertanyaan Pemrograman</a></li>
+<li><a href="#latihan--tantangan-coding">Latihan / tantangan coding</a></li>
+<li><a href="#menjelang-proses-interview">Menjelang Proses Interview</a></li>
+<li><a href="#resume-anda">Resume Anda</a></li>
+<li><a href="#pikirkan-saat-wawancara-datang">Pikirkan saat wawancara datang</a></li>
+<li><a href="#bertanyalah-pada-pewawancara">Bertanyalah Pada Pewawancara</a></li>
+<li><a href="#saat-anda-berhasil-mendapatkan-pekerjaannya">Saat Anda Berhasil Mendapatkan Pekerjaannya</a></li>
+</ul>
+<p>—————- Semua dibawah ini bersifat opsional —————-</p>
+<ul>
+<li><a href="#buku-tambahan">Buku Tambahan</a></li>
+<li><a href="#pembelajaran-tambahan">Pembelajaran Tambahan</a>
+<ul>
+<li><a href="#kompilator">Kompilator</a></li>
+<li><a href="#emacs-and-vim">Emacs and vi(m)</a></li>
+<li><a href="#unix-command-line-tools">Unix command line tools</a></li>
+<li><a href="#teori-informasi-video">Teori Informasi</a></li>
+<li><a href="#pariti--kode-hamming">Pariti &amp; Kode Hamming</a></li>
+<li><a href="#entropi">Entropi</a></li>
+<li><a href="#kriptografi">Kriptografi</a></li>
+<li><a href="#kompresi">Kompresi</a></li>
+<li><a href="#jaringan">Jaringan</a> (bersiaplah mendapatkan pertanyaan jaringan apabila anda ingin menjadi system engineer)</li>
+<li><a href="#keamanan-komputer">Keamanan komputer</a></li>
+<li><a href="#pengumpulan-sampah">Pengumpulan sampah (Garbage collection)</a></li>
+<li><a href="#pemrograman-paralel">Pemrograman Paralel</a></li>
+<li><a href="#pengiriman-pesan-serialisasi-dan-sistem-queueing">Pengiriman Pesan, Serialisasi, dan Sistem Queueing</a></li>
+<li><a href="#a">A*</a></li>
+<li><a href="#transformasi-fourier-cepat">Transformasi Fourier Cepat</a></li>
+<li><a href="#bloom-filter">Bloom Filter</a></li>
+<li><a href="#hyperloglog">HyperLogLog</a></li>
+<li><a href="#locality-sensitive-hashing">Locality-Sensitive Hashing</a></li>
+<li><a href="#van-emde-boas-trees">van Emde Boas Trees</a></li>
+<li><a href="#augmented-data-structures">Augmented Data Structures</a></li>
+<li><a href="#tries">Tries</a></li>
+<li><a href="#n-ary-k-ary-m-ary-trees">N-ary (K-ary, M-ary) trees</a></li>
+<li><a href="#balanced-search-trees">Balanced search trees</a>
+<ul>
+<li>AVL trees</li>
+<li>Splay trees</li>
+<li>Red/black trees</li>
+<li>2-3 search trees</li>
+<li>2-3-4 Trees (aka 2-4 trees)</li>
+<li>N-ary (K-ary, M-ary) trees</li>
+<li>B-Trees</li>
+</ul></li>
+<li><a href="#k-d-trees">k-D Trees</a></li>
+<li><a href="#skip-lists">Skip lists</a></li>
+<li><a href="#aliran-jaringan">Aliran Jaringan</a></li>
+<li><a href="#disjoint-sets--union-find">Disjoint Sets &amp; Union Find</a></li>
+<li><a href="#matematika-untuk-pemrosesan-cepat">Matematika untuk Pemrosesan Cepat</a></li>
+<li><a href="#treap">Treap</a></li>
+<li><a href="#pemrograman-linear-video">Pemrograman Linear</a></li>
+<li><a href="#geometri-convex-hull-video">Geometri, Convex hull</a></li>
+<li><a href="#matematika-diskrit">Matematika Diskrit</a></li>
+<li><a href="#pembelajaran-mesin-machine-learning">Pembelajaran Mesin</a></li>
+</ul></li>
+<li><a href="#detail-tambahan-tentang-beberapa-subjek">Detail Tambahan tentang Beberapa Subjek</a></li>
+<li><a href="#seri-video">Seri Video</a></li>
+<li><a href="#kursus-ilmu-komputer">Kursus Ilmu Komputer</a></li>
+<li><a href="#implementasi-algoritma">Implementasi Algoritma</a></li>
+<li><a href="#dokumen">Dokumen</a></li>
+</ul>
+<hr />
+<h2 id="mengapa-menggunakan-ini">Mengapa menggunakan ini?</h2>
+<p>Saya mengikuti rencana ini untuk mempersiapkan saya dalam menghadapi wawancara kerja Google. Sejak 1997, saya telah menciptakan berbagai situs, servis, dan mendirikan startup. Saya memiliki gelar ekonomi, bukan gelar ilmu komputer. Saya telah meraih kesuksesan dalam karir saya, tapi saya ingin bekerja di Google. Saya ingin masuk ke sistem yang lebih besar dan mempunyai pemahaman mendalam tentang sistem komputer, efesiensi algoritma, performa struktur data, bahasa tingkat rendah, dan bagaimana semuanya bekerja. Jika anda tidak mengetahui satu pun, Google tidak akan mempekerjakan anda.</p>
+<p>Itu rencana yang panjang. Mungkin butuh waktu berbulan-bulan. Jika Anda sudah terbiasa dengan hal ini, Anda akan membutuhkan lebih sedikit waktu.</p>
+<h2 id="bagaimana-cara-menggunakannya">Bagaimana cara menggunakannya?</h2>
+<p>Apapun dibawah ini adalah garis besar, dan anda harus menguasai materi dari atas ke bawah secara runut.</p>
+<p>Saya menggunakan markdown spesial dari Github, termasuk daftar tugas untuk mengecek perkembangan.</p>
+<p><strong>Buat branch baru sehingga anda bisa mencentang seperti ini, bubuhi tanda x dalam tanda kurung: [x]</strong></p>
+<pre><code>Fork sebuah branch dan ikuti perintah berikut</code></pre>
+<p><code>git checkout -b progress</code></p>
+<p><code>git remote add jwasham https://github.com/jwasham/coding-interview-university</code></p>
+<p><code>git fetch --all</code></p>
+<pre><code>Tandai semua kotak dengan tanda X setalah anda menyelesaikannya</code></pre>
+<p><code>git add .</code></p>
+<p><code>git commit -m "Tandai x"</code></p>
+<p><code>git rebase jwasham/master</code></p>
+<p><code>git push --force</code></p>
+<p><a href="https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown">Lebih jauh tentang markdown Github</a></p>
+<h2 id="jangan-merasa-anda-kurang-pintar">Jangan merasa anda kurang pintar</h2>
+<ul>
+<li>Para engineers/programmer di google adalah orang-orang pintar, tapi banyak dari mereka berpikir bahwa mereka tidak cukup pintar, walaupun mereka bekerja di Google.</li>
+<li><a href="https://www.youtube.com/watch?v=0SARbwvhupQ">Mitos dari programmer yang jenius</a></li>
+<li><a href="https://www.youtube.com/watch?v=1i8ylq4j_EY">Hal yang berbahaya untuk pergi sendirian: Bertarung dengan monster yang tidak kelihatan di dunia teknologi</a></li>
+</ul>
+<h2 id="tentang-sumber-video">Tentang Sumber Video</h2>
+<p>Beberapa video hanya tersedia dengan mendaftar di kelas Coursera atau EdX. Ini disebut MOOC. Terkadang kelas tidak dalam sesi jadi Anda harus menunggu beberapa bulan, jadi Anda tidak memiliki akses.</p>
+<pre><code>Saya menghargai bantuan Anda untuk menambahkan sumber publik yang gratis dan selalu tersedia, seperti video YouTube untuk menyertai video kursus online.
+Saya suka menggunakan kuliah universitas.</code></pre>
+<h2 id="proses-interview-dan-preparasi-wawancara-secara-umum">Proses Interview dan Preparasi Wawancara Secara Umum</h2>
+<ul>
+<li>[ ] <a href="https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2#.4heg8zvm4">ABC: Selalu Menjadi Coding</a></li>
+<li>[ ] <a href="https://medium.com/@dpup/whiteboarding-4df873dbba2e#.hf6jn45g1">Papan tulis (Whiteboarding)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=N233T0epWTs">Memperlihatkan Perekrutan Teknologi</a></li>
+<li>[ ] Cara Mendapatkan Pekerjaan di Big 4:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=YJZCUhxNCv8">Cara Mendapatkan Pekerjaan di Big 4 - Amazon, Facebook, Google &amp; Microsoft (video)</a></li>
+</ul></li>
+<li>[ ] Memecahkan Set Wawancara Coding 1:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=rEJzOhC5ZtQ">Gayle L McDowell - Memecahkan The Coding Interview (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=aClxtDcdpsQ">Memecahkan Wawancara Coding dengan Penulis Gayle Laakmann McDowell (video)</a></li>
+</ul></li>
+<li>[ ] Memecahkan Wawancara Coding Facebook:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=wCl9kvQGHPI">Pendekatan</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=4UWDyJq8jZg">Panduan Masalah</a></li>
+</ul></li>
+<li>[ ] Kursus Persiapan:
+<ul>
+<li>[ ] <a href="https://www.udemy.com/software-engineer-interview-unleashed">Wawancara Insinyur Perangkat Lunak Unleashed (kursus berbayar)</a>:
+<ul>
+<li>Pelajari cara mempersiapkan diri Anda untuk wawancara insinyur perangkat lunak dari mantan pewawancara Google.</li>
+</ul></li>
+<li>[ ] <a href="https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/">Python untuk Struktur Data, Algoritma, dan Wawancara (kursus berbayar)</a>:
+<ul>
+<li>Kursus persiapan wawancara sentris Python yang mencakup struktur data, algoritma, wawancara tiruan, dan banyak lagi.</li>
+</ul></li>
+<li>[ ] <a href="https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513">Pengantar Struktur Data dan Algoritma menggunakan Python (kursus gratis Udacity)</a>:
+<ul>
+<li>Kursus algoritme dan struktur data sentris Python gratis.</li>
+</ul></li>
+<li>[ ] <a href="https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256">Struktur Data dan Algoritma Nanodegree! (Nanodegree berbayar Udacity)</a>:
+<ul>
+<li>Dapatkan praktik langsung dengan lebih dari 100 struktur data dan latihan algoritme serta panduan dari mentor yang berdedikasi untuk membantu mempersiapkan Anda untuk wawancara dan skenario di tempat kerja.</li>
+</ul></li>
+<li>[ ] <a href="https://www.educative.io/courses/grokking-the-behavioral-interview">Grokking Interview Perilaku (Kursus gratis edukatif)</a>:
+<ul>
+<li>Sering kali, bukan kompetensi teknis Anda yang menahan Anda untuk mendapatkan pekerjaan impian Anda, melainkan bagaimana Anda melakukan wawancara perilaku.</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="pilih-satu-bahasa-pemrograman-untuk-wawancara">Pilih Satu Bahasa Pemrograman untuk Wawancara</h2>
+<p>Anda dapat menggunakan bahasa yang Anda sukai untuk melakukan bagian pengkodean dalam wawancara, tetapi untuk perusahaan besar, ini adalah pilihan yang tepat:</p>
+<ul>
+<li>C++</li>
+<li>Java</li>
+<li>Python</li>
+</ul>
+<p>Anda juga bisa menggunakan ini, tapi bacalah dulu. Mungkin ada peringatan:</p>
+<ul>
+<li>JavaScript</li>
+<li>Ruby</li>
+</ul>
+<p>Berikut adalah artikel yang saya tulis tentang memilih bahasa untuk wawancara: <a href="https://startupnextdoor.com/important-pick-one-language-for-the-coding-interview/">Pilih Satu Bahasa untuk Wawancara Coding</a>.</p>
+<p>Anda harus sangat nyaman dalam bahasa tersebut dan berpengetahuan luas.</p>
+<p>Baca lebih lanjut tentang pilihan: - http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/ - http://blog.codingforinterviews.com/best-programming-language-jobs/</p>
+<p><a href="../programming-language-resources.md">Lihat sumber bahasa di sini</a></p>
+<p>Anda akan melihat beberapa pembelajaran C, C++, dan Python yang disertakan di bawah ini, karena saya sedang belajar. Ada beberapa buku yang terlibat, lihat bagian bawah.</p>
+<h2 id="daftar-buku">Daftar Buku</h2>
+<p>Ini adalah daftar pendek yang saya gunakan. Ini disingkat untuk menghemat waktu Anda.</p>
+<h3 id="persiapan-interview">Persiapan Interview</h3>
+<ul>
+<li>[ ] <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html">Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition</a>
+<ul>
+<li>jawaban di C++ and Java</li>
+<li>direkomendasikan di Google candidate coaching</li>
+<li>ini adalah pemanasan yang baik untuk Cracking the Coding Interview</li>
+<li>tidak terlalu sulit, kebanyakan masalah mungkin lebih mudah daripada apa yang akan anda lihat dalam sebuah wawancara (dari apa yang saya baca)</li>
+</ul></li>
+<li>[ ] <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/">Cracking the Coding Interview, 6th Edition</a>
+<ul>
+<li>jawaban in Java</li>
+</ul></li>
+</ul>
+<h3 id="jika-anda-memiliki-banyak-waktu">Jika anda memiliki banyak waktu:</h3>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836">Elements of Programming Interviews (versi C++)</a></li>
+<li>[ ] <a href="https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/">Elements of Programming Interviews in Python</a></li>
+<li>[ ] Elements of Programming Interviews (Java version)
+<ul>
+<li><a href="https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/">book</a></li>
+<li><a href="https://github.com/gardncl/elements-of-programming-interviews">Companion Project - Method Stub and Test Cases for Every Problem in the Book</a></li>
+</ul></li>
+</ul>
+<h3 id="bahasa-spesifik">Bahasa Spesifik</h3>
+<p><strong>Anda harus memilih sebuah bahasa pemgrograman untuk wawancara (lihat diatas).</strong></p>
+<p>Berikut adalah rekomendasi bahasa dari saya. Saya tidak memiliki sumber daya untuk semua bahasa. Saya menyambut penambahan.</p>
+<p>Jika meskipun anda membaca salah satu dari ini, anda harus memiliki semua pengetahuan struktur data dan algoritma, anda harus mulai melakukan pemecahan masalah koding. <strong>Anda dapat melewati semua video ceramah di proyek ini</strong>, kecuali jika anda ingin sebuah review.</p>
+<p><a href="../programming-language-resources.md">Sumber daya khusus bahasa tambahan di sini.</a></p>
+<h3 id="c">C++</h3>
+<p>Saya belum membaca keduanya. tapi mereka dinilai sangat bagus dan ditulis oleh Sedgewick. Dia mengagumkan.</p>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/">Algorithms in C++, Parts 1-4: Fundamentals, Data Structure, Sorting, Searching</a></li>
+<li>[ ] <a href="https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/">Algorithms in C++ Part 5: Graph Algorithms</a></li>
+<li>[ ] <a href="https://opendatastructures.org/ods-cpp.pdf">Open Data Structures in C++</a>
+<ul>
+<li>Kumpulan Struktur dan Algoritma Data yang kaya dan terperinci</li>
+<li>Bagus untuk pemula</li>
+</ul></li>
+</ul>
+<p>Jika anda memiliki rekomendasi yang lebih baik untuk C++, tolong beritahu saya. Mencari sumber daya yang komprehensif.</p>
+<h3 id="java">Java</h3>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/">Algoritma (Sedgewick dan Wayne)</a>
+<ul>
+<li>video dengan konten buku (dan Sedgewick!) di coursera:
+<ul>
+<li><a href="https://www.coursera.org/learn/algorithms-part1">Algoritma I</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-part2">Algoritma II</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Atau:</p>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">Struktur Data dan Algoritma di Java</a>
+<ul>
+<li>oleh Goodrich, Tamassia, Goldwasser</li>
+<li>digunakan sebagai teks opsional untuk kursus pengenalan CS di UC Berkeley</li>
+<li>lihat laporan buku saya pada versi Python dibawah. Buku ini mencakup topik-topik yang sama.</li>
+</ul></li>
+</ul>
+<h3 id="python">Python</h3>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/">Struktur Data dan Algoritma dengan Python</a>
+<ul>
+<li>oleh Goodrich, Tamassia, Goldwasser</li>
+<li>Saya mencintai buku ini. Mencakup segala hal dan lainnya.</li>
+<li>kode Pythonic</li>
+<li>laporan buku saya: https://googleyasheck.com/book-report-data-structures-and-algorithms-in-python/</li>
+</ul></li>
+<li>[ ] <a href="https://opendatastructures.org/ods-python.pdf">Struktur Data Terbuka di Python</a></li>
+</ul>
+<h2 id="sebelum-anda-mulai">Sebelum Anda Mulai</h2>
+<p>Daftar ini tumbuh selama berbulan-bulan, dan ya, menjadi sulit untuk diatur.</p>
+<p>Berikut adalah beberapa kesalahan yang saya buat sehingga anda akan memiliki pengalaman yang lebih baik.</p>
+<h3 id="anda-tidak-akan-mengingat-semuanya">1. Anda Tidak Akan Mengingat Semuanya</h3>
+<p>Saya menonton video berjam-jam dan mengambil catatan yang berlebihan, dan beberapa bulan kemudian disana ada banyak yang tidak saya ingat. Saya menghabiskan 3 hari melalui catatan saya dan membuat flashcards sehingga saya bisa meninjaunya dengan lebih cepat.</p>
+<p>Tolong baca sehingga anda tidak akan membuat kesalahan seperti saya:</p>
+<p><a href="https://googleyasheck.com/retaining-computer-science-knowledge/">Menguasai Pengetahuan Ilmu Komputer</a></p>
+<p>Sebuah kursus yang direkomendasikan kepada saya (belum pernah saya ambil): <a href="https://www.coursera.org/learn/learning-how-to-learn">Belajar cara Belajar</a>.</p>
+<h3 id="menggunakan-flashcards">2. Menggunakan Flashcards</h3>
+<p>Untuk mengatasi masalah tersebut, saya membuat situs flashcards kecil di mana saya bisa menambahkan flashcards dari 2 jenis: umum dan code. Setiap kartu memiliki format yang berbeda.</p>
+<p>Saya membuat sebuah mobile-first website jadi saya bisa mereview di telepon dan tablet saya, dimanapun saya berada.</p>
+<p>Membuat punya anda sendiri secara gratis:</p>
+<ul>
+<li><a href="https://github.com/jwasham/computer-science-flash-cards">Repo website flashcards</a></li>
+<li><a href="https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham.db">Database flashcards saya (lama - 1200 kartu)</a>:</li>
+<li><a href="https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham-extreme.db">Database flashcards saya (baru - 1800 kartu)</a>:</li>
+</ul>
+<p>Perlu diingat aku pergi keluar kapal dan memiliki kartu meliputi segala sesuatu dari bahasa assembly dan Python trivia untuk pembelajaran machine learning dan statistik. Ini terlalu banyak untuk apa yang diminta oleh Google.</p>
+<p><strong>Catatan di flashcards:</strong> Pertama kali anda mengenali dan anda tahu jawabannya, jangan menandainya sebagai dikenal. Anda harus melihat kartu yang sama dan menjawab beberapa kali dengan benar sebelum anda benar-benar tahu akan hal itu. Pengulangan akan membuat pengetahuan yang lebih di otak anda.</p>
+<p>Sebuah alternatif untuk menggunakan situs flashcards saya adalah <a href="http://ankisrs.net/">Anki</a>, yang telah direkomendasikan kepada saya berkali-kali. Ini menggunakan sistem pengulangan untuk membantu anda mengingatnya. Ini user-friendly, yang tersedia di semua platform dan memiliki sebuah sistem cloud sync. Ini memerlukan biaya $25 di iOS tapi ini gratis di platform lainnya.</p>
+<p>Database flashcard saya di format Anki: https://ankiweb.net/shared/info/25173560 (terimakasih <span class="citation" data-cites="xiewenya">[@xiewenya]</span>(https://github.com/xiewenya))</p>
+<h3 id="mulailah-membuat-pertanyaan-wawancara-coding-saat-anda-mempelajari-struktur-data-dan-algoritme">3. Mulailah membuat pertanyaan wawancara coding saat Anda mempelajari struktur data dan algoritme</h3>
+<p>Anda perlu menerapkan apa yang Anda pelajari untuk memecahkan masalah, atau Anda akan lupa. Saya melakukan kesalahan ini. Setelah Anda mempelajari suatu topik, dan merasa nyaman dengannya, seperti daftar tertaut, buka salah satu buku wawancara pengkodean dan lakukan beberapa pertanyaan tentang daftar tertaut. Kemudian lanjutkan ke topik pembelajaran berikutnya. Kemudian, kembali dan lakukan masalah daftar tertaut lainnya, atau masalah rekursi, atau apa pun. Tapi tetaplah mengerjakan soal sambil belajar. Anda tidak dipekerjakan karena pengetahuan, tetapi bagaimana Anda menerapkan pengetahuan itu. Ada beberapa buku dan situs yang saya rekomendasikan. Lihat di sini untuk lebih lanjut: <a href="#latihan-pertanyaan-pemrograman">Latihan Pertanyaan Pemrograman</a>.</p>
+<h3 id="review-review-review">4. Review, review, review</h3>
+<p>Aku menyimpan satu set cheat sheet pada ASCII, OSI stack, Big-O notasi, dan banyak lagi. Saya mempelajarinya ketika saya memiliki waktu luang.</p>
+<p>Mengambil istirahat dari masalah pemgrogramman selama setengah jam dan pergi melalui flashcards anda.</p>
+<h3 id="fokus">5. Fokus</h3>
+<p>Ada banyak gangguan yang dapat menghabiskan waktu yang berharga. Fokus dan konsentrasi sulit. Nyalakan musik tanpa lirik dan Anda akan dapat fokus dengan baik.</p>
+<h2 id="apa-yang-tidak-akan-dibahas">Apa yang Tidak Akan Dibahas</h2>
+<p>Ini adalah teknologi yang lazim tetapi bukan bagian dari rencana studi ini:</p>
+<ul>
+<li>SQL</li>
+<li>Javascript</li>
+<li>HTML, CSS, dan teknologi front-end lainnya</li>
+</ul>
+<h2 id="rencana-harian">Rencana Harian</h2>
+<p>Beberapa mata pelajaran mengambil satu hari, dan beberapa akan mengambil beberapa hari. Beberapa hanya belajar dan tidak ada yang diimplimentasikan.</p>
+<p>Setiap hari saya mengambil satu subjek dari daftar di bawah ini, menonton video tentang subjek itu, dan menulis sebuah implementasi di: - C - menggunakan structs dan functions yang mengambil sebuah struct * dan sesuatu yang lain seperti args. - C++ - tanpa menggunakan built-in types - C++ - menggunakan built-in types, seperti STL’s std::list untuk daftar link - Python - menggunakan built-in types (untuk terus berlatih Python) - dan menulis tes untuk memastikan saya melakukannya dengan benar, kadang-kadang hanya menggunakan assert() statements yang sederhana - Anda mungkin bisa menggunakan Java atau sesuatu yang lain, ini hanyalah pendapat saya.</p>
+<p>Anda tidak perlu semua ini. Anda hanya perlu <a href="#pilih-satu-bahasa-pemrograman-untuk-wawancara">satu bahasa untuk wawancara</a>.</p>
+<p>Mengapa meng-kode di semua ini? - Latihan, latihan, latihan, sampai saya sakit karenanya, dan dapat melakukannya tanpa masalah (beberapa memiliki banyak kasus dan rincian pembukuan untuk diingat) - Bekerja dalam batasan baku (mengalokasikan/membebaskan memori tanpa bantuan dari sekumpulan sampah (kecuali Python)) - Menggunakan built-in types jadi saya memiliki pengalaman menggunakan alat built-in untuk digunakan di dunia nyata (tidak akan menulis daftar pelaksanaan saya sendiri di produksi)</p>
+<p>Saya mungkin tidak punya waktu untuk melakukan semua ini untuk setiap mata pelajaran, tapi saya akan mencobanya.</p>
+<p>Anda dapat melihat kode saya di sini: - <a href="https://github.com/jwasham/practice-c">C</a> - <a href="https://github.com/jwasham/practice-cpp">C++</a> - <a href="https://github.com/jwasham/practice-python">Python</a></p>
+<p>Anda tidak perlu susah payah menghafal setiap algoritma.</p>
+<p>Menulis kode pada papan tulis atau kertas, bukan komputer. Uji dengan beberapa sampel masukan. Kemudian menguji itu pada komputer.</p>
+<h2 id="ilmu-prasyarat">Ilmu Prasyarat</h2>
+<ul>
+<li>[ ] <strong>belajar C</strong>
+<ul>
+<li>C ada dimana-mana. Anda akan melihat contoh di buku, lecture, video, <em>di mana-mana</em> saat Anda belajar</li>
+<li>[ ] <a href="https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628">Bahasa Pemrograman C, Vol 2</a>
+<ul>
+<li>Ini adalah buku singkat, tetapi akan memberi Anda pemahaman yang baik tentang bahasa C dan jika Anda mempraktikkannya sedikit, Anda akan segera menjadi mahir. Memahami C membantu Anda memahami bagaimana program dan memori bekerja</li>
+<li><a href="https://github.com/lekkas/c-algorithms">Jawaban atas pertanyaan</a></li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>Bagaimana komputer memproses program:</strong>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=XM4lGflQFvA">Bagaimana CPU menjalankan program (video)</a></li>
+<li>[ ] <a href="https://youtu.be/1I5ZMmrOfnA">Bagaimana komputer menghitung - ALU (video)</a></li>
+<li>[ ] <a href="https://youtu.be/fpnE6UAfbtU">Registers dan RAM (video)</a></li>
+<li>[ ] <a href="https://youtu.be/FZGugFqdr60">Central Processing Unit (CPU) (video)</a></li>
+<li>[ ] <a href="https://youtu.be/zltgXvg6r3k">Instruksi dan Program (video)</a></li>
+</ul></li>
+</ul>
+<h2 id="kompleksitas-algoritma-big-o-analisis-asimptotik">Kompleksitas Algoritma / Big-O / Analisis Asimptotik</h2>
+<ul>
+<li>Tidak ada yang bisa diterapkan</li>
+<li>Ada banyak video di sini. Cukup tonton sampai Anda memahaminya. Anda selalu dapat kembali dan mengulas</li>
+<li>Jika beberapa kuliah terlalu matematis, Anda dapat melompat ke bawah dan menonton video matematika diskrit untuk mendapatkan pengetahuan latar belakang</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=iOq5kSKqeR4">Harvard CS50 - Notasi Asimtotik (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=V6mKVRU1evU">Notasi Big O (tutorial singkat umum) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ei-A_wy5Yxw&amp;index=2&amp;list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN">Notasi Big O (dan Omega dan Theta) - penjelasan matematika terbaik (video)</a></li>
+<li>[ ] Skiena:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=gSyDMtdPNpU&amp;index=2&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">video</a></li>
+<li><a href="https://archive.org/details/lecture2_202008">slide</a></li>
+</ul></li>
+<li>[ ] <a href="http://discrete.gr/complexity/">Pengantar Lembut untuk Analisis Kompleksitas Algoritma</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/algorithmic-thinking-1/orders-of-growth-6PKkX">Orders of Growth (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/algorithmic-thinking-1/asymptotics-bXAtM">Asimtotik (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98">UC Berkeley Big O (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_ca3e7UVmeUc">UC Berkeley Big Omega (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=B3SpQZaAZP4&amp;index=10&amp;list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN">Analisis Amortisasi (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/algorithmic-thinking-1/illustrating-big-o-YVqzv">Mengilustrasikan “Big O” (video)</a></li>
+<li>[ ] TopCoder (includes recurrence relations and master theorem):
+<ul>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/computational-complexity-section-1/">Computational Complexity: Section 1</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/computational-complexity-section-2/">Computational Complexity: Section 2</a></li>
+</ul></li>
+<li>[ ] <a href="http://bigocheatsheet.com/">Cheat sheet</a></li>
+</ul>
+<h2 id="struktur-data">Struktur Data</h2>
+<ul>
+<li><h3 id="arrays">Arrays</h3>
+<ul>
+<li>Menerapkan vektor yang mengubah ukuran secara otomatis.</li>
+<li>[ ] Deskripsi:
+<ul>
+<li><a href="https://www.coursera.org/lecture/data-structures/arrays-OsBSF">Array (video)</a></li>
+<li><a href="https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE">UC Berkeley CS61B - Array Linear dan Multi-Dim (video)</a> (Mulailah menonton dari 15m 32s)</li>
+<li><a href="https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV">Array Dinamis (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1jtrQqYpt7g">Array Bergerigi (video)</a></li>
+</ul></li>
+<li>[ ] Menerapkan vektor (array yang bisa berubah dengan ukuran otomatis):
+<ul>
+<li>[ ] Berlatih coding menggunakan array dan pointer, dan matematika pointer untuk melompat ke indeks daripada menggunakan pengindeksan.</li>
+<li>[ ] Array data mentah baru dengan memori yang dialokasikan
+<ul>
+<li>dapat mengalokasikan array int di bawah tenda, hanya saja tidak menggunakan fitur-fiturnya</li>
+<li>start dengan 16, atau jika angka awal lebih besar, gunakan pangkat 2 - 16, 32, 64, 128</li>
+</ul></li>
+<li>[ ] size() - jumlah item</li>
+<li>[ ] capacity() - jumlah barang yang bisa ditampungnya</li>
+<li>[ ] is_empty()</li>
+<li>[ ] at(index) - mengembalikan item pada indeks tertentu, meledak jika indeks di luar batas</li>
+<li>[ ] push(item)</li>
+<li>[ ] insert(index, item) - menyisipkan item pada indeks, menggeser nilai indeks dan elemen tambahan ke kanan</li>
+<li>[ ] prepend(item) - dapat menggunakan sisipan di atas pada indeks 0</li>
+<li>[ ] pop() - hapus dari akhir, nilai kembali</li>
+<li>[ ] delete(index) - hapus item pada indeks, menggeser semua elemen tertinggal ke kiri</li>
+<li>[ ] remove(item) - mencari nilai dan menghapus indeks yang menahannya (meskipun di banyak tempat)</li>
+<li>[ ] find(item) - mencari nilai dan mengembalikan indeks pertama dengan nilai itu, -1 jika tidak ditemukan</li>
+<li>[ ] resize(new_capacity) // fungsi pribadi
+<ul>
+<li>saat Anda mencapai kapasitas, ubah ukurannya menjadi dua kali lipat</li>
+<li>saat memunculkan item, jika ukurannya 1/4 dari kapasitas, ubah ukurannya menjadi setengah</li>
+</ul></li>
+</ul></li>
+<li>[ ] Waktu
+<ul>
+<li>O(1) untuk menambah/menghapus di akhir (diamortisasi untuk alokasi untuk lebih banyak ruang), indeks, atau pembaruan</li>
+<li>O(n) untuk memasukkan/menghapus di tempat lain</li>
+</ul></li>
+<li>[ ] Ruang
+<ul>
+<li>berdekatan dalam memori, jadi kedekatan membantu kinerja</li>
+<li>ruang yang dibutuhkan = (kapasitas array, yaitu &gt;= n)*ukuran item, tetapi meskipun 2n, tetap O(n)</li>
+</ul></li>
+</ul></li>
+<li><h3 id="linked-lists">Linked Lists</h3>
+<ul>
+<li>[ ] Deskripsi:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK">Singly Linked Lists (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0">CS 61B - Linked Lists 1 (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w">CS 61B - Linked Lists 2 (video)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=QN6FPiD0Gzo">Kode C (video)</a> - bukan keseluruhan video, hanya bagian tentang struct Node dan alokasi memori</li>
+<li>[ ] Linked List vs Array:
+<ul>
+<li><a href="https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9">Daftar Linked List Vs Array (video)</a></li>
+<li><a href="https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd">Di Dunia Nyata Linked List Vs Array (video)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=YQs6IC-vgmo">mengapa Anda harus menghindari linked list (video)</a></li>
+<li>[ ] Gotcha: Anda perlu pengetahuan pointer ke pointer: (untuk saat Anda meneruskan pointer ke fungsi yang dapat mengubah alamat tempat pointer itu menunjuk) Halaman ini hanya untuk memahami pointer ke pointer. Saya tidak merekomendasikan gaya traversal daftar ini. Keterbacaan dan pemeliharaan menderita karena kepintaran.
+<ul>
+<li><a href="https://www.eskimo.com/~scs/cclass/int/sx8.html">Pointer ke Pointer</a></li>
+</ul></li>
+<li>[ ] Implementasikan (saya lakukan dengan tail pointer &amp; tanpa):
+<ul>
+<li>[ ] size() - mengembalikan jumlah elemen data dalam daftar</li>
+<li>[ ] empty() - bool mengembalikan nilai true jika kosong</li>
+<li>[ ] value_at(index) - mengembalikan nilai item ke-n (mulai dari 0 untuk yang pertama)</li>
+<li>[ ] push_front(value) - menambahkan item ke depan daftar</li>
+<li>[ ] pop_front() - hapus item depan dan kembalikan nilainya</li>
+<li>[ ] push_back(value) - menambahkan item di akhir</li>
+<li>[ ] pop_back() - menghapus item akhir dan mengembalikan nilainya</li>
+<li>[ ] front() - dapatkan nilai barang depan</li>
+<li>[ ] back() - dapatkan nilai item akhir</li>
+<li>[ ] insert(index, value) - masukkan nilai pada indeks, maka item saat ini pada indeks tersebut ditunjuk oleh item baru pada indeks</li>
+<li>[ ] erase(index) - menghapus node pada indeks tertentu</li>
+<li>[ ] value_n_from_end(n) - mengembalikan nilai node pada posisi ke-n dari akhir daftar</li>
+<li>[ ] reverse() - membalikkan daftar</li>
+<li>[ ] remove_value(value) - menghapus item pertama dalam daftar dengan nilai ini</li>
+</ul></li>
+<li>[ ] Doubly-linked List
+<ul>
+<li><a href="https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD">Deskripsi (video)</a></li>
+<li>Tidak perlu diimplementasikan</li>
+</ul></li>
+</ul></li>
+<li><h3 id="stack">Stack</h3>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures/stacks-UdKzQ">Stack (video)</a></li>
+<li>[ ] Tidak akan diterapkan. Implementasi dengan array itu sepele</li>
+</ul></li>
+<li><h3 id="queue">Queue</h3>
+<ul>
+<li>Queue (Antrean)</li>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures/queues-EShpq">Queue (video)</a></li>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Circular_buffer">Circular buffer/FIFO</a></li>
+<li>[ ] Implementasikan menggunakan linked-list, dengan tail pointer:
+<ul>
+<li>enqueue(value) - menambah nilai pada posisi di ekor</li>
+<li>dequeue() - mengembalikan nilai dan menghapus elemen yang paling baru ditambahkan (depan)</li>
+<li>empty()</li>
+</ul></li>
+<li>[ ] Menerapkan menggunakan array berukuran tetap:
+<ul>
+<li>enqueue(value) - menambahkan item di akhir penyimpanan yang tersedia</li>
+<li>dequeue() - mengembalikan nilai dan menghapus elemen yang paling baru ditambahkan</li>
+<li>empty()</li>
+<li>full()</li>
+</ul></li>
+<li>[ ] Biaya:
+<ul>
+<li>implementasi yang buruk menggunakan daftar tertaut di mana Anda mengantre di bagian depan dan antrean di bagian ekor akan menjadi O(n) karena Anda memerlukan elemen di sebelah terakhir, menyebabkan traversal penuh setiap dequeue</li>
+<li>enqueue: O(1) (diamortisasi, daftar tertaut dan larik [probing])</li>
+<li>dequeue: O(1) (daftar dan larik tertaut)</li>
+<li>empty: O(1) (daftar dan larik tertaut)</li>
+</ul></li>
+</ul></li>
+<li><h3 id="hash-table">Hash table</h3>
+<ul>
+<li>[ ] Video:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=0M_kIqhwbFo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=8">Hashing dengan Chaining (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=BRO7mVIFt08&amp;index=9&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Penggandaan Table, Karp-Rabin (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=rvdJDijO2Ro&amp;index=10&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Open Addressing, Hashing Kriptografi (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=C4Kc8xzcA68">PyCon 2010: The Mighty Dictionary (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=z0lJ2k0sl1g&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=11">(Lanjutan) Pengacakan: Universal &amp; Hashing Sempurna (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=N0COwN14gt0&amp;list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&amp;index=4">(Lanjutan) Hash sempurna (video)</a></li>
+</ul></li>
+<li>[ ] Kursus Online:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP">Tabel Hash Inti (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/home/week/4">Struktur Data (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures/phone-book-problem-NYZZP">Masalah Buku Telepon (video)</a></li>
+<li>[ ] tabel hash terdistribusi:
+<ul>
+<li><a href="https://www.coursera.org/lecture/data-structures/instant-uploads-and-storage-optimization-in-dropbox-DvaIb">Unggahan Instan dan Pengoptimalan Penyimpanan Di Dropbox (video)</a></li>
+<li><a href="https://www.coursera.org/lecture/data-structures/distributed-hash-tables-tvH8H">Tabel Hash Terdistribusi (video)</a></li>
+</ul></li>
+</ul></li>
+<li>[ ] Implementasikan dengan array menggunakan probing linier
+<ul>
+<li>hash(k, m) - m adalah ukuran tabel hash</li>
+<li>add(key, value) - jika kunci sudah ada, perbarui nilai</li>
+<li>exists(key)</li>
+<li>get(key)</li>
+<li>remove(key)</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="lebih-banyak-pengetahuan">Lebih Banyak Pengetahuan</h2>
+<ul>
+<li><h3 id="pencarian-biner">Pencarian Biner</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=D5SrAga1pno">Pencarian Biner (video)</a></li>
+<li>[ ] <a href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">Pencarian Biner (video)</a></li>
+<li>[ ] <a href="https://www.topcoder.com/community/competitive-programming/tutorials/binary-search/">detail</a></li>
+<li>[ ] Implementkan:
+<ul>
+<li>pencarian biner (pada susunan bilangan bulat yang diurutkan)</li>
+<li>pencarian biner menggunakan rekursi</li>
+</ul></li>
+</ul></li>
+<li><h3 id="operasi-bitwise">Operasi Bitwise</h3>
+<ul>
+<li>[ ] <a href="https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-sheet.pdf">Bits cheat sheet</a> - Anda harus mengetahui banyak pangkat 2 dari (2^1 hingga 2^16 dan 2^32)</li>
+<li>[ ] Dapatkan pemahaman yang sangat baik tentang memanipulasi bit dengan: &amp;, |, ^, ~, &gt;&gt;, &lt;&lt;
+<ul>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Word_(computer_architecture)">kata-kata</a></li>
+<li>[ ] Good intro: <a href="https://www.youtube.com/watch?v=7jkIUgLC29I">Bit Manipulation (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=d0AwjSpNXR0">C Tutorial Pemrograman 2-10: Operator Bitwise (video)</a></li>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Bit_manipulation">Manipulasi Bit</a></li>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Bitwise_operation">Operasi Bitwise</a></li>
+<li>[ ] <a href="https://graphics.stanford.edu/~seander/bithacks.html">Bithack</a></li>
+<li>[ ] <a href="https://bits.stephan-brumme.com/">Bit Twiddler</a></li>
+<li>[ ] <a href="https://bits.stephan-brumme.com/interactive.html">Bit Twiddler Interactive</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ZusiKXcz_ac">Bit Hacks (video)</a></li>
+<li>[ ] <a href="https://pconrad.github.io/old_pconrad_cs16/topics/bitOps/">Operasi Praktek</a></li>
+</ul></li>
+<li>[ ] Pelengkap 2s dan 1s
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lKTsv6iVxV4">Biner: Plus &amp; Minus (Mengapa Kami Menggunakan Pelengkap Dua) (video)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ones%27_complement">Pelengkap 1s</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Two%27s_complement">Pelengkap 2s</a></li>
+</ul></li>
+<li>[ ] Hitung bit set
+<ul>
+<li><a href="https://youtu.be/Hzuzo9NJrlc">4 cara untuk menghitung bit dalam satu byte (video)</a></li>
+<li><a href="https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan">Hitung Bits</a></li>
+<li><a href="http://stackoverflow.com/questions/109023/how-to-count-the-number-of-set-bits-in-a-32-bit-integer">Bagaimana Menghitung Jumlah Set Bits Dalam Integer 32 Bit</a></li>
+</ul></li>
+<li>[ ] Tukar nilai:
+<ul>
+<li><a href="https://bits.stephan-brumme.com/swap.html">Tukar</a></li>
+</ul></li>
+<li>[ ] Nilai mutlak:
+<ul>
+<li><a href="https://bits.stephan-brumme.com/absInteger.html">Integer Mutlak</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="trees">Trees</h2>
+<ul>
+<li><h3 id="trees---catatan-latar-belakang">Trees - Catatan &amp; Latar Belakang</h3>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures/trees-95qda">Seri: Trees (video)</a></li>
+<li>konstruksi pohon dasar</li>
+<li>traversal</li>
+<li>algoritma manipulasi</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=uWL6FJhq5fM">BFS(breadth-first search) dan DFS(depth-first search) (video)</a>
+<ul>
+<li>Catatan BFS:
+<ul>
+<li>level order (BFS, menggunakan queue)</li>
+<li>kompleksitas waktu: O(n)</li>
+<li>kompleksitas ruang: terbaik: O(1) terburuk: O(n/2)=O(n)</li>
+</ul></li>
+<li>Catatan DFS:
+<ul>
+<li>kompleksitas waktu: O(n)</li>
+<li>kompleksitas ruang: terbaik: O(log n) - rata-rata. ketinggian tree terburuk: O(n)</li>
+<li>dalam urutan (DFS: kiri, sendiri/self, kanan)</li>
+<li>pasca urutan (DFS: kiri, kanan, sendiri/self)</li>
+<li>pra urutan (DFS: sendiri/self, kiri, kanan)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><h3 id="binary-search-trees-bsts">Binary search trees: BSTs</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=x6At0nzX92o&amp;index=1&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Ulasan Binary Search Tree (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/p82sw/core-introduction-to-binary-search-trees">Serial (video)</a>
+<ul>
+<li>starts with symbol table and goes through BST applications</li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction">Pendahuluan (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=9Jry5-82I68">MIT (video)</a></li>
+<li>C/C++:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=COZK7NATh4k&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=28">Binary search tree - Implementasi di C/C++ (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=hWokyBoo0aI&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=29">Implementasi BST - alokasi memori di stack dan heap (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Ut90klNN264&amp;index=30&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Temukan min dan max elemen dalam binary search tree (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=_pnqMz5nrRs&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=31">Temukan ketinggian pohon biner (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=9RHO6jU--GU&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=32">Binary tree traversal - strategi luas-pertama dan mendalam-pertama (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=86g8jAQug04&amp;index=33&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Pohon biner: Level Order Traversal (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=gm8DUJJhmY4&amp;index=34&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Binary tree traversal: Preorder, Inorder, Postorder (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=yEwSGhSsT0U&amp;index=35&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Periksa apakah pohon biner adalah binary search tree atau bukan (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=gcULXE7ViZw&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=36">Hapus node dari Binary Search Tree (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=5cPbNCrdotA&amp;index=37&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Penerus Berurutan di binary search tree (video)</a></li>
+</ul></li>
+<li>[ ] Implementasikan:
+<ul>
+<li>[ ] insert // masukkan nilai ke dalam pohon</li>
+<li>[ ] get_node_count // dapatkan hitungan nilai yang disimpan</li>
+<li>[ ] print_values // mencetak nilai di pohon, dari min hingga maks</li>
+<li>[ ] delete_tree</li>
+<li>[ ] is_in_tree // mengembalikan nilai true jika nilai yang diberikan ada di pohon</li>
+<li>[ ] get_height // mengembalikan tinggi dalam node (tinggi node tunggal adalah 1)</li>
+<li>[ ] get_min // mengembalikan nilai minimum yang disimpan di pohon</li>
+<li>[ ] get_max // mengembalikan nilai maksimum yang disimpan di pohon</li>
+<li>[ ] is_binary_search_tree</li>
+<li>[ ] delete_value</li>
+<li>[ ] get_successor // mengembalikan nilai tertinggi berikutnya di pohon setelah nilai yang diberikan, -1 jika none</li>
+</ul></li>
+</ul></li>
+<li><h3 id="heap-prioritas-antrian-biner-heap">Heap / Prioritas Antrian / Biner Heap</h3>
+<ul>
+<li>Heap (tumpukan)</li>
+<li>Priority Queue (Prioritas Antrian)</li>
+<li>Binary Heap (Biner Heap)</li>
+<li>divisualisasikan sebagai pohon, tetapi biasanya linier dalam penyimpanan (array, linked list)</li>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Heap_(data_structure)">Heap</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/2OpTs/introduction">Pendahuluan (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/z3l9N/naive-implementations">Penerapan Naif (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees">Pohon Biner (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/supplement/S5xxz/tree-height-remark">Keterangan Tinggi Pohon (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/0g1dl/basic-operations">Operasi Dasar (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/gl5Ni/complete-binary-trees">Pohon Biner Lengkap (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/HxQo9/pseudocode">Pseudocode (video)</a></li>
+<li>[ ] <a href="https://youtu.be/odNJmw5TOEE?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3291">Urutan Heap - lompat untuk memulai (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/hSzMO/heap-sort">Urutan Heap (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/dwrOS/building-a-heap">Membangun heap (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=B7hVxCmfPtM&amp;index=4&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">MIT: Heaps dan Heap Sort (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_yIUFT6AKBGE">CS 61B Kuliah 24: Antrian Prioritas (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=MiyLo8adrWw">Linear Time BuildHeap (max-heap)</a></li>
+<li>[ ] Menerapkan sebuah max-heap:
+<ul>
+<li>[ ] insert</li>
+<li>[ ] sift_up - dibutuhkan untuk memasukkan</li>
+<li>[ ] get_max - mengembalikan item maksimal, tanpa menghapusnya</li>
+<li>[ ] get_size() - mengembalikan jumlah elemen yang disimpan</li>
+<li>[ ] is_empty() - mengembalikan nilai true jika heap tidak berisi elemen</li>
+<li>[ ] extract_max - mengembalikan item maksimal, menghapusnya</li>
+<li>[ ] sift_down - dibutuhkan untuk extract_max</li>
+<li>[ ] remove(i) - menghapus item pada indeks i</li>
+<li>[ ] heapify - membuat heap dari larik elemen, dibutuhkan untuk heap_sort</li>
+<li>[ ] heap_sort() - mengambil array yang tidak disortir dan mengubahnya menjadi array yang diurutkan di tempat menggunakan heap maks atau heap min</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="penyortiran">Penyortiran</h2>
+<ul>
+<li>[ ] Catatan:
+<ul>
+<li>Terapkan sort &amp; ketahui kasus terbaik / kasus terburuk, kompleksitas rata-rata masing-masing:
+<ul>
+<li>tidak ada bubble sort - ini mengerikan - O(n^2), kecuali jika n&lt;=16</li>
+</ul></li>
+<li>[ ] Stabilitas dalam algoritme pengurutan (“Apakah Quicksort stabil?”)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm#Stability">Stabilitas Algoritma Penyortiran</a></li>
+<li><a href="http://stackoverflow.com/questions/1517793/stability-in-sorting-algorithms">Stabilitas Dalam Mengurutkan Algoritma</a></li>
+<li><a href="http://www.geeksforgeeks.org/stability-in-sorting-algorithms/">Stabilitas Dalam Mengurutkan Algoritma</a></li>
+<li><a href="http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/stability.pdf">Algoritma Pengurutan - Stabilitas</a></li>
+</ul></li>
+<li>[ ] Algoritme mana yang dapat digunakan pada linked lists? Yang mana pada array? Yang mana pada keduanya?
+<ul>
+<li>Saya tidak akan merekomendasikan pengurutan linked lists, tetapi penggabungan semacam bisa dilakukan.</li>
+<li><a href="http://www.geeksforgeeks.org/merge-sort-for-linked-list/">Merge Sort Untuk Linked List</a></li>
+</ul></li>
+</ul></li>
+<li><p>Untuk heapsort, lihat struktur data Heap di atas. Jenis heap bagus, tapi tidak stabil</p></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/home/week/3">Sedgewick - Mergesort (5 video)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/ARWDq/mergesort">1. Penggabungan</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/PWNEl/bottom-up-mergesort">2. Mergesort dari bawah ke atas</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/xAltF/sorting-complexity">3. Kompleksitas Sortir</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/9FYhS/comparators">4. Pembanding</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/pvvLZ/stability">5. Stabilitas</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/home/week/3">Sedgewick - Quicksort (4 video)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/vjvnC/quicksort">1. Quicksort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/UQxFT/selection">2. Seleksi</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/XvjPd/duplicate-keys">3. Kunci Duplikat</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/QBNZ7/system-sorts">4. System Sorts</a></li>
+</ul></li>
+<li>[ ] UC Berkeley:
+<ul>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_EiUvYS2DT6I">CS 61B Kuliah 29: Penyortiran I (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_2hTY3t80Qsk">CS 61B Kuliah 30: Penyortiran II (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_Y6LOLpxg6Dc">CS 61B Kuliah 32: Penyortiran III (video)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_qNMQ4ly43p4">CS 61B Kuliah 33: Penyortiran V (video)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=P00xJgWzz2c&amp;index=1&amp;list=PL89B61F78B552C1AB">Bubble Sort (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ni_zk257Nqo&amp;index=7&amp;list=PL89B61F78B552C1AB">Menganalisis Bubble Sort (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Kg4bqzAqRBM&amp;index=3&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Sortir Penyisipan, Sortir Gabung (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=c4BRHC7kTaQ&amp;index=2&amp;list=PL89B61F78B552C1AB">Sortir Penyisipan (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=GCae1WNvnZM&amp;index=3&amp;list=PL89B61F78B552C1AB">Merge Sort (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=y_G9BkAm6B8&amp;index=4&amp;list=PL89B61F78B552C1AB">Quicksort (video)</a></li>
+<li><p>[ ] <a href="https://www.youtube.com/watch?v=6nDMgr0-Yyo&amp;index=8&amp;list=PL89B61F78B552C1AB">Sortir Pilihan (video)</a></p></li>
+<li>[ ] Kode Merge sort:
+<ul>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/examples/sorting/mergesort.c">Menggunakan keluaran array (C)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-python/blob/master/merge_sort/merge_sort.py">Menggunakan keluaran array (Python)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-cpp/blob/master/merge_sort/merge_sort.cc">Di tempat (C ++)</a></li>
+</ul></li>
+<li>[ ] Kode Quick sort:
+<ul>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c">Implementasi (C)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c">Implementasi (C)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py">Implementasi (Python)</a></li>
+</ul></li>
+<li>[ ] Implementasi:
+<ul>
+<li>[ ] Mergesort: O(n log n) rata-rata dan kasus terburuk</li>
+<li>[ ] Quicksort: O(n log n) kasus rata-rata</li>
+<li>Sortir seleksi dan sortir penyisipan keduanya merupakan kasus rata-rata O (n ^ 2) dan terburuk</li>
+<li>Untuk heapsort, lihat struktur data Heap di atas</li>
+</ul></li>
+<li>[ ] Tidak wajib, tetapi saya merekomendasikan mereka:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/home/week/3">Sedgewick - Radix Sorts (6 video)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/vGHvb/strings-in-java">1. String di Java</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/2pi1Z/key-indexed-counting">2. Penghitungan Indeks Kunci</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/c1U7L/lsd-radix-sort">3. Urutan Radix String Pertama Digit Signifikan Terkecil</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/gFxwG/msd-radix-sort">4. Urutan Radix String Pertama Digit Paling Signifikan</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/crkd5/3-way-radix-quicksort">5. Radix Quicksort 3 Arah</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays">6. Array Suffix</a></li>
+</ul></li>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#radixSort">Sortir Radix</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=xhr26ia4k38">Sortir Radix (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Nz1KZXbghj8&amp;index=7&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Sortir Radix, Sortir Counting (waktu linier diberikan batasan) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=cNB2lADK3_s&amp;index=8&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Pengacakan: Penggandaan Matriks, Quicksort, Algoritma Freivalds (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=pOKy3RZbSws&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&amp;index=14">Menyortir dalam Waktu Linear (video)</a></li>
+</ul></li>
+</ul>
+<p>Sebagai ringkasan, berikut adalah representasi visual dari <a href="https://www.youtube.com/watch?v=kPRA0W1kECg">15 algoritma pengurutan</a>. Jika Anda membutuhkan detail lebih lanjut tentang subjek ini, lihat bagian “Menyortir” di <a href="#detail-tambahan-tentang-beberapa-subjek">Detail Tambahan tentang Beberapa Subjek</a></p>
+<h2 id="graphs">Graphs</h2>
+<p>Graf (Graphs) dapat digunakan untuk merepresentasikan banyak masalah dalam ilmu komputer, jadi bagian ini panjang, seperti pohon dan penyortiran.</p>
+<ul>
+<li>Catatan:
+<ul>
+<li>Ada 4 cara dasar untuk merepresentasikan Graf dalam memori:
+<ul>
+<li>objek dan pointer</li>
+<li>matriks kedekatan (adjacency matrix)</li>
+<li>daftar kedekatan (adjacency list)</li>
+<li>peta kedekatan (adjacency map)</li>
+</ul></li>
+<li>Biasakan diri Anda dengan setiap representasi beserta pro &amp; kontranya</li>
+<li>BFS dan DFS - mengetahui kompleksitas komputasi mereka, trade off mereka, dan bagaimana menerapkannya dalam kode nyata</li>
+<li>Saat ditanya pertanyaan, cari solusi berbasis Graf terlebih dahulu, lalu lanjutkan jika tidak ada</li>
+</ul></li>
+<li>[ ] MIT (video):
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=s-CYnVz-uh4&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=13">Breadth-First Search</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=AfSk24UTFS8&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=14">Depth-First Search</a></li>
+</ul></li>
+<li>[ ] Kuliah Skiena - pengantar yang bagus:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=OiXxhDrFruw&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=11">CSE373 2012 - Lecture 11 - Graphs Struktur Data (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=g5vF8jscteo&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=12">CSE373 2012 - Lecture 12 - Breadth-First Search (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=S23W6eTcqdY&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=13">CSE373 2012 - Lecture 13 - Algoritma Graph (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=WitPBKGV0HY&amp;index=14&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - Lecture 14 - Algoritma Graph (con’t) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ia1L30l7OIg&amp;index=15&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - Lecture 15 - Algoritma Graph (con’t 2) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=jgDOQq6iWy8&amp;index=16&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - Lecture 16 - Algoritma Graph (con’t 3) (video)</a></li>
+</ul></li>
+<li><p>[ ] Graphs (ulasan dan lainnya):</p>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Aa2sqUhIn-E&amp;index=15&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">6.006 Masalah Jalur Terpendek Sumber Tunggal (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=2E7MmKv0Y24&amp;index=16&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">6.006 Dijkstra (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ozsuci5pIso&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=17">6.006 Bellman-Ford (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=CHvQ3q_gJ7E&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=18">6.006 Mempercepat Dijkstra (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=i_AQT_XfvD8&amp;index=6&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">Aduni: Algoritma Graphs I - Sortasi Topologi, Pohon Rentang Minimum, Algoritma Prim - Kuliah 6 (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ufj5_bppBsA&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=7">Aduni: Algoritma Graphs II - DFS, BFS, Algoritma Kruskal, Struktur Data Union Find - Kuliah 7 (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=DiedsPsMKXc&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=8">Aduni: Algoritma Graphs III: Jalur Terpendek - Kuliah 8 (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=XIAQRlNkJAw&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=9">Aduni: Algoritma Graphs IV: Pengantar algoritma geometris - Kuliah 9 (video)</a></li>
+<li>[ ] <del><a href="https://youtu.be/dgjX4HdMI-Q?list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd&amp;t=3489">CS 61B 2014 (mulai dari 58:09) (video)</a></del></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_zFbq8vOZ_0k">CS 61B 2014: Graphs berbobot (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=tKwnms5iRBU&amp;index=16&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Algoritma Serakah: Minimum Spanning Tree (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=RpgcYiky7uw">Komponen yang Sangat Terhubung Algoritma Graphs Algoritma Kosaraju (video)</a></li>
+</ul></li>
+<li>Kursus Coursera Penuh:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-on-graphs/home/welcome">Algoritma pada Graphs (video)</a></li>
+</ul></li>
+<li>Saya akan menerapkan:
+<ul>
+<li>[ ] DFS dengan daftar kedekatan (rekursif)</li>
+<li>[ ] DFS dengan daftar adjacency (iteratif dengan stack)</li>
+<li>[ ] DFS dengan matriks adjacency (rekursif)</li>
+<li>[ ] DFS dengan matriks adjacency (iteratif dengan stack)</li>
+<li>[ ] BFS dengan daftar kedekatan</li>
+<li>[ ] BFS dengan matriks adjacency</li>
+<li>[ ] jalur terpendek sumber tunggal (Dijkstra)</li>
+<li>[ ] pohon rentang minimum</li>
+<li>Algoritme berbasis DFS (lihat video Aduni di atas):
+<ul>
+<li>[ ] periksa siklus (diperlukan untuk pengurutan topologi, karena kami akan memeriksa siklus sebelum memulai)</li>
+<li>[ ] sortir topologi</li>
+<li>[ ] menghitung komponen yang terhubung dalam graf</li>
+<li>[ ] daftar komponen yang sangat terhubung</li>
+<li>[ ] periksa graf bipartit</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="bahkan-lebih-banyak-pengetahuan">Bahkan Lebih Banyak Pengetahuan</h2>
+<ul>
+<li><h3 id="pengulangan-recursion">Pengulangan (Recursion)</h3>
+<ul>
+<li>[ ] Kuliah Stanford tentang rekursi dan backtracking:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=gl3emqCuueQ&amp;list=PLFE6E58F856038C69&amp;index=8">Kuliah 8 | Abstraksi Pemrograman (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=uFJhEPrbycQ&amp;list=PLFE6E58F856038C69&amp;index=9">Kuliah 9 | Abstraksi Pemrograman (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=NdF1QDTRkck&amp;index=10&amp;list=PLFE6E58F856038C69">Kuliah 10 | Abstraksi Pemrograman (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=p-gpaIGRCQI&amp;list=PLFE6E58F856038C69&amp;index=11">Kuliah 11 | Abstraksi Pemrograman (video)</a></li>
+</ul></li>
+<li>Kapan saat yang tepat untuk menggunakannya?</li>
+<li>Bagaimana rekursi ekor lebih baik daripada tidak?
+<ul>
+<li>[ ] <a href="https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad">Apa Itu Rekursi Ekor Mengapa Sangat Buruk?</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=L1jjXGfxozc">Rekursi Ekor (video)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="pemrograman-dinamis">Pemrograman Dinamis</h3>
+<ul>
+<li>Anda mungkin tidak akan melihat masalah pemrograman dinamis dalam wawancara Anda, tetapi ada baiknya mengenali masalah sebagai kandidat untuk pemrograman dinamis (Dynamic Programming).</li>
+<li>Subjek ini bisa sangat sulit, karena setiap masalah pemecahan masalah pemrograman dinamis harus didefinisikan sebagai relasi rekursi, dan menyelesaikannya bisa rumit.</li>
+<li>Saya sarankan untuk melihat banyak contoh masalah pemrograman dinamis sampai Anda memiliki pemahaman yang kuat tentang pola yang terlibat.</li>
+<li>[ ] Video:
+<ul>
+<li>video Skiena mungkin sulit untuk diikuti karena terkadang dia menggunakan papan tulis, yang terlalu kecil untuk dilihat</li>
+<li>[ ] <a href="https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=1718">Skiena: CSE373 2012 - Kuliah 19 - Pengantar Pemrograman Dinamis (video)</a></li>
+<li>[ ] <a href="https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=2749">Skiena: CSE373 2012 - Kuliah 20 - Edit Jarak (video)</a></li>
+<li>[ ] <a href="https://youtu.be/o0V9eYF4UI8?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=406">Skiena: CSE373 2012 - Kuliah 21 - Contoh Pemrograman Dinamis (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=dRbMC1Ltl3A&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=22">Skiena: CSE373 2012 - Kuliah 22 - Aplikasi Pemrograman Dinamis (video)</a></li>
+<li>[ ] <a href="https://youtu.be/J5aJEcOr6Eo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3558">Simonson: Pemrograman Dinamis 0 (dimulai pada 59:18) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=0EzHjQ_SOeU&amp;index=11&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">Simonson: Pemrograman Dinamis I - Kuliah 11 (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=v1qiRwuJU7g&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=12">Simonson: Pemrograman dinamis II - Kuliah 12 (video)</a></li>
+<li>[ ] Daftar masalah individu Pemrograman Dinamis (masing-masing pendek): <a href="https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr">Pemrograman Dinamis (video)</a></li>
+</ul></li>
+<li>[ ] Catatan Kuliah Yale:
+<ul>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#dynamicProgramming">Pemrograman Dinamis</a></li>
+</ul></li>
+<li>[ ] Coursera:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/80RrW/the-rna-secondary-structure-problem">Masalah struktur sekunder RNA (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/PSonq/a-dynamic-programming-algorithm">Algoritma pemrograman dinamis (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/oUEK2/illustrating-the-dp-algorithm">Mengilustrasikan algoritma DP (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/nfK2r/running-time-of-the-dp-algorithm">Waktu berjalan dari algoritma DP (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/M999a/dp-vs-recursive-implementation">DP vs. implementasi rekursif (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/UZ7o6/global-pairwise-sequence-alignment">Global pairwise sequence alignment (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment">Local pairwise sequence alignment (video)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="pemrograman-berorientasi-objek">Pemrograman Berorientasi Objek</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=OkC7HKtiZC0&amp;list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc">Optional: UML 2.0 seri (video)</a></li>
+<li>[ ] Prinsip SOLID OOP: <a href="https://www.youtube.com/playlist?list=PL4CE9F710017EA77A">Prinsip SOLID (video)</a></li>
+</ul></li>
+<li><h3 id="pola-desain-design-patterns">Pola desain (Design patterns)</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=3cmzqZzwNDM&amp;list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&amp;index=3">Ulasan UML cepat(video)</a></li>
+<li>[ ] Pelajari pola-pola ini:
+<ul>
+<li>[ ] strategy</li>
+<li>[ ] singleton</li>
+<li>[ ] adapter</li>
+<li>[ ] prototype</li>
+<li>[ ] decorator</li>
+<li>[ ] visitor</li>
+<li>[ ] factory, abstract factory</li>
+<li>[ ] facade</li>
+<li>[ ] observer</li>
+<li>[ ] proxy</li>
+<li>[ ] delegate</li>
+<li>[ ] command</li>
+<li>[ ] state</li>
+<li>[ ] memento</li>
+<li>[ ] iterator</li>
+<li>[ ] composite</li>
+<li>[ ] flyweight</li>
+</ul></li>
+<li>[ ] <a href="https://youtu.be/LAP2A80Ajrg?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO&amp;t=3344">Bab 6 (Bagian 1) - Patterns (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=U8-PGsjvZc4&amp;index=12&amp;list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO">Bab 6 (Bagian 2) - Abstraction-Occurrence, General Hierarchy, Player-Role, Singleton, Observer, Delegation (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=7sduBHuex4c&amp;index=13&amp;list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO">Bab 6 (Bagian 3) - Adapter, Facade, Immutable, Read-Only Interface, Proxy (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PLF206E906175C7E07">Serial video (27 video)</a></li>
+<li>[ ] <a href="https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124">Head First Design Patterns</a>
+<ul>
+<li>Saya tahu buku kanoniknya adalah “Design Patterns: Elements of Reusable Object-Oriented Software”, tapi Head First sangat bagus untuk pemula hingga OO.</li>
+</ul></li>
+<li>[ ] <a href="https://sourcemaking.com/design-patterns-and-tips">Referensi praktis: 101 Pola Desain &amp; Tip untuk Pengembang</a></li>
+</ul></li>
+<li><h3 id="kombinatorik-n-pilih-k-probabilitas">Kombinatorik (n pilih k) &amp; Probabilitas</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=8RRo6Ti9d0U">Keterampilan Matematika: Bagaimana menemukan Faktorial, Permutasi dan Kombinasi (Pilih) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=sZkAAk9Wwa4">Jadikan Sekolah: Probabilitas (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=dNaJg-mLobQ">Jadikan Sekolah: Lebih Banyak Kemungkinan dan Rantai Markov (video)</a></li>
+<li>[ ] Khan Academy:
+<ul>
+<li>Tata letak kursus:
+<ul>
+<li>[ ] <a href="https://www.khanacademy.org/math/probability/probability-and-combinatorics-topic">Probabilitas Teoritis Dasar</a></li>
+</ul></li>
+<li>Hanya videonya - 41 (masing-masing sederhana dan masing-masing pendek):
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=uzkc-qNVoOk&amp;list=PLC58778F28211FA19">Probabilitas Dijelaskan (video)</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><h3 id="algoritma-np-np-complete-dan-approximation">Algoritma NP, NP-Complete dan Approximation</h3>
+<ul>
+<li>Ketahui tentang kelas paling terkenal dari masalah NP-complete, seperti travelling salesman dan knapsack problem, dan kenali mereka saat pewawancara meminta Anda secara tidak langsung.</li>
+<li>Ketahui arti NP-complete.</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=moPtwq_cVH8&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=23">Kompleksitas Komputasi (video)</a></li>
+<li>[ ] Simonson:
+<ul>
+<li>[ ] <a href="https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=2939">Algoritme Serakah. II &amp; Pengantar tentang NP-Completeness (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=e0tGC6ZQdQE&amp;index=16&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">NP Completeness II &amp; Reductions (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=fCX1BGT3wjE&amp;index=17&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">NP Completeness III (Video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=NKLDp3Rch3M&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=18">NP Completeness IV (video)</a></li>
+</ul></li>
+<li>[ ] Skiena:
+<ul>
+<li>[ ] <a href="https://youtu.be/KiK5TVgXbFg?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=1508">CSE373 2012 - Kuliah 23 - Pengantar NP-Completeness (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=27Al52X3hd4&amp;index=24&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - Kuliah 24 - Bukti NP-Completeness (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=xCPH4gwIIXM&amp;index=25&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - Kuliah 25 - Tantangan NP-Completeness (video)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=eHZifpgyH_4&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=22">Kompleksitas: P, NP, NP-completeness, Reductions (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=MEz1J9wY2iM&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=24">Kompleksitas: Algoritma Perkiraan (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=4q-jmGrmxKs&amp;index=25&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Kompleksitas: Algoritma Parameter Tetap (video)</a></li>
+<li>Ppeter Norvig membahas solusi yang hampir optimal untuk masalah penjual keliling:
+<ul>
+<li><a href="http://nbviewer.jupyter.org/url/norvig.com/ipython/TSP.ipynb">Jupyter Notebook</a></li>
+</ul></li>
+<li>Halaman 1048 - 1140 di CLRS jika Anda memilikinya.</li>
+</ul></li>
+<li><h3 id="cache">Cache</h3>
+<ul>
+<li>[ ] LRU cache:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=R5ON3iwx78M">Keajaiban Cache LRU (100 Hari Google Dev) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=bq6N7Ym81iI">Menerapkan LRU (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=8-FZRAjR7qU">LeetCode - 146 LRU Cache (C++) (video)</a></li>
+</ul></li>
+<li>[ ] CPU cache:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=vjYF_fAZI5E&amp;list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&amp;index=24">MIT 6.004 L15: Hirarki Memori (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ajgC3-pyGlk&amp;index=25&amp;list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-">MIT 6.004 L16: Masalah Cache (video)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="proses-dan-thread">Proses dan Thread</h3>
+<ul>
+<li>[ ] Ilmu Komputer 162 - Sistem Operasi (25 video):
+<ul>
+<li>untuk proses dan thread lihat video 1-11</li>
+<li><a href="https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c">Sistem Operasi dan Pemrograman Sistem (video)</a></li>
+</ul></li>
+<li><a href="https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread">Apa Perbedaan Antara Proses dan Thread?</a></li>
+<li>Meliputi:
+<ul>
+<li>Masalah Processes, Threads, Concurrency
+<ul>
+<li>Perbedaan antara proses dan thread</li>
+<li>Processes</li>
+<li>Threads</li>
+<li>Locks</li>
+<li>Mutexes</li>
+<li>Semaphores</li>
+<li>Monitors</li>
+<li>Bagaimana cara kerjanya?</li>
+<li>Deadlock</li>
+<li>Livelock</li>
+</ul></li>
+<li>Aktivitas CPU, interupsi, pengalihan konteks</li>
+<li>Konstruksi konkurensi modern dengan prosesor multi inti</li>
+<li><a href="https://www.youtube.com/watch?v=LKe7xK0bF7o&amp;list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&amp;index=2">Paging, segmentasi, dan memori virtual (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=uFKi2-J-6II&amp;list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&amp;index=3">Interrupts (video)</a></li>
+<li>Kebutuhan resource proses (memori: kode, penyimpanan statis, stack, heap, dan juga deskriptor file, i /o)</li>
+<li>Kebutuhan sumber daya thread (berbagi di atas (dikurangi stack) dengan thread lain dalam proses yang sama tetapi masing-masing memiliki pc, penghitung stack, register, dan stacknya sendiri)</li>
+<li>Forking benar-benar menyalin saat menulis (hanya baca) hingga proses baru menulis ke memori, lalu menyalin penuh.</li>
+<li>Peralihan konteks
+<ul>
+<li>Bagaimana peralihan konteks dimulai oleh sistem operasi dan perangkat keras yang mendasarinya?</li>
+</ul></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PL5jc9xFGsL8E12so1wlMS0r0hTQoJL74M">thread di C ++ (seri - 10 video)</a></li>
+<li>[ ] Konkurensi (Concurrency) dengan Python (video):
+<ul>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PL1H1sBF1VAKVMONJWJkmUh6_p8g4F2oy1">Serial pendek tentang thread</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Bs7vPNbB9JM">Thread Python</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Obt-vMVdM8s">Memahami Python GIL (2010)</a>
+<ul>
+<li><a href="http://www.dabeaz.com/GIL">referensi</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=MCs5OvhV9S4">David Beazley - Python Concurrency Dari Dasar Ke Atas: LANGSUNG! - PyCon 2015</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ZzfHjytDceU">Keynote David Beazley - Topik Menarik (Python Asyncio)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=0zaPs8OtyKY">Mutex dengan Python</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="testing">Testing</h3>
+<ul>
+<li>Meliputi:
+<ul>
+<li>bagaimana unit testing bekerja</li>
+<li>apa itu objek tiruan (mock objects)</li>
+<li>apa itu pengujian integrasi (integration testing)</li>
+<li>apa itu dependency injection</li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=SAhJf36_u5U">Pengujian Perangkat Lunak Agile dengan James Bach (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ILkT_HV9DVU">Kuliah Terbuka oleh James Bach tentang Pengujian Perangkat Lunak (video)</a></li>
+<li>[ ] <a href="https://vimeo.com/83960706">Steve Freeman - Pengembangan Berbasis Test (bukan itu yang kami maksudkan) (video)</a>
+<ul>
+<li><a href="http://gotocon.com/dl/goto-berlin-2013/slides/SteveFreeman_TestDrivenDevelopmentThatsNotWhatWeMeant.pdf">slides</a></li>
+</ul></li>
+<li>[ ] Dependency injection:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=IKD2-MAkXyQ">video</a></li>
+<li>[ ] <a href="http://jasonpolites.github.io/tao-of-testing/ch3-1.1.html">Tao dari Testing</a></li>
+</ul></li>
+<li>[ ] <a href="http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html">Bagaimana menulis tes</a></li>
+</ul></li>
+<li><h3 id="penjadwalan">Penjadwalan</h3>
+<ul>
+<li>Di OS, bagaimana cara kerjanya?</li>
+<li>Dapat diperoleh dari video Sistem Operasi</li>
+</ul></li>
+<li><h3 id="pencarian-manipulasi-string">Pencarian &amp; manipulasi string</h3>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays">Sedgewick - Suffix Array (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/home/week/4">Sedgewick - Pencarian Substring (video)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/n3ZpG/introduction-to-substring-search">1. Pengantar Pencarian Substring</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/2Kn5i/brute-force-substring-search">2. Pencarian Substring Brute-Force</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/TAtDr/knuth-morris-pratt">3. Knuth-Morris Pratt</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/CYxOT/boyer-moore">4. Boyer-Moore</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/3KiqT/rabin-karp">5. Rabin-Karp</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/tAfHI/search-pattern-in-text">Pola pencarian dalam teks (video)</a></li>
+</ul>
+<p>Jika Anda membutuhkan detail lebih lanjut tentang subjek ini, lihat bagian “String Matching” di <a href="#detail-tambahan-tentang-beberapa-subjek">Detail Tambahan tentang Beberapa Subjek</a>.</p></li>
+<li><h3 id="tries">Tries</h3>
+<ul>
+<li>Perhatikan bahwa ada berbagai jenis percobaan. Beberapa memiliki prefiks, beberapa tidak, dan beberapa menggunakan bit untuk melacak jalur</li>
+<li>Saya membaca kode, tetapi tidak akan menerapkan</li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/home/week/4">Sedgewick - Tries (3 video)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/CPVdr/r-way-tries">1. R Way Tries</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/yQM8K/ternary-search-tries">2. Ternary Search Tries</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/jwNmV/character-based-operations">3. Operasi Berbasis Karakter</a></li>
+</ul></li>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Tries">Catatan tentang Struktur Data dan Teknik Pemrograman</a></li>
+<li>[ ] Video kursus singkat:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/08Xyf/core-introduction-to-tries">Pengantar Tries (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/PvlZW/core-performance-of-tries">Performance Of Tries (video)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/DFvd3/core-implementing-a-trie">Menerapkan A Trie (video)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.toptal.com/java/the-trie-a-neglected-data-structure">Trie: Sebuah Struktur Data Terabaikan</a></li>
+<li>[ ] <a href="https://www.topcoder.com/community/competitive-programming/tutorials/using-tries/">TopCoder - Menggunakan Tries</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=TJ8SkcUSdbU">Kuliah Stanford (kasus penggunaan dunia nyata) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=NinWEPPrkDQ&amp;index=16&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf">MIT, Advanced Data Structures, Strings (bisa sangat tidak jelas sekitar setengahnya) (video)</a></li>
+</ul></li>
+<li><h3 id="angka-floating-point">Angka Floating Point</h3>
+<ul>
+<li>[ ] simple 8-bit: <a href="https://www.youtube.com/watch?v=ji3SfClm8TU">Representasi Angka Floating Point - 1 (video - ada kesalahan dalam penghitungan - lihat deskripsi video)</a></li>
+<li>[ ] 32 bit: <a href="https://www.youtube.com/watch?v=50ZYcZebIec">IEEE754 32-bit floating point biner (video)</a></li>
+</ul></li>
+<li><h3 id="unicode">Unicode</h3>
+<ul>
+<li>[ ] <a href="http://www.joelonsoftware.com/articles/Unicode.html">Minimum Mutlak Setiap Pengembang Perangkat Lunak Sepenuhnya, Secara Positif Harus Tahu Tentang Unicode dan Kumpulan Karakter</a></li>
+<li>[ ] <a href="http://kunststube.net/encoding/">Apa Yang Setiap Programmer Benar-benar, Secara Positif Perlu Diketahui Tentang Unicode Dan Kumpulan Karakter Untuk Bekerja Dengan Teks</a></li>
+</ul></li>
+<li><h3 id="endianness">Endianness</h3>
+<ul>
+<li>[ ] <a href="https://web.archive.org/web/20180107141940/http://www.cs.umd.edu:80/class/sum2003/cmsc311/Notes/Data/endian.html">Endian Besar Dan Kecil</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=JrNF0KRAlyo">Endian Besar Vs Endian Kecil (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=oBSuXP-1Tc0">Endian Big And Kecil Dalam/Luar (video)</a>
+<ul>
+<li>Pembicaraan yang sangat teknis untuk pengembang kernel. Jangan khawatir jika sebagian besar di atas kepala Anda.</li>
+<li>Paruh pertama sudah cukup.</li>
+</ul></li>
+</ul></li>
+<li><h3 id="jaringan">Jaringan</h3>
+<ul>
+<li><strong>jika Anda memiliki pengalaman jaringan atau ingin menjadi insinyur keandalan (reliability engineer) atau insinyur operasi (operations engineer), tunggu pertanyaan</strong></li>
+<li>Jika tidak, ini bagus untuk diketahui</li>
+<li>[ ] <a href="https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org">Khan Academy</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Vdc8TCESIg8">UDP dan TCP: Perbandingan Transport Protocols (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=e5DEVa9eSN0">TCP / IP dan Model OSI Dijelaskan! (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=nomyRJehhnM">Transmisi Paket melalui Internet. Tutorial Jaringan &amp; TCP / IP. (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=WGJrLqtX7As">HTTP (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=S2iBR2ZlZf0">SSL dan HTTPS (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Rp3iZUvXWlM">SSL / TLS (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=E9FxNzv1Tr8">HTTP 2.0 (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j">Seri Video (21 video) (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=t5xYI0jzOf4">Subnetting Demystified - Bagian 5 CIDR Notation (video)</a></li>
+<li>[ ] Socket:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=6G_W54zuadg&amp;t=6s">Java - Sockets - Pengenalan (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=G75vN2mnJeQ">Pemrograman Socket (video)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="perancangan-sistem-skalabilitas-penganganan-data">Perancangan Sistem, Skalabilitas, Penganganan Data</h2>
+<p><strong>Anda dapat mengharapkan pertanyaan desain sistem jika Anda memiliki pengalaman 4+ tahun.</strong></p>
+<ul>
+<li>Skalabilitas dan Desain Sistem adalah topik yang sangat besar dengan banyak topik dan sumber daya, karena ada banyak hal yang perlu dipertimbangkan saat merancang sistem perangkat lunak / perangkat keras yang dapat diskalakan. Berharap untuk meluangkan sedikit waktu untuk ini</li>
+<li>Pertimbangan:
+<ul>
+<li>Skalabilitas (Scalability)
+<ul>
+<li>Saring kumpulan data besar menjadi nilai tunggal</li>
+<li>Ubah satu kumpulan data ke kumpulan lainnya</li>
+<li>Menangani data dalam jumlah yang sangat besar</li>
+</ul></li>
+<li>Desain sistem (System design)
+<ul>
+<li>set fitur (features sets)</li>
+<li>antarmuka (interfaces)</li>
+<li>hierarki kelas (class hierarchies)</li>
+<li>merancang sistem di bawah batasan tertentu</li>
+<li>kesederhanaan dan ketahanan (simplicity and robustness)</li>
+<li>pengorbanan (tradeoffs)</li>
+<li>analisis dan pengoptimalan kinerja</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>MULAI DI SINI</strong>: <a href="https://github.com/donnemartin/system-design-primer">Primer Desain Sistem</a></li>
+<li>[ ] <a href="http://www.hiredintech.com/system-design/">Desain Sistem dari HiredInTech</a></li>
+<li>[ ] <a href="https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023">Bagaimana Saya Mempersiapkan Untuk Menjawab Pertanyaan Desain Secara Teknis?</a></li>
+<li>[ ] <a href="http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/">8 Hal Yang Perlu Diketahui Sebelum Wawancara Desain Sistem</a></li>
+<li>[ ] <a href="http://www.hiredintech.com/algorithm-design/">Desain algoritme</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=UrYLYV7WSHM">Normalisasi Basis Data - 1NF, 2NF, 3NF dan 4NF (video)</a></li>
+<li>[ ] <a href="https://github.com/checkcheckzz/system-design-interview">Wawancara Desain Sistem</a> - Ada banyak sumber daya yang satu ini. Lihat artikel dan contoh. Saya taruh beberapa di bawah ini</li>
+<li>[ ] <a href="http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/">Bagaimana menjadi ace wawancara desain sistem</a></li>
+<li>[ ] <a href="http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/">Nomor yang Harus Diketahui Setiap Orang</a></li>
+<li>[ ] <a href="http://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html">Berapa lama waktu yang dibutuhkan untuk membuat pengalih konteks?</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=srOgpXECblk">Transaksi di Seluruh Pusat Data (video)</a></li>
+<li>[ ] <a href="http://ksat.me/a-plain-english-introduction-to-cap-theorem">Pengantar bahasa Inggris sederhana untuk Teorema CAP</a></li>
+<li>[ ] Algoritma Konsensus:
+<ul>
+<li>[ ] Paxos - <a href="https://www.youtube.com/watch?v=s8JqcZtvnsM">Paxos Agreement - Computerphile (video)</a></li>
+<li>[ ] Raft - <a href="https://www.youtube.com/watch?v=P9Ydif5_qvE">Pengantar Algoritma Konsensus Terdistribusi Rakit (video)</a>
+<ul>
+<li>[ ] <a href="https://raft.github.io/">Kertas yang mudah dibaca</a></li>
+<li>[ ] <a href="http://thesecretlivesofdata.com/raft/">Infografis</a></li>
+</ul></li>
+</ul></li>
+<li>[ ] <a href="http://www.tom-e-white.com/2007/11/consistent-hashing.html">Hashing yang Konsisten</a></li>
+<li>[ ] <a href="http://horicky.blogspot.com/2009/11/nosql-patterns.html">Pola NoSQL</a></li>
+<li>[ ] Skalabilitas:
+<ul>
+<li>Anda tidak membutuhkan semua ini. Pilih saja beberapa yang menarik bagi Anda.</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=-W9F__D3oY4">Tinjauan bagus (video)</a></li>
+<li>[ ] Seri pendek:
+<ul>
+<li><a href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones">Klon (Clones)</a></li>
+<li><a href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database">Database (Database)</a></li>
+<li><a href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache">Cache (Cache)</a></li>
+<li><a href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism">Asinkronisme (Asynchronism)</a></li>
+</ul></li>
+<li>[ ] <a href="http://www.aosabook.org/en/distsys.html">Arsitektur Web yang Skalabel dan Sistem Terdistribusi</a></li>
+<li>[ ] <a href="https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf">Kekeliruan Komputasi Terdistribusi Dijelaskan</a></li>
+<li>[ ] <a href="http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html">Teknik Pemrograman Pragmatis</a>
+<ul>
+<li><a href="http://horicky.blogspot.com/2010/07/google-pregel-graph-processing.html">ekstra: Pemrosesan Graph Google Pregel</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=modXC5IWTJI">Jeff Dean - Membangun Sistem Perangkat Lunak di Google dan Pelajaran yang Dipetik (video)</a></li>
+<li>[ ] <a href="http://lethain.com/introduction-to-architecting-systems-for-scale/">Pengantar Sistem Arsitek untuk Skala</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=9nWyWwY2Onc">Menskalakan game seluler ke audiens global menggunakan App Engine dan Cloud Datastore (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=H4vMcD7zKM0">Bagaimana Google Melakukan Rekayasa Skala Planet untuk Infra Skala Planet (video)</a></li>
+<li>[ ] <a href="https://www.topcoder.com/community/competitive-programming/tutorials/the-importance-of-algorithms/">Pentingnya Algoritma</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html">Sharding</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=oodS71YtkGU">Scale at Facebook (2012), “Building for a Million Users” (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=p0jGmgIrf_M&amp;list=PLRXxvay_m8gqVlExPC5DG3TGWJTaBgqSA&amp;index=4">Teknik untuk Permainan Panjang - Astrid Atkinson Keynote (video)</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2012/3/26/7-years-of-youtube-scalability-lessons-in-30-minutes.html">7 Tahun Pelajaran Skalabilitas YouTube Dalam 30 Menit</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=G-lGCC4KKok">video</a></li>
+</ul></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/8/15/how-paypal-scaled-to-billions-of-transactions-daily-using-ju.html">Bagaimana PayPal Mengukur Miliaran Transaksi Setiap Hari Hanya Dengan Menggunakan 8VM</a></li>
+<li>[ ] <a href="https://blog.clevertap.com/how-to-remove-duplicates-in-large-datasets/">Cara Menghapus Duplikat dalam Kumpulan Data Besar</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=3vV4YiqKm1o">Sekilas tentang skala dan budaya teknik Etsy dengan Jon Cowie (video)</a></li>
+<li>[ ] <a href="http://thenewstack.io/led-amazon-microservices-architecture/">Apa yang Membawa Amazon ke Arsitektur Layanan Mikro Sendiri</a></li>
+<li>[ ] <a href="https://eng.uber.com/trip-data-squeeze/">Untuk Mengompresi Atau Tidak Mengompresi, Itu Pertanyaan Uber</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/3/3/asyncio-tarantool-queue-get-in-the-queue.html">Asyncio Tarantool Queue, Masuk Antrian</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/2/25/when-should-approximate-query-processing-be-used.html">Kapan Perkiraan Pemrosesan Kueri Digunakan?</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/2/23/googles-transition-from-single-datacenter-to-failover-to-a-n.html">Transisi Google Dari Pusat Data Tunggal, Ke Failover, Ke Arsitektur Native Multihomed</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2012/9/24/google-spanners-most-surprising-revelation-nosql-is-out-and.html">Kunci pas</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/7/6/machine-learning-driven-programming-a-new-programming-for-a.html">Pemrograman Didorong Pembelajaran Mesin: Pemrograman Baru Untuk Dunia Baru</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/6/15/the-image-optimization-technology-that-serves-millions-of-re.html">Teknologi Pengoptimalan Gambar Yang Melayani Jutaan Permintaan Per Hari</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/2/1/a-patreon-architecture-short.html">A Patreon Architecture Short</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/27/tinder-how-does-one-of-the-largest-recommendation-engines-de.html">Tinder: Bagaimana Salah Satu Mesin Rekomendasi Terbesar Memutuskan Siapa yang Akan Anda Lihat Selanjutnya?</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html">Desain Cache Modern</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/13/live-video-streaming-at-facebook-scale.html">Streaming Video Langsung Pada Skala Facebook</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html">Panduan Pemula Untuk Menskalakan Lebih dari 11 Juta Pengguna di Amazon AWS</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2015/12/16/how-does-the-use-of-docker-effect-latency.html">Bagaimana Penggunaan Latensi Efek Docker?</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2015/11/9/a-360-degree-view-of-the-entire-netflix-stack.html">Tampilan 360 Derajat Dari Seluruh Tumpukan Netflix</a></li>
+<li>[ ] <a href="http://highscalability.com/latency-everywhere-and-it-costs-you-sales-how-crush-it">Latensi Ada Di Mana-Mana Dan Itu Membebani Penjualan Anda - Cara Menghancurkannya</a></li>
+<li>[ ] <a href="http://martinfowler.com/articles/serverless.html">Serverless (sangat lama, hanya perlu intinya)</a></li>
+<li>[ ] <a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances">What Powers Instagram: Ratusan Instans, Lusinan Teknologi</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2012/7/16/cinchcast-architecture-producing-1500-hours-of-audio-every-d.html">Arsitektur Cinchcast - Menghasilkan 1.500 Jam Audio Setiap Hari</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html">Arsitektur Penyiaran Video Langsung Justin.Tv</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2010/9/21/playfishs-social-gaming-architecture-50-million-monthly-user.html">Arsitektur Permainan Sosial Playfish - 50 Juta Pengguna Bulanan Dan Berkembang</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2011/6/27/tripadvisor-architecture-40m-visitors-200m-dynamic-page-view.html">Arsitektur TripAdvisor - 40 Juta Pengunjung, 200 Juta Tampilan Halaman Dinamis, 30 TB Data</a></li>
+<li>[ ] <a href="http://highscalability.com/plentyoffish-architecture">Arsitektur PlentyOfFish</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html">Arsitektur Salesforce - Bagaimana Mereka Menangani 1,3 Miliar Transaksi Sehari</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html">Arsitektur ESPN Dalam Skala - Beroperasi pada 100.000 Duh Nuh Nuhs Per Detik</a></li>
+<li>[ ] Lihat cara “Sistem Perpesanan, Serialisasi, dan Antrean” di bawah ini untuk info tentang beberapa teknologi yang dapat merekatkan layanan</li>
+<li>[ ] Twitter:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5cKTP36HVgI">O’Reilly MySQL CE 2011: Jeremy Cole, “Data Besar dan Kecil di <span class="citation" data-cites="Twitter">@Twitter</span>” (video)</a></li>
+<li><a href="https://www.infoq.com/presentations/Twitter-Timeline-Scalability">Garis Waktu dalam Skala</a></li>
+</ul></li>
+<li>Untuk informasi lebih lanjut, lihat serial video “Menambang Kumpulan Data Besar-besaran” di bagian <a href="#seri-video">Seri Video</a></li>
+</ul></li>
+<li>[ ] Mempraktikkan proses desain sistem: Berikut adalah beberapa ide untuk dicoba di atas kertas, masing-masing dengan beberapa dokumentasi tentang bagaimana hal itu ditangani di dunia nyata:
+<ul>
+<li>review: <a href="https://github.com/donnemartin/system-design-primer">Primer Desain Sistem</a></li>
+<li><a href="http://www.hiredintech.com/system-design/">Desain Sistem dari HiredInTech</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/system-design.pdf">contekan (cheat sheet)</a></li>
+<li>aliran:
+<ol type="1">
+<li>Pahami masalah dan cakupannya:
+<ul>
+<li>Tentukan kasus penggunaan, dengan bantuan pewawancara</li>
+<li>Sarankan fitur tambahan</li>
+<li>Hapus item yang dianggap pewawancara di luar jangkauan</li>
+<li>Asumsikan ketersediaan tinggi diperlukan, tambahkan sebagai kasus penggunaan</li>
+</ul></li>
+<li>Pikirkan tentang kendala:
+<ul>
+<li>Tanyakan berapa banyak permintaan per bulan</li>
+<li>Tanyakan berapa banyak permintaan per detik (mereka mungkin menawarkannya secara sukarela atau meminta Anda menghitungnya)</li>
+<li>Perkirakan persentase membaca vs. menulis</li>
+<li>Ingat aturan 80/20 saat memperkirakan</li>
+<li>Berapa banyak data yang ditulis per detik</li>
+<li>Total penyimpanan yang dibutuhkan selama 5 tahun</li>
+<li>Berapa banyak data yang dibaca per detik</li>
+</ul></li>
+<li>Desain abstrak:
+<ul>
+<li>Lapisan (layanan, data, caching)</li>
+<li>Infrastruktur: load balancing, perpesanan</li>
+<li>Gambaran kasar tentang algoritme kunci apa pun yang menggerakkan layanan</li>
+<li>Pertimbangkan kemacetan dan tentukan solusinya</li>
+</ul></li>
+</ol></li>
+<li>Latihan:
+<ul>
+<li><a href="https://kilthub.cmu.edu/articles/Globally_distributed_content_delivery/6605972">Desain jaringan CDN: artikel lama</a></li>
+<li><a href="https://blog.twitter.com/2010/announcing-snowflake">Rancang sistem pembuatan ID unik secara acak</a></li>
+<li><a href="http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html">Rancang permainan kartu multipemain daring</a></li>
+<li><a href="http://www.slideshare.net/dvirsky/introduction-to-redis">Mendesain database nilai kunci</a></li>
+<li><a href="http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html">Rancang sistem berbagi gambar</a></li>
+<li><a href="http://ijcai13.org/files/tutorial_slides/td3.pdf">Rancang sistem rekomendasi</a></li>
+<li><a href="http://www.hiredintech.com/system-design/the-system-design-process/">Rancang sistem penyingkat URL: disalin dari atas</a></li>
+<li><a href="https://www.adayinthelifeof.nl/2011/02/06/memcache-internals/">Rancang sistem cache</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="ulasan-akhir">Ulasan Akhir</h2>
+<pre><code>Bagian ini akan memiliki video pendek yang dapat Anda tonton dengan cukup cepat untuk meninjau sebagian besar konsep penting.
+Sangat menyenangkan jika Anda sering ingin penyegaran.</code></pre>
+<ul>
+<li>[ ] Seri video subjek pendek berdurasi 2-3 menit (23 video)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=r4r1DZcx1cM&amp;list=PLmVb1OknmNJuC5POdcDv5oCS7_OUkDgpj&amp;index=22">Video</a></li>
+</ul></li>
+<li>[ ] Seri video subjek pendek berdurasi 2-5 menit - Michael Sambol (18 video):
+<ul>
+<li><a href="https://www.youtube.com/channel/UCzDJwLWoYCUQowF_nG3m5OQ">Video</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1">Video Sedgewick - Algoritma I</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2">Video Sedgewick - Algoritma II</a></li>
+</ul>
+<hr />
+<h2 id="latihan-pertanyaan-pemrograman">Latihan Pertanyaan Pemrograman</h2>
+<p>Sekarang setelah kamu mengetahui semua topik ilmu komputer di atas, sekarang saatnya berlatih menjawab soal coding.</p>
+<p><strong>Latihan pertanyaan coding bukan tentang menghafal jawaban atas masalah pemrograman.</strong></p>
+<p>Mengapa Anda perlu berlatih mengerjakan soal pemrograman: - Pengenalan masalah, dan di mana struktur data dan algoritme yang tepat cocok - Mengumpulkan persyaratan untuk masalah tersebut - Berbicara tentang masalah seperti yang akan Anda lakukan dalam wawancara - Coding di papan tulis atau kertas, bukan di komputer - Hadir dengan kerumitan ruang dan waktu untuk solusi Anda - Menguji solusi Anda</p>
+<p>Ada pengantar yang bagus untuk pemecahan masalah metodis dan komunikatif dalam sebuah wawancara. Anda juga akan mendapatkan ini dari buku wawancara pemrograman, tetapi menurut saya ini luar biasa: <a href="http://www.hiredintech.com/algorithm-design/">Kanvas desain algoritme</a></p>
+<p>Tidak ada papan tulis di rumah? Itu masuk akal. Saya orang aneh dan memiliki papan tulis besar. Alih-alih papan tulis, belilah papan gambar besar dari toko seni. Anda bisa duduk di sofa dan berlatih. Ini adalah “papan tulis sofa” saya. Saya menambahkan pena di foto untuk skala. Jika Anda menggunakan pena, Anda pasti berharap dapat menghapusnya. Cepat berantakan. Saya menggunakan pensil dan penghapus.</p>
+<figure>
+<img src="https://d3j2pkmjtin6ou.cloudfront.net/art_board_sm_2.jpg" alt="papan tulis sofa saya" /><figcaption>papan tulis sofa saya</figcaption>
+</figure>
+<p>Tambahan:</p>
+<ul>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/mathematics-for-topcoders/">Matematika untuk Topcoders</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/">Pemrograman Dinamis - Dari Pemula hingga Mahir</a></li>
+<li><a href="https://web.archive.org/web/20160906124824/http://courses.csail.mit.edu/iap/interview/materials.php">Materi Wawancara MIT</a></li>
+<li><a href="http://exercism.io/languages">Latihan untuk menjadi lebih baik pada bahasa tertentu</a></li>
+</ul>
+<p><strong>Baca dan Lakukan Masalah Pemrograman (dalam urutan ini):</strong></p>
+<ul>
+<li>[ ] <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html">Wawancara Pemrograman Terkena: Rahasia Mendaratkan Pekerjaan Berikutnya Anda, Edisi ke-2</a>
+<ul>
+<li>jawaban di C, C++ dan Java</li>
+</ul></li>
+<li>[ ] <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/">Cracking the Coding Interview, Edisi ke-6</a>
+<ul>
+<li>jawaban di Java</li>
+</ul></li>
+</ul>
+<p>Lihat <a href="#daftar-buku">Daftar Buku di atas</a></p>
+<h2 id="latihan-tantangan-coding">Latihan / tantangan coding</h2>
+<p>Setelah Anda mempelajari otak Anda, gunakan otak itu untuk bekerja. Ambil tantangan pengkodean setiap hari, sebanyak yang Anda bisa.</p>
+<ul>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/how-to-find-a-solution/">Bagaimana Menemukan Solusi</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/how-to-dissect-a-topcoder-problem-statement/">Cara Membedah Pernyataan Masalah Topcoder</a></li>
+</ul>
+<p>Video Pertanyaan Wawancara Coding: - <a href="https://www.youtube.com/watch?v=NBcqBddFbZw&amp;list=PLamzFoFxwoNjPfxzaWqs7cZGsPYy0x_gI">IDeserve (88 video)</a> - <a href="https://www.youtube.com/user/tusharroy2525/playlists?shelf_id=2&amp;view=50&amp;sort=dd">Tushar Roy (5 playlist)</a> - Super for walkthroughs of problem solutions - <a href="https://www.youtube.com/playlist?list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-">Nick White - LeetCode Solutions (187 Video)</a> - Good explanations of solution and the code - You can watch several in a short time - <a href="https://youtube.com/FisherCoder">FisherCoder - Solusi LeetCode</a></p>
+<p>Situs tantangan: - <a href="https://leetcode.com/">LeetCode</a> - My favorite coding problem site. It’s worth the subscription money for the 1-2 months you’ll likely be preparing - <a href="https://github.com/fishercoder1534/Leetcode">LeetCode solutions from FisherCoder</a> - See Nick White Videos above for short code-throughs - <a href="https://www.hackerrank.com/">HackerRank</a> - <a href="https://www.topcoder.com/">TopCoder</a> - <a href="https://www.interviewcake.com/">InterviewCake</a> - <a href="http://www.geeksforgeeks.org/">Geeks for Geeks</a> - <a href="https://www.interviewbit.com/invite/icjf">InterviewBit</a> - <a href="https://projecteuler.net/index.php?section=problems">Project Euler (math-focused)</a> - <a href="https://code-exercises.com">Code Exercises</a></p>
+<p>Situs pembelajaran bahasa, dengan tantangan: - <a href="http://www.codewars.com">Codewars</a> - <a href="https://codility.com/programmers/">Codility</a> - <a href="https://www.hackerearth.com/">HackerEarth</a> - <a href="http://www.spoj.com/">Sphere Online Judge (spoj)</a> - <a href="https://www.codechef.com/">Codechef</a></p>
+<p>Repo tantangan: - <a href="https://github.com/donnemartin/interactive-coding-challenges">Tantangan Interview Coding Interaktif dengan Python</a></p>
+<p>Wawancara Mock: - <a href="http://www.gainlo.co/">Gainlo.co: Mock pewawancara dari perusahaan besar</a> - Saya menggunakan ini dan itu membantu saya bersantai untuk layar ponsel dan wawancara di tempat - <a href="https://www.pramp.com/">Pramp: Wawancara mengejek dari / dengan teman sebaya</a> - model wawancara praktik peer-to-peer - <a href="https://refdash.com/">Refdash: Wawancara tiruan dan wawancara yang dipercepat</a> - juga membantu kandidat mempercepat dengan melewatkan beberapa wawancara dengan perusahaan teknologi - <a href="https://interviewing.io">interviewing.io: Berlatih wawancara tiruan dengan insinyur senior</a> - wawancara desain algoritme / sistem tanpa nama dengan insinyur senior dari FAANG secara anonim.</p>
+<h2 id="menjelang-proses-interview">Menjelang Proses Interview</h2>
+<ul>
+<li>Memecahkan Wawancara Coding 2 Set (video):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4NIb9l3imAo">Memecahkan Wawancara Coding</a></li>
+<li><a href="https://www.youtube.com/watch?v=Eg5-tdAwclo">Memecahkan Wawancara Coding - Seri Speaker Fullstack</a></li>
+</ul></li>
+</ul>
+<h2 id="resume-anda">Resume Anda</h2>
+<ul>
+<li>Lihat Lanjutkan item persiapan di Cracking The Coding Interview dan bagian belakang Wawancara Pemrograman Terkena</li>
+</ul>
+<h2 id="pikirkan-saat-wawancara-datang">Pikirkan saat wawancara datang</h2>
+<p>Pikirkan sekitar 20 pertanyaan wawancara yang akan Anda dapatkan, bersama dengan baris item di bawah ini. Miliki 2-3 jawaban untuk masing-masing. Memiliki cerita, bukan hanya data, tentang sesuatu yang Anda capai.</p>
+<ul>
+<li>Mengapa Anda menginginkan pekerjaan ini?</li>
+<li>Apa masalah sulit yang telah Anda selesaikan?</li>
+<li>Tantangan terbesar yang dihadapi?</li>
+<li>Desain terbaik / terburuk terlihat?</li>
+<li>Ide untuk meningkatkan produk Google yang sudah ada.</li>
+<li>Bagaimana Anda bekerja dengan baik, sebagai individu dan sebagai bagian dari tim?</li>
+<li>Keterampilan atau pengalaman mana yang akan menjadi aset dalam peran tersebut dan mengapa?</li>
+<li>Apa yang paling Anda nikmati di [job x / project y]?</li>
+<li>Apa tantangan terbesar yang Anda hadapi di [pekerjaan x / proyek y]?</li>
+<li>Bug tersulit apa yang Anda hadapi di [pekerjaan x / proyek y]?</li>
+<li>Apa yang Anda pelajari di [pekerjaan x / proyek y]?</li>
+<li>Apa yang akan Anda lakukan lebih baik di [pekerjaan x / proyek y]?</li>
+</ul>
+<h2 id="bertanyalah-pada-pewawancara">Bertanyalah Pada Pewawancara</h2>
+<pre><code>Beberapa milik saya (saya mungkin sudah tahu jawaban tetapi ingin pendapat atau perspektif tim mereka):</code></pre>
+<ul>
+<li>Seberapa besar tim Anda?</li>
+<li>Seperti apa siklus pengembang Anda? Apakah Anda melakukan waterfall / sprint / agile?</li>
+<li>Apakah terburu-buru ke tenggat waktu biasa terjadi? Atau apakah ada fleksibilitas?</li>
+<li>Bagaimana keputusan dibuat dalam tim Anda?</li>
+<li>Berapa banyak pertemuan yang Anda lakukan per minggu?</li>
+<li>Apakah Anda merasa lingkungan kerja membantu Anda berkonsentrasi?</li>
+<li>Apa yang sedang kamu kerjakan?</li>
+<li>Apa yang Anda suka tentang itu?</li>
+<li>Seperti apa kehidupan kerja?</li>
+</ul>
+<h2 id="saat-anda-berhasil-mendapatkan-pekerjaannya">Saat Anda Berhasil Mendapatkan Pekerjaannya</h2>
+<p>Selamat!</p>
+<p>Terus belajar.</p>
+<p>Anda tidak pernah benar-benar selesai.</p>
+<hr />
+<pre><code>*****************************************************************************************************
+*****************************************************************************************************
+
+Segala sesuatu di bawah poin ini bersifat opsional. Ini adalah rekomendasi saya, bukan Google.
+Dengan mempelajari ini, Anda akan mendapatkan eksposur yang lebih besar ke lebih banyak konsep CS,
+dan akan lebih siap untuk pekerjaan rekayasa perangkat lunak apa pun.
+Anda akan menjadi insinyur perangkat lunak yang jauh lebih berpengalaman.
+
+*****************************************************************************************************
+*****************************************************************************************************</code></pre>
+<hr />
+<h2 id="buku-tambahan">Buku Tambahan</h2>
+<pre><code>Ini ada di sini sehingga Anda dapat menyelami topik yang menurut Anda menarik.</code></pre>
+<ul>
+<li><a href="https://www.amazon.com/dp/013937681X">Lingkungan Pemrograman Unix</a>
+<ul>
+<li>Tua tapi bagus</li>
+</ul></li>
+<li><a href="https://www.amazon.com/dp/1593273894/">Baris Perintah Linux: Pengantar Lengkap</a>
+<ul>
+<li>Pilihan modern</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">Seri Ilustrasi TCP / IP</a></li>
+<li><a href="https://www.amazon.com/gp/product/0596007124/">Pola Desain Kepala Pertama</a>
+<ul>
+<li>Pengenalan lembut untuk pola desain</li>
+</ul></li>
+<li><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Pola Desain: Elemen Perangkat Lunak Object-Oriente yang Dapat Digunakan Kembali</a>
+<ul>
+<li>Alias buku “Gang Of Four”, atau GOF</li>
+<li>Buku pola desain kanonik</li>
+</ul></li>
+<li><a href="https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0134277554/">Buku Pegangan Administrasi Sistem UNIX dan Linux, Edisi ke-5</a></li>
+<li><a href="http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202">Manual Desain Algoritma</a> (Skiena)
+<ul>
+<li>Sebagai review dan pengenalan masalah</li>
+<li>Porsi katalog algoritme jauh di luar cakupan kesulitan yang akan Anda dapatkan dalam wawancara</li>
+<li>Buku ini memiliki 2 bagian:
+<ul>
+<li>Kelas buku teks tentang struktur data dan algoritma
+<ul>
+<li>Kelebihan:
+<ul>
+<li>Merupakan review yang bagus seperti buku teks algoritma apapun</li>
+<li>Cerita bagus dari pengalamannya memecahkan masalah di industri dan akademisi</li>
+<li>Contoh kode di C</li>
+</ul></li>
+<li>Kekurangan:
+<ul>
+<li>Bisa padat atau tidak bisa ditembus seperti CLRS, dan dalam beberapa kasus, CLRS mungkin menjadi alternatif yang lebih baik untuk beberapa mata pelajaran</li>
+<li>Bab 7, 8, 9 bisa menyakitkan untuk dicoba diikuti, karena beberapa item tidak dijelaskan dengan baik atau membutuhkan lebih banyak otak daripada yang saya miliki</li>
+<li>Jangan salah paham: Saya suka Skiena, gaya mengajarnya, dan tingkah lakunya, tapi saya mungkin bukan materi Stony Brook</li>
+</ul></li>
+</ul></li>
+<li>Katalog algoritma:
+<ul>
+<li>Inilah alasan sebenarnya Anda membeli buku ini</li>
+<li>Akan sampai ke bagian ini. Akan memperbarui di sini setelah saya berhasil melewatinya</li>
+</ul></li>
+</ul></li>
+<li>Bisa menyewanya di kindle</li>
+<li>jawaban:
+<ul>
+<li><a href="http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition)">Solusi</a></li>
+<li><a href="http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/">Solusi</a></li>
+</ul></li>
+<li><a href="http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata">Errata</a></li>
+</ul></li>
+<li><a href="https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038">Tulis Kode Hebat: Volume 1: Memahami Mesin</a>
+<ul>
+<li>Buku itu diterbitkan pada tahun 2004, dan agak ketinggalan jaman, tetapi merupakan sumber yang hebat untuk memahami komputer secara singkat</li>
+<li>Penulis menemukan <a href="https://en.wikipedia.org/wiki/High_Level_Assembly">HLA</a>, jadi ambillah sebutan dan contoh di HLA dengan sedikit garam. Tidak banyak digunakan, tetapi contoh yang layak tentang seperti apa perakitan itu</li>
+<li>Bab-bab ini layak dibaca untuk memberi Anda dasar yang bagus:
+<ul>
+<li>Bab 2 - Representasi Numerik</li>
+<li>Bab 3 - Aritmatika Biner dan Operasi Bit</li>
+<li>Bab 4 - Representasi Titik Mengambang</li>
+<li>Bab 5 - Representasi Karakter</li>
+<li>Bab 6 - Organisasi Memori dan Akses</li>
+<li>Bab 7 - Tipe Data Komposit dan Objek Memori</li>
+<li>Bab 9 - Arsitektur CPU</li>
+<li>Bab 10 - Arsitektur Set Instruksi</li>
+<li>Bab 11 - Arsitektur dan Organisasi Memori</li>
+</ul></li>
+</ul></li>
+<li><a href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844">Pengantar Algoritma</a>
+<ul>
+<li><strong>Penting:</strong> Membaca buku ini hanya akan memiliki nilai yang terbatas. Buku ini adalah ulasan yang bagus tentang algoritme dan struktur data, tetapi tidak akan mengajari Anda cara menulis kode yang baik. Anda harus dapat membuat kode solusi yang layak secara efisien</li>
+<li>Alias CLR, terkadang CLRS, karena Stein terlambat ke permainan</li>
+</ul></li>
+<li><a href="https://www.amazon.com/dp/0128119055">Arsitektur Komputer, Edisi Keenam: Pendekatan Kuantitatif</a>
+<ul>
+<li>For a richer, more up-to-date (2017), but longer treatment</li>
+</ul></li>
+<li><a href="http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880">Pemrograman Mutiara</a>
+<ul>
+<li>Beberapa bab pertama menyajikan solusi cerdas untuk masalah pemrograman (beberapa sangat lama menggunakan pita data) tetapi itu hanya intro. Ini adalah buku panduan tentang desain dan arsitektur program</li>
+</ul></li>
+</ul>
+<h2 id="pembelajaran-tambahan">Pembelajaran Tambahan</h2>
+<pre><code>Saya menambahkannya untuk membantu Anda menjadi insinyur perangkat lunak yang berpengetahuan luas,
+dan untuk mengetahui teknologi dan algoritme tertentu, sehingga Anda akan memiliki kotak peralatan yang lebih besar.</code></pre>
+<ul>
+<li><h3 id="kompilator">Kompilator</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=IhC7sdYe-Jg">How a Compiler Works in ~1 minute (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=CSZLNYF4Klo">Harvard CS50 - Compilers (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=twodd1KFfGk">C++ (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=FnGCDLhaxKU">Understanding Compiler Optimization (C++) (video)</a></li>
+</ul></li>
+<li><h3 id="emacs-and-vim">Emacs and vi(m)</h3>
+<ul>
+<li>Biasakan diri Anda dengan editor kode berbasis unix</li>
+<li>vi(m):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5givLEMcINQ&amp;index=1&amp;list=PL13bz4SHGmRxlZVmWQ9DvXo1fEg4UdGkr">Mengedit Dengan vim 01 - Instalasi, Setup, dan The Modes (video)</a></li>
+<li><a href="http://vim-adventures.com/">Petualangan VIM</a></li>
+<li>set of 4 videos:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SI8TeVMX8pk">Editor vi / vim - Pelajaran 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=F3OO7ZIOaJE">Editor vi / vim - Pelajaran 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZYEccA_nMaI">Editor vi / vim - Pelajaran 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=1lYD5gwgZIA">Editor vi / vim - Pelajaran 4</a></li>
+</ul></li>
+<li><a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Using_Vi_instead_of_Emacs">Menggunakan Vi, bukan Emacs</a></li>
+</ul></li>
+<li>emacs:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hbmV1bnQ-i0">Tutorial Dasar Emacs (video)</a></li>
+<li>set of 3 (videos):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ujODL7MD04Q">Tutorial Emacs (Pemula) -Bagian 1- Perintah file, potong / salin / tempel, perintah kursor</a></li>
+<li><a href="https://www.youtube.com/watch?v=XWpsRupJ4II">Tutorial Emacs (Pemula) -Bagian 2- Manajemen buffer, pencarian, mode M-x grep dan rgrep</a></li>
+<li><a href="https://www.youtube.com/watch?v=paSgzPso-yc">Tutorial Emacs (Pemula) -Bagian 3- Ekspresi, Pernyataan, ~ / .emacs file dan paket</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc">Mode Jahat: Atau, Bagaimana Saya Belajar untuk Berhenti Khawatir dan Cinta Emacs (video)</a></li>
+<li><a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Writing_C_programs_with_Emacs">Menulis Program C Dengan Emacs</a></li>
+<li><a href="https://www.youtube.com/watch?v=nsGYet02bEk">(mungkin) Mode Organisasi Secara Mendalam: Mengelola Struktur (video)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="unix-command-line-tools">Unix command line tools</h3>
+<ul>
+<li>Saya mengisi daftar di bawah ini dari alat yang bagus.</li>
+<li>bash</li>
+<li>cat</li>
+<li>grep</li>
+<li>sed</li>
+<li>awk</li>
+<li>curl or wget</li>
+<li>sort</li>
+<li>tr</li>
+<li>uniq</li>
+<li><a href="https://en.wikipedia.org/wiki/Strace">strace</a></li>
+<li><a href="https://danielmiessler.com/study/tcpdump/">tcpdump</a></li>
+</ul></li>
+<li><h3 id="teori-informasi-video">Teori Informasi (video)</h3>
+<ul>
+<li><a href="https://www.khanacademy.org/computing/computer-science/informationtheory">Khan Academy</a></li>
+<li>Lebih lanjut tentang proses Markov:
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/waxgx/core-markov-text-generation">Pembuatan Teks Markov Inti</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/gZhiC/core-implementing-markov-text-generation">Inti Penerapan Pembuatan Teks Markov</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/EUjrq/project-markov-text-generation-walk-through">Proyek = Panduan Pembuatan Teks Markov</a></li>
+</ul></li>
+<li>Lihat lebih lanjut dalam seri Informasi dan Entropi MIT 6.050J di bawah ini</li>
+</ul></li>
+<li><h3 id="pariti-kode-hamming">Pariti &amp; Kode Hamming</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=q-3BctoUpHE">Intro</a></li>
+<li><a href="https://www.youtube.com/watch?v=DdMcAUlxh1M">Keseimbangan (Parity)</a></li>
+<li>Hamming Code:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1A_NcXxdoCc">Deteksi kesalahan</a></li>
+<li><a href="https://www.youtube.com/watch?v=JAMLuxdHH8o">Koreksi kesalahan</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=wbH2VxzmoZk">Error Checking</a></li>
+</ul></li>
+<li><h3 id="entropy">Entropy</h3>
+<ul>
+<li>Lihat juga video di bawah ini</li>
+<li>Pastikan untuk menonton video teori informasi terlebih dahulu</li>
+<li><a href="https://youtu.be/JnJq3Py0dyM?t=176">Teori Informasi, Claude Shannon, Entropi, Redundansi, Kompresi Data &amp; Bit (video)</a></li>
+</ul></li>
+<li><h3 id="kriptografi">Kriptografi</h3>
+<ul>
+<li>Lihat juga video di bawah ini</li>
+<li>Pastikan untuk menonton video teori informasi terlebih dahulu</li>
+<li><a href="https://www.khanacademy.org/computing/computer-science/cryptography">Khan Academy Series</a></li>
+<li><a href="https://www.youtube.com/watch?v=KqqOXndnvic&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=30">Kriptografi: Funsgi Hash</a></li>
+<li><a href="https://www.youtube.com/watch?v=9TNI2wHmaeI&amp;index=31&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Kriptografi: Enkripsi</a></li>
+</ul></li>
+<li><h3 id="kompresi">Kompresi</h3>
+<ul>
+<li>Pastikan untuk menonton video teori informasi terlebih dahulu</li>
+<li>Computerphile (video):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Lto-ajuqW3w">Kompresi</a></li>
+<li><a href="https://www.youtube.com/watch?v=M5c_RFKVkko">Entropi dalam Kompresi</a></li>
+<li><a href="https://www.youtube.com/watch?v=umTbivyJoiI">Pohon Terbalik (Pohon Huffman)</a></li>
+<li><a href="https://www.youtube.com/watch?v=DV8efuB3h2g">EXTRA BITS / TRITS - Pohon Huffman</a></li>
+<li><a href="https://www.youtube.com/watch?v=goOa3DGezUA">Kompresi Elegan dalam Teks (Metode LZ 77)</a></li>
+<li><a href="https://www.youtube.com/watch?v=cCDCfoHTsaU">Kompresi Teks Memenuhi Probabilitas</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H">Video Kepala Kompresor</a></li>
+<li><a href="https://www.youtube.com/watch?v=whGwm0Lky2s">(opsional) Google Developers Live: GZIP saja tidak cukup!</a></li>
+</ul></li>
+<li><h3 id="keamanan-komputer">Keamanan komputer</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">MIT (23 video)</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GqmQg-cszw4&amp;index=1&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Introduction, Threat Models</a></li>
+<li><a href="https://www.youtube.com/watch?v=6bwzNg5qQ0o&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&amp;index=2">Control Hijacking Attacks</a></li>
+<li><a href="https://www.youtube.com/watch?v=drQyrzRoRiA&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&amp;index=3">Buffer Overflow Exploits and Defenses</a></li>
+<li><a href="https://www.youtube.com/watch?v=6SIJmoE9L9g&amp;index=4&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Privilege Separation</a></li>
+<li><a href="https://www.youtube.com/watch?v=8VqTSY-11F4&amp;index=5&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Capabilities</a></li>
+<li><a href="https://www.youtube.com/watch?v=VEV74hwASeU&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&amp;index=6">Sandboxing Native Code</a></li>
+<li><a href="https://www.youtube.com/watch?v=chkFBigodIw&amp;index=7&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Web Security Model</a></li>
+<li><a href="https://www.youtube.com/watch?v=EBQIGy1ROLY&amp;index=8&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Securing Web Applications</a></li>
+<li><a href="https://www.youtube.com/watch?v=yRVZPvHYHzw&amp;index=9&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Symbolic Execution</a></li>
+<li><a href="https://www.youtube.com/watch?v=SIEVvk3NVuk&amp;index=11&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Network Security</a></li>
+<li><a href="https://www.youtube.com/watch?v=QOtA76ga_fY&amp;index=12&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Network Protocols</a></li>
+<li><a href="https://www.youtube.com/watch?v=PuVMkSEcPiI&amp;index=15&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Side-Channel Attacks</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="pengumpulan-sampah">Pengumpulan sampah</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iHVs_HkjdmI">GC dalam Python (video)</a></li>
+<li><a href="https://www.infoq.com/presentations/garbage-collection-benefits">Deep Dive Java: Pengumpulan Sampah itu Baik!</a></li>
+<li><a href="https://www.youtube.com/watch?v=P-8Z0-MhdQs&amp;list=PLdzf4Clw0VbOEWOS_sLhT_9zaiQDrS5AR&amp;index=3">Deep Dive Python: Pengumpulan Sampah di CPython (video)</a></li>
+</ul></li>
+<li><h3 id="pemrograman-paralel">Pemrograman Paralel</h3>
+<ul>
+<li><a href="https://www.coursera.org/learn/parprog1/home/week/1">Coursera (Scala)</a></li>
+<li><a href="https://www.youtube.com/watch?v=uY85GkaYzBk">Python Efisien untuk Komputasi Paralel Berkinerja Tinggi (video)</a></li>
+</ul></li>
+<li><h3 id="pengiriman-pesan-serialisasi-dan-sistem-queueing">Pengiriman Pesan, Serialisasi, dan Sistem Queueing</h3>
+<ul>
+<li><a href="https://thrift.apache.org/">Thrift</a>
+<ul>
+<li><a href="http://thrift-tutorial.readthedocs.io/en/latest/intro.html">Tutorial</a></li>
+</ul></li>
+<li><a href="https://developers.google.com/protocol-buffers/">Protocol Buffers</a>
+<ul>
+<li><a href="https://developers.google.com/protocol-buffers/docs/tutorials">Tutorials</a></li>
+</ul></li>
+<li><a href="http://www.grpc.io/">gRPC</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5tmPvSe7xXQ&amp;list=PLcTqM9n_dieN0k1nSeN36Z_ppKnvMJoly&amp;index=1">gRPC 101 untuk Pengembang Java (video)</a></li>
+</ul></li>
+<li><a href="http://redis.io/">Redis</a>
+<ul>
+<li><a href="http://try.redis.io/">Tutorial</a></li>
+</ul></li>
+<li><a href="https://aws.amazon.com/sqs/">Amazon SQS (queue)</a></li>
+<li><a href="https://aws.amazon.com/sns/">Amazon SNS (pub-sub)</a></li>
+<li><a href="https://www.rabbitmq.com/">RabbitMQ</a>
+<ul>
+<li><a href="https://www.rabbitmq.com/getstarted.html">Memulai</a></li>
+</ul></li>
+<li><a href="http://www.celeryproject.org/">Celery</a>
+<ul>
+<li><a href="http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html">Langkah Awal dengan Celery</a></li>
+</ul></li>
+<li><a href="http://zeromq.org/">ZeroMQ</a>
+<ul>
+<li><a href="http://zeromq.org/intro:read-the-manual">Intro - Baca Manual</a></li>
+</ul></li>
+<li><a href="http://activemq.apache.org/">ActiveMQ</a></li>
+<li><a href="http://kafka.apache.org/documentation.html#introduction">Kafka</a></li>
+<li><a href="http://msgpack.org/index.html">MessagePack</a></li>
+<li><a href="https://avro.apache.org/">Avro</a></li>
+</ul></li>
+<li><h3 id="a">A*</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">Algoritma Pencarian</a></li>
+<li><a href="https://www.youtube.com/watch?v=KNXfSOx4eEE">A * Tutorial Pathfinding (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=-L-WgKMFuhE">A * Pathfinding (E01: penjelasan algoritma) (video)</a></li>
+</ul></li>
+<li><h3 id="transformasi-fourier-cepat">Transformasi Fourier Cepat</h3>
+<ul>
+<li><a href="https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/">Panduan Interaktif Untuk Transformasi Fourier</a></li>
+<li><a href="http://www.askamathematician.com/2012/09/q-what-is-a-fourier-transform-what-is-it-used-for/">Apa itu Transformasi Fourier? Untuk apa itu digunakan?</a></li>
+<li><a href="https://www.youtube.com/watch?v=Xxut2PN-V8Q">Apa itu Transformasi Fourier? (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iTMn0Kt18tg&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=4">Bagilah &amp; Taklukkan: FFT (video)</a></li>
+<li><a href="http://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/">Memahami FFT</a></li>
+</ul></li>
+<li><h3 id="bloom-filter">Bloom Filter</h3>
+<ul>
+<li>Given a Bloom filter with m bits and k hashing functions, both insertion and membership testing are O(k)</li>
+<li><a href="https://www.youtube.com/watch?v=-SuTGoFYjZs">Filter Bloom (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=qBTdukbzc78">Filter Bloom | Penambangan Kumpulan Data Besar-besaran | Universitas Stanford (video)</a></li>
+<li><a href="http://billmill.org/bloomfilter-tutorial/">Tutorial</a></li>
+<li><a href="http://blog.michaelschmatz.com/2016/04/11/how-to-write-a-bloom-filter-cpp/">Cara Menulis Aplikasi Bloom Filter</a></li>
+</ul></li>
+<li><h3 id="hyperloglog">HyperLogLog</h3>
+<ul>
+<li><a href="http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html">Cara Menghitung Miliaran Objek Berbeda Hanya Menggunakan Memori 1.5KB</a></li>
+</ul></li>
+<li><h3 id="locality-sensitive-hashing">Locality-Sensitive Hashing</h3>
+<ul>
+<li>Digunakan untuk menentukan kesamaan dokumen</li>
+<li>Kebalikan dari MD5 atau SHA yang digunakan untuk menentukan apakah 2 dokumen / string sama persis</li>
+<li><a href="http://ferd.ca/simhashing-hopefully-made-simple.html">Simhashing (semoga) menjadi sederhana</a></li>
+</ul></li>
+<li><h3 id="van-emde-boas-trees">van Emde Boas Trees</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hmReJCupbNU&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=6">Bagilah &amp; Taklukkan: Pohon van Emde Boas (video)</a></li>
+<li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/lecture-notes/MIT6_046JS12_lec15.pdf">Catatan Kuliah MIT</a></li>
+</ul></li>
+<li><h3 id="augmented-data-structures">Augmented Data Structures</h3>
+<ul>
+<li><a href="https://archive.org/details/ucberkeley_webcast_zksIj9O8_jc">CS 61B Kuliah 39: Augmented Data Structures</a></li>
+</ul></li>
+<li><h3 id="balanced-search-trees">Balanced search trees</h3>
+<ul>
+<li>Ketahui setidaknya satu jenis pohon biner yang seimbang (dan ketahui bagaimana implementasinya):</li>
+<li>“Di antara pohon pencarian seimbang, AVL dan 2/3 trees sekarang sudah ketinggalan zaman, dan red-black trees tampaknya lebih populer. Struktur data pengorganisasian mandiri yang sangat menarik adalah splay trees, yang menggunakan rotasi untuk memindahkan kunci apa pun yang diakses ke root.” - Skiena</li>
+<li>Dari jumlah tersebut, saya memilih untuk menerapkan splay tree. Dari apa yang saya baca, Anda tidak akan menerapkan pohon pencarian seimbang (balanced search tree) dalam wawancara Anda. Tapi saya ingin eksposur ke pengkodean satu dan hadapi saja, splay trees adalah lutut lebah. Saya memang membaca banyak kode red-black tree code
+<ul>
+<li>Splay tree: menyisipkan, mencari, menghapus fungsi Jika Anda akhirnya menerapkan pohon merah / hitam coba ini saja:</li>
+<li>Fungsi pencarian dan penyisipan, melewatkan penghapusan</li>
+</ul></li>
+<li>Saya ingin mempelajari lebih lanjut tentang B-Tree karena digunakan secara luas dengan kumpulan data yang sangat besar</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree">Self-balancing binary search tree</a></p></li>
+<li><strong>AVL trees</strong>
+<ul>
+<li>Dalam praktek: Dari apa yang saya tahu, ini tidak banyak digunakan dalam praktiknya, tetapi saya bisa melihat di mana mereka akan berada: AVL trees (Pohon AVL) adalah struktur lain yang mendukung pencarian, penyisipan, dan penghapusan O(log n). Ini lebih seimbang daripada red-black trees, menyebabkan penyisipan dan pemindahan lebih lambat tetapi pengambilan lebih cepat. Ini membuatnya menarik untuk struktur data yang dapat dibangun sekali dan dimuat tanpa rekonstruksi, seperti kamus bahasa (atau kamus program, seperti opcode assembler atau interpreter)</li>
+<li><a href="https://www.youtube.com/watch?v=FNeL18KsWPc&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=6">MIT AVL Trees / AVL Sort (video)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/Qq5E0/avl-trees">AVL Trees (video)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation">Implementasi AVL Tree (video)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge">Split Dan Merge</a></li>
+</ul></li>
+<li><strong>Splay trees</strong>
+<ul>
+<li>Dalam praktek: Splay trees (pohon bentang) biasanya digunakan dalam implementasi cache, pengalokasi memori, router, pengumpul sampah, kompresi data, tali (pengganti string yang digunakan untuk string teks panjang), di Windows NT (dalam memori virtual, jaringan, dan kode sistem file) dll.</li>
+<li><a href="https://archive.org/details/ucberkeley_webcast_G5QIXywcJlY">CS 61B: Splay Trees (video)</a></li>
+<li>Kuliah MIT: Splay Trees:
+<ul>
+<li>Menjadi sangat matematis, tetapi perhatikan 10 menit terakhir dengan pasti.</li>
+<li><a href="https://www.youtube.com/watch?v=QnPl_Y6EqMo">Video</a></li>
+</ul></li>
+</ul></li>
+<li><strong>Red/black trees</strong>
+<ul>
+<li>Ini adalah terjemahan dari sebuah 2-3 tree (lihat dibawah).</li>
+<li>Dalam praktek: Red/black trees (Pohon merah / hitam) menawarkan jaminan kasus terburuk untuk waktu penyisipan, waktu penghapusan, dan waktu pencarian. Hal ini tidak hanya membuatnya berharga dalam aplikasi yang sensitif terhadap waktu seperti aplikasi waktu nyata, tetapi juga menjadikannya sebagai blok bangunan yang berharga dalam struktur data lain yang memberikan jaminan kasus terburuk; sebagai contoh, banyak struktur data yang digunakan dalam geometri komputasi dapat didasarkan pada red/black trees, dan Penjadwal yang Benar-Benar Adil yang digunakan dalam kernel Linux saat ini menggunakan red/black trees. Di Java versi 8, Collection HashMap telah dimodifikasi sedemikian rupa sehingga alih-alih menggunakan LinkedList untuk menyimpan elemen identik dengan kode hash yang buruk, red/black trees digunakan</li>
+<li><a href="https://youtu.be/1W3x0f_RmUo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3871">Aduni - Algoritma - Kuliah 4 (link lompat ke titik awal) (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=hm2GHwyKF1o&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=5">Aduni - Algoritma - Kuliah 5 (video)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree">Red-Black Tree</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-binary-search-and-red-black-trees/">Pengantar Pencarian Biner Dan Red-Black Tree</a></li>
+</ul></li>
+<li><strong>2-3 search trees</strong>
+<ul>
+<li>Dalam praktek: 2-3 trees memiliki penyisipan yang lebih cepat dengan mengorbankan pencarian yang lebih lambat (karena ketinggian lebih banyak dibandingkan dengan AVL trees).</li>
+<li>Anda akan sangat jarang menggunakan 2-3 trees karena implementasinya melibatkan berbagai jenis node. Sebaliknya, orang menggunakan red–black trees.</li>
+<li><a href="https://www.youtube.com/watch?v=C3SsdUqasD4&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&amp;index=2">Intuisi dan Definisi 23-Trees (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iYvBtGKsqSg&amp;index=3&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Tampilan Biner dari 23-Trees</a></li>
+<li><a href="https://www.youtube.com/watch?v=TOb1tuEZ2X4&amp;index=5&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">2-3 Trees (pengajian siswa) (video)</a></li>
+</ul></li>
+<li><strong>2-3-4 Trees (aka 2-4 trees)</strong>
+<ul>
+<li>Dalam praktek: Untuk setiap 2-4 trees, ada red–black trees yang sesuai dengan elemen data dalam urutan yang sama. Operasi penyisipan dan penghapusan pada 2-4 trees juga setara dengan pembalikan warna dan rotasi pada red–black trees. Hal ini membuat 2-4 trees menjadi alat penting untuk memahami logika di balik red–black trees, dan inilah mengapa banyak teks algoritme pengantar memperkenalkan 2-4 trees tepat sebelum red–black trees, meskipun <strong>2-4 trees tidak sering digunakan dalam praktik</strong>.</li>
+<li><a href="https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q">CS 61B Kuliah 26: Pohon Pencarian Seimbang (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=DQdMYevEyE4&amp;index=4&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Bawah Atas 234-Trees (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2679VQ26Fp4&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&amp;index=5">Atas Bawah 234-Trees (video)</a></li>
+</ul></li>
+<li><strong>N-ary (K-ary, M-ary) trees</strong>
+<ul>
+<li>catatan: N atau K adalah faktor percabangan (cabang maks)</li>
+<li>pohon biner adalah pohon 2-ary, dengan faktor percabangan = 2</li>
+<li>2-3 pohon adalah 3-ary</li>
+<li><a href="https://en.wikipedia.org/wiki/K-ary_tree">K-Ary Tree</a></li>
+</ul></li>
+<li><strong>B-Trees</strong>
+<ul>
+<li>Fakta menyenangkan: ini adalah misteri, tetapi B bisa berarti Boeing, Balanced, atau Bayer (co-inventor).</li>
+<li>Dalam praktek: B-Trees banyak digunakan dalam database. Kebanyakan filesystem modern menggunakan B-tree (atau Variants). Sebagai tambahannya penggunaannya dalam database, B-tree juga digunakan dalam sistem file untuk memungkinkan akses acak cepat ke sembarang blokir di file tertentu. Masalah dasarnya adalah mengubah alamat file blok i menjadi blok disk (atau mungkin ke alamat sektor kepala silinder)</li>
+<li><a href="https://en.wikipedia.org/wiki/B-tree">B-Tree</a></li>
+<li><a href="http://btechsmartclass.com/data_structures/b-trees.html">Struktur Data B-Tree</a></li>
+<li><a href="https://www.youtube.com/watch?v=I22wEC1tTGo&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&amp;index=6">Pengantar B-Trees (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=s3bCdZGrgpA&amp;index=7&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Definisi dan Penyisipan B-Tree (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=svfnVhJOfMc&amp;index=8&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Penghapusan B-Tree (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=V3omVLzI0WE&amp;index=7&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf">MIT 6.851 - Model Hirarki Memori (video)</a> - covers cache-oblivious B-Trees, very interesting data structures - the first 37 minutes are very technical, may be skipped (B is block size, cache line size)</li>
+</ul></li>
+</ul></li>
+<li><h3 id="k-d-trees">k-D Trees</h3>
+<ul>
+<li>Bagus untuk menemukan jumlah titik dalam persegi panjang atau objek berdimensi lebih tinggi</li>
+<li>Cocok untuk tetangga terdekat</li>
+<li><a href="https://www.youtube.com/watch?v=W94M9D_yXKk">Kd Trees (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y4ZgLlDfKDg">Algoritma kNN K-d tree (video)</a></li>
+</ul></li>
+<li><h3 id="skip-lists">Skip lists</h3>
+-“Ini adalah semacam struktur data kultus” - Skiena
+<ul>
+<li><a href="https://www.youtube.com/watch?v=2g9OSRKJuzM&amp;index=10&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Pengacakan: Skip lists (video)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Skip_list">Untuk animasi dan sedikit lebih detail</a></li>
+</ul></li>
+<li><h3 id="aliran-jaringan">Aliran Jaringan</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Tl90tNtKvxs">Ford-Fulkerson dalam 5 menit - Contoh langkah demi langkah (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=v1VgJmkEJW0">Algoritma Ford-Fulkerson (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2vhN4Ice5jI">Aliran Jaringan (video)</a></li>
+</ul></li>
+<li><h3 id="disjoint-sets-union-find">Disjoint Sets &amp; Union Find</h3>
+<ul>
+<li><a href="https://archive.org/details/ucberkeley_webcast_MAEGXTwmUsI">UCB 61B - Set Pemutusan; Penyortiran &amp; pemilihan (video)</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-part1/home/week/1">Algoritma Sedgewick - Union-Find (6 video)</a></li>
+</ul></li>
+<li><h3 id="matematika-untuk-pemrosesan-cepat">Matematika untuk Pemrosesan Cepat</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eCaXlAaN2uE&amp;index=11&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Aritmatika Integer, Perkalian Karatsuba (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ru7mWZJlRQg">Teorema Sisa Cina (digunakan dalam kriptografi) (video)</a></li>
+</ul></li>
+<li><h3 id="treap">Treap</h3>
+<ul>
+<li>Combination of a binary search tree and a heap</li>
+<li><a href="https://en.wikipedia.org/wiki/Treap">Treap</a></li>
+<li><a href="https://www.youtube.com/watch?v=6podLUYinH8">Struktur Data: Penjelasan hierarki (video)</a></li>
+<li><a href="https://www.cs.cmu.edu/~scandal/papers/treaps-spaa98.pdf">Aplikasi dalam operasi set</a></li>
+</ul></li>
+<li><h3 id="pemrograman-linear-video">Pemrograman Linear (video)</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=M4K6HYLHREQ">Pemrograman Linear</a></li>
+<li><a href="https://www.youtube.com/watch?v=2ACJ9ewUC6U">Menemukan biaya minimum</a></li>
+<li><a href="https://www.youtube.com/watch?v=8AA_81xI3ik">Menemukan nilai maksimum</a></li>
+<li><a href="https://www.youtube.com/watch?v=44pAWI7v5Zk">Memecahkan Persamaan Linear dengan Python - Algoritma Simpleks</a></li>
+</ul></li>
+<li><h3 id="geometry-convex-hull-video">Geometry, Convex hull (video)</h3>
+<ul>
+<li><a href="https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3164">Grafik Alg. IV: Pengantar algoritma geometris - Kuliah 9</a></li>
+<li><a href="https://www.youtube.com/watch?v=J5aJEcOr6Eo&amp;index=10&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">Algoritma Geometris: Graham &amp; Jarvis - Kuliah 10</a></li>
+<li><a href="https://www.youtube.com/watch?v=EzeYI7p9MjU&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=2">Bagilah &amp; Taklukkan: Convex Hull, Median Finding</a></li>
+</ul></li>
+<li><h3 id="matematika-diskrit">Matematika diskrit</h3>
+<ul>
+<li>lihat video di bawah ini</li>
+</ul></li>
+<li><h3 id="pembelajaran-mesin-machine-learning">Pembelajaran Mesin (Machine Learning)</h3>
+<ul>
+<li>Kenapa ML?
+<ul>
+<li><a href="https://backchannel.com/how-google-is-remaking-itself-as-a-machine-learning-first-company-ada63defcb70">Bagaimana Google Mengubah Dirinya Sebagai Perusahaan Machine Learning First</a></li>
+<li><a href="https://www.youtube.com/watch?v=QSaZGT4-6EY">Pembelajaran Mendalam Skala Besar untuk Sistem Komputer Cerdas (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=X769cyzBNVw">Pembelajaran Mendalam dan Dapat Dipahami versus Rekayasa Perangkat Lunak dan Verifikasi oleh Peter Norvig</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=Ja2hxBAwG_0">Alat pembelajaran Mesin Cloud Google (video)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal">Resep Pembelajaran Mesin Google Developers (Scikit Learn &amp; Tensorflow) (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=oZikw5k_2FM">Tensorflow (video)</a></li>
+<li><a href="https://www.tensorflow.org/versions/r0.11/tutorials/index.html">Tutorial Tensorflow</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2016/04/neural-networks-python-theano/">Panduan Praktis untuk mengimplementasikan Jaringan Neural dengan Python (menggunakan Theano)</a></li>
+<li>Kursus:
+<ul>
+<li><a href="https://www.coursera.org/learn/machine-learning">Kursus pemula yang bagus: Pembelajaran Mesin</a> - <a href="https://www.youtube.com/playlist?list=PLZ9qNFMHZ-A4rycgrgOYma6zxF4BZGGPW">video saja</a> - lihat video 12-18 untuk review aljabar linier (14 dan 15 adalah duplikat)</li>
+<li><a href="https://www.coursera.org/learn/neural-networks">Jaringan Neural untuk Pembelajaran Mesin</a></li>
+<li><a href="https://www.udacity.com/course/deep-learning--ud730">Nanodegree Deep Learning Google</a></li>
+<li><a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009">Nanodegree Machine Learning Engineer Google / Kaggle</a></li>
+<li><a href="https://www.udacity.com/drive">Nanodegree, Insinyur Mobil Mengemudi Mandiri</a></li>
+<li><a href="http://www.thisismetis.com/explore-data-science">Kursus Online Metis ($99 selama 2 bulan)</a></li>
+</ul></li>
+<li>Sumber:
+<ul>
+<li>Buku:
+<ul>
+<li><a href="https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/">Pembelajaran Mesin Python</a></li>
+<li><a href="https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">Ilmu Data dari Awal: Prinsip Pertama dengan Python</a></li>
+<li><a href="https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413/">Pengantar Machine Learning dengan Python</a></li>
+</ul></li>
+<li><a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">Pembelajaran Mesin untuk Insinyur Perangkat Lunak</a></li>
+<li>Data School: http://www.dataschool.io/</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>–</p>
+<h2 id="detail-tambahan-tentang-beberapa-subjek">Detail Tambahan tentang Beberapa Subjek</h2>
+<pre><code>Saya menambahkan ini untuk memperkuat beberapa ide yang sudah disajikan di atas, tetapi tidak ingin memasukkannya di atas karena terlalu banyak. Sangat mudah untuk melakukannya secara berlebihan pada suatu subjek.
+Anda ingin dipekerjakan di abad ini, bukan?</code></pre>
+<ul>
+<li><strong>SOLID</strong>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=TMuno5RZNeE">Bob Martin SOLID Principles of Object Oriented and Agile Design (video)</a></li>
+<li>[ ] S - <a href="http://www.oodesign.com/single-responsibility-principle.html">Single Responsibility Principle (Prinsip Tanggung Jawab Tunggal)</a> | <a href="http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html">Tanggung jawab tunggal untuk setiap Objek</a>
+<ul>
+<li><a href="https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk">lebih banyak rasa</a></li>
+</ul></li>
+<li>[ ] O - <a href="http://www.oodesign.com/open-close-principle.html">Open/Closed Principle (Prinsip Terbuka / Tertutup)</a> | <a href="https://en.wikipedia.org/wiki/Open/closed_principle">Pada tingkat produksi, Objek siap untuk ekstensi tetapi tidak untuk modifikasi</a>
+<ul>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1&amp;hl=en">lebih banyak rasa</a></li>
+</ul></li>
+<li>[ ] L - <a href="http://www.oodesign.com/liskov-s-substitution-principle.html">Liskov Substitution Principle (Prinsip Substitusi Liskov)</a> | <a href="http://stackoverflow.com/questions/56860/what-is-the-liskov-substitution-principle">Class Dasar dan Class Turunan mengikuti prinsip ‘IS A’</a>
+<ul>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh&amp;hl=en">lebih banyak rasa</a></li>
+</ul></li>
+<li>[ ] I - <a href="http://www.oodesign.com/interface-segregation-principle.html">Interface segregation principle (Prinsip pemisahan antarmuka)</a> | klien tidak boleh dipaksa untuk mengimplementasikan antarmuka yang tidak mereka gunakan
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3CtAfl7aXAQ">Prinsip Pemisahan Antarmuka dalam 5 menit (video)</a></li>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi&amp;hl=en">lebih banyak rasa</a></li>
+</ul></li>
+<li>[ ] D - <a href="http://www.oodesign.com/dependency-inversion-principle.html">Dependency Inversion principle (Prinsip Ketergantungan Inversi)</a> | Kurangi dependency dalam komposisi objek.
+<ul>
+<li><a href="http://stackoverflow.com/questions/62539/what-is-the-dependency-inversion-principle-and-why-is-it-important">Mengapa Prinsip Pembalikan Ketergantungan Dan Mengapa Itu Penting</a></li>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&amp;hl=en">lebih banyak rasa</a></li>
+</ul></li>
+</ul></li>
+<li><strong>Union-Find</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/JssSY/overview">Gambaran</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/EM5D0/naive-implementations">Implementasi yang Naif</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/Mxu0w/trees">Pohon</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/qb4c2/union-by-rank">Union Berdasarkan Pangkat</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/Q9CVI/path-compression">Kompresi Jalur</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/GQQLN/analysis-optional">Opsi Analisis</a></li>
+</ul></li>
+<li><strong>Lebih banyak Pemrograman Dinamis</strong> (videos)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OQ5jsbhAv_M&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=19">6.006: Pemrograman Dinamis I: Fibonacci, Jalur Terpendek</a></li>
+<li><a href="https://www.youtube.com/watch?v=ENyox7kNKeY&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=20">6.006: Pemrograman Dinamis II: Justifikasi Teks, Blackjack</a></li>
+<li><a href="https://www.youtube.com/watch?v=ocZMDMZwhCY&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=21">6.006: DP III: Tanda kurung, Edit Jarak, Knapsack</a></li>
+<li><a href="https://www.youtube.com/watch?v=tp4_UXaVyx8&amp;index=22&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">6.006: DP IV: Guitar Fingering, Tetris, Super Mario Bros.</a></li>
+<li><a href="https://www.youtube.com/watch?v=Tw1k46ywN6E&amp;index=14&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">6.046: Pemrograman Dinamis &amp; DP Lanjutan</a></li>
+<li><a href="https://www.youtube.com/watch?v=NzgFUwOaoIw&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=15">6.046: Pemrograman Dinamis: Jalur Terpendek Semua Pasangan</a></li>
+<li><a href="https://www.youtube.com/watch?v=krZI60lKPek&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=12">6.046: Pemrograman Dinamis (pengkajian siswa)</a></li>
+</ul></li>
+<li><strong>Pemrosesan Graph Lanjutan</strong> (video)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=mUBmcbbJNf4&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=27">Algoritma Terdistribusi Sinkron: Pemutusan Simetri. Jalur Terpendek yang Merentangkan Pohon</a></li>
+<li><a href="https://www.youtube.com/watch?v=kQ-UQAzcnzA&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=28">Algoritma Terdistribusi Asynchronous: Shortest-Paths Spanning Trees</a></li>
+</ul></li>
+<li>MIT <strong>Probabilitas</strong> (matematika, dan lakukan perlahan, yang bagus untuk hal-hal matematika) (video):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SmFwFdESMHI&amp;index=18&amp;list=PLB7540DEDD482705B">MIT 6.042J - Pengenalan Probabilitas</a></li>
+<li><a href="https://www.youtube.com/watch?v=E6FbvM-FGZ8&amp;index=19&amp;list=PLB7540DEDD482705B">MIT 6.042J - Probabilitas Bersyarat</a></li>
+<li><a href="https://www.youtube.com/watch?v=l1BCv3qqW4A&amp;index=20&amp;list=PLB7540DEDD482705B">DENGAN 6.042J - Kemerdekaan</a></li>
+<li><a href="https://www.youtube.com/watch?v=MOfhhFaQdjw&amp;list=PLB7540DEDD482705B&amp;index=21">MIT 6.042J - Variabel Acak</a></li>
+<li><a href="https://www.youtube.com/watch?v=gGlMSe7uEkA&amp;index=22&amp;list=PLB7540DEDD482705B">MIT 6.042J - Harapan I.</a></li>
+<li><a href="https://www.youtube.com/watch?v=oI9fMUqgfxY&amp;index=23&amp;list=PLB7540DEDD482705B">MIT 6.042J - Harapan II</a></li>
+<li><a href="https://www.youtube.com/watch?v=q4mwO2qS2z4&amp;index=24&amp;list=PLB7540DEDD482705B">MIT 6.042J - Penyimpangan Besar</a></li>
+<li><a href="https://www.youtube.com/watch?v=56iFMY8QW2k&amp;list=PLB7540DEDD482705B&amp;index=25">MIT 6.042J - Jalan Acak</a></li>
+</ul></li>
+<li><p><a href="https://www.youtube.com/watch?v=oDniZCmNmNw&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=19">Simonson: Algoritma Perkiraan (video)</a></p></li>
+<li><strong>Pencocokan String</strong>
+<ul>
+<li>Rabin-Karp (videos):
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/c0Qkw/rabin-karps-algorithm">Algoritma Rabin Karps</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation">Prekomputasi</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/h4ZLc/optimization-implementation-and-analysis">Optimasi: Implementasi dan Analisis</a></li>
+<li><a href="https://www.youtube.com/watch?v=BRO7mVIFt08&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=9">Penggandaan Meja, Karp-Rabin</a></li>
+<li><a href="https://www.youtube.com/watch?v=w6nuXg0BISo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=32">Rolling Hashes, Analisis Amortisasi</a></li>
+</ul></li>
+<li>Knuth-Morris-Pratt (KMP):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5i7oKodCRJo">Algoritma Pencocokan String Knuth-Morris-Pratt (KMP)</a></li>
+</ul></li>
+<li>Algoritma pencarian string Boyer – Moore
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm">Algoritma Pencarian String Boyer-Moore</a></li>
+<li><a href="https://www.youtube.com/watch?v=QDZpzctPf10">Algoritma Boyer-Moore-Horspool Pencarian String Lanjutan (video)</a></li>
+</ul></li>
+<li><a href="https://www.coursera.org/learn/algorithms-on-strings/home/week/1">Coursera: Algoritma pada String</a>
+<ul>
+<li>dimulai dengan baik, tetapi pada saat melewati KMP, hal itu menjadi lebih rumit dari yang seharusnya</li>
+<li>penjelasan yang bagus tentang percobaan</li>
+<li>bisa dilewati</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Penyortiran</strong></p>
+<ul>
+<li>Kuliah Stanford tentang penyortiran:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ENp00xylP7c&amp;index=15&amp;list=PLFE6E58F856038C69">Kuliah 15 | Abstraksi Pemrograman (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=y4M9IVgrVKo&amp;index=16&amp;list=PLFE6E58F856038C69">Kuliah 16 | Abstraksi Pemrograman (video)</a></li>
+</ul></li>
+<li>Shai Simonson, <a href="http://www.aduni.org/">Aduni.org</a>:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=odNJmw5TOEE&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=2">Algoritma - Sortasi - Kuliah 2 (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=hj8YKFTFKEE&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=3">Algoritma - Sorting II - Kuliah 3 (video)</a></li>
+</ul></li>
+<li>Steven Skiena memberi kuliah tentang penyortiran:
+<ul>
+<li><a href="https://youtu.be/ute-pmMkyuk?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=1600">kuliah dimulai pada 26:46 (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=yLvp-pB8mak&amp;index=8&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">kuliah dimulai pada 27:40 (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=q7K9otnzlfE&amp;index=9&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">kuliah dimulai pada 35:00 (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=TvqIGu9Iupw&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=10">kuliah dimulai pada 23:50 (video)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="seri-video">Seri Video</h2>
+<p>Duduk dan nikmati. “Netflix dan keterampilan”: P</p>
+<ul>
+<li><p><a href="https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr">Daftar masalah Pemrograman Dinamis individu (masing-masing pendek)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL038BE01D3BAEFDB0">x86 Arsitektur, Perakitan, Aplikasi (11 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8">MIT 18.06 Linear Aljabar, Musim Semi 2005 (35 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL3B08AE665AB9002A">Luar Biasa - MIT Calculus Revisited: Single Variable Calculus</a></p></li>
+<li><p><a href="http://www.infocobuild.com/education/audio-video-courses/computer-science/cs70-spring2015-berkeley.html">Ilmu Komputer 70, 001 - Musim Semi 2015 - Matematika Diskrit dan Teori Probabilitas</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL3o9D4Dl2FJ9q0_gtFXPh_H4POI5dK0yG">Matematika Diskrit oleh Shai Simonson (19 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLGxuz-nmYlQPOc4w1Kp2MZrdqOOm4Jxeo">Matematika Diskrit Bagian 1 oleh Sarada Herke (5 video)</a></p></li>
+<li>CSE373 - Analysis of Algorithms (25 videos)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ZFjhkohHdAA&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=1">Kuliah Skiena dari Algoritma Design Manual</a></li>
+</ul></li>
+<li><p><a href="https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd">UC Berkeley 61B (Musim Semi 2014): Struktur Data (25 video)</a></p></li>
+<li><p><a href="https://archive.org/details/ucberkeley-webcast-PL4BBB74C7D2A1049C">UC Berkeley 61B (Musim Gugur 2006): Struktur Data (39 video)</a></p></li>
+<li><p><a href="https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iCl2-D-FS5mk0jFF6cYSJs_">UC Berkeley 61C: Struktur Mesin (26 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO">OOSE: Software Dev Menggunakan UML dan Java (21 video)</a></p></li>
+<li><p>~~ <a href="https://www.youtube.com/watch?v=UH0QYvtP7Rk&amp;index=20&amp;list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr">UC Berkeley CS 152: Arsitektur dan Teknik Komputer (20 video)</a>~~</p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLDSlqjcPpoL64CJdF0Qee5oWqGS6we_Yu">MIT 6.004: Struktur Komputasi (49 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL5PHm2jkkXmi5CxxI7b3JCL1TWybTDtKq">Carnegie Mellon - Kuliah Arsitektur Komputer (39 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;nohtml5=False">MIT 6.006: Pengantar Algoritma (47 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=zm2VP0kHl1M&amp;list=PL6535748F59DCA484">MIT 6.033: Teknik Sistem Komputer (22 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi">MIT 6.034 Artificial Intelligence, Fall 2010 (30 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=L3LMbpZIKhQ&amp;list=PLB7540DEDD482705B">MIT 6.042J: Matematika untuk Ilmu Komputer, Musim Gugur 2010 (25 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=2P-yW7LQr08&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">MIT 6.046: Desain dan Analisis Algoritma (34 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=phxsQrZQupo&amp;list=PL_2Bwul6T-A7OldmhGODImZL8KEVE38X7">MIT 6.050J: Information and Entropy, Spring 2008 (19 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=T0yzrZL1py0&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&amp;index=1">MIT 6.851: Struktur Data Lanjutan (22 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c">MIT 6.854: Algoritma Lanjutan, Musim Semi 2016 (24 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf">Harvard COMPSCI 224: Algoritma Lanjutan (25 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=GqmQg-cszw4&amp;index=1&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">MIT 6.858 Computer Systems Security, Musim Gugur 2014</a></p></li>
+<li><p><a href="https://www.youtube.com/view_play_list?p=9D558D49CA734A02">Stanford: Paradigma Pemrograman (27 video)</a></p></li>
+<li><a href="https://www.youtube.com/playlist?list=PL6N5qY2nvvJE8X75VkXglSrVhLv1tVcfy">Pengantar Kriptografi oleh Christof Paar</a>
+<ul>
+<li><a href="http://www.crypto-textbook.com/">Situs Kursus bersama dengan Slide dan Kumpulan Soal</a></li>
+</ul></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV">Menambang Kumpulan Data Besar-besaran - Universitas Stanford (94 video)</a></p></li>
+<li><p><a href="https://www.youtube.com/user/DrSaradaHerke/playlists?shelf_id=5&amp;view=50&amp;sort=dd">Teori Grafik oleh Sarada Herke (67 video)</a></p></li>
+</ul>
+<h2 id="kursus-ilmu-komputer">Kursus Ilmu Komputer</h2>
+<ul>
+<li><a href="https://github.com/open-source-society/computer-science">Direktori Kursus CS Online</a></li>
+<li><a href="https://github.com/prakhar1989/awesome-courses">Direktori Kursus CS (banyak dengan kuliah online)</a></li>
+</ul>
+<h2 id="implementasi-algoritma">Implementasi Algoritma</h2>
+<ul>
+<li><a href="https://algs4.cs.princeton.edu/code">Implementasi Berbagai Algoritma oleh Princeton University)</a></li>
+</ul>
+<h2 id="dokumen">Dokumen</h2>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~crary/819-f09/">Suka makalah klasik?</a></li>
+<li><a href="http://spinroot.com/courses/summer/Papers/hoare_1978.pdf">1978: Mengkomunikasikan Proses Berurutan</a>
+<ul>
+<li><a href="https://godoc.org/github.com/thomas11/csp">implementasi di Go</a></li>
+</ul></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">2003: Sistem Berkas Google</a>
+<ul>
+<li>digantikan oleh Colossus pada tahun 2012</li>
+</ul></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf">2004: MapReduce: Pemrosesan Data yang Disederhanakan pada Kluster Besar</a>
+<ul>
+<li>kebanyakan digantikan oleh Cloud Dataflow?</li>
+</ul></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">2006: Bigtable: Sistem Penyimpanan Terdistribusi untuk Data Terstruktur</a>
+<ul>
+<li><a href="https://cloud.google.com/files/BigQueryTechnicalWP.pdf">Melihat ke dalam Google BigQuery</a></li>
+</ul></li>
+<li><a href="https://research.google.com/archive/chubby-osdi06.pdf">2006: Layanan Chubby Lock untuk Sistem Terdistribusi yang Dirangkai Secara Longgar</a></li>
+<li><a href="http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf">2007: Dynamo: Toko Nilai Kunci Amazon yang Sangat Tersedia</a>
+<ul>
+<li>Makalah Dynamo memulai revolusi NoSQL</li>
+</ul></li>
+<li><a href="https://www.akkadia.org/drepper/cpumemory.pdf">2007: Yang Harus Diketahui Setiap Programmer Tentang Memori (sangat panjang, dan penulis mendorong untuk melewatkan beberapa bagian)</a></li>
+<li><a href="https://research.google.com/pubs/archive/36356.pdf">2010: Dapper, Infrastruktur Pelacakan Sistem Terdistribusi Skala Besar</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf">2010: Dremel: Analisis Interaktif Kumpulan Data Skala Web</a></li>
+<li><a href="https://www.wired.com/2012/07/google-colossus/">2012: Colossus Google</a>
+<ul>
+<li>kertas tidak tersedia</li>
+</ul></li>
+<li>2012: AddressSanitizer: A Fast Address Sanity Checker:
+<ul>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/37752.pdf">kertas</a></li>
+<li><a href="https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany">video</a></li>
+</ul></li>
+<li>2013: Spanner: Google’s Globally-Distributed Database:
+<ul>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf">kertas</a></li>
+<li><a href="https://www.usenix.org/node/170855">video</a></li>
+</ul></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf">2014: Pembelajaran Mesin: Kartu Kredit Berbunga Tinggi dari Hutang Teknis</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43790.pdf">2015: Continuous Pipelines di Google</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44686.pdf">2015: Ketersediaan Tinggi dalam Skala Besar: Membangun Infrastruktur Data Google untuk Iklan</a></li>
+<li><a href="http://download.tensorflow.org/paper/whitepaper2015.pdf">2015: TensorFlow: Machine Learning Skala Besar pada Sistem Terdistribusi Heterogen</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf">2015: Bagaimana Pengembang Menelusuri Kode: Studi Kasus</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44843.pdf">2016: Borg, Omega, dan Kubernetes</a></li>
+</ul>
+<h2 id="lisensi">LISENSI</h2>
+<p><a href="../LICENSE.txt">CC-BY-SA-4.0</a></p>
+<p>Terjemahan Bahasa Indonesia dipersembahkan oleh</p>
+<ul>
+<li>@<a href="https://github.com/hexatester">hexatester</a></li>
+<li>@<a href="https://github.com/santosomichael">santosomichael</a></li>
+<li>@<a href="https://github.com/dikiaap">dikiaap</a></li>
+<li>@<a href="https://github.com/rvlewerissa">rvlewerissa</a></li>
+<li>@<a href="https://github.com/ziishaned">ziishaned</a></li>
+<li>@<a href="https://github.com/rimonmostafiz">rimonmostafiz</a></li>
+<li>@<a href="https://github.com/hwhung0111">hwhung0111</a></li>
+<li>@<a href="https://github.com/fahminlb33">fahminlb33</a></li>
+<li>@<a href="https://github.com/davidsetyanugraha">davidsetyanugraha</a></li>
+</ul>
+</body>
+</html>

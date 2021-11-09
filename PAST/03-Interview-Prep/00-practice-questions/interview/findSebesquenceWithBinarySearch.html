@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>findSebesquenceWithBinarySearch</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="subsequence-using-binary-search">Subsequence Using Binary Search</h1>
+<p><strong>Translator: <a href="https://github.com/youyun">youyun</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>Binary search is not hard to understand. It is rather hard to apply. Sometimes, you can’t even link a question with binary search. In another article <a href="../dynamic_programming/动态规划设计：最长递增子序列.md">Longest Increasing Subsequence</a>, we could even apply binary search in a poker game.</p>
+<p>Let’s discuss another interesting question that we can use binary search: how to determine if a given string <code>s</code> is subsequence of another string <code>t</code> (assume <code>s</code> is much shorter as compared to <code>t</code>)? Look at the two examples below:</p>
+<blockquote>
+<p>s = “abc”, t = “<strong>a</strong>h<strong>b</strong>gd<strong>c</strong>”, return true.</p>
+</blockquote>
+<blockquote>
+<p>s = “axc”, t = “ahbgdc”, return false.</p>
+</blockquote>
+<p>This is a straightforward question which looks simple. But can you relate this with binary search?</p>
+<h3 id="problem-analysis">1. Problem Analysis</h3>
+<p>Here is an intuitive solution:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">bool</span> isSubsequence(string s, string t) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="dt">int</span> i = <span class="dv">0</span>, j = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">while</span> (i &lt; s.size() &amp;&amp; j &lt; t.size()) {</a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="cf">if</span> (s[i] == t[j]) i++;</a>
+<a class="sourceLine" id="cb1-5" title="5">        j++;</a>
+<a class="sourceLine" id="cb1-6" title="6">    }</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="cf">return</span> i == s.size();</a>
+<a class="sourceLine" id="cb1-8" title="8">}</a></code></pre></div>
+<p>The idea is to use two pointers <code>i, j</code> to point to <code>s, t</code> respectively. While moving forward, try to match the characters:</p>
+<figure>
+<img src="../pictures/subsequence/1.gif" alt="gif" /><figcaption>gif</figcaption>
+</figure>
+<p>Some people may claim this is the optimal solution, given the time complexity is O(N) while N is the length of <code>t</code>.</p>
+<p>In fact, this solution is good enough for this problem alone. <strong>However, there is a follow-up</strong>:</p>
+<p>Given a list of string <code>s1,s2,...</code> and a string <code>t</code>, determine if each string <code>s</code> is a subsequence of <code>t</code> (assume each <code>s</code> is much shorter as compared to <code>t</code>).</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">boolean</span>[] <span class="fu">isSubsequence</span>(<span class="bu">String</span>[] sn, <span class="bu">String</span> t);</a></code></pre></div>
+<p>We can still apply the same logic inside a <code>for</code> loop. However, the time complexity for each <code>s</code> is still O(N). If binary search is applied, the time complexity can be reduced to O(MlogN). Since <code>N &gt;&gt; M</code>, the efficiency will be improved significantly.</p>
+<h3 id="using-binary-search">2. Using Binary Search</h3>
+<p>To begin with binary search, we need to pre-process <code>t</code> by storing the indices of each character in a dictionary <code>index</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">int</span> m = s.<span class="fu">length</span>(), n = t.<span class="fu">length</span>();</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="bu">ArrayList</span>&lt;<span class="bu">Integer</span>&gt;[] index = <span class="kw">new</span> <span class="bu">ArrayList</span>[<span class="dv">256</span>];</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="co">// record down the indices of each character in t</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; n; i++) {</a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="dt">char</span> c = t.<span class="fu">charAt</span>(i);</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="kw">if</span> (index[c] == <span class="kw">null</span>) </a>
+<a class="sourceLine" id="cb3-7" title="7">        index[c] = <span class="kw">new</span> <span class="bu">ArrayList</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb3-8" title="8">    index[c].<span class="fu">add</span>(i);</a>
+<a class="sourceLine" id="cb3-9" title="9">}</a></code></pre></div>
+<p><img src="../pictures/subsequence/2.jpg" /></p>
+<p>Refer to the diagram below, since we’ve matched “ab”, the next one to be matched should be “c”:</p>
+<p><img src="../pictures/subsequence/1.jpg" /></p>
+<p>If we apply the first solution, we need to traverse linearly using <code>j</code> to find “c”. With the information in <code>index</code>, <strong>we can use binary search to find an index that is greater than <code>j</code> in <code>index["c"]</code></strong>. In the diagram above, we need to find an index from <code>[0, 2, 6]</code> that is greater than 4:</p>
+<p><img src="../pictures/subsequence/3.jpg" /></p>
+<p>In this way, we can directly get the index of next “c”. The problem becomes how to find the smallest index that is greater than 4? We can use binary search to find the left boundary.</p>
+<h3 id="more-about-binary-search">3. More about Binary Search</h3>
+<p>In another article <a href="../think_like_computer/DetailedBinarySearch.md">Detailed Binary Search</a>, we discussed in details how to implement binary search in 3 different ways. When we use binary search to return the index of target <code>val</code> to find <strong>the left boundary</strong>, there is a special property:</p>
+<p><strong>When <code>val</code> does not exist, the index returned is the index of the smallest value which is greater than <code>val</code></strong>.</p>
+<p>It means that when we try to find element 2 in array <code>[0,1,3,4]</code>, the algorithm will return index 2, where element 3 is located. And element 3 is the smallest element that is greater than 2 in this array. Hence, we can use binary search to avoid linear traversal.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="co">// binary search to find the left boundary</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="dt">int</span> <span class="fu">left_bound</span>(<span class="bu">ArrayList</span>&lt;<span class="bu">Integer</span>&gt; arr, <span class="dt">int</span> tar) {</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">int</span> lo = <span class="dv">0</span>, hi = arr.<span class="fu">size</span>();</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="kw">while</span> (lo &lt; hi) {</a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="dt">int</span> mid = lo + (hi - lo) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="kw">if</span> (tar &gt; arr.<span class="fu">get</span>(mid)) {</a>
+<a class="sourceLine" id="cb4-7" title="7">            lo = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb4-8" title="8">        } <span class="kw">else</span> {</a>
+<a class="sourceLine" id="cb4-9" title="9">            hi = mid;</a>
+<a class="sourceLine" id="cb4-10" title="10">        } </a>
+<a class="sourceLine" id="cb4-11" title="11">    }</a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="kw">return</span> lo;</a>
+<a class="sourceLine" id="cb4-13" title="13">}</a></code></pre></div>
+<p>The binary search above is to find the left boundary. Its details can be found in <a href="../think_like_computer/DetailedBinarySearch.md">Detailed Binary Search</a>. Let’s apply it.</p>
+<h3 id="implementation">4. Implementation</h3>
+<p>We take a single string <code>s</code> as an example for the case of multiple strings. The part of pre-processing can be extracted out.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">boolean</span> <span class="fu">isSubsequence</span>(<span class="bu">String</span> s, <span class="bu">String</span> t) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="dt">int</span> m = s.<span class="fu">length</span>(), n = t.<span class="fu">length</span>();</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="co">// pre-process t</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="bu">ArrayList</span>&lt;<span class="bu">Integer</span>&gt;[] index = <span class="kw">new</span> <span class="bu">ArrayList</span>[<span class="dv">256</span>];</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; n; i++) {</a>
+<a class="sourceLine" id="cb5-6" title="6">        <span class="dt">char</span> c = t.<span class="fu">charAt</span>(i);</a>
+<a class="sourceLine" id="cb5-7" title="7">        <span class="kw">if</span> (index[c] == <span class="kw">null</span>) </a>
+<a class="sourceLine" id="cb5-8" title="8">            index[c] = <span class="kw">new</span> <span class="bu">ArrayList</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb5-9" title="9">        index[c].<span class="fu">add</span>(i);</a>
+<a class="sourceLine" id="cb5-10" title="10">    }</a>
+<a class="sourceLine" id="cb5-11" title="11">    </a>
+<a class="sourceLine" id="cb5-12" title="12">    <span class="co">// the pointer in t</span></a>
+<a class="sourceLine" id="cb5-13" title="13">    <span class="dt">int</span> j = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb5-14" title="14">    <span class="co">// find s[i] using index</span></a>
+<a class="sourceLine" id="cb5-15" title="15">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; m; i++) {</a>
+<a class="sourceLine" id="cb5-16" title="16">        <span class="dt">char</span> c = s.<span class="fu">charAt</span>(i);</a>
+<a class="sourceLine" id="cb5-17" title="17">        <span class="co">// character c does not exist in t</span></a>
+<a class="sourceLine" id="cb5-18" title="18">        <span class="kw">if</span> (index[c] == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb5-19" title="19">        <span class="dt">int</span> pos = <span class="fu">left_bound</span>(index[c], j);</a>
+<a class="sourceLine" id="cb5-20" title="20">        <span class="co">// c is not found in the binary search interval</span></a>
+<a class="sourceLine" id="cb5-21" title="21">        <span class="kw">if</span> (pos == index[c].<span class="fu">size</span>()) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb5-22" title="22">        <span class="co">// increment pointer j</span></a>
+<a class="sourceLine" id="cb5-23" title="23">        j = index[c].<span class="fu">get</span>(pos) + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb5-24" title="24">    }</a>
+<a class="sourceLine" id="cb5-25" title="25">    <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb5-26" title="26">}</a></code></pre></div>
+<p>The gif below illustrates how the algorithm executes:</p>
+<p><img src="../pictures/subsequence/2.gif" /></p>
+<p>We can see that the efficiency can be significantly improved using binary search.</p>
+</body>
+</html>

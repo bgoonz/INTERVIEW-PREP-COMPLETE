@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bst_slides</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="bst">BST</h1>
+<h3 id="binary-search-tree">(Binary Search Tree)</h3>
+<p><img style="height: 450px; width: 600px;" src="https://blog.penjee.com/wp-content/uploads/2015/11/binary-search-tree-degenerating-demo-animation.gif"/></p>
+<hr />
+<h1 id="topics">topics</h1>
+<ul>
+<li>Refresher: What is a BST?</li>
+<li>Balancing a Tree</li>
+<li>Trees and Arrays</li>
+</ul>
+<p>Note: Questions, what do you want to cover here? —</p>
+<h1 id="binary-search-tree-1">Binary Search Tree</h1>
+<p><img src="https://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_tree.jpg"/></p>
+<ul>
+<li>Collection of nodes (it’s all about the nodes)</li>
+<li>Each node has, at max, 2 child nodes and one parent node.</li>
+<li>Each left child’s value is less than the parent’s value</li>
+<li>Each right child’s value is greater than the parent’s value.</li>
+</ul>
+<p>Note: What’s a node? What do we call a node with no parent? Can a node with a parent be a root node? How is this different from just a tree? Just a binary tree? What common tool has a BST as an underlying structure?</p>
+<hr />
+<h1 id="what-is-the-basic-api-of-a-bst">What is the Basic API of a BST?</h1>
+<p>Note: Insert, Find, Delete What’s the average time complexity for each?</p>
+<hr />
+<h1 id="bst-api">BST API</h1>
+<ul>
+<li>Insert: O(log n)</li>
+<li>Find: O(log n)</li>
+<li>Delete: O(log n)</li>
+</ul>
+<p>Note: Implement in code.<br />
+Why is the API on average O(log n) ? What is the worst case of a BST? Why? How do we get it to O(log n)? AVL Tree (self balancing)</p>
+<hr />
+<h1 id="when-is-a-binary-tree-balanced">When is a binary tree balanced?</h1>
+<p>Note: What constitutes balanced, unbalanced?</p>
+<hr />
+<p><img src="https://i1.wp.com/algorithms.tutorialhorizon.com/files/2014/09/BalancedTree-Example.png" /></p>
+<hr />
+<h2 id="how-do-we-determine-if-a-bst-is-balanced">How do we determine if a BST is balanced?</h2>
+<p><img src="https://3.bp.blogspot.com/-_5dGQOgIIl4/WXOmiP9nbrI/AAAAAAAAbAM/O6meBNN_nZ8TdsgG0feDr54rk4s6xjUoACLcBGAs/s1600/balance-between-neet-and-board.png"/></p>
+<p>Note: Implement in code</p>
+<hr />
+<h2 id="bsts-and-arrays">BSTs and Arrays</h2>
+<p>How do we turn a BST into a sorted array?</p>
+<p><img style='background-color: cadetblue;' src="http://msoe.us/taylor/tutorial/cs2852/bstArray2Tree.png"/></p>
+<p>Note: Implement in code What’s the time complexity of this operation?</p>
+<hr />
+<h1 id="bst-ftw">BST FTW!!!</h1>
+<p>Any Questions?</p>
+<p>Note: Briefly recap the information: BST: collection of nodes each with max two children. L child is less than parent, right is greater. API: insert, find, delete Balanced vs unbalanced BSTs and sorted arrays.</p>
+</body>
+</html>

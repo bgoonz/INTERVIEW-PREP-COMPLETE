@@ -1,0 +1,1839 @@
+Date: Mon, 30 Nov 2020 13:21:29 +0000 (UTC)
+Message-ID: <1338367558.1.1606742489999@3503858e4d25>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_1645305180.1606742489973"
+
+------=_Part_0_1645305180.1606742489973
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Functional Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Functional Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 833.0px;">
+<col style=3D"width: 711.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>BestAverage</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double bestAverageGradeUsingMerge(String[][] data)
+{
+    Map&lt;String,Long&gt; totalsMap =3D Arrays.stream(data).collect(
+            HashMap::new,
+            (m, i) -&gt; m.merge(i[0], Long.parseLong(i[1]), Long::sum),
+            HashMap::putAll);
+    Map&lt;String,Long&gt; countMap =3D Arrays.stream(data).collect(
+            Collectors.groupingBy((String[] a) -&gt; a[0], Collectors.count=
+ing()));
+    return totalsMap.entrySet().stream()
+            .map(e -&gt; e.getValue() / (double)countMap.get(e.getKey()))
+            .reduce(Double::max).get();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double bestAverageGradeUsingList(String[][] data)
+{
+    Map&lt;String, List&lt;Integer&gt;&gt; totalsMap =3D Arrays.stream(data=
+).collect(
+            HashMap::new,
+            (m, i) -&gt; m.computeIfAbsent(i[0], a -&gt; new ArrayList&lt;&=
+gt;()).add(Integer.parseInt(i[1])),
+            HashMap::putAll);
+    double max =3D 0.0;
+    for(List&lt;Integer&gt; list : totalsMap.values())
+    {
+        max =3D Math.max(max, list.stream().mapToInt(x -&gt; x).sum() / (do=
+uble) list.size());
+    }
+    return max;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double bestAverageGradeUsingListAndReduce(String[][] data)
+{
+    Map&lt;String, List&lt;Double&gt;&gt; totalsMap =3D Arrays.stream(data)=
+.collect(
+            HashMap::new,
+            (m, i) -&gt; m.computeIfAbsent(i[0], a -&gt; new ArrayList&lt;&=
+gt;()).add(Double.parseDouble(i[1])),
+            HashMap::putAll);
+    return totalsMap.values().stream()
+            .map(a -&gt; a.stream().reduce(Double::sum).get() / a.size())
+            .reduce(Double::max).get();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double bestAverageGradeUsingListAndSummaryStatistics(String[][] data)
+{
+    Map&lt;String, List&lt;Integer&gt;&gt; totalsMap =3D Arrays.stream(data=
+).collect(
+            HashMap::new,
+            (m, i) -&gt; m.computeIfAbsent(i[0], a -&gt; new ArrayList&lt;&=
+gt;()).add(Integer.parseInt(i[1])),
+            HashMap::putAll);
+    double maxAvg =3D 0.0;
+    for(List&lt;Integer&gt; list : totalsMap.values())
+    {
+        IntSummaryStatistics stats =3D list.stream().mapToInt(x -&gt; x).su=
+mmaryStatistics();
+        maxAvg =3D Math.max(maxAvg, stats.getAverage());
+    }
+    return maxAvg;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double bestAverageGradeUsingListAndAverage(String[][] data)
+{
+    Map&lt;String, List&lt;Integer&gt;&gt; totalsMap =3D Arrays.stream(data=
+).collect(
+            HashMap::new,
+            (m, i) -&gt; m.computeIfAbsent(i[0], a -&gt; new ArrayList&lt;&=
+gt;()).add(Integer.parseInt(i[1])),
+            HashMap::putAll);
+    return totalsMap.values().stream()
+            .map(a -&gt; a.stream().mapToDouble(x -&gt; x).average().getAsD=
+ouble())
+            .reduce(Double::max).get();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String[][] data =3D {
+            {"nick", "81"},
+            {"paul", "50"},
+            {"ron", "60"},
+            {"nick", "100"}
+    };
+    boolean check =3D bestAverageGradeUsingMerge(data) =3D=3D 90.5;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D bestAverageGradeUsingList(data) =3D=3D 90.5;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D bestAverageGradeUsingListAndReduce(data) =3D=3D 90.5;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D bestAverageGradeUsingListAndSummaryStatistics(data)=20
+    if(!check)
+    {
+        return false;
+    }
+    check =3D bestAverageGradeUsingListAndAverage(data) =3D=3D 90.5;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 954.0px;">
+<col style=3D"width: 590.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ClassFactory</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class ClassFactory
+{
+    static abstract class Fruit
+    {
+        int weight;
+        Fruit(int weight)
+        {
+            this.weight =3D weight;
+        }
+    }
+
+    static class Apple extends Fruit
+    {
+        Apple(int weight)
+        {
+            super(weight);
+        }
+
+        @Override
+        public String toString()
+        {
+            return "Apple{}";
+        }
+    }
+
+    static class Orange extends Fruit
+    {
+        Orange(int weight)
+        {
+            super(weight);
+        }
+
+        @Override
+        public String toString()
+        {
+            return "Orange{}";
+        }
+    }
+
+    static Map&lt;String,Function&lt;Integer, Fruit&gt;&gt; constructorMap =
+=3D new HashMap&lt;String,Function&lt;Integer, Fruit&gt;&gt;() {{
+        put("apple", Apple::new);
+        put("orange", Orange::new);
+    }};
+
+    static Fruit getFruit(String name, int weight)
+    {
+        return constructorMap.get(name).apply(weight);
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Fruit apple =3D getFruit("apple", 50);
+    boolean check =3D apple.toString().equals("Apple{}");
+    if(!check)
+    {
+        return false;
+    }
+    Fruit orange =3D getFruit("orange", 50);
+    check =3D orange.toString().equals("Orange{}");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 870.0px;">
+<col style=3D"width: 674.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Conversions</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;Integer&gt; fromIntArrayToList(int[] a)
+{
+    return Arrays.stream(a).boxed().collect(Collectors.toList());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Set&lt;Integer&gt; fromIntArrayToSet(int[] a)
+{
+    return Arrays.stream(a).boxed().collect(Collectors.toSet());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Integer[] fromIntToIntegerArray1(int[] a)
+{
+    return Arrays.stream(a).boxed().toArray(Integer[]::new);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Integer[] fromIntToIntegerArray2(int[] a)
+{
+    return IntStream.of(a).boxed().toArray(Integer[]::new);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] fromIntegerToIntArray(Integer[] a)
+{
+    return Arrays.stream(a).mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] fromListToIntArray(List&lt;Integer&gt; list)
+{
+    return list.stream().mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] flatten2DArray(int[][] a)
+{
+    return Arrays.stream(a).flatMapToInt(Arrays::stream).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String[] fromIntToStringArray(int[] a)
+{
+    return Arrays.stream(a).mapToObj(String::valueOf).toArray(String[]::new=
+);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] fromStringToIntArray(String[] a)
+{
+    return Arrays.stream(a).mapToInt(Integer::valueOf).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] arrayOfConsecutiveInts(int start, int end)
+{
+    return IntStream.rangeClosed(start, end).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] arrayOfConsecutiveIntsReversed(int start, int end)
+{
+    return IntStream.rangeClosed(start, end).map(i -&gt; end - i + start).t=
+oArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void fill2DIntArray(int[][] a, int val)
+{
+    Arrays.stream(a).forEach(x -&gt; Arrays.fill(x, val));
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void sort(int[] a)
+{
+    Arrays.sort(a);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] sort1(int [] a, boolean reverseOrder)
+{
+    Integer[] temp =3D Arrays.stream(a).mapToObj(x -&gt; x).toArray(Integer=
+[]::new);
+    if(!reverseOrder)
+    {
+        Arrays.sort(temp);
+    }
+    else
+    {
+        Arrays.sort(temp, Collections.reverseOrder());
+    }
+    return Arrays.stream(temp).mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] sort2(int [] a, boolean reverseOrder)
+{
+    if(!reverseOrder)
+    {
+        return Arrays.stream(a)
+                .mapToObj(x -&gt; x)
+                .sorted(Comparator.naturalOrder())
+                .mapToInt(x -&gt; x).toArray();
+    }
+    return Arrays.stream(a).mapToObj(x -&gt; x)
+            .sorted(Comparator.reverseOrder())
+            .mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void sort2DArrayByDimension(int[][] arr, int dim, boolean reverseOrder)
+{
+    if(!reverseOrder)
+    {
+        Arrays.sort(arr, Comparator.comparingInt((int[] a) -&gt; a[dim]));
+    }
+    else
+    {
+        Arrays.sort(arr, Comparator.comparingInt((int[] a) -&gt; a[dim]).re=
+versed());
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] extractDimension(int[][] a, int dim)
+{
+    Integer[] temp =3D Arrays.stream(a).map((int[] x) -&gt; x[dim]).toArray=
+(Integer[]::new);
+    return Arrays.stream(temp).mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] sumTwoArrays(int[] a1, int[] a2)
+{
+    int[] a =3D new int[a1.length];
+    Arrays.setAll(a, i -&gt; a1[i] + a2[i]);
+    return a;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int productOfArray1(int[] a)
+{
+    return Arrays.stream(a).reduce(1, (x, y) -&gt; x * y);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int productOfArray2(int[] a)
+{
+    return Arrays.stream(a).reduce((x, y) -&gt; x * y).getAsInt();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Pair&lt;int[], int[]&gt; separateIntsIntoPosAndNeg(int[] a)
+{
+    Map&lt;Boolean, List&lt;Integer&gt;&gt; map =3D Arrays.stream(a)
+            .boxed().collect(Collectors.partitioningBy(x -&gt; x &gt;=3D 0)=
+);
+    List&lt;Integer&gt; positive =3D map.get(true);
+    List&lt;Integer&gt; negative =3D map.get(false);
+    int[] pos =3D positive.stream().mapToInt(x -&gt; x).toArray();
+    int[] neg =3D negative.stream().mapToInt(x -&gt; x).toArray();
+    return Pair.of(pos, neg);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+char[] numberRangeToCharArray(int from, int to)
+{
+    return IntStream.rangeClosed(from, to)
+            .mapToObj(x -&gt; Character.toString((char)(x - 1 + 'a')))
+            .collect(Collectors.joining())
+            .toCharArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;Integer, List&lt;Integer&gt;&gt; from2DIntArrayToMap(int[][] a)
+{
+    Map&lt;Integer, List&lt;Integer&gt;&gt; result =3D
+            Arrays.stream(a).collect(
+                    HashMap::new,
+                    (map, item) -&gt; map.computeIfAbsent(item[0], x -&gt; =
+new ArrayList&lt;&gt;()).add(item[1]),
+                    HashMap::putAll);
+    return result;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; Map&lt;T, List&lt;T&gt;&gt; from2DArrayToMap(T[][] a)
+{
+    Map&lt;T, List&lt;T&gt;&gt; result =3D Arrays.stream(a).collect(
+            HashMap::new,
+            (map, item) -&gt; map.computeIfAbsent(item[0], x -&gt; new Arra=
+yList&lt;&gt;()).add(item[1]),
+            HashMap::putAll);
+    return result;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;Character&gt; charArrayToListOfCharacter(char[] a)
+{
+    String s =3D new String(a);
+    return s.chars().mapToObj(c -&gt; (char)c).collect(Collectors.toList())=
+;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Character[] stringToCharacterArray1(String s)
+{
+    return s.chars().mapToObj(c -&gt; (char)c).toArray(Character[]::new);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Character[] stringToCharacterArray2(String s)
+{
+    return IntStream.range(0, s.length()).mapToObj(s::charAt).toArray(Chara=
+cter[]::new);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String characterArrayToString(Character[] a)
+{
+    return Arrays.stream(a).map(Object::toString).collect(Collectors.joinin=
+g());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+char[] listOfCharacterToCharArray(List&lt;Character&gt; list)
+{
+    return list.stream().map(Object::toString).collect(Collectors.joining()=
+).toCharArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String stringArrayToString(String[] a, String sep)
+{
+    return Arrays.stream(a).collect(Collectors.joining(sep));
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;String,Long&gt; arrayOfWordsToMapOfWordCounts(String[] a)
+{
+    return Arrays.stream(a).collect(Collectors.groupingBy(Function.identity=
+(), Collectors.counting()));
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String longestStringInArray(String[] a)
+{
+    Pair&lt;String,Integer&gt; longest =3D Arrays.stream(a)
+            .map(p -&gt; Pair.of(p, p.length()))
+            .max(Comparator.comparing(Pair::getRight)).get();
+    return longest.getLeft();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D Arrays.asList(1, 2, 3).equals(fromIntArrayToList(new =
+int[] {1, 2, 3}));
+    if(!check)
+    {
+        return false;
+    }
+    Integer[] A =3D fromIntToIntegerArray1(new int[] {1, 2, 3});
+    check =3D A[0] =3D=3D 1 &amp;&amp; A[1] =3D=3D 2 &amp;&amp; A[2] =3D=3D=
+ 3;
+    if(!check)
+    {
+        return false;
+    }
+    A =3D fromIntToIntegerArray2(new int[] {1, 2, 3});
+    check =3D A[0] =3D=3D 1 &amp;&amp; A[1] =3D=3D 2 &amp;&amp; A[2] =3D=3D=
+ 3;
+    if(!check)
+    {
+        return false;
+    }
+    A =3D new Integer[] {1, 2, 3};
+    check =3D Arrays.equals(new int[] {1, 2, 3}, fromIntegerToIntArray(A));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {1, 2, 3}, fromListToIntArray(Arrays.=
+asList(1, 2, 3)));
+    if(!check)
+    {
+        return false;
+    }
+    int[][] aa =3D new int[][] {{1,2}, {3,4}};
+    check =3D Arrays.equals(new int[] {1, 2, 3, 4}, flatten2DArray(aa));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new String[] {"1", "2", "3"}, fromIntToStringAr=
+ray(new int[] {1, 2, 3}));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {1, 2, 3}, fromStringToIntArray(new S=
+tring[] {"1", "2", "3"}));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {2, 3, 4, 5, 6}, arrayOfConsecutiveIn=
+ts(2, 6));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {6, 5, 4, 3, 2}, arrayOfConsecutiveIn=
+tsReversed(2, 6));
+    if(!check)
+    {
+        return false;
+    }
+    aa =3D new int[2][2];
+    fill2DIntArray(aa, 2);
+    check =3D Arrays.equals(new int[] {2, 2}, aa[0]) &amp;&amp; Arrays.equa=
+ls(new int[] {2, 2}, aa[1]);
+    if(!check)
+    {
+        return false;
+    }
+    int[] a =3D new int []{3, 1, 7, 4, 9, 2, 6, 5, 8};
+    check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, sort1(a,=
+ false));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1}, sort1(a,=
+ true));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, sort2(a,=
+ false));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1}, sort2(a,=
+ true));
+    if(!check)
+    {
+        return false;
+    }
+    aa =3D new int[][] {{2, 0, 1}, {5, 4, 6}, {4, 3, 2}, {1, 2, 3}};
+    sort2DArrayByDimension(aa, 0, false);
+    check =3D Arrays.equals(new int[] {1, 2, 3}, aa[0]) &amp;&amp; Arrays.e=
+quals(new int[] {2, 0, 1}, aa[1]) &amp;&amp;
+            Arrays.equals(new int[] {4, 3, 2}, aa[2]) &amp;&amp; Arrays.equ=
+als(new int[] {5, 4, 6}, aa[3]);
+    if(!check)
+    {
+        return false;
+    }
+    aa =3D new int[][] {{2, 0, 1}, {5, 4, 6}, {4, 3, 2}, {1, 2, 3}};
+    sort2DArrayByDimension(aa, 1, false);
+    check =3D Arrays.equals(new int[] {2, 0, 1}, aa[0]) &amp;&amp; Arrays.e=
+quals(new int[] {1, 2, 3}, aa[1]) &amp;&amp;
+            Arrays.equals(new int[] {4, 3, 2}, aa[2]) &amp;&amp; Arrays.equ=
+als(new int[] {5, 4, 6}, aa[3]);
+    if(!check)
+    {
+        return false;
+    }
+    aa =3D new int[][] {{2, 0, 1}, {5, 4, 6}, {4, 3, 2}, {1, 2, 3}};
+    sort2DArrayByDimension(aa, 0, true);
+    check =3D Arrays.equals(new int[] {5, 4, 6}, aa[0]) &amp;&amp; Arrays.e=
+quals(new int[] {4, 3, 2}, aa[1]) &amp;&amp;
+            Arrays.equals(new int[] {2, 0, 1}, aa[2]) &amp;&amp; Arrays.equ=
+als(new int[] {1, 2, 3}, aa[3]);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {0, 4, 3, 2},=20
+            extractDimension(new int[][] {{2, 0, 1}, {5, 4, 6}, {4, 3, 2}, =
+{1, 2, 3}}, 1));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {5, 7, 9}, sumTwoArrays(new int [] {1=
+, 2, 3}, new int[] {4, 5, 6}));
+    if(!check)
+    {
+        return false;
+    }
+    a =3D new int[] {3, 0, -5, 2, -4, 7, -1};
+    Pair&lt;int[], int[]&gt; pair =3D separateIntsIntoPosAndNeg(a);
+    check =3D Arrays.equals(new int[] {3, 0, 2, 7}, pair.getLeft()) &amp;&a=
+mp;=20
+            Arrays.equals(new int[] {-5, -4, -1}, pair.getRight());
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new char[] {'c', 'd', 'e', 'f', 'g'}, numberRan=
+geToCharArray(3, 7));
+    if(!check)
+    {
+        return false;
+    }
+    Map&lt;Integer, List&lt;Integer&gt;&gt; result1 =3D from2DIntArrayToMap=
+(new int[][] {{1, 2}, {2, 3}, {1, 4}});
+    check =3D Arrays.equals(new int[] {2, 4}, result1.get(1).stream().mapTo=
+Int(x -&gt; x).toArray()) &amp;&amp;
+            Arrays.equals(new int[] {3}, result1.get(2).stream().mapToInt(x=
+ -&gt; x).toArray());
+    if(!check)
+    {
+        return false;
+    }
+    Map&lt;String, List&lt;String&gt;&gt; result2 =3D from2DArrayToMap(new =
+String[][] {{"nick", "90"}, {"paul", "70"}, {"nick", "100"}});
+    check =3D result2.get("nick").size() =3D=3D 2 &amp;&amp; result2.get("n=
+ick").contains("90") &amp;&amp; result2.get("nick").contains("100");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.asList('A', 'B', 'C').equals(charArrayToListOfCharacte=
+r(new char[] {'A', 'B', 'C'}));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D 24 =3D=3D productOfArray1(new int[] {1, 2, 3, 4});
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new Character[] {'A', 'B', 'C'}, stringToCharac=
+terArray1("ABC"));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new Character[] {'A', 'B', 'C'}, stringToCharac=
+terArray2("ABC"));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D characterArrayToString(new Character[] {'A', 'B', 'C'}).equal=
+s("ABC");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new char[] {'A', 'B', 'C'}, listOfCharacterToCh=
+arArray(Arrays.asList('A', 'B', 'C')));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D stringArrayToString(new String[] {"one", "two", "three"}, " "=
+).equals("one two three");
+    if(!check)
+    {
+        return false;
+    }
+    Map&lt;String,Long&gt; countMap =3D arrayOfWordsToMapOfWordCounts(new S=
+tring[] {"three", "one", "two", "three", "two", "three"});
+    check =3D countMap.get("one") =3D=3D 1 &amp;&amp; countMap.get("two") =
+=3D=3D 2 &amp;&amp; countMap.get("three") =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D longestStringInArray(new String[] {"a", "bb", "ccc", "dddd"})=
+.equals("dddd");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Notes:</p>
+<ol>
+<li><p>Make sure to user <code>Arrays.sort</code> for sorting in place. Usi=
+ng streams <code>sorted </code>will not modify underlying collection.<br></=
+p></li>
+</ol>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Fibonacci</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int fibonacciWithStreamIterate(int n)
+{
+    return Stream.iterate(new int[] {0, 1}, t -&gt; new int[] {t[1], t[0] +=
+ t[1]})
+            .limit(n)
+            .map(t -&gt; t[1])
+            .skip(n - 1)
+            .findFirst().get();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int fibonacciWithStreamGenerate(int n)
+{
+    IntSupplier intSupplier =3D new IntSupplier()
+    {
+        int a =3D 0;
+        int b =3D 1;
+        @Override
+        public int getAsInt()
+        {
+            int c =3D a + b;
+            a =3D b;
+            b =3D c;
+            return b;
+        }
+    };
+    return IntStream.generate(intSupplier)
+            .limit(n - 1)
+            .skip(n - 2)
+            .findFirst()
+            .getAsInt();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D fibonacciWithStreamIterate(14) =3D=3D 377;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D fibonacciWithStreamGenerate(14) =3D=3D 377;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 760.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ForkJoinSumCalculator</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class ForkJoinSumCalculator extends RecursiveTask&lt;Long&gt;
+{
+    public static final long THRESHOLD =3D 10_000;
+
+    private final long[] numbers;
+    private final int start;
+    private final int end;
+
+    public ForkJoinSumCalculator(long[] numbers)
+    {
+        this(numbers, 0, numbers.length);
+    }
+
+    private ForkJoinSumCalculator(long[] numbers, int start, int end)
+    {
+        this.numbers =3D numbers;
+        this.start =3D start;
+        this.end =3D end;
+    }
+
+    @Override
+    protected Long compute()
+    {
+        int length =3D end - start;
+        if (length &lt;=3D THRESHOLD)
+        {
+            return computeSequentially();
+        }
+        ForkJoinSumCalculator leftTask =3D
+                new ForkJoinSumCalculator(numbers, start, start + length / =
+2);
+        leftTask.fork();
+        ForkJoinSumCalculator rightTask =3D
+                new ForkJoinSumCalculator(numbers, start + length / 2, end)=
+;
+        Long rightResult =3D rightTask.compute();
+        Long leftResult =3D leftTask.join();
+        return leftResult + rightResult;
+    }
+
+    private long computeSequentially()
+    {
+        long sum =3D 0;
+        for (int i =3D start; i &lt; end; i++)
+        {
+            sum +=3D numbers[i];
+        }
+        return sum;
+    }
+
+    public static long forkJoinSum(long n)
+    {
+        long[] numbers =3D LongStream.rangeClosed(1, n).toArray();
+        ForkJoinTask&lt;Long&gt; task =3D new ForkJoinSumCalculator(numbers=
+);
+        return new ForkJoinPool().invoke(task);
+    }
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Optionals</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class Optionals
+{
+/*
+    Consider a person who might have a car which might be insured
+    Some person may not have a car
+    Some person may have a car which is not insured
+    In a typical application this would require a lot of null checks
+*/
+
+    static class Insurance
+    {
+        String insuranceName;
+        Insurance(String name)
+        {
+            this.insuranceName =3D name;
+        }
+
+        String getInsuranceName()
+        {
+            return insuranceName;
+        }
+    }
+
+    static class Car
+    {
+        Optional&lt;Insurance&gt; insuranceOptional;
+        Car(Optional&lt;Insurance&gt; insuranceOptional)
+        {
+            this.insuranceOptional =3D insuranceOptional;
+        }
+
+        Optional&lt;Insurance&gt; getInsuranceOptional()
+        {
+            return insuranceOptional;
+        }
+    }
+
+    static class Person
+    {
+        Optional&lt;Car&gt; carOptional;
+        Person(Optional&lt;Car&gt; carOptional)
+        {
+            this.carOptional =3D carOptional;
+        }
+
+        Optional&lt;Car&gt; getCarOptional()
+        {
+            return carOptional;
+        }
+    }
+
+
+    static String getInsuranceNameNoNullChecks(Optional&lt;Person&gt; perso=
+nOptional)
+    {
+        return personOptional.flatMap(Person::getCarOptional)
+                .flatMap(Car::getInsuranceOptional)
+                .map(Insurance::getInsuranceName)
+                .orElse("Unknown");
+    }
+
+    static String getInsuranceNameSameAsNullChecks(Optional&lt;Person&gt; p=
+ersonOptional)
+    {
+        if(personOptional.isPresent())
+        {
+            Person person =3D personOptional.get();
+            Optional&lt;Car&gt; carOptional =3D person.getCarOptional();
+            if(carOptional.isPresent())
+            {
+                Car car =3D carOptional.get();
+                Optional&lt;Insurance&gt; insuranceOptional =3D car.getInsu=
+ranceOptional();
+                if(insuranceOptional.isPresent())
+                {
+                    Insurance insurance =3D insuranceOptional.get();
+                    return insurance.getInsuranceName();
+                }
+            }
+        }
+        return "Unknown";
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Insurance insurance1 =3D new Insurance("Geico");
+    Car car1 =3D new Car(Optional.of(insurance1));
+    Person person1 =3D new Person(Optional.of(car1));
+    String insuranceName =3D getInsuranceNameNoNullChecks(Optional.of(perso=
+n1));
+    boolean check =3D insuranceName.equals("Geico");
+    if(!check)
+    {
+        return false;
+    }
+    insuranceName =3D getInsuranceNameSameAsNullChecks(Optional.of(person1)=
+);
+    check =3D insuranceName.equals("Geico");
+    if(!check)
+    {
+        return false;
+    }
+    Car car2 =3D new Car(Optional.empty());
+    Person person2 =3D new Person(Optional.of(car2));
+    insuranceName =3D getInsuranceNameNoNullChecks(Optional.of(person2));
+    check =3D insuranceName.equals("Unknown");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PairNumbers</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;int[]&gt; pairNumbers(int[] a1, int[] a2)
+{
+    return Arrays.stream(a1).boxed().flatMap(i -&gt;
+            Arrays.stream(a2).mapToObj(j -&gt; new int[] {i, j}))
+            .collect(Collectors.toList());
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int [] a1 =3D {1, 2, 3};
+    int [] a2 =3D {3, 4};
+    List&lt;int[]&gt; result =3D pairNumbers(a1, a2);
+    boolean check =3D result.size() =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {1, 3}, result.get(0)) &amp;&amp;=20
+            Arrays.equals(new int[] {1, 4}, result.get(1)) &amp;&amp;
+            Arrays.equals(new int[] {2, 3}, result.get(2)) &amp;&amp;=20
+            Arrays.equals(new int[] {2, 4}, result.get(3)) &amp;&amp;
+            Arrays.equals(new int[] {3, 3}, result.get(4)) &amp;&amp;=20
+            Arrays.equals(new int[] {3, 4}, result.get(5));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Primes</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+private boolean isPrime(int n)
+{
+    int candidateRoot =3D (int)Math.sqrt(n);
+    return IntStream.rangeClosed(2, candidateRoot).noneMatch(i -&gt; n % i =
+=3D=3D 0);
+}
+
+
+static int[] genPrimesUpTo(int n)
+{
+    Map&lt;Boolean,List&lt;Integer&gt;&gt; map =3D IntStream.rangeClosed(2,=
+ n).boxed().collect(
+            Collectors.partitioningBy(x -&gt; isPrime(x)));
+    return map.get(true).stream().mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+     boolean check =3D Arrays.equals(new int[] {2, 3, 5, 7}, genPrimesUpTo(=
+7));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 958.0px;">
+<col style=3D"width: 586.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PrimeCollector</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class PrimeCollector implements Collector&lt;Integer, Map&lt;Boolean, List&=
+lt;Integer&gt;&gt;, Map&lt;Boolean,List&lt;Integer&gt;&gt;&gt;
+{
+    private static List&lt;Integer&gt; takeWhile(List&lt;Integer&gt; list, =
+Predicate&lt;Integer&gt; p)
+    {
+        int i =3D 0;
+        for(Integer item : list)
+        {
+            if(!p.test(item))
+            {
+                return list.subList(0, i);
+            }
+            i++;
+        }
+        return list;
+    }
+
+    private static boolean isPrime(List&lt;Integer&gt; primes, int candidat=
+e)
+    {
+        int candidateSqrt =3D (int) Math.sqrt(candidate);
+        return takeWhile(primes, i -&gt; i &lt;=3D candidateSqrt).stream().=
+noneMatch(j -&gt; candidate % j =3D=3D 0);
+    }
+   =20
+    @Override
+    public Supplier&lt;Map&lt;Boolean, List&lt;Integer&gt;&gt;&gt; supplier=
+()
+    {
+        return () -&gt; new HashMap&lt;Boolean, List&lt;Integer&gt;&gt;() {=
+{
+            put(true, new ArrayList&lt;&gt;());
+            put(false, new ArrayList&lt;&gt;());
+        }};
+    }
+
+    @Override
+    public BiConsumer&lt;Map&lt;Boolean, List&lt;Integer&gt;&gt;,Integer&gt=
+; accumulator()
+    {
+        return (Map&lt;Boolean,List&lt;Integer&gt;&gt; acc, Integer candida=
+te) -&gt; {
+            acc.get(isPrime(acc.get(true), candidate)).add(candidate);
+        };
+    }
+
+    @Override
+    public BinaryOperator&lt;Map&lt;Boolean, List&lt;Integer&gt;&gt;&gt; co=
+mbiner()
+    {
+        return (Map&lt;Boolean,List&lt;Integer&gt;&gt; m1, Map&lt;Boolean, =
+List&lt;Integer&gt;&gt; m2) -&gt; {
+            m1.get(true).addAll(m2.get(true));
+            m1.get(false).addAll(m2.get(false));
+            return m1;
+        };
+    }
+
+    @Override
+    public Function&lt;Map&lt;Boolean, List&lt;Integer&gt;&gt;, Map&lt;Bool=
+ean, List&lt;Integer&gt;&gt;&gt; finisher()
+    {
+        return Function.identity();
+    }
+
+    @Override
+    public Set&lt;Characteristics&gt; characteristics()
+    {
+        return Collections.unmodifiableSet(EnumSet.of(IDENTITY_FINISH, CONC=
+URRENT));
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Map&lt;Boolean, List&lt;Integer&gt;&gt; map =3D IntStream.rangeClosed(2=
+, 20).boxed().collect(new PrimeCollector());
+    int[] primes =3D map.get(true).stream().mapToInt(x -&gt; x).toArray();
+    boolean check =3D Arrays.equals(new int[] {2, 3, 5, 7, 11, 13, 17, 19},=
+ primes);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 929.0px;">
+<col style=3D"width: 615.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PythagoreanTuples</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;int[]&gt; generate(int n)
+{
+    List&lt;double[]&gt; triples =3D
+            IntStream.rangeClosed(1, n)
+            .boxed()
+            .flatMap(a -&gt; IntStream.rangeClosed(a, n)
+                .mapToObj(b -&gt; new double[] {a, b, Math.sqrt(a * a + b *=
+ b)}))
+            .filter(t -&gt; t[2] % 1 =3D=3D 0).collect(Collectors.toList())=
+;
+    return triples.stream().map(x -&gt; new int[] {(int)x[0], (int)x[1], (i=
+nt)x[2]}).collect(Collectors.toList());
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;int[]&gt; triples =3D generate(20);
+    boolean check =3D Arrays.equals(new int[] {3, 4, 5}, triples.get(0)) &a=
+mp;&amp;=20
+                    Arrays.equals(new int[] {5, 12, 13}, triples.get(1)) &a=
+mp;&amp;
+                    Arrays.equals(new int[] {6, 8, 10}, triples.get(2)) &am=
+p;&amp;=20
+                    Arrays.equals(new int[] {8, 15, 17}, triples.get(3)) &a=
+mp;&amp;
+                    Arrays.equals(new int[] {9, 12, 15}, triples.get(4)) &a=
+mp;&amp;=20
+                    Arrays.equals(new int[] {12, 16, 20}, triples.get(5)) &=
+amp;&amp;
+                    Arrays.equals(new int[] {15, 20, 25}, triples.get(6));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>WordCounter</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class WordCounter
+{
+    private int counter;
+    private boolean lastSpace;
+
+    public WordCounter(int counter, boolean lastSpace)
+    {
+        this.counter =3D counter;
+        this.lastSpace =3D lastSpace;
+    }
+
+    public WordCounter accumulate(Character c)
+    {
+        if(Character.isWhitespace(c))
+        {
+            return lastSpace ? this : new WordCounter(counter, true);
+        }
+        else
+        {
+            return lastSpace ? new WordCounter(counter + 1, false) : this;
+        }
+    }
+
+    public WordCounter combine(WordCounter wordCounter)
+    {
+        return new WordCounter(counter + wordCounter.counter, wordCounter.l=
+astSpace);
+    }
+
+    public int getCounter()
+    {
+        return counter;
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String sentence =3D "one    two  three    four      five        six";
+    Stream&lt;Character&gt; stream =3D sentence.chars().mapToObj(e -&gt; (c=
+har)e);
+    WordCounter wordCounter =3D stream.reduce(new WordCounter(0, true),=20
+            WordCounter::accumulate, WordCounter::combine);
+    boolean check =3D wordCounter.getCounter() =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 340.0px;">
+<col style=3D"width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>WordCounterSplitterator</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p></p></td>
+<td class=3D"confluenceTd"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_0_1645305180.1606742489973--

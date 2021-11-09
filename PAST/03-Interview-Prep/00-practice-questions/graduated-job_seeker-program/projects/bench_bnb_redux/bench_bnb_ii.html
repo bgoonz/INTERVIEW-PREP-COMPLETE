@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bench_bnb_ii</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="benchbnb-part-2---benches">BenchBnB Part 2 - Benches!</h1>
+<p>Check out the live demo <a href="http://aa-benchbnb.herokuapp.com">here</a>!</p>
+<h2 id="phase-4-bench-backend">Phase 4: <code>Bench</code> Backend</h2>
+<ul>
+<li>Create a <code>Bench</code> model with required <code>description</code> (string) , <code>lat</code> (float) and <code>lng</code> (float) attributes.</li>
+<li>Make a <code>BenchesController</code> to handle your API requests. It will need <code>index</code> and <code>create</code> actions to start.</li>
+<li>Add routes for your <code>BenchesController</code> actions.
+<ul>
+<li>These should be namespace-d under <code>api/benches</code> and return JSON by default.</li>
+</ul></li>
+<li>Populate <code>seeds.rb</code> with bench seed data using <a href="https://www.google.com/maps/place/San+Francisco,+CA/">real coordinates in SF</a> (click around to get coordinates).</li>
+<li><strong>Test your benches API in the Dev Tools console using <code>$.ajax</code> calls</strong>.</li>
+</ul>
+<h2 id="phase-5-bench-redux-cycle">Phase 5: <code>Bench</code> Redux Cycle</h2>
+<p>In this phase, you will build the pieces necessary to display a basic index of benches.</p>
+<h3 id="benchapiutil"><code>BenchApiUtil</code></h3>
+<p>To start, let’s create an API utility for our thunks to use that will request data via AJAX from our Rails server.</p>
+<ul>
+<li>Create a file, <code>/util/bench_api_util.js</code>, that exports a function, <code>fetchBenches</code>.</li>
+</ul>
+<p>It should dispatch an <code>$.ajax</code> request and return a promise. As usual, the success function will be chained onto this promise in the thunk action creator. You may choose to define an error callback for debugging.</p>
+<p>Your function should look something like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// frontend/util/bench_api_util.js</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="im">export</span> <span class="kw">const</span> fetchBenches <span class="op">=</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="cf">return</span> <span class="va">$</span>.<span class="at">ajax</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="dt">method</span><span class="op">:</span> <span class="co">// ,</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="dt">url</span><span class="op">:</span> <span class="co">//,</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="dt">error</span><span class="op">:</span> (err) <span class="kw">=&gt;</span> <span class="va">console</span>.<span class="at">log</span>(err)</a>
+<a class="sourceLine" id="cb1-8" title="8">  <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>As before, put this function on the window for testing, and make sure it works before moving on!</p>
+<h3 id="bench-state-shape">Bench State Shape</h3>
+<p>We want to build a bench state that has the following shape:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1">entities<span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="dt">benches</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="dv">1</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-4" title="4">      <span class="dt">id</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-5" title="5">      <span class="dt">description</span><span class="op">:</span> <span class="st">&quot;...&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-6" title="6">      <span class="dt">lat</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-7" title="7">      <span class="dt">lng</span><span class="op">:</span> <span class="fl">0.0</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="op">},</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="dv">2</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-10" title="10">      <span class="dt">id</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-11" title="11">      <span class="dt">description</span><span class="op">:</span> <span class="st">&quot;...&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-12" title="12">      <span class="dt">lat</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-13" title="13">      <span class="dt">lng</span><span class="op">:</span> <span class="fl">0.0</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="op">},</span></a>
+<a class="sourceLine" id="cb2-15" title="15">    <span class="dv">3</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-16" title="16">      <span class="dt">id</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-17" title="17">      <span class="dt">description</span><span class="op">:</span> <span class="st">&quot;...&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-18" title="18">      <span class="dt">lat</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb2-19" title="19">      <span class="dt">lng</span><span class="op">:</span> <span class="fl">0.0</span></a>
+<a class="sourceLine" id="cb2-20" title="20">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-21" title="21">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="op">}</span></a></code></pre></div>
+<p>Note that our benches object use each bench’s id as a primary key. The <code>benches</code> key is also nested under an <code>entities</code> key. Even though there are no other <code>entities</code> in this app, we’re going to practice good convention since most apps you’ll build are going to have more than a single entity.</p>
+<h3 id="action-creators">Action Creators</h3>
+<p>Before we move on to the fun stuff – populating a Google map with benches from our database – we need to write an <code>actions</code> file that helps our other major pieces function.</p>
+<p>We need two <code>actions</code>: one to go fetch all the benches from our Rails API, and one that tells our <code>store</code> to change our application state to represent the bench data in our <code>action</code>.</p>
+<ul>
+<li>Create an <code>actions</code> file: <code>actions/bench_actions</code>.</li>
+<li>Write <code>receiveBenches</code>. It should accept a single argument, <code>benches</code>, and produce an <code>action</code> with type <code>"RECEIVE_BENCHES"</code> and a <code>benches</code> property that represents all of our bench data.</li>
+<li>Write <code>fetchBenches</code>. It doesn’t need to accept any arguments. It should just return a thunk which calls the <code>APIUtil</code> and <code>then</code> dispatches <code>receiveBenches</code>.</li>
+<li>Don’t forget to define the corresponding action types.</li>
+<li>Export <code>fetchBenches</code> and your constants.</li>
+</ul>
+<p>Before continuing, <em>test that they return the correct objects</em>. For example, add <code>fetchBenches</code> to the <code>window</code> for testing later!</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// frontend/bench_bnb.jsx</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="va">window</span>.<span class="at">dispatch</span> <span class="op">=</span> <span class="va">store</span>.<span class="at">dispatch</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="va">window</span>.<span class="at">getState</span> <span class="op">=</span> <span class="va">store</span>.<span class="at">dispatch</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="va">window</span>.<span class="at">fetchBenches</span> <span class="op">=</span> fetchBenches<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="co">// now we can test our code from the console</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="at">dispatch</span>(<span class="at">fetchBenches</span>()).<span class="at">then</span>(<span class="va">console</span>.<span class="at">log</span>)<span class="op">;</span> <span class="co">//=&gt; { &quot;1&quot;: { id: 1, description: ... } }</span></a></code></pre></div>
+<p>Remember to import <code>fetchBenches</code> for testing.</p>
+<h3 id="benches-reducer">Benches Reducer</h3>
+<p>In this step, we’re going to create a reducer that manages the <code>benches</code> section of our application state.</p>
+<ul>
+<li>Create a file, <code>reducers/benches_reducer.js</code> that exports a <code>benchesReducer</code> function.</li>
+</ul>
+<p>Let’s start by just setting up our <code>benchesReducer</code> to return its default state: Remember to use <code>Object.freeze</code> to prevent the state from being mutated.</p>
+<p>Have your <code>benchesReducer</code> update the <code>benches</code> in your state when it receives the <code>RECEIVE_BENCHES</code> action. Your reducer should look like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="co">// frontend/reducers/benches_reducer.js</span></a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="im">import</span> <span class="op">{</span> RECEIVE_BENCHES <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;../actions/bench_actions&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="kw">const</span> benchesReducer <span class="op">=</span> (state <span class="op">=</span> <span class="op">{},</span> action) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-6" title="6">  <span class="va">Object</span>.<span class="at">freeze</span>(state)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-7" title="7">  <span class="cf">switch</span>(<span class="va">action</span>.<span class="at">type</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="cf">case</span> <span class="dt">RECEIVE_BENCHES</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb4-9" title="9">      <span class="cf">return</span> <span class="va">action</span>.<span class="at">benches</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="cf">default</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb4-11" title="11">      <span class="cf">return</span> state<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-12" title="12">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="op">};</span></a></code></pre></div>
+<h3 id="entities-reducer">Entities Reducer</h3>
+<p>In this step, we are going to write an <code>entitiesReducer</code> that is responsible for combining any of the reducers that hold relational data from our database. This app only has a single entity, <code>benches</code>, but again, we will follow convention since most apps worth using will have multiple <code>entities</code>.</p>
+<ul>
+<li>Create a file, <code>reducers/entities_reducer.js</code> that exports a <code>entitiesReducer</code> function.</li>
+<li>Use <code>combineReducers</code> to incorporate the <code>benchesReducer</code> into the <code>entitiesReducer</code>.</li>
+</ul>
+<p>Then add the <code>entitiesReducer</code> to your <code>root_reducer.js</code>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">// frontend/reducers/root_reducer.jsx</span></a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="im">import</span> <span class="op">{</span> combineReducers <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;redux&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-4" title="4"></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="im">import</span> entitiesReducer <span class="im">from</span> <span class="st">&#39;./entities_reducer&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="im">import</span> sessionReducer <span class="im">from</span> <span class="st">&#39;./session_reducer&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"></a>
+<a class="sourceLine" id="cb5-8" title="8"><span class="kw">const</span> rootReducer <span class="op">=</span> <span class="at">combineReducers</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb5-9" title="9">  <span class="dt">entities</span><span class="op">:</span> entitiesReducer<span class="op">,</span></a>
+<a class="sourceLine" id="cb5-10" title="10">  <span class="dt">session</span><span class="op">:</span> sessionReducer</a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12"></a>
+<a class="sourceLine" id="cb5-13" title="13"><span class="im">export</span> <span class="im">default</span> rootReducer<span class="op">;</span></a></code></pre></div>
+<p>At this point, our default application state should look like this.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="dt">session</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="dt">currentUser</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb6-4" title="4">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb6-5" title="5">  <span class="dt">errors</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="dt">session</span><span class="op">:</span> []</a>
+<a class="sourceLine" id="cb6-7" title="7">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb6-8" title="8">  <span class="dt">entities</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-9" title="9">    <span class="dt">benches</span><span class="op">:</span> <span class="op">{}</span></a>
+<a class="sourceLine" id="cb6-10" title="10">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-11" title="11"><span class="op">}</span></a></code></pre></div>
+<h2 id="phase-6-benchindex-components">Phase 6: <code>BenchIndex</code> Components</h2>
+<p>Let’s create a component that shows our benches.</p>
+<ul>
+<li>First we’ll start by making make two files: <code>components/bench_index.jsx</code> and <code>components/bench_index_container.js</code></li>
+</ul>
+<p>After we’ve made both of these components, we’ll add the container to our router in <code>root.jsx</code> to it’s rendered when users visit our site.</p>
+<h3 id="the-container-component">The Container Component</h3>
+<p>Inside your container component, <code>connect</code> your <code>BenchIndex</code> as outlined below. Don’t worry that we haven’t constructed <code>BenchIndex</code> yet; but we’ll fix that in the next step!</p>
+<h4 id="mapstatetoprops"><code>mapStateToProps</code></h4>
+<p>Our <code>BenchIndex</code> component needs <code>state</code> information about the <code>benches</code> in order to render.</p>
+<h4 id="mapdispatchtoprops"><code>mapDispatchToProps</code></h4>
+<p>The <code>BenchIndex</code> also needs a way to trigger a request for benches once it has mounted. Let’s give it a <code>fetchBenches</code> prop that it can use to call a dispatch with the <code>fetchBenches()</code> action creator.</p>
+<h4 id="export-it">Export it!</h4>
+<p>Finally, let’s use the <code>connect</code> function to export a new component that is connected to our <code>store</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="co">// frontend/components/bench_index_container.jsx</span></a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="im">import</span> BenchIndex <span class="im">from</span> <span class="st">&#39;./bench_index.jsx&#39;</span></a>
+<a class="sourceLine" id="cb7-4" title="4"></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="co">//...</span></a>
+<a class="sourceLine" id="cb7-6" title="6"></a>
+<a class="sourceLine" id="cb7-7" title="7"><span class="im">export</span> <span class="im">default</span> <span class="at">connect</span>(</a>
+<a class="sourceLine" id="cb7-8" title="8">  mapStateToProps<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-9" title="9">  mapDispatchToProps</a>
+<a class="sourceLine" id="cb7-10" title="10">)(BenchIndex)<span class="op">;</span></a></code></pre></div>
+<h3 id="the-presentational-component">The Presentational Component</h3>
+<p>Let’s create the <code>BenchIndex</code> presentational component. It should render a list of benches, showing the description of each bench.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="co">// frontend/components/bench_index.jsx</span></a>
+<a class="sourceLine" id="cb8-2" title="2"></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">class</span> BenchIndex <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-4" title="4">  <span class="at">componentDidMount</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="co">// request benches from your API here</span></a>
+<a class="sourceLine" id="cb8-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-7" title="7"></a>
+<a class="sourceLine" id="cb8-8" title="8">  <span class="at">render</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-9" title="9">    <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb8-10" title="10">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-11" title="11"><span class="op">};</span></a></code></pre></div>
+<p>Create another <code>BenchIndexItem</code>, to clean up your <code>BenchIndex</code> component’s <code>render()</code> function.</p>
+<h3 id="render-time">Render Time!</h3>
+<p>Let’s make sure that our <code>BenchIndexContainer</code> renders only at the root path <code>"/"</code>. To do so, we’ll use the <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/Route.md#exact-bool"><code>exact</code></a> prop.</p>
+<pre class="jsx"><code>const App = () =&gt; (
+  &lt;div&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Bench BnB&lt;/h1&gt;
+      &lt;GreetingContainer /&gt;
+    &lt;/header&gt;
+
+    &lt;AuthRoute exact path=&quot;/login&quot; component={ SessionFormContainer } /&gt;
+    &lt;AuthRoute exact path=&quot;/signup&quot; component={ SessionFormContainer } /&gt;
+    &lt;Route exact path=&quot;/&quot; component={ BenchIndexContainer } /&gt;
+  &lt;/div&gt;
+)</code></pre>
+<p>Your app should now be populated with benches! <strong>Confirm with a TA.</strong></p>
+<hr />
+<h2 id="phase-7-the-map">Phase 7: The Map</h2>
+<p>Now we’re going to add a map alongside our index to visually convey our bench information. When it’s done, we’ll replace <code>BenchIndexContainer</code> with a new <code>SearchContainer</code> in the <code>Route</code> we just defined in the router. This will allow us to search and display benches.</p>
+<h3 id="create-a-benchmap-component.">Create a <code>BenchMap</code> component.</h3>
+<ul>
+<li>Create a new React component class <code>BenchMap</code>.</li>
+<li>Its <code>render</code> function should return a <code>div</code> with <code>id='map-container'</code> and <code>ref='map'</code>.</li>
+<li>In the <code>application.css</code> file, make sure to set the <code>width</code> and <code>height</code> of the <code>#map-container</code> to <code>500px</code>.</li>
+<li>We’ll return to this component in a bit.</li>
+</ul>
+<h3 id="create-a-react-component-search">Create a React component: <code>Search</code></h3>
+<ul>
+<li>Create a new React component, <code>Search</code>.</li>
+<li><code>Search</code> should render a <code>div</code> containing a <code>BenchMap</code> and <code>BenchIndex</code>.</li>
+<li>Remove your <code>BenchIndexContainer</code> and instead, create a <code>SearchContainer</code>.</li>
+<li><code>Search</code> should then pass the appropriate props to <code>BenchIndex</code>.</li>
+<li><strong>You shouldn’t have to change <code>BenchIndex</code></strong>.</li>
+</ul>
+<p>Since our <code>Search</code> component only needs a render method, we can make it a [functional component][functional-comp-docs] with an implicit return! Make sure to deconstruct your props for cleaner syntax.</p>
+<h3 id="render-your-searchcontainer">Render your <code>SearchContainer</code></h3>
+<ul>
+<li>In your <code>&lt;Route exact path="/" .../&gt;</code>, render the <code>SearchContainer</code> component instead of <code>BenchIndexContainer</code>. This should cause both the <code>BenchMap</code> and the <code>BenchIndex</code> to be rendered on the page.</li>
+<li>Verify your work before moving on.</li>
+</ul>
+<h3 id="attach-a-google-map-to-benchmap">Attach a Google Map to <code>BenchMap</code></h3>
+<ul>
+<li>Read <a href="https://developers.google.com/maps/documentation/javascript/tutorial">the google maps documentation</a>.</li>
+<li>Get a new API key for a JavaScript Google Map.</li>
+<li>Add a script tag (including your API key) to your <code>application.html.erb</code>
+<ul>
+<li>When including the google script tag, be sure to put it above <code>yield</code> and remove the <code>async defer</code> bit. This way, the script will fully load before the rest of your page and be ready to use as soon as your app mounts.</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb10-1" title="1"><span class="co">&lt;!-- application.html.erb: --&gt;</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></a>
+<a class="sourceLine" id="cb10-3" title="3">  <span class="kw">&lt;html&gt;</span></a>
+<a class="sourceLine" id="cb10-4" title="4">  <span class="kw">&lt;head&gt;</span></a>
+<a class="sourceLine" id="cb10-5" title="5">    <span class="kw">&lt;title&gt;</span>BenchBnb<span class="kw">&lt;/title&gt;</span></a>
+<a class="sourceLine" id="cb10-6" title="6"></a>
+<a class="sourceLine" id="cb10-7" title="7">    <span class="er">&lt;</span>%= javascript_include_tag &quot;https://maps.googleapis.com/maps/api/js?key={YOUR_API_KEY}&quot; %&gt;</a>
+<a class="sourceLine" id="cb10-8" title="8">    <span class="er">&lt;</span>%= stylesheet_link_tag    &#39;application&#39;, media: &#39;all&#39; %&gt;</a>
+<a class="sourceLine" id="cb10-9" title="9">    <span class="er">&lt;</span>%= csrf_meta_tags %&gt;</a>
+<a class="sourceLine" id="cb10-10" title="10">    <span class="er">&lt;</span>%= javascript_include_tag &#39;application&#39; %&gt;</a>
+<a class="sourceLine" id="cb10-11" title="11">  <span class="kw">&lt;/head&gt;</span></a>
+<a class="sourceLine" id="cb10-12" title="12">  <span class="kw">&lt;body&gt;</span></a>
+<a class="sourceLine" id="cb10-13" title="13"></a>
+<a class="sourceLine" id="cb10-14" title="14">  <span class="er">&lt;</span>%= yield %&gt;</a>
+<a class="sourceLine" id="cb10-15" title="15"></a>
+<a class="sourceLine" id="cb10-16" title="16">  <span class="kw">&lt;/body&gt;</span></a>
+<a class="sourceLine" id="cb10-17" title="17">  <span class="kw">&lt;/html&gt;</span></a></code></pre></div>
+<ul>
+<li>When the <code>Map</code> component mounts, instantiate the map as follows:</li>
+</ul>
+<pre class="jsx"><code>// frontend/components/bench_map/bench_map.jsx
+
+class BenchMap extends React.Component {
+  //...
+
+  componentDidMount() {
+    // set the map to show SF
+    const mapOptions = {
+      center: { lat: 37.7758, lng: -122.435 }, // this is SF
+      zoom: 13
+    };
+
+    // wrap the mapDOMNode in a Google Map
+    this.map = new google.maps.Map(this.mapNode, mapOptions);
+  }
+
+  render() {
+    return (
+      // ...
+      &lt;div ref={ map =&gt; this.mapNode = map }&gt; // this ref gives us access to the map dom node
+      // ...
+    )
+  }
+
+  //...
+}</code></pre>
+<p><strong>Test:</strong> This should cause a Google Map to be rendered to the page.</p>
+<h2 id="phase-8-markers-on-the-map">Phase 8: Markers on the Map</h2>
+<p>We’re now going to implement map markers for our benches.</p>
+<ul>
+<li>Update the <code>Search</code> component to pass a ‘benches’ prop to <code>BenchMap</code></li>
+</ul>
+<p>Managing the markers is going to require quite a bit of code, so we’re going to create a helper class, <code>MarkerManager</code>.</p>
+<h3 id="markermanager"><code>MarkerManager</code></h3>
+<p>This <code>MarkerManager</code> class will handle syncing the benches we maintain in state with the markers we display on our map. By maintaining references to our markers, we can add/remove them from the map more easily.</p>
+<ul>
+<li>Create a new file <code>marker_manager.js</code>; it should live in your <code>util</code> folder.</li>
+<li>In this file, create and export a new class, <code>MarkerManager</code>.</li>
+<li>Define the constructor method to accept a map, and then create <code>map</code> and <code>markers</code> instance variables.</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="co">// frontend/util/marker_manager.js</span></a>
+<a class="sourceLine" id="cb12-2" title="2"></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="im">export</span> <span class="im">default</span> <span class="kw">class</span> MarkerManager <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-4" title="4">  <span class="at">constructor</span>(map) <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-5" title="5">    <span class="kw">this</span>.<span class="at">map</span> <span class="op">=</span> map<span class="op">;</span></a>
+<a class="sourceLine" id="cb12-6" title="6">    <span class="kw">this</span>.<span class="at">markers</span> <span class="op">=</span> <span class="op">{};</span></a>
+<a class="sourceLine" id="cb12-7" title="7">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb12-8" title="8">  <span class="co">//...</span></a>
+<a class="sourceLine" id="cb12-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>Next, we’re going to define an instance method <code>updateMarkers()</code>. Start with just a simple <code>console.log</code></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="co">// frontend/util/marker_manager.js</span></a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="im">export</span> <span class="im">default</span> <span class="kw">class</span> MarkerManager <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-4" title="4">  <span class="co">//...</span></a>
+<a class="sourceLine" id="cb13-5" title="5">  <span class="at">updateMarkers</span>(benches) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-6" title="6">    <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;time to update&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-7" title="7">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb13-8" title="8">  <span class="co">//...</span></a>
+<a class="sourceLine" id="cb13-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>Let’s put <code>MarkerManager</code> on the back-burner for now. We’ll come back later.</p>
+<h3 id="connect-benchmap-to-markermanager">Connect <code>BenchMap</code> to <code>MarkerManager</code></h3>
+<p>Let’s see how the <code>BenchMap</code> is going to interact with our <code>MarkerManager</code>.</p>
+<ul>
+<li>Import the <code>MarkerManager</code> class.</li>
+<li>Update the <code>BenchMap#componentDidMount</code> lifecycle method to create a new <code>MarkerManager</code>.</li>
+</ul>
+<pre class="jsx"><code>//frontend/components/bench_map/bench_map.jsx
+
+//...
+componentDidMount() {
+  //...
+  this.map = new google.maps.Map(mapDOMNode, mapOptions);
+  this.MarkerManager = new MarkerManager(this.map);
+}
+//...</code></pre>
+<p>We need to invoke <code>updateMarkers()</code> both when the <code>BenchMap</code> component first mounts <strong>and</strong> whenever the benches in the application state change.</p>
+<p>Use the appropriate <code>React</code> <a href="https://facebook.github.io/react/docs/component-specs.html">lifecycle methods</a>.</p>
+<p>Confirm that the <code>MarkerManager</code> utility works by checking the console for our <code>console.log</code> <strong>both before and after</strong> running the following code.</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1"><span class="va">window</span>.<span class="at">dispatch</span>(<span class="at">fetchBenches</span>())<span class="op">;</span></a></code></pre></div>
+<p>Make sure this works before moving on!</p>
+<h3 id="updatemarkers"><code>updateMarkers()</code></h3>
+<p>Read the documentation on <a href="https://developers.google.com/maps/documentation/javascript/markers">map markers</a> before continuing.</p>
+<p>To accomplish the goal of adding markers appropriately, we will want to expand upon our <code>updateMarkers</code> method. We will need to do the following: * For each <code>bench</code>, if the <code>id</code> is not a key in <code>this.markers</code>, create a new marker from it and add it to the map and this.markers</p>
+<p>Add the following helper methods: * <code>createMarkerFromBench(bench)</code>: accepts a bench object as an argument; adds a marker to the map and to the markers object</p>
+<h2 id="phase-9-filtering-by-map-location">Phase 9: Filtering by Map Location</h2>
+<p>When the map idles, we are going to use its current bounds to request only benches within the boundaries of the map. First, let’s prepare the back end to search by bounds.</p>
+<h3 id="back-end-prep">Back End Prep</h3>
+<ul>
+<li>On your <code>Bench</code> model, Write a <code>Bench.in_bounds</code> method that returns all the benches that are within the boundaries specified by the argument. See the example below for what arguments to expect.</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb16-1" title="1"><span class="co"># /app/models/bench.rb</span></a>
+<a class="sourceLine" id="cb16-2" title="2"></a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="co">#...</span></a>
+<a class="sourceLine" id="cb16-4" title="4">  <span class="kw">def</span> <span class="dv">self</span>.in_bounds(bounds)</a>
+<a class="sourceLine" id="cb16-5" title="5">  <span class="co"># google map bounds will be in the following format:</span></a>
+<a class="sourceLine" id="cb16-6" title="6">  <span class="co"># {</span></a>
+<a class="sourceLine" id="cb16-7" title="7">  <span class="co">#   &quot;northEast&quot;=&gt; {&quot;lat&quot;=&gt;&quot;37.80971&quot;, &quot;lng&quot;=&gt;&quot;-122.39208&quot;},</span></a>
+<a class="sourceLine" id="cb16-8" title="8">  <span class="co">#   &quot;southWest&quot;=&gt; {&quot;lat&quot;=&gt;&quot;37.74187&quot;, &quot;lng&quot;=&gt;&quot;-122.47791&quot;}</span></a>
+<a class="sourceLine" id="cb16-9" title="9">  <span class="co"># }</span></a>
+<a class="sourceLine" id="cb16-10" title="10">  <span class="co">#... query logic goes here</span></a>
+<a class="sourceLine" id="cb16-11" title="11">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb16-12" title="12"><span class="co">#...</span></a></code></pre></div>
+<ul>
+<li>In the controller, we can expect that these boundaries will be passed in as a query string and therefore available in the <code>params</code> hash</li>
+<li>Instead of rendering <code>Bench.all</code> in our <code>index</code> action, we can instead use <code>Bench.in_bounds(params[:bounds])</code></li>
+</ul>
+<h3 id="update-benchapiutil">Update <code>BenchApiUtil</code></h3>
+<p>Update our <code>fetchBenches</code> function in <code>bench_api_util.js</code> to accept an argument called filters.</p>
+<p>Eventually, we want to be able to filter our benches by multiple parameters, but for now we’ll just use the lat/lng <code>bounds</code>.</p>
+<p>Test your updated <code>fetchBenches</code> methods to see that it applies the filters!</p>
+<h3 id="updated-state-shape">Updated State Shape</h3>
+<p>We want a default state that looks something like this. In addition to our benches and session, we’ll also add a new slice of state to keep track of our filters.</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb17-2" title="2">  <span class="dt">entities</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-3" title="3">    <span class="dt">benches</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-4" title="4">      <span class="dv">1</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-5" title="5">        <span class="dt">id</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb17-6" title="6">        <span class="dt">description</span><span class="op">:</span> <span class="st">&quot;...&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb17-7" title="7">        <span class="dt">lat</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb17-8" title="8">        <span class="dt">lng</span><span class="op">:</span> <span class="fl">0.0</span></a>
+<a class="sourceLine" id="cb17-9" title="9">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb17-10" title="10">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb17-11" title="11">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb17-12" title="12">  <span class="dt">filters</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-13" title="13">    <span class="dt">bounds</span><span class="op">:</span> <span class="op">{}</span></a>
+<a class="sourceLine" id="cb17-14" title="14">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb17-15" title="15">  <span class="dt">errors</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-16" title="16">    <span class="dt">session</span><span class="op">:</span> []</a>
+<a class="sourceLine" id="cb17-17" title="17">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb17-18" title="18">  <span class="dt">session</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-19" title="19">    <span class="dt">currentUser</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb17-20" title="20">      <span class="dt">id</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb17-21" title="21">      <span class="dt">username</span><span class="op">:</span> <span class="st">&#39;breakfast&#39;</span></a>
+<a class="sourceLine" id="cb17-22" title="22">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb17-23" title="23">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb17-24" title="24"><span class="op">}</span></a></code></pre></div>
+<h3 id="filter-actions">Filter Actions</h3>
+<ul>
+<li>Create a new file, <code>actions/filter_actions</code></li>
+<li>Create and export an action type <code>UPDATE_BOUNDS</code></li>
+<li>Make and export an action creator, <code>updateBounds</code>; this should accept a single argument: <code>bounds</code></li>
+</ul>
+<h4 id="searchcontainer"><code>SearchContainer</code></h4>
+<p>Update your <code>SearchContainer</code>’s <code>mapDispatchToProps</code> function to use the newly constructed <code>updateBounds</code> action creator.</p>
+<h4 id="search"><code>Search</code></h4>
+<p>Update your <code>Search</code> presentational component to pass the <code>updateBounds</code> prop to the <code>BenchMap</code> component</p>
+<h4 id="benchmap"><code>BenchMap</code></h4>
+<ul>
+<li>In the <code>BenchMap</code> component, add a listener to the map’s idle event when <code>componentDidMount</code> is called.</li>
+<li><a href="https://developers.google.com/maps/documentation/javascript/events#MarkerEvents">Read this documentation</a> to learn about Google Map events.</li>
+<li>Call <code>getBounds</code> on the map instance to get a <code>LatLngBounds</code> instance. Call <code>getNorthEast</code> and <code>getSouthWest</code> to get these coordinate pairs. Get their latitude and longitude and format these coordinates into exactly the format your API is expecting. Check <a href="https://developers.google.com/maps/documentation/javascript/reference#LatLngBounds">this documentation</a> for more info.</li>
+<li>Package these coordinates into a <code>bounds</code> object.</li>
+<li>Invoke <code>this.props.updateBounds()</code>, and pass your newly constructed bounds object</li>
+</ul>
+<h3 id="filterreducer"><code>filterReducer</code></h3>
+<p>We need to build out our application state to reflect the map’s <code>bounds</code>.</p>
+<ul>
+<li>Create a new file, <code>reducers/filter_reducer.js</code></li>
+<li>Build and export a <code>filterReducer</code>
+<ul>
+<li>You’re reducer should update the application state when an <code>UPDATE_BOUNDS</code> action is dispatched</li>
+</ul></li>
+</ul>
+<h3 id="uireducer"><code>uiReducer</code></h3>
+<p>The <code>uiReducer</code> will be used to combine any reducers in charge of managing information that influences our user’s interactions, but is not relational data from our backend. For this project, it will just contain the <code>filterReducer</code>, but there are many other uses of this slice of state, for instance toggling a loading screen while waiting for an ajax request. Let’s continue to follow our conventions.</p>
+<ul>
+<li>Create a new file, <code>reducers/ui_reducer.js</code></li>
+<li>Use <code>combineReducers</code> to combine just the <code>filterReducer</code> and export it</li>
+<li>Update your <code>rootReducer</code> to contain the <code>uiReducer</code></li>
+</ul>
+<p><strong>Test</strong> that the application is being successfully updated by moving the map around and then calling <code>window.getState()</code> in the console.</p>
+<h3 id="markermanager-1"><code>MarkerManager</code></h3>
+<p>Now that we’ve handled our state, we need to beef up <code>MarkerManager/updateMarkers()</code> to handle removing markers for benches that have been moved outside our bounds.</p>
+<ul>
+<li>Convert the <code>benches</code> array that was received as an argument into an object (we want constant time lookup by <code>id</code>)</li>
+<li>For each <code>marker</code> in <code>this.markers</code>, if the marker does not have a corresponding <code>bench</code> in our constant time <code>bench</code> lookup object, then remove the marker from the map and <code>this.markers</code></li>
+</ul>
+<p>Add the following helper methods to your class:</p>
+<ul>
+<li><code>removeMarker()</code>: accepts a marker as an argument; removes marker from map and from <code>markers</code></li>
+</ul>
+<p>Call these methods in <code>updateMarkers()</code> to ensure that benches that leave our store have their markers removed from the map. RIP, benches.</p>
+<h3 id="fetching-benches-when-the-filters-change">Fetching Benches when the filters change</h3>
+<p>Before moving on, remove the call to <code>fetchBenches()</code> from the <code>BenchIndex</code> component’s <code>componentDidMount</code>. <strong>We no longer need to dispatch this action from our view.</strong> Instead, we’ll rely on <code>updateBounds</code> to <code>fetchBenches</code> after it dispatches the <code>UPDATE_BOUNDS</code> action.</p>
+<p>Turn your <code>updateBounds</code> action creator into a thunk * Immediately dispatch the filter change * import your <code>fetchBenches</code> action creator from Bench Actions * Then, call fetchBenches passing in the current filters from <code>getState</code> * Call the returned function with dispatch.</p>
+<p>This is a little tricky, try follow this example and think about the flow of data.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="im">export</span> <span class="kw">function</span> <span class="at">updateFilter</span>(filter<span class="op">,</span> value) <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-2" title="2">  <span class="cf">return</span> (dispatch<span class="op">,</span> getState) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb18-3" title="3">    <span class="at">dispatch</span>(<span class="at">changeFilter</span>(filter<span class="op">,</span> value))<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-4" title="4">    <span class="cf">return</span> <span class="at">fetchBenches</span>(<span class="at">getState</span>().<span class="at">filters</span>)(dispatch)<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-5" title="5">    <span class="co">// delicious curry!</span></a>
+<a class="sourceLine" id="cb18-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb18-7" title="7"><span class="op">}</span></a></code></pre></div>
+<p>That’s it! The markers and bench index should now only display for benches that are within the bounds of the map. Move the map around to prove this! <strong>Show your TA!</strong></p>
+<h2 id="phase-10-creating-benches">Phase 10: Creating Benches</h2>
+<h3 id="adding-a-benchform">Adding a <code>BenchForm</code></h3>
+<ul>
+<li>Create a new React component &amp; container, <code>BenchForm</code> &amp; <code>BenchFormContainer</code>. This should render a simple form with 4 fields:
+<ul>
+<li>Description</li>
+<li>Number of seats</li>
+<li>Latitude</li>
+<li>Longitude</li>
+</ul></li>
+<li>Add a new <code>seating</code> column to the <code>benches</code> table.
+<ul>
+<li>This new column will store how many people can sit together on the bench at the same time.</li>
+</ul></li>
+<li>Create a new <code>&lt;Route&gt;</code>, <code>/benches/new</code>, for your <code>BenchFormContainer</code> component.
+<ul>
+<li>Test the route by navigating to <code>/#/benches/new</code>; the map should disappear.</li>
+</ul></li>
+<li>Write a <code>create</code> method on your <code>BenchesController</code> and give it a corresponding route in <code>routes.rb</code>.</li>
+</ul>
+<h3 id="navigating-to-the-benchform">Navigating to the <code>BenchForm</code></h3>
+<p>Filling in coordinates manually is a major pain; Let’s make things a little easier by bringing up a new bench form when a user clicks on the map and pre-filling it with latitude and longitude based on where they clicked.</p>
+<p>Because <code>BenchMapContainer</code> and <code>BenchFormContainer</code> live under different routes, we can’t simply pass props between them to convey our click information. We will need to encode our parameters in a client-side query string.</p>
+<h4 id="withrouter"><code>withRouter</code></h4>
+<p>Since our <code>BenchMap</code> will need access to the <code>Router</code>, import the <code>withRouter</code> function from <code>react-router-dom</code>. Change the export statement in <code>bench_map.jsx</code> so that we are exporting a wrapped component.</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1"><span class="im">export</span> <span class="im">default</span> <span class="at">withRouter</span>(BenchMap)<span class="op">;</span></a></code></pre></div>
+<p>Our <code>BenchMap</code> component will now have a <code>history</code> (router) prop.</p>
+<h4 id="redirecting-with-coordinates">Redirecting with coordinates</h4>
+<p>Add a <code>"click"</code> handler to the map. It should: * Grab the coordinates from the click event. * Use the router to redirect to the <code>BenchForm</code> URL, providing the <code>lat</code> and <code>lng</code> as query params.</p>
+<p>To pass <code>lat</code> and <code>lng</code> as query params:</p>
+<ol start="0" type="1">
+<li>Use <code>this.props.history.push</code> to send data along with the new <code>pathname</code>.</li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1"><span class="co">// frontend/components/bench_map/bench_map.jsx</span></a>
+<a class="sourceLine" id="cb20-2" title="2"></a>
+<a class="sourceLine" id="cb20-3" title="3"><span class="co">//...</span></a>
+<a class="sourceLine" id="cb20-4" title="4"> <span class="at">_handleClick</span>(coords)<span class="op">{</span></a>
+<a class="sourceLine" id="cb20-5" title="5">    <span class="kw">this</span>.<span class="va">props</span>.<span class="va">history</span>.<span class="at">push</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb20-6" title="6">      <span class="dt">pathname</span><span class="op">:</span> <span class="st">&quot;benches/new&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb20-7" title="7">      <span class="dt">search</span><span class="op">:</span> <span class="vs">`lat=</span><span class="sc">${</span><span class="va">coords</span>.<span class="at">lat</span><span class="sc">}</span><span class="vs">&amp;lng=</span><span class="sc">${</span><span class="va">coords</span>.<span class="at">lng</span><span class="sc">}</span><span class="vs">`</span></a>
+<a class="sourceLine" id="cb20-8" title="8">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb20-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb20-10" title="10"><span class="co">//...</span></a></code></pre></div>
+<p>Test this before moving on. You should be able to click the map and make the browser redirect to a URL that looks something like:</p>
+<p><code>/#/benches/new?lat=37.79153217974085&amp;lng=-122.40194320678711</code></p>
+<h3 id="pre-filling-the-form">Pre-filling the form</h3>
+<p>Inside of the <code>BenchFormContainer</code>… * Define a <code>mapStateToProps</code> function that accepts <code>state</code> and <code>ownProps</code> as arguments * pass <code>lat</code> and <code>lng</code> props to the <code>BenchForm</code> component by deconstructing <code>ownProps.location.search</code> * use <a href="https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams"><code>URLSearchParams</code></a> to pull the <code>lat</code> and <code>lng</code> from the query string</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="co">// frontend/components/bench_form/bench_form_container.jsx</span></a>
+<a class="sourceLine" id="cb21-2" title="2"></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="co">//...</span></a>
+<a class="sourceLine" id="cb21-4" title="4">  <span class="kw">const</span> mapStateToProps <span class="op">=</span> (state<span class="op">,</span> <span class="op">{</span> location <span class="op">}</span>) <span class="kw">=&gt;</span> (<span class="op">{</span></a>
+<a class="sourceLine" id="cb21-5" title="5">    <span class="dt">lat</span><span class="op">:</span> <span class="kw">new</span> <span class="at">URLSearchParams</span>(<span class="va">location</span>.<span class="at">search</span>).<span class="at">get</span>(<span class="st">&quot;lat&quot;</span>)<span class="op">,</span></a>
+<a class="sourceLine" id="cb21-6" title="6">    <span class="dt">lng</span><span class="op">:</span> <span class="kw">new</span> <span class="at">URLSearchParams</span>(<span class="va">location</span>.<span class="at">search</span>).<span class="at">get</span>(<span class="st">&quot;lng&quot;</span>)</a>
+<a class="sourceLine" id="cb21-7" title="7">  <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-8" title="8"><span class="co">//...</span></a></code></pre></div>
+<p>Restructure your <code>BenchForm</code> component to accept <code>lat</code> and <code>lng</code> as props. Use these values to pre-fill the fields on your form. Make the input tags disabled so that our users don’t try to edit them!</p>
+<p><strong>Call a TA over and show them your form in action!!</strong></p>
+<h3 id="api-util-and-action-creators">Api Util and Action Creators</h3>
+<ul>
+<li>Add a <code>createBench</code> function to <code>bench_api_util.js</code>. It should make a <code>POST</code> request to your API.</li>
+<li>Create a <code>RECEIVE_BENCH</code> action type.</li>
+<li>Add the following action creators to <code>bench_actions.js</code>:
+<ul>
+<li><code>receiveBench</code> (regular action creator)</li>
+<li><code>createBench</code> (thunk action creator)</li>
+</ul></li>
+<li>Add a <code>mapDispatchToProps</code> function to your <code>BenchFormContainer</code>; this should pass a <code>createBench</code> prop to <code>BenchForm</code></li>
+</ul>
+<h3 id="benchesreducer"><code>benchesReducer</code></h3>
+<p>Now, update your <code>benchesReducer</code> to respond to the <code>RECEIVE_BENCH</code> action.</p>
+<h4 id="benchmap-1"><code>BenchMap</code></h4>
+<p>Finally, update your <code>BenchMap</code> to redirect to the search page after a new bench is created.</p>
+<p>Create a few benches!</p>
+<h3 id="protect-your-front-end-bench-routes">Protect your front-end bench routes!</h3>
+<p>Let’s make sure users can’t get to our <code>"/#/benches/new"</code> route on the front-end unless they’re logged in.</p>
+<ul>
+<li>Define a <code>&lt;ProtectedRoute&gt;</code> helper method in your <code>route_util.js</code>. It should:
+<ul>
+<li>Check to see if the application state has a <code>currentUser</code> property. You can use the <code>loggedIn</code> boolean like we did in our <code>AuthRoute</code> component.</li>
+<li>If true, render the component.</li>
+<li>Otherwise, <code>Redirect</code> to <code>"/login"</code>.</li>
+</ul></li>
+<li>Add the route to our <code>App</code> component like so:</li>
+</ul>
+<div class="sourceCode" id="cb22"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">&lt;ProtectedRoute</span><span class="ot"> exact path=</span><span class="st">&quot;benches/new&quot;</span><span class="ot"> component=</span><span class="st">{BenchFormContainer}</span> <span class="kw">/&gt;</span></a></code></pre></div>
+<p><strong>Test that your routes are protected before moving on!</strong>. You should be re-directed from logging in and signing up to the root if you are already logged in. In addition, you should be re-directed to logging in if you try to create a bench and aren’t logged in.</p>
+<h2 id="phase-11-filtering-by-seating">Phase 11: Filtering By Seating</h2>
+<p>In this section, we want to build the functionality that will allow our users to filter benches by both their geographic bounds and their number of seats.</p>
+<h3 id="update-your-api">Update your API</h3>
+<ul>
+<li>Update your <code>BenchesController#index</code> :
+<ul>
+<li>Modify <code>bench_params</code> to accept <code>:max_seating</code> and <code>:min_seating</code>.</li>
+<li>Filter your <code>@benches</code> by <code>params[:max_seating]</code> and <code>params[:min_seating]</code>, if present.</li>
+</ul></li>
+</ul>
+<h3 id="filter-actions-1">Filter Actions</h3>
+<p>Next, let’s write a new action creator. We’re going to define a single action creator, <code>updateFilter</code>, that will be invoked whenever we update one of the following: * bounds * min seating * max seating</p>
+<p>It should look like this:</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="co">// frontend/actions/bench_actions.js</span></a>
+<a class="sourceLine" id="cb23-2" title="2"></a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="co">//...</span></a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="im">export</span> <span class="kw">const</span> updateFilter <span class="op">=</span> (filter<span class="op">,</span> value) <span class="kw">=&gt;</span> (<span class="op">{</span></a>
+<a class="sourceLine" id="cb23-5" title="5">  <span class="dt">type</span><span class="op">:</span> UPDATE_FILTER<span class="op">,</span></a>
+<a class="sourceLine" id="cb23-6" title="6">  filter<span class="op">,</span></a>
+<a class="sourceLine" id="cb23-7" title="7">  value</a>
+<a class="sourceLine" id="cb23-8" title="8"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-9" title="9"><span class="co">//...</span></a></code></pre></div>
+<p>The first parameter, <code>filter</code>, will tell our <code>filterReducer</code> which property to update, and the second parameter, <code>value</code>, will specify the value of that filter.</p>
+<p>Start by refactoring the <code>filterReducer</code> and <code>SearchContainer</code> to use this new action creator instead of <code>updateBounds</code>. Your <code>filterReducer</code> should have a default state that looks like:</p>
+<pre><code>{
+  bounds:{},
+  minSeating: 1,
+  maxSeating: 10
+}</code></pre>
+<p>Also be sure to refactor your action types if necessary.</p>
+<h3 id="filterform"><code>FilterForm</code></h3>
+<p>Create a new component, <code>FilterForm</code>. It should be a sub-component of <code>Search</code>. <code>FilterForm</code> should render two inputs, one for <code>minSeating</code> and one for <code>maxSeating</code>.</p>
+<p>Update your <code>SearchContainer</code> to pull <code>minSeating</code> and <code>maxSeating</code> from the state to pass as props. <code>SearchContainer</code> should also pass an <code>updateFilter</code> prop to <code>Search</code>, which should then pass it on to <code>BenchMap</code> and <code>FilterForm</code>. <code>updateFilter</code> should be the <code>onChange</code> handler of the <code>input</code> tags.</p>
+<p>You should be able to see the markers change on the screen as you toggle the values in the form!</p>
+<h2 id="phase-12-show-page">Phase 12: Show Page</h2>
+<p>Create a <code>BenchShow</code> component. It should be a full-page component displaying a single bench’s information and a map showing the bench. Your <code>BenchShow</code> page should mount whenever someone clicks on an item in your <code>BenchIndex</code> or a marker in your <code>BenchMap</code>.</p>
+<ul>
+<li>Create a new <code>Route</code> for your <code>BenchShowContainer</code> that takes a <code>benchId</code> param.</li>
+<li>Nest a <code>BenchMap</code> in your <code>BenchShow</code>, passing the bench as a prop.</li>
+<li>Center the map on the single bench and prevent the map from being dragged.</li>
+</ul>
+<h2 id="phase-13-reviews">Phase 13: Reviews</h2>
+<p>Show reviews of a bench on <code>BenchShow</code>. Reviews for a bench should comprise: * A rating from 1 to 5. * A comment field.</p>
+<p>Add a <code>ReviewIndex</code> and <code>ReviewForm</code>. <code>ReviewIndex</code> should show the average score for a bench and also list the reviews for that bench. Modify and add the appropriate API endpoints, actions, reducers, utils, and components.</p>
+<h2 id="phase-14-pictures">Phase 14: Pictures!</h2>
+<p>When you create a new bench, allow a user to also add a photo. We’ll do this in two steps.</p>
+<ol type="1">
+<li><p>Create a new column in your benches table to store the image url. Add a text field in the bench form to allow the user to enter a url. Display these pictures on both the show page and the index.</p></li>
+<li><p>Each time the user adds an image, we actually want to store our own copy of that image. The image url in your database should point to that copy, rather than the original. We don’t want to store the image in our database; that would take up too much space. Instead will use the web service <a href="http://cloudinary.com/documentation/upload_widget">Cloudinary</a>. Remove the url text-field from your form and replace it with an add-image button. The button should open the Cloudinary upload_widget which will allow you to drag-and-drop an image or supply a url, and will return the url for your new copy of the image. Checkout the <a href="https://vimeo.com/164612621">Cloudinary video</a> and <a href="https://github.com/appacademy/react_cloudinary_demo">corresponding code</a> for details on how to create your own Cloudinary account and add the widget to your app. If step (1) was working properly, you shouldn’t have to change your backend at all. Test that everything works by adding a new bench with an image.</p></li>
+</ol>
+<p><strong>Note:</strong> Since this site isn’t going on Heroku, you can just put the <code>upload_preset</code> and <code>cloud_name</code> straight into your jsx file; no need to use the Figaro gem.</p>
+<h2 id="bonuses">BONUSES!</h2>
+<ul>
+<li>When you hover over an index item it should highlight the marker on the map in a different color. This should require creating a new reducer.</li>
+<li>Add a custom 404 component that renders when a user tries to go to a page that doesn’t exist. Wrap your routes in a <code>Switch</code> so the component only renders if it doesn’t match any other route.</li>
+<li>Every bench can have multiple photos!</li>
+<li>Show page should have a carousel!</li>
+<li>Display the score as a list of star images!</li>
+<li>Users can favorite benches!</li>
+<li>Look at your app, then look at the real AirBNB. See any differences? Give your project a makeover and add a ton of CSS so that it resembles the REAL AirBNB.</li>
+</ul>
+</body>
+</html>

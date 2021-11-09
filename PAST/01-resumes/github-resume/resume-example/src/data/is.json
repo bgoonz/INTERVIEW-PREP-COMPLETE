@@ -1,0 +1,342 @@
+{
+  "name": "Snær Seljan Þóroddsson",
+  "firstName": "snær seljan",
+  "lastName": "þóroddsson",
+  "email": "snaerth@gmail.com",
+  "sendEmail": "Hafðu samband",
+  "back": "Til baka",
+  "more": "Meira",
+  "resume": "Ferilskrá",
+  "contact": {
+    "title": "Vertu í bandi",
+    "text": "Ef þú vilt hafa samband þá getur þú sent mér póst beint á <a href='mailto:snaerth@gmail.com' title='Senda póst til snaerth@gmail.com'>snaerth@gmail.com</a> eða sent mér skilaboð á <a href='https://www.facebook.com/snaerth' title='Facebook'>Facebook</a>.",
+    "email": "snaerth@gmail.com",
+    "buttonText": "Senda mér póst"
+  },
+  "nav": [
+    {
+      "id": 1,
+      "text": "um mig",
+      "active": true
+    },
+    {
+      "id": 2,
+      "text": "menntun",
+      "active": false
+    },
+    {
+      "id": 3,
+      "text": "ferill",
+      "active": false
+    },
+    {
+      "id": 4,
+      "text": "kunnátta",
+      "active": false
+    },
+    {
+      "id": 5,
+      "text": "verkefni",
+      "active": false
+    }
+  ],
+  "career": {
+    "title": "ferill",
+    "rows": [
+      {
+        "title": "Dohop",
+        "secondTitle": "2017 - ",
+        "content": "Í Dohop hef ég starfað að margvíslegum verkefnum. Mitt starf er sambland af vörumerkjastjóra, tækni leiðtoga og forritara.  Tólin sem ég hef unnið mest með í Dohop eru Node.js, React.js, Less, css modules,  Python í bakenda , Less, CSS modules and Amazon AWS."
+      },
+      {
+        "title": "Advania",
+        "secondTitle": "2014-2017",
+        "content": "Hjá Advania hef ég sinnt mörgum og fjölbreyttum verkefnum sem vefforritari síðastliðinn 3 ár. Ég hef góða reynslu bæði í fram- og bakendaforritun en ég hef þróað og forritað stóra vefi og vefþjónustur (REST og SOAP). Helsti styrkleiki minn liggur í Javascript og CSS, nánar tiltekið í Node.js, React með Redux, SASS, LESS og CSS Modules."
+      },
+      {
+        "title": "Launafl ehf.",
+        "secondTitle": "2012-2013",
+        "content": "Rafvirkjastörf á rafmagnsverkstæði Launafls."
+      },
+      {
+        "title": "Seljaskóli",
+        "secondTitle": "2009-2012",
+        "content": "Umsjónakennari á miðstigi í Seljaskóla. Einnig kenndi ég valfög á unglingastigi, meðal annars íþróttafræði, glímu, fótbolta og almennar íþróttir."
+      },
+      {
+        "title": "Ungmennafélagið Valur",
+        "secondTitle": "2010-2012",
+        "content": "Umsjónamaður leikjanámskeiða á sumrin hjá Ungmennafélaginu Val á Reyðarfirði."
+      },
+      {
+        "title": "Ármann",
+        "secondTitle": "2009-2012",
+        "content": "Glímuþjálfari hjá Glímudeild Ármanns. Þjálfaði barna- og unglingaflokk sem og meistaraflokk."
+      },
+      {
+        "title": "Japan",
+        "secondTitle": "2004-2005 ",
+        "content": "Lauk svarta beltinu og lagði stund á júdó í Matsuyama, Japan í fimm mánuði ásamt því að kenna grunn- og framhaldsskólanemum ensku."
+      }
+    ],
+    "images": [
+      {
+        "id": 1,
+        "url": "me1.jpg",
+        "thumbnail": "thumbnails/me1.jpg",
+        "text": "Hanoi, Vietnam"
+      },
+      {
+        "id": 2,
+        "url": "me2.jpg",
+        "thumbnail": "thumbnails/me2.jpg",
+        "text": "Kaminarimon, Tokyo"
+      }
+    ]
+  },
+  "education": {
+    "title": "menntun",
+    "rows": [
+      {
+        "title": "Háskóli Íslands",
+        "secondTitle": "2012-2015",
+        "content": "Tölvunarfræði, B.S."
+      },
+      {
+        "title": "Kennaraháskóli Íslands",
+        "secondTitle": "2005-2008",
+        "content": "Grunnskólakennarafræði, B.Ed. - Kjörsvið: Stærðfræði"
+      },
+      {
+        "title": "Menntaskólinn á Egilsstöðum",
+        "secondTitle": "2000-2004",
+        "content": "Stúdentspróf af náttúrufræðibraut"
+      }
+    ],
+    "images": [
+      {
+        "id": 3,
+        "url": "me_and_solla3.jpg",
+        "thumbnail": "thumbnails/me_and_solla3.jpg",
+        "text": "Þorrablót á Reyðarfirði"
+      },
+      {
+        "id": 4,
+        "url": "me4.jpg",
+        "thumbnail": "thumbnails/me4.jpg",
+        "text": "Luang Prabang, Laos"
+      },
+      {
+        "id": 5,
+        "url": "me5.jpg",
+        "thumbnail": "thumbnails/me5.jpg",
+        "text": "Endurkynni við Júdó meistarann minn herra Bunji sensei í Matsuyama, Japan"
+      },
+      {
+        "id": 6,
+        "url": "me6.jpg",
+        "thumbnail": "thumbnails/me6.jpg",
+        "text": "Góður bolli af víetnömsku kaffi í Hanoi, Vietnam"
+      }
+    ]
+  },
+  "about": {
+    "title": "um mig",
+    "text": "Ég heiti Snær Seljan Þóroddsson og er fæddur 1983. Ég er faðir, forritari, kennari, glímu- og júdómaður svo fátt eitt sé nefnt. Ég er uppalinn á Reyðarfirði en hef búið í Reykjavík síðan 2004. Af áhugamálum ber helst að nefna fjölskyldan, umhverfismál, forritun \"auðvitað\", veganismi, heilsa og hreyfing, kvikmyndir, útivera og núna nýlega yoga. Mér þykir fátt skemmtilegra en að eyða tíma með fjölskyldu eða forrita þegar tími gefst.",
+    "images": [
+      {
+        "id": 8,
+        "url": "me_and_solla4.jpg",
+        "thumbnail": "thumbnails/me_and_solla4.jpg",
+        "text": "Kyoto, Japan"
+      },
+      {
+        "id": 10,
+        "url": "me_and_embla.jpg",
+        "thumbnail": "thumbnails/me_and_embla.jpg",
+        "text": "Ég og Embla að chilla í Elliðaárdalnum"
+      },
+      {
+        "id": 7,
+        "url": "me13.jpg",
+        "thumbnail": "thumbnails/me13.jpg",
+        "text": "Fushimi Inari Tori hliðið í Kyoto, Japan"
+      },
+      {
+        "id": 9,
+        "url": "me7.jpg",
+        "thumbnail": "thumbnails/me7.jpg",
+        "text": "Bjórunnandi"
+      }
+    ]
+  },
+  "processbars": [
+    {
+      "title": "forritunarmál",
+      "mainTitle": "kunnátta",
+      "items": [
+        {
+          "name": "Javascript",
+          "percentage": 95
+        },
+        {
+          "name": "Typescript",
+          "percentage": 80
+        },
+        {
+          "name": "GraphQL",
+          "percentage": 50
+        },
+        {
+          "name": "C#",
+          "percentage": 73
+        },
+        {
+          "name": "JAVA",
+          "percentage": 70
+        },
+        {
+          "name": "Python",
+          "percentage": 80
+        },
+        {
+          "name": "Html",
+          "percentage": 95
+        },
+        {
+          "name": "CSS, SCSS, LESS",
+          "percentage": 95
+        }
+      ]
+    },
+    {
+      "title": "javascript frameworks",
+      "items": [
+        {
+          "name": "React umgjörðir",
+          "percentage": 99
+        },
+        {
+          "name": "Node.js and Express",
+          "percentage": 95
+        },
+        {
+          "name": "React Native",
+          "percentage": 70
+        },
+        {
+          "name": "Vue",
+          "percentage": 60
+        },
+        {
+          "name": "Angular",
+          "percentage": 60
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "tómstundagaman",
+      "mainTitle": "verkefni",
+      "projects": [
+        {
+          "id": 1,
+          "image": "glima.png",
+          "thumbnail": "thumbnails/glima.png",
+          "url": "https://www.glima.is",
+          "text": "Forritaði og hannaði vefsíðu Glímusambands Íslands",
+          "title": "glima.is (2019)",
+          "titleText": "Íslensk glíma."
+        },
+        {
+          "id": 2,
+          "image": "straumverk.png",
+          "thumbnail": "thumbnails/straumverk.png",
+          "url": "https://www.straumverk.is",
+          "text": "Forritaði og hannaði vefsíðu Straumverk efhf",
+          "title": "straumverk.is (2017)",
+          "titleText": "Vefsíða straumverks."
+        },
+        {
+          "id": 3,
+          "image": "biomynd_is.PNG",
+          "thumbnail": "thumbnails/biomynd_is.PNG",
+          "url": "http://www.biomynd.is",
+          "text": "Allt það sem þú vilt vita um bíómyndir í sýningu sem og væntanlegar í kvikmyndhús landsins.",
+          "title": "biomynd.is (2015)",
+          "titleText": "Allar myndir í bíó á einum stað"
+        },
+        {
+          "id": 4,
+          "image": "api_kvikmyndir_is.jpg",
+          "thumbnail": "thumbnails/api_kvikmyndir_is.PNG",
+          "url": "http://api.kvikmyndir.is",
+          "text": "Icelandic movie API er frí REST þjónusta sem hefur að geyma allar upplýsingar um kvikmyndir í bíóhúsum landsins.",
+          "title": "api.kvikmyndir.is (2016)",
+          "titleText": "Búðu til bíóapp, bíó vefsíðu með gögnunum frá Icelandic movie API."
+        }
+      ]
+    },
+    {
+      "title": "Vinnutengd verkefni",
+      "text": "Helstu verkefni sem ég hef unnið að eru tengd framendaforritun en ég hef einnig sinnt mörgum verkefnum í bakendaforritun. Minn styrkur liggur í framendanum, þá sérstaklega í Javascript \"frameworks\" eins React.js, Vue.js, Next.js eða Gatsby.js. Svo er ég einnig mjög fær í \"Plain valnilla Javascript\". Ekki má gleyma að ég vinn vel með öðrum og ég er góður teymisstjórnandi  Endilega hafið samband <a href='mailto:snaerth@gmail.com' class='reveal-text' title='Senda póst til snaerth@gmail.com'>snaerth@gmail.com</a> fyrir frekari upplýsingar."
+    }
+  ],
+  "images": [
+    {
+      "id": 1,
+      "url": "me1.jpg",
+      "thumbnail": "thumbnails/me1.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "url": "me2.jpg",
+      "thumbnail": "thumbnails/me2.jpg",
+      "text": "Dolor sit amet, consectetur adipiscing."
+    },
+    {
+      "id": 3,
+      "url": "me3.jpg",
+      "thumbnail": "thumbnails/me3.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 4,
+      "url": "me4.jpg",
+      "thumbnail": "thumbnails/me4.jpg",
+      "text": "Dolor sit amet, consectetur adipiscing."
+    },
+    {
+      "id": 5,
+      "url": "me5.jpg",
+      "thumbnail": "thumbnails/me5.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 6,
+      "url": "me6.jpg",
+      "thumbnail": "thumbnails/me6.jpg",
+      "text": "Dolor sit amet, consectetur adipiscing."
+    },
+    {
+      "id": 7,
+      "url": "solla_1.jpg",
+      "thumbnail": "thumbnails/rsz_solla_1.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 8,
+      "url": "solla_3.jpg",
+      "thumbnail": "thumbnails/rsz_solla_3.jpg",
+      "text": "Dolor sit amet, consectetur adipiscing."
+    },
+    {
+      "id": 9,
+      "url": "solla_4.jpg",
+      "thumbnail": "thumbnails/rsz_solla_4.jpg",
+      "text": "Dolor sit amet, consectetur adipiscing."
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+.button {
+  min-width: 150px;
+  max-width: 250px;
+  margin: 1em;
+  padding: 1em 2em;
+  border: none;
+  background: none;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button span {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+}
+
+.button span svg {
+  height: 32px;
+  width: 32px;
+  fill: #fff;
+}
+
+.button.svg {
+  padding-right: 65px;
+}
+
+.button.noMaxWidth {
+  max-width: initial;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button > span {
+  vertical-align: middle;
+}
+
+.button-right {
+  position: absolute;
+  left: 30px;
+}
+
+.button-right--offset {
+  transform: translate3d(200%, 0, 0);
+}
+
+.button-left {
+  position: absolute;
+  left: 15px;
+}
+
+.button-left--offset {
+  transform: translate3d(-200%, 0, 0);
+}
+
+.button-back--fixed {
+  position: fixed;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  .button-back--fixed.job-application--button-container {
+    margin: 0;
+    padding: 0;
+  }
+  .button-back--fixed button {
+    margin: 0;
+    padding: 1.2em 2em;
+    background-color: transparent;
+    color: #37474f;
+    font-size: 14px;
+  }
+  .button-back--fixed button:hover {
+    background-color: transparent;
+    color: #000;
+  }
+}
+
+/* Moema */
+
+.button--moema {
+  padding: 1.5em 3em;
+  border-radius: 50px;
+  background: #ff92f6;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button--moema.button--inverted {
+  background: #eceff1;
+  color: #37474f;
+}
+
+.button--moema::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  bottom: -20px;
+  right: -20px;
+  background: inherit;
+  border-radius: 50px;
+  z-index: -1;
+  opacity: 0.4;
+  transform: scale3d(0.8, 0.5, 1);
+}
+
+.button--moema:hover {
+  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+  background-color: #ff92f6;
+  animation: anim-moema-1 0.3s forwards;
+}
+
+.button--moema.button--inverted:hover {
+  background-color: #ff92f6;
+}
+
+.button--moema:hover::before {
+  animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+.icon-paperplane {
+  z-index: 999;
+}
+
+@keyframes anim-moema-1 {
+  60% {
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes anim-moema-2 {
+  to {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.button--text-thick {
+  font-weight: 600;
+}
+
+/* Typography and Roundedness */
+
+.button--text-upper {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Sizes */
+
+.button--size-s {
+  font-size: 14px;
+}
+
+.button--size-m {
+  font-size: 16px;
+}
+
+.button--size-l {
+  font-size: 18px;
+}
+.pr-60 {
+  padding-right: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+  .button {
+    margin: 1em 0;
+  }
+  .button--moema {
+    padding: 1em 2em;
+  }
+}

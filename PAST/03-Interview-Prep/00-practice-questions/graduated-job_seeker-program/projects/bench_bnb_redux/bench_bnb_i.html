@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bench_bnb_i</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="benchbnb-part-1---front-end-auth">BenchBnB Part 1 - Front-End Auth!</h1>
+<p>Check out the live demo <a href="http://aa-benchbnb.herokuapp.com">here</a>!</p>
+<h2 id="phase-0-setup">Phase 0: Setup</h2>
+<h3 id="setup-checklist">Setup Checklist</h3>
+<p>Refer to <a href="../../readings/checklist.md">the master checklist</a> during Bench BnB and your final project.</p>
+<h3 id="rails-backend">Rails Backend</h3>
+<ul>
+<li>Create a new rails project using <code>--database=postgresql</code> and <code>--skip-turbolinks</code>.</li>
+<li>Set up a <code>StaticPagesController</code> with a <code>root</code> view containing a <code>&lt;main id="root"&gt;&lt;/main&gt;</code>.</li>
+<li>Update your <code>routes.rb</code> file to root to <code>static_pages#root</code></li>
+</ul>
+<h3 id="frontend-structure">Frontend Structure</h3>
+<ul>
+<li><p>Create a <code>/frontend</code> folder at the root directory of your project to hold your JavaScript files:</p>
+<pre><code>frontend
+  + actions
+  + components
+  + reducers
+  + store
+  + util
+  bench_bnb.jsx</code></pre></li>
+<li>Run <code>npm init -y</code>.</li>
+<li>Run <code>npm install --save</code> the following packages:
+<ul>
+<li><code>webpack</code></li>
+<li><code>react</code></li>
+<li><code>react-dom</code></li>
+<li><code>react-redux</code></li>
+<li><code>redux</code></li>
+<li><code>redux-logger</code></li>
+<li><code>babel-core</code></li>
+<li><code>babel-loader</code></li>
+<li><code>babel-preset-react</code></li>
+<li><code>babel-preset-env</code></li>
+</ul></li>
+<li>Create a <code>webpack.config.js</code> file.</li>
+<li><p>Set up your entry file (<code>bench_bnb.jsx</code>) to render your app into the <code>#root</code> container.</p></li>
+</ul>
+<p>Your entry file might start off looking like the code below:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// frontend/bench_bnb.jsx</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="im">import</span> React <span class="im">from</span> <span class="st">&#39;react&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="im">import</span> ReactDOM <span class="im">from</span> <span class="st">&#39;react-dom&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="va">document</span>.<span class="at">addEventListener</span>(<span class="st">&#39;DOMContentLoaded&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-7" title="7">  <span class="kw">const</span> root <span class="op">=</span> <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&#39;root&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8">  <span class="va">ReactDOM</span>.<span class="at">render</span>(<span class="op">&lt;</span>h1<span class="op">&gt;</span>Welcome to BenchBnB&lt;/h1<span class="op">&gt;,</span> root)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li><strong>Test this rendering setup before moving on.</strong></li>
+</ul>
+<h2 id="phase-1-front-end-user-authentication">Phase 1: Front-End User Authentication</h2>
+<p>In this phase, we are going to implement front-end user sign-up and login. Goodbye Rails views; hello, single-page app! <strong>Read through the instructions for all of phase 1 before implementing anything.</strong> This will give you the context to understand each individual step.</p>
+<p><strong>Our authentication pattern must:</strong> * sign up new users * know who’s logged in * log users in * log them out * restrict access to certain routes based on whether someone is logged in</p>
+<h3 id="auth-backend">Auth Backend</h3>
+<ul>
+<li>We want to create a <code>User</code> model, <code>Api::UsersController</code>, and <code>Api::SessionsController</code> with the following endpoints:
+<ul>
+<li><code>[POST] api/users: "users#create" (signup)</code>,</li>
+<li><code>[POST] api/session: "sessions#create" (login)</code>,</li>
+<li><code>[DELETE] api/session: "sessions#destroy" (logout)</code></li>
+</ul></li>
+</ul>
+<p>Follow the basic pattern you used during the <a href="../../../rails#readings-after-you-finish-all-videos">Rails curriculum</a>, with some key differences:</p>
+<ul>
+<li>Namespace:
+<ul>
+<li>Your controllers should live under an <code>Api</code> namespace.</li>
+<li>Running <code>rails g controller api/users</code> will generate an <code>Api::UsersController</code></li>
+</ul></li>
+<li>Response Format:
+<ul>
+<li>Render JSON formatted responses by default.</li>
+<li>In <code>routes.rb</code>, set <code>defaults: {format: :json}</code> on your <code>namespace :api</code></li>
+</ul></li>
+<li>Views:
+<ul>
+<li>You’ll want an <strong><code>api/users/show.json.jbuilder</code></strong>, which you can use for multiple controller actions.</li>
+<li>This should delegate to a partial: <strong><code>api/users/_user.json.jbuilder</code></strong>, which we’ll use later.</li>
+</ul></li>
+<li><code>Sessions#destroy</code>:
+<ul>
+<li>Render an empty <code>{}</code> upon successful logout.</li>
+<li>Render a <code>404</code> message if there is no <code>current_user</code> to logout.</li>
+</ul></li>
+<li>Auth Errors:
+<ul>
+<li>Render auth errors (e.g. <code>'invalid credentials'</code> or <code>'username already exists'</code>) in your response with a corresponding error status (usually either <code>422</code>, <code>401</code>, or <code>404</code>).</li>
+<li>Use <code>@user.errors</code> when applicable.</li>
+<li><strong>Caution</strong>: Rails will format error responses differently than normal responses.</li>
+</ul></li>
+</ul>
+<p><strong>Test your routes</strong> using <code>$.ajax</code> methods in the console or with Postman before moving on. You should be able to create a user, log out, and log in.</p>
+<h3 id="sessionapiutil"><code>SessionApiUtil</code></h3>
+<p>Create a new file, <code>util/session_api_util.js</code> with the following functions: * <code>signup</code>: should make an AJAX request that creates a new user. * <code>login</code>: should make an AJAX request that creates a new session. * <code>logout</code>: should make an AJAX request that deletes the current session.</p>
+<p><strong>NB</strong>: Check out <code>routes.rb</code> and run <code>rails routes</code> to determine the appropriate URL for each of these requests.</p>
+<p><strong>Test each of your api util functions before moving on!</strong> To do this, you can import these functions in your entry file and save them to the window (e.g., <code>window.login = login;</code>).</p>
+<h3 id="state-shape">State Shape</h3>
+<p>We want our app state to hold the <code>current user</code> which we’ll nest under <code>session</code></p>
+<p>If no user is signed in, <code>session.currentUser</code> is <code>null</code>. If a user is signed in <code>session.currentUser</code> returns information on the user. App’s state might look something like this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb3-2" title="2">  <span class="dt">session</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">currentUser</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb3-4" title="4">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="dt">errors</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="dt">session</span><span class="op">:</span> [<span class="st">&quot;Invalid credentials&quot;</span>]</a>
+<a class="sourceLine" id="cb3-7" title="7">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb3-8" title="8"><span class="op">}</span></a></code></pre></div>
+<p>or this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="dt">session</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">currentUser</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-4" title="4">      <span class="dt">id</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb4-5" title="5">      <span class="dt">username</span><span class="op">:</span> <span class="st">&#39;breakfast&#39;</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-7" title="7">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb4-8" title="8">  <span class="dt">errors</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="dt">session</span><span class="op">:</span> []</a>
+<a class="sourceLine" id="cb4-10" title="10">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="op">}</span></a></code></pre></div>
+<p>By default, no user is signed in. Thus <code>session</code> should return a <code>null</code> <code>currentUser</code>.</p>
+<p>Hint: Use this default application state as a template for any session information we might receive.</p>
+<h3 id="session-actions">Session Actions</h3>
+<ul>
+<li>Before we get to the reducer, let’s write and export the following action creators in a new file <code>actions/session_actions.js</code>:
+<ul>
+<li><code>login(user)</code> (thunk action creator)</li>
+<li><code>logout()</code> (thunk action creator)</li>
+<li><code>signup(user)</code> (thunk action creator)</li>
+<li><code>receiveCurrentUser(currentUser)</code> (regular action creator)</li>
+<li><code>receiveErrors(errors)</code> (regular action creator)</li>
+</ul></li>
+<li>Don’t forget to define and export the corresponding action types as well (e.g., <code>export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER'</code>).</li>
+<li><code>logout</code> won’t accept an argument. <code>receiveErrors</code> will take an array. All other action creators accept a user object. On logout success dispatch <code>receiveCurrentUser(null)</code> to remove the current user.</li>
+</ul>
+<h3 id="sessionreducer"><code>sessionReducer</code></h3>
+<ul>
+<li>Create a new reducer in a new file <code>reducers/session_reducer.js</code> to keep track of our current user.</li>
+</ul>
+<p>The <code>sessionReducer</code> should listen for 1 action type and respond to it like so: * <code>RECEIVE_CURRENT_USER</code> - sets <code>currentUser</code> to the action’s user</p>
+<p>Your <code>sessionReducer</code> should maintain its own default state. To do that pass in an object as a default argument to sessionReducer with <code>currentUser</code> set to <code>null</code>.</p>
+<p>Remember to use both <code>Object.freeze()</code> and either <code>Object.assign</code> or <code>lodash/merge</code> to prevent the state from being accidentally mutated.</p>
+<h3 id="sessionerrorsreducer"><code>sessionErrorsReducer</code></h3>
+<ul>
+<li>Create a new reducer in a new file <code>reducers/session_errors_reducer.js</code> to keep track of any error messages.</li>
+</ul>
+<p>The <code>sessionErrorsReducer</code> should listen for 2 action type and respond to it like so: + <code>RECEIVE_SESSION_ERRORS</code> - sets <code>errors</code> to the action’s errors + <code>RECEIVE_CURRENT_USER</code> - clears the <code>errors</code></p>
+<h3 id="errorsreducer"><code>errorsReducer</code></h3>
+<ul>
+<li>Create a new reducer in a new file <code>reducers/errors_reducer.js</code> to keep track of any error messages.</li>
+</ul>
+<p>This file will be responsible for combining our reducers that handle errors.</p>
+<ul>
+<li>Import <code>combineReducers</code> from the <code>redux</code> library.</li>
+<li>Also import the <code>sessionErrorsReducer</code> function we just created!</li>
+<li>The <code>errorsReducer</code> should use <code>combineReducers</code> and will only have a single key-value pair for now named <code>session</code> which points to the <code>sessionErrorsReducer</code>. We will add more error reducers to this later.
+<ul>
+<li>Remember, the <code>combineReducers</code> function accepts a single argument: an object whose properties will represent properties of our application state, and values that correspond to domain-specific reducing functions.</li>
+</ul></li>
+<li><code>export default errorsReducer</code>.</li>
+</ul>
+<p>Your <code>errorsReducer</code> should look something like this:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="co">// frontend/reducers/errors_reducer.jsx</span></a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="im">import</span> <span class="op">{</span> combineReducers <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;redux&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-4" title="4"></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="im">import</span> sessionErrorsReducer <span class="im">from</span> <span class="st">&#39;./session_errors_reducer&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="kw">const</span> errorsReducer <span class="op">=</span> <span class="at">combineReducers</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb5-8" title="8">  <span class="dt">session</span><span class="op">:</span> sessionErrorsReducer</a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-10" title="10"></a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="im">export</span> <span class="im">default</span> errorsReducer<span class="op">;</span></a></code></pre></div>
+<h3 id="rootreducer"><code>rootReducer</code></h3>
+<p>Create a new file, <code>reducers/root_reducer.js</code>. This file will be responsible for combining our multiple, domain-specific reducers. It will export a single <code>rootReducer</code>.</p>
+<p>Use <code>combineReducers</code> to create the <code>rootReducer</code> with keys for the <code>sessionReducer</code> and <code>errorsReducer</code>, similarly to how you created the <code>errorsReducer</code>.</p>
+<p>So far, our default application state should look something like this:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="dt">session</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="dt">currentUser</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb6-4" title="4">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb6-5" title="5">  <span class="dt">errors</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="dt">session</span><span class="op">:</span> []</a>
+<a class="sourceLine" id="cb6-7" title="7">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="op">}</span></a></code></pre></div>
+<h3 id="the-store">The <code>store</code></h3>
+<p>Set up a <code>configureStore</code> method for initializing our Store:</p>
+<ul>
+<li>Create a new file, <code>/store/store.js</code>.</li>
+<li>Import <code>createStore</code> and <code>applyMiddleware</code> from the redux library.</li>
+<li>Import our <code>rootReducer</code>, <code>redux-logger</code>, and thunk middleware. Write it yourself, or import the library. If you use the library don’t forget to install it!</li>
+<li>Define a new function, <code>configureStore</code>, that accepts a single argument, <code>preloadedState</code>.</li>
+<li><code>configureStore</code> should return a new <code>store</code> with the <code>rootReducer</code> and <code>preloadedState</code> passed in.</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="co">// frontend/store/store.js</span></a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="im">import</span> <span class="op">{</span> createStore<span class="op">,</span> applyMiddleware <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;redux&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="im">import</span> logger <span class="im">from</span> <span class="st">&#39;redux-logger&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="im">import</span> thunk <span class="im">from</span> <span class="st">&#39;redux-thunk&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-6" title="6"><span class="im">import</span> rootReducer <span class="im">from</span> <span class="st">&#39;../reducers/root_reducer&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb7-7" title="7"></a>
+<a class="sourceLine" id="cb7-8" title="8"><span class="kw">const</span> configureStore <span class="op">=</span> (preloadedState <span class="op">=</span> <span class="op">{}</span>) <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb7-9" title="9">  <span class="at">createStore</span>(</a>
+<a class="sourceLine" id="cb7-10" title="10">    rootReducer<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-11" title="11">    preloadedState<span class="op">,</span></a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="at">applyMiddleware</span>(thunk<span class="op">,</span> logger)</a>
+<a class="sourceLine" id="cb7-13" title="13">  )</a>
+<a class="sourceLine" id="cb7-14" title="14">)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-15" title="15"></a>
+<a class="sourceLine" id="cb7-16" title="16"><span class="im">export</span> <span class="im">default</span> configureStore<span class="op">;</span></a></code></pre></div>
+<p>Before moving on, inside the <code>DOMContentLoaded</code> callback in <code>frontend/bench_bnb.jsx</code> call <code>configureStore()</code> and assign the result to the window.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">const</span> store <span class="op">=</span> <span class="at">configureStore</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="co">// we don&#39;t put the store directly on the window because</span></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="co">// it can be confusing when debugging, sometimes giving you access to state</span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="co">// when you shouldn&#39;t</span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="va">window</span>.<span class="at">getState</span> <span class="op">=</span> <span class="va">store</span>.<span class="at">getState</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="va">window</span>.<span class="at">dispatch</span> <span class="op">=</span> <span class="va">store</span>.<span class="at">dispatch</span><span class="op">;</span> <span class="co">// just for testing!</span></a></code></pre></div>
+<p>Run <code>window.getState()</code> in the console and inspect the results. Your state should look like the default state mentioned above!</p>
+<h2 id="phase-2-react-router-and-session-components">Phase 2: React Router and Session Components</h2>
+<p>Add routing to our application by running:</p>
+<pre><code>npm install --save react-router-dom</code></pre>
+<p>Before we add the <code>ReactRouter</code>, we’ll need to refactor our component hierarchy a bit.</p>
+<p>Define 2 new files at the root of your <code>frontend/components</code> folder:</p>
+<ul>
+<li><code>frontend/components/App.jsx</code></li>
+<li><code>frontend/components/root.jsx</code></li>
+</ul>
+<h3 id="the-app-component">The <code>App</code> component</h3>
+<p>Create and export a new <strong>functional component</strong> that renders an <code>&lt;h1&gt;</code> tag with “Bench BnB” text - this will eventually hold more, but this is all we need for now. It should look something like this:</p>
+<pre class="jsx"><code>// frontend/components/App.jsx
+
+import React from &#39;react&#39;;
+
+const App = () =&gt; (
+  &lt;div&gt;
+    &lt;h1&gt;Bench BnB&lt;/h1&gt;
+  &lt;/div&gt;
+);
+
+export default App;</code></pre>
+<h3 id="the-root-component">The <code>Root</code> component</h3>
+<p>Create and export a <strong>functional component</strong> called <code>Root</code>. It will accept the <code>store</code> as a prop, and render routes wrapped by the <code>Provider</code>.</p>
+<pre class="jsx"><code>// frontend/components/root.jsx
+
+import React from &#39;react&#39;;
+import { Provider } from &#39;react-redux&#39;;
+
+const Root = ({ store }) =&gt; (
+  &lt;Provider store={ store }&gt;
+    // Router goes here...
+  &lt;/Provider&gt;
+);</code></pre>
+<h3 id="react-router">React Router</h3>
+<p>Import <code>HashRouter</code> from <code>react-router-dom</code> into <code>root.jsx</code>, then wrap the <code>App</code> component in <code>HashRouter</code>.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="im">import</span> <span class="op">{</span> HashRouter <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;react-router-dom&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="im">import</span> App <span class="im">from</span> <span class="st">&#39;./App&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb12-3" title="3"></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="kw">const</span> Root <span class="op">=</span> (<span class="op">{</span> store <span class="op">}</span>) <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb12-5" title="5">  <span class="op">&lt;</span>Provider store<span class="op">={</span> store <span class="op">}&gt;</span></a>
+<a class="sourceLine" id="cb12-6" title="6">    <span class="op">&lt;</span>HashRouter<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-7" title="7">      <span class="op">&lt;</span>App/<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-8" title="8">    &lt;/HashRouter<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-9" title="9">  &lt;/Provider<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb12-10" title="10">)<span class="op">;</span></a></code></pre></div>
+<p>Thus <code>App</code> will be rendered for all routes in your app. We’ll define our routes within <code>App</code>.</p>
+<h3 id="updating-the-entry-point">Updating the Entry Point</h3>
+<p>Let’s modify our entry file, <code>bench_bnb.jsx</code>, to only import the following: * <code>React</code> &amp; <code>ReactDOM</code> * <code>Root</code> * <code>configureStore</code></p>
+<p>In the document-ready callback, you should simply invoke <code>configureStore</code> and then render the <code>Root</code> component into the <code>#root</code> container. Pass the <code>store</code> to the <code>Root</code> component as a prop.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="co">// frontend/bench_bnb.jsx</span></a>
+<a class="sourceLine" id="cb13-2" title="2"></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="im">import</span> ReactDOM <span class="im">from</span> <span class="st">&#39;react-dom&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-4" title="4"><span class="im">import</span> configureStore <span class="im">from</span> <span class="st">&#39;./store/store&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="im">import</span> Root <span class="im">from</span> <span class="st">&#39;./components/root&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-6" title="6"></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="va">document</span>.<span class="at">addEventListener</span>(<span class="st">&#39;DOMContentLoaded&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-8" title="8">  <span class="kw">const</span> store <span class="op">=</span> <span class="at">configureStore</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-9" title="9"></a>
+<a class="sourceLine" id="cb13-10" title="10">  <span class="co">// </span><span class="al">TESTING</span><span class="co"> START</span></a>
+<a class="sourceLine" id="cb13-11" title="11">  <span class="va">window</span>.<span class="at">getState</span> <span class="op">=</span> <span class="va">store</span>.<span class="at">getState</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-12" title="12">  <span class="va">window</span>.<span class="at">dispatch</span> <span class="op">=</span> <span class="va">store</span>.<span class="at">dispatch</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb13-13" title="13">  <span class="co">// </span><span class="al">TESTING</span><span class="co"> </span><span class="re">END</span></a>
+<a class="sourceLine" id="cb13-14" title="14"></a>
+<a class="sourceLine" id="cb13-15" title="15">  <span class="kw">const</span> root <span class="op">=</span> <span class="va">document</span>.<span class="at">getElementById</span>(<span class="st">&#39;root&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-16" title="16">  <span class="va">ReactDOM</span>.<span class="at">render</span>(<span class="op">&lt;</span>Root store<span class="op">={</span> store <span class="op">}</span>/&gt;<span class="op">,</span> root)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-17" title="17"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<h3 id="greeting-components"><code>Greeting</code> Components</h3>
+<ul>
+<li>Create a new react component, <code>Greeting</code>, and a container, <code>GreetingContainer</code>.</li>
+</ul>
+<h4 id="greetingcontainer"><code>GreetingContainer</code></h4>
+<ul>
+<li><code>GreetingContainer</code> passes as <code>props</code> to the presentational component <code>currentUser</code> from the state and the <code>logout</code> action creator. Set up <code>mapStateToProps</code> and <code>mapDispatchToProps</code> accordingly.</li>
+</ul>
+<h4 id="greeting"><code>Greeting</code></h4>
+<p>If the user <strong>is logged in</strong>, then the <code>Greeting</code> should contain: * A welcome message including the user’s username * A button to logout</p>
+<p>If the user <strong>is not logged in</strong>, then the <code>Greeting</code> should contain: * A <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md"><code>&lt;Link to&gt;</code></a> <code>/signup</code> * A <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md"><code>&lt;Link to&gt;</code></a> <code>/login</code></p>
+<p>Update your <code>App</code> component so that it renders the <code>GreetingContainer</code> and <code>&lt;h1&gt;</code> within a <code>&lt;header&gt;</code> tag. It should look like this:</p>
+<pre class="jsx"><code>import GreetingContainer from &#39;./greeting/greeting_container&#39;;
+
+const App = () =&gt; (
+  &lt;div&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Bench BnB&lt;/h1&gt;
+      &lt;GreetingContainer /&gt;
+    &lt;/header&gt;
+  &lt;/div&gt;
+);</code></pre>
+<p><strong>Test that you can logout from <code>App.jsx</code>.</strong> Navigate to the root url. From the console, log in a user (<code>window.dispatch(login(user))</code>). Check that clicking the logout button logs out the current user before moving on.</p>
+<h3 id="sessionform-components"><code>SessionForm</code> Components</h3>
+<p>To make our React components modular, we will reuse and render the same presentational form component on login and signup. We’ll keep this form component <a href="https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0">“dumb”</a>, however, so that it doesn’t need to know anything about the container or route rendering it.</p>
+<ul>
+<li>Create a container <code>LoginFormContainer</code>, another container <code>SignupFormContainer</code>, and their controlled component <code>SessionForm</code>.</li>
+</ul>
+<h4 id="loginformcontainer-and-signupformcontainer"><code>LoginFormContainer and SignupFormContainer</code></h4>
+<p>Each of these containers should provide <code>SessionForm</code> with the following props: + From <code>mapStateToProps(state, ownProps)</code>: * <code>errors</code> (array) - list of errors from the state * <code>formType</code> (string): <code>'login'</code> or <code>'signup'</code>, for each respective container + From <code>mapDispatchToProps(dispatch, ownProps)</code>: * <code>processForm</code> (function): dispatching action creators <code>login</code> or <code>signup</code>, again depending on the container</p>
+<h4 id="sessionform"><code>SessionForm</code></h4>
+<p>The <code>SessionForm</code> component should be responsible for a number of tasks: * Render a controlled component with <code>state</code> governed by user interface. For example,</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">class</span> SessionForm <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-2" title="2"></a>
+<a class="sourceLine" id="cb15-3" title="3">  <span class="at">constructor</span>(props) <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-4" title="4">    <span class="kw">super</span>(props)<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-5" title="5">    <span class="kw">this</span>.<span class="at">state</span> <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-6" title="6">      <span class="dt">username</span><span class="op">:</span> <span class="st">&quot;&quot;</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb15-7" title="7">      <span class="dt">password</span><span class="op">:</span> <span class="st">&quot;&quot;</span></a>
+<a class="sourceLine" id="cb15-8" title="8">    <span class="op">};</span></a>
+<a class="sourceLine" id="cb15-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb15-10" title="10"></a>
+<a class="sourceLine" id="cb15-11" title="11">  <span class="co">//...</span></a>
+<a class="sourceLine" id="cb15-12" title="12"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>Invoke the <code>processForm</code> prop when the <code>'Submit'</code> button is clicked.
+<ul>
+<li>Define a helper method <code>handleSubmit(e)</code> like so:</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">class</span> SessionForm <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-2" title="2">  <span class="co">//...</span></a>
+<a class="sourceLine" id="cb16-3" title="3"></a>
+<a class="sourceLine" id="cb16-4" title="4">  <span class="at">handleSubmit</span>(e) <span class="op">{</span></a>
+<a class="sourceLine" id="cb16-5" title="5">    <span class="va">e</span>.<span class="at">preventDefault</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-6" title="6">    <span class="kw">const</span> user <span class="op">=</span> <span class="va">Object</span>.<span class="at">assign</span>(<span class="op">{},</span> <span class="kw">this</span>.<span class="at">state</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-7" title="7">    <span class="kw">this</span>.<span class="va">props</span>.<span class="at">processForm</span>(user)<span class="op">;</span></a>
+<a class="sourceLine" id="cb16-8" title="8">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb16-9" title="9"></a>
+<a class="sourceLine" id="cb16-10" title="10">  <span class="co">//...</span></a>
+<a class="sourceLine" id="cb16-11" title="11"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>Pass it as a callback to your form’s <code>onSubmit</code>.</li>
+</ul></li>
+<li>Render a “Log in” or “Sign up” header based on the <code>formType</code> prop.</li>
+<li>Provide a <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/Link.md"><code>&lt;Link to&gt;</code></a> to <code>/signup</code> or <code>/login</code>, whichever isn’t the current address.</li>
+<li>Render a list of error messages if any are present.</li>
+<li>Redirect the user to the <code>/</code> route if they are logged in. Don’t forget to export the component <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/withRouter.md"><code>withRouter</code></a>!</li>
+</ul>
+<h3 id="session-routes">Session Routes</h3>
+<p>Now it’s time to create routes for logging in and signing up.</p>
+<ul>
+<li>Create two new routes in your <code>App</code> component for <code>/login</code> and <code>/signup</code>.
+<ul>
+<li>Their paths should be <code>"/login"</code> and <code>"/signup"</code>.</li>
+<li>One should render the <code>LoginFormContainer</code>, the other the <code>SignupFormContainer</code>.</li>
+</ul></li>
+</ul>
+<p>Your <code>App</code> should now look a lot like this:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb17-1" title="1"><span class="kw">const</span> App <span class="op">=</span> () <span class="kw">=&gt;</span> (    </a>
+<a class="sourceLine" id="cb17-2" title="2">  <span class="op">&lt;</span>div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb17-3" title="3">    <span class="op">&lt;</span>header<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb17-4" title="4">      <span class="op">&lt;</span>h1<span class="op">&gt;</span>Bench BnB&lt;/h1<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb17-5" title="5">      <span class="op">&lt;</span>GreetingContainer /<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb17-6" title="6">    &lt;/header<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb17-7" title="7"></a>
+<a class="sourceLine" id="cb17-8" title="8">    <span class="op">&lt;</span>Route path<span class="op">=</span><span class="st">&quot;/login&quot;</span> component<span class="op">={</span>LoginFormContainer<span class="op">}</span> /&gt;</a>
+<a class="sourceLine" id="cb17-9" title="9">    <span class="op">&lt;</span>Route path<span class="op">=</span><span class="st">&quot;/signup&quot;</span> component<span class="op">={</span>SignupFormContainer<span class="op">}</span> /&gt;</a>
+<a class="sourceLine" id="cb17-10" title="10">  &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb17-11" title="11">)</a></code></pre></div>
+<p><strong>Call a TA over and show them your <code>SessionForm</code> renders for logging and signing up before moving on!</strong></p>
+<h2 id="phase-3-bootstrapping-the-current-user">Phase 3: Bootstrapping the Current User</h2>
+<p>When our static <code>root</code> page loads, our app mounts without being aware of who the current user is.</p>
+<p>One solution to this problem is to create another API hook that returns the current user and then fetches that information when the app mounts. However, since the request would be asynchronous, our app would momentarily have no current user. This would cause it to briefly render in a ‘not-logged-in’ state and then re-render when the current user was received, causing a strange, flickering effect. To circumvent this, we’ll ‘bootstrap’ the current user alongside our HTML when the page initially loads.</p>
+<h4 id="edit-your-root.html.erb">Edit your <code>root.html.erb</code></h4>
+<p>Add a <code>&lt;script&gt;&lt;/script&gt;</code> element to the top of your <code>root.html.erb</code> file.</p>
+<p>Inside your <code>&lt;script&gt;</code>, we’re going to assign <code>window.currentUser</code>. In order to get the proper value, we’ll need to ask our controller for the <code>current_user</code> and then <code>render</code> that information inside the script tag using <code>ERB</code> interpolation. The result will be a hard-coded assignment in our rendered html that looks something like this:</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb18-1" title="1">// root.html.erb</a>
+<a class="sourceLine" id="cb18-2" title="2"></a>
+<a class="sourceLine" id="cb18-3" title="3">//...</a>
+<a class="sourceLine" id="cb18-4" title="4"><span class="kw">&lt;script</span><span class="ot"> type=</span><span class="st">&quot;text/javascript&quot;</span><span class="kw">&gt;</span></a>
+<a class="sourceLine" id="cb18-5" title="5">    <span class="va">window</span>.<span class="at">currentUser</span> <span class="op">=</span> <span class="op">{</span><span class="st">&quot;id&quot;</span><span class="op">:</span><span class="dv">3</span><span class="op">,</span><span class="st">&quot;username&quot;</span><span class="op">:</span><span class="st">&quot;sennecy_the_cat&quot;</span><span class="op">}</span></a>
+<a class="sourceLine" id="cb18-6" title="6"><span class="kw">&lt;/script&gt;</span></a>
+<a class="sourceLine" id="cb18-7" title="7"></a>
+<a class="sourceLine" id="cb18-8" title="8"><span class="kw">&lt;main</span><span class="ot"> id=</span><span class="st">&quot;root&quot;</span><span class="kw">&gt;&lt;/main&gt;</span></a>
+<a class="sourceLine" id="cb18-9" title="9">//...</a></code></pre></div>
+<p>where <code>{"id": 3, "username": "sennecy_the_cat"}</code> is inserted via <code>ERB</code>.</p>
+<h4 id="interpolate-current-user">Interpolate <code>current user</code></h4>
+<p>In your script, assign your <code>window.currentUser</code> to an ERB expression:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb19-1" title="1"><span class="va">window</span>.<span class="at">currentUser</span> <span class="op">=</span> <span class="op">&lt;%=</span>  <span class="op">%&gt;</span></a></code></pre></div>
+<p>Make sure to use <code>&lt;%= %&gt;</code> so that the result of your ruby code is rendered into the script (it will eventually return a JSON object).</p>
+<p>Inside your erb expression, <code>render</code> your jbuilder <code>_user</code> partial, passing it the <code>current_user</code>. Specify the whole path, including <code>.json.jbuilder</code>, to prevent rails from automatically looking for a HTML partial. Mark your <code>render</code> result <code>html_safe</code> to avoid escaping certain characters. You should get a JS- compatible object to assign to <code>window.currentUser</code>. Add interpolation around your <code>window.currentUser=</code> assignment so that it only runs if someone is logged in. You should have something like this:</p>
+<pre><code>&lt;!-- root.html.erb --&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+  &lt;% if logged_in? %&gt;
+    window.currentUser = &lt;%= render(
+      &quot;api/users/user.json.jbuilder&quot;,
+      user: current_user
+    ).html_safe %&gt;
+  &lt;% end %&gt;
+&lt;/script&gt;</code></pre>
+<p>Log in, refresh your page, and check out your <code>elements</code> in the Dev Tools. <strong>Verify that the <code>script</code> contains an object literal of the current user</strong> and properly assigns <code>window.currentUser</code>.</p>
+<h3 id="preloadedstate"><code>preloadedState</code></h3>
+<p>Finally, inside the <code>DOMContentLoaded</code> callback in your entry file… * check to see if there is a <code>window.currentUser</code> * If there is, create a <code>preloadedState</code> like below: * Pass this <code>preloadedState</code> to <code>configureStore</code>. * Remove <code>currentUser</code> from the <code>window</code> * If there is no <code>window.currentUser</code>, then <code>configureStore</code> without any arguments.</p>
+<p>Your entry point should now have the following code:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="co">// frontend/bench_bnb.jsx</span></a>
+<a class="sourceLine" id="cb21-2" title="2"></a>
+<a class="sourceLine" id="cb21-3" title="3"><span class="co">//...</span></a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="kw">let</span> store<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="cf">if</span> (<span class="va">window</span>.<span class="at">currentUser</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-6" title="6">  <span class="kw">const</span> preloadedState <span class="op">=</span> <span class="op">{</span> <span class="dt">session</span><span class="op">:</span> <span class="op">{</span> <span class="dt">currentUser</span><span class="op">:</span> <span class="va">window</span>.<span class="at">currentUser</span> <span class="op">}</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb21-7" title="7">  store <span class="op">=</span> <span class="at">configureStore</span>(preloadedState)<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-8" title="8">  <span class="kw">delete</span> <span class="va">window</span>.<span class="at">currentUser</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb21-9" title="9"><span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-10" title="10">  store <span class="op">=</span> <span class="at">configureStore</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-11" title="11"><span class="op">}</span></a>
+<a class="sourceLine" id="cb21-12" title="12"><span class="co">//...</span></a></code></pre></div>
+<p><strong>Test your code</strong> by logging in and refreshing the page. You should stay logged in.</p>
+<h3 id="protecting-your-front-end-routes">Protecting your front-end routes</h3>
+<p>Let’s make sure users can’t visit our <code>"/login"</code> or <code>"/signup"</code> routes if they are already logged in on the front-end.</p>
+<ul>
+<li>Let’s create a <code>frontend/util/route_util.jsx</code> file. In it we will define some custom routes. Our goal is to conditionally render either the component or a <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/Redirect.md"><code>&lt;Redirect&gt;</code></a> based on whether a user is logged in. To do this we’ll need to:
+<ul>
+<li>Check to see if the application state has a <code>currentUser</code> property.</li>
+<li>If true, redirect to <code>"/"</code>.</li>
+<li>Otherwise, render the specified component.</li>
+</ul></li>
+</ul>
+<p>Your <code>&lt;AuthRoute&gt;</code> should look something like this:</p>
+<pre class="jsx"><code>// frontend/util/route_util.jsx
+
+//...
+
+const Auth = ({component: Component, path, loggedIn, exact}) =&gt; (
+  &lt;Route path={path} exact={exact} render={(props) =&gt; (
+    !loggedIn ? (
+      &lt;Component {...props} /&gt;
+    ) : (
+      &lt;Redirect to=&quot;/&quot; /&gt;
+    )
+  )}/&gt;
+);
+
+const mapStateToProps = state =&gt; {
+  return {loggedIn: Boolean(state.session.currentUser)};
+};
+
+export const AuthRoute = withRouter(connect(mapStateToProps, null)(Auth));</code></pre>
+<p>Import your <code>AuthRoute</code> into <code>App.jsx</code> and update the login and signup routes to use <code>AuthRoute</code>.</p>
+<p>:confetti_ball: You’ve finished adding front-end user auth to your app! Now let’s add benches!</p>
+<hr />
+<p>Continue to <a href="./bench_bnb_ii.md">Part 2</a>.</p>
+</body>
+</html>

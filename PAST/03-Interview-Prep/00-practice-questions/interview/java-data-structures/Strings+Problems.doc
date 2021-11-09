@@ -1,0 +1,1867 @@
+Date: Mon, 30 Nov 2020 13:21:45 +0000 (UTC)
+Message-ID: <421684691.1.1606742505386@b55f0f78acfc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_0_820105959.1606742505352"
+
+------=_Part_0_820105959.1606742505352
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Strings Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Strings Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>AllUnique</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isAllUnique(String s)
+{
+    boolean[] check =3D new boolean[256];
+    for(char c : s.toCharArray())
+    {
+        if(check[c])
+        {
+            return false;
+        }
+        check[c] =3D true;
+    }
+    return true;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isAllUniqueWithStreams(String s)
+{
+    Set&lt;Character&gt; set =3D s.chars().mapToObj(c -&gt; (char)c).collec=
+t(Collectors.toSet());
+    return set.size() =3D=3D s.length();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int lengthOfLongestUniqueSubstr(String s)
+{
+    int max =3D 0;
+    for(int i =3D 0; i &lt; s.length(); ++i)
+    {
+        for(int j =3D s.length(); j &gt;=3D i; --j)
+        {
+            String subStr =3D s.substring(i, j);
+            if(isAllUnique(subStr) &amp;&amp; subStr.length() &gt; max)
+            {
+                max =3D subStr.length();
+            }
+        }
+    }
+    return max;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String allUnique =3D "abcdefghijklmnopq";
+    String notAllUnique =3D "abcdefghidjklm";
+    boolean check =3D isAllUnique(allUnique);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isAllUnique(notAllUnique);
+    if(check)
+    {
+        return false;
+    }
+    check =3D isAllUniqueWithStreams(allUnique);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isAllUniqueWithStreams(notAllUnique);
+    if(check)
+    {
+        return false;
+    }
+    String test =3D "qwertyuiopqazxcvbnm";
+    check =3D lengthOfLongestUniqueSubstr(test) =3D=3D 18;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 876.0px;">
+<col style=3D"width: 666.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Anagrams</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isAnagram(String s1, String s2)
+{
+    if(s1.length() !=3D s2.length())
+    {
+        return false;
+    }
+    int[] check =3D new int[256];
+    for(char c : s1.toCharArray())
+    {
+        check[c]++;
+    }
+    for(char c : s2.toCharArray())
+    {
+        if(--check[c] &lt; 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isAnagramWithSort(String s1, String s2)
+{
+    if(s1.length() !=3D s2.length())
+    {
+        return false;
+    }
+    char[] a1 =3D s1.toCharArray();
+    char[] a2 =3D s2.toCharArray();
+    Arrays.sort(a1);
+    Arrays.sort(a2);
+    return Arrays.equals(a1, a2);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;String, Set&lt;String&gt;&gt; groupAnagrams(String[] a)
+{
+    Map&lt;String, Set&lt;String&gt;&gt; result =3D new HashMap&lt;&gt;();
+    for(String s : a)
+    {
+        String sortedString =3D sortString(s);
+        result.computeIfAbsent(sortedString, x -&gt; new HashSet&lt;&gt;())=
+.add(s);
+    }
+    return result;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;String, Set&lt;String&gt;&gt; groupAnagramsWithStreams(String[] a)
+{
+    List&lt;String&gt; list =3D Arrays.stream(a).collect(Collectors.toList(=
+));
+    return list.stream().collect(Collectors.groupingBy(e -&gt; sortString(e=
+), Collectors.toSet()));
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String s1 =3D "abcdefg", s2 =3D "gafbedc", s3 =3D "abcgfee";
+    boolean check =3D isAnagram(s1, s2);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isAnagram(s1, s3);
+    if(check)
+    {
+        return false;
+    }
+    check =3D isAnagramWithSort(s1, s2);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isAnagramWithSort(s1, s3);
+    if(check)
+    {
+        return false;
+    }
+    String[] strs =3D {"abc", "acb", "bca", "xyz", "zyx", "yxz"};
+    Map&lt;String, Set&lt;String&gt;&gt; anagrams =3D groupAnagrams(strs);
+    Set&lt;String&gt; s =3D anagrams.get("abc");
+    if(s.size() !=3D 3 || !(s.contains("abc") &amp;&amp; s.contains("acb") =
+&amp;&amp; s.contains("bca")))
+    {
+        return false;
+    }
+    s =3D anagrams.get("xyz");
+    if(s.size() !=3D 3 || !(s.contains("xyz") &amp;&amp; s.contains("zyx") =
+&amp;&amp; s.contains("yxz")))
+    {
+        return false;
+    }
+    anagrams =3D groupAnagramsWithStreams(strs);
+    s =3D anagrams.get("abc");
+    if(s.size() !=3D 3 || !(s.contains("abc") &amp;&amp; s.contains("acb") =
+&amp;&amp; s.contains("bca")))
+    {
+        return false;
+    }
+    s =3D anagrams.get("xyz");
+    if(s.size() !=3D 3 || !(s.contains("xyz") &amp;&amp; s.contains("zyx") =
+&amp;&amp; s.contains("yxz")))
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>CompareVersions</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int compareVersions(String v1, String v2)
+{
+    String[] a1 =3D v1.split("\\.");
+    String[] a2 =3D v2.split("\\.");
+    int i =3D 0;
+    while(i &lt; a1.length || i &lt; a2.length)
+    {
+        if(i &lt; a1.length &amp;&amp; i &lt; a2.length)
+        {
+            int v =3D Integer.parseInt(a1[i]) - Integer.parseInt(a2[i]);
+            if (v &gt; 0)
+            {
+                return 1;
+            }
+            if (v &lt; 0)
+            {
+                return -1;
+            }
+        }
+        else if(i &lt; a1.length)
+        {
+            if(Integer.parseInt(a1[i]) &gt; 0)
+            {
+                return 1;
+            }
+        }
+        else if(i &lt; a2.length)
+        {
+            if(Integer.parseInt(a2[i]) &gt; 0)
+            {
+                return -1;
+            }
+        }
+        i++;
+    }
+    return 0;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D compareVersions("1.1.2.0", "1.1.2") =3D=3D 0;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D compareVersions("1.1.2.0.4", "1.1.2.1") =3D=3D -1;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D compareVersions("1.1.2.3.4", "1.1.2.3") =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 964.0px;">
+<col style=3D"width: 578.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>CountAndSay</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String countAndSay(int n)
+{
+    String s =3D String.valueOf(n);
+    char[] a =3D s.toCharArray();
+    StringBuilder sb =3D new StringBuilder();
+    int count =3D 1;
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        if(a[i] =3D=3D a[i - 1])
+        {
+            count++;
+        }
+        else
+        {
+            sb.append(count);
+            sb.append(a[i - 1]);
+            count =3D 1;
+        }
+    }
+    sb.append(count);
+    sb.append(a[a.length - 1]);
+    return sb.toString();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D countAndSay(121).equals("111211");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>CountWords</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int countWordsSeparatedMyMultiplesSpaces(String s)
+{
+    int count =3D 0;
+    boolean lastSpace =3D false;
+    for(char c : s.toCharArray())
+    {
+        if(Character.isWhitespace(c))
+        {
+            lastSpace =3D true;
+        }
+        else
+        {
+            if(lastSpace)
+            {
+                count++;
+            }
+            lastSpace =3D false;
+        }
+    }
+    if(!lastSpace)
+    {
+        count++;
+    }
+    return count;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int countWordsWithSplit(String s)
+{
+    return s.split("\\s+").length;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String test =3D "this  is   a t es   t";
+    boolean check =3D countWordsSeparatedMyMultiplesSpaces(test) =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D countWordsWithSplit(test) =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Encode</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String encode(String s)
+{
+    //  aaabbbbbcdddd -&gt; a3b5c1d4
+    if(encodeLength(s) &gt;=3D s.length())
+    {
+        return s;
+    }
+    char[] a =3D s.toCharArray();
+    char last =3D a[0];
+    int count =3D 1;
+    StringBuilder sb =3D new StringBuilder();
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        if(a[i] =3D=3D last)
+        {
+            count++;
+        }
+        else
+        {
+            sb.append(last);
+            sb.append(count);
+            count =3D 1;
+            last =3D a[i];
+        }
+    }
+    sb.append(last);
+    sb.append(count);
+    return sb.toString();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String decode(String s)
+{
+    //  a3b12c2 -&gt; aaabbbbbbbbbbbbcc
+    String[] letters =3D s.split("[1-9]+");
+    String[] numbers =3D s.split("[a-zA-Z]+");
+    //  numbers need to be shifted by 1
+    numbers =3D Arrays.copyOfRange(numbers, 1, numbers.length);
+    StringBuilder sb =3D new StringBuilder();
+    for(int i =3D 0; i &lt; letters.length; ++i)
+    {
+        int n =3D Integer.parseInt(numbers[i]);
+        char[] a =3D new char[n];
+        Arrays.fill(a, letters[i].charAt(0));
+        sb.append(a);
+    }
+    return sb.toString();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">private=
+ static int encodeLength(String s)
+{
+    char[] a =3D s.toCharArray();
+    char last =3D a[0];
+    int count =3D 1, size =3D 0;
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        if(a[i] =3D=3D last)
+        {
+            count++;
+        }
+        else
+        {
+            size +=3D 1 + String.valueOf(count).length();
+            count =3D 1;
+            last =3D a[i];
+        }
+    }
+    size +=3D 1 + String.valueOf(count).length();
+    return size;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D encode("aaabbbbbcdddd").equals("a3b5c1d4");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D decode("a3b5c1d4").equals("aaabbbbbcdddd");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>FirstUnique</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static char firstUnique(String s)
+{
+    //  O(n*n) complexity
+    for(int i =3D 0; i &lt; s.length(); ++i)
+    {
+        boolean repeated =3D false;
+        for(int j =3D 0; j &lt; s.length(); ++j)
+        {
+            if(i !=3D j &amp;&amp; s.charAt(i) =3D=3D s.charAt(j))
+            {
+                repeated =3D true;
+                break;
+            }
+        }
+        if(!repeated)
+        {
+            return s.charAt(i);
+        }
+    }
+    return 0;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static char firstUniqueUsingSet(String s)
+{
+    //  O(n) complexity
+    Set&lt;Character&gt; set =3D new HashSet&lt;&gt;();
+    boolean[] repeated =3D new boolean[256];
+    for(char c : s.toCharArray())
+    {
+        if (!repeated[c])
+        {
+            if (!set.contains(c))
+            {
+                set.add(c);
+            }
+            else
+            {
+                set.remove(c);
+                repeated[c] =3D true;
+            }
+        }
+    }
+    return set.size() &gt; 0 ? set.iterator().next() : 0;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static char firstUniqueUsingMap(String s)
+{
+    Map&lt;Character, Integer&gt; charFrequency =3D new HashMap&lt;&gt;();
+    for(char c : s.toCharArray())
+    {
+        charFrequency.merge(c, 1, Integer::sum);
+    }
+    for(char c : s.toCharArray())
+    {
+        if(charFrequency.get(c) =3D=3D 1)
+        {
+            return c;
+        }
+    }
+    return 0;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D firstUnique("abcdabc") =3D=3D 'd';
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUnique("abcdefg") =3D=3D 'a';
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUnique("abcddcba") =3D=3D 0;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUniqueUsingSet("abcdabc") =3D=3D 'd';
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUniqueUsingSet("abcdefg") =3D=3D 'a';
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUniqueUsingSet("abcddcba") =3D=3D 0;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUniqueUsingMap("abcdabc") =3D=3D 'd';
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUniqueUsingMap("abcdefg") =3D=3D 'a';
+    if(!check)
+    {
+        return false;
+    }
+    check =3D firstUniqueUsingMap("abcddcba") =3D=3D 0;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 687.0px;">
+<col style=3D"width: 855.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>LongestUniformSubstring</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static int[] longestUniform(String s)
+{
+    //  for the input: "abbbccda" the longest uniform substring is "bbb"
+    int max =3D 0, count =3D 1, startIdx =3D 0;
+    char lastChar =3D s.charAt(0);
+    for(int i =3D 1; i &lt; s.length(); ++i)
+    {
+        if(lastChar =3D=3D s.charAt(i))
+        {
+            count++;
+        }
+        else
+        {
+            if(count &gt; max)
+            {
+                max =3D count;
+                startIdx =3D i - count;
+            }
+            lastChar =3D s.charAt(i);
+            count =3D 1;
+        }
+    }
+    if(count &gt; max)
+    {
+        return new int[] {s.length() - count, count};
+    }
+    return new int[] {startIdx, max};
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D Arrays.equals(new int[] {1, 3}, longestUniform("abbbc=
+cda")) &amp;&amp;
+            Arrays.equals(new int[] {29, 8}, longestUniform("10000110101011=
+10110100010010011111111"));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 828.0px;">
+<col style=3D"width: 714.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>LongestWordWithAllLetters</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String longestWordWithAllLetters(String letters, String[] dictionary)
+{
+    int maxLen =3D 0, len =3D 0;
+    String longestWord =3D "";
+    for(String s : dictionary)
+    {
+        for(char c : s.toCharArray())
+        {
+            if(letters.indexOf(c) !=3D -1)
+            {
+                len++;
+            }
+            else
+            {
+                len =3D 0;
+                break;
+            }
+        }
+        if(len &gt; 0)
+        {
+            if(len &gt; maxLen)
+            {
+                maxLen =3D len;
+                longestWord =3D s;
+            }
+        }
+    }
+    return longestWord;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static String longestWordWithAllLettersWithStreams(String letters, String[]=
+ dictionary)
+{
+    Map&lt;Boolean, List&lt;String&gt;&gt; map =3D Arrays.stream(dictionary=
+).collect(
+            Collectors.groupingBy(s -&gt; s.chars().allMatch(x -&gt; letter=
+s.indexOf(x) !=3D -1)));
+    Pair&lt;String,Integer&gt; longest =3D map.get(true).stream()
+            .map(p -&gt; Pair.of(p, p.length()))
+            .max(Comparator.comparing(Pair::getRight))
+            .get();
+    return longest.getLeft();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D longestWordWithAllLetters("oet",
+            new String[] {"to", "toe", "tooeet", "toes"}).equals("tooeet");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D longestWordWithAllLettersWithStreams("oet",
+            new String[] {"to", "toe", "tooeet", "toes"}).equals("tooeet");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 769.0px;">
+<col style=3D"width: 773.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Palindrome</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isPalindrome(String s)
+{
+    char[] a =3D s.toCharArray();
+    int left =3D 0, right =3D a.length -1;
+    while(left &lt; right)
+    {
+        if(a[left++] !=3D a[right--])
+        {
+            return false;
+        }
+    }
+    return true;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int lengthOfLongestPalindrome(String s)
+{
+    int max =3D 1;
+    for(int i =3D 0; i &lt; s.length(); ++i)
+    {
+        for(int j =3D s.length(); j &gt;=3D i; --j)
+        {
+            String subStr =3D s.substring(i, j);
+            if(isPalindrome(subStr) &amp;&amp; subStr.length() &gt; max)
+            {
+                max =3D subStr.length();
+            }
+        }
+    }
+    return max;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String longestPalindrome(String s)
+{
+    String longest =3D "";
+    for(int i =3D 0; i &lt; s.length(); ++i)
+    {
+        for(int j =3D s.length(); j &gt;=3D i; --j)
+        {
+            String subStr =3D s.substring(i, j);
+            if(isPalindrome(subStr) &amp;&amp; subStr.length() &gt; longest=
+.length())
+            {
+                longest =3D subStr;
+            }
+        }
+    }
+    return longest;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String makeShortestPalindrome(String s)
+{
+    // Given a string S, you are allowed to convert it to a palindrome by
+    // adding characters in front of it.
+    //  "cdcba" -&gt; "abcdcba"
+    int start =3D 0, end =3D s.length() - 1;
+    while(start &lt; end)
+    {
+        if(s.charAt(start) =3D=3D s.charAt(end))
+        {
+            start++;
+            end--;
+        }
+        else
+        {
+            end--;
+        }
+    }
+    if(start =3D=3D s.length() / 2)
+    {
+        return s;
+    }
+    String suffix =3D s.substring(start + 1);
+    String prefix =3D new StringBuilder(suffix).reverse().toString();
+    return prefix + s.charAt(start) + suffix;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String s1 =3D "abcddcba", s2 =3D "abcdcba", s3 =3D "abcdba";
+    boolean check =3D isPalindrome(s1);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isPalindrome(s2);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isPalindrome(s3);
+    if(check)
+    {
+        return false;
+    }
+    check =3D lengthOfLongestPalindrome("dfrabcdedcbaprewsg") =3D=3D 9;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D longestPalindrome("dfrabcdedcbaprewsg").equals("abcdedcba");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D makeShortestPalindrome("cdcba").equals("abcdcba");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 876.0px;">
+<col style=3D"width: 666.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Pangram</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">The sen=
+tence "The quick brown fox jumps over the lazy dog" contains
+every single letter in the alphabet. Such sentences are called pangrams.
+Write a function findMissingLetters, which takes a String `sentence`,
+and returns all the letters it is missing (which prevent it from being a pa=
+ngram).
+You should ignore the case of the letters in sentence, and your return shou=
+ld be all lower case letters,
+in alphabetical order.</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">private=
+ static String ALPHABET =3D "abcdefghijklmnopqrstuvwxyz";
+
+
+public static String missingLetters(String s)
+{
+    SortedSet&lt;Character&gt; missingSet =3D new TreeSet&lt;&gt;(ALPHABET.=
+chars()
+            .mapToObj(c -&gt; (char) c).collect(Collectors.toSet()));
+    String lower =3D s.toLowerCase();
+    return missingSet.stream()
+            .filter(a -&gt; lower.indexOf(a) =3D=3D -1)
+            .map(Object::toString).collect(Collectors.joining());
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D "".equals(missingLetters("The quick brown fox jumps o=
+ver the lazy dog")) &amp;&amp;
+            "abcdefghijklmnopqrstuvwxyz".equals(missingLetters(""));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 950.0px;">
+<col style=3D"width: 592.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PatternMatch</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean patternMatch(String s, String pattern)
+{
+    int strLen =3D s.length(), patLen =3D pattern.length();
+    if(strLen &lt; patLen)
+    {
+        return false;
+    }
+    if(strLen =3D=3D patLen)
+    {
+        return s.equals(pattern);
+    }
+    for(int i =3D 0; i &lt; strLen - patLen; ++i)
+    {
+        if(s.charAt(i) =3D=3D pattern.charAt(0))
+        {
+            int j;
+            for(j =3D 0; j &lt; patLen; ++j)
+            {
+                if(s.charAt(i + j) !=3D pattern.charAt(j))
+                {
+                    break;
+                }
+            }
+            if(patLen =3D=3D j)
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean subsequenceMatch(String s, String pat)
+{
+    //  Following cases will match:
+    //  String          Pattern
+    //  "abcxdefyzlmn"  "xyz"
+    //  "abcxdefxyzlmn" "xyz"
+    int patIdx =3D 0;
+    for(int i =3D 0; i &lt; s.length() &amp;&amp; patIdx &lt; pat.length();=
+ ++i)
+    {
+        if(s.charAt(i) =3D=3D pat.charAt(patIdx))
+        {
+            patIdx++;
+        }
+    }
+    return patIdx =3D=3D pat.length();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String test =3D "Hello world", pat1 =3D "o wo", pat2 =3D "owo";
+    boolean check =3D patternMatch(test, pat1);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D patternMatch(test, pat2);
+    if(check)
+    {
+        return false;
+    }
+    check =3D subsequenceMatch("abcxdefyzlmn", "xyz");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D subsequenceMatch("abcxdefxyzlmn", "xyz");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Remove</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String removeChars(String s, String remove)
+{
+    boolean[] charsToRemove =3D new boolean[256];
+    for(char c : remove.toCharArray())
+    {
+        charsToRemove[c] =3D true;
+    }
+    int pos =3D 0;
+    char[] a =3D s.toCharArray();
+    for(char c : a)
+    {
+        if(!charsToRemove[c])
+        {
+            a[pos++] =3D c;
+        }
+    }
+    return new String(a, 0, pos);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String removeCharsWithStreams(String s, String remove)
+{
+    return s.chars().filter(x -&gt; remove.indexOf(x) =3D=3D -1)
+            .mapToObj(c -&gt; (char)c).map(String::valueOf).collect(Collect=
+ors.joining());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String[] removeStringFromArrayWithStreams(String[] input, String value)
+{
+    return Arrays.stream(input).filter(e -&gt; !e.equals(value)).toArray(St=
+ring[]::new);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String removeDups(String s)
+{
+    if(s =3D=3D null || s.length() &lt; 2)
+    {
+        return s;
+    }
+    char[] a =3D s.toCharArray();
+    int pos =3D 1;
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        int j;
+        for(j =3D 0; j &lt; pos; ++j)
+        {
+            if(a[i] =3D=3D a[j])
+            {
+                break;
+            }
+        }
+        if(j =3D=3D pos)
+        {
+            a[pos++] =3D a[i];
+        }
+    }
+    return new String(a, 0, pos);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String removeDupsWithStreams(String s)
+{
+    return s.chars().mapToObj(c -&gt; (char)c).distinct()
+            .map(String::valueOf).collect(Collectors.joining());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String removeAdjacentDups(String s)
+{
+    char[] a =3D s.toCharArray();
+    int pos =3D 1;
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        if(a[i] !=3D a[i - 1])
+        {
+            a[pos++] =3D a[i];
+        }
+    }
+    return new String(a, 0, pos);
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String s =3D "Kill all vowels";
+    String remove =3D "aeiou ";
+    String result =3D removeChars(s,remove);
+    boolean check =3D result.equals("Kllllvwls");
+    if(!check)
+    {
+        return false;
+    }
+    result =3D removeCharsWithStreams(s,remove);
+    check =3D result.equals("Kllllvwls");
+    if(!check)
+    {
+        return false;
+    }
+    String [] input =3D {"a", "b", "c", "d", "e", "f", "g", "h", "i"};
+    String[] output =3D removeStringFromArrayWithStreams(input, "e");
+    check =3D Arrays.equals(output, new String[] {"a", "b", "c", "d", "f", =
+"g", "h", "i"});
+    if(!check)
+    {
+        return false;
+    }
+    check =3D removeDups("abcdacbdabcd").equals("abcd");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D removeDupsWithStreams("abcdacbdabcd").equals("abcd");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D removeAdjacentDups("aaabbbbcccb").equals("abcb");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 912.0px;">
+<col style=3D"width: 630.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ReverseWords</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String reverseWords(String sentence)
+{
+    Character[] a =3D sentence.chars().mapToObj(c -&gt; (char)c).toArray(Ch=
+aracter[]::new);
+    reverse(a);
+    sentence =3D Arrays.stream(a).map(String::valueOf).collect(Collectors.j=
+oining());
+    String[] words =3D sentence.split("\\s+");
+    reverse(words);
+    return Arrays.stream(words).collect(Collectors.joining(" "));
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String s =3D "one two three";
+    return reverseWords(s).equals("eno owt eerht");
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Rotation</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isRotation(String s1, String s2)
+{
+    if(s1.length() !=3D s2.length())
+    {
+        return false;
+    }
+    String s3 =3D s1 + s1;
+    return s3.contains(s2);
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String s1 =3D "abcdefgh";
+    String s2 =3D "cdefghab";
+    String s3 =3D "hgfedcba";
+    boolean check =3D isRotation(s1, s2);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isRotation(s2, s1);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isRotation(s1, s3);
+    if(check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 690.0px;">
+<col style=3D"width: 852.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>WordDistance</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int wordDistance(String[] words, String word1, String word2)
+{
+    //  words:  ["one", "two", "three", "four", "five"]
+    //  word1 =3D "two", word2 =3D "five" =3D=3D&gt; distance =3D 3
+    //  word1 =3D "four", word2 =3D "two" =3D=3D&gt; distance =3D 2
+    int pos1 =3D -1;
+    int pos2 =3D -1;
+    int min =3D Integer.MAX_VALUE;
+    for(int i =3D 0; i &lt; words.length; ++i)
+    {
+        String w =3D words[i];
+        if(w.equals(word1))
+        {
+            pos1 =3D i;
+            if(pos2 !=3D -1)
+            {
+                min =3D Math.min(min, pos1 - pos2);
+            }
+        }
+        else if(w.equals(word2))
+        {
+            pos2 =3D i;
+            if(pos1 !=3D -1)
+            {
+                min =3D Math.min(min, pos2 - pos1);
+            }
+        }
+    }
+    return min;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D wordDistance(new String[]{"one", "two", "three", "fou=
+r", "five"},
+            "two", "five") =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D wordDistance(new String[]{"one", "two", "three", "four", "fiv=
+e"}, "four", "two") =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_0_820105959.1606742505352--

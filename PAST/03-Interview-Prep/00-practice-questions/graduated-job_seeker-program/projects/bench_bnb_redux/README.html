@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="benchbnb-redux">BenchBNB Redux!</h1>
+<p>Today’s goal is to take everyone’s favorite project, BenchBnB and rebuild it’s Redux structure.</p>
+<p>Every other piece of this version of BenchBnB is already complete. The components, util files, and the entire backend are all built out and functional. The only thing missing is state management, which you will implement with Redux.</p>
+<p><strong>The README below will provide loose guidance and a recommended order to rebuild. If you would like a refresher on the original project, use these links:</strong></p>
+<ul>
+<li><a href="bench_bnb_i.md"><strong>Part 1 Instructions</strong></a></li>
+<li><a href="bench_bnb_ii.md"><strong>Part 2 Instructions</strong></a></li>
+</ul>
+<h2 id="goals">Goals:</h2>
+<p>The goal of this project is to rebuild the missing Redux state. <strong>This project and its’ instructions are intentionally vague and difficult</strong>, this is to challenge you to remember how the redux cycle is put together and how it works. We will work through rebuilding sessions together, but you will need to rebuild the rest on your own. <strong>The App will not work unless all of the reducer structure has been rebuilt.</strong></p>
+<h4 id="sample-state">Sample State:</h4>
+<p><code>getState()</code> has been applied to the window for you for debugging purposes. It will be the easiest way for you to see if you are on track. Ultimately, you want your frontend state to look like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="dt">entities</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="dt">benches</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">      <span class="dv">1</span><span class="op">:</span> <span class="op">{</span><span class="dt">id</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">description</span><span class="op">:</span> <span class="st">&quot;alamo square, many dogs&quot;</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">37.775769</span><span class="op">,</span> <span class="dt">lng</span><span class="op">:</span> <span class="fl">-122.43496</span><span class="op">,</span> <span class="dt">seating</span><span class="op">:</span> <span class="dv">4</span><span class="op">,</span> …<span class="op">},</span></a>
+<a class="sourceLine" id="cb1-5" title="5">      <span class="dv">2</span><span class="op">:</span> <span class="op">{</span><span class="dt">id</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">description</span><span class="op">:</span> <span class="st">&quot;UN plaza, food truck access&quot;</span><span class="op">,</span> <span class="dt">lat</span><span class="op">:</span> <span class="fl">37.77976</span><span class="op">,</span> <span class="dt">lng</span><span class="op">:</span> <span class="fl">-122.41382</span><span class="op">,</span> <span class="dt">seating</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> …<span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="dt">reviews</span><span class="op">:</span> <span class="op">{}</span></a>
+<a class="sourceLine" id="cb1-8" title="8">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-9" title="9">  <span class="dt">errors</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="dt">session</span><span class="op">:</span> []</a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-12" title="12">  <span class="dt">sessions</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-13" title="13">    <span class="dt">currentUser</span><span class="op">:</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-14" title="14">  <span class="op">},</span></a>
+<a class="sourceLine" id="cb1-15" title="15">  <span class="dt">ui</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-16" title="16">    <span class="dt">filters</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-17" title="17">      <span class="dt">bounds</span><span class="op">:</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-18" title="18">        <span class="dt">northEast</span><span class="op">:</span> <span class="op">{</span><span class="dt">lat</span><span class="op">:</span> <span class="fl">37.80788593713507</span><span class="op">,</span> <span class="dt">lng</span><span class="op">:</span> <span class="fl">-122.38838165576169</span><span class="op">},</span></a>
+<a class="sourceLine" id="cb1-19" title="19">        <span class="dt">southWest</span><span class="op">:</span> <span class="op">{</span><span class="dt">lat</span><span class="op">:</span> <span class="fl">37.74004249934129</span><span class="op">,</span> <span class="dt">lng</span><span class="op">:</span> <span class="fl">-122.47421234423825</span><span class="op">},</span></a>
+<a class="sourceLine" id="cb1-20" title="20">        <span class="dt">maxSeating</span><span class="op">:</span> <span class="dv">10</span><span class="op">,</span></a>
+<a class="sourceLine" id="cb1-21" title="21">        <span class="dt">minSeating</span><span class="op">:</span> <span class="dv">1</span></a>
+<a class="sourceLine" id="cb1-22" title="22">      <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-23" title="23">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-24" title="24">  <span class="op">}</span>  </a>
+<a class="sourceLine" id="cb1-25" title="25"><span class="op">}</span></a></code></pre></div>
+<h3 id="step-one-re-acquaint-yourself">Step One: Re-Acquaint Yourself</h3>
+<p>Download the <a href="https://github.com/appacademy/graduated-job_seeker-program/raw/master/projects/bench_bnb_redux/skeleton.zip">skeleton</a></p>
+<p>Take a moment to look over the provided backend and frontend files and remember how BenchBnB works. Pay close attention to the schema and how the information is served up in the jBuilder views. Remember, you can always reference the instructions (and solution if ABSOLUTELY necessary) from the original project.</p>
+<p>As with any rails project make sure you run the following: * <code>bundle install</code> * <code>rails db:setup</code> * <code>npm install</code> * <code>npm run webpack</code> * <code>bundle exec rails s</code></p>
+<h3 id="step-two-rebuild-the-file-structure">Step Two: Rebuild the File Structure</h3>
+<p>You likely noticed that the <code>frontend</code> folder in the file tree is a little lacking. Add the following folders to the tree: * <code>actions</code> * <code>reducers</code> * <code>store</code></p>
+<h3 id="step-three-actions-and-action-creators">Step Three: Actions and Action Creators</h3>
+<p>Next we will rebuild some of our actions and action creators starting with <code>sessions</code>.</p>
+<p>Start by looking at <code>session_api_util.js</code> and familiarizing yourself with the AJAX calls.</p>
+<p>Next, create a new file under <code>actions</code> called <code>session_actions.js</code></p>
+<p>Inside <code>session_actions.js</code> do the following: * Import all of the session api AJAX calls</p>
+<ul>
+<li><p>Create constants for your action types, it’s recommended you use <code>RECEIVE_CURRENT_USER</code>, and <code>RECEIVE_SESSION_ERRORS</code>.</p></li>
+<li><p>Create your standard Action Creator functions. Remember that action creators should return a POJO with a <code>type</code> property and any additional data you wish to pass to the reducers.</p></li>
+<li><p>Create your Thunk Action Creators. Remember that thunk actions will curry in arguments and return functions. The first curried argument will be whatever data is to be used, the second curried argument will be <code>dispatch</code>. The function will return an appropriate api call followed by a <code>.then()</code> handling either success or failure of the AJAX request.</p></li>
+<li><p>You should end up with three thunk action creators and two action creators. (Hint: you should have a thunk action for each of the APIUtil AJAX requests. You should have two normal action creators: one for receiving the current user, and one for receiving errors.)</p></li>
+</ul>
+<h3 id="step-four-rebuild-your-reducers">Step Four: Rebuild your Reducers</h3>
+<p>Next we will begin rebuilding our reducers.</p>
+<p>Start by navigating to your <code>reducers</code> directory and adding these two files: <code>session_reducer.js</code> and <code>session_errors_reducer.js</code>.</p>
+<p>In <code>session_reducer.js</code> do the following:</p>
+<ul>
+<li><p>Import <code>merge</code> from lodash/merge, and the necessary action type constant from you session actions. (Do not use <code>Object.assign()</code> for this project.)</p></li>
+<li><p>Create a <code>_nullUser</code> default object. It should have a key of <code>currentUser</code> pointing to <code>null</code>. (This step is optional but can be very beneficial for establishing your default state shape.)</p></li>
+<li><p>Build your reducer function. Remember every action will hit every reducer. Your reducer should listen for the action’s type and execute logic accordingly to merge the new information into state if necessary. The reducer should always have a default return value of the state it receives if no logic is executed.</p></li>
+<li><p>Remember to export default your reducers!</p></li>
+</ul>
+<p>Next, create an <code>entities_reducer.js</code> file and a <code>root_reducer.js</code> file in your <code>reducers</code> directory. Import your <code>session_reducer</code> into your <code>entities_reducer</code> and using <code>combineReducers()</code> export entities. Follow the sam pattern to add entities to your <code>root_reducer</code>.</p>
+<h3 id="step-five-construct-your-store">Step Five: Construct your Store</h3>
+<p>The last step is to build the redux store and apply it to the entry file.</p>
+<p>Navigate to your <code>store</code> directory and create a new file: <code>store.js</code>.</p>
+<p>In <code>store.js</code> do the following:</p>
+<ul>
+<li><p>Import <code>createStore</code>, <code>applyMiddleware</code>, <code>thunk</code>, <code>logger</code>, and your <code>root_reducer</code> from their appropriate libraries/locations.</p></li>
+<li>Construct a <code>configureStore</code> function. It should:
+<ul>
+<li>take in an optional preloaded state</li>
+<li>invoke <code>createStore()</code> passing in your <code>root_reducer</code>, preloadedState, and <code>applyMiddleware()</code> invoked with the appropriate middleware as arguments.</li>
+</ul></li>
+<li><p>Export default your <code>configureStore</code> function.</p></li>
+</ul>
+<h3 id="step-six-putting-it-together">Step Six: Putting it together</h3>
+<p>This last step is the easiest. Navigate to your entry file, <code>bench_bnb.jsx</code>. Ensure that all of your filenames/imports match up properly and that <code>getState</code> is still on the window.</p>
+<p>There will be one more thing missing to attach redux to your application. Do you know what it is? (Hint: check your <code>root.jsx</code> component.)</p>
+<h3 id="step-seven-wash-rinse-redux">Step Seven: Wash, Rinse, Redux</h3>
+<p>Congratulations! You just built out the foundation of your redux state management and its’ first piece of reduced frontend state.</p>
+<p>Follow this same order of operations to build out the <code>session_errors_reducer</code> and your errors slice of state, the benches slice of state, then eventually the ui slice of state incorporating the GoogleMapsAPI.</p>
+<p><em><strong>NB:</strong> things will get a little more complicated when it comes to managing the ui slice of state. It’s definitely recommended you use the original project instructions to help you through that phase.</em></p>
+<p>Remember: this app will not function properly until redux is fully rebuilt. Use <code>getState()</code> on the window to keep track of your state shape as you’re building until you can interact with the app again.</p>
+<h1 id="great-work">GREAT WORK!</h1>
+</body>
+</html>

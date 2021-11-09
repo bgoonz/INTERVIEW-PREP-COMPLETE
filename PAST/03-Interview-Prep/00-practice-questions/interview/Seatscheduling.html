@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Seatscheduling</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="how-to-arrange-candidates-seats">How to arrange candidates’ seats</h1>
+<p><strong>Translator: <a href="https://github.com/HuangZiSheng001">SCUhzs</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>This is no.885 question in LeetCode, interesting and skillful. Solving such problems is not as IQ-cost as dynamic programming, but rather depends on understanding of common data structures and capacity to write code. As far as I’m concerned, it deserves our attention and study.</p>
+<p>By the way, I’d like to say something. Many readers ask me, how to sum up framework of algorithm. But in fact, that’s not really like that. The framework is slowly extracted from the details. I hope, after you read our articles, you’d better take some time to try solving more similar problems by yourself. As it said, “Practice goes deeper than theoretic knowledge.”</p>
+<p>Let me first describe the subject: “suppose there is an examination room, with a row of <code>N</code> seats, respectively, their indexes are <code>[0.. n-1]</code>. The Candidates, will <strong>successively</strong> enter the room, will probably leave at <strong>any time</strong>.”</p>
+<p>As an examiner, you should arrange the seats for students, so as to meet those requirements: <strong>whenever a student enters, maximize the distance between him and the nearest other students; if there are more than one such seats, arrange him to the seat with the smallest index.</strong> This is a real situation in life as we known.</p>
+<p>That is, you need to implement a class like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> ExamRoom {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co">// constructor, receive the N which means total number of seats  </span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">public</span> <span class="fu">ExamRoom</span>(<span class="dt">int</span> N);</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="co">// when a candidate comes, return to the seat assigned for him</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">seat</span>();</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="co">// The candidate in the position P now left</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="co">// It can be considered that there must be a candidate in the position P</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">leave</span>(<span class="dt">int</span> p);</a>
+<a class="sourceLine" id="cb1-9" title="9">}</a></code></pre></div>
+<p>For example, there are five seats in the room, which are <code>[0..4]</code>:</p>
+<p>When the candidate 1 enters (call <code>seat()</code>), it is OK for him to sit in any position, but you should arrange the position with lowest index for him, that is, return position 0.</p>
+<p>When the candidate 2 enters (call <code>seat()</code>), he should keep away from candidates nearby as possible, that is, return to position 4.</p>
+<p>When the candidate 3 enters, he should keep away from candidates nearby as possible, so he need to sit in the middle, that is, seat 2.</p>
+<p>If another candidate enters, he can sit in seat 1 or seat 3. Take the smaller one, index 1.</p>
+<p>And so on.</p>
+<p>In the situation just mentioned, the function <code>leave</code> doesn’t be called. However, readers can definitely find the following regular:</p>
+<p><strong>If we regard every two adjacent candidates as the two endpoints of a line segment, the new arrangement is that, find the longest line segment, let this candidate 「dichotomy」 the line segment in middle, and then the middle point is the seat assigned to him. Actually, <code>Leave (P)</code> is to remove the end point <code>p</code>, so as to merge two adjacent segments into one.</strong></p>
+<p>It’s not hard to think about it, actually, this question wants to examine your understanding of data structure. To implement the above logic, which data structure should be selected ?</p>
+<h3 id="thinking-analysis">1. Thinking analysis</h3>
+<p>According to the above idea, first of all, we need to abstract the students sitting in the classroom into line segments, which can be simply represented by an array of 2 size .</p>
+<p>In addition, the idea requires us to find the 「longest」 line segment, removing or adding the line segment both are needed.</p>
+<p><strong>If we face with such a requirement that need to get the most value in the dynamic process, the ordered data structure should be used. Binary heap and balanced binary search tree is what we use most often.</strong> The priority queue, which implemented by binary heap, its time complexity of getting most value is O (logN), but only the maximum value can be deleted. Balanced binary tree can not only get the most value, but also modify or delete any value, and the time complexity of them both are O (logn).</p>
+<p>In summary, binary heap can’t finish the operation of <code>leave</code> , so balanced binary tree should be chose. And we will use a structure named <code>TreeSet</code>, which used in JAVA. It is an ordered data structure, and its bottom layer is implemented by red black tree.</p>
+<p>By the way, when it comes to Set or Map, some readers may take it for granted that it is a HashSet or a HashMap. There is something wrong with that.</p>
+<p>Because the bottom layer of Hash_Set/Map is implemented by the hash function and the array, it has the feature: its traversal order is not fixed while its operation efficiency is high, and its time complexity is O (1).</p>
+<p>Meanwhile, the Set/Map can also rely on other underlying data structures, The Red Black Tree (a balanced binary search tree) is the common one, which has a feature that maintaining the order of elements automatically and its efficiency is O (logn). This is commonly referred to 「ordered Set/Map」.</p>
+<p>The <code>TreeSet</code> we use just is an ordered set. Its purpose is to maintain the order of line length, quickly find the longest line, and quickly delete and insert.</p>
+<h3 id="simplify-the-problem">2. Simplify the problem</h3>
+<p>Firstly, if there are multiple optional seats, you should choose the seat with the lowest index. <strong>Let’s simplify the problem first, this is, ignore this requirement for the moment</strong> , and put the implement of above idea ahead.</p>
+<p>Another common programming trick used in this problem is to use a 「virtual line segment」, so as to let the algorithm start properly, the same as the reason why the algorithms which related to linked list algorithms need a 「virtual header」.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// Map endpoint p to the segment with P as the left endpoint</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">private</span> <span class="bu">Map</span>&lt;<span class="bu">Integer</span>, <span class="dt">int</span>[]&gt; startMap;</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="co">// Map endpoint p to the segment with P as the right endpoint</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">private</span> <span class="bu">Map</span>&lt;<span class="bu">Integer</span>, <span class="dt">int</span>[]&gt; endMap;</a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="co">// According to their length, store all line segments from small to large </span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="kw">private</span> <span class="bu">TreeSet</span>&lt;<span class="dt">int</span>[]&gt; pq;</a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="kw">private</span> <span class="dt">int</span> N;</a>
+<a class="sourceLine" id="cb2-8" title="8"></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="kw">public</span> <span class="fu">ExamRoom</span>(<span class="dt">int</span> N) {</a>
+<a class="sourceLine" id="cb2-10" title="10">    <span class="kw">this</span>.<span class="fu">N</span> = N;</a>
+<a class="sourceLine" id="cb2-11" title="11">    startMap = <span class="kw">new</span> <span class="bu">HashMap</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb2-12" title="12">    endMap = <span class="kw">new</span> <span class="bu">HashMap</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb2-13" title="13">    pq = <span class="kw">new</span> <span class="bu">TreeSet</span>&lt;&gt;((a, b) -&gt; {</a>
+<a class="sourceLine" id="cb2-14" title="14">        <span class="co">// Calculate the length of two line segments</span></a>
+<a class="sourceLine" id="cb2-15" title="15">        <span class="dt">int</span> distA = <span class="fu">distance</span>(a);</a>
+<a class="sourceLine" id="cb2-16" title="16">        <span class="dt">int</span> distB = <span class="fu">distance</span>(b);</a>
+<a class="sourceLine" id="cb2-17" title="17">        <span class="co">// Longer means it is bigger, and put it back</span></a>
+<a class="sourceLine" id="cb2-18" title="18">        <span class="kw">return</span> distA - distB;</a>
+<a class="sourceLine" id="cb2-19" title="19">    });</a>
+<a class="sourceLine" id="cb2-20" title="20">    <span class="co">// Firstly, put a virtual segment in the ordered set</span></a>
+<a class="sourceLine" id="cb2-21" title="21">    <span class="fu">addInterval</span>(<span class="kw">new</span> <span class="dt">int</span>[] {-<span class="dv">1</span>, N});</a>
+<a class="sourceLine" id="cb2-22" title="22">}</a>
+<a class="sourceLine" id="cb2-23" title="23"></a>
+<a class="sourceLine" id="cb2-24" title="24"><span class="co">/* Remove a line segment */</span></a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="kw">private</span> <span class="dt">void</span> <span class="fu">removeInterval</span>(<span class="dt">int</span>[] intv) {</a>
+<a class="sourceLine" id="cb2-26" title="26">    pq.<span class="fu">remove</span>(intv);</a>
+<a class="sourceLine" id="cb2-27" title="27">    startMap.<span class="fu">remove</span>(intv[<span class="dv">0</span>]);</a>
+<a class="sourceLine" id="cb2-28" title="28">    endMap.<span class="fu">remove</span>(intv[<span class="dv">1</span>]);</a>
+<a class="sourceLine" id="cb2-29" title="29">}</a>
+<a class="sourceLine" id="cb2-30" title="30"></a>
+<a class="sourceLine" id="cb2-31" title="31"><span class="co">/* Add a line segment */</span></a>
+<a class="sourceLine" id="cb2-32" title="32"><span class="kw">private</span> <span class="dt">void</span> <span class="fu">addInterval</span>(<span class="dt">int</span>[] intv) {</a>
+<a class="sourceLine" id="cb2-33" title="33">    pq.<span class="fu">add</span>(intv);</a>
+<a class="sourceLine" id="cb2-34" title="34">    startMap.<span class="fu">put</span>(intv[<span class="dv">0</span>], intv);</a>
+<a class="sourceLine" id="cb2-35" title="35">    endMap.<span class="fu">put</span>(intv[<span class="dv">1</span>], intv);</a>
+<a class="sourceLine" id="cb2-36" title="36">}</a>
+<a class="sourceLine" id="cb2-37" title="37"></a>
+<a class="sourceLine" id="cb2-38" title="38"><span class="co">/* Calculate the length of a line segment */</span></a>
+<a class="sourceLine" id="cb2-39" title="39"><span class="kw">private</span> <span class="dt">int</span> <span class="fu">distance</span>(<span class="dt">int</span>[] intv) {</a>
+<a class="sourceLine" id="cb2-40" title="40">    <span class="kw">return</span> intv[<span class="dv">1</span>] - intv[<span class="dv">0</span>] - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-41" title="41">}</a></code></pre></div>
+<p>「Virtual line segment 」is to represent all seats as one line segment:</p>
+<p><img src="../pictures/seat_scheduling/9.png" /></p>
+<p>With the foreshadowing, the main API <code>seat</code> and <code>leave</code> could be written:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">public</span> <span class="dt">int</span> <span class="fu">seat</span>() {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="co">// Take the longest line from the ordered set</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">int</span>[] longest = pq.<span class="fu">last</span>();</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="dt">int</span> x = longest[<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="dt">int</span> y = longest[<span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="dt">int</span> seat;</a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="kw">if</span> (x == -<span class="dv">1</span>) { <span class="co">// case 1</span></a>
+<a class="sourceLine" id="cb3-8" title="8">        seat = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-9" title="9">    } <span class="kw">else</span> <span class="kw">if</span> (y == N) { <span class="co">// case 2</span></a>
+<a class="sourceLine" id="cb3-10" title="10">        seat = N - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb3-11" title="11">    } <span class="kw">else</span> { <span class="co">// case 3</span></a>
+<a class="sourceLine" id="cb3-12" title="12">        seat = (y - x) / <span class="dv">2</span> + x;</a>
+<a class="sourceLine" id="cb3-13" title="13">    }</a>
+<a class="sourceLine" id="cb3-14" title="14">    <span class="co">// Divide the longest line segment into two segments</span></a>
+<a class="sourceLine" id="cb3-15" title="15">    <span class="dt">int</span>[] left = <span class="kw">new</span> <span class="dt">int</span>[] {x, seat};</a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="dt">int</span>[] right = <span class="kw">new</span> <span class="dt">int</span>[] {seat, y};</a>
+<a class="sourceLine" id="cb3-17" title="17">    <span class="fu">removeInterval</span>(longest);</a>
+<a class="sourceLine" id="cb3-18" title="18">    <span class="fu">addInterval</span>(left);</a>
+<a class="sourceLine" id="cb3-19" title="19">    <span class="fu">addInterval</span>(right);</a>
+<a class="sourceLine" id="cb3-20" title="20">    <span class="kw">return</span> seat;</a>
+<a class="sourceLine" id="cb3-21" title="21">}</a>
+<a class="sourceLine" id="cb3-22" title="22"></a>
+<a class="sourceLine" id="cb3-23" title="23"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">leave</span>(<span class="dt">int</span> p) {</a>
+<a class="sourceLine" id="cb3-24" title="24">    <span class="co">// Find out the lines around p</span></a>
+<a class="sourceLine" id="cb3-25" title="25">    <span class="dt">int</span>[] right = startMap.<span class="fu">get</span>(p);</a>
+<a class="sourceLine" id="cb3-26" title="26">    <span class="dt">int</span>[] left = endMap.<span class="fu">get</span>(p);</a>
+<a class="sourceLine" id="cb3-27" title="27">    <span class="co">// Merge two segments into one</span></a>
+<a class="sourceLine" id="cb3-28" title="28">    <span class="dt">int</span>[] merged = <span class="kw">new</span> <span class="dt">int</span>[] {left[<span class="dv">0</span>], right[<span class="dv">1</span>]};</a>
+<a class="sourceLine" id="cb3-29" title="29">    <span class="fu">removeInterval</span>(left);</a>
+<a class="sourceLine" id="cb3-30" title="30">    <span class="fu">removeInterval</span>(right);</a>
+<a class="sourceLine" id="cb3-31" title="31">    <span class="fu">addInterval</span>(merged);</a>
+<a class="sourceLine" id="cb3-32" title="32">}</a></code></pre></div>
+<figure>
+<img src="../pictures/seat_scheduling/8.png" alt="three contidions" /><figcaption>three contidions</figcaption>
+</figure>
+<p>At this point, this algorithm is basically implemented. Although a lot of code, in fact it’s not difficult to think: find the longest line segment, divide it into two segments from the middle, and the midpoint is the return value of <code>seat()</code>; find the left and right line segments of <code>p</code> , merge them into one segment. Those is the logic of <code>leave (P)</code>.</p>
+<h3 id="advanced-problem">3. Advanced problem</h3>
+<p>However, when the topic requires multiple choices, we should choose the seat with the smallest index. We just ignored that. For example, the following situation may cause errors:<img src="../pictures/seat_scheduling/3.jpg" /></p>
+<p>Now there are line segments <code>[0,4]</code> and <code>[4,9]</code> in the ordered set, the longest line segment <code>longest</code> is the latter one. According to the logic of <code>seat</code>, it will split the <code>[4,9]</code>, that is, return to seat 6. However, the correct answer should be seat 2. Because both 2 and 6 meet the condition of maximizing the distance between adjacent candidates, and the smaller one should be taken.</p>
+<p><img src="../pictures/seat_scheduling/4.jpg" /></p>
+<p><strong>The solution to such requirements is to modify the sorting method of ordered data structure.</strong> In this problem, is that, modify the logic of <code>treemap</code>’s comparison function:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1">pq = <span class="kw">new</span> <span class="bu">TreeSet</span>&lt;&gt;((a, b) -&gt; {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="dt">int</span> distA = <span class="fu">distance</span>(a);</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">int</span> distB = <span class="fu">distance</span>(b);</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="co">// If the lengths are equal, compare the indexes</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="kw">if</span> (distA == distB)</a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="kw">return</span> b[<span class="dv">0</span>] - a[<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="kw">return</span> distA - distB;</a>
+<a class="sourceLine" id="cb4-8" title="8">});</a></code></pre></div>
+<p>Beside that, we also need to change the <code>distance</code> function. Instead of calculating the length between two endpoints of a line segment, we need to let it calculate the length between the midpoint and endpoint of the line segment.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">private</span> <span class="dt">int</span> <span class="fu">distance</span>(<span class="dt">int</span>[] intv) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="dt">int</span> x = intv[<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="dt">int</span> y = intv[<span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="kw">if</span> (x == -<span class="dv">1</span>) <span class="kw">return</span> y;</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">if</span> (y == N) <span class="kw">return</span> N - <span class="dv">1</span> - x;</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="co">// Length between midpoint and endpoint</span></a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="kw">return</span> (y - x) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb5-8" title="8">}</a></code></pre></div>
+<p><img src="../pictures/seat_scheduling/5.jpg" /></p>
+<p>In this way, the values of <code>distance</code> , <code>[0,4]</code> and <code>[4,9]</code> are equal. The algorithm will compare the indexes of the two, and take smaller line segments for segmentation. So far, this algorithm problem has been solved perfectly.</p>
+<h3 id="final-summary">4. Final summary</h3>
+<p>​ The problem mentioned in this article is not so difficult, although it seems that there is a lot of code. The core issue is to examine the understanding and use of ordered data structures</p>
+<p>​ To deal with dynamic problems, we usually use ordered data structures, such as balanced binary search tree and binary heap, which have similar time complexity. But the former supports more operations.</p>
+<p>​ Since balanced binary search tree is so easy to use, why use binary heap? The reason given by me, is that, the bottom layer of binary heap is array, which is easier to implement. See the old article 「detailed explanation of binary heap」 to learn more detail. Try to make a Red Black Tree? It not only has more complex operation, but also costs more space. Of course, to solve the specific problems, we should choose the appropriate data structure with specific analysis.</p>
+<p>​ I hope this article can be helpful for you.</p>
+</body>
+</html>

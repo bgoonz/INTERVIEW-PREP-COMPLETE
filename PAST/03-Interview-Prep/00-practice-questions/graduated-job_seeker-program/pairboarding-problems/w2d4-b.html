@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>w2d4-b</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="partner-b-asks-partner-a">Partner B asks Partner A</h1>
+<h2 id="problem-1">Problem 1</h2>
+<h3 id="isomorphic-strings">Isomorphic Strings</h3>
+<p><strong>Overview:</strong> For two strings to be isomorphic, all occurrences of a character in string <code>A</code> can be replaced with another character to get string <code>B</code>. The order of the characters must be preserved. There must be one-to-one mapping for every char of string A to every char of string B.</p>
+<p><code>paper</code> and <code>title</code> would return true. <code>egg</code> and <code>sad</code> would return false. <code>dgg</code> and <code>add</code> would return true.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="at">isIsomorphic</span>(<span class="st">&quot;egg&quot;</span><span class="op">,</span> <span class="st">&#39;add&#39;</span>)<span class="op">;</span> <span class="co">// true</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="at">isIsomorphic</span>(<span class="st">&quot;paper&quot;</span><span class="op">,</span> <span class="st">&#39;title&#39;</span>)<span class="op">;</span> <span class="co">// true</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="at">isIsomorphic</span>(<span class="st">&quot;kick&quot;</span><span class="op">,</span> <span class="st">&#39;side&#39;</span>)<span class="op">;</span> <span class="co">// false</span></a></code></pre></div>
+<p>This problem should be completed in O(N) time and O(N) space.</p>
+<h3 id="solution">Solution</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">isIsomorphic</span>(firstString<span class="op">,</span> secondString) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="co">// Check if the same length. If not, they cannot be isomorphic</span></a>
+<a class="sourceLine" id="cb2-4" title="4">  <span class="cf">if</span> (<span class="va">firstString</span>.<span class="at">length</span> <span class="op">!==</span> <span class="va">secondString</span>.<span class="at">length</span>) <span class="cf">return</span> <span class="kw">false</span></a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="kw">const</span> letterMap <span class="op">=</span> <span class="op">{};</span></a>
+<a class="sourceLine" id="cb2-7" title="7"></a>
+<a class="sourceLine" id="cb2-8" title="8">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">firstString</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="kw">let</span> letterA <span class="op">=</span> firstString[i]<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-10" title="10">        letterB <span class="op">=</span> secondString[i]<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-11" title="11"></a>
+<a class="sourceLine" id="cb2-12" title="12">    <span class="co">// If the letter does not exist, create a map and map it to the value</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="co">// of the second letter</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="cf">if</span> (letterMap[letterA] <span class="op">===</span> <span class="kw">undefined</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-15" title="15">      letterMap[letterA] <span class="op">=</span> letterB<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-16" title="16">    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (letterMap[letterA] <span class="op">!==</span> letterB) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-17" title="17">      <span class="co">// If letterA already exists in the map, but it does not map to</span></a>
+<a class="sourceLine" id="cb2-18" title="18">      <span class="co">// letterB, that means that A is mapping to more than one letter.</span></a>
+<a class="sourceLine" id="cb2-19" title="19">      <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-20" title="20">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-21" title="21">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-22" title="22">  <span class="co">// If after iterating through and conditions are satisfied, return true.</span></a>
+<a class="sourceLine" id="cb2-23" title="23">  <span class="co">// They are isomorphic</span></a>
+<a class="sourceLine" id="cb2-24" title="24">  <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-25" title="25"><span class="op">}</span></a></code></pre></div>
+<h2 id="balanced-parentheses">Balanced Parentheses</h2>
+<p><strong>Overview:</strong> Write a method, <code>isBalanced</code>, that will evaluate if a given expression has balanced parentheses.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input: &quot;(())()()&quot;
+
+Output: True</code></pre>
+<pre><code>Input: &quot;()())&quot;
+
+Output: False</code></pre>
+<blockquote>
+<p><strong>Hint:</strong> If your partner gets stuck, ask them if using a stack might help us. What would happen if every time we saw an <strong>opening</strong> parenthesis, we put it on the stack, and every time we saw a closing parenthesis, we called pop on our stack? When would we know if our parentheses weren’t matching up?</p>
+</blockquote>
+<h3 id="solution-1">Solution #1</h3>
+<ul>
+<li>First, we will create a stack using an Array. This will only hold our <em>opening</em> parentheses</li>
+<li>Every time we encounter a closing parentheses, we will call <code>pop()</code> on our stack</li>
+<li>We know that the string is <code>unbalanced</code> in <strong>two scenarios:</strong>
+<ul>
+<li>If we ever call <code>pop()</code> and it returns <code>undefined</code>, we know we have called pop on an empty stack</li>
+<li>If we get through our iteration, and our stack is not empty, we know they did not match up</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">function</span> <span class="at">isBalanced</span>(string) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="kw">const</span> stack <span class="op">=</span> []<span class="op">;</span>]</a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">string</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="cf">if</span> (string[i] <span class="op">===</span> <span class="st">&#39;(&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-6" title="6">      <span class="va">stack</span>.<span class="at">push</span>(string[i])<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (string[i] <span class="op">===</span> <span class="st">&#39;)&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-8" title="8">      <span class="cf">if</span> (<span class="op">!</span><span class="va">stack</span>.<span class="at">pop</span>()) <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-10" title="10">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-11" title="11"></a>
+<a class="sourceLine" id="cb5-12" title="12">  <span class="co">// If the array is not empty, it is not balanced</span></a>
+<a class="sourceLine" id="cb5-13" title="13">  <span class="cf">return</span> <span class="op">!</span><span class="va">stack</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="op">}</span></a></code></pre></div>
+<p>What is the time complexity of this approach? What is the space complexity?</p>
+<blockquote>
+<p>Given a string of length <code>N</code>, we have to do one full iteration which is <code>O(N)</code>. We then create a stack of size N / 2, which makes it <code>O(N)</code> space.</p>
+</blockquote>
+<p><strong>Unfortunately, we are really strapped for space. Can you think of a similar way to solve this problem that is O(1) space?</strong></p>
+<h3 id="solution-2">Solution #2</h3>
+<p>Instead of using a stack, we could use a counter. Every time we encounter an opening parenthesis, we increment our counter.</p>
+<p>The logic is very similar to using a stack. If we encounter a closing parenthesis, we decrement our count. If our count falls below <code>0</code>, we know we have encountered an unbalanced amount of parantheses. Additionally, if the count is not <code>0</code> after the iteration, we have not encountered enough closing parentheses.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">function</span> <span class="at">isBalanced</span>(string) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="kw">let</span> count <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">string</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="cf">if</span> (string[i] <span class="op">===</span> <span class="st">&#39;(&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-6" title="6">      count <span class="op">+=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="op">}</span> <span class="cf">else</span> <span class="cf">if</span> (string[i] <span class="op">===</span> <span class="st">&#39;)&#39;</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-8" title="8">      count <span class="op">-=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-9" title="9"></a>
+<a class="sourceLine" id="cb6-10" title="10">      <span class="cf">if</span> (count <span class="op">&lt;</span> <span class="dv">0</span>) <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-12" title="12">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-13" title="13"></a>
+<a class="sourceLine" id="cb6-14" title="14">  <span class="cf">return</span> <span class="op">!</span>count<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="op">}</span></a></code></pre></div>
+</body>
+</html>

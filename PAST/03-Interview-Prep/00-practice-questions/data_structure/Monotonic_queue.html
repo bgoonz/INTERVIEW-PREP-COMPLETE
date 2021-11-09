@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Monotonic_queue</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="special-data-structure-monotonic-queue">special data structure: monotonic queue</h1>
+<p><strong>Author:<a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p><strong>Translator:<a href="https://github.com/warmingkkk">warmingkkk</a></strong></p>
+<p>The previous article talked about a special data structure “monotonic stack”a type of problem “Next Greater Number” is solved. This article writes a similar data structure “monotonic queue”.</p>
+<p>Maybe you haven’t heard of the name of this data structure. In fact, it is not difficult. It is a “queue”, but it uses a clever method to make the elements in the queue monotonically increase (or decrease). What’s the use of this data structure? Can solve a series of problems with sliding windows.</p>
+<p>See a LeetCode title, 239 question，difficulty is hard：</p>
+<p><img src="../pictures/monotonic_queue/title.png" /></p>
+<h3 id="build-a-problem-solving-framewor">1, build a problem solving framewor</h3>
+<p>This problem is not complicated. The difficulty is how to calculate the maximum value in each “window” at O(1) time, so that the entire algorithm is completed in linear time.We discussed similar scenarios before and came to a conclusion:</p>
+<p>In a bunch of numbers,the best value is known,If you add a number to this bunch of numbers,you can quickly calculate the most value by comparing them,but if you reduce one number,you may not get the maximum vaue quickly,but you can have to go through all the numbers and find the maximum value again.</p>
+<p>Back to the scenario of this problem,as each window advances,you need to add a number and decrease one number,so if you want to get a new maximum value in O(1) time,you need a special “monotonic queue” data structure to assist.</p>
+<p>An ordinary queue must have these two operations:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> <span class="bu">Queue</span> {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="dt">void</span> <span class="fu">push</span>(<span class="dt">int</span> n);</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="co">// or enqueue, adding element n to the end of the line</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="dt">void</span> <span class="fu">pop</span>();</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="co">// or dequeue, remove the leader element</span></a>
+<a class="sourceLine" id="cb1-6" title="6">}</a></code></pre></div>
+<p>The operation of a “monotonic queue” is similar:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> MonotonicQueue {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="co">// add element n to the end of the line</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="dt">void</span> <span class="fu">push</span>(<span class="dt">int</span> n);</a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="co">// returns the maximum value in the current queue</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="dt">int</span> <span class="fu">max</span>();</a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="co">// if the head element is n, delete it</span></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="dt">void</span> <span class="fu">pop</span>(<span class="dt">int</span> n);</a>
+<a class="sourceLine" id="cb2-8" title="8">}</a></code></pre></div>
+<p>Of course, the implementation methods of these APIs are definitely different from the general Queue, but we leave them alone, and think that the time complexity of these operations is O (1), first answer this “sliding window” problem Frame out:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" title="1">vector&lt;<span class="dt">int</span>&gt; maxSlidingWindow(vector&lt;<span class="dt">int</span>&gt;&amp; nums, <span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    MonotonicQueue window;</a>
+<a class="sourceLine" id="cb3-3" title="3">    vector&lt;<span class="dt">int</span>&gt; res;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; nums.size(); i++) {</a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="cf">if</span> (i &lt; k - <span class="dv">1</span>) { <span class="co">// fill the first k-1 of the window first</span></a>
+<a class="sourceLine" id="cb3-6" title="6">            window.push(nums[i]);</a>
+<a class="sourceLine" id="cb3-7" title="7">        } <span class="cf">else</span> { <span class="co">// the window begins to slide forward</span></a>
+<a class="sourceLine" id="cb3-8" title="8">            window.push(nums[i]);</a>
+<a class="sourceLine" id="cb3-9" title="9">            res.push_back(window.max());</a>
+<a class="sourceLine" id="cb3-10" title="10">            window.pop(nums[i - k + <span class="dv">1</span>]);</a>
+<a class="sourceLine" id="cb3-11" title="11">            <span class="co">// nums[i - k + 1] is the last element of the window</span></a>
+<a class="sourceLine" id="cb3-12" title="12">        }</a>
+<a class="sourceLine" id="cb3-13" title="13">    }</a>
+<a class="sourceLine" id="cb3-14" title="14">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb3-15" title="15">}</a></code></pre></div>
+<figure>
+<img src="../pictures/monotonic_queue/1.png" alt="图示" /><figcaption>图示</figcaption>
+</figure>
+<p>The idea is simple, understand? Below we start the highlight, the implementation of monotonic queues.</p>
+<h3 id="implementing-a-monotonic-queue-data-structure">2, Implementing a monotonic queue data structure</h3>
+<p>First we need to know another data structure: deque, which is a double-ended queue. It’s simple:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">class</span> deque {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="co">// insert element n at the head of the team</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">void</span> <span class="fu">push_front</span>(<span class="dt">int</span> n);</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="co">// insert element n at the end of the line</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="dt">void</span> <span class="fu">push_back</span>(<span class="dt">int</span> n);</a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="co">// remove elements at the head of the team</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="dt">void</span> <span class="fu">pop_front</span>();</a>
+<a class="sourceLine" id="cb4-8" title="8">    <span class="co">// remove element at the end of the line</span></a>
+<a class="sourceLine" id="cb4-9" title="9">    <span class="dt">void</span> <span class="fu">pop_back</span>();</a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="co">// returns the team head element</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="dt">int</span> <span class="fu">front</span>();</a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="co">// returns the tail element</span></a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="dt">int</span> <span class="fu">back</span>();</a>
+<a class="sourceLine" id="cb4-14" title="14">}</a></code></pre></div>
+<p>Moreover, the complexity of these operations is O (1). This is actually not a rare data structure. If you use a linked list as the underlying structure, it is easy to implement these functions.</p>
+<p>The core idea of “monotonic queue” is similar to “monotonic stack”. The push method of the monotonic queue still adds elements to the end of the queue, but deletes the previous elements smaller than the new element:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">class</span> MonotonicQueue {</a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">private</span>:</a>
+<a class="sourceLine" id="cb5-3" title="3">    deque&lt;<span class="dt">int</span>&gt; data;</a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="kw">public</span>:</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="dt">void</span> push(<span class="dt">int</span> n) {</a>
+<a class="sourceLine" id="cb5-6" title="6">        <span class="cf">while</span> (!data.empty() &amp;&amp; data.back() &lt; n) </a>
+<a class="sourceLine" id="cb5-7" title="7">            data.pop_back();</a>
+<a class="sourceLine" id="cb5-8" title="8">        data.push_back(n);</a>
+<a class="sourceLine" id="cb5-9" title="9">    }</a>
+<a class="sourceLine" id="cb5-10" title="10">};</a></code></pre></div>
+<p>As you can imagine, adding the size of the number represents the weight of the person, squashing the underweight in front, and stopping until it encounters a larger magnitude.</p>
+<p><img src="../pictures/monotonic_queue/2.png" /></p>
+<p>If every element is added like this, the size of the elements in the monotonic queue will eventually decrease in a monotonic order, so our max () API can be written like this:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb6-1" title="1"><span class="dt">int</span> max() {</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="cf">return</span> data.front();</a>
+<a class="sourceLine" id="cb6-3" title="3">}</a></code></pre></div>
+<p>The pop () API deletes element n at the head of the queue, which is also very easy to write:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb7-1" title="1"><span class="dt">void</span> pop(<span class="dt">int</span> n) {</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="cf">if</span> (!data.empty() &amp;&amp; data.front() == n)</a>
+<a class="sourceLine" id="cb7-3" title="3">        data.pop_front();</a>
+<a class="sourceLine" id="cb7-4" title="4">}</a></code></pre></div>
+<p>The reason to judge <code>data.front () == n</code> is because the queue head element n we want to delete may have been" squashed ", so we don’t need to delete it at this time:</p>
+<p><img src="../pictures/monotonic_queue/3.png" /></p>
+<p>At this point, the monotonous queue design is complete, look at the complete problem-solving code:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">class</span> MonotonicQueue {</a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">private</span>:</a>
+<a class="sourceLine" id="cb8-3" title="3">    deque&lt;<span class="dt">int</span>&gt; data;</a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="kw">public</span>:</a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="dt">void</span> push(<span class="dt">int</span> n) {</a>
+<a class="sourceLine" id="cb8-6" title="6">        <span class="cf">while</span> (!data.empty() &amp;&amp; data.back() &lt; n) </a>
+<a class="sourceLine" id="cb8-7" title="7">            data.pop_back();</a>
+<a class="sourceLine" id="cb8-8" title="8">        data.push_back(n);</a>
+<a class="sourceLine" id="cb8-9" title="9">    }</a>
+<a class="sourceLine" id="cb8-10" title="10">    </a>
+<a class="sourceLine" id="cb8-11" title="11">    <span class="dt">int</span> max() { <span class="cf">return</span> data.front(); }</a>
+<a class="sourceLine" id="cb8-12" title="12">    </a>
+<a class="sourceLine" id="cb8-13" title="13">    <span class="dt">void</span> pop(<span class="dt">int</span> n) {</a>
+<a class="sourceLine" id="cb8-14" title="14">        <span class="cf">if</span> (!data.empty() &amp;&amp; data.front() == n)</a>
+<a class="sourceLine" id="cb8-15" title="15">            data.pop_front();</a>
+<a class="sourceLine" id="cb8-16" title="16">    }</a>
+<a class="sourceLine" id="cb8-17" title="17">};</a>
+<a class="sourceLine" id="cb8-18" title="18"></a>
+<a class="sourceLine" id="cb8-19" title="19">vector&lt;<span class="dt">int</span>&gt; maxSlidingWindow(vector&lt;<span class="dt">int</span>&gt;&amp; nums, <span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb8-20" title="20">    MonotonicQueue window;</a>
+<a class="sourceLine" id="cb8-21" title="21">    vector&lt;<span class="dt">int</span>&gt; res;</a>
+<a class="sourceLine" id="cb8-22" title="22">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; nums.size(); i++) {</a>
+<a class="sourceLine" id="cb8-23" title="23">        <span class="cf">if</span> (i &lt; k - <span class="dv">1</span>) { <span class="co">// fill the first k-1 of the window first</span></a>
+<a class="sourceLine" id="cb8-24" title="24">            window.push(nums[i]);</a>
+<a class="sourceLine" id="cb8-25" title="25">        } <span class="cf">else</span> { <span class="co">// window slide forward</span></a>
+<a class="sourceLine" id="cb8-26" title="26">            window.push(nums[i]);</a>
+<a class="sourceLine" id="cb8-27" title="27">            res.push_back(window.max());</a>
+<a class="sourceLine" id="cb8-28" title="28">            window.pop(nums[i - k + <span class="dv">1</span>]);</a>
+<a class="sourceLine" id="cb8-29" title="29">        }</a>
+<a class="sourceLine" id="cb8-30" title="30">    }</a>
+<a class="sourceLine" id="cb8-31" title="31">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb8-32" title="32">}</a></code></pre></div>
+<h3 id="algorithm-complexity-analysis">3, Algorithm complexity analysis</h3>
+<p>Readers may be wondering, while the push operation contains a while loop, the time complexity is not O (1), so the time complexity of this algorithm should not be linear time, right?</p>
+<p>The complexity of the push operation alone is not O (1), but the overall complexity of the algorithm is still O (N) linear time. To think of it this way, each element in nums is pushed_back and pop_back at most once, without any redundant operations, so the overall complexity is still O (N).</p>
+<p>The space complexity is very simple, which is the size of the window O (k).</p>
+<h3 id="final-conclusion">4, Final conclusion</h3>
+<p>Some readers may think that “monotonic queues” and “priority queues” are more similar, but they are actually very different.</p>
+<p>The monotonic queue maintains the monotonicity of the queue by deleting elements when adding elements, which is equivalent to extracting the monotonically increasing (or decreasing) part of a function; while the priority queue (binary heap) is equivalent to automatic sorting, the difference is large went.</p>
+<p>Hurry up and get LeetCode’s Question 239 ~</p>
+</body>
+</html>

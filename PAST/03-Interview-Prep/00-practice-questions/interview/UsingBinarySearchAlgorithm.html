@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>UsingBinarySearchAlgorithm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="how-to-use-a-binary-search-algorithm">How to use a binary search algorithm</h1>
+<p><strong>Translator: <a href="https://github.com/Coder2Programmer">Dong Wang</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>In what scenarios can binary search be used？</p>
+<p>The most common example is in textbook, that is, searching for the index of a given target value in <strong>an ordered array</strong>. Moreover, if the target values is duplicated, the modified binary search can return the left boundary or right boundary index of the target value.</p>
+<p>PS: The three binary search algorithms mentioned above are explained in detail in the previous <a href="../think_like_computer/BinarySearch.md">Binary Search Detailed Explanation</a>. It is strongly recommended if you haven’t read it.</p>
+<p>Putting aside the boring ordered array, how can binary search be applied to practical algorithm problems? When the search space is in order, you can perform <em>pruning</em> through binary search, greatly improving efficiency.</p>
+<p>Talk is cheap, show you the specific <em>Koko eating banana</em> problem.</p>
+<h3 id="problem-analysis">1. Problem analysis</h3>
+<p>Koko loves to eat bananas. There are <code>N</code> piles of bananas, the <code>i</code>-th pile has <code>piles[i]</code> bananas. The guards have gone and will come back in <code>H</code> hours.</p>
+<p>Koko can decide her bananas-per-hour eating speed of <code>K</code>. Each hour, she chooses some pile of bananas, and eats <code>K</code> bananas from that pile. If the pile has less than <code>K</code> bananas, she eats all of them instead, and won’t eat any more bananas during this hour.</p>
+<p>Koko likes to eat slowly, but still wants to finish eating all the bananas before the guards come back.</p>
+<p>Return the minimum integer <code>K</code> such that she can eat all the bananas within <code>H</code> hours.</p>
+<p>
+<strong>Example 1:</strong>
+</p>
+<pre>
+<strong>Input:</strong> piles = [3,6,7,11], H = 8
+<strong>Output:</strong> 4
+</pre>
+<p>
+<strong>Example 2:</strong>
+</p>
+<pre>
+<strong>Input:</strong> piles = [30,11,23,4,20], H = 5
+<strong>Output:</strong> 30
+</pre>
+<p>In other words, Koko eats up to a bunch of bananas every hour. 1. If she can’t, she can eat them until the next hour. 2. If she has an appetite after eating this bunch, she will only eat the next bunch until the next hour.</p>
+<p>Under this condition, let us determine <strong>the minimum speed</strong> Koko eats bananas.</p>
+<p>Given this scenario directly, can you think of where you can use the binary search algorithm? If you haven’t seen a similar problem, it’s hard to associate this problem with binary search.</p>
+<p>So let’s put aside the binary search algorithm and think about how to solve the problem violently?</p>
+<p>First of all, the algorithm requires <em>minimum speed of eating bananas in <code>H</code> hours</em>. We might as well call it <code>speed</code>. What is the maximum possible <code>speed</code>? What is the minimum possible <code>speed</code>?</p>
+<p>Obviously the minimum is 1 and the maximum is <code>max(piles)</code>, because you can only eat a bunch of bananas in an hour. Then the brute force solution is very simple. As long as it starts from 1 and exhausts to <code>max(piles)</code>, once it is found that a certain value can eat all bananas in <code>H</code> hours, this value is the minimum speed.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">int</span> <span class="fu">minEatingSpeed</span>(<span class="dt">int</span>[] piles, <span class="dt">int</span> H) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co">// the maximum value of piles</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="dt">int</span> max = <span class="fu">getMax</span>(piles);</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">for</span> (<span class="dt">int</span> speed = <span class="dv">1</span>; speed &lt; max; speed++) {</a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="co">// wherher can finish eating banana in H hours at speed</span></a>
+<a class="sourceLine" id="cb1-6" title="6">        <span class="kw">if</span> (<span class="fu">canFinish</span>(piles, speed, H))</a>
+<a class="sourceLine" id="cb1-7" title="7">            <span class="kw">return</span> speed;</a>
+<a class="sourceLine" id="cb1-8" title="8">    }</a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="kw">return</span> max;</a>
+<a class="sourceLine" id="cb1-10" title="10">}</a></code></pre></div>
+<p>Note that this for loop is a linear search in <strong>continuous space, which is the flag that binary search can work</strong>. Because we require the minimum speed, we can use a <strong>binary search algorithm to find out the left boundary</strong> to replace the linear search to improve efficiency.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">int</span> <span class="fu">minEatingSpeed</span>(<span class="dt">int</span>[] piles, <span class="dt">int</span> H) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="co">// apply the algorithms framework for searching the left boundary</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="dt">int</span> left = <span class="dv">1</span>, right = <span class="fu">getMax</span>(piles) + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="kw">while</span> (left &lt; right) {</a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="co">// prevent overflow</span></a>
+<a class="sourceLine" id="cb2-6" title="6">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="kw">if</span> (<span class="fu">canFinish</span>(piles, mid, H)) {</a>
+<a class="sourceLine" id="cb2-8" title="8">            right = mid;</a>
+<a class="sourceLine" id="cb2-9" title="9">        } <span class="kw">else</span> {</a>
+<a class="sourceLine" id="cb2-10" title="10">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-11" title="11">        }</a>
+<a class="sourceLine" id="cb2-12" title="12">    }</a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="kw">return</span> left;</a>
+<a class="sourceLine" id="cb2-14" title="14">}</a></code></pre></div>
+<p>PS: If you have questions about the details of this binary search algorithm, it is recommended to look at the algorithm template on the left boundary of the search for <a href="../think_like_computer/BinarySearch.md">Binary Search Detailed Explanation</a> in the previous article.</p>
+<p>The remaining helper functions are also very simple and can be disassembled step by step.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// Time complexity O(N)</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="dt">boolean</span> <span class="fu">canFinish</span>(<span class="dt">int</span>[] piles, <span class="dt">int</span> speed, <span class="dt">int</span> H) {</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">int</span> time = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="kw">for</span> (<span class="dt">int</span> n : piles) {</a>
+<a class="sourceLine" id="cb3-5" title="5">        time += <span class="fu">timeOf</span>(n, speed);</a>
+<a class="sourceLine" id="cb3-6" title="6">    }</a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="kw">return</span> time &lt;= H;</a>
+<a class="sourceLine" id="cb3-8" title="8">}</a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="dt">int</span> <span class="fu">timeOf</span>(<span class="dt">int</span> n, <span class="dt">int</span> speed) {</a>
+<a class="sourceLine" id="cb3-11" title="11">    <span class="kw">return</span> (n / speed) + ((n % speed &gt; <span class="dv">0</span>) ? <span class="dv">1</span> : <span class="dv">0</span>);</a>
+<a class="sourceLine" id="cb3-12" title="12">}</a>
+<a class="sourceLine" id="cb3-13" title="13"></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="dt">int</span> <span class="fu">getMax</span>(<span class="dt">int</span>[] piles) {</a>
+<a class="sourceLine" id="cb3-15" title="15">    <span class="dt">int</span> max = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="kw">for</span> (<span class="dt">int</span> n : piles)</a>
+<a class="sourceLine" id="cb3-17" title="17">        max = <span class="bu">Math</span>.<span class="fu">max</span>(n, max);</a>
+<a class="sourceLine" id="cb3-18" title="18">    <span class="kw">return</span> max;</a>
+<a class="sourceLine" id="cb3-19" title="19">}</a></code></pre></div>
+<p>So far, with the help of the binary search, the time complexity of the algorithm is O(NlogN).</p>
+<h3 id="extension">2. Extension</h3>
+<p>Similarly, look at a transportation problem again.</p>
+<p>The <code>i</code>-th package on the conveyor belt has a weight of <code>weights[i]</code>. Each day, we load the ship with packages on the conveyor belt (in the order given by weights). We may not load more weight than the maximum weight capacity of the ship.</p>
+<p>Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within <code>D</code> days.</p>
+<p>
+<strong>Example 1:</strong>
+</p>
+<pre>
+<strong>Input:</strong> weights = [1,2,3,4,5,6,7,8,9,10], D = 5
+<strong>Output:</strong> 15
+<strong>Explanation:</strong> 
+A ship capacity of 15 is the minimum to ship all the packages in 5 days like this:
+1st day: 1, 2, 3, 4, 5
+2nd day: 6, 7
+3rd day: 8
+4th day: 9
+5th day: 10
+
+Note that the cargo must be shipped in the order given, so using a ship of capacity 14 and splitting the packages into parts like (2, 3, 4, 5), (1, 6, 7), (8), (9), (10) is not allowed. 
+</pre>
+<p>To transport all the goods within <code>D</code> days, the goods are inseparable. How to determine the minimum load for transportation(hereinafter referred to as <code>cap</code>)?</p>
+<p>In fact, it is essentially the same problem as Koko eating bananas. First, determine the minimum and maximum values of <code>cap</code> as <code>max(weights)</code> and <code>sum(weights)</code>.</p>
+<p>We require <strong>minimum load</strong>, so a binary search algorithm that searches the left boundary can be used to optimize the linear search.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="co">// find the left boundary using binary search</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="dt">int</span> <span class="fu">shipWithinDays</span>(<span class="dt">int</span>[] weights, <span class="dt">int</span> D) {</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="co">// minimum possible load</span></a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="dt">int</span> left = <span class="fu">getMax</span>(weights);</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="co">// maximum possible load + 1</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="dt">int</span> right = <span class="fu">getSum</span>(weights) + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="kw">while</span> (left &lt; right) {</a>
+<a class="sourceLine" id="cb4-8" title="8">        <span class="dt">int</span> mid = left + (right - left) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="kw">if</span> (<span class="fu">canFinish</span>(weights, D, mid)) {</a>
+<a class="sourceLine" id="cb4-10" title="10">            right = mid;</a>
+<a class="sourceLine" id="cb4-11" title="11">        } <span class="kw">else</span> {</a>
+<a class="sourceLine" id="cb4-12" title="12">            left = mid + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb4-13" title="13">        }</a>
+<a class="sourceLine" id="cb4-14" title="14">    }</a>
+<a class="sourceLine" id="cb4-15" title="15">    <span class="kw">return</span> left;</a>
+<a class="sourceLine" id="cb4-16" title="16">}</a>
+<a class="sourceLine" id="cb4-17" title="17"></a>
+<a class="sourceLine" id="cb4-18" title="18"><span class="co">// If the load is cap, can I ship the goods within D days？</span></a>
+<a class="sourceLine" id="cb4-19" title="19"><span class="dt">boolean</span> <span class="fu">canFinish</span>(<span class="dt">int</span>[] w, <span class="dt">int</span> D, <span class="dt">int</span> cap) {</a>
+<a class="sourceLine" id="cb4-20" title="20">    <span class="dt">int</span> i = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb4-21" title="21">    <span class="kw">for</span> (<span class="dt">int</span> day = <span class="dv">0</span>; day &lt; D; day++) {</a>
+<a class="sourceLine" id="cb4-22" title="22">        <span class="dt">int</span> maxCap = cap;</a>
+<a class="sourceLine" id="cb4-23" title="23">        <span class="kw">while</span> ((maxCap -= w[i]) &gt;= <span class="dv">0</span>) {</a>
+<a class="sourceLine" id="cb4-24" title="24">            i++;</a>
+<a class="sourceLine" id="cb4-25" title="25">            <span class="kw">if</span> (i == w.<span class="fu">length</span>)</a>
+<a class="sourceLine" id="cb4-26" title="26">                <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb4-27" title="27">        }</a>
+<a class="sourceLine" id="cb4-28" title="28">    }</a>
+<a class="sourceLine" id="cb4-29" title="29">    <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb4-30" title="30">}</a></code></pre></div>
+<p>Through these two examples, do you understand the application of binary search in practical problems？</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; n; i++)</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">if</span> (<span class="fu">isOK</span>(i))</a>
+<a class="sourceLine" id="cb5-3" title="3">        <span class="kw">return</span> ans;</a></code></pre></div>
+</body>
+</html>
