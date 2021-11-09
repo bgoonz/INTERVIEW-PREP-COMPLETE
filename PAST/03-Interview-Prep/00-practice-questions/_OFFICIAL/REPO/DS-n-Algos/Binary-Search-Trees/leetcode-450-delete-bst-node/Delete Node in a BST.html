@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Delete Node in a BST</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="delete-node-in-a-bst">Delete Node in a BST</h1>
+<blockquote>
+<p>Level up your coding skills and quickly land a job. This is the best place to expand your knowledge and get prepared for your next interview.</p>
+</blockquote>
+<p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.</p>
+<p>Basically, the deletion can be divided into two stages:</p>
+<ol type="1">
+<li>Search for a node to remove.</li>
+<li>If the node is found, delete the node.</li>
+</ol>
+<p><strong>Follow up:</strong> Can you solve it with time complexity <code>O(height of tree)</code> ?</p>
+<p><strong>Example 1:</strong></p>
+<p><img src="https://assets.leetcode.com/uploads/2020/09/04/del_node_1.jpg" /></p>
+<p><strong>Input:</strong> root = [5, 3, 6, 2, 4, null, 7], key = 3 <strong>Output:</strong> [5, 4, 6, 2, null, null, 7] <strong>Explanation:</strong> Given key to delete is 3. So we find the node with value 3 and delete it. One valid answer is [5, 4, 6, 2, null, null, 7], shown in the above BST. Please notice that another valid answer is [5, 2, 6, null, 4, null, 7] and it’s also accepted. <img src="https://assets.leetcode.com/uploads/2020/09/04/del_node_supp.jpg" /></p>
+<p><strong>Example 2:</strong></p>
+<p><strong>Input:</strong> root = [5, 3, 6, 2, 4, null, 7], key = 0 <strong>Output:</strong> [5, 3, 6, 2, 4, null, 7] <strong>Explanation:</strong> The tree does not contain a node with value = 0.</p>
+<p><strong>Example 3:</strong></p>
+<p><strong>Input:</strong> root = [], key = 0 <strong>Output:</strong> []</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>The number of nodes in the tree is in the range <code>[0, 104]</code>.</li>
+<li><code>-105 &lt;= Node.val &lt;= 105</code></li>
+<li>Each node has a <strong>unique</strong> value.</li>
+<li><code>root</code> is a valid binary search tree.</li>
+<li><code>-105 &lt;= key &lt;= 105</code></li>
+</ul>
+<p><a href="https://leetcode.com/problems/delete-node-in-a-bst/">Source</a></p>
+</body>
+</html>
