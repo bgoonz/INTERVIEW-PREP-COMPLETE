@@ -45,6 +45,7 @@
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 * [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
+* [Job Board (Slack)](slack-and-lambda/job-board-slack.md)
 
 ## Aux-Resources
 
@@ -66,6 +67,10 @@
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
+  * [DS\_&\_ALGO\_STUDY\_GUIDE](interview-prep/ds\_algo-practice/ds\_and\_algo\_study\_guide/README.md)
+    * [Reousrces](interview-prep/ds\_algo-practice/ds\_and\_algo\_study\_guide/reousrces.md)
+* [Arrays](interview-prep/arrays.md)
+* [Page 3](interview-prep/page-3.md)
 * [FANG PREP (medium article)](interview-prep/fang-prep-medium-article.md)
 * [More Practice:](interview-prep/more-practice.md)
 

@@ -6,7 +6,13 @@ coverY: 0
 
 # 🏡 Home
 
+{% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
 
+
+
+{% embed url="https://codesandbox.io/s/linkedin-di4t6" %}
+[https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)
+{% endembed %}
 
 {% content-ref url="./" %}
 [.](./)
