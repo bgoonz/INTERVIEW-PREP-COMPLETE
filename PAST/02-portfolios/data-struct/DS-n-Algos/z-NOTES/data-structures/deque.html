@@ -1,0 +1,71 @@
+<h1 id="deque">Deque</h1>
+<h3 id="projected-time">Projected Time</h3>
+<p>80 minutes</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li><a href="/data-structures/intro-to-data-structures.md">Intro to Data Structures</a></li>
+<li><a href="/javascript/javascript-1-variables.md">JavaScript 1 - Variables, Strings, Numbers</a></li>
+<li><a href="/javascript/javascript-2-arrays-functions.md">JavaScript 2 - Arrays, Functions</a></li>
+<li><a href="/javascript/javascript-3-conditionals.md">JavaScript 3 - Conditionals, Comparisons, Booleans</a></li>
+<li><a href="/javascript/javascript-4-loops.md">JavaScript 4 - Loops</a></li>
+<li><a href="/javascript/javascript-5-switch.md">JavaScript 5 - Switch Statements</a></li>
+<li><a href="/javascript/javascript-6-object-literals.md">JavaScript 6 - Object Literals</a></li>
+<li><a href="/javascript/javascript-7-oop.md">JavaScript 7 - Object-Oriented Programming</a></li>
+<li><a href="/runtime-complexity/runtime-complexity.md">Runtime Complexity</a></li>
+</ul>
+<h3 id="motivation">Motivation</h3>
+<p>Deque is used as an abstract data type, also referenced as a double-ended queue. Similar to a queue, deques exist as an ordered collection of items. A deque’s nature is unrestrictive, meaning that it easily allows for adding and removing items at either end. Deques are a unique hybrid linear structure that provide the capabilities of stacks and queues in a unique data structure. Deques can be implemented with a dynamic array or with a doubly-linked list and they do not require Last In First Out (LIFO) or First In First Out (FIFO)orderings that are required by both stacks and queues. The homophone “dequeue” is used as a verb, meaning to remove from a queue.</p>
+<p>Examples that use Deque:</p>
+<ul>
+<li>A nice application of the deque is storing a web browser’s history. Recently visited URLs are added to the front of the deque, and the URL at the back of the deque is removed after some specified number of insertions at the front.</li>
+<li>Another common application of the deque is storing a software application’s list of undo operations.</li>
+<li>One example where a deque can be used is the A-Steal job scheduling algorithm. This algorithm implements task scheduling for several processors. A separate deque with threads to be executed is maintained for each processor. <a href="https://www.quora.com/What-are-some-of-the-real-life-application-of-Deque">(by Atishay Jain)</a></li>
+</ul>
+<h3 id="objectives">Objectives</h3>
+<p><strong>Participants will be able to:</strong></p>
+<ul>
+<li>Understand when to use a deque</li>
+<li>Be familiar with common methods</li>
+<li>Implement a deque</li>
+<li>Find and use a deque library</li>
+<li>Discern performance tradeoffs for different implementations of a deque</li>
+</ul>
+<h3 id="specific-things-to-learn">Specific Things to Learn</h3>
+<ul>
+<li>Properties of a deque</li>
+<li>Common use cases for deque</li>
+<li>Review of common implementation(s)</li>
+</ul>
+<h3 id="materials">Materials</h3>
+<ul>
+<li><a href="https://www.geeksforgeeks.org/deque-set-1-introduction-applications/">Deque Geeks for Geeks</a></li>
+<li><a href="https://www.youtube.com/watch?v=kLBuJ1Hle8g">Deque Data Structure</a> - 7 minute video</li>
+<li><a href="https://youtu.be/IITnvmnfi_Y">Stacks, Queues, &amp; Double Ended Queues</a> - 6 minute video</li>
+</ul>
+<h3 id="lesson">Lesson</h3>
+<p>Review content from slides (TODO: add link here when available).</p>
+<h3 id="common-mistakes-misconceptions">Common Mistakes / Misconceptions</h3>
+<ul>
+<li>There may be an implementation that is very simple, but untenable for larger deques.</li>
+</ul>
+<h3 id="guided-practice">Guided Practice</h3>
+<p>Discuss as a group how a deque differs from other data structures already reviewed. Some suggested questions to consider:</p>
+<ul>
+<li>What are the methods a deque must have?</li>
+<li>What can be tracked in a deque?</li>
+<li>When would a deque be used?</li>
+<li>What other data structures are used to make a deque?</li>
+</ul>
+<h3 id="independent-practice">Independent Practice</h3>
+<p>Implement a deque in JavaScript, keeping in mind all methods and helper methods that define a deque. Consider performance – what happens as you call specific methods you’ve defined?</p>
+<h3 id="challenge">Challenge</h3>
+<p>There are many different ways to implement a deque in any language. Implement a deque a different way from what you did before, then consider how it differs. Is this second implementation better? If you get stuck, check out StackOverflow comments!</p>
+<h3 id="check-for-understanding">Check for Understanding</h3>
+<p>Find another person in the cohort and discuss:</p>
+<ul>
+<li>What are some of the of the advantages/ disadvantages of using deques?</li>
+<li>In a language of your choice, can you implement some of the basic operations a deque must perform?</li>
+<li>Having implemented queues and stacks, can you identify situations where deques are a better data structure to use?</li>
+</ul>
+<h3 id="additional-reading">Additional Reading</h3>
+<p>A-Steal Job Scheduling was briefly mentioned in the lesson as a use of deques. You can <a href="http://supertech.csail.mit.edu/papers/steal.pdf">read more here</a>.</p>

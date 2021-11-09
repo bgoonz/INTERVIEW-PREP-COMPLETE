@@ -1,0 +1,1602 @@
+Date: Mon, 30 Nov 2020 13:22:07 +0000 (UTC)
+Message-ID: <402820917.7.1606742527891@69e5e3800cf4>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_6_1317059169.1606742527890"
+
+------=_Part_6_1317059169.1606742527890
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>List Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>List Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>CloneListWithRandomNode</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class CloneListWithRandomNode
+{
+    public static class RandomNode&lt;T&gt;
+    {
+        public T data;
+        public RandomNode&lt;T&gt; next;
+        public RandomNode&lt;T&gt; random;
+
+        public RandomNode(T data)
+        {
+            this.data =3D data;
+        }
+
+        @Override
+        public boolean equals(Object o)
+        {
+            if (this =3D=3D o) return true;
+            if (o =3D=3D null || getClass() !=3D o.getClass()) return false=
+;
+            RandomNode&lt;?&gt; that =3D (RandomNode&lt;?&gt;) o;
+            return Objects.equals(data, that.data);
+        }
+
+        @Override
+        public int hashCode()
+        {
+            return Objects.hash(data);
+        }
+    }
+
+    static&lt;T&gt; RandomNode&lt;T&gt; clone(RandomNode&lt;T&gt; original)
+    {
+        Map&lt;RandomNode&lt;T&gt;, RandomNode&lt;T&gt;&gt; map =3D new Has=
+hMap&lt;&gt;();
+
+        RandomNode&lt;T&gt; newHead =3D null;
+        RandomNode&lt;T&gt; newTail =3D null;
+        RandomNode&lt;T&gt; current =3D original;
+        while(current !=3D null)
+        {
+            RandomNode&lt;T&gt; copy =3D new RandomNode&lt;&gt;(current.dat=
+a);
+            if(newHead =3D=3D null)
+            {
+                newHead =3D newTail =3D copy;
+            }
+            else
+            {
+                newTail.next =3D copy;
+                newTail =3D copy;
+            }
+
+            map.put(current, copy);
+            current =3D current.next;
+        }
+
+        for(Map.Entry&lt;RandomNode&lt;T&gt;, RandomNode&lt;T&gt;&gt; e : m=
+ap.entrySet())
+        {
+            RandomNode&lt;T&gt; org =3D e.getKey();
+            if(org.random !=3D null)
+            {
+                RandomNode&lt;T&gt; randomKey =3D map.get(org.random);
+                RandomNode&lt;T&gt; randomValue =3D map.get(randomKey);
+                e.getValue().random =3D randomValue;
+            }
+        }
+
+        return newHead;
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    RandomNode&lt;Integer&gt; rn1 =3D new RandomNode&lt;&gt;(1);
+    RandomNode&lt;Integer&gt; rn2 =3D new RandomNode&lt;&gt;(2);
+    RandomNode&lt;Integer&gt; rn3 =3D new RandomNode&lt;&gt;(3);
+    RandomNode&lt;Integer&gt; rn4 =3D new RandomNode&lt;&gt;(4);
+    RandomNode&lt;Integer&gt; rn5 =3D new RandomNode&lt;&gt;(5);
+    rn1.next =3D rn2; rn2.next =3D rn3; rn3.next =3D rn4; rn4.next =3D rn5;
+    rn1.random =3D rn3; rn2.random =3D rn4;
+    RandomNode&lt;Integer&gt; newList =3D clone(rn1);
+    boolean check =3D newList.data =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D newList.random.data =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D newList.next.data =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D newList.next.random.data =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>DeleteDups</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void deleteDups(List.Node&lt;Integer&gt; head)
+{
+    while(head !=3D null)
+    {
+        List.Node&lt;Integer&gt; runner =3D head;
+        while(runner.next !=3D null)
+        {
+            if(head.data =3D=3D runner.next.data)
+            {
+                runner.next =3D runner.next.next;
+            }
+            else
+            {
+                runner =3D runner.next;
+            }
+        }
+        head =3D head.next;
+    }
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; list =3D new List&lt;&gt;();
+    list.add(1, 2, 3, 1, 2, 4, 3, 1);
+    deleteDups(list.head);
+    boolean check =3D list.head.data =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list.head.next.data =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list.head.next.next.data =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list.head.next.next.next.data =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 591.0px;">
+<col style=3D"width: 951.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>DeleteEveryOther</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; void deleteEveryOther(List.Node&lt;T&gt; head)
+{
+    while(head !=3D null &amp;&amp; head.next !=3D null)
+    {
+        head.next =3D head.next.next;
+        head =3D head.next;
+    }
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; list =3D new List&lt;&gt;();
+    list.add(1, 2, 3, 4, 5, 6);
+    deleteEveryOther(list.head);
+    List.Node&lt;Integer&gt;[] result =3D list.toArray(list.head.getClass()=
+, 3);
+    int[] a =3D Arrays.stream(result).mapToInt(x -&gt; x.data).toArray();
+    boolean check =3D Arrays.equals(new int[] {1, 3, 5}, a);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 680.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>DoubleList</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class DoubleList&lt;T&gt;
+{
+    public static class DoubleNode&lt;T&gt;
+    {
+        public T data;
+        public DoubleNode&lt;T&gt; next;
+        public DoubleNode&lt;T&gt; prev;
+
+        public DoubleNode(T data)
+        {
+            this.data =3D data;
+        }
+    }
+
+    public DoubleNode&lt;T&gt; head;
+    public DoubleNode&lt;T&gt; tail;
+
+    public void append(DoubleNode&lt;T&gt; node)
+    {
+        if(head =3D=3D null)
+        {
+            head =3D tail =3D node;
+        }
+        else
+        {
+            node.prev =3D tail;
+            tail.next =3D node;
+            tail =3D node;
+        }
+    }
+
+    public void prepend(DoubleNode&lt;T&gt; node)
+    {
+        if(head =3D=3D null)
+        {
+            head =3D tail =3D node;
+        }
+        else
+        {
+            node.next =3D head;
+            head.prev =3D node;
+            head =3D node;
+        }
+    }
+
+    public void insertBefore(DoubleNode&lt;T&gt; before, DoubleNode&lt;T&gt=
+; node)
+    {
+        if(head =3D=3D null)
+        {
+            head =3D tail =3D node;
+        }
+        else
+        {
+            DoubleNode&lt;T&gt; runner =3D head;
+            while(runner !=3D before &amp;&amp; runner !=3D null)
+            {
+                runner =3D runner.next;
+            }
+            if(runner =3D=3D null)
+            {
+                tail.next =3D node;
+                tail =3D node;
+            }
+            else
+            {
+                before.prev.next =3D node;
+                node.prev =3D before.prev;
+                node.next =3D before;
+                before.prev =3D node;
+            }
+        }
+    }
+
+    public void insertAfter(DoubleNode&lt;T&gt; after, DoubleNode&lt;T&gt; =
+node)
+    {
+        if(head =3D=3D null)
+        {
+            head =3D tail =3D node;
+        }
+        else
+        {
+            DoubleNode&lt;T&gt; runner =3D head;
+            while(runner !=3D after &amp;&amp; runner !=3D null)
+            {
+                runner =3D runner.next;
+            }
+
+            if(runner =3D=3D null)
+            {
+                tail.next =3D node;
+                tail =3D node;
+            }
+            else
+            {
+                after.next.prev =3D node;
+                node.next =3D after.next;
+                node.prev =3D after;
+                after.next =3D node;
+            }
+        }
+    }
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>FindMiddle</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double midPointAverage(List.Node&lt;Integer&gt; head)
+{
+    List.Node&lt;Integer&gt; slow =3D head, fast =3D head;
+    while(fast !=3D null &amp;&amp; fast.next !=3D null)
+    {
+        if(fast.next.next !=3D null)
+        {
+            slow =3D slow.next;
+        }
+        fast =3D fast.next.next;
+    }
+    if(fast =3D=3D null)
+    {
+        //  even number of elements
+        return (slow.data + slow.next.data) / 2.0;
+    }
+    return slow.data;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; l1 =3D new List&lt;&gt;();
+    l1.add(1, 2, 3, 4, 5, 6);
+    boolean check =3D midPointAverage(l1.head) =3D=3D 3.5;
+    if(!check)
+    {
+        return false;
+    }
+    List&lt;Integer&gt; l2 =3D new List&lt;&gt;();
+    l2.add(1, 2, 3, 4, 5, 6, 7);
+    check =3D midPointAverage(l2.head) =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>FlattenDownNode</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+class DownNode&lt;T&gt;
+{
+    public T data;
+    public DownNode&lt;T&gt; down;
+    public DownNode&lt;T&gt; next;
+    public DownNode(T data)
+    {
+        this.data =3D data;
+    }
+}
+
+static&lt;T&gt; void flatten(DownNode&lt;T&gt; head)
+{
+    while(head !=3D null)
+    {
+        DownNode&lt;T&gt; down =3D head.down;
+        if(down !=3D null)
+        {
+            DownNode&lt;T&gt; temp =3D head.next;
+            while(down.next !=3D null)
+            {
+                down =3D down.next;
+            }
+            head.next =3D head.down;
+            down.next =3D temp;
+        }
+        head =3D head.next;
+    }
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    DownNode&lt;Integer&gt; n11 =3D new DownNode(11);
+    DownNode&lt;Integer&gt; n12 =3D new DownNode(12);
+    DownNode&lt;Integer&gt; n13 =3D new DownNode(13);
+    DownNode&lt;Integer&gt; n21 =3D new DownNode(21);
+    DownNode&lt;Integer&gt; n22 =3D new DownNode(22);
+    DownNode&lt;Integer&gt; n23 =3D new DownNode(23);
+    DownNode&lt;Integer&gt; n31 =3D new DownNode(31);
+    DownNode&lt;Integer&gt; n41 =3D new DownNode(41);
+    DownNode&lt;Integer&gt; n42 =3D new DownNode(42);
+    n11.next =3D n12; n12.next =3D n13;
+    n12.down =3D n21; n21.next =3D n22; n22.next =3D n23;
+    n22.down =3D n31;
+    n31.down =3D n41;
+    n41.next =3D n42;
+    flatten(n11);
+    DownNode&lt;Integer&gt; head =3D n11;
+    boolean check =3D head.data =3D=3D 11;
+    if(!check)
+    {
+        return false;
+    }
+    DownNode&lt;Integer&gt; next =3D head.next;
+    check =3D next.data =3D=3D 12;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 21;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 22;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 31;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 41;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 42;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 23;
+    if(!check)
+    {
+        return false;
+    }
+    next =3D next.next;
+    check =3D next.data =3D=3D 13;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Intersection</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; List.Node&lt;T&gt; intersection(List.Node&lt;T&gt; n1, List.Node&l=
+t;T&gt; n2)
+{
+    int len1 =3D length(n1);
+    int len2 =3D length(n2);
+    for(; len1 &gt; len2; len1--)
+    {
+        n1 =3D n1.next;
+    }
+    for(; len2 &gt; len1; len2--)
+    {
+        n2 =3D n2.next;
+    }
+    while(n1 !=3D null)
+    {
+        if(n1 =3D=3D n2)
+        {
+            return n1;
+        }
+        n1 =3D n1.next;
+        n2 =3D n2.next;
+    }
+    return null;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List.Node&lt;Integer&gt; a1 =3D new List.Node&lt;&gt;(1);
+    List.Node&lt;Integer&gt; a2 =3D new List.Node&lt;&gt;(3);
+    List.Node&lt;Integer&gt; a3 =3D new List.Node&lt;&gt;(5);
+    List.Node&lt;Integer&gt; a4 =3D new List.Node&lt;&gt;(7);
+    List.Node&lt;Integer&gt; a5 =3D new List.Node&lt;&gt;(9);
+    a1.next =3D a2; a2.next =3D a3; a3.next =3D a4; a4.next =3D a5;
+    List.Node&lt;Integer&gt; b1 =3D new List.Node&lt;&gt;(2);
+    List.Node&lt;Integer&gt; b2 =3D new List.Node&lt;&gt;(4);
+    List.Node&lt;Integer&gt; b3 =3D new List.Node&lt;&gt;(6);
+    a1.next =3D a2; a2.next =3D a3; a3.next =3D a4; a4.next =3D a5;
+    b1.next =3D b2; b2.next =3D b3; b3.next =3D a4;
+    boolean check =3D intersection(a1, b1) =3D=3D a4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>List</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class List&lt;T&gt;
+{
+    public static class Node&lt;T&gt;
+    {
+        public T data;
+        public Node&lt;T&gt; next;
+        public Node(T data)
+        {
+            this.data =3D data;
+        }
+    }
+
+    public Node&lt;T&gt; head;
+    public Node&lt;T&gt; tail;
+
+    public void add(T... data)
+    {
+        for(T t : data)
+        {
+            add(t);
+        }
+    }
+
+    public List&lt;T&gt; add(T data)
+    {
+        return add(new Node&lt;T&gt;(data));
+    }
+
+    public List&lt;T&gt; add(Node&lt;T&gt; node)
+    {
+        if(head =3D=3D null)
+        {
+            head =3D tail =3D node;
+        }
+        else
+        {
+            if(node.next =3D=3D null)
+            {
+                tail.next =3D node;
+                tail =3D node;
+            }
+            else
+            {
+                Node&lt;T&gt; last =3D node;
+                while(last.next !=3D null)
+                {
+                    last =3D last.next;
+                }
+                tail.next =3D node;
+                tail =3D last;
+            }
+        }
+
+        return this;
+    }
+
+
+    public static&lt;T extends Comparable&lt;T&gt;&gt; Node&lt;T&gt;[] toAr=
+ray(Node&lt;T&gt; head)
+    {
+        int len =3D length(head);
+        Node&lt;T&gt;[] result =3D (Node&lt;T&gt;[])Array.newInstance(head.=
+getClass(), len);
+
+        Node&lt;T&gt; current =3D head;
+        int idx =3D 0;
+        while(current !=3D null)
+        {
+            result[idx++] =3D current;
+            current =3D current.next;
+        }
+        return result;
+    }
+
+    Node&lt;T&gt;[] toArray(Class&lt;?&gt; type, int size)
+    {
+        Node&lt;T&gt;[] a =3D (Node&lt;T&gt;[])Array.newInstance(type, size=
+);
+        Node&lt;T&gt; current =3D head;
+        int idx =3D 0;
+        while(current !=3D null)
+        {
+            a[idx++] =3D current;
+            current =3D current.next;
+        }
+        return a;
+    }
+
+    public  static&lt;T&gt; int length(Node&lt;T&gt; node)
+    {
+        int len =3D 0;
+        Node&lt;T&gt; current =3D node;
+        while(current !=3D null)
+        {
+            len++;
+            current =3D current.next;
+        }
+        return len;
+    }
+
+    public int length()
+    {
+        return length(head);
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Node&lt;Integer&gt; n1 =3D new Node&lt;&gt;(1);
+    Node&lt;Integer&gt; n2 =3D new Node&lt;&gt;(2);
+    Node&lt;Integer&gt; n3 =3D new Node&lt;&gt;(3);
+    List&lt;Integer&gt; list1 =3D new List&lt;&gt;();
+    list1.add(n1).add(n2).add(n3);
+    boolean check =3D list1.head.data =3D=3D n1.data;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list1.tail.data =3D=3D n3.data;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list1.head.next.data =3D=3D n2.data;
+    if(!check)
+    {
+        return false;
+    }
+    Node&lt;Integer&gt; n4 =3D new Node&lt;&gt;(4);
+    Node&lt;Integer&gt; n5 =3D new Node&lt;&gt;(5);
+    Node&lt;Integer&gt; n6 =3D new Node&lt;&gt;(6);
+    n5.next =3D n6;
+    List&lt;Integer&gt; list2 =3D new List&lt;&gt;();
+    list2.add(n4);
+    check =3D list2.head.data =3D=3D n4.data;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list2.tail.data =3D=3D n4.data;
+    if(!check)
+    {
+        return false;
+    }
+    list2.add(n5);
+    check =3D list2.head.next.data =3D=3D n5.data;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list2.tail.data =3D=3D n6.data;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D n4.next.data =3D=3D n5.data;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D list2.length() =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ListToNumber</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int addNumbersFromReversedLists(List&lt;Integer&gt; l1, List&lt;Integer&gt;=
+ l2)
+{
+    List&lt;Integer&gt; result =3D new List&lt;&gt;();
+    List.Node&lt;Integer&gt; n1 =3D l1.head;
+    List.Node&lt;Integer&gt; n2 =3D l2.head;
+    int carry =3D 0;
+    while(n1 !=3D null &amp;&amp; n2 !=3D null)
+    {
+        int sum =3D n1.data + n2.data + carry;
+        int val =3D sum % 10;
+        carry =3D sum / 10;
+        result.add(val);
+        n1 =3D n1.next;
+        n2 =3D n2.next;
+    }
+    List.Node&lt;Integer&gt; n =3D n1 !=3D null ? n1 : n2;
+    while(n !=3D null)
+    {
+        int sum =3D n1.data + carry;
+        int val =3D sum % 10;
+        carry =3D sum / 10;
+        result.add(val);
+        n =3D n.next;
+    }
+    if(carry &gt; 0)
+    {
+        result.add(carry);
+    }
+    int sum =3D 0;
+    int power =3D 0;
+    List.Node&lt;Integer&gt; current =3D result.head;
+    while(current !=3D null)
+    {
+        sum +=3D (int)Math.pow(10, power++) * current.data;
+        current =3D current.next;
+    }
+    return sum;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int addNumbersFromLists(List&lt;Integer&gt; l1, List&lt;Integer&gt; l2)
+{
+    return listToNumber(l1) + listToNumber(l2);
+}
+
+
+private static int listToNumber(List&lt;Integer&gt; list)
+{
+    List.Node&lt;Integer&gt; current =3D list.head;
+    int val =3D 0;
+    while(current !=3D null)
+    {
+        val =3D 10 * val + current.data;
+        current =3D current.next;
+    }
+    return val;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; l1 =3D new List(), l2 =3D new List();
+    l1.add(5).add(4).add(3);
+    l2.add(7).add(6);
+    boolean check =3D addNumbersFromReversedLists(l1, l2) =3D=3D 412;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D addNumbersFromLists(l1, l2) =3D=3D 619;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 688.0px;">
+<col style=3D"width: 854.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MergeSorted</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;Integer&gt; mergeSorted(List.Node&lt;Integer&gt; n1, List.Node&lt;I=
+nteger&gt; n2)
+{
+    List&lt;Integer&gt; result =3D new List&lt;&gt;();
+    while(n1 !=3D null &amp;&amp; n2 !=3D null)
+    {
+        List.Node&lt;Integer&gt; n;
+        if(n1.data &lt; n2.data)
+        {
+            n =3D new List.Node(n1.data);
+            n1 =3D n1.next;
+        }
+        else
+        {
+            n =3D new List.Node&lt;&gt;(n2.data);
+            n2 =3D n2.next;
+        }
+        result.add(n);
+    }
+    if(n1 !=3D null) result.add(n1);
+    if(n2 !=3D null) result.add(n2);
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; l1 =3D new List&lt;&gt;(), l2 =3D new List&lt;&gt;(=
+);
+    l1.add(1, 3, 5);
+    l2.add(2, 4, 6, 8);
+    List&lt;Integer&gt; sortedList =3D mergeSorted(l1.head, l2.head);
+    List.Node&lt;Integer&gt;[] nodes =3D sortedList.toArray(l1.head.getClas=
+s(), sortedList.length());
+    int[] ints =3D Arrays.stream(nodes).mapToInt(x -&gt; x.data).toArray();
+    Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 8}, ints);
+    boolean check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 8}, ints);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MinInCicrular</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int minInCircular(List.Node&lt;Integer&gt; head)
+{
+    int min =3D head.data;
+    List.Node&lt;Integer&gt; start =3D head.next;
+    while(start !=3D head)
+    {
+        min =3D Math.min(min, start.data);
+        start =3D start.next;
+    }
+    return min;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List.Node&lt;Integer&gt; n1 =3D new List.Node&lt;&gt;(1);
+    List.Node&lt;Integer&gt; n2 =3D new List.Node&lt;&gt;(0);
+    List.Node&lt;Integer&gt; n3 =3D new List.Node&lt;&gt;(5);
+    List.Node&lt;Integer&gt; n4 =3D new List.Node&lt;&gt;(3);
+    List.Node&lt;Integer&gt; n5 =3D new List.Node&lt;&gt;(7);
+    List.Node&lt;Integer&gt; n6 =3D new List.Node&lt;&gt;(9);
+    List.Node&lt;Integer&gt; n7 =3D new List.Node&lt;&gt;(-3);
+    n1.next =3D n2; n2.next =3D n3; n3.next =3D n4; n4.next =3D n5; n5.next=
+ =3D n6; n6.next =3D n7; n7.next =3D n1;
+    boolean check =3D minInCircular(n1) =3D=3D -3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>NthToLast</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T extends Comparable&lt;T&gt;&gt; List.Node&lt;T&gt; nthToLast(List.Node=
+&lt;T&gt; head, int n)
+{
+    List.Node&lt;T&gt; curent =3D head, runner =3D head;
+    for(int i =3D 0; i &lt; n; ++i)
+    {
+        if (runner !=3D null)
+        {
+            runner =3D runner.next;
+        }
+    }
+    if(runner =3D=3D null)
+    {
+        return null;
+    }
+    while(runner !=3D null)
+    {
+        curent =3D curent.next;
+        runner =3D runner.next;
+    }
+    return curent;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; list =3D new List&lt;&gt;();
+    list.add(1, 2, 3, 4, 5, 6, 7);
+    List.Node&lt;Integer&gt; n =3D nthToLast(list.head, 2);
+    boolean check =3D n.data =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PairwiseSwap</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; void pairwiseSwap(List.Node&lt;T&gt; head)
+{
+    List.Node&lt;T&gt; current =3D head;
+    while(current !=3D null &amp;&amp; current.next !=3D null)
+    {
+        List.Node&lt;T&gt; nextNode =3D current.next;
+        T temp =3D nextNode.data;
+        nextNode.data =3D current.data;
+        current.data =3D temp;
+        current =3D current.next.next;
+    }
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; list =3D new List&lt;&gt;();
+    list.add(1, 2, 3, 4, 5, 6);
+    pairwiseSwap(list.head);
+    List.Node&lt;Integer&gt;[] result =3D list.toArray(list.head.getClass()=
+, 6);
+    int[] a =3D Arrays.stream(result).mapToInt(x -&gt; x.data).toArray();
+    boolean check =3D Arrays.equals(new int[] {2, 1, 4, 3, 6, 5}, a);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Reverse</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List.Node&lt;Integer&gt; reverse(List.Node&lt;Integer&gt; list)
+{
+    List.Node&lt;Integer&gt; prev =3D null;
+    List.Node&lt;Integer&gt; current =3D list;
+    while(current !=3D null)
+    {
+        List.Node&lt;Integer&gt; next =3D current.next;
+        current.next =3D prev;
+        prev =3D current;
+        current =3D next;
+    }
+    return prev;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Integer&gt; list =3D new List&lt;&gt;();
+    list.add(1, 2, 3, 4, 5);
+    List.Node&lt;Integer&gt; reversed =3D reverse(list.head);
+    List.Node&lt;Integer&gt;[] arr =3D toArray(reversed);
+    int[] a =3D Arrays.stream(arr).mapToInt(x -&gt; x.data).toArray();
+    boolean check =3D Arrays.equals(new int[] {5, 4, 3, 2, 1}, a);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>StartOfLoop</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; List.Node&lt;T&gt; startOfLoop(List.Node&lt;T&gt; head)
+{
+    if(head =3D=3D null || head.next =3D=3D null)
+    {
+        return null;
+    }
+    boolean loopExists =3D false;
+    List.Node&lt;T&gt; slow =3D head, fast =3D head;
+    while(fast !=3D null &amp;&amp; fast.next !=3D null)
+    {
+        slow =3D slow.next;
+        fast =3D fast.next.next;
+        if(slow =3D=3D fast)
+        {
+            loopExists =3D true;
+            break;
+        }
+    }
+    if(!loopExists)
+    {
+        return null;
+    }
+    fast =3D head;
+    while(slow !=3D fast)
+    {
+        slow =3D slow.next;
+        fast =3D fast.next;
+    }
+    return slow;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List.Node&lt;Integer&gt; n1 =3D new List.Node&lt;&gt;(1);
+    List.Node&lt;Integer&gt; n2 =3D new List.Node&lt;&gt;(0);
+    List.Node&lt;Integer&gt; n3 =3D new List.Node&lt;&gt;(5);
+    List.Node&lt;Integer&gt; n4 =3D new List.Node&lt;&gt;(3);
+    List.Node&lt;Integer&gt; n5 =3D new List.Node&lt;&gt;(7);
+    List.Node&lt;Integer&gt; n6 =3D new List.Node&lt;&gt;(9);
+    n1.next =3D n2; n2.next =3D n3; n3.next =3D n4;=20
+    n4.next =3D n5; n5.next =3D n6; n6.next =3D n2;
+    boolean check =3D startOfLoop(n1) =3D=3D n2;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_6_1317059169.1606742527890--

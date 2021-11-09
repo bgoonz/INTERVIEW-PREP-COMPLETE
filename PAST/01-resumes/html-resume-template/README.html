@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="html-resume-template">html-resume-template</h1>
+<p>Single-page resume template built using HTML, CSS, and JS that can be viewed on the web or exported to a PDF. A live demo is available at <a href="https://tombarr.github.io/html-resume-template/">tombarr.github.io/html-resume-template</a>.</p>
+<h2 id="editing">Editing</h2>
+<p>This template has the ability to edit, and automatically save, inside the browser! The entire page is marked editable with <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/designMode"><code>document.designMode</code></a>.</p>
+<p>The below example is from Firefox (61): adding several list items then refreshing the page.</p>
+<figure>
+<img src="./editing_full.gif" title="Inline Editing" alt="Inline Editing" /><figcaption>Inline Editing</figcaption>
+</figure>
+<p>In most browsers, you can use <code>Command/CTRL + B/I</code> to make text bold or italic.</p>
+<figure>
+<img src="./bold+italic.gif" title="Text Styling" alt="Text Styling" /><figcaption>Text Styling</figcaption>
+</figure>
+<p>There are also two types of returns, <code>Shift + Enter</code>, which adds a <code>&lt;br&gt;</code> within the current element:</p>
+<figure>
+<img src="./shift+enter.gif" title="shift + enter" alt="shift + enter" /><figcaption>shift + enter</figcaption>
+</figure>
+<p>And <code>Enter</code>, which is somewhat contextual. If focused after the last character, it can be used to append list elements:</p>
+<figure>
+<img src="./enter.gif" title="enter" alt="enter" /><figcaption>enter</figcaption>
+</figure>
+<h2 id="sample">Sample</h2>
+<figure>
+<img src="./Chrome_sample.jpg" title="Resume Sample" alt="Resume Sample" /><figcaption>Resume Sample</figcaption>
+</figure>
+<h2 id="flexibility">Flexibility</h2>
+<p>This template can be editted both in HTML and CSS. Just like with <a href="http://www.csszengarden.com/">CSS Zen Garden</a>, you can fully customize the layout and style to suit your needs.</p>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Add feedback when page is saved (or an error occurs)</li>
+<li>Allow custom file names for saved HTML</li>
+<li>Support <a href="https://www.princexml.com/">Prince</a></li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This project uses <a href="https://github.com/necolas/normalize.css">normalize.css</a>, fonts from <a href="https://fonts.google.com/">Google Fonts</a>, and icons from <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>. Dependencies are managed as links to CDNs, no package managers or build tools required. Built by me, <a href="https://barrasso.me">Tom Barrasso</a>.</p>
+<h2 id="compatibility">Compatibility</h2>
+<p>Tested on Chrome (67) and Firefox (61) on mac OS (10.13.5). This software uses <code>localStorage</code>, <code>template</code>, flexbox, and custom properties and is intended for modern browsers.</p>
+<h2 id="security-privacy">Security &amp; Privacy</h2>
+<p>This application does not communicate or sync with a server, and all data is saved locally. It may not be able to save if <code>localStorage</code> is disabled for any reason.</p>
+</body>
+</html>

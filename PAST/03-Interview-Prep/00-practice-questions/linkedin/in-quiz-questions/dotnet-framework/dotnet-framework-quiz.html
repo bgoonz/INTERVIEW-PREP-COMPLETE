@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dotnet-framework-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="net-framework-assessment">.NET Framework Assessment</h2>
+<h4 id="what-is-the-difference-between-a-stack-and-queue">1. What is the difference between a stack and queue?</h4>
+<ul>
+<li><p>Queues process value types by a top-down hierarchy - first in, first out (FIFO). Stacks follow this principle and insert items from the lower end while deleting ones from the top - last in, first-out (LIFO).</p></li>
+<li><p>Queues process value types by a top-down hierarchy-last in, first-out (LIFO). Stacks follow this principle and insert items from the lower end while deleting ones from the top-first in, first-out (FIFO).</p></li>
+<li><p><strong>Stacks process value types by a top-down hierarchy - last in, first-out (LIFO). Queues follow this principle and insert items from the lower end while deleting ones from the top - first in, first-out (FIFO).</strong> &lt;= Correct</p></li>
+<li><p>Stacks process value types by a top-down hierarchy-first in, first out (FIFO). Queues follow this principle and insert items from the lower end while deleting ones from the top-last in, first-out (LIFO).</p></li>
+</ul>
+<h4 id="which-group-contains-all-official-types-of-jit-compilations">2. Which group contains all official types of JIT compilations?</h4>
+<ul>
+<li><p>Pre-JIT, Quick-JIT, Coll-JIT</p></li>
+<li><p>Before-JIT, Quick-JIT, Cool-JIT</p></li>
+<li><p>Pre-JIT, Quick-JIT, Normal-JIT</p></li>
+<li><p><strong>Pre-JIT, Econo-JIT, Normal-JIT</strong> &lt;= Correct</p></li>
+</ul>
+<h4 id="what-is-kestrel">3. What is Kestrel?</h4>
+<ul>
+<li><p>an iOS web server initially that was later designed to work with .NET Core</p></li>
+<li><p><strong>a cross-platform web server ASP.NET Core that is included by default in ASP.NET Core project templates</strong> &lt;= Correct</p></li>
+<li><p>a cross-platform, open-source web server that starts up web APIs</p></li>
+<li><p>a free and open-source cross-platform web server software that can communicate with IIS</p></li>
+</ul>
+<h4 id="when-would-you-use-asynchronous-actions">4. When would you use asynchronous actions?</h4>
+<ul>
+<li><p>to release the quest thread of a I/O operation</p></li>
+<li><p>to capture the request thread of a I/O operation</p></li>
+<li><p><strong>to avoid blocking the request thread while waits for an I/O operation</strong> &lt;= Correct</p></li>
+<li><p>to block the request thread if it waits for an I/O operation</p></li>
+</ul>
+<h4 id="what-is-coreclr">5. What is CoreCLR?</h4>
+<ul>
+<li><p>CoreCLR is a component that allows the highest degree of control when coding; you can Abort(), Suspend() or Resume().</p></li>
+<li><p>CoreCLR is the .NET execution engine that runs the source code. Special programs called compilers must rewrite it into MSIL.</p></li>
+<li><p>CoreCLR is the .NET execution engine the runs the source code. Special programs called compilers must rewrite it into IL.</p></li>
+<li><p><strong>CoreCLR is the .NET execution engine in .NET Core that performs functions like garbage collection and compilation to machine code.</strong> &lt;= Correct</p></li>
+</ul>
+<h4 id="when-you-define-an-abstract-method-how-do-you-use-it-in-a-derived-class">6. When you define an abstract method, how do you use it in a derived class?</h4>
+<ul>
+<li><p>Abstract methods cannot be used in derived classes.</p></li>
+<li><p>In your derived class, overload the method.</p></li>
+<li><p><strong>In your derived class, override the method.</strong> &lt;= Correct</p></li>
+<li><p>In your derived class, declare the method as virtual.</p></li>
+</ul>
+<h4 id="which-code-do-you-use-if-you-want-to-trigger-a-garbage-collection-in-.net">7. Which code do you use if you want to trigger a garbage collection in .NET?</h4>
+<ul>
+<li><p>Garbage.CleanUp();</p></li>
+<li><p>System.GC.Clear();</p></li>
+<li><p><strong>System.GC.Collect();</strong> &lt;= Correct</p></li>
+<li><p>Garbage.Collect();</p></li>
+</ul>
+<h4 id="you-want-to-include-language-elements-in-a-program.-which-design-pattern-best-fits-this-objective">8.You want to include language elements in a program. Which design pattern best fits this objective?</h4>
+<ul>
+<li><p>Interpreter</p></li>
+<li><p>Command</p></li>
+<li><p>Bridge</p></li>
+<li><p><strong>Decorator</strong> &lt;= Not sure</p></li>
+</ul>
+<h4 id="what-makes-a-strong-named-assembly">9.What makes a strong-named assembly?</h4>
+<ul>
+<li><p>an assembly with the version specified</p></li>
+<li><p><strong>a signed assembly</strong> &lt;= Correct</p></li>
+<li><p>an assembly with culture information</p></li>
+<li><p>an assembly with the name marked as important</p></li>
+</ul>
+<h4 id="what-happens-when-you-concatenate-two-strings">10.What happens when you concatenate two strings?</h4>
+<ul>
+<li><p>You cannot concatenate strings in .NET.</p></li>
+<li><p>The second string object is modified so it contains the concatenated strings.</p></li>
+<li><p><strong>A third string object is created containing the concatenated strings.</strong> &lt;= Correct</p></li>
+<li><p>The first string object is modified so it contains the concatenated strings.</p></li>
+</ul>
+<h4 id="what-is-a-delegate">11.What is a delegate?</h4>
+<ul>
+<li><p>A delegate is an object or collection initializer that adds flexibility, readability and maintainability in C#.</p></li>
+<li><p><strong>A delegate in .NET is similar to a function pointer in C or C++. Using a delegate allows the programmer to encapsulate a reference to a method inside a delegate object.</strong> &lt;= Correct</p></li>
+<li><p>A delegate is a collection initializer that adds flexibility, readability and maintainability in .NET.</p></li>
+<li><p>A delegate is an extension method. Using a delegate allows the programmer to add flexibility, readability and maintainability in .NET.</p></li>
+</ul>
+<h4 id="which-is-a-set-of-features-that-extends-the-query-capabilities-of-the-.net-language-syntax-by-adding-sets-of-new-standard-query-operators-that-allow-data-manipulation-regardless-of-the-data-source">12.Which is a set of features that extends the query capabilities of the .NET language syntax by adding sets of new standard query operators that allow data manipulation, regardless of the data source?</h4>
+<ul>
+<li><p>XML</p></li>
+<li><p>C#</p></li>
+<li><p><strong>LINQ</strong> &lt;= Correct</p></li>
+<li><p>XAML</p></li>
+</ul>
+<h4 id="what-is-the-single-responsibility-principle">13.What is the single responsibility principle?</h4>
+<ul>
+<li><p>Software entities should be open for extension, but closed for modification.</p></li>
+<li><p>Entities must depend on abstractions, not on concrete implementations.</p></li>
+<li><p>Objects in a program should be repleaceble with instances of their subtypes without altering the correctness of that programm.</p></li>
+<li><p><strong>A class should have only a single responsibility - that is, only changes to one part of the software’s specification should be able to affect the specification of the class.</strong> &lt;= Correct</p></li>
+</ul>
+<h4 id="when-should-a-developer-use-the-.net-standard-class-library-project-type">14.When should a developer use the .NET Standard class library project type?</h4>
+<ul>
+<li><p>when you want to increase the .NET API surface area your library can access, and allow only .NET Core apps to be compatible with your library</p></li>
+<li><p><strong>when you want to increase the number of apps that are compatible with your library, and decrease the .NET API surface area your library can access</strong> &lt;= Correct</p></li>
+<li><p>when you want to decrease speed but have more features</p></li>
+<li><p>when you want to increase compilation speed and have fewer features</p></li>
+</ul>
+<h4 id="what-is-the-difference-between-a-sdk-software-development-kit-and-runtime-in-.net-core">15.What is the difference between a SDK (software development kit) and runtime in .NET Core?</h4>
+<ul>
+<li><p>The SDK is the “virtual machine” that hosts and runs the application and abstracts all the interaction with the operating system; the runtime usually includes documentation and other help files.</p></li>
+<li><p>The runtime is the virtual machine that hosts and runs the application and abstracts all the interaction with the operating system; the SDK usually includes documentation and other help files.</p></li>
+<li><p>The runtime compiles code along with the CLR; the SDK usually includes documentation and other help files.</p></li>
+<li><p>The SDK compiles code along with the CLR; the runtime usually includes documentation and other help files.</p></li>
+</ul>
+<h3 id="what-is-the-common-type-system-cts">16. What is the Common Type System (CTS)?</h3>
+<ul>
+<li><p>the component of CLR in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages</p></li>
+<li><p>the component of CLI in which .NET Framework provides support for several languages since it contains a type system that is common with all the languages</p></li>
+<li><p>the component of CLR that allows you to map the content of a file to the logical address of an application</p></li>
+<li><p>the component of CLR that enables you to run multiple versions of an application or component and CLR on the same computer at the same time</p></li>
+</ul>
+<h3 id="assuming-y-is-a-value-type-which-is-an-example-of-boxing">17.Assuming y is a value type, which is an example of boxing?</h3>
+<ul>
+<li>y = (int)thisObject;</li>
+<li>int y = 3;</li>
+<li><p>y = (int)thisObject=;3;</p></li>
+<li><p><strong>object thisObject = y; </strong> &lt;= Correct</p></li>
+</ul>
+<h3 id="what-is-an-abstract-class-in-.net">18.What is an abstract class in .NET?</h3>
+<ul>
+<li><p>An abstract class provides a partial implementation for functionality and some abstract or virtual members that must be implemented by the inheriting entities. It can declare fields too.</p></li>
+<li><p>An abstract class allows developers to create new classes that reuse, extend, and modify the behavior defined in other classes.</p></li>
+<li><p>An abstract class is responsible for keeping track of what is actually executing and where each executing thread is.</p></li>
+<li><p><strong>An abstract class declares a contract or behavior that implementing classes require. It may declare only properties, methods, and events with no access modifiers. All the declared members must be implemented. </strong> &lt;= Correct</p></li>
+</ul>
+<h3 id="what-is-the-namespace-for-caching-information-in-.net">19.What is the namespace for caching information in .NET?</h3>
+<ul>
+<li><p>System.Data.Caching;</p></li>
+<li><p>All.System.Caching;</p></li>
+<li><p><strong>System.Runtime.Caching;</strong> &lt;—–CORRECT</p></li>
+<li><p>System.Compiler.Caching;</p></li>
+</ul>
+<h3 id="what-is-an-interface-in-.net">20.What is an interface in .NET?</h3>
+<ul>
+<li><p>An interface provides a partial implementation for functionality and some abstract or virtual members that must be implemented by the inheriting entities. It can declare fields too.</p></li>
+<li><p>An interface is responsible for keeping track of what is actually executing and where each executing thread is.</p></li>
+<li><p>An interface allows developers to create new classes that reuse, extend, and modify the behavior defined in other classes.</p></li>
+<li><p><strong>An interface declares a contract or behavior that implementing classes require. It may declare only properties, methods, and events with no access modifiers. All the declared members must be implemented. </strong> &lt;= Correct</p></li>
+</ul>
+<h3 id="what-does-cas-stand-for-and-what-does-it-do">21. What does CAS stand for and what does it do?</h3>
+<ul>
+<li>CAS stands for Code Application Secrets and it enables users to restrict, on a very granular level, what hidden code can do according to a level of trust for an application.</li>
+<li>CAS stands for Code Access Secrets and it enables users to restrict, on a very granular level, what hidden code can do according to a level of trust.</li>
+<li>CAS stands for Cognitive Access Security and it enables users to restrict security logic manipulation.</li>
+<li>CAS stands for Code Access Security and it enables users to restrict, on a very granular level, what managed code can do according to a level of trust.</li>
+</ul>
+<h3 id="which-is-not-true-about-lambda-statements">22. Which is NOT true about lambda statements?</h3>
+<ul>
+<li>A statement lambda cannot return a value. &lt;= Correct</li>
+<li>If a statement lambda has a return value, it has to use a return statement.</li>
+<li>A statement lambda requires using curly braces.</li>
+<li>A statement lambda can have more than one statement.</li>
+</ul>
+<h3 id="which-is-not-true-about-a-read-only-variable">23. Which is NOT true about a read-only variable?</h3>
+<ul>
+<li>At runtime, its value is evaluated.</li>
+<li>It can be either static or an instance member.</li>
+<li>It can be initialized at declaration only. &lt;= Correct</li>
+<li>It can be initialized in either the constructor or the declaration.</li>
+</ul>
+<h3 id="what-is-the-difference-between-system.string-and-string">24. What is the difference between System.String and string?</h3>
+<ul>
+<li>string is used for fied-size strings in C#, while System.String is used for all the strings.</li>
+<li>There is no such class as System.String.</li>
+<li><strong>There is none—string is an alias for System. String. </strong> &lt;—CORRECT</li>
+<li>System.String is a VB.NET data type, while string is a C# type.</li>
+</ul>
+<h3 id="when-break-is-used-inside-two-nested-for-loops-does-control-come-out-of-the-inner-for-loop-or-the-outer-for-loop">25. When break is used inside two nested for loops, does control come out of the inner for loop or the outer for loop?</h3>
+<ul>
+<li>It breaks from only the outer loop.</li>
+<li>It breaks from all loops.</li>
+<li><strong>It breaks from only the inner loop.</strong> &lt;= Correct</li>
+<li>It breaks from the outer loop after the second iteration.</li>
+</ul>
+<h3 id="you-want-to-separate-object-construction-from-its-representation.-which-design-pattern-best-fits-this-objective">26. You want to separate object construction from its representation. Which design pattern best fits this objective?</h3>
+<ul>
+<li>Adapter</li>
+<li>Bridge</li>
+<li>Singleton</li>
+<li><strong>Builder </strong> &lt;= Correct</li>
+</ul>
+<h3 id="you-want-to-encapsulate-a-command-request-as-an-object.-which-design-pattern-best-fits-this-objective">27. You want to encapsulate a command request as an object. Which design pattern best fits this objective?</h3>
+<ul>
+<li>Command &lt;= Correct</li>
+<li>Iterator</li>
+<li>Facade</li>
+<li>Observer</li>
+</ul>
+<h3 id="why-would-pre-jit-be-used-by-the-.net-framework">28. Why would Pre-JIT be used by the .NET Framework?</h3>
+<ul>
+<li>to compile only the methods that are called at runtime and store those methods in cache after execution</li>
+<li>to compile complete source code into native code in a single compilation cycle during deployment of the application &lt;= Correct</li>
+<li>to compile only the methods that are called at runtime and then store them in cache for one minute</li>
+<li>to compile only the methods that are called at runtime and remove them from memory after execution</li>
+</ul>
+<h3 id="what-do-code-contracts-do">29. What do code contracts do?</h3>
+<ul>
+<li>Code contracts are data structures that can operate on demand per requirements.</li>
+<li>Code contracts provide a way to specify preconditions, postconditions, and object invariants in your code. &lt;= Correct</li>
+<li>Code contracts contain definitions for a group of related functionalities that a class or a struct can implement.</li>
+<li>Code contracts contain data structures for a group of related functionalities that a class or a struct can implement.</li>
+</ul>
+<h3 id="you-must-connect-an-app-to-an-online-identity-provider-using-oauth.-for-authentication-the-app-uses-webauthenticationbroker-object.-you-need-to-make-sure-the-app-registers-with-the-provider.-which-actions-do-you-take">30. You must connect an app to an online identity provider using OAuth. For authentication, the app uses WebAuthenticationBroker object. You need to make sure the app registers with the provider. Which actions do you take?</h3>
+<ul>
+<li>Construct an HTTP request URI and an HTTPS request URI.</li>
+<li>Invoke the GetCurrentApplicationCallbackUri method and construct an HTTPS request URI.</li>
+<li>Invoke the AuthenticateAsync and GetCurrentApplicationCallbackUri methods.</li>
+<li>Invoke the AuthenticateAsync method and construct an HTTPS request URI.</li>
+</ul>
+<h3 id="you-want-to-create-a-class-of-which-only-a-single-instance-can-exist.-which-design-pattern-best-fits-this-objective">31.You want to create a class of which only a single instance can exist. Which design pattern best fits this objective?</h3>
+<ul>
+<li>Adapter</li>
+<li>Singleton &lt;= Correct</li>
+<li>Bridge</li>
+<li>Decorator</li>
+</ul>
+<h3 id="what-is-the-dependency-inversion-principle">32.What is the dependency inversion principle?</h3>
+<ul>
+<li>Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.</li>
+<li>A class should have only a single responsibility—that is, only changes to one part of the software’s specification should be able to affect the specification of the class.</li>
+<li>Software entities should be open for extension, but closed for modification.</li>
+<li>Entities must depend on abstractions, not on concrete implementations. &lt;= Correct</li>
+</ul>
+<h3 id="what-is-a-namespace">33.What is a namespace?</h3>
+<ul>
+<li>a group of generic collections—in a logical hierarchy by function—that enable you to access the core functionality you need in your applications</li>
+<li>a group of methods—in a logical hierarchy by class—that enable you to access the core functionality you need in .NET</li>
+<li>a group of assemblies—in a logical hierarchy by function—that enable you to access the core functionality you need in your applications</li>
+<li>a group of classes, structures, interfaces, enumerations, and delegates—organized in a logical hierarchy by function that enable you to access the core functionality you need in your applications &lt;= Correct</li>
+</ul>
+<h3 id="which-of-the-following-selects-an-anonymous-type">34.Which of the following selects an anonymous type?</h3>
+<ul>
+<li><strong>select new { a.Country, a.Region }</strong> &lt;—–CORRECT</li>
+<li>select a</li>
+<li>select a.Country, a.Region</li>
+<li>select { a.Country, a.Region }</li>
+</ul>
+<h3 id="which-is-not-true-about-a-constant-variable">35.Which is NOT true about a constant variable?</h3>
+<ul>
+<li>At compile time, the value is evaluated.</li>
+<li>Only at declaration can it be initialized.</li>
+<li>At runtime, its value is evaluated.</li>
+<li>It cannot be static.</li>
+</ul>
+<h3 id="what-is-the-purpose-of-clr">36.What is the purpose of CLR?</h3>
+<ul>
+<li>CLR performs various operations such as security checks, spell checks, assembly loading, and thread management. It provides a secure execution environment for the internet.</li>
+<li>CLR sets the rules developers must use for the components that are interlanguage compatible. CLR is reusable across all the .NET-compliant languages.</li>
+<li>CLR is a compiler that converts Intermediate Language to a native code.</li>
+<li>CLR performs various operations such as memory management, security checks, assembly loading, and thread management. It also provides a secure execution environment for applications.</li>
+</ul>
+<h3 id="what-is-cil">37.What is CIL?</h3>
+<ul>
+<li>Formerly known as MSIL, CIL is a programming language that NET developers use. It represents the lowest possible level for a language that humans can still read.</li>
+<li>CIL is an object-oriented programming language that is a partially compiled code that .NET developers will then compile to native machine code.</li>
+<li>CIL is used to convert a value type to an object type.</li>
+<li>CIL is a compiled code library that Microsoft developed as an open specification. Developers use it for security, versioning, and deployment purposes.</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>coding</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="coding-questions-front-end-job-interview-questions">Coding Questions ★ Front-end Job Interview Questions</h1>
+<blockquote>
+<p>A list of helpful front-end related questions you can use to interview potential candidates, test yourself or completely ignore.</p>
+</blockquote>
+<p>Question: What is the value of <code>foo</code>?</p>
+<pre><code>var foo = 10 + &#39;20&#39;;</code></pre>
+<p>Question: What will be the output of the code below?</p>
+<pre><code>console.log(0.1 + 0.2 == 0.3);</code></pre>
+<p>Question: How would you make this work?</p>
+<pre><code>add(2, 5); add(2)(5); </code></pre>
+<p>Question: What value is returned from the following statement?</p>
+<pre><code>&quot;i&#39;m a lasagna hog&quot;.split(&quot;&quot;).reverse().join(&quot;&quot;);</code></pre>
+<p>Question: What is the value of <code>window.foo</code>?</p>
+<pre><code>( window.foo || ( window.foo = &quot;bar&quot; ) );</code></pre>
+<p>Question: What is the outcome of the two alerts below?</p>
+<pre><code>var foo = &quot;Hello&quot;;(function() {  var bar = &quot; World&quot;;  alert(foo + bar);})();alert(foo + bar);</code></pre>
+<p>Question: What is the value of <code>foo.length</code>?</p>
+<pre><code>var foo = [];foo.push(1);foo.push(2);</code></pre>
+<p>Question: What is the value of <code>foo.x</code>?</p>
+<pre><code>var foo = {n: 1};var bar = foo;foo.x = foo = {n: 2};</code></pre>
+<p>Question: What does the following code print?</p>
+<pre><code>console.log(&#39;one&#39;);setTimeout(function() {  console.log(&#39;two&#39;);}, 0);Promise.resolve().then(function() {  console.log(&#39;three&#39;);})console.log(&#39;four&#39;);</code></pre>
+<p>Question: What is the difference between these four promises?</p>
+<pre><code>doSomething().then(function () {  return doSomethingElse();});doSomething().then(function () {  doSomethingElse();});doSomething().then(doSomethingElse());doSomething().then(doSomethingElse);</code></pre>
+<p>Question: What will the code below output to the console and why?</p>
+<pre><code>(function(){  var a = b = 3;})();console.log(&quot;a defined? &quot; + (typeof a !== &#39;undefined&#39;));console.log(&quot;b defined? &quot; + (typeof b !== &#39;undefined&#39;));</code></pre>
+<p>Question: Consider the two functions below. Will they both return the same thing? Why or why not?</p>
+<pre><code>function foo1(){  return {      bar: &quot;hello&quot;  };}function foo2(){  return  {      bar: &quot;hello&quot;  };}</code></pre>
+<p><a href="http://localhost:9090/questions/coding-questions/">Source</a></p>
+</body>
+</html>

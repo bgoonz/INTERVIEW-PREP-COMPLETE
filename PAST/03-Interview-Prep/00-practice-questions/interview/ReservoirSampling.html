@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ReservoirSampling</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="reservoir-sampling-algorithm">Reservoir Sampling algorithm</h1>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p><strong>Translator: <a href="https://github.com/wsyzxxxx">wsyzxxxx</a></strong></p>
+<p>Recently I met with two interesting questions on LeetCode, LC382 and LC398. They are about Reservoir Sampling algorithm which basically is one kind of random possibility algorithm. If you understnd it, then such kind of questions will not be difficult. Otherwise, it may confuse you a lot.</p>
+<p>The first time I met with such kind of algorithm questions is from an interview question of Google.</p>
+<p>Given a linked <strong>which length is unknown</strong>, and you need design an algorithm to return one node from the linked list with <strong>traversaling the linked list only once</strong>.</p>
+<p>Here the meaning of random is uniform random, which means that the possibility of selecting each element is <code>1/n</code> if there are <code>n</code> elements in total. There should be no statistical deviation.</p>
+<p>The simple idea is to firstly traversal the whole linked list and then get the total length <code>n</code>. After that, generate an index from the random number in range <code>[1, n]</code>. Finding the corresponding node of the index means we have found the randomly selected node.</p>
+<p>However, the requirement is, <strong>traversaling the linked list only once</strong>, but such kind of ideas would not fulfill it. The question could be more general. For example, given an unknown-length sequence, how can we select <code>k</code> elements randomly from it?</p>
+<p>If you want to solve such kind of questions, then you need to learn the Reservoir Sampling algorithm.</p>
+<h3 id="algorithm-implementation">Algorithm Implementation</h3>
+<p><strong>First, we should try to solve the problem of selecting only one element.</strong> The difficult point is random selection is actually <strong>dynamic</strong>. For example, if you have 5 elements now, and you have selected element <code>a</code> as the result, but now a new element <code>b</code> is added to the pool, what should you do? You may keep selecting <code>a</code> or changing to the new element <code>b</code> as the result. However, what strategy should be applied here to select <code>a</code> or <code>b</code>, and how should we prove the selection strategy is totally fair?</p>
+<p><strong>I’ll give the conclusion first. If you met the <code>i-th</code> element, the possibility to select that element should be <code>1/i</code> and the possibility to keep the original choice is <code>1 - 1/i</code></strong>.</p>
+<p>The below code would make it easier to understand the idea:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="co">/* return the value of a random node from the linked list */</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="dt">int</span> <span class="fu">getRandom</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="bu">Random</span> r = <span class="kw">new</span> <span class="bu">Random</span>();</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="dt">int</span> i = <span class="dv">0</span>, res = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb1-5" title="5">    ListNode p = head;</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="co">// while iterate through the linked list</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">while</span> (p != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb1-8" title="8">        <span class="co">// generate an integer in range [0, i) </span></a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="co">// the possibility of the integer equals to 0 is 1/i</span></a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="kw">if</span> (r.<span class="fu">nextInt</span>(++i) == <span class="dv">0</span>) {</a>
+<a class="sourceLine" id="cb1-11" title="11">            res = p.<span class="fu">val</span>;</a>
+<a class="sourceLine" id="cb1-12" title="12">        }</a>
+<a class="sourceLine" id="cb1-13" title="13">        p = p.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb1-14" title="14">    }</a>
+<a class="sourceLine" id="cb1-15" title="15">    <span class="kw">return</span> res;</a>
+<a class="sourceLine" id="cb1-16" title="16">}</a></code></pre></div>
+<p>As for random algorithms, the codes are usually short, but the key problem is how to prove the algorithm is correct. Why is it uniform random when we updating the result with the possibility of <code>1/i</code>?</p>
+<p><strong>Proof:</strong> Assume there are <code>n</code> elements in total. Our purpose is to make the possibility of selecting each element is <code>1/n</code>. Then for the <code>i-th</code> element, the possibility for it to be selected is: <br /><span class="math display">$$
+\begin{aligned}
+    &amp;\frac{1}{i} \times (1 - \frac{1}{i+1}) \times (1 - \frac{1}{i+2}) \times ... \times (1 - \frac{1}{n}) \\
+    = &amp;\frac{1}{i} \times \frac{i}{i+1} \times \frac{i+1}{i+2} \times ... \times \frac{n-1}{n} \\
+    = &amp;\frac{1}{n}
+\end{aligned}
+$$</span><br /></p>
+<p>At the <code>i-th</code> position, the possibility of <code>i-th</code> element to be selected is <code>1/i</code>. At the <code>i+1-th</code> position, the possibility of <code>i-th</code> element not to be replaced is <code>1 - 1/(i+1)</code>. And similarly, the products of all the possibilities until the <code>n-th</code> position should be the final possibility of the <code>i-th</code> element is chosen. The result is <code>1/n</code>.</p>
+<p>Hence the logic of the algorithm is correct.</p>
+<p><strong>Similarly, if we need to select <code>k</code> elements randomly. The only thing we need to do is to keep the possibility of selecting <code>i-th</code> element at the <code>i-th</code> position <code>k/i</code>, and make the possibility of keeping the original selection <code>1 - k/i</code></strong>. Below is the code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/* return the values of k random nodes from the linked list */</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="dt">int</span>[] <span class="fu">getRandom</span>(ListNode head, <span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="bu">Random</span> r = <span class="kw">new</span> <span class="bu">Random</span>();</a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="dt">int</span>[] res = <span class="kw">new</span> <span class="dt">int</span>[k];</a>
+<a class="sourceLine" id="cb2-5" title="5">    ListNode p = head;</a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="co">// select first k elements by default</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">for</span> (<span class="dt">int</span> j = <span class="dv">0</span>; j &lt; k &amp;&amp; p != <span class="kw">null</span>; j++) {</a>
+<a class="sourceLine" id="cb2-9" title="9">        res[j] = p.<span class="fu">val</span>;</a>
+<a class="sourceLine" id="cb2-10" title="10">        p = p.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb2-11" title="11">    }</a>
+<a class="sourceLine" id="cb2-12" title="12"></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="dt">int</span> i = k;</a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="co">// while iterate the linked list</span></a>
+<a class="sourceLine" id="cb2-15" title="15">    <span class="kw">while</span> (p != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb2-16" title="16">        <span class="co">// generate an integer in range [0, i) </span></a>
+<a class="sourceLine" id="cb2-17" title="17">        <span class="dt">int</span> j = r.<span class="fu">nextInt</span>(++i);</a>
+<a class="sourceLine" id="cb2-18" title="18">        <span class="co">// the possibility of the integer less than k is k/i</span></a>
+<a class="sourceLine" id="cb2-19" title="19">        <span class="kw">if</span> (j &lt; k) {</a>
+<a class="sourceLine" id="cb2-20" title="20">            res[j] = p.<span class="fu">val</span>;</a>
+<a class="sourceLine" id="cb2-21" title="21">        }</a>
+<a class="sourceLine" id="cb2-22" title="22">        p = p.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb2-23" title="23">    }</a>
+<a class="sourceLine" id="cb2-24" title="24">    <span class="kw">return</span> res;</a>
+<a class="sourceLine" id="cb2-25" title="25">}</a></code></pre></div>
+<p>The maths proof is nearly the same as the above one: <br /><span class="math display">$$
+\begin{aligned}
+    &amp;\frac{k}{i} \times (1 - \frac{k}{i+1} \times \frac{1}{k}) \times (1 - \frac{k}{i+2} \times \frac{1}{k}) \times ... \times (1 - \frac{k}{n} \times \frac{1}{k}) \\
+    = &amp;\frac{k}{i} \times (1 - \frac{1}{i+1}) \times (1 - \frac{1}{i+2}) \times ... \times (1 - \frac{1}{n}) \\
+    = &amp;\frac{k}{i} \times \frac{i}{i+1} \times \frac{i+1}{i+2} \times ... \times \frac{n-1}{n} \\
+    = &amp;\frac{k}{n}
+\end{aligned}
+$$</span><br /></p>
+<p>Although, every time the possibility of updating the selection increased by k times, for the distinct i-th element, the possibility should be multiplied by <code>1/k</code>, which comes back to the last reduction.</p>
+<h3 id="further-readings">Further Readings</h3>
+<p>The time complexity of above sampling algorithm is <code>O(n)</code>, but it’s not the most optimized method. The better algorithm is based on geometric distribution. The time complexity is <code>O(k + klog(n/k))</code>. Since it requires a lot of maths knowledge, I won’t list them here. You can search by yourself if interested.</p>
+<p>There is another idea based on “<em>Fisher–Yates</em> shuffle”. Selecting <code>k</code> elements randomly is equivlent to shuffling all the elements and selecting the first <code>k</code> elements. However, shuffling algorithm requires the random access to all the elements, so it can only be applied to the data structures supporting random access such as arrays.</p>
+<p>Another idea is also instructive: make each element related to a random number, and then insert each element into a binary heap(priority queue) with the capacity of <code>k</code>. Sort the heap by the related random number, then the rest <code>k</code> elements are also randomized.</p>
+<p>This method seems not very efficient, because inserting into the heap requires the time complexity of <code>O(logk)</code>. Then the whole process requires the time complexity of <code>O(nlogk)</code>. This is even not good as the most simple algorithm. However, this idea can help us to solve <strong>the sampling probelms with weights</strong>. Higher weight means the higher possibility of being selected. This kind of problem is very common in the real life. For example, if you don’t charge money to the games, then you may never get the prizes from the lottery draw.</p>
+<p>At last, I want to add that there are not too many random algorithms, but they are really full of special skills. You may consider two very common questions which appear pretty simple.</p>
+<p>1.How could you carry out weighted random sampling for samples with weight? For example, given an array <code>w</code> and every elements <code>w[i]</code> representing the weight. Can you write an algorithm to select the index with the corresponding weight. When <code>w = [1,99]</code>, you should make the possibility to select index <code>0</code> becoome <code>1%</code> and the possibility to select index <code>1</code> become <code>99%</code>.</p>
+<p>2.Implement a generator class, and a very long array would be parsed into the constructor. Can you implement the <code>randomGet</code> method, which makes sure that every time when called, it returns one element of the array randomly and it can’t return the same element in multiple callings. Besides, the array could not be modified in any form, and the time complexity should be <code>O(1)</code>.</p>
+<p>These two questions are relatively difficult. I would write some articles about them in my future spare time.</p>
+<p>Stick to original high-quality articles, and strive to make clear the algorithm problems. Welcome to follow my Wechat official account “labuladong” for the latest articles.</p>
+<figure>
+<img src="../pictures/labuladong.jpg" alt="labuladong" /><figcaption>labuladong</figcaption>
+</figure>
+</body>
+</html>
