@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Union-Find-Application</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="application-of-union-find">Application of Union-Find</h1>
+<p><strong>Translator: <a href="https://github.com/ML-ZimingMeng/LeetCode-Python3">Ziming</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>Many readers in the previous article expressed interest in the Union-Find algorithm, so in this article, I will take a few LeetCode problems to talk about the ingenious use of this algorithm.</p>
+<p>First, let’s recall that the Union-Find algorithm solves the problem of dynamic connectivity of the graph, but the algorithm itself is not difficult. Your ability which is to abstract the original problem into a question about graph theory to abstract the problem determines whether you can solve it.</p>
+<p>First let us review the algorithm code written in the previous article and answer a few questions:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> UF {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co">// Record the number of connected components</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">private</span> <span class="dt">int</span> count;</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="co">// Store several trees</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="kw">private</span> <span class="dt">int</span>[] parent;</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="co">// Record the &quot;weight&quot; of the tree</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">private</span> <span class="dt">int</span>[] size;</a>
+<a class="sourceLine" id="cb1-8" title="8"></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="kw">public</span> <span class="fu">UF</span>(<span class="dt">int</span> n) {</a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="kw">this</span>.<span class="fu">count</span> = n;</a>
+<a class="sourceLine" id="cb1-11" title="11">        parent = <span class="kw">new</span> <span class="dt">int</span>[n];</a>
+<a class="sourceLine" id="cb1-12" title="12">        size = <span class="kw">new</span> <span class="dt">int</span>[n];</a>
+<a class="sourceLine" id="cb1-13" title="13">        <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; n; i++) {</a>
+<a class="sourceLine" id="cb1-14" title="14">            parent[i] = i;</a>
+<a class="sourceLine" id="cb1-15" title="15">            size[i] = <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb1-16" title="16">        }</a>
+<a class="sourceLine" id="cb1-17" title="17">    }</a>
+<a class="sourceLine" id="cb1-18" title="18">    </a>
+<a class="sourceLine" id="cb1-19" title="19">    <span class="co">/* Connect p and q */</span></a>
+<a class="sourceLine" id="cb1-20" title="20">    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">union</span>(<span class="dt">int</span> p, <span class="dt">int</span> q) {</a>
+<a class="sourceLine" id="cb1-21" title="21">        <span class="dt">int</span> rootP = <span class="fu">find</span>(p);</a>
+<a class="sourceLine" id="cb1-22" title="22">        <span class="dt">int</span> rootQ = <span class="fu">find</span>(q);</a>
+<a class="sourceLine" id="cb1-23" title="23">        <span class="kw">if</span> (rootP == rootQ)</a>
+<a class="sourceLine" id="cb1-24" title="24">            <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb1-25" title="25">        </a>
+<a class="sourceLine" id="cb1-26" title="26">        <span class="co">// The small tree is more balanced under the big tree</span></a>
+<a class="sourceLine" id="cb1-27" title="27">        <span class="kw">if</span> (size[rootP] &gt; size[rootQ]) {</a>
+<a class="sourceLine" id="cb1-28" title="28">            parent[rootQ] = rootP;</a>
+<a class="sourceLine" id="cb1-29" title="29">            size[rootP] += size[rootQ];</a>
+<a class="sourceLine" id="cb1-30" title="30">        } <span class="kw">else</span> {</a>
+<a class="sourceLine" id="cb1-31" title="31">            parent[rootP] = rootQ;</a>
+<a class="sourceLine" id="cb1-32" title="32">            size[rootQ] += size[rootP];</a>
+<a class="sourceLine" id="cb1-33" title="33">        }</a>
+<a class="sourceLine" id="cb1-34" title="34">        count--;</a>
+<a class="sourceLine" id="cb1-35" title="35">    }</a>
+<a class="sourceLine" id="cb1-36" title="36"></a>
+<a class="sourceLine" id="cb1-37" title="37">    <span class="co">/* Determine whether p and q are connected to each other */</span></a>
+<a class="sourceLine" id="cb1-38" title="38">    <span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">connected</span>(<span class="dt">int</span> p, <span class="dt">int</span> q) {</a>
+<a class="sourceLine" id="cb1-39" title="39">        <span class="dt">int</span> rootP = <span class="fu">find</span>(p);</a>
+<a class="sourceLine" id="cb1-40" title="40">        <span class="dt">int</span> rootQ = <span class="fu">find</span>(q);</a>
+<a class="sourceLine" id="cb1-41" title="41">        <span class="co">// Nodes on the same tree are interconnected</span></a>
+<a class="sourceLine" id="cb1-42" title="42">        <span class="kw">return</span> rootP == rootQ;</a>
+<a class="sourceLine" id="cb1-43" title="43">    }</a>
+<a class="sourceLine" id="cb1-44" title="44"></a>
+<a class="sourceLine" id="cb1-45" title="45">    <span class="co">/* Returns the root node of node x */</span></a>
+<a class="sourceLine" id="cb1-46" title="46">    <span class="kw">private</span> <span class="dt">int</span> <span class="fu">find</span>(<span class="dt">int</span> x) {</a>
+<a class="sourceLine" id="cb1-47" title="47">        <span class="kw">while</span> (parent[x] != x) {</a>
+<a class="sourceLine" id="cb1-48" title="48">            <span class="co">// Path compression</span></a>
+<a class="sourceLine" id="cb1-49" title="49">            parent[x] = parent[parent[x]];</a>
+<a class="sourceLine" id="cb1-50" title="50">            x = parent[x];</a>
+<a class="sourceLine" id="cb1-51" title="51">        }</a>
+<a class="sourceLine" id="cb1-52" title="52">        <span class="kw">return</span> x;</a>
+<a class="sourceLine" id="cb1-53" title="53">    }</a>
+<a class="sourceLine" id="cb1-54" title="54">    </a>
+<a class="sourceLine" id="cb1-55" title="55">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">count</span>() {</a>
+<a class="sourceLine" id="cb1-56" title="56">        <span class="kw">return</span> count;</a>
+<a class="sourceLine" id="cb1-57" title="57">    }</a>
+<a class="sourceLine" id="cb1-58" title="58">}</a></code></pre></div>
+<p>The algorithm has three key points:</p>
+<ol type="1">
+<li><p>Use the <code>parent</code> array to record the parent node of each node, which is equivalent to a pointer to the parent node, so the<code>parent</code> array actually stores a forest (several multi-trees).</p></li>
+<li><p>Use the <code>size</code> array to record the weight of each tree. The purpose is to keep the<code>union</code> tree still balanced without degrading it into a linked list, which affects the operation efficiency.</p></li>
+<li><p>Path compression is performed in the <code>find</code> function to ensure that the height of any tree is kept constant, so that the time complexity of the<code>union</code> and <code>connected</code> API is O (1).</p></li>
+</ol>
+<p>Some readers may ask, <strong>Since the path compression, does the weight balance of the <code>size</code> array still need</strong>? This problem is very interesting, because path compression guarantees that the tree height is constant (not more than 3), even if the tree is unbalanced, the height is also constant, which basically has little effect.</p>
+<p>In my opinion, when it comes to time complexity, indeed, it is also O (1) without the need for weight balance. However, if the size array is added, the efficiency is still slightly higher, such as the following:</p>
+<p><img src="../pictures/unionfind-application/1.jpg" /></p>
+<p>If weight balance optimization is carried out, case 1 will surely be obtained, without weight optimization, case 2 may occur. The <code>while</code> loop of path compression is triggered only when the height is 3, so case 1 will not trigger path compression at all, while case 2 will perform path compression many times to compress the nodes in the third layer to the second layer.</p>
+<p>In other words, removing the weight balance, although the time complexity is still O (1) for a single <code>find</code> function call, the efficiency of the API call will decrease to some extent. Of course, the advantage is that it reduces some space, but for Big O notation, the space-time complexity has not changed.</p>
+<p>Let’s get down to business and see what practical applications this algorithm has.</p>
+<h3 id="dfs-alternatives">Ⅰ. DFS Alternatives</h3>
+<p>Many problems solved by the DFS depth-first algorithm can also be solved by the Union-Find algorithm.</p>
+<p>For instance, Surrounded Regions of question 130: Given a 2D board containing <code>X</code> and <code>O</code> (the letter O), <strong>capture all regions</strong> surrounded by <code>X</code>.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">void</span> <span class="fu">solve</span>(<span class="dt">char</span>[][] board);</a></code></pre></div>
+<p>Note that <code>O</code> must be surrounded by four sides in order to be replaced with <code>X</code>, that is, <code>O</code> on the corner must not be enclosed, and further, <code>O</code> connected to <code>O</code> on the corner Will not be surrounded by <code>X</code> and will not be replaced.</p>
+<p><img src="../pictures/unionfind-application/2.jpg" /></p>
+<p>PS: This reminds me of the chess game “Othello” when I was a kid. As long as you use two pieces to sandwich each other’s pieces, the opponent’s pieces will be replaced with yours. Similarly, the pieces occupying the four corners are invincible, and the side pieces connected to it are also invincible (cannot be clipped).</p>
+<p>The traditional method of solving this problem is not difficult. First use the for loop to traverse the four sides of the chessboard, and use the DFS algorithm to replace those <code>O</code> connected to the border with a special character, such as <code>#</code>; Second, traverse the entire chessboard, replace the remaining <code>O</code> Into <code>X</code> and restore <code>#</code> to <code>O</code>. This can complete the requirements of the problem, time complexity O (MN).</p>
+<p>This problem can also be solved with the Union-Find algorithm. Although the implementation is more complicated and even less efficient, this is a general idea using the Union-Find algorithm and it is worth learning.</p>
+<p><strong>Those <code>O</code> which do not need to be replaced have a common ancestor called<code>dummy</code>. These <code>O</code> and<code>dummy</code> are connected to each other,however, those <code>O</code> that need to be replaced are not connected to<code>dummy</code></strong>.</p>
+<p><img src="../pictures/unionfind-application/3.jpg" /></p>
+<p>This is the core idea of Union-Find and it is easy to understand the code if you understand this diagram.</p>
+<p>Firstly, according to our implementation, the bottom layer of Union-Find is a one-dimensional array. The constructor needs to pass in the size of the array, and the title is a two-dimensional chessboard.</p>
+<p>Which is simple, that the two-dimensional coordinates <code>(x, y)</code> can be converted to the number <code>x * n + y</code> <strong>This is a common technique for mapping two-dimensional coordinates to one dimension</strong>.</p>
+<p>Secondly, the “patriarch” we described earlier is fictitious and we need to leave a place for his elderly. The index <code>[0 .. m * n-1]</code> is a one-dimensional mapping of the coordinates in the chessboard, so let this dummy <code>dummy</code> node occupy the index<code>m * n</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">void</span> <span class="fu">solve</span>(<span class="dt">char</span>[][] board) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="kw">if</span> (board.<span class="fu">length</span> == <span class="dv">0</span>) <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="dt">int</span> m = board.<span class="fu">length</span>;</a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="dt">int</span> n = board[<span class="dv">0</span>].<span class="fu">length</span>;</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="co">// Leave an extra room for dummy</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    UF uf = <span class="kw">new</span> <span class="fu">UF</span>(m * n + <span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb3-8" title="8">    <span class="dt">int</span> dummy = m * n;</a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="co">// Connect the first and last columns of O and dummy</span></a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; m; i++) {</a>
+<a class="sourceLine" id="cb3-11" title="11">        <span class="kw">if</span> (board[i][<span class="dv">0</span>] == <span class="ch">&#39;O&#39;</span>)</a>
+<a class="sourceLine" id="cb3-12" title="12">            uf.<span class="fu">union</span>(i * n, dummy);</a>
+<a class="sourceLine" id="cb3-13" title="13">        <span class="kw">if</span> (board[i][n - <span class="dv">1</span>] == <span class="ch">&#39;O&#39;</span>)</a>
+<a class="sourceLine" id="cb3-14" title="14">            uf.<span class="fu">union</span>(i * n + n - <span class="dv">1</span>, dummy);</a>
+<a class="sourceLine" id="cb3-15" title="15">    }</a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="co">// Connect O and dummy in the first and last rows</span></a>
+<a class="sourceLine" id="cb3-17" title="17">    <span class="kw">for</span> (<span class="dt">int</span> j = <span class="dv">0</span>; j &lt; n; j++) {</a>
+<a class="sourceLine" id="cb3-18" title="18">        <span class="kw">if</span> (board[<span class="dv">0</span>][j] == <span class="ch">&#39;O&#39;</span>)</a>
+<a class="sourceLine" id="cb3-19" title="19">            uf.<span class="fu">union</span>(j, dummy);</a>
+<a class="sourceLine" id="cb3-20" title="20">        <span class="kw">if</span> (board[m - <span class="dv">1</span>][j] == <span class="ch">&#39;O&#39;</span>)</a>
+<a class="sourceLine" id="cb3-21" title="21">            uf.<span class="fu">union</span>(n * (m - <span class="dv">1</span>) + j, dummy);</a>
+<a class="sourceLine" id="cb3-22" title="22">    }</a>
+<a class="sourceLine" id="cb3-23" title="23">    <span class="co">// Direction array d is a common method for searching up, down, left and right</span></a>
+<a class="sourceLine" id="cb3-24" title="24">    <span class="dt">int</span>[][] d = <span class="kw">new</span> <span class="dt">int</span>[][]{{<span class="dv">1</span>,<span class="dv">0</span>}, {<span class="dv">0</span>,<span class="dv">1</span>}, {<span class="dv">0</span>,-<span class="dv">1</span>}, {-<span class="dv">1</span>,<span class="dv">0</span>}};</a>
+<a class="sourceLine" id="cb3-25" title="25">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">1</span>; i &lt; m - <span class="dv">1</span>; i++) </a>
+<a class="sourceLine" id="cb3-26" title="26">        <span class="kw">for</span> (<span class="dt">int</span> j = <span class="dv">1</span>; j &lt; n - <span class="dv">1</span>; j++) </a>
+<a class="sourceLine" id="cb3-27" title="27">            <span class="kw">if</span> (board[i][j] == <span class="ch">&#39;O&#39;</span>)</a>
+<a class="sourceLine" id="cb3-28" title="28">                <span class="co">// Connect this O with up, down, left and right O</span></a>
+<a class="sourceLine" id="cb3-29" title="29">                <span class="kw">for</span> (<span class="dt">int</span> k = <span class="dv">0</span>; k &lt; <span class="dv">4</span>; k++) {</a>
+<a class="sourceLine" id="cb3-30" title="30">                    <span class="dt">int</span> x = i + d[k][<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb3-31" title="31">                    <span class="dt">int</span> y = j + d[k][<span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb3-32" title="32">                    <span class="kw">if</span> (board[x][y] == <span class="ch">&#39;O&#39;</span>)</a>
+<a class="sourceLine" id="cb3-33" title="33">                        uf.<span class="fu">union</span>(x * n + y, i * n + j);</a>
+<a class="sourceLine" id="cb3-34" title="34">                }</a>
+<a class="sourceLine" id="cb3-35" title="35">    <span class="co">// All O not connected to dummy shall be replaced</span></a>
+<a class="sourceLine" id="cb3-36" title="36">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">1</span>; i &lt; m - <span class="dv">1</span>; i++) </a>
+<a class="sourceLine" id="cb3-37" title="37">        <span class="kw">for</span> (<span class="dt">int</span> j = <span class="dv">1</span>; j &lt; n - <span class="dv">1</span>; j++) </a>
+<a class="sourceLine" id="cb3-38" title="38">            <span class="kw">if</span> (!uf.<span class="fu">connected</span>(dummy, i * n + j))</a>
+<a class="sourceLine" id="cb3-39" title="39">                board[i][j] = <span class="ch">&#39;X&#39;</span>;</a>
+<a class="sourceLine" id="cb3-40" title="40">}</a></code></pre></div>
+<p>This code is very long. In fact, it is just the realization of the previous idea. Only the <code>O</code> connected to the boundary <code>O</code> have the connectivity with <code>dummy</code> and they will not be replaced.</p>
+<p>To be honest, the Union-Find algorithm solves this simple problem. It can be a bit of a killer. It can solve more complex and more technical problems. <strong>The main idea is to add virtual nodes in a timely manner. Dynamic connectivity</strong>.</p>
+<h3 id="satisfiability-of-equality-equations">Ⅱ. Satisfiability of Equality Equations</h3>
+<p>This problem can be solved using the Union-Find algorithm, that is:</p>
+<p>Given an array equations of strings that represent relationships between variables, each string <code>equations[i]</code> has length <code>4</code> and takes one of two different forms: <code>"a==b"</code> or <code>"a!=b"</code>.  Here, <code>a</code> and <code>b</code> are lowercase letters (not necessarily different) that represent one-letter variable names.</p>
+<p>Return true if and only if it is possible to assign integers to variable names so as to satisfy all the given equations.</p>
+<p>The core idea of solving the problem is that <strong>divide the expressions in <code>equations</code> into two parts according to <code>==</code> and <code>!=</code>, First process the expressions of <code>==</code>, so that they are connected. <code>!=</code> Expression to check if the inequality relationship breaks the connectivity of the equality relationship</strong>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">boolean</span> <span class="fu">equationsPossible</span>(<span class="bu">String</span>[] equations) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="co">// 26 letters</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    UF uf = <span class="kw">new</span> <span class="fu">UF</span>(<span class="dv">26</span>);</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="co">// Let equal letters form connected components first</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="kw">for</span> (<span class="bu">String</span> eq : equations) {</a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="kw">if</span> (eq.<span class="fu">charAt</span>(<span class="dv">1</span>) == <span class="ch">&#39;=&#39;</span>) {</a>
+<a class="sourceLine" id="cb4-7" title="7">            <span class="dt">char</span> x = eq.<span class="fu">charAt</span>(<span class="dv">0</span>);</a>
+<a class="sourceLine" id="cb4-8" title="8">            <span class="dt">char</span> y = eq.<span class="fu">charAt</span>(<span class="dv">3</span>);</a>
+<a class="sourceLine" id="cb4-9" title="9">            uf.<span class="fu">union</span>(x - <span class="ch">&#39;a&#39;</span>, y - <span class="ch">&#39;a&#39;</span>);</a>
+<a class="sourceLine" id="cb4-10" title="10">        }</a>
+<a class="sourceLine" id="cb4-11" title="11">    }</a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="co">// Check if inequality relationship breaks connectivity of equal relationship</span></a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="kw">for</span> (<span class="bu">String</span> eq : equations) {</a>
+<a class="sourceLine" id="cb4-14" title="14">        <span class="kw">if</span> (eq.<span class="fu">charAt</span>(<span class="dv">1</span>) == <span class="ch">&#39;!&#39;</span>) {</a>
+<a class="sourceLine" id="cb4-15" title="15">            <span class="dt">char</span> x = eq.<span class="fu">charAt</span>(<span class="dv">0</span>);</a>
+<a class="sourceLine" id="cb4-16" title="16">            <span class="dt">char</span> y = eq.<span class="fu">charAt</span>(<span class="dv">3</span>);</a>
+<a class="sourceLine" id="cb4-17" title="17">            <span class="co">// If the equality relationship holds, it is a logical conflict</span></a>
+<a class="sourceLine" id="cb4-18" title="18">            <span class="kw">if</span> (uf.<span class="fu">connected</span>(x - <span class="ch">&#39;a&#39;</span>, y - <span class="ch">&#39;a&#39;</span>))</a>
+<a class="sourceLine" id="cb4-19" title="19">                <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb4-20" title="20">        }</a>
+<a class="sourceLine" id="cb4-21" title="21">    }</a>
+<a class="sourceLine" id="cb4-22" title="22">    <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb4-23" title="23">}</a></code></pre></div>
+<p>At this point, the problem of judging the validity of the expression is solved. Is it easy to use the Union-Find algorithm?</p>
+<h3 id="summery">Ⅲ. Summery</h3>
+<p>The Union-Find algorithm is a dynamic connectivity problem, that is, how to transform the original problem into a graph. For the legitimacy of the formula, the equivalent relationship can be directly used, and for the checkerboard envelopment problem, a virtual node is used to create the dynamic connectivity.</p>
+<p>In addition, you can use the directional array <code>d</code> to map a two-dimensional array to a one-dimensional array to simplify the amount of code.</p>
+<p>Many more complex DFS algorithm problems can be solved using the Union-Find algorithm. There are more than 20 Union-Find related questions on LeetCode, and you can go and try!</p>
+</body>
+</html>

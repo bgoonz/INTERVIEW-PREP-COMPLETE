@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mongodb-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="mongodb-assessment">MongoDB Assessment</h2>
+<h4 id="q1.-which-command-adds-members-to-the-replica-set-from-mongodb-shell">Q1. Which command adds members to the replica set from MongoDB shell?</h4>
+<ul>
+<li>[x] rs.add(“<hostname>”)</li>
+<li>[ ] replicaSetAdd(“<hostname>”)</li>
+<li>[ ] rs.insert(“<hostname>”)</li>
+<li>[ ] replica.add(“<hostname>”)</li>
+</ul>
+<h4 id="q2.-which-mongodb-shell-command-should-you-use-to-back-up-a-database">Q2. Which MongoDB shell command should you use to back up a database?</h4>
+<ul>
+<li>[ ] restore</li>
+<li>[ ] backup</li>
+<li>[ ] mongobackup</li>
+<li>[x] mongodump</li>
+</ul>
+<h4 id="q3.-which-shell-query-displays-all-citizens-with-an-age-greater-than-or-equal-to-21">Q3. Which shell query displays all citizens with an age greater than or equal to 21?</h4>
+<ul>
+<li>[ ] db.citizens.select(‘WHERE age &gt;= 21’)</li>
+<li>[ ] db.citizens.select(‘age &gt;= 21’)</li>
+<li>[ ] db.citizens.select(‘WHERE age &gt;= 21’)</li>
+<li>[x] db.citizens.select({age: {$gte: 21}})</li>
+</ul>
+<h4 id="q4.-what-does-a-mongodb-collection-consist-of">Q4. What does a MongoDB collection consist of?</h4>
+<ul>
+<li>[ ] data</li>
+<li>[x] documents</li>
+<li>[ ] fields</li>
+<li>[ ] rows</li>
+</ul>
+<h4 id="q5.-given-an-objectid-in-_id-how-do-you-get-the-time-it-was-created">Q5. Given an ObjectId in _id, how do you get the time it was created?</h4>
+<ul>
+<li>[ ] getDateTime(_id)</li>
+<li>[ ] _id.createDate()</li>
+<li>[x] _id.getTimestamp()</li>
+<li>[ ] _id.getDateTime()</li>
+</ul>
+<h4 id="q6.-given-a-cursor-named-mycursor-which-command-returns-a-boolean-value">Q6. Given a cursor named myCursor, which command returns a boolean value?</h4>
+<ul>
+<li>[x] myCursor.hasNext()</li>
+<li>[ ] myCursor.sort()</li>
+<li>[ ] myCursor.next()</li>
+<li>[ ] myCursor.find()</li>
+</ul>
+<h4 id="q7.-which-command-returns-a-specific-document-in-the-users-collection">Q7. Which command returns a specific document in the user’s collection?</h4>
+<ul>
+<li>[x] db.users.find({_id: 1})</li>
+<li>[ ] db.users.seek({_id: 1})</li>
+<li>[ ] db.users.query({_id: 1})</li>
+<li>[ ] db.query.users({_id: 1})</li>
+</ul>
+<h4 id="q8.-to-import-a-json-array-into-mongo-what-flags-are-needed-with-mongodbimport">Q8. To import a JSON array into Mongo, what flags are needed with MongoDBimport?</h4>
+<ul>
+<li>[ ] <code>--type jsonArray</code></li>
+<li>[ ] <code>--json</code></li>
+<li>[ ] <code>--type json</code></li>
+<li>[x] <code>--jsonArray</code></li>
+</ul>
+<h4 id="q9.-choose-the-shell-command-that-connects-to-a-mongodb-database.">Q9. Choose the shell command that connects to a MongoDB database.</h4>
+<ul>
+<li>[x] mongo</li>
+<li>[ ] mongod</li>
+<li>[ ] mongoconnect</li>
+<li>[ ] dbconnect</li>
+</ul>
+<h4 id="q10.-in-the-mongodb-shell-how-can-you-tell-if-an-index-was-used-with-a-query">Q10. In the MongoDB shell, how can you tell if an index was used with a query?</h4>
+<ul>
+<li>[x] db.customers.find({lastName: ‘smith’}).explain()</li>
+<li>[ ] db.customers.find({lastName: ‘smith’}).perf()</li>
+<li>[ ] db.customers.find({lastName: ‘smith’}).plan()</li>
+<li>[ ] db.customers.find({lastName: ‘smith’}).usedIndex()</li>
+</ul>
+<h4 id="q11.-suppose-your-aggregation-pipeline-terminated-with-an-exception-referring-to-exceeded-memory-limit.-what-is-the-best-way-to-resolve-the-issue">Q11. Suppose your aggregation pipeline terminated with an exception referring to exceeded memory limit. What is the best way to resolve the issue?</h4>
+<ul>
+<li>[ ] Set useMemory to twice amount indicated in exception.</li>
+<li>[ ] Switch a 64 bit instance of MongoDB.</li>
+<li>[ ] Increase the memory of the MongoDB server.</li>
+<li>[x] Set allowDiskUse to true.</li>
+</ul>
+<h4 id="q12.-what-is-the-recommended-way-to-delete-a-user">Q12. What is the recommended way to delete a user?</h4>
+<ul>
+<li>[ ] db.deleteUser(“user”)</li>
+<li>[ ] db.removeUser(“user”) DEPRECATED</li>
+<li>[ ] db.remove(“user”)</li>
+<li>[x] db.dropUser(“user”)</li>
+</ul>
+<h4 id="q13.-what-the-primary-database-in-a-replica-set-fails-when-does-failover-begin">Q13. What the primary database in a replica set fails, when does failover begin?</h4>
+<ul>
+<li>[ ] once the primary has been down for 10 minutes</li>
+<li>[ ] once the primary reboots</li>
+<li>[x] immediately</li>
+<li>[ ] after the administrator reboots the primary</li>
+</ul>
+<h4 id="q14.-what-is-the-correct-option-to-set-up-kerberos-when-starting-mongodbd">Q14. What is the correct option to set up Kerberos when starting MongoDBd?</h4>
+<ul>
+<li>[x] <code>--setParameter authenticationMechanisms=GSSAPI</code></li>
+<li>[ ] <code>--setAuthentication=GSSAPI</code></li>
+<li>[ ] <code>--setParam auth=K</code></li>
+<li>[ ] <code>--setAuth method=Kerberos</code></li>
+</ul>
+<h4 id="q15.-what-is-the-purpose-of-an-arbiter-in-a-replica-set">Q15. What is the purpose of an arbiter in a replica set?</h4>
+<ul>
+<li>[ ] It monitors replica set and sends email in case of failure</li>
+<li>[x] It casts the tie-breaking vote in an election.</li>
+<li>[ ] It holds a backup copy of the database.</li>
+<li>[ ] It reboots the failed server.</li>
+</ul>
+<h4 id="q16.-you-would-like-to-know-how-many-types-of-items-you-have-in-each-category.-which-query-does-this">Q16. You would like to know how many types of items you have in each category. Which query does this?</h4>
+<ul>
+<li>[ ] db.product.group({_id: "<span class="math inline">$category", count: {$</span>sum:1}})</li>
+<li>[ ] db.product.aggregate(<span class="math inline">$sum: {_id: "$</span>category", count: {$group:1}}})</li>
+<li>[x] db.product.aggregate(<span class="math inline">$group: {_id: "$</span>category", count: {$sum:1}}})</li>
+<li>[ ] db.product.aggregate(<span class="math inline">$count: {_id: "$</span>category", count: {$group:1}}})</li>
+</ul>
+<h4 id="q17.-to-restrict-the-number-of-records-coming-back-from-a-query-which-command-should-you-use">Q17. To restrict the number of records coming back from a query, which command should you use?</h4>
+<ul>
+<li>[ ] take</li>
+<li>[x] limit</li>
+<li>[ ] max</li>
+<li>[ ] skip</li>
+</ul>
+<h4 id="q18.-we-have-a-collection-named-restaurants-with-the-geographical-information-stored-in-the-location-property-how-do-you-create-a-geospatial-index-on-it">Q18. We have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?</h4>
+<ul>
+<li>[x] db.restaurants.CreateIndex({location: “2dsphere”})</li>
+<li>[ ] db.restaurants.geospatial({location: “2dsphere”})</li>
+<li>[ ] db.restaurants.CreateIndex(“2dsphere”:“location”)</li>
+<li>[ ] db.restaurants.CreateIndex({geospatial: “location”})</li>
+</ul>
+<h4 id="q19.-how-do-you-find-documents-with-a-matching-item-in-an-embedded-array">Q19. How do you find documents with a matching item in an embedded array?</h4>
+<ul>
+<li>[ ] <code>**db.customers.findmatch ({"jobs":"secretary"})**</code></li>
+<li>[ ] <code>**db.customers.find ({"jobs:secretary"})**</code></li>
+<li>[ ] <code>**db.customers.find ({"jobs":["secretary"]})**</code></li>
+<li>[x] <code>**db.customers.find ({"jobs":"secretary"})**</code></li>
+</ul>
+<h4 id="q20.-which-query-bypasses-the-first-5-customers-and-returns-the-next-10">Q20. Which query bypasses the first 5 customers and returns the next 10?</h4>
+<ul>
+<li>[ ] <code>**db.customers.find({}, {skip: 5, limit: 10})**</code></li>
+<li>[ ] <code>**db.customers.find({}.page(5).take(10))**</code></li>
+<li>[ ] <code>**db.customers.find({}).skip(5).take(10)**</code></li>
+<li>[x] <code>**db.customers.find({}).skip(5).limit(10)**</code></li>
+</ul>
+<h4 id="q21.-how-do-you-create-a-text-index">Q21. How do you create a text index?</h4>
+<ul>
+<li>[ ] db.customers.createIndex({firstName, lastName})</li>
+<li>[ ] db.customers.createTextIndex({firstName, lastName})</li>
+<li>[x] db.customers.createIndex({firstName: “text”, lastName: “text”})</li>
+<li>[ ] db.customers.createText({firstName: 1, lastName: 1})</li>
+</ul>
+<h4 id="q22.-assuming-you-have-customers-collection-with-a-firstname-and-lastname-field-which-is-the-correct-mongodb-shell-command-to-create-an-index-on-lastname-then-firstname-both-ascending">Q22. Assuming you have customers collection with a firstName and lastName field, which is the correct MongoDB shell command to create an index on lastName, then firstName both ascending?</h4>
+<ul>
+<li>[ ] db.customers.createIndex(“lastName, firstName, ASC”)</li>
+<li>[ ] db.customers.addIndex({lastName:“ASC”, firstName: “ASC”})</li>
+<li>[ ] db.customers.newIndex({lastName:1, firstName:1})</li>
+<li>[x] db.customers.createIndex({lastName:1, firstName: 1})</li>
+</ul>
+<h4 id="q23.-one-of-the-documents-in-your-collection-has-an-_-id-based-upon-an-older-database-design-and-you-want-to-change-it.-you-write-an-update-command-to-find-the-document-and-replace-the-_-id-but-the-_-id-isnt-changed.-how-should-you-fix-the-issue">Q23. One of the documents in your collection has an _ id based upon an older database design and you want to change it. You write an update command to find the document and replace the _ id but the _ id isnt changed. How should you fix the issue?</h4>
+<ul>
+<li>[ ] Set the replace option to true.</li>
+<li>[ ] Use the replaceOne() command instead.</li>
+<li>[x] You cant. Once set the _ id field cannot be changed.</li>
+<li>[ ] Use the updateOne() command instead.</li>
+</ul>
+<h4 id="q24.-a-compound-index-allows-you-to-___">Q24. A compound index allows you to ___ ?</h4>
+<ul>
+<li>[ ] Calculate interest quickly.</li>
+<li>[ ] Accomplish nothing, since compound indexes arent allowed in Mongo.</li>
+<li>[ ] Use more than one field per index.</li>
+<li>[x] Combine fields in different collations.</li>
+</ul>
+<h4 id="q25.-why-are-ad-hoc-queries-useful">Q25. Why are ad-hoc queries useful?</h4>
+<ul>
+<li>[ ] They do not have to use the same operators.</li>
+<li>[ ] You do not need to structure the database to support them.</li>
+<li>[ ] They autogenerate reports.</li>
+<li>[x] They run faster than indexed queries.</li>
+</ul>
+<h4 id="q26.-how-often-do-the-members-of-a-replica-set-send-heartbeats-to-each-other">Q26. How often do the members of a replica set send heartbeats to each other?</h4>
+<ul>
+<li>[ ] every 2 minutes</li>
+<li>[ ] every 5 seconds</li>
+<li>[x] every 2 seconds</li>
+<li>[ ] every 10 seconds</li>
+</ul>
+<h4 id="q27.-which-command-returns-all-of-the-documents-in-the-customers-collection">Q27. Which command returns all of the documents in the customers collection?</h4>
+<ul>
+<li>[ ] <code>**db.customers.all()**</code></li>
+<li>[ ] <code>**db.find().customers();**</code></li>
+<li>[x] <code>**db.customers.find();**</code></li>
+<li>[ ] <code>**db.customers.show()**</code></li>
+</ul>
+<h4 id="q28.-given-a-cursor-named-mycursor-pointing-to-the-customers-collection-how-to-you-get-basic-info-about-it">Q28. Given a cursor named myCursor, pointing to the customers collection, how to you get basic info about it?</h4>
+<ul>
+<li>[ ] myCursor.stats()</li>
+<li>[ ] myCursor.dump()</li>
+<li>[ ] myCursor.info()</li>
+<li>[x] myCursor.explain()</li>
+</ul>
+<h4 id="q29.-what-is-true-about-indexes">Q29. What is true about indexes?</h4>
+<ul>
+<li>[x] They speed up read access while slowing down writes.</li>
+<li>[ ] They secure the database from intruders.</li>
+<li>[ ] They speed up reads and writes.</li>
+<li>[ ] They speed up write access while slowing down reads.</li>
+</ul>
+<h4 id="q30.-what-is-the-preferred-format-to-store-geospatial-data-in-mongodb">Q30. What is the preferred format to store geospatial data in MongoDB?</h4>
+<ul>
+<li>[ ] Latitude, longitude</li>
+<li>[ ] XML</li>
+<li>[x] GeoJSON</li>
+<li>[ ] BSON</li>
+</ul>
+<h4 id="q31.-which-programming-language-is-used-to-write-mongodb-queries">Q31. Which programming language is used to write MongoDB queries?</h4>
+<ul>
+<li>[ ] Python</li>
+<li>[x] JavaScript</li>
+<li>[ ] SQL</li>
+<li>[ ] TypeScript</li>
+</ul>
+<h4 id="q32.-you-have-two-text-fields-in-your-document-and-youd-like-both-to-be-quickly-searchable.-what-should-you-do">Q32. You have two text fields in your document and you’d like both to be quickly searchable. What should you do?</h4>
+<ul>
+<li>[x] Create a text index on each field.</li>
+<li>[ ] MongoDB is not able to do this.</li>
+<li>[ ] Create a compound text index using both fields.</li>
+<li>[ ] Create a text index on one field and a single field index on the other.</li>
+</ul>
+<h4 id="q33.-to-import-a-csv-file-into-mongodb-which-command-should-you-issue">Q33. To import a CSV file into MongoDB, which command should you issue?</h4>
+<ul>
+<li>[ ] mongorestore</li>
+<li>[ ] mongoi</li>
+<li>[ ] upload</li>
+<li>[x] mongoimport</li>
+</ul>
+<h4 id="q34.-in-an-mongodb-mapreduce-command-the-reduce-function-should-____.">Q34. In an MongoDB mapReduce command, the reduce function should ____.</h4>
+<ul>
+<li>[ ] access the database</li>
+<li>[ ] be called only when the key has a single value</li>
+<li>[ ] acces the database only to perform read operations</li>
+<li>[x] not access the data</li>
+</ul>
+<h4 id="q35.-on-a-newly-created-collection-which-field-will-have-an-index">Q35. On a newly created collection, which field will have an index?</h4>
+<ul>
+<li>[ ] the name field</li>
+<li>[ ] the Objectid field</li>
+<li>[x] the _id field</li>
+<li>[ ] no field will have an index</li>
+</ul>
+<h4 id="q36.-you-have-a-collection-of-thousands-of-students.-youd-like-to-return-the-second-set-of-20-documents-from-the-sorted-collection.-what-is-the-proper-order-in-which-to-apply-the-operations">Q36. You have a collection of thousands of students. You’d like to return the second set of 20 documents from the sorted collection. What is the proper order in which to apply the operations?</h4>
+<ul>
+<li>[ ] limit, skip, sort</li>
+<li>[ ] sort, limit, skip</li>
+<li>[ ] limit, sort, skip</li>
+<li>[x] sort, skip, limit</li>
+</ul>
+<h4 id="q37.-you-would-like-the-stats-command-to-return-kilobytes-instead-of-bytes.-which-command-should-you-run">Q37. You would like the stats() command to return kilobytes instead of bytes. Which command should you run?</h4>
+<ul>
+<li>[x] <code>db.vehicle.stats(1024)</code></li>
+<li>[ ] <code>db.vehicle.stats("kilobytes")</code></li>
+<li>[ ] <code>db.vehicle.stats(true)</code></li>
+<li>[ ] <code>db.vehicle.stats("kb")</code></li>
+</ul>
+<h4 id="q38.-youd-like-to-modify-an-existing-index.-what-is-the-best-way-to-do-this">Q38. You’d like to modify an existing index. What is the best way to do this?</h4>
+<ul>
+<li>[ ] Use the <code>reIndex()</code> command to modify the index.</li>
+<li>[x] Delete the original index and create a new index.</li>
+<li>[ ] Call the <code>createIndex()</code> command with the update option.</li>
+<li>[ ] Use the <code>updateIndex()</code> command.</li>
+</ul>
+<h4 id="q39.-you-need-to-delete-the-index-you-created-on-the-description-field.-which-command-will-accomplish-this">Q39. You need to delete the index you created on the description field. Which command will accomplish this?</h4>
+<ul>
+<li>[x] <code>db.vehicle.dropIndex("description_text")</code></li>
+<li>[ ] <code>db.vehicle.dropIndex({"description":"text"})</code></li>
+<li>[ ] <code>db.vehicle.removeIndex({"description":"text"})</code></li>
+<li>[ ] <code>db.vehicle.removeIndex("description_text")</code></li>
+</ul>
+<h4 id="q40.-you-would-like-to-know-how-many-different-categories-you-have.-which-query-will-best-get-the-job-done">Q40. You would like to know how many different categories you have. Which query will best get the job done?</h4>
+<ul>
+<li>[ ] <code>db.vehicle.distinct("category")</code></li>
+<li>[ ] <code>db.vehicle.unique("category")</code></li>
+<li>[x] <code>db.vehicle.distinct("category").count()</code></li>
+<li>[ ] <code>db.vehicle.distinct("category").length</code></li>
+</ul>
+<h4 id="q41.-from-the-mongodb-shell-how-do-you-create-a-new-document-in-the-customers-collection">Q41. From the MongoDB shell, how do you create a new document in the customers collection?</h4>
+<ul>
+<li>[ ] <code>**db.customers.add({name: "Bob"})**</code></li>
+<li>[ ] <code>**db.customers.save({name: "Bob"})**</code></li>
+<li>[x] <code>**db.customers.create({name: "Bob"})**</code></li>
+<li>[ ] <code>**db.customers.new({name: "Bob"})**</code></li>
+</ul>
+<h4 id="q42.-which-field-is-required-of-all-mongodb-documents">Q42. Which field is required of all MongoDB documents?</h4>
+<ul>
+<li>[x] _id</li>
+<li>[ ] _name</li>
+<li>[ ] objectId</li>
+<li>[ ] mongoDB is schema-less so no field is required</li>
+</ul>
+<h4 id="q43.-which-mongodb-shell-command-should-you-use-to-back-up-a-database">Q43. Which MongoDB shell command should you use to back up a database?</h4>
+<ul>
+<li>[ ] backup</li>
+<li>[ ] restore</li>
+<li>[ ] mongobackup</li>
+<li>[x] mongodump</li>
+</ul>
+<h4 id="q44.-which-shell-query-displays-all-citizens-with-an-age-greater-than-or-equal-to-21">Q44. Which shell query displays all citizens with an age greater than or equal to 21?</h4>
+<ul>
+<li>[ ] <code>**db.citizens.find('WHERE age &gt;= 21')**</code></li>
+<li>[x] <code>**db.citizens.find({age: {\$gte: 21}})**</code></li>
+<li>[ ] <code>**db.citizens.where('age &gt;= 21')**</code></li>
+<li>[ ] <code>**dbcitizens.select('WHERE age &gt;=21')**</code></li>
+</ul>
+<h4 id="q45.-a-mongodb-instance-has-at-least-what-three-files">Q45. A MongoDB instance has at least what three files?</h4>
+<ul>
+<li>[x] data, namespcae, and journal</li>
+<li>[ ] namespace, journal, and log</li>
+<li>[ ] journal, data, and database</li>
+<li>[ ] data, log, and journal</li>
+</ul>
+<h4 id="q46.-youd-like-a-set-of-documents-to-be-returned-in-last-name-ascending-order.-which-query-will-accomplish-this">Q46. You’d like a set of documents to be returned in last name, ascending order. Which query will accomplish this?</h4>
+<ul>
+<li>[ ] <code>db.persons.find().sort({lastName: -1}}</code></li>
+<li>[x] <code>db.persons.find().sort({lastName: 1}}</code></li>
+<li>[ ] <code>db.persons.find().sort({lastName: ascending}}</code></li>
+<li>[ ] <code>db.persons.find().sort({lastName: $asc}}</code></li>
+</ul>
+</body>
+</html>

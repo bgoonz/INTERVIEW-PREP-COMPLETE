@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>python-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="python-assessment">Python Assessment</h2>
+<hr />
+<h4 id="q1.-what-is-an-abstract-class">Q1. What is an abstract class?</h4>
+<ul>
+<li>[ ] An abstract class is the name for any class from which you can instantiate an object.</li>
+<li>[ ] Abstract classes must be redefined any time an object is instantiated from them.</li>
+<li>[ ] Abstract classes must inherit from concrete classes.</li>
+<li>[x] An abstract class exists only so that other “concrete” classes can inherit from the abstract class.</li>
+</ul>
+<h4 id="q2.-what-happens-when-you-use-the-build-in-function-any-on-a-list">Q2. What happens when you use the build-in function <code>any()</code> on a list?</h4>
+<ul>
+<li>[ ] The <code>any()</code> function will randomly return any item from the list.</li>
+<li>[x] The <code>any()</code> function returns True if any item in the list evaluates to True. Otherwise, it returns False.</li>
+<li>[ ] The <code>any()</code> function takes as arguments the list to check inside, and the item to check for. If “any” of the items in the list match the item to check for, the function returns True.</li>
+<li>[ ] The <code>any()</code> function returns a Boolean value that answers the question “Are there any items in this list?”</li>
+</ul>
+<h4 id="q3.-what-data-structure-does-a-binary-tree-degenerate-to-if-it-isnt-balanced-properly">Q3. What data structure does a binary tree degenerate to if it isn’t balanced properly?</h4>
+<ul>
+<li>[x] <code>linked list</code></li>
+<li>[ ] <code>queue</code></li>
+<li>[ ] <code>set</code></li>
+<li>[ ] <code>OrderedDict</code></li>
+</ul>
+<h4 id="q4.-what-is-a-static-method">Q4. What is a static method?</h4>
+<ul>
+<li>[ ] <code>Static methods are called static because they always return "None".</code></li>
+<li>[ ] <code>Static methods can be bound to either a class or an instance of a class.</code></li>
+<li>[x] <code>They serve mostly as utility methods or helper methods, since they can't access or modify a class's state.</code></li>
+<li>[ ] <code>Static methods can access and modify the state of a class or an instance of a class.</code></li>
+</ul>
+<h4 id="q5.-what-are-attributes">Q5. What are attributes?</h4>
+<ul>
+<li>[ ] Attributes are long-form version of an <code>if/else</code> statement, used when testing for equality between objects.</li>
+<li>[x] Attributes are a way to hold data or describe a state for a class or an instance of a class.</li>
+<li>[ ] Attributes are strings that describe characteristics of a class.</li>
+<li>[ ] Function arguments are called “attributes” in the context of class methods and instance methods.</li>
+</ul>
+<h4 id="q6.-what-is-the-term-to-describe-this-code">Q6. What is the term to describe this code?</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1">count, fruit, price <span class="op">=</span> (<span class="dv">2</span>, <span class="st">&#39;apple&#39;</span>, <span class="fl">3.5</span>)</a></code></pre></div>
+<ul>
+<li>[ ] <code>tuple assignment</code></li>
+<li>[x] <code>tuple unpacking</code></li>
+<li>[ ] <code>tuple matching</code></li>
+<li>[ ] <code>tuple duplication</code></li>
+</ul>
+<h4 id="q7.-what-built-in-list-method-would-you-use-to-remove-items-from-a-list">Q7. What built-in list method would you use to remove items from a list?</h4>
+<ul>
+<li>[ ] <code>".delete()" method</code></li>
+<li>[ ] <code>pop(my_list)</code></li>
+<li>[ ] <code>del(my_list)</code></li>
+<li>[x] <code>".pop()" method</code></li>
+</ul>
+<h4 id="q8.-what-is-one-of-the-most-common-use-of-pythons-sys-library">Q8. What is one of the most common use of Python’s sys library?</h4>
+<ul>
+<li>[x] <code>to capture command-line arguments given at a file's runtime</code></li>
+<li>[ ] <code>to connect varios systems, such as connecting a web front end, an API service, a database, and a mobile app</code></li>
+<li>[ ] <code>to take a snapshot of all the packages and libraries in your virtual environment</code></li>
+<li>[ ] <code>to scan the health of your Python ecosystem while inside a virtual environment</code></li>
+</ul>
+<h4 id="q9.-what-is-the-runtime-of-accessing-a-value-in-a-dictionary-by-using-its-key">Q9. What is the runtime of accessing a value in a dictionary by using its key?</h4>
+<ul>
+<li>[ ] <code>"O(n)", also called linear time</code></li>
+<li>[ ] <code>"O(log n)", also called logarithmic time</code></li>
+<li>[ ] <code>"O(n^2)", also called quadratic time</code></li>
+<li>[x] <code>"O(1)", also called constant time</code></li>
+</ul>
+<h4 id="q10.-what-is-the-correct-syntax-for-defining-a-class-called-game">Q10. What is the correct syntax for defining a class called Game?</h4>
+<ul>
+<li>[x] <code>class Game: pass</code></li>
+<li>[ ] <code>def Game(): pass</code></li>
+<li>[ ] <code>def Game: pass</code></li>
+<li>[ ] <code>class Game(): pass</code></li>
+</ul>
+<h4 id="q11.-what-is-the-correct-way-to-write-a-doctest">Q11. What is the correct way to write a doctest?</h4>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    &quot;&quot;&quot;
+    sum(4, 3)
+    7
+
+    sum(-4, 5)
+    1
+    &quot;&quot;&quot;
+    return a + b</code></pre>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    &quot;&quot;&quot;
+    &gt;&gt;&gt; sum(4, 3)
+    7
+
+    &gt;&gt;&gt; sum(-4, 5)
+    1
+    &quot;&quot;&quot;
+    return a + b</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    &quot;&quot;&quot;
+    # &gt;&gt;&gt; sum(4, 3)
+    # 7
+
+    # &gt;&gt;&gt; sum(-4, 5)
+    # 1
+    &quot;&quot;&quot;
+    return a + b</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    ###
+    &gt;&gt;&gt; sum(4, 3)
+    7
+
+    &gt;&gt;&gt; sum(-4, 5)
+    1
+    ###
+    return a + b</code></pre>
+<h4 id="q12.-what-buit-in-python-data-type-is-commonly-used-to-represent-a-stack">Q12. What buit-in Python data type is commonly used to represent a stack?</h4>
+<ul>
+<li>[ ] <code>set</code></li>
+<li>[x] <code>list</code></li>
+<li>[ ] <code>None. You can only build a stack from scratch.</code></li>
+<li>[ ] <code>dictionary</code></li>
+</ul>
+<h4 id="q13.-what-would-this-expression-return">Q13. What would this expression return?</h4>
+<pre><code>college_years = [&#39;Freshman&#39;, &#39;Sophomore&#39;, &#39;Junior&#39;, &#39;Senior&#39;]
+return list(enumerate(college_years, 2019)</code></pre>
+<ul>
+<li>[ ] <code>[('Freshman', 2019), ('Sophomore', 2020), ('Junior', 2021), ('Senior', 2022)]</code></li>
+<li>[ ] <code>[(2019, 2020, 2021, 2022), ('Freshman', 'Sophomore', 'Junior', 'Senior')]</code></li>
+<li>[ ] <code>[('Freshman', 'Sophomore', 'Junior', 'Senior'), (2019, 2020, 2021, 2022)]</code></li>
+<li>[x] <code>[(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]</code></li>
+</ul>
+<h4 id="q14.-how-does-defaultdict-work">Q14. How does <code>defaultdict</code> work?</h4>
+<ul>
+<li>[ ] <code>defaultdict</code> will automatically create a dictionary for you that has keys which are the integers 0-10.</li>
+<li>[ ] <code>defaultdict</code> forces a dictionary to only accept keys that are of the types specified when you created the <code>defaultdict</code> (such as string or integers).</li>
+<li>[x] If you try to access a key in a dictionary that doesn’t exist, <code>defaultdict</code> will create a new key for you instead of throwing a <code>KeyError</code>.</li>
+<li>[ ] <code>defaultdict</code> stores a copy of a dictionary in memory that you can default to if the original gets unintentionally modified.</li>
+</ul>
+<h4 id="q15.-what-is-the-correct-syntax-for-defining-a-class-called-game-if-it-inherits-from-a-parent-class-called-logicgame">Q15. What is the correct syntax for defining a class called “Game”, if it inherits from a parent class called “LogicGame”?</h4>
+<ul>
+<li>[ ] <code>class Game.LogicGame(): pass</code></li>
+<li>[ ] <code>def Game(LogicGame): pass</code></li>
+<li>[x] <code>class Game(LogicGame): pass</code></li>
+<li>[ ] <code>def Game.LogicGame(): pass</code></li>
+</ul>
+<h4 id="q16.-what-is-the-purpose-of-the-self-keyword-when-defining-or-calling-instance-methods">Q16. What is the purpose of the “self” keyword when defining or calling instance methods?</h4>
+<ul>
+<li>[ ] <code>self means that no other arguments are required to be passed into the method</code></li>
+<li>[ ] <code>There is no real purpose for the self method; it"s just historic computer science jargona that Python keeps to stay consistent with other programming languages</code></li>
+<li>[x] <code>self refers to the instance whose method was called</code></li>
+<li>[ ] <code>self refers to the class that was inherited from to create the object using self</code></li>
+</ul>
+<h4 id="q17.-which-of-these-is-not-a-characteristic-of-namedtuples">Q17. Which of these is NOT a characteristic of namedtuples?</h4>
+<ul>
+<li>[ ] <code>You can assign a name to each of the namedtuple members and refer to them that way, similarly to how you would access keys in dictionary</code></li>
+<li>[ ] <code>Each member of a namedtuple object can be indexed to directly, just like in a regular tuple</code></li>
+<li>[ ] <code>namedtuples are just as memory efficient as regular tuples</code></li>
+<li>[x] <code>No import is needed to use namedtuples because they are available in the standard library</code></li>
+</ul>
+<h4 id="q18.-what-is-an-instance-method">Q18. What is an instance method?</h4>
+<ul>
+<li>[x] <code>Instance methods can modify the state of an instance or the state of its parent class</code></li>
+<li>[ ] <code>Instance methods hold data related to the instance</code></li>
+<li>[ ] <code>An instance method is any class method that doesn"t take any arguments</code></li>
+<li>[ ] <code>An instance method is a regular function that belongs to a class, but it must return None</code></li>
+</ul>
+<h4 id="q19.-which-choice-is-the-most-syntactically-correct-example-of-the-conditional-branching">Q19. Which choice is the most syntactically correct example of the conditional branching?</h4>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>num_people = 5
+
+if num_people &gt; 10;
+    print(&quot;There is a lot of people in the pool.&quot;)
+elif num_people &gt; 4;
+    print(&quot;There are some people in the pool.&quot;)
+elif num_people &gt; 0;
+    print(&quot;There are a few people in the pool.&quot;)
+else:
+    print(&quot;There is no one in the pool.&quot;)</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>num_people = 5
+
+if num_people &gt; 10;
+    print(&quot;There is a lot of people in the pool.&quot;)
+if num_people &gt; 4;
+    print(&quot;There are some people in the pool.&quot;)
+if num_people &gt; 0;
+    print(&quot;There are a few people in the pool.&quot;)
+else:
+    print(&quot;There is no one in the pool.&quot;)</code></pre>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>num_people = 5
+
+if num_people &gt; 10:
+    print(&quot;There is a lot of people in the pool.&quot;)
+elif num_people &gt; 4:
+    print(&quot;There are some people in the pool.&quot;)
+elif num_people &gt; 0:
+    print(&quot;There are a few people in the pool.&quot;)
+else:
+    print(&quot;There is no one in the pool.&quot;)</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>if num_people &gt; 10;
+    print(&quot;There is a lot of people in the pool.&quot;)
+if num_people &gt; 4;
+    print(&quot;There are some people in the pool.&quot;)
+if num_people &gt; 0;
+    print(&quot;There are a few people in the pool.&quot;)
+else:
+    print(&quot;There is no one in the pool.&quot;)</code></pre>
+<h4 id="q20.-which-statement-does-not-describe-the-object-oriented-programming-concenpt-of-encapsulation">Q20. Which statement does NOT describe the object-oriented programming concenpt of encapsulation?</h4>
+<ul>
+<li>[ ] <code>It protects the data from outside interference</code></li>
+<li>[ ] <code>A parent class is encapuslated and no data from the parent class passes on to the child class</code></li>
+<li>[ ] <code>It keeps data and the methods that can manipulate that data in one place</code></li>
+<li>[x] <code>It only allows the data to be changed by methods</code></li>
+</ul>
+<h4 id="q21.-what-is-the-purpose-of-an-ifelse-statement">Q21. What is the purpose of an if/else statement?</h4>
+<ul>
+<li>[ ] <code>An if/else statement tells the computer which chunk of code to run if the instructions you coded are incorrect</code></li>
+<li>[ ] <code>An if/else statement runs one chunk of code if all the imports were succesful, and another chunk of code if the imports were not succesful</code></li>
+<li>[x] <code>An if/else statement executes one chunk of code if a condition it true, but a different chunk of code if the condition is false</code></li>
+<li>[ ] <code>An if/else statement tells the computer which chunk of code to run if the is enough memory to handle it. and which chunk of code to run if there is not enough memory to handle it</code></li>
+</ul>
+<h4 id="q22.-what-buit-in-python-data-type-is-commonly-used-to-represent-a-queue">Q22. What buit-in Python data type is commonly used to represent a queue?</h4>
+<ul>
+<li>[ ] <code>dictionary</code></li>
+<li>[ ] <code>set</code></li>
+<li>[ ] <code>None. You can only build a stack from scratch.</code></li>
+<li>[x] <code>list</code></li>
+</ul>
+<h4 id="q23.-what-is-the-correct-syntax-for-instantiating-a-new-object-of-the-type-game">Q23. What is the correct syntax for instantiating a new object of the type Game?</h4>
+<ul>
+<li>[ ] <code>my_game = class.Game()</code></li>
+<li>[ ] <code>my_game = class(Game)</code></li>
+<li>[x] <code>my_game = Game()</code></li>
+<li>[ ] <code>my_game = Game.create()</code></li>
+</ul>
+<h4 id="q24.-what-does-the-built-in-map-function-do">Q24. What does the built-in map() function do?</h4>
+<ul>
+<li>[ ] It creates a path from multiple values in an iterable to a single value.</li>
+<li>[x] It applies a function to each item in an iterable and returns the value of that function.</li>
+<li>[ ] It converts a complex value type into simpler value types.</li>
+<li>[ ] It creates a mapping between two different elements of different iterables.</li>
+</ul>
+<h4 id="q25.-if-you-dont-explicitly-return-a-value-from-a-function-what-happens">Q25. If you don’t explicitly return a value from a function, what happens?</h4>
+<ul>
+<li>[ ] <code>The function will return a RuntimeError if you don't return a value.</code></li>
+<li>[x] <code>If the return keyword is absent, the function will return None.</code></li>
+<li>[ ] <code>If the return keyword is absent, the function will return True.</code></li>
+<li>[ ] <code>The function will enter an infinite loop because it won't know when to stop executing its code.</code></li>
+</ul>
+<h4 id="q26.-what-is-the-purpose-of-the-pass-statement-in-python">Q26. What is the purpose of the <code>pass</code> statement in Python?</h4>
+<ul>
+<li>[ ] It is used to skip the <code>yield</code> statement of a generator and return a value of None.</li>
+<li>[x] It is a null operation used mainly as a placeholder in functions, classes, etc.</li>
+<li>[ ] It is used to pass control from one statement block to another.</li>
+<li>[ ] It is used to skip the rest of a <code>while</code> or <code>for loop</code> and return to the start of the loop.</li>
+</ul>
+<h4 id="q27.-what-is-the-term-used-to-describe-items-that-may-be-passed-into-a-function">Q27. What is the term used to describe items that may be passed into a function?</h4>
+<ul>
+<li>[x] <code>arguments</code></li>
+<li>[ ] <code>paradigms</code></li>
+<li>[ ] <code>attributes</code></li>
+<li>[ ] <code>decorators</code></li>
+</ul>
+<h4 id="q28.-which-collection-type-is-used-to-associate-values-with-unique-keys">Q28. Which collection type is used to associate values with unique keys?</h4>
+<ul>
+<li>[ ] <code>slot</code></li>
+<li>[x] <code>dictionary</code></li>
+<li>[ ] <code>queue</code></li>
+<li>[ ] <code>sorted list</code></li>
+</ul>
+<h4 id="q29.-when-does-a-for-loop-stop-iterating">Q29. When does a for loop stop iterating?</h4>
+<ul>
+<li>[ ] <code>when it encounters an infinite loop</code></li>
+<li>[ ] <code>when it encounters an if/else statement that contains a break keyword</code></li>
+<li>[x] <code>when it has assessed each item in the iterable it is working on or a break keyword is encountered</code></li>
+<li>[ ] <code>when the runtime for the loop exceeds O(n^2)</code></li>
+</ul>
+<h4 id="q30.-assuming-the-node-is-in-a-singly-linked-list-what-is-the-runtime-complexity-of-searching-for-a-specific-node-within-a-singly-linked-list">Q30. Assuming the node is in a singly linked list, what is the runtime complexity of searching for a specific node within a singly linked list?</h4>
+<ul>
+<li>[x] The runtime is O(n) because in the worst case, the node you are searching for is the last node, and every node in the linked list must be visited.</li>
+<li>[ ] The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.</li>
+<li>[ ] The runtime cannot be determined unless you know how many nodes are in the singly linked list.</li>
+<li>[ ] The runtime is O(1) because you can index directly to a node in a singly linked list.</li>
+</ul>
+<h4 id="q31.-given-the-following-three-list-how-would-you-create-a-new-list-that-matches-the-desired-output-printed-below">Q31. Given the following three list, how would you create a new list that matches the desired output printed below?</h4>
+<pre><code>fruits = [&#39;Apples&#39;, &#39;Oranges&#39;, &#39;Bananas&#39;]
+quantities = [5, 3, 4]
+prices = [1.50, 2.25, 0.89]
+
+# Desired output
+[(&#39;Apples&#39;, 5, 1.50),
+(&#39;Oranges&#39;, 3, 2.25),
+(&#39;Bananas&#39;, 4, 0.89)]</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>output = []
+
+fruit_tuple_0 = (first[0], quantities[0], price[0])
+output.append(fruit_tuple)
+
+fruit_tuple_1 = (first[1], quantities[1], price[1])
+output.append(fruit_tuple)
+
+fruit_tuple_2 = (first[2], quantities[2], price[2])
+output.append(fruit_tuple)
+
+return output</code></pre>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>i = 0
+output = []
+for fruit in fruits:
+    temp_qty = quantities[i]
+    temp_price = prices[i]
+    output.append((fruit, temp_qty, temp_price))
+    i += 1
+return output</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>groceries = zip(fruits, quantities, prices)
+return groceries
+
+&gt;&gt;&gt; [
+(&#39;Apples&#39;, 5, 1.50),
+(&#39;Oranges&#39;, 3, 2.25),
+(&#39;Bananas&#39;, 4, 0.89)
+]</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>i = 0
+output = []
+for fruit in fruits:
+    for qty in quantities:
+        for price in prices:
+            output.append((fruit, qty, price))
+    i += 1
+return output</code></pre>
+<h4 id="q32.-what-happens-when-you-use-the-built-in-function-all-on-a-list">Q32. What happens when you use the built-in function all() on a list?</h4>
+<ul>
+<li>[ ] <code>The all() function returns a Boolean value that answers the question "Are all the items in this list the same?"</code></li>
+<li>[ ] <code>The all() function returns True if all the items in the list can be converted to strings. Otherwise, it returns False.</code></li>
+<li>[ ] <code>The all() function will return all the values in the list.</code></li>
+<li>[x] <code>The all() function returns True if all items in the list evaluate to True. Otherwise, it returns False.</code></li>
+</ul>
+<h4 id="q33.-what-is-the-correct-syntax-for-calling-an-instance-method-on-a-class-named-game">Q33. What is the correct syntax for calling an instance method on a class named Game?</h4>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>&gt;&gt;&gt; dice = Game()
+&gt;&gt;&gt; dice.roll()</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>&gt;&gt;&gt; dice = Game(self)
+&gt;&gt;&gt; dice.roll(self)</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>&gt;&gt;&gt; dice = Game()
+&gt;&gt;&gt; dice.roll(self)</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>&gt;&gt;&gt; dice = Game(self)
+&gt;&gt;&gt; dice.roll()</code></pre>
+<h4 id="q34.-what-is-the-algorithmic-paradigm-of-quick-sort">Q34. What is the algorithmic paradigm of quick sort?</h4>
+<ul>
+<li>[ ] <code>backtracking</code></li>
+<li>[ ] <code>dynamic programming</code></li>
+<li>[ ] <code>decrease and conquer</code></li>
+<li>[x] <code>divide and conquer</code></li>
+</ul>
+<h4 id="q35.-what-is-runtime-complexity-of-the-lists-built-in-.append-method">Q35. What is runtime complexity of the list’s built-in .append() method?</h4>
+<ul>
+<li>[x] <code>O(1), also called constant time</code></li>
+<li>[ ] <code>O(log n), also called logarithmic time</code></li>
+<li>[ ] <code>O(n^2), also called quardratic time</code></li>
+<li>[ ] <code>O(n), also called linear time</code></li>
+</ul>
+<h4 id="q36.-what-is-key-difference-between-a-set-and-a-list">Q36. What is key difference between a set and a list?</h4>
+<ul>
+<li>[ ] A set is an ordered collection unique items. A list is an unordered collection of non-unique items.</li>
+<li>[ ] Elements can be retrieved from a list but they cannot be retrieved from a set.</li>
+<li>[ ] A set is an ordered collection of non-unique items. A list is an unordered collection of unique items.</li>
+<li>[x] A set is an unordered collection unique items. A list is an ordered collection of non-unique items.</li>
+</ul>
+<h4 id="q37.-what-is-the-definition-of-abstraction-as-applied-to-object-oriented-python">Q37. What is the definition of abstraction as applied to object-oriented Python?</h4>
+<ul>
+<li>[ ] <code>Abstraction means that a different style of code can be used, since many details are already known to the program behind the scenes.</code></li>
+<li>[x] <code>Abstraction means the implementation is hidden from the user, and only the relevant data or information is shown.</code></li>
+<li>[ ] <code>Abstraction means that the data and the functionality of a class are combined into one entity.</code></li>
+<li>[ ] <code>Abstraction means that a class can inherit from more than one parent class.</code></li>
+</ul>
+<h4 id="q38.-what-does-this-function-print">Q38. What does this function print?</h4>
+<pre><code>def print_alpha_nums(abc_list, num_list):
+    for char in abc_list:
+        for num in num_list:
+            print(char, num)
+    return
+
+print_alpha_nums([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [1, 2, 3])</code></pre>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>a 1
+a 2
+a 3
+b 1
+b 2
+b 3
+c 1
+c 2
+c 3</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;], [1, 2, 3]</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>aaa
+bbb
+ccc
+111
+222
+333</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>a 1 2 3
+b 1 2 3
+c 1 2 3</code></pre>
+<h4 id="q39.-what-is-the-correct-syntax-for-calling-an-instance-method-on-a-class-named-game">Q39. What is the correct syntax for calling an instance method on a class named <code>Game</code>?</h4>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>my_game = Game()
+my_game.roll_dice()</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>my_game = Game()
+self.my_game.roll_dice()</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>my_game = Game(self)
+self.my_game.roll_dice()</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>my_game = Game(self)
+my_game.roll_dice(self)</code></pre>
+<h4 id="q40.-correct-representation-of-doctest-for-function-in-python">Q40. Correct representation of doctest for function in Python</h4>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    # a = 1
+    # b = 2
+    # sum(a, b) = 3
+
+    return a + b</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    &quot;&quot;&quot;
+    a = 1
+    b = 2
+    sum(a, b) = 3
+    &quot;&quot;&quot;
+
+    return a + b</code></pre>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    &quot;&quot;&quot;
+    &gt;&gt;&gt; a = 1
+    &gt;&gt;&gt; b = 2
+    &gt;&gt;&gt; sum(a, b)
+    3
+    &quot;&quot;&quot;
+
+    return a + b</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def sum(a, b):
+    &#39;&#39;&#39;
+    a = 1
+    b = 2
+    sum(a, b) = 3
+    &#39;&#39;&#39;
+    return a + b</code></pre>
+<h4 id="q41.-suppose-a-game-class-inherits-from-two-parent-classes-boardgame-and-logicgame.-which-statement-is-true-about-the-methods-of-an-object-instantiated-from-the-game-class">Q41. Suppose a Game class inherits from two parent classes: BoardGame and LogicGame. Which statement is true about the methods of an object instantiated from the Game class?</h4>
+<ul>
+<li>[ ] <code>When instantiating an object, the object doesn't inherit any of the parent class's methods.</code></li>
+<li>[ ] <code>When instantiating an object, the object will inherit the methods of whichever parent class has more methods.</code></li>
+<li>[ ] <code>When instantiating an object, the programmer must specify which parent class to inherit methods from.</code></li>
+<li>[x] <code>An instance of the Game class will inherit whatever methods the BoardGame and LogicGame classes have.</code></li>
+</ul>
+<h4 id="q42.-what-does-calling-namedtuple-on-a-collection-type-return">Q42. What does calling namedtuple on a collection type return?</h4>
+<ul>
+<li>[ ] <code>a generic object class with iterable parameter fields</code></li>
+<li>[ ] <code>a generic object class with non-iterable named fields</code></li>
+<li>[ ] <code>a tuple subclass with non-iterable parameter fields</code></li>
+<li>[x] <code>a tuple subclass with iterable named fields</code></li>
+</ul>
+<h4 id="q43.-what-symbols-do-you-use-to-assess-equality-between-two-elements">Q43. What symbol(s) do you use to assess equality between two elements?</h4>
+<ul>
+<li>[ ] <code>&amp;&amp;</code></li>
+<li>[ ] <code>=</code></li>
+<li>[x] <code>==</code></li>
+<li>[ ] <code>||</code></li>
+</ul>
+<h4 id="q44.-review-the-code-below.-what-is-the-correct-syntax-for-changing-the-price-to-1.5">Q44. Review the code below. What is the correct syntax for changing the price to 1.5?</h4>
+<p>fruit_info = { ‘fruit’: ‘apple’, ‘count’: 2, ‘price’: 3.5 }</p>
+<ul>
+<li>[x] <code>fruit_info ['price'] = 1.5</code></li>
+<li>[ ] <code>my_list [3.5] = 1.5</code></li>
+<li>[ ] <code>1.5 = fruit_info ['price]</code></li>
+<li>[ ] <code>my_list['price'] == 1.5</code></li>
+</ul>
+<h4 id="q45.-what-value-would-be-returned-by-this-check-for-equality">Q45. What value would be returned by this check for equality?</h4>
+<p>5!=6</p>
+<ul>
+<li>[ ] <code>yes</code></li>
+<li>[ ] <code>False</code></li>
+<li>[x] <code>True</code></li>
+<li>[ ] <code>None</code></li>
+</ul>
+<h4 id="q46.-what-does-a-classs-init-method-do">Q46. What does a class’s <strong>init</strong>() method do?</h4>
+<ul>
+<li>[ ] <code>The __init_method makes classes aware of each other if more than one class is defined in a single code file.</code></li>
+<li>[ ] <code>The _init_method is included to preserve backwards compatibility from Python 3 to Python 2, but no longer needs to be used in Python 3.</code></li>
+<li>[x] <code>The __init__() method is a constructor method that is called automatically whenever a new object is created from a class. It sets the initial state of a new object.</code></li>
+<li>[ ] <code>The __init__ method initializes any imports you may have included at the top of your file.</code></li>
+</ul>
+<h4 id="q47.-what-is-meant-by-the-phrase-space-complexity">Q47. What is meant by the phrase “space complexity”?</h4>
+<ul>
+<li>[ ] <code>How many microprocessors it would take to run your code in less than one second</code></li>
+<li>[ ] <code>How many lines of code are in your code file</code></li>
+<li>[x] <code>The amount of space taken up in memory as a function of the input size</code></li>
+<li>[ ] <code>How many copies of the code file could fit in 1 GB of memory</code></li>
+</ul>
+<h4 id="q48.-what-is-the-correct-syntax-for-creating-a-variable-that-is-bound-to-a-dictionary">Q48. What is the correct syntax for creating a variable that is bound to a dictionary?</h4>
+<ul>
+<li>[x] <code>fruit_info = {'fruit': 'apple', 'count': 2, 'price': 3.5}</code></li>
+<li>[ ] <code>fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()</code></li>
+<li>[ ] <code>fruit_info = ['fruit': 'apple', 'count': 2,'price': 3.5 ].dict()</code></li>
+<li>[ ] <code>fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)</code></li>
+</ul>
+<h4 id="q49.-what-is-the-proper-way-to-write-a-list-comprehension-that-represents-all-the-keys-in-this-dictionary">Q49. What is the proper way to write a list comprehension that represents all the keys in this dictionary?</h4>
+<p>fruits = {‘Apples’: 5, ‘Oranges’: 3, ‘Bananas’: 4}</p>
+<ul>
+<li>[ ] <code>fruit_names = [x in fruits.keys() for x]</code></li>
+<li>[ ] <code>fruit_names = for x in fruits.keys() *</code></li>
+<li>[x] <code>fruit_names = [x for x in fruits.keys()]</code></li>
+<li>[ ] <code>fruit_names = x for x in fruits.keys()</code></li>
+</ul>
+<h4 id="q50.-what-is-the-algorithmic-paradigm-of-quick-sort">Q50. What is the algorithmic paradigm of quick sort?</h4>
+<ul>
+<li>[ ] <code>backtracking</code></li>
+<li>[x] <code>divide and conquer</code></li>
+<li>[ ] <code>dynamic programming</code></li>
+<li>[ ] <code>decrease and conquer</code></li>
+</ul>
+<h4 id="q51.-what-is-the-purpose-of-the-self-keyword-when-defining-or-calling-methods-on-an-instance-of-an-object">Q51. What is the purpose of the <code>self</code> keyword when defining or calling methods on an instance of an object?</h4>
+<ul>
+<li>[ ] <code>self</code> refers to the class that was inherited from to create the object using <code>self</code>.</li>
+<li>[ ] There is no real purpose for the <code>self</code> method. It’s just legacy computer science jargon that Python keeps to stay consistent with other programming languages.</li>
+<li>[ ] <code>self</code> means that no other arguments are required to be passed into the method.</li>
+<li>[x] <code>self</code> refers to the instance whose method was called.</li>
+</ul>
+<h4 id="q52.-what-is-a-class-method">Q52. What is a class method?</h4>
+<ul>
+<li>[ ] <code>A class method is a regular function that belongs to a class, but it must return None.</code></li>
+<li>[x] <code>Class methods can modify the state of the class, but they can't directly modify the state of an instance that inherits from that class.</code></li>
+<li>[ ] <code>A class method is similar to a regular function, but a class method doesn't take any arguments.</code></li>
+<li>[ ] <code>Class methods hold all of the data for a particular class.</code></li>
+</ul>
+<h4 id="q53.-what-does-it-mean-for-a-function-to-have-linear-runtime">Q53. What does it mean for a function to have linear runtime?</h4>
+<ul>
+<li>[ ] You did not use very many advanced computer programming concepts in your code.</li>
+<li>[ ] The difficulty level your code is written at is not that high.</li>
+<li>[ ] It will take your program less than half a second to run.</li>
+<li>[x] The amount of time it takes the function to complete grows linearly as the input size increases.</li>
+</ul>
+<h4 id="q54.-what-is-the-proper-way-to-define-a-function">Q54. What is the proper way to define a function?</h4>
+<ul>
+<li>[ ] <code>def getMaxNum(list_of_nums): # body of function goes here</code></li>
+<li>[ ] <code>func get_max_num(list_of_nums): # body of function goes here</code></li>
+<li>[ ] <code>func getMaxNum(list_of_nums): # body of function goes here</code></li>
+<li>[x] <code>def get_max_num(list_of_nums): # body of function goes here</code> <a href="https://www.python.org/dev/peps/pep-0008/">explanation</a></li>
+</ul>
+<h4 id="q55.-according-to-the-pep-8-coding-style-guidelines-how-should-constant-values-be-named-in-python">Q55. According to the PEP 8 coding style guidelines, how should constant values be named in Python?</h4>
+<ul>
+<li>[ ] in camel case without using underscores to separate words – e.g. <code>maxValue = 255</code></li>
+<li>[ ] in lowercase with underscores to separate words – e.g. <code>max_value = 255</code></li>
+<li>[x] in all caps with underscores separating words – e.g. <code>MAX_VALUE = 255</code></li>
+<li>[ ] in mixed case without using underscores to separate words – e.g. <code>MaxValue = 255</code></li>
+</ul>
+<h4 id="q56.-describe-the-functionality-of-a-deque.">Q56. Describe the functionality of a deque.</h4>
+<ul>
+<li>[ ] A deque adds items to one side and remove items from the other side.</li>
+<li>[ ] A deque adds items to either or both sides, but only removes items from the top.</li>
+<li>[x] A deque adds items at either or both ends, and remove items at either or both ends.</li>
+<li>[ ] A deque adds items only to the top, but remove from either or both sides.</li>
+</ul>
+<h4 id="q57.-what-is-the-correct-syntax-for-creating-a-variable-that-is-bound-to-a-set">Q57. What is the correct syntax for creating a variable that is bound to a set?</h4>
+<ul>
+<li>[x] <code>myset = {0, 'apple', 3.5}</code></li>
+<li>[ ] <code>myset = to_set(0, 'apple', 3.5)</code></li>
+<li>[ ] <code>myset = (0, 'apple', 3.5).to_set()</code></li>
+<li>[ ] <code>myset = (0, 'apple', 3.5).set()</code></li>
+</ul>
+<h4 id="q58.-what-is-the-correct-syntax-for-defining-an-__init__-method-that-takes-no-parameters">Q58. What is the correct syntax for defining an <code>__init__()</code> method that takes no parameters?</h4>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>class __init__(self):
+    pass</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>def __init__():
+    pass</code></pre>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<pre><code>class __init__():
+    pass</code></pre>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<pre><code>def __init__(self):
+    pass</code></pre>
+<h4 id="q59.-which-statement-about-the-class-methods-is-true">Q59. Which statement about the class methods is true?</h4>
+<ul>
+<li>[ ] A class method holds all of the data for a particular class.</li>
+<li>[x] A class method can modify the state of the class, but it cannot directly modify the state of an instance that inherits from that class.</li>
+<li>[ ] A class method is a regular function that belongs to a class, but it must return <code>None</code></li>
+<li>[ ] A class method is similar to a regular function, but a class method does not take any arguments.</li>
+</ul>
+<h4 id="q60.-which-of-the-following-is-true-about-how-numeric-data-would-be-organised-in-a-banary-search-tree">Q60. Which of the following is TRUE About how numeric data would be organised in a banary Search tree?</h4>
+<ul>
+<li>[x] <code>For any given Node in a binary Search Tree, the child node to the left is less than the value of the given node and the child node to its right is greater than the given node.</code> (Not Sure)</li>
+<li>[ ] <code>Binary Search Tree cannot be used to organize and search through numeric data, given the complication that arise with very deep trees</code></li>
+<li>[ ] <code>The top node of the binary search tree would be an arbitray number. All the nodes to the left of the top node need to be less than the top node's number, but they don't need to ordered in any particular way</code></li>
+<li>[ ] <code>The smallest numeric value would go in the top most node. The next highest number would go in its left child node, the the next highest number after that would go in its right child node. This pattern would continue until all numeric values were in their own node</code></li>
+</ul>
+<h4 id="q61.-why-would-you-use-a-decorator">Q61. Why would you use a decorator?</h4>
+<ul>
+<li>[ ] <code>A decorator is similar to a class and should be used if you are doing functional programming instead of object oriented programming.</code></li>
+<li>[ ] <code>A decoratore is a visual indicator to someone reading your code that a portion of your code is critical and should not be changed</code></li>
+<li>[x] <code>You use the decorator to alter the functionality of a function without the without having to modify the functions code</code></li>
+<li>[ ] <code>An import statement is preceded by a decorator, pyhton knows to import the most recent version of whatever package or library is being imported</code></li>
+</ul>
+<h4 id="q62.-when-would-you-use-a-for-loop">Q62. When would you use a for loop ?</h4>
+<ul>
+<li>[ ] <code>Only in some situations, as loops are used ony for certaing type of programming</code></li>
+<li>[x] <code>When you need to check every element in an iterable of known length</code></li>
+<li>[ ] <code>When you want to minimize the use of strings in your code</code></li>
+<li>[ ] <code>When you want to run code in one file for a function in another file</code></li>
+</ul>
+<h4 id="q63.-what-is-the-most-self-descriptive-way-to-define-a-function-that-calculates-sales-tax-on-a-purches">Q63. What is the most self-descriptive way to define a function that calculates sales tax on a purches?</h4>
+<ul>
+<li>[ ] <code>def tax(my_float):   '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal ...???</code></li>
+<li>[ ] <code>def tx(amt):   '''Gets the tax on an amount.'''</code></li>
+<li>[ ] <code>def sales_tax(amount):   '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal ...???</code> -[x] <code>def calculate_sales_tax(subtotal):   pass</code></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>gcp-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="google-cloud-platform-gcp-assessment">Google Cloud Platform (GCP) Assessment</h2>
+<h4 id="q1.-you-want-to-schedule-a-cron-job-to-send-a-message-to-a-cloud-pubsub-topic-hourly.-what-do-you-do">Q1. You want to schedule a cron job to send a message to a Cloud Pub/Sub topic hourly. What do you do?</h4>
+<ul>
+<li>[ ] Create a Cloud Function with a targer of HTTP</li>
+<li>[ ] Create a Cloud Scheduler job with a targer of HTTP</li>
+<li>[x] Create a Cloud Function with a targer of Cloud Pub/Sub</li>
+<li>[ ] Create a Cloud Scheduler job with a targer of Cloud Pub/Sub</li>
+</ul>
+<h4 id="q2.-you-want-to-set-up-a-managed-apache-spark-cluster.-which-service-do-you-configure">Q2. You want to set up a managed Apache Spark cluster. Which service do you configure?</h4>
+<ul>
+<li>[ ] Cloud Dataprep</li>
+<li>[ ] Cloud Composer</li>
+<li>[ ] Cloud Dataflow</li>
+<li>[x] Cloud Dataproc</li>
+</ul>
+<h4 id="q3.-gcp-organizations-are-not-available-in-your-gcp-project.-what-type-of-account-are-you-using">Q3. GCP Organizations are not available in your GCP project. What type of account are you using?</h4>
+<ul>
+<li>[ ] Temporary</li>
+<li>[*] Free Tier- free trail doesnt have the organization</li>
+<li>[ ] Local</li>
+<li>[ ] Organizational</li>
+</ul>
+<h4 id="q4.-what-feature-do-you-need-to-enable-to-support-load-balancing-and-autoscaling-managed-instance-groups-for-compute-engine">Q4. What feature do you need to enable to support load balancing and autoscaling managed instance groups for Compute Engine?</h4>
+<ul>
+<li>[ ] metadata</li>
+<li>[ ] security scans</li>
+<li>[ ] network endpoint groups</li>
+<li>[x] health checks</li>
+</ul>
+<h4 id="q5.-you-are-designing-an-application-that-will-send-messages-with-the-mqtt-protocol.-what-service-should-you-use">Q5. You are designing an application that will send messages with the MQTT protocol. What service should you use?</h4>
+<ul>
+<li>[ ] BigQuery</li>
+<li>[x] Cloud Pub/Sub</li>
+<li>[ ] IoT Broker</li>
+<li>[ ] Bigtable</li>
+</ul>
+<h4 id="q6.-you-want-to-configure-services-to-host-a-mobile-application-that-uses-tensorflow-lite-models.-which-services-should-you-use">Q6. You want to configure services to host a mobile application that uses TensorFlow Lite models. Which services should you use?</h4>
+<ul>
+<li>[ ] Cloud Functions and ML Kit</li>
+<li>[ ] Firebase and AI Platform jobs</li>
+<li>[x] Firebase and ML Kit</li>
+<li>[ ] Cloud Functions and AI Platform jobs</li>
+</ul>
+<h4 id="q7.-you-need-to-deploy-redis-with-unique-persistent-identities-and-stable-hostnames-on-gke.-what-type-of-deployment-object-do-you-use">Q7. You need to deploy Redis with unique persistent identities and stable hostnames on GKE. What type of deployment object do you use?</h4>
+<ul>
+<li>[ ] GCP deployment</li>
+<li>[x] YAML configuration file</li>
+<li>[ ] Python nested template</li>
+<li>[ ] stateful set</li>
+</ul>
+<h4 id="q8.-you-want-to-try-out-a-machine-learning-tensorflow-example-notebook-with-the-fewest-configuration-steps-on-gcp.-what-do-you-do">Q8. You want to try out a machine-learning TensorFlow example notebook with the fewest configuration steps on GCP. What do you do?</h4>
+<ul>
+<li>[ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use GPU.</li>
+<li>[?] Create a notebook instance with TPU. Upload the notebook to the instance.</li>
+<li>[ ] Create a notebook instance with GPU. Upload the notebook to the instance.</li>
+<li>[ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator yo use TPU.</li>
+</ul>
+<h4 id="q9.-you-need-to-configure-a-data-retention-policy-for-a-cloud-storage-bucket-to-govern-how-long-objects-in-the-bucket-must-be-retained.-what-feature-do-you-enable">Q9. You need to configure a data retention policy for a Cloud Storage bucket to govern how long objects in the bucket must be retained. What feature do you enable?</h4>
+<ul>
+<li>[ ] Requester Pays</li>
+<li>[x] Bucket Lock</li>
+<li>[ ] Bucket Policy Only</li>
+<li>[ ] Encryption Type</li>
+</ul>
+<h4 id="q10.-to-be-able-to-configure-an-existing-cloud-function-what-information-should-you-review-and-from-which-location">Q10. To be able to configure an existing Cloud Function, what information should you review and from which location?</h4>
+<ul>
+<li>[ ] execution time in Cloud Storage logs</li>
+<li>[ ] execution time in Stackdriver logs</li>
+<li>[?] text payload in Stackdriver logs</li>
+<li>[ ] text payload in Cloud Storage logs</li>
+</ul>
+<h4 id="q11.-you-need-to-execute-a-lift-and-shift-move-with-as-few-steps-as-possible.-which-items-do-you-need-to-create-to-accomplish-this-task-listed-in-the-correct-order-of-creation">Q11. You need to execute a “lift and shift” move with as few steps as possible. Which items do you need to create to accomplish this task, listed in the correct order of creation?</h4>
+<ul>
+<li>[ ] 1. Create a VPN from GCP to your corporate network.
+<ol start="2" type="1">
+<li>Create a GCP network for the project.</li>
+<li>Create the VM instances to support the application.</li>
+</ol></li>
+<li>[ ] 1. Create a GCP network for the project.
+<ol start="2" type="1">
+<li>Create a VPN from your corporate network to GCP.</li>
+<li>Create the VM instances to support the application.</li>
+</ol></li>
+<li>[?] 1. Create a GCP network for the project. 2. Create a VPN from GCP to your corporate network. 3. Create the VM instances to support the application.</li>
+<li>[ ] 1. Create a VPN from your corporate network to GCP.
+<ol start="2" type="1">
+<li>Create a GCP network for the project.</li>
+<li>Create the VM instances to support the application.</li>
+</ol></li>
+</ul>
+<h4 id="q12.-you-are-concerned-about-data-egress-charges-for-files-in-a-cloud-storage-bucket.-what-configuration-change-should-you-make">Q12. You are concerned about data egress charges for files in a Cloud Storage bucket. What configuration change should you make?</h4>
+<ul>
+<li>[ ] Enable Requester Pays on the project.</li>
+<li>[ ] Enable Requester Pays on the bucket.</li>
+<li>[x] Change the default storage class from multi-regional to regional.</li>
+<li>[ ] Change the default storage class from regional to multi-regional.</li>
+</ul>
+<h4 id="q13.-you-need-to-troubleshoot-an-android-app-that-uses-cloud-storage.-where-do-you-look-for-logs">Q13. You need to troubleshoot an Android app that uses Cloud Storage. Where do you look for logs?</h4>
+<ul>
+<li>[ ] Firebase Crashlytics</li>
+<li>[x] Firebase Crashlytics and Stackdriver</li>
+<li>[ ] Firebase Testlab and Stackdriver</li>
+<li>[ ] Stackdriver</li>
+</ul>
+<h4 id="q14.-you-want-to-configure-services-to-be-able-to-perform-a-regular-interactive-query-of-google-adwords-data.-what-should-you-do">Q14. You want to configure services to be able to perform a regular interactive query of Google AdWords data. What should you do?</h4>
+<ul>
+<li>[ ] Plan to use BigQuery. Create a BigQuery data set to hold the data.</li>
+<li>[ ] Plan to use Cloud SQL. Enable Cloud SQL Transfer Data API.</li>
+<li>[ ] Plan to use Cloud SQL. Create a Cloud SQL Database to hold the data.</li>
+<li>[x] Plan to user BigQuery. Enable BigQuery Transfer Data API.</li>
+</ul>
+<h4 id="q15.-you-want-to-use-gcp-preferred-base-container-images.-where-can-your-users-find-these-images">Q15. You want to use GCP-preferred base container images. Where can your users find these images?</h4>
+<ul>
+<li>[ ] Docker Hub</li>
+<li>[ ] Compute Engine base images</li>
+<li>[x] GCP Marketplace</li>
+<li>[ ] Google Kubernetes Engine base images</li>
+</ul>
+<h4 id="q16.-you-want-to-set-a-notification-for-service-spend-in-gcp.-what-do-you-do-and-who-will-be-notified">Q16. You want to set a notification for service spend in GCP. What do you do, and who will be notified?</h4>
+<ul>
+<li>[x] Use the GCP Billing console Budgets section to set a billing alert. The billing admin will be notified if the alert threshold is exceeded.</li>
+<li>[ ] Use the GCP Billing console Budgets section to set a billing alert. The organizational admin will be notified if the alert threshold is exceeded.</li>
+<li>[ ] Use the GCP Organizational console Budgets section to set a billing alert. The project admin will be notified if the alert threshold is exceeded.</li>
+<li>[ ] Use the GCP Organizational console Budgets section to set a billing alert. The organizational admin will be notified if the alert threshold is exceeded.</li>
+</ul>
+<h4 id="q17.-cloud-sql-supports-which-two-relational-databases">Q17. Cloud SQL supports which two relational databases?</h4>
+<ul>
+<li>[ ] Radis and Oracle</li>
+<li>[ ] MySQL and Oracle</li>
+<li>[ ] Radis and PostgreSQL</li>
+<li>[x] MySQL and PostgreSQL</li>
+</ul>
+<h4 id="q18.-you-want-to-try-out-a-machine-learning-tensorflow-example-notebook-with-the-fewest-configuration-steps-on-gcp.-what-do-you-do">Q18. You want to try out a machine-learning TensorFlow example notebook with the fewest configuration steps on GCP. What do you do?</h4>
+<ul>
+<li>[ ] Create a notebook instance with TPU. Upload the notebook to the instance.</li>
+<li>[x] Create a notebook instance with GPU. Upload the notebook to the instance.</li>
+<li>[ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use GPU.</li>
+<li>[ ] Upload the notebook to Google Colaboratory. Set the hardware accelerator to use TPU.</li>
+</ul>
+<h4 id="q19.-you-want-to-quickly-test-a-single-docker-container-image-that-will-start-a-stateless-http-service-on-gcp.-which-service-do-you-select-to-host-your-container-image">Q19. You want to quickly test a single Docker container image that will start a stateless HTTP service on GCP. Which service do you select to host your container image?</h4>
+<ul>
+<li>[ ] Cloud Run</li>
+<li>[ ] Cloud Run on Google Kubernetes Engine</li>
+<li>[ ] Cloud Functions</li>
+<li>[x] Google Kubernetes Engine</li>
+</ul>
+<h4 id="q20.-you-want-to-develop-firebase-security-rules-following-google-best-practices.-which-tools-do-you-use">Q20. You want to develop Firebase security rules following Google best practices. Which tool(s) do you use?</h4>
+<ul>
+<li>[x] Firebase Emulator</li>
+<li>[ ] Firebase Emulator and GCP Rules Simulator</li>
+<li>[ ] GCP policy emulator and Firebase Rules Simulator</li>
+<li>[ ] Firebase Emulator and Firebase Rules Simulator</li>
+</ul>
+<h4 id="q21.-you-want-to-build-an-application-with-conversation-interpretation-based-on-machine-learning-speech-understanding.-which-service-is-a-best-fit-for-this-scenario">Q21. You want to build an application with conversation interpretation based on machine learning speech understanding. Which service is a best fit for this scenario?</h4>
+<ul>
+<li>[x] Dialogflow</li>
+<li>[ ] Natural Language Translation</li>
+<li>[ ] Speech API</li>
+<li>[ ] AutoML Natural Language</li>
+</ul>
+<h4 id="q22.-which-service-must-you-enable-on-your-gke-cluster-in-order-to-use-cloud-run-on-google-kubernetes-engine-gke">Q22. Which service must you enable on your GKE cluster in order to use Cloud Run on Google Kubernetes Engine (GKE)?</h4>
+<ul>
+<li>[x] Stackdriver</li>
+<li>[ ] Istio</li>
+<li>[ ] Knative</li>
+<li>[ ] Spinnaker</li>
+</ul>
+<h4 id="q23.-how-can-you-enable-clients-inside-a-gke-cluster-to-be-able-to-contact-pods">Q23. How can you enable clients inside a GKE cluster to be able to contact Pods?</h4>
+<ul>
+<li>[ ] Configure the clients to connect via the default cluster IP.</li>
+<li>[ ] Configure an external name. Configure the clients to connect via the external name.</li>
+<li>[x] Configure a node port. COnfigure the clients to connect via the node port.</li>
+<li>[ ] Configure a load balancer. Configure the clients to connect via the load balancer.</li>
+</ul>
+<h4 id="q24.-you-want-to-capture-the-message-acknowledgment-state-of-a-subscription-at-a-given-time.-what-do-you-do">Q24. You want to capture the message acknowledgment state of a subscription at a given time. What do you do?</h4>
+<ul>
+<li>[ ] Create a Cloud Pub/Sub subscription backup.</li>
+<li>[ ] Create a Cloud Pub/Sub subscription topic.</li>
+<li>[x] Create a Cloud Pub/Sub subscription snapshot.</li>
+<li>[ ] Create a Cloud Pub/Sub subscription.</li>
+</ul>
+<h4 id="q25.-you-need-to-set-a-bucket-storage-class-for-data-that-will-be-accessed-once-a-month-or-less.-which-type-do-you-select">Q25. You need to set a bucket storage class for data that will be accessed once a month or less. Which type do you select?</h4>
+<ul>
+<li>[ ] coldline</li>
+<li>[ ] multi-regional</li>
+<li>[ ] regional</li>
+<li>[x] nearline</li>
+</ul>
+<h4 id="q26.-which-command-copies-a-file-named-test.txt-to-a-cloud-storage-bucket-named-mybucket">Q26. Which command copies a file named test.txt to a Cloud Storage bucket named myBucket?</h4>
+<ul>
+<li>[ ] <code>gcloud cp gs://myBucket test.txt</code></li>
+<li>[ ] <code>gsutil cp gs://myBucket test.txt</code></li>
+<li>[ ] <code>gcloud cp test.txt gs://myBucket</code></li>
+<li>[x] <code>gsutil cp test.txt gs://myBucket</code></li>
+</ul>
+<h4 id="q27.-which-command-adds-a-column-family-named-cf1-to-your-bigtable-table-named-my-table">Q27. Which command adds a column family named <code>cf1</code> to your Bigtable table named <code>my-table</code>?</h4>
+<ul>
+<li>[ ] <code>cbt createfamily cf1 my-table</code></li>
+<li>[x] <code>cbt createfamily my-table cf1</code></li>
+<li>[ ] <code>gcloud createfamily cf1 my-table cf1</code></li>
+<li>[ ] <code>gcloud createfamily my-table cf1</code></li>
+</ul>
+</body>
+</html>
