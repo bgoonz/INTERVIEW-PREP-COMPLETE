@@ -1,0 +1,3245 @@
+{
+  "cmsType": "sanity",
+  "staticDir": "public",
+  "pagesDir": "content/pages",
+  "dataDir": "content/data",
+  "uploadDir": "images",
+  "pageContentFieldKey": "content",
+  "objectTypeKey": "type",
+  "dataset": "production",
+  "models": [
+    {
+      "type": "data",
+      "label": "Site configuration",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "Site title",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "path_prefix",
+          "label": "Base URL",
+          "description": "The base URL of this site. Useful for sites hosted under specific path, e.g.: https://www.example.com/my-site/",
+          "required": true,
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "domain",
+          "label": "Domain",
+          "description": "The domain of your site, including the protocol, e.g. https://mysite.com/"
+        },
+        {
+          "type": "image",
+          "name": "favicon",
+          "label": "Favicon",
+          "description": "A square icon that represents your website"
+        },
+        {
+          "type": "enum",
+          "name": "layout_type",
+          "label": "Layout",
+          "options": ["full-width", "boxed"],
+          "default": "full-width",
+          "description": "The layout of the site",
+          "required": true
+        },
+        {
+          "type": "enum",
+          "name": "style",
+          "label": "Style",
+          "options": ["minimal", "classic", "bold"],
+          "default": "classic",
+          "description": "The style of the site",
+          "required": true
+        },
+        {
+          "type": "enum",
+          "name": "palette",
+          "label": "Palette",
+          "options": ["blue", "green", "red", "gray"],
+          "default": "blue",
+          "description": "The palette of the site",
+          "required": true
+        },
+        {
+          "type": "enum",
+          "name": "mode",
+          "label": "Mode",
+          "options": ["light", "dark"],
+          "default": "dark",
+          "description": "The color scheme of the site",
+          "required": true
+        },
+        {
+          "type": "enum",
+          "name": "base_font",
+          "label": "Font",
+          "options": ["sans-serif", "serif"],
+          "default": "sans-serif",
+          "required": true
+        },
+        {
+          "type": "model",
+          "name": "header",
+          "label": "Header configuration",
+          "models": ["header"]
+        },
+        {
+          "type": "model",
+          "name": "footer",
+          "label": "Footer configuration",
+          "models": ["footer"]
+        },
+        {
+          "type": "string",
+          "name": "stackbit_file_path",
+          "label": "Site configuration File Path",
+          "description": "The file path of the file that stores this data",
+          "const": "content/data/config.json",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "data",
+          "hidden": true
+        }
+      ],
+      "file": "config.json",
+      "name": "config",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Header configuration",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Header title",
+          "description": "The title displayed in the header if logo image not specified"
+        },
+        {
+          "type": "image",
+          "name": "logo",
+          "label": "Logo",
+          "description": "The logo image displayed on the left side"
+        },
+        {
+          "type": "string",
+          "name": "logo_alt",
+          "label": "Logo alt text",
+          "description": "The alt text of the logo image"
+        },
+        {
+          "type": "boolean",
+          "name": "has_primary_nav",
+          "label": "Enable primary navigation menu",
+          "description": "Display the navigation menu on the left side, next to the site title/logo",
+          "default": true
+        },
+        {
+          "type": "list",
+          "name": "primary_nav_links",
+          "label": "Primary navigation menu links",
+          "description": "List of navigation links",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "boolean",
+          "name": "has_secondary_nav",
+          "label": "Enable secondary navigation menu",
+          "description": "Display the navigation menu on the right side",
+          "default": true
+        },
+        {
+          "type": "list",
+          "name": "secondary_nav_links",
+          "label": "Secondary navigation menu links",
+          "description": "List of navigation links",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "boolean",
+          "name": "has_anncmnt",
+          "label": "Enable announcement",
+          "description": "Display the announcement above the site header",
+          "default": false
+        },
+        {
+          "type": "markdown",
+          "name": "anncmnt_content",
+          "label": "Announcement content",
+          "description": "The text content of the announcement"
+        },
+        {
+          "type": "enum",
+          "name": "anncmnt_align",
+          "label": "Announcement horizontal alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the announcement content"
+        },
+        {
+          "type": "boolean",
+          "name": "anncmnt_is_home_only",
+          "label": "Show on home page",
+          "description": "Display the announcement on the home page only.",
+          "default": false
+        },
+        {
+          "type": "boolean",
+          "name": "anncmnt_has_close",
+          "label": "Enable announcement close",
+          "description": "Display the announcement close button",
+          "default": false
+        },
+        {
+          "type": "string",
+          "name": "anncmnt_id",
+          "label": "Announcement ID",
+          "description": "A unique identifier, required if close button is enabled. Must be updated each time the announcement content changes"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "header",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "header",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Footer configuration",
+      "labelField": "content",
+      "fields": [
+        {
+          "type": "image",
+          "name": "logo",
+          "label": "Logo",
+          "description": "The logo image displayed on the left side"
+        },
+        {
+          "type": "string",
+          "name": "logo_alt",
+          "label": "Logo alt text",
+          "description": "The alt text of the logo image"
+        },
+        {
+          "type": "boolean",
+          "name": "has_primary_nav",
+          "label": "Enable primary navigation menu",
+          "description": "Display the primary navigation menu",
+          "default": true
+        },
+        {
+          "type": "string",
+          "name": "primary_nav_title",
+          "label": "Primary navigation title",
+          "description": "The title of the primary navigation menu"
+        },
+        {
+          "type": "list",
+          "name": "primary_nav_links",
+          "label": "Primary navigation menu links",
+          "description": "List of primary navigation links",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "boolean",
+          "name": "has_secondary_nav",
+          "label": "Enable secondary navigation menu",
+          "description": "Display the secondary navigation menu",
+          "default": true
+        },
+        {
+          "type": "string",
+          "name": "secondary_nav_title",
+          "label": "Secondary navigation title",
+          "description": "The title of the secondary navigation menu"
+        },
+        {
+          "type": "list",
+          "name": "secondary_nav_links",
+          "label": "Secondary navigation menu links",
+          "description": "List of secondary navigation links",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "boolean",
+          "name": "has_tertiary_nav",
+          "label": "Enable tertiary navigation menu",
+          "description": "Display the tertiary navigation menu",
+          "default": true
+        },
+        {
+          "type": "string",
+          "name": "tertiary_nav_title",
+          "label": "Tertiary navigation title",
+          "description": "The title of the tertiary navigation menu"
+        },
+        {
+          "type": "list",
+          "name": "tertiary_nav_links",
+          "label": "Tertiary navigation menu links",
+          "description": "List of tertiary navigation links",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "boolean",
+          "name": "has_social",
+          "label": "Enable social links",
+          "description": "Display the social links",
+          "default": true
+        },
+        {
+          "type": "list",
+          "name": "social_links",
+          "label": "Social links",
+          "description": "List of social links",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "string",
+          "name": "content",
+          "label": "Footer content",
+          "description": "The copyright text"
+        },
+        {
+          "type": "list",
+          "name": "links",
+          "label": "Links",
+          "description": "A list of links displayed next to the copyright text",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "footer",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "footer",
+      "hideContent": true
+    },
+    {
+      "type": "data",
+      "label": "Person",
+      "folder": "team",
+      "fields": [
+        {
+          "type": "string",
+          "name": "id",
+          "label": "ID",
+          "description": "A unique identifier used when filtering posts, e.g. \"john-doe\"",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "link",
+          "label": "Link",
+          "description": "The link to the author page, e.g. \"blog/author/john-doe\""
+        },
+        {
+          "type": "string",
+          "name": "first_name",
+          "label": "First name",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "last_name",
+          "label": "Last name"
+        },
+        {
+          "type": "image",
+          "name": "photo",
+          "label": "Image"
+        },
+        {
+          "type": "string",
+          "name": "photo_alt",
+          "label": "Image alt text"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "person",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "data",
+          "hidden": true
+        }
+      ],
+      "name": "person",
+      "hideContent": true
+    },
+    {
+      "type": "data",
+      "label": "Category",
+      "folder": "categories",
+      "fields": [
+        {
+          "type": "string",
+          "name": "id",
+          "label": "ID",
+          "description": "A unique identifier used when filtering posts, e.g. \"news\"",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "link",
+          "label": "Link",
+          "description": "The link to the category page, e.g. \"blog/category/news\""
+        },
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "required": true,
+          "description": "The title of the category"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "category",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "data",
+          "hidden": true
+        }
+      ],
+      "name": "category",
+      "hideContent": true
+    },
+    {
+      "type": "data",
+      "label": "Tag",
+      "folder": "tags",
+      "fields": [
+        {
+          "type": "string",
+          "name": "id",
+          "label": "ID",
+          "description": "A unique identifier used when filtering posts, e.g. \"jamstack\"",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "link",
+          "label": "Link",
+          "description": "The link to the tag page, e.g. \"blog/tag/jamstack\""
+        },
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "required": true,
+          "description": "The title of the tag"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "tag",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "data",
+          "hidden": true
+        }
+      ],
+      "name": "tag",
+      "hideContent": true
+    },
+    {
+      "type": "page",
+      "label": "Page",
+      "layout": "page",
+      "exclude": "blog/**/*",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the page",
+          "required": true
+        },
+        {
+          "type": "model",
+          "name": "seo",
+          "models": ["stackbit_page_meta"],
+          "label": "Seo"
+        },
+        {
+          "type": "string",
+          "name": "layout",
+          "label": "Layout",
+          "const": "page",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_url_path",
+          "label": "URL Path",
+          "description": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\"",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_dir",
+          "label": "Directory",
+          "description": "The directory path where this file is stored",
+          "const": "content/pages",
+          "hidden": true
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "Page content"
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "page",
+          "hidden": true
+        }
+      ],
+      "name": "page"
+    },
+    {
+      "type": "page",
+      "urlPath": "/blog/{slug}",
+      "label": "Post",
+      "layout": "post",
+      "folder": "blog",
+      "exclude": ["index.md", "category/**", "author/**", "tag/**"],
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the post",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the post"
+        },
+        {
+          "type": "date",
+          "name": "date",
+          "label": "Date",
+          "description": "The publish date of the post",
+          "required": true
+        },
+        {
+          "type": "reference",
+          "name": "author",
+          "label": "Author",
+          "description": "The author of the post",
+          "models": ["person"]
+        },
+        {
+          "type": "list",
+          "name": "categories",
+          "label": "Categories",
+          "description": "The categories of the post",
+          "items": {
+            "type": "reference",
+            "models": ["category"]
+          }
+        },
+        {
+          "type": "list",
+          "name": "tags",
+          "label": "Tags",
+          "description": "The tags of the post",
+          "items": {
+            "type": "reference",
+            "models": ["tag"]
+          }
+        },
+        {
+          "type": "string",
+          "name": "excerpt",
+          "label": "Excerpt",
+          "description": "The excerpt of the post displayed in the blog feed"
+        },
+        {
+          "type": "image",
+          "name": "thumb_image",
+          "label": "Image (blog feed)",
+          "description": "The image displayed in the blog feed"
+        },
+        {
+          "type": "string",
+          "name": "thumb_image_alt",
+          "label": "Image alt text (blog feed)",
+          "description": "The alt text of the blog feed image"
+        },
+        {
+          "type": "image",
+          "name": "image",
+          "label": "Image (single post)",
+          "description": "The image displayed in the single post"
+        },
+        {
+          "type": "string",
+          "name": "image_alt",
+          "label": "Image alt text (single post)",
+          "description": "The alt text of the single post image"
+        },
+        {
+          "type": "enum",
+          "name": "image_position",
+          "label": "Image position (single post)",
+          "options": ["left", "right", "top"],
+          "default": "top",
+          "description": "The featured image position in the blog post relative to the post header content"
+        },
+        {
+          "type": "model",
+          "name": "seo",
+          "models": ["stackbit_page_meta"],
+          "label": "Seo"
+        },
+        {
+          "type": "string",
+          "name": "layout",
+          "label": "Layout",
+          "const": "post",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_url_path",
+          "label": "URL Path",
+          "description": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\"",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_dir",
+          "label": "Directory",
+          "description": "The directory path where this file is stored",
+          "const": "content/pages",
+          "hidden": true
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "Page content"
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "page",
+          "hidden": true
+        }
+      ],
+      "name": "post"
+    },
+    {
+      "type": "page",
+      "label": "Advanced page",
+      "layout": "advanced",
+      "hideContent": true,
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the page",
+          "required": true
+        },
+        {
+          "type": "list",
+          "name": "sections",
+          "label": "Sections",
+          "description": "Page sections",
+          "items": {
+            "type": "model",
+            "models": [
+              "hero_section",
+              "features_section",
+              "grid_section",
+              "blog_feed_section",
+              "cta_section",
+              "form_section"
+            ]
+          }
+        },
+        {
+          "type": "model",
+          "name": "seo",
+          "models": ["stackbit_page_meta"],
+          "label": "Seo"
+        },
+        {
+          "type": "string",
+          "name": "layout",
+          "label": "Layout",
+          "const": "advanced",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_url_path",
+          "label": "URL Path",
+          "description": "The URL path of this page relative to site root. For example, the site root page would be \"/\", and post page would be \"posts/new-post/\"",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_dir",
+          "label": "Directory",
+          "description": "The directory path where this file is stored",
+          "const": "content/pages",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "page",
+          "hidden": true
+        }
+      ],
+      "name": "advanced"
+    },
+    {
+      "type": "object",
+      "label": "Hero section",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the section"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the section displayed below the title"
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "The text content of the section"
+        },
+        {
+          "type": "list",
+          "name": "actions",
+          "label": "Action buttons",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "image",
+          "name": "image",
+          "label": "Image",
+          "description": "The image of the section"
+        },
+        {
+          "type": "string",
+          "name": "image_alt",
+          "label": "Image alt text",
+          "description": "The alt text of the section image"
+        },
+        {
+          "type": "text",
+          "name": "video_embed_html",
+          "label": "Video Embed Code",
+          "description": "The HTML embed code for your video"
+        },
+        {
+          "type": "enum",
+          "name": "media_position",
+          "label": "Image or video position",
+          "options": ["left", "right", "top", "bottom"],
+          "default": "top",
+          "description": "The position of the image or video relative to the text content"
+        },
+        {
+          "type": "enum",
+          "name": "media_width",
+          "label": "Image or video width",
+          "options": ["fourty", "fifty", "sixty"],
+          "default": "fifty",
+          "description": "The image or video container width as a percentage of the section width. Used only when the image or video position is set to \"left\" or \"right\""
+        },
+        {
+          "type": "enum",
+          "name": "align",
+          "label": "Section alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the section content"
+        },
+        {
+          "type": "enum",
+          "name": "padding_top",
+          "label": "Section top padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the top of the section"
+        },
+        {
+          "type": "enum",
+          "name": "padding_bottom",
+          "label": "Section bottom padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the bottom of the section"
+        },
+        {
+          "type": "boolean",
+          "name": "has_border",
+          "label": "Section border",
+          "default": false,
+          "description": "Add section bottom border"
+        },
+        {
+          "type": "enum",
+          "name": "background_color",
+          "label": "Background color",
+          "options": ["none", "primary", "secondary"],
+          "default": "none",
+          "description": "The background color of the section"
+        },
+        {
+          "type": "image",
+          "name": "background_image",
+          "label": "Background image",
+          "description": "The image displayed in the background of the section"
+        },
+        {
+          "type": "number",
+          "name": "background_image_opacity",
+          "label": "Background image opacity",
+          "description": "An integer between 0 and 100. A lower value makes the image more transparent"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_size",
+          "label": "Background image size",
+          "options": ["auto", "contain", "cover"],
+          "default": "cover",
+          "description": "The size of the background image"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_position",
+          "label": "Background image position",
+          "options": [
+            "left top",
+            "left center",
+            "left bottom",
+            "center top",
+            "center center",
+            "center bottom",
+            "right top",
+            "right center",
+            "right bottom"
+          ],
+          "default": "center center",
+          "description": "The starting position of a background image. The first value is the horizontal position, and the second value is the vertical"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_repeat",
+          "label": "Background image repeat",
+          "options": ["repeat", "no-repeat"],
+          "default": "no-repeat",
+          "description": "Repeat the image to cover the whole area"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "hero_section",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "hero_section",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Features section",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the section"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the section displayed above the title"
+        },
+        {
+          "type": "list",
+          "name": "features",
+          "label": "Features",
+          "items": {
+            "type": "model",
+            "models": ["feature"]
+          }
+        },
+        {
+          "type": "enum",
+          "name": "feature_padding_vert",
+          "label": "Feature padding vertical",
+          "options": ["small", "medium", "large"],
+          "default": "medium",
+          "description": "The vertical spacing between section features"
+        },
+        {
+          "type": "enum",
+          "name": "align",
+          "label": "Section alignment",
+          "options": ["left", "right", "center"],
+          "default": "center",
+          "description": "The horizontal alignment of the section content (title, subtitle)"
+        },
+        {
+          "type": "enum",
+          "name": "padding_top",
+          "label": "Section top padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the top of the section"
+        },
+        {
+          "type": "enum",
+          "name": "padding_bottom",
+          "label": "Section bottom padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the bottom of the section"
+        },
+        {
+          "type": "boolean",
+          "name": "has_border",
+          "label": "Section border",
+          "default": false,
+          "description": "Add section bottom border"
+        },
+        {
+          "type": "enum",
+          "name": "background_color",
+          "label": "Background color",
+          "options": ["none", "primary", "secondary"],
+          "default": "none",
+          "description": "The background color of the section"
+        },
+        {
+          "type": "image",
+          "name": "background_image",
+          "label": "Background image",
+          "description": "The image displayed in the background of the section"
+        },
+        {
+          "type": "number",
+          "name": "background_image_opacity",
+          "label": "Background image opacity",
+          "description": "An integer between 0 and 100. A lower value makes the image more transparent"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_size",
+          "label": "Background image size",
+          "options": ["auto", "contain", "cover"],
+          "default": "cover",
+          "description": "The size of the background image"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_position",
+          "label": "Background image position",
+          "options": [
+            "left top",
+            "left center",
+            "left bottom",
+            "center top",
+            "center center",
+            "center bottom",
+            "right top",
+            "right center",
+            "right bottom"
+          ],
+          "default": "center center",
+          "description": "The starting position of a background image. The first value is the horizontal position, and the second value is the vertical"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_repeat",
+          "label": "Background image repeat",
+          "options": ["repeat", "no-repeat"],
+          "default": "no-repeat",
+          "description": "Repeat the image to cover the whole area"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "features_section",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "features_section",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Grid section",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the section"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the section displayed above the title"
+        },
+        {
+          "type": "list",
+          "name": "actions",
+          "label": "Action buttons",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          },
+          "description": "Action buttons displayed below section items"
+        },
+        {
+          "type": "list",
+          "name": "grid_items",
+          "label": "Grid items",
+          "items": {
+            "type": "model",
+            "models": ["grid_item"]
+          }
+        },
+        {
+          "type": "enum",
+          "name": "grid_cols",
+          "label": "Grid columns",
+          "options": ["two", "three", "four"],
+          "default": "three",
+          "description": "Show the specified number of items in a grid row"
+        },
+        {
+          "type": "enum",
+          "name": "grid_gap_vert",
+          "label": "Grid gap vertical",
+          "options": ["small", "medium", "large"],
+          "default": "small",
+          "description": "The vertical spacing between grid items"
+        },
+        {
+          "type": "enum",
+          "name": "grid_gap_horiz",
+          "label": "Grid gap horizontal",
+          "options": ["small", "medium", "large"],
+          "default": "small",
+          "description": "The horizontal spacing between grid items"
+        },
+        {
+          "type": "boolean",
+          "name": "enable_cards",
+          "label": "Enable cards",
+          "description": "Display items as cards, i.e. add border, background and some padding around the item content",
+          "default": false
+        },
+        {
+          "type": "enum",
+          "name": "align",
+          "label": "Section alignment",
+          "options": ["left", "right", "center"],
+          "default": "center",
+          "description": "The horizontal alignment of the section content (title, subtitle, action buttons)"
+        },
+        {
+          "type": "enum",
+          "name": "padding_top",
+          "label": "Section top padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the top of the section"
+        },
+        {
+          "type": "enum",
+          "name": "padding_bottom",
+          "label": "Section bottom padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the bottom of the section"
+        },
+        {
+          "type": "boolean",
+          "name": "has_border",
+          "label": "Section border",
+          "default": false,
+          "description": "Add section bottom border"
+        },
+        {
+          "type": "enum",
+          "name": "background_color",
+          "label": "Background color",
+          "options": ["none", "primary", "secondary"],
+          "default": "none",
+          "description": "The background color of the section"
+        },
+        {
+          "type": "image",
+          "name": "background_image",
+          "label": "Background image",
+          "description": "The image displayed in the background of the section"
+        },
+        {
+          "type": "number",
+          "name": "background_image_opacity",
+          "label": "Background image opacity",
+          "description": "An integer between 0 and 100. A lower value makes the image more transparent"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_size",
+          "label": "Background image size",
+          "options": ["auto", "contain", "cover"],
+          "default": "cover",
+          "description": "The size of the background image"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_position",
+          "label": "Background image position",
+          "options": [
+            "left top",
+            "left center",
+            "left bottom",
+            "center top",
+            "center center",
+            "center bottom",
+            "right top",
+            "right center",
+            "right bottom"
+          ],
+          "default": "center center",
+          "description": "The starting position of a background image. The first value is the horizontal position, and the second value is the vertical"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_repeat",
+          "label": "Background image repeat",
+          "options": ["repeat", "no-repeat"],
+          "default": "no-repeat",
+          "description": "Repeat the image to cover the whole area"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "grid_section",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "grid_section",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Blog feed section",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the section"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the section displayed above the title"
+        },
+        {
+          "type": "list",
+          "name": "actions",
+          "label": "Action buttons",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          },
+          "description": "Action buttons displayed below blog posts"
+        },
+        {
+          "type": "enum",
+          "name": "blog_feed_cols",
+          "label": "Blog feed columns",
+          "options": ["two", "three"],
+          "default": "three",
+          "description": "Show the specified number of posts in a blog feed grid row"
+        },
+        {
+          "type": "boolean",
+          "name": "enable_cards",
+          "label": "Enable cards",
+          "description": "Display posts as cards, i.e. add border, background and some padding around post content",
+          "default": false
+        },
+        {
+          "type": "boolean",
+          "name": "show_recent",
+          "label": "Show recent posts only",
+          "description": "Show the specified number of recent posts. Should not be used with author, category and tag filters",
+          "default": false,
+          "required": true
+        },
+        {
+          "type": "number",
+          "name": "recent_count",
+          "label": "Number of recent posts to show"
+        },
+        {
+          "type": "reference",
+          "name": "author",
+          "label": "Author filter",
+          "description": "Filter posts by an author",
+          "models": ["person"]
+        },
+        {
+          "type": "reference",
+          "name": "category",
+          "label": "Category filter",
+          "description": "Filter posts by a category",
+          "models": ["category"]
+        },
+        {
+          "type": "reference",
+          "name": "tag",
+          "label": "Tag filter",
+          "description": "Filter posts by a tag",
+          "models": ["tag"]
+        },
+        {
+          "type": "boolean",
+          "name": "show_date",
+          "label": "Show date",
+          "description": "Show the publish date of the post",
+          "default": true
+        },
+        {
+          "type": "boolean",
+          "name": "show_categories",
+          "label": "Show categories",
+          "description": "Show the categories of the post",
+          "default": false
+        },
+        {
+          "type": "boolean",
+          "name": "show_author",
+          "label": "Show author",
+          "description": "Show the author of the post",
+          "default": false
+        },
+        {
+          "type": "boolean",
+          "name": "show_excerpt",
+          "label": "Show excerpt",
+          "description": "Show the excerpt of the post",
+          "default": false
+        },
+        {
+          "type": "boolean",
+          "name": "show_image",
+          "label": "Show image",
+          "description": "Show the post image thumbnail",
+          "default": true
+        },
+        {
+          "type": "enum",
+          "name": "align",
+          "label": "Section alignment",
+          "options": ["left", "right", "center"],
+          "default": "center",
+          "description": "The horizontal alignment of the section content (title, subtitle, action buttons)"
+        },
+        {
+          "type": "enum",
+          "name": "padding_top",
+          "label": "Section top padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the top of the section"
+        },
+        {
+          "type": "enum",
+          "name": "padding_bottom",
+          "label": "Section bottom padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the bottom of the section"
+        },
+        {
+          "type": "boolean",
+          "name": "has_border",
+          "label": "Section border",
+          "default": false,
+          "description": "Add section bottom border"
+        },
+        {
+          "type": "enum",
+          "name": "background_color",
+          "label": "Background color",
+          "options": ["none", "primary", "secondary"],
+          "default": "none",
+          "description": "The background color of the section"
+        },
+        {
+          "type": "image",
+          "name": "background_image",
+          "label": "Background image",
+          "description": "The image displayed in the background of the section"
+        },
+        {
+          "type": "number",
+          "name": "background_image_opacity",
+          "label": "Background image opacity",
+          "description": "An integer between 0 and 100. A lower value makes the image more transparent"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_size",
+          "label": "Background image size",
+          "options": ["auto", "contain", "cover"],
+          "default": "cover",
+          "description": "The size of the background image"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_position",
+          "label": "Background image position",
+          "options": [
+            "left top",
+            "left center",
+            "left bottom",
+            "center top",
+            "center center",
+            "center bottom",
+            "right top",
+            "right center",
+            "right bottom"
+          ],
+          "default": "center center",
+          "description": "The starting position of a background image. The first value is the horizontal position, and the second value is the vertical"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_repeat",
+          "label": "Background image repeat",
+          "options": ["repeat", "no-repeat"],
+          "default": "no-repeat",
+          "description": "Repeat the image to cover the whole area"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "blog_feed_section",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "blog_feed_section",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "CTA section",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the section"
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "The text content of the section"
+        },
+        {
+          "type": "list",
+          "name": "actions",
+          "label": "Action buttons",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "enum",
+          "name": "actions_position",
+          "label": "Action buttons position",
+          "options": ["top", "bottom", "left", "right"],
+          "default": "bottom",
+          "description": "The position of action buttons relative to the text content"
+        },
+        {
+          "type": "enum",
+          "name": "actions_width",
+          "label": "Action buttons width",
+          "options": ["fourty", "fifty", "sixty"],
+          "default": "fourty",
+          "description": "The action buttons container width as a percentage of the section width. Used only when the action buttons position is set to \"left\" or \"right\""
+        },
+        {
+          "type": "enum",
+          "name": "align",
+          "label": "Section alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the section content"
+        },
+        {
+          "type": "enum",
+          "name": "padding_top",
+          "label": "Section top padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the top of the section"
+        },
+        {
+          "type": "enum",
+          "name": "padding_bottom",
+          "label": "Section bottom padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the bottom of the section"
+        },
+        {
+          "type": "boolean",
+          "name": "has_border",
+          "label": "Section border",
+          "default": false,
+          "description": "Add section bottom border"
+        },
+        {
+          "type": "enum",
+          "name": "background_color",
+          "label": "Background color",
+          "options": ["none", "primary", "secondary"],
+          "default": "none",
+          "description": "The background color of the section"
+        },
+        {
+          "type": "image",
+          "name": "background_image",
+          "label": "Background image",
+          "description": "The image displayed in the background of the section"
+        },
+        {
+          "type": "number",
+          "name": "background_image_opacity",
+          "label": "Background image opacity",
+          "description": "An integer between 0 and 100. A lower value makes the image more transparent"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_size",
+          "label": "Background image size",
+          "options": ["auto", "contain", "cover"],
+          "default": "cover",
+          "description": "The size of the background image"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_position",
+          "label": "Background image position",
+          "options": [
+            "left top",
+            "left center",
+            "left bottom",
+            "center top",
+            "center center",
+            "center bottom",
+            "right top",
+            "right center",
+            "right bottom"
+          ],
+          "default": "center center",
+          "description": "The starting position of a background image. The first value is the horizontal position, and the second value is the vertical"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_repeat",
+          "label": "Background image repeat",
+          "options": ["repeat", "no-repeat"],
+          "default": "no-repeat",
+          "description": "Repeat the image to cover the whole area"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "cta_section",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "cta_section",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Form section",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the section"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the section displayed below the title"
+        },
+        {
+          "type": "enum",
+          "name": "title_align",
+          "label": "Title, subtitle alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the section title and subtitle"
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "The text content of the section"
+        },
+        {
+          "type": "enum",
+          "name": "content_align",
+          "label": "Content alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the section text content"
+        },
+        {
+          "type": "enum",
+          "name": "form_position",
+          "label": "Form position",
+          "options": ["left", "right", "top", "bottom"],
+          "default": "bottom",
+          "description": "The position of the form relative to the text content of the section"
+        },
+        {
+          "type": "enum",
+          "name": "form_width",
+          "label": "Form width",
+          "options": ["fourty", "fifty", "sixty"],
+          "default": "fifty",
+          "description": "The form container width as a percentage of the section width. Used only when the form position is set to \"left\" or \"right\""
+        },
+        {
+          "type": "enum",
+          "name": "form_layout",
+          "label": "Form layout",
+          "options": ["stacked", "inline"],
+          "default": "stacked",
+          "description": "The layout of the form. \"Inline\" layout can only be used if the form has one input field"
+        },
+        {
+          "type": "boolean",
+          "name": "enable_card",
+          "label": "Display form in a box",
+          "default": false,
+          "description": "Display form inside a box, i.e. add border and background to the form container"
+        },
+        {
+          "type": "string",
+          "name": "form_id",
+          "label": "Form ID",
+          "description": "A unique identifier of the form. Must not contain whitespace",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "form_action",
+          "label": "Form action",
+          "description": "The path of your custom \"success\" page, if you want to replace the default success message."
+        },
+        {
+          "type": "list",
+          "name": "form_fields",
+          "label": "Form fields",
+          "items": {
+            "type": "model",
+            "models": ["form_field"]
+          }
+        },
+        {
+          "type": "string",
+          "name": "submit_label",
+          "label": "Submit button label",
+          "required": true
+        },
+        {
+          "type": "enum",
+          "name": "align_vert",
+          "label": "Section vertical alignment",
+          "options": ["top", "middle", "bottom"],
+          "default": "top",
+          "description": "The vertical alignment of the section text content and form. Used only when the form position is set to \"left\" or \"right\""
+        },
+        {
+          "type": "enum",
+          "name": "padding_top",
+          "label": "Section top padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the top of the section"
+        },
+        {
+          "type": "enum",
+          "name": "padding_bottom",
+          "label": "Section bottom padding",
+          "options": ["none", "small", "medium", "large"],
+          "default": "medium",
+          "description": "The padding area (space) on the bottom of the section"
+        },
+        {
+          "type": "boolean",
+          "name": "has_border",
+          "label": "Section border",
+          "default": false,
+          "description": "Add section bottom border"
+        },
+        {
+          "type": "enum",
+          "name": "background_color",
+          "label": "Background color",
+          "options": ["none", "primary", "secondary"],
+          "default": "none",
+          "description": "The background color of the section"
+        },
+        {
+          "type": "image",
+          "name": "background_image",
+          "label": "Background image",
+          "description": "The image displayed in the background of the section"
+        },
+        {
+          "type": "number",
+          "name": "background_image_opacity",
+          "label": "Background image opacity",
+          "description": "An integer between 0 and 100. A lower value makes the image more transparent"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_size",
+          "label": "Background image size",
+          "options": ["auto", "contain", "cover"],
+          "default": "cover",
+          "description": "The size of the background image"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_position",
+          "label": "Background image position",
+          "options": [
+            "left top",
+            "left center",
+            "left bottom",
+            "center top",
+            "center center",
+            "center bottom",
+            "right top",
+            "right center",
+            "right bottom"
+          ],
+          "default": "center center",
+          "description": "The starting position of a background image. The first value is the horizontal position, and the second value is the vertical"
+        },
+        {
+          "type": "enum",
+          "name": "background_image_repeat",
+          "label": "Background image repeat",
+          "options": ["repeat", "no-repeat"],
+          "default": "no-repeat",
+          "description": "Repeat the image to cover the whole area"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "form_section",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "form_section",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Feature",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the feature"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the feature displayed below the title"
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "The text content of the feature"
+        },
+        {
+          "type": "list",
+          "name": "actions",
+          "label": "Action buttons",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "image",
+          "name": "image",
+          "label": "Image",
+          "description": "The image of the feature"
+        },
+        {
+          "type": "string",
+          "name": "image_alt",
+          "label": "Image alt text",
+          "description": "The alt text of the feature image"
+        },
+        {
+          "type": "text",
+          "name": "video_embed_html",
+          "label": "Video Embed Code",
+          "description": "The HTML embed code for your video"
+        },
+        {
+          "type": "enum",
+          "name": "media_position",
+          "label": "Image or video position",
+          "options": ["left", "right", "top", "bottom"],
+          "default": "top",
+          "description": "The position of the image or video relative to the text content"
+        },
+        {
+          "type": "enum",
+          "name": "media_width",
+          "label": "Image or video width",
+          "options": ["thirty-three", "fourty", "fifty", "sixty"],
+          "default": "fifty",
+          "description": "The image or video container width as a percentage of the feature width. Used only when the image or video position is set to \"left\" or \"right\""
+        },
+        {
+          "type": "enum",
+          "name": "align",
+          "label": "Feature alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the feature content"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "feature",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "feature",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Item",
+      "labelField": "title",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The title of the item"
+        },
+        {
+          "type": "string",
+          "name": "subtitle",
+          "label": "Subtitle",
+          "description": "The subtitle of the item displayed below the title"
+        },
+        {
+          "type": "enum",
+          "name": "title_align",
+          "label": "Title, subtitle alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the item title and subtitle"
+        },
+        {
+          "type": "markdown",
+          "name": "content",
+          "label": "Content",
+          "description": "The text content of the item"
+        },
+        {
+          "type": "enum",
+          "name": "content_align",
+          "label": "Content alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the item text content"
+        },
+        {
+          "type": "list",
+          "name": "actions",
+          "label": "Action buttons",
+          "items": {
+            "type": "model",
+            "models": ["action"]
+          }
+        },
+        {
+          "type": "enum",
+          "name": "actions_align",
+          "label": "Action buttons alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the item action buttons"
+        },
+        {
+          "type": "enum",
+          "name": "actions_width",
+          "label": "Action buttons width",
+          "options": ["auto", "full-width"],
+          "default": "auto",
+          "description": "The width of action button"
+        },
+        {
+          "type": "image",
+          "name": "image",
+          "label": "Image",
+          "description": "The image of the item"
+        },
+        {
+          "type": "string",
+          "name": "image_alt",
+          "label": "Image alt text",
+          "description": "The alt text of the item image"
+        },
+        {
+          "type": "enum",
+          "name": "image_position",
+          "label": "Image position",
+          "options": ["left", "right", "top", "bottom"],
+          "default": "top",
+          "description": "The position of the image relative to the text content"
+        },
+        {
+          "type": "enum",
+          "name": "image_width",
+          "label": "Image container width",
+          "options": [
+            "twenty-five",
+            "thirty-three",
+            "fourty",
+            "fifty",
+            "sixty"
+          ],
+          "default": "fifty",
+          "description": "The image container width as a percentage of the item width. Used only when the image position is set to \"left\" or \"right\""
+        },
+        {
+          "type": "enum",
+          "name": "image_align",
+          "label": "Image alignment",
+          "options": ["left", "right", "center"],
+          "default": "left",
+          "description": "The horizontal alignment of the image"
+        },
+        {
+          "type": "boolean",
+          "name": "image_has_padding",
+          "label": "Image padding",
+          "default": false,
+          "description": "Add padding (space) around the image. Used only when \"Enable cards\" is set to true"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "grid_item",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "grid_item",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Form field",
+      "labelField": "name",
+      "fields": [
+        {
+          "type": "enum",
+          "name": "input_type",
+          "label": "Type",
+          "options": [
+            "text",
+            "email",
+            "tel",
+            "number",
+            "checkbox",
+            "select",
+            "textarea"
+          ],
+          "description": "Type of the form field",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "label": "Name",
+          "description": "The name of the field, submitted with the form",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "label",
+          "label": "Label",
+          "description": "The caption of the field, shown above the field input"
+        },
+        {
+          "type": "string",
+          "name": "default_value",
+          "label": "Placeholder text or default value",
+          "description": "The placeholder for textual field types or default option for select field"
+        },
+        {
+          "type": "list",
+          "name": "options",
+          "description": "The list of options, used only when the field type is \"select\"",
+          "label": "Options",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "boolean",
+          "name": "is_required",
+          "label": "Is the field required?",
+          "default": false
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "form_field",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "form_field",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Action",
+      "labelField": "label",
+      "fields": [
+        {
+          "type": "string",
+          "name": "label",
+          "label": "Label",
+          "required": true
+        },
+        {
+          "type": "string",
+          "name": "url",
+          "label": "URL",
+          "required": true,
+          "default": "#"
+        },
+        {
+          "type": "enum",
+          "name": "style",
+          "label": "Style",
+          "options": ["link", "primary", "secondary"],
+          "default": "link",
+          "required": true
+        },
+        {
+          "type": "boolean",
+          "name": "has_icon",
+          "label": "Show icon",
+          "default": false
+        },
+        {
+          "type": "enum",
+          "name": "icon",
+          "label": "Icon",
+          "options": [
+            "arrow-left",
+            "arrow-right",
+            "facebook",
+            "github",
+            "instagram",
+            "linkedin",
+            "twitter",
+            "vimeo",
+            "youtube"
+          ]
+        },
+        {
+          "type": "enum",
+          "name": "icon_position",
+          "label": "Icon position",
+          "options": ["left", "right", "center"],
+          "default": "right",
+          "description": "Select \"center\" to display icon only and hide the label"
+        },
+        {
+          "type": "boolean",
+          "name": "new_window",
+          "label": "Open in new tab/window",
+          "default": false
+        },
+        {
+          "type": "boolean",
+          "name": "no_follow",
+          "label": "No follow",
+          "default": false,
+          "description": "Add rel=\"nofollow\" attribute to the link"
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "action",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "action",
+      "hideContent": true
+    },
+    {
+      "type": "object",
+      "label": "Page meta data",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "The page title that goes into the <title> tag",
+          "default": ""
+        },
+        {
+          "type": "string",
+          "name": "description",
+          "label": "Description",
+          "description": "The page description that goes into the <meta name=\"description\"> tag",
+          "default": ""
+        },
+        {
+          "type": "list",
+          "name": "robots",
+          "label": "Robots",
+          "description": "The items that go into the <meta name=\"robots\"> tag",
+          "items": {
+            "type": "enum",
+            "options": [
+              "all",
+              "index",
+              "follow",
+              "noindex",
+              "nofollow",
+              "noimageindex",
+              "notranslate",
+              "none"
+            ]
+          }
+        },
+        {
+          "type": "list",
+          "name": "extra",
+          "label": "Extra",
+          "description": "Additional definition for specific meta tags such as open-graph, twitter, etc.",
+          "items": {
+            "type": "object",
+            "labelField": "name",
+            "fields": [
+              {
+                "type": "string",
+                "name": "name",
+                "default": "",
+                "label": "Name"
+              },
+              {
+                "type": "string",
+                "name": "value",
+                "default": "",
+                "label": "Value"
+              },
+              {
+                "type": "string",
+                "name": "keyName",
+                "default": "name",
+                "label": "Key Name"
+              },
+              {
+                "type": "boolean",
+                "name": "relativeUrl",
+                "label": "Relative Url"
+              }
+            ]
+          }
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "label": "Object Type",
+          "description": "The type of the object",
+          "const": "stackbit_page_meta",
+          "hidden": true
+        },
+        {
+          "type": "string",
+          "name": "stackbit_model_type",
+          "label": "Stackbit Model Type",
+          "description": "Stackbit model type",
+          "const": "object",
+          "hidden": true
+        }
+      ],
+      "name": "stackbit_page_meta",
+      "hideContent": true
+    }
+  ],
+  "content": [
+    {
+      "modelType": "data",
+      "modelName": "config",
+      "relPath": "config.json",
+      "data": {
+        "stackbit_model_type": "data",
+        "title": "Stackbit Book Theme",
+        "path_prefix": "/",
+        "layout_type": "boxed",
+        "style": "classic",
+        "palette": "gray",
+        "mode": "light",
+        "base_font": "serif",
+        "header": {
+          "type": "header",
+          "title": "Marketing Playbook",
+          "logo": "images/logo.svg",
+          "logo_alt": "Marketing Playbook logo",
+          "has_primary_nav": true,
+          "primary_nav_links": [
+            {
+              "type": "action",
+              "label": "Pricing",
+              "url": "/pricing",
+              "style": "link",
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Story",
+              "url": "/story",
+              "style": "link",
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Style Guide",
+              "url": "/style-guide",
+              "style": "link",
+              "stackbit_model_type": "object"
+            }
+          ],
+          "has_secondary_nav": true,
+          "secondary_nav_links": [
+            {
+              "type": "action",
+              "label": "Start Learning",
+              "url": "/thank-you",
+              "style": "primary",
+              "stackbit_model_type": "object"
+            }
+          ],
+          "has_anncmnt": true,
+          "anncmnt_content": "Curabitur ac tellus mattis, tempor ipsum eu, eleifend sapien. **[Learn More](/pricing/)**",
+          "anncmnt_align": "left",
+          "anncmnt_is_home_only": true,
+          "anncmnt_has_close": true,
+          "anncmnt_id": "new-features",
+          "stackbit_model_type": "object"
+        },
+        "footer": {
+          "type": "footer",
+          "logo": "images/logo.svg",
+          "logo_alt": "Marketing Playbook logo",
+          "has_primary_nav": true,
+          "primary_nav_title": "Company",
+          "primary_nav_links": [
+            {
+              "type": "action",
+              "label": "Story",
+              "url": "/story",
+              "style": "link",
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Pricing",
+              "url": "/pricing",
+              "style": "link",
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Style Guide",
+              "url": "/style-guide",
+              "style": "link",
+              "stackbit_model_type": "object"
+            }
+          ],
+          "has_secondary_nav": true,
+          "secondary_nav_title": "Legal",
+          "secondary_nav_links": [
+            {
+              "type": "action",
+              "label": "Terms & Conditions",
+              "url": "/terms-conditions",
+              "style": "link",
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Privacy Policy",
+              "url": "/privacy-policy",
+              "style": "link",
+              "stackbit_model_type": "object"
+            }
+          ],
+          "has_tertiary_nav": false,
+          "has_social": true,
+          "social_links": [
+            {
+              "type": "action",
+              "label": "Twitter",
+              "url": "https://twitter.com/",
+              "style": "link",
+              "has_icon": true,
+              "icon": "twitter",
+              "icon_position": "center",
+              "new_window": true,
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Facebook",
+              "url": "https://www.facebook.com/",
+              "style": "link",
+              "has_icon": true,
+              "icon": "facebook",
+              "icon_position": "center",
+              "new_window": true,
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "YouTube",
+              "url": "https://www.youtube.com/",
+              "style": "link",
+              "has_icon": true,
+              "icon": "youtube",
+              "icon_position": "center",
+              "new_window": true,
+              "stackbit_model_type": "object"
+            },
+            {
+              "type": "action",
+              "label": "Vimeo",
+              "url": "https://vimeo.com/",
+              "style": "link",
+              "has_icon": true,
+              "icon": "vimeo",
+              "icon_position": "center",
+              "new_window": true,
+              "stackbit_model_type": "object"
+            }
+          ],
+          "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=book&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
+          "stackbit_model_type": "object"
+        },
+        "stackbit_file_path": "content/data/config.json"
+      }
+    },
+    {
+      "modelType": "data",
+      "modelName": "category",
+      "relPath": "categories/news.yaml",
+      "data": {
+        "stackbit_model_type": "data",
+        "id": "news",
+        "link": "blog/category/news",
+        "title": "News",
+        "type": "category"
+      }
+    },
+    {
+      "modelType": "data",
+      "modelName": "tag",
+      "relPath": "tags/releases.yaml",
+      "data": {
+        "stackbit_model_type": "data",
+        "id": "releases",
+        "title": "Releases",
+        "type": "tag"
+      }
+    },
+    {
+      "modelType": "data",
+      "modelName": "person",
+      "relPath": "team/gustav-purpleson.yaml",
+      "data": {
+        "stackbit_model_type": "data",
+        "id": "gustav-purpleson",
+        "first_name": "Gustav",
+        "last_name": "Purpleson",
+        "type": "person"
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "advanced",
+      "relPath": "index.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Home",
+        "sections": [
+          {
+            "type": "hero_section",
+            "title": "The Marketing Tricks No MBA Can Teach You",
+            "subtitle": "Your guide to B2B marketing in the real world.",
+            "content": "This book is your go-to guide for all marketing channels. Learn how to\ncreate effective landing pages, compelling ads, creative copywriting and\nconverting marketing materials for any business.",
+            "actions": [
+              {
+                "type": "action",
+                "label": "Get the book",
+                "url": "/pricing",
+                "style": "primary",
+                "has_icon": true,
+                "icon": "arrow-right",
+                "icon_position": "right",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "image": "images/marketing-playbook.png",
+            "image_alt": "Marketing Playbook preview",
+            "media_position": "left",
+            "media_width": "fourty",
+            "align": "left",
+            "padding_top": "large",
+            "padding_bottom": "large",
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "grid_section",
+            "title": "Read by marketers at:",
+            "grid_items": [
+              {
+                "type": "grid_item",
+                "image": "images/logo-1.svg",
+                "image_alt": "Logo 1",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "image": "images/logo-2.svg",
+                "image_alt": "Logo 2",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "image": "images/logo-3.svg",
+                "image_alt": "Logo 3",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "image": "images/logo-4.svg",
+                "image_alt": "Logo 4",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "image": "images/logo-5.svg",
+                "image_alt": "Logo 5",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "image": "images/logo-6.svg",
+                "image_alt": "Logo 6",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "image": "images/logo-7.svg",
+                "image_alt": "Logo 7",
+                "image_align": "center",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "grid_cols": "four",
+            "grid_gap_vert": "medium",
+            "grid_gap_horiz": "medium",
+            "align": "center",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "features_section",
+            "features": [
+              {
+                "type": "feature",
+                "title": "What’s Inside",
+                "subtitle": "How this book will teach you real world marketing",
+                "content": "- All you need to know about PPC\n- How to create a brand that sells\n- Putting together a multi-channel marketing plan\n- Tracking, attribution and analytics\n- Analyzing your competitors\n- Marketing ads no one can ignore\n- The social media of today",
+                "actions": [
+                  {
+                    "type": "action",
+                    "label": "Start learning",
+                    "url": "/thank-you",
+                    "style": "primary",
+                    "has_icon": true,
+                    "icon": "arrow-right",
+                    "icon_position": "right",
+                    "stackbit_model_type": "object"
+                  }
+                ],
+                "image": "images/book-inside.png",
+                "image_alt": "Look inside Marketing Playbook",
+                "media_position": "right",
+                "media_width": "fifty",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "feature_padding_vert": "small",
+            "align": "center",
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "features_section",
+            "features": [
+              {
+                "type": "feature",
+                "title": "“This book is inspiring and practical. It’s thought-provoking and full\nof examples which definitely motivates me”",
+                "subtitle": "Hilary Ouse, Sr. Marketing Manager at Company",
+                "image": "images/hilary-ouse.png",
+                "image_alt": "Brandon Guidelines",
+                "media_position": "left",
+                "media_width": "thirty-three",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "feature_padding_vert": "small",
+            "background_color": "primary",
+            "background_image": "images/background-2.jpg",
+            "background_image_opacity": 10,
+            "background_image_size": "cover",
+            "background_image_repeat": "no-repeat",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "grid_section",
+            "title": "Full Chapter  Overview",
+            "grid_items": [
+              {
+                "type": "grid_item",
+                "content": "### Know Your Audience\n\nDiscovery, research and pure intuition: How to slice and dice all the\ninformation you can gather about your customers.",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "### Performance Marketing\n\nKnow your PPC from your CPA and CTR — a quick start guide to performance marketing channels, setups, budgeting and creative.",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "### The Truth About Branding\n\nA brand is merely a collection of touchpoints between your company and\nyour customers. Learn how to make those interactions count.",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "### Content is King\n\nWhat you should be writing about, where it should be published, who\nshould read it, and what difference does it make. A comprehensive\nguide to content marketing.",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "### Social Media\n\nGoogle, Facebook, TikTok, LinkedIn — what should you use, and how? And how do you know that it's actually working? Build a social media strategy like a pro.",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "### Seeing What Works\n\nThere is no shortage of analytics tools for marketing campaigns —\nemail platforms, data centers, campaign dashboards and app\nattribution... How to choose the right tools that will work for you.",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "grid_cols": "two",
+            "grid_gap_vert": "small",
+            "grid_gap_horiz": "medium",
+            "enable_cards": false,
+            "align": "center",
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "features_section",
+            "features": [
+              {
+                "type": "feature",
+                "title": "Practical Exercises",
+                "subtitle": "How you'll implement what you learn",
+                "content": "- Multi-channel marketing plan tutorials\n- Brand questionnaire and worksheet\n- Practice PPC campaigns\n- 1hr consultation with a marketing guru\n- Landing page templates\n- Effective sales presentation starter",
+                "actions": [
+                  {
+                    "type": "action",
+                    "label": "Start learning",
+                    "url": "/thank-you",
+                    "style": "primary",
+                    "has_icon": true,
+                    "icon": "arrow-right",
+                    "icon_position": "right",
+                    "stackbit_model_type": "object"
+                  }
+                ],
+                "image": "images/book-inside-2.png",
+                "image_alt": "Look inside Marketing Playbook",
+                "media_position": "left",
+                "media_width": "fifty",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "feature_padding_vert": "small",
+            "align": "center",
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "grid_section",
+            "title": "Who Should Read This Book?",
+            "grid_items": [
+              {
+                "type": "grid_item",
+                "content": "#### Marketers\n - Learn how all of the marketing pieces fit together\n - Master digital marketing for any business\n - Get access to marketing gurus and their tips\n - Prepare killer presentations and collateral",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "#### Designers\n - Gain big picture insights that affect design\n - Learn how your design can inspire action\n - Make advertisements that convert\n - Create digital assets for the right audience",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "#### Business owners\n - Kickstart your marketing plan and efforts\n - Upgrade your brand, website and social media\n - Prepare effective collateral for your business\n - Start advertising your company online",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "content": "#### Product managers\n - Understand the context of your product work\n - Learn how to segment your audience properly\n - Implement brand voice and style in your work\n - Connect top of funnel activities with your flow",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "grid_cols": "two",
+            "grid_gap_vert": "large",
+            "grid_gap_horiz": "medium",
+            "align": "center",
+            "background_color": "primary",
+            "background_image": "images/background.jpg",
+            "background_image_opacity": 10,
+            "background_image_size": "cover",
+            "background_image_repeat": "no-repeat",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "features_section",
+            "features": [
+              {
+                "type": "feature",
+                "title": "What’s Inside",
+                "subtitle": "Brandon Guidelines, Marketing Guru",
+                "content": "**Marketing in the real world** is very different than what we learn\nat school. If you've recently graduated and are making your first\nsteps in the business, it's imperative that you know how to use the\ntools and tricks of the trade.\n\n\n> **The world of marketing has changed dramatically in the last 10\nyears. Those who understand it, will succeed. But those who stay\nbehind, will have a lot to catch up on.”**\n\n\nIn this book I will teach you everything I know about B2B marketing.\nFrom branding, marketing planning, content creation, SEO and PPC, to\nsegmenting your audience and understanding today's metrics and\nanalytics methodologies — this guide is the only marketing education\nyou'll ever need.",
+                "image": "images/brandon-guidelines.jpg",
+                "image_alt": "Brandon Guidelines Photo",
+                "media_position": "right",
+                "media_width": "fourty",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "feature_padding_vert": "small",
+            "align": "center",
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "cta_section",
+            "title": "Download the e-book today",
+            "actions": [
+              {
+                "type": "action",
+                "label": "Get the e-book",
+                "url": "/pricing",
+                "style": "primary",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "actions_position": "bottom",
+            "align": "center",
+            "padding_top": "large",
+            "padding_bottom": "large",
+            "background_color": "primary",
+            "background_image": "images/background-2.jpg",
+            "background_image_opacity": 10,
+            "background_image_size": "cover",
+            "background_image_repeat": "no-repeat",
+            "stackbit_model_type": "object"
+          }
+        ],
+        "seo": {
+          "type": "stackbit_page_meta",
+          "title": "Stackbit Book Theme",
+          "description": "The preview of the Book theme",
+          "extra": [
+            {
+              "name": "og:type",
+              "value": "website",
+              "keyName": "property"
+            },
+            {
+              "name": "og:title",
+              "value": "Stackbit Book Theme",
+              "keyName": "property"
+            },
+            {
+              "name": "og:description",
+              "value": "The preview of the Book theme",
+              "keyName": "property"
+            },
+            {
+              "name": "og:image",
+              "value": "images/book-preview.png",
+              "keyName": "property",
+              "relativeUrl": true
+            },
+            {
+              "name": "twitter:card",
+              "value": "summary_large_image"
+            },
+            {
+              "name": "twitter:title",
+              "value": "Stackbit Book Theme"
+            },
+            {
+              "name": "twitter:description",
+              "value": "The preview of the Book theme"
+            },
+            {
+              "name": "twitter:image",
+              "value": "images/book-preview.png",
+              "relativeUrl": true
+            }
+          ],
+          "stackbit_model_type": "object"
+        },
+        "layout": "advanced",
+        "stackbit_url_path": "/",
+        "stackbit_dir": "content/pages"
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "advanced",
+      "relPath": "pricing.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Pricing",
+        "sections": [
+          {
+            "type": "hero_section",
+            "title": "Pick Your Plan",
+            "subtitle": "Select the best fit for your budget below",
+            "align": "center",
+            "padding_top": "large",
+            "padding_bottom": "small",
+            "stackbit_model_type": "object"
+          },
+          {
+            "type": "grid_section",
+            "grid_items": [
+              {
+                "type": "grid_item",
+                "title": "Student",
+                "subtitle": "For college students and educators",
+                "title_align": "left",
+                "content": "---\n\n\n### $9 eBook\n\n* Digital edition\n* Basic tutorials and worksheets\n* Access to community group",
+                "content_align": "left",
+                "actions": [
+                  {
+                    "type": "action",
+                    "label": "Start with Personal",
+                    "url": "/thank-you",
+                    "style": "primary",
+                    "stackbit_model_type": "object"
+                  }
+                ],
+                "actions_align": "left",
+                "actions_width": "full-width",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "title": "Professional",
+                "subtitle": "For marketers at companies",
+                "title_align": "left",
+                "content": "---\n\n### $19 Print + eBook\n\n* Print + eBook editions\n* Advanced tutorials\n* Monthly webinars\n* 1hr consultation\n* eMail feedback session",
+                "content_align": "left",
+                "actions": [
+                  {
+                    "type": "action",
+                    "label": "Start with Professional",
+                    "url": "/thank-you",
+                    "style": "primary",
+                    "stackbit_model_type": "object"
+                  }
+                ],
+                "actions_align": "left",
+                "actions_width": "full-width",
+                "stackbit_model_type": "object"
+              },
+              {
+                "type": "grid_item",
+                "title": "Business",
+                "subtitle": "For teams and companies",
+                "title_align": "left",
+                "content": "---\n### $49 eBook\n* 3 eBooks * Monthly webinars * Bonus chapter per vertical * Live Q&A session * Advanced worksheets",
+                "content_align": "left",
+                "actions": [
+                  {
+                    "type": "action",
+                    "label": "Start with Business",
+                    "url": "/thank-you",
+                    "style": "primary",
+                    "stackbit_model_type": "object"
+                  }
+                ],
+                "actions_align": "left",
+                "actions_width": "full-width",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "grid_cols": "three",
+            "grid_gap_vert": "small",
+            "grid_gap_horiz": "small",
+            "enable_cards": true,
+            "padding_top": "small",
+            "padding_bottom": "medium",
+            "has_border": false,
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          }
+        ],
+        "seo": {
+          "type": "stackbit_page_meta",
+          "title": "Pricing",
+          "description": "This is the pricing page",
+          "extra": [
+            {
+              "name": "og:type",
+              "value": "website",
+              "keyName": "property"
+            },
+            {
+              "name": "og:title",
+              "value": "Pricing",
+              "keyName": "property"
+            },
+            {
+              "name": "og:description",
+              "value": "This is the pricing page",
+              "keyName": "property"
+            },
+            {
+              "name": "twitter:card",
+              "value": "summary"
+            },
+            {
+              "name": "twitter:title",
+              "value": "Pricing"
+            },
+            {
+              "name": "twitter:description",
+              "value": "This is the pricing page"
+            }
+          ],
+          "stackbit_model_type": "object"
+        },
+        "layout": "advanced",
+        "stackbit_url_path": "/pricing",
+        "stackbit_dir": "content/pages"
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "page",
+      "relPath": "privacy-policy.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Privacy Policy",
+        "seo": {
+          "type": "stackbit_page_meta",
+          "title": "Privacy Policy",
+          "description": "This is the privacy policy page",
+          "extra": [
+            {
+              "name": "og:type",
+              "value": "website",
+              "keyName": "property"
+            },
+            {
+              "name": "og:title",
+              "value": "Privacy Policy",
+              "keyName": "property"
+            },
+            {
+              "name": "og:description",
+              "value": "This is the privacy policy page",
+              "keyName": "property"
+            },
+            {
+              "name": "twitter:card",
+              "value": "summary"
+            },
+            {
+              "name": "twitter:title",
+              "value": "Privacy Policy"
+            },
+            {
+              "name": "twitter:description",
+              "value": "This is the privacy policy page"
+            }
+          ],
+          "stackbit_model_type": "object"
+        },
+        "layout": "page",
+        "stackbit_url_path": "/privacy-policy",
+        "stackbit_dir": "content/pages",
+        "content": "\nDonec luctus lorem sit amet tincidunt euismod. Etiam ut mauris non magna placerat tempor non vel purus. Quisque ac urna eu sapien placerat aliquet eget id diam. Sed elementum enim non mollis consequat. Maecenas laoreet elementum elit, id luctus odio sagittis nec. Nam ornare lorem sed nunc aliquet vulputate. Phasellus fringilla lacus mi, in porta quam eleifend vitae. Cras suscipit, neque blandit tempor aliquam, tortor sem tristique ex, non scelerisque justo massa id tortor. Maecenas tristique at metus non volutpat. Pellentesque nec felis eu dui tristique cursus sit amet vitae nibh. Duis malesuada ullamcorper sapien viverra tristique. Quisque malesuada, ligula vel lobortis ornare, turpis purus consequat massa, sit amet auctor velit neque sit amet justo. Donec at est sed nisl posuere commodo.\n\n## Phasellus Finibus Risus Eget est Cursus Finibus\n\nAliquam aliquam porta massa, et aliquam tortor mollis quis. Sed sodales leo vulputate metus gravida cursus. In fringilla imperdiet elit. Etiam eget sapien elementum, facilisis arcu vitae, finibus ipsum. Aliquam erat nibh, commodo id urna ut, fermentum tristique metus.\n\n### Morbi Egestas Ullamcorper Vulputate\n\nMauris dignissim varius arcu in laoreet. In mollis erat velit, in hendrerit arcu lobortis in. Donec facilisis malesuada sapien, non mollis lacus faucibus quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.\n\n### Donec Vitae Tincidunt Erat\n\nOrci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nIn et diam congue, porta dui ac, rhoncus diam. Quisque imperdiet ex nec lorem gravida ultrices. Fusce ut volutpat metus. Morbi sollicitudin mi vel erat consectetur gravida. Donec consequat velit eget turpis dapibus, sed scelerisque sem pulvinar. Phasellus sit amet arcu eu metus auctor finibus. Phasellus a mauris ut urna auctor ornare. Morbi mollis laoreet orci at iaculis. \n\n## Aliquam at Velit eu Elit Iaculis Cursus\n\nIn eu neque leo. Proin felis risus, maximus at ornare non, feugiat ac dui. Nam ornare feugiat sem, ac pretium urna bibendum quis. In hac habitasse platea dictumst. Curabitur sapien ante, molestie sit amet maximus id, malesuada eget felis. Praesent nec imperdiet neque."
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "page",
+      "relPath": "story.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Story About the Book",
+        "seo": {
+          "type": "stackbit_page_meta",
+          "title": "Story About the Book",
+          "description": "This is the about page",
+          "extra": [
+            {
+              "name": "og:type",
+              "value": "website",
+              "keyName": "property"
+            },
+            {
+              "name": "og:title",
+              "value": "Story About the Book",
+              "keyName": "property"
+            },
+            {
+              "name": "og:description",
+              "value": "This is the about page",
+              "keyName": "property"
+            },
+            {
+              "name": "og:image",
+              "value": "images/story.jpg",
+              "keyName": "property",
+              "relativeUrl": true
+            },
+            {
+              "name": "twitter:card",
+              "value": "summary_large_image"
+            },
+            {
+              "name": "twitter:title",
+              "value": "Story About the Book"
+            },
+            {
+              "name": "twitter:description",
+              "value": "This is the about page"
+            },
+            {
+              "name": "twitter:image",
+              "value": "images/story.jpg",
+              "relativeUrl": true
+            }
+          ],
+          "stackbit_model_type": "object"
+        },
+        "layout": "page",
+        "stackbit_url_path": "/story",
+        "stackbit_dir": "content/pages",
+        "content": "\nIn the past, whenever a young man or woman wanted to be great at something, they would look to learn it from a master. This is how apprenticeships started, nowadays known as internships. Even when universities, colleges and educational institutions mushroomed all over the world, people still seek the guidance of a mentor to help them achieve their full potential and teach them tricks of the trade along the way.\n\n## Digital Age Mentorship\n\n![](/images/story.jpg)\n\nFast forward to the 2000s, and you'll find that less people are willing to dedicate their time to help young professionals grow, and fewer novices know to reach out and ask.\n\n> Everything of value that I learned in my career, came from other people's stories and experience.”\n\nThis is why I decided to create a practical guide that would serve as an internship for those who want to excel in marketing. Instead of looking for a mentor, students and young marketers can read all the wealth of knowledge I acquired throught the years and digest it at their pace.\n\n## Hands On Practice\n\nThere's nothing like trying things out for yourself.\n\nIn my book, you will find countless guides, tutorials, walk throughs, worksheets and collateral starters, to help you roll up your sleeves and apply your learnings. We even offer 1hr consultations by seasoned professionals, monthly webinars, and live Q&A sessions to help you hone in on the topics that are most relevant to your work.\n"
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "page",
+      "relPath": "style-guide.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Style Guide",
+        "seo": {
+          "type": "stackbit_page_meta",
+          "title": "Theme Style Guide",
+          "description": "A reference for suggested typographic treatment and styles for your content",
+          "extra": [
+            {
+              "name": "og:type",
+              "value": "website",
+              "keyName": "property"
+            },
+            {
+              "name": "og:title",
+              "value": "Theme Style Guide",
+              "keyName": "property"
+            },
+            {
+              "name": "og:description",
+              "value": "A reference for suggested typographic treatment and styles for your content",
+              "keyName": "property"
+            },
+            {
+              "name": "twitter:card",
+              "value": "summary"
+            },
+            {
+              "name": "twitter:title",
+              "value": "Theme Style Guide"
+            },
+            {
+              "name": "twitter:description",
+              "value": "A reference for suggested typographic treatment and styles for your content"
+            }
+          ],
+          "stackbit_model_type": "object"
+        },
+        "layout": "page",
+        "stackbit_url_path": "/style-guide",
+        "stackbit_dir": "content/pages",
+        "content": "\nThis is a paragraph. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Fringilla urna porttitor rhoncus dolor purus. Consectetur purus ut faucibus pulvinar. Nullam non nisi est sit. Tellus in metus vulputate eu scelerisque felis. Nunc congue nisi vitae suscipit tellus mauris. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Fermentum iaculis eu non diam phasellus vestibulum. Faucibus turpis in eu mi bibendum neque egestas congue.\n\n# This is an H1\n## This is an H2\n### This is an H3\n#### This is an H4\n##### This is an H5\n###### This is an H6\n\n## Quoting\n\nNullam hendrerit dictum vehicula. Nunc nec tortor et dui vestibulum venenatis. Donec mattis ligula ac efficitur lacinia.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis aliquam. Turpis massa sed elementum tempus egestas sed sed. Orci a scelerisque purus semper eget duis at tellus at. Lacus luctus accumsan tortor posuere ac. \n\n> Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Ultrices sagittis orci a scelerisque purus semper eget duis. Pharetra pharetra massa massa ultricies. Felis eget nunc lobortis mattis aliquam.\n\nIn cursus turpis massa tincidunt. Tempor nec feugiat nisl pretium. Odio aenean sed adipiscing diam. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Justo laoreet sit amet cursus sit amet dictum. Turpis tincidunt id aliquet risus feugiat in ante metus.\n\nIn non tempus urna, non blandit nisl. Phasellus aliquam, tellus et lobortis dictum, justo turpis placerat est, sed luctus nunc elit eu odio. Phasellus imperdiet, nulla a elementum tempor, nisi elit tincidunt dolor, eget venenatis metus libero et elit.\n\nVivamus tempus ornare urna, eget imperdiet quam venenatis ac. Donec fermentum massa id aliquet vulputate. Nam vestibulum ornare est, sed tincidunt mauris interdum a. In hac habitasse platea dictumst. Pellentesque sit amet arcu sed risus vehicula fermentum sit amet a neque. Sed imperdiet lacinia magna sit amet dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean non purus a quam placerat luctus. Proin orci risus, lobortis ut dictum at, gravida at nulla. \n\n## Unordered and Ordered Lists\n\n+ Donec non tortor in arcu mollis feugiat\n+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit\n+ Donec id eros eget quam aliquam gravida\n+ Vivamus convallis urna id felis\n+ Nulla porta tempus sapien\n\n***\n\n1. Donec non tortor in arcu mollis feugiat\n2. Lorem ipsum dolor sit amet, consectetuer adipiscing elit\n3. Donec id eros eget quam aliquam gravida\n4. Vivamus convallis urna id felis\n5. Nulla porta tempus sapien\n\n## Code Blocks\n\nBlocks of code are either fenced by lines with three back-ticks, or are indented with four spaces.\n\n```\nlet sequence = [1, 1, 2, 3, 5, 8, 13];\nfor (let i = 0; i < sequence.length; i++) {\n  console.log(sequence[i]);\n}\n```\n\n## Inline Elements\n\nEmphasis, aka italics, with *asterisks* or _underscores_.\n\nStrong emphasis, aka bold, with **asterisks** or __underscores__.\n\nCombined emphasis with **asterisks and _underscores_**.\n\nStrikethrough uses two tildes. ~~Scratch this.~~\n\nInline `code` with `back-ticks around` it.\n\nThis is <mark>marked or highlighted</mark> text.\n\nThis is [an example](http://example.com) link.\n\n## Tables\n\n<div class=\"responsive-table\">\n  <table>\n      <caption>Table with thead, tfoot, and tbody</caption>\n    <thead>\n      <tr>\n        <th>Header content</th>\n        <th>Header content</th>\n        <th>Header content</th>\n        <th>Header content</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Body content</td>\n        <td>Body content</td>\n        <td>Body content</td>\n        <td>Body content</td>\n      </tr>\n      <tr>\n        <td>Body content</td>\n        <td>Body content</td>\n        <td>Body content</td>\n        <td>Body content</td>\n      </tr>\n    </tbody>\n    <tfoot>\n      <tr>\n        <td>Footer content</td>\n        <td>Footer content</td>\n    <td>Footer content</td>\n    <td>Footer content</td>\n      </tr>\n    </tfoot>\n  </table>\n</div>\n"
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "page",
+      "relPath": "terms-conditions.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Terms & Conditions",
+        "seo": {
+          "type": "stackbit_page_meta",
+          "title": "Terms and Conditions",
+          "description": "This is the terms and conditions page",
+          "extra": [
+            {
+              "name": "og:type",
+              "value": "website",
+              "keyName": "property"
+            },
+            {
+              "name": "og:title",
+              "value": "Terms and Conditions",
+              "keyName": "property"
+            },
+            {
+              "name": "og:description",
+              "value": "This is the terms and conditions page",
+              "keyName": "property"
+            },
+            {
+              "name": "twitter:card",
+              "value": "summary"
+            },
+            {
+              "name": "twitter:title",
+              "value": "Terms and Conditions"
+            },
+            {
+              "name": "twitter:description",
+              "value": "This is the terms and conditions page"
+            }
+          ],
+          "stackbit_model_type": "object"
+        },
+        "layout": "page",
+        "stackbit_url_path": "/terms-conditions",
+        "stackbit_dir": "content/pages",
+        "content": "\nDonec luctus lorem sit amet tincidunt euismod. Etiam ut mauris non magna placerat tempor non vel purus. Quisque ac urna eu sapien placerat aliquet eget id diam. Sed elementum enim non mollis consequat. Maecenas laoreet elementum elit, id luctus odio sagittis nec. Nam ornare lorem sed nunc aliquet vulputate. Phasellus fringilla lacus mi, in porta quam eleifend vitae. Cras suscipit, neque blandit tempor aliquam, tortor sem tristique ex, non scelerisque justo massa id tortor. Maecenas tristique at metus non volutpat. Pellentesque nec felis eu dui tristique cursus sit amet vitae nibh. Duis malesuada ullamcorper sapien viverra tristique. \n\n## Phasellus Finibus Risus Eget\n\nQuisque malesuada, ligula vel lobortis ornare, turpis purus consequat massa, sit amet auctor velit neque sit amet justo. Donec at est sed nisl posuere commodo. Phasellus finibus risus eget est cursus finibus.\n\nAliquam aliquam porta massa, et aliquam tortor mollis quis. Sed sodales leo vulputate metus gravida cursus. In fringilla imperdiet elit. Etiam eget sapien elementum, facilisis arcu vitae, finibus ipsum. Aliquam erat nibh, commodo id urna ut, fermentum tristique metus. Morbi egestas ullamcorper vulputate. Mauris dignissim varius arcu in laoreet. In mollis erat velit, in hendrerit arcu lobortis in. Donec facilisis malesuada sapien, non mollis lacus faucibus quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. \n\n## Donec Vitae Tincidunt Erat\n\nOrci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nIn et diam congue, porta dui ac, rhoncus diam. Quisque imperdiet ex nec lorem gravida ultrices. Fusce ut volutpat metus. Morbi sollicitudin mi vel erat consectetur gravida. Donec consequat velit eget turpis dapibus, sed scelerisque sem pulvinar. Phasellus sit amet arcu eu metus auctor finibus. Phasellus a mauris ut urna auctor ornare. Morbi mollis laoreet orci at iaculis. Aliquam at velit eu elit iaculis cursus. In eu neque leo. Proin felis risus, maximus at ornare non, feugiat ac dui. Nam ornare feugiat sem, ac pretium urna bibendum quis. In hac habitasse platea dictumst. Curabitur sapien ante, molestie sit amet maximus id, malesuada eget felis. Praesent nec imperdiet neque. "
+      }
+    },
+    {
+      "modelType": "page",
+      "modelName": "advanced",
+      "relPath": "thank-you.md",
+      "data": {
+        "stackbit_model_type": "page",
+        "title": "Thank You",
+        "sections": [
+          {
+            "type": "hero_section",
+            "title": "Thank You!",
+            "subtitle": "Thank you for testing this template. We hope you like it. Have a great day!",
+            "actions": [
+              {
+                "type": "action",
+                "label": "Back to homepage",
+                "url": "/",
+                "style": "primary",
+                "has_icon": true,
+                "icon": "arrow-left",
+                "icon_position": "left",
+                "stackbit_model_type": "object"
+              }
+            ],
+            "align": "center",
+            "padding_bottom": "large",
+            "background_color": "none",
+            "stackbit_model_type": "object"
+          }
+        ],
+        "layout": "advanced",
+        "stackbit_url_path": "/thank-you",
+        "stackbit_dir": "content/pages"
+      }
+    }
+  ]
+}
