@@ -21,6 +21,18 @@
   * [Examples](resume/resume/examples.md)
   * [Advice](resume/resume/advice.md)
 
+## Applications & Job Postings
+
+* [📮 Postings:](applications-and-job-postings/postings/README.md)
+  * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
+* [My Applications](applications-and-job-postings/my-applications.md)
+  * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
+* [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
+  * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
+    * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
+    * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
+  * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
+
 ## Job Postings
 
 * [Jobs To Apply To:](job-postings/jobs-to-apply-to.md)
@@ -84,17 +96,6 @@
 ***
 
 * [Technical Interview Tutorial](page-3.md)
-
-## Applications & Job Postings
-
-* [📮 Postings:](applications-and-job-postings/postings.md)
-* [My Applications](applications-and-job-postings/my-applications.md)
-  * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
-* [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
-  * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
-    * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
-    * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
-  * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
 
 ## Job Boards
 
