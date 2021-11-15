@@ -88,7 +88,7 @@
 ## Applications & Job Postings
 
 * [📮 Postings:](applications-and-job-postings/postings.md)
-* [My Applications](applications-and-job-postings/my-applications/README.md)
+* [My Applications](applications-and-job-postings/my-applications.md)
   * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
@@ -109,7 +109,6 @@
 ## Lambda Guidance & Meetings
 
 * [Meetings:](lambda-guidance-and-meetings/meetings.md)
-* [Page 1](lambda-guidance-and-meetings/page-1.md)
 
 ## MISC
 
