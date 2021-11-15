@@ -165,7 +165,7 @@ Calendar
 
 ### Applications & Job Postings
 
-* [👔 Postings:](applications-and-job-postings/postings.md)
+* [👔 Postings:](applications-and-job-postings/postings/)
 * [My Applications](applications-and-job-postings/my-applications.md)
 * [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/)
