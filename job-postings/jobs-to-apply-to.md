@@ -4,23 +4,21 @@
 
 
 
-&#x20;Developer Advocate EDB New York State•Remote Apply with your Indeed Resume As a Developer Advocate, you will join a team of user experience and software development professionals on a mission to make working with Postgres easier for…
-
-### LIST OF THE BEST WEB DEVELOPER
-
-Return to search results
-
-
-
-Return to search results Lead Web Developer (PHP) - Remote ThorTech Solutions Long Island City, NY+9 locations•Temporarily Remote Up to $135,000 a year Apply with your Indeed Resume Responsive employer Urgently hiring This is a full-time role expected at 40hrs/week. The successful candidate will be reporting to their office in Long Island City (just one stop past Manhattan)… 11 days ago
-
-
-
-Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahway, NJ 07065•Temporarily Remote $120,000 a year Worked with developers offshore (India) to communicate requirements. Competitive total compensation packages (salary plus bonus plus shares). 30+ days ago
-
+* [**QA Engineer | Bitwarden | Remote**](https://bitwarden.com/careers/4735564003/)** — **_Apply if you: _want to gain exposure to every component of a codebase, including: backend infrastructure, APIs, & web app. **Reach out to: **[**Technical Recruiter**](https://www.linkedin.com/in/jessica-velazco/) **(and mention you learned about the role from the Support Driven Slackspace)**
+* [**Associate JavaScript Engineer | Grove | Engineer **](https://jobs.lever.co/grove/b9abb3a5-33fb-4cbc-8a61-21ed99ab9fff)— _Apply if you: _You are interested in sustainability and can work in an object-oriented JavaScript framework.
+* [**Frontend Engineer | Faraday | Remote**](https://faraday.rippling-ats.com/job/339573/frontend-engineer) — _Apply if you: _You like giving users a simple, effective experience and are experienced in React. **Reach out to: **[**Eng Manager**](https://www.linkedin.com/in/forrest-wallace-vt/)
+* [**Events Designer | Hack Club | Vermont or remote for right person**](https://hackclub.com/jobs/events-designer/) — _Apply if you: _are passionate about building technical projects and working with young people.
+* [**Product Support Specialist | Jornaya | PA or Remote**](https://jobs.smartrecruiters.com/Verisk/743999781670559-product-support-specialist)** **— _Apply if you:_ want to love troubleshooting and know are familiar with JavaScript, HTML/CSS, SQL. **Reach out to: **[**Product Support Manager**](https://www.linkedin.com/in/cshibe/)**.**
+* [**Software Engineer | Alumni Ventures | Remote or Boston**](https://jobs.lever.co/AV/43226eff-29eb-4e5c-bbac-ae5b5c96aaee)** — **_Apply if you**: **_Have strong programming skills in Javascript and experience with SQL Databases.
+* [**UX Writer | Illuminate Education | Remote**](https://www.paycomonline.net/v4/ats/web.php/jobs/ViewJobDetails?job=31062\&clientkey=B64A49ED0EE0D3A56D56B7089064A61C)** — **_Apply if you: _Are passionate about edtech, strong UX, and writing. **Reach out to: **[**Manager, UX and Design.**](https://www.linkedin.com/in/grace-kohut-61282036/)
+* ** **[**Test Automation Engineer | Homelister | Los Angeles**](https://jobs.lever.co/homelister/4c497d3f-5553-4b7d-89f3-444b6d2ef20d)** — **_Apply if you: _Have experience on interest in testing and interest in building automated testing.
+* [**Digital Product Manager | SuperCo | Remote**](https://www.dynamitejobs.com/job/remote-digital-project-manager-superco/)** — **_Apply if you**: **_Are interested in eCommerce or have any Shopify experience/experience managing eCommerce.
+* [**Customer Champion | Wistia | Remote**](https://boards.greenhouse.io/wistia/jobs/3615752?gh\_src=1b8c37091us)** — **_Apply if you:_ are familiar with HTML and CSS and enjoy helping others fix their code. **Reach out to: **[**Head of Support**](https://www.linkedin.com/in/stacyjustino/)
+* [**Full Stack Software Engineer | BlockFi | Remote**](https://boards.greenhouse.io/blockfi/jobs/5408171002?t=189b979b2us)** **— _Apply if you: _Are interested in FinTech and have experience in any of these: Reactjs, Python, Typescript, GraphQL
+* [**Solution Engineer, PreSales | Ironcald | Remote**](https://jobs.lever.co/ironcladapp/ed984538-5daa-41ca-b4ba-fa20bb10ef3c)** — **_Apply if you: _Like being an “technical expert” and are open to working with Sales teams. **Reach out to: **[**Sales Director.**](https://www.linkedin.com/in/mikenflores/)
 *   1
 
-    GroupBWT is a digital transformation agency located in Ukraine. Founded in 2009, they have 100 employees who serve startups to enterprises and governmental organizations in fintech, e-commerce/retail, healthcare, e-learning, and event management industries. Their focus is on digital product design, custom software development, ERP and automation solutions for enterprises, data mining and data enrichment, data Science, and natural language processing.&#x20;
+    GroupBWT is a digital transformation agency located in Ukraine. Founded in 2009, they have 100 employees who serve startups to enterprises and governmental organizations in fintech, e-commerce/retail, healthcare, e-learning, and event management industries. Their focus is on digital product design, custom software development, ERP and automation solutions for enterprises, data mining and data enrichment, data Science, and natural language processing.
 
     Clients
 
@@ -34,9 +32,9 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    A gaming company engaged GroupBWT for full stack development services. In addition to building an HTML browser game, they managed AWS servers and provided guidance related to platform hosting. GroupBWT impressed the client by producing functionally efficient deliverables.&#x20;
+    A gaming company engaged GroupBWT for full stack development services. In addition to building an HTML browser game, they managed AWS servers and provided guidance related to platform hosting. GroupBWT impressed the client by producing functionally efficient deliverables.
 
-    > "We’re very happy with the quality of service because even though GroupBWT had never worked on a browser game before, they’ve done well." — CEO, Gaming Company&#x20;
+    > "We’re very happy with the quality of service because even though GroupBWT had never worked on a browser game before, they’ve done well." — CEO, Gaming Company
 *   2
 
     Experion Technologies develops software solutions, mobile apps, cloud services, and IoT platforms. Established in 2006 and based in Addison, TX, their 350+ experts have created digital solutions for over 110 clients in the sectors of finance, retail, supply chain, and health.
@@ -58,7 +56,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
     > "Our project with Experion has definitely been successful. We've seen its benefits, especially for our ice cream business." – Senior IT Manager, Food Exporter
 *   3
 
-    Xfive is a full-stack software house in Krakow, Poland that serves businesses, startups, and creative agencies. Its team of around 50 has delivered web & mobile apps, websites, and e-commerce solutions since 2005 to its clients.&#x20;
+    Xfive is a full-stack software house in Krakow, Poland that serves businesses, startups, and creative agencies. Its team of around 50 has delivered web & mobile apps, websites, and e-commerce solutions since 2005 to its clients.
 
     Clients
 
@@ -74,7 +72,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Xfive designed and developed a website from scratch for a financial services startup. After designing the user journeys and pages, they executed full stack development using Ruby on Rails and HTML. Xfive built the platform to ensure mobile responsiveness and refined business processes. The website's simplicity generated praise from users, and internal stakeholders praised Xfive's technical expertise.
 
-    > "They certainly weren’t spread too thin on too many projects, and that positively impacted the overall quality of the deliverable." — Co-Founder, Financial Services Startup&#x20;
+    > "They certainly weren’t spread too thin on too many projects, and that positively impacted the overall quality of the deliverable." — Co-Founder, Financial Services Startup
 *   4
 
     AndPlus is a software product development company located in Southborough, Mass. Founded in 2009, they have 50 employees and serve companies of all sizes – from Fortune 100 companies like Bloomberg and Honeywell, to funded startups looking to launch their MVP. AndPlus focuses on creating mobile and web solutions for IoT, Big Data, User Experience, Artificial Intelligence, Machine Learning, and more.
@@ -112,7 +110,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Oomph acted as the lead digital media partner for a Biotechnology Company. As part of this partnership, Oomph supported nearly 90% of the client's digital needs including digital marketing and analysis, social media, and SEO. The client was impressed to see measurable improvements in their digital presence after partnering with Oomph: Leads from the website about doubled from 30 to 60/month.
 
-    > "We’re able to rely on them. They follow through, they're competent, they're conscientious. Those are important to me since we're a very small company but we're doing some pretty big things." – Managing Partner, Biotechnology Company&#x20;
+    > "We’re able to rely on them. They follow through, they're competent, they're conscientious. Those are important to me since we're a very small company but we're doing some pretty big things." – Managing Partner, Biotechnology Company
 *   6
 
     Zgraya is a full-service digital creative agency with over 30 employees located in Kyiv, Ukraine. Their main services include web design, web development, UX/UI design, and digital marketing. They deliver results for their clients’ businesses by creating functional websites, mobile and web applications, brands, and digital marketing strategies.
@@ -129,7 +127,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    Zgraya handled website development for a gaming hardware company, carrying out the whole process from wireframing to delivering a completely functional WordPress website. All stakeholders expressed satisfaction with the website, which has a high-quality display on both desktop and mobile devices.&#x20;
+    Zgraya handled website development for a gaming hardware company, carrying out the whole process from wireframing to delivering a completely functional WordPress website. All stakeholders expressed satisfaction with the website, which has a high-quality display on both desktop and mobile devices.
 
     > "The most impressive element of this company is their ability to design the most gorgeous websites I've come across..." – CEO, Gaming Hardware Company
 *   7
@@ -150,7 +148,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     A health company approached 3 Media Web for help developing a modern website. The project included an online store, so 3 Media Web Solutions used a WooCommerce platform within WordPress. 3 Media Web Solutions was involved in all aspects of the design and development process, including ideation, wireframing, backend development, and SEO.
 
-    > "We wanted to meet a particular deadline and they did everything to make sure that everything was working properly and was bench-tested before it went live." – Marketing Manager, Health Company&#x20;
+    > "We wanted to meet a particular deadline and they did everything to make sure that everything was working properly and was bench-tested before it went live." – Marketing Manager, Health Company
 *   8
 
     Light IT is a data science consulting and software development company located in Zaporizhzhia, Ukraine and founded in 2006. They have 132 employees who provide custom web and mobile software development services to various-size companies in advertising, finance, healthcare, travel, and education. This includes IT consulting, market research, QA, design, and business analytics.
@@ -222,7 +220,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    A business development group hired eLuminous Technologies Pvt Ltd to help with many website projects for its clients. One such project was the development of a fast and user-friendly high converting service based website. eLuminous Technologies was provided the requirements, given full creative control over the project, and delivered a website that was fast and easy to navigate.&#x20;
+    A business development group hired eLuminous Technologies Pvt Ltd to help with many website projects for its clients. One such project was the development of a fast and user-friendly high converting service based website. eLuminous Technologies was provided the requirements, given full creative control over the project, and delivered a website that was fast and easy to navigate.
 
     > "Their ability to follow dynamic instructions is excellent and their creative ability is outstanding." - Project and Content Director, Business Development Group
 *   12
@@ -243,11 +241,10 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     _Báchoo designed and developed a new landing page whose goal was to increase conversion rates. The landing page is built using WordPress and considerably improved visitor conversion, leading to a 33% increase in app downloads._
 
-    > “I explained what I needed and Bachoo Design Studio delivered. It was a speedy turnaround.” – Founder & Designer, Accessories Company\
-    >
+    > “I explained what I needed and Bachoo Design Studio delivered. It was a speedy turnaround.” – Founder & Designer, Accessories Company\\
 *   13
 
-    RAD4M is a mobile app development company with offices in Krakow, Poland, and London, England. Founded in 2008, they have between 10 and 49 employees who provide a range of services for developing websites, mobile apps and custom software. They focus primarily on business services for small to midmarket companies and global enterprises.&#x20;
+    RAD4M is a mobile app development company with offices in Krakow, Poland, and London, England. Founded in 2008, they have between 10 and 49 employees who provide a range of services for developing websites, mobile apps and custom software. They focus primarily on business services for small to midmarket companies and global enterprises.
 
     Clients
 
@@ -263,8 +260,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     RAD4M built an intranet solution for a power company using Microsoft SharePoint. They also helped create several project management systems for web and mobile. The client was impressed with their efficient, cost-effective deliveries. The new system provided a more fluid, dynamic way for employees to communicate with suppliers and customers.
 
-    > “They are very efficient. RAD4M understands our goals, and we have a business relationship on a high level. Their team is good for the cost and they’re more efficient than other developers.” – IT Manager, Power Company\
-    >
+    > “They are very efficient. RAD4M understands our goals, and we have a business relationship on a high level. Their team is good for the cost and they’re more efficient than other developers.” – IT Manager, Power Company\\
 *   14
 
     Intetics Inc. is a technology company headquartered in Naples, FL, with offices in Minsk, Belarus, Wilmette, Ill., Krakow, Poland and Kharkiv, Ukraine. Founded in 1995, Intetics' team of 474 employees provides small, midmarket, and enterprise businesses with a variety of different services such as custom software development, mobile app development, and application management & support, among others.
@@ -286,8 +282,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
     > "Intetics' role is a critical part of our workflow. They’ve proven to be agile, highly collaborative, and very responsive." – Product Manager, Publishing Company
 *   15
 
-    Urban Insight is a digital design agency with a team of 25 professionals that provides web development, web design, and digital strategy services. Founded in 2000 and located in Los Angeles, the agency has completed over 500 successful projects for its clients.\
-
+    Urban Insight is a digital design agency with a team of 25 professionals that provides web development, web design, and digital strategy services. Founded in 2000 and located in Los Angeles, the agency has completed over 500 successful projects for its clients.\\
 
     Clients
 
@@ -301,7 +296,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    An urban planning company hired Urban Insight to create a new website. Urban Insight redesigned the text-driven content on their site to include more images and video content. The planning firm has received positive feedback since the site's launch and Urban Insight continues to provide support when needed.&#x20;
+    An urban planning company hired Urban Insight to create a new website. Urban Insight redesigned the text-driven content on their site to include more images and video content. The planning firm has received positive feedback since the site's launch and Urban Insight continues to provide support when needed.
 
     > "Their dependability is rock-solid. We were confident in their ability to execute our vision and that the end result would be successful when we launched." – Principal, Urban Design Studio
 *   16
@@ -337,7 +332,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    RoleModel Software was tasked by a higher education company to develop two web applications for their platform. The company also had RoleModel Software modify their mobile app using Ruby on Rails stack. RoleModel Software's services allowed the company to work more efficiently with updated functions.&#x20;
+    RoleModel Software was tasked by a higher education company to develop two web applications for their platform. The company also had RoleModel Software modify their mobile app using Ruby on Rails stack. RoleModel Software's services allowed the company to work more efficiently with updated functions.
 
     > "Everything met or exceeded our expectations. From the person leading the project down to the individual developers, communication overall was very good." – IT Manager, Higher Education Company
 *   18
@@ -396,7 +391,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Emergent Software built an information website to educate a nonprofit’s user base about worthwhile charities to consider supporting. The secure, sophisticated platform features a user-friendly payment feature. Programming experts built the backend on an SQL Server using open source hosting. Emergent Software’s final web product seamlessly facilitates up to 10,000 seamless banks transfer donations online each month.
 
-    > “Attention to customer satisfaction is Emergent Software’s biggest strength. The team is attentive, committed, and easy to work with. They made sure to deliver the exact product we wanted, rather than what we’d simply agreed to on paper.”  – CEO and Founder, Bank Donation Nonprofit
+    > “Attention to customer satisfaction is Emergent Software’s biggest strength. The team is attentive, committed, and easy to work with. They made sure to deliver the exact product we wanted, rather than what we’d simply agreed to on paper.” – CEO and Founder, Bank Donation Nonprofit
 *   21
 
     Attract Group is a development agency based in Odessa, Ukraine. Since 2011, their team of 43 has been specializing in web, mobile app, e-commerce development, and more. Attract Group works with small to mid-sized clients.
@@ -413,12 +408,12 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    Attract Group helped an existing team to develop an e-commerce website for a nutritional supplement store that was looking to expand in their market. The customers have had nothing but positive feedback in regards to the user experience of the new website. The client prides Attract Group on their depth of knowledge.&#x20;
+    Attract Group helped an existing team to develop an e-commerce website for a nutritional supplement store that was looking to expand in their market. The customers have had nothing but positive feedback in regards to the user experience of the new website. The client prides Attract Group on their depth of knowledge.
 
     > "The reviews that we get every day speak to how easy the checkout and shopping experiences are. Everyone I’ve heard from loves it." — COO, Nutritional Supplement Store
 *   22
 
-    Founded in 2008, KrishaWeb is a full-service digital agency based in Montgomery Village, Md., with an office in Ahmedabad, India. Their team of 86 employees specializes in UX/UI design, digital strategy, and eCommerce development for clients of all sizes in the business services, healthcare, and education industries.&#x20;
+    Founded in 2008, KrishaWeb is a full-service digital agency based in Montgomery Village, Md., with an office in Ahmedabad, India. Their team of 86 employees specializes in UX/UI design, digital strategy, and eCommerce development for clients of all sizes in the business services, healthcare, and education industries.
 
     Clients
 
@@ -434,11 +429,10 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     KrishaWeb provided development support to a digital marketing agency. They assisted them in development projects of all types, including website and app development, the creation of graphics and logos, and branding. The client was very happy with all of the support that KrishaWeb has provided on their various projects.
 
-    > “I wouldn't have been able to pull off the company's business model without KrishaWeb Technologies' ability.” – CEO, Digital Marketing Agency\
-    >
+    > “I wouldn't have been able to pull off the company's business model without KrishaWeb Technologies' ability.” – CEO, Digital Marketing Agency\\
 *   23
 
-    BrandExtract is a brand experience firm that is located in Houston. Founded in 2005, BrandExtract's team of 35 employees has over a decade of experience, specializing in branding and marketing strategy. The firm primarily works with clients from the energy, legal, and education industries.&#x20;
+    BrandExtract is a brand experience firm that is located in Houston. Founded in 2005, BrandExtract's team of 35 employees has over a decade of experience, specializing in branding and marketing strategy. The firm primarily works with clients from the energy, legal, and education industries.
 
     Clients
 
@@ -452,7 +446,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    BrandExtract partnered with a chemical process software supplier to increase market share through expanded brand awareness. After thorough research, they planned out a relatable message and a corresponding strategy, which led to improved visibility and sales. &#x20;
+    BrandExtract partnered with a chemical process software supplier to increase market share through expanded brand awareness. After thorough research, they planned out a relatable message and a corresponding strategy, which led to improved visibility and sales.
 *   24
 
     Axisbits is a web development shop based in Kharkiv, Ukraine, that was established in 2013. Their team of fewer than 20 employees provides web development, web design, e-commerce development, and custom software development services.
@@ -492,7 +486,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
     > "Radiansys has a qualified team that provides outstanding support and follows the best practices."
 *   ![Tell us about your project](https://tm.shgstatic.com/prod/public/SmallManifestMatchmakingCTAIcon.svg)
 
-    #### NEED HELP SELECTING A COMPANY?
+    **NEED HELP SELECTING A COMPANY?**
 
     Based on your budget, timeline, and specifications we can help you build a shortlist of companies that perfectly matches your project needs. Schedule a free consultation with a Manifest Analyst.
 *   27
@@ -568,12 +562,9 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
     Notable Project
 
-    Unleashed Technologies created a new website for a CPA society. They used Drupal 8 to build a new site, which included the client’s association management system, specific education vendors, and custom design work. The client was happy with the new site and said that it had received praise from others in their industry.&#x20;
+    Unleashed Technologies created a new website for a CPA society. They used Drupal 8 to build a new site, which included the client’s association management system, specific education vendors, and custom design work. The client was happy with the new site and said that it had received praise from others in their industry.
 
-    > “Hands down, they’re the best vendor I’ve ever worked with. I appreciate their planning, rigor, and transparency.” – Director of Technology, CPA Society\
-    >
-
-
+    > “Hands down, they’re the best vendor I’ve ever worked with. I appreciate their planning, rigor, and transparency.” – Director of Technology, CPA Society\\
 
     *   31
 
@@ -591,17 +582,17 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        DCSL GuideSmiths redeveloped the recruitment software system of a construction firm. After laying out their requirements, DCSL GuideSmiths designed, tested, and delivered on the system. The client was pleased with the project and felt that DCSL GuideSmiths' skills made the collaboration extremely easy.&#x20;
+        DCSL GuideSmiths redeveloped the recruitment software system of a construction firm. After laying out their requirements, DCSL GuideSmiths designed, tested, and delivered on the system. The client was pleased with the project and felt that DCSL GuideSmiths' skills made the collaboration extremely easy.
 
         > "We were able to see straightaway how the system would look and work. That’s another reason it went so smoothly." – Manager, Support Department, Construction Firm
     *   ![Tell us about your project](https://tm.shgstatic.com/prod/public/SmallManifestMatchmakingCTAIcon.svg)
 
-        #### NEED HELP SELECTING A COMPANY?
+        **NEED HELP SELECTING A COMPANY?**
 
         Based on your budget, timeline, and specifications we can help you build a shortlist of companies that perfectly matches your project needs. Schedule a free consultation with a Manifest Analyst.
     *   32
 
-        Mobile application development company WillowTree, Inc. was founded in 2007. With headquarters in Charlottesville, Va., and offices in New York and Durham, N.C., WillowTree has a team of 200+. They offer full-service development for both iOS and Android platforms, including mobile strategy, user experience design, testing, launching, and maintenance.&#x20;
+        Mobile application development company WillowTree, Inc. was founded in 2007. With headquarters in Charlottesville, Va., and offices in New York and Durham, N.C., WillowTree has a team of 200+. They offer full-service development for both iOS and Android platforms, including mobile strategy, user experience design, testing, launching, and maintenance.
 
         Clients
 
@@ -672,7 +663,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        A nonprofit community organization hired ImageX to upgrade their website from a poorly managed Drupal 6 build. The community had three goals for the website: improve their web presence as a sales tool, reduce web development and maintenance costs, and integrate Drupal 8 capabilities. ImageX migrated the site to an Open Y platform and integrated the necessary Drupal 8 features to reduce maintenance efforts and enhance the site's functionality. The client was pleased with ImageX's work and now relies on them for other development projects.&#x20;
+        A nonprofit community organization hired ImageX to upgrade their website from a poorly managed Drupal 6 build. The community had three goals for the website: improve their web presence as a sales tool, reduce web development and maintenance costs, and integrate Drupal 8 capabilities. ImageX migrated the site to an Open Y platform and integrated the necessary Drupal 8 features to reduce maintenance efforts and enhance the site's functionality. The client was pleased with ImageX's work and now relies on them for other development projects.
 
         > "We didn’t just build a website together; we built a relationship that has strengthened over time and will contribute to the long-term success of our organization." – Marketing Director, Community Organization
     *   36
@@ -715,7 +706,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
         > “When we gave them all our blueprints and they gave us back a site map, it was very detailed. It was very good work, compared to a lot of people we got estimates from. The cost for a US-based app developer company was a lot higher than what they were asking for.” – COO, Music Discovery Company
     *   38
 
-        Netguru is a consultancy, product design, and software development company founded in 2008. The company works with large brands and fast-growing startups in the financial, education, or even robotics industries. Netguru has completed more than 700 projects and has 700+ people on board working from all over the world.&#x20;
+        Netguru is a consultancy, product design, and software development company founded in 2008. The company works with large brands and fast-growing startups in the financial, education, or even robotics industries. Netguru has completed more than 700 projects and has 700+ people on board working from all over the world.
 
         Clients
 
@@ -734,7 +725,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
         " Netguru listens very well and always tries to find something to do." — Co-Founder & CFO, Data insights Company
     *   39
 
-        WDG is a marketing and advertising agency that was founded in 2004. They have about 23 employees that serve the large national companies and the public sector. Headquartered in Alexandria, Va., WDG has additional offices in Arlington, Va., and Washington. Services include web development, web design, and UX/UI.&#x20;
+        WDG is a marketing and advertising agency that was founded in 2004. They have about 23 employees that serve the large national companies and the public sector. Headquartered in Alexandria, Va., WDG has additional offices in Arlington, Va., and Washington. Services include web development, web design, and UX/UI.
 
         Clients
 
@@ -748,12 +739,12 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        WDG redesigned a website to improve performance and responsiveness. After the kickoff, they created wireframes and mock-ups. WDG also provided SEO services and URL shortening. The resulting email marketing campaign was very effective, and organic traffic increased significantly. &#x20;
+        WDG redesigned a website to improve performance and responsiveness. After the kickoff, they created wireframes and mock-ups. WDG also provided SEO services and URL shortening. The resulting email marketing campaign was very effective, and organic traffic increased significantly.
 
         > "We absolutely love our newly redesigned website; for our users’ experiences and the internal team working on it now. One of the things that we really wanted was flexibility. WDG built us the most flexible WordPress I have ever worked with. It is based on the flexible design layout version and we can basically do anything that we want to." – VP Marketing and Communication, Nonprofit Organization
     *   40
 
-        Based in Gliwice, Poland, The Software House is a development agency that was founded in 2012. They specialize in custom software development (PHP, Node, Javascript, Mobile) for mostly small and medium-sized businesses. So far, their team has completed over 100 web, mobile app, and custom software development projects.&#x20;
+        Based in Gliwice, Poland, The Software House is a development agency that was founded in 2012. They specialize in custom software development (PHP, Node, Javascript, Mobile) for mostly small and medium-sized businesses. So far, their team has completed over 100 web, mobile app, and custom software development projects.
 
         Clients
 
@@ -767,13 +758,12 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        The Software House developed booking software for an airport transportation company. The system, to which they added an admin panel, automated operations and determined the most efficient routes to the airport and expanded their potential persons serviced more than fourfold.&#x20;
+        The Software House developed booking software for an airport transportation company. The system, to which they added an admin panel, automated operations and determined the most efficient routes to the airport and expanded their potential persons serviced more than fourfold.
 
         > "Previously, one person could serve 80 people per day, planning the route and informing clients of the pickup time. We have increased our efficiency. Now, we are able to serve 450 people or more per day." –Product Manager, Transportation Service Company
     *   41
 
-        Capital Numbers is a digital production outsourcing company headquartered in Kolkata, India, with additional locations in Beerwah, Australia, Dover, Del., and the U.K. The company was founded in 2012, and has a team of nearly 300 people who provide web development, custom software development, mobile app development, and e-commerce development. They provide services mostly to mid-market businesses, but also to enterprise and small businesses. The businesses they serve are in different industries including the advertising & marketing, business services, and financial services industries.\
-
+        Capital Numbers is a digital production outsourcing company headquartered in Kolkata, India, with additional locations in Beerwah, Australia, Dover, Del., and the U.K. The company was founded in 2012, and has a team of nearly 300 people who provide web development, custom software development, mobile app development, and e-commerce development. They provide services mostly to mid-market businesses, but also to enterprise and small businesses. The businesses they serve are in different industries including the advertising & marketing, business services, and financial services industries.\\
 
         Clients
 
@@ -789,8 +779,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Capital Numbers provided staff augmentation, WordPress development, and site design for a digital agency. The client wanted to integrate the Capital Numbers team into their internal operations; During the partnership, Capital Numbers had to learn the client’s processes. The client stated that Capital Numbers’ services have made them more productive and efficient.
 
-        > “Their team has helped us get numerous projects over the finish line with their quality execution and attention to detail. We’ve launched sites they built from scratch using our process and custom code base and they’ve helped us build internal tools as well.” — VP of Operations, Digital Agency\
-        >
+        > “Their team has helped us get numerous projects over the finish line with their quality execution and attention to detail. We’ve launched sites they built from scratch using our process and custom code base and they’ve helped us build internal tools as well.” — VP of Operations, Digital Agency\\
     *   42
 
         From Minneapolis, Minn., MentorMate has expanded to Sweden and Bulgaria. Founded in 2001, MentorMate is a custom software development company that also has experience in strategic consulting, cloud services, and Internet of Things (IoT).
@@ -807,7 +796,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        MentorMate handled custom software development and QA for an online education company. They integrated with the client's existing sprint teams and are fully versed in its dev workflow. The client is impressed with their standards of work and technical abilities.&#x20;
+        MentorMate handled custom software development and QA for an online education company. They integrated with the client's existing sprint teams and are fully versed in its dev workflow. The client is impressed with their standards of work and technical abilities.
 
         > "They’re technically proficient, creative, and able to work both independently and on teams. We would hire any of them on a permanent capacity based on their skill level." – VP of Development Resources, Online Education Company
     *   43
@@ -850,7 +839,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
         > “They provide a consistent level of service that I haven’t seen from agencies or even our in-house team. Their engineering standards, development standards, and the way that they have that consistently through their team is very impressive.” – Head of Product, Consumer Interest Nonprofit
     *   45
 
-        Q agency is a software development firm founded in 2013. Based in Zagreb, Croatia, the company has additional offices in Oslo, Zürich, Belfast, U.K., Toronto, and Los Angeles. With a team of 120+ employees, they specialize in web development, UX/UI, custom software development, and mobile app development.&#x20;
+        Q agency is a software development firm founded in 2013. Based in Zagreb, Croatia, the company has additional offices in Oslo, Zürich, Belfast, U.K., Toronto, and Los Angeles. With a team of 120+ employees, they specialize in web development, UX/UI, custom software development, and mobile app development.
 
         Clients
 
@@ -866,7 +855,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Q agency worked with an online boat rental platform. They provided developmental assistance for multiple projects. They revamped an inflexible CMS and created an updated account management system from scratch, and are currently adding features to it. After the project was completed, the client integrated it immediately and saw an increase in conversions.
 
-        > "From our first interaction, Q agency was quick to build a good relationship with us through their fast communication. Their team follows up on every email. They are prompt and professional with every task, and they are accommodating to our needs." – CTO & Co-Founder, Boat Rental Platform&#x20;
+        > "From our first interaction, Q agency was quick to build a good relationship with us through their fast communication. Their team follows up on every email. They are prompt and professional with every task, and they are accommodating to our needs." – CTO & Co-Founder, Boat Rental Platform
     *   46
 
         Sigma Software is a software development partner with 1300+ employees. Founded in 2002, the company is headquartered in Ukraine and has offices in the U.S., Canada, the U.K., Israel, Sweden, and Poland. They help clients from startups to Fortune 500 brands with software product and custom solutions development. Their expertise spans across web and app development, digital transformation, Big Data, AI/ML, AR/VR, and IoT.
@@ -923,7 +912,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Vardot designed and developed a website for a SaaS product. They were in charge of the development of and content creation for a website which would help grow the customer base and showcase the product. They also provided analytic tools for the client. The client was impressed with the positive feedback the project received.
 
-        > “We’ve received great feedback on the website from people outside of the company. We continue to obtain many leads and are able to track visitors thanks to the analytic solutions that Vardot implemented.” – President, SaaS Product Company   &#x20;
+        > “We’ve received great feedback on the website from people outside of the company. We continue to obtain many leads and are able to track visitors thanks to the analytic solutions that Vardot implemented.” – President, SaaS Product Company
     *   49
 
         Monterail is a software development company founded in 2010. The company is located in Wroclaw, Poland where its team of 110+ experts provides web development, custom software development, and IoT development services to mostly small and mid-market businesses.
@@ -940,7 +929,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        An independent consultant hired Monterail to assist in developing a cloud based e-publishing tool. Using Javascript and Ruby on Rails, Monterail delivered a minimum viable product with drag and drop functionality.&#x20;
+        An independent consultant hired Monterail to assist in developing a cloud based e-publishing tool. Using Javascript and Ruby on Rails, Monterail delivered a minimum viable product with drag and drop functionality.
 
         > "They would release versions that could be tested and what I enjoyed was the responsiveness of their team. The process was very lean and simplistic." — Founder, e-Publishing App
     *   50
@@ -978,7 +967,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        Kanopi Studios migrated an obsolete CMS to an updated version of Drupal for a professional grad school. They retained the platform’s content, rebuilt custom modules, and developed a new backend. They also redesigned the site’s UX/UI. The client was impressed with the expertise they brought to the project.&#x20;
+        Kanopi Studios migrated an obsolete CMS to an updated version of Drupal for a professional grad school. They retained the platform’s content, rebuilt custom modules, and developed a new backend. They also redesigned the site’s UX/UI. The client was impressed with the expertise they brought to the project.
 
         > “Their expert knowledge of Drupal facilitated a quick and effective migration. They also helped modernize our software development process.” – Sr. Director of IT, Professional Graduate School
     *   52
@@ -1002,7 +991,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
         > "They give us great advice. They have a lot of ideas on social media and how to track our numbers." – Director of Marketing, Nonprofit
     *   53
 
-        Umbrella IT is a development service company that's headquartered in Taganrog, Russia. They also have locations in Dubai and Vancouver, Canada. Umbrella IT was founded in 2009 and provides services for web and mobile app development. Umbrella IT has more than 150 employees that provide a range of services.&#x20;
+        Umbrella IT is a development service company that's headquartered in Taganrog, Russia. They also have locations in Dubai and Vancouver, Canada. Umbrella IT was founded in 2009 and provides services for web and mobile app development. Umbrella IT has more than 150 employees that provide a range of services.
 
         Clients
 
@@ -1016,7 +1005,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        Umbrella IT developed the second iteration of a popular social media networking app. While the new version hasn't launched, it's already received positive feedback. The client is confident about its success.&#x20;
+        Umbrella IT developed the second iteration of a popular social media networking app. While the new version hasn't launched, it's already received positive feedback. The client is confident about its success.
 
         > "They \[Umbrella IT] work at the highest level possible. If you know what you want, it will be built exactly per your specifications." – CEO, Social Networking App
     *   54
@@ -1040,8 +1029,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
         > “They’re eager to deliver good products, which paves the way for business success. From my perspective, the owner runs the company extremely well.” – Founder, Ed Tech Startup
     *   55
 
-        Indus Net Technologies Pvt. Ltd. is a digital service company based in Kolkata, India, and founded in 1997. Their team of more than 800 employees specialize in mobile app development, web development, and UX/UI design for primarily midmarket clients in the business services, education, and transportation industries.\
-
+        Indus Net Technologies Pvt. Ltd. is a digital service company based in Kolkata, India, and founded in 1997. Their team of more than 800 employees specialize in mobile app development, web development, and UX/UI design for primarily midmarket clients in the business services, education, and transportation industries.\\
 
         Clients
 
@@ -1055,10 +1043,9 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         Notable Project
 
-        Indus Net Technologies Pvt. Ltd. partnered with a software development company to rebuild a system for an insurance company. They took the client's requirements and rebuilt the system’s code base with a mix of agile methodology and the waterfall model. The client was happy with the MVP that was created and was impressed by their work’s quality and their productivity.&#x20;
+        Indus Net Technologies Pvt. Ltd. partnered with a software development company to rebuild a system for an insurance company. They took the client's requirements and rebuilt the system’s code base with a mix of agile methodology and the waterfall model. The client was happy with the MVP that was created and was impressed by their work’s quality and their productivity.
 
-        > “Indus Net Technologies demonstrates a strong work ethic and a high degree of loyalty to our company … They also have in-depth technical expertise that we find highly valuable, especially in their senior team.” – CTO, Software Development Company\
-        >
+        > “Indus Net Technologies demonstrates a strong work ethic and a high degree of loyalty to our company … They also have in-depth technical expertise that we find highly valuable, especially in their senior team.” – CTO, Software Development Company\\
     *   56
 
         Kalamuna is a web development and design agency founded in 2012. They have 15 employees based in their Oakland, Calif. office. The bulk of their services focus on full-service web development, from visual design to server-side operations. Kalamuna also offers custom software development and digital strategy consulting.
@@ -1145,13 +1132,7 @@ Kelly logo Product Implementation Analyst II -Remote -Direct Hire Kelly3.8 Rahwa
 
         > "The Price and Campaign engine has proven to additional upsale of old products, at the end of season sale, by over 4,5 M EUR and has a huge impact on Varner's long term margins." – Product Manager, Varner
 
-
-
-    &#x20;
-
 Blockchain Front-end developer - Remote PancakeSwap New York, NY•Remote $120,000 - $160,000 a year Identify and advocate for team-wide areas of improvement and best practices. Design, scope, and estimate complex frontend products/upgrades. Active 21 days ago
-
-
 
 new AI/ML Developer Advocate Run:AI New York, NY Apply with your Indeed Resume Build, support and inspire a community of ML engineers, developers and data scientists through proactive direct engagement, with a bias toward 'learning and… 6 days ago·More...
 
