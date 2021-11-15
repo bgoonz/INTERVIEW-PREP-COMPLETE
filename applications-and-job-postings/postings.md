@@ -1,4 +1,4 @@
-# Postings:
+# 📮 Postings:
 
 *   ![](https://res.cloudinary.com/indysigner/image/upload/v1629896403/joblogos/dephion.png)[JavaScript Developer](https://jobs.smashingmagazine.com/jobs/2021-08-25-javascript-developer-gelen/#main)
 

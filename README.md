@@ -1,6 +1,6 @@
 ---
 description: 'SELF_LINK:   https://bryan-guner.gitbook.io/job-search/'
-cover: .gitbook/assets/green-spruce (1).png
+cover: .gitbook/assets/green-spruce (1) (1).png
 coverY: 204.01476620180478
 ---
 
