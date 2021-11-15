@@ -8,8 +8,6 @@ coverY: 0
 
 {% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
 
-
-
 {% embed url="https://codesandbox.io/s/linkedin-di4t6" %}
 [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)
 {% endembed %}
@@ -17,8 +15,6 @@ coverY: 0
 {% content-ref url="./" %}
 [.](./)
 {% endcontent-ref %}
-
-
 
 {% embed url="https://replit.com/@bgoonz/javascript-beginners-tutorial#.replit" %}
 
@@ -30,17 +26,7 @@ hi
 
 hi
 
-
-
 ##
-
-
-
-
-
-
-
-
 
 ## 🏡 Home
 
@@ -58,7 +44,7 @@ hi
 
 {% embed url="https://codesandbox.io/s/badge-wf3yh" %}
 
-<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td><img src=".gitbook/assets/image (1).png" alt=""></td><td><img src=".gitbook/assets/image (5).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td><img src=".gitbook/assets/image (1) (1).png" alt=""></td><td><img src=".gitbook/assets/image (5) (1).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
 
 ### Social:
 
@@ -180,7 +166,7 @@ Calendar
 ### Applications & Job Postings
 
 * [👔 Postings:](applications-and-job-postings/postings.md)
-* [My Applications](applications-and-job-postings/my-applications.md)
+* [My Applications](applications-and-job-postings/my-applications/)
 * [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)

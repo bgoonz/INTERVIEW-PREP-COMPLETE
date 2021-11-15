@@ -30,6 +30,7 @@
 
 * [Cover Letter](cover-letter/page-10.md)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
+* [Old Engineering Cover Letter](cover-letter/old-engineering-cover-letter.md)
 
 ## Portfolio
 
@@ -43,7 +44,7 @@
 * [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 * [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 * [Job Board (Slack)](slack-and-lambda/job-board-slack.md)
 
@@ -63,7 +64,7 @@
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
 * [📈 Rubric](interview-prep/rubric.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
-* [👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
+* [👨💻 👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
@@ -73,6 +74,7 @@
 * [Page 3](interview-prep/page-3.md)
 * [FANG PREP (medium article)](interview-prep/fang-prep-medium-article.md)
 * [More Practice:](interview-prep/more-practice.md)
+* [Download-Practice](interview-prep/download-practice.md)
 
 ## Tutorials
 
@@ -86,8 +88,9 @@
 
 ## Applications & Job Postings
 
-* [Postings:](applications-and-job-postings/postings.md)
-* [My Applications](applications-and-job-postings/my-applications.md)
+* [📮 Postings:](applications-and-job-postings/postings.md)
+* [My Applications](applications-and-job-postings/my-applications/README.md)
+  * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
