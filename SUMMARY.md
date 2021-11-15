@@ -71,10 +71,9 @@
   * [DS\_&\_ALGO\_STUDY\_GUIDE](interview-prep/ds\_algo-practice/ds\_and\_algo\_study\_guide/README.md)
     * [Reousrces](interview-prep/ds\_algo-practice/ds\_and\_algo\_study\_guide/reousrces.md)
 * [Arrays](interview-prep/arrays.md)
-* [Page 3](interview-prep/page-3.md)
 * [FANG PREP (medium article)](interview-prep/fang-prep-medium-article.md)
 * [More Practice:](interview-prep/more-practice.md)
-* [Download-Practice](interview-prep/download-practice.md)
+* [Examples](interview-prep/examples.md)
 
 ## Tutorials
 
