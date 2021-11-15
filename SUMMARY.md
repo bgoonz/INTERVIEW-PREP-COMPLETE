@@ -23,7 +23,7 @@
 
 ## Applications & Job Postings
 
-* [📮 Postings:](applications-and-job-postings/postings/README.md)
+* [📮 Postings:](applications-and-job-postings/postings.md)
   * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
 * [My Applications](applications-and-job-postings/my-applications.md)
   * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
