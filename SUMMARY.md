@@ -26,6 +26,7 @@
 * [📮 Postings:](applications-and-job-postings/postings.md)
   * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
 * [My Applications](applications-and-job-postings/my-applications.md)
+  * [Application Info](applications-and-job-postings/my-applications/application-info.md)
   * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
