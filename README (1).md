@@ -18,13 +18,13 @@ coverY: 0
 
 {% embed url="https://replit.com/@bgoonz/javascript-beginners-tutorial#.replit" %}
 
-hi
+
 
 {% content-ref url="./" %}
 [.](./)
 {% endcontent-ref %}
 
-hi
+
 
 ##
 
@@ -166,7 +166,7 @@ Calendar
 ### Applications & Job Postings
 
 * [👔 Postings:](applications-and-job-postings/postings.md)
-* [My Applications](applications-and-job-postings/postings/my-applications/)
+* [My Applications](applications-and-job-postings/my-applications.md)
 * [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
