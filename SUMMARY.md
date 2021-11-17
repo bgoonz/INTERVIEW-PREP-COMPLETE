@@ -24,20 +24,19 @@
 
 * [📮 Postings:](applications-and-job-postings/postings.md)
   * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
-* [Amazon](applications-and-job-postings/amazon.md)
-* [My Applications](applications-and-job-postings/my-applications.md)
-  * [Application Info](applications-and-job-postings/my-applications/application-info.md)
-  * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
+  * [Amazon](applications-and-job-postings/postings/amazon.md)
+  * [My Applications](applications-and-job-postings/postings/my-applications/README.md)
+    * [Application Info](applications-and-job-postings/postings/my-applications/application-info.md)
+    * [In Progress](applications-and-job-postings/postings/my-applications/in-progress.md)
+  * [Jobs To Apply To:](applications-and-job-postings/postings/jobs-to-apply-to.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
     * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
   * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
+  * [Remote Positions](applications-and-job-postings/jobs-i-really-want/remote-positions.md)
 
 ## Job Postings
-
-* [Jobs To Apply To:](job-postings/jobs-to-apply-to.md)
-* [Remote Positions](job-postings/remote-positions.md)
 
 ## Cover Letter
 
