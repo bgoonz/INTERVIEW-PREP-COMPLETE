@@ -2,8 +2,7 @@
 
 * [Home](README.md)
 * [🏡 Home](<README (1).md>)
-* [Navigation](navigation.md)
-* [🗺 Navigation](navigation-1.md)
+* [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
 * [Skills](skills/README.md)
   * [My Stack](skills/my-stack.md)
@@ -89,10 +88,10 @@
     * [Reousrces](interview-prep/ds\_algo-practice/ds\_and\_algo\_study\_guide/reousrces.md)
 * [Arrays](interview-prep/arrays.md)
 * [FANG PREP (medium article)](interview-prep/fang-prep-medium-article.md)
-* [More Practice:](interview-prep/more-practice.md)
+* [⏱ More Practice:](interview-prep/more-practice.md)
 * [300 React Q & A's](interview-prep/300-react-q-and-as/README.md)
   * [💸 React Tips](interview-prep/300-react-q-and-as/react-tips.md)
-* [Examples](interview-prep/examples.md)
+* [🛕 Examples](interview-prep/examples.md)
 
 ## Tutorials
 
@@ -125,10 +124,7 @@
 
 ## Notes
 
-* [Notes](notes/notes/README.md)
-  * [Page 5](notes/notes/page-5.md)
-* [Page 6](notes/page-6/README.md)
-  * [The all-in-one workspace for your notes, tasks, wikis, and databases.](notes/page-6/the-all-in-one-workspace-for-your-notes-tasks-wikis-and-databases..md)
+* [Notes](notes/notes.md)
 
 ## 🖨 Interviewing
 

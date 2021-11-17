@@ -30,8 +30,8 @@ hi
 
 ## 🏡 Home
 
-{% content-ref url="navigation-1.md" %}
-[navigation-1.md](navigation-1.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
@@ -99,7 +99,7 @@ Calendar
 ## Table of contents
 
 * [🏡 Home](<README (1).md>)
-* [🗺 Navigation](navigation-1.md)
+* [🗺 Navigation](broken-reference)
 * [📥 Useful Downloads](useful-downloads.md)
 * [🛠 Skills](skills/)
   * [My Stack](skills/my-stack.md)
@@ -193,8 +193,8 @@ Calendar
 
 ### Notes
 
-* [📓 Notes](notes/notes/)
-  * [Page 5](notes/notes/page-5.md)
+* [📓 Notes](notes/notes.md)
+  * [Page 5](broken-reference)
 
 ### 🖨 Interviewing
 

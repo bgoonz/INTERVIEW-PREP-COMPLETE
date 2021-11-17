@@ -2,7 +2,7 @@
 description: Practice
 ---
 
-# Examples
+# 🛕 Examples
 
 {% embed url="https://replit.com/@bgoonz/ds-prac-job-search#index.js" %}
 
