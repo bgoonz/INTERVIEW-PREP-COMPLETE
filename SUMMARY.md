@@ -68,10 +68,13 @@
 ## 🖋 Interview Prep
 
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
+* [Page 1](interview-prep/page-1.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/README.md)
     * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
     * [🐍 Python](interview-prep/interview-questions./cheat-sheets/python.md)
+  * [React Interview](interview-prep/interview-questions./react-interview/README.md)
+    * [React Questions:](interview-prep/interview-questions./react-interview/react-questions.md)
   * [Front End Questions](interview-prep/interview-questions./front-end-questions.md)
 * [37-Essential-Js-Questions](interview-prep/37-essential-js-questions.md)
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
