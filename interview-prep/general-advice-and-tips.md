@@ -6,8 +6,6 @@ In today’s technology landscape, JavaScript has essentially become synonymous 
 
 Accordingly, full-stack developer resumes that reference at least some degree of JavaScript experience have essentially become universal in the software development community. This makes locating JavaScript web developers fairly easy, but makes sifting through them to find “the elite few” that much more of a challenge. Finding them requires a highly-effective recruiting process, as described in our post [_In Search of the Elite Few – Finding and Hiring the Best Developers in the Industry_](https://www.toptal.com/freelance/in-search-of-the-elite-few-finding-and-hiring-the-best-developers-in-the-industry). Such a process can then be augmented with questions – such as those presented herein – to identify those sparsely distributed candidates across the globe who are true JavaScript experts.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd2414b6-4c3c-4f48-b438-2e4add96a694/image-1581597900634-d0ac8101e00611e7a77e8aa913ca0545.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd2414b6-4c3c-4f48-b438-2e4add96a694/image-1581597900634-d0ac8101e00611e7a77e8aa913ca0545.png)
-
 #### Yeah, I know JavaScript…
 
 As with any technology, there’s knowing JavaScript development and then there’s _really_ knowing JavaScript. In our search for true masters of the language, we require an interview process that can accurately quantify a candidate’s position along the continuum of JavaScript expertise levels.
@@ -234,3 +232,25 @@ Though there is much more to be said on the topic, the short and most important 
 #### Wrap Up
 
 JavaScript is perhaps one of the most misunderstood and underestimated programming languages in existence today. The more one peels the JavaScript onion, the more one realizes what is possible. JavaScript is versatile enough to be used by front-end and back-end developers. Accordingly, finding true masters of the language for full-time or part-time roles in the United States or abroad is a challenge. We hope you find the questions presented in this post to be a useful foundation for “separating the wheat from the chaff” in your quest for the “elite few” among the best JavaScript developers to add to your development team.
+
+
+
+
+
+
+
+## Interview tips for all roles&#x20;
+
+\
+If advancing in the process, the next interview steps vary based on the role you're applying for. Be prepared to demonstrate how you meet the qualifications of the job by sharing specific examples from your past or ideas about how you would accomplish a specific task. Be sure to share how skills you have gained throughout your career will translate to the role for which you are interviewing. For some of our openings you may be asked to write code, share a creative portfolio, or provide examples of your work in other ways. You’ll meet with a few people—some potential teammates and some cross-functional colleagues—for up to an hour each. The hiring team gets a chance to get to know you—and you get a chance to get to know the team. Post-interview, your recruiter can help you understand the specific timeline of when you can expect to hear back regarding the hiring decision.​\
+\
+Our interview process is currently entirely virtual. For more specific guidance, you can read [How to prepare for a virtual interview](https://careers.microsoft.com/us/en/virtual-interview).
+
+### Before your interview
+
+Do your researchDon't stop at understanding the position you’re interviewing for. You should understand what's happening in the tech industry, what Microsoft is doing well, and how we can make ourselves stand out from the competition. Make sure to prepare questions to ask during your interview. This is also a chance for you to make sure that the opportunity is what you are looking for.Know our core competencies Accelerate our cultureEnvision your futureIf needed, request accommodations. If you need any accommodations or are concerned about Microsoft Teams or other third-party virtual platform not being fully accessible for you, please [submit an accessibility request](https://careers.microsoft.com/us/en/accommodationrequest). We will reach out to discuss how to best support you.​
+
+### During your interview
+
+Be yourselfDemonstrate your thinking and curiosity We want to see not only what you know, but also how you think. Be prepared to share your thought process and explain the rationale behind your decisions. When asked to solve a problem or develop code, ask clarifying questions, state your assumptions, and be prepared to share your opinions or explain your choices.\
+Throughout the assessment process, we aspire to assess fundamental knowledge, capability, and learning potential. We don’t expect you to know everything. When you get stuck or don’t have experience with the subject matter, we encourage you to ask clarifying questions that show your integrity, collaboration, and ability to be resourceful.Be specific&#x20;
