@@ -1,12 +1,30 @@
 # Skills
 
-i
-
 {% content-ref url="../" %}
 [..](../)
 {% endcontent-ref %}
 
-hi
+
+
+
+
+| Product Development    | Electrical            | Confluence | Design | Excel | Git |
+| ---------------------- | --------------------- | ---------- | ------ | ----- | --- |
+| Engineer               | Tensile Testing       | Expressjs  | Heroku | Linux | Aws |
+| Development            | Electrical Components | Sequelize  | Docker | Css3  | Ios |
+| Team                   | As                    | Databases  | Trello | Scss  | S3  |
+| File Server            | Troubleshooting       | Mongodb    | Html5  | Bash  |     |
+| System Integration     | Hardware              | Digital    | Shell  | Ajax  |     |
+| Product Demonstrations | Operating Systems     | Windows    | React  | Jira  |     |
+| Software               | Google Analytics      | Nodejs     | Redux  | Sql   |     |
+| Trainings              | Javascript            | Matlab     | Mocha  | C++   |     |
+| Documentation          | Postgresql            | Python     | Figma  | Ant   | c   |
+
+
+
+
+
+
 
 
 
