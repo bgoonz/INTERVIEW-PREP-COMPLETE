@@ -5,8 +5,8 @@
 * Soundhound❌
 * Shazam❌
 * [Pro Too](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25199\&siteid=5286\&PageType=JobDetails\&jobid=1542200#Applications)ls✔️ &#x20;
-* Apple
-* _Amazon_
+* Apple✔️ &#x20;
+* _Amazon_✔️ &#x20;
 * _Microsoft_
 * _Adobe_
 * _Oracle_
