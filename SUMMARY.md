@@ -68,8 +68,8 @@
 ## 🖋 Interview Prep
 
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
-* [Page 1](interview-prep/page-1/README.md)
-  * [Graph (py)](interview-prep/page-1/graph-py.md)
+* [Graphs](interview-prep/graphs/README.md)
+  * [Graph (py)](interview-prep/graphs/graph-py.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/README.md)
     * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
@@ -90,6 +90,7 @@
 * [Arrays](interview-prep/arrays.md)
 * [FANG PREP (medium article)](interview-prep/fang-prep-medium-article.md)
 * [More Practice:](interview-prep/more-practice.md)
+* [300 React Q & A's](interview-prep/300-react-q-and-as.md)
 * [Examples](interview-prep/examples.md)
 
 ## Tutorials
