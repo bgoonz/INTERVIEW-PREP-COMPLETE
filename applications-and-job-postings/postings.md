@@ -11,7 +11,7 @@
 * [Pro Too](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25199\&siteid=5286\&PageType=JobDetails\&jobid=1542200#Applications)ls✔️ &#x20;
 * Apple✔️ &#x20;
 * _Amazon_✔️ &#x20;
-* _Microsoft_
+* _Microsoft_✔️ &#x20;
 * _Adobe_
 * _Oracle_
 * _Google_
