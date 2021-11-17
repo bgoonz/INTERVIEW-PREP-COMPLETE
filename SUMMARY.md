@@ -68,7 +68,8 @@
 ## 🖋 Interview Prep
 
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
-* [Page 1](interview-prep/page-1.md)
+* [Page 1](interview-prep/page-1/README.md)
+  * [Graph (py)](interview-prep/page-1/graph-py.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/README.md)
     * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
@@ -118,18 +119,21 @@
 ## MISC
 
 * [Articles To Read](misc/articles-to-read.md)
+* [Job Search Images](misc/job-search-images.md)
 
 ## Notes
 
 * [Notes](notes/notes/README.md)
   * [Page 5](notes/notes/page-5.md)
+* [Page 6](notes/page-6/README.md)
+  * [The all-in-one workspace for your notes, tasks, wikis, and databases.](notes/page-6/the-all-in-one-workspace-for-your-notes-tasks-wikis-and-databases..md)
 
 ## 🖨 Interviewing
 
 * [General](interviewing/general.md)
 * [Inspiration](interviewing/inspiration.md)
 * [🖥 General](interviewing/js.md)
-  * [Page 2](interviewing/js/page-2.md)
+  * [Interview Navigation](interviewing/js/page-2.md)
   * [Solutions For Beginners](interviewing/js/solutions-for-beginners.md)
   * [Adding CSS To Your HTML](interviewing/js/adding-css-to-your-html.md)
   * [Most Common Javascript Errors](interviewing/js/most-common-javascript-errors.md)

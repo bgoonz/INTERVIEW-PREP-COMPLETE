@@ -36,7 +36,7 @@ hi
 
 ### [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
 
-![](.gitbook/assets/github.png)
+![](<.gitbook/assets/github (4).png>)
 
 ###
 
@@ -166,7 +166,7 @@ Calendar
 ### Applications & Job Postings
 
 * [👔 Postings:](applications-and-job-postings/postings.md)
-* [My Applications](applications-and-job-postings/my-applications/)
+* [My Applications](applications-and-job-postings/my-applications.md)
 * [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
