@@ -66,7 +66,9 @@
 
 ## 🖋 Interview Prep
 
-* [Manage Microsoft Profile](interview-prep/manage-microsoft-profile.md)
+* [Resources](interview-prep/resources.md)
+* [Overview](interview-prep/overview/README.md)
+  * [General Web Dev Questions](interview-prep/overview/general-web-dev-questions.md)
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
 * [Graphs](interview-prep/page-1/README.md)
   * [Graph (py)](interview-prep/page-1/graph-py.md)
