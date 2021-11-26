@@ -54,7 +54,7 @@
 * [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 * [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 * [Job Board (Slack)](slack-and-lambda/job-board-slack.md)
 
@@ -83,7 +83,7 @@
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
 * [📈 Rubric](interview-prep/rubric.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
-* [👨💻 👨💻 👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
+* [👨💻 👨💻 👨💻 👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
