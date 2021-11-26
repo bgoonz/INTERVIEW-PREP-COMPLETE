@@ -66,7 +66,7 @@
 
 ## 🖋 Interview Prep
 
-* [Resources](interview-prep/resources/README.md)
+* [Resources](interview-prep/resources.md)
   * [FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS](interview-prep/resources/full-stack-developer-interview-questions-and-answers.md)
   * [List of List](interview-prep/resources/list-of-list.md)
 * [Overview](interview-prep/overview/README.md)
