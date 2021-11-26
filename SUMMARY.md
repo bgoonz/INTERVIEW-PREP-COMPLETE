@@ -66,7 +66,9 @@
 
 ## 🖋 Interview Prep
 
-* [Resources](interview-prep/resources.md)
+* [Resources](interview-prep/resources/README.md)
+  * [FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS](interview-prep/resources/full-stack-developer-interview-questions-and-answers.md)
+  * [List of List](interview-prep/resources/list-of-list.md)
 * [Overview](interview-prep/overview/README.md)
   * [General Web Dev Questions](interview-prep/overview/general-web-dev-questions.md)
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
