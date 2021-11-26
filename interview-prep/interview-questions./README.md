@@ -2,6 +2,8 @@
 
 ***
 
+{% embed url="https://replit.com/@bgoonz/interview-2#index.js" %}
+
 #### Q1. Change your browser width to a mobile (500px) setting. What were 2 things you did in your code to make it responsive to the change in width.
 
 > Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width).A media query is composed of an optional media type and any number of media feature expressions. Multiple queries can be combined in various ways by using logical operators. Media queries are case-insensitive.
@@ -34,7 +36,6 @@ As a general rule, relative units can be used as the default for responsive site
         width: 60%;
     }
 }
-
 ```
 
 > 1.)

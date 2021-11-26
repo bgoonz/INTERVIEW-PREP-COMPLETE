@@ -1,7 +1,5 @@
 # Overview
 
-
-
 #### Make your name **BIG.** <a href="make-your-name-big" id="make-your-name-big"></a>
 
 Your name has to stand out from everything else, because you want it to be remembered. Making it the biggest thing on the page is the easiest thing you can do to make that possible. I've seen soooo many resumes where the name is at the top, but it's just bolded and centered and they expect that to be enough. It's not.
@@ -168,8 +166,7 @@ When you're talking to companies about specific things you've done, make sure th
 * **When?** - Did you do this recently or are you still living off of when you peaked in 10th grade?
 * **Who?** - Did you work on this with anyone? Who did what? Who is this for?
 
-\
-
+\\
 
 ## _MY INTERESTS / RESOURCES_: <a href="_my-interests-resources_" id="_my-interests-resources_"></a>
 
@@ -229,7 +226,7 @@ When you're talking to companies about specific things you've done, make sure th
 
 ### Docker <a href="docker_376" id="docker_376"></a>
 
-**Deploy Stacks to your Swarm: :whale: :heart:**
+**Deploy Stacks to your Swarm: **:whale:** **:heart:
 
 Logging:
 
@@ -806,6 +803,3 @@ _Please read _[_contribution guidelines_](file:///C:/Users/bryan/Downloads/Job-S
 * [Finding work wiki](https://wiki.nikitavoloboev.xyz/work/finding-work)
 * [Remote work wiki](https://wiki.nikitavoloboev.xyz/work/remote-work)
 * [Search the last 'Who is hiring?' thread](https://hnjobs.emilburzo.com)
-
-
-
