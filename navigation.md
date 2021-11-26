@@ -5,6 +5,9 @@ coverY: 0
 
 # 🗺 Navigation
 
+{% content-ref url="navigation.md" %}
+[navigation.md](navigation.md)
+{% endcontent-ref %}
 
 
 {% embed url="https://calendar.google.com/calendar/embed?bgcolor=%23ffffff&color=%23039BE5&color=%238E24AA%22&ctz=America%2FNew_York&height=800&mode=AGENDA&src=YnJ5YW4uZ3VuZXJAZ21haWwuY29t&src=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&wkst=1" %}
