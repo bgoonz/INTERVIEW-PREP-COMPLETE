@@ -6,6 +6,8 @@ coverY: 0
 
 # 🏡 Home
 
+{% embed url="https://bryan-guner.gitbook.io/job-search" %}
+
 {% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
 
 {% embed url="https://codesandbox.io/s/linkedin-di4t6" %}
@@ -18,20 +20,16 @@ coverY: 0
 
 {% embed url="https://replit.com/@bgoonz/javascript-beginners-tutorial#.replit" %}
 
-
-
 {% content-ref url="./" %}
 [.](./)
 {% endcontent-ref %}
-
-
 
 ##
 
 ## 🏡 Home
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 ### [https://bryan-guner.gitbook.io/job-search/](https://bryan-guner.gitbook.io/job-search/)
@@ -99,7 +97,7 @@ Calendar
 ## Table of contents
 
 * [🏡 Home](<README (1).md>)
-* [🗺 Navigation](broken-reference)
+* [🗺 Navigation](broken-reference/)
 * [📥 Useful Downloads](useful-downloads.md)
 * [🛠 Skills](skills/)
   * [My Stack](skills/my-stack.md)
@@ -194,7 +192,7 @@ Calendar
 ### Notes
 
 * [📓 Notes](notes/notes.md)
-  * [Page 5](broken-reference)
+  * [Page 5](broken-reference/)
 
 ### 🖨 Interviewing
 
