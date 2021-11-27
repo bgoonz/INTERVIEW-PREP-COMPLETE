@@ -9,7 +9,6 @@ coverY: 0
 [navigation.md](navigation.md)
 {% endcontent-ref %}
 
-
 {% embed url="https://calendar.google.com/calendar/embed?bgcolor=%23ffffff&color=%23039BE5&color=%238E24AA%22&ctz=America%2FNew_York&height=800&mode=AGENDA&src=YnJ5YW4uZ3VuZXJAZ21haWwuY29t&src=bGFtYmRhc2Nob29sLmNvbV9icjhmc3RwZmM4Zm1kcjJ0NDhkOXFoODU5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&wkst=1" %}
 
 {% content-ref url="skills/" %}
@@ -32,8 +31,8 @@ coverY: 0
 [list-of-boards.md](job-boards/job-boards/list-of-boards.md)
 {% endcontent-ref %}
 
-{% content-ref url="cover-letter/page-10.md" %}
-[page-10.md](cover-letter/page-10.md)
+{% content-ref url="cover-letter/page-10/" %}
+[page-10](cover-letter/page-10/)
 {% endcontent-ref %}
 
 {% content-ref url="slack-and-lambda/pinned-messages.md" %}

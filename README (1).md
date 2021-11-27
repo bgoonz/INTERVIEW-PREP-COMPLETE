@@ -116,7 +116,7 @@ Calendar
 
 ### Cover Letter
 
-* [📒 Cover Letter](cover-letter/page-10.md)
+* [📒 Cover Letter](cover-letter/page-10/)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 
 ### Portfolio

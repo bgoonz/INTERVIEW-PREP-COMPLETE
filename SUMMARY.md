@@ -39,7 +39,9 @@
 
 ## Cover Letter
 
-* [Cover Letter](cover-letter/page-10.md)
+* [Cover Letter](cover-letter/page-10/README.md)
+  * [CV-Guidance](cover-letter/page-10/cv-guidance.md)
+* [Example](cover-letter/example.md)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 * [Old Engineering Cover Letter](cover-letter/old-engineering-cover-letter.md)
 
@@ -74,6 +76,7 @@
 * [Graphs](interview-prep/page-1/README.md)
   * [Graph (py)](interview-prep/page-1/graph-py.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions./README.md)
+  * [Behavioral](interview-prep/interview-questions./behavioral.md)
   * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/README.md)
     * [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
     * [🐍 Python](interview-prep/interview-questions./cheat-sheets/python.md)
