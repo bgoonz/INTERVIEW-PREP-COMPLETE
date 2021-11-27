@@ -12,14 +12,16 @@ coverY: 204.01476620180478
 [navigation.md](navigation.md)
 {% endcontent-ref %}
 
+{% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
+
 {% content-ref url="resources/" %}
 [resources](resources/)
 {% endcontent-ref %}
 
 {% embed url="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE" %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 {% embed url="https://webdevhub42.notion.site/Getting-Started-in-Job-Search-d4a2143e5bf546969b0762ca745e98ba" %}
@@ -29,4 +31,3 @@ coverY: 204.01476620180478
 {% embed url="https://gist.github.com/bgoonz/8d9eb70b7df7eaca93b8b3f2920590c2" %}
 
 {% embed url="https://dashboards.lambdaschool.com/profile" %}
-
