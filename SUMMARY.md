@@ -75,6 +75,7 @@
 * [Overview](interview-prep/overview/README.md)
   * [General Web Dev Questions](interview-prep/overview/general-web-dev-questions.md)
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
+* [Front End Interview](interview-prep/front-end-interview.md)
 * [Web Dev Interview Questions](interview-prep/web-dev-interview-questions.md)
 * [Graphs](interview-prep/page-1/README.md)
   * [Graph (py)](interview-prep/page-1/graph-py.md)
