@@ -108,6 +108,7 @@
   * [Anagrams & Big O](interview-prep/examples/anagrams-and-big-o/README.md)
     * [Python Performance](interview-prep/examples/anagrams-and-big-o/python-performance.md)
     * [Strongly Connected Graph](interview-prep/examples/anagrams-and-big-o/strongly-connected-graph.md)
+  * [Gists](interview-prep/examples/gists.md)
 
 ## Tutorials
 
