@@ -4,9 +4,9 @@
 * [🏡 Home](<README (1).md>)
 * [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
-* [Skills](skills/README.md)
-  * [My Stack](skills/my-stack.md)
-* [Resources](resources/README.md)
+* [🛠 Skills](skills/README.md)
+  * [🍢 My Stack](skills/my-stack.md)
+* [📖 Resources](resources/README.md)
   * [Job Search Advice](resources/job-search-advice.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
@@ -57,13 +57,14 @@
 * [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 * [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 * [Job Board (Slack)](slack-and-lambda/job-board-slack.md)
 
 ## Aux-Resources
 
 * [Youtube](aux-resources/youtube.md)
+* [GENERAL ADVICE](aux-resources/general-advice.md)
 
 ## 🖋 Interview Prep
 
@@ -87,7 +88,7 @@
 * [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
 * [📈 Rubric](interview-prep/rubric.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
-* [👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
+* [👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
