@@ -1,3 +1,9 @@
+---
+cover: >-
+  ../.gitbook/assets/screencapture-bgoonz-blog-netlify-app-docs-career-2021-11-27-14_58_11.png
+coverY: 0
+---
+
 # 📖 Resources
 
 {% embed url="https://discord.com/invite/9K84yNM" %}
