@@ -41,6 +41,7 @@
 
 * [Cover Letter](cover-letter/page-10/README.md)
   * [CV-Guidance](cover-letter/page-10/cv-guidance.md)
+* [More Advice](cover-letter/more-advice.md)
 * [Example](cover-letter/example.md)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 * [Old Engineering Cover Letter](cover-letter/old-engineering-cover-letter.md)
@@ -57,7 +58,7 @@
 * [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 People](slack-and-lambda/people.md)
 * [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 * [Job Board (Slack)](slack-and-lambda/job-board-slack.md)
 
@@ -90,7 +91,7 @@
 * [📈 Rubric](interview-prep/rubric.md)
 * [Types Of Data Structures](interview-prep/types-of-data-structures.md)
 * [Page 1](interview-prep/page-1-1.md)
-* [👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
+* [👨💻 Technical Interview Practice](interview-prep/technical-interview-practice.md)
 * [🥅 Hash Tables](interview-prep/hash-tables.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
