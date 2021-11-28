@@ -1,6 +1,6 @@
 ---
 description: https://bryan-guner.gitbook.io/job-search/
-cover: .gitbook/assets/background (1).jpg
+cover: .gitbook/assets/skills (3).png
 coverY: 0
 ---
 
@@ -10,7 +10,17 @@ coverY: 0
 
 {% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
 
+{% tabs %}
+{% tab title="First Tab" %}
 
+
+{% embed url="https://gist.github.com/bgoonz/8d9eb70b7df7eaca93b8b3f2920590c2" %}
+{% endtab %}
+
+{% tab title="My info" %}
+{% embed url="https://gist.github.com/bgoonz/0c697d829c4ef6dee560549a7eb05f1f" %}
+{% endtab %}
+{% endtabs %}
 
 
 
