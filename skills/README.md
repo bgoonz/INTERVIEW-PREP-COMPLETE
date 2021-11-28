@@ -1,12 +1,8 @@
-# Skills
+# 🛠 Skills
 
 {% content-ref url="../" %}
 [..](../)
 {% endcontent-ref %}
-
-
-
-
 
 | Product Development    | Electrical            | Confluence | Design | Excel | Git |
 | ---------------------- | --------------------- | ---------- | ------ | ----- | --- |
@@ -19,14 +15,6 @@
 | Software               | Google Analytics      | Nodejs     | Redux  | Sql   |     |
 | Trainings              | Javascript            | Matlab     | Mocha  | C++   |     |
 | Documentation          | Postgresql            | Python     | Figma  | Ant   | c   |
-
-
-
-
-
-
-
-
 
 #### Languages and Tools:
 

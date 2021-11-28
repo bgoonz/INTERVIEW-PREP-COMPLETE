@@ -10,6 +10,22 @@ coverY: 0
 
 {% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
 
+
+
+
+
+
+
+
+
+
+
+* \------------------------------------------------------------------------------------------------
+
+![](<.gitbook/assets/devider (1).png>)
+
+* \------------------------------------------------------------------------------------------------
+
 {% embed url="https://codesandbox.io/s/linkedin-di4t6" %}
 [https://www.linkedin.com/in/bryan-guner-046199128/](https://www.linkedin.com/in/bryan-guner-046199128/)
 {% endembed %}
