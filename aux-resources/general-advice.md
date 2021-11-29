@@ -38,133 +38,133 @@ Got it all down pat? Good! In that case, you should be all set to succeed. Plus,
 
 
 
-![](../.gitbook/assets/devider.png)
-
-
-
-### 1. how to find online job postings
-
-For all too many job seekers, trying to navigate the online job sites for a job is like trying to find a needle in a haystack. This is especially true when searching using simple, non-specific keywords like “[engineer](https://www.randstadusa.com/jobs/search/randstad-engineering/)” or “[software developer](https://www.randstadusa.com/jobs/search/q-software-developer/).” The result is a return of thousands of results, many of which are completely irrelevant to the job opportunities you are seeking. There is a better way!
-
-Using job boards effectively goes beyond exhaustive searches. You should now be viewing job boards as a primary networking resource to find and be found. Knowing how to successfully search and navigate job boards will not only maximize your time, but enhance your results. Start by following some basic best practices for your job search efforts, and then utilize the advanced job search technique used by recruiters.
-
-### 2. aggregate — don’t aggravate!
-
-One of the easiest ways to start your online search is to use a job aggregator. These websites will scan through various job boards — like employer sites, small industry boards and newspaper classifieds — and will return results based on your search criteria. An aggregator can help you save time during the job search and may direct you to a position you wouldn’t have found using a traditional job board.
-
-Another benefit of using an aggregator (and some job boards)? The ability to create saved search alerts, which will send appropriate jobs directly to your email inbox. Randstad offers a similar feature: You can sign up for [job alerts](https://www.randstadusa.com/join-randstad/) and we’ll email you when a position is posted that matches your requirements. Try it! You might be surprised by the effectiveness of this approach.
-
-### 3. using advanced search techniques
-
-It doesn’t matter if you're using an aggregator or a traditional job board. To conduct more advanced searches, understanding Boolean logic is your secret weapon. If you haven’t heard of "Boolean" before, don’t fret. Its name may sound complicated or scary, but it's quite easy to master. Boolean logic has been used for decades by database administrators because it's an information retrieval tool that allows several search words and phrases to be combined using operators or commands.
-
-From an execution standpoint, there are probably five Boolean operators you should at least be aware of when navigating job search sites.
-
-“or”
-
-Using this operator allows you to combine keywords so that a page or document is retrieved if it contains any or all of the keywords. For example, “nurse or pediatric” will find all instances in which the words “nurse” or “pediatric” appear.
-
-“and”
-
-“And” can be used to combine terms so that information is retrieved only if all those terms occur in the same place. Searching for “software and engineer” will bring up results where both keywords occur.
-
-“not”
-
-This operator will prevent any results in which specified terms occur together. This is helpful when a specific keyword may have many meanings. For example, “engineer not mechanical” will find instances in which “engineer” occurs but “mechanical” doesn’t. However, it's important to note that this operator is not recognized by Google. If you’re using Google to job search, use the minus sign (-) in place of the “not” operator.
-
-“near”
-
-This is particularly helpful if you want to search for words which appear near each other. When you use this operator, the search will only find instances where your keywords appear between one and 20 spaces of each other.
-
-“ ”
-
-Quotation marks allow you to search for words or a phrase exactly as you type it. For example, “financial analyst” will only find results containing those two words in that exact order.
-
-Finally, while there are a few [other Boolean operators](https://www.lexalytics.com/support/tuning/boolean-query-syntax) that can help you narrow your searches even further in future, mastering these basics will dramatically improve the accuracy and success of your searches and avoid further frustration.
-
-### 4. find and be found
-
-Job seekers aren’t the only ones using job boards. Many recruiters frequent resume databases to search for available candidates — even more so now that networking events, conferences and job fairs are prohibited. By posting your resume online, a hiring manager could find you and invite you to apply for a job you didn’t even know existed.
-
-If you choose to post [your resume](https://www.randstadusa.com/jobs/career-resources/resumes/), consider the following:
-
-* Use a dedicated email address for your job search.
-* Focus on niche job boards for your location, industry or position type.
-* Use a Microsoft Word version of your document named with your target job title(s).
-* Refresh your resume weekly so that it remains at the top of search results.
-
-If you really want to make sure you're posting a resume that has all the right components, then check out our complimentary [resume builder](https://www.randstadusa.com/resume-builder/) which can put together a polished document for you that checks all the right boxes.
-
-#### key takeaways
-
-Job boards may be the only way to find work for a while, so it's a good idea to get comfortable using them. Try experimenting with various search strings, following the tips we've outlined, to see which work best for you. Once you have identified the appropriate search strings, you can also set job search alerts and tweak your search parameters so you can receive emails when new jobs are posted that meet your criteria. Finally, if you find a position that interests you, be sure to review our tips and [best practices for submitting applications](https://www.randstadusa.com/workforce360/jobs-the-economy/how-to-stand-out-in-the-sea-of-online-applications/355/) before you click "submit."&#x20;
-
-Find out the moment opportunities become available by signing up for Randstad's [job alerts](https://www.randstadusa.com/join-randstad/). Just tell us the kind of position you want, and we'll email you when we find it.
-
-### 1. how to find online job postings
-
-For all too many job seekers, trying to navigate the online job sites for a job is like trying to find a needle in a haystack. This is especially true when searching using simple, non-specific keywords like “[engineer](https://www.randstadusa.com/jobs/search/randstad-engineering/)” or “[software developer](https://www.randstadusa.com/jobs/search/q-software-developer/).” The result is a return of thousands of results, many of which are completely irrelevant to the job opportunities you are seeking. There is a better way!
-
-Using job boards effectively goes beyond exhaustive searches. You should now be viewing job boards as a primary networking resource to find and be found. Knowing how to successfully search and navigate job boards will not only maximize your time, but enhance your results. Start by following some basic best practices for your job search efforts, and then utilize the advanced job search technique used by recruiters.
-
-### 2. aggregate — don’t aggravate!
-
-One of the easiest ways to start your online search is to use a job aggregator. These websites will scan through various job boards — like employer sites, small industry boards and newspaper classifieds — and will return results based on your search criteria. An aggregator can help you save time during the job search and may direct you to a position you wouldn’t have found using a traditional job board.
-
-Another benefit of using an aggregator (and some job boards)? The ability to create saved search alerts, which will send appropriate jobs directly to your email inbox. Randstad offers a similar feature: You can sign up for [job alerts](https://www.randstadusa.com/join-randstad/) and we’ll email you when a position is posted that matches your requirements. Try it! You might be surprised by the effectiveness of this approach.
-
-### 3. using advanced search techniques
-
-It doesn’t matter if you're using an aggregator or a traditional job board. To conduct more advanced searches, understanding Boolean logic is your secret weapon. If you haven’t heard of "Boolean" before, don’t fret. Its name may sound complicated or scary, but it's quite easy to master. Boolean logic has been used for decades by database administrators because it's an information retrieval tool that allows several search words and phrases to be combined using operators or commands.
-
-From an execution standpoint, there are probably five Boolean operators you should at least be aware of when navigating job search sites.
-
-“or”
-
-Using this operator allows you to combine keywords so that a page or document is retrieved if it contains any or all of the keywords. For example, “nurse or pediatric” will find all instances in which the words “nurse” or “pediatric” appear.
-
-“and”
-
-“And” can be used to combine terms so that information is retrieved only if all those terms occur in the same place. Searching for “software and engineer” will bring up results where both keywords occur.
-
-“not”
-
-This operator will prevent any results in which specified terms occur together. This is helpful when a specific keyword may have many meanings. For example, “engineer not mechanical” will find instances in which “engineer” occurs but “mechanical” doesn’t. However, it's important to note that this operator is not recognized by Google. If you’re using Google to job search, use the minus sign (-) in place of the “not” operator.
-
-“near”
-
-This is particularly helpful if you want to search for words which appear near each other. When you use this operator, the search will only find instances where your keywords appear between one and 20 spaces of each other.
-
-“ ”
-
-Quotation marks allow you to search for words or a phrase exactly as you type it. For example, “financial analyst” will only find results containing those two words in that exact order.
-
-Finally, while there are a few [other Boolean operators](https://www.lexalytics.com/support/tuning/boolean-query-syntax) that can help you narrow your searches even further in future, mastering these basics will dramatically improve the accuracy and success of your searches and avoid further frustration.
-
-### 4. find and be found
-
-Job seekers aren’t the only ones using job boards. Many recruiters frequent resume databases to search for available candidates — even more so now that networking events, conferences and job fairs are prohibited. By posting your resume online, a hiring manager could find you and invite you to apply for a job you didn’t even know existed.
-
-If you choose to post [your resume](https://www.randstadusa.com/jobs/career-resources/resumes/), consider the following:
-
-* Use a dedicated email address for your job search.
-* Focus on niche job boards for your location, industry or position type.
-* Use a Microsoft Word version of your document named with your target job title(s).
-* Refresh your resume weekly so that it remains at the top of search results.
-
-If you really want to make sure you're posting a resume that has all the right components, then check out our complimentary [resume builder](https://www.randstadusa.com/resume-builder/) which can put together a polished document for you that checks all the right boxes.
-
-#### key takeaways
-
-Job boards may be the only way to find work for a while, so it's a good idea to get comfortable using them. Try experimenting with various search strings, following the tips we've outlined, to see which work best for you. Once you have identified the appropriate search strings, you can also set job search alerts and tweak your search parameters so you can receive emails when new jobs are posted that meet your criteria. Finally, if you find a position that interests you, be sure to review our tips and [best practices for submitting applications](https://www.randstadusa.com/workforce360/jobs-the-economy/how-to-stand-out-in-the-sea-of-online-applications/355/) before you click "submit."&#x20;
-
-Find out the moment opportunities become available by signing up for Randstad's [job alerts](https://www.randstadusa.com/join-randstad/). Just tell us the kind of position you want, and we'll email you when we find it.
-
-
-
-
-
 ![](<../.gitbook/assets/devider (1).png>)
+
+
+
+### 1. how to find online job postings
+
+For all too many job seekers, trying to navigate the online job sites for a job is like trying to find a needle in a haystack. This is especially true when searching using simple, non-specific keywords like “[engineer](https://www.randstadusa.com/jobs/search/randstad-engineering/)” or “[software developer](https://www.randstadusa.com/jobs/search/q-software-developer/).” The result is a return of thousands of results, many of which are completely irrelevant to the job opportunities you are seeking. There is a better way!
+
+Using job boards effectively goes beyond exhaustive searches. You should now be viewing job boards as a primary networking resource to find and be found. Knowing how to successfully search and navigate job boards will not only maximize your time, but enhance your results. Start by following some basic best practices for your job search efforts, and then utilize the advanced job search technique used by recruiters.
+
+### 2. aggregate — don’t aggravate!
+
+One of the easiest ways to start your online search is to use a job aggregator. These websites will scan through various job boards — like employer sites, small industry boards and newspaper classifieds — and will return results based on your search criteria. An aggregator can help you save time during the job search and may direct you to a position you wouldn’t have found using a traditional job board.
+
+Another benefit of using an aggregator (and some job boards)? The ability to create saved search alerts, which will send appropriate jobs directly to your email inbox. Randstad offers a similar feature: You can sign up for [job alerts](https://www.randstadusa.com/join-randstad/) and we’ll email you when a position is posted that matches your requirements. Try it! You might be surprised by the effectiveness of this approach.
+
+### 3. using advanced search techniques
+
+It doesn’t matter if you're using an aggregator or a traditional job board. To conduct more advanced searches, understanding Boolean logic is your secret weapon. If you haven’t heard of "Boolean" before, don’t fret. Its name may sound complicated or scary, but it's quite easy to master. Boolean logic has been used for decades by database administrators because it's an information retrieval tool that allows several search words and phrases to be combined using operators or commands.
+
+From an execution standpoint, there are probably five Boolean operators you should at least be aware of when navigating job search sites.
+
+“or”
+
+Using this operator allows you to combine keywords so that a page or document is retrieved if it contains any or all of the keywords. For example, “nurse or pediatric” will find all instances in which the words “nurse” or “pediatric” appear.
+
+“and”
+
+“And” can be used to combine terms so that information is retrieved only if all those terms occur in the same place. Searching for “software and engineer” will bring up results where both keywords occur.
+
+“not”
+
+This operator will prevent any results in which specified terms occur together. This is helpful when a specific keyword may have many meanings. For example, “engineer not mechanical” will find instances in which “engineer” occurs but “mechanical” doesn’t. However, it's important to note that this operator is not recognized by Google. If you’re using Google to job search, use the minus sign (-) in place of the “not” operator.
+
+“near”
+
+This is particularly helpful if you want to search for words which appear near each other. When you use this operator, the search will only find instances where your keywords appear between one and 20 spaces of each other.
+
+“ ”
+
+Quotation marks allow you to search for words or a phrase exactly as you type it. For example, “financial analyst” will only find results containing those two words in that exact order.
+
+Finally, while there are a few [other Boolean operators](https://www.lexalytics.com/support/tuning/boolean-query-syntax) that can help you narrow your searches even further in future, mastering these basics will dramatically improve the accuracy and success of your searches and avoid further frustration.
+
+### 4. find and be found
+
+Job seekers aren’t the only ones using job boards. Many recruiters frequent resume databases to search for available candidates — even more so now that networking events, conferences and job fairs are prohibited. By posting your resume online, a hiring manager could find you and invite you to apply for a job you didn’t even know existed.
+
+If you choose to post [your resume](https://www.randstadusa.com/jobs/career-resources/resumes/), consider the following:
+
+* Use a dedicated email address for your job search.
+* Focus on niche job boards for your location, industry or position type.
+* Use a Microsoft Word version of your document named with your target job title(s).
+* Refresh your resume weekly so that it remains at the top of search results.
+
+If you really want to make sure you're posting a resume that has all the right components, then check out our complimentary [resume builder](https://www.randstadusa.com/resume-builder/) which can put together a polished document for you that checks all the right boxes.
+
+#### key takeaways
+
+Job boards may be the only way to find work for a while, so it's a good idea to get comfortable using them. Try experimenting with various search strings, following the tips we've outlined, to see which work best for you. Once you have identified the appropriate search strings, you can also set job search alerts and tweak your search parameters so you can receive emails when new jobs are posted that meet your criteria. Finally, if you find a position that interests you, be sure to review our tips and [best practices for submitting applications](https://www.randstadusa.com/workforce360/jobs-the-economy/how-to-stand-out-in-the-sea-of-online-applications/355/) before you click "submit."&#x20;
+
+Find out the moment opportunities become available by signing up for Randstad's [job alerts](https://www.randstadusa.com/join-randstad/). Just tell us the kind of position you want, and we'll email you when we find it.
+
+### 1. how to find online job postings
+
+For all too many job seekers, trying to navigate the online job sites for a job is like trying to find a needle in a haystack. This is especially true when searching using simple, non-specific keywords like “[engineer](https://www.randstadusa.com/jobs/search/randstad-engineering/)” or “[software developer](https://www.randstadusa.com/jobs/search/q-software-developer/).” The result is a return of thousands of results, many of which are completely irrelevant to the job opportunities you are seeking. There is a better way!
+
+Using job boards effectively goes beyond exhaustive searches. You should now be viewing job boards as a primary networking resource to find and be found. Knowing how to successfully search and navigate job boards will not only maximize your time, but enhance your results. Start by following some basic best practices for your job search efforts, and then utilize the advanced job search technique used by recruiters.
+
+### 2. aggregate — don’t aggravate!
+
+One of the easiest ways to start your online search is to use a job aggregator. These websites will scan through various job boards — like employer sites, small industry boards and newspaper classifieds — and will return results based on your search criteria. An aggregator can help you save time during the job search and may direct you to a position you wouldn’t have found using a traditional job board.
+
+Another benefit of using an aggregator (and some job boards)? The ability to create saved search alerts, which will send appropriate jobs directly to your email inbox. Randstad offers a similar feature: You can sign up for [job alerts](https://www.randstadusa.com/join-randstad/) and we’ll email you when a position is posted that matches your requirements. Try it! You might be surprised by the effectiveness of this approach.
+
+### 3. using advanced search techniques
+
+It doesn’t matter if you're using an aggregator or a traditional job board. To conduct more advanced searches, understanding Boolean logic is your secret weapon. If you haven’t heard of "Boolean" before, don’t fret. Its name may sound complicated or scary, but it's quite easy to master. Boolean logic has been used for decades by database administrators because it's an information retrieval tool that allows several search words and phrases to be combined using operators or commands.
+
+From an execution standpoint, there are probably five Boolean operators you should at least be aware of when navigating job search sites.
+
+“or”
+
+Using this operator allows you to combine keywords so that a page or document is retrieved if it contains any or all of the keywords. For example, “nurse or pediatric” will find all instances in which the words “nurse” or “pediatric” appear.
+
+“and”
+
+“And” can be used to combine terms so that information is retrieved only if all those terms occur in the same place. Searching for “software and engineer” will bring up results where both keywords occur.
+
+“not”
+
+This operator will prevent any results in which specified terms occur together. This is helpful when a specific keyword may have many meanings. For example, “engineer not mechanical” will find instances in which “engineer” occurs but “mechanical” doesn’t. However, it's important to note that this operator is not recognized by Google. If you’re using Google to job search, use the minus sign (-) in place of the “not” operator.
+
+“near”
+
+This is particularly helpful if you want to search for words which appear near each other. When you use this operator, the search will only find instances where your keywords appear between one and 20 spaces of each other.
+
+“ ”
+
+Quotation marks allow you to search for words or a phrase exactly as you type it. For example, “financial analyst” will only find results containing those two words in that exact order.
+
+Finally, while there are a few [other Boolean operators](https://www.lexalytics.com/support/tuning/boolean-query-syntax) that can help you narrow your searches even further in future, mastering these basics will dramatically improve the accuracy and success of your searches and avoid further frustration.
+
+### 4. find and be found
+
+Job seekers aren’t the only ones using job boards. Many recruiters frequent resume databases to search for available candidates — even more so now that networking events, conferences and job fairs are prohibited. By posting your resume online, a hiring manager could find you and invite you to apply for a job you didn’t even know existed.
+
+If you choose to post [your resume](https://www.randstadusa.com/jobs/career-resources/resumes/), consider the following:
+
+* Use a dedicated email address for your job search.
+* Focus on niche job boards for your location, industry or position type.
+* Use a Microsoft Word version of your document named with your target job title(s).
+* Refresh your resume weekly so that it remains at the top of search results.
+
+If you really want to make sure you're posting a resume that has all the right components, then check out our complimentary [resume builder](https://www.randstadusa.com/resume-builder/) which can put together a polished document for you that checks all the right boxes.
+
+#### key takeaways
+
+Job boards may be the only way to find work for a while, so it's a good idea to get comfortable using them. Try experimenting with various search strings, following the tips we've outlined, to see which work best for you. Once you have identified the appropriate search strings, you can also set job search alerts and tweak your search parameters so you can receive emails when new jobs are posted that meet your criteria. Finally, if you find a position that interests you, be sure to review our tips and [best practices for submitting applications](https://www.randstadusa.com/workforce360/jobs-the-economy/how-to-stand-out-in-the-sea-of-online-applications/355/) before you click "submit."&#x20;
+
+Find out the moment opportunities become available by signing up for Randstad's [job alerts](https://www.randstadusa.com/join-randstad/). Just tell us the kind of position you want, and we'll email you when we find it.
+
+
+
+
+
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 ### how to research company information
 
@@ -224,7 +224,7 @@ Ready to start writing the resume? Check out the next installment in our resume 
 
 
 
-![](<../.gitbook/assets/devider (1).png>)
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 ### what’s the best resume format?
 
@@ -295,7 +295,7 @@ Finally, check out the next installment in our comprehensive resume-writing seri
 
 
 
-![](<../.gitbook/assets/devider (1).png>)
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 Once you’ve selected your resume format, it’s time to start building. But before you get to your experience and job skills, you need to make sure you begin your resume with accurate and concise contact information. Let's go over some of the basics that you should consider when placing your contact information on your resume, piece by piece.
 
@@ -315,7 +315,7 @@ Looking for additional resume advice? Head on to the next installment in our ser
 
 * \------------------------------------------------------------------------------------------------
 
-![](<../.gitbook/assets/devider (1).png>)
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 * \------------------------------------------------------------------------------------------------
 
@@ -365,7 +365,7 @@ Need more resume-writing help? Check out the next installment in our resume-writ
 
 * \------------------------------------------------------------------------------------------------
 
-![](<../.gitbook/assets/devider (1).png>)
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 * \------------------------------------------------------------------------------------------------
 
@@ -389,87 +389,7 @@ Need more resume-writing help? Check out the next installment in our resume-writ
 
 * \------------------------------------------------------------------------------------------------
 
-![](<../.gitbook/assets/devider (1).png>)
-
-* \------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
-
-![](<../.gitbook/assets/devider (1).png>)
-
-* \------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
-
-![](<../.gitbook/assets/devider (1).png>)
-
-* \------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
-
-![](<../.gitbook/assets/devider (1).png>)
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 * \------------------------------------------------------------------------------------------------
 
@@ -497,7 +417,87 @@ Need more resume-writing help? Check out the next installment in our resume-writ
 
 * \------------------------------------------------------------------------------------------------
 
-![](<../.gitbook/assets/devider (1).png>)
+![](<../.gitbook/assets/devider (1) (1).png>)
+
+* \------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* \------------------------------------------------------------------------------------------------
+
+![](<../.gitbook/assets/devider (1) (1).png>)
+
+* \------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* \------------------------------------------------------------------------------------------------
+
+![](<../.gitbook/assets/devider (1) (1).png>)
+
+* \------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* \------------------------------------------------------------------------------------------------
+
+![](<../.gitbook/assets/devider (1) (1).png>)
 
 * \------------------------------------------------------------------------------------------------
 

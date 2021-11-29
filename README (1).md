@@ -6,7 +6,23 @@ coverY: 0
 
 # 🏡 Home
 
+
+
+&#x20;
+
+&#x20;
+
+![](.gitbook/assets/devider.png)
+
 {% embed url="https://bryan-guner.gitbook.io/job-search" %}
+
+![](.gitbook/assets/devider.png)
+
+
+
+
+
+
 
 {% embed url="https://www.linkedin.com/in/bryan-guner-046199128" %}
 
@@ -32,7 +48,7 @@ coverY: 0
 
 * \------------------------------------------------------------------------------------------------
 
-![](<.gitbook/assets/devider (1).png>)
+![](<.gitbook/assets/devider (1) (1).png>)
 
 * \------------------------------------------------------------------------------------------------
 
