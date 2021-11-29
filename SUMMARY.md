@@ -17,6 +17,7 @@
 ## Resume
 
 * [Resume](resume/resume/README.md)
+  * [Certificate (Lambda)](resume/resume/certificate-lambda.md)
   * [Examples](resume/resume/examples.md)
   * [Advice](resume/resume/advice.md)
 
