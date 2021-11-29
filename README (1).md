@@ -130,7 +130,7 @@ Calendar
 * [🙏 Resources](resources/)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
-  * [Practice Problems:](resources/practice-problems.md)
+  * [Practice Problems:](cover-letter/more-advice/practice-problems.md)
   * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
   * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
 
@@ -154,7 +154,7 @@ Calendar
 ### 📈 Slack\&Lambda
 
 * [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
-* [📌 Pinned Messages:](slack-and-lambda/pinned-messages.md)
+* [📌 Pinned Messages:](broken-reference)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 People](slack-and-lambda/people.md)
