@@ -5,6 +5,14 @@ coverY: 0
 
 # 🗺 Navigation
 
+
+
+{% embed url="https://bryan-guner.gitbook.io/job-search" %}
+
+
+
+
+
 {% content-ref url="navigation.md" %}
 [navigation.md](navigation.md)
 {% endcontent-ref %}

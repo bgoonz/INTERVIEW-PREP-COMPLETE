@@ -4,6 +4,8 @@
 [..](../)
 {% endcontent-ref %}
 
+{% embed url="https://bryan-guner.gitbook.io/job-search" %}
+
 | Product Development    | Electrical            | Confluence | Design | Excel | Git |
 | ---------------------- | --------------------- | ---------- | ------ | ----- | --- |
 | Engineer               | Tensile Testing       | Expressjs  | Heroku | Linux | Aws |
