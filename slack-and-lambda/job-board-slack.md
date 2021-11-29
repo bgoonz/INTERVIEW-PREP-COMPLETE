@@ -18,7 +18,7 @@
 4. [**Google for Jobs**](https://zety.com/blog/best-job-search-sites#google-for-jobs)
 5. ****[**Monster**](https://www.monster.com)****
 6. [**ZipRecruiter**](https://zety.com/blog/best-job-search-sites#ziprecruiter)
-7. [**Simply Hired**](https://zety.com/blog/best-job-search-sites#simplyhired)
+7. ****[**Simply Hired**](https://www.careerbuilder.com)****
 8. [**CareerBuilder**](https://zety.com/blog/best-job-search-sites#careerbuilder)
 9. [**Snag (Formerly Snagajob)**](https://zety.com/blog/best-job-search-sites#snag)
 10. [**LinkUp**](https://zety.com/blog/best-job-search-sites#linkup)
