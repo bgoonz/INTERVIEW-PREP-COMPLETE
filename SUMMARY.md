@@ -42,7 +42,7 @@
 
 * [Cover Letter](cover-letter/page-10/README.md)
   * [CV-Guidance](cover-letter/page-10/cv-guidance.md)
-* [More Advice](cover-letter/more-advice/README.md)
+* [More Advice](cover-letter/more-advice.md)
   * [Practice Problems:](cover-letter/more-advice/practice-problems.md)
 * [Example](cover-letter/example.md)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
