@@ -43,8 +43,8 @@ coverY: 0
 [page-10](cover-letter/page-10/)
 {% endcontent-ref %}
 
-{% content-ref url="slack-and-lambda/pinned-messages.md" %}
-[pinned-messages.md](slack-and-lambda/pinned-messages.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="skills/" %}

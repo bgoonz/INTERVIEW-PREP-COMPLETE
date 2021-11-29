@@ -4,13 +4,13 @@
 * [🏡 Home](<README (1).md>)
 * [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
+* [Applications Completed](applications-completed.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
 * [📖 Resources](resources/README.md)
   * [Job Search Advice](resources/job-search-advice.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
-  * [Practice Problems:](resources/practice-problems.md)
   * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
   * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
 
@@ -42,7 +42,8 @@
 
 * [Cover Letter](cover-letter/page-10/README.md)
   * [CV-Guidance](cover-letter/page-10/cv-guidance.md)
-* [More Advice](cover-letter/more-advice.md)
+* [More Advice](cover-letter/more-advice/README.md)
+  * [Practice Problems:](cover-letter/more-advice/practice-problems.md)
 * [Example](cover-letter/example.md)
 * [Example Of Developer Bio](cover-letter/example-of-developer-bio.md)
 * [Old Engineering Cover Letter](cover-letter/old-engineering-cover-letter.md)
@@ -56,7 +57,6 @@
 ## 📈 Slack\&Lambda
 
 * [Pinned Items:](slack-and-lambda/pinned-items.md)
-* [Pinned Messages:](slack-and-lambda/pinned-messages.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 People](slack-and-lambda/people.md)

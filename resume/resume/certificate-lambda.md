@@ -2,6 +2,8 @@
 
 
 
+{% file src="../../.gitbook/assets/Full-Stack_Web_Development_+_Technical_Interviewing_Badge20211129-36-13vzzcp.pdf" %}
+
 ## Full-Stack Web Development + Technical Interviewing
 
 Issued by [Lambda School](https://www.credly.com/org/lambda-school)
@@ -10,7 +12,7 @@ This badge is representative of a Lambda School graduate's skill level in Web De
 
 
 
-![](../../.gitbook/assets/chrome\_44NdKjdBXK.png)
+![Agile Project Management Automated Unit Testing Algorithms gig-O Notation Asynchronous JavaScript Computer Architecture Data Structures Debugging Deployment Authentication C Programming Express JS End-To-End Testing Node JS Graphs React Hooks HTML Redux Integration Testing Relational Databases Postgres Python Responsive Design RESTful Arch itecture Single Page Applications SQL Teamwork & Collaboration Time Management Techniques](../../.gitbook/assets/chrome\_44NdKjdBXK.png)
 
 
 
