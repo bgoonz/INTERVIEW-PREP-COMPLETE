@@ -64,3 +64,5 @@ This badge is representative of a Lambda School graduate's skill level in Web De
 * Completed computer science curriculum, and demonstrated mastery of content.
 * Completed Lambda Labs apprenticeship.
 * Passed final assessments and interviews demonstrating their technical and professional proficiencies.
+
+Data Structures Debugging Deployment Authentication C Programming Express JS End-To-End Testing Node JS Graphs React Hooks HTML Redux Integration Testing Relational Databases Postgres Python Responsive Design RESTful Architecture Single Page Applications SQL Teamwork & Collaboration Time Management Techniques
