@@ -19,6 +19,26 @@
 | <h3>Any planned vacation in next 30 days (If Yes need exact or at least tentative dates)</h3> | No                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | <h3>How Soon Can You Start?</h3>                                                              | Immediately                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
+### Other Certificates:
+
+![](<.gitbook/assets/skills (2).png>)
+
+[![](https://camo.githubusercontent.com/ce92692573446d5f1369c742f5c8c168166c0a462e5b12751cc5ddf6ee95b9c9/68747470733a2f2f64617368626f617264732e6c616d6264617363686f6f6c2e636f6d2f7374617469632f696d672f636865636b2e706e67)](https://camo.githubusercontent.com/ce92692573446d5f1369c742f5c8c168166c0a462e5b12751cc5ddf6ee95b9c9/68747470733a2f2f64617368626f617264732e6c616d6264617363686f6f6c2e636f6d2f7374617469632f696d672f636865636b2e706e67)Open to relocation
+
+[![](https://camo.githubusercontent.com/ce92692573446d5f1369c742f5c8c168166c0a462e5b12751cc5ddf6ee95b9c9/68747470733a2f2f64617368626f617264732e6c616d6264617363686f6f6c2e636f6d2f7374617469632f696d672f636865636b2e706e67)](https://camo.githubusercontent.com/ce92692573446d5f1369c742f5c8c168166c0a462e5b12751cc5ddf6ee95b9c9/68747470733a2f2f64617368626f617264732e6c616d6264617363686f6f6c2e636f6d2f7374617469632f696d672f636865636b2e706e67)Open to remote
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Contact Info
 
 *   **Location**
@@ -173,5 +193,155 @@ React.js
 RESTful architecture
 
 Amazon S3
+
+
+
+1.  [JavaScript](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,16\)/)
+
+    [See 10 endorsements for JavaScript10](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,16\)/)
+
+    * [Andrew Serian and 9 connections have given endorsements for this skill](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,16\)/)
+    * [LinkedIn Skill Assessment badge](https://www.linkedin.com/in/bryan-guner-046199128/skills/report/JavaScript)
+2.  [React.js](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,28\)/)
+
+    [See 8 endorsements for React.js8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,28\)/)
+
+    * [Olga Thompson and 7 connections have given endorsements for this skill](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,28\)/)
+    * [LinkedIn Skill Assessment badge](https://www.linkedin.com/in/bryan-guner-046199128/skills/report/React.js)
+3.  [Electrical Engineering](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,4\)/)
+
+    [See 8 endorsements for Electrical Engineering8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,4\)/)
+
+    * [Olga Thompson and 7 connections have given endorsements for this skill](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,4\)/)
+
+#### Industry Knowledge
+
+1.  [Guitar Playing](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,7\)/)
+
+    [See 9 endorsements for Guitar Playing9](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,7\)/)
+2.  [Mathematics](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,9\)/)
+
+    [See 9 endorsements for Mathematics9](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,9\)/)
+3.  [Control Systems](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,14\)/)
+
+    [See 8 endorsements for Control Systems8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,14\)/)
+4.  [Algorithms](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,21\)/)
+
+    [See 9 endorsements for Algorithms9](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,21\)/)
+5.  [Signal Processing](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,22\)/)
+
+    [See 7 endorsements for Signal Processing7](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,22\)/)
+6.  [Web Development](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,32\)/)
+
+    [See 4 endorsements for Web Development4](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,32\)/)
+7.  [Test Cases](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,42\)/)
+
+    [See 3 endorsements for Test Cases3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,42\)/)
+8.  [Product Design](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,43\)/)
+
+    [See 3 endorsements for Product Design3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,43\)/)
+9.  [Software Documentation](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,46\)/)
+
+    [See 3 endorsements for Software Documentation3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,46\)/)
+10. [Agile Methodologies](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,47\)/)
+
+    [See 3 endorsements for Agile Methodologies3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,47\)/)
+11. SEO
+
+
+12. Shell Scripting
+13. Web Services
+
+#### Tools & Technologies
+
+1.  [Python (Programming Language)](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,20\)/)
+
+    [See 8 endorsements for Python (Programming Language)8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,20\)/)
+2.  [Python](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,36\)/)
+
+    [See 3 endorsements for Python3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,36\)/)
+3.  [HTML](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,17\)/)
+
+    [See 11 endorsements for HTML11](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,17\)/)
+4.  [Microsoft Excel](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,5\)/)
+
+    [See 8 endorsements for Microsoft Excel8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,5\)/)
+5.  [Matlab](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,6\)/)
+
+    [See 8 endorsements for Matlab8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,6\)/)
+6.  [Embedded Systems](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,12\)/)
+
+    [See 8 endorsements for Embedded Systems8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,12\)/)
+7.  [Microsoft Word](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,15\)/)
+
+    [See 7 endorsements for Microsoft Word7](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,15\)/)
+8.  [Git](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,18\)/)
+
+    [See 8 endorsements for Git8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,18\)/)
+9.  [LabVIEW](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,24\)/)
+
+    [See 7 endorsements for LabVIEW7](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,24\)/)
+10. [HTML5](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,25\)/)
+
+    [See 8 endorsements for HTML58](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,25\)/)
+11. [Cascading Style Sheets (CSS)](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,26\)/)
+
+    [See 8 endorsements for Cascading Style Sheets (CSS)8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,26\)/)
+12. [AJAX](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,27\)/)
+
+    [See 8 endorsements for AJAX8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,27\)/)
+13. [jQuery](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,29\)/)
+
+    [See 8 endorsements for jQuery8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,29\)/)
+14. [PostgreSQL](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,30\)/)
+
+    [See 8 endorsements for PostgreSQL8](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,30\)/)
+15. [SQL](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,33\)/)
+
+    [See 3 endorsements for SQL3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,33\)/)
+16. [MongoDB](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,34\)/)
+
+    [See 3 endorsements for MongoDB3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,34\)/)
+17. [Node.js](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,35\)/)
+
+    [See 3 endorsements for Node.js3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,35\)/)
+18. [Scss](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,37\)/)
+
+    [See 3 endorsements for Scss3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,37\)/)
+19. [Microsoft Office](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,39\)/)
+
+    [See 3 endorsements for Microsoft Office3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,39\)/)
+20. [Google Analytics](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,40\)/)
+
+    [See 3 endorsements for Google Analytics3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,40\)/)
+21. [Amazon Web Services (AWS)](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,41\)/)
+
+    [See 3 endorsements for Amazon Web Services (AWS)3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,41\)/)
+22. [Bootstrap](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,48\)/)
+
+    [See 3 endorsements for Bootstrap3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,48\)/)
+23. Next.js
+24. GatsbyJS
+25. XML
+26. Adobe XD
+
+#### Interpersonal Skills
+
+1.  [Teaching](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,45\)/)
+
+    [See 3 endorsements for Teaching3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,45\)/)
+
+#### Other Skills&#x20;
+
+1.  [Digital Signal Processing](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,3\)/)
+
+    [See 11 endorsements for Digital Signal Processing11](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,3\)/)
+2.  [Multivariable Calculus](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,2\)/)
+
+    [See 3 endorsements for Multivariable Calculus3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,2\)/)
+3.  [Express.js](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,38\)/)
+
+    [See 3 endorsements for Express.js3](https://www.linkedin.com/in/bryan-guner-046199128/detail/skills/\(ACoAAB9Z4fYBOjR8mPtiKIcZgX-UFNh5WtKvONE,38\)/)
+4. API Development
 
 ### Create a project
