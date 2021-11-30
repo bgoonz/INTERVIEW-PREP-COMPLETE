@@ -2,7 +2,13 @@
 
 ## Download Resume:
 
-## **Alt Link:**
+{% embed url="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/raw/master/bryan_guner_resume_2021-V8.pdf" %}
+**Alt Link:** [**https://mail.google.com/mail/u/0?ui=2\&ik=af4a841153\&attid=0.1\&permmsgid=msg-a:r-3061890667986627281\&view=att\&disp=safe**](https://mail.google.com/mail/u/0?ui=2\&ik=af4a841153\&attid=0.1\&permmsgid=msg-a:r-3061890667986627281\&view=att\&disp=safe)****
+{% endembed %}
+
+****
+
+{% embed url="https://mail.google.com/mail/u/0?attid=0.1&disp=safe&ik=af4a841153&permmsgid=msg-a%3Ar-3061890667986627281&ui=2&view=att" %}
 
 
 
