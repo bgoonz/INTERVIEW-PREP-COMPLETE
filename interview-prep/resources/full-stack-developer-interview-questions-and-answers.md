@@ -1,10 +1,8 @@
 # FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS
 
+## FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS <a href="#full-stack-developer-interview-questions-and-answers" id="full-stack-developer-interview-questions-and-answers"></a>
 
-
-## FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS <a href="full-stack-developer-interview-questions-and-answers" id="full-stack-developer-interview-questions-and-answers"></a>
-
-### [Table of Contents](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE) <a href="a-nametoctable-of-contentsa" id="a-nametoctable-of-contentsa"></a>
+### [Table of Contents](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE) <a href="#a-nametoctable-of-contentsa" id="a-nametoctable-of-contentsa"></a>
 
 * [Architecture](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#architecture)
 * [Concurrency](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#concurrency)
@@ -44,7 +42,7 @@
 * [Android](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#android)
 * [Books](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#books)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Architecture:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Architecture:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * _Design principles_. ([_DRY_](https://en.wikipedia.org/wiki/Don't\_repeat\_yourself), [_KISS_](https://en.wikipedia.org/wiki/KISS\_principle), [_YAGNI_](https://en.wikipedia.org/wiki/You\_aren't\_gonna\_need\_it), [_Occam's razor_](https://en.wikipedia.org/wiki/Occam's\_razor), [_Worse is better_](https://en.wikipedia.org/wiki/Worse\_is\_better), [_convention over configuration_](https://en.wikipedia.org/wiki/Convention\_over\_configuration), [_separation of concerns_](https://en.wikipedia.org/wiki/Separation\_of\_concerns), [_Law of Demeter (principle of least knowledge)_](https://en.wikipedia.org/wiki/Law\_of\_Demeter), boy scout rule, [_single source of truth_](https://en.wikipedia.org/wiki/Single\_source\_of\_truth), [_single version of truth_](https://en.wikipedia.org/wiki/Single\_version\_of\_the\_truth), [_principle of least astonishment_](https://en.wikipedia.org/wiki/Principle\_of\_least\_astonishment), [_let it crash principle_](https://en.wikipedia.org/wiki/Crash-only\_software), [_inversion of control_](https://en.wikipedia.org/wiki/Inversion\_of\_control))
 * [_SOLID_](https://en.wikipedia.org/wiki/SOLID\_\(object-oriented\_design\))
@@ -89,7 +87,7 @@
 * [Conway's law](https://en.wikipedia.org/wiki/Conway's\_law) (organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations)
 * [GRASP](https://en.wikipedia.org/wiki/GRASP\_\(object-oriented\_design\))
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Concurrency:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Concurrency:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is [_deadlock_](https://en.wikipedia.org/wiki/Deadlock), [_livelock_](https://en.wikipedia.org/wiki/Deadlock#Livelock)? (Deadlock is a situation in which two or more competing actions are each waiting for the other to finish, and thus neither ever does. A livelock is similar to a deadlock, except that the states of the processes involved in the livelock constantly change with regard to one another, none progressing.)
 * [_Deadlock avoidance_](https://www.geeksforgeeks.org/deadlock-prevention). (prevention, detection, avoidance (Mutex hierarchy), and recovery)
@@ -134,7 +132,7 @@
 * [_Transactional memory_](https://en.wikipedia.org/wiki/Software\_transactional\_memory)
 * [_Coroutine_](https://en.wikipedia.org/wiki/Coroutine)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Java:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Java:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_PhantomReference_](https://en.wikipedia.org/wiki/Phantom\_reference), [_WeakReference_](https://en.wikipedia.org/wiki/Weak\_reference), [_SoftReference_](https://en.wikipedia.org/wiki/Soft\_reference), _finalize()_, _ReferenceQueue_.
 * How to correctly stop a thread? (Thread.interrupt())
@@ -158,7 +156,7 @@
 * Major specs: JAX-RS, JAX-WS, JMS, JAXB, XSLT, XPATH, JNDI, JMX, JDBC, XML(SAX, DOM, StAX)
 * [_Performance Diagnostic Methodology_](https://dzone.com/articles/how-to-solve-your-java-performance-problems-part-2)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**General Questions:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**General Questions:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Polymorphism_](https://en.wikipedia.org/wiki/Polymorphism\_\(computer\_science\)) (Variable of type Shape could refer to an object of type Square, Circle... Ability of a function to handle objects of many types)
 * [_Encapsulation_](https://en.wikipedia.org/wiki/Encapsulation\_\(computer\_programming\)) (Packing of data and functions into a single component)
@@ -169,7 +167,7 @@
 * [_Tail recursion_](https://en.wikipedia.org/wiki/Tail\_call) (A tail call is a subroutine call performed as the final action of a procedure)
 * [_Semantic versioning_](http://semver.org)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**WEB:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**WEB:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * WEB security vulnerabilities ([_XSS_](https://en.wikipedia.org/wiki/Cross-site\_scripting), [_CSRF_](https://en.wikipedia.org/wiki/Cross-site\_request\_forgery), [_session fixation_](https://en.wikipedia.org/wiki/Session\_fixation), [_SQL injection_](https://en.wikipedia.org/wiki/SQL\_injection), [_man-in-the-middle_](https://en.wikipedia.org/wiki/Man-in-the-middle\_attack), [_buffer overflow_](https://en.wikipedia.org/wiki/Buffer\_overflow))
 * _CSRF prevention_ (CSRF-token)
@@ -183,7 +181,7 @@
 * How to implement _remember-me_? ([http://jaspan.com/improved\_persistent\_login\_cookie\_best\_practice](http://jaspan.com/improved\_persistent\_login\_cookie\_best\_practice))
 * Authentication using cookies, [_JWT_](https://en.wikipedia.org/wiki/JSON\_Web\_Token) (JSON Web Tokens).
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**SQL:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**SQL:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * _SQL join types_ (inner join, left/right outer join, full outer join, cross join)
 
@@ -203,7 +201,7 @@
 | Snapshot                 | -                                  | -           | -                                           | -         | may occur   |
 | Serializable             | -                                  | -           | -                                           | -         | -           |
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**NoSQL:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**NoSQL:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * Types of NoSQL databases?
   * Document Stores (MongoDB, Couchbase)
@@ -211,14 +209,14 @@
   * Column Stores (Cassandra)
   * Graph Stores (Neo4j, Giraph)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Transactions:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Transactions:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_ACID_](https://en.wikipedia.org/wiki/ACID)
 * [_2-phase commit protocol_](https://en.wikipedia.org/wiki/Two-phase\_commit\_protocol)
 * [_3-phase commit protocol_](https://en.wikipedia.org/wiki/Three-phase\_commit\_protocol)
 * What is _pessimistic_ / [_optimistic_](https://en.wikipedia.org/wiki/Optimistic\_concurrency\_control) locking?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Scalability:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Scalability:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * Horizontal and vertical scaling.
 * How to scale database? (Data partitioning, sharding(vertical/horizontal), replication(master-slave, master-master)).
@@ -229,19 +227,19 @@
 * MongoDB, Redis.
 * Hadoop basics.
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Load balancing:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Load balancing:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * sticky/non-sticky sessions
 * _Sticky sessions_ vs storing sessions in Redis.
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Cloud computing:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Cloud computing:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is [_cloud computing_](https://en.wikipedia.org/wiki/Cloud\_computing)? (Cloud computing platform is a fully automated server platform that allows users to purchase, remotely create, dynamically scale, and administer system)
 * [_Amazon web services_](https://en.wikipedia.org/wiki/Amazon\_Web\_Services)
 * [_Google Cloud Platform_](https://en.wikipedia.org/wiki/Google\_Cloud\_Platform)
 * [_Microsoft Azure_](https://en.wikipedia.org/wiki/Microsoft\_Azure)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Distributed:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Distributed:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Consensus_](https://en.wikipedia.org/wiki/Consensus\_\(computer\_science\))
 * [_Raft_](https://en.wikipedia.org/wiki/Raft\_\(computer\_science\)) ([In Search of an Understandable Consensus Algorithm](https://raft.github.io/raft.pdf))
@@ -279,12 +277,12 @@
 * [_Logical clock_](https://en.wikipedia.org/wiki/Logical\_clock)
 * [_Vector clock_](https://en.wikipedia.org/wiki/Vector\_clock)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Cache:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Cache:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is _write-through_ and _write-behind_ caching? (write-through (synchronous), write-behind (asynchronous))
 * HTTP cache options?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Networking:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Networking:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * OSI model (Physical, Data link, Network, Transport, Session, Presentation, Application)
 * Multithreading vs select
@@ -292,14 +290,14 @@
 * [_TCP congestion_](https://en.wikipedia.org/wiki/TCP\_congestion\_control)
 * _TCP back-pressure_
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Operating system:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Operating system:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is [_memory mapped_](https://en.wikipedia.org/wiki/Memory-mapped\_file) file and its benefits?
 * _Interprocess communication_ methods. (Pipes, Events, Mailboxes/Ports (can be implemented by using shared memory and semaphores), Direct Message Passing).
 * [_Virtual memory_](https://en.wikipedia.org/wiki/Virtual\_memory) organization.
 * _Process scheduler_.
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Compilers:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Compilers:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Recursive descent parser_](https://en.wikipedia.org/wiki/Recursive\_descent\_parser)
 * [_LL parser_](https://en.wikipedia.org/wiki/LL\_parser)
@@ -307,7 +305,7 @@
 * [_Context-free grammar_](https://en.wikipedia.org/wiki/Context-free\_grammar)
 * [_Chomsky hierarchy_](https://en.wikipedia.org/wiki/Chomsky\_hierarchy)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**C++:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**C++:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_C++ standard_](http://eel.is/c++draft/)
 * [_Memory model_](https://en.cppreference.com/w/cpp/language/memory\_model)
@@ -321,7 +319,7 @@
 * [_SFINAE_](https://en.cppreference.com/w/cpp/language/sfinae) [1](https://cpppatterns.com/patterns/function-template-sfinae.html)
 * \[_PImpl_] [https://en.cppreference.com/w/cpp/language/pimpl](https://en.cppreference.com/w/cpp/language/pimpl)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Javascript:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Javascript:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * this keyword
 * How _prototypes_ work?
@@ -335,16 +333,16 @@
 * What is _AMD_(Asynchronous Module Design) and _CommonJS_?
 * What is _jQuery_?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Python:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Python:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [Slice notation](https://stackoverflow.com/questions/509211/understanding-slice-notation/509295#509295)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Go:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Go:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [Language Specification](https://golang.org/ref/spec)
 * [Memory Model](https://golang.org/ref/mem)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Codewriting:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Codewriting:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * Implement binary search
 
@@ -389,18 +387,18 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 }
 ```
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Functional programming:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Functional programming:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Referential transparency_](https://en.wikipedia.org/wiki/Referential\_transparency)
 * What is [_Monad_](https://en.wikipedia.org/wiki/Monad\_\(functional\_programming\))?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Reactive programming:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Reactive programming:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_The Reactive Manifesto_](http://www.reactivemanifesto.org) (responsive, resilient, elastic, message driven)
 * [Reactive extensions](http://reactivex.io)
 * What is _asynchronous_ and _non-blocking_? [link](https://www.linkedin.com/pulse/java-servlets-asynchronous-non-blocking-aliaksandr-liakh)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Git:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Git:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * _Git_ workflow? (Master: production-ready state; Develop: latest delivered development changes for the next release; Feature Branches; Release Branches; Hotfixes)
 
@@ -410,12 +408,12 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 
 * What is a rebase?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**DevOps:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**DevOps:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is _Blue-green Deployment_, _Canary release_, _A/B testing_? [link](https://www.javacodegeeks.com/2016/02/blue-green-deployment.html)
 * What is _Docker_?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**QA:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**QA:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is _unit test_? (A test that purely tests a single unit of functionality)
 * What is _component test_?
@@ -429,7 +427,7 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * What is _Consumer Driven Contract_? [link](https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract.html)
 * [Types of tests](https://stackify.com/ultimate-guide-performance-testing-and-software-testing)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Agile:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Agile:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is Agile? ([http://agilemanifesto.org/principles.html](http://agilemanifesto.org/principles.html))
   * Individuals and interactions over Processes and tools
@@ -442,12 +440,12 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * What is Kanban?
 * What is Lean development?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Algorithms:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Algorithms:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What Ο(n), Ω(n), Θ(n)?
 * What is NP, NP-completeness, NP-hardness with examples?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Other:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Other:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * How to find memory leak. (Memory snapshot diff).
 * Profiling: sampling and instrumentation.
@@ -457,7 +455,7 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * What is total/partial order?
 * How to work with legacy code? ([http://programmers.stackexchange.com/a/122024](http://programmers.stackexchange.com/a/122024))
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Machine learning:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Machine learning:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Bayes' theorem_](https://en.wikipedia.org/wiki/Bayes'\_theorem):
 
@@ -479,15 +477,15 @@ void qSort(int[] a, int fromInclusive, int toInclusive) {
 * [_Principal component analysis_](https://en.wikipedia.org/wiki/Principal\_component\_analysis)
 * [_Deep learning_](https://en.wikipedia.org/wiki/Deep\_learning)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Big Data:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Big Data:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Lambda architecture_](https://en.wikipedia.org/wiki/Lambda\_architecture)
 * [_HyperLogLog_](https://en.wikipedia.org/wiki/HyperLogLog)
 * [_Event sourcing_](http://microservices.io/patterns/data/event-sourcing.html)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Image processing:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Image processing:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Cryptography:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Cryptography:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * [_Public-key cryptography_](https://en.wikipedia.org/wiki/Public-key\_cryptography)
 * [_Public key certificate_](https://en.wikipedia.org/wiki/Public\_key\_certificate)
@@ -508,7 +506,7 @@ c = m^e mod n
 m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 ```
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Security:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Security:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 * What is _OpenID and OAuth2.0 and OpenID Connect_?
 * Four main actors in an OAuth system (clients, resource owners, authorization servers, and protected resources)
@@ -519,9 +517,9 @@ m = c^d mod n = m^(e*d) mod n = m^(e*d mod phi(n)) mod n = m
 * What is _CSP_ and _SRI hash_ ?
 * What is _Clickjacking_ and _Cursorjacking_ ? How to prevent it ?
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Android:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Android:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
-[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)** **[**Books:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
+[**\[⬆\]**](file:///C:/Users/bryan/AppData/Local/Temp/mume2021326-7948-1m32dnj.jgo6l.html#toc)\*\* \*\*[**Books:**](file:///C:/Users/bryan/Downloads/Job-Search/INTERVIEW-PREP-COMPLETE)
 
 **C++ programming**
 
