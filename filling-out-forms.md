@@ -1,8 +1,14 @@
 # 📋 Filling Out Forms
 
-{% embed url="https://onedrive.live.com/embed?AllowTyping=True&authkey=%21AFR6pjGJXrKONSw&em=2&resid=D21009FDD967A241%21700687&wdDownloadButton=True&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True" %}
+## Download Resume:
 
-{% embed url="https://onedrive.live.com/embed?resid=D21009FDD967A241" %}
+{% embed url="https://mail.google.com/mail/u/0?attid=0.1&disp=safe&ik=af4a841153&permmsgid=msg-a%3Ar961192010302534060&ui=2&view=att" %}
+
+## **Alt Link:**
+
+{% embed url="https://github.com/bgoonz/INTERVIEW-PREP-COMPLETE/raw/master/bryan_guner_resume_2021-V8.pdf" %}
+
+
 
 {% embed url="https://docs.google.com/spreadsheets/d/1DUrLBMgc8BuVEQzfpuy0wxgZF2zwOBE-W8M-NXFh_zI/edit?usp=sharing" %}
 
@@ -36,6 +42,10 @@
 
 
 
+
+## Resume:
+
+{% embed url="https://drive.google.com/file/d/1cRkKbKfMnfzJqpcUrMe81i7gtRCmY1CS/view?usp=sharing" %}
 
 
 
