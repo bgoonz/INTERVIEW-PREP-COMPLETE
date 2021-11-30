@@ -8,6 +8,6 @@
 [interview-questions.](../../interview-prep/interview-questions.)
 {% endcontent-ref %}
 
-{% content-ref url="solutions-for-beginners.md" %}
-[solutions-for-beginners.md](solutions-for-beginners.md)
+{% content-ref url="solutions-for-beginners-1.md" %}
+[solutions-for-beginners-1.md](solutions-for-beginners-1.md)
 {% endcontent-ref %}
