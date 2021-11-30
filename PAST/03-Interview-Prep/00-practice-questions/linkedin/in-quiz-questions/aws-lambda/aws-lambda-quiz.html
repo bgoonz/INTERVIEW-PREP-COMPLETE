@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>aws-lambda-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="aws-lambda-assessment">AWS LAMBDA Assessment</h2>
+<h4 id="q1.-how-can-you-increase-the-cpu-resources-for-your-lambda">Q1. How can you increase the CPU resources for your Lambda?</h4>
+<ul>
+<li>[ ] <code>Increase the configured CPU value</code></li>
+<li>[ ] <code>Increase the configured timeout value</code></li>
+<li>[x] <code>Increase the configured memory value</code></li>
+<li>[ ] <code>Increase the configured concurrency value</code></li>
+</ul>
+<h4 id="q2.-how-can-additional-code-or-content-can-be-provided-for-lambda">Q2. How can additional code or content can be provided for Lambda?</h4>
+<ul>
+<li>[ ] <code>blocks</code></li>
+<li>[x] <code>layers</code></li>
+<li>[ ] <code>aliases</code></li>
+<li>[ ] <code>handlers</code></li>
+</ul>
+<h4 id="q3.-how-can-step-functions-call-lambdas">Q3. How can Step Functions call Lambdas?</h4>
+<ul>
+<li>[ ] <code>in sequence</code></li>
+<li>[x] <code>both of these answers</code></li>
+<li>[ ] <code>neither of these answers</code></li>
+<li>[ ] <code>in parallel</code></li>
+</ul>
+<h4 id="q4.-which-aws-cli-command-invokes-a-function">Q4. Which AWS CLI command invokes a function?</h4>
+<ul>
+<li>[ ] <code>aws lambda invoke --function ReturnBucketName outputfile.txt</code></li>
+<li>[ ] <code>aws lambda execute --function-name ReturnBucketName outputfile.txt</code></li>
+<li>[x] <code>aws lambda invoke --function-name ReturnBucketName outputfile.txt</code></li>
+<li>[ ] <code>aws lambda execute --function ReturnBucketName outputfile.txt</code></li>
+</ul>
+<h4 id="q5.-what-adds-tracing-capabilities-to-a-lambda">Q5. What adds tracing capabilities to a Lambda?</h4>
+<ul>
+<li>[ ] <code>AWS Trace</code></li>
+<li>[ ] <code>CloudStack</code></li>
+<li>[ ] <code>CloudTrail</code></li>
+<li>[x] <code>AWS X-Ray</code></li>
+</ul>
+<h4 id="q6.-you-need-to-build-a-continuous-integrationdeployment-pipeline-for-a-set-of-lambdas.-what-should-you-do">Q6. You need to build a continuous integration/deployment pipeline for a set of Lambdas. What should you do?</h4>
+<ul>
+<li>[ ] <code>Create configuration files and deploy them using AWS CodePipeline.</code></li>
+<li>[ ] <code>Create CloudFormation templates and deploy them using AWS CodeBuild</code></li>
+<li>[ ] <code>Create configuration file and deploy using AWS CodeBuild</code></li>
+<li>[x] <code>Create CloudFormation templates and deploy them using AWS CodePipeline.</code></li>
+</ul>
+<h4 id="q7.-what-can-you-use-to-monitor-function-invocations">Q7. What can you use to monitor function invocations?</h4>
+<ul>
+<li>[ ] <code>API Gateway</code></li>
+<li>[ ] <code>S3</code></li>
+<li>[ ] <code>SAS</code></li>
+<li>[x] <code>CLoudTrail</code></li>
+</ul>
+<h4 id="q8.-it-is-aws-best-practice-to-enable-lambda-logging-by-which-of-these-methods.">Q8. It is AWS best practice to enable Lambda logging by which of these methods.</h4>
+<ul>
+<li>[ ] <code>Use S3 metrics and CloudWatch alarms</code></li>
+<li>[ ] <code>Create custom metrics within your Lambda code.</code></li>
+<li>[ ] <code>Create custom metrics within your CloudWatch code.</code></li>
+<li>[x] <code>Use Lambda metrics and CloudWatch alarms.</code></li>
+</ul>
+<h4 id="q9.-what-may-be-provided-for-environment-variables">Q9. What may be provided for environment variables?</h4>
+<ul>
+<li>[ ] <code>an SSL certificate</code></li>
+<li>[ ] <code>a bitmask</code></li>
+<li>[x] <code>an AWS KMS key</code></li>
+<li>[ ] <code>an HTTP protocol</code></li>
+</ul>
+<h4 id="q10.-lambda-allows-for-running-of-what-other-things">Q10. Lambda allows for running of what other things?</h4>
+<ul>
+<li>[ ] <code>binaries.</code></li>
+<li>[x] <code>all of these answers</code></li>
+<li>[ ] <code>executables</code></li>
+<li>[ ] <code>Shell scripts</code></li>
+</ul>
+<h4 id="q11.-in-what-style-must-you-write-lambda-code">Q11. In what style must you write Lambda code?</h4>
+<ul>
+<li>[ ] <code>MVC</code></li>
+<li>[ ] <code>virtual</code></li>
+<li>[x] <code>stateless</code></li>
+<li>[ ] <code>protocol</code></li>
+</ul>
+<h4 id="q12.-how-can-a-developer-provide-lambda-code">Q12. How can a developer provide Lambda code?</h4>
+<ul>
+<li>[ ] <code>by uploading a .zip file</code></li>
+<li>[x] <code>all of these answers</code></li>
+<li>[ ] <code>by editing inline</code></li>
+<li>[ ] <code>from an S3 bucket</code></li>
+</ul>
+<h4 id="q13.-you-are-performance-testing-your-lambda-to-verify-that-you-set-the-memory-size-adequately.-where-do-you-verify-the-exectuon-overhead">Q13. You are performance-testing your Lambda to verify that you set the memory size adequately. Where do you verify the exectuon overhead?</h4>
+<ul>
+<li>[ ] <code>CLoudWatch logs</code></li>
+<li>[ ] <code>DynamoDB logs</code></li>
+<li>[ ] <code>S3 logs</code></li>
+<li>[x] <code>Lambda logs.</code></li>
+</ul>
+<h4 id="q14.-what-facilitates-continuous-delivery-of-lambdas">Q14. What facilitates continuous delivery of Lambdas?</h4>
+<ul>
+<li>[ ] <code>CodeStack</code></li>
+<li>[ ] <code>ElasticStack</code></li>
+<li>[ ] <code>Mobile Hub</code></li>
+<li>[x] <code>CodeDeploy</code></li>
+</ul>
+<h4 id="q15.-how-are-computing-resources-allocated-to-lambdas">Q15. How are computing resources allocated to Lambdas?</h4>
+<ul>
+<li>[x] <code>proportionally</code></li>
+<li>[ ] <code>equally</code></li>
+<li>[ ] <code>periodically</code></li>
+<li>[ ] <code>daily</code></li>
+</ul>
+<h4 id="q16.-you-can-restrict-the-scope-of-a-users-permissions-by-specifying-which-two-items-in-an-iam-policy">Q16. You can restrict the scope of a user’s permissions by specifying which two items in an IAM policy?</h4>
+<ul>
+<li>[ ] <code>resources and users</code></li>
+<li>[x] <code>resources and conditions</code></li>
+<li>[ ] <code>events and users</code></li>
+<li>[ ] <code>events and conditions</code></li>
+</ul>
+<h4 id="q17.-what-does-lambda-logging-include">Q17. What does Lambda logging include?</h4>
+<ul>
+<li>[x] <code>logging streams</code></li>
+<li>[ ] <code>rotating streams</code></li>
+<li>[ ] <code>logging events</code></li>
+<li>[ ] <code>advancing log groups</code></li>
+</ul>
+<h4 id="q18.-what-can-aws-amplify-not-do-for-a-lambda">Q18. What can AWS Amplify NOT do for a Lambda?</h4>
+<ul>
+<li>[ ] <code>create a Lambda</code></li>
+<li>[x] <code>be an event source</code></li>
+<li>[ ] <code>assign an IAM role</code></li>
+<li>[ ] <code>delete a Lambda</code></li>
+</ul>
+<h4 id="q19.-how-do-you-author-a-lambda-in-a-programming-language-that-aws-does-not-support">Q19. How do you author a Lambda in a programming language that AWS does not support?</h4>
+<ul>
+<li>[ ] <code>Create a Lambda function with a custom runtime and reference the function in your Lambda</code></li>
+<li>[x] <code>Create a Lambda layer with a custom runtime and reference the layer in your lambda</code></li>
+<li>[ ] <code>You cannot use Lambda in this situation</code></li>
+<li>[ ] <code>Create a Lambda function with a custom runtime</code></li>
+</ul>
+<h4 id="q20.-what-are-listed-downstream-resources-based-on">Q20. What are listed downstream resources based on?</h4>
+<ul>
+<li>[ ] <code>the execution policy</code></li>
+<li>[x] <code>the Lambda configuration</code></li>
+<li>[ ] <code>the Lambda nodes</code></li>
+<li>[ ] <code>the IAM user</code></li>
+</ul>
+<h4 id="q21.-which-is-an-equivalent-and-valid-tag-for-a-pair-of-lambdas">Q21. Which is an equivalent and valid tag for a pair of Lambdas?</h4>
+<ul>
+<li>[ ] <code>department:Sales,department:Sales</code></li>
+<li>[x] <code>department:Sales,department:sales</code></li>
+<li>[ ] <code>aws:demo;aws:demo</code></li>
+<li>[ ] <code>aws:demo;aws:DEMO</code></li>
+</ul>
+<h4 id="q22.-outbound-connections-from-lambdas-must-be-__.">Q22. Outbound connections from Lambdas must be <strong>__</strong>.</h4>
+<ul>
+<li>[ ] <code>neither of these answers</code></li>
+<li>[ ] <code>UDP/IP</code></li>
+<li>[ ] <code>TCP/IP</code></li>
+<li>[x] <code>both of these answers</code></li>
+</ul>
+<h4 id="q23.-how-are-cloudwatch-actions-configured">Q23. How are CloudWatch actions configured?</h4>
+<ul>
+<li>[ ] <code>automatically</code></li>
+<li>[ ] <code>none of these answers</code></li>
+<li>[x] <code>manually</code></li>
+<li>[ ] <code>ad hoc</code></li>
+</ul>
+<h4 id="q24.-you-are-testing-your-stream-based-application-and-the-associated-lambda.-aws-best-practice-advises-you-to-test-by-varying-what">Q24. You are testing your stream-based application and the associated Lambda. AWS best practice advises you to test by varying what?</h4>
+<ul>
+<li>[ ] <code>stream and record sizes</code></li>
+<li>[ ] <code>stream and shard sizes</code></li>
+<li>[x] <code>batch and record sizes</code></li>
+<li>[ ] <code>batch and shard sizes</code></li>
+</ul>
+<h4 id="q25.-you-need-to-make-your-lambda-available-to-services-in-multiple-vpcs.-what-do-you-do">Q25. You need to make your Lambda available to services in multiple VPCs. What do you do?</h4>
+<ul>
+<li>[ ] <code>Place each subnet in a VPC. Associate all subnets to your Lambda.</code></li>
+<li>[ ] <code>Place all subnets in a VPC. Associate all subnets to your Lambda.</code></li>
+<li>[ ] <code>Configure your Lambda to be available to multiple VPCs.</code></li>
+<li>[x] <code>Configure all application VPCs to be peered.</code></li>
+</ul>
+<h4 id="q26.-how-is-the-cost-associated-with-lambda-function-calculated">Q26. How is the cost associated with Lambda function calculated?</h4>
+<ul>
+<li>[ ] <code>number of function calls</code></li>
+<li>[ ] <code>amount of code run</code></li>
+<li>[x] <code>compute time</code></li>
+<li>[ ] <code>amount of infrastructure used</code></li>
+</ul>
+<h4 id="q27.-what-is-the-fastest-way-to-get-started-with-lambda">Q27. What is the fastest way to get started with Lambda?</h4>
+<ul>
+<li>[ ] <code>Author a Lambda from scratch.</code></li>
+<li>[x] <code>Use a blueprint.</code></li>
+<li>[ ] <code>Use a .zip deployment package.</code></li>
+<li>[ ] <code>Use the serverless app repository.</code></li>
+</ul>
+<h4 id="q28.-where-is-the-disk-space-allocated-for-lambda-functions">Q28. Where is the disk space allocated for Lambda functions?</h4>
+<ul>
+<li>[x] <code>/tmp</code></li>
+<li>[ ] <code>/default</code></li>
+<li>[ ] <code>/temp</code></li>
+<li>[ ] <code>/ds</code></li>
+</ul>
+<h4 id="q29.-how-do-you-stop-a-running-lambda-that-is-stuck-in-a-recursive-loop">Q29. How do you stop a running Lambda that is stuck in a recursive loop?</h4>
+<ul>
+<li>[ ] <code>Delete the function.</code></li>
+<li>[x] <code>Set the function concurrent execution limit to 0 while you update the code.</code></li>
+<li>[ ] <code>Reset the function.</code></li>
+<li>[ ] <code>Set the function concurrent execution limit to 100 while you update the code.</code></li>
+</ul>
+<h4 id="q30.-what-is-aws-best-practice-for-lambda-configuration">Q30. What is AWS best practice for Lambda configuration?</h4>
+<ul>
+<li>[x] <code>Overprovision memory to run your functions faster and reduce your costs. Do not overprovision your function timeout settings.</code></li>
+<li>[ ] <code>Overprovision memory and your function timeout settings to run your functions faster and reduce your costs.</code></li>
+<li>[ ] <code>Do not overprovision memory. Overprovision your function timeout settings to run your functions faster and reduce costs.</code></li>
+<li>[ ] <code>Do not overprovision memory. Do not overprovision your function timeout settings to run your functions faster and reduce costs.</code></li>
+</ul>
+<h4 id="q31.-basic-lambda-permissions-include-permissions-for-what">Q31. Basic Lambda permissions include permissions for what?</h4>
+<ul>
+<li>[ ] <code>removing log groups</code></li>
+<li>[ ] <code>none of these answers</code></li>
+<li>[ ] <code>creating log groups</code></li>
+<li>[x] <code>updating log groups</code></li>
+</ul>
+<h4 id="q32.-how-are-environment-variables-stored">Q32. How are environment variables stored?</h4>
+<ul>
+<li>[ ] <code>DynamoDB tables</code></li>
+<li>[x] <code>key-value pairs</code></li>
+<li>[ ] <code>S3 buckets</code></li>
+<li>[ ] <code>none of these answers</code></li>
+</ul>
+<h4 id="q33.-you-need-to-use-a-lambda-to-provide-backend-logic-to-your-website.-which-service-do-you-use-to-make-your-lambda-available-to-your-website">Q33. You need to use a Lambda to provide backend logic to your website. Which service do you use to make your Lambda available to your website?</h4>
+<ul>
+<li>[ ] <code>S3</code></li>
+<li>[x] <code>API Gateway</code></li>
+<li>[ ] <code>X-Ray</code></li>
+<li>[ ] <code>DynamoDB</code></li>
+</ul>
+<h4 id="q34.-how-can-additional-code-or-content-be-provided-for-your-lambda">Q34. How can additional code or content be provided for your Lambda?</h4>
+<ul>
+<li>[ ] <code>aliases</code></li>
+<li>[ ] <code>blocks</code></li>
+<li>[ ] <code>handlers</code></li>
+<li>[x] <code>layers</code></li>
+</ul>
+<h4 id="q35.-lambdas-allow-for-running-of-what-other-things">Q35. Lambdas allow for running of what other things?</h4>
+<ul>
+<li>[ ] <code>binaries</code></li>
+<li>[ ] <code>executables</code></li>
+<li>[x] <code>all of these answers</code></li>
+<li>[ ] <code>shell scripts</code></li>
+</ul>
+<h4 id="q37.-you-are-creating-a-lambda-to-trigger-on-change-to-files-in-an-s3-bucket.-where-should-you-put-the-bucket-name">Q37. You are creating a Lambda to trigger on change to files in an S3 bucket. Where should you put the bucket name?</h4>
+<ul>
+<li>[ ] <code>in the Lambda function code</code></li>
+<li>[x] <code>in a Lambda environment variable</code></li>
+<li>[ ] <code>in the Lambda tags</code></li>
+<li>[ ] <code>in another S3 bucket</code></li>
+</ul>
+<h4 id="q38.-what-action-is-needed-before-you-can-test-a-lambda">Q38. What action is needed before you can test a Lambda?</h4>
+<ul>
+<li>[ ] <code>Deploy the Lambda.</code></li>
+<li>[ ] <code>Export the function</code></li>
+<li>[ ] <code>none of these answers</code></li>
+<li>[x] <code>Configure a test event.</code></li>
+</ul>
+<h4 id="q39.-what-kind-of-packages-can-you-use-with-node.js-for-lambdas">Q39. What kind of packages can you use with Node.js for Lambdas?</h4>
+<ul>
+<li>[ ] <code>Fleece</code></li>
+<li>[x] <code>NPM</code></li>
+<li>[ ] <code>none of these answers</code></li>
+<li>[ ] <code>Pod</code></li>
+</ul>
+<h4 id="q41.-lambdas-are-monitored-by-default-using-which-service">Q41. Lambdas are monitored by default using which service?</h4>
+<ul>
+<li>[ ] <code>CloudTrail</code></li>
+<li>[x] <code>CloudWatch</code></li>
+<li>[ ] <code>CloudFormation</code></li>
+<li>[ ] <code>LogWatch</code></li>
+</ul>
+<h4 id="q42.-what-can-trigger-a-lambda-function-execution">Q42. What can trigger a Lambda function execution?</h4>
+<ul>
+<li>[ ] <code>a table definition</code></li>
+<li>[ ] <code>queue isolation</code></li>
+<li>[ ] <code>STS Write</code></li>
+<li>[x] <code>an SNS topic</code></li>
+</ul>
+<h4 id="q43.-you-need-to-set-an-s3-event-trigger-on-your-lambda-to-respond-when-data-is-added-to-your-bucket-from-another-s3-bucket.-which-event-type-do-you-configure">Q43. You need to set an S3 event trigger on your Lambda to respond when data is added to your bucket from another S3 bucket. Which event type do you configure?</h4>
+<ul>
+<li>[ ] <code>POST</code></li>
+<li>[ ] <code>"All object create events"</code></li>
+<li>[x] <code>PUT</code></li>
+<li>[ ] <code>COPY</code></li>
+</ul>
+<h4 id="q44.-to-make-lambdas-more-testable-it-is-aws-best-practice-to-separate-which-of-these">Q44. To make Lambdas more testable, it is AWS best practice to separate which of these?</h4>
+<ul>
+<li>[ ] <code>Lambda configuration from logging code</code></li>
+<li>[ ] <code>Lambda handler from logging code</code></li>
+<li>[x] <code>Lambda handler from core logic</code></li>
+<li>[ ] <code>Lambda configuration from core logic</code></li>
+</ul>
+</body>
+</html>

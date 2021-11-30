@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Implementing_the_functions_of_a_calculator</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="dismantling-complex-problems-implementing-the-functions-of-a-calculator">Dismantling complex problems: Implementing the functions of a calculator</h1>
+<p><strong>Translator: <a href="https://github.com/Mr2er0">Zero</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>The calculator function we will eventually implement is as follows:</p>
+<p>1、Enter a string that can include <code>+-* /</code>, numbers, brackets, and spaces. Your algorithm returns the structure of the operation.</p>
+<p>2、To comply with the algorithm, parentheses have the highest priority, multiply and divide first, then add and subtract.</p>
+<p>3、The division sign is an integer division, rounded to zero regardless of the sign (5/2 = 2, -5 / 2 = -2).</p>
+<p>4、It can be assumed that the input formula must be legal, and there will be no integer overflow in the calculation process, and there will be no unexpected situation where the divisor is 0.</p>
+<p>For example, if you enter the following string, the algorithm will return 9:</p>
+<p><code>3 * (2-6 /(3 -7))</code></p>
+<p>As you can see, this is very close to the calculator we use in real life. Although we have definitely used the calculator before, if we think about its algorithm implementation, we will find that it is not easy to implment:</p>
+<p>1、To handle parentheses according to common sense, first calculate the innermost parentheses, and then gradually simplify them outward. This process is easy to make mistakes, let alone write algorithms!</p>
+<p>2、It is not difficult to teach children to multiply and divide first, then add and subtract, but it may be difficult to teach computers.</p>
+<p>3、To handle spaces. For the sake of beauty, we habitually put spaces between numbers and operators, but we have to figure out ways to ignore these spaces.</p>
+<p>I remember a lot of textbooks on university data structure. When talking about data structures like stacks, they may use calculators as examples, but most can’t make it clear. I don’t know how many future computer scientists may quit because of such a simple data structure .</p>
+<p>Then this article talks about how to implement one of the above-mentioned full-featured calculator functions.<strong>The key lies in dismantling the problems layer by layer and solving the problems one by one</strong>, I believe that this way of thinking can help everyone solve various complex problems.</p>
+<p>Let’s take apart. Starting with the simplest question.</p>
+<h3 id="convert-string-to-integer">1.Convert string to integer</h3>
+<p>Yes, it is such a simple question. First tell me, how to convert a <strong>positive</strong> integer in the form of a string into an int?</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1">string s = <span class="st">&quot;458&quot;</span>;</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="dt">int</span> n = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; s.size(); i++) {</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="dt">char</span> c = s[i];</a>
+<a class="sourceLine" id="cb1-6" title="6">    n = <span class="dv">10</span> * n + (c - <span class="ch">&#39;0&#39;</span>);</a>
+<a class="sourceLine" id="cb1-7" title="7">}</a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co">// n is now equal to 458</span></a></code></pre></div>
+<p>This is still very simple, old-fashioned. But even so simple, there are still issues that need attention: <strong>This bracket in <code>(c - '0')</code> cannot be omitted, otherwise it may cause integer overflow</strong></p>
+<p>Because the variable <code>c</code> is an ASCII code, if there is no parentheses, it will be added first and then subtracted. Imagine that<code>s</code> will overflow if it approaches INT_MAX. So use parentheses to ensure that you subtract before adding.</p>
+<h3 id="processing-addition-and-subtraction">2.Processing addition and subtraction</h3>
+<p>Now further more, <strong>If the input formula only contains addition and subtraction, and there are no spaces</strong>, how do you calculate the result? Let’s take the string expression <code>1-12 + 3</code> as an example. A very simple idea is implemented below:</p>
+<p>1、First add a default symbol <code>+</code> to the first number and change it to <code>+ 1-12 + 3</code>.</p>
+<p>2、Combine an operator and a number into a pair, that is, three pairs of <code>+ 1</code>,<code>-12</code>, <code>+ 3</code>, convert them into numbers, and put them on a stack.</p>
+<p>3、Summing all the numbers in the stack , which is the result of the original calculation.</p>
+<p>Let’s look directly at the code and see it in combination with a picture:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">int</span> calculate(string s) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    stack&lt;<span class="dt">int</span>&gt; stk;</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="co">// Record numbers in calculations</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="dt">int</span> num = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="co">// Record the sign before num, initialized to +</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="dt">char</span> sign = <span class="ch">&#39;+&#39;</span>;</a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; s.size(); i++) {</a>
+<a class="sourceLine" id="cb2-8" title="8">        <span class="dt">char</span> c = s[i];</a>
+<a class="sourceLine" id="cb2-9" title="9">        <span class="co">// If it is a number, assign it continuously to num</span></a>
+<a class="sourceLine" id="cb2-10" title="10">        <span class="cf">if</span> (isdigit(c)) </a>
+<a class="sourceLine" id="cb2-11" title="11">            num = <span class="dv">10</span> * num + (c - <span class="ch">&#39;0&#39;</span>);</a>
+<a class="sourceLine" id="cb2-12" title="12">        <span class="co">// If it&#39;s not a number, it must be the next symbol,</span></a>
+<a class="sourceLine" id="cb2-13" title="13">        <span class="co">// the previous numbers and symbols should be stored on the stack</span></a>
+<a class="sourceLine" id="cb2-14" title="14">        <span class="cf">if</span> (!isdigit(c) || i == s.size() - <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb2-15" title="15">            <span class="cf">switch</span> (sign) {</a>
+<a class="sourceLine" id="cb2-16" title="16">                <span class="cf">case</span> <span class="ch">&#39;+&#39;</span>:</a>
+<a class="sourceLine" id="cb2-17" title="17">                    stk.push(num); <span class="cf">break</span>;</a>
+<a class="sourceLine" id="cb2-18" title="18">                <span class="cf">case</span> <span class="ch">&#39;-&#39;</span>:</a>
+<a class="sourceLine" id="cb2-19" title="19">                    stk.push(-num); <span class="cf">break</span>;</a>
+<a class="sourceLine" id="cb2-20" title="20">            }</a>
+<a class="sourceLine" id="cb2-21" title="21">            <span class="co">// Update the symbol to the current symbol and clear the number</span></a>
+<a class="sourceLine" id="cb2-22" title="22">            sign = c;</a>
+<a class="sourceLine" id="cb2-23" title="23">            num = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-24" title="24">        }</a>
+<a class="sourceLine" id="cb2-25" title="25">    }</a>
+<a class="sourceLine" id="cb2-26" title="26">    <span class="co">// Sum all the results in the stack is the answer</span></a>
+<a class="sourceLine" id="cb2-27" title="27">    <span class="dt">int</span> res = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-28" title="28">    <span class="cf">while</span> (!stk.empty()) {</a>
+<a class="sourceLine" id="cb2-29" title="29">        res += stk.top();</a>
+<a class="sourceLine" id="cb2-30" title="30">        stk.pop();</a>
+<a class="sourceLine" id="cb2-31" title="31">    }</a>
+<a class="sourceLine" id="cb2-32" title="32">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb2-33" title="33">}</a></code></pre></div>
+<p>I guess the part with the <code>switch</code> statement in the middle is a bit hard to understand. <code>i</code> is scanned from left to right, and <code>sign</code> and <code>num</code> follow it. When <code>s [i]</code> encounters an operator, the situation is this:</p>
+<p><img src="../pictures/calculator/1.jpg" /></p>
+<p>Therefore, at this time, the sign of <code>nums</code> should be selected according to the case of<code>sign</code>, stored in the stack, and then <code>sign</code> is updated and the<code>nums</code> is cleared to record the next pair of sign and numbers.</p>
+<p>Also note that not only the new symbol will trigger the stack. When <code>i</code> reaches the end of the expression (<code>i == s.size ()-1</code>), the previous number should also be pushed on the stack for subsequent calculate the final result.</p>
+<p><img src="../pictures/calculator/2.jpg" /></p>
+<p>At this point, the algorithm for processing only the compact addition and subtraction strings is complete. Please ensure that you understand the above. The subsequent content will be modified based on this framework.</p>
+<h3 id="multiplication-and-division">3.Multiplication and division</h3>
+<p>In fact, the idea is no different from just adding and subtracting. Take the string <code>2-3 * 4 + 5</code> as an example. The core idea is still to decompose the string into a combination of symbols and numbers.</p>
+<p>For example, the above example can be decomposed into <code>+ 2</code>,<code>-3</code>, <code>* 4</code>,<code>+ 5</code>. We have not dealt with the multiplication and division signs just now. It is very simple. <strong>No other parts need to be changed</strong>, add the corresponding case to the <code>switch</code> section:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" title="1"><span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; s.size(); i++) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="dt">char</span> c = s[i];</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="cf">if</span> (isdigit(c)) </a>
+<a class="sourceLine" id="cb3-4" title="4">        num = <span class="dv">10</span> * num + (c - <span class="ch">&#39;0&#39;</span>);</a>
+<a class="sourceLine" id="cb3-5" title="5"></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="cf">if</span> (!isdigit(c) || i == s.size() - <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="cf">switch</span> (sign) {</a>
+<a class="sourceLine" id="cb3-8" title="8">            <span class="dt">int</span> pre;</a>
+<a class="sourceLine" id="cb3-9" title="9">            <span class="cf">case</span> <span class="ch">&#39;+&#39;</span>:</a>
+<a class="sourceLine" id="cb3-10" title="10">                stk.push(num); <span class="cf">break</span>;</a>
+<a class="sourceLine" id="cb3-11" title="11">            <span class="cf">case</span> <span class="ch">&#39;-&#39;</span>:</a>
+<a class="sourceLine" id="cb3-12" title="12">                stk.push(-num); <span class="cf">break</span>;</a>
+<a class="sourceLine" id="cb3-13" title="13">            <span class="co">// Just take out the previous number and do the corresponding operation</span></a>
+<a class="sourceLine" id="cb3-14" title="14">            <span class="cf">case</span> <span class="ch">&#39;*&#39;</span>:</a>
+<a class="sourceLine" id="cb3-15" title="15">                pre = stk.top();</a>
+<a class="sourceLine" id="cb3-16" title="16">                stk.pop();</a>
+<a class="sourceLine" id="cb3-17" title="17">                stk.push(pre * num);</a>
+<a class="sourceLine" id="cb3-18" title="18">                <span class="cf">break</span>;</a>
+<a class="sourceLine" id="cb3-19" title="19">            <span class="cf">case</span> <span class="ch">&#39;/&#39;</span>:</a>
+<a class="sourceLine" id="cb3-20" title="20">                pre = stk.top();</a>
+<a class="sourceLine" id="cb3-21" title="21">                stk.pop();</a>
+<a class="sourceLine" id="cb3-22" title="22">                stk.push(pre / num);</a>
+<a class="sourceLine" id="cb3-23" title="23">                <span class="cf">break</span>;</a>
+<a class="sourceLine" id="cb3-24" title="24">        }</a>
+<a class="sourceLine" id="cb3-25" title="25">        <span class="co">// Update the symbol to the current symbol and clear the number</span></a>
+<a class="sourceLine" id="cb3-26" title="26">        sign = c;</a>
+<a class="sourceLine" id="cb3-27" title="27">        num = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-28" title="28">    }</a>
+<a class="sourceLine" id="cb3-29" title="29">}</a></code></pre></div>
+<p><img src="../pictures/calculator/3.jpg" /></p>
+<p>** Multiplication and division take precedence over addition and subtraction in that multiplication and division can be combined with numbers on the top of the stack, and addition and subtraction can only put themselves on the stack **.</p>
+<p>Now let’s think about <strong>how to deal with the possible space characters in a string</strong>. In fact, it is very simple. Think about what part of our existing code whil be affected by the appearance of the space character.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" title="1"><span class="co">// If c is not a number</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="cf">if</span> (!isdigit(c) || i == s.size() - <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="cf">switch</span> (c) {...}</a>
+<a class="sourceLine" id="cb4-4" title="4">    sign = c;</a>
+<a class="sourceLine" id="cb4-5" title="5">    num = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb4-6" title="6">}</a></code></pre></div>
+<p>Obviously spaces will enter this if statement, but we don’t want to let spaces enter this if, because <code>sign</code> will be updated and <code>nums</code> will be cleared. Spaces are not operators at all and should be ignored.</p>
+<p>Then just add one more condition:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" title="1"><span class="cf">if</span> ((!isdigit(c) &amp;&amp; c != <span class="ch">&#39; &#39;</span>) || i == s.size() - <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    ...</a>
+<a class="sourceLine" id="cb5-3" title="3">}</a></code></pre></div>
+<p>Well, now our algorithm can calculate addition, subtraction, multiplication and division according to the correct rules, and automatically ignore the space characters. The rest is how to make the algorithm recognize the brackets correctly.</p>
+<h3 id="handling-parentheses">4.Handling parentheses</h3>
+<p>Dealing with parentheses in calculations should seem the hardest, but it’s not as difficult as it seems.</p>
+<p>To avoid the tedious details of the programming language, I translated the previous solution code into a Python version:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> calculate(s: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb6-2" title="2">        </a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">def</span> helper(s: List) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb6-4" title="4">        stack <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb6-5" title="5">        sign <span class="op">=</span> <span class="st">&#39;+&#39;</span></a>
+<a class="sourceLine" id="cb6-6" title="6">        num <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-7" title="7"></a>
+<a class="sourceLine" id="cb6-8" title="8">        <span class="cf">while</span> <span class="bu">len</span>(s) <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb6-9" title="9">            c <span class="op">=</span> s.pop(<span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb6-10" title="10">            <span class="cf">if</span> c.isdigit():</a>
+<a class="sourceLine" id="cb6-11" title="11">                num <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> num <span class="op">+</span> <span class="bu">int</span>(c)</a>
+<a class="sourceLine" id="cb6-12" title="12"></a>
+<a class="sourceLine" id="cb6-13" title="13">            <span class="cf">if</span> (<span class="kw">not</span> c.isdigit() <span class="kw">and</span> c <span class="op">!=</span> <span class="st">&#39; &#39;</span>) <span class="kw">or</span> <span class="bu">len</span>(s) <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb6-14" title="14">                <span class="cf">if</span> sign <span class="op">==</span> <span class="st">&#39;+&#39;</span>:</a>
+<a class="sourceLine" id="cb6-15" title="15">                    stack.append(num)</a>
+<a class="sourceLine" id="cb6-16" title="16">                <span class="cf">elif</span> sign <span class="op">==</span> <span class="st">&#39;-&#39;</span>:</a>
+<a class="sourceLine" id="cb6-17" title="17">                    stack.append(<span class="op">-</span>num)</a>
+<a class="sourceLine" id="cb6-18" title="18">                <span class="cf">elif</span> sign <span class="op">==</span> <span class="st">&#39;*&#39;</span>:</a>
+<a class="sourceLine" id="cb6-19" title="19">                    stack[<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> stack[<span class="op">-</span><span class="dv">1</span>] <span class="op">*</span> num</a>
+<a class="sourceLine" id="cb6-20" title="20">                <span class="cf">elif</span> sign <span class="op">==</span> <span class="st">&#39;/&#39;</span>:</a>
+<a class="sourceLine" id="cb6-21" title="21">                    <span class="co"># Python division to 0 rounding</span></a>
+<a class="sourceLine" id="cb6-22" title="22">                    stack[<span class="op">-</span><span class="dv">1</span>] <span class="op">=</span> <span class="bu">int</span>(stack[<span class="op">-</span><span class="dv">1</span>] <span class="op">/</span> <span class="bu">float</span>(num))                    </a>
+<a class="sourceLine" id="cb6-23" title="23">                num <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-24" title="24">                sign <span class="op">=</span> c</a>
+<a class="sourceLine" id="cb6-25" title="25"></a>
+<a class="sourceLine" id="cb6-26" title="26">        <span class="cf">return</span> <span class="bu">sum</span>(stack)</a>
+<a class="sourceLine" id="cb6-27" title="27">    <span class="co"># Need to turn strings into lists for easy operation</span></a>
+<a class="sourceLine" id="cb6-28" title="28">    <span class="cf">return</span> helper(<span class="bu">list</span>(s))</a></code></pre></div>
+<p>This code is exactly the same as the C ++ code just now. The only difference is that instead of traversing the string from left to right, it continues to pop out characters from the left.</p>
+<p>So why isn’t it so hard to deal with parentheses, <strong>because parentheses are recursive</strong> Let’s take the string <code>3 * (4-5 / 2) -6</code> as an example:</p>
+<p>calculate(<code>3*(4-5/2)-6</code>) = 3 * calculate(<code>4-5/2</code>) - 6 = 3 * 2 - 6 = 0</p>
+<p>In fact, no matter how many levels of parentheses are nested, you can reduce the calculation in the parentheses to a number by calling itself recursively through the calculate function. <strong>In other words, the calculations in parentheses are just a number.</strong></p>
+<p>The question is, what are the start and end conditions for recursion? <strong>Meet <code>(</code> begin recursion, encounter <code>)</code> end recursion</strong>:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">def</span> calculate(s: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb7-2" title="2">        </a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="kw">def</span> helper(s: List) <span class="op">-&gt;</span> <span class="bu">int</span>:</a>
+<a class="sourceLine" id="cb7-4" title="4">        stack <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb7-5" title="5">        sign <span class="op">=</span> <span class="st">&#39;+&#39;</span></a>
+<a class="sourceLine" id="cb7-6" title="6">        num <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-7" title="7"></a>
+<a class="sourceLine" id="cb7-8" title="8">        <span class="cf">while</span> <span class="bu">len</span>(s) <span class="op">&gt;</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb7-9" title="9">            c <span class="op">=</span> s.pop(<span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb7-10" title="10">            <span class="cf">if</span> c.isdigit():</a>
+<a class="sourceLine" id="cb7-11" title="11">                num <span class="op">=</span> <span class="dv">10</span> <span class="op">*</span> num <span class="op">+</span> <span class="bu">int</span>(c)</a>
+<a class="sourceLine" id="cb7-12" title="12">            <span class="co"># Meet the left parenthesis and start recursive calculation of num</span></a>
+<a class="sourceLine" id="cb7-13" title="13">            <span class="cf">if</span> c <span class="op">==</span> <span class="st">&#39;(&#39;</span>:</a>
+<a class="sourceLine" id="cb7-14" title="14">                num <span class="op">=</span> helper(s)</a>
+<a class="sourceLine" id="cb7-15" title="15"></a>
+<a class="sourceLine" id="cb7-16" title="16">            <span class="cf">if</span> (<span class="kw">not</span> c.isdigit() <span class="kw">and</span> c <span class="op">!=</span> <span class="st">&#39; &#39;</span>) <span class="kw">or</span> <span class="bu">len</span>(s) <span class="op">==</span> <span class="dv">0</span>:</a>
+<a class="sourceLine" id="cb7-17" title="17">                <span class="cf">if</span> sign <span class="op">==</span> <span class="st">&#39;+&#39;</span>: ...</a>
+<a class="sourceLine" id="cb7-18" title="18">                <span class="cf">elif</span> sign <span class="op">==</span> <span class="st">&#39;-&#39;</span>: ... </a>
+<a class="sourceLine" id="cb7-19" title="19">                <span class="cf">elif</span> sign <span class="op">==</span> <span class="st">&#39;*&#39;</span>: ...</a>
+<a class="sourceLine" id="cb7-20" title="20">                <span class="cf">elif</span> sign <span class="op">==</span> <span class="st">&#39;/&#39;</span>: ...</a>
+<a class="sourceLine" id="cb7-21" title="21">                num <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-22" title="22">                sign <span class="op">=</span> c</a>
+<a class="sourceLine" id="cb7-23" title="23">            <span class="co"># Return recursive result when encountering right parenthesis</span></a>
+<a class="sourceLine" id="cb7-24" title="24">            <span class="cf">if</span> c <span class="op">==</span> <span class="st">&#39;)&#39;</span>: <span class="cf">break</span></a>
+<a class="sourceLine" id="cb7-25" title="25">        <span class="cf">return</span> <span class="bu">sum</span>(stack)</a>
+<a class="sourceLine" id="cb7-26" title="26"></a>
+<a class="sourceLine" id="cb7-27" title="27">    <span class="cf">return</span> helper(<span class="bu">list</span>(s))</a></code></pre></div>
+<p><img src="../pictures/calculator/4.jpg" /></p>
+<p><img src="../pictures/calculator/5.jpg" /></p>
+<p><img src="../pictures/calculator/6.jpg" /></p>
+<p>As you can see, with two or three lines of code, you can handle parentheses, which is the charm of recursion. At this point, all the functions of the calculator have been realized. By dismantling the problem layer by layer and solving the problems one by one, the problem does not seem so complicated. ### 5. Final summary</p>
+<p>In this article, I want to express the idea of ​​dealing with complex problems by implementing the functions of a calculator.</p>
+<p>We start with the simple problem of converting strings to numbers, and then work with expressions that only include addition and subtraction, then work with expressions that include four operations: addition, subtraction, multiplication, and division, then space characters, and then expressions that include parentheses.</p>
+<p><strong>It can be seen that for some difficult problems, the solution is not achieved overnight, but it is advanced step by step and spirally rises</strong>. If you give you the original question at the beginning, you may fail to handel it, and you even can’t understand the answer. It ’s normal. The key lies in how we simplify the problem ourselves and how to retreat for the sake of advancing.</p>
+<p><strong>It’s a very clever strategy to retreat and take the second best</strong>。Think about it, assuming this is an exam question, you won’t implement this calculator, but you wrote the string to integer algorithm and pointed out the easy-to-overflow trap, then at least you can get 20 points; if you can handle addition and subtraction, you can get 40 points; if you can handle addition, subtraction, multiplication and division, that is at least 70 points; plus the space character, 80. I just don’t handle parentheses, so forget it, 80 is OK, OK?</p>
+</body>
+</html>

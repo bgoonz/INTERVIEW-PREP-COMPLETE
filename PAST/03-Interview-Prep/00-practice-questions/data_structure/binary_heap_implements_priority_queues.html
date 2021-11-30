@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>binary_heap_implements_priority_queues</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="binary-heap-detail-implements-priority-queues">Binary heap detail implements priority queues</h1>
+<p><strong>Translator: <a href="https://github.com/build2645">build2645</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>There is nothing mysterious about binary heap, and its properties are simpler than binary search tree BST.The main operations are ‘sink’ and ‘swim’ to maintain the binary heap properties.There are two main applications, the first is a sorting method “heap sort”, the second is a very useful data structure “priority queue”.</p>
+<p>This article takes implementing a Priority Queue as an example，using pictures and human language to describe how binary heap works.</p>
+<h3 id="binary-heap-overview">1、Binary heap overview</h3>
+<p>First of all, what does a binary heap have to do with a binary tree? Why do people always draw binary trees as binary heap?</p>
+<p>Because a binary heap is a special kind of binary tree (complete binary tree) that is stored in an array.In a general linked list binary tree, we manipulate Pointers to nodes, whereas in an array, we use an array index as a pointer:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// the index of the parent node</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="dt">int</span> <span class="fu">parent</span>(<span class="dt">int</span> root) {</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="kw">return</span> root / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb1-4" title="4">}</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="co">// index of left child</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="dt">int</span> <span class="fu">left</span>(<span class="dt">int</span> root) {</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">return</span> root * <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb1-8" title="8">}</a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co">// index of right child</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="dt">int</span> <span class="fu">right</span>(<span class="dt">int</span> root) {</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="kw">return</span> root * <span class="dv">2</span> + <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb1-12" title="12">}</a></code></pre></div>
+<p>Draw a picture and you’ll understand immediately. Notice that the first index of the array 0 is left blank</p>
+<figure>
+<img src="../pictures/heap/1.png" alt="1" /><figcaption>1</figcaption>
+</figure>
+<p>PS：Because array indexes are Numbers, characters are treated as array indexes for convenience.</p>
+<p>As you can see, with arr[1] as the root of the whole tree, the parent node of each node and the indexes of the left and right children can be obtained by simple calculation, which is a clever part of binary heap design.And for the sake of simplicity, I’m going to draw all of these binary tree structures, so I’m sure you can match a tree to an array.`</p>
+<p>Binary heap is also divided into maximum heap and minimum heap.<strong>The properties of the maximum heap are: each node is greater than or equal to its two children.</strong> Similarly, the properties of the minimum heap are：each node is less than or equal to its children.</p>
+<p>Both heap cores have the same idea, and this article takes maximum heap as an example.</p>
+<p>For a maximum heap, by its nature, it is obvious that the top of the heap, arr[1], must be the largest element of all.</p>
+<h3 id="priority-queue-overview">2、Priority queue overview</h3>
+<p>A useful feature of priority queues is that when you insert or delete elements, the elements are sorted automatically, and the underlying principle is binary heap operations.</p>
+<p>The function of data structure is nothing more than adding and deleting，Priority queues have two main API, to insert an element and to remove the largest element（If the bottom uses the minimum heap，it will be <code>delMin</code>）.</p>
+<p>Let’s implement a simplified priority queue, starting with the code framework：</p>
+<p>PS：For clarity, Java generics are used here，<code>Key</code> can be any data type of comparable value，You can think of it as int, char, etc</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">public</span> <span class="kw">class</span> MaxPQ</a>
+<a class="sourceLine" id="cb2-2" title="2">    &lt;<span class="bu">Key</span> <span class="kw">extends</span> <span class="bu">Comparable</span>&lt;<span class="bu">Key</span>&gt;&gt; {</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="co">// An array of storage elements</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="kw">private</span> <span class="bu">Key</span>[] pq;</a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="co">// Number of elements in the current Priority Queue</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">private</span> <span class="dt">int</span> N = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-7" title="7"></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">public</span> <span class="fu">MaxPQ</span>(<span class="dt">int</span> cap) {</a>
+<a class="sourceLine" id="cb2-9" title="9">        <span class="co">// Index 0 is not used, so allocate one more space</span></a>
+<a class="sourceLine" id="cb2-10" title="10">        pq = (<span class="bu">Key</span>[]) <span class="kw">new</span> <span class="bu">Comparable</span>[cap + <span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb2-11" title="11">    }</a>
+<a class="sourceLine" id="cb2-12" title="12"></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="co">/* Returns the largest element in the current queue */</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="kw">public</span> <span class="bu">Key</span> <span class="fu">max</span>() {</a>
+<a class="sourceLine" id="cb2-15" title="15">        <span class="kw">return</span> pq[<span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb2-16" title="16">    }</a>
+<a class="sourceLine" id="cb2-17" title="17"></a>
+<a class="sourceLine" id="cb2-18" title="18">    <span class="co">/* Insert element e */</span></a>
+<a class="sourceLine" id="cb2-19" title="19">    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">insert</span>(<span class="bu">Key</span> e) {...}</a>
+<a class="sourceLine" id="cb2-20" title="20"></a>
+<a class="sourceLine" id="cb2-21" title="21">    <span class="co">/* Removes and returns the largest element in the current queue */</span></a>
+<a class="sourceLine" id="cb2-22" title="22">    <span class="kw">public</span> <span class="bu">Key</span> <span class="fu">delMax</span>() {...}</a>
+<a class="sourceLine" id="cb2-23" title="23"></a>
+<a class="sourceLine" id="cb2-24" title="24">    <span class="co">/* swim the KTH element to maintain the maximum heap properties */</span></a>
+<a class="sourceLine" id="cb2-25" title="25">    <span class="kw">private</span> <span class="dt">void</span> <span class="fu">swim</span>(<span class="dt">int</span> k) {...}</a>
+<a class="sourceLine" id="cb2-26" title="26"></a>
+<a class="sourceLine" id="cb2-27" title="27">    <span class="co">/* Sink the KTH element to maintain maximum heap properties */</span></a>
+<a class="sourceLine" id="cb2-28" title="28">    <span class="kw">private</span> <span class="dt">void</span> <span class="fu">sink</span>(<span class="dt">int</span> k) {...}</a>
+<a class="sourceLine" id="cb2-29" title="29"></a>
+<a class="sourceLine" id="cb2-30" title="30">    <span class="co">/* Swap the two elements of the array */</span></a>
+<a class="sourceLine" id="cb2-31" title="31">    <span class="kw">private</span> <span class="dt">void</span> <span class="fu">exch</span>(<span class="dt">int</span> i, <span class="dt">int</span> j) {</a>
+<a class="sourceLine" id="cb2-32" title="32">        <span class="bu">Key</span> temp = pq[i];</a>
+<a class="sourceLine" id="cb2-33" title="33">        pq[i] = pq[j];</a>
+<a class="sourceLine" id="cb2-34" title="34">        pq[j] = temp;</a>
+<a class="sourceLine" id="cb2-35" title="35">    }</a>
+<a class="sourceLine" id="cb2-36" title="36"></a>
+<a class="sourceLine" id="cb2-37" title="37">    <span class="co">/* Is pq[i] less than pq[j]？ */</span></a>
+<a class="sourceLine" id="cb2-38" title="38">    <span class="kw">private</span> <span class="dt">boolean</span> <span class="fu">less</span>(<span class="dt">int</span> i, <span class="dt">int</span> j) {</a>
+<a class="sourceLine" id="cb2-39" title="39">        <span class="kw">return</span> pq[i].<span class="fu">compareTo</span>(pq[j]) &lt; <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-40" title="40">    }</a>
+<a class="sourceLine" id="cb2-41" title="41"></a>
+<a class="sourceLine" id="cb2-42" title="42">    <span class="co">/* and left, right, parent methods */</span></a>
+<a class="sourceLine" id="cb2-43" title="43">}</a></code></pre></div>
+<p>The four methods that are left open are the mystery of binary heap and priority queue, which are illustrated below.</p>
+<h3 id="implement-swim-and-sink">3、Implement swim and sink</h3>
+<p>Why swim up and sink? To maintain the heap structure!</p>
+<p>We’re talking about a maximum heap, where each node is larger than its two children, but when you insert and delete elements, you break the nature of the heap, which requires both operations to restore the nature of the heap.</p>
+<p>For a maximum heap, there are two cases where the nature of the heap is destroyed:</p>
+<ol type="1">
+<li><p>If some node A is smaller than its children, then A doesn’t deserve to be the parent node, so it should go down, and the larger node down here comes up as the parent node, and that’s <strong>sink</strong> on A。</p></li>
+<li><p>If some node A is bigger than its parent, then A should not be the child node, but the parent node should be replaced and the parent node should be the parent node itself, which is the <strong>swim</strong> of A。</p></li>
+</ol>
+<p>Of course, the misaligned node A may have to rise (or sink) many times before it reaches the correct location and restores the nature of the heap. So there must be a <code>while</code> loop in the code.</p>
+<p>The observant reader may ask, aren’t these two operations reciprocal, so the operation of floating up must be accomplished by sinking down, why should I bother to write two methods?</p>
+<p>Yes, the operations are inversely equivalent, but in the end we will only operate at the bottom and the top of the heap (we’ll see why), and obviously the “misaligned” elements at the bottom of the heap need to float up, and the “misaligned” elements at the top of the heap need to sink.</p>
+<p>This is the code to implement the <code>swim</code> API:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">private</span> <span class="dt">void</span> <span class="fu">swim</span>(<span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="co">// If you float to the top of the heap, you can&#39;t float any higher</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="kw">while</span> (k &gt; <span class="dv">1</span> &amp;&amp; <span class="fu">less</span>(<span class="fu">parent</span>(k), k)) {</a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="co">// If the KTH element is larger than the top</span></a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="co">// replace k</span></a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="fu">exch</span>(<span class="fu">parent</span>(k), k);</a>
+<a class="sourceLine" id="cb3-7" title="7">        k = <span class="fu">parent</span>(k);</a>
+<a class="sourceLine" id="cb3-8" title="8">    }</a>
+<a class="sourceLine" id="cb3-9" title="9">}</a></code></pre></div>
+<p>Draw a GIF to help you understand：</p>
+<figure>
+<img src="../pictures/heap/swim.gif" alt="2" /><figcaption>2</figcaption>
+</figure>
+<p><strong>Sinking code implementation：</strong></p>
+<p>Sinking is slightly more complicated than floating up, because floating up A node A only requires A to compare the value with its parent node; However, to sink node A, we need to compare the value of A with its <strong>two child nodes</strong> If A is not the largest, we need to adjust the position and exchange the larger child node with A.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">private</span> <span class="dt">void</span> <span class="fu">sink</span>(<span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="co">// Sink to the bottom and stop</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">while</span> (<span class="fu">left</span>(k) &lt;= N) {</a>
+<a class="sourceLine" id="cb4-4" title="4">        <span class="co">// Let&#39;s assume that the left node is larger</span></a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="dt">int</span> older = <span class="fu">left</span>(k);</a>
+<a class="sourceLine" id="cb4-6" title="6">        <span class="co">// If the right node exists, compare the value</span></a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="kw">if</span> (<span class="fu">right</span>(k) &lt;= N &amp;&amp; <span class="fu">less</span>(older, <span class="fu">right</span>(k)))</a>
+<a class="sourceLine" id="cb4-8" title="8">            older = <span class="fu">right</span>(k);</a>
+<a class="sourceLine" id="cb4-9" title="9">        <span class="co">// Node k is bigger than both of the children, so you don&#39;t have to sink</span></a>
+<a class="sourceLine" id="cb4-10" title="10">        <span class="kw">if</span> (<span class="fu">less</span>(older, k)) <span class="kw">break</span>;</a>
+<a class="sourceLine" id="cb4-11" title="11">        <span class="co">// Otherwise, it doesn&#39;t fit the maximum heap structure, sinking k nodes</span></a>
+<a class="sourceLine" id="cb4-12" title="12">        <span class="fu">exch</span>(k, older);</a>
+<a class="sourceLine" id="cb4-13" title="13">        k = older;</a>
+<a class="sourceLine" id="cb4-14" title="14">    }</a>
+<a class="sourceLine" id="cb4-15" title="15">}</a></code></pre></div>
+<p>Draw a GIF to help you understand：</p>
+<figure>
+<img src="../pictures/heap/sink.gif" alt="3" /><figcaption>3</figcaption>
+</figure>
+<p>So far, I’ve covered the main operations of binary heap, which is not difficult at all, and only adds up to ten lines of code. Now that you understand the behavior of <code>sink</code> and <code>swim</code> ，you are ready to implement the priority queue</p>
+<p>These two methods are built on <code>swim</code> and <code>sink</code> .</p>
+<p><strong>The <code>insert</code> method first adds the element to be inserted to the bottom of the heap and then floats it up to the correct position</strong></p>
+<figure>
+<img src="../pictures/heap/insert.gif" alt="4" /><figcaption>4</figcaption>
+</figure>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">insert</span>(<span class="bu">Key</span> e) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    N++;</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="co">// add the new element to the end</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    pq[N] = e;</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="co">// Let it swim to the right place</span></a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="fu">swim</span>(N);</a>
+<a class="sourceLine" id="cb5-7" title="7">}</a></code></pre></div>
+<p><strong><code>delMax</code> first swap top element A with bottom element B, then delete A, and finally let B sink to the correct position。</strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">public</span> <span class="bu">Key</span> <span class="fu">delMax</span>() {</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="co">// the top of the largest heap is the largest element</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="bu">Key</span> max = pq[<span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="co">//Change the maximum element to the end and delete it</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="fu">exch</span>(<span class="dv">1</span>, N);</a>
+<a class="sourceLine" id="cb6-6" title="6">    pq[N] = <span class="kw">null</span>;</a>
+<a class="sourceLine" id="cb6-7" title="7">    N--;</a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="co">// Let the pq[i] sink to the correct position</span></a>
+<a class="sourceLine" id="cb6-9" title="9">    <span class="fu">sink</span>(<span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb6-10" title="10">    <span class="kw">return</span> max;</a>
+<a class="sourceLine" id="cb6-11" title="11">}</a></code></pre></div>
+<figure>
+<img src="../pictures/heap/delete.gif" alt="5" /><figcaption>5</figcaption>
+</figure>
+<p>At this point, a priority queue is implemented.The time complexity of inserting and deleting elements is <span class="math inline"><em>O</em>(<em>l</em><em>o</em><em>g</em><em>K</em>)</span>，<span class="math inline"><em>K</em></span> s the total number of elements in the current binary heap (priority queue).Because our time complexity is mainly spent ‘sink’ or ‘swim’, whether floating up or down, is at most the height of the tree (heap), which is the log level.</p>
+<h3 id="sum-up">5、sum up</h3>
+<p>A binary heap is a complete binary tree, so it is suitable for storing in an array, and the binary heap has some special properties.</p>
+<p>Binary heap operation is very simple, mainly floating up and down, to maintain the nature of the heap (heap order), the core code is only 10 lines.</p>
+<p>Priority queues are implemented based on binary heap, with the main operations being insert and delete. Insert is to insert to the end first and then float up to the correct position; Deletion is to reverse the position and then delete, and then sink to the correct position. The core code is only ten lines.</p>
+<p>Perhaps this is the power of data structure, simple operation can achieve clever functions, really admire the invention of binary heap algorithm people!</p>
+<p>Addition, here is an elegant implementation of Heap with python lambda from <a href="https://github.com/labuladong/fucking-algorithm/issues/157#issue-576237519">vancanhuit</a>.</p>
+</body>
+</html>

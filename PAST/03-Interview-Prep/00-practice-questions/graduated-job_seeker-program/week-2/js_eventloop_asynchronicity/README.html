@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="javascript-event-loop-and-asynchronicity">JavaScript Event Loop and Asynchronicity</h1>
+<h3 id="resources">Resources:</h3>
+<ul>
+<li>🎥 <a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">“What the heck is the event loop anyway?”</a> (an oldie but a goodie)</li>
+<li>📖 <a href="https://medium.com/dailyjs/asynchronous-adventures-in-javascript-understanding-the-event-loop-fc6f968d5f72">Asynchronous Adventures in JavaScript</a></li>
+<li>📖 <a href="https://blog.sessionstack.com/how-does-javascript-actually-work-part-1-b0bacc073cf">Overview of the Engine, Runtime, and the Call Stack</a></li>
+<li>📖 <a href="https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5">Event Loop and Async Programming</a></li>
+<li>📖 <a href="http://javascriptissexy.com/understand-javascript-closures-with-ease/">JavaScript Closures with Ease</a></li>
+<li>📖 <a href="https://bytearcher.com/articles/parallel-vs-concurrent/">Parallel vs Concurrent</a></li>
+<li>📖 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Hoisting">Hoisting from MDN</a></li>
+</ul>
+<hr />
+<h2 id="how-do-we-talk-about-javascript">How do we talk about JavaScript?</h2>
+<p>There is often a lot of confusion surrounding how to talk about JavaScript. There are many opinions, ideas, and misconceptions about the pieces that make up the JavaScript we use and how they all tie together. Today’s goal is to better understand what JavaScript is (and isn’t) so that we can speak confidently and knowledgeably about JS as software engineers.</p>
+<h3 id="javascript">JavaScript</h3>
+<p>JavaScript is a high level interpreted programming language. It can be characterized by the following terms:</p>
+<ul>
+<li><strong>Dynamic</strong> (it can execute many common behaviors at runtime rather than having to be compiled)</li>
+<li><strong>Weakly Typed</strong> (types are not declared or firmly adhered to making things like type coercion possible)</li>
+<li><strong>Prototype-Based</strong> (OOP style based on sharing behavior through objects or ‘prototypes’)</li>
+<li><strong>Multi-paradigm</strong> (permits the use of different programming paradigms)</li>
+<li><strong>Single-threaded</strong> (it can only execute one action at any given time)</li>
+<li><strong>Concurrent</strong> (capable of delegating multiple tasks simultaneously)*</li>
+<li><p><strong>Never Blocking</strong> (I/O does not interfere with user input and activity)</p>
+<p>****NB***: <em>Although this seems contrary to JS being single threaded, concurrency is achieved by relying on the host environment to execute certain tasks and then organizing the return values/callbacks of those tasks back into JavaScript’s single thread via the Event Loop.</em></p></li>
+</ul>
+<p><strong>What about ECMAScript?</strong> ECMAScript is the standardized specification that forms the basis for JavaScript. Think of it as a blueprint from which various JavaScript engines, such as Chrome’s V8, are built. From 2009-2015, the most recent <em>stable</em> version of ECMAScript was ECMAScript 6, or ES6 for short. Additionally, ECMAScript 7 has been released, but browser support is not yet standard.</p>
+<h3 id="parallel-vs-concurrent">Parallel vs Concurrent</h3>
+<p>JavaScript is able to run operations concurrently through the Event Loop. <strong>Concurrency</strong> means that processes can run independently of one another, but they do not necessarily run at the same time. (JS is single threaded, so only one process can ever execute at a time.) Concurrent processes can actually be paused so that other processes can be executed. <strong>Parallelism</strong> means that multiple processes can run at exactly the same time. Parallel environments can be described as concurrent, but not all concurrent environments are parallel. Ex:</p>
+<p><strong>Concurrent</strong>:</p>
+<p><img src='https://bytearcher.com/articles/parallel-vs-concurrent/concurrent-2.png' style='width: 200px'></p>
+<p><strong>Parallel</strong>:</p>
+<p><img src='https://bytearcher.com/articles/parallel-vs-concurrent/parallel-2.png' style='width: 200px'></p>
+<h3 id="javascript-engine-and-javascript-runtime-environment">JavaScript Engine and JavaScript Runtime environment</h3>
+<p>The JavaScript Engine and the Runtime Environment are the two things that make up how we use JavaScript.</p>
+<p><strong>The Engine</strong> interprets your JS code and turns it into runnable commands. Examples include V8 (Google), Chakra (Microsoft), and SpiderMonkey (Mozilla). It is made up of the <strong>Heap</strong> for memory allocation, and the <strong>Call Stack</strong> for execution of code.</p>
+<p><strong>The Runtime Environment</strong> supports your JavaScript by providing it with common objects and ways to communicate with the world outside your code. Examples include the web browser and Node.js. It provides your <strong>APIs</strong>, such as setTimeout() and AJAX requests, the <strong>Task/Callback Queue</strong> for organizing executable tasks, and the <strong>Event Loop</strong> to feed tasks from the queue into the call stack.</p>
+<p><img src='https://cdn-images-1.medium.com/max/800/1*FA9NGxNB6-v1oI2qGEtlRQ.png' style='width: 600px'></p>
+<h3 id="environment-apis-the-task-queue-and-the-event-loop">Environment APIs, the Task Queue, and the Event Loop</h3>
+<p>The APIs provided by the runtime environment are what make JavaScript asynchronous. Normal JS code is synchronous, executing one command at a time in order. Environment APIs however do not need to be executed one at a time or wait for one another. The environment is able to allocate resources, or threads, to multiple tasks simultaneously (either in parallel or concurrently depending on the environment and your hardware).</p>
+<p>When an API task is complete, such as an event is triggered or a timer has finished, the callback to be executed on completion (ie: when the Promise is resolved. <em>See below for more info on Promises</em>) is placed in the task queue and waits to be added to the call stack.</p>
+<p>The event loop is in charge of cyclically monitoring the call stack and the task queue. It will watch the call stack until all synchronous commands have been executed and the stack is empty. Once the stack is empty, the Event loop will look at the task queue, remove the first item from the queue (if there are any), and then place that task onto the call stack to execute. This gif shows the process in action:</p>
+<p><img src='https://cdn-images-1.medium.com/max/800/1*TozSrkk92l8ho6d8JxqF_w.gif' style='width: 600px'></p>
+<p>You can read more about the different phases of the Node.js event loop here: <a href="https://medium.freecodecamp.org/walking-inside-nodejs-event-loop-85caeca391a9">Walking Inside the Node.js Event Loop</a></p>
+<p>And, here is a list of <a href="https://developer.mozilla.org/en-US/docs/Web/API">Web APIs on MDN</a> for some context on how many different things the runtime environment can do.</p>
+<h3 id="closures">Closures</h3>
+<p>The quick and concise definition is as follows:</p>
+<p><em>‘A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain.’</em></p>
+<p>Another way to describe closures is when a function ‘closes over’ a variable or parameter from the global scope, it’s parent function’s scope, it’s parent function’s parameters, or it’s internal variables, and then maintains a reference to that information regardless of the function’s context.</p>
+<p>In this example, <code>addNum</code> closes over <code>count</code> and maintains that reference when it is called. It is also worth noting that closure is what allows <code>addNum</code> to be passed <code>nums</code> in the for loop.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">sum</span>(nums) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="kw">let</span> count <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="kw">function</span> <span class="at">addNum</span>(num) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    count <span class="op">+=</span> num<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-7" title="7"></a>
+<a class="sourceLine" id="cb1-8" title="8">  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="va">nums</span>.<span class="at">length</span><span class="op">;</span> i<span class="op">++</span>)<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="at">addNum</span>(nums[i])<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12">  <span class="cf">return</span> count<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-14" title="14"></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="at">sum</span>([<span class="dv">1</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="dv">5</span>]) <span class="co">// =&gt; 9</span></a></code></pre></div>
+<p>Refer to the app/Academy curriculum readings for more examples: <a href="https://github.com/appacademy/curriculum/blob/master/javascript/readings/closures.md">Closure and Scope</a></p>
+<h3 id="callbacks">Callbacks</h3>
+<p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">greeting</span>(name) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="at">alert</span>(<span class="st">&#39;Hello &#39;</span> <span class="op">+</span> name)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-4" title="4"></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="kw">function</span> <span class="at">processUserInput</span>(callback) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-6" title="6">  <span class="kw">var</span> name <span class="op">=</span> <span class="at">prompt</span>(<span class="st">&#39;Please enter your name.&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-7" title="7">  <span class="at">callback</span>(name)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-9" title="9"></a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="at">processUserInput</span>(greeting)<span class="op">;</span></a></code></pre></div>
+<p>It’s important to note that the above is an example of a synchronous callback. The function is executed immediately; it does not wait for any asynchronous actions.</p>
+<h3 id="promises">Promises</h3>
+<p>In JavaScript a Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. Promises are what we can attach and chain callbacks to to be executed on success or failure.</p>
+<p>Check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">MDN docs on using promises</a> for a great practical look at typical promise use.</p>
+<p><strong>Promise.all()</strong></p>
+<p><code>Promise.all()</code> is a very powerful way to monitor multiple promises running concurrently and then execute some command only after all the promises are resolved.</p>
+<p><code>Promise.all()</code> takes an iterable (typically an array of asynchronous functions) as an argument.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> promise1 <span class="op">=</span> <span class="va">Promise</span>.<span class="at">resolve</span>(<span class="dv">3</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">const</span> promise2 <span class="op">=</span> <span class="dv">42</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">const</span> promise3 <span class="op">=</span> <span class="kw">new</span> <span class="at">Promise</span>(<span class="kw">function</span>(resolve<span class="op">,</span> reject) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-4" title="4">  <span class="at">setTimeout</span>(resolve<span class="op">,</span> <span class="dv">100</span><span class="op">,</span> <span class="st">&#39;foo&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-6" title="6"></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="va">Promise</span>.<span class="at">all</span>([promise1<span class="op">,</span> promise2<span class="op">,</span> promise3]).<span class="at">then</span>(<span class="kw">function</span>(values) <span class="op">{</span></a>
+<a class="sourceLine" id="cb3-8" title="8">  <span class="va">console</span>.<span class="at">log</span>(values)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>In the above case, <code>values</code> is what the promise object passes to the callback argument to <code>.then()</code>. <code>values</code> is an array of the return values of all the asynchronous functions in the same order as those functions. So, after all three asynchronous functions resolve, we would expect the return value to be:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="va">Promise</span>.<span class="at">all</span>([promise1<span class="op">,</span> promise2<span class="op">,</span> promise3]).<span class="at">then</span>(<span class="kw">function</span>(values) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(values)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4"></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="co">// #=&gt;  [3, 42, &#39;foo&#39;]</span></a></code></pre></div>
+<p><code>Promise.all()</code> is a very powerful tool that can make organizing the functionality of your program much easier. Read more on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all">MDN for Promise.all().</a></p>
+<h3 id="asynchronicity">Asynchronicity</h3>
+<p>First off, a quick refresher: <a href="https://rowanmanning.com/posts/javascript-for-beginners-async/">JavaScript for Beginners: Async</a></p>
+<p>At the end of the day, asynchronicity, or async, in JavaScript, is how we delegate relatively time intensive code so it does not interfere with our UI and UX. The concurrency we discussed above is how JavaScript achieves async.</p>
+<p>As of ECMAScript2017, we now have two very useful tools for declaring async operations in our code: <code>async</code> and <code>await</code>.</p>
+<p><strong>Async</strong></p>
+<p><code>async</code> is used at the definition of a function to declare it as asynchronous. Ex:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">function</span> <span class="at">resolveAfter2Seconds</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="cf">return</span> <span class="kw">new</span> <span class="at">Promise</span>(resolve <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="at">setTimeout</span>(() <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-4" title="4">      <span class="at">resolve</span>(<span class="st">&#39;resolved&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="op">},</span> <span class="dv">2000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6">  <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb5-8" title="8"></a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="kw">async</span> <span class="kw">function</span> <span class="at">asyncCall</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-10" title="10">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;calling&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-11" title="11">  <span class="kw">var</span> result <span class="op">=</span> <span class="cf">await</span> <span class="at">resolveAfter2Seconds</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12">  <span class="va">console</span>.<span class="at">log</span>(result)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-13" title="13">  <span class="co">// expected output: &quot;resolved&quot;</span></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="op">}</span></a></code></pre></div>
+<p><code>async</code> let’s the runtime environment executing the code know that this function should be handled asynchronously and set’s it processing aside like it would any other asynchronous action. <strong>The most important thing to remember when using async is that it returns a Promise</strong>.</p>
+<p>****NB***: <em>It’s important to note that the function</em> <code>resolveAfter2seconds()</code> <em>is still utilizing the Runtime Environment APIs. These APIs could be replaced with anything, but should be reserved for typically asynchronous operations or extremely demanding computational tasks.</em></p>
+<p><strong>Await</strong></p>
+<p>Take a look at the code above again. You’ll notice that <code>await</code> is used on the assignment of the variable <code>result</code>. <code>await</code>’s job is to pause the synchronous code being executed and wait for the asynchronous or time consuming code to finish before continuing.</p>
+<p><strong>!!! Await is not the same as Promise.all() !!!</strong></p>
+<p>This is a very important distinction. <code>Promise.all</code> will execute it’s async code concurrently so that as soon as all operations are done, it returns. <code>await</code> will actually pause all other execution of code until it receives the return value of whatever operation it is waiting for (be it asynchronous or just time consuming). Successive <code>await</code> calls will pause at each <code>await</code>.</p>
+<p><strong>When to use async/await</strong></p>
+<p>The main purpose of async/await is to make writing and utilizing Promises simpler. See the example below:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">function</span> <span class="at">getProcessedData</span>(url) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">  <span class="cf">return</span> <span class="at">downloadData</span>(url) <span class="co">// returns a promise</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    .<span class="at">catch</span>(e <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-4" title="4">      <span class="cf">return</span> <span class="at">downloadFallbackData</span>(url)  <span class="co">// returns a promise</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="op">}</span>)</a>
+<a class="sourceLine" id="cb6-6" title="6">    .<span class="at">then</span>(v <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-7" title="7">      <span class="cf">return</span> <span class="at">processDataInWorker</span>(v)<span class="op">;</span> <span class="co">// returns a promise</span></a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>can be rewritten into a much simpler single function:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">async</span> <span class="kw">function</span> <span class="at">getProcessedData</span>(url) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  <span class="kw">let</span> v<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-3" title="3">  <span class="cf">try</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-4" title="4">    v <span class="op">=</span> <span class="cf">await</span> <span class="at">downloadData</span>(url)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-5" title="5">  <span class="op">}</span> <span class="cf">catch</span>(e) <span class="op">{</span></a>
+<a class="sourceLine" id="cb7-6" title="6">    v <span class="op">=</span> <span class="cf">await</span> <span class="at">downloadFallbackData</span>(url)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-7" title="7">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb7-8" title="8">  <span class="cf">return</span> <span class="at">processDataInWorker</span>(v)<span class="op">;</span></a>
+<a class="sourceLine" id="cb7-9" title="9"><span class="op">}</span></a></code></pre></div>
+<p>both are completely valid and usable blocks of code, but the async/await version is shorter and cleaner. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function">Read more about usage and syntax on MDN</a>.</p>
+<p><code>async/await</code> is not the perfect solution for every problem, but it is another valuable tool to have when you are building the functionality of your JavaScript code.</p>
+<h3 id="hoisting">Hoisting:</h3>
+<p>Hoisting is JavaScript’s default behavior of moving all <em>declarations</em> (not initializations or assignments) to the top of the current scope (ie: current script or function).</p>
+<h4 id="functions">Functions</h4>
+<p>Function declarations are hoisted with their signatures to the top of their scope, making them immediately available to use before their definitions in your script:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="at">catName</span>(<span class="st">&quot;Chloe&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-2" title="2"></a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">function</span> <span class="at">catName</span>(name) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;My cat&#39;s name is &quot;</span> <span class="op">+</span> name)<span class="op">;</span></a>
+<a class="sourceLine" id="cb8-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb8-6" title="6"><span class="co">/*</span></a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="co">The result of the code above is: &quot;My cat&#39;s name is Chloe&quot;</span></a>
+<a class="sourceLine" id="cb8-8" title="8"><span class="co">*/</span></a></code></pre></div>
+<p>This, however, is only true for function declarations. Function expressions are <strong>NOT</strong> hoisted.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="at">catName</span>(<span class="st">&quot;Chloe&quot;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="kw">var</span> catName <span class="op">=</span> <span class="kw">function</span>(name) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&quot;My cat&#39;s name is &quot;</span> <span class="op">+</span> name)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb9-6" title="6"><span class="co">/*</span></a>
+<a class="sourceLine" id="cb9-7" title="7"><span class="co">The result of the code above is: Uncaught TypeError: catName is not a function&quot;</span></a>
+<a class="sourceLine" id="cb9-8" title="8"><span class="co">*/</span></a></code></pre></div>
+<h4 id="variables">Variables</h4>
+<p>Variable declarations are hoisted to the top of their scope, but they remain undefined until they are assigned:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="va">console</span>.<span class="at">log</span>(num)<span class="op">;</span> <span class="co">// Prints undefined</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="kw">var</span> num<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-3" title="3">num <span class="op">=</span> <span class="dv">6</span><span class="op">;</span></a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1">num <span class="op">=</span> <span class="dv">6</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="va">console</span>.<span class="at">log</span>(num)<span class="op">;</span> <span class="co">// Prints 6</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="kw">var</span> num<span class="op">;</span></a></code></pre></div>
+<p>The first example prints undefined because even though we have access to the variable because it has been hoisted to the top of the scope, the variable has not been initialized/assigned when we invoke console.log. Variables remain undefined until they are assigned in our scripts.</p>
+<p>The second example works as expected because even though the variable is declared beneath the invocation of console.log, that declaration is hoisted to the top of the scope. The variable is then assigned before it is passed to console.log.</p>
+<h4 id="var-let-and-const"><code>var</code>, <code>let</code>, and <code>const</code></h4>
+<p><code>var</code>, <code>let</code>, and <code>const</code> are all hoisted in JavaScript, but there are two key differences in their behavior: * <code>var</code> is globally scoped to its’ lexical environment. This means it is hoisted to the top of (and accessible to) anything within the scope in which it was declared (globally, the function, etc.). <code>let</code> and <code>const</code> are block scoped. They are only hoisted to the top of the block in which they are defined.</p>
+<ul>
+<li>A variable declared with <code>var</code> will return <code>undefined</code> if you attempt to use it before it has been assigned/initialized. <code>let</code> and <code>const</code> variables are designed to throw an error if you attempt to use them before they are assigned/initialized (making it much easier and safer to debug).</li>
+</ul>
+<p><em><strong>NB:</strong></em> Always default to using <code>const</code>. If you learn later that you need your variable to change/update, switch it to a <code>let</code>. If for whatever reason that doesn’t work for you, then move on to a <code>var</code>, but, if everything is scoped properly, you shouldn’t need to.</p>
+<h3 id="currying">Currying</h3>
+<p>Named after Haskell Brooks Curry, currying is the process of breaking down a function into a series of functions that each take a single argument.</p>
+<p>This is the non-curried version of a function <code>sum3</code> that takes in three numbers and returns the sum of those numbers:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">function</span> <span class="at">sum3</span>(x<span class="op">,</span> y<span class="op">,</span> z) <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  <span class="cf">return</span> x <span class="op">+</span> y <span class="op">+</span> z<span class="op">;</span></a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="va">console</span>.<span class="at">log</span>(<span class="at">sum3</span>(<span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span>) <span class="co">// 6</span></a></code></pre></div>
+<p>and here is the curried version:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">function</span> <span class="at">sum3</span>(x) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-2" title="2">  <span class="cf">return</span> (y) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-3" title="3">    <span class="cf">return</span> (z) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-4" title="4">      <span class="cf">return</span> x <span class="op">+</span> y <span class="op">+</span> z<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-5" title="5">    <span class="op">};</span></a>
+<a class="sourceLine" id="cb13-6" title="6">  <span class="op">};</span></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="op">}</span></a>
+<a class="sourceLine" id="cb13-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="at">sum3</span>(<span class="dv">1</span>)(<span class="dv">2</span>)(<span class="dv">3</span>)) <span class="co">// 6</span></a></code></pre></div>
+<p>Although this tool might be difficult to think about practically, we’ve actually been using currying whenever we make container components using React and Redux!</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1"><span class="im">export</span> <span class="im">default</span> <span class="at">connect</span>(mapStateToProps)(TodoApp)</a></code></pre></div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Subset_Permutation_Combination</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="solve-permutation-combination-subset-problems-by-backtracking">Solve Permutation, Combination, Subset Problems by Backtracking</h1>
+<p><strong>Translator: <a href="https://github.com/yx-tan">yx-tan</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>Today let’s talk about three common interview problems which are quite confusing. They are finding subset, finding permutation and finding combination.</p>
+<p>These problems can be solved by a backtracking algorithm template, what’s more the subset problem can also be solved by mathematical induction. You can keep the routines of these three problems in mind to avoid confusion.</p>
+<h3 id="subset">1. Subset</h3>
+<p>The problem is simple: Input an array <strong>without duplicate numbers</strong>, and your algorithm needs to output all subsets of these numbers.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; subsets(vector&lt;<span class="dt">int</span>&gt;&amp; nums);</a></code></pre></div>
+<p>For example, for the input <code>nums = [1,2,3]</code>, your algorithm should output 8 subsets, including empty set and the set itself. The order can be different:</p>
+<p>[ [],[1],[2],[3],[1,3],[2,3],[1,2],[1,2,3] ]</p>
+<p><strong>The first solution is using the idea of mathematical induction</strong>: Suppose now I know the results of a smaller subproblem, then how can I derive the results of the current problem?</p>
+<p>To be specific, now you need to find the subset of <code>[1,2,3]</code>, if you have already known the subset of <code>[1,2]</code>, can you derive the subset of <code>[1,2,3]</code>? Let’s take a look of the subset of <code>[1,2]</code>:</p>
+<p>[ [],[1],[2],[1,2] ]</p>
+<p>You will find such a rule:</p>
+<p>subset(<code>[1,2,3]</code>) - subset(<code>[1,2]</code>)</p>
+<p>= [3],[1,3],[2,3],[1,2,3]</p>
+<p>And this is to add 3 to each set in the result of subset(<code>[1,2]</code>).</p>
+<p>In other words, if <code>A = subset([1,2])</code>, then:</p>
+<p><code>subset([1,2,3])</code></p>
+<p>= A + [A[i].add(3) for i = 1..len(A)]</p>
+<p>This is a typical recursive structure: The subset of<code>[1,2,3]</code>can be derived by<code>[1,2]</code>, and the subset of <code>[1,2]</code> can be derived by <code>[1]</code>. Obviously, the base case is that when the input set is an empty set, the output subset is also an empty set.</p>
+<p>It is easy to understand if we translate the idea into code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" title="1">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; subsets(vector&lt;<span class="dt">int</span>&gt;&amp; nums) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="co">// base case, return an empty set</span></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="cf">if</span> (nums.empty()) <span class="cf">return</span> {{}};</a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="co">// take the last element</span></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="dt">int</span> n = nums.back();</a>
+<a class="sourceLine" id="cb2-6" title="6">    nums.pop_back();</a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="co">// recursively calculate all subsets of the previous elements</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; res = subsets(nums);</a>
+<a class="sourceLine" id="cb2-9" title="9"></a>
+<a class="sourceLine" id="cb2-10" title="10">    <span class="dt">int</span> size = res.size();</a>
+<a class="sourceLine" id="cb2-11" title="11">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; size; i++) {</a>
+<a class="sourceLine" id="cb2-12" title="12">        <span class="co">// then append to the previous result</span></a>
+<a class="sourceLine" id="cb2-13" title="13">        res.push_back(res[i]);</a>
+<a class="sourceLine" id="cb2-14" title="14">        res.back().push_back(n);</a>
+<a class="sourceLine" id="cb2-15" title="15">    }</a>
+<a class="sourceLine" id="cb2-16" title="16">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb2-17" title="17">}</a></code></pre></div>
+<p><strong>It is easy to make mistakes calculating the time complexity of this problem.</strong> The method we said to calculate the time complexity of a recursive problem is to find the recursion depth and then multiply it by the number of iterations in each recursion. However, for this problem, the recursion depth is obviously N, but we found that the number of iterations of for loop in each recursion depends on the length of <code>res</code>, which is not fixed.</p>
+<p>According to the idea above, the length of <code>res</code> should be doubled every recursion. So the total number of iterations should be 2^N. Or don’t bother, how many subsets of a set of size N has do you think? 2^N, right? So at least 2^N elements must be added to <code>res</code>.</p>
+<p>So is the time complexity of the algorithm O (2^N)? Still wrong. 2^N subsets are added to <code>res</code> by <code>push_back</code>, so the efficiency of <code>push_back</code> operation must be considered:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" title="1"><span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; size; i++) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    res.push_back(res[i]); <span class="co">// O(N)</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    res.back().push_back(n); <span class="co">// O(1)</span></a>
+<a class="sourceLine" id="cb3-4" title="4">}</a></code></pre></div>
+<p>Because <code>res[i]</code> is also an array, <code>push_back</code> copies <code>res[i]</code>and adds it to the end of the array, so the time of one operation is O (N).</p>
+<p>Above all, the total time complexity is O (N*2^N), which is quite time-consuming.</p>
+<p>Considering space complexity, if the space used to store the returned results is not calculated, only O(N) recursive stack space is required. If you calculate the space for <code>res</code>, it should be O (N*2^N).</p>
+<p><strong>The second general method is the backtracking algorithm</strong>. There is a template for backtracking algorithms in the old article <a href="https://github.com/labuladong/fucking-algorithm/blob/english/think_like_computer/DetailsaboutBacktracking.md">DetailsaboutBacktracking</a>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1">result <span class="op">=</span> []</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">def</span> backtrack(Path, Seletion List):</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="cf">if</span> meet the End Conditon:</a>
+<a class="sourceLine" id="cb4-4" title="4">        result.add(Path)</a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="cf">return</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    </a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="cf">for</span> seletion <span class="kw">in</span> Seletion List:</a>
+<a class="sourceLine" id="cb4-8" title="8">        select</a>
+<a class="sourceLine" id="cb4-9" title="9">        backtrack(Path, Seletion List)</a>
+<a class="sourceLine" id="cb4-10" title="10">        deselect</a></code></pre></div>
+<p>We just need to modify the template of the backtracking algorithm:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" title="1">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; res;</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; subsets(vector&lt;<span class="dt">int</span>&gt;&amp; nums) {</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="co">// record the path</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    vector&lt;<span class="dt">int</span>&gt; track;</a>
+<a class="sourceLine" id="cb5-6" title="6">    backtrack(nums, <span class="dv">0</span>, track);</a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb5-8" title="8">}</a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="dt">void</span> backtrack(vector&lt;<span class="dt">int</span>&gt;&amp; nums, <span class="dt">int</span> start, vector&lt;<span class="dt">int</span>&gt;&amp; track) {</a>
+<a class="sourceLine" id="cb5-11" title="11">    res.push_back(track);</a>
+<a class="sourceLine" id="cb5-12" title="12">    <span class="cf">for</span> (<span class="dt">int</span> i = start; i &lt; nums.size(); i++) {</a>
+<a class="sourceLine" id="cb5-13" title="13">        <span class="co">// select</span></a>
+<a class="sourceLine" id="cb5-14" title="14">        track.push_back(nums[i]);</a>
+<a class="sourceLine" id="cb5-15" title="15">        <span class="co">// backtrack</span></a>
+<a class="sourceLine" id="cb5-16" title="16">        backtrack(nums, i + <span class="dv">1</span>, track);</a>
+<a class="sourceLine" id="cb5-17" title="17">        <span class="co">// deselect</span></a>
+<a class="sourceLine" id="cb5-18" title="18">        track.pop_back();</a>
+<a class="sourceLine" id="cb5-19" title="19">    }</a>
+<a class="sourceLine" id="cb5-20" title="20">}</a></code></pre></div>
+<p>It can be seen that the update position of <code>res</code> is in the preorder traversal, which means, <strong><code>res</code> is all nodes on the tree </strong>:</p>
+<p><img src="../pictures/subset/1.jpg" /></p>
+<h3 id="combination">2. Combination</h3>
+<p>Input two numbers <code>n, k</code>, and the algorithm outputs all combinations of k numbers in <code>[1..n]</code>.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb6-1" title="1">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; combine(<span class="dt">int</span> n, <span class="dt">int</span> k);</a></code></pre></div>
+<p>For example, input <code>n = 4, k = 2</code>, the output is as follows, the order does not matter, but it cannot contain duplicates (according to the definition of the combination,<code>[1,2]</code>and<code>[2,1]</code>are also duplicates):</p>
+<p>[ [1,2], [1,3], [1,4], [2,3], [2,4], [3,4]]</p>
+<p>This is also a typical backtracking algorithm. <code>K</code> limits the height of the tree, and <code>n</code> limits the width of the tree. Just continue to use the template framework of the backtracking algorithm we have mentioned before:</p>
+<p><img src="../pictures/subset/2.jpg" /></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb7-1" title="1">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt;res;</a>
+<a class="sourceLine" id="cb7-2" title="2"></a>
+<a class="sourceLine" id="cb7-3" title="3">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; combine(<span class="dt">int</span> n, <span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="cf">if</span> (k &lt;= <span class="dv">0</span> || n &lt;= <span class="dv">0</span>) <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb7-5" title="5">    vector&lt;<span class="dt">int</span>&gt; track;</a>
+<a class="sourceLine" id="cb7-6" title="6">    backtrack(n, k, <span class="dv">1</span>, track);</a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb7-8" title="8">}</a>
+<a class="sourceLine" id="cb7-9" title="9"></a>
+<a class="sourceLine" id="cb7-10" title="10"><span class="dt">void</span> backtrack(<span class="dt">int</span> n, <span class="dt">int</span> k, <span class="dt">int</span> start, vector&lt;<span class="dt">int</span>&gt;&amp; track) {</a>
+<a class="sourceLine" id="cb7-11" title="11">    <span class="co">// reach the bottom of tree</span></a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="cf">if</span> (k == track.size()) {</a>
+<a class="sourceLine" id="cb7-13" title="13">        res.push_back(track);</a>
+<a class="sourceLine" id="cb7-14" title="14">        <span class="cf">return</span>;</a>
+<a class="sourceLine" id="cb7-15" title="15">    }</a>
+<a class="sourceLine" id="cb7-16" title="16">    <span class="co">// note: i is incremented from start </span></a>
+<a class="sourceLine" id="cb7-17" title="17">    <span class="cf">for</span> (<span class="dt">int</span> i = start; i &lt;= n; i++) {</a>
+<a class="sourceLine" id="cb7-18" title="18">        <span class="co">// select</span></a>
+<a class="sourceLine" id="cb7-19" title="19">        track.push_back(i);</a>
+<a class="sourceLine" id="cb7-20" title="20">        backtrack(n, k, i + <span class="dv">1</span>, track);</a>
+<a class="sourceLine" id="cb7-21" title="21">        <span class="co">// deselect</span></a>
+<a class="sourceLine" id="cb7-22" title="22">        track.pop_back();</a>
+<a class="sourceLine" id="cb7-23" title="23">    }</a>
+<a class="sourceLine" id="cb7-24" title="24">}</a></code></pre></div>
+<p>The <code>backtrack</code> function is similar to computing a subset, except that the time to update <code>res</code> is reaching the bottom of tree.</p>
+<h3 id="permutation">3. Permutation</h3>
+<p>Enter an array <code>nums</code> which <strong>does not contain duplicate numbers </strong>, and return all permutations of these numbers.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb8-1" title="1">vector&lt;vector&lt;<span class="dt">int</span>&gt;&gt; permute(vector&lt;<span class="dt">int</span>&gt;&amp; nums);</a></code></pre></div>
+<p>For example, for input array <code>[1,2,3]</code>, the output result should be as follows, the order does not matter, there can be no duplicates:</p>
+<p>[ [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], [3,2,1]]</p>
+<p>This problem is used in <a href="https://github.com/labuladong/fucking-algorithm/blob/english/think_like_computer/DetailsaboutBacktracking.md">DetailsaboutBacktracking</a> to explain the backtracking template. We use this problem again to compare the coded of two backtracking algorithms “permutation” and “combination”.</p>
+<p>First draw a backtrack tree and take a look:</p>
+<p><img src="../pictures/subset/3.jpg" /></p>
+<p>Our solution was written in Java code at that time:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb9-1" title="1"><span class="bu">List</span>&lt;<span class="bu">List</span>&lt;<span class="bu">Integer</span>&gt;&gt; res = <span class="kw">new</span> <span class="bu">LinkedList</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb9-2" title="2"></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="co">/* main function, input a uique set of numbers and return all permutations of them */</span></a>
+<a class="sourceLine" id="cb9-4" title="4"><span class="bu">List</span>&lt;<span class="bu">List</span>&lt;<span class="bu">Integer</span>&gt;&gt; <span class="fu">permute</span>(<span class="dt">int</span>[] nums) {</a>
+<a class="sourceLine" id="cb9-5" title="5">    <span class="co">// record &quot;path&quot;</span></a>
+<a class="sourceLine" id="cb9-6" title="6">    <span class="bu">LinkedList</span>&lt;<span class="bu">Integer</span>&gt; track = <span class="kw">new</span> <span class="bu">LinkedList</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb9-7" title="7">    <span class="fu">backtrack</span>(nums, track);</a>
+<a class="sourceLine" id="cb9-8" title="8">    <span class="kw">return</span> res;</a>
+<a class="sourceLine" id="cb9-9" title="9">}</a>
+<a class="sourceLine" id="cb9-10" title="10"></a>
+<a class="sourceLine" id="cb9-11" title="11"><span class="dt">void</span> <span class="fu">backtrack</span>(<span class="dt">int</span>[] nums, <span class="bu">LinkedList</span>&lt;<span class="bu">Integer</span>&gt; track) {</a>
+<a class="sourceLine" id="cb9-12" title="12">    <span class="co">// trigger the ending condition</span></a>
+<a class="sourceLine" id="cb9-13" title="13">    <span class="kw">if</span> (track.<span class="fu">size</span>() == nums.<span class="fu">length</span>) {</a>
+<a class="sourceLine" id="cb9-14" title="14">        res.<span class="fu">add</span>(<span class="kw">new</span> <span class="bu">LinkedList</span>(track));</a>
+<a class="sourceLine" id="cb9-15" title="15">        <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb9-16" title="16">    }</a>
+<a class="sourceLine" id="cb9-17" title="17">    </a>
+<a class="sourceLine" id="cb9-18" title="18">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; nums.<span class="fu">length</span>; i++) {</a>
+<a class="sourceLine" id="cb9-19" title="19">        <span class="co">// exclud illegal selections</span></a>
+<a class="sourceLine" id="cb9-20" title="20">        <span class="kw">if</span> (track.<span class="fu">contains</span>(nums[i]))</a>
+<a class="sourceLine" id="cb9-21" title="21">            <span class="kw">continue</span>;</a>
+<a class="sourceLine" id="cb9-22" title="22">        <span class="co">// select</span></a>
+<a class="sourceLine" id="cb9-23" title="23">        track.<span class="fu">add</span>(nums[i]);</a>
+<a class="sourceLine" id="cb9-24" title="24">        <span class="co">// go to the next decision tree</span></a>
+<a class="sourceLine" id="cb9-25" title="25">        <span class="fu">backtrack</span>(nums, track);</a>
+<a class="sourceLine" id="cb9-26" title="26">        <span class="co">// deselect</span></a>
+<a class="sourceLine" id="cb9-27" title="27">        track.<span class="fu">removeLast</span>();</a>
+<a class="sourceLine" id="cb9-28" title="28">    }</a>
+<a class="sourceLine" id="cb9-29" title="29">}</a></code></pre></div>
+<p>The backtracking template remains unchanged, but according to the trees drawn by the permutation problem and the combination problem, the tree of the permutation problem is relatively symmetrical, and the tree of the combination problem has fewer right nodes.</p>
+<p>In the code we can see, the permutation problem uses the <code>contains</code> method to exclude the numbers that have been selected in <code>track</code> each time; while the combination problem passes a <code>start</code> parameter to exclude the numbers before the <code>start</code> index .</p>
+<p><strong>The above is the solution to the three problems of permutation, combination and subsets. To sum up:</strong></p>
+<p>The subset problem can use the idea of mathematical induction: assuming that the results of a smaller problem are known, and thinking about how to derive the results of the original problem. You can also use the backtracking algorithm, using the <code>start</code> parameter to exclude selected numbers.</p>
+<p>The combination problem uses the backtracking idea, and the results can be expressed as a tree structure. We only need to apply the backtracking algorithm template. The key point is to use a <code>start</code> to exclude the selected numbers.</p>
+<p>The permutation problem uses the backtracking idea, and it can also be expressed as a tree structure to apply the algorithm template. The key point is to use the <code>contains</code> method to exclude the selected numbers. There is detailed analysis previously. Here we mainly compare it with the combination problem.</p>
+<p>Keeping the shape of these trees in mind is enough to deal with most backtracking algorithm problems. It is nothing more than the pruning of <code>start</code> or <code>contains</code>. There is no other trick.</p>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>nosql-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>NoSQL Linkedin assessment skills test</p>
+<p>Q1. Which types of indexes are available in CosmosDB? 1. range and spatial &lt;&lt;&lt;&lt;&lt;–CORRECT 2. secondary and primary key 3. secondary and spatial 4. range and primary key</p>
+<p>Q2. You want to connect a DynamoDB stream to AWS Lambda function? 1. DynamoDB table 2. DynamoDB trigger &lt;&lt;&lt;&lt;&lt;–CORRECT 3. DynamoDB item 4. DynamoDB index</p>
+<p>Q3. To index a field that holds an array value in MongoDB, which index type do you create? 1. partial 2. sparse 3. compound 4. multikey &lt;&lt;&lt;&lt;&lt;–CORRECT</p>
+<p>Q4. You want to test HBASE on your laptop using the fewest number of steps. What do you do? 1. Set up Hadoop in pseudo-distributed mode. 2. Set up HBASE in local mode. 3. Set up HBASE in pseudo-distributed mode. &lt;&lt;&lt;&lt;&lt;–CORRECT 4. Set up Hadoop in local mode.</p>
+<p>Q5. You need to create a document database that supports database triggers. Which NoSQL database should you use? 1. DynamoDB &lt;&lt;&lt;&lt;&lt;–CORRECT 2. BigTable 3. Redis 4. MongoDB</p>
+<p>Q6. What is recommended size for Redis keys? 1. medium 2. short &lt;&lt;&lt;&lt;&lt;–CORRECT 3. single bit<br />
+4. long</p>
+<p>Q7. You need to design security for DynamoDB to allow users read-only access to certain items and attributes in a table. What do you do? 1. Use lAM policy conditions 2. Use lAM roles 3. Use VPC endpoint 4. Use lAM policies &lt;&lt;&lt;&lt;&lt;–CORRECT</p>
+<p>Q8. What does redis use to sort the elements of a sorted set? 1. Scores. 2. Ids. 3. Values. 4. Keys. &lt;&lt;&lt;&lt;&lt;–CORRECT</p>
+<p>Q9.You need to change the shard key of an existing MongoDB collection. What do you do? 1. Dump the collection data, drop the collection, create a new collection and shard key, import the data. 2. Add second shard key and drop the first shard key. 3. Dump the collection data, drop the collection, presplit the data, create a new collection and shard key, import the data. &lt;&lt;&lt;&lt;&lt;–CORRECT 4. Drop and recreate the shard key.</p>
+<p>Q10. Polyglot storage means using multiple types of what in the same application? 1. Security systems. 2. Database systems. 3. Storage systems. 4. Query systems. &lt;&lt;&lt;&lt;&lt;–CORRECT</p>
+<p>Q11. You need to implement the simplest possible scalable, in-memory cache for your AWS application. Which service do you select? 1. Elasticache using Memcached. 2. DynamoDB. 3. DynamoDB Accelerator (DAX). 4. Elasticache using Redis. &lt;&lt;&lt;&lt;&lt;–CORRECT</p>
+<p>Q12. You are doing data modelling for Google BigTable. Which statement expresses if and when you should split entities across multiple rows? 1. Keep all information for an entity in a single row. Store related entities in adjacent rows.<br />
+2. Keep all information for an entity in a single row. 3. Split entities across multiple rows if the entity data is over thousands of MBs, or if it does not need atomic updates and reads. 4. Split entities across multiple rows if the entity data is over hundreds of MBs, or if it does not need atomic updates and reads. &lt;&lt;&lt;&lt;&lt;–CORRECT</p>
+<p>Q13. Which two characteristics define Amazon Quantum Ledger Database? 1. Key-value data model; transactionally consistent with ACID semantics.<br />
+2. Document data model; transactionally consistent with ACID semantics. &lt;&lt;&lt;&lt;&lt;–CORRECT 3. Key-value data model; transactions with tunable consistency. 4. Document data model; transactions with tunable consistency.</p>
+<p>Q14. You need to design the primary key for DynamoDB based on three attributes. What do you do? 1. Designate all three fields as the primary key.<br />
+2. Concatenate all three fields into one new field, then designate that new field as the primary key. &lt;&lt;&lt;&lt;&lt;–CORRECT 3. Designate two fields of the three fields as the primary key. 4. Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key.</p>
+<p>Q15. You need to design the primary key for DynamoDB based on three attributes. What do you do? 1. Designate all three fields as the primary key.<br />
+2. Concatenate all three fields into one new field, then designate that new field as the primary key. &lt;&lt;&lt;&lt;&lt;–CORRECT 3. Designate two fields of the three fields as the primary key. 4. Concatenate two fields into one new field, then designate that new field and the remaining field as the primary key.</p>
+<p>Q16. Which of these data types should you avoid in designing a Google Bigtable row key?</p>
+<pre><code>- multi-valued identifiers
+- string identifiers
+- timesstamps
+- frequently updated identifiers &lt;&lt;&lt;&lt;----Correct</code></pre>
+<p>Q17. Your startup is building a prototype that has an evolving schema. Your data will be eventually consistent. Your application is hosted in AWS. Which databse do you choose?</p>
+<pre><code>- Neptune
+- DocumentDB
+- DynamoDB &lt;&lt;&lt;&lt;----Correct
+- Amazon Aurora</code></pre>
+<p>Q18. You need to create a scalable databse that allows you to share documents across authorized mobile clients in real time. What Google NoSQL database should you use?</p>
+<pre><code>- Memorystore
+- Datastore
+- Firebase &lt;&lt;&lt;&lt;----Firebase
+- Bigtable</code></pre>
+<p>Q19. You want to test HBase on your laptop using the fewest number of steps. What do you do?</p>
+<pre><code>- Set up HBase in local mode.
+- Set up Hadoop in pseudo-distributed mode.
+- Set up HBase in pseudo-distributed mode.
+- Set up Hadoop in local mode. &lt;&lt;&lt;&lt;----Correct</code></pre>
+<p>Q20. You need to design security for DynamoDB to allow users read-obly access to certain items and attriutes in a table. What do you do?</p>
+<pre><code>- Use IAM roles.
+- Use IAM plicy conditions. &lt;&lt;&lt;&lt;----Correct
+- Use a VPC endpoint.
+- Use IAM plicies.</code></pre>
+<p>Q21. You need to design a primary key for DynamoDb based on three attributes. What do you do?</p>
+<pre><code>- Concatenate all three fields into into one new field, than disignate that new field as the primary key.
+- Concatenate two fileds into one new field, than disignate that new field and the remaining field as the primary key.
+- Designate all three fields as the primary key. &lt;&lt;&lt;&lt;----Correct
+- Designate two filds of the three fields as the primary key.</code></pre>
+<p>Q22. What does Redis use to sort the elements of a sorted set?</p>
+<pre><code>- keys
+- values
+- scroes &lt;&lt;&lt;&lt;----Correct
+- ids</code></pre>
+<p>Q23. You need to create a document database that supports database triggers. Which NoSQL database should you use?</p>
+<pre><code>- DynamoDb &lt;&lt;&lt;&lt;----Correct
+- Redis
+- MongoDB
+- Bigtable</code></pre>
+<p>Q24. You need to implement the simples possible scalable, in-memory cache for your AWS application. Which service do you select?</p>
+<pre><code>- DynamoDb Accelerator (DAX) &lt;&lt;&lt;&lt;----Correct
+- ElastiCache using memcached
+- ElastiCache using Redis
+- DynamoDB</code></pre>
+<p>Q25. Which statement is prefered Cypher code for Neo4j?</p>
+<pre><code>- MATCH (:Person)--&gt;(:Card)--&gt;(:Company) RETURN count(vehicle)
+- Match (:Person)--&gt;(:Car):(vehicle:Car)--&gt;(:Company) RETURN count(vehicle)
+- MATCH (:Person)--&gt;(vehicle:Car)--&gt;(:Company) RETURN count(vehicle) &lt;&lt;&lt;&lt;----Correct
+- MATCH (:Person)--&gt;(:Card), (vehicle:Car)--&gt;(:Company) RETURN count(vehicle)</code></pre>
+<p>Q26. You need multi-item ACID transactions with snapshot isolation within a partition for your cloud-based application. Which NoSQL databse do you choose?</p>
+<pre><code>- Bigtable
+- GraphDB
+- DynamoDB
+- Cosmos DB &lt;&lt;&lt;&lt;----Correct</code></pre>
+<p>Q27. You need to control your application’s batch updates destination for your Bigtable multinode cluster. Which action do you take?</p>
+<pre><code>- Create a custom app profile to route batch updates.
+- Create a custom app profile to route the batch update from that client.
+- Update the default app profile to route the natch update from that client. &lt;&lt;&lt;&lt;--- May be
+- Use the default app profile to route batch updates.</code></pre>
+<p>Q29. Polyglot storage mean using multiple types of what in the same application?</p>
+<pre><code>- security systems
+- databse systems
+- query systems
+- storage systems &lt;&lt;&lt;&lt;----Correct</code></pre>
+<p>Q30. Your query to verify that your Redis key is configured to support expiring user information on a efined interval returns -2. What does this value indicate?</p>
+<pre><code>- The queried key value expired in the last two secodns.
+- The queried key value exists, but has no associated expire value.
+- The queried key value does not exist. &lt;&lt;&lt;&lt;----Correct
+- There are two expired keys with this value.</code></pre>
+<p>Q31. You are designing a MongoDB schema to support queries that will include lookups. What should you do?</p>
+<pre><code>- Create an index on the key value used as the primary key.
+- Create an index on the key value used as the foreign key.
+- Create a multicolumn index on the key value used as the foreign key and the most unique column in the document. &lt;&lt;&lt;&lt;----Correct
+- Create a multicolumn index on the key value used as the primary and also the forign key.</code></pre>
+<p>Q32. What is the aggregation operator for a join concept in MongoDB?</p>
+<pre><code>- $group
+- $match
+- $lookup &lt;&lt;&lt;&lt;----Correct
+- $project</code></pre>
+<p>Q33. For your mobile application, you need to select a Google cloud databse that can support compound, filtered document queries. Which do you choose?</p>
+<pre><code>- Cloud SQL
+- Cloud Spanner
+- Cloud Firestore &lt;&lt;&lt;&lt;----Correct
+- Cloud Firebase</code></pre>
+<p>Q34. To bulk load data into Amazon Neputn, what do you do?</p>
+<pre><code>- Upload data to S3 VPC endpoint, Use the Neptun loader to load from s3 into your Neptune instance &lt;&lt;&lt;&lt;----Correct
+- Ad data to a Kinesis stream, and use the Neptune loade to load from S# into your Neptun instance.
+- Add data to a Kisnesis stream, and create a Kinesis stream VPC endpoint. Use the Nepune loader to load from S3into your Neptune instance.
+- Upload data to S3. Use the neptune loader to load  from S3 into your Neptune instance.</code></pre>
+<p>Q35. You need to create a pub/sub server. Which databse do you use?</p>
+<pre><code>- Neo4j
+- Cassandra
+- Redis &lt;&lt;&lt;&lt;----Correct
+- MySQL</code></pre>
+<p>Q36. You want to connect a DynamoDb stream to an AWS lamdba function. Which one of these object do you create.</p>
+<pre><code>- DynamoDb table
+- DynamoDB trigger &lt;&lt;&lt;&lt;----Correct
+- DynamoDB item
+- DYnamoDB index</code></pre>
+<p>Q37. Which two types of indexes are available in Cosmos DB?</p>
+<pre><code>- secondery and primary key &lt;&lt;&lt;&lt;----Correct
+- secondary and spatial
+- range and spatial
+- range and primary key</code></pre>
+<p>Q38. SQL databses and NoSQL are which types of scalable?</p>
+<pre><code>- horizontally, infinitely
+- vertically, horizontally &lt;&lt;&lt;&lt;----Correct
+- vertically, infinitely
+- horizonally, vertically</code></pre>
+<p>Q39. You need to create a scalable database that allows you to query data nodes and edges efficiently. What do you use?</p>
+<pre><code>- a relational databse
+- a columnstore databse
+- a document databse
+- a graph database &lt;&lt;&lt;&lt;----Correct</code></pre>
+<p>Q40. You are developing a model for a graph databse. Your data will be moved from a relatinal databse into Neo4j. Which of these transformations apply?</p>
+<pre><code>- Rows become labes: bales become nodes.
+- Tables become labels: rows become nodes.
+- Tables become collections: rows become items.
+- Rows become collections: tables become items. &lt;&lt;&lt;&lt;----May be</code></pre>
+<p>Q41. To index a field that holds an array value in MongoDB, which index type do you create?</p>
+<pre><code>- sparse
+- compound
+- partial
+- multikey &lt;&lt;&lt;&lt;-----Correct</code></pre>
+<p>Q42. You need to execute a command for MongoDB that does NOT load values from the .mongorc.js file. What do you do ?</p>
+<pre><code>- Delete the .monorc.js file and restart mongo shell.
+- Use the mongo shell to create a command with --norc option
+- Rem all lines in the .mongorc.js file ad restart mongo shell.
+- Use the mongo shell to create a command with --nodedefault option. &lt;&lt;&lt;&lt;----Not sure</code></pre>
+<p>Q43. What is the recommended size for Redis keys?</p>
+<pre><code>- long
+- short
+- medium
+- a single bit &lt;&lt;&lt;&lt;----May be</code></pre>
+</body>
+</html>

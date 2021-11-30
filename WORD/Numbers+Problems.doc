@@ -1,0 +1,1855 @@
+Date: Mon, 30 Nov 2020 13:21:59 +0000 (UTC)
+Message-ID: <1073422863.35.1606742519812@f26044d63e7c>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_34_492574172.1606742519812"
+
+------=_Part_34_492574172.1606742519812
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Numbers Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Numbers Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>BiggestFromArray</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int makeBiggestNumberFromIntArray(int[] a)
+{
+    String[] sa =3D Arrays.stream(a).mapToObj(String::valueOf).toArray(Stri=
+ng[]::new);
+    Arrays.sort(sa, (s1, s2) -&gt; {
+        String leftRight =3D s1 + s2;
+        String rightLeft =3D s2 + s1;
+        return rightLeft.compareTo(leftRight);
+    });
+    String s =3D Arrays.stream(sa).collect(Collectors.joining());
+    return Integer.valueOf(s);
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D makeBiggestNumberFromIntArray(new int[] {7, 9, 91, 73=
+}) =3D=3D 991773;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ClockAngle</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int angle(double hour, double min)
+{
+//  The minute hand moves 360 degrees in 60 minutes(or 6 degree in one minu=
+te)
+//  The hour hand moves 360 degrees in 12 hours (720 mins), or 0.5 degrees =
+per minute.
+//  In h hours and m minutes:
+//    the hour hand will move (h * 60 + m) * 0.5 degrees
+//    the minute hand will move (h * 60 + m) * 6 degrees
+//  Assume 12:00 as the reference point
+//  In h hours and m minutes:
+//    the hour hand will move (h * 60 + m) * 0.5 degrees
+//    the minute hand will move (h * 60 + m) * 6 degrees, or 6 * m
+//  For them to superimpose, both angles should be equal
+//  0.5 * (60H + M) =3D 6*M
+//  60H + M =3D 12M
+//  60H =3D 11M
+//  M =3D 5.45H
+//  Thus, as H varies from 1 to 11, hands will overlap 11 times in 12 hours
+//  H   M
+//  -----
+//  1   1:05.45
+//  2   2:10.90
+//  3   3:16.36
+    if(hour &lt; 0 || hour &gt; 12 || min &lt; 0 || min &gt; 60)
+    {
+        return -1;
+    }
+    if(hour =3D=3D 12)
+    {
+        hour =3D 0;
+    }
+    if(min =3D=3D 60)
+    {
+        min =3D 0;
+    }
+    int hourAngle =3D (int)(0.5 * (hour * 60 + min));
+    int minAngle =3D (int)(6 * min);
+    int angle =3D Math.abs(hourAngle - minAngle);
+    angle =3D Math.min(360 - angle, angle);
+    return angle;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D angle(1, 5.45) =3D=3D 0;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D angle(2, 10.9) =3D=3D 0;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>EggDrop</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int drops(int floor)
+{
+    //    1st Egg If first egg breaks -&gt; 2nd egg                  Drops
+    //    --------------------------------------------------------------
+    //    14      1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6-&gt;7-&gt;8-&gt;9-&gt;10-=
+&gt;11-&gt;12-&gt;13       1+13=3D14
+    //    27      15-&gt;16-&gt;17-&gt;18-&gt;19-&gt;20-&gt;21-&gt;22-&gt;2=
+3-&gt;24-&gt;25-&gt;26  2+2=3D14
+    //    39
+    //    50
+    //    60
+    //    69
+    //    77
+    //    84
+    //    90                                                      9+5=3D14
+    //    95                                                      10+4=3D14
+    //    99                                                      11+3=3D14
+    //    102                                                     12+2=3D14
+    //    104                                                     13+1=3D14
+    //    105                                                     14+0=3D14
+    //
+    //    We can see how this becomes the consecutive range sum problem whe=
+re n =3D 14
+    //    Thus,
+    //    n(n + 1)/2 =3D 14*15/2 =3D 105
+    //    n*n + n - 210 =3D 0
+    //    a =3D 1, b =3D 1, c =3D -210
+    //    Using quadratic equation:
+    //    x =3D (-b +/- SQRT(b^2 - 4ac)) / 2a
+    //    n =3D (-1 + Sqrt(1 + 840)) / 2 =3D 14
+   =20
+    int a =3D 1, b =3D 1, c =3D -floor * 2;
+    double sqrt =3D Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+    int root1 =3D (int)(-b + sqrt) / (2 * a);
+    int root2 =3D (int)(-b - sqrt) / (2 * a);
+    return root1 &gt; 0 ? root1 : root2;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D drops(105) =3D=3D 14;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ExcelColumn</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String numberToExcelColumn(int n)
+{
+    StringBuilder sb =3D new StringBuilder();
+    while(n &gt; 0)
+    {
+        int rem =3D n % 26;
+        // if rem =3D=3D 0, the 'Z' must be there
+        if(rem =3D=3D 0)
+        {
+            sb.append("Z");
+            n =3D n / 26 - 1;
+        }
+        else
+        {
+            sb.append((char) (rem - 1 + 'A'));
+            n /=3D 26;
+        }
+    }
+    return sb.reverse().toString();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D numberToExcelColumn(26).equals("Z");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D numberToExcelColumn(52).equals("AZ");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"default" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 680.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>FactorialTrailingZeros</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int trailingZerosInFactorial(int n)
+{
+    if(n &lt; 0)
+    {
+        return -1;
+    }
+    int count =3D 0;
+    while(n &gt; 0)
+    {
+        count +=3D n / 5;
+        n /=3D 5;
+    }
+    return count;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 602.0px;">
+<col style=3D"width: 940.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>FromArray</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int fromArrayOfOneDigitIntsLeftToRight(int [] a)
+{
+    int val =3D 0;
+    for(int v : a)
+    {
+        val =3D val * 10 + v;
+    }
+    return val;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int fromArrayOfOneDigitIntsRightToLeft(int [] a)
+{
+    int val =3D 0, pow =3D 0;
+    for(int i =3D a.length - 1; i &gt;=3D 0; --i)
+    {
+        val +=3D Math.pow(10, pow++) * a[i];
+    }
+    return val;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D fromArrayOfOneDigitIntsLeftToRight(new int[] {3, 4, 5=
+, 6}) =3D=3D 3456;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D fromArrayOfOneDigitIntsRightToLeft(new int[] {3, 4, 5, 6}) =
+=3D=3D 3456;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 957.0px;">
+<col style=3D"width: 585.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>GasStations</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class GasStations
+{
+//    Input is provided in a 2D array, for example:
+//    {4, 6},
+//    {6, 5},
+//    {1, 3},
+//    {7, 4},
+//    Where the first value is the amount of petrol and the next value is t=
+he distance to the next station.
+//    To make it easier, we convert each coordinate to a Unit {petrol, dist=
+ance}
+
+    private static class Unit
+    {
+        int petrol;
+        int distance;
+        Unit(int petrol, int distance)
+        {
+            this.petrol =3D petrol;
+            this.distance =3D distance;
+        }
+    }
+
+    static int startingStation(int[][] data)
+    {
+        List&lt;Unit&gt; units =3D Arrays.stream(data).map((int[] a) -&gt; =
+new Unit(a[0], a[1])).collect(Collectors.toList());
+
+        int supply =3D 0;
+
+        for(int i =3D 0; i &lt; units.size(); ++i)
+        {
+            Unit unit =3D units.get(i);
+            if(unit.distance &gt; unit.petrol + supply)
+            {
+                continue;
+            }
+
+            //  Check if we can visit all stations from "good" starting poi=
+nt
+            int j =3D 0;
+            for(; j &lt; units.size(); ++j)
+            {
+                Unit currentUnit =3D units.get((i + j) % units.size());
+                if(currentUnit.distance &gt; currentUnit.petrol + supply)
+                {
+                    break;
+                }
+                supply +=3D currentUnit.petrol - currentUnit.distance;
+            }
+
+            //  if we could visit all stations
+            if(j =3D=3D units.size())
+            {
+                return i;
+            }
+            //  Try competing tour from the next station
+            supply =3D 0;
+        }
+        return -1;
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D startingStation(new int[][] {{4, 6}, {6, 5}, {1, 3}, =
+{7, 4}}) =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Gcd</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int findGcd(int a, int b)
+{
+    int gcd =3D Math.min(Math.abs(a), Math.abs(b));
+    while(gcd &gt; 0)
+    {
+        if(a % gcd =3D=3D 0 &amp;&amp; b % gcd =3D=3D 0)
+        {
+            break;
+        }
+        gcd--;
+    }
+    return gcd;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D findGcd(8, 36) =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>GcdFromArray</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int gcdFromArray(int[] a)
+{
+    int minGcd =3D Integer.MAX_VALUE;
+    for(int i =3D 0; i &lt; a.length - 1; ++i)
+    {
+        for(int j =3D i + 1; j &lt; a.length; ++j)
+        {
+            minGcd =3D Math.min(minGcd, gcd(a[i], a[j]));
+        }
+    }
+    return minGcd;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D gcdFromArray(new int[] {12, 36, 24, 8}) =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>IsPalindrome</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isPalindrome(int n)
+{
+    int original =3D n;
+    int reversed =3D 0;
+    while(n &gt; 0)
+    {
+        reversed =3D reversed * 10 + n % 10;
+        n /=3D 10;
+    }
+    return reversed =3D=3D original;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D isPalindrome(123321);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isPalindrome(12345);
+    if(check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Josephus</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int josephus(int n, int k)
+{
+    List&lt;Integer&gt; list =3D IntStream.rangeClosed(1, n).boxed().collec=
+t(Collectors.toList());
+    int i =3D -1;
+    while (list.size() &gt; 1)
+    {
+        list.remove((i + k) % list.size());
+        i =3D (i + k) % (list.size() + 1) - 1;
+    }
+    return list.get(0);
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D josephus(5, 2) =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 1009.0px;">
+<col style=3D"width: 533.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>JourneyStartAmount</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int amountAtStartOfJourney(int [] a)
+{
+    // A traveler visits multiple cities.
+    // He can work daily and make some money. He also spends some money on =
+each day.
+    // An array is given depicting his daily savings (earnings =E2=80=93 ex=
+penses) over the course of his journey.
+    // How much minimum money he should start with in order to have at leas=
+t some saving ( &gt; 0) at the end of each day.
+    //  Examples: arr[] =3D { 10, -5, 7, -8, 5, -9 }
+    //  He had to have 10 before the start of the last day in order to have=
+ 1 left after spending 9
+    //  At the end of the journey he has $1 left.
+    //  Thus:
+    //  1 - (-9) =3D 10
+    //  10 - 5 =3D 5
+    //  5 - (-8) =3D 13
+    //  13 - 7 =3D 6
+    //  6 - (-5) =3D 11
+    //  11 - 10 =3D 1
+    int sum =3D 1;
+    for(int i =3D a.length - 1; i &gt;=3D 0; i--)
+    {
+        sum -=3D a[i];
+    }
+    return sum;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D amountAtStartOfJourney(new int[] {10, -5, 7, -8, 5, -=
+9}) =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MinValueFromSequence</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int compute(String s)
+{
+//    Given a pattern containing only I=E2=80=99s and D=E2=80=99s. I for in=
+creasing and D for decreasing.
+//    Devise an algorithm to print the minimum number following that patter=
+n.
+//    Digits from 1-9 can=E2=80=99t repeat.
+//    Examples:
+//    Input: D        Output: 21
+//    Input: I        Output: 12
+//    Input: DD       Output: 321
+//    Input: II       Output: 123
+//    Input: DIDI     Output: 21435
+//    Input: IIDDD    Output: 126543
+//    Input: DDIDDIID Output: 321654798
+//
+//    Number of digits in output is one more than number of characters in i=
+nput.
+//    Note that the first character of input corresponds to two digits in o=
+utput.
+//    The tricky part occurs when 'D' is encountered at index other than 0.
+//    In such a case we have to track the nearest 'I' to the left of 'D'
+//    and increment each number in the output vector by 1 in between =E2=80=
+=98I=E2=80=99 and =E2=80=98D=E2=80=99.       =20
+   =20
+    List&lt;Integer&gt; result =3D new ArrayList&lt;&gt;();
+    int nextNumber =3D 3;
+    int posOfLastI =3D 0;
+    if(s.charAt(0) =3D=3D 'I')
+    {
+        result.add(1);
+        result.add(2);
+    }
+    else
+    {
+        result.add(2);
+        result.add(1);
+    }
+    for(int i =3D 1; i &lt; s.length(); ++i)
+    {
+        if(s.charAt(i) =3D=3D 'I')
+        {
+            result.add(nextNumber++);
+            posOfLastI =3D i + 1;
+        }
+        else
+        {
+            result.add(result.get(i));
+            for(int j =3D posOfLastI; j &lt;=3D i; ++j)
+            {
+                result.set(j, result.get(j) + 1);
+            }
+            nextNumber++;
+        }
+    }
+    int num =3D 0;
+    for(int i : result)
+    {
+        num =3D num * 10 + i;
+    }
+    return num;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D compute("D") =3D=3D 21;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D compute("I") =3D=3D 12;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D compute("IIDDD") =3D=3D 126543;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>NumberToWords</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class NumberToWords
+{
+    static String[] numNames =3D {
+            "",
+            "one",
+            "two",
+            "three",
+            "four",
+            "five",
+            "six",
+            "seven",
+            "eight",
+            "nine",
+            "ten",
+            "eleven",
+            "twelve",
+            "thirteen",
+            "fourteen",
+            "fifteen",
+            "sixteen",
+            "seventeen",
+            "eighteen",
+            "nineteen"
+    };
+    static String[] tenNames =3D {
+            "",
+            "ten",
+            "twenty",
+            "thirty",
+            "forty",
+            "fifty",
+            "sixty",
+            "seventy",
+            "eighty",
+            "ninety",
+    };
+    static String[] bigNumNames =3D {
+            "",
+            "thousand",
+            "million",
+            "billion",
+            "trillion",
+            "quadrillion",
+            "quintillion"
+    };
+
+    static String convert(long num)
+    {
+        if(num =3D=3D 0)
+        {
+            return "zero";
+        }
+
+        String prefix =3D "";
+        if(num &lt; 0)
+        {
+            prefix =3D "negative";
+            num =3D -num;
+        }
+
+        String current =3D "";
+        int bigNumPlace =3D 0;
+
+        do
+        {
+            long n =3D num % 1000;
+            if(n !=3D 0)
+            {
+                String s =3D convertLessThan1000(n);
+                current =3D s + bigNumNames[bigNumPlace++] + current;
+            }
+            num /=3D 1000;
+        } while (num &gt; 0);
+        return prefix + current;
+    }
+
+    private static String convertLessThan1000(long n)
+    {
+        if(n &lt; 100)
+        {
+            return convertLessThan100(n);
+        }
+
+        long hundreds =3D n / 100;
+        long rem =3D n % 100;
+        return numNames[(int)hundreds] + "hundred" + convertLessThan100(rem=
+);
+    }
+
+    private static String convertLessThan100(long n)
+    {
+        if(n &lt; 20)
+        {
+            return convertLessThan20(n);
+        }
+
+        long tens =3D n / 10;
+        long rem =3D n % 10;
+        return tenNames[(int)tens] + convertLessThan20(rem);
+    }
+
+    private static String convertLessThan20(long n)
+    {
+        return numNames[(int)n];
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D convert(-12_345_678_901L).equals("negativetwelvebilli=
+onthreehundredfortyfivemillionsixhundredseventyeightthousandninehundredone"=
+);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PowerOf10</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isPowerOf10(int n)
+{
+    for(int i =3D 1; i &lt;=3D n; i *=3D 10)
+    {
+        if(i =3D=3D n)
+        {
+            return true;
+        }
+        if(i &gt; Integer.MAX_VALUE / 10)
+        {
+            return false;
+        }
+    }
+    return false;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D isPowerOf10(1) &amp;&amp;
+                    isPowerOf10(10) &amp;&amp;
+                    isPowerOf10(100) &amp;&amp;
+                    isPowerOf10(1000) &amp;&amp;
+                    isPowerOf10(1000000);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 632.0px;">
+<col style=3D"width: 910.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PrimeFactorization</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] primeFactorsOfProduct(int n)
+{
+    if(n &lt; 2)
+    {
+        return new int[0];
+    }
+    List&lt;Integer&gt; factors =3D new ArrayList&lt;&gt;();
+    for(int i =3D 2; i &lt;=3D n; ++i)
+    {
+        while(n % i =3D=3D 0)
+        {
+            factors.add(i);
+            n /=3D i;
+        }
+    }
+    return factors.stream().mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div><p></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D Arrays.equals(new int[] {2, 2, 2, 2}, primeFactorsOfP=
+roduct(16));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {2, 5}, primeFactorsOfProduct(10));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {2, 2, 3}, primeFactorsOfProduct(12))=
+;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Primes</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isPrime(int n)
+{
+    //  1.  2 is the first prime number
+    //  2.  use &lt;=3D when comparing Sqrt. Consider number 9
+    if(n &lt; 2)
+    {
+        return false;
+    }
+    if(n =3D=3D 2)
+    {
+        return true;
+    }
+    if(n % 2 =3D=3D 0)
+    {
+        return false;
+    }
+    for(int i =3D 3; i &lt;=3D Math.sqrt(n); i +=3D 2)
+    {
+        if(n % i =3D=3D 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+static int[] genPrimes(int n)
+{
+    if(n &lt; 1)
+    {
+        return new int[0];
+    }
+    int[] primes =3D new int[n];
+    primes[0] =3D 2;
+    int idx =3D 1;
+    int candidate =3D 3;
+    while(idx &lt; n)
+    {
+        boolean isPrime =3D true;
+        for(int i =3D 0; primes[i] &lt;=3D Math.sqrt(candidate); ++i)
+        {
+            if(candidate % primes[i] =3D=3D 0)
+            {
+                isPrime =3D false;
+                break;
+            }
+        }
+        if(isPrime)
+        {
+            primes[idx++] =3D candidate;
+        }
+        candidate +=3D 2;
+    }
+    return primes;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D isPrime(71);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isPrime(81);
+    if(check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {2, 3, 5, 7, 11, 13, 17}, genPrimes(7=
+));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Random7</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int rand7UsingRand5()
+{
+    while(true)
+    {
+        int mod2 =3D rand5();
+        if(mod2 !=3D 4)
+        {
+            mod2 %=3D 2;
+            int r1 =3D rand5() * 2;
+            int n =3D r1 + mod2;
+            if(n &lt; 7)
+            {
+                return n;
+            }
+        }
+    }
+}
+
+
+private static int rand5()
+{
+    return (int)(Math.random() * 5);
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    System.out.println(rand7UsingRand5());
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>RomanNumeral</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String romanNumeral(int n)
+{
+    String[] romSym =3D {"M","CM","D","CD", "C","XC","L","XL","X","IX","V",=
+"IV","I"};
+    int[] decimals =3D {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, =
+1};
+    StringBuilder sb =3D new StringBuilder();
+    for(int i =3D 0; i &lt; decimals.length; ++i)
+    {
+        while(n &gt;=3D decimals[i])
+        {
+            sb.append(romSym[i]);
+            n -=3D decimals[i];
+        }
+        if(n =3D=3D 0)
+        {
+            break;
+        }
+    }
+    return sb.toString();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D romanNumeral(4998).equals("MMMMCMXCVIII");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>SquareRoot</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int squareRoot(int n)
+{
+    if(n &lt; 2)
+    {
+        return n;
+    }
+    int low =3D 1, high =3D n / 2;
+    while(low &lt;=3D high)
+    {
+        int mid =3D (low + high) / 2;
+        int sqr =3D mid * mid;
+        if(sqr =3D=3D n)
+        {
+            return mid;
+        }
+        else if(sqr &lt; n)
+        {
+            low =3D mid + 1;
+        }
+        else
+        {
+            high =3D mid - 1;
+        }
+    }
+    return -1;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D squareRoot(81) =3D=3D 9;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>StairCaseHeight</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int height(int blocks)
+{
+//    Given N blocks, how many steps can be made.
+//    1 block   - 1 step
+//    2 blocks  - 1 step
+//    3 blocks  - 2 steps
+//    ...
+//    Note that this is a consecutive sum problem: N =3D n(n+1) / 2
+//    n*n + n =3D 2N
+//    n*n + n - 2N =3D 0
+//    Where:
+//    a =3D 1, b =3D 1, c =3D -(2 * N)
+//    a(x*x) + bx + c =3D 0
+    if(blocks &lt; 2)
+    {
+        return blocks;
+    }
+    int a =3D 1, b =3D 1, c =3D -blocks * 2;
+    double sqrt =3D Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+    int root1 =3D (int)(-b + sqrt) / (2 * a);
+    int root2 =3D (int)(-b - sqrt) / (2 * a);
+    return root1 &gt; 0 ? root1 : root2;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D height(55) =3D=3D 10;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>StringToNumber</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int numericStringToNum(String s)
+{
+    char[] a =3D s.toCharArray();
+    int n =3D 0;
+    for(char c : a)
+    {
+        n =3D n * 10 + c - '0';
+    }
+    return n;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D 12345 =3D=3D numericStringToNum("12345");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ToBinary</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String toBinary(int n)
+{
+    StringBuilder sb =3D new StringBuilder();
+    while(n &gt; 0)
+    {
+        sb.append(n % 2);
+        n /=3D 2;
+    }
+    return sb.reverse().toString();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D toBinary(14).equals("1110");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_34_492574172.1606742519812--

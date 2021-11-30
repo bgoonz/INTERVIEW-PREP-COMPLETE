@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>mysql-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="mysql-assessment">mysql Assessment</h2>
+<h4 id="q1.-when-you-have-a-subquery-inside-of-the-main-query-which-query-is-executed-first">Q1. When you have a subquery inside of the main query, which query is executed first?</h4>
+<ul>
+<li>[ ] The subquery is never executed. Only the main query is executed.</li>
+<li>[ ] They are executed at the same time</li>
+<li>[ ] the main query</li>
+<li>[x] the subquery</li>
+</ul>
+<h4 id="q2.-you-need-to-export-the-entire-database-including-the-database-objects-in-addition-to-the-data.-which-command-line-tool-do-you-use">Q2. You need to export the entire database, including the database objects, in addition to the data. Which command-line tool do you use?</h4>
+<ul>
+<li>[ ] mysqlexport</li>
+<li>[ ] mysqladmin</li>
+<li>[x] mysqldump</li>
+<li>[ ] mysqld</li>
+</ul>
+<h4 id="q3.-you-must-ensure-the-accuracy-and-reliability-of-the-data-in-your-database.-you-assign-some-constraints-to-limit-the-type-of-data-that-can-go-into-a-table.-what-type-of-constraints-are-you-assigning">Q3. You must ensure the accuracy and reliability of the data in your database. You assign some constraints to limit the type of data that can go into a table. What type of constraints are you assigning?</h4>
+<ul>
+<li>[ ] row level</li>
+<li>[ ] database level</li>
+<li>[x] column level</li>
+<li>[ ] function leve</li>
+</ul>
+<h4 id="q4.-which-option-of-most-mysql-command-line-programs-can-be-used-to-get-a-description-of-the-programs-different-options">Q4. Which option of most MySQL command-line programs can be used to get a description of the program’s different options?</h4>
+<ul>
+<li>[ ] –options</li>
+<li>[ ] ?</li>
+<li>[x] –help</li>
+<li>[ ] -h</li>
+</ul>
+<h4 id="q5.-mysql-uses-environment-variables-in-some-of-the-programs-and-command-line-operations.-which-variable-is-used-by-the-shell-to-find-mysql-programs">Q5. MySQL uses environment variables in some of the programs and command-line operations. Which variable is used by the shell to find MySQL programs?</h4>
+<ul>
+<li>[ ] DIR</li>
+<li>[ ] HOМЕ</li>
+<li>[x] PATH</li>
+<li>[ ] MYSQL_HOME</li>
+</ul>
+<h4 id="q6.-how-can-you-create-a-stored-procedure-in-mysql">Q6. How can you create a stored procedure in MySQL?</h4>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb1-1" title="1"><span class="dv">1</span> <span class="kw">CREATE</span> <span class="kw">PROCEDURE</span> P () <span class="kw">AS</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="dv">2</span> <span class="cf">BEGIN</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="dv">3</span> <span class="cf">END</span>;</a></code></pre></div>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb2-1" title="1"><span class="dv">1</span> <span class="kw">CREATE</span> <span class="kw">PROCEDURE</span> P ()</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="dv">2</span> <span class="cf">BEGIN</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="dv">3</span> <span class="cf">END</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb3-1" title="1"><span class="dv">1</span> <span class="kw">CREATE</span> PROCP</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="dv">2</span> <span class="cf">BEGIN</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="dv">3</span> <span class="cf">END</span>;</a></code></pre></div>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb4-1" title="1"><span class="dv">1</span> <span class="kw">CREATE</span> PROC P <span class="kw">AS</span> O</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="dv">2</span> <span class="cf">BEGIN</span></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="dv">3</span> <span class="cf">END</span>;</a></code></pre></div>
+<h4 id="q7.-if-you-were-building-a-table-schema-to-store-student-grades-as-a-letter-a-b-c-d-or-f-which-column-type-would-be-the-best-choice">Q7. If you were building a table schema to store student grades as a letter (A, B, C, D, or F) which column type would be the best choice?</h4>
+<ul>
+<li>[x] ENUM</li>
+<li>[ ] OTEXT</li>
+<li>[ ] VARCHAR</li>
+<li>[ ] LONGTEXT</li>
+</ul>
+<h4 id="q8.-management-has-requested-that-you-build-an-employee-database.-you-start-with-the-employee-table.-what-is-the-correct-syntax">Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?</h4>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb5-1" title="1">    <span class="dv">1</span> <span class="kw">CREATE</span> <span class="kw">TABLE</span> employee (</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="dv">2</span> employee <span class="kw">ID</span> <span class="dt">char</span>(<span class="dv">10</span>),</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="dv">3</span> firstName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="dv">4</span> lastName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="dv">5</span> phone <span class="dt">varchar</span>(<span class="dv">20</span>),</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="dv">6</span> address <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="dv">7</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> <span class="kw">ON</span> employeeID</a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="dv">8</span> );</a></code></pre></div>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb6-1" title="1">    <span class="dv">1</span> <span class="kw">CREATE</span> <span class="kw">TABLE</span> employee (</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="dv">2</span> employee <span class="kw">ID</span> <span class="dt">char</span>(<span class="dv">10</span>),</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="dv">3</span> firstName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="dv">4</span> lastName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="dv">5</span> phone <span class="dt">varchar</span>(<span class="dv">20</span>),</a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="dv">6</span> address <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="dv">7</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> employeeID</a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="dv">8</span> );</a></code></pre></div>
+<ul>
+<li>[ ] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb7-1" title="1">    <span class="dv">1</span> <span class="kw">CREATE</span> <span class="kw">TABLE</span> <span class="cf">IF</span> <span class="kw">EXISTS</span> employee (</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="dv">2</span> employee <span class="kw">ID</span> <span class="dt">char</span>(<span class="dv">10</span>),</a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="dv">3</span> firstName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="dv">4</span> lastName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb7-5" title="5">    <span class="dv">5</span> phone <span class="dt">varchar</span>(<span class="dv">20</span>),</a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="dv">6</span> address <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="dv">7</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (employeeID)</a>
+<a class="sourceLine" id="cb7-8" title="8">    <span class="dv">8</span> );</a></code></pre></div>
+<ul>
+<li>[x] <code>-</code></li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb8-1" title="1">    <span class="dv">1</span> <span class="kw">CREATE</span> <span class="kw">TABLE</span> <span class="cf">IF</span> <span class="kw">NOT</span> <span class="kw">EXISTS</span> employee (</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="dv">2</span> employee <span class="kw">ID</span> <span class="dt">char</span>(<span class="dv">10</span>),</a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="dv">3</span> firstName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="dv">4</span> lastName <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="dv">5</span> phone <span class="dt">varchar</span>(<span class="dv">20</span>),</a>
+<a class="sourceLine" id="cb8-6" title="6">    <span class="dv">6</span> address <span class="dt">varchar</span>(<span class="dv">50</span>),</a>
+<a class="sourceLine" id="cb8-7" title="7">    <span class="dv">7</span> <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (employeeID)</a>
+<a class="sourceLine" id="cb8-8" title="8">    <span class="dv">8</span> );</a></code></pre></div>
+<h4 id="q9.-you-are-working-with-the-tables-as-shown-in-this-diagram.-you-need-to-generate-the-list-of-customers-who-purchased-certain-car-models.-which-sql-clause-do-you-use">Q9. You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?</h4>
+<figure>
+<img src="images/mysql_q09.jpg" alt="mysql Q09" /><figcaption>mysql Q09</figcaption>
+</figure>
+<ul>
+<li>[ ] LIKE</li>
+<li>[x] IN</li>
+<li>[ ] BETWEEN</li>
+<li>[ ] HAVING</li>
+</ul>
+<h4 id="q10.-which-query-would-not-be-used-to-administer-a-mysql-server">Q10. Which query would NOT be used to administer a MySQL server?</h4>
+<ul>
+<li>[ ] USE db</li>
+<li>[x] SELECT column FROM tbl</li>
+<li>[ ] SHOW COLUMNS FROM tb1</li>
+<li>[ ] SHOW TABLES</li>
+</ul>
+<h4 id="q11.-what-is-the-product-of-the-database-designing-phase">Q11. What is the product of the database designing phase?</h4>
+<ul>
+<li>[ ] system definition</li>
+<li>[x] logical model</li>
+<li>[ ] physical model</li>
+<li>[ ] normalized database NOT SURE THE QUESTION IS CORRECT. Logical, physical and normalized are all products of the designing phase in this order.</li>
+</ul>
+<h4 id="q12.-mysql-server-can-operate-in-different-sql-modes-depending-on-the-value-of-the-sql_mode-system-variable.-which-mode-changes-syntax-and-behavior-to-conform-more-closely-to-standard-sql">Q12. MySQL server can operate in different SQL modes, depending on the value of the sql_mode system variable. Which mode changes syntax and behavior to conform more closely to standard SQL?</h4>
+<ul>
+<li>[ ] TRADITIONAL</li>
+<li>[x] ANSI</li>
+<li>[ ] MSSQL</li>
+<li>[ ] STRICT</li>
+</ul>
+<h4 id="q13.-mysql-programs-are-a-set-of-command-line-utilities-that-are-provided-with-typical-mysql-distributions.-mysql-is-designed-to-be-a-database.">Q13. MySQL programs are a set of command-line utilities that are provided with typical MySQL distributions. MySQL is designed to be a database.</h4>
+<ul>
+<li>[ ] database and programming</li>
+<li>[ ] user and administrator</li>
+<li>[x] client and server</li>
+<li>[ ] syntax and objects</li>
+</ul>
+<h4 id="q14.-which-mysql-command-shows-the-structure-of-a-table">Q14. Which MySQL command shows the structure of a table?</h4>
+<ul>
+<li>[ ] INFO table;</li>
+<li>[ ] SHOW table;</li>
+<li>[ ] STRUCTURE table;</li>
+<li>[x] DESCRIBE table;</li>
+</ul>
+<h4 id="q15.-mysql-uses-security-based-on_for-all-connections-queries-and-other-operations-that-users-can-attempt-to-perform.">Q15. MySQL uses security based on<strong>_</strong>for all connections, queries, and other operations that users can attempt to perform.</h4>
+<ul>
+<li>[ ] administrator schema</li>
+<li>[ ] encrypted algorithms</li>
+<li>[ ] user settings</li>
+<li>[x] access control lists (https://dev.mysql.com/doc/refman/8.0/en/security-guidelines.html)</li>
+</ul>
+<h4 id="q16.-which-mysql-command-modifies-data-records-in-a-table">Q16. Which MySQL command modifies data records in a table?</h4>
+<ul>
+<li>[x] UPDATE</li>
+<li>[ ] MODIFY</li>
+<li>[ ] CHANGE</li>
+<li>[ ] ALTER</li>
+</ul>
+<h4 id="q17.-what-is-the-best-type-of-query-for-validating-the-format-of-an-email-address-in-a-mysql-table">Q17. What is the best type of query for validating the format of an email address in a MySQL table?</h4>
+<ul>
+<li>[ ] a SQL query using partitions</li>
+<li>[ ] a SQL query using IS NULL</li>
+<li>[x] a SQL query using a regular expression</li>
+<li>[ ] a SQL query using LTRIM Or RTRIM</li>
+</ul>
+<h4 id="q18.-in-mysql-queries-are-always-followed-by-what-character">Q18. In MySQL, queries are always followed by what character?</h4>
+<ul>
+<li>[ ] line break</li>
+<li>[ ] colon</li>
+<li>[x] semicolon</li>
+<li>[ ] period</li>
+</ul>
+<h4 id="q19.-how-can-you-remove-a-record-using-mysql">Q19. How can you remove a record using MySQL?</h4>
+<ul>
+<li>[ ] DELETE</li>
+<li>[x] DELETE FROM</li>
+<li>[ ] REMOVE</li>
+<li>[ ] REMOVE FROM</li>
+</ul>
+<h4 id="q20.-which-choice-is-not-a-statement-you-would-use-to-filter-data">Q20. Which choice is NOT a statement you would use to filter data?</h4>
+<ul>
+<li>[x] GROUP_BY</li>
+<li>[ ] WHERE</li>
+<li>[ ] LIMIT</li>
+<li>[ ] LIKE</li>
+</ul>
+<h4 id="q21.-what-does-the-following-sql-statement-return">Q21. What does the following SQL statement return?</h4>
+<p><code>SELECT * FROM Employees WHERE EmployeeName LIKE 'a%'</code></p>
+<ul>
+<li>[ ] It records in the Employees table where the value in the EmployeeName column doesn’t have an “a”.</li>
+<li>[x] It records in the Employees table where the value in the EmployeeName column starts with “a”.</li>
+<li>[ ] It records in the Employees table where the value in the EmployeeName column has an “a”.</li>
+<li>[ ] It records in the Employees table where the value in the EmployeeName column ends with “a”.</li>
+</ul>
+<h4 id="q22.-in-select-from-clients-what-does-clients-represent">Q22. In <code>SELECT * FROM clients;</code> what does clients represent?</h4>
+<ul>
+<li>[ ] a SQL query</li>
+<li>[ ] a SQL statement</li>
+<li>[ ] a database</li>
+<li>[x] a table</li>
+</ul>
+<h4 id="q23.-how-does-mysql-differ-from-sql">Q23. How does MySQL differ from SQL?</h4>
+<ul>
+<li>[ ] SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a nonrelational database management system that is used to manage SQL databases.</li>
+<li>[x] SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a relational database management system that is used to manage SQL databases.</li>
+<li>[ ] They are not different. MySQL and SQL refer to the same thing.</li>
+<li>[ ] My SQL is a language, and SQL is a software application.</li>
+</ul>
+<h4 id="q24.-if-you-need-to-order-a-table-of-movies-by-name-which-query-will-work">Q24. If you need to order a table of movies by name, which query will work?</h4>
+<ul>
+<li>[ ] SELECT * FROM movies GROUP BY name</li>
+<li>[x] SELECT * FROM movies ORDER BY name</li>
+<li>[ ] SELECT * FROM movies ORDER TABLE by name</li>
+<li>[ ] SELECT * FROM movies FILTER BY name</li>
+</ul>
+<h4 id="q25.-a-trigger-is-a-database-object-that-is-associated-with-a-table-and-that-activates-when-a-particular-event-occurs-for-the-table.-which-three-events-are-these">Q25. A trigger is a database object that is associated with a table, and that activates when a particular event occurs for the table. Which three events are these?</h4>
+<ul>
+<li>[x] INSERT, UPDATE, DELETE</li>
+<li>[ ] CREATE, ALTER, DROP</li>
+<li>[ ] OPEN, FETCH, CLOSE</li>
+<li>[ ] DECLARE, SET, SELECT</li>
+</ul>
+<h4 id="q26.-you-are-working-with-very-large-tables-in-your-database.-which-sql-clause-do-you-use-to-prevent-exceedingly-large-query-results">Q26. You are working with very large tables in your database. Which SQL clause do you use to prevent exceedingly large query results?</h4>
+<ul>
+<li>[ ] UNIQUE</li>
+<li>[x] LIMIT</li>
+<li>[ ] DISTINCT</li>
+<li>[ ] CONSTRAINT</li>
+</ul>
+<h4 id="q27.-what-is-the-default-port-for-mysql-server">Q27. What is the default port for MySQL Server?</h4>
+<ul>
+<li>[ ] 25</li>
+<li>[ ] 990</li>
+<li>[ ] 0</li>
+<li>[x] 3306</li>
+</ul>
+<h4 id="q28.-how-can-you-filter-duplicate-data-while-retrieving-records-from-a-table">Q28. How can you filter duplicate data while retrieving records from a table?</h4>
+<ul>
+<li>[x] DISTINCT</li>
+<li>[ ] WHERE</li>
+<li>[ ] LIMIT</li>
+<li>[ ] AS</li>
+</ul>
+<h4 id="q29.-what-is-the-difference-between-drop-and-truncate">Q29. What is the difference between DROP and TRUNCATE?</h4>
+<ul>
+<li>[ ] They both refer to the same operation of deleting the table completely.</li>
+<li>[ ] They both refer to the same operation of clearing the table, but keeping its definition intact.</li>
+<li>[ ] TRUNCATE deletes table completely, removing its definition as well. DROP clears the table but does not delete the definition.</li>
+<li>[x] DROP deletes table completely, removing its definition as well. TRUNCATE clears the table but does not delete the definition.</li>
+</ul>
+<h4 id="q30.-how-do-you-select-every-row-in-a-given-table-named-inventory">Q30. How do you select every row in a given table named “inventory”?</h4>
+<ul>
+<li>[ ] SELECT all FROM inventory;</li>
+<li>[ ] FROM inventory SELECT all;</li>
+<li>[ ] FROM inventory SELECT *;</li>
+<li>[x] SELECT * FROM inventory;</li>
+</ul>
+<h4 id="q31.-in-an-efficiently-designed-relational-database-what-does-every-table-have">Q31. In an efficiently designed relational database, what does every table have?</h4>
+<ul>
+<li>[ ] set of triggers</li>
+<li>[ ] sequential id field</li>
+<li>[ ] minimum of three columns</li>
+<li>[x] primary key</li>
+</ul>
+<h4 id="q32.-mysql-option-files-provide-a-way-to-specify-commonly-used-options-so-that-they-need-not-be-entered-on-the-command-line-each-time-you-run-a-program.-what-is-another-name-for-the-option-files">Q32. MySQL option files provide a way to specify commonly used options so that they need not be entered on the command line each time you run a program. What is another name for the option files?</h4>
+<ul>
+<li>[ ] variable settings</li>
+<li>[x] configuration files</li>
+<li>[ ] help files</li>
+<li>[ ] default settings</li>
+</ul>
+<h4 id="q33.-after-installing-mysql-it-may-be-necessary-to-initialize-the-__-which-may-be-done-automatically-with-some-mysql-installation-methods.">Q33. After installing MySQL, it may be necessary to initialize the __ which may be done automatically with some MySQL installation methods.</h4>
+<ul>
+<li>[ ] storage engine</li>
+<li>[ ] user accounts</li>
+<li>[ ] grant tables</li>
+<li>[x] data directory</li>
+</ul>
+<h4 id="q34.-you-need-to-export-the-data-in-the-customers-table-into-a-csv-file-with-columns-headers-in-the-first-row.-which-clause-do-you-add-to-your-mysql-command">Q34. You need to export the data in the customers table into a CSV file, with columns headers in the first row. Which clause do you add to your MySQL command?</h4>
+<ul>
+<li>[ ] JOIN</li>
+<li>[ ] WITH HEADERS</li>
+<li>[x] UNION</li>
+<li>[ ] WITH COLUMNS</li>
+</ul>
+<h4 id="q35.-one-form-of-backup-replication-enables-you-to-maintain-identical-data-on-multiple-servers-as-a-___-configuration.">Q35. One form of backup, replication, enables you to maintain identical data on multiple servers, as a ___ configuration.</h4>
+<ul>
+<li>[ ] remote-local</li>
+<li>[ ] parent-child</li>
+<li>[x] master-slave</li>
+<li>[ ] logical-physical</li>
+</ul>
+<h4 id="q36.-what-is-the-requirement-for-using-a-subquery-in-the-select-clause">Q36. What is the requirement for using a subquery in the SELECT clause?</h4>
+<ul>
+<li>[ ] the subquery must use an aggregate function.</li>
+<li>[ ] the subquery must refer to the same table as the main query.</li>
+<li>[x] the subquery must return a single value.</li>
+<li>[ ] the subquery must return at least one value.</li>
+</ul>
+<h4 id="q37.-each-time-mysql-is-upgraded-it-is-best-to-execute-mysql_upgrade-which-looks-for-incompatibilities-with-the-upgraded-mysql-server.-what-does-this-command-do-upon-finding-a-table-with-a-possible-incompatibility">Q37. Each time MySQL is upgraded, it is best to execute mysql_upgrade, which looks for incompatibilities with the upgraded MySQL server. What does this command do, upon finding a table with a possible incompatibility?</h4>
+<ul>
+<li>[x] it performs a table check and, if problems are found, attempts a table repair.</li>
+<li>[ ] it stops and notifies the server administrator that the upgrade cannot complete until the incompatibility issue are resolved.</li>
+<li>[ ] it provides a full report of the table specifications and the incompatibilities to the server administrator.</li>
+<li>[ ] it performs a table check and, if problems are found, displays the information for the server administrator to take action.</li>
+</ul>
+<h4 id="q38.-what-mysql-statement-is-used-to-check-which-accounts-have-specific-privileges">Q38. What mysql statement is used to check which accounts have specific privileges?</h4>
+<ul>
+<li>[x] show grants (displays the privileges and roles that are assigned to a MySQL user account or role)</li>
+<li>[ ] show privileges (shows the list of system privileges that the MySQL server supports)</li>
+<li>[ ] show access</li>
+<li>[ ] show user permissions</li>
+</ul>
+<h4 id="q39.-what-table-cannot-have-a-trigger-associated-with-it">Q39. What table cannot have a trigger associated with it?</h4>
+<ul>
+<li>[ ] temporary</li>
+<li>[x] system</li>
+<li>[ ] large</li>
+<li>[ ] new</li>
+</ul>
+<h4 id="q40.-later-versions-of-mysql-support-the-native-json-data-type-for-storing-json-documents.-what-is-a-drawback-of-json-columns">Q40. later versions of mysql support the native json data type for storing json documents. What is a drawback of json columns?</h4>
+<ul>
+<li>[ ] inefficient for storing json documents</li>
+<li>[x] cannot be indexed directly</li>
+<li>[ ] documents cannot be validated when stored in json columns</li>
+<li>[ ] cannot be normalized — no</li>
+</ul>
+<h4 id="q41.which-statement-is-true-for-the-diagram-below">Q41.Which statement is true for the diagram below</h4>
+<figure>
+<img src="images/mysql_q41.jpg" alt="mysql Q41" /><figcaption>mysql Q41</figcaption>
+</figure>
+<ul>
+<li>[ ] carid is the primary key for purchases</li>
+<li>[ ] carid is the foreign key for cars.carid</li>
+<li>[x] customerid is the foreign key for customers.id</li>
+<li>[ ] customerid is the primary key for purchases</li>
+</ul>
+<h4 id="q42.which-statement-can-you-use-to-load-data-from-a-file-into-the-table">Q42.Which statement can you use to load data from a file into the table?</h4>
+<ul>
+<li>[ ] cat file|mysql</li>
+<li>[x] load data infile (correct if the file is already on the server)</li>
+<li>[ ] load data local infile (also correct but only if the file is from the client)</li>
+<li>[ ] extended insert statement</li>
+</ul>
+<h4 id="q43.see-tables-in-the-diagram.-make-sure-that-any-record-added-to-the-purchase-table-consists-of-a-customerid-which-exists-in-the-customer-table-and-a-carid-which-exists-in-the-car-table.-you-decide-to-use-a-trigger-to-do-the-validation.-which-one">Q43.See tables in the diagram. Make sure that any record added to the purchase table consists of a customerId, which exists in the customer table and a carId, which exists in the car table. You decide to use a trigger to do the validation. Which one?</h4>
+<figure>
+<img src="images/mysql_q43.jpg" alt="mysql Q43" /><figcaption>mysql Q43</figcaption>
+</figure>
+<ul>
+<li>[ ] after insert</li>
+<li>[ ] if exists (invalid not a trigger; IF function + EXISTS clause)</li>
+<li>[x] before insert</li>
+<li>[ ] cross join (valid for a check but not a trigger)</li>
+</ul>
+<h4 id="q44.-which-is-the-correct-syntax-of-an-extended-insert-statement">Q44. Which is the correct syntax of an extended insert statement?</h4>
+<ul>
+<li><p>[ ] insert into cars (make, model, year) values (‘Ford’, ‘Mustang’, 2002) (‘Mercedes’, ‘C’, 2003)</p></li>
+<li><p>[ ] insert into cars (make, model, year) values (‘Ford’, ‘Mustang’, 2002) values (‘Mercedes’, ‘C’, 2003)</p></li>
+<li><p>[ ] insert into cars (make, model, year) extended (‘Ford’, ‘Mustang’, 2002), (‘Mercedes’, ‘C’, 2003)</p></li>
+<li><p>[x] insert into cars (make, model, year) values (‘Ford’, ‘Mustang’, 2002), (‘Mercedes’, ‘C’, 2003)</p></li>
+</ul>
+<h3 id="q-45.-you-need-an-exact-copy-of-a-table-with-all-columns-and-indexes.-how">Q 45. You need an exact copy of a table with all columns and indexes. How?</h3>
+<ul>
+<li>[ ] create table</li>
+<li>[ ] clone table</li>
+<li>[ ] insert into</li>
+<li>[x] show create table</li>
+</ul>
+<h4 id="q46.-you-need-to-make-your-mysql-system-secure-against-hackers.-what-are-you-not-supposed-to-do">Q46. you need to make your mysql system secure against hackers. What are you not supposed to do?</h4>
+<ul>
+<li>[ ] Run the server as normal user</li>
+<li>[x] grant process or super privilege to other user</li>
+<li>[ ] run the server as the unix root user</li>
+<li>[ ] use the compressed protocol</li>
+</ul>
+<h4 id="q47.-you-manage-a-database-with-a-table-customers.-you-created-a-temporary-table-also-called-customers-with-which-you-are-working-for-the-duration-of-your-session.-you-need-to-recreate-the-temporary-table-with-different-specs.-which-command-do-you-need-to-run-first">Q47. You manage a database with a table “customers”. You created a temporary table also called “customers” with which you are working for the duration of your session. You need to recreate the temporary table with different specs. Which command do you need to run first?</h4>
+<ul>
+<li>[ ] create temporary table customers;</li>
+<li>[ ] drop temp table customers;</li>
+<li>[ ] drop table customers;</li>
+<li>[x] drop temporary table customers;</li>
+</ul>
+<h4 id="q48.-you-need-to-run-a-complex-query-with-recursive-subqueries-but-without-creating-a-stored-procedure-or-a-function.-which-command-or-clause-do-you-use">Q48. you need to run a complex query with recursive subqueries but without creating a stored procedure or a function. Which command or clause do you use?</h4>
+<ul>
+<li>[ ] collate</li>
+<li>[x] union</li>
+<li>[ ] full join</li>
+<li>[ ] with</li>
+</ul>
+<h4 id="q49.-which-choice-is-not-a-processing-algorithm-for-database-views">Q49. Which choice is not a processing algorithm for database views?</h4>
+<ul>
+<li>[ ] merge</li>
+<li>[x] updatable</li>
+<li>[ ] temptable</li>
+<li>[ ] undefined</li>
+</ul>
+<h4 id="q50.-what-is-the-mysql-perror-command-line-utility-used-for">Q50. What is the MySQL <code>perror</code> command-line utility used for?</h4>
+<ul>
+<li>[ ] to display your version of MySQL</li>
+<li>[ ] to display operating system error codes</li>
+<li>[ ] to display default settings that are in error</li>
+<li>[x] to display storage error codes</li>
+</ul>
+<p>(*note: perror prints a description for a system error code or for a storage engine (table handler) error code. link: https://dev.mysql.com/doc/refman/5.7/en/perror.html#:~:text=2%20perror%20%E2%80%94%20Display%20MySQL%20Error%20Message%20Information,-For%20most%20system&amp;text=You%20can%20find%20out%20what,(table%20handler)%20error%20code.)</p>
+<h4 id="q51.-how-can-you-list-all-columns-for-a-given-table">Q51. How can you list all columns for a given table?</h4>
+<ul>
+<li>[ ] SHOW table COLUMNS;</li>
+<li>[x] SHOW COLUMNS FROM table; (*not on test but <code>DESCRIBE tablename</code> is a shortcut for this command)</li>
+<li>[ ] LIST table COLUMNS;</li>
+<li>[ ] SELECT COLUMNS FROM table;</li>
+</ul>
+<h4 id="q52.-how-would-you-list-the-full-set-of-tables-in-the-currently-selected-database">Q52. How would you list the full set of tables in the currently selected database?</h4>
+<ul>
+<li>[ ] SELECT * FROM DATABASE;</li>
+<li>[x] SHOW TABLES;</li>
+<li>[ ] LIST TABLES;</li>
+<li>[ ] SELECT ALL TABLES;</li>
+</ul>
+<h4 id="q53.-which-choice-is-not-one-of-the-table-maintenance-statements">Q53. Which choice is not one of the table maintenance statements?</h4>
+<ul>
+<li>[ ] CHECK TABLE;</li>
+<li>[x] CREATE TABLE;</li>
+<li>[ ] ANALYZE TABLE;</li>
+<li>[ ] OPTIMIZE TABLE;</li>
+</ul>
+<h4 id="q54.-in-which-table-does-mysql-store-passwords-for-user-accounts">Q54. In which table does MySQL store passwords for user accounts?</h4>
+<ul>
+<li>[ ] mysql.accounts;</li>
+<li>[ ] mysql.passwords;</li>
+<li>[ ] mysql.admin;</li>
+<li>[x] mysql.user;</li>
+</ul>
+<h4 id="q55.-management-has-requested-that-you-build-an-employee-database.-you-need-to-include-each-employees-current-position-and-salary-as-well-as-all-prior-positions-and-salaries-with-the-company.-you-decide-to-use-a-one-to-many-structure-an-employee-table-with-the-main-information-such-as-name-and-address-and-an-employment-table-with-position-and-salary-history.-you-can-use-the-employeeld-field-to-connect-them.-what-is-employment.employeeld-an-example-of">Q55. Management has requested that you build an employee database. You need to include each employee’s current position and salary, as well as all prior positions and salaries with the company. You decide to use a one-to-many structure: an employee table with the main information such as name and address, and an employment table with position and salary history. You can use the employeelD field to connect them. What is employment.employeelD an example of?</h4>
+<ul>
+<li>[ ] primary key;</li>
+<li>[ ] secondary key;</li>
+<li>[x] foreign key;</li>
+<li>[ ] alternet key;</li>
+</ul>
+<h4 id="q56.-in-recent-versions-of-mysql-8.0-whats-the-correct-syntax-to-declare-a-cte-common-table-expression">Q56. In recent versions of MySQL (8.0+), what’s the correct syntax to declare a CTE (Common Table Expression)?</h4>
+<ul>
+<li>[ ] WITH (SELECT id FROM users) as cte, SELECT …</li>
+<li>[ ] WITH (SELECT id FROM users) as cte SELECT …</li>
+<li>[ ] WITH cte as (SELECT id FROM users), SELECT …</li>
+<li>[x] WITH cte as (SELECT id FROM users) SELECT …</li>
+</ul>
+<h4 id="q57.-what-is-one-reason-to-introduce-data-redundancy-into-a-normalized-database-design">Q57. What is one reason to introduce data redundancy into a normalized database design?</h4>
+<ul>
+<li>[x] to reduce corruption in data</li>
+<li>[ ] to reduce storage space</li>
+<li>[ ] to make the system faster</li>
+<li>[ ] to prevent data anomalies</li>
+</ul>
+<h4 id="q58.-the-code-snippet-below-is-used-to-read-data-from-an-xml-file-into-a-table.-which-xml-structure-is-not-supported-by-the-statement">Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is <strong>not</strong> supported by the statement?</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode sql"><code class="sourceCode sql"><a class="sourceLine" id="cb9-1" title="1"><span class="dv">1</span> LOAD XML <span class="kw">LOCAL</span> INFILE <span class="st">&#39;cars.xml&#39;</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="dv">2</span> <span class="kw">INTO</span> <span class="kw">TABLE</span> cars</a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="dv">3</span> <span class="kw">ROWS</span> <span class="kw">IDENTIFIED</span> <span class="kw">BY</span> `<span class="op">&lt;</span>car<span class="op">&gt;</span>`;</a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">&lt;car&gt;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">   <span class="kw">&lt;field</span><span class="ot"> name=</span><span class="st">&quot;make&quot;</span><span class="kw">&gt;</span> Lexus <span class="kw">&lt;/field&gt;</span></a>
+<a class="sourceLine" id="cb10-3" title="3">   <span class="kw">&lt;field</span><span class="ot"> name=</span><span class="st">&quot;model&quot;</span><span class="kw">&gt;</span> IS300 <span class="kw">&lt;/field&gt;</span></a>
+<a class="sourceLine" id="cb10-4" title="4">   <span class="kw">&lt;field</span><span class="ot"> name=</span><span class="st">&quot;make&quot;</span><span class="kw">&gt;</span> 2016 <span class="kw">&lt;/field&gt;</span></a>
+<a class="sourceLine" id="cb10-5" title="5"><span class="kw">&lt;/car&gt;</span></a></code></pre></div>
+<ul>
+<li>[x]</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">&lt;car</span><span class="ot"> name=</span><span class="st">&quot;make&quot;</span><span class="kw">&gt;</span> Dodge <span class="kw">&lt;/car&gt;</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="kw">&lt;car</span><span class="ot"> name=</span><span class="st">&quot;model&quot;</span><span class="kw">&gt;</span> Ram <span class="kw">&lt;/car&gt;</span></a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="kw">&lt;car</span><span class="ot"> name=</span><span class="st">&quot;year&quot;</span><span class="kw">&gt;</span> 2000 <span class="kw">&lt;/car&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">&lt;car</span><span class="ot"> make=</span><span class="st">&quot;Ford&quot;</span><span class="ot"> model=</span><span class="st">&quot;Mustang&quot;</span><span class="ot"> year=</span><span class="st">&quot;2002/&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode xml"><code class="sourceCode xml"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">&lt;car</span><span class="ot"> year=</span><span class="st">&quot;2010&gt;</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="st">    </span><span class="er">&lt;</span><span class="st">make&gt;Mercedes</span><span class="er">&lt;</span><span class="st">/make&gt; </span><span class="er">&lt;</span><span class="st">model&gt; C-Class</span><span class="er">&lt;</span><span class="st">/model&gt;</span></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="er">&lt;</span><span class="st">/car&gt;</span></a></code></pre></div>
+<h4 id="q59.-you-are-loading-data-into-a-table.-which-command-can-you-use-to-make-sure-that-all-data-is-inserted-and-duplicated-rows-are-discarded">Q59. You are loading data into a table. Which command can you use to make sure that all data is inserted and duplicated rows are discarded?</h4>
+<ul>
+<li>[x] <code>INSERT IGNORE</code></li>
+<li>[ ] <code>INSERT UNIQUE</code></li>
+<li>[ ] <code>INSERT INTO</code></li>
+<li>[ ] <code>INSERT DISTINCT</code></li>
+</ul>
+<h4 id="q60.-which-statement-about-the-truncate-table-statement-is-true">Q60. Which statement about the <code>TRUNCATE TABLE</code> statement is true?</h4>
+<ul>
+<li>[ ] It will stop and issue an error when it encounters a row that is referenced by a row in a child table.</li>
+<li>[x] It always first drops, then re-creates a new table.</li>
+<li>[ ] It deletes rows one by one on tables with foreign key contraints.</li>
+<li>[ ] It does not invoke the <code>DELETE</code> triggers associated with the table.</li>
+</ul>
+<h4 id="q61.-you-are-working-with-the-tables-as-shown-in-this-diagram.-you-need-to-get-the-number-of-cars-sold-per-the-home-state-of-each-customers-residence.-how-can-you-accomplish-this">Q61. You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer’s residence. How can you accomplish this?</h4>
+<figure>
+<img src="images/mysql_q61.png" alt="mysql Q61" /><figcaption>mysql Q61</figcaption>
+</figure>
+<ul>
+<li>[ ] <code>SELECT state, COUNT(*) FROM customers WHERE ID IN (SELECT customerID FROM purchases) GROUP BY state;</code></li>
+<li>[ ] <code>SELECT state, COUNT(*) FROM customers c LEFT JOIN purchases p ON c.ID = p.ustomerID GROUP BY state;</code></li>
+<li>[x] <code>SELECT state, COUNT(*) FROM customers c, purchases p WHERE c.ID = p.customerID GROUP BY state;</code></li>
+<li>[ ] <code>SELECT state, COUNT(*) FROM customers GROUP BY state;</code></li>
+</ul>
+<h4 id="q62.-in-data-migration-there-is-often-a-need-to-delete-duplicate-rows-as-part-of-data-cleanup.-which-statement-works-best">Q62. In data migration, there is often a need to delete duplicate rows as part of data cleanup. Which statement works best?</h4>
+<ul>
+<li>[ ] <code>DELETE DUPS</code></li>
+<li>[ ] <code>DELETE DISTINCT</code></li>
+<li>[x] <code>DELETE JOIN</code></li>
+<li>[ ] <code>DELETE WITH</code></li>
+</ul>
+<h4 id="q63.-when-working-with-mysql-cursor-what-must-you-also-declare">Q63. When working with MySQL cursor, what must you also declare?</h4>
+<ul>
+<li>[ ] <code>DEFAULT</code> value</li>
+<li>[ ] <code>RETURN</code> variable</li>
+<li>[ ] <code>SQLEXCEPTION</code> routine</li>
+<li>[x] <code>NOT FOUND</code> handler</li>
+</ul>
+<h4 id="q64.-which-type-of-backup-includes-all-the-changes-made-to-the-data-since-the-last-full-backup-was-performed">Q64. Which type of backup includes all the changes made to the data since the last full backup was performed?</h4>
+<ul>
+<li>[x] snapshot</li>
+<li>[ ] logical</li>
+<li>[ ] differential</li>
+<li>[ ] incremental</li>
+</ul>
+</body>
+</html>

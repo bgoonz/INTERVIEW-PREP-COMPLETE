@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>t-sql-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="t-sql-assessment">T-SQL Assessment</h2>
+<h4 id="q1.-which-answer-is-not-a-type-of-table-index">Q1. Which answer is NOT a type of table index?</h4>
+<ul>
+<li>[ ] nonclustered</li>
+<li>[ ] unique</li>
+<li>[x] heap</li>
+<li>[ ] hash</li>
+</ul>
+<h4 id="q2.-the-keywords-and-in-like-and-between-all-belong-to-a-category-called-what">Q2. The keywords AND, IN, LIKE, and between all belong to a category called what?</h4>
+<ul>
+<li>[ ] joining operations</li>
+<li>[ ] linking operations</li>
+<li>[ ] criteria operations</li>
+<li>[x] logical operations</li>
+</ul>
+<h4 id="q3.-what-is-the-result-of-this-series-of-statements">Q3. What is the result of this series of statements?</h4>
+<p>BEGIN TRY SELECT ‘Foo’ AS Result; END TRY BEGIN CATCH SELECT ‘Bar’ AS Result; END CATCH</p>
+<ul>
+<li>[x] Foo</li>
+<li>[ ] FooBar</li>
+<li>[ ] Foo Bar</li>
+<li>[ ] Bar</li>
+</ul>
+<h4 id="q4.-given-these-two-tables-which-query-generates-a-listing-showing-student-names-and-the-department-office-location-where-you-could-reach-each-student">Q4. Given these two tables, which query generates a listing showing student names and the department office location where you could reach each student?</h4>
+<ul>
+<li>[ ] SELECT Students.first_name, Students.last_name, Departments.office_location FROM Students, Departments;</li>
+<li>[x] SELECT Students.first_name, Students.last_name, Departments.office_location FROM Students ON Students JOIN Departments ON Students.department = Departments.department;</li>
+<li>[ ] SELECT Students.first_name, Students.last_name, Departments.office_location FROM Students JOIN Departments;</li>
+<li>[ ] SELECT Students.first_name, Students.last_name, Departments.office_location FROM Students ON Students.department = Departments.department;</li>
+</ul>
+<h4 id="q5.-what-is-an-example-of-a-ddl-command-in-sql">Q5. What is an example of a DDL command in SQL?</h4>
+<ul>
+<li>[ ] TRUNCATE TABLE</li>
+<li>[ ] DELETE</li>
+<li>[ ] MERGE</li>
+<li>[x] DROP</li>
+</ul>
+<h4 id="q6.-given-the-games-table-pictured-which-query-generates-the-results-shown">Q6. Given the Games table pictured, which query generates the results shown?</h4>
+<ul>
+<li>[ ] SELECT GameType, MaxPlayers, count(*) AS NumberOfGames FROM Games GROUP BY MaxPlayers, GameType ORDER BY MaxPlayers, GameType;</li>
+<li>[x] SELECT GameType, MaxPlayers, count(*) AS NumberOfGames FROM Games GROUP BY GameType, MaxPlayers ORDER BY GameType;</li>
+<li>[ ] SELECT GameType, count(Players) AS MaxPlayers, NumberOfGames FROM Games GROUP BY GameType, MaxPlayers ORDER BY GameType;</li>
+<li>[ ] SELECT GameType, MaxPlayers, count(*) AS NumberOfGames FROM Games GROUP BY GameType ORDER BY MaxPlayers;</li>
+</ul>
+<h4 id="q7.-which-answer-is-a-possible-result-of-the-sequence-of-commands-below">Q7. Which answer is a possible result of the sequence of commands below?</h4>
+<p>DECLARE <span class="citation" data-cites="UniqueID">@UniqueID</span> uniqueidentifier = NEWID(); SELECT <span class="citation" data-cites="UniqueID">@UniqueID</span> AS Result;</p>
+<ul>
+<li>[ ] 1</li>
+<li>[x] bb261196-66a5-43af-815d-123fc593cf3a</li>
+<li>[ ] z350mpj1-62lx-40ww-9ho0-4u1875rt2mx4</li>
+<li>[ ] 0x2400001155F04846674AD4590F832C0</li>
+</ul>
+<h4 id="q8.-you-need-to-find-all-students-that-are-not-on-the-chemistry-cats-team.-which-query-does-not-work-for-this-task">Q8. You need to find all students that are not on the “Chemistry Cats” team. Which query does NOT work for this task?</h4>
+<ul>
+<li><p>[x] SELECT * FROM Students WHERE team NOT ‘Chemistry Cats’;</p></li>
+<li><p>[ ] SELECT * FROM Students WHERE team &lt;&gt; ‘Chemistry Cats’;</p></li>
+<li><p>[ ] SELECT * FROM Students WHERE team != ‘Chemistry Cats’;</p></li>
+<li><p>[ ] SELECT * FROM Students WHERE NOT team = ‘Chemistry Cats’;</p></li>
+</ul>
+<h4 id="q9.-you-need-to-write-a-query-that-returns-all-employees-that-have-a-lastname-starting-with-the-letter-a.-which-where-clause-should-you-use-to-fill-in-the-blank-in-this-query">Q9. You need to write a query that returns all Employees that have a LastName starting with the letter A. Which WHERE clause should you use to fill in the blank in this query?</h4>
+<ul>
+<li>[ ] WHERE LastName = A*</li>
+<li>[ ] WHERE LastName = LIKE ‘%A%’</li>
+<li>[x] WHERE LastName LIKE ‘A%’</li>
+<li>[ ] WHERE LastName IN (‘A*’)</li>
+</ul>
+<h4 id="q10.-which-query-shows-the-first-name-department-and-team-of-all-students-with-the-two-lowest-points">Q10. Which query shows the first name, department, and team of all students with the two lowest points?</h4>
+<ul>
+<li>[ ] SELECT LIMIT(2) first_name, department, team FROM Students ORDER BY points ASC;</li>
+<li>[x] SELECT TOP(2) first_name, deprtment, team FROM Students ORDER BY points DESC;</li>
+<li>[ ] SELECT TOP(2) WITH TIES first_name, department, team FROM Students ORDER BY points;</li>
+<li>[ ] SELECT BOTTOM(2) first_name, department, team FROM Students ORDER BY points ASC;</li>
+</ul>
+<h4 id="q11.-what-is-the-result-of-this-statement">Q11. What is the result of this statement?</h4>
+<p>SELECT FLOOR(-1234.321)</p>
+<ul>
+<li>[ ] -1234.3</li>
+<li>[ ] -1234</li>
+<li>[x] -1235</li>
+<li>[ ] 1234.321</li>
+</ul>
+<h4 id="q12.-which-is-the-best-approach-to-update-the-last-name-of-the-student-donette-figgins-to-smith">Q12. Which is the best approach to update the last name of the student Donette Figgins to Smith</h4>
+<ul>
+<li>[ ] UPDATE Students SET last_name = ‘Smith’ WHERE email = ‘dfiggins@rouxacademy.com’;</li>
+<li>[ ] UPDATE Students SET last_name = ‘Figgins’ WHERE email = ‘dfiggins@rouxacademy.com’;</li>
+<li>[ ] UPDATE Students SET last_name = ‘Figgins’ WHERE last_name = ‘Smith’ AND first-name = ‘Donette’;</li>
+<li>[x] UPDATE Students SET last_name = ‘Smith’ WHERE last_name = ‘Figgins’ AND first-name = ‘Donette’;</li>
+</ul>
+<h4 id="q13.-which-of-these-data-types-is-an-approximate-numeric">Q13. Which of these data types is an approximate numeric?</h4>
+<ul>
+<li>[x] real</li>
+<li>[ ] bit</li>
+<li>[ ] decimal</li>
+<li>[ ] numeric</li>
+</ul>
+<h4 id="q14.-you-need-to-remove-all-data-from-a-table-name-products.-which-query-fully-logs-the-removal-of-each-record">Q14. You need to remove all data from a table name Products. Which query fully logs the removal of each record?</h4>
+<ul>
+<li>[ ] TRUNCATE FROM Products *;</li>
+<li>[x] DELETE FROM Products;</li>
+<li>[ ] DELETE * FROM Products;</li>
+<li>[ ] TRUNCATE TABLE Products;</li>
+</ul>
+<h4 id="q15.-what-is-the-result-of-the-following-query-select-1-2-as-result">Q15. What is the result of the following query? SELECT 1 / 2 AS Result;</h4>
+<ul>
+<li>[ ] 0.5</li>
+<li>[ ] error</li>
+<li>[x] 0</li>
+<li>[ ] 2</li>
+</ul>
+<h4 id="q16.-which-data-type-will-most-efficiently-store-a-persons-age-in-years">Q16. which data type will most efficiently store a person’s age in years?</h4>
+<ul>
+<li>[ ] float</li>
+<li>[ ] int</li>
+<li>[x] tinyint</li>
+<li>[ ] bigint</li>
+</ul>
+<h4 id="q17.-what-is-the-result-of-this-query">Q17. What is the result of this query?</h4>
+<p>SELECT ‘abc<br />
+def’ AS Result;</p>
+<ul>
+<li>[ ] abc\def</li>
+<li>[x] abcdef</li>
+<li>[ ] error</li>
+<li>[ ] abc def</li>
+</ul>
+<h4 id="q18.-to-select-a-random-student-from-the-table-which-statement-could-you-use">Q18. To select a random student from the table, which statement could you use?</h4>
+<ul>
+<li>[ ] SELECT TOP(1) first_name, last_name FROM Students ORDER BY NEWID();</li>
+<li>[ ] SELECT TOP(1) RAND(first_name, last_name) FROM Student;</li>
+<li>[x] SELECT TOP(1) first_name, last_name FROM Student;</li>
+<li>[ ] SELECT TOP(1) first_name, last_name FROM RAND(Student);</li>
+</ul>
+<h4 id="q19.-what-result-is-returned-after-executing-the-following-commands">Q19. What result is returned after executing the following commands?</h4>
+<pre><code>DECLARE @MyVariable int;
+SET @MyVariable = 1;
+GO
+SELECT @MyVariable;</code></pre>
+<ul>
+<li>[x] error</li>
+<li>[ ] 1</li>
+<li>[ ] null</li>
+<li>[ ] <span class="citation" data-cites="MyVariable">@MyVariable</span></li>
+</ul>
+<h4 id="q20.-which-statement-creates-a-new-database-schema-named-sales-and-establish-sharon-as-the-owner">Q20. Which statement creates a new database schema named Sales and establish Sharon as the owner?</h4>
+<ul>
+<li>[ ] ALTER USER Sharon WITH DEFAULT_SCHEMA = Sales;</li>
+<li>[ ] ALTER USER Sharon SET SCHEMA Sales;</li>
+<li>[x] CREATE SCHEMA Sales SET OWNER Sharon;</li>
+<li>[ ] CREATE SCHEMA Sales AUTHORIZATION Sharon;</li>
+</ul>
+<h4 id="q21.-the-result-of-a-cross-join-between-a-table-with-4-rows-and-one-with-5-rows-will-give-with-____-rows.">Q21. The result of a CROSS JOIN between a table with 4 rows, and one with 5 rows, will give with ____ rows.</h4>
+<ul>
+<li>[ ] 1024</li>
+<li>[x] 20</li>
+<li>[ ] 0</li>
+<li>[ ] 9</li>
+</ul>
+<h4 id="q22.-you-need-to-write-a-query-that-returns-all-products-that-have-a-serialnumber-ending-with-10_3.-which-where-clause-should-you-use-to-fill-in-the-blank-in-this-query">Q22. You need to write a query that returns all products that have a SerialNumber ending with “10_3”. Which WHERE clause should you use to fill in the blank in this query?</h4>
+<pre><code>SELECT ProductID, ProductName, SerialNumber
+FROM Products______ ;</code></pre>
+<ul>
+<li>[x] <code>WHERE SerialNumer LIKE '%10_3'</code></li>
+<li>[ ] <code>WHERE SerialNumer LIKE ('%10'+'_'+'3')</code></li>
+<li>[ ] <code>WHERE SerialNumer LIKE '%10"_"3'</code></li>
+<li>[ ] <code>WHERE SerialNumer LIKE '%10[_]3'</code></li>
+</ul>
+<h4 id="q23.-when-no-join-type-between-multiple-tables-in-a-querys-from-clause-is-specified-what-type-of-join-is-assumed">Q23. When no join type between multiple tables in a query’s FROM clause is specified, what type of join is assumed?</h4>
+<ul>
+<li>[x] INNER</li>
+<li>[ ] RIGHT</li>
+<li>[ ] LEFT</li>
+<li>[ ] FULL</li>
+</ul>
+<h4 id="q24.-how-many-bytes-of-storage-does-the-int-data-type-consume">Q24. How many bytes of storage does the int data type consume?</h4>
+<ul>
+<li>[ ] 1 byte</li>
+<li>[ ] 2 bytes</li>
+<li>[x] 4 bytes</li>
+<li>[ ] 8 bytes</li>
+</ul>
+<h4 id="q25.-what-does-a-right-join-ensure">Q25. What does a RIGHT JOIN ensure?</h4>
+<ul>
+<li>[ ] that only records from the rightmost table will be displayed</li>
+<li>[ ] that no records from the rightmost table are displayed if the records dont have corresponding records in the left table</li>
+<li>[ ] that records from the rightmost table will be displayed only if the records have a corresponding value in the leftmost table</li>
+<li>[x] that all records from the rightmost table are represented in the result, even if there are no corresponding records in the left table</li>
+</ul>
+<h4 id="q26.-you-execute-the-following-three-queries.-what-is-the-result">Q26. You execute the following three queries. What is the result?</h4>
+<p>Create table students(id int identity(1000,1), firstname varchar(20), lastname varchar(30)); insert into students(firstname,lastname)values(‘mark’,‘twain’); select *from students;</p>
+<ul>
+<li><p>[] studentid firstname lastname 1 1001 mark twain</p></li>
+<li><p>[] studentid firstname lastname 1 1 mark twain</p></li>
+<li><p>[x] studentid firstname lastname 1 1000 mark twain</p></li>
+<li><p>[] studentid firstname lastname 1 null mark twain</p></li>
+</ul>
+<h4 id="q27.-which-query-returns-all-student-names-with-the-highest-grade">Q27. Which Query returns all student names with the highest grade?</h4>
+<p>create table students( studentname varchar(50), grade int);</p>
+<ul>
+<li><p>[] select studentname from students where grade=max(grade);</p></li>
+<li><p>[] select top(1) studentname from students order by grade;</p></li>
+<li><p>[] select top(1) with ties studentname from students order by grade desc;</p></li>
+<li><p>[x] select studentname,max(grade) from students order by grade desc;</p></li>
+</ul>
+<h4 id="q28.-what-role-does-inventory-play">Q28. What role does “inventory” play?</h4>
+<p>select bookid, boooktitle, bookauthor,quantityonhand from inventory.books;</p>
+<ul>
+<li><p>[] you only want to see results from books currently in inventory</p></li>
+<li><p>[] it instructs the query engine to find the books table in the inventory schema</p></li>
+<li><p>[x] it instructs the query engine to find the books table in the inventory database</p></li>
+<li><p>[] it instructs the query engine to join the books table to the inventory schema</p></li>
+</ul>
+</body>
+</html>

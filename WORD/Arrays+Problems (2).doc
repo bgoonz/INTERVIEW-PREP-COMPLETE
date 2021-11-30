@@ -1,0 +1,2422 @@
+Date: Wed, 23 Dec 2020 20:30:20 +0000 (UTC)
+Message-ID: <1083028372.207.1608755420107@4da9a5c7a0df>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_206_1925089192.1608755420106"
+
+------=_Part_206_1925089192.1608755420106
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Arrays Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Arrays Problems</h1>
+    <div class=3D"Section1">
+        <style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1608755420043 {padding: 0px;}
+div.rbtoc1608755420043 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1608755420043 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style>
+<div class=3D"toc-macro rbtoc1608755420043">=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-AllUnique">AllUnique</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-allUniqueWithSet">allUniqueWithSet</a></li>=
+=20
+<li><a href=3D"#ArraysProblems-allUniqueWithArray">allUniqueWithArray</a></=
+li>=20
+<li><a href=3D"#ArraysProblems-allUniqueWithStreams">allUniqueWithStreams</=
+a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-BinarySearch">BinarySearch</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-binarySearch">binarySearch</a></li>=20
+<li><a href=3D"#ArraysProblems-binarySearchWithStreams">binarySearchWithStr=
+eams</a></li>=20
+<li><a href=3D"#ArraysProblems-binarySearchWithInsertPos">binarySearchWithI=
+nsertPos</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-SeealsoRecursion-BinarySearrch">See also Rec=
+ursion - BinarySearrch</a></li>=20
+</ul> </li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-CountSum">CountSum</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-countTwoSum">countTwoSum</a></li>=20
+<li><a href=3D"#ArraysProblems-countTwoSumWithSet">countTwoSumWithSet</a></=
+li>=20
+<li><a href=3D"#ArraysProblems-countFourSum">countFourSum</a></li>=20
+<li><a href=3D"#ArraysProblems-lengthShortestSubarrayExceedingTarget">lengt=
+hShortestSubarrayExceedingTarget</a></li>=20
+<li><a href=3D"#ArraysProblems-threeSumClosestButLess">threeSumClosestButLe=
+ss</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-DuplicatesAndMissing">DuplicatesAndMissing</=
+a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-missingNumberInSortedConsecutiveArray">missi=
+ngNumberInSortedConsecutiveArray</a></li>=20
+<li><a href=3D"#ArraysProblems-duplicateInRange_1_to_N_1">duplicateInRange_=
+1_to_N_1</a></li>=20
+<li><a href=3D"#ArraysProblems-duplicateInRange_0_to_N_2">duplicateInRange_=
+0_to_N_2</a></li>=20
+<li><a href=3D"#ArraysProblems-removeAllDuplicates">removeAllDuplicates</a>=
+</li>=20
+<li><a href=3D"#ArraysProblems-removeAllDuplicatesWithStreams">removeAllDup=
+licatesWithStreams</a></li>=20
+<li><a href=3D"#ArraysProblems-findLonelyNumber">findLonelyNumber</a></li>=
+=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-Fibonacci">Fibonacci</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-fibonacci">fibonacci</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-KthElement">KthElement</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-getSecondMax">getSecondMax</a></li>=20
+<li><a href=3D"#ArraysProblems-getSecondMaxWithStreams">getSecondMaxWithStr=
+eams</a></li>=20
+<li><a href=3D"#ArraysProblems-getKthLargestWithSort">getKthLargestWithSort=
+</a></li>=20
+<li><a href=3D"#ArraysProblems-getKthLargestWithStreamsUsingSkip">getKthLar=
+gestWithStreamsUsingSkip</a></li>=20
+<li><a href=3D"#ArraysProblems-getKthLargestWithStreamsUsingLimit">getKthLa=
+rgestWithStreamsUsingLimit</a></li>=20
+<li><a href=3D"#ArraysProblems-getKthSmallestWithStreamsUsingSkip">getKthSm=
+allestWithStreamsUsingSkip</a></li>=20
+<li><a href=3D"#ArraysProblems-getKthSmallestWithStreamsUsingLimit">getKthS=
+mallestWithStreamsUsingLimit</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-MaxDifference">MaxDifference</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-maxDifference">maxDifference</a></li>=20
+<li><a href=3D"#ArraysProblems-maxDifferenceWithStreams">maxDifferenceWithS=
+treams</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-MaxSumInArray">MaxSumInArray</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-maxSumInArray1">maxSumInArray1</a></li>=20
+<li><a href=3D"#ArraysProblems-maxSumInArray2">maxSumInArray2</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-MedianTwoSortedArrays">MedianTwoSortedArrays=
+</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-medianWithoutCreatingArrays">medianWithoutCr=
+eatingArrays</a></li>=20
+<li><a href=3D"#ArraysProblems-medianWithCreatingArrays">medianWithCreating=
+Arrays</a></li>=20
+<li><a href=3D"#ArraysProblems-mergeSortedArrays">mergeSortedArrays</a></li=
+>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-MinAreaRectangle">MinAreaRectangle</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-minArea">minArea</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-MostCommonInRange">MostCommonInRange</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-mostCommon">mostCommon</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-Partition">Partition</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-negativeBeforePositive">negativeBeforePositi=
+ve</a></li>=20
+<li><a href=3D"#ArraysProblems-negativeBeforePositiveWithStreams">negativeB=
+eforePositiveWithStreams</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-PushZeros">PushZeros</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-pushToBack">pushToBack</a></li>=20
+<li><a href=3D"#ArraysProblems-pushToBackWithStreams">pushToBackWithStreams=
+</a></li>=20
+<li><a href=3D"#ArraysProblems-pushToFront">pushToFront</a></li>=20
+<li><a href=3D"#ArraysProblems-pushToFrontWithStreams">pushToFrontWithStrea=
+ms</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-RandomInts">RandomInts</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-generateArrayRandomInts">generateArrayRandom=
+Ints</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-RandomSubset">RandomSubset</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-generateRandomSubset">generateRandomSubset</=
+a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-RemoveValue">RemoveValue</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-removeValue">removeValue</a></li>=20
+<li><a href=3D"#ArraysProblems-removeValueWithStreams">removeValueWithStrea=
+ms</a></li>=20
+<li><a href=3D"#ArraysProblems-removeValueWithIterator">removeValueWithIter=
+ator</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-Reverse">Reverse</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-reverse">reverse</a></li>=20
+<li><a href=3D"#ArraysProblems-reverseInPlace">reverseInPlace</a></li>=20
+<li><a href=3D"#ArraysProblems-reverseWithStreams">reverseWithStreams</a></=
+li>=20
+<li><a href=3D"#ArraysProblems-rotate">rotate</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#ArraysProblems-RotatedArrayMin">RotatedArrayMin</a></li>=20
+<li><a href=3D"#ArraysProblems-ShuffleCards">ShuffleCards</a>=20
+<ul class=3D"toc-indentation">=20
+<li><a href=3D"#ArraysProblems-shuffle">shuffle</a></li>=20
+<li><a href=3D"#ArraysProblems-shuffleWithStreams">shuffleWithStreams</a></=
+li>=20
+<li><a href=3D"#ArraysProblems-"></a></li>=20
+</ul> </li>=20
+</ul>=20
+</div>
+<h2 id=3D"ArraysProblems-AllUnique">AllUnique</h2>
+<h3 id=3D"ArraysProblems-allUniqueWithSet"><code>allUniqueWithSet</code></h=
+3>
+<h3 id=3D"ArraysProblems-allUniqueWithArray"><code>allUniqueWithArray</code=
+></h3>
+<h3 id=3D"ArraysProblems-allUniqueWithStreams"><code>allUniqueWithStreams</=
+code></h3>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>AllUnique</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean allUniqueWithSet(int[] a)
+{
+    Set&lt;Integer&gt; checkSet =3D new HashSet&lt;&gt;();
+    for(int v : a)
+    {
+        if(checkSet.contains(v))
+        {
+            return false;
+        }
+        checkSet.add(v);
+    }
+    return true;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean allUniqueWithArray(int[] a)
+{
+    boolean[] check =3D new boolean[256];
+    for(int v : a)
+    {
+        if(check[v])
+        {
+            return false;
+        }
+        check[v] =3D true;
+    }
+    return true;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean allUniqueWithStreams(int[] a)
+{
+    Set&lt;Integer&gt; set =3D Arrays.stream(a)
+                            .boxed()
+                            .collect(Collectors.toSet());
+    return set.size() =3D=3D a.length;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a1 =3D {1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int[] a2 =3D {1, 2, 3, 4, 5, 1, 2, 8, 9};
+    boolean b1 =3D allUniqueWithSet(a1);
+    boolean b2 =3D allUniqueWithSet(a2);
+    boolean b3 =3D allUniqueWithStreams(a1);
+    boolean b4 =3D allUniqueWithStreams(a2);
+    boolean b5 =3D allUniqueWithArray(a1);
+    boolean b6 =3D allUniqueWithArray(a2);
+    return b1 &amp;&amp; b3 &amp;&amp; b5 &amp;&amp; !b2 &amp;&amp; !b4 &am=
+p;&amp; !b6;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-BinarySearch">BinarySearch</h2>
+<h3 id=3D"ArraysProblems-binarySearch"><code>binarySearch</code></h3>
+<h3 id=3D"ArraysProblems-binarySearchWithStreams"><code>binarySearchWithStr=
+eams</code></h3>
+<h3 id=3D"ArraysProblems-binarySearchWithInsertPos"><code>binarySearchWithI=
+nsertPos</code></h3>
+<h4 id=3D"ArraysProblems-SeealsoRecursion-BinarySearrch">See also <a href=
+=3D"https://nickguner.atlassian.net/wiki/spaces/DEV/pages/875528233/Recursi=
+on+Problems#BinarySearch" rel=3D"nofollow">Recursion - BinarySearrch</a><br=
+></h4>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>BinarySearch</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int binarySearch(int[] a, int val)
+{
+    int left =3D 0, right =3D a.length - 1;
+    while(left &lt;=3D right)
+    {
+        int mid =3D (left + right) / 2;
+        if(a[mid] =3D=3D val)
+        {
+            return mid;
+        }
+        else if(a[mid] &gt; val)
+        {
+            right =3D mid - 1;
+        }
+        else
+        {
+            left =3D mid + 1;
+        }
+    }
+    return -1;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int binarySearchWithStreams(int[] a, int val)
+{
+    List&lt;Integer&gt; list =3D Arrays.stream(a)
+                              .boxed()
+                              .collect(Collectors.toList());
+    return Collections.binarySearch(list, val);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int binarySearchWithInsertPos(int[] a, int val)
+{
+    int left =3D 0, right =3D a.length - 1;
+    while(left &lt;=3D right)
+    {
+        int mid =3D (left + right) / 2;
+        if(a[mid] =3D=3D val)
+        {
+            return mid;
+        }
+        else if(a[mid] &gt; val)
+        {
+            right =3D mid - 1;
+        }
+        else
+        {
+            left =3D mid + 1;
+        }
+    }
+    return -left;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+            // 0  1  2  3  4   5   6   7   8   9
+    int[] a =3D {1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
+    boolean check =3D binarySearch(a, 1) =3D=3D 0 &amp;&amp;
+                    binarySearch(a, 15) =3D=3D 7 &amp;&amp;
+                    binarySearch(a, 10) =3D=3D -1;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D binarySearchWithInsertPos(a, 10) =3D=3D -5;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D binarySearchWithStreams(a, 1) =3D=3D 0 &amp;&amp;
+            binarySearchWithStreams(a, 15) =3D=3D 7 &amp;&amp;
+            binarySearchWithStreams(a, 10) &lt; 0;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Notes:</p>
+<ol>
+<li><p>Use&nbsp;<code>left&nbsp;&lt;=3D&nbsp;right</code></p></li>
+<li><p>Use <code>right =3D mid - 1;</code> and <code>left =3D mid + 1;</cod=
+e></p></li>
+</ol>
+<h2 id=3D"ArraysProblems-CountSum">CountSum</h2>
+<h3 id=3D"ArraysProblems-countTwoSum"><code>countTwoSum</code></h3>
+<h3 id=3D"ArraysProblems-countTwoSumWithSet"><code>countTwoSumWithSet</code=
+></h3>
+<h3 id=3D"ArraysProblems-countFourSum"><code>countFourSum</code></h3>
+<h3 id=3D"ArraysProblems-lengthShortestSubarrayExceedingTarget"><code>lengt=
+hShortestSubarrayExceedingTarget</code></h3>
+<h3 id=3D"ArraysProblems-threeSumClosestButLess"><code>threeSumClosestButLe=
+ss</code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>CountSum</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int countTwoSum(int[] a, int target)
+{
+    Arrays.sort(a);
+    int count =3D 0;
+    int left =3D 0, right =3D a.length - 1;
+    while(left &lt; right)
+    {
+        int sum =3D a[left] + a[right];
+        if(sum =3D=3D target)
+        {
+            count++;
+            left++;
+            right--;
+        }
+        else if(sum &lt; target)
+        {
+            left++;
+        }
+        else
+        {
+            right--;
+        }
+    }
+    return count;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int countTwoSumWithSet(int[] a, int target)
+{
+    // Note: Does not require sort
+    Set&lt;Integer&gt; set =3D new HashSet&lt;&gt;();
+    set.add(a[0]);
+    int sumCount =3D 0;
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        int val =3D target - a[i];
+        if(set.contains(val))
+        {
+            sumCount++;
+        }
+        set.add(a[i]);
+    }
+    return sumCount;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Set&lt;List&lt;Integer&gt;&gt; countFourSum(int[] a, int target)
+{
+    Set&lt;List&lt;Integer&gt;&gt; result =3D new HashSet&lt;&gt;();
+    Arrays.sort(a);
+    for(int i =3D 0; i &lt; a.length; ++i)
+    {
+        for(int j =3D i + 1; j &lt; a.length; ++j)
+        {
+            int k =3D j + 1;
+            int l =3D a.length - 1;
+            while(k &lt; l)
+            {
+                int sum =3D a[i] + a[j] + a[k] + a[l];
+                if(sum =3D=3D target)
+                {
+                    result.add(Arrays.asList(a[i], a[j], a[k],a[l]));
+                    k++;
+                    l--;
+                }
+                else if(sum &lt; target)
+                {
+                    k++;
+                }
+                else
+                {
+                    l--;
+                }
+            }
+        }
+    }
+    return result;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;Integer&gt; threeSumClosestButLess(int[] a, int target)
+{
+    List&lt;Integer&gt; result =3D new ArrayList&lt;&gt;();
+    Arrays.sort(a);
+    int min =3D Integer.MAX_VALUE;
+    for(int i =3D 0; i &lt; a.length; ++i)
+    {
+        int j =3D i + 1;
+        int k =3D a.length - 1;
+        while (j &lt; k)
+        {
+            int sum =3D a[i] + a[j] + a[k];
+            int diff =3D target - sum;
+            if(diff =3D=3D 0)
+            {
+                result =3D Arrays.asList(a[i], a[j], a[k]);
+                return result;
+            }
+            if(diff &gt; 0)
+            {
+                if(diff &lt; min)
+                {
+                    min =3D diff;
+                    result =3D Arrays.asList(a[i], a[j], a[k]);
+                }
+            }
+            if(sum &lt; target)
+            {
+                j++;
+            }
+            else
+            {
+                k--;
+            }
+        }
+    }
+    return result;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int numberOfSubarraySums(int[] a, int target)
+{
+    // Count number of sub-arrays that add to a given sum
+    // For input: new int[] {9, 4, 20, 3, 10, 5}, target =3D 33
+    // 2 subarrays [9, 4, 20], [20, 3, 10] add up to 33
+    int count =3D 0;
+    for(int i =3D 0; i &lt; a.length; ++i)
+    {
+        int sum =3D a[i];
+        for(int j =3D i + 1; j &lt; a.length; ++j)
+        {
+            if(sum =3D=3D target)
+            {
+                count++;
+                break;
+            }
+            sum +=3D a[j];
+        }
+    }
+    return count;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int lengthShortestSubarrayExceedingTarget(int[] a, int target)
+{
+    int minLength =3D Integer.MAX_VALUE;
+    for(int i =3D 0; i &lt; a.length; ++i)
+    {
+        if(a[i] &gt; target)
+        {
+            return 1;
+        }
+        int sum =3D a[i];
+        for(int j =3D i + 1; j &lt; a.length; ++j)
+        {
+            sum +=3D a[j];
+            if(sum &gt; target)
+            {
+                minLength =3D Math.min(minLength, j - i + 1);
+            }
+        }
+    }
+    return minLength =3D=3D Integer.MAX_VALUE ? -1 : minLength;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a1 =3D {9, 1, 8, 2, 7, 3, 6, 4, 5};
+    boolean check =3D countTwoSum(a1, 10) =3D=3D 4;
+    if(!check)
+    {
+        return  false;
+    }
+    check =3D countTwoSumWithSet(a1, 10) =3D=3D 4;
+    if(!check)
+    {
+        return  false;
+    }
+    int[] a2 =3D {1, 2, 3, 4, 3, 4, 5, -2};
+    Set&lt;List&lt;Integer&gt;&gt; result =3D countFourSum(a2, 10);
+    check =3D result.size() =3D=3D 2 &amp;&amp; result.contains(Arrays.asLi=
+st(-2, 3, 4, 5)) &amp;&amp;
+            result.contains(Arrays.asList(1, 2, 3, 4));
+    if(!check)
+    {
+        return  false;
+    }
+    check =3D numberOfConsecutiveSubarraySums(new int[] {9, 4, 20, 3, 10, 5=
+}, 33) =3D=3D 2;
+    if(!check)
+    {
+        return  false;
+    }
+    check =3D Arrays.equals(new int[] {2, 6, 9},
+            threeSumClosestButLess(new int[] {4, 1, 8, 3, 6, 2, 9}, 17));
+    if(!check)
+    {
+        return  false;
+    }
+    check =3D lengthShortestSubarrayExceedingTarget(new int[] {1, 4, 45, 6,=
+ 0, 19}, 51) =3D=3D 3;
+    if(!check)
+    {
+        return  false;
+    }
+    check =3D lengthShortestSubarrayExceedingTarget(new int[] {1, 11, 100, =
+1, 0, 200, 3, 2, 1, 250}, 299) =3D=3D 4;
+    if(!check)
+    {
+        return  false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-DuplicatesAndMissing">DuplicatesAndMissing</h2>
+<h3 id=3D"ArraysProblems-missingNumberInSortedConsecutiveArray"><code>missi=
+ngNumberInSortedConsecutiveArray</code></h3>
+<h3 id=3D"ArraysProblems-duplicateInRange_1_to_N_1"><code>duplicateInRange_=
+1_to_N_1</code></h3>
+<h3 id=3D"ArraysProblems-duplicateInRange_0_to_N_2"><code>duplicateInRange_=
+0_to_N_2</code></h3>
+<h3 id=3D"ArraysProblems-removeAllDuplicates"><code>removeAllDuplicates</co=
+de></h3>
+<h3 id=3D"ArraysProblems-removeAllDuplicatesWithStreams"><code>removeAllDup=
+licatesWithStreams</code></h3>
+<h3 id=3D"ArraysProblems-findLonelyNumber"><code>findLonelyNumber</code><br=
+></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>DuplicatesAndMissing</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int missingNumberInSortedConsecutiveArray(int[] a)
+{
+    int startVal =3D a[0], endVal =3D a[a.length - 1];
+    int expectedSum =3D endVal * (endVal + 1) / 2 - startVal * (startVal - =
+1) / 2;
+    int actualSum =3D Arrays.stream(a).sum();
+    return expectedSum - actualSum;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int duplicateInRange_1_to_N_1(int[] a)
+{
+    // {4, 2, 1, 3, 2};
+    int n =3D a.length;
+    int expectedSum =3D (n - 1) * n / 2;
+    int actualSum =3D Arrays.stream(a).sum();
+    return actualSum - expectedSum;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int duplicateInRange_0_to_N_2(int[] a)
+{
+    // {0, 2, 1, 3, 2}
+    int n =3D a.length;
+    int expectedSum =3D (n - 2) * (n - 1) / 2;
+    int actualSum =3D Arrays.stream(a).sum();
+    return actualSum - expectedSum;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] removeAllDuplicates(int[] a)
+{
+    if(a =3D=3D null || a.length &lt; 2)
+    {
+        return a;
+    }
+    int pos =3D 1;
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        int j;
+        for(j =3D 0; j &lt; pos; ++j)
+        {
+            if(a[i] =3D=3D a[j])
+            {
+                break;
+            }
+        }
+        if(j =3D=3D pos)
+        {
+            a[pos++] =3D a[i];
+        }
+    }
+    return Arrays.copyOf(a, pos);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] removeAllDuplicatesWithStreams(int[] a)
+{
+    return Arrays.stream(a).distinct().toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int findLonelyNumber(int[] a)
+{
+    int v =3D a[0];
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        v ^=3D a[i];
+    }
+    return v;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D missingNumberInSortedConsecutiveArray(new int[] {4, 5=
+, 6, 8, 9, 10, 11, 12, 13, 14}) =3D=3D 7;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D duplicateInRange_1_to_N_1(new int[] {4, 2, 1, 3, 2}) =3D=3D 2=
+;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D duplicateInRange_0_to_N_2(new int[] {0, 2, 1, 3, 2}) =3D=3D 2=
+;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {0, 1, 2}, removeAllDuplicates(new in=
+t[] {0, 1, 0, 0, 0, 1, 1, 2, 0, 1}));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D Arrays.equals(new int[] {0, 1, 2}, removeAllDuplicatesWithStr=
+eams(new int[] {0, 1, 0, 0, 0, 1, 1, 2, 0, 1}));
+    if(!check)
+    {
+        return false;
+    }
+    check =3D findLonelyNumber(new int[] {0, 1, 2, 3, 0, 1, 3}) =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-Fibonacci">Fibonacci</h2>
+<h3 id=3D"ArraysProblems-fibonacci"><code>fibonacci</code><br></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Fibonacci</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int fibonacci(int n)
+{
+    // n: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+    //f(n): 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+    if(n &lt; 0)
+    {
+        return -1;
+    }
+    if(n &lt; 2)
+    {
+        return n;
+    }
+    int[] a =3D new int[n + 1];
+    a[0] =3D 0;
+    a[1] =3D 1;
+    for(int i =3D 2; i &lt;=3D n; ++i)
+    {
+        a[i] =3D a[i - 1] + a[i - 2];
+    }
+    return a[n];
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D fibonacci(14) =3D=3D 377;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-KthElement"><br>KthElement</h2>
+<h3 id=3D"ArraysProblems-getSecondMax"><code>getSecondMax</code></h3>
+<h3 id=3D"ArraysProblems-getSecondMaxWithStreams"><code>getSecondMaxWithStr=
+eams</code></h3>
+<h3 id=3D"ArraysProblems-getKthLargestWithSort"><code>getKthLargestWithSort=
+</code></h3>
+<h3 id=3D"ArraysProblems-getKthLargestWithStreamsUsingSkip"><code>getKthLar=
+gestWithStreamsUsingSkip</code></h3>
+<h3 id=3D"ArraysProblems-getKthLargestWithStreamsUsingLimit"><code>getKthLa=
+rgestWithStreamsUsingLimit</code></h3>
+<h3 id=3D"ArraysProblems-getKthSmallestWithStreamsUsingSkip"><code>getKthSm=
+allestWithStreamsUsingSkip</code></h3>
+<h3 id=3D"ArraysProblems-getKthSmallestWithStreamsUsingLimit"><code>getKthS=
+mallestWithStreamsUsingLimit</code></h3>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>KthElement</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getSecondMax(int [] a)
+{
+    int max =3D Integer.MIN_VALUE, secondMax =3D Integer.MIN_VALUE;
+    for(int v : a)
+    {
+        if(v &gt; max)
+        {
+            secondMax =3D max;
+            max =3D v;
+        }
+        else if(v &gt; secondMax)
+        {
+            secondMax =3D v;
+        }
+    }
+    return secondMax;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getSecondMaxWithStreams(int [] a)
+{
+    return Arrays.stream(a)
+            .boxed()
+            .sorted(Comparator.reverseOrder())
+            .mapToInt(x -&gt; x)
+            .limit(2)
+            .toArray()[1];
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getKthLargestWithSort(int[] a, int k)
+{
+    Arrays.sort(a);
+    return a[a.length - k];
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getKthLargestWithStreamsUsingSkip(int[] a, int k)
+{
+    return Arrays.stream(a).sorted().skip(a.length - k).toArray()[0];
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getKthLargestWithStreamsUsingLimit(int[] a, int k)
+{
+    return Arrays.stream(a)
+            .boxed()
+            .sorted(Comparator.reverseOrder())
+            .mapToInt(x -&gt; x)
+            .limit(k)
+            .toArray()[k - 1];
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getKthSmallestWithStreamsUsingSkip(int[] a, int k)
+{
+    return Arrays.stream(a).sorted().skip(k - 1).toArray()[0];
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int getKthSmallestWithStreamsUsingLimit(int[] a, int k)
+{
+    return Arrays.stream(a).sorted().limit(k).toArray()[k - 1];
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D getKthLargestWithSort(new int[] {9, 3, 2, 7, 5, 8, 1,=
+ 6, 4}, 1) =3D=3D 9;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getKthLargestWithSort(new int[] {9, 3, 2, 7, 5, 8, 1, 6, 4}, =
+4) =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getKthLargestWithStreamsUsingSkip(new int[] {9, 3, 2, 7, 5, 8=
+, 1, 6, 4}, 1) =3D=3D 9;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getKthLargestWithStreamsUsingSkip(new int[] {9, 3, 2, 7, 5, 8=
+, 1, 6, 4}, 4) =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getKthLargestWithStreamsUsingLimit(new int[] {9, 3, 2, 7, 5, =
+8, 1, 6, 4}, 4) =3D=3D 6;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getKthSmallestWithStreamsUsingLimit(new int[] {9, 3, 2, 7, 5,=
+ 8, 1, 6, 4}, 4) =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getKthSmallestWithStreamsUsingSkip(new int[] {9, 3, 2, 7, 5, =
+8, 1, 6, 4}, 4) =3D=3D 4;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getSecondMax(new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1}) =3D=3D 8;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D getSecondMaxWithStreams(new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1}=
+) =3D=3D 8;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-MaxDifference"><br>MaxDifference</h2>
+<h3 id=3D"ArraysProblems-maxDifference"><code>maxDifference</code></h3>
+<h3 id=3D"ArraysProblems-maxDifferenceWithStreams"><code>maxDifferenceWithS=
+treams</code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 849.0px;">
+<col style=3D"width: 768.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MaxDifference</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int maxDifference(int[] a)
+{
+    if (a =3D=3D null || a.length =3D=3D 0)
+    {
+        return -1;
+    }
+    int min =3D a[0], max =3D a[0];
+    for (int i =3D 1; i &lt; a.length; ++i)
+    {
+        min =3D Math.min(min, a[i]);
+        max =3D Math.max(max, a[i]);
+    }
+    return max - min;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int maxDifferenceWithStreams(int[] a)
+{
+    return Arrays.stream(a).max().getAsInt() - Arrays.stream(a).min().getAs=
+Int();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D {6, -5, 0, 7, 25, 14, -4, 18};
+    return maxDifference(a) =3D=3D 30 &amp;&amp;=20
+           maxDifferenceWithStreams(a) =3D=3D 30;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-MaxSumInArray"><br>MaxSumInArray</h2>
+<h3 id=3D"ArraysProblems-maxSumInArray1"><code>maxSumInArray1</code></h3>
+<h3 id=3D"ArraysProblems-maxSumInArray2"><code>maxSumInArray2</code></h3>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 262.0px;">
+<col style=3D"width: 498.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MaxSumInArray</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int maxSumInArray(int[] a)
+{
+    int sum =3D 0, maxSum =3D 0;
+    for(int v : a)
+    {
+        sum +=3D v;
+        if(sum &gt; maxSum)
+        {
+            maxSum =3D sum;
+        }
+        if(sum &lt; 0)
+        {
+            sum =3D 0;
+        }
+    }
+    return maxSum;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int maxSumInArray2(int[] a)
+{
+    int sum =3D 0, maxSum =3D 0;
+    for (int v : a)
+    {
+        sum +=3D v;
+        if (sum &gt; maxSum)
+        {
+            maxSum =3D sum;
+        }
+        if (sum &lt; 0)
+        {
+            sum =3D 0;
+        }
+    }
+    return maxSum;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D {-4, 3, 2, 7, -8, 11, 1, -3};
+    boolean check =3D maxSumInArray1(a) =3D=3D 16 &amp;&amp; maxSumInArray2=
+(a) =3D=3D 16;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-MedianTwoSortedArrays"><br>MedianTwoSortedArrays</=
+h2>
+<h3 id=3D"ArraysProblems-medianWithoutCreatingArrays"><code>medianWithoutCr=
+eatingArrays</code></h3>
+<h3 id=3D"ArraysProblems-medianWithCreatingArrays"><code>medianWithCreating=
+Arrays</code></h3>
+<h3 id=3D"ArraysProblems-mergeSortedArrays"><code>mergeSortedArrays</code><=
+/h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 974.0px;">
+<col style=3D"width: 643.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MedianTwoSortedArrays</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+double medianWithoutCreatingArrays(int [] a, int [] b)
+{
+    int len =3D a.length + b.length;
+    int mid =3D len / 2;
+    int aPos =3D 0, bPos =3D 0;
+    int val1 =3D 0, val2 =3D 0;
+    while(aPos + bPos &lt;=3D mid)
+    {
+        val1 =3D val2;
+        if(aPos &lt; a.length &amp;&amp; bPos &lt; b.length)
+        {
+            if(a[aPos] &lt; b[bPos])
+            {
+                val2 =3D a[aPos++];
+            }
+            else
+            {
+                val2 =3D b[bPos++];
+            }
+        }
+        else if(aPos &lt; a.length)
+        {
+            val2 =3D a[aPos++];
+        }
+        else
+        {
+            val2 =3D b[bPos++];
+        }
+    }
+    if(len % 2 =3D=3D 1)
+    {
+        return val2;
+    }
+    else
+    {
+        return (val1 + val2) / 2.0;
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static double medianWithCreatingArrays(int [] a, int [] b)
+{
+    int[] c =3D MergeSortedArrays.mergeSortedArrays(a, b);
+    if(c.length % 2 =3D=3D 1)
+    {
+        return c[c.length / 2];
+    }
+    else
+    {
+        int first =3D c[c.length / 2 - 1];
+        int second =3D c[c.length / 2];
+        return (first + second) / 2.0;
+    }
+}
+
+private static int[] mergeSortedArrays(int[] a, int[] b)
+{
+    int[] c =3D new int[a.length + b.length];
+    int aPos =3D 0, bPos =3D 0, cPos =3D 0;
+    while(aPos &lt; a.length &amp;&amp; bPos &lt; b.length)
+    {
+        if(a[aPos] &lt; b[bPos])
+        {
+            c[cPos++] =3D a[aPos++];
+        }
+        else
+        {
+            c[cPos++] =3D b[bPos++];
+        }
+    }
+    while(aPos &lt; a.length)
+    {
+        c[cPos++] =3D a[aPos++];
+    }
+    while(bPos &lt; b.length)
+    {
+        c[cPos++] =3D b[bPos++];
+    }
+    return c;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D {1, 3, 5, 7, 9};
+    int[] b =3D {2, 4, 6, 8};
+    int[] c =3D {1, 3, 5, 7};
+    boolean check =3D medianWithCreatingArrays(a, b) =3D=3D 5.0;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D medianWithoutCreatingArrays(a, b) =3D=3D 5.0;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D medianWithoutCreatingArrays(b, c) =3D=3D 4.5;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D medianWithoutCreatingArrays(c, b) =3D=3D 4.5;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-MinAreaRectangle"><br>MinAreaRectangle</h2>
+<h3 id=3D"ArraysProblems-minArea"><code>minArea</code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 988.0px;">
+<col style=3D"width: 629.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MinAreaRectangle</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Given a=
+ set of points in the x and y axes,
+determine the minimum area of a rectangle formed from these points,
+with sides parallel to the x and y axes.
+If there is a rectangle, there should be 2 points for the diagonal (x1, y1)=
+ and (x2, y2).
+There should also be two other points corresponding to the two diagonal poi=
+nts: (x1, y2) and (x2, y1).
+Filter out entries that do not have at least 2 y coordinates</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int minArea(int[][] points)
+{
+    Map&lt;Integer,Set&lt;Integer&gt;&gt; map =3D Arrays.stream(points).col=
+lect(
+            HashMap::new,
+            (m, item) -&gt; m.computeIfAbsent(item[0], x -&gt; new HashSet&=
+lt;&gt;()).add(item[1]),
+            HashMap::putAll);
+    map =3D map.entrySet().stream()
+            .filter(e -&gt; e.getValue().size() &gt; 1)
+            .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValu=
+e));
+    int minArea =3D Integer.MAX_VALUE;
+    for(int i =3D 0; i &lt; points.length - 1; ++i)
+    {
+        for(int j =3D i + 1; j &lt; points.length; ++j)
+        {
+            int x1 =3D points[i][0];
+            int y1 =3D points[i][1];
+            int x2 =3D points[j][0];
+            int y2 =3D points[j][1];
+            if(x1 !=3D x2 &amp;&amp; y1 !=3D y2 &amp;&amp; map.containsKey(=
+x1) &amp;&amp; map.containsKey(x2))
+            {
+                if(map.get(x1).contains(y1) &amp;&amp; map.get(x2).contains=
+(y2))
+                {
+                    int area =3D Math.abs((x1 - x2) * (y1 - y2));
+                    minArea =3D Math.min(minArea, area);
+                }
+            }
+        }
+    }
+    return minArea;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[][] points =3D {
+            {2, 1},
+            {2, 3},
+            {3, 5},
+            {5, 1},
+            {5, 3},
+            {7, 2},
+            {8, 5},
+            {2, 4},
+            {2, 5},
+            {5, 4},
+            {5, 5},
+    };
+    return minArea(points) =3D=3D 3;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-MostCommonInRange">MostCommonInRange</h2>
+<h3 id=3D"ArraysProblems-mostCommon"><code>mostCommon</code><br></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 956.0px;">
+<col style=3D"width: 661.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MostCommonInRange</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">Given a=
+ set of consecutive number ranges. Find the most common number.
+We can be assured that second dimension is &gt;=3D than first
+Given: {{1, 6}, {2, 5}, {3, 8}, {5, 7}}
+The most popular number would be 5
+Same approach can be used to figure out which people are alive on a give ye=
+ar, for Example:
+Person Year Born Year Died
+---------------------------
+A 1958 1988
+B 1961 1999</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int mostCommon(int[][] ranges)
+{
+    Map&lt;Integer, Integer&gt; countMap =3D new HashMap&lt;&gt;();
+    for(int[] range : ranges)
+    {
+        IntStream.rangeClosed(range[0], range[1]).forEach(i -&gt; countMap.=
+merge(i, 1, Integer::sum));
+    }
+    int maxCount =3D countMap.values().stream().max(Comparator.naturalOrder=
+()).get();
+    return countMap.entrySet().stream()
+            .filter(e -&gt; e.getValue() =3D=3D maxCount)
+            .map(Map.Entry::getKey)
+            .findFirst().get();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[][] data =3D {{1, 6}, {2, 5}, {3, 8}, {5, 7}};
+    return mostCommon(data) =3D=3D 5;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-Partition"><br>Partition</h2>
+<h3 id=3D"ArraysProblems-negativeBeforePositive"><code>negativeBeforePositi=
+ve</code></h3>
+<h3 id=3D"ArraysProblems-negativeBeforePositiveWithStreams"><code>negativeB=
+eforePositiveWithStreams</code></h3>
+<p></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Partition</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void negativeBeforePositive(int[] a)
+{
+    int start =3D 0, end =3D a.length - 1;
+    while(start &lt; end)
+    {
+        while(a[start] &lt; 0) start++;
+        while(a[end] &gt; 0) end--;
+        if(start &lt; end)
+        {
+            int temp =3D a[start];
+            a[start++] =3D a[end];
+            a[end--] =3D temp;
+        }
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] negativeBeforePositiveWithStreams(int[] a)
+{
+    Map&lt;Boolean, List&lt;Integer&gt;&gt; map =3D Arrays.stream(a)
+                                      .boxed()
+                                      .collect(Collectors.partitioningBy(x =
+-&gt; x &gt; 0));
+    int[] pos =3D map.get(true).stream().mapToInt(i -&gt; i).toArray();
+    int[] neg =3D map.get(false).stream().mapToInt(i -&gt; i).toArray();
+    int[] result =3D new int[a.length];
+    System.arraycopy(neg, 0, result, 0, neg.length);
+    System.arraycopy(pos, 0, result, neg.length, pos.length);
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D {4, 5, -1, -2, 7, -5, -9};
+    negativeBeforePositive(a);
+    int[] b =3D negativeBeforePositiveWithStreams(new int[] {4, 5, -1, -2, =
+7, -5, -9});
+    return Arrays.equals(a, new int[] {-9, -5, -1, -2, 7, 5, 4}) &amp;&amp;
+            Arrays.equals(b, new int[] {-1, -2, -5, -9, 4, 5, 7});
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-PushZeros"><br>PushZeros</h2>
+<h3 id=3D"ArraysProblems-pushToBack"><code>pushToBack</code></h3>
+<h3 id=3D"ArraysProblems-pushToBackWithStreams"><code>pushToBackWithStreams=
+</code></h3>
+<h3 id=3D"ArraysProblems-pushToFront"><code>pushToFront</code></h3>
+<h3 id=3D"ArraysProblems-pushToFrontWithStreams"><code>pushToFrontWithStrea=
+ms</code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PushZeros</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void pushToBack(int[] a)
+{
+    int pos =3D 0;
+    for(int v : a)
+    {
+        if(v !=3D 0)
+        {
+            a[pos++] =3D v;
+        }
+    }
+    if(pos &lt; a.length)
+    {
+        Arrays.fill(a, pos, a.length, 0);
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] pushToBackWithStreams(int[] a)
+{
+    int[] nonZeros =3D Arrays.stream(a).filter(x -&gt; x !=3D 0).toArray();
+    int[] result =3D new int[a.length];
+    System.arraycopy(nonZeros, 0, result, 0, nonZeros.length);
+    return result;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void pushToFront(int[] a)
+{
+    int pos =3D a.length - 1;
+    for(int i =3D a.length - 1; i &gt;=3D 0; --i)
+    {
+        if(a[i] !=3D 0)
+        {
+            a[pos--] =3D a[i];
+        }
+    }
+    while(pos &gt;=3D 0)
+    {
+        a[pos--] =3D 0;
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] pushToFrontWithStreams(int[] a)
+{
+    int [] nonZeros =3D Arrays.stream(a).filter(i -&gt; i !=3D 0).toArray()=
+;
+    int numZeros =3D (int)Arrays.stream(a).filter(i -&gt; i =3D=3D 0).count=
+();
+    int[] result =3D new int[a.length];
+    Arrays.fill(result, 0, numZeros, 0);
+    System.arraycopy(nonZeros, 0, result, numZeros, nonZeros.length);
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D {1, 2, 0, 3, 0, 4, 5, 0, 6};
+    pushToBack(a);
+    boolean check =3D Arrays.equals(a, new int[] {1, 2, 3, 4, 5, 6, 0, 0, 0=
+});
+    if(!check)
+    {
+        return false;
+    }
+    a =3D new int[]{1, 2, 0, 3, 0, 4, 5, 0, 6};
+    pushToFront(a);
+    check =3D Arrays.equals(a, new int[] {0, 0, 0, 1, 2, 3, 4, 5, 6});
+    if(!check)
+    {
+        return false;
+    }
+    a =3D new int[]{1, 2, 0, 3, 0, 4, 5, 0, 6};
+    a =3D pushToBackWithStreams(a);
+    check =3D Arrays.equals(a, new int[] {1, 2, 3, 4, 5, 6, 0, 0, 0});
+    if(!check)
+    {
+        return false;
+    }
+    a =3D new int[]{1, 2, 0, 3, 0, 4, 5, 0, 6};
+    a =3D pushToFrontWithStreams(a);
+    return Arrays.equals(a, new int[] {0, 0, 0, 1, 2, 3, 4, 5, 6});
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-RandomInts">RandomInts</h2>
+<h3 id=3D"ArraysProblems-generateArrayRandomInts"><code>generateArrayRandom=
+Ints</code><br></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>RandomInts</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] generateArrayRandomInts(int size, int from, int to)
+{
+    return new Random().ints(size, from, to).toArray();
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] random =3D generateRandomInts(5, 3, 9);
+    boolean check =3D random.length =3D=3D 5;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D random[0] &gt;=3D 3 &amp;&amp; random[0] &lt;=3D 9 &amp;&amp;=
+ random[1] &gt;=3D 3 &amp;&amp;=20
+            random[1] &lt;=3D 9 &amp;&amp; random[2] &gt;=3D 3 &amp;&amp; r=
+andom[2] &lt;=3D 9;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-RandomSubset"><br>RandomSubset</h2>
+<h3 id=3D"ArraysProblems-generateRandomSubset"><code>generateRandomSubset</=
+code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>RandomSubset</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] generateRandomSubset(int[] a, int m)
+{
+    int [] result =3D new int[m];
+    for(int i =3D 0; i &lt; m; ++i)
+    {
+        int randomIdx =3D randomRange(i, a.length);
+        result[i] =3D a[randomIdx];
+        a[randomIdx] =3D a[i];
+    }
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void main(String... args)
+{
+    int[] cards =3D IntStream.rangeClosed(1, 52).toArray();
+    cards =3D RandomSubset.generateRandomSubset(cards, 6);
+    System.out.println(Arrays.toString(cards));
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-RemoveValue"><br>RemoveValue</h2>
+<h3 id=3D"ArraysProblems-removeValue"><code>removeValue</code></h3>
+<h3 id=3D"ArraysProblems-removeValueWithStreams"><code>removeValueWithStrea=
+ms</code></h3>
+<h3 id=3D"ArraysProblems-removeValueWithIterator"><code>removeValueWithIter=
+ator</code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>RemoveValue</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] removeValue(int[] a, int val)
+{
+    int pos =3D 0;
+    for(int v : a)
+    {
+        if(v !=3D val)
+        {
+            a[pos++] =3D v;
+        }
+    }
+    return Arrays.copyOf(a, pos);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] removeValueWithStreams(int[] a, int val)
+{
+    return Arrays.stream(a).filter(x -&gt; x !=3D val).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] removeValueWithIterator(int[] a, int val)
+{
+    List&lt;Integer&gt; list =3D Arrays.stream(a).boxed().collect(Collector=
+s.toList());
+    Iterator&lt;Integer&gt; iter =3D list.iterator();
+    while(iter.hasNext())
+    {
+        if(iter.next() =3D=3D val)
+        {
+            iter.remove();
+        }
+    }
+    return list.stream().mapToInt(i -&gt; i).toArray();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D removeValue(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}, 5);
+    int[] b =3D removeValueWithStreams(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1}=
+, 5);
+    int[] c =3D removeValueWithIterator(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1=
+}, 5);
+    return Arrays.equals(a, new int[] {9, 8, 7, 6, 4, 3, 2, 1}) &amp;&amp;
+            Arrays.equals(b, new int[] {9, 8, 7, 6, 4, 3, 2, 1}) &amp;&amp;
+            Arrays.equals(c, new int[] {9, 8, 7, 6, 4, 3, 2, 1});
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-Reverse"><br>Reverse</h2>
+<h3 id=3D"ArraysProblems-reverse"><code>reverse</code></h3>
+<h3 id=3D"ArraysProblems-reverseInPlace"><code>reverseInPlace</code></h3>
+<h3 id=3D"ArraysProblems-reverseWithStreams"><code>reverseWithStreams</code=
+></h3>
+<h3 id=3D"ArraysProblems-rotate"><code>rotate</code></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Reverse</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">private=
+ static void reverse(int[] a, int start, int end)
+{
+    while(start &lt; end)
+    {
+        int temp =3D a[start];
+        a[start++] =3D a[end];
+        a[end--] =3D temp;
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void reverseInPlace(int[] a)
+{
+    int start =3D 0, end =3D a.length - 1;
+    while(start &lt; end)
+    {
+        int temp =3D a[start];
+        a[start++] =3D a[end];
+        a[end--] =3D temp;
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] reverseWithStreams(int... a)
+{
+    List&lt;Integer&gt; list =3D Arrays.stream(a).boxed().collect(Collector=
+s.toList());
+    Collections.reverse(list);
+    return list.stream().mapToInt(x -&gt; x).toArray();
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void rotate(int[] a, int m)
+{
+    if(a =3D=3D null || a.length &lt; m)
+    {
+        return;
+    }
+    reverse(a, 0, m - 1);
+    reverse(a, m, a.length - 1);
+    reverse(a, 0, a.length - 1);
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] a =3D {1, 2, 3, 4, 5, 6};
+    reverseInPlace(a);
+    int[] a1 =3D {1, 2, 3, 4, 5, 6, 7};
+    rotate(a1, 3);
+    return Arrays.equals(a, new int[] {6, 5, 4, 3 , 2, 1}) &amp;&amp;
+            Arrays.equals(reverseWithStreams(1, 2, 3, 4, 5, 6), new int[] {=
+6, 5, 4, 3 , 2, 1}) &amp;&amp;
+            Arrays.equals(a1, new int[] {4, 5, 6, 7, 1, 2, 3});
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-RotatedArrayMin">RotatedArrayMin</h2>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 340.0px;">
+<col style=3D"width: 340.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><strong>RotatedArrayMin</strong></p></th>
+<th class=3D"confluenceTh"><p></p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int findMin(int[] a)
+{
+    int start =3D 0, end =3D a.length - 1;
+    while(start &lt;=3D end)
+    {
+        if (a[start] &lt;=3D a[end])
+        {
+            return a[start];
+        }
+        int mid =3D (start + end) / 2;
+        if(a[mid] &gt;=3D a[start])
+        {
+            start =3D mid + 1;
+        }
+        else
+        {
+            end =3D mid ;
+        }
+    }
+    return -1;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D findMin(new int[]{3,4,5,6,1,2}) =3D=3D 1
+            &amp;&amp; findMin(new int[]{4,1,2,3}) =3D=3D 1
+            &amp;&amp; findMin(new int[]{1,2,3,4,5,6}) =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id=3D"ArraysProblems-ShuffleCards"><br>ShuffleCards</h2>
+<h3 id=3D"ArraysProblems-shuffle"><code>shuffle</code></h3>
+<h3 id=3D"ArraysProblems-shuffleWithStreams"><code>shuffleWithStreams</code=
+></h3>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 810.0px;">
+<col style=3D"width: 807.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ShuffleCards</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void shuffle(int[] cards)
+{
+    int len =3D cards.length;
+    for(int i =3D 0; i &lt; len; ++i)
+    {
+        int randomIdx =3D randomRange(i, len);
+        int temp =3D cards[i];
+        cards[i] =3D cards[randomIdx];
+        cards[randomIdx] =3D temp;
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int[] shuffleWithStreams(int[] cards)
+{
+    List&lt;Integer&gt; list =3D Arrays.stream(cards)
+                           .boxed()
+                           .collect(Collectors.toList());
+    Collections.shuffle(list);
+    return list.stream().mapToInt(a -&gt; a).toArray();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+static void main(String... args)
+{
+    int[] cards =3D IntStream.rangeClosed(1, 10).toArray();
+    ShuffleCards.shuffle(cards);
+    System.out.println(Arrays.toString(cards));
+    cards =3D IntStream.rangeClosed(1, 10).toArray();
+    ShuffleCards.shuffleWithStreams(cards);
+    System.out.println(Arrays.toString(cards));
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id=3D"ArraysProblems-"><br></h3>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_206_1925089192.1608755420106--

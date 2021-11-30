@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>redux_lecture</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="redux">REDUX</h1>
+<p><img src='https://raw.githubusercontent.com/reactjs/redux/master/logo/logo.png' style='height: 400px; border: none; background-color: rgba(0, 0, 0, 0);'/></p>
+<hr />
+<h2 id="goals">Goals</h2>
+<ul>
+<li>What exactly is Redux?</li>
+<li>Why Redux? Why state management?</li>
+<li>Anatomy of Redux and how to use it</li>
+<li>other tools/the future of react</li>
+</ul>
+<p>Note: Any questions? Anything about Redux in particular that you want to cover today? Anything about state management you want to cover today? —</p>
+<h1 id="what-is-redux">what is redux?</h1>
+<p>Note: White board out the opinions</p>
+<hr />
+<h1 id="redux-1">Redux:</h1>
+<ul>
+<li>A predictable state container for JavaScript apps.</li>
+<li>Uses unidirectional data flow to update a read-only state.</li>
+<li>Framework agnostic</li>
+</ul>
+<p>Note: What is a predictable state container? What is a unidirectional data flow? A read only state? Can be used with many different front end frameworks or just vanilla JS.</p>
+<hr />
+<h1 id="redux-history">Redux History</h1>
+<ul>
+<li>Created by Dan Abramov and Andrew Clark</li>
+<li>Based off of the Flux architecture for application state management</li>
+<li>Was originally a proof of concept for ‘time travel’ through Flux state.</li>
+<li>Open source</li>
+</ul>
+<p>Note: That idea of ‘time travel’ is now part of the Redux dev/debugging tools. Really cool that Redux is open source. Check out the source code if you get the chance, it’s simpler than you think and pretty cool.</p>
+<hr />
+<h2 id="what-is-state-management-and-why-do-we-need-it">What is state management and why do we need it?</h2>
+<p><img src='https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/cbd8cb0f-97ee-4da0-8913-ac9892621c91/redux-example-css-tricks-opt.pg_' style='height: 400px'/></p>
+<p>Note: It’s easy to lose control over the when, why, and how of state Single page apps manage an enormous amount of state especially as they scale. What is the importance of “predicatble” state management? It removes the ‘mutablility’ of state when it is just an object and the inconsistency of async operations. By adhering to the Redux architecture we make sure we know exactly when, how, and why our state changes, making it predictable.</p>
+<hr />
+<h3 id="state-management">State Management</h3>
+<ul>
+<li>Allows us to organize huge application states.</li>
+<li>Helps reduce state mutation ‘accidents’</li>
+<li>Coordinates well with asynchronous code and information updates</li>
+<li>Allows us to quicky and efficiently debug because we know the when, the why, and the how of our state changes.</li>
+</ul>
+<hr />
+<h1 id="why-use-redux">Why Use Redux:</h1>
+<ul>
+<li>Relatively easy to start writing and using (once you’ve set up the boilerplate)</li>
+<li>Lightweight: only 2kb</li>
+<li>Seperation of data organization from presentation.</li>
+<li>App state becomes read only and immutable (we can’t directly/accidentally change it)</li>
+</ul>
+<hr />
+<h1 id="the-three-principles-of-redux">The three principles of Redux:</h1>
+<ul>
+<li><strong>Single Source of Truth</strong></li>
+<li><strong>State is Read Only</strong></li>
+<li><strong>Changes are Made Through Pure Functions</strong></li>
+</ul>
+<p>Note: What do these three things mean? —</p>
+<p>#What are the pieces that make up Redux?</p>
+<hr />
+<h2 id="redux-anatomy">Redux Anatomy</h2>
+<ul>
+<li>Actions</li>
+<li>Reducers</li>
+<li>Store</li>
+</ul>
+<p><img src='https://cdn-images-1.medium.com/max/919/1*EdiFUfbTNmk_IxFDNqokqg.png' style='height: 400px' /></p>
+<p>Note: What are each of these parts and what are their jobs?</p>
+<hr />
+<h1 id="actions">Actions:</h1>
+<ul>
+<li>payloads of information that send data from your application to your store.</li>
+<li>They are the only source of information for the store.</li>
+<li>You send them to the store using store.dispatch().</li>
+</ul>
+<hr />
+<h1 id="action-creators">Action creators</h1>
+<ul>
+<li>A function that returns an an action</li>
+<li>Used to dynamically assign information to our actions.</li>
+<li>Envoked Action creators are typically what we pass to store.dispatch()</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="im">export</span> <span class="kw">const</span> receiveCurrentUser <span class="op">=</span> currentUser <span class="kw">=&gt;</span> (<span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="dt">type</span><span class="op">:</span> RECEIVE_CURRENT_USER<span class="op">,</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  currentUser</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="op">}</span>)<span class="op">;</span></a></code></pre></div>
+<p>Note: Remember that actions only describe the fact that something happened, but don’t describe how the application’s state changes.</p>
+<hr />
+<h1 id="reducers">Reducers:</h1>
+<ul>
+<li>specify how the application’s state changes in response to actions sent to the store.</li>
+<li>are pure functions that takes the previous state and an action, and return the next state. <code>javascript (previousState, action) =&gt; newState</code></li>
+<li>dictate state shape through reducer design and .combineReducers()</li>
+</ul>
+<hr />
+<h3 id="typical-reducer-architecture">Typical Reducer Architecture:</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="im">import</span> merge <span class="im">from</span> <span class="st">&#39;lodash/merge&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="im">import</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-4" title="4">  RECEIVE_CURRENT_USER<span class="op">,</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="op">}</span> <span class="im">from</span> <span class="st">&#39;../actions/session_actions&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="kw">const</span> _nullUser <span class="op">=</span> <span class="va">Object</span>.<span class="at">freeze</span>(<span class="op">{</span></a>
+<a class="sourceLine" id="cb2-8" title="8">  <span class="dt">currentUser</span><span class="op">:</span> <span class="kw">null</span></a>
+<a class="sourceLine" id="cb2-9" title="9"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-10" title="10"></a>
+<a class="sourceLine" id="cb2-11" title="11"><span class="kw">const</span> sessionReducer <span class="op">=</span> (state <span class="op">=</span> _nullUser<span class="op">,</span> action) <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-12" title="12">  <span class="va">Object</span>.<span class="at">freeze</span>(state)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-13" title="13">  <span class="cf">switch</span>(<span class="va">action</span>.<span class="at">type</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="cf">case</span> <span class="dt">RECEIVE_CURRENT_USER</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb2-15" title="15">      <span class="kw">const</span> currentUser <span class="op">=</span> <span class="va">action</span>.<span class="at">currentUser</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-16" title="16">      <span class="cf">return</span> <span class="at">merge</span>(<span class="op">{},</span> <span class="op">{</span> currentUser <span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-17" title="17">    <span class="cf">default</span><span class="op">:</span></a>
+<a class="sourceLine" id="cb2-18" title="18">      <span class="cf">return</span> state<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-19" title="19">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-20" title="20"><span class="op">};</span></a>
+<a class="sourceLine" id="cb2-21" title="21"></a>
+<a class="sourceLine" id="cb2-22" title="22"><span class="im">export</span> <span class="im">default</span> sessionReducer<span class="op">;</span></a></code></pre></div>
+<p>Note: Remember that most reducers are simply large switch statements listening to an action’s type. What which reducers do individual actions hit? What is the importance of lodash/merge? What is the importance of Object.freeze(state)?</p>
+<h1 id="the-store">The Store</h1>
+<ul>
+<li>Holds application state;</li>
+<li>Allows access to state via getState();</li>
+<li>Allows state to be updated via dispatch(action);</li>
+<li>Handles subscription and unsupscription to state changes via listeners.</li>
+</ul>
+<p>Note: explanation of listeners being handled by Provider in your main app file. this.context</p>
+<hr />
+<h3 id="creating-the-store">Creating the Store</h3>
+<pre><code>import { createStore } from &#39;redux&#39;
+import todoApp from &#39;./reducers&#39;
+const store = createStore(todoApp)</code></pre>
+<p>createStore() takes an optional second argument that acts as a default store:</p>
+<pre><code>const store = createStore(todoApp, window.STATE_FROM_SERVER)</code></pre>
+<p>Note: that optional default state is how we bootstrap the user for persistence of sessions.</p>
+<hr />
+<h2 id="thunk-actions-and-middleware">Thunk Actions and Middleware</h2>
+<ul>
+<li>Thunk middleware allows us to make asynchronous action creators.</li>
+<li>These action creators allow us to communicate with and retrieve persistant data from our back end, or from third party APIs.</li>
+</ul>
+<hr />
+<h3 id="thunk-action-creators-vs-action-creators">Thunk action creators vs action creators:</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="im">import</span> <span class="op">*</span> <span class="im">as</span> APIUtil <span class="im">from</span> <span class="st">&#39;../util/session_api_util&#39;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="im">export</span> <span class="kw">const</span> RECEIVE_CURRENT_USER <span class="op">=</span> <span class="st">&#39;RECEIVE_CURRENT_USER&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="im">export</span> <span class="kw">const</span> RECEIVE_SESSION_ERRORS <span class="op">=</span> <span class="st">&#39;RECEIVE_SESSION_ERRORS&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="im">export</span> <span class="kw">const</span> receiveCurrentUser <span class="op">=</span> currentUser <span class="kw">=&gt;</span> (<span class="op">{</span></a>
+<a class="sourceLine" id="cb5-7" title="7">  <span class="dt">type</span><span class="op">:</span> RECEIVE_CURRENT_USER<span class="op">,</span></a>
+<a class="sourceLine" id="cb5-8" title="8">  currentUser</a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-10" title="10"></a>
+<a class="sourceLine" id="cb5-11" title="11"><span class="im">export</span> <span class="kw">const</span> receiveErrors <span class="op">=</span> errors <span class="kw">=&gt;</span> (<span class="op">{</span></a>
+<a class="sourceLine" id="cb5-12" title="12">  <span class="dt">type</span><span class="op">:</span> RECEIVE_SESSION_ERRORS<span class="op">,</span></a>
+<a class="sourceLine" id="cb5-13" title="13">  errors</a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="op">}</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-15" title="15"></a>
+<a class="sourceLine" id="cb5-16" title="16"><span class="im">export</span> <span class="kw">const</span> signup <span class="op">=</span> user <span class="kw">=&gt;</span> dispatch <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb5-17" title="17">  <span class="va">APIUtil</span>.<span class="at">signup</span>(user).<span class="at">then</span>(user <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb5-18" title="18">    <span class="at">dispatch</span>(<span class="at">receiveCurrentUser</span>(user))</a>
+<a class="sourceLine" id="cb5-19" title="19">  )<span class="op">,</span> err <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb5-20" title="20">    <span class="at">dispatch</span>(<span class="at">receiveErrors</span>(<span class="va">err</span>.<span class="at">responseJSON</span>))</a>
+<a class="sourceLine" id="cb5-21" title="21">  ))</a>
+<a class="sourceLine" id="cb5-22" title="22">)<span class="op">;</span></a></code></pre></div>
+<p>Note: Biggest difference between thunk actions and regular actions?<br />
+Remember that thunk actions ultimately rely on normal actions.</p>
+<hr />
+<h3 id="inserting-thunk-and-other-middleware-to-your-store">Inserting Thunk and other middleware to your store:</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> <span class="op">{</span> createStore<span class="op">,</span> applyMiddleware <span class="op">}</span> <span class="im">from</span> <span class="st">&#39;redux&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="im">import</span> thunk <span class="im">from</span> <span class="st">&#39;redux-thunk&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="im">import</span> logger <span class="im">from</span> <span class="st">&#39;redux-logger&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-4" title="4"></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="im">import</span> rootReducer <span class="im">from</span> <span class="st">&#39;../reducers/root_reducer&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-6" title="6"></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="kw">const</span> configureStore <span class="op">=</span> (preloadedState <span class="op">=</span> <span class="op">{}</span>) <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb6-8" title="8">  <span class="at">createStore</span>(</a>
+<a class="sourceLine" id="cb6-9" title="9">    rootReducer<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-10" title="10">    preloadedState<span class="op">,</span></a>
+<a class="sourceLine" id="cb6-11" title="11">    <span class="at">applyMiddleware</span>(thunk<span class="op">,</span> logger)</a>
+<a class="sourceLine" id="cb6-12" title="12">  )</a>
+<a class="sourceLine" id="cb6-13" title="13">)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-14" title="14"></a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="im">export</span> <span class="im">default</span> configureStore<span class="op">;</span></a></code></pre></div>
+<p>Note: applyMiddleware() is the key as the third optional argument to configureStore().</p>
+<p><img src="https://d2eip9sf3oo6c2.cloudfront.net/series/square_covers/000/000/025/full/EGH_Redux-New.png" style="height: 500px;"/></p>
+<h3 id="any-questions">Any questions?</h3>
+</body>
+</html>

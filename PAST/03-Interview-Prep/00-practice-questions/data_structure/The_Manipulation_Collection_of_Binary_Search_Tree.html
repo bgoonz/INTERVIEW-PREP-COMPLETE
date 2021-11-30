@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The_Manipulation_Collection_of_Binary_Search_Tree</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="the-manipulation-collection-of-binary-search-tree">The manipulation collection of binary search tree</h1>
+<p><strong>Translator</strong>: <a href="https://fulinli.github.io/">Fulin Li</a></p>
+<p><strong>Author</strong>:<a href="https://github.com/labuladong">labuladong</a></p>
+<p>In the previous article about <a href="../algorithmic_thinking/学习数据结构和算法的高效方法.md">framework thinking</a>, we introduced the traverse framework of the binary tree. There should be a deep impression of this framework left in your mind. In this article, we will put the framework into practice and illustrate how does it flexible resolve all issues about the binary tree.</p>
+<p>The basic idea of binary tree algorithm design: Defining the manipulation in the current node and the last things are thrown to the framework.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">void</span> <span class="fu">traverse</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co">// The manipulation required in the root node should be written here.</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="co">// Other things will be resolved by the framework.</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="fu">traverse</span>(root.<span class="fu">left</span>);</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="fu">traverse</span>(root.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb1-6" title="6">}</a></code></pre></div>
+<p>There are two simple examples to illustrate such an idea, and you can warm up first.</p>
+<p><strong>1. How to add an integer to every node of binary tree?</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">void</span> <span class="fu">plusOne</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="kw">if</span> (root == <span class="kw">null</span>) <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb2-3" title="3">    root.<span class="fu">val</span> += <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-4" title="4"></a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="fu">plusOne</span>(root.<span class="fu">left</span>);</a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="fu">plusOne</span>(root.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb2-7" title="7">}</a></code></pre></div>
+<p><strong>2. How to determine whether two binary trees are identical?</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">boolean</span> <span class="fu">isSameTree</span>(<span class="bu">TreeNode</span> root1, <span class="bu">TreeNode</span> root2) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="co">// If they are null, they are identical obviously</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="kw">if</span> (root1 == <span class="kw">null</span> &amp;&amp; root2 == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="co">// If one of the nodes is void, but the other is not null, they are not identical</span></a>
+<a class="sourceLine" id="cb3-5" title="5">    <span class="kw">if</span> (root1 == <span class="kw">null</span> || root2 == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="co">// If they are all not void, but their values are not equal, they are not identical</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="kw">if</span> (root1.<span class="fu">val</span> != root2.<span class="fu">val</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="co">// To recursively compare every pair of the node</span></a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="kw">return</span> <span class="fu">isSameTree</span>(root1.<span class="fu">left</span>, root2.<span class="fu">left</span>)</a>
+<a class="sourceLine" id="cb3-11" title="11">        &amp;&amp; <span class="fu">isSameTree</span>(root1.<span class="fu">right</span>, root2.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb3-12" title="12">}</a></code></pre></div>
+<p>It is straightforward to understand the two above examples with the help of the traverse framework of the binary tree. If you can understand it, now you can handle all the problems with the binary tree.</p>
+<p>Binary Search Tree (BST), is a common type of binary. The tree additionally satisfies the binary search property, which states that the key in each node must be greater than or equal to any key stored in the left sub-tree, and less than or equal to any key stored in the right sub-tree.</p>
+<p>An example corresponding to the definition is shown as:</p>
+<figure>
+<img src="../pictures/BST/BST_example.png" alt="BST" /><figcaption>BST</figcaption>
+</figure>
+<p>Next, we will realize basic operations with BST, including compliance checking of BST, addition, deletion, and search. The process of deletion and compliance checking may be slightly more complicated.</p>
+<p><strong>0. Compliance checking of BST</strong></p>
+<p>This operation sometimes is error-prone. Following the framework mentioned above, the manipulation of every node in the binary tree is to compare the key in the left child with the right child, and it seems that the codes should be written like this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">boolean</span> <span class="fu">isValidBST</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="kw">if</span> (root == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">if</span> (root.<span class="fu">left</span> != <span class="kw">null</span> &amp;&amp; root.<span class="fu">val</span> &lt;= root.<span class="fu">left</span>.<span class="fu">val</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="kw">if</span> (root.<span class="fu">right</span> != <span class="kw">null</span> &amp;&amp; root.<span class="fu">val</span> &gt;= root.<span class="fu">right</span>.<span class="fu">val</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="kw">return</span> <span class="fu">isValidBST</span>(root.<span class="fu">left</span>)</a>
+<a class="sourceLine" id="cb4-7" title="7">        &amp;&amp; <span class="fu">isValidBST</span>(root.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb4-8" title="8">}</a></code></pre></div>
+<p>But such algorithm is an error. Because the key in each node must be greater than or equal to any key stored in the left sub-tree, and less than or equal to any key stored in the right sub-tree. For example, the following binary tree is not a BST, but our algorithm will make the wrong decision.</p>
+<figure>
+<img src="../pictures/BST/假BST.png" alt="notBST" /><figcaption>notBST</figcaption>
+</figure>
+<p>Don’t panic though the algorithm is wrong. Our framework is still correct, and we didn’t notice some details information. Let’s refresh the definition of BST: The manipulations in root node should not only include the comparison between left and right child, but it also require a comparison of the whole left and right sub-tree. What should do? It is beyond the reach of the root node.</p>
+<p>In this situation, we can use an auxiliary function to add parameters in the parameter list, which can carry out more useful information. The correct algorithm is as follows:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">boolean</span> <span class="fu">isValidBST</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">return</span> <span class="fu">isValidBST</span>(root, <span class="kw">null</span>, <span class="kw">null</span>);</a>
+<a class="sourceLine" id="cb5-3" title="3">}</a>
+<a class="sourceLine" id="cb5-4" title="4"></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="dt">boolean</span> <span class="fu">isValidBST</span>(<span class="bu">TreeNode</span> root, <span class="bu">TreeNode</span> min, <span class="bu">TreeNode</span> max) {</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="kw">if</span> (root == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="kw">if</span> (min != <span class="kw">null</span> &amp;&amp; root.<span class="fu">val</span> &lt;= min.<span class="fu">val</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="kw">if</span> (max != <span class="kw">null</span> &amp;&amp; root.<span class="fu">val</span> &gt;= max.<span class="fu">val</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="kw">return</span> <span class="fu">isValidBST</span>(root.<span class="fu">left</span>, min, root) </a>
+<a class="sourceLine" id="cb5-10" title="10">        &amp;&amp; <span class="fu">isValidBST</span>(root.<span class="fu">right</span>, root, max);</a>
+<a class="sourceLine" id="cb5-11" title="11">}</a></code></pre></div>
+<p><strong>1. Lookup function in BST</strong></p>
+<p>According to the framework, we can write the codes like this:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb6-1" title="1"><span class="dt">boolean</span> <span class="fu">isInBST</span>(<span class="bu">TreeNode</span> root, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">if</span> (root == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">if</span> (root.<span class="fu">val</span> == target) <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb6-4" title="4"></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="kw">return</span> <span class="fu">isInBST</span>(root.<span class="fu">left</span>, target)</a>
+<a class="sourceLine" id="cb6-6" title="6">        || <span class="fu">isInBST</span>(root.<span class="fu">right</span>, target);</a>
+<a class="sourceLine" id="cb6-7" title="7">}</a></code></pre></div>
+<p>It is entirely right. If you can write like this, you have remembered the framework. Now you can attempt to take some details into account: How to leverage the property of BST to facilitate us to search efficiently.</p>
+<p>It is effortless! We don’t have to search both of nodes recursively. Similar to the binary search, we can exclude the impossible child node by comparing the target value and root value. We can modify the codes slightly:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb7-1" title="1"><span class="dt">boolean</span> <span class="fu">isInBST</span>(<span class="bu">TreeNode</span> root, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb7-2" title="2">    <span class="kw">if</span> (root == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="kw">if</span> (root.<span class="fu">val</span> == target)</a>
+<a class="sourceLine" id="cb7-4" title="4">        <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb7-5" title="5">    <span class="kw">if</span> (root.<span class="fu">val</span> &lt; target) </a>
+<a class="sourceLine" id="cb7-6" title="6">        <span class="kw">return</span> <span class="fu">isInBST</span>(root.<span class="fu">right</span>, target);</a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="kw">if</span> (root.<span class="fu">val</span> &gt; target)</a>
+<a class="sourceLine" id="cb7-8" title="8">        <span class="kw">return</span> <span class="fu">isInBST</span>(root.<span class="fu">left</span>, target);</a>
+<a class="sourceLine" id="cb7-9" title="9">    <span class="co">// The manipulations in the root node are finished, and the framework is done, great!</span></a></code></pre></div>
+<p>Therefore, we can modify the original framework to abstract a new framework for traversing BST.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb8-1" title="1"><span class="dt">void</span> <span class="fu">BST</span>(<span class="bu">TreeNode</span> root, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="kw">if</span> (root.<span class="fu">val</span> == target)</a>
+<a class="sourceLine" id="cb8-3" title="3">        <span class="co">// When you find the target, your manipulation should be written here</span></a>
+<a class="sourceLine" id="cb8-4" title="4">    <span class="kw">if</span> (root.<span class="fu">val</span> &lt; target) </a>
+<a class="sourceLine" id="cb8-5" title="5">        <span class="fu">BST</span>(root.<span class="fu">right</span>, target);</a>
+<a class="sourceLine" id="cb8-6" title="6">    <span class="kw">if</span> (root.<span class="fu">val</span> &gt; target)</a>
+<a class="sourceLine" id="cb8-7" title="7">        <span class="fu">BST</span>(root.<span class="fu">left</span>, target);</a>
+<a class="sourceLine" id="cb8-8" title="8">}</a></code></pre></div>
+<p><strong>3. Deletion function in BST</strong></p>
+<p>This problem is slightly complicated. But you can handle it with the help of the framework! Similar to the insert function, we should find it before modification. Let’s write it first:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb9-1" title="1"><span class="bu">TreeNode</span> <span class="fu">deleteNode</span>(<span class="bu">TreeNode</span> root, <span class="dt">int</span> key) {</a>
+<a class="sourceLine" id="cb9-2" title="2">    <span class="kw">if</span> (root.<span class="fu">val</span> == key) {</a>
+<a class="sourceLine" id="cb9-3" title="3">        <span class="co">// When you find it, you can delete it here.</span></a>
+<a class="sourceLine" id="cb9-4" title="4">    } <span class="kw">else</span> <span class="kw">if</span> (root.<span class="fu">val</span> &gt; key) {</a>
+<a class="sourceLine" id="cb9-5" title="5">        root.<span class="fu">left</span> = <span class="fu">deleteNode</span>(root.<span class="fu">left</span>, key);</a>
+<a class="sourceLine" id="cb9-6" title="6">    } <span class="kw">else</span> <span class="kw">if</span> (root.<span class="fu">val</span> &lt; key) {</a>
+<a class="sourceLine" id="cb9-7" title="7">        root.<span class="fu">right</span> = <span class="fu">deleteNode</span>(root.<span class="fu">right</span>, key);</a>
+<a class="sourceLine" id="cb9-8" title="8">    }</a>
+<a class="sourceLine" id="cb9-9" title="9">    <span class="kw">return</span> root;</a>
+<a class="sourceLine" id="cb9-10" title="10">}</a></code></pre></div>
+<p>When you find the target, for example, node A. It isn’t effortless for us to delete it. Because we can’t destroy the property of BST when we realize the Deletion function. There are three situations, and we will illustrate in the following three pictures:</p>
+<p>Case 1: Node A is just the leaf node, and it’s child nodes are all null. In this way, we can delete it directly.</p>
+<p>The picture is excerpted from LeetCode</p>
+<figure>
+<img src="../pictures/BST/bst_deletion_case_1.png" alt="1" /><figcaption>1</figcaption>
+</figure>
+<div class="sourceCode" id="cb10"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">if</span> (root.<span class="fu">left</span> == <span class="kw">null</span> &amp;&amp; root.<span class="fu">right</span> == <span class="kw">null</span>)</a>
+<a class="sourceLine" id="cb10-2" title="2">    <span class="kw">return</span> <span class="kw">null</span>;</a></code></pre></div>
+<p>Case 2: The node A has only one child node, then we can change its child node to replace its place.</p>
+<p>The picture is excerpted from LeetCode</p>
+<figure>
+<img src="../pictures/BST/bst_deletion_case_2.png" alt="2" /><figcaption>2</figcaption>
+</figure>
+<div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb11-1" title="1"><span class="co">// After excluding the Situation 1</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="kw">if</span> (root.<span class="fu">left</span> == <span class="kw">null</span>) <span class="kw">return</span> root.<span class="fu">right</span>;</a>
+<a class="sourceLine" id="cb11-3" title="3"><span class="kw">if</span> (root.<span class="fu">right</span> == <span class="kw">null</span>) <span class="kw">return</span> root.<span class="fu">left</span>;</a></code></pre></div>
+<p>Case 3: Node A has two child nodes. To avoid destroying the property of BST, node A must find the maximum node in left sub-tree or the minimum node in the right sub-tree to replace its place. We use the minimum node in the right sub-tree to illustrate it.</p>
+<p>The picture is excerpted from LeetCode</p>
+<figure>
+<img src="../pictures/BST/bst_deletion_case_3.png" alt="2" /><figcaption>2</figcaption>
+</figure>
+<div class="sourceCode" id="cb12"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">if</span> (root.<span class="fu">left</span> != <span class="kw">null</span> &amp;&amp; root.<span class="fu">right</span> != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb12-2" title="2">    <span class="co">// Find the minimum node in right sub-tree</span></a>
+<a class="sourceLine" id="cb12-3" title="3">    <span class="bu">TreeNode</span> minNode = <span class="fu">getMin</span>(root.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb12-4" title="4">    <span class="co">// replace root node to minNode </span></a>
+<a class="sourceLine" id="cb12-5" title="5">    root.<span class="fu">val</span> = minNode.<span class="fu">val</span>;</a>
+<a class="sourceLine" id="cb12-6" title="6">    <span class="co">// Delete the root node subsequently</span></a>
+<a class="sourceLine" id="cb12-7" title="7">    root.<span class="fu">right</span> = <span class="fu">deleteNode</span>(root.<span class="fu">right</span>, minNode.<span class="fu">val</span>);</a>
+<a class="sourceLine" id="cb12-8" title="8">}</a></code></pre></div>
+<p>The three situations are analyzed, and we can fill them into the framework and simplify the codes:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb13-1" title="1"><span class="bu">TreeNode</span> <span class="fu">deleteNode</span>(<span class="bu">TreeNode</span> root, <span class="dt">int</span> key) {</a>
+<a class="sourceLine" id="cb13-2" title="2">    <span class="kw">if</span> (root == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">null</span>;</a>
+<a class="sourceLine" id="cb13-3" title="3">    <span class="kw">if</span> (root.<span class="fu">val</span> == key) {</a>
+<a class="sourceLine" id="cb13-4" title="4">        <span class="co">// These two IF function handle the situation 1 and situation 2</span></a>
+<a class="sourceLine" id="cb13-5" title="5">        <span class="kw">if</span> (root.<span class="fu">left</span> == <span class="kw">null</span>) <span class="kw">return</span> root.<span class="fu">right</span>;</a>
+<a class="sourceLine" id="cb13-6" title="6">        <span class="kw">if</span> (root.<span class="fu">right</span> == <span class="kw">null</span>) <span class="kw">return</span> root.<span class="fu">left</span>;</a>
+<a class="sourceLine" id="cb13-7" title="7">        <span class="co">// Deal with situation 3</span></a>
+<a class="sourceLine" id="cb13-8" title="8">        <span class="bu">TreeNode</span> minNode = <span class="fu">getMin</span>(root.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb13-9" title="9">        root.<span class="fu">val</span> = minNode.<span class="fu">val</span>;</a>
+<a class="sourceLine" id="cb13-10" title="10">        root.<span class="fu">right</span> = <span class="fu">deleteNode</span>(root.<span class="fu">right</span>, minNode.<span class="fu">val</span>);</a>
+<a class="sourceLine" id="cb13-11" title="11">    } <span class="kw">else</span> <span class="kw">if</span> (root.<span class="fu">val</span> &gt; key) {</a>
+<a class="sourceLine" id="cb13-12" title="12">        root.<span class="fu">left</span> = <span class="fu">deleteNode</span>(root.<span class="fu">left</span>, key);</a>
+<a class="sourceLine" id="cb13-13" title="13">    } <span class="kw">else</span> <span class="kw">if</span> (root.<span class="fu">val</span> &lt; key) {</a>
+<a class="sourceLine" id="cb13-14" title="14">        root.<span class="fu">right</span> = <span class="fu">deleteNode</span>(root.<span class="fu">right</span>, key);</a>
+<a class="sourceLine" id="cb13-15" title="15">    }</a>
+<a class="sourceLine" id="cb13-16" title="16">    <span class="kw">return</span> root;</a>
+<a class="sourceLine" id="cb13-17" title="17">}</a>
+<a class="sourceLine" id="cb13-18" title="18"></a>
+<a class="sourceLine" id="cb13-19" title="19"><span class="bu">TreeNode</span> <span class="fu">getMin</span>(<span class="bu">TreeNode</span> node) {</a>
+<a class="sourceLine" id="cb13-20" title="20">    <span class="co">// The left child node is the minimum</span></a>
+<a class="sourceLine" id="cb13-21" title="21">    <span class="kw">while</span> (node.<span class="fu">left</span> != <span class="kw">null</span>) node = node.<span class="fu">left</span>;</a>
+<a class="sourceLine" id="cb13-22" title="22">    <span class="kw">return</span> node;</a>
+<a class="sourceLine" id="cb13-23" title="23">} </a></code></pre></div>
+<p>In this way, we can finish the deletion function. Note that such an algorithm is not perfect because we wouldn’t exchange the two nodes by ‘root.val = minNode.val’. Generally, we will exchange the root and minNode by a series of slightly complicated linked list operations. Because the value of Val may be tremendous in the specific application, it’s time-consuming to modify the value of the node. Still, the linked list operations only require to change the pointer and don’t modify values.</p>
+<p><strong>Summary</strong></p>
+<p>In this article, you can learn the following skills:</p>
+<ol type="1">
+<li>The basic idea of designing a binary tree algorithm: Defining the manipulations in the current node and the last things are thrown to the framework.</li>
+<li>If the manipulations in the current node have influence in its sub-tree, we can add additional parameters to the parameter list by adding auxiliary function.</li>
+<li>On the foundation of the framework of the binary tree, we abstract the traverse framework of BST:</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb14-1" title="1"><span class="dt">void</span> <span class="fu">BST</span>(<span class="bu">TreeNode</span> root, <span class="dt">int</span> target) {</a>
+<a class="sourceLine" id="cb14-2" title="2">    <span class="kw">if</span> (root.<span class="fu">val</span> == target)</a>
+<a class="sourceLine" id="cb14-3" title="3">        <span class="co">// When you find the target, your manipulation should be written here</span></a>
+<a class="sourceLine" id="cb14-4" title="4">    <span class="kw">if</span> (root.<span class="fu">val</span> &lt; target) </a>
+<a class="sourceLine" id="cb14-5" title="5">        <span class="fu">BST</span>(root.<span class="fu">right</span>, target);</a>
+<a class="sourceLine" id="cb14-6" title="6">    <span class="kw">if</span> (root.<span class="fu">val</span> &gt; target)</a>
+<a class="sourceLine" id="cb14-7" title="7">        <span class="fu">BST</span>(root.<span class="fu">left</span>, target);</a>
+<a class="sourceLine" id="cb14-8" title="8">}</a></code></pre></div>
+<ol start="4" type="1">
+<li>We grasp the basic operations of BST.</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>js_eloop_async_slides</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<p>#Wat!?</p>
+<p><a href="https://www.youtube.com/watch?v=ryJSRZzAvUs&amp;t=12s"><img src="http://img.youtube.com/vi/rkg8q2b4TT4/0.jpg" alt="alt text" /></a></p>
+<hr />
+<h1 id="lets-talk-about-javascript">Let’s talk about JavaScript!</h1>
+<hr />
+<h1 id="todays-topics">Today’s Topics</h1>
+<ul>
+<li>What JavaScript is</li>
+<li>The pieces that make up JavaScript</li>
+<li>Asynchronicity in JavaScript</li>
+</ul>
+<hr />
+<p>#What is JavaScript?</p>
+<h3 id="how-do-we-describe-javascript">How do we describe JavaScript?</h3>
+<hr />
+<h2 id="javascript-is">JAvaScript is</h2>
+<p>a high level interpreted programming language. It is:</p>
+<ul>
+<li><p>Dynamic</p></li>
+<li><p>Weakly Typed</p></li>
+<li><p>Prototype-Based</p></li>
+<li><p>Multi-paradigm</p></li>
+<li><p>Single-threaded</p></li>
+<li><p>Concurrent</p></li>
+<li><p>Never Blocking</p></li>
+</ul>
+<p>Note:</p>
+<p>Dynamic (it can execute many common behaviors at runtime rather than having to be compiled)</p>
+<p>Weakly Typed (types are not declared or firmly adhered to making things like type coercion possible)</p>
+<p>Prototype-Based (OOP style based on sharing behavior through objects or ‘prototypes’)</p>
+<p>Multi-paradigm (permits the use of different programming paradigms)</p>
+<p>Single-threaded (it can only execute one action at any given time)</p>
+<p>Concurrent (capable of delegating multiple tasks simultaneously)*</p>
+<p>Never Blocking (I/O does not interfere with user input and activity)</p>
+<p>How can it be concurrent and single threaded??? We’ll get to that.</p>
+<hr />
+<h1 id="parallelism">Parallelism</h1>
+<h1 id="and">and</h1>
+<h1 id="concurrency">Concurrency</h1>
+<h2 id="note-can-anyone-describe-these-terms">Note: Can anyone describe these terms?</h2>
+<ul>
+<li><p><strong>Concurrency</strong>: processes can run independently of one another, but they do not necessarily run at the same time.</p></li>
+<li><p><strong>Parallelism</strong>: multiple processes can run at exactly the same time.</p></li>
+</ul>
+<p>Note: Parallel environments can be described as concurrent, but not all concurrent environments are parallel.</p>
+<h2 id="the-javascript-engine">The JavaScript Engine</h2>
+<h2 id="and-1">and</h2>
+<h2 id="the-javascript-runtime-environment">The JavaScript Runtime Environment</h2>
+<p>Note: Can anyone describe these?</p>
+<hr />
+<ul>
+<li><p><strong>JavaScript Engine</strong>: interprets your JS code and turns it into runnable commands.</p></li>
+<li><p><strong>JavaScript Runtime Environemnt</strong>: supports your JavaScript by providing it with common objects and ways to communicate with the world outside your code</p></li>
+</ul>
+<p>Note: These two things make up the JS we use everyday.</p>
+<hr />
+<p>Which pieces belong to which parts?</p>
+<p><img style='height: 600px;' src='https://camo.githubusercontent.com/bd3cc88e02a70dbd46694ef8ad2f0b5741725d7e/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a4641394e47784e42362d76316f4932714745746c52512e706e67'/></p>
+<p>Note: Walk step by step through the flow of the e-loop. Define each part. —</p>
+<p>How it all comes together:</p>
+<p><img style='height: 600px;' src='https://camo.githubusercontent.com/df1ee9824df5f259718375500bdc2cbdca148934/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f3830302f312a546f7a53726b6b39326c38686f3664384a7871465f772e676966'/></p>
+<hr />
+<h1 id="asynchronicity">Asynchronicity</h1>
+<p>Note: What does this mean?</p>
+<hr />
+<h2 id="asynchronicity-in-js">Asynchronicity in JS:</h2>
+<ul>
+<li>Callbacks</li>
+<li>Promises</li>
+</ul>
+<p>Note: The combination of callbacks and promises on top of the task queue and event loop are what give us asynchronicity in JS.</p>
+<hr />
+<h2 id="what-is-a-callback-in-javascript">What is a callback in JavaScript?</h2>
+<hr />
+<p>###<strong>Callback:</strong> a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</p>
+<hr />
+<h2 id="what-is-a-promise-in-javascript">What is a promise in JavaScript?</h2>
+<hr />
+<p>###<strong>Promise:</strong> an object that represents the eventual completion (or failure) of an asynchronous operation</p>
+<p>Note: Promises allow us to wait for asynchronous code and then execute other code upon completion.</p>
+<hr />
+<p>###<strong>Promise.all()</strong></p>
+<p>and</p>
+<p>###<strong>async/await</strong></p>
+<p>Note:</p>
+<p>Who has experience with these? switch to code demo</p>
+<hr />
+<p>#wat!?</p>
+<p><strong>Thats all! Any questions?</strong></p>
+</body>
+</html>

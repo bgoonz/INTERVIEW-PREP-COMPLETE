@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>javascript-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="javascript-assessment">JavaScript Assessment</h2>
+<h4 id="q1.-which-operator-returns-true-if-the-two-compared-values-are-not-equal">Q1. Which operator returns true if the two compared values are not equal?</h4>
+<ul>
+<li>[ ] &lt;&gt;</li>
+<li>[ ] ~</li>
+<li>[ ] ==!</li>
+<li>[x] !==</li>
+</ul>
+<h4 id="q2.-how-is-a-foreach-statement-different-from-a-for-statement">Q2. How is a forEach statement different from a for statement?</h4>
+<ul>
+<li>[ ] Only a for statement uses a callback function.</li>
+<li>[x] A for statement is generic, but a forEach statement can be used only with an array.</li>
+<li>[ ] Only a forEach statement lets you specify your own iterator.</li>
+<li>[ ] A forEach statement is generic, but a for statement ca be used only with an array.</li>
+</ul>
+<h4 id="q3.-review-the-code-below.-which-statement-calls-the-addtax-function-and-passes-50-as-an-argument">Q3. Review the code below. Which statement calls the addTax function and passes 50 as an argument?</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">addTax</span>(total) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="cf">return</span> total <span class="op">*</span> <span class="fl">1.05</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[ ] addTax = 50;</li>
+<li>[ ] return addTax 50;</li>
+<li>[x] addTax(50);</li>
+<li>[ ] addTax 50;</li>
+</ul>
+<h4 id="q3-how-would-you-use-this-function-to-find-out-how-much-tax-should-be-paid-on-50">Q3 How would you use this function to find out how much tax should be paid on $50?</h4>
+<p>(Version 2, possibly an updated version)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">addTax</span>(total) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="cf">return</span> total <span class="op">*</span> <span class="fl">1.05</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[ ] addTax($50);</li>
+<li>[ ] return addTax 50;</li>
+<li>[x] addTax(50);</li>
+<li>[ ] addTax 50;</li>
+</ul>
+<h4 id="q4.-which-statement-is-the-correct-way-to-create-a-variable-called-rate-and-assign-it-the-value-100">Q4. Which statement is the correct way to create a variable called rate and assign it the value 100?</h4>
+<ul>
+<li>[x] let rate = 100;</li>
+<li>[ ] let 100 = rate;</li>
+<li>[ ] 100 = let rate;</li>
+<li>[ ] rate = 100;</li>
+</ul>
+<h4 id="q5.-which-statement-creates-a-new-object-using-the-person-constructor">Q5. Which statement creates a new object using the Person constructor?</h4>
+<ul>
+<li>[x] var student = new Person();</li>
+<li>[ ] var student = construct Person;</li>
+<li>[ ] var student = Person();</li>
+<li>[ ] var student = construct Person();</li>
+</ul>
+<h4 id="q6.-when-would-the-final-statement-in-the-code-shown-be-logged-to-the-console">Q6. When would the final statement in the code shown be logged to the console?</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">let</span> modal <span class="op">=</span> <span class="va">document</span>.<span class="at">querySelector</span>(<span class="st">&#39;#result&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="at">setTimeout</span>(<span class="kw">function</span>()<span class="op">{</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="va">modal</span>.<span class="va">classList</span>.<span class="at">remove</span>(<span class="st">&#39;hidden);</span></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="op">},</span> <span class="dv">10000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;Results shown&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] after 10 second</li>
+<li>[ ] after results are received from the HTTP request</li>
+<li>[ ] after 10000 seconds</li>
+<li>[x] immediately</li>
+</ul>
+<h4 id="q7.-youve-written-the-code-shown-to-log-a-set-of-consecutive-values-but-it-instead-results-in-the-value-5-5-5-and-5-being-logged-to-the-console.-which-revised-version-of-the-code-would-result-in-the-value-1-2-3-and-4-being-logged">Q7. You’ve written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> i <span class="op">&lt;=</span> <span class="dv">4</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="at">setTimeout</span>(<span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="va">console</span>.<span class="at">log</span>(i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4">  <span class="op">},</span> i <span class="op">*</span> <span class="dv">10000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>for (var i=1; i&lt;=4; i++){ (function(i){ setTimeout(function(){ console.log(j); }, j*1000); })(j) }</code></li>
+<li>[ ] <code>while (var i=1; i&lt;=4; i++) { setTimeout(function() { console.log(i); }, i*1000); }</code></li>
+<li>[x] <code>for (var i=1; i&lt;=4; i++) { {function(j) { setTimeout(function(){ console.log(j); }, j*1000); })(i) }</code></li>
+<li>[ ] <code>for (var j=1; j&lt;=4; j++) { setTimeout(function() { console.log(j); }, j*1000); }</code></li>
+</ul>
+<h4 id="q8.-how-does-a-function-create-a-closure">Q8. How does a function create a closure?</h4>
+<ul>
+<li>[ ] It reloads the document whenever the value changes.</li>
+<li>[x] It returns a reference to a variable in its parent scope.</li>
+<li>[ ] It completes execution without returning.</li>
+<li>[ ] It copies a local variable to the global scope.</li>
+</ul>
+<h4 id="q9.-which-statement-creates-a-new-function-called-discountprice">Q9. Which statement creates a new function called discountPrice?</h4>
+<ul>
+<li><p>[x] <code>let discountPrice = function(price) { return price * 0.85; };</code></p></li>
+<li>[ ] <code>let discountPrice(price) { return price * 0.85; };</code></li>
+<li>[ ] <code>let function = discountPrice(price) { return price * 0.85; };</code></li>
+<li><p>[ ] <code>discountPrice = function(price) { return price * 0.85; };</code></p></li>
+</ul>
+<h4 id="what-is-the-result-in-the-console-of-running-the-code-shown">10. What is the result in the console of running the code shown?</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">var</span> Storm <span class="op">=</span> <span class="kw">function</span> () <span class="op">{};</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="va">Storm</span>.<span class="va">prototype</span>.<span class="at">precip</span> <span class="op">=</span> <span class="st">&#39;rain&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="kw">var</span> WinterStorm <span class="op">=</span> <span class="kw">function</span> () <span class="op">{};</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="va">WinterStorm</span>.<span class="at">prototype</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Storm</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="va">WinterStorm</span>.<span class="va">prototype</span>.<span class="at">precip</span> <span class="op">=</span> <span class="st">&#39;snow&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="kw">var</span> bob <span class="op">=</span> <span class="kw">new</span> <span class="at">WinterStorm</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="va">console</span>.<span class="at">log</span>(<span class="va">bob</span>.<span class="at">precip</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] Storm()</li>
+<li>[ ] undefined</li>
+<li>[ ] ‘rain’</li>
+<li>[x] ‘snow’</li>
+</ul>
+<h4 id="q11.-you-need-to-match-a-time-value-such-as-120032.-which-of-the-following-regular-expressions-would-work-for-your-code">Q11. You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?</h4>
+<ul>
+<li>[ ] /[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/</li>
+<li>[x] /</li>
+<li>[ ] /[0-9]+:[0-9]+:[0-9]+/</li>
+<li>[ ] / : : /</li>
+</ul>
+<h4 id="q12.-what-is-the-result-in-the-console-of-running-this-code">Q12. What is the result in the console of running this code?</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="st">&#39;use strict&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">function</span> <span class="at">logThis</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-3" title="3">  <span class="kw">this</span>.<span class="at">desc</span> <span class="op">=</span> <span class="st">&#39;logger&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(<span class="kw">this</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="kw">new</span> <span class="at">logThis</span>()<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] undefined</li>
+<li>[ ] window</li>
+<li>[x] {desc: “logger”}</li>
+<li>[ ] function</li>
+</ul>
+<h4 id="q13.-how-would-you-reference-the-text-avenue-in-the-code-shown">Q13. How would you reference the text ‘avenue’ in the code shown?</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">let</span> roadTypes <span class="op">=</span> [<span class="st">&#39;street&#39;</span><span class="op">,</span> <span class="st">&#39;road&#39;</span><span class="op">,</span> <span class="st">&#39;avenue&#39;</span><span class="op">,</span> <span class="st">&#39;circle&#39;</span>]<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] roadTypes.2</li>
+<li>[ ] roadTypes[3]</li>
+<li>[ ] roadTypes.3</li>
+<li>[x] roadTypes[2]</li>
+</ul>
+<h4 id="q14.-what-is-the-result-of-running-this-statement">Q14. What is the result of running this statement?</h4>
+<p><code>console.log(typeof(42));</code></p>
+<ul>
+<li>[ ] ‘float’</li>
+<li>[ ] ‘value’</li>
+<li>[x] ‘number’</li>
+<li>[ ] ‘integer’</li>
+</ul>
+<h4 id="q15.-which-property-references-the-dom-object-that-dispatched-an-event">Q15. Which property references the DOM object that dispatched an event?</h4>
+<ul>
+<li>[ ] self</li>
+<li>[ ] object</li>
+<li>[x] target</li>
+<li>[ ] source</li>
+</ul>
+<h4 id="q16.-youre-adding-error-handling-to-the-code-shown.-which-code-would-you-include-within-the-if-statement-to-specify-an-error-message">Q16. You’re adding error handling to the code shown. Which code would you include within the if statement to specify an error message?</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">function</span> <span class="at">addNumbers</span>(x<span class="op">,</span> y) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-2" title="2">  <span class="cf">if</span> (<span class="at">isNaN</span>(x) <span class="op">||</span> <span class="at">isNaN</span>(y)) <span class="op">{</span></a>
+<a class="sourceLine" id="cb8-3" title="3">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb8-4" title="4"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[ ] exception(‘One or both parameters are not numbers’)</li>
+<li>[ ] catch(‘One or both parameters are not numbers’)</li>
+<li>[ ] error(‘One or both parameters are not numbers’)</li>
+<li>[x] throw(‘One or both parameters are not numbers’)</li>
+</ul>
+<h4 id="q17.-which-method-converts-json-data-to-a-javascript-object">Q17. Which method converts JSON data to a JavaScript object?</h4>
+<ul>
+<li>[ ] JSON.fromString();</li>
+<li>[x] JSON.parse()</li>
+<li>[ ] JSON.toObject()</li>
+<li>[ ] JSON.stringify()</li>
+</ul>
+<h4 id="q18.-when-would-you-use-a-conditional-statement">Q18. When would you use a conditional statement?</h4>
+<ul>
+<li>[ ] When you want to reuse a set of statements multiple times.</li>
+<li>[x] When you want your code to choose between multiple options.</li>
+<li>[ ] When you want to group data together.</li>
+<li>[ ] When you want to loop through a group of statement.</li>
+</ul>
+<h4 id="q19.-what-would-be-the-result-in-the-console-of-running-this-code">Q19. What would be the result in the console of running this code?</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb9-1" title="1"><span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="dv">5</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb9-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb9-3" title="3"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[ ] 12345</li>
+<li>[ ] 1234</li>
+<li>[x] 01234</li>
+<li>[ ] 012345</li>
+</ul>
+<h4 id="q20.-which-object-method-returns-an-iterable-that-can-be-used-to-iterate-over-the-properties-of-an-object">Q20. Which Object method returns an iterable that can be used to iterate over the properties of an object?</h4>
+<ul>
+<li>[ ] Object.get()</li>
+<li>[ ] Object.loop()</li>
+<li>[ ] Object.each()</li>
+<li>[x] Object.keys()</li>
+</ul>
+<h4 id="q21.-after-the-following-code-what-is-the-value-of-a.length">Q21. After the following code, what is the value of a.length?</h4>
+<div class="sourceCode" id="cb10"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb10-1" title="1"><span class="kw">var</span> a <span class="op">=</span> [<span class="st">&#39;dog&#39;</span><span class="op">,</span> <span class="st">&#39;cat&#39;</span><span class="op">,</span> <span class="st">&#39;hen&#39;</span>]<span class="op">;</span></a>
+<a class="sourceLine" id="cb10-2" title="2">a[<span class="dv">100</span>] <span class="op">=</span> <span class="st">&#39;fox&#39;</span><span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[x] 101</li>
+<li>[ ] 3</li>
+<li>[ ] 4</li>
+<li>[ ] 100</li>
+</ul>
+<h4 id="q22.-what-is-one-difference-between-collections-created-with-map-and-collections-created-with-object">Q22. What is one difference between collections created with Map and collections created with Object?</h4>
+<ul>
+<li>[ ] You can iterate over values in a Map in their insertion order.</li>
+<li>[x] You can count the records in a Map with a single method call.</li>
+<li>[ ] Keys in Maps can be strings.</li>
+<li>[ ] You can access values in a Map without iterating over the whole collection.</li>
+</ul>
+<details>
+<summary>Explanation</summary>
+<p>
+<p><code>Map.prototype.size</code> returns the number of elements in a Map, whereas Object does not have a built-in method to return its size.</p>
+</p>
+</details>
+<h4 id="q23.-what-is-the-value-of-dessert.type-after-executing-this-code">Q23. What is the value of dessert.type after executing this code?</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb11-1" title="1"><span class="kw">const</span> dessert <span class="op">=</span> <span class="op">{</span> <span class="dt">type</span><span class="op">:</span> <span class="st">&#39;pie&#39;</span> <span class="op">};</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="va">dessert</span>.<span class="at">type</span> <span class="op">=</span> <span class="st">&#39;pudding&#39;</span><span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] pie</li>
+<li>[ ] The code will throw an error.</li>
+<li>[x] pudding</li>
+<li>[ ] undefined</li>
+</ul>
+<h4 id="q24.-0-hi">Q24. 0 &amp;&amp; hi</h4>
+<ul>
+<li>[ ] ReferenceError</li>
+<li>[ ] True</li>
+<li>[x] 0</li>
+<li>[ ] false</li>
+</ul>
+<h4 id="q25.-which-of-the-following-operators-can-be-used-to-do-a-short-circuit-evaluation">Q25. Which of the following operators can be used to do a short-circuit evaluation?</h4>
+<ul>
+<li>[ ] ++</li>
+<li>[ ] --</li>
+<li>[ ] ==</li>
+<li>[x] ||</li>
+</ul>
+<h4 id="q26.-which-statement-sets-the-person-constructor-as-the-parent-of-the-student-constructor-in-the-prototype-chain">Q26. Which statement sets the Person constructor as the parent of the Student constructor in the prototype chain?</h4>
+<ul>
+<li>[ ] Student.parent = Person;</li>
+<li>[x] Student.prototype = new Person();</li>
+<li>[ ] Student.prototype = Person;</li>
+<li>[ ] Student.prototype = Person();</li>
+</ul>
+<h4 id="q27.-why-would-you-include-a-use-strict-statement-in-a-javascript-file">Q27. Why would you include a “use strict” statement in a JavaScript file?</h4>
+<ul>
+<li>[ ] to tell parsers to interpret your JavaScript syntax loosely</li>
+<li>[x] to tell parsers to enforce all JavaScript syntax rules when processing your code</li>
+<li>[ ] to instruct the browser to automatically fix any errors it finds in the code</li>
+<li>[ ] to enable ES6 features in your code</li>
+</ul>
+<h4 id="q28.-which-variable-defining-keyword-allows-its-variable-to-be-accessed-as-undefined-before-the-line-that-defines-it">Q28. Which Variable-defining keyword allows its variable to be accessed (as undefined) before the line that defines it?</h4>
+<ul>
+<li>[ ] all of them</li>
+<li>[ ] const</li>
+<li>[x] var</li>
+<li>[ ] let</li>
+</ul>
+<h4 id="q29.-which-of-the-following-values-is-not-a-boolean-false">Q29. Which of the following values is not a Boolean false?</h4>
+<ul>
+<li>[ ] Boolean(0)</li>
+<li>[ ] Boolean("")</li>
+<li>[ ] Boolean(NaN)</li>
+<li>[x] Boolean(“false”)</li>
+</ul>
+<h4 id="q30.-which-of-the-following-is-not-a-keyword-in-javascript">Q30. Which of the following is not a keyword in JavaScript?</h4>
+<ul>
+<li>[ ] this</li>
+<li>[ ] catch</li>
+<li>[ ] function</li>
+<li>[x] array</li>
+</ul>
+<h4 id="q31.-which-variable-is-an-implicit-parameter-for-every-function-in-javascript">Q31. Which variable is an implicit parameter for every function in JavaScript?</h4>
+<ul>
+<li>[x] Arguments</li>
+<li>[ ] args</li>
+<li>[ ] argsArray</li>
+<li>[ ] argumentsList</li>
+</ul>
+<h4 id="q32.-for-the-following-class-how-do-you-get-the-value-of-42-from-an-instance-of-x">Q32. For the following class, how do you get the value of 42 from an instance of X?</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb12-1" title="1"><span class="kw">class</span> X <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-2" title="2">  get <span class="at">Y</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb12-3" title="3">    <span class="cf">return</span> <span class="dv">42</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb12-4" title="4">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[ ] x.get(‘Y’)</li>
+<li>[x] x.Y</li>
+<li>[ ] x.Y()</li>
+<li>[ ] x.get().Y</li>
+</ul>
+<h4 id="q33.-what-is-the-result-of-running-this-code">Q33. What is the result of running this code?</h4>
+<div class="sourceCode" id="cb13"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb13-1" title="1"><span class="at">sum</span>(<span class="dv">10</span><span class="op">,</span> <span class="dv">20</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-2" title="2"><span class="at">diff</span>(<span class="dv">10</span><span class="op">,</span> <span class="dv">20</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-3" title="3"><span class="kw">function</span> <span class="at">sum</span>(x<span class="op">,</span> y) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-4" title="4">  <span class="cf">return</span> x <span class="op">+</span> y<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb13-6" title="6"></a>
+<a class="sourceLine" id="cb13-7" title="7"><span class="kw">let</span> diff <span class="op">=</span> <span class="kw">function</span> (x<span class="op">,</span> y) <span class="op">{</span></a>
+<a class="sourceLine" id="cb13-8" title="8">  <span class="cf">return</span> x <span class="op">-</span> y<span class="op">;</span></a>
+<a class="sourceLine" id="cb13-9" title="9"><span class="op">};</span></a></code></pre></div>
+<ul>
+<li>[ ] 30, ReferenceError, 30, -10</li>
+<li>[x] 30, ReferenceError</li>
+<li>[ ] 30, -10</li>
+<li>[ ] ReferenceError, -10</li>
+</ul>
+<h4 id="q34.-why-is-it-usually-better-to-work-with-objects-instead-of-arrays-to-store-a-collection-of-records">Q34. Why is it usually better to work with Objects instead of Arrays to store a collection of records?</h4>
+<ul>
+<li>[ ] Objects are more efficient in terms of storage.</li>
+<li>[ ] Adding a record to an object is significantly faster than pushing a record into an array.</li>
+<li>[x] Most operations involve looking up a record, and objects can do that better than arrays.</li>
+<li>[ ] Working with objects makes the code more readable.</li>
+</ul>
+<details>
+<summary>Explanation</summary>
+<p>
+<p>Records in an object can be retrieved using their key which can be any given value (e.g. an employee ID, a city name, etc), whereas to retrieve a record from an array we need to know its index.</p>
+</p>
+</details>
+<h4 id="q35.-which-statement-is-true-about-the-async-attribute-for-the-html-script-tag">Q35. Which statement is true about the “async” attribute for the HTML script tag?</h4>
+<ul>
+<li>[ ] It can be used for both internal and external JavaScript code.</li>
+<li>[ ] It can be used only for internal JavaScript code.</li>
+<li>[ ] It can be used only for internal or external JavaScript code that exports a promise.</li>
+<li>[x] It can be used only for external JavaScript code.</li>
+</ul>
+<h4 id="q36.-how-do-you-import-the-lodash-library-making-it-top-level-api-available-as-the-_-variable">Q36. How do you import the lodash library making it top-level Api available as the “_” variable?</h4>
+<ul>
+<li>[x] import _ from ‘lodash’;</li>
+<li>[ ] import ‘lodash’ as _;</li>
+<li>[ ] import ‘_’ from ’lodash;</li>
+<li>[ ] import lodash as _ from ‘lodash’;</li>
+</ul>
+<h4 id="q37.-what-does-the-following-expression-evaluate-to">Q37. What does the following expression evaluate to?</h4>
+<div class="sourceCode" id="cb14"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb14-1" title="1">[] <span class="op">==</span> []<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] True</li>
+<li>[ ] undefined</li>
+<li>[ ] []</li>
+<li>[x] False</li>
+</ul>
+<h4 id="q38.-what-is-the-name-of-a-function-whose-execution-can-be-suspended-and-resumed-at-a-later-point">Q38. What is the name of a function whose execution can be suspended and resumed at a later point?</h4>
+<ul>
+<li>[x] Generator function</li>
+<li>[ ] Arrow function</li>
+<li>[ ] Async/ Await function</li>
+<li>[ ] Promise function</li>
+</ul>
+<h4 id="q39.-what-will-this-code-print">Q39. What will this code print?</h4>
+<div class="sourceCode" id="cb15"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb15-1" title="1"><span class="kw">var</span> v <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="kw">var</span> f1 <span class="op">=</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-3" title="3">  <span class="va">console</span>.<span class="at">log</span>(v)<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-4" title="4"><span class="op">};</span></a>
+<a class="sourceLine" id="cb15-5" title="5"></a>
+<a class="sourceLine" id="cb15-6" title="6"><span class="kw">var</span> f2 <span class="op">=</span> <span class="kw">function</span> () <span class="op">{</span></a>
+<a class="sourceLine" id="cb15-7" title="7">  <span class="kw">var</span> v <span class="op">=</span> <span class="dv">2</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb15-8" title="8">  <span class="at">f1</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb15-9" title="9"><span class="op">};</span></a>
+<a class="sourceLine" id="cb15-10" title="10"></a>
+<a class="sourceLine" id="cb15-11" title="11"><span class="at">f2</span>()<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] 2</li>
+<li>[x] 1</li>
+<li>[ ] Nothing–this code will throw an error.</li>
+<li>[ ] undefined</li>
+</ul>
+<h4 id="q40.-which-statement-is-true-about-functional-programming">Q40. Which statement is true about Functional Programming?</h4>
+<ul>
+<li>[ ] Every object in the program has to be a function.</li>
+<li>[ ] Code is grouped with the state it modifies.</li>
+<li>[ ] Date fields and methods are kept in units.</li>
+<li>[x] Side effects are not allowed.</li>
+</ul>
+<h4 id="q41.-your-code-is-producing-the-error-typeerror-cannot-read-property-reduce-of-undefined.-what-does-that-mean">Q41. Your code is producing the error: TypeError: Cannot read property ‘reduce’ of undefined. What does that mean?</h4>
+<ul>
+<li>[ ] You are calling a method named reduce on an object that’s declared but has no value.</li>
+<li>[x] You are calling a method named reduce on an object that does not exist.</li>
+<li>[ ] You are calling a method named reduce on an empty array.</li>
+<li>[ ] You are calling a method named reduce on an object that’s has a null value.</li>
+</ul>
+<h4 id="q42.-how-many-prototype-objects-are-in-the-chain-for-the-following-array">Q42. How many prototype objects are in the chain for the following array?</h4>
+<p><code>let arr = [];</code></p>
+<ul>
+<li>[ ] 3</li>
+<li>[ ] 2</li>
+<li>[x] 0</li>
+<li>[ ] 1</li>
+</ul>
+<h4 id="q43.-which-of-the-following-is-not-a-unary-operator">Q43. Which of the following is not a unary operator?</h4>
+<ul>
+<li>[ ] typeof</li>
+<li>[ ] delete</li>
+<li>[x] instanceof</li>
+<li>[ ] void</li>
+</ul>
+<h4 id="q44.-what-type-of-scope-does-the-end-variable-have-in-the-code-shown">Q44. What type of scope does the end variable have in the code shown?</h4>
+<pre><code>var start = 1;
+if (start === 1) {
+ let end = 2;
+}</code></pre>
+<ul>
+<li>[ ] conditional</li>
+<li>[x] block</li>
+<li>[ ] global</li>
+<li>[ ] function</li>
+</ul>
+<h4 id="q45.-what-will-the-value-of-y-be-in-this-code">Q45. What will the value of y be in this code:</h4>
+<pre><code>const x = 6 % 2;
+const y = x ? &#39;One&#39;: &#39;Two&#39;;</code></pre>
+<ul>
+<li>[ ] One</li>
+<li>[ ] undefined</li>
+<li>[ ] TRUE</li>
+<li>[x] Two</li>
+</ul>
+<h4 id="q46.-which-keyword-is-used-to-create-an-error">Q46. Which keyword is used to create an error?</h4>
+<ul>
+<li>[x] throw</li>
+<li>[ ] exception</li>
+<li>[ ] catch</li>
+<li>[ ] error</li>
+</ul>
+<h4 id="q47.-whats-one-difference-between-the-async-and-defer-attributes-of-the-html-script-tag">Q47. What’s one difference between the async and defer attributes of the HTML script tag?</h4>
+<ul>
+<li>[ ] The defer attribute can work synchronously.</li>
+<li>[ ] The defer attribute works only with generators.</li>
+<li>[ ] The defer attribute works only with promises.</li>
+<li>[x] The defer attribute will asynchronously load the scripts in order.</li>
+</ul>
+<h4 id="q48.-the-following-program-has-a-problem.-what-is-it">Q48. The following program has a problem. What is it?</h4>
+<div class="sourceCode" id="cb18"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">var</span> a<span class="op">;</span></a>
+<a class="sourceLine" id="cb18-2" title="2"><span class="kw">var</span> b <span class="op">=</span> (a <span class="op">=</span> <span class="dv">3</span>) <span class="op">?</span> <span class="kw">true</span> : <span class="kw">false</span><span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[x] The condition in the ternary is using the assignment operator.</li>
+<li>[ ] You can’t define a variable without initializing it.</li>
+<li>[ ] You can’t use a ternary in the right-hand side of an assignment operator.</li>
+<li>[ ] The code is using the deprecated var keyword</li>
+</ul>
+<h4 id="q49.-which-statement-references-the-dom-node-created-by-the-code-shown">Q49. Which statement references the DOM node created by the code shown?</h4>
+<div class="sourceCode" id="cb19"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb19-1" title="1"><span class="kw">&lt;p</span><span class="ot"> class=</span><span class="st">&quot;pull&quot;</span><span class="kw">&gt;</span>lorem ipsum<span class="kw">&lt;/p&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>Document.querySelector('class.pull')</code></li>
+<li>[x] <code>document.querySelector('.pull');</code></li>
+<li>[ ] <code>Document.querySelector('pull')</code></li>
+<li>[ ] <code>Document.querySelector('#pull')</code></li>
+</ul>
+<h4 id="q50.-what-value-does-the-code-return">Q50. What value does the code return?</h4>
+<div class="sourceCode" id="cb20"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">let</span> answer <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb20-2" title="2"><span class="cf">if</span> (answer <span class="op">===</span> <span class="kw">false</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb20-3" title="3">  <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb20-4" title="4"><span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb20-5" title="5">  <span class="cf">return</span> <span class="dv">10</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb20-6" title="6"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li>[x] 10</li>
+<li>[ ] false</li>
+<li>[ ] 0</li>
+</ul>
+<h3 id="q51.-what-is-the-result-in-the-console-of-running-the-code-shown">Q51. What is the result in the console of running the code shown?</h3>
+<div class="sourceCode" id="cb21"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb21-1" title="1"><span class="kw">var</span> start <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb21-2" title="2"><span class="kw">function</span> <span class="at">setEnd</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb21-3" title="3">  <span class="kw">var</span> end <span class="op">=</span> <span class="dv">10</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb21-4" title="4"><span class="op">}</span></a>
+<a class="sourceLine" id="cb21-5" title="5"><span class="at">setEnd</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb21-6" title="6"><span class="va">console</span>.<span class="at">log</span>(end)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] 10</li>
+<li>[ ] 0</li>
+<li>[x] ReferenceError</li>
+<li>[ ] undefined</li>
+</ul>
+<h3 id="q52.-what-will-this-code-log-in-the-console">Q52. What will this code log in the console?</h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">function</span> <span class="at">sayHello</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb22-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;hello&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="op">}</span></a>
+<a class="sourceLine" id="cb22-4" title="4"></a>
+<a class="sourceLine" id="cb22-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="va">sayHello</span>.<span class="at">prototype</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] undefined</li>
+<li>[ ] “hello”</li>
+<li>[x] an object with a constructor property</li>
+<li>[ ] an error message</li>
+</ul>
+<h3 id="q53-which-collection-object-allows-unique-value-to-be-inserted-only-once">Q53: Which collection object allows unique value to be inserted only once?</h3>
+<ul>
+<li>[ ] Object</li>
+<li>[x] Set</li>
+<li>[ ] Array</li>
+<li>[ ] Map</li>
+</ul>
+<h3 id="q54.-what-two-values-will-this-code-print">Q54. What two values will this code print?</h3>
+<div class="sourceCode" id="cb23"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">function</span> <span class="at">printA</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb23-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(answer)<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-3" title="3">  <span class="kw">var</span> answer <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb23-4" title="4"><span class="op">}</span></a>
+<a class="sourceLine" id="cb23-5" title="5"><span class="at">printA</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb23-6" title="6"><span class="at">printA</span>()<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] 1 then 1</li>
+<li>[ ] 1 then undefined</li>
+<li>[x] undefined the undefined</li>
+<li>[ ] undefined the 1</li>
+</ul>
+<h4 id="q55.-for-the-following-class-how-do-you-get-the-value-of-42-from-x">Q55. For the following class, how do you get the value of 42 from “X” ?</h4>
+<div class="sourceCode" id="cb24"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb24-1" title="1"><span class="kw">class</span> X <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-2" title="2">  get <span class="at">Y</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb24-3" title="3">    <span class="cf">return</span> <span class="dv">42</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb24-4" title="4">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb24-6" title="6"><span class="kw">var</span> x <span class="op">=</span> <span class="kw">new</span> <span class="at">X</span>()<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[x] x.Y</li>
+<li>[ ] x.Y()</li>
+<li>[ ] x.get(‘Y’)</li>
+<li>[ ] x.get().Y</li>
+</ul>
+<h4 id="q56.-how-does-the-foreach-method-differ-from-a-for-statement">Q56. How does the forEach() method differ from a for statement?</h4>
+<ul>
+<li>[ ] forEach allows you to specify your own iterator, whereas for does not.</li>
+<li>[ ] forEach can be used only with strings, whereas for can be used with additional data types.</li>
+<li>[x] forEach can be used only with an array, whereas for can be used with additional data types.</li>
+<li>[ ] for loops can be nested; whereas forEach loops cannot.</li>
+</ul>
+<h4 id="q57.-what-will-be-logged-to-the-console">Q57. What will be logged to the console?</h4>
+<div class="sourceCode" id="cb25"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb25-1" title="1"><span class="st">&#39;use strict&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="kw">function</span> <span class="at">logThis</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb25-3" title="3">  <span class="kw">this</span>.<span class="at">desc</span> <span class="op">=</span> <span class="st">&#39;logger&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb25-4" title="4">  <span class="va">console</span>.<span class="at">log</span>(<span class="kw">this</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb25-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb25-6" title="6"><span class="kw">new</span> <span class="at">logThis</span>()<span class="op">;</span></a></code></pre></div>
+<ul>
+<li>[ ] undefined</li>
+<li>[ ] function</li>
+<li>[ ] windows</li>
+<li>[x] {desc: “logger”}</li>
+</ul>
+<h4 id="q58.-which-choice-is-an-incorrect-way-to-define-an-arrow-function-that-returns-an-empty-object">Q58. Which choice is an incorrect way to define an arrow function that returns an empty object?</h4>
+<ul>
+<li>[ ] =&gt; ({})</li>
+<li>[x] =&gt; {}</li>
+<li>[ ] =&gt; { return {};}</li>
+<li>[ ] =&gt; (({}))</li>
+</ul>
+<h4 id="q59.-why-might-you-choose-to-make-your-code-asynchronous">Q59. Why might you choose to make your code asynchronous?</h4>
+<ul>
+<li>[ ] to start tasks that might take some time without blocking subsequent tasks from executing immediately</li>
+<li>[x] to ensure that tasks further down in your code are not initiated until earlier tasks have completed</li>
+<li>[ ] to make your code faster</li>
+<li>[ ] to ensure that the call stack maintains a LIFO (Last in, First Out) structure</li>
+</ul>
+<h4 id="q60.-which-expression-evaluates-to-true">Q60. Which expression evaluates to true?</h4>
+<ul>
+<li>[ ] [3] == [3]</li>
+<li>[x] 3 == ‘3’</li>
+<li>[ ] 3 != ‘3’</li>
+<li>[ ] 3 === ‘3’</li>
+</ul>
+<h4 id="q61.-which-choice-is-a-valid-variable-name">Q61. Which choice is a valid variable name?</h4>
+<ul>
+<li>[ ] 5thItem</li>
+<li>[x] firstName</li>
+<li>[ ] grand total</li>
+<li>[ ] function</li>
+</ul>
+<h4 id="q62.-which-method-cancels-event-default-behavior">Q62. Which method cancels event default behavior?</h4>
+<ul>
+<li>[ ] cancel()</li>
+<li>[ ] stop()</li>
+<li>[x] preventDefault()</li>
+<li>[ ] prevent()</li>
+</ul>
+<blockquote>
+<h1 id="javascript-assessment-1">JavaScript Assessment</h1>
+<figure>
+<img src="image/Badge-javaScript.png?raw=true" alt="quote" /><figcaption>quote</figcaption>
+</figure>
+</blockquote>
+<blockquote>
+<h3 id="q1.-youve-written-the-event-listener-shown-below-for-a-form-button-but-each-time-you-click-the-button-the-page-reloads.-which-statement-would-stop-this-from-happening">Q1. You’ve written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?</h3>
+</blockquote>
+<div class="sourceCode" id="cb26"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb26-1" title="1"><span class="va">button</span>.<span class="at">addEventListener</span>(<span class="st">&#39;click&#39;</span><span class="op">,</span> <span class="kw">function</span>(e) <span class="op">{</span></a>
+<a class="sourceLine" id="cb26-2" title="2">  <span class="va">button</span>.<span class="at">className</span> <span class="op">=</span> <span class="st">&#39;clicked&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="op">},</span> <span class="kw">false</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li><p>[ ] e.stopReload();</p></li>
+<li><p>[x] e.preventDefault();</p></li>
+<li><p>[ ] e.Preventdefault();</p></li>
+<li><p>[ ] e.PreventDefault{};</p></li>
+</ul>
+<blockquote>
+<h3 id="q2.-which-statement-references-the-dom-node-created-by-the-code-shown">Q2. Which statement references the DOM node created by the code shown?</h3>
+<div class="sourceCode" id="cb27"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb27-1" title="1"><span class="op">&lt;</span>p <span class="kw">class</span><span class="op">=</span><span class="st">&quot;pull&quot;</span><span class="op">&gt;</span>Lorem Ipsum &lt;/p<span class="op">&gt;</span></a></code></pre></div>
+</blockquote>
+<ul>
+<li><p>[ ] document.QuerySelector(“.pull”);</p></li>
+<li><p>[ ] document.QuerySelector(“.pull”);</p></li>
+<li><p>[x] document.querySelector(“.pull”);</p></li>
+<li><p>[ ] document.querySelector(“#pull”);</p></li>
+</ul>
+<blockquote>
+<h3 id="q3.-which-statement-is-the-correct-way-to-create-a-variable-called-rate-and-assign-it-the-value-100">Q3. Which statement is the correct way to create a variable called rate and assign it the value 100?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Var Rate = 100;</p></li>
+<li><p>[ ] const rate = 100;</p></li>
+<li><p>[ ] Let rate = 100;</p></li>
+<li><p>[x] let rate = 100;</p></li>
+</ul>
+<blockquote>
+<h3 id="q4.-when-would-the-final-statement-in-the-code-shown-be-logged-to-the-console">Q4. When would the final statement in the code shown be logged to the console?</h3>
+</blockquote>
+<div class="sourceCode" id="cb28"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb28-1" title="1"><span class="kw">let</span> modal <span class="op">=</span> <span class="va">document</span>.<span class="at">querySelector</span>(<span class="st">&#39;#results&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-2" title="2"><span class="at">setTimeout</span>(<span class="kw">function</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb28-3" title="3">  <span class="va">modal</span>.<span class="va">classList</span>.<span class="at">remove</span>(<span class="st">&#39;hidden&#39;</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-4" title="4"><span class="op">},</span> <span class="dv">10000</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb28-5" title="5"><span class="va">console</span>.<span class="at">log</span>(<span class="st">&#39;Results shown&#39;</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li><p>[x] Immediately</p></li>
+<li><p>[ ] after results are received from the HTTP request</p></li>
+<li><p>[ ] after 10000 sec</p></li>
+<li><p>[ ] after 10 sec</p></li>
+</ul>
+<blockquote>
+<h3 id="q5.-which-statement-creates-a-new-object-using-the-person-constructor-1">Q5. Which statement creates a new object using the Person constructor?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] var student = new person();</p></li>
+<li><p>[ ] var student = new Person[];</p></li>
+<li><p>[x] var student = new Person();</p></li>
+<li><p>[ ] var student = Person();</p></li>
+</ul>
+<blockquote>
+<h3 id="q6.-when-would-you-use-a-conditional-statement">Q6. When would you use a conditional statement?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] When you want to reuse a set of statements multiple times.</p></li>
+<li><p>[x] When you want your code to choose between multiple options.</p></li>
+<li><p>[ ] When you want to group data together.</p></li>
+<li><p>[ ] When you want to loop through a group of statement.</p></li>
+</ul>
+<blockquote>
+<h3 id="q7.-how-is-foreach-statement-different-from-a-for-statement">Q7. How is forEach statement different from a for statement?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Only a for statement uses a callback function.</p></li>
+<li><p>[x] A for statement is generic, but a forEach statement can be used only with an array.</p></li>
+<li><p>[ ] Only a forEach statement lets you specify your own iterator.</p></li>
+<li><p>[ ] A forEach statement is generic, but a for statement ca be used only with an array.</p></li>
+</ul>
+<blockquote>
+<h3 id="q8.-review-the-code-below.-which-statement-calls-the-addtax-function-and-passes-50-as-the-argument">Q8. Review the code below. Which statement calls the addTax function and passes 50 as the argument?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] addTax = 50;</p></li>
+<li><p>[ ] return addTax 50;</p></li>
+<li><p>[x] addTax(50);</p></li>
+<li><p>[ ] addTax 50;</p></li>
+</ul>
+<blockquote>
+<h3 id="q9.-what-is-the-result-in-the-console-of-running-the-code-shown">Q9. What is the result in the console of running the code shown?</h3>
+</blockquote>
+<div class="sourceCode" id="cb29"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">var</span> Storm <span class="op">=</span> <span class="kw">function</span> () <span class="op">{};</span></a>
+<a class="sourceLine" id="cb29-2" title="2"><span class="va">Storm</span>.<span class="va">prototype</span>.<span class="at">precip</span> <span class="op">=</span> <span class="st">&#39;rain&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb29-3" title="3"><span class="kw">var</span> WinterStorm <span class="op">=</span> <span class="kw">function</span> () <span class="op">{};</span></a>
+<a class="sourceLine" id="cb29-4" title="4"><span class="va">WinterStorm</span>.<span class="at">prototype</span> <span class="op">=</span> <span class="kw">new</span> <span class="at">Storm</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb29-5" title="5"><span class="va">WinterStorm</span>.<span class="va">prototype</span>.<span class="at">precip</span> <span class="op">=</span> <span class="st">&#39;snow&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb29-6" title="6"><span class="kw">var</span> bob <span class="op">=</span> <span class="kw">new</span> <span class="at">WinterStorm</span>()<span class="op">;</span> </a>
+<a class="sourceLine" id="cb29-7" title="7"></a>
+<a class="sourceLine" id="cb29-8" title="8"><span class="va">console</span>.<span class="at">log</span>(<span class="va">bob</span>.<span class="at">precip</span>)<span class="op">;</span></a></code></pre></div>
+<ul>
+<li><p>[ ] Storm()</p></li>
+<li><p>[ ] undefined</p></li>
+<li><p>[ ] ‘rain’</p></li>
+<li><p>[x] ‘snow’</p></li>
+</ul>
+<blockquote>
+<h3 id="q10.-how-does-a-function-create-a-closure">Q10. How does a function create a closure?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] It reloads the document whenever the value changes.</p></li>
+<li><p>[x] It returns a reference to a variable in its parent scope.</p></li>
+<li><p>[ ] It completes execution without returning.</p></li>
+<li><p>[ ] It copies a local variable to the global scope.</p></li>
+</ul>
+<blockquote>
+<h3 id="q11.-which-keyword-is-used-to-create-an-error">Q11. Which keyword is used to create an error?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] catch</p></li>
+<li><p>[ ] error</p></li>
+<li><p>[x] throw</p></li>
+<li><p>[ ] exception</p></li>
+</ul>
+<blockquote>
+<h3 id="q12.-what-would-be-the-result-in-the-console-of-running-this-code">Q12. What would be the result in the console of running this code?</h3>
+</blockquote>
+<div class="sourceCode" id="cb30"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb30-1" title="1"><span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> <span class="dv">4</span><span class="op">;</span> i<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb30-2" title="2">  <span class="va">console</span>.<span class="at">log</span>(i)<span class="op">;</span></a>
+<a class="sourceLine" id="cb30-3" title="3"><span class="op">}</span></a></code></pre></div>
+<ul>
+<li><p>[ ] 12345</p></li>
+<li><p>[ ] 1234</p></li>
+<li><p>[x] 0123</p></li>
+<li><p>[ ] 012345</p></li>
+</ul>
+<blockquote>
+<h3 id="q13.-which-of-the-following-operators-can-be-used-to-do-a-short-circuit-evaluation">Q13. Which of the following operators can be used to do a short-circuit evaluation?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] ++</p></li>
+<li><p>[ ] --</p></li>
+<li><p>[ ] ==</p></li>
+<li><p>[x] ||</p></li>
+</ul>
+<blockquote>
+<h3 id="q14.-what-is-the-name-of-a-function-whose-execution-can-be-suspended-and-resumed-at-a-later-point">Q14. What is the name of a function whose execution can be suspended and resumed at a later point?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Async/ Await function</p></li>
+<li><p>[ ] Promise function</p></li>
+<li><p>[x] Generator function</p></li>
+<li><p>[ ] Arrow function</p></li>
+</ul>
+<blockquote>
+<h3 id="q15.-the-following-program-has-a-problem.-what-is-it">Q15. The following program has a problem. What is it?</h3>
+</blockquote>
+<div class="sourceCode" id="cb31"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">var</span> a<span class="op">;</span></a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="kw">var</span> b <span class="op">=</span> (a <span class="op">=</span> <span class="dv">3</span>) <span class="op">?</span> <span class="kw">true</span> : <span class="kw">false</span><span class="op">;</span></a></code></pre></div>
+<ul>
+<li><p>[ ] You can’t define a variable without initializing it.</p></li>
+<li><p>[ ] You can’t use a ternary in the right-hand side of an assignment operator.</p></li>
+<li><p>[ ] The code is using the deprecated var keyword</p></li>
+<li><p>[x] The condition in the ternary is using the assignment operator.</p></li>
+</ul>
+<blockquote>
+<h3 id="q16.-which-statement-selects-all-img-elements-in-the-dom-tree">Q16. which statement selects all img elements in the DOM tree?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Document.querySelector(‘img’)</p></li>
+<li><p>[ ] Document.querySelectorAll(‘<img>’)</p></li>
+<li><p>[x] document.querySelectorAll(‘img’)</p></li>
+<li><p>[ ] Document.querySelector(‘<img>’)</p></li>
+</ul>
+<blockquote>
+<h3 id="q17.-which-of-the-following-values-is-not-a-boolean-false">Q17. Which of the following values is not a Boolean false?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Boloean(0)</p></li>
+<li><p>[x] Boolean(“false”)</p></li>
+<li><p>[ ] Boolean(NaN)</p></li>
+<li><p>[ ] Boolean("")</p></li>
+</ul>
+<blockquote>
+<h3 id="q18.-which-of-these-is-a-valid-variable-name">Q18. Which of these is a valid variable name?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] 5thItem</p></li>
+<li><p>[x] firstName</p></li>
+<li><p>[ ] function</p></li>
+<li><p>[ ] grand total</p></li>
+</ul>
+<blockquote>
+<h3 id="q19.-why-would-you-choose-an-asynchronous-structure-for-your-code">Q19. Why would you choose an asynchronous structure for your code ?</h3>
+<ul>
+<li>[ ] To use ES6 syntax</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>[ ] Start task that might take some time without blocking subsequence tasks from executing immediately.</p></li>
+<li><p>[x] To ensure that tasks further down in your code aren’t initiated until earlier tasks have completed</p></li>
+<li><p>[ ] To use JavaScript ES6 syntax</p></li>
+</ul>
+<blockquote>
+<h3 id="q20.-what-is-the-http-verb-to-the-request-the-contents-of-the-existing-resource">Q20. What is the HTTP verb to the request the contents of the existing resource ?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Delete</p></li>
+<li><p>[x] get</p></li>
+<li><p>[ ] path</p></li>
+<li><p>[ ] post</p></li>
+</ul>
+<blockquote>
+<h3 id="q21.-which-variable-defining-keyword-allows-its-variable-to-be-accused-as-undefined-before-the-line-that-defines-it">Q21. Which variable defining keyword allows its variable to be accused (as undefined ) before the line that defines it?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] const</p></li>
+<li><p>[ ] var</p></li>
+<li><p>[x] let</p></li>
+<li><p>[ ] all of them</p></li>
+</ul>
+<blockquote>
+<h3 id="q22.-what-two-values-will-this-code-print">Q22. What two values will this code print ?</h3>
+</blockquote>
+<div class="sourceCode" id="cb32"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">function</span> <span class="at">printA</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="va">console</span>.<span class="at">log</span>(answer)<span class="op">;</span> </a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="kw">var</span> answer <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> <span class="op">}</span></a>
+<a class="sourceLine" id="cb32-4" title="4"><span class="at">printA</span>()<span class="op">;</span></a>
+<a class="sourceLine" id="cb32-5" title="5"><span class="at">printA</span>()<span class="op">;</span></a></code></pre></div>
+<ul>
+<li><p>[ ] 1 then 1</p></li>
+<li><p>[ ] 1 then undefined</p></li>
+<li><p>[ ] undefined then undefined</p></li>
+<li><p>[x] undefined then 1</p></li>
+</ul>
+<blockquote>
+<h3 id="q23.-which-of-the-following-is-not-a-keyword-javascript">Q23. Which of the following is not a keyword JavaScript?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] catch</p></li>
+<li><p>[ ] this</p></li>
+<li><p>[ ] function</p></li>
+<li>[ ] array   &gt; ### Q24. How would you reference the text ‘avenue’ in the code shown?</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb33-1" title="1"><span class="kw">let</span> roadTypes <span class="op">=</span> [<span class="st">&#39;street&#39;</span><span class="op">,</span> <span class="st">&#39;road&#39;</span><span class="op">,</span> <span class="st">&#39;avenue&#39;</span><span class="op">,</span> <span class="st">&#39;circle&#39;</span>]<span class="op">;</span></a></code></pre></div>
+<ul>
+<li><p>[ ] roadTypes.2</p></li>
+<li><p>[ ] roadTypes[3]</p></li>
+<li><p>[ ] roadTypes.3</p></li>
+<li><p>[x] roadTypes[2]</p></li>
+</ul>
+<blockquote>
+<h3 id="q25.-you-need-to-match-a-time-value-such-as-120032.-which-of-the-following-regular-expressions-would-work-for-your-code">Q25. You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] /[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/</p></li>
+<li><p>[x] /</p></li>
+<li><p>[ ] /[0-9]+:[0-9]+:[0-9]+/</p></li>
+<li><p>[ ] / : : /</p></li>
+</ul>
+<blockquote>
+<h3 id="q26.-which-object-method-returns-an-iterable-that-can-be-used-to-iterate-over-the-properties-of-an-object">Q26. Which Object method returns an iterable that can be used to iterate over the properties of an object?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Object.get()</p></li>
+<li><p>[ ] Object.loop()</p></li>
+<li><p>[ ] Object.each()</p></li>
+<li><p>[x] Object.keys()</p></li>
+</ul>
+<blockquote>
+<h3 id="q27.-what-is-one-difference-between-collections-created-with-map-and-collections-created-with-object">Q27. What is one difference between collections created with Map and collections created with Object?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] You can iterate over values in a Map in their insertion order.</p></li>
+<li><p>[x] You can count the records in a Map with a single method call.</p></li>
+<li><p>[ ] Keys in Maps can be strings.</p></li>
+<li><p>[ ] You can access values in a Map without iterating over the whole collection.</p></li>
+</ul>
+<blockquote>
+<h3 id="q28.-0-hi">Q28. 0 &amp;&amp; hi</h3>
+</blockquote>
+<ul>
+<li><p>[ ] false</p></li>
+<li><p>[ ] ReferenceError</p></li>
+<li><p>[ ] True</p></li>
+<li><p>[x] 0</p></li>
+</ul>
+<blockquote>
+<h3 id="q29.-which-statement-sets-the-person-constructor-as-the-parent-of-the-student-constructor-in-the-prototype-chain">Q29. Which statement sets the Person constructor as the parent of the Student constructor in the prototype chain?</h3>
+</blockquote>
+<ul>
+<li><p>[ ] Student.prototype = Person();</p></li>
+<li><p>[ ] Student.parent = Person;</p></li>
+<li><p>[x] Student.prototype = new Person();</p></li>
+<li><p>[ ] Student.prototype = Person;</p></li>
+</ul>
+<blockquote>
+<h3 id="q30.-which-statement-is-true-about-the-async-attribute-for-the-html-script-tag">Q30. Which statement is true about the “async” attribute for the HTML script tag?</h3>
+</blockquote>
+<ul>
+<li><p>[x] It can be used only for external JavaScript code.</p></li>
+<li><p>[ ] It can be used for both internal and external JavaScript code.</p></li>
+<li><p>[ ] It can be used only for internal JavaScript code.</p></li>
+<li><p>[ ] It can be used only for internal or external JavaScript code that exports a promise.</p></li>
+</ul>
+<blockquote>
+<h3 id="q31.-how-many-prototype-objects-are-in-the-chain-for-the-following-array">Q31. How many prototype objects are in the chain for the following array?</h3>
+</blockquote>
+<p><code>let arr = [];</code></p>
+<ul>
+<li><p>[ ] 3</p></li>
+<li><p>[ ] 2</p></li>
+<li><p>[x] 0</p></li>
+<li><p>[ ] 1</p></li>
+</ul>
+</body>
+</html>

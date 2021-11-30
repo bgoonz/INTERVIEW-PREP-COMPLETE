@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>w3d5-b</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="partner-b">Partner B</h1>
+<h2 id="weak-sauce-1-minute">Weak Sauce (1 minute)</h2>
+<p>What is your greatest weakness as a software engineer? What are you doing to overcome that weakness?</p>
+<h2 id="react-component-lifecycle-5-minutes">React Component Lifecycle (5 minutes)</h2>
+<p>What happens during the lifecycle of a React component?</p>
+<h3 id="solution">Solution</h3>
+<p>(taken from <a href="https://www.codementor.io/reactjs/tutorial/5-essential-reactjs-interview-questions">codementor</a>) #### High-level component lifecycle At the highest level, React components have lifecycle events that fall into three general categories:</p>
+<ol type="1">
+<li>Initialization</li>
+<li>State/Property Updates</li>
+<li>Destruction</li>
+</ol>
+<p>Every React component defines these events as a mechanism for managing its properties, state, and rendered output. Some of these events only happen once, others happen more frequently; understanding these three general categories should help you clearly visualize when certain logic needs to be applied.</p>
+<p>For example, a component may need to add event listeners to the DOM when it first mounts. However, it should probably remove those event listeners when the component unmounts from the DOM so that irrelevant processing does not occur.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> MyComponent <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co">// when the component is added to the DOM...</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="at">componentDidMount</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-4" title="4">        <span class="va">window</span>.<span class="at">addEventListener</span>(‘resize’<span class="op">,</span> <span class="kw">this</span>.<span class="at">onResizeHandler</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-6" title="6"></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="co">// when the component is removed from the DOM...</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="at">componentWillUnmount</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="va">window</span>.<span class="at">removeEventListener</span>(‘resize’<span class="op">,</span> <span class="kw">this</span>.<span class="at">onResizeHandler</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="at">onResizeHandler</span>() <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-13" title="13">        <span class="va">console</span>.<span class="at">log</span>(‘The window has been resized<span class="op">!</span>’)<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="op">}</span></a></code></pre></div>
+<h4 id="low-level-component-lifecycle">Low-level component lifecycle</h4>
+<figure>
+<img src="./images/component-lifecycle.png" alt="specific component lifecycles" /><figcaption>specific component lifecycles</figcaption>
+</figure>
+<p>Within these three general buckets exist a number of specific lifecycle hooks — essentially abstract methods — that can be utilized by any React component to more accurately manage updates. Understanding how and when these hooks fire is key to building stable components and will enable you to control the rendering process (improving performance).</p>
+<p>Take a look at the diagram above. The events under “Initialization” only happen when a component is first initialized or added to the DOM. Similarly, the events under “Destruction” only happen once (when the component is removed from the DOM). However, the events under “Update” happen every time the properties or state of the component change.</p>
+<p>For example, components will automatically re-render themselves any time their properties or state change. However, in some cases a component might not need to update — so preventing the component from re-rendering might improve the performance of our application.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> MyComponent <span class="kw">extends</span> <span class="va">React</span>.<span class="at">Component</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="co">// only re-render if the ID has changed!</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="at">shouldComponentUpdate</span>(nextProps<span class="op">,</span> nextState) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="cf">return</span> <span class="va">nextProps</span>.<span class="at">id</span> <span class="op">===</span> <span class="kw">this</span>.<span class="va">props</span>.<span class="at">id</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-7" title="7"><span class="op">}</span></a></code></pre></div>
+<p><strong>For more specific details</strong>, go through <a href="https://facebook.github.io/react/docs/react-component.html">React docs on component lifecycle</a></p>
+<h2 id="using-react-10-mins">Using React (10 mins)</h2>
+<p>Say that you have an index.html page, what do you you need to do to use React on your site?</p>
+<p>What do you need to do with React to interact with elements on the page and how does it do that?</p>
+<h3 id="solution-1">Solution</h3>
+<p>Part A: npm install the correct packages for React and Babel (why?), set up webpack and entry file, OR…use a CDN to just give you the libraries on your HTML page and write your code! <a href="https://medium.com/@to_pe/how-to-add-react-to-a-simple-html-file-a11511c0235f">How to add React to a simple HTML file</a></p>
+<p>Part B: From within a component class, this.refs gives you an object containing key:value pairs of refs and DOM nodes that you will have created within this class. When you create an HTML element in your code, you can pass it a ref prop.</p>
+<p><code>render: function() { return &lt;input placeholder='Email' ref='email' onFocus={this.onEmailFocus} /&gt;; },</code></p>
+<p><code>onEmailFocus: function() { this.refs.email.blur(); }</code></p>
+<p>You can also get references to the top level node returned by any component’s render function by calling</p>
+<p><code>ReactDOM.findDOMNode(componentInstance)</code></p>
+<p><a href="http://jamesknelson.com/react-js-by-example-interacting-with-the-dom/">React.js By Example: Interacting with the DOM</a></p>
+<h2 id="css-in-react">CSS in React</h2>
+<p>What are three ways to style React components? (10 minutes)</p>
+<h3 id="solution-inspired-by-this-codeburst-article">Solution (inspired by <a href="https://codeburst.io/4-four-ways-to-style-react-components-ac6f323da822">this Codeburst article</a>)</h3>
+<h4 id="import-a-stylesheet">Import a Stylesheet</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="im">import</span> React <span class="im">from</span> <span class="st">&#39;react&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="im">import</span> <span class="st">&#39;./Style.css&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"></a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="kw">const</span> SpaceCard <span class="op">=</span> () <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="op">&lt;</span>div className<span class="op">=</span><span class="st">&quot;SpaceCard&quot;</span><span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="op">&lt;</span>p className<span class="op">=</span><span class="st">&quot;Caption&quot;</span><span class="op">&gt;</span>The universe is under no obligation to make sense to <span class="va">you</span>.&lt;/p<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb3-7" title="7">  &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb3-8" title="8">)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="im">export</span> <span class="im">default</span> SpaceCard<span class="op">;</span></a></code></pre></div>
+<h5 id="style.css"><code>Style.css</code></h5>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1">.<span class="at">SpaceCard</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="dt">padding</span><span class="op">:</span> 40px<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-3" title="3">  <span class="dt">border</span><span class="op">:</span> 1px solid #<span class="dv">030303</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-4" title="4">  background<span class="op">-</span><span class="dt">color</span><span class="op">:</span> #<span class="dv">000</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"><span class="op">}</span></a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7">.<span class="at">Content</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-8" title="8">  font<span class="op">-</span><span class="dt">size</span><span class="op">:</span> 20px<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-9" title="9">  text<span class="op">-</span><span class="dt">align</span><span class="op">:</span> center<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="op">}</span></a></code></pre></div>
+<h4 id="inline-styling">Inline Styling</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="im">import</span> React <span class="im">from</span> <span class="st">&#39;react&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="kw">const</span> divStyle <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-4" title="4">  <span class="dt">padding</span><span class="op">:</span> 40px<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5">  <span class="dt">border</span><span class="op">:</span> 1px solid #<span class="dv">030303</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6">  <span class="dt">backgroundColor</span><span class="op">:</span> #<span class="dv">000</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7"><span class="op">};</span></a>
+<a class="sourceLine" id="cb5-8" title="8"></a>
+<a class="sourceLine" id="cb5-9" title="9"><span class="kw">const</span> pStyle <span class="op">=</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-10" title="10">  <span class="dt">fontSize</span><span class="op">:</span> 20px<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-11" title="11">  <span class="dt">textAlign</span><span class="op">:</span> center<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="op">};</span></a>
+<a class="sourceLine" id="cb5-13" title="13"></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="kw">const</span> SpaceCard <span class="op">=</span> () <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb5-15" title="15">  <span class="op">&lt;</span>div style<span class="op">={</span>divStyle<span class="op">}&gt;</span></a>
+<a class="sourceLine" id="cb5-16" title="16">    <span class="op">&lt;</span>p style<span class="op">={</span>pStyle<span class="op">}&gt;</span>That is one small step <span class="cf">for</span> man<span class="op">,</span> one giant leap <span class="cf">for</span> <span class="va">mankind</span>.&lt;/p<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-17" title="17">  &lt;/div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb5-18" title="18">)<span class="op">;</span></a></code></pre></div>
+<h4 id="styled-components">Styled-Components</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> React <span class="im">from</span> <span class="st">&#39;react&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="im">import</span> styled <span class="im">from</span> <span class="st">&#39;styled-components&#39;</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3"></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="kw">const</span> Div <span class="op">=</span> <span class="va">styled</span>.<span class="at">div</span><span class="vs">`</span></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="vs">  padding: 40px;</span></a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="vs">  border: 1px solid #030303;</span></a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="vs">  background-color: #000;</span></a>
+<a class="sourceLine" id="cb6-8" title="8"><span class="vs">  &amp;:hover {</span></a>
+<a class="sourceLine" id="cb6-9" title="9"><span class="vs">   background-color: #4286f4;</span></a>
+<a class="sourceLine" id="cb6-10" title="10"><span class="vs"> }</span></a>
+<a class="sourceLine" id="cb6-11" title="11"><span class="vs">`</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-12" title="12"></a>
+<a class="sourceLine" id="cb6-13" title="13"><span class="kw">const</span> Paragraph <span class="op">=</span> <span class="va">styled</span>.<span class="at">p</span><span class="vs">`</span></a>
+<a class="sourceLine" id="cb6-14" title="14"><span class="vs">  font-size: 20px;</span></a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="vs">  text-align: center;</span></a>
+<a class="sourceLine" id="cb6-16" title="16"><span class="vs">`</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-17" title="17"></a>
+<a class="sourceLine" id="cb6-18" title="18"><span class="kw">const</span> SpaceCard <span class="op">=</span> () <span class="kw">=&gt;</span> (</a>
+<a class="sourceLine" id="cb6-19" title="19">  <span class="op">&lt;</span>Div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-20" title="20">    <span class="op">&lt;</span>Paragraph<span class="op">&gt;</span>I would like to die on <span class="va">Mars</span>. <span class="at">Just</span> not on <span class="va">impact</span>.&lt;/Paragraph<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-21" title="21">  &lt;/Div<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb6-22" title="22">)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-23" title="23"></a>
+<a class="sourceLine" id="cb6-24" title="24"><span class="im">export</span> <span class="im">default</span> SpaceCard<span class="op">;</span></a></code></pre></div>
+<h2 id="rapid-fire-trivia-15-minutes">Rapid Fire Trivia (15 minutes)</h2>
+<h3 id="taken-from-this-repo">Taken from <a href="https://github.com/Pau1fitz/react-interview">this repo</a></h3>
+<h4 id="what-are-the-differences-between-a-class-component-and-functional-component">What are the differences between a class component and functional component?</h4>
+<p>Class components allows you to use additional features such as local state and lifecycle hooks. Also, to enable your component to have direct access to your store and thus holds state.</p>
+<p>When your component just receives props and renders them to the page, this is a ‘stateless component’, for which a pure function can be used. These are also called dumb components or presentational components.</p>
+<h4 id="what-is-the-difference-between-state-and-props">What is the difference between state and props?</h4>
+<p>The state is a data structure that starts with a default value when a Component mounts. It may be mutated across time, mostly as a result of user events.</p>
+<p>Props (short for properties) are a Component’s configuration. They are received from above and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data - callback functions may be passed in as props.</p>
+<h4 id="where-in-a-react-component-should-you-make-an-ajax-request">Where in a React component should you make an AJAX request?</h4>
+<p>componentDidMount is where an AJAX request should be made in a React component. This method will be executed when the component “mounts” (is added to the DOM) for the first time. This method is only executed once during the component’s life. Importantly, you can’t guarantee the AJAX request will have resolved before the component mounts. If it doesn’t, that would mean that you’d be trying to setState on an unmounted component, which would not work. Making your AJAX request in componentDidMount will guarantee that there’s a component to update.</p>
+<h4 id="what-are-controlled-components">What are controlled components?</h4>
+<p>In HTML, form elements such as <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> typically maintain their own state and update it based on user input. When a user submits a form the values from the aforementioned elements are sent with the form. With React it works differently. The component containing the form will keep track of the value of the input in it’s state and will re-render the component each time the callback function e.g. onChange is fired as the state will be updated. An input form element whose value is controlled by React in this way is called a “controlled component”.</p>
+<h4 id="what-is-a-higher-order-component">What is a higher order component?</h4>
+<p>A higher-order component is a function that takes a component and returns a new component. HOC’s allow you to reuse code, logic and bootstrap abstraction. The most common is probably Redux’s connect function. Beyond simply sharing utility libraries and simple composition, HOCs are the best way to share behavior between React Components. If you find yourself writing a lot of code in different places that does the same thing, you may be able to refactor that code into a reusable HOC.</p>
+<h4 id="when-rendering-a-list-what-is-a-key-and-what-is-its-purpose">When rendering a list what is a key and what is it’s purpose?</h4>
+<p>Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity. The best way to pick a key is to use a string that uniquely identifies a list item among its siblings. Most often you would use IDs from your data as keys. When you don’t have stable IDs for rendered items, you may use the item index as a key as a last resort. It is not recommend to use indexes for keys if the items can reorder, as that would be slow.</p>
+<h4 id="what-is-the-purpose-of-superprops">What is the purpose of super(props)?</h4>
+<p>A child class constructor cannot make use of this until super() has been called. Also, ES2015 class constructors have to call super() if they are subclasses. The reason for passing props to super() is to enable you to access this.props in the constructor.</p>
+<h4 id="what-is-jsx">What is JSX?</h4>
+<p>JSX is a syntax extension to JavaScript and comes with the full power of JavaScript. JSX produces React “elements”. You can embed any JavaScript expression in JSX by wrapping it in curly braces. After compilation, JSX expressions become regular JavaScript objects. This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions:</p>
+<h4 id="what-is-a-reducer">What is a reducer?</h4>
+<p>A reducer is simply a pure function that takes the previous state and an action, and returns the next state.</p>
+<h4 id="what-is-redux-thunk-used-for">What is Redux Thunk used for?</h4>
+<p>Redux thunk is middleware that allows you to write action creators that return a function instead of an action. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows you to handle the asyncronous dispatching of actions.</p>
+<h4 id="what-is-a-pure-function">What is a pure function?</h4>
+<p>A pure function is a function that doesn’t depend on and doesn’t modify the states of variables out of its scope. Essentially, this means that a pure function will always return the same result given same parameters.</p>
+</body>
+</html>

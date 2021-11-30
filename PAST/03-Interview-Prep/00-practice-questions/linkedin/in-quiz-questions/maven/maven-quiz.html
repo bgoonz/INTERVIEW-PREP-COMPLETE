@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>maven-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="maven-assessment">Maven Assessment</h2>
+<h4 id="q1.-what-element-in-the-pom.xml-file-allows-you-to-provide-values-that-can-be-reused-in-other-elements-of-the-pom.xml">Q1. What element in the pom.xml file allows you to provide values that can be reused in other elements of the pom.xml?</h4>
+<ul>
+<li>[ ] Plugins</li>
+<li>[ ] Build</li>
+<li>[ ] Properties</li>
+<li>[x] Parent</li>
+</ul>
+<h4 id="q2.-if-you-wish-to-build-and-package-your-artifact-using-the-maven-package-goal-but-dont-want-to-execute-the-unit-tests-which-environment-variable-and-value-would-you-use">Q2. If you wish to build and package your artifact using the Maven package goal but don’t want to execute the unit tests, which environment variable and value would you use?</h4>
+<ul>
+<li>[ ] <code>maven.test.ignore=TRUE</code></li>
+<li>[ ] <code>maven.test.run=FALSE</code></li>
+<li>[x] <code>maven.test.skip=TRUE</code></li>
+<li>[ ] <code>maven.verify.execute=FALSE</code></li>
+</ul>
+<h4 id="q3.-when-building-a-maven-ear-project-and-specifying-the-configuration-of-which-projects-to-include-what-is-the-element-in-the-plugin-configuration-that-contains-enterprise-java-bean-projects">Q3. When building a Maven EAR project and specifying the configuration of which projects to include, what is the element in the plugin configuration that contains Enterprise Java Bean projects?</h4>
+<ul>
+<li>[ ] modules/webModule</li>
+<li>[x] modules/ejbModule</li>
+<li>[ ] modules/enterpriseModules</li>
+<li>[ ] modules/services</li>
+</ul>
+<h4 id="q4.-the-goal-that-is-executed-to-generate-and-deploy-a-documentation-website-is-___.">Q4. The goal that is executed to generate and deploy a documentation website is ___.</h4>
+<ul>
+<li>[ ] deliver</li>
+<li>[x] site</li>
+<li>[ ] doc</li>
+<li>[ ] deploy</li>
+</ul>
+<h4 id="q5.-what-does-the-mvn--version-command-do">Q5. What does the <code>mvn -version</code> command do?</h4>
+<ul>
+<li>[ ] It builds your Maven project.</li>
+<li>[ ] It installs Maven on your computer.</li>
+<li>[ ] It updates Maven to the latest version.</li>
+<li>[x] It print out your installed version of Maven.</li>
+</ul>
+<h4 id="q6.-there-are-several-properties-available-for-use-in-a-pom.xml-file-that-refer-to-details-of-the-project-such-as-groupid-and-version.-what-do-all-of-these-properties-start-with">Q6. There are several properties available for use in a pom.xml file that refer to details of the project, such as groupId and version. What do all of these properties start with?</h4>
+<ul>
+<li>[ ] pom</li>
+<li>[ ] maven</li>
+<li>[ ] jar</li>
+<li>[x] project</li>
+</ul>
+<h4 id="q7.-what-directory-structure-contains-the-source-code-of-your-artifact">Q7. What directory structure contains the source code of your artifact?</h4>
+<ul>
+<li>[ ] src/code</li>
+<li>[ ] src/test/java</li>
+<li>[x] src/main/java</li>
+<li>[ ] src/main/resources</li>
+</ul>
+<h4 id="q8.-which-command-is-used-to-run-the-clean-lifecyle-followed-by-verify-install-and-package-with-maven">Q8. Which command is used to run the clean lifecyle followed by verify, install, and package with Maven?</h4>
+<ul>
+<li>[ ] <code>mvn clean istall package</code></li>
+<li>[x] <code>mvn package</code></li>
+<li>[ ] <code>mvn clean install</code></li>
+<li>[ ] Option 4</li>
+</ul>
+<p><code>shell script mvn clean mvn package mvn verify mvn install</code></p>
+<h4 id="q9.-which-goal-would-you-use-with-the-dependency-plugin-to-determine-which-included-dependencies-are-not-used-as-well-as-those-you-are-using-that-you-have-not-defined">Q9. Which goal would you use with the Dependency plugin to determine which included dependencies are not used, as well as those you are using that you have not defined?</h4>
+<ul>
+<li>[ ] <code>dependency:tree</code></li>
+<li>[ ] <code>dependency:properties</code></li>
+<li>[ ] <code>dependency:evaluate</code></li>
+<li>[x] <code>dependency:analyze</code></li>
+</ul>
+<h4 id="q10.-in-a-multimodule-project-if-you-have-a-plugin-bound-to-a-phase-in-the-parent-it-will-be-bound-to-the-same-phase-in-the-module.-what-strategy-could-you-employ-to-prevent-the-plugin-from-executing-in-the-module">Q10. In a multimodule project, if you have a plugin bound to a phase in the parent, it will be bound to the same phase in the module. What strategy could you employ to prevent the plugin from executing in the module?</h4>
+<ul>
+<li>[ ] In the excluded element of the build section of the POM, list the plugin you do not want to run.</li>
+<li>[ ] Set the phase in the module to none.</li>
+<li>[x] Set a value in the configuration of the plugin in the module to be excluded like this: TRUE.</li>
+<li>[ ] Do not specify the plugin in the module.</li>
+</ul>
+<h4 id="q11.-when-building-a-web-application-with-a-war-type-project-which-project-directory-should-contain-the-style-sheet-javascript-and-other-static-file">Q11. When building a web application with a WAR type project, which project directory should contain the style sheet, JavaScript, and other static file?</h4>
+<ul>
+<li>[ ] src/main/static</li>
+<li>[ ] src/main/web</li>
+<li>[ ] src/main/resources</li>
+<li>[x] src/main/webapp</li>
+</ul>
+<h4 id="q12.-when-performing-a-build-which-maven-plugin-will-allow-you-to-set-the-specific-version-of-the-artifact-to-be-built-without-manual-modifying-the-pom.xml-file">Q12. When performing a build, which Maven plugin will allow you to set the specific version of the artifact to be built without manual modifying the pom.xml file?</h4>
+<ul>
+<li>[ ] Compiler</li>
+<li>[ ] Surefire</li>
+<li>[x] Versions</li>
+<li>[ ] Javadoc</li>
+</ul>
+<h4 id="q13.-when-building-a-maven-archetype-what-is-the-filepath-and-file-of-the-archetype-descriptor-that-specifies-how-to-lay-out-the-prototype-files">Q13. When building a Maven Archetype, what is the filepath and file of the archetype descriptor that specifies how to lay out the prototype files?</h4>
+<ul>
+<li>[ ] <code>src/main/template/descriptor.xml</code></li>
+<li>[x] <code>src/main/resources/META-INF/maven/archetype-descriptor.xml</code></li>
+<li>[ ] <code>src/main/archetype/descriptor.xml</code></li>
+<li>[ ] <code>src/main/resources/META-INF/maven/maven-archetype.xml</code></li>
+</ul>
+<h4 id="q14.-what-is-a-valid-packaging-type-for-a-maven-project">Q14. What is a valid packaging type for a Maven project?</h4>
+<ul>
+<li>[ ] WAR</li>
+<li>[x] all of these answers</li>
+<li>[ ] POM</li>
+<li>[ ] EAR</li>
+</ul>
+<h4 id="q15.-when-two-dependencies-of-your-maven-project-introduce-the-same-transitive-dependency-with-different-versions-which-ones-will-be-included-in-the-dependency-list-for-your-project">Q15. When two dependencies of your Maven project introduce the same transitive dependency with different versions, which one(s) will be included in the dependency list for your project?</h4>
+<ul>
+<li>[ ] the dependency with the higher version</li>
+<li>[ ] the transitive dependency that comes from the dependency listed first in the pom.xml file</li>
+<li>[ ] the transitive dependency that comes from the dependency listed last in the pom.xml file</li>
+<li>[x] the transitive dependency version of the artifact that is closest to your project</li>
+</ul>
+<h4 id="q16.-many-organizations-set-up-local-mirrors-to-the-maven-central-repository.-in-order-to-leverage-your-companys-maven-repository-as-a-proxy-for-the-maven-central-repository-which-element-should-you-put-into-the-settings.xml-file">Q16. Many organizations set up local mirrors to the Maven central repository. In order to leverage your company’s Maven repository as a proxy for the Maven central repository, which element should you put into the settings.xml file?</h4>
+<ul>
+<li>[ ] Replacements</li>
+<li>[ ] Proxies</li>
+<li>[ ] Mirrors</li>
+<li>[x] LocalRepositories</li>
+</ul>
+<h4 id="q17.-which-maven-plugin-would-you-leverage-to-specify-the-version-of-the-compiler-to-target-as-well-as-the-source-level-of-the-language">Q17. Which Maven plugin would you leverage to specify the version of the compiler to target as well as the source level of the language?</h4>
+<ul>
+<li>[ ] Versions</li>
+<li>[ ] Surefire</li>
+<li>[ ] Target</li>
+<li>[x] Compiler</li>
+</ul>
+<h4 id="q18.-if-your-machine-is-behind-a-proxy-where-should-you-specify-the-proxy-server-settings-in-order-for-maven-to-access-remote-resources">Q18. If your machine is behind a proxy, where should you specify the proxy server settings in order for Maven to access remote resources?</h4>
+<ul>
+<li>[ ] <code>.m2/proxy.txt</code></li>
+<li>[ ] <code>pom.xml</code></li>
+<li>[ ] <code>proxy.xml</code></li>
+<li>[x] <code>settings.xml</code></li>
+</ul>
+<h4 id="q19.-what-environment-variable-can-you-alter-to-increase-the-memory-maven-uses">Q19. What environment variable can you alter to increase the memory Maven uses?</h4>
+<ul>
+<li>[x] MAVEN_OPTS</li>
+<li>[ ] M2_HOME</li>
+<li>[ ] MAVEN_MEMORY</li>
+<li>[ ] PATH</li>
+</ul>
+<h4 id="q20.-how-can-you-use-maven-to-run-unit-tests-in-parallel">Q20. How can you use Maven to run unit tests in parallel?</h4>
+<ul>
+<li>[ ] It is not possible to do this.</li>
+<li>[ ] Implement the JUnit dependency and add a configuration that sets the parallel element to true.</li>
+<li>[x] Specify the Maven Surefire Plugin and add a configuration that sets the parallel element to true.</li>
+<li>[ ] Move each test suite into a separate submodule.</li>
+</ul>
+<h4 id="q21.-what-will-the-mvn-dependencytree-command-do">Q21. What will the mvn dependency:tree command do?</h4>
+<ul>
+<li>[ ] Verify the dependencies defined in the POM file.</li>
+<li>[x] Print out a report of your project’s dependencies in a tree format.</li>
+<li>[ ] Download all the transitive dependencies.</li>
+<li>[ ] Prune unused dependencies from your dependency tree.</li>
+</ul>
+<h4 id="q22.-how-do-you-run-a-single-unit-test-in-maven">Q22. How do you run a single unit test in Maven?</h4>
+<ul>
+<li>[ ] Maven runs only a single unit test by default.</li>
+<li>[x] Use the -Dtest= flag and pass in the name of the test.</li>
+<li>[ ] Use a plugin that can specify the test you want to run.</li>
+<li>[ ] It is not possible to do this.</li>
+</ul>
+<h4 id="q23.-how-can-maven-profiles-be-triggered">Q23. How can Maven profiles be triggered?</h4>
+<ul>
+<li>[ ] by explicitly calling the profiles using the -P flag</li>
+<li>[ ] based on environment variables</li>
+<li>[x] all of these answers</li>
+<li>[ ] through Maven settings</li>
+</ul>
+<h4 id="q24.-why-will-an-mvn-install-command-not-deploy-any-artifacts-to-a-remote-repository">Q24. Why will an mvn install command not deploy any artifacts to a remote repository?</h4>
+<ul>
+<li>[ ] The name of the artifact must also be specified in the command.</li>
+<li>[ ] The name of the remote repository must also be specified in the command.</li>
+<li>[ ] Deploying artifacts to a remote repository must be done manually.</li>
+<li>[x] The deploy phase of the default Maven lifecycle comes after the install phase.</li>
+</ul>
+<h4 id="q25.-suppose-you-want-to-include-a-properties-file-in-the-jar-generated-by-your-maven-build.-what-directory-should-you-put-it-in">Q25. Suppose you want to include a properties file in the JAR generated by your Maven build. What directory should you put it in?</h4>
+<ul>
+<li>[x] <code>${basedir}/src/main/resources</code></li>
+<li>[ ] <code>${basedir}/src/main/java/resources</code></li>
+<li>[ ] <code>${basedir}/resources</code></li>
+<li>[ ] <code>${basedir}/src/main/properties</code></li>
+</ul>
+<h4 id="q26.-which-structure-in-a-settings.xml-file-allows-for-flexing-properties-based-on-some-value-for-the-runtime-of-maven">Q26. Which structure in a settings.xml file allows for flexing properties based on some value for the runtime of Maven?</h4>
+<ul>
+<li>[ ] Environment</li>
+<li>[ ] Properties</li>
+<li>[ ] Switch</li>
+<li>[x] Profiles</li>
+</ul>
+<h4 id="q27.-what-does-it-mean-if-the-scope-of-a-dependency-is-runtime">Q27. What does it mean if the scope of a dependency is runtime?</h4>
+<ul>
+<li>[x] The dependency is not required to compile the project, but is needed at runtime.</li>
+<li>[ ] The dependency is needed at compile time and at runtime, and must be packaged for distribution.</li>
+<li>[ ] The dependency is needed at compile time and at runtime, but does NOT need to be packaged for distribution.</li>
+<li>[ ] The dependency is required for compilation.</li>
+</ul>
+<h4 id="q28.-if-you-want-to-utilitze-a-locally-developed-jar-file-in-another-project-and-that-jar-file-has-not-been-deployed-to-either-the-maven-central-repository-or-your-own-locally-sourced-mirror-repository-what-maven-goal-do-you-need-to-execute-on-the-locally-developed-jar-project">Q28. If you want to utilitze a locally developed JAR file in another project and that JAR file has not been deployed to either the Maven central repository or your own locally sourced mirror repository, what Maven goal do you need to execute on the locally developed JAR project?</h4>
+<ul>
+<li>[ ] package</li>
+<li>[x] install</li>
+<li>[ ] compile</li>
+<li>[ ] test</li>
+</ul>
+<h4 id="q29.-what-is-the-default-packaging-type-for-a-maven-project-build-artifact">Q29. What is the default packaging type for a Maven project build artifact?</h4>
+<ul>
+<li>[ ] WAR</li>
+<li>[x] JAR</li>
+<li>[ ] EAR</li>
+<li>[ ] POM</li>
+</ul>
+<h4 id="q30.-what-does-the-following-command-do">Q30. What does the following command do?</h4>
+<blockquote>
+<p>mvn archetype:generate<br />
+-DgroupID=sample-maven-project<br />
+-DartifactID=com.palmer.bethan.sample<br />
+-Dversion=1.0.0<br />
+-DinteractiveMode=false</p>
+</blockquote>
+<ul>
+<li>[ ] It does nothing since no archetype has been specified</li>
+<li>[ ] It generates a new Maven archetype</li>
+<li>[x] It generates a new Maven projet using the default Maven archetype</li>
+<li>[ ] It cleans and installs the sample-maven-project project</li>
+</ul>
+<h4 id="q31.-when-defining-a-dependency-that-is-included-with-the-runtime-container-what-scope-do-you-use-in-the-pom.xml">Q31. When defining a dependency that is included with the runtime container, what scope do you use in the pom.xml?</h4>
+<ul>
+<li>[x] provided</li>
+<li>[ ] compile</li>
+<li>[ ] execution</li>
+<li>[ ] runtime</li>
+</ul>
+<h4 id="q32.-what-argument-do-you-pass-to-maven-in-order-to-update-snapshot-from-the-remote-repository">Q32. What argument do you pass to Maven in order to update SNAPSHOT from the remote repository?</h4>
+<ul>
+<li>[x] -U</li>
+<li>[ ] -J</li>
+<li>[ ] -X</li>
+<li>[ ] -S</li>
+</ul>
+<h4 id="q33.-when-performing-a-release-using-the-maven-release-plugin-which-environment-variable-for-batch-mode-is-used-to-define-the-stamp-placed-in-scm-to-indicate-the-state-of-the-artifact-for-the-actual-release">Q33. When performing a release using the Maven release plugin, which environment variable for batch mode is used to define the stamp placed in SCM to indicate the state of the artifact for the actual release?</h4>
+<p>-not sure for the answer- - [ ] tag - [ ] scmMark - [ ] developmentVersion - [x] releaseVersion</p>
+<h4 id="q34.-these-are-two-general-uses-of-plugins.-the-first-is-build-and-the-second-is-_____">Q34. These are two general uses of plugins. The first is build and the second is _____</h4>
+<ul>
+<li>[x] reporting</li>
+<li>[ ] servers</li>
+<li>[ ] dependencies</li>
+<li>[ ] distribution management</li>
+</ul>
+</body>
+</html>

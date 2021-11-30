@@ -1,0 +1,1692 @@
+Date: Mon, 30 Nov 2020 13:22:24 +0000 (UTC)
+Message-ID: <1139461625.5.1606742544848@b55f0f78acfc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_777955624.1606742544847"
+
+------=_Part_4_777955624.1606742544847
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Fifo-Lifo Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Fifo-Lifo Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>AreaUnderHistogram</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int maxAreaUnderHistogram(int[] heights)
+{
+/*
+             _
+   6       _| |
+   5      | | |
+   4      | | |  _
+   3     _| | |_| |
+   2   _| | | | | |
+   1  | | | | | | |
+    ----------------------------------------
+*/
+    if(heights =3D=3D null || heights.length =3D=3D 0)
+    {
+        return 0;
+    }
+    Stack&lt;Integer&gt; stack =3D new Stack&lt;&gt;();
+    int max =3D 0, i =3D 0;
+    while(i &lt; heights.length)
+    {
+        //  push increasing bar index to the stack
+        if(stack.isEmpty() || heights[stack.peek()] &lt; heights[i])
+        {
+            stack.push(i++);
+        }
+        else
+        {
+            // compute intermediate area
+            int lastHighestIndex =3D stack.pop();
+            int h =3D heights[lastHighestIndex];
+            int w =3D stack.empty() ? 1 : i - stack.peek() - 1;
+            max =3D Math.max(max, w * h);
+        }
+    }
+    while(!stack.isEmpty())
+    {
+        int lastHighestIndex =3D stack.pop();
+        int h =3D heights[lastHighestIndex];
+        int w =3D stack.empty() ? 1 : i - stack.peek() - 1;
+        max =3D Math.max(max, w + h);
+    }
+    return max;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D maxAreaUnderHistogram(new int[] {2, 1, 5, 6, 2, 3}) =
+=3D=3D 10;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>BalancedParens</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean balancedParens(String s)
+{
+    Map&lt;Character,Character&gt; map =3D new HashMap&lt;Character,Charact=
+er&gt;() {{
+        put('[', ']');
+        put('{', '}');
+        put('(', ')');
+        put('&lt;', '&gt;');
+    }};
+    Set&lt;Character&gt; closedParens =3D new HashSet&lt;&gt;(map.values())=
+;
+    Stack&lt;Character&gt; stack =3D new Stack&lt;&gt;();
+    for(char c : s.toCharArray())
+    {
+        if(map.containsKey(c))
+        {
+            stack.push(c);
+        }
+        if(closedParens.contains(c))
+        {
+            if(stack.isEmpty())
+            {
+                return false;
+            }
+            if(map.get(stack.pop()) !=3D c)
+            {
+                return false;
+            }
+        }
+    }
+    return stack.isEmpty() ? true : false;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String balanced =3D "[he[ll(0) how]{are&lt;(you)&gt;}]", unbalanced =3D=
+ "[he[ll(0) how]{are&lt;(you&gt;)}]";
+    boolean check =3D balancedParens(balanced) &amp;&amp; !balancedParens(u=
+nbalanced);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>CanConnect</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean canConnect(String[][] paths, String from, String to)
+{
+    /*
+   Consider 2D array as Source, Destination. For example:
+         {"A", "B"},
+         {"B", "C"},
+         {"B", "D"},
+         {"B", "E"},
+         {"C", "A"},
+         {"E", "A"}
+    Construct map:
+     A -&gt; B
+     B -&gt; C, D, E
+     C -&gt; A
+     E -&gt; A
+    */
+    Map&lt;String, Set&lt;String&gt;&gt; map =3D Arrays.stream(paths).colle=
+ct(
+            HashMap::new,
+            (m, i) -&gt; m.computeIfAbsent(i[0], x -&gt; new HashSet&lt;&gt=
+;()).add(i[1]),
+            HashMap::putAll);
+    Set&lt;String&gt; visited =3D new HashSet&lt;&gt;();
+    Queue&lt;String&gt; queue =3D new LinkedList&lt;&gt;();
+    queue.offer(from);
+    while(!queue.isEmpty())
+    {
+        String s =3D queue.poll();
+        Set&lt;String&gt; destinations =3D map.get(s);
+        if (destinations !=3D null)
+        {
+            if (destinations.contains(to))
+            {
+                return true;
+            }
+            destinations.removeAll(visited);
+            visited.addAll(destinations);
+            queue.addAll(destinations);
+        }
+    }
+    return false;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+     String[][] input =3D {
+             {"A", "B"},
+             {"B", "C"},
+             {"B", "D"},
+             {"B", "E"},
+             {"C", "A"},
+             {"E", "A"}
+     };
+     boolean check =3D canConnect(input, "A", "C") &amp;&amp;=20
+             canConnect(input, "E", "C") &amp;&amp;=20
+             !canConnect(input, "D", "C");
+     if(!check)
+     {
+         return false;
+     }
+     return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 966.0px;">
+<col style=3D"width: 576.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Celebrity</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">In a pa=
+rty of N people, only one person is known to everyone.
+Such a person may be present in the party, if yes, he doesn't know anyone i=
+n the party.
+We can only ask questions like "does A know B?". Find the stranger (celebri=
+ty) in minimum number of questions.
+1.  If A knows B, then A can=E2=80=99t be celebrity. Discard A, and B may b=
+e celebrity.
+2.  If A doesn't know B, then B can=E2=80=99t be celebrity. Discard B, and =
+A may be celebrity.
+3.  Repeat above two steps till we left with only one person.
+Use 2D matrix to represent people at the party:
+//  For example, person at row index 2 is a celebrity
+        0, 0, 1, 0
+        0, 0, 1, 0
+        0, 0, 0, 0
+        0, 0, 1, 0</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">private=
+ static boolean knows(int a, int b, int[][] data)
+{
+    return data[a][b] =3D=3D 1;
+}
+static int findCelebrity(int[][] data)
+{
+    Stack&lt;Integer&gt; stack =3D new Stack&lt;&gt;();
+    for(int i =3D 0; i &lt; data.length; ++i)
+    {
+        stack.push(i);
+    }
+    while(stack.size() &gt; 1)
+    {
+        int a =3D stack.pop();
+        int b =3D stack.pop();
+        if(knows(a, b, data)) // a can't be a celerity
+        {
+            stack.push(b);
+        }
+        else    //  b can't be a celebrity
+        {
+            stack.push(a);
+        }
+    }
+    int lastPerson =3D stack.pop();
+    for(int i =3D 0; i &lt; data.length; ++i)
+    {
+        if(i !=3D lastPerson &amp;&amp; (knows(lastPerson, i, data) || !kno=
+ws(i, lastPerson, data)))
+        {
+            return -1;
+        }
+    }
+    return lastPerson;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[][] data =3D {
+            {0, 0, 1, 0},
+            {0, 0, 1, 0},
+            {0, 0, 0, 0},
+            {0, 0, 1, 0}
+    };
+    boolean check =3D findCelebrity(data) =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>KnightShortestWalk</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class KnightShortestWalk
+{
+    private static int[] X_MOVES =3D {2, 1,  1,  2, -2, -1, -1, -2};
+    private static int[] Y_MOVES =3D {1, 2, -2, -1,  1,  2, -2, -1};
+    private static int SIZE =3D 8;
+
+    private static boolean isValid(int x, int y)
+    {
+        return x &gt;=3D 0 &amp;&amp; x &lt; SIZE &amp;&amp; y &gt;=3D 0 &a=
+mp;&amp; y &lt; SIZE;
+    }
+
+    private static boolean isValid(int[] pt)
+    {
+        return isValid(pt[0], pt[1]);
+    }
+
+    static int shortestWalk(int[] start, int[] target)
+    {
+        boolean[][] visited =3D new boolean[SIZE][SIZE];
+        Queue&lt;DistancePoint&gt; queue =3D new LinkedList&lt;&gt;();
+        if(isValid(start))
+        {
+            visited[start[0]][start[1]] =3D true;
+        }
+        else
+        {
+            return -1;
+        }
+
+        queue.offer(new DistancePoint(start[0], start[1], 0));
+        while(!queue.isEmpty())
+        {
+            DistancePoint lastPoint =3D queue.poll();
+            if(lastPoint.x =3D=3D target[0] &amp;&amp; lastPoint.y =3D=3D t=
+arget[1])
+            {
+                return lastPoint.distance;
+            }
+
+            for(int i =3D 0; i &lt; SIZE; ++i)
+            {
+                int nextX =3D lastPoint.x + X_MOVES[i];
+                int nextY =3D lastPoint.y + Y_MOVES[i];
+                if(isValid(nextX, nextY) &amp;&amp; !visited[nextX][nextY])
+                {
+                    visited[nextX][nextX] =3D true;
+                    queue.offer(new DistancePoint(nextX, nextY, lastPoint.d=
+istance + 1));
+                }
+            }
+        }
+        return -1;
+    }
+
+    static class DistancePoint
+    {
+        int x, y, distance;
+        DistancePoint(int x, int y, int distance)
+        {
+            this.x =3D x;
+            this.y =3D y;
+            this.distance =3D distance;
+        }
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D shortestWalk(new int[] {0, 0}, new int[] {4, 5}) =3D=
+=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Maze</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+private boolean isValid(int x, int y, int[][] maze)
+{
+    return x &gt;=3D 0 &amp;&amp; x &lt; maze.length &amp;&amp; y &gt;=3D 0=
+ &amp;&amp; y &lt; maze[0].length &amp;&amp; maze[x][y] =3D=3D 1;
+}
+
+
+static private boolean isValid(int[] pt, int[][] maze)
+{
+    return isValid(pt[0], pt[1], maze);
+}
+
+
+static boolean solve(int[][] maze)
+{
+    Queue&lt;int[]&gt; queue =3D new LinkedList&lt;&gt;();
+    queue.offer(maze[0]);
+    while(!queue.isEmpty())
+    {
+        int[] pt =3D queue.poll();
+        if(pt[0] =3D=3D maze.length - 1 &amp;&amp; pt[1] =3D=3D maze[0].len=
+gth - 1)
+        {
+            return true;
+        }
+        int[] newPt1 =3D new int[] {pt[0] + 1, pt[1]};
+        int[] newPt2 =3D new int[] {pt[0], pt[1] + 1};
+        if(isValid(newPt1, maze))
+        {
+            queue.offer(newPt1);
+        }
+        if(isValid(newPt2, maze))
+        {
+            queue.offer(newPt2);
+        }
+    }
+    return false;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[][] data1 =3D new int [][] {
+            {1, 1, 0, 1},
+            {0, 1, 0, 0},
+            {0, 1, 1, 0},
+            {0, 0, 1, 1},
+            {0, 0, 0, 1}
+    };
+    boolean check =3D solve(data1);
+    if(!check)
+    {
+        return false;
+    }
+    int[][] data2 =3D new int [][] {
+            {1, 1, 0, 1},
+            {0, 1, 0, 0},
+            {0, 1, 0, 0},
+            {0, 0, 1, 1},
+            {0, 0, 0, 1}
+    };
+    check =3D !solve(data2);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 878.0px;">
+<col style=3D"width: 664.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MergeIntervals</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;int[]&gt; mergeIntervals(int[][] intervals)
+{
+    Arrays.sort(intervals, Comparator.comparingInt((int[] a) -&gt; a[0]));
+    Stack&lt;int[]&gt; stack =3D new Stack&lt;&gt;();
+    stack.push(intervals[0]);
+    for(int i =3D 1; i &lt; intervals.length; ++i)
+    {
+        //  If start time of current interval is &lt;=3D to end time of pri=
+or interval - merge
+        if(intervals[i][0] &lt;=3D stack.peek()[1])
+        {
+            //  If end time of current interval is &gt; than end time of th=
+e prior interval,
+            // modify prior interval
+            if(intervals[i][1] &gt; stack.peek()[1])
+            {
+                int[] item =3D stack.pop();
+                item[1] =3D intervals[i][1];
+                stack.push(item);
+            }
+        }
+        else
+        {
+            stack.push(intervals[i]);
+        }
+    }
+    return stack.stream().collect(Collectors.toList());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int areaOfOverlappingRectangle(int[][] r1, int[][] r2)
+{
+    int[][] xIntervals =3D new int[][] {
+            {r1[0][0], r1[1][0]},
+            {r2[0][0], r2[1][0]}
+    };
+    int[][] yIntervals =3D new int[][] {
+            {r1[0][1], r1[1][1]},
+            {r2[0][1], r2[1][1]}
+    };
+    Arrays.sort(xIntervals, Comparator.comparingInt((int[] a) -&gt; a[0])
+            .thenComparing((int[] a) -&gt; a[1]));
+    //  Both intervals must overlap
+    if(!(xIntervals[0][0] &lt; xIntervals[1][0] || yIntervals[0][1] &lt; yI=
+ntervals[1][1]))
+    {
+        return 0;
+    }
+    int w =3D xIntervals[0][1] - xIntervals[1][0];
+    int h =3D yIntervals[0][1] - yIntervals[1][0];
+    return w * h;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int [][] intervals =3D {
+            {8,10},
+            {1,3},
+            {15,18},
+            {7,8},
+            {4,5},
+            {2,6}
+    };
+    List&lt;int[]&gt; result =3D mergeIntervals(intervals);
+    boolean check =3D Arrays.equals(new int[] {1,6}, result.get(0)) &amp;&a=
+mp;
+                    Arrays.equals(new int[] {7,10}, result.get(1)) &amp;&am=
+p;
+                    Arrays.equals(new int[] {15,18}, result.get(2));
+    if(!check)
+    {
+        return false;
+    }
+    int[][] r1 =3D {
+            {1, 1},
+            {4, 4},
+    };
+    int [][] r2 =3D {
+            {3, 3},
+            {6, 5},
+    };
+    check =3D areaOfOverlappingRectangle(r1, r2) =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MinStack</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class MinStack extends Stack&lt;Integer&gt;
+{
+    private Stack&lt;Integer&gt; minStack =3D new Stack&lt;&gt;();
+
+    @Override
+    public Integer push(Integer item)
+    {
+        if(item &lt; min())
+        {
+            minStack.push(item);
+        }
+        return super.push(item);
+    }
+
+    @Override
+    public synchronized Integer pop()
+    {
+        int val =3D super.pop();
+        if(val =3D=3D minStack.peek())
+        {
+            minStack.pop();
+        }
+        return val;
+    }
+
+    public int min()
+    {
+        if(minStack.isEmpty())
+        {
+            return Integer.MAX_VALUE;
+        }
+        return minStack.peek();
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    MinStack minStack =3D new MinStack();
+    minStack.push(3); minStack.push(5); minStack.push(2);
+    boolean check =3D minStack.min() =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    minStack.pop();
+    check =3D minStack.min() =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 944.0px;">
+<col style=3D"width: 598.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>MouseAndCheese</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class MouseAndCheese
+{
+    //  1 denotes valid move, 0 denotes invalid move, 9 denotes cheese
+
+    private static int[] X_MOVES =3D {-1, 0, 0,  1};
+    private static int[] Y_MOVES =3D { 0, 1, -1, 0};
+    private static int[][] maze;
+
+    private static boolean isValid(int x, int y)
+    {
+        return x &gt;=3D 0 &amp;&amp; x &lt; maze.length &amp;&amp; y &gt;=
+=3D 0 &amp;&amp; y &lt; maze[0].length &amp;&amp; (maze[x][y] =3D=3D 1 || m=
+aze[x][y] =3D=3D 9);
+    }
+
+    static int distance(int[][] maze, int[] start)
+    {
+        MouseAndCheese.maze =3D maze;
+
+        boolean[][] visited =3D new boolean[maze.length][maze[0].length];
+        visited[start[0]][start[1]] =3D true;
+
+        Queue&lt;DistancePoint&gt; queue =3D new LinkedList&lt;&gt;();
+        queue.offer(new DistancePoint(start[0], start[1], 0));
+        while(!queue.isEmpty())
+        {
+            DistancePoint lastPoint =3D queue.poll();
+            if(maze[lastPoint.x][lastPoint.y] =3D=3D 9)
+            {
+                return lastPoint.distance;
+            }
+
+            for(int i =3D 0; i &lt; X_MOVES.length; ++i)
+            {
+                int nextX =3D lastPoint.x + X_MOVES[i];
+                int nextY =3D lastPoint.y + Y_MOVES[i];
+
+                if(isValid(nextX, nextY) &amp;&amp; !visited[nextX][nextY])
+                {
+                    visited[nextX][nextY] =3D true;
+                    queue.offer(new DistancePoint(nextX, nextY, lastPoint.d=
+istance + 1));
+                }
+            }
+        }
+        return -1;
+    }
+
+    static class DistancePoint
+    {
+        int x, y, distance;
+        DistancePoint(int x, int y, int distance)
+        {
+            this.x =3D x;
+            this.y =3D y;
+            this.distance =3D distance;
+        }
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int maze[][] =3D {
+            {1, 0, 1, 1, 1, 1, 1, 1, 1, 1 },
+            {1, 0, 1, 0, 1, 1, 1, 0, 1, 1 },
+            {1, 1, 1, 0, 1, 1, 0, 1, 1, 1 },
+            {0, 0, 0, 0, 9, 0, 0, 1, 0, 1 },
+            {1, 1, 1, 0, 1, 1, 1, 1, 1, 0 },
+            {1, 0, 1, 1, 1, 1, 0, 1, 0, 0 },
+            {1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
+            {1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+            {1, 1, 1, 0, 0, 1, 1, 1, 0, 1 }};
+    boolean check =3D distance(maze, new int[] {0, 0}) =3D=3D 11;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Palindrome</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean isPalindromeString(String s)
+{
+    Stack&lt;Character&gt; stack =3D new Stack&lt;&gt;();
+    int len =3D s.length();
+    int idx =3D 0;
+    while(idx &lt; len / 2)
+    {
+        stack.push(s.charAt(idx++));
+    }
+    if(len % 2 =3D=3D 1)
+    {
+        idx++;
+    }
+    while(idx &lt; len)
+    {
+        if(stack.empty())
+        {
+            return false;
+        }
+        if(stack.pop() !=3D s.charAt(idx++))
+        {
+            return false;
+        }
+    }
+    return true;
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; boolean isPalindromeList(List&lt;T&gt; list)
+{
+    Stack&lt;T&gt; stack =3D new Stack&lt;&gt;();
+    List.Node&lt;T&gt; slow =3D list.head, fast =3D list.head;
+    while(fast !=3D null &amp;&amp; fast.next !=3D null)
+    {
+        stack.push(slow.data);
+        slow =3D slow.next;
+        fast =3D fast.next.next;
+    }
+    if(fast !=3D null)
+    {
+        // odd number of items
+        slow =3D slow.next;
+    }
+    while(slow !=3D null)
+    {
+        if(slow.data !=3D stack.pop())
+        {
+            return false;
+        }
+        slow =3D slow.next;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String s1 =3D "abcddcba", s2 =3D "abcdcba", s3 =3D "abcdba";
+    boolean check =3D isPalindromeString(s1);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isPalindromeString(s2);
+    if(!check)
+    {
+        return false;
+    }
+    check =3D isPalindromeString(s3);
+    if(check)
+    {
+        return false;
+    }
+    List&lt;Integer&gt; l1 =3D new List&lt;&gt;();
+    l1.add(1, 2, 3, 4, 3, 2, 1);
+    check =3D isPalindromeList(l1) =3D=3D true;
+    if(!check)
+    {
+        return false;
+    }
+    List&lt;Integer&gt; l2 =3D new List&lt;&gt;();
+    l2.add(1, 2, 3, 4, 5, 2, 1);
+    check =3D isPalindromeList(l2) =3D=3D true;
+    if(check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>PhoneNumberAlpha</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">private=
+ static String[] TABLE =3D {
+        "",
+        "",
+        "abc",
+        "def",
+        "ghi",
+        "jkl",
+        "mno",
+        "pqrs",
+        "tuv",
+        "wxyz"
+};
+
+
+static List&lt;String&gt; generateCombinations(int[] n)
+{
+    int len =3D n.length;
+    List&lt;String&gt; result =3D new ArrayList&lt;&gt;();
+    Queue&lt;String&gt; queue =3D new LinkedList&lt;&gt;();
+    queue.offer("");
+    while(!queue.isEmpty())
+    {
+        String s =3D queue.poll();
+        if(s.length() =3D=3D len)
+        {
+            result.add(s);
+        }
+        else
+        {
+            String letters =3D TABLE[n[s.length()]];
+            for(int i =3D 0; i &lt; letters.length(); ++i)
+            {
+                queue.offer(s + letters.charAt(i));
+            }
+        }
+    }
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;String&gt; list =3D generateCombinations(new int[] {4, 9, 8, 9,=
+ 6, 3, 7});
+    boolean check =3D list.size() =3D=3D 5184;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"wide" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 480.0px;">
+<col style=3D"width: 480.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ProductOfDigits</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int productOfDigits(int n)
+{
+    //  455 is a result of 100
+    //  100 =3D 4 * 5 * 5
+    Stack&lt;Integer&gt; stack =3D new Stack&lt;&gt;();
+    for(int factor =3D 9; factor &gt; 1; factor--)
+    {
+        while(n % factor =3D=3D 0)
+        {
+            stack.push(factor);
+            n /=3D factor;
+        }
+    }
+    int num =3D 0;
+    while(!stack.isEmpty())
+    {
+        num =3D num * 10 + stack.pop();
+    }
+    return n =3D=3D 1 ? num : -1;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D productOfDigits(100) =3D=3D 455;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>SimplifyDirPath</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String simplifyDirPath(String path)
+{
+    String[] parts =3D path.split("/");
+    if(parts.length =3D=3D 0)
+    {
+        return path;
+    }
+    Queue&lt;String&gt; queue =3D new LinkedList&lt;&gt;();
+    for(String token : parts)
+    {
+        if(!StringUtils.isBlank(token) &amp;&amp; !token.equals("."))
+        {
+            if(token.equals("..") &amp;&amp; !queue.isEmpty())
+            {
+                queue.poll();
+            }
+            else
+            {
+                queue.offer(token);
+            }
+        }
+    }
+    StringBuilder sb =3D new StringBuilder();
+    while(!queue.isEmpty())
+    {
+        sb.append("/");
+        sb.append(queue.poll());
+    }
+    return sb.toString();
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D simplifyDirPath("/a/./b/../../c/").equals("/c") &amp;=
+&amp;=20
+            simplifyDirPath("/home//foo/").equals("/home/foo");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>SortAscending</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Stack&lt;Integer&gt; sortAscending(Stack&lt;Integer&gt; stack)
+{
+    Stack&lt;Integer&gt; sortedStack =3D new Stack&lt;&gt;();
+    while(!stack.isEmpty())
+    {
+        int val =3D stack.pop();
+        if(sortedStack.isEmpty())
+        {
+            sortedStack.push(val);
+        }
+        else
+        {
+            while(!sortedStack.isEmpty() &amp;&amp; sortedStack.peek() &gt;=
+ val)
+            {
+                stack.push(sortedStack.pop());
+            }
+            sortedStack.push(val);
+         }
+    }
+    return sortedStack;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Stack&lt;Integer&gt; stack =3D new Stack&lt;&gt;();
+    stack.push(3);=20
+    stack.push(1);=20
+    stack.push(4);=20
+    stack.push(5);=20
+    stack.push(2);
+    stack =3D sortAscending(stack);
+    int[] a =3D stack.stream().mapToInt(x -&gt; x).toArray();
+    boolean check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5}, a);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>StructuredOutline</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class StructuredOutline
+{
+    //  Create structured outline from input
+  /*
+    Heading(1, "h1_1");
+    Heading(2, "h2_11");
+    Heading(3, "h3_111");
+    Heading(3, "h3_112");
+    Heading(3, "h3_113");
+    Heading(2, "h2_12");
+    Heading(3, "h3_121");
+    Heading(1, "h1_2");
+    Heading(2, "h2_21");
+    Heading(2, "h2_22");
+    Heading(2, "h2_23");
+    Heading(3, "h3_231");
+    Heading(3, "h3_232");
+    Heading(3, "h3_233");
+    Heading(1, "h1_3");
+  */
+
+    static class Heading
+    {
+        int weight;
+        String text;
+
+        Heading(int weight, String text)
+        {
+            this.weight =3D weight;
+            this.text =3D text;
+        }
+    }
+
+    static class Node
+    {
+        Heading heading;
+        List&lt;Node&gt; children =3D new ArrayList&lt;&gt;();
+
+        Node(Heading heading)
+        {
+            this.heading =3D heading;
+        }
+
+        int getWeight() { return heading.weight; }
+    }
+
+    private List&lt;Heading&gt; headings;
+
+    StructuredOutline(List&lt;Heading&gt; headings)
+    {
+        this.headings =3D headings;
+    }
+
+    Node createStructuredOutline()
+    {
+        Node root =3D new Node( new Heading(0, "root"));
+
+        Stack&lt;Node&gt; stack =3D new Stack&lt;&gt;();
+        stack.push(root);
+
+        for(Heading heading : headings)
+        {
+            Node node =3D new Node(heading);
+
+            if(stack.peek().getWeight() &lt; heading.weight)
+            {
+                stack.peek().children.add(node);
+                stack.push(node);
+            }
+            else if(stack.peek().getWeight() =3D=3D heading.weight)
+            {
+                stack.pop();
+                stack.peek().children.add(node);
+                stack.push(node);
+            }
+            else
+            {
+                //  Walk down the stack to find a parent for this node
+                while(stack.peek().getWeight() &gt; heading.weight)
+                {
+                    stack.pop();
+                }
+
+                Stack&lt;Node&gt; temp =3D new Stack&lt;&gt;();
+                while(node.getWeight() =3D=3D stack.peek().getWeight())
+                {
+                    temp.push(stack.pop());
+                }
+                stack.peek().children.add(node);
+                while(!temp.isEmpty())
+                {
+                    stack.push(temp.pop());
+                }
+                stack.push(node);
+            }
+        }
+
+        return root;
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    List&lt;Heading&gt; data =3D Arrays.asList(
+            new Heading(1, "h1_1"),
+            new Heading(2, "h2_11"),
+            new Heading(3, "h3_111"),
+            new Heading(3, "h3_112"),
+            new Heading(3, "h3_113"),
+            new Heading(2, "h2_12"),
+            new Heading(3, "h3_121"),
+            new Heading(1, "h1_2"),
+            new Heading(2, "h2_21"),
+            new Heading(2, "h2_22"),
+            new Heading(2, "h2_23"),
+            new Heading(3, "h3_231"),
+            new Heading(3, "h3_232"),
+            new Heading(3, "h3_233"),
+            new Heading(1, "h1_3")
+    );
+    StructuredOutline structuredOutline =3D new StructuredOutline(data);
+    Node root =3D structuredOutline.createStructuredOutline();
+    boolean check =3D root.children.size() =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D root.children.get(0).heading.text.equals("h1_1") &amp;&amp;
+            root.children.get(1).heading.text.equals("h1_2") &amp;&amp;=20
+            root.children.get(2).heading.text.equals("h1_3");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D root.children.get(0).children.size() =3D=3D 2;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D root.children.get(0).children.get(0).heading.text.equals("h2_=
+11") &amp;&amp;
+            root.children.get(0).children.get(1).heading.text.equals("h2_12=
+");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_4_777955624.1606742544847--

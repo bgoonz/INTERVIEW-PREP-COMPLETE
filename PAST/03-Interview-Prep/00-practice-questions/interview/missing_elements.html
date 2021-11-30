@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>missing_elements</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="how-to-find-missing-elements">How to Find Missing Elements</h1>
+<p><strong>Translator: <a href="https://github.com/youyun">youyun</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>I have written several articles about mind twisters. Today, let’s look at another interesting question.</p>
+<p>The question is simple:</p>
+<p><img src="../pictures/missing_elements/title_en.jpg" /></p>
+<p>Given an arry of length n, the index should be in <code>[0, n)</code>. Since we have to put <code>n+1</code> number of elements from set <code>[0, n]</code>, there must be one element which can’t fit. Find the missing element.</p>
+<p>This question is not hard. It’s easy to think aabout traversing after sorting. Alternatively, using a <code>HashSet</code> to store all the existing elements, and then go through elements in <code>[0, n]</code> and loop up in the <code>HashSet</code>. Both ways can find the correct answer.</p>
+<p>However, the time complexity for the sorting solution is O(NlogN). The <code>HashSet</code> solution has O(N) for time complexity, but requires O(N) space complexity to store the data.</p>
+<p><strong>Third Solution: Bit Operation</strong></p>
+<p>The XOR operation (<code>^</code>) has a special property: the result of a number XOR itself is 0, and the result of a number with 0 is itself.</p>
+<p>In addition, XOR operation satisfies the Exchange Law and Communicative Law. For instance:</p>
+<p>2 ^ 3 ^ 2 = 3 ^ (2 ^ 2) = 3 ^ 0 = 3</p>
+<p>We can using these special properties to find the missing element through a smart way. For example, <code>nums = [0,3,1,4]</code>：</p>
+<p><img src="../pictures/missing_elements/1.jpg" /></p>
+<p>For easier understanding, let’s assume the index increments by 1 (from <code>[0, n)</code> to <code>[0, n]</code>), and let each element to be placed at the index of its value:</p>
+<p><img src="../pictures/missing_elements/2.jpg" /></p>
+<p>After doing so, all elements and their indices will be a pair except the missing element. If we can find out index 2 is missing, we can find out the missing element subsequently.</p>
+<p>How to find out the missing number? <strong>Perform XOR operations to all elements and their indices respectively. A pair of an element and its index will become 0. Only the missing element will be left.</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">int</span> <span class="fu">missingNumber</span>(<span class="dt">int</span>[] nums) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="dt">int</span> n = nums.<span class="fu">length</span>;</a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="dt">int</span> res = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="co">// XOR with the new index first</span></a>
+<a class="sourceLine" id="cb1-5" title="5">    res ^= n;</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="co">// XOR with the all elements and the other indices</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; n; i++)</a>
+<a class="sourceLine" id="cb1-8" title="8">        res ^= i ^ nums[i];</a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="kw">return</span> res;</a>
+<a class="sourceLine" id="cb1-10" title="10">}</a></code></pre></div>
+<p><img src="../pictures/missing_elements/3.jpg" /></p>
+<p>Because XOR operation fulfills the Exchange Law and the Communicative Law, all pairs of numbers will become 0, left with the missing element.</p>
+<p>Till now, the time complexity is O(N), and the space complexity is O(1). This is optimal. <em>Should we stop now?</em></p>
+<p>If we think so, we have become restricted by algorithms. The more knowledge we learn, the easier we might fall into stagnant mindsets. There is actually an even easier solution: <strong>Summation of Arithmetic Progression (AP)</strong>.</p>
+<p>We can interpret the question in this way: given an arithmetic progression <code>0, 1, 2, ..., n</code> with an missing element, please find out the missing one. Consequently, the number is just <code>sum(0,1,..n) - sum(nums)</code>!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">int</span> <span class="fu">missingNumber</span>(<span class="dt">int</span>[] nums) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="dt">int</span> n = nums.<span class="fu">length</span>;</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="co">// Formula: (head + tail) * n / 2</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="dt">int</span> expect = (<span class="dv">0</span> + n) * (n + <span class="dv">1</span>) / <span class="dv">2</span>;</a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="dt">int</span> sum = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="kw">for</span> (<span class="dt">int</span> x : nums) </a>
+<a class="sourceLine" id="cb2-8" title="8">        sum += x;</a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="kw">return</span> expect - sum;</a></code></pre></div>
+<p>As you can see, this is the simplest solution. But honestly, even I didn’t think of this way. It may be hard for an experienced programmers to think in this way, but very easy for a secondary school student to come up with such a solution.</p>
+<p><em>Should we stop now?</em></p>
+<p>If we think so, we might still need to pay more attention to details. When we use the formula to calculate <code>except</code>, have you thought about <strong>Integer overflow</strong>? If the product is too big and overflowing, the final result must be wrong.</p>
+<p>In the previous implementation, we subtract two sums. To avoid overflow, why not perform subtraction while summing up? Similar to our bit operation solution just now, assume <code>nums = [0,3,1,4]</code>, add an index such that elements will be paired up with indices respectively.</p>
+<p><img src="../pictures/missing_elements/xor.png" /></p>
+<p>Let’s subtract each element from its corresponding index, and then sum up the differences, the result will be the missing element!</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">public</span> <span class="dt">int</span> <span class="fu">missingNumber</span>(<span class="dt">int</span>[] nums) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="dt">int</span> n = nums.<span class="fu">length</span>;</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">int</span> res = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="co">// Added index</span></a>
+<a class="sourceLine" id="cb3-5" title="5">    res += n - <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="co">// Summing up the differences between the remaining indices and elements</span></a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; n; i++) </a>
+<a class="sourceLine" id="cb3-8" title="8">        res += i - nums[i];</a>
+<a class="sourceLine" id="cb3-9" title="9">    <span class="kw">return</span> res;</a>
+<a class="sourceLine" id="cb3-10" title="10">}</a></code></pre></div>
+<p>Because both addition and subtraction satisfy the Exchange Law and the Communicative Law, we can always eliminate paired numbers, left with the missing one.</p>
+<p><em>We can stop by now.</em></p>
+</body>
+</html>

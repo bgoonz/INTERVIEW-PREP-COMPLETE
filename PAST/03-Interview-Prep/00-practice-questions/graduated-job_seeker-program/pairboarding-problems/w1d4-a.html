@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>w1d4-a</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="behavioral-questions">Behavioral Questions</h2>
+<ul>
+<li>Tell me about yourself. What makes you a good fit for a full stack developer job at Uber?</li>
+<li>What is your greatest weakness as a software developer, and what are you doing to overcome that weakness?</li>
+</ul>
+<h2 id="trivia">Trivia</h2>
+<ul>
+<li><a href="https://github.com/alex/what-happens-when">What happens when you type in Google.com and hit enter?</a></li>
+<li><a href="http://javascriptissexy.com/understand-javascript-closures-with-ease/">What is a closure in JavaScript?</a></li>
+</ul>
+<h2 id="non-comparison-sorts">Non-Comparison Sorts</h2>
+<p>Part 1: Say that I gave you an array of length <code>n</code>, containing the numbers <code>1..n</code> in jumbled order. “Sort” this array in <code>O(n)</code> time. You should be able to do this without looking at the input.</p>
+<p>Part 2: Say that I give you an array of length <code>n</code> with numbers in the range <code>1..N</code> (<code>N &gt;= n</code>). Sort this array in <code>O(n + N)</code> time. You may use <code>O(N)</code> memory.</p>
+<p>Part 3: Say I give you an array of <code>n</code> strings, each of length <code>k</code>. I claim that, using merge sort, you can sort this in <code>O(knlog(n))</code>, since comparing a pair of strings takes <code>O(k)</code> time.</p>
+<p>I want you to beat that. Sort the strings in <code>O(kn)</code>. <strong>Hint</strong>: do not compare any two strings. You may assume all strings contain only lowercase letters <code>a..z</code> without whitespace or punctuation.</p>
+<h3 id="solutions">Solutions</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> sort1(arr)</a>
+<a class="sourceLine" id="cb1-2" title="2">  (<span class="dv">1</span>..(arr.length)).to_a</a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="kw">end</span></a></code></pre></div>
+<p>Our first sort is simple - if we have an array of elements from 1 to arr.length, we can simply make a new array using the range <code>1..arr.length</code>! No comparisons here!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> sort2(arr, max_val)</a>
+<a class="sourceLine" id="cb2-2" title="2">  counts = <span class="dt">Array</span>.new(max_val + <span class="dv">1</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb2-3" title="3">  arr.each { |el| counts[el] += <span class="dv">1</span> }</a>
+<a class="sourceLine" id="cb2-4" title="4"></a>
+<a class="sourceLine" id="cb2-5" title="5">  arr = []</a>
+<a class="sourceLine" id="cb2-6" title="6">  counts.each_index <span class="kw">do</span> |val|</a>
+<a class="sourceLine" id="cb2-7" title="7">    counts[val].times { arr &lt;&lt; val }</a>
+<a class="sourceLine" id="cb2-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb2-9" title="9">  arr</a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="kw">end</span></a></code></pre></div>
+<p>In our second sort, we know that we have n items in our array from the range <code>1..N</code>. To solve this in <code>O(n + N)</code> time, we can start off with an array of counts of length <code>N + 1</code>. We iterate through the array, incrementing the value at the correct index every time we find an item. We then iterate through the counts array and add the correct number of elements into our final ordered results array.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> sort3(strings, length)</a>
+<a class="sourceLine" id="cb3-2" title="2">  (length - <span class="dv">1</span>).downto(<span class="dv">0</span>) <span class="kw">do</span> |i|</a>
+<a class="sourceLine" id="cb3-3" title="3">    buckets = <span class="dt">Array</span>.new(<span class="dv">26</span>) { [] }</a>
+<a class="sourceLine" id="cb3-4" title="4">    strings.each <span class="kw">do</span> |string|</a>
+<a class="sourceLine" id="cb3-5" title="5">      letter = string[i]</a>
+<a class="sourceLine" id="cb3-6" title="6">      buckets[letter.ord - <span class="st">&quot;a&quot;</span>.ord] &lt;&lt; string</a>
+<a class="sourceLine" id="cb3-7" title="7">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9">    strings = []</a>
+<a class="sourceLine" id="cb3-10" title="10">    buckets.each <span class="kw">do</span> |bucket|</a>
+<a class="sourceLine" id="cb3-11" title="11">      bucket.each { |string| strings &lt;&lt; string }</a>
+<a class="sourceLine" id="cb3-12" title="12">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-13" title="13">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-14" title="14"></a>
+<a class="sourceLine" id="cb3-15" title="15">  strings</a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="kw">end</span></a></code></pre></div>
+<p>Our last sort is a little bit trickier. Our general strategy will be to go through the entire array of strings and sort them into buckets letter by letter, starting with the last (and least significant) letter, then join the buckets together. Once we’ve done this, we can rest assured that the strings are now sorted by the last letter.</p>
+<p>We then move up to the second-to-last letter and do the same, sorting the strings into buckets based on this letter. When we add these strings into buckets based on the second-to-last letter, the order within each bucket will maintain its relative orders based on the last letter, so on and so forth through the string until it is entirely sorted.</p>
+<p>Example:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb4-1" title="1">sort3([<span class="st">`cat`</span>, <span class="st">`car`</span>, <span class="st">`bat`</span>])</a>
+<a class="sourceLine" id="cb4-2" title="2"></a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="co"># buckets after sorting by last letter</span></a>
+<a class="sourceLine" id="cb4-4" title="4">buckets = [[], ... , [<span class="st">`car`</span>], ..., [<span class="st">`cat`</span>, <span class="st">`bat`</span>],  ...]</a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6"><span class="co"># strings after we join the buckets back together, now sorted by last letter</span></a>
+<a class="sourceLine" id="cb4-7" title="7">strings = [<span class="st">`car`</span>, <span class="st">`cat`</span>, <span class="st">`bat`</span>]</a>
+<a class="sourceLine" id="cb4-8" title="8"></a>
+<a class="sourceLine" id="cb4-9" title="9"><span class="co"># buckets after sorting by second to last letter - note that they retain their relative ordering by last letter in the buckets</span></a>
+<a class="sourceLine" id="cb4-10" title="10">buckets = [[<span class="st">`car`</span>, <span class="st">`cat`</span>, <span class="st">`bat`</span>], ..., []]</a>
+<a class="sourceLine" id="cb4-11" title="11"></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="co"># strings after we join the buckets back together, now sorted by last letter and second-to-last letter</span></a>
+<a class="sourceLine" id="cb4-13" title="13">strings = [<span class="st">`car`</span>, <span class="st">`cat`</span>, <span class="st">`bat`</span>]</a>
+<a class="sourceLine" id="cb4-14" title="14"></a>
+<a class="sourceLine" id="cb4-15" title="15"><span class="co"># lastly, buckets sorted by the first and most important letter</span></a>
+<a class="sourceLine" id="cb4-16" title="16">buckets = [[], ..., [<span class="st">`bat`</span>], [<span class="st">`car`</span>, <span class="st">`cat`</span>] ...]</a>
+<a class="sourceLine" id="cb4-17" title="17"></a>
+<a class="sourceLine" id="cb4-18" title="18">strings = [<span class="st">`bat`</span>, <span class="st">`car`</span>, <span class="st">`cat`</span>]</a></code></pre></div>
+<p>We have a loop that goes through each string <code>O(n)</code> nested within a loop that goes through each letter <code>O(k)</code> for a total time complexity of <code>O(n * k)</code>.</p>
+<h2 id="remove-duplicates-from-sorted-array">Remove Duplicates from Sorted Array</h2>
+<p>Given a sorted array, remove the duplicates in-place such that each element appear only once and return the new length.</p>
+<p>Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</p>
+<h3 id="example">Example</h3>
+<p>Input: <code>[1, 1, 2]</code></p>
+<p>Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.</p>
+<p>It doesn’t matter what you leave beyond the new length.</p>
+<h3 id="solution">Solution</h3>
+<p>Since the array is already sorted, we can keep two pointers <code>i</code> and <code>j</code>, where <code>i</code> is the slow-runner while <code>j</code> is the fast-runner. As long as <code>nums[i] = nums[j]</code>, we increment <code>j</code> to skip the duplicate.</p>
+<p>When we encounter <code>nums[j] != nums[i]</code>, the duplicate run has ended so we must copy its value to <code>nums[i + 1]</code>. <code>i</code> is then incremented and we repeat the same process again until <code>j</code> reaches the end of array.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">const</span> removeDuplicates <span class="op">=</span> <span class="kw">function</span>(nums) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">   <span class="at"> if</span> (<span class="va">nums</span>.<span class="at">length</span> <span class="op">===</span> <span class="dv">0</span>) <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    </a>
+<a class="sourceLine" id="cb5-4" title="4">    let i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-5" title="5">    </a>
+<a class="sourceLine" id="cb5-6" title="6">   <span class="at"> for</span> (<span class="kw">let</span> j <span class="op">=</span> <span class="dv">1</span><span class="op">;</span> j <span class="op">&lt;</span> <span class="va">nums</span>.<span class="at">length</span><span class="op">;</span> j<span class="op">++</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-7" title="7">       <span class="at"> if</span> (nums[j] <span class="op">!==</span> nums[i]) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-8" title="8">            i<span class="op">++;</span></a>
+<a class="sourceLine" id="cb5-9" title="9">            nums[i] <span class="op">=</span> nums[j]<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-10" title="10">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-11" title="11">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-12" title="12">    </a>
+<a class="sourceLine" id="cb5-13" title="13">    return i <span class="op">+</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-14" title="14"><span class="op">}</span></a></code></pre></div>
+</body>
+</html>

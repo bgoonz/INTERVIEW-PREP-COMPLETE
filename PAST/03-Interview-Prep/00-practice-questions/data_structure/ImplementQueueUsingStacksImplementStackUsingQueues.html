@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ImplementQueueUsingStacksImplementStackUsingQueues</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="implement-queue-using-stacks-implement-stack-using-queues">Implement Queue using Stacks |Implement Stack using Queues</h1>
+<p><strong>Translator:<a href="https://github.com/walsvid">walsvid</a></strong></p>
+<p><strong>Author:<a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>Queue is a FIFO (first-in-first-out) strategy data structure, while Stack is a FILO (first-in-last-out) data structure. The visual description of these data structures is shown in the figure:</p>
+<p><img src="../pictures/stackqueue/1.jpg" /></p>
+<p>The basics of these two data structures are actually implemented by arrays or linked lists, but the API limits their behavior. So let’s take a look at how to use “Stack” to implement a “Queue” and how to use “Queue” to implement a “Stack”.</p>
+<h3 id="using-stack-to-implement-queue">1. Using Stack to implement Queue</h3>
+<p>First, the API of Queue are as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">class</span> MyQueue {</a>
+<a class="sourceLine" id="cb1-2" title="2">    </a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="co">/**</span> Push element x to the back of queue<span class="co">. */</span></a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">push</span>(<span class="dt">int</span> x);</a>
+<a class="sourceLine" id="cb1-5" title="5">    </a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="co">/**</span> Removes the element from in front of queue and returns that element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">pop</span>();</a>
+<a class="sourceLine" id="cb1-8" title="8">    </a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="co">/**</span> Get the front element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">peek</span>();</a>
+<a class="sourceLine" id="cb1-11" title="11">    </a>
+<a class="sourceLine" id="cb1-12" title="12">    <span class="co">/**</span> Returns whether the queue is empty<span class="co">. */</span></a>
+<a class="sourceLine" id="cb1-13" title="13">    <span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">empty</span>();</a>
+<a class="sourceLine" id="cb1-14" title="14">}</a></code></pre></div>
+<p>We can use two stacks <code>s1,s2</code> to implement the function of a queue (it may be easier to understand to place the stack horizontally):</p>
+<p><img src="../pictures/stackqueue/2.jpg" /></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">class</span> MyQueue {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="kw">private</span> <span class="bu">Stack</span>&lt;<span class="bu">Integer</span>&gt; s1, s2;</a>
+<a class="sourceLine" id="cb2-3" title="3">    </a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="kw">public</span> <span class="fu">MyQueue</span>() {</a>
+<a class="sourceLine" id="cb2-5" title="5">        s1 = <span class="kw">new</span> <span class="bu">Stack</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb2-6" title="6">        s2 = <span class="kw">new</span> <span class="bu">Stack</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb2-7" title="7">    }</a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="co">// ...</span></a>
+<a class="sourceLine" id="cb2-9" title="9">}</a></code></pre></div>
+<p>When calling <code>push</code> to enqueue an element, we only need to push the element into <code>s1</code>. For example, if we <code>push</code> 3 elements into 1,2,3, then the detailed structure is like this:</p>
+<p><img src="../pictures/stackqueue/3.jpg" /></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="co">/**</span> Push element x to the back of queue<span class="co">. */</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">public</span> <span class="dt">void</span> <span class="fu">push</span>(<span class="dt">int</span> x) {</a>
+<a class="sourceLine" id="cb3-3" title="3">    s1.<span class="fu">push</span>(x);</a>
+<a class="sourceLine" id="cb3-4" title="4">}</a></code></pre></div>
+<p>So what if using <code>peek</code> to get the front element of the queue at this time? Logically speaking, the front element should be 1, but in <code>s1</code>, 1 is pushed to the bottom of the stack. Now we can use <code>s2</code> to transit elements. When <code>s2</code> is empty, all elements of <code>s1</code> can be moved to<code>s2</code>, <strong>at this time the elements in <code>s2</code> are FIFO (first-in-first-out) order</strong>.</p>
+<p><img src="../pictures/stackqueue/4.jpg" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="co">/**</span> Get the front element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">public</span> <span class="dt">int</span> <span class="fu">peek</span>() {</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">if</span> (s2.<span class="fu">isEmpty</span>())</a>
+<a class="sourceLine" id="cb4-4" title="4">        <span class="co">// move elements from s1 to s2</span></a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="kw">while</span> (!s1.<span class="fu">isEmpty</span>())</a>
+<a class="sourceLine" id="cb4-6" title="6">            s2.<span class="fu">push</span>(s1.<span class="fu">pop</span>());</a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="kw">return</span> s2.<span class="fu">peek</span>();</a>
+<a class="sourceLine" id="cb4-8" title="8">}</a></code></pre></div>
+<p>Similarly, for the <code>pop</code> operation, we only need to operate <code>s2</code>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="co">/**</span> Removes the element from in front of queue and returns that element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb5-2" title="2"><span class="kw">public</span> <span class="dt">int</span> <span class="fu">pop</span>() {</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="co">// First call peek to ensure that s2 is not empty.</span></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="fu">peek</span>();</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="kw">return</span> s2.<span class="fu">pop</span>();</a>
+<a class="sourceLine" id="cb5-6" title="6">}</a></code></pre></div>
+<p>Finally, how to determine the queue is empty? If both stacks are empty, the queue is empty:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb6-1" title="1"><span class="co">/**</span> Returns whether the queue is empty<span class="co">. */</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">empty</span>() {</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">return</span> s1.<span class="fu">isEmpty</span>() &amp;&amp; s2.<span class="fu">isEmpty</span>();</a>
+<a class="sourceLine" id="cb6-4" title="4">}</a></code></pre></div>
+<p>So far, we implement a queue with stacks. The core idea is to use two stacks to cooperate with each other.</p>
+<p>It is worth mentioning, what is the time complexity of these operations? What’s interesting is that the <code>peek</code> operation may trigger a <code>while</code> loop when it is called. In this case, the time complexity is <span class="math inline"><em>O</em>(<em>N</em>)</span>, but in most cases, the <code>while</code> loop will not be triggered and the time complexity is <span class="math inline"><em>O</em>(1)</span>. Since the <code>pop</code> operation calls <code>peek</code>, its time complexity is the same as peek.</p>
+<p>In this case, it can be said that their <strong>worst time complexity</strong> is <span class="math inline"><em>O</em>(<em>N</em>)</span>, because, including a <code>while</code> loop, it may be necessary to move elements from <code>s1</code> to <code>s2</code>.</p>
+<p>However, their <strong>average time complexity</strong> is <span class="math inline"><em>O</em>(1)</span>. We can understand it in this way: For an element, it can only be moved at most once, which means that the average time complexity of each element of the <code>peek</code> operation is <span class="math inline"><em>O</em>(1)</span>.</p>
+<h3 id="using-queue-to-implement-stack">2. Using Queue to implement Stack</h3>
+<p>If it is tricky to use 2 stacks to implement a queue, then using queue to implement stack is much more straightforward, requiring only one queue as the basic data structure.</p>
+<p>First, the API of stack are as follows:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> MyStack {</a>
+<a class="sourceLine" id="cb7-2" title="2">    </a>
+<a class="sourceLine" id="cb7-3" title="3">    <span class="co">/**</span> Push element x onto stack<span class="co">. */</span></a>
+<a class="sourceLine" id="cb7-4" title="4">    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">push</span>(<span class="dt">int</span> x);</a>
+<a class="sourceLine" id="cb7-5" title="5">    </a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="co">/**</span> Removes the element on top of the stack and returns that element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">pop</span>();</a>
+<a class="sourceLine" id="cb7-8" title="8">    </a>
+<a class="sourceLine" id="cb7-9" title="9">    <span class="co">/**</span> Get the top element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb7-10" title="10">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">top</span>();</a>
+<a class="sourceLine" id="cb7-11" title="11">    </a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="co">/**</span> Returns whether the stack is empty<span class="co">. */</span></a>
+<a class="sourceLine" id="cb7-13" title="13">    <span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">empty</span>();</a>
+<a class="sourceLine" id="cb7-14" title="14">}</a></code></pre></div>
+<p>Let’s talk about the <code>push</code> API first. We can add elements directly to the queue, and record the rear element at the same time. Since the rear element is equivalent to the top element of the stack, if we want to use <code>top</code> to get the top element of the stack, we can directly return it:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">class</span> MyStack {</a>
+<a class="sourceLine" id="cb8-2" title="2">    <span class="bu">Queue</span>&lt;<span class="bu">Integer</span>&gt; q = <span class="kw">new</span> <span class="bu">LinkedList</span>&lt;&gt;();</a>
+<a class="sourceLine" id="cb8-3" title="3">    <span class="dt">int</span> top_elem = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb8-4" title="4"></a>
+<a class="sourceLine" id="cb8-5" title="5">    <span class="co">/**</span> Push element x onto stack<span class="co">. */</span></a>
+<a class="sourceLine" id="cb8-6" title="6">    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">push</span>(<span class="dt">int</span> x) {</a>
+<a class="sourceLine" id="cb8-7" title="7">        <span class="co">// x is the rear element of queue, it also the top element of stack.</span></a>
+<a class="sourceLine" id="cb8-8" title="8">        q.<span class="fu">offer</span>(x);</a>
+<a class="sourceLine" id="cb8-9" title="9">        top_elem = x;</a>
+<a class="sourceLine" id="cb8-10" title="10">    }</a>
+<a class="sourceLine" id="cb8-11" title="11">    </a>
+<a class="sourceLine" id="cb8-12" title="12">    <span class="co">/**</span> Return the top element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb8-13" title="13">    <span class="kw">public</span> <span class="dt">int</span> <span class="fu">top</span>() {</a>
+<a class="sourceLine" id="cb8-14" title="14">        <span class="kw">return</span> top_elem;</a>
+<a class="sourceLine" id="cb8-15" title="15">    }</a>
+<a class="sourceLine" id="cb8-16" title="16">}</a></code></pre></div>
+<p>Our basic data structure is a FIFO queue, and each <code>pop</code> can only take elements in front of the queue; But the stack is FILO, which means the <code>pop</code> API takes elements from the rear of the queue.</p>
+<p><img src="../pictures/stackqueue/5.jpg" /></p>
+<p>The solution is simple. We can take out the front element of the queue and add it to the rear of the queue, and let the previous rear element line up to the head of the queue, and then we can take it out:</p>
+<p><img src="../pictures/stackqueue/6.jpg" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb9-1" title="1"><span class="co">/**</span> Removes the element on top of the stack and returns that element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb9-2" title="2"><span class="kw">public</span> <span class="dt">int</span> <span class="fu">pop</span>() {</a>
+<a class="sourceLine" id="cb9-3" title="3">    <span class="dt">int</span> size = q.<span class="fu">size</span>();</a>
+<a class="sourceLine" id="cb9-4" title="4">    <span class="kw">while</span> (size &gt; <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb9-5" title="5">        q.<span class="fu">offer</span>(q.<span class="fu">poll</span>());</a>
+<a class="sourceLine" id="cb9-6" title="6">        size--;</a>
+<a class="sourceLine" id="cb9-7" title="7">    }</a>
+<a class="sourceLine" id="cb9-8" title="8">    <span class="co">// the previous rear element reaches the head of the queue</span></a>
+<a class="sourceLine" id="cb9-9" title="9">    <span class="kw">return</span> q.<span class="fu">poll</span>();</a>
+<a class="sourceLine" id="cb9-10" title="10">}</a></code></pre></div>
+<p>There is still a small problem with this implementation. The original rear element has reached to the head of the queue and has been deleted, but the <code>top_elem</code> variable was not updated. We need a little modification:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb10-1" title="1"><span class="co">/**</span> Removes the element on top of the stack and returns that element<span class="co">. */</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="kw">public</span> <span class="dt">int</span> <span class="fu">pop</span>() {</a>
+<a class="sourceLine" id="cb10-3" title="3">    <span class="dt">int</span> size = q.<span class="fu">size</span>();</a>
+<a class="sourceLine" id="cb10-4" title="4">    <span class="co">// Leave the last 2 elements</span></a>
+<a class="sourceLine" id="cb10-5" title="5">    <span class="kw">while</span> (size &gt; <span class="dv">2</span>) {</a>
+<a class="sourceLine" id="cb10-6" title="6">        q.<span class="fu">offer</span>(q.<span class="fu">poll</span>());</a>
+<a class="sourceLine" id="cb10-7" title="7">        size--;</a>
+<a class="sourceLine" id="cb10-8" title="8">    }</a>
+<a class="sourceLine" id="cb10-9" title="9">    <span class="co">// Record the new rear element</span></a>
+<a class="sourceLine" id="cb10-10" title="10">    top_elem = q.<span class="fu">peek</span>();</a>
+<a class="sourceLine" id="cb10-11" title="11">    q.<span class="fu">offer</span>(q.<span class="fu">poll</span>());</a>
+<a class="sourceLine" id="cb10-12" title="12">    <span class="co">// Remove the previous rear element</span></a>
+<a class="sourceLine" id="cb10-13" title="13">    <span class="kw">return</span> q.<span class="fu">poll</span>();</a>
+<a class="sourceLine" id="cb10-14" title="14">}</a></code></pre></div>
+<p>In the end, the <code>empty</code> API is easy to implement, just check if the underlying queue is empty:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb11-1" title="1"><span class="co">/**</span> Returns whether the stack is empty<span class="co">. */</span></a>
+<a class="sourceLine" id="cb11-2" title="2"><span class="kw">public</span> <span class="dt">boolean</span> <span class="fu">empty</span>() {</a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="kw">return</span> q.<span class="fu">isEmpty</span>();</a>
+<a class="sourceLine" id="cb11-4" title="4">}</a></code></pre></div>
+<p>Obviously, if we implement a stack with a queue, the time complexity of the <code>pop</code> operation is <span class="math inline"><em>O</em>(<em>N</em>)</span>, and all other operations are <span class="math inline"><em>O</em>(1)</span>.</p>
+<p>I think that implement a stack with a queue is a trivial problem, but <strong>implement a queue with a dual stack is worth learning</strong>.</p>
+<p><img src="../pictures/stackqueue/4.jpg" /></p>
+<p>After moving elements from stack <code>s1</code> to <code>s2</code>, the elements become the FIFO order of the queue in s2. This feature is similar to “Two negatives make an affirmative.,” which is not easy to think.</p>
+<p>I hope this article is helpful to you.</p>
+<p>“Stick to original high-quality articles, and work hard to make algorithmic problems clear.”</p>
+</body>
+</html>

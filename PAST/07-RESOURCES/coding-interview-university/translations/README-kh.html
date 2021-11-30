@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README-kh</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="មហាវិទ្យាល័យការសរសេរកូដសំរាប់ការសម្ភាសន៍-coding-interview-university">មហាវិទ្យាល័យការសរសេរកូដសំរាប់ការសម្ភាសន៍ (Coding Interview University)</h1>
+<h3 id="បង្កើតដោយ-washamjohn-washamhttpsgithub.comjwasham">បង្កើតដោយ: <span class="citation" data-cites="John">[@John Washam]</span>(https://github.com/jwasham)</h3>
+<h3 id="បកប្រែជាភាសារខ្មែរដោយ-sayvortana-sayhttpsgithub.comvsay01">បកប្រែជាភាសារខ្មែរដោយ: <span class="citation" data-cites="Vortana">[@Vortana Say]</span>(https://github.com/vsay01)</h3>
+<blockquote>
+<p>ពីដំបូងខ្ញុំបង្កើតនេះជាបញ្ជីប្រធានបទត្រូវធ្វើខ្លីដើម្បីក្លាយជាវិស្វករអភិវឌ្ឍន៍កម្មវិធី ប៉ុន្តែវាបានកើនឡើងដល់បញ្ជីធំដែលអ្នកបានឃើញសព្វថ្ងៃនេះ។ បន្ទាប់ពីឆ្លងកាត់គំរោងសិក្សានេះ <a href="https://startupnextdoor.com/ive-been-acquired-by-amazon/?src=ciu">ខ្ញុំបានក្លាយ ជាវិស្វករអភិវឌ្ឍន៍កម្មវិធីនៅអាមាហ្សូន (Amazon)</a> អ្នកប្រហែលជាមិនចាំបាច់សិក្សាច្រេីនដូចខ្ញុំទេ។ ទោះយ៉ាងណាក៏ដោយអ្វីគ្រប់យ៉ាងដែលអ្នកត្រូវការគឺនៅទីនេះ។</p>
+<p>ខ្ញុំបានសិក្សាប្រហែលជា ៨ ទៅ ១២ ម៉ោងក្នុងមួយថ្ងៃអស់រយៈពេលជាច្រើនខែ។ អ្នកអាចអានារឿងរបស់ខ្ញុំ៖ <a href="https://medium.freecodecamp.org/why-i-studied-full-time-for-8-months-for-a-google-interview-cc662ce9bb13">ហេតុអ្វីខ្ញុំសិក្សាពេញម៉ោងរយៈពេល ៨ ខែសំរាប់ការសំភាសន៍ហ្គូហ្គល</a></p>
+<p>ចំណុចដែលបានរាយនៅទីនេះនឹងជួយអ្នករៀបចំការសំភាសន៍បច្ចេកទេសនៅក្រុមហ៊ុនកម្មវិធីណាមួយ។ រាប់បញ្ចូលទាំងក្រុមហ៊ុនធំៗដូចជា Amazon, Facebook, Google និង Microsoft ។</p>
+<p>សូមសំណាងល្អដល់អ្នក!</p>
+</blockquote>
+<details>
+<p><summary>ការបកប្រែ៖</summary></p>
+<ul>
+<li><a href="translations/README-cn.md">ភាសារចិន - 中文版本</a></li>
+<li><a href="translations/README-vi.md">ភាសារវៀតណាម - Tiếng Việt - Vietnamese</a></li>
+<li><a href="translations/README-es.md">ភាសារអេស្ប៉ាញ - Español</a></li>
+<li><a href="translations/README-ptbr.md">ភាសារព័រទុយហ្កាល់ - Português Brasileiro</a></li>
+<li><a href="translations/README-pl.md">ភាសារប៉ូឡូញ - Polish</a></li>
+</ul>
+</details>
+<details>
+<p><summary>ភាសារដែលកំពុងបកប្រែ:</summary></p>
+<ul>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/81">हिन्दी</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/82">עברית</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/101">Bahasa Indonesia</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/98">Arabic</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/90">Turkish</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/89">French</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/87">Russian</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/106">Ukrainian</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/118">Korean(한국어)</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/117">Telugu</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/140">Urdu</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/156">Thai</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/166">Greek</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/170">Italian</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/239">Malayalam</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/issues/257">Japanese (日本語)</a></li>
+</ul>
+</details>
+<hr />
+<h2 id="តារាងមាតិកា">តារាងមាតិកា</h2>
+<ul>
+<li><a href="#what-is-it">តើវាគឺជាអ្វី?</a></li>
+<li><a href="#why-use-it">ហេតុអ្វីប្រើវា?</a></li>
+<li><a href="#how-to-use-it">របៀបប្រើវា</a></li>
+<li><a href="#dont-feel-you-arent-smart-enough">កុំមានអារម្មណ៍ថាអ្នកមិនឆ្លាតគ្រប់គ្រាន់</a></li>
+<li><a href="#about-video-resources">ធនធានវីដេអូ</a></li>
+<li><a href="#interview-process--general-interview-prep">ដំណើរការសម្ភាសន៍ និង ការត្រៀមសម្ភាសន៍ទូទៅ</a></li>
+<li><a href="#pick-one-language-for-the-interview">ជ្រើសរើសភាសាមួយសម្រាប់ការសម្ភាសន៍</a></li>
+<li><a href="#book-list">បញ្ជីសៀវភៅ</a></li>
+<li><a href="#before-you-get-started">មុនពេលអ្នកចាប់ផ្តើម</a></li>
+<li><a href="#what-you-wont-see-covered">អ្វីដែលអ្នកនឹងមិនឃើញ</a></li>
+<li><a href="#prerequisite-knowledge">ចំណេះដឹងជាមុនដែលគួរមាន</a></li>
+<li><a href="#the-daily-plan">ផែនការប្រចាំថ្ងៃ</a></li>
+<li><a href="#algorithmic-complexity--big-o--asymptotic-analysis">ភាពស្មុគស្មាញនៃក្បួនដោះស្រាយ / Big-O / ការវិភាគ អាសុីមតុតិច (Asymptotic analysis)</a></li>
+<li><a href="#data-structures">Data Structures</a>
+<ul>
+<li><a href="#arrays">Arrays</a></li>
+<li><a href="#linked-lists">Linked Lists</a></li>
+<li><a href="#stack">Stack</a></li>
+<li><a href="#queue">Queue</a></li>
+<li><a href="#hash-table">Hash table</a></li>
+</ul></li>
+<li><a href="#more-knowledge">ចំណេះដឹងបន្ថែម</a>
+<ul>
+<li><a href="#binary-search">Binary search</a></li>
+<li><a href="#bitwise-operations">Bitwise operations</a></li>
+</ul></li>
+<li><a href="#trees">Trees</a>
+<ul>
+<li><a href="#trees---notes--background">Trees - កំណត់សំគាល់ និង ប្រវត្តិ</a></li>
+<li><a href="#binary-search-trees-bsts">Binary search trees: BSTs</a></li>
+<li><a href="#heap--priority-queue--binary-heap">Heap / Priority Queue / Binary Heap</a></li>
+<li>balanced search trees (គំនិតទូទៅ តែពុំមែនព័ត៌មានលម្អិតទេ)</li>
+<li>traversals: preorder, inorder, postorder, BFS, DFS</li>
+</ul></li>
+<li><a href="#sorting">Sorting</a>
+<ul>
+<li>selection</li>
+<li>insertion</li>
+<li>heapsort</li>
+<li>quicksort</li>
+<li>merge sort</li>
+</ul></li>
+<li><a href="#graphs">Graphs</a>
+<ul>
+<li>directed</li>
+<li>undirected</li>
+<li>adjacency matrix</li>
+<li>adjacency list</li>
+<li>traversals: BFS, DFS</li>
+</ul></li>
+<li><a href="#even-more-knowledge">ចំណេះដឹងបន្ថែមទៀត</a>
+<ul>
+<li><a href="#recursion">Recursion</a></li>
+<li><a href="#dynamic-programming">Dynamic Programming</a></li>
+<li><a href="#object-oriented-programming">Object-Oriented Programming</a></li>
+<li><a href="#design-patterns">Design Patterns</a></li>
+<li><a href="#combinatorics-n-choose-k--probability">Combinatorics (n choose k) &amp; Probability</a></li>
+<li><a href="#np-np-complete-and-approximation-algorithms">NP, NP-Complete and Approximation Algorithms</a></li>
+<li><a href="#caches">Caches</a></li>
+<li><a href="#processes-and-threads">Processes and Threads</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#scheduling">Scheduling</a></li>
+<li><a href="#string-searching--manipulations">String searching &amp; manipulations</a></li>
+<li><a href="#tries">Tries</a></li>
+<li><a href="#floating-point-numbers">Floating Point Numbers</a></li>
+<li><a href="#unicode">Unicode</a></li>
+<li><a href="#endianness">Endianness</a></li>
+<li><a href="#networking">Networking</a></li>
+</ul></li>
+<li><a href="#system-design-scalability-data-handling">System Design, Scalability, Data Handling</a> (if you have 4+ years experience)</li>
+<li><a href="#final-review">ពិនិត្យចុងក្រោយ</a></li>
+<li><a href="#coding-question-practice">អនុវត្តសំណួរសរសេរកូដ</a></li>
+<li><a href="#coding-exerciseschallenges">លំហាត់សរសេរកូដ / បញ្ហា</a></li>
+<li><a href="#once-youre-closer-to-the-interview">នៅពេលអ្នកជិតដល់ការសំភាសន៍</a></li>
+<li><a href="#your-resume">ប្រវត្តិរូបសង្ខេបរបស់អ្នក</a></li>
+<li><a href="#be-thinking-of-for-when-the-interview-comes">ត្រូវគិតអំពីពេលសម្ភាសន៍មកដល់</a></li>
+<li><a href="#have-questions-for-the-interviewer">មានសំណួរសម្រាប់អ្នកសម្ភាសន៍យេីង</a></li>
+<li><a href="#once-youve-got-the-job">នៅពេលដែលទទួលបានការងារធ្វើ</a></li>
+</ul>
+<hr />
+<h2 id="what-is-it">What is it?</h2>
+<h2 id="តើវាគឺជាអ្វី">តើវាគឺជាអ្វី?</h2>
+<p>នេះគឺជាគំរោងសិក្សារបស់ខ្ញុំដែលមានរយៈពេលជាច្រើនខែសំរាប់ការរៀនក្លាយពីអ្នកបង្កើតគេហទំព័រ (បង្រៀនដោយខ្លួនឯង និង មិនមានសញ្ញាប័ត្រ វិទ្យាសាស្ត្រកុំព្យូទ័រ) រហូតដល់ក្លាយជាវិស្វករអភិវឌ្ឍន៍កម្មវិធីសំរាប់ក្រុមហ៊ុនធំ។!</p>
+<figure>
+<img src="https://d3j2pkmjtin6ou.cloudfront.net/coding-at-the-whiteboard-silicon-valley.png" alt="ការសរសេរកូដនៅលើក្ដារខៀន - ពីតំបន់ Silicon Valley របស់ HBO" /><figcaption>ការសរសេរកូដនៅលើក្ដារខៀន - ពីតំបន់ Silicon Valley របស់ HBO</figcaption>
+</figure>
+<p>នេះមានន័យថាសម្រាប់ “វិស្វករអភិវឌ្ឍន៍កម្មវិធីថ្មី” ឬអ្នកដែលប្តូរពី ការអភិវឌ្ឍន៍កម្មវិធី / អ្នកបង្កេីតវេបសាយ (ដែលត្រូវការចំណេះដឹងផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ) ។ ប្រសិនបើអ្នកមាន បទពិសោធជាច្រើនឆ្នាំក្នុងការអភិវឌ្ឍន៍កម្មវិធី នោះអ្នកអាចនឹងរំពឹងថាមានបទសម្ភាសន៍ពិបាក។</p>
+<p>ប្រសិនបើអ្នកមានបទពិសោធន៍អភិវឌ្ឍន៍កម្មវិធី ឬ វេបសាយច្រើនឆ្នាំ សូមកត់សម្គាល់ថាក្រុមហ៊ុនធំ ៗ ដូចជាហ្គូហ្គោល(Google) អាម៉ាហ្សូន (Amazon) ហ្វេសប៊ុក (Facebook) និង ម៉ៃក្រូសូហ្វ (Microsoft) មានទស្សនៈថាវិស្វករអភិវឌ្ឍន៍កម្មវិធី ខុសគ្នាពីអ្នកបង្កេីតកម្មវិធី ឬ ការអភិវឌ្ឍន៍គេហទំព័រវេបសាយ ហើយពួកគេត្រូវការចំណេះដឹងផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ។</p>
+<p>ប្រសិនបើអ្នកចង់ក្លាយជាវិស្វករដែលអាចទុកចិត្តបានឬវិស្វករប្រតិបត្តិការសូមសិក្សាបន្ថែមពីបញ្ជីជម្រើស (បណ្តាញ និង សុវត្ថិភាព) ។</p>
+<hr />
+<h3 id="why-use-it">Why use it?</h3>
+<h2 id="ហេតុអ្វីប្រើវា">ហេតុអ្វីប្រើវា?</h2>
+<p>នៅពេលដែលខ្ញុំចាប់ផ្តើមគំរោងនេះ ខ្ញុំមិនដឹងពី stack, heap, Big-O, trees និង មិនដឹងរបៀបឆ្លងកាត់ក្រាហ្វ។ ប្រសិនបើខ្ញុំត្រូវសរសេរកូដដោះស្រាយ Sort ខ្ញុំអាចប្រាប់អ្នកថាវានឹងមិនល្អទេ។</p>
+<p>Data Structure ទាំងអស់ដែលខ្ញុំធ្លាប់បានប្រើត្រូវបានបង្កើតឡើងមកជាមួយភាសា ហើយខ្ញុំមិនដឹងពីរបៀប និង ដំណេីរការដែល Data Structure។ ខ្ញុំមិនដែលត្រូវគ្រប់គ្រង Programming Memory ទេលុះត្រាតែកម្មវិធីខ្ញុំសរសេរមានបញ្ហា “អស់ Memory” ហើយបន្ទាប់មកខ្ញុំត្រូវរកដំណោះស្រាយបណ្តោះអាសន្ន។ ខ្ញុំបានប្រើ Multidiemsional arrays ពីរបីនៅក្នុងជីវិតរបស់ខ្ញុំ និង រាប់ពាន់នៃ Associate arrays ប៉ុន្តែខ្ញុំមិនដែលបង្កើត Data Structure ពីដំបូងឡើយ។</p>
+<p>វាជាផែនការវែង។ វាអាចចំណាយពេលច្រើនខែ។ ប្រសិនបើអ្នកធ្លាប់ស្គាល់រឿងនេះរួចហើយវានឹងនាំអ្នកចំណាយពេលតិចជាងមុន។</p>
+<hr />
+<h3 id="how-to-use-it">How to use it?</h3>
+<h2 id="របៀបប្រើវា">របៀបប្រើវា</h2>
+<p>អ្វីគ្រប់យ៉ាងខាងក្រោមគឺជាគ្រោង អ្នកគួរតែដោះស្រាយតាមលំដាប់ពីលើចុះក្រោម។</p>
+<p>ខ្ញុំកំពុងប្រើសញ្ញាសម្គាល់ពិសេសរបស់ GitHub រួមទាំងបញ្ជីភារកិច្ចដើម្បីពិនិត្យមើលវឌ្ឍនភាពការងារខ្ញុំ។</p>
+<p><strong>បង្កើតសាខាថ្មី ដូច្នេះអ្នកអាចពិនិត្យមើលដូចនេះគ្រាន់តែដាក់សញ្ញា x ក្នុងតង្កៀប៖ [x]</strong></p>
+<p>ដាក់សាខាមួយ ហើយធ្វើតាមពាក្យបញ្ជាខាងក្រោម</p>
+<p><code>git checkout -b progress</code></p>
+<p><code>git remote add jwasham https://github.com/jwasham/coding-interview-university</code></p>
+<p><code>git fetch --all</code></p>
+<p>គូសសញ្ញា X ក្នុងប្រអប់ទាំងអស់បន្ទាប់ពីអ្នកបានបញ្ចប់ការកែសម្រួល <code>git add .</code></p>
+<p><code>git commit -m "Marked x"</code></p>
+<p><code>git rebase jwasham/master</code></p>
+<p><code>git push --force</code></p>
+<p>[ព័ត៌មានបន្ថែមអំពីសញ្ញាសម្គាល់ Github]](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)</p>
+<hr />
+<h3 id="dont-feel-you-arent-smart-enough">Don’t feel you aren’t smart enough</h3>
+<h2 id="កុំមានអារម្មណ៍ថាអ្នកមិនឆ្លាតគ្រប់គ្រាន់">កុំមានអារម្មណ៍ថាអ្នកមិនឆ្លាតគ្រប់គ្រាន់</h2>
+<ul>
+<li>វិស្វករអភិវឌ្ឍន៍កម្មវិធីដែលទទួលបានជោគជ័យគឺឆ្លាត ប៉ុន្តែមនុស្សជាច្រើនមានអារម្មណ៍ដែលពួកគេមិនឆ្លាតគ្រប់គ្រាន់។</li>
+<li><a href="https://www.youtube.com/watch?v=0SARbwvhupQ">រឿងរបស់អ្នកសរសេរកម្មវិធីដែលមានទេពកោសល្យ</a></li>
+<li><a href="https://www.youtube.com/watch?v=1i8ylq4j_EY">វាមានគ្រោះថ្នាក់ក្នុងការទៅតែម្នាក់ឯង: ការប្រយុទ្ធនឹងសត្វចម្លែកដែលចេះបំបាំងកាយនៅក្នុងបច្ចេកវិទ្យា</a></li>
+</ul>
+<hr />
+<h3 id="about-video-resources">About Video Resources</h3>
+<h2 id="ធនធានវីដេអូ">ធនធានវីដេអូ</h2>
+<p>វីដេអូខ្លះអាចប្រើបានតែតាមរយៈការចុះឈ្មោះចូលរៀនវគ្គ Coursera ឬ EdX ប៉ុណ្ណោះ។ ទាំងនេះត្រូវបានគេហៅថា MOOCs ។ ពេលខ្លះថ្នាក់រៀនមិននៅក្នុងវគ្គដូច្នេះអ្នកត្រូវរង់ចាំពីរបីខែសិន។</p>
+<p>ខ្ញុំសូមកោតសរសើរចំពោះជំនួយរបស់អ្នកក្នុងការបន្ថែមប្រភពសាធារណៈដែលអាចរកបានដោយឥតគិតថ្លៃជានិច្ចដូចជាវីដេអូយូធ្យូប (YouTube) ដើម្បីភ្ជាប់វីដេអូវគ្គសិក្សាតាមអ៊ីនធឺណិត។</p>
+<p>ខ្ញុំចូលចិត្តប្រើការបង្រៀនសាកលវិទ្យាល័យ។</p>
+<hr />
+<h3 id="interview-process-general-interview-prep">Interview Process &amp; General Interview Prep</h3>
+<h2 id="ដំណើរការសំភាសន៍និងកម្មវិធីសម្ភាសន៍ទូទៅ">ដំណើរការសំភាសន៍និងកម្មវិធីសម្ភាសន៍ទូទៅ</h2>
+<ul>
+<li>[ ] <a href="https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2#.4heg8zvm4">ABC: តែងតែសរសេរកូដ</a></li>
+<li>[ ] <a href="https://medium.com/@dpup/whiteboarding-4df873dbba2e#.hf6jn45g1">ការប្រេីប្រាស់ក្តារខៀន</a></li>
+<li>[ ] <a href="http://www.coderust.com/blog/2014/04/10/effective-whiteboarding-during-programming-interviews/">ការប្រេីប្រាស់ក្តារខៀនមានប្រសិទ្ធិភាពក្នុងពេលសម្ភាសន៍កម្មវិធី</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=N233T0epWTs">ជ្រើសរើសបុគ្គលិកជំនាញបច្ចេកវិទ្យា</a></li>
+<li>[ ] វិធីរកការងារនៅក្រុមហ៊ុនធំ ៤៖
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=YJZCUhxNCv8">របៀបរកការងារធ្វើនៅក្រុមហ៊ុនធំ ៤ - Amazon, Facebook, Google និង Microsoft (មានវីដេអូ)</a></li>
+</ul></li>
+<li>[បំបែកការសម្ភាសន៍ការសរសេរកូដ ១៖
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=rEJzOhC5ZtQ">ហ្គេលឡេអិលម៉ាកឌូវែល (Gayle L McDowell) - បំបែកការសម្ភាសន៍ការសរសេរកូដ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=aClxtDcdpsQ">បំបែកបទសម្ភាសន៍នៃការសរសេរកូដជាមួយអ្នកនិពន្ធហ្គេលឡាឡាក់មែនម៉ាកម៉ាកឌូវែល (Gayle Laakmann McDowell) (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] បំបែកបទសម្ភាសន៍កូដហ្វេសប៊ុក
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=wCl9kvQGHPI">វិធីសាស្រ្ត</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=4UWDyJq8jZg">ពន្យល់ពីបញ្ហា</a></li>
+</ul></li>
+<li>[ ] វគ្គសិក្សាត្រៀម:
+<ul>
+<li>[ ] <a href="https://www.udemy.com/software-engineer-interview-unleashed">សំភាសន៍វិស្វករអភិវឌ្ឍន៍កម្មវិធី (មិនបានបង់ប្រាក់)</a>៖
+<ul>
+<li>រៀនពីរបៀបដើម្បីត្រៀមខ្លួនសម្រាប់ការសម្ភាសន៍វិស្វករអភិវឌ្ឍន៍កម្មវិធីពីអ្នកសំភាសន៍របស់ហ្គូហ្គោល (Google) ។</li>
+</ul></li>
+<li>[ ] <a href="https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/">Python សម្រាប់រចនាសម្ព័ន្ធទិន្នន័យក្បួនដោះស្រាយនិងសំភាសន៍ (វគ្គសិក្សាបង់លុយ)</a>៖
+<ul>
+<li>វគ្គសិក្សាសំភាសន៍ Python ដែលផ្តោតលើរចនាសម្ព័ន្ធទិន្នន័យក្បួនដោះស្រាយ ការសំភាសន៍សាកល្បងនិងច្រើនទៀត។</li>
+</ul></li>
+<li>[ ] <a href="https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513">ការណែនាំអំពីរចនាសម្ព័ន្ធទិន្នន័យនិងក្បួនដោះស្រាយដោយប្រើ Python (វគ្គសិក្សាឥតគិតថ្លៃរបស់ Udacity)</a>៖
+<ul>
+<li>រចនាសម្ព័នធ័រណេតនិងអ័រហ្គ្រែនដោយឥតគិតថ្លៃ។</li>
+</ul></li>
+<li>[ ] <a href="https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256">រចនាសម្ព័នទិន្នន័យនិងក្បួនដោះស្រាយ! (Udacity បង់ Nanodegree)</a>៖
+<ul>
+<li>ទទួលបានការអនុវត្តជាក់ស្តែងជាមួយនឹងរចនាសម្ព័ន្ធទិន្នន័យជាង ១០០ លំហាត់ និងការណែនាំពីអ្នកបងៀនដើម្បីជួយរៀបចំអ្នកសម្រាប់ការសម្ភាសន៍ និង ដាក់ការងារ។</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="pick-one-language-for-the-interview">Pick One Language for the Interview</h3>
+<h2 id="ជ្រើសរើសភាសាមួយសម្រាប់ការសម្ភាសន៍">ជ្រើសរើសភាសាមួយសម្រាប់ការសម្ភាសន៍</h2>
+<p>អ្នកអាចប្រើភាសាដែលអ្នកមានភាពងាយស្រួលក្នុងការសរសេរកូដសំភាសន៍ប៉ុន្តែសម្រាប់ក្រុមហ៊ុនធំ ៗ ទាំងនេះគឺជាជំរើសដ៏រឹងមាំ៖</p>
+<ul>
+<li>C ++</li>
+<li>Java</li>
+<li>Python</li>
+</ul>
+<p>អ្នកក៏អាចប្រើរបស់ទាំងនេះដែរប៉ុន្តែត្រូវអានជាមុនសិន។ វាអាចមានការនិយាយតៗគ្នា៖</p>
+<ul>
+<li>JavaScript</li>
+<li>Ruby</li>
+</ul>
+<p>នេះគឺជាអត្ថបទមួយដែលខ្ញុំបានសរសេរអំពីការជ្រើសរើសភាសាសម្រាប់ការសម្ភាសន៍៖ <a href="https://startupnextdoor.com/important-pick-one-language-for-the-coding-interview/">ជ្រើសរើសយកភាសាមួយសម្រាប់ការសម្ភាសន៍សរសេរកូដ</a></p>
+<p>អ្នកគួររេីសភាសាដែលអ្នកទំលាប់ជាមួយ និង មានចំណេះដឹង។</p>
+<p>សូមអានបន្ថែមអំពីជំរើស៖ - http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/ - http://blog.codingforinterviews.com/best-programming-language-jobs/</p>
+<p><a href="programming-language-resources.md">មើលធនធានភាសានៅទីនេះ</a></p>
+<p>អ្នកនឹងឃើញការរៀន C, C ++ និង Python ខាងក្រោមព្រោះខ្ញុំកំពុងរៀន។ មានសៀវភៅពីរបីដែលពាក់ព័ន្ធសូមមើលនៅខាងក្រោម។</p>
+<hr />
+<h3 id="book-list">Book List</h3>
+<h2 id="បញ្ជីសៀវភៅ">បញ្ជីសៀវភៅ</h2>
+<p>នេះគឺជាបញ្ជីខ្លីជាងអ្វីដែលខ្ញុំបានប្រើ។ នេះត្រូវបានសង្ខេបដើម្បីជួយសន្សំសំចៃពេលវេលារបស់អ្នក។</p>
+<hr />
+<h3 id="interview-prep">Interview Prep</h3>
+<h2 id="ត្រៀមការសម្ភាសន៍">ត្រៀមការសម្ភាសន៍</h2>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Programming-Interviews-Exposed-Through-Interview/dp/111941847X/">សំភាសន៍ការសរសេរកម្មវិធីបង្ហាញ: ការសរសេរកូដវិធីរបស់អ្នកតាមរយៈការសំភាសន៍, បោះពុម្ពលើកទី ៤</a>
+<ul>
+<li>ចម្លើយសរសេរ C++ និង Java</li>
+<li>នេះគឺជាសមដ៏ល្អសម្រាប់ការបំបែកសំភាសន៍កូដ</li>
+<li>មិនពិបាកពេកទេ បញ្ហាភាគច្រើនប្រហែលជាងាយស្រួលជាងអ្វីដែលអ្នកបានឃើញក្នុងបទសម្ភាសន៍ (ពីអ្វីដែលខ្ញុំបានអាន)</li>
+</ul></li>
+<li>[ ] <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/">ការសំភាសន៍ការសរសេរកូដការបោះពុម្ពលើកទី ៦</a>
+<ul>
+<li>ចម្លើយនសរសេរជា Java</li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="if-you-have-tons-of-extra-time">If you have tons of extra time:</h3>
+<h2 id="ប្រសិនបើអ្នកមានពេលវេលាបន្ថែមច្រេីន">ប្រសិនបើអ្នកមានពេលវេលាបន្ថែមច្រេីន</h2>
+<p>ជ្រើសរើសមួយ:</p>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836">ធាតុផ្សំនៃបទសម្ភាសន៍សរសេរកម្មវិធី (កំណែ C ++)</a></li>
+<li>[ ] <a href="https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/">ធាតុផ្សំនៃការសំភាសន៍សរសេរកម្មវិធីក្នុង Python</a></li>
+<li>[ ] ធាតុនៃការសំភាសន៍សរសេរកម្មវិធី (កំណែ Java)
+<ul>
+<li><a href="https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/">សៀវភៅ</a></li>
+<li><a href="https://github.com/gardncl/elements-of-programming-interviews">គម្រោង - វិធីសាស្រ្ត Stub និងករណីតេស្តិ៍សម្រាប់រាល់បញ្ហាក្នុងសៀវភៅ</a></li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="language-specific">Language Specific</h3>
+<h2 id="ភាសាជាក់លាក់">ភាសាជាក់លាក់</h2>
+<p><strong>អ្នកត្រូវជ្រើសរើសភាសាសំរាប់សំភាសន៍ (សូមមើលខាងលើ) ។</strong></p>
+<p>នេះជាអ្នីដែលខ្ញុំគិតថាអ្នកគួរមេីល។ ខ្ញុំមិនមានធនធានសម្រាប់ភាសាទាំងអស់ទេ។ ខ្ញុំស្វាគមន៍ការដាក់បន្ថែមពីអ្នក។</p>
+<p>ប្រសិនបើអ្នកអានចំណុចមួយក្នុងចំណោមចំណុចទាំងនេះអ្នកគួរតែមានចំនេះដឹង Data Structure និងចំណេះដឹងអំពីក្បួនដោះស្រាយ (Algorithm) ដែលអ្នកត្រូវចាប់ផ្តើមធ្វើបញ្ហាសរសេរកូដ។</p>
+<p><strong>អ្នកអាចរំលងការបង្រៀនវីដេអូទាំងអស់នៅក្នុងគម្រោងនេះ</strong> លើកលែងតែអ្នកចង់ពិនិត្យឡើងវិញ។</p>
+<p><a href="programming-language-resources.md">ធនធានភាសាជាក់លាក់នៅទីនេះ។</a></p>
+<hr />
+<h2 id="c">C++</h2>
+<p>ខ្ញុំមិនបានអានទាំងពីរនេះទេ ប៉ុន្តែវាត្រូវបានវាយតម្លៃនិងសរសេរយ៉ាងខ្ពស់ដោយ Sedgewick ។ គាត់អស្ចារ្យណាស់។</p>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Algorithms-Parts-1-4-Fundamentals-Structure/dp/0201350882/">វិធីដោះស្រាយក្នុង C++, ផ្នែក ១-៤៖ មូលដ្ឋានគ្រឹះរចនាសម្ព័ន្ធទិន្នន័យ (Data Structure) តម្រៀប (Sort) ស្វែងរក (Searching)</a></li>
+<li>[ ] <a href="https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/">វិធីដោះស្រាយក្នុង C++ ភាគ ៥៖ ក្បួនដោះស្រាយក្រាហ្វិច</a></li>
+</ul>
+<p>ប្រសិនបើអ្នកមានអនុសាសន៍ល្អប្រសើរសម្រាប់ C++ សូមប្រាប់ខ្ញុំឱ្យដឹង។ រកមើលធនធានទូលំទូលាយ។</p>
+<hr />
+<h2 id="java">Java</h2>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/">វិធីដោះស្រាយ (Sedgewick និង Wayne)</a>
+<ul>
+<li>វីដេអូដែលមានមាតិកាសៀវភៅ (និង Sedgewick!) លើវគ្គសិក្សា៖
+<ul>
+<li><a href="https://www.coursera.org/learn/algorithms-part1">ក្បួនដោះស្រាយ I</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-part2">ក្បួនដោះស្រាយទី ២</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>រឺ៖</p>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/">រចនាសម្ព័ន្ធទិន្នន័យ (Data Structure) និងក្បួនដោះស្រាយ Java</a>
+<ul>
+<li>ដោយហ្គ្រីដល (Goodrich), តាតសាសៀ (Tamassia), ហ្គោវីស (Goldwasser)</li>
+<li>អត្ថបទសម្រាប់វគ្គសិក្សាសំរាប់ថ្នាក់ដំបូងរបស់វិទ្យាសាស្ត្រកុំព្យូទ័រនៅឯ UC Berkeley</li>
+<li>សូមមើលរបាយការណ៍សៀវភៅរបស់ខ្ញុំស្តីពីកំណែ Python ខាងក្រោម។ សៀវភៅនេះមានប្រធានបទដូចគ្នា។</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="python">Python</h2>
+<ul>
+<li>[ ] <a href="https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275/">រចនាសម្ព័ន្ធទិន្នន័យ (Data Structure) និងក្បួនដោះស្រាយ (Algorithm) ក្នុង Python</a>
+<ul>
+<li>ដោយហ្គ្រីដល (Goodrich), តាតសាសៀ (Tamassia), ហ្គោវីស (Goldwasser)</li>
+<li>ខ្ញុំចូលចិត្តសៀវភៅនេះ។ វាគ្របដណ្តប់អ្វីៗគ្រប់យ៉ាងនិងច្រើនទៀត។</li>
+<li>លេខកូដព្យញ្ជនៈ</li>
+<li>របាយការណ៍សៀវភៅរបស់ខ្ញុំ៖ https://startupnextdoor.com/book-report-data-structures-and-al algorithms-in-python/</li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="before-you-get-started">Before you Get Started</h3>
+<h2 id="មុនពេលអ្នកចាប់ផ្តើម">មុនពេលអ្នកចាប់ផ្តើម</h2>
+<p>បញ្ជីនេះបានកើនឡើងអស់រយៈពេលជាច្រើនខែហើយ ។</p>
+<p>នេះគឺជាកំហុសមួយចំនួនដែលខ្ញុំបានធ្វើដូច្នេះអ្នកនឹងមានបទពិសោធប្រសើរជាងមុន។</p>
+<h3 id="អ្នកនឹងមិនចងចាំវាទាំងអស់">1. អ្នកនឹងមិនចងចាំវាទាំងអស់</h3>
+<p>ខ្ញុំបានមើលវីដេអូជាច្រើនម៉ោងនិងកត់ចំណាំគួរអោយចង់សើច ហើយប៉ុន្មានខែក្រោយមកមានរឿងជាច្រើនដែលខ្ញុំមិនចាំ។ ខ្ញុំចំណាយពេល ៣ ថ្ងៃទៀត តាមរយៈកំណត់ចំណាំរបស់ខ្ញុំនិងធ្វើប័ណ្ណបញ្ជាក់ដូច្នេះខ្ញុំអាចពិនិត្យមើលឡើងវិញ។</p>
+<p>សូមមេត្តាអានដូច្នេះអ្នកនឹងមិនធ្វើឱ្យខ្ញុំខុសទេ។</p>
+<p><a href="https://startupnextdoor.com/retaining-computer-science-knowledge/">រក្សាចំណេះដឹងវិទ្យាសាស្ត្រកុំព្យូទ័រ</a> ។</p>
+<p>វគ្គសិក្សាដែលបានណែនាំដល់ខ្ញុំ (មិនបានសិក្សាវាទេ)៖ <a href="https://www.coursera.org/learn/learning-how-to-learn">ការរៀនពីរបៀបរៀន</a></p>
+<h3 id="ប្រើកាតបង្ហាញ">2. ប្រើកាតបង្ហាញ</h3>
+<p>ដើម្បីដោះស្រាយបញ្ហា ខ្ញុំបានបង្កើតវេបសាយកាតតូចមួយដែលខ្ញុំអាចបន្ថែមកាតចំនួន ២ ប្រភេទគឺទូទៅនិងលេខកូដ។ កាតនីមួយៗមានទ្រង់ទ្រាយខុសៗគ្នា។</p>
+<p>ខ្ញុំបានបង្កើតវេបសាយសំរាប់ទូរស័ព្ទដំបូងមួយ ដូច្នេះខ្ញុំអាចពិនិត្យមើលឡើងវិញនៅលើទូរស័ព្ទ និង ថេប្លេតរបស់ខ្ញុំទោះបីខ្ញុំនៅទីណាក៏ដោយ។</p>
+<p>អ្នកអាចបង្កេីតដោយឥតគិតថ្លៃ៖</p>
+<ul>
+<li><a href="https://github.com/jwasham/computer-science-flash-cards">បណ្តាញឃ្លាំងផ្ទុកកាតឡើងវិញ</a></li>
+<li><a href="https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham.db">មូលដ្ឋានទិន្នន័យកាតរបស់ខ្ញុំ (កាតចាស់ - ១២០០ កាត)</a>៖</li>
+<li><a href="https://github.com/jwasham/computer-science-flash-cards/blob/master/cards-jwasham-extreme.db">ប្រព័ន្ធទិន្នន័យកាតរបស់ខ្ញុំ (កាតថ្មី - ១៨០០)</a>៖</li>
+</ul>
+<p>សូមចងចាំថាខ្ញុំបានឡើងលើក្តារហើយមានកាតគ្របដណ្តប់លើអ្វីៗទាំងអស់ចាប់ពីភាសាការជួបប្រជុំគ្នា និង សំនួរទាក់ទងនឹង Python រហូតដល់ការរៀនម៉ាស៊ីននិងស្ថិតិ។ វាជាវិធីច្រើនពេកសម្រាប់អ្វីដែលត្រូវការ។</p>
+<p><strong>កំណត់ចំណាំនៅលើបណ្ណបង្ហាញ៖</strong> ជាលើកដំបូងដែលអ្នកទទួលស្គាល់អ្នកដឹងពីចម្លើយ សូមកុំសម្គាល់វាថាត្រូវបានគេស្គាល់។ អ្នកត្រូវតែមើល កាតដូចគ្នានិងឆ្លើយវាច្រើនដងឱ្យបានត្រឹមត្រូវមុនពេលដែលអ្នកពិតជាដឹង។ ពាក្យដដែលៗនឹងធ្វើឱ្យចំណេះដឹងនោះកាន់តែស៊ីជម្រៅ ខួរក្បាលរបស់អ្នក។</p>
+<p>ជំរើសមួយផ្សេងទៀតក្នុងការប្រើប្រាស់បណ្តាញកាតរបស់ខ្ញុំគឺ <a href="http://ankisrs.net/">Anki</a> ដែលត្រូវបានណែនាំអោយខ្ញុំច្រើនដង។ វាប្រើប្រព័ន្ធពាក្យដដែលៗដើម្បីជួយអ្នកចងចាំ។ វាមានភាពងាយស្រួលសម្រាប់អ្នកប្រើដែលមាននៅលើគ្រប់វេទិកាទាំងអស់និងមានប្រព័ន្ធធ្វើសមកាលកម្មពពក។ វាមានតម្លៃ ២៥ ដុល្លារលើប្រព័ន្ធប្រតិបត្តិការ iOS ប៉ុន្តែមិនគិតថ្លៃនៅលើវេទិកាផ្សេងទៀតទេ។</p>
+<p>មូលដ្ឋានទិន្នន័យបណ្ណបង្ហាញរបស់ខ្ញុំក្នុងទំរង់អាគី (Anki) ៖ https://ankiweb.net/shared/info/25173560 (សូមអរគុណ <span class="citation" data-cites="xiewenya">[@xiewenya]</span>(https://github.com/xiewenya)</p>
+<h3 id="ចាប់ផ្តើមធ្វើសំណួរសម្ភាសន៍សរសេរកូដខណៈពេលដែលអ្នកកំពុងរៀនរចនាសម្ព័ន្ធទិន្នន័យ-data-structure-និង-ក្បួនដោះស្រាយ-algorithm">៣. ចាប់ផ្តើមធ្វើសំណួរសម្ភាសន៍សរសេរកូដខណៈពេលដែលអ្នកកំពុងរៀនរចនាសម្ព័ន្ធទិន្នន័យ (Data Structure) និង ក្បួនដោះស្រាយ (Algorithm)</h3>
+<p>អ្នកត្រូវអនុវត្តអ្វីដែលអ្នកកំពុងរៀនដើម្បីដោះស្រាយបញ្ហាឬអ្នកនឹងភ្លេច។ ខ្ញុំបានធ្វើកំហុសនេះ។ នៅពេលដែលអ្នកបានរៀនប្រធានបទមួយ ហើយមានអារម្មណ៍ស្រួលជាមួយវាដូចជាបញ្ជីភ្ជាប់បើកសៀវភៅសម្ភាសន៍កូដសរសេរមួយហើយធ្វើសំណួរពីរបីទាក់ទងនឹង បញ្ជីដែលបានភ្ជាប់។ បន្ទាប់មកបន្តទៅប្រធានបទសិក្សាបន្ទាប់។ បន្ទាប់មកពេលក្រោយ ត្រលប់ក្រោយហើយធ្វើបញ្ហាបញ្ជីដែលបានភ្ជាប់ផ្សេងទៀត ឬបញ្ហាការហៅឡើងវិញឬអ្វីផ្សេងទៀត។ ប៉ុន្តែនៅតែធ្វើបញ្ហានៅពេលអ្នកកំពុងរៀន។ អ្នកមិនត្រូវបានគេជួលដើម្បីចំណេះដឹងទេ ប៉ុន្តែរបៀបដែលអ្នកអនុវត្តចំណេះដឹង។ មានសៀវភៅនិងគេហទំព័រជាច្រើនដែលខ្ញុំសូមណែនាំ។ សូមមើលនៅទីនេះសម្រាប់ព័ត៌មានបន្ថែម: <a href="#coding-question-practice">ការអនុវត្តសំណួរសំណួរសរសេរកូដ</a></p>
+<h3 id="ពិនិត្យឡើងវិញ-ពិនិត្យឡើងវិញ-ពិនិត្យឡើងវិញ">4. ពិនិត្យឡើងវិញ ពិនិត្យឡើងវិញ ពិនិត្យឡើងវិញ</h3>
+<p>ខ្ញុំរក្សាទុកសន្លឹកបន្លំមួយសន្លឹកនៅលើ ASCII, OSI stack, សញ្ញាណសំគាល់ធំ ៗ (Big-O) និងច្រើនទៀត។ ខ្ញុំសិក្សាវានៅពេលខ្ញុំមានពេលទំនេរខ្លះ។</p>
+<p>សម្រាកពីបញ្ហាសរសេរកម្មវិធីរយៈពេលកន្លះម៉ោង ហើយអានកាតរបស់អ្នក។</p>
+<h3 id="ផ្តោតអារម្មណ៍">5. ផ្តោតអារម្មណ៍</h3>
+<p>មានការរំខានជាច្រើនដែលអាចចំណាយពេលដ៏មានតម្លៃ។ ការផ្តោតអារម្មណ៍គឺពិបាក។ បើកតន្ត្រីមួយចំនួនដែលគ្មានទំនុកច្រៀងទេអ្នកនឹងអាចផ្តោតអារម្មណ៍បានល្អ។</p>
+<hr />
+<h3 id="what-you-wont-see-covered">What you won’t see covered</h3>
+<h2 id="អ្វីដែលអ្នកនឹងមិនឃើញគ្របដណ្តប់">អ្វីដែលអ្នកនឹងមិនឃើញគ្របដណ្តប់</h2>
+<p>ទាំងនេះជាបច្ចេកវិទ្យាដែលមានជាទូទៅប៉ុន្តែមិនមែនជាផ្នែកនៃផែនការសិក្សានេះទេ៖</p>
+<ul>
+<li>SQL</li>
+<li>Javascript</li>
+<li>HTML, CSS និងបច្ចេកវិទ្យាផ្នែក front-end</li>
+</ul>
+<hr />
+<h3 id="the-daily-plan">The Daily Plan</h3>
+<h2 id="ផែនការប្រចាំថ្ងៃ">ផែនការប្រចាំថ្ងៃ</h2>
+<p>មុខវិជ្ជាខ្លះចំណាយពេលមួយថ្ងៃហើយ មុខវិជ្ជាខ្លះនឹងចំណាយពេលច្រើនថ្ងៃ។ អ្នកខ្លះរៀនតែគ្មានអ្វីអនុវត្ត។</p>
+<p>ជារៀងរាល់ថ្ងៃខ្ញុំយកប្រធានបទមួយចេញពីបញ្ជីខាងក្រោមមើលវីដេអូអំពីប្រធានបទនោះហើយសរសេរកូតនៅក្នុង៖ - C - ប្រើរចនាសម្ព័ន្ធ និង មុខងារដែលយករចនាសម្ព័ន្ធ * និង អ្វីផ្សេងទៀតជា Arguments។ - C++ - ដោយមិនប្រើមុខងារដែលភ្ជាប់មកជាមួយនឹង ភាសា - C++ - ប្រើប្រភេទដែលមានស្រាប់ដូចជា STL’s::list សម្រាប់បញ្ជីភ្ជាប់ (Linked list) - Python - ប្រើប្រភេទដែលមានស្រាប់ (ដើម្បីរំលឹក Python) - និងសរសេរការធ្វើតេស្តដើម្បីធានាថាខ្ញុំធ្វើវាបានត្រឹមត្រូវពេលខ្លះគ្រាន់តែប្រើសេចក្តីថ្លែងអះអាងសាមញ្ញ assert() - អ្នកអាចធ្វើ Jav ឬ អ្វីផ្សេងទៀតនេះគ្រាន់តែជារឿងរបស់ខ្ញុំប៉ុណ្ណោះ។</p>
+<p>អ្នកមិនត្រូវការរបស់ទាំងអស់នេះទេ។ អ្នកត្រូវការតែ <a href="#pick-one-language-for-the-interview">ភាសាមួយសម្រាប់ការសម្ភាសន៍</a> ។</p>
+<p>ហេតុអ្វីត្រូវកូដទាំងអស់នេះ? - អនុវត្ត អនុវត្ត អនុវត្តរហូតដល់ខ្ញុំច្បាស់ហើយអាចធ្វើវាដោយគ្មានបញ្ហា (អ្នកខ្លះមានករណីកំរច្រើន និង ព័ត៌មានលំអិតនៃការរក្សាទុកសៀវភៅដើម្បីចងចាំ) - ធ្វើការនៅក្នុងឧបសគ្គ (បែងចែក / លុបចេញអង្គចងចាំ (Memory) ដោយគ្មានជំនួយពីការប្រមូលសំរាម (Gabage Collection) (លើកលែងតែ Python ឬ Java)) - ប្រើប្រភេទដែលមានស្រាប់ដូច្នេះខ្ញុំមានបទពិសោធន៍ប្រើឧបករណ៍ដែលមានស្រាប់សម្រាប់ការប្រើប្រាស់ដូចពេលធ្វេីការ (មិនមែនថាសរសេរការអនុវត្តន៍បញ្ជី (Linked List) របស់ខ្ញុំផ្ទាល់ក្នុងពេលធ្វេីការ)</p>
+<p>ខ្ញុំប្រហែលជាមិនមានពេលវេលាដើម្បីធ្វើការទាំងអស់សម្រាប់មុខវិជ្ជាទាំងអស់នោះទេប៉ុន្តែខ្ញុំនឹងព្យាយាម។</p>
+<p>អ្នកអាចឃើញកូដរបស់ខ្ញុំនៅទីនេះ៖</p>
+<ul>
+<li><a href="https://github.com/jwasham/practice-c">C</a></li>
+<li><a href="https://github.com/jwasham/practice-cpp">C++</a></li>
+<li><a href="https://github.com/jwasham/practice-python">Python</a></li>
+</ul>
+<p>អ្នកមិនចាំបាច់ទន្ទេញចាំគ្រប់ក្បួនដោះស្រាយទាំងអស់។</p>
+<p>សរសេរកូដនៅលើក្ដារខៀនឬក្រដាស មិនមែនកុំព្យូទ័រទេ។ សាកល្បងជាមួយធាតុចូលគំរូមួយចំនួន។ បន្ទាប់មកសាកល្បងវានៅលើកុំព្យូទ័រ។</p>
+<h2 id="ចំណេះដឹងចាំបាច់">ចំណេះដឹងចាំបាច់</h2>
+<ul>
+<li>[ ] <strong>រៀន C</strong>
+<ul>
+<li><p>C គឺនៅគ្រប់ទីកន្លែង។ អ្នកនឹងឃើញឧទាហរណ៍នៅក្នុងសៀវភៅការបង្រៀនវីដេអូ <em>នៅគ្រប់ទីកន្លែង</em> ពេលអ្នកកំពុងសិក្សា។</p></li>
+<li>[ ] <a href="https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628">ភាសាសរសេរកម្មវិធី C, ភាគ ២</a>         
+<ul>
+<li>នេះគឺជាសៀវភៅខ្លីមួយប៉ុន្តែវានឹងផ្តល់ឱ្យអ្នកនូវភាសា C យ៉ាងល្អហើយប្រសិនបើអ្នកអនុវត្តវាបន្តិច អ្នកនឹងឆាប់ស្ទាត់ជំនាញ។ ការយល់ដឹង C ជួយអ្នកឱ្យយល់ពីរបៀបដែលកម្មវិធីនិងការចងចាំដំណើរការ។         </li>
+<li><a href="https://github.com/lekkas/c-algorithms">ចម្លើយចំពោះសំណួរ</a></li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>របៀបដែលកុំព្យូទ័រដំណើរការកម្មវិធី:</strong>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=XM4lGflQFvA">តើស៊ីភីយូប្រតិបត្តិកម្មវិធីមួយយ៉ាងដូចម្តេច? (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/1I5ZMmrOfnA">របៀបគណនាកុំព្យូទ័រ - ALU (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/fpnE6UAfbtU">ចុះបញ្ជី (Registers) និង រ៉េម (RAM) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/FZGugFqdr60">អង្គភាពកែច្នៃកណ្តាល (ស៊ីភីយូ) (The Central Processing Unit) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/zltgXvg6r3k">សេចក្តីណែនាំនិងកម្មវិធី (វីដេអូ)</a></li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="algorithmic-complexity-big-o-asymptotic-analysis">Algorithmic complexity / Big-O / Asymptotic analysis</h3>
+<h2 id="ភាពស្មុគស្មាញនៃក្បួនដោះស្រាយ-ការវិភាគ-big-o">ភាពស្មុគស្មាញនៃក្បួនដោះស្រាយ / ការវិភាគ Big-O</h2>
+<ul>
+<li>គ្មានអ្វីត្រូវអនុវត្តទេ</li>
+<li>មានវីដេអូជាច្រើននៅទីនេះ។ គ្រាន់តែមើលឱ្យបានគ្រប់គ្រាន់រហូតដល់អ្នកយល់។ អ្នកអាចត្រលប់មកពិនិត្យឡើងវិញជានិច្ច។</li>
+<li>ប្រសិនបើការបង្រៀនមួយចំនួនមានភាពស្រងូតស្រងាត់អ្នកអាចរំលងដល់ក្រោមហើយមើលវីដេអូគណិតវិទ្យាដែលដាច់ពីគ្នាដើម្បីទទួលបានចំណេះដឹងជាមូលដ្ឋាន។</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=iOq5kSKqeR4">Harvard CS50 - Asymptotic Notation (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=V6mKVRU1evU">កំណត់ចំណាំ Big-O (ការបង្រៀនរហ័សទូទៅ) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ei-A_wy5Yxw&amp;index=2&amp;list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN">Big O Notation (និង Omega និង Theta) - ការពន្យល់គណិតវិទ្យាល្អបំផុត (វីដេអូ)</a></li>
+<li>[ ] Skiena៖     - <a href="https://www.youtube.com/watch?v=gSyDMtdPNpU&amp;index=2&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">វីដេអូ</a>     - <a href="http://www3.cs.stonybrook.edu/~algorith/video-lectures/2007/lecture2.pdf">ស្លាយ</a></li>
+<li>[ ] <a href="http://discrete.gr/complexity/">ការណែនាំមួយចំពោះការវិភាគស្មុគស្មាញនៃគណិតវិទ្យា</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/algorithmic-thinking-1/orders-of-growth-6PKkX">លំដាប់នៃការលូតលាស់ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/algorithmic-thinking-1/asymptotics-bXAtM">ការវិភាគអាមីស្តូតូទិក (Amortized) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98">UC Berkeley Big O (មានវីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_ca3e7UVmeUc">UC Berkeley Big Omega (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=B3SpQZaAZP4&amp;index=10&amp;list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN">ការវិភាគរំលោះ (Amortized) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/alacticmic-thinking-1/illustrating-big-o-YVqzv">បង្ហាញរូបភាព “Big-O” (វីដេអូ)</a></li>
+<li>[ ] TopCoder (រួមបញ្ចូលទាំងទំនាក់ទំនងកើតឡើងវិញនិងទ្រឹស្តីបទមេ)៖
+<ul>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/computational-complexity-section-1/">ភាពស្មុគស្មាញនៃការគណនា៖ ផ្នែកទី ១</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/computational-complexity-section-2/">ភាពស្មុគស្មាញនៃការគណនា៖ ផ្នែកទី ២</a></li>
+</ul></li>
+<li>[ ] <a href="http://bigocheatsheet.com/">សន្លឹកជំនួយ</a></li>
+</ul>
+<hr />
+<h3 id="data-structures">Data Structures</h3>
+<h2 id="រចនាសម្ព័ន្ធទិន្នន័យ">រចនាសម្ព័ន្ធទិន្នន័យ</h2>
+<ul>
+<li><h3 id="arrays">Arrays</h3>
+<ul>
+<li>អនុវត្តវ៉ិចទ័រប្តូរទំហំដោយស្វ័យប្រវត្តិ។</li>
+<li>[ ] ការពិពណ៌នា៖
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/OsBSF/arrays">Arrays (វីដេអូ)</a> -<a href="https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE">UC Berkeley CS61B - អារេ លីនែអ៊ែរ និង ពហុវិមាត្រ (វីដេអូ)</a> (ចាប់ផ្តើមមើលចាប់ពី ១៥នាទី ៣២វិនាទី)</li>
+<li><a href="https://archive.org/details/0102WhatYouShouldKnow/02_04-basicArrays.mp4">Arrays មូលដ្ឋាន (វីដេអូ)</a></li>
+<li><a href="https://archive.org/details/0102WhatYouShouldKnow/02_05-multidimensionalArrays.mp4">ពហុវិមាត្រ (វីដេអូ)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/EwbnV/dynamic-arrays">Arrays ឌីណាមិចេ (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1jtrQqYpt7g">Jagged Arrays (វីដេអូ)</a></li>
+<li><a href="https://archive.org/details/0102WhatYouShouldKnow/02_06-jaggedArrays.mp4">Jagged Arrays (វីដេអូ)</a></li>
+<li><a href="https://archive.org/details/0102WhatYouShouldKnow/03_01-resizableArrays.mp4">ការប្តូរទំហំ Arrays (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] អនុវត្តវ៉ិចទ័រ (បំលែង Arrays ដោយប្តូរទំហំស្វ័យប្រវត្តិ)៖
+<ul>
+<li>[ ] អនុវត្តការសរសេរកូដដោយប្រើArrays និង ទ្រនិចចង្អុល និង គណិតទ្រនិចដើម្បីលោតទៅសន្ទស្សន៍មួយ។</li>
+<li>[ ] Arrays ទិន្នន័យថ្មីដែលមានអង្គចងចាំបម្រុងទុក
+<ul>
+<li>អាចបែងចែកArraysនៅក្រោមក្រណាត់ដោយគ្រាន់តែមិនប្រើលក្ខណៈពិសេសរបស់វា</li>
+<li>ចាប់ផ្តើមជាមួយលេខ ១៦ ឬបើលេខចាប់ផ្តើមធំជាងប្រើថាមពល ២ - ១៦, ៣២, ៦៤, ១២៨</li>
+</ul></li>
+<li>[ ] size() - ចំនួនធាតុ</li>
+<li>[ ] capacity() - ចំនួនធាតុដែលវាអាចផ្ទុកបាន</li>
+<li>[ ] is_empty()</li>
+<li>[ ] at(index) - ត្រឡប់ធាតុនៅទីតាំងដែលបានផ្តល់ឱ្យ បេីទីតាំងនៅក្រៅព្រំដែន វានឹង មានកុំហស</li>
+<li>[ ] push(item)</li>
+<li>[ ] insert(index, item) - បញ្ចូលធាតុនៅទីតាំង ប្តូរតម្លៃទីតាំង និងធាតុនៅខាងក្រោមទៅខាងស្តាំ</li>
+<li>[ ] prepend (item) - អាចប្រើបញ្ចូលខាងលើនៅទីតាំង ០</li>
+<li>[ ] pop() - ដកចេញពីចុងបញ្ចប់តម្លៃត្រឡប់មកវិញ</li>
+<li>[ ] delete(index) - លុបធាតុនៅទីតាំងដែលអោយ ផ្លាស់ប្តូរធាតុនៅពីក្រោយទាំងអស់</li>
+<li>[ ] remove(item) - រកមើលតម្លៃនិងយកទីតាំងចេញដែលផ្ទុកវាចេញ (ទោះបីជានៅកន្លែងច្រើនក៏ដោយ)</li>
+<li>[ ] find(item) - រកមើលតម្លៃហើយត្រឡប់វិញនៅទីតាំងដំបូងជាមួយតម្លៃនោះ បើរកមិនឃើញត្រលប់វិញ -1</li>
+<li>[ ] resize(new_capacity) // មុខងារឯកជន
+<ul>
+<li>ពេលទំហំ Array ដល់កំណត់, ផ្លាស់ប្តូរទំហំទ្វេដងទំហំ</li>
+<li>នៅពេលដែលចាប់យកវត្ថុមួយ ប្រសិនបើទំហំគឺ 1/4 នៃទំហំសរុប, ផ្លាស់ប្តូរទំហំដល់ពាក់កណ្តាល</li>
+</ul></li>
+</ul></li>
+<li>[ ] ពេលវេលា
+<ul>
+<li>O(១) ត្រូវបន្ថែម / ដកចេញនៅចុងបញ្ចប់ (សងវិញសម្រាប់ការបែងចែកសម្រាប់ទំហំបន្ថែម) ទីតាំង</li>
+<li>O(n) ដើម្បីបញ្ចូល / ដកចេញនៅកន្លែងផ្សេងទៀត</li>
+</ul></li>
+<li>[ ] លំហ
+<ul>
+<li>ជាប់ទាក់ទងនឹងការចងចាំដូច្នេះភាពជិតស្និទ្ធជួយដល់ការអនុវត្ត</li>
+<li>ទំហំត្រូវការ = (ទំហំ Array, ដែល &gt;= n) * ទំហំនៃធាតុ, ប៉ុន្តែបើទោះបីជា 2n, នៅតែ O (n)</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<ul>
+<li><h3 id="linked-lists">Linked Lists</h3>
+<ul>
+<li>[ ] ការពិពណ៌នា៖
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/kHhgK/singly-linked-lists">Singly Linked Lists (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0">CS 61B - Linked Lists ១ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w">CS 61B - Linked Lists ២ (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=QN6FPiD0Gzo">កូដ C (វីដេអូ)</a>
+<ul>
+<li>មិនមែនវីដេអូទាំងមូលទេគឺគ្រាន់តែជាផ្នែកអំពីរចនាសម្ព័ន្ធ (Data Structure) និងការបែងចែក Memory ។</li>
+</ul></li>
+<li>[ ] Linked List vs Arrays:
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/rjBs9/core-linked-lists-vs-arrays">Core Linked Lists Vs Arrays (វីដេអូ)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/QUaUd/in-the-real-world-lists-vs-arrays">នៅក្នុងពិភពពិត Linked Lists Vs Arrays (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=YQs6IC-vgmo">ហេតុអ្វីអ្នកគួរចៀសវាង linked lists (វីដេអូ)</a></li>
+<li>[ ] Gotcha: you need pointer to pointer knowledge:         (សម្រាប់ពេលអ្នកហុច pointer ទៅមុខងារមួយដែលអាចផ្លាស់ប្តូរអាស័យដ្ឋានដែលព្រួញចង្អុល)         ទំព័រនេះគ្រាន់តែដើម្បីស្វែងយល់ពី pointer ទៅ pointer ។ ខ្ញុំមិនណែនាំបញ្ជីឈ្មោះបែបត្រាប់តាមនេះទេ។ ភាពងាយស្រួលក្នុងការអាននិងរក្សាបាននូវភាពលំបាកដោយសារតែភាពឆ្លាតវៃ។
+<ul>
+<li><a href="https://www.eskimo.com/~scs/cclass/int/sx8.html">Pointer ទៅ pointer</a></li>
+</ul></li>
+<li>[ ] អនុវត្ត (ខ្ញុំបានធ្វើដោយប្រើទ្រនិចកន្ទុយនិងដោយគ្មាន)៖
+<ul>
+<li>[ ] size() - ត្រឡប់ចំនួនធាតុទិន្នន័យក្នុងបញ្ជី</li>
+<li>[ ] empty() - bool ត្រឡប់ពិតបើទទេ</li>
+<li>[ ] value_at(index) - ត្រឡប់តម្លៃនៃធាតុទី (ចាប់ផ្តើមពីលេខ ០ ដំបូង)</li>
+<li>[ ] push_front(តម្លៃ) - បន្ថែមធាតុនៅខាងមុខបញ្ជី</li>
+<li>[ ] pop_front() - យកធាតុខាងមុខចេញហើយប្រគល់តម្លៃរបស់វាមកវិញ</li>
+<li>[ ] push_back(តម្លៃ) - បន្ថែមធាតុនៅចុងបញ្ចប់</li>
+<li>[ ] pop_back() - យកធាតុបញ្ចប់ហើយត្រឡប់តម្លៃរបស់វា</li>
+<li>[ ] front() - ទទួលបានតម្លៃនៃធាតុខាងមុខ</li>
+<li>[ ] back() - ទទួលបានតម្លៃនៃធាតុបញ្ចប់</li>
+<li>[ ] insert(index, តម្លៃ) - បញ្ចូលតម្លៃនៅindex ដូច្នេះធាតុបច្ចុប្បន្ននៅindexនោះត្រូវបានចង្អុលទៅធាតុថ្មីនៅindex។</li>
+<li>[ ] erase(index) - យក Node ចេញនៅ index ដែលបានផ្តល់ឱ្យ</li>
+<li>[ ] value_n_from_end(n) - ត្រឡប់តម្លៃ Node ទីពីខាងចុងបញ្ជី</li>
+<li>[ ] reverse() - បញ្ច្រាស់បញ្ជី</li>
+<li>[ ] remove_value(តម្លៃ) - លុបធាតុដំបូងក្នុងបញ្ជីជាមួយតម្លៃនេះ</li>
+</ul></li>
+<li>[ ] Doubly-linked List
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/jpGKD/doubly-linked-lists">ការពិពណ៌នា (វីដេអូ)</a></li>
+<li>មិនចាំបាច់អនុវត្តទេ</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<ul>
+<li><h3 id="stack">Stack</h3>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks">Stack (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/05_01-usingStacksForLast-inFirst-out.mp4">ការប្រើ Stack ចូលមុនចេញក្រោយ (វីដេអូ)</a></li>
+<li>[ ] នឹងមិនអនុវត្តទេ។ ការអនុវត្តជាមួយ Array គឺមិនសំខាន់។</li>
+</ul></li>
+<li><h3 id="queue">Queue</h3>
+<ul>
+<li>[ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/05_03-usingQueuesForFirst-inFirst-out.mp4">ការប្រើ Queue ចូលមុនចេញមុន(វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/lecture/data-structures/queues-EShpq">Queue (វីដេអូ)</a>     - [ ] <a href="https://en.wikipedia.org/wiki/Circular_buffer">Circular buffer/FIFO</a>     - [ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/05_04-priorityQueuesAndDeques.mp4">Queue អាទិភាព (វីដេអូ)</a>     - [ ] ប្រើ linked-list ដែលមានភ្ជាប់ជាមួយទ្រនិចនៅកន្ទុយ៖
+<ul>
+<li>enqueue(តម្លៃ) - បន្ថែមតម្លៃនៅទីតាំងនៅកន្ទុយ</li>
+<li>dequeue() - ត្រឡប់តម្លៃនិងយកធាតុដែលបានបន្ថែមថ្មីៗចេញ (ផ្នែកខាងមុខ)</li>
+<li>empty()     - [ ] អនុវត្តដោយប្រើអារេ Array ទំហំថេរ៖</li>
+<li>enqueue(តម្លៃ) - បន្ថែមធាតុនៅចុងបញ្ចប់នៃការផ្ទុកដែលមាន</li>
+<li>dequeue() - ត្រឡប់តម្លៃនិងយកធាតុដែលបានបន្ថែមថ្មីៗចេញ</li>
+<li>empty()</li>
+<li>full()     - [ ] ថ្លៃ៖</li>
+<li>ការអនុវត្តមិនល្អដោយប្រើlinked listដែលអ្នករៀបជាជួរនៅនឹងក្បាលនិងដេស្កាយនៅកន្ទុយប្រហែលជា O(n)             ដោយសារតែអ្នកត្រូវការនៅជាប់នឹងធាតុចុងក្រោយ, បណ្តាលឱ្យ dequeue គ្នាឆ្លងកាត់ពេញលេញ</li>
+<li>enqueue: O(1) (amortized, linked list and array [probing])</li>
+<li>dequeue: O(1) (linked list and array)</li>
+<li>empty: O(1) (linked list and array)</li>
+</ul></li>
+</ul></li>
+<li><h3 id="តារាងហាស-hash-table">តារាងហាស (Hash table)</h3>
+<ul>
+<li>[ ] វីដេអូ៖
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=0M_kIqwbFo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=8">Hashing with Chaining (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=BRO7mVIFt08&amp;index=9&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Table Doubling, Karp-Rabin (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=rvdJDijO2Ro&amp;index=10&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Open Addressing, Cryptographic Hashing (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=C4Kc8xzcA68">PyCon 2010: វចនានុក្រមដ៏អស្ចារ្យ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=z0lJ2k0sl1g&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=11">(កម្រិតខ្ពស់) Randomization: Universal &amp; Perfect Hashing (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=N0COwN14gt0&amp;list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&amp;index=4">(ជឿនលឿន) Perfect hashing (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] វគ្គសិក្សាអនឡាញ៖
+<ul>
+<li>[ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/06_02-understandingHashFunctions.mp4">ស្វែងយល់អំពីមុខងារ Hash (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/06_03-usingHashTables.mp4">ការប្រើតារាងHash (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/06_04-%20ឧបត្ថម្ភគាំទ្រហាន់ឌ្រី">គាំទ្រ Hash (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/0102WhatYouShouldKnow/06_05-languageSupportForHashTables.mp4">តារាងជំនួយភាសា Hash(វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/m7UuP/core-hash-tables">Core Hash Tables (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/home/week/4">រចនាសម្ព័ន្ធទិន្នន័យ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/NYZZP/phone-book-problem">បញ្ហាសៀវភៅទូរស័ព្ទ (វីដេអូ)</a></li>
+<li>[តារាងចែកចាយ]
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/DvaIb/instant-uploads-and-storage-optimization-in-dropbox">ការផ្ទុកឡើងភ្លាមៗនិងការបង្កើនប្រសិទ្ធភាពផ្ទុកនៅក្នុងប្រអប់ឯកសារ (វីដេអូ)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/tvH8H/distributed-hash-tables">តារាងហាសចែកចាយ (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+<li>[ ] អនុវត្តជាមួយអារេដោយប្រើការស៊ើបអង្កេតលីនេអ៊ែរ
+<ul>
+<li>hash(k, m) - m គឺជាទំហំនៃតារាង hash</li>
+<li>add(key, value) - ប្រសិនបើមានកូនសោររួចហើយ, ធ្វើបច្ចុប្បន្នភាពតម្លៃ</li>
+<li>exists(key)</li>
+<li>get(key)</li>
+<li>remove(key)</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h3 id="more-knowledge">More Knowledge</h3>
+<h2 id="ចំណេះដឹងបន្ថែម">ចំណេះដឹងបន្ថែម</h2>
+<ul>
+<li><h3 id="binary-search">Binary search</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=D5SrAga1pno">Binary search (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search">Binary search (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.topcoder.com/community/competitive-programming/tutorials/binary-search/">លម្អិត</a></li>
+<li>[ ] អនុវត្ត៖
+<ul>
+<li>Binary search (នៅលើជួរអារេនៃចំនួនគត់)</li>
+<li>Binary search ដោយប្រើការហៅខ្លួនឯង</li>
+</ul></li>
+</ul></li>
+<li><h3 id="ប្រតិបតិ្តការ-bitwise">ប្រតិបតិ្តការ Bitwise</h3>
+<ul>
+<li>[ ] <a href="https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-sheet.pdf">សន្លឹកជំនួយ Bits</a>
+<ul>
+<li>អ្នកគួរតែស្គាល់ អំណាច ២ ពី (២ ^ ១ ដល់ ២ ^ ១៦ និង ២ ^ ៣២)</li>
+</ul></li>
+<li>[ ] ទទួលបានការយល់ដឹងដ៏ល្អអំពីការរៀបចំBitsជាមួយ៖ &amp;, |, ^, ~, &gt;&gt;, &lt;&lt;
+<ul>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Word_%20(computer_architecture)">ពាក្យ</a></li>
+<li>[ ] ការណែនាំល្អ៖             ការធ្វើចលនាBits (វីដេអូ)](https://www.youtube.com/watch?v=7jkIUgLC29I)</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=d0AwjSpNXR0">C ការបង្រៀនសរសេរកម្មវិធី ២-១០: ប្រតិបត្តិការ Bitwise (វីដេអូ)</a></li>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Bit_manipulation">ការរៀបចំBits</a>   - [ ] <a href="https://en.wikipedia.org/wiki/Bitwise_operation">ប្រតិបតិ្តការ Bitwise</a></li>
+<li>[ ] <a href="https://graphics.stanford.edu/~seander/bithacks.html">Bithacks</a></li>
+<li>[ ] <a href="https://bits.stephan-brumme.com/">The Bit Twiddler</a></li>
+<li>[ ] <a href="https://bits.stephan-brumme.com/interactive.html">The Bit Twiddler Interactive</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ZusiKXcz_ac">Bit Hacks (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] 2s និង 1s បំពេញបន្ថែម
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lKTsv6iVxV4">Binary: Plusses &amp; Minuses (ហេតុអ្វីយើងប្រើសមពីរ) (វីដេអូ)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ones%27_complement">១s បំពេញ</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Two%27s_complement">២ វិនាទីបំពេញ</a></li>
+</ul></li>
+<li>[ ] រាប់សំណុំ bits
+<ul>
+<li><a href="https://youtu.be/Hzuzo9NJrlc">វិធី ៤ យ៉ាងដើម្បីរាប់ប៊ីតជាសាមសិបប៊ីត (វីដេអូ)</a></li>
+<li><a href="https://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan">រាប់ប៊ីត</a></li>
+<li><a href="http://stackoverflow.com/questions/109023/how-to-count-the-number-of-set-bits-in-a-32-bit-%20ចំនួនគត់">របៀបរាប់ចំនួនសំណុំប៊ីតក្នុងចំនួនគត់ ៣២ ប៊ីត</a></li>
+</ul></li>
+<li>[ ] ប្តូរតម្លៃ
+<ul>
+<li><a href="https://bits.stephan-brumme.com/swap.html">ប្តូរ</a></li>
+</ul></li>
+<li>[ ] តម្លៃដាច់ខាត:
+<ul>
+<li><a href="https://bits.stephan-brumme.com/absInteger.html">អាំងតេក្រាលពេញលេញ</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="trees">Trees</h2>
+<ul>
+<li><h3 id="trees---កំណត់ត្រា-និង-ព័ត៌មាន">Trees - កំណត់ត្រា និង ព័ត៌មាន</h3>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/ovovP/core-trees">ស៊េរី៖ ចំនុចសំខាន់ Trees (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/95qda/trees">ស៊េរី៖ Trees (វីដេអូ)</a></li>
+<li>ការសាងសង់ tree</li>
+<li>ការឆ្លងកាត់ tree</li>
+<li>ក្បួនដោះស្រាយ</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=uWL6FJhq5fM">BFS(breadth-first search) និង DFS(depth-first search) (វីដេអូ)</a>
+<ul>
+<li>កំណត់សំគាល់របស់ BFS:
+<ul>
+<li>level order (BFS, ដោយប្រេី queue)</li>
+<li>ភាពស្មុគស្មាញពេលវេលា: O(n)</li>
+<li>ភាពស្មុគស្មាញនៃលំហ: ល្អបំផុត៖ O(1), អាក្រក់បំផុត៖ O(n/2)=O(n)</li>
+</ul></li>
+<li>DFS notes:
+<ul>
+<li>ភាពស្មុគស្មាញពេលវេលា: O(n)</li>
+<li>ភាពស្មុគស្មាញនៃលំហ: ល្អបំផុត៖ O(log n) - មធ្យមកម្ពស់ tree អាក្រក់បំផុត៖ O(n)</li>
+<li>inorder (DFS: ឆ្វេង, ខ្លួនឯង, ស្តាំ)</li>
+<li>postorder (DFS: ឆ្វេង, ស្តាំ, ខ្លួនឯង)</li>
+<li>preorder (DFS: self, left, right)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><h3 id="binary-search-trees-bsts">Binary search trees: BSTs</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=x6At0nzX92o&amp;index=1&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">ការពិនិត្យឡើងវិញ Binary Search Tree (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/p82sw/core-introduction-to-binary-search-trees">ស៊េរី (វីដេអូ)</a>
+<ul>
+<li>ចាប់ផ្តើមជាមួយតារាងនិមិត្តសញ្ញាហើយឆ្លងកាត់ការអនុវត្ត BST</li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/E7cXP/introduction">សេចក្តីផ្តើម (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=9Jry5-82I68">MIT (វីដេអូ)</a></li>
+<li>C/C++:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=COZK7NATh4k&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=28">Binary search tree - ការអនុវត្តក្នុង C/C++ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=hWokyBoo0aI&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=29">BST ការអនុវត្តក្នុង - ការបែងចែក memory ក្នុង stack និង heap (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Ut90klNN264&amp;index=30&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">ស្វែងរកធាតុតូចបំផុត និង ធំបំផុតនៅក្នុង binary search tree (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=_pnqMz5nrRs&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=31">រកកំពស់ binary tree (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=9RHO6jU--GU&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=32">Binary tree traversal - យុទ្ធសាស្ត្រ breadth-first និង depth-first (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=86g8jAQug04&amp;index=33&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Binary tree: Level Order Traversal (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=gm8DUJJhmY4&amp;index=34&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Binary tree traversal: Preorder, Inorder, Postorder (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=yEwSGhSsT0U&amp;index=35&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">ពិនិត្យមើលថាតើ binary tree គឺ binary search tree រឺទេ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=gcULXE7ViZw&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&amp;index=36">លុបធាតុពី Binary Search Tree (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=5cPbNCrdotA&amp;index=37&amp;list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P">Inorder Successor ក្នុង binary search tree មួយ (video)</a></li>
+</ul></li>
+<li>[ ] ការអនុវត្ត:
+<ul>
+<li>[ ] insert // ដាក់ធាតុក្នុង tree</li>
+<li>[ ] get_node_count // ទទួលចំនួនធាតុដែលផ្ទុក</li>
+<li>[ ] print_values // បង្ហាញតម្លៃក្នុង tree, ពី តូច ទៅ ធំ</li>
+<li>[ ] delete_tree</li>
+<li>[ ] is_in_tree // ត្រឡប់វិញ ពិត ប្រសិនបេីតម្លៃក្នុង tree</li>
+<li>[ ] get_height // ត្រឡប់វិញ កំពស់ក្នុង nodes (កំពស់ single node គឺ 1)</li>
+<li>[ ] get_min // ត្រឡប់វិញ ធាតុតូចជាងគេ</li>
+<li>[ ] get_max // ត្រឡប់វិញ ធាតុធំជាងគេ</li>
+<li>[ ] is_binary_search_tree</li>
+<li>[ ] delete_value</li>
+<li>[ ] get_successor // ត្រឡប់តម្លៃខ្ពស់បំផុតបន្ទាប់នៅក្នុងtreeបន្ទាប់ពីតម្លៃដែលបានផ្ដល់ ៕ បើគ្មានត្រឡប់ -1</li>
+</ul></li>
+</ul></li>
+<li><h3 id="heap-priority-queue-binary-heap">Heap / Priority Queue / Binary Heap</h3>
+<ul>
+<li>visualized as a tree, but is usually linear in storage (array, linked list)</li>
+<li>[ ] <a href="https://en.wikipedia.org/wiki/Heap_(data_structure)">Heap</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/2OpTs/introduction">សេចក្តីផ្តើម (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/z3l9N/naive-implementations">ការអនុវត្តដំបូង (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/GRV2q/binary-trees">Binary Trees (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/supplement/S5xxz/tree-height-remark">កំពស់ Tree (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/0g1dl/basic-operations">ប្រតិបត្តិការមូលដ្ឋាន (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/gl5Ni/complete-binary-trees">Binary Trees ពេញលេញ (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/HxQo9/pseudocode">Pseudocode (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/odNJmw5TOEE?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3291">Heap Sort - លោតដើម្បីចាប់ផ្ដើម (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/hSzMO/heap-sort">Heap Sort (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/dwrOS/building-a-heap">ការកសាង heap (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=B7hVxCmfPtM&amp;index=4&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">MIT: Heaps និង Heap Sort (វីដេអូ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_yIUFT6AKBGE">CS 61B មេរៀន 24: Priority Queues (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=MiyLo8adrWw">Linear Time BuildHeap (max-heap)</a></li>
+<li>[ ] ការអនុវត្ត max-heap:
+<ul>
+<li>[ ] insert</li>
+<li>[ ] sift_up - ត្រូវការសំរាប់បញ្ចូល</li>
+<li>[ ] get_max - ត្រឡប់ធាតុអតិបរិមាដោយមិនយកវាចេញ</li>
+<li>[ ] get_size() - ត្រឡប់ចំនួននៃធាតុដែលបានរក្សាទុក</li>
+<li>[ ] is_empty() - ត្រឡប់ពិតប្រសិនបើ heap មិនមានធាតុ</li>
+<li>[ ] extract_max - ត្រឡប់ធាតុអតិបរិមាយកវាចេញ</li>
+<li>[ ] sift_down - ត្រូវការសំរាប់ extract_max</li>
+<li>[ ] remove(i) - យកធាតុចេញនៅ index x</li>
+<li>[ ] heapify - បង្កើតheap ពីធាតុជាច្រើនដែលត្រូវការសម្រាប់ heap_sort</li>
+<li>[ ] heap_sort() - យកarray ដែលមិនបានតម្រៀបហើយប្រែក្លាយវាទៅជាកន្លែងដែលបានតម្រៀបតាមកន្លែងដោយប្រើheapអតិបរមា។ t
+<ul>
+<li>ចំណាំ៖ ការប្រើ heap តូច ជំនួសនឹងជួយសន្សំប្រតិបត្តិការ ប៉ុន្តែត្រូវការទំហំទ្វេដង (មិនអាចធ្វើនៅនឹងកន្លែង) ។</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="sorting">Sorting</h2>
+<ul>
+<li>[ ] កំណត់សំគាល់:
+<ul>
+<li>អនុវត្ត sorts និងដឹងពីករណីដែលល្អ និង ដែលអាក្រក់, ភាពស្មុគស្មាញជាមធ្យមនីមួយៗ:
+<ul>
+<li>កុំប្រេី bubble sort - វាមិនល្អ - O(n^2), លុះត្រាតែ n &lt;= 16</li>
+</ul></li>
+<li>[ ] ស្ថេរភាពក្នុងក្បួនដោះស្រាយ sorting (“តើ Quicksort មានស្ថេរភាពឬ?”)
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Sorting_algorithm#Stability">ស្ថេរភាពក្នុងក្បួនដោះស្រាយ Sorting</a></li>
+<li><a href="http://stackoverflow.com/questions/1517793/stability-in-sorting-algorithms">ស្ថេរភាពក្នុងក្បួនដោះស្រាយ Sorting</a></li>
+<li><a href="http://www.geeksforgeeks.org/stability-in-sorting-algorithms/">ស្ថេរភាពក្នុងក្បួនដោះស្រាយ Sorting</a></li>
+<li><a href="http://homepages.math.uic.edu/~leon/cs-mcs401-s08/handouts/stability.pdf">ស្ថេរភាពក្នុងក្បួនដោះស្រាយ Sorting</a></li>
+</ul></li>
+<li>[ ] តើក្បួនដោះស្រាយអ្វីខ្លះអាចត្រូវបានប្រើ linked lists? អាចត្រូវបានប្រើ arrays? អាចត្រូវបានប្រើទាំងពីរ?
+<ul>
+<li>ខ្ញុំនឹងមិនណែនាំឱ្យ Sort ជាមួយ linked list ប៉ុន្តែអាចប្រេី Merge Sort។</li>
+<li><a href="http://www.geeksforgeeks.org/merge-sort-for-linked-list/">Merge Sort សំរាប់ Linked List</a></li>
+</ul></li>
+</ul></li>
+<li><p>សំរាប់ heapsort, សូមមេីល Heap data structure ខាងលេី. Heap sort គឺល្អ, ប៉ុន្តែមិនមានស្ថេរភាពទេ.</p></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/home/week/3">Sedgewick - Mergesort (5 វីដេអូ)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/ARWDq/mergesort">1. Mergesort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/PWNEl/bottom-up-mergesort">2. Bottom up Mergesort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/xAltF/sorting-complexity">3. ភាពស្មុគស្មាញ Sorting</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/9FYhS/comparators">4. ប្រៀបធៀប</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/pvvLZ/stability">5. ស្ថេរភាព</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/home/week/3">Sedgewick - Quicksort (4 វីដេអូរ)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/vjvnC/quicksort">1. Quicksort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/UQxFT/selection">2. Selection</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/XvjPd/duplicate-keys">3. Keys ស្ទួន</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1/lecture/QBNZ7/system-sorts">4. Sorts ជាប្រព័ន្ធ</a></li>
+</ul></li>
+<li>[ ] UC Berkeley:
+<ul>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_EiUvYS2DT6I">CS 61B មេរៀនទី 29: Sorting I (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_2hTY3t80Qsk">CS 61B មេរៀនទី 30: Sorting II (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_Y6LOLpxg6Dc">CS 61B មេរៀនទី 32: Sorting III (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_qNMQ4ly43p4">CS 61B មេរៀនទី 33: Sorting V (វីដេអូរ)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=P00xJgWzz2c&amp;index=1&amp;list=PL89B61F78B552C1AB">Bubble Sort (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ni_zk257Nqo&amp;index=7&amp;list=PL89B61F78B552C1AB">វិភាគ Bubble Sort (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Kg4bqzAqRBM&amp;index=3&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Insertion Sort, Merge Sort (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=c4BRHC7kTaQ&amp;index=2&amp;list=PL89B61F78B552C1AB">Insertion Sort (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=GCae1WNvnZM&amp;index=3&amp;list=PL89B61F78B552C1AB">Merge Sort (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=y_G9BkAm6B8&amp;index=4&amp;list=PL89B61F78B552C1AB">Quicksort (វីដេអូរ)</a></li>
+<li><p>[ ] <a href="https://www.youtube.com/watch?v=6nDMgr0-Yyo&amp;index=8&amp;list=PL89B61F78B552C1AB">Selection Sort (វីដេអូរ)</a></p></li>
+<li>[ ] កូដ Merge sort:
+<ul>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/examples/sorting/mergesort.c">ការប្រើប្រាស់ output array (C)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-python/blob/master/merge_sort/merge_sort.py">ការប្រើប្រាស់ output array (Python)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-cpp/blob/master/merge_sort/merge_sort.cc">In-place (C++)</a></li>
+</ul></li>
+<li>[ ] កូដ Quick sort:
+<ul>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/examples/randomization/quick.c">Implementation (C)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-c/blob/master/quick_sort/quick_sort.c">Implementation (C)</a></li>
+<li>[ ] <a href="https://github.com/jwasham/practice-python/blob/master/quick_sort/quick_sort.py">Implementation (Python)</a></li>
+</ul></li>
+<li>[ ] អនុវត្ត:
+<ul>
+<li>[ ] Mergesort: O(n log n) ករណីមធ្យម និង អាក្រក់បំផុត</li>
+<li>[ ] Quicksort O(n log n) ករណីមធ្យម</li>
+<li>Selection sort និង insertion sort ទាំងពីរគឺ O(n^2) សំរាប់ករណីមធ្យម និង អាក្រក់បំផុត</li>
+<li>ចំពោះ heapsort, សូមមេីល Heap data structure ខាងលេី.</li>
+</ul></li>
+<li>[ ] មិនចាំបាច់ទេ ប៉ុន្តែខ្ញុំសូមណែនាំពួកគេ:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/home/week/3">Sedgewick - Radix Sorts (6 វីដេអូរ)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/vGHvb/strings-in-java">1. Strings ក្នុង Java</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/2pi1Z/key-indexed-counting">2. ការរាប់ Key Indexed</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/c1U7L/lsd-radix-sort">3. តម្រៀបខ្ទង់អក្សរដំបូងដែលមានខ្ទង់តិចបំផុត Radix Sort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/gFxwG/msd-radix-sort">4. Most Significant Digit First String Radix Sort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/crkd5/3-way-radix-quicksort">5. វិធី ៣ Radix Quicksort</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays">6. Suffix Arrays</a></li>
+</ul></li>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#radixSort">Radix Sort</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=xhr26ia4k38">Radix Sort (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Nz1KZXbghj8&amp;index=7&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Radix Sort, Counting Sort (linear time given constraints) (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=cNB2lADK3_s&amp;index=8&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Randomization: Matrix Multiply, Quicksort, Freivalds’ algorithm (វីដេអូរ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=pOKy3RZbSws&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&amp;index=14">Sorting in Linear Time (វីដេអូរ)</a></li>
+</ul></li>
+</ul>
+<p>ជាការសង្ខេបនេះគឺជាការបង្ហាញជាក់ស្តែងនៃ <a href="https://www.youtube.com/watch?v=kPRA0W1kECg">១៥ វិធីដោះស្រាយ Sorting</a> ។ ប្រសិនបើអ្នកត្រូវការព័ត៌មានលម្អិតបន្ថែមលើប្រធានបទនេះសូមមើលផ្នែក “Sorting” នៅក្នុង <a href="#additional-detail-on-some-subjects">ព័ត៌មានលំអិតលើប្រធានបទមួយចំនួន</a></p>
+<hr />
+<h2 id="graphs">Graphs</h2>
+<p>Graphs អាចត្រូវបានប្រើដើម្បីបង្ហាញពីបញ្ហាជាច្រើននៅក្នុងវិទ្យាសាស្ត្រកុំព្យូទ័រ ដូចជា Trees និង Sorting។</p>
+<ul>
+<li>កំណត់ចំណាំ:
+<ul>
+<li> មានវិធីជាមូលដ្ឋានចំនួន ៤ ដើម្បីតំណាង graph ក្នុង memory:
+<ul>
+<li>objects និង pointers</li>
+<li>adjacency matrix</li>
+<li>adjacency list</li>
+<li>adjacency map</li>
+</ul></li>
+<li>ស្គាល់ខ្លួនឯងជាមួយនឹង Graphs និង គុណសម្បត្តិនិងគុណវិបត្តិរបស់វា</li>
+<li>BFS និង DFS - ដឹងពីភាពស្មុគស្មាញក្នុងការគណនាការជួញដូររបស់ពួកគេ និង វិធីអនុវត្តកូដពិតប្រាកដ</li>
+<li>នៅពេលសួរសំណួរសូមស្វែងរកដំណោះស្រាយដែលមានមូលដ្ឋានលើ Graphs ជាមុនសិនបន្ទាប់មកបន្តទៅមុខទៀតប្រសិនបើគ្មាន។</li>
+</ul></li>
+<li>[ ] MIT(វីដេអូ):
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=s-CYnVz-uh4&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=13">ការស្វែងរក Breadth-First Search</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=AfSk24UTFS8&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=14">ការស្វែងរក Depth-First Search</a></li>
+</ul></li>
+<li>[ ] ការបង្រៀន Skiena - ការណែនាំ:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=OiXxhDrFruw&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=11">CSE373 2012 - មេរៀនទី 11 - Graph Data Structures (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=g5vF8jscteo&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=12">CSE373 2012 - មេរៀនទី 12 - Breadth-First Search (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=S23W6eTcqdY&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=13">CSE373 2012 - មេរៀនទី 13 - Graph Algorithms (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=WitPBKGV0HY&amp;index=14&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - មេរៀនទី 14 - Graph Algorithms (បន្ត) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ia1L30l7OIg&amp;index=15&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - មេរៀនទី 15 - Graph Algorithms (បន្ត 2) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=jgDOQq6iWy8&amp;index=16&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - មេរៀនទី 16 - Graph Algorithms (បន្ត 3) (វីដេអូ)</a></li>
+</ul></li>
+<li><p>[ ] Graphs (ពិនិត្យឡើងវិញ និង ច្រើនទៀត):</p>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Aa2sqUhIn-E&amp;index=15&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">6.006 Single-Source Shortest Paths Problem (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=2E7MmKv0Y24&amp;index=16&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">6.006 Dijkstra (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ozsuci5pIso&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=17">6.006 Bellman-Ford (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=CHvQ3q_gJ7E&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=18">6.006 Speeding Up Dijkstra (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=i_AQT_XfvD8&amp;index=6&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">Aduni: Graph Algorithms I - Topological Sorting, Minimum Spanning Trees, Prim’s Algorithm - មេរៀនទី 6 (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ufj5_bppBsA&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=7">Aduni: Graph Algorithms II - DFS, BFS, Kruskal’s Algorithm, Union Find Data Structure - មេរៀនទី 7 (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=DiedsPsMKXc&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=8">Aduni: Graph Algorithms III: Shortest Path - មេរៀនទី 8 (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=XIAQRlNkJAw&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=9">Aduni: Graph Alg. IV: Intro to geometric algorithms - មេរៀនទី 9 (វីដេអូ)</a></li>
+<li>[ ] <del><a href="https://youtu.be/dgjX4HdMI-Q?list=PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd&amp;t=3489">CS 61B 2014 (starting at 58:09) (វីដេអូ)</a></del></li>
+<li>[ ] <a href="https://archive.org/details/ucberkeley_webcast_zFbq8vOZ_0k">CS 61B 2014: Weighted graphs (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=tKwnms5iRBU&amp;index=16&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Greedy Algorithms: Minimum Spanning Tree (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=RpgcYiky7uw">Strongly Connected Components Kosaraju’s Algorithm Graph Algorithm (វីដេអូ)</a></li>
+</ul></li>
+<li>វគ្គសិក្សា Coursera:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-on-graphs/home/welcome">Algorithms on Graphs (វីដេអូ)</a></li>
+</ul></li>
+<li>ខ្ញុំនឹងអនុវត្ត:
+<ul>
+<li>[ ] DFS ជាមួយ adjacency list (recursive)</li>
+<li>[ ] DFS ជាមួយ adjacency list (iterative with stack)</li>
+<li>[ ] DFS ជាមួយ adjacency matrix (recursive)</li>
+<li>[ ] DFS ជាមួយ adjacency matrix (iterative with stack)</li>
+<li>[ ] BFS ជាមួយ adjacency list</li>
+<li>[ ] BFS ជាមួយ adjacency matrix</li>
+<li>[ ] single-source shortest path (Dijkstra)</li>
+<li>[ ] minimum spanning tree</li>
+<li>DFS-based algorithms (សូមមេីល Aduni វីដេអូ ខាងលេី):
+<ul>
+<li>[ ] ពិនិត្យ cycle (ត្រូវការសំរាប់ topological sort ព្រោះយើងនឹងពិនិត្យមើលវដ្តមុនពេលចាប់ផ្តើម)</li>
+<li>[ ] topological sort</li>
+<li>[ ] រាប់សមាសធាតុដែលបានភ្ជាប់នៅក្នុងក្រាហ្វ</li>
+<li>[ ] រាយសមាសធាតុដែលភ្ជាប់គ្នាយ៉ាងខ្លាំង</li>
+<li>[ ] ពិនិត្យក្រាហ្វិច bipartite</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="even-more-knowledge">Even More Knowledge</h2>
+<h2 id="ចំណេះដឹងបន្ធែម">ចំណេះដឹងបន្ធែម</h2>
+<ul>
+<li><h3 id="recursion">Recursion</h3>
+<ul>
+<li>[ ] ការបង្រៀនរបស់ Stanford លេី recursion និង backtracking:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=gl3emqCuueQ&amp;list=PLFE6E58F856038C69&amp;index=8">មេរៀនទី 8 | Programming Abstractions (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=uFJhEPrbycQ&amp;list=PLFE6E58F856038C69&amp;index=9">មេរៀនទី 9 | Programming Abstractions (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=NdF1QDTRkck&amp;index=10&amp;list=PLFE6E58F856038C69">មេរៀនទី 10 | Programming Abstractions (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=p-gpaIGRCQI&amp;list=PLFE6E58F856038C69&amp;index=11">មេរៀនទី 11 | Programming Abstractions (វីដេអូ)</a></li>
+</ul></li>
+<li>នៅពេលដែលសមរម្យដើម្បីប្រើវា</li>
+<li>តេី tail recursion ប្រសើរជាងអត់?
+<ul>
+<li>[ ] <a href="https://www.quora.com/What-is-tail-recursion-Why-is-it-so-bad">អ្វីជា Tail Recursion និង ហេតុអ្វីបានជាវាអាក្រក់?</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=L1jjXGfxozc">Tail Recursion (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="dynamic-programming">Dynamic Programming</h3>
+<ul>
+<li>អ្នកប្រហែលជាមិនឃើញមានបញ្ហានៃការសរសេរកម្មវិធី dynamic programming នៅក្នុងបទសម្ភាសន៍របស់អ្នកទេ ប៉ុន្តែវាសមនឹងទទួលបានការទទួលស្គាល់នូវបញ្ហាមួយក្នុងនាមជាបេក្ខជនសម្រាប់ការសរសេរកម្មវិធី dynamic programming។</li>
+<li>ប្រធានបទនេះអាចជាការពិបាកណាស់, ព្រោះថាបញ្ហារបស់ DP នីមួយៗត្រូវបានកំណត់ថាជាការទាក់ទងគ្នា</li>
+<li>ខ្ញុំស្នើឱ្យក្រឡេកមើលឧទាហរណ៍ជាច្រើននៃបញ្ហា DP រហូតទាល់តែអ្នកមានការយល់ដឹងច្បាស់អំពីគំរូដែលពាក់ព័ន្ធ។</li>
+<li>[ ] វីដេអូ:
+<ul>
+<li>វីដេអូ Skiena អាចពិបាកធ្វើតាមព្រោះពេលខ្លះគាត់ប្រើក្តារខៀនដែលវាមើលមិនឃើញ</li>
+<li>[ ] <a href="https://youtu.be/Qc2ieXRgR0k?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=1718">Skiena: CSE373 2012 - មេរៀនទី 19 - ការណែនាំអំពី Dynamic Programming (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/IsmMhMdyeGY?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=2749">Skiena: CSE373 2012 - មេរៀនទី 20 - Edit Distance (video)</a></li>
+<li>[ ] <a href="https://youtu.be/o0V9eYF4UI8?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=406">Skiena: CSE373 2012 - មេរៀនទី 21 - ឧទាហរណ៍ Dynamic Programming (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=dRbMC1Ltl3A&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=22">Skiena: CSE373 2012 - មេរៀនទី 22 - ការអនុវត្តកម្មវិធី Dynamic Programming (វីដេអូ)</a></li>
+<li>[ ] <a href="https://youtu.be/J5aJEcOr6Eo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3558">Simonson: Dynamic Programming 0 (ចាប់ផ្តេីមពី 59:18) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=0EzHjQ_SOeU&amp;index=11&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">Simonson: Dynamic Programming I - មេរៀនទី 11 (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=v1qiRwuJU7g&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=12">Simonson: Dynamic programming II - មេរៀនទី 12 (វីដេអូ)</a></li>
+<li>[ ] បញ្ជីបញ្ហារបស់ DP (នីមួយៗខ្លី): <a href="https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr">Dynamic Programming (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] Yale Lecture notes:
+<ul>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#dynamicProgramming">Dynamic Programming</a></li>
+</ul></li>
+<li>[ ] Coursera:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/80RrW/the-rna-secondary-structure-problem">បញ្ហា RNA secondary structure (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/PSonq/a-dynamic-programming-algorithm">A dynamic programming algorithm (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/oUEK2/illustrating-the-dp-algorithm">បង្ហាញរូបភាពពីវិធីដោះស្រាយ DP (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/nfK2r/running-time-of-the-dp-algorithm">ពេលវេលាដំណើរការនៃ DP algorithm (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/M999a/dp-vs-recursive-implementation">DP vs. recursive implementation (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/UZ7o6/global-pairwise-sequence-alignment">Global pairwise sequence alignment (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithmic-thinking-2/lecture/WnNau/local-pairwise-sequence-alignment">Local pairwise sequence alignment (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="object-oriented-programming">Object-Oriented Programming</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=OkC7HKtiZC0&amp;list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc">Optional: UML 2.0 Series (វីដេអូ)</a></li>
+<li>[ ] គោលការណ៍ SOLID OOP: <a href="https://www.youtube.com/playlist?list=PL4CE9F710017EA77A">គោលការណ៍ SOLID (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="design-patterns">Design patterns</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=3cmzqZzwNDM&amp;list=PLGLfVvz_LVvQ5G-LdJ8RLqe-ndo7QITYc&amp;index=3">ការពិនិត្យ Quick UML (វីដេអូ)</a></li>
+<li>[ ] រៀនគំរូទាំងនេះ:
+<ul>
+<li>[ ] strategy</li>
+<li>[ ] singleton</li>
+<li>[ ] adapter</li>
+<li>[ ] prototype</li>
+<li>[ ] decorator</li>
+<li>[ ] visitor</li>
+<li>[ ] factory, abstract factory</li>
+<li>[ ] facade</li>
+<li>[ ] observer</li>
+<li>[ ] proxy</li>
+<li>[ ] delegate</li>
+<li>[ ] command</li>
+<li>[ ] state</li>
+<li>[ ] memento</li>
+<li>[ ] iterator</li>
+<li>[ ] composite</li>
+<li>[ ] flyweight</li>
+</ul></li>
+<li>[ ] <a href="https://youtu.be/LAP2A80Ajrg?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO&amp;t=3344">ជំពូកទី ៦ (ភាគ ១) - Patterns (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=U8-PGsjvZc4&amp;index=12&amp;list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO">ជំពូកទី ៦ (ភាគ ២) - Abstraction-Occurrence, General Hierarchy, Player-Role, Singleton, Observer, Delegation (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=7sduBHuex4c&amp;index=13&amp;list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO">ជំពូកទី ៦ (ភាគ ៣) - Adapter, Facade, Immutable, Read-Only Interface, Proxy (video)</a></li>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PLF206E906175C7E07">ស៊េរីវីដេអូ (២៧ វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.amazon.com/Head-First-Design-Patterns-Freeman/dp/0596007124">Head First Design Patterns</a>
+<ul>
+<li>ខ្ញុំដឹងថាសៀវភៅបទបញ្ញត្តិគឺ“ លំនាំរចនា៖ ធាតុផ្សំនៃកម្មវិធីដែលអាចប្រើឡើងវិញបាន” ប៉ុន្តែក្បាលទីមួយគឺល្អសម្រាប់អ្នកចាប់ផ្តើមដំបូង Object-Oriented ។</li>
+</ul></li>
+<li>[ ] <a href="https://sourcemaking.com/design-patterns-and-tips">Handy reference: 101 Design Patterns &amp; Tips for Developers</a></li>
+<li>[ ] <a href="https://github.com/kamranahmedse/design-patterns-for-humans#structural-design-patterns">Design patterns សម្រាប់មនុស្ស</a></li>
+</ul></li>
+<li><h3 id="combinatorics-n-choose-k-probability">Combinatorics (n choose k) &amp; Probability</h3>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=8RRo6Ti9d0U">ជំនាញគណិតវិទ្យា៖ វិធីស្វែងរក Factorial, Permutation និង Combination (ជ្រើសរើស) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=sZkAAk9Wwa4">Make School: Probability (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=dNaJg-mLobQ">Make School: បន្ថែមលេី Probability និង Markov Chains (វីដេអូ)</a></li>
+<li>[ ] Khan Academy:
+<ul>
+<li>ប្លង់វគ្គសិក្សា:
+<ul>
+<li>[ ] <a href="https://www.khanacademy.org/math/probability/probability-and-combinatorics-topic">ទ្រឹស្តីប្រូបាបដំបូង</a></li>
+</ul></li>
+<li>គ្រាន់តែវីដេអូ - ៤១ (វីដេអូនីមួយៗមានលក្ខណៈសាមញ្ញហើយវីដេអូនីមួយៗខ្លី)៖
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=uzkc-qNVoOk&amp;list=PLC58778F28211FA19">ពន្យល់អំពីប្រូបាប (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><h3 id="np-np-complete-និង-approximation-algorithms">NP, NP-Complete និង Approximation Algorithms</h3>
+<ul>
+<li>ដឹងពីបញ្ហាល្បីរបស់ NP-complete, ដូចជាអ្នកលក់ធ្វើដំណើរ និង បញ្ហា knapsack, ហើយអាចស្គាល់ពួកគេនៅពេលអ្នកសម្ភាសសួរអ្នកដោយក្លែងបន្លំ។.</li>
+<li>ដឹងថាអ្វីជា NP-complete.</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=moPtwq_cVH8&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=23">Computational Complexity (វីដេអូ)</a></li>
+<li>[ ] Simonson:
+<ul>
+<li>[ ] <a href="https://youtu.be/qcGnJ47Smlo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=2939">Greedy Algs. II &amp; Intro to NP Completeness (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=e0tGC6ZQdQE&amp;index=16&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">NP Completeness II &amp; Reductions (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=fCX1BGT3wjE&amp;index=17&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">NP Completeness III (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=NKLDp3Rch3M&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=18">NP Completeness IV (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] Skiena:
+<ul>
+<li>[ ] <a href="https://youtu.be/KiK5TVgXbFg?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=1508">CSE373 2012 - មេរៀនទី 23 - Introduction to NP-Completeness (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=27Al52X3hd4&amp;index=24&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - មេរៀនទី 24 - NP-Completeness Proofs (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=xCPH4gwIIXM&amp;index=25&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">CSE373 2012 - មេរៀនទី 25 - NP-Completeness Challenge (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=eHZifpgyH_4&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=22">Complexity: P, NP, NP-completeness, Reductions (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=MEz1J9wY2iM&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=24">Complexity: Approximation Algorithms (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=4q-jmGrmxKs&amp;index=25&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Complexity: Fixed-Parameter Algorithms (វីដេអូ)</a></li>
+<li>Peter Norvig ពិភាក្សាអំពីដំណោះស្រាយដែលល្អប្រសើរបំផុតចំពោះបញ្ហាអ្នកលក់ធ្វើដំណើរ៖
+<ul>
+<li><a href="http://nbviewer.jupyter.org/url/norvig.com/ipython/TSP.ipynb">Jupyter Notebook</a></li>
+</ul></li>
+<li>ទំព័រ 1048 - 1140 ក្នុង CLRS ប្រសិនបើអ្នកមានវា.</li>
+</ul></li>
+<li><h3 id="caches">Caches</h3>
+<ul>
+<li>[ ] LRU cache:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=R5ON3iwx78M">The Magic of LRU Cache (100 Days of Google Dev) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=bq6N7Ym81iI">Implementing LRU (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=8-FZRAjR7qU">LeetCode - 146 LRU Cache (C++) (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] CPU cache:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=vjYF_fAZI5E&amp;list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&amp;index=24">MIT 6.004 L15: The Memory Hierarchy (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ajgC3-pyGlk&amp;index=25&amp;list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-">MIT 6.004 L16: Cache Issues (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="processes-and-threads">Processes and Threads</h3>
+<ul>
+<li>[ ] Computer Science 162 - Operating Systems (25 វីដេអូ):
+<ul>
+<li>សំរាប់ processes និង threads សូមមេីល វីដេអូ 1-11</li>
+<li><a href="https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c">Operating Systems and System Programming (វីដេអូ)</a></li>
+</ul></li>
+<li><a href="https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread">តេី Process និង Thread ខុសគ្នាដូចម្តេច?</a></li>
+<li>មាន:
+<ul>
+<li>Processes, Threads, Concurrency issues
+<ul>
+<li>តេី Process និង Thread ខុសគ្នាដូចម្តេច</li>
+<li>Processes</li>
+<li>Threads</li>
+<li>Locks</li>
+<li>Mutexes</li>
+<li>Semaphores</li>
+<li>Monitors</li>
+<li>តើពួកគេធ្វើការយ៉ាងដូចម្តេច?</li>
+<li>Deadlock</li>
+<li>Livelock</li>
+</ul></li>
+<li>CPU activity, interrupts, context switching</li>
+<li>Modern concurrency constructs with multicore processors</li>
+<li><a href="https://www.youtube.com/watch?v=LKe7xK0bF7o&amp;list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&amp;index=2">Paging, segmentation and virtual memory (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=uFKi2-J-6II&amp;list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&amp;index=3">Interrupts (វីដេអូ)</a></li>
+<li>Process resource needs (memory: code, static storage, stack, heap, and also file descriptors, i/o)</li>
+<li>Thread resource needs (shares above (minus stack) with other threads in the same process but each has its own pc, stack counter, registers, and stack)</li>
+<li>Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy.</li>
+<li>Context switching
+<ul>
+<li>How context switching is initiated by the operating system and underlying hardware?</li>
+</ul></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PL5jc9xFGsL8E12so1wlMS0r0hTQoJL74M">threads in C++ (series - 10 វីដេអូ)</a></li>
+<li>[ ] concurrency ក្នុង Python (វីដេអូ):
+<ul>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PL1H1sBF1VAKVMONJWJkmUh6_p8g4F2oy1">Short series on threads</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Bs7vPNbB9JM">Python Threads</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Obt-vMVdM8s">Understanding the Python GIL (2010)</a>
+<ul>
+<li><a href="http://www.dabeaz.com/GIL">reference</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=MCs5OvhV9S4">David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ZzfHjytDceU">Keynote David Beazley - Topics of Interest (Python Asyncio)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=0zaPs8OtyKY">Mutex in Python</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="testing">Testing</h3>
+<ul>
+<li>To cover:
+<ul>
+<li>តេី unit testing ដំណេីរការយ៉ាងដូចម្តេច ?</li>
+<li>អ្វីជា mock objects ?</li>
+<li>អ្វីជា integration testing ?</li>
+<li>អ្វីជា dependency injection ?</li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=SAhJf36_u5U">Agile Software Testing with James Bach (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=ILkT_HV9DVU">Open Lecture by James Bach on Software Testing (វីដេអូ)</a></li>
+<li>[ ] <a href="https://vimeo.com/83960706">Steve Freeman - Test-Driven Development (that’s not what we meant) (វីដេអូ)</a>
+<ul>
+<li><a href="http://gotocon.com/dl/goto-berlin-2013/slides/SteveFreeman_TestDrivenDevelopmentThatsNotWhatWeMeant.pdf">slides</a></li>
+</ul></li>
+<li>[ ] Dependency injection:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=IKD2-MAkXyQ">slides</a></li>
+<li>[ ] <a href="http://jasonpolites.github.io/tao-of-testing/ch3-1.1.html">Tao Of Testing</a></li>
+</ul></li>
+<li>[ ] <a href="http://jasonpolites.github.io/tao-of-testing/ch4-1.1.html">How to write tests</a></li>
+</ul></li>
+<li><h3 id="scheduling-ការរៀបចំកាលវិភាគ">Scheduling (ការរៀបចំកាលវិភាគ)</h3>
+<ul>
+<li>នៅក្នុង OS, តេីវាដំណេីរការយ៉ាងដូចម្តេច ?</li>
+<li>អាចប្រមូលបាន Operating System videos</li>
+</ul></li>
+<li><h3 id="string-searching-manipulations">String searching &amp; manipulations</h3>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/TH18W/suffix-arrays">Sedgewick - Suffix Arrays (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/home/week/4">Sedgewick - Substring Search (វីដេអូ)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/n3ZpG/introduction-to-substring-search">1. Introduction to Substring Search</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/2Kn5i/brute-force-substring-search">2. Brute-Force Substring Search</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/TAtDr/knuth-morris-pratt">3. Knuth-Morris Pratt</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/CYxOT/boyer-moore">4. Boyer-Moore</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/3KiqT/rabin-karp">5. Rabin-Karp</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures/lecture/tAfHI/search-pattern-in-text">Search pattern in text (វីដេអូ)</a></li>
+</ul>
+<p>ប្រសិនបើអ្នកត្រូវការព័ត៌មានលម្អិតបន្ថែមលើប្រធានបទនេះសូមមើលផ្នែក <a href="#additional-detail-on-some-subjects">Additional Detail on Some Subjects</a>.</p></li>
+<li><h3 id="tries">Tries</h3>
+<ul>
+<li>ចំណាំ មានការ Tries ផ្សេងៗគ្នា។ អ្នកខ្លះមានprefixes អ្នកខ្លះមិនមាន ហើយអ្នកខ្លះប្រើstring ជំនួសឱ្យbits ដើម្បីតាមដានផ្លូវ</li>
+<li>ខ្ញុំបានអានកូដប៉ុន្តែនឹងមិនអនុវត្តឡើយ</li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/home/week/4">Sedgewick - Tries (3 វីដេអូ)</a>
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/CPVdr/r-way-tries">1. R Way Tries</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/yQM8K/ternary-search-tries">2. Ternary Search Tries</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2/lecture/jwNmV/character-based-operations">3. Character Based Operations</a></li>
+</ul></li>
+<li>[ ] <a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Tries">Notes on Data Structures and Programming Techniques</a></li>
+<li>[ ] វីដេអូខ្លីៗ:
+<ul>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/08Xyf/core-introduction-to-tries">Introduction To Tries (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/PvlZW/core-performance-of-tries">Performance Of Tries (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/DFvd3/core-implementing-a-trie">Implementing A Trie (វីដេអូ)</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.toptal.com/java/the-trie-a-neglected-data-structure">The Trie: A Neglected Data Structure</a></li>
+<li>[ ] <a href="https://www.topcoder.com/community/competitive-programming/tutorials/using-tries/">TopCoder - Using Tries</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=TJ8SkcUSdbU">Stanford Lecture (real world use case) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=NinWEPPrkDQ&amp;index=16&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf">MIT, Advanced Data Structures, Strings (can get pretty obscure about halfway through) (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="floating-point-numbers">Floating Point Numbers</h3>
+<ul>
+<li>[ ] simple 8-bit: <a href="https://www.youtube.com/watch?v=ji3SfClm8TU">Representation of Floating Point Numbers - 1 (វីដេអូ - មានកំហុសក្នុងការគណនា - សូមមើលការពិពណ៌នាជាវីដេអូ)</a></li>
+<li>[ ] 32 bit: <a href="https://www.youtube.com/watch?v=50ZYcZebIec">IEEE754 32-bit floating point binary (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="unicode">Unicode</h3>
+<ul>
+<li>[ ] <a href="http://www.joelonsoftware.com/articles/Unicode.html">The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets</a></li>
+<li>[ ] <a href="http://kunststube.net/encoding/">What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text</a></li>
+</ul></li>
+<li><h3 id="endianness">Endianness</h3>
+<ul>
+<li>[ ] <a href="https://web.archive.org/web/20180107141940/http://www.cs.umd.edu:80/class/sum2003/cmsc311/Notes/Data/endian.html">Big And Little Endian</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=JrNF0KRAlyo">Big Endian Vs Little Endian (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=oBSuXP-1Tc0">Big And Little Endian Inside/Out (វីដេអូ)</a>
+<ul>
+<li>និយាយបច្ចេកទេសខ្លាំងណាស់សម្រាប់ kernel devs. កុំបារម្ភប្រសិនបេីមិនយល់ទាំងស្រុង</li>
+<li>ពាក់កណ្តាលទីមួយគឺគ្រប់គ្រាន់ហើយ</li>
+</ul></li>
+</ul></li>
+<li><h3 id="networking-បណ្តាញ">Networking (បណ្តាញ)</h3>
+<ul>
+<li>** ប្រសិនបើអ្នកមានបទពិសោធបណ្តាញឬចង់ក្លាយជាវិស្វករដែលអាចជឿជាក់បានឬវិស្វករប្រតិបត្តិការរំពឹងថានឹងមានសំណួរ **</li>
+<li>បើមិនដូច្នោះទេនេះគ្រាន់តែជាការល្អដើម្បីដឹង</li>
+<li>[ ] <a href="https://www.khanacademy.org/computing/computer-science/computers-and-internet-code-org">Khan Academy</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Vdc8TCESIg8">UDP and TCP: Comparison of Transport Protocols (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=e5DEVa9eSN0">TCP/IP and the OSI Model Explained! (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=nomyRJehhnM">Packet Transmission across the Internet. Networking &amp; TCP/IP tutorial. (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=WGJrLqtX7As">HTTP (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=S2iBR2ZlZf0">SSL and HTTPS (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=Rp3iZUvXWlM">SSL/TLS (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=E9FxNzv1Tr8">HTTP 2.0 (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j">Video Series (21 វីដេអូ) (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=t5xYI0jzOf4">Subnetting Demystified - Part 5 CIDR Notation (វីដេអូ)</a></li>
+<li>[ ] Sockets:
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=6G_W54zuadg&amp;t=6s">Java - Sockets - Introduction (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=G75vN2mnJeQ">Socket Programming (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="system-design-scalability-data-handling">System Design, Scalability, Data Handling</h2>
+<p>** អ្នកអាចរំពឹងថានឹងមានសំណួររចនាប្រព័ន្ធប្រសិនបើអ្នកមានបទពិសោធ 4+ ឆ្នាំ។ **</p>
+<ul>
+<li>Scalability និង System Designគឺជាប្រធានបទដែលមានប្រធានបទជាច្រេីន និង ធនធានជាច្រើន ដោយសារវាត្រូវការគិតច្រេីនពេលបង្កេីតប្រព័ន្ធដែលល្អ រំពឹងថានឹងចំណាយពេលបន្តិចលើរឿងនេះ</li>
+<li>ការពិចារណា:
+<ul>
+<li>Scalability
+<ul>
+<li>Distill large data sets to single values</li>
+<li>Transform one data set to another</li>
+<li>Handling obscenely large amounts of data</li>
+</ul></li>
+<li>System design
+<ul>
+<li>features sets</li>
+<li>interfaces</li>
+<li>class hierarchies</li>
+<li>designing a system under certain constraints</li>
+<li>simplicity and robustness</li>
+<li>tradeoffs</li>
+<li>performance analysis and optimization</li>
+</ul></li>
+</ul></li>
+<li>[ ] <strong>ចាប់ផ្តើមនៅទីនេះ</strong>: <a href="https://github.com/donnemartin/system-design-primer">The System Design Primer</a></li>
+<li>[ ] <a href="http://www.hiredintech.com/system-design/">System Design from HiredInTech</a></li>
+<li>[ ] <a href="https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023">How Do I Prepare To Answer Design Questions In A Technical Inverview?</a></li>
+<li>[ ] <a href="http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/">8 Things You Need to Know Before a System Design Interview</a></li>
+<li>[ ] <a href="http://www.hiredintech.com/algorithm-design/">Algorithm design</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=UrYLYV7WSHM">Database Normalization - 1NF, 2NF, 3NF and 4NF (វីដេអូ)</a></li>
+<li>[ ] <a href="https://github.com/checkcheckzz/system-design-interview">System Design Interview</a> - There are a lot of resources in this one. Look through the articles and examples. I put some of them below</li>
+<li>[ ] <a href="http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/">How to ace a systems design interview</a></li>
+<li>[ ] <a href="http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/">Numbers Everyone Should Know</a></li>
+<li>[ ] <a href="http://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html">How long does it take to make a context switch?</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=srOgpXECblk">Transactions Across Datacenters (វីដេអូ)</a></li>
+<li>[ ] <a href="http://ksat.me/a-plain-english-introduction-to-cap-theorem/">A plain English introduction to CAP Theorem</a></li>
+<li>[ ] Consensus Algorithms:
+<ul>
+<li>[ ] Paxos - <a href="https://www.youtube.com/watch?v=s8JqcZtvnsM">Paxos Agreement - Computerphile (វីដេអូ)</a></li>
+<li>[ ] Raft - <a href="https://www.youtube.com/watch?v=P9Ydif5_qvE">An Introduction to the Raft Distributed Consensus Algorithm (វីដេអូ)</a>
+<ul>
+<li>[ ] <a href="https://raft.github.io/">Easy-to-read paper</a></li>
+<li>[ ] <a href="http://thesecretlivesofdata.com/raft/">Infographic</a></li>
+</ul></li>
+</ul></li>
+<li>[ ] <a href="http://www.tom-e-white.com/2007/11/consistent-hashing.html">Consistent Hashing</a></li>
+<li>[ ] <a href="http://horicky.blogspot.com/2009/11/nosql-patterns.html">NoSQL Patterns</a></li>
+<li>[ ] Scalability:
+<ul>
+<li>អ្នកមិនត្រូវការរបស់ទាំងអស់នេះទេ។ គ្រាន់តែជ្រើសរើសយកចំណាប់អារម្មណ៍មួយចំនួនដែលអ្នកចាប់អារម្មណ៍។</li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=-W9F__D3oY4">Great overview (វីដេអូ)</a></li>
+<li>[ ] ស៊េរីខ្លីៗ:
+<ul>
+<li><a href="http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones">Clones</a></li>
+<li><a href="http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database">Database</a></li>
+<li><a href="http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache">Cache</a></li>
+<li><a href="http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism">Asynchronism</a></li>
+</ul></li>
+<li>[ ] <a href="http://www.aosabook.org/en/distsys.html">Scalable Web Architecture and Distributed Systems</a></li>
+<li>[ ] <a href="https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf">Fallacies of Distributed Computing Explained</a></li>
+<li>[ ] <a href="http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html">Pragmatic Programming Techniques</a>
+<ul>
+<li><a href="http://horicky.blogspot.com/2010/07/google-pregel-graph-processing.html">extra: Google Pregel Graph Processing</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=modXC5IWTJI">Jeff Dean - Building Software Systems At Google and Lessons Learned (វីដេអូ)</a></li>
+<li>[ ] <a href="http://lethain.com/introduction-to-architecting-systems-for-scale/">Introduction to Architecting Systems for Scale</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=9nWyWwY2Onc">Scaling mobile games to a global audience using App Engine and Cloud Datastore (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=H4vMcD7zKM0">How Google Does Planet-Scale Engineering for Planet-Scale Infra (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.topcoder.com/community/competitive-programming/tutorials/the-importance-of-algorithms/">The Importance of Algorithms</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2009/8/6/an-unorthodox-approach-to-database-design-the-coming-of-the.html">Sharding</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=oodS71YtkGU">Scale at Facebook (2012), “Building for a Billion Users” (វីដេអូ)</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=p0jGmgIrf_M&amp;list=PLRXxvay_m8gqVlExPC5DG3TGWJTaBgqSA&amp;index=4">Engineering for the Long Game - Astrid Atkinson Keynote(វីដេអូ)</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2012/3/26/7-years-of-youtube-scalability-lessons-in-30-minutes.html">7 Years Of YouTube Scalability Lessons In 30 Minutes</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=G-lGCC4KKok">វីដេអូ</a></li>
+</ul></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/8/15/how-paypal-scaled-to-billions-of-transactions-daily-using-ju.html">How PayPal Scaled To Billions Of Transactions Daily Using Just 8VMs</a></li>
+<li>[ ] <a href="https://blog.clevertap.com/how-to-remove-duplicates-in-large-datasets/">How to Remove Duplicates in Large Datasets</a></li>
+<li>[ ] <a href="https://www.youtube.com/watch?v=3vV4YiqKm1o">A look inside Etsy’s scale and engineering culture with Jon Cowie (វីដេអូ)</a></li>
+<li>[ ] <a href="http://thenewstack.io/led-amazon-microservices-architecture/">What Led Amazon to its Own Microservices Architecture</a></li>
+<li>[ ] <a href="https://eng.uber.com/trip-data-squeeze/">To Compress Or Not To Compress, That Was Uber’s Question</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/3/3/asyncio-tarantool-queue-get-in-the-queue.html">Asyncio Tarantool Queue, Get In The Queue</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/2/25/when-should-approximate-query-processing-be-used.html">When Should Approximate Query Processing Be Used?</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/2/23/googles-transition-from-single-datacenter-to-failover-to-a-n.html">Google’s Transition From Single Datacenter, To Failover, To A Native Multihomed Architecture</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2012/9/24/google-spanners-most-surprising-revelation-nosql-is-out-and.html">Spanner</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/7/6/machine-learning-driven-programming-a-new-programming-for-a.html">Machine Learning Driven Programming: A New Programming For A New World</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/6/15/the-image-optimization-technology-that-serves-millions-of-re.html">The Image Optimization Technology That Serves Millions Of Requests Per Day</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/2/1/a-patreon-architecture-short.html">A Patreon Architecture Short</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/27/tinder-how-does-one-of-the-largest-recommendation-engines-de.html">Tinder: How Does One Of The Largest Recommendation Engines Decide Who You’ll See Next?</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html">Design Of A Modern Cache</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/13/live-video-streaming-at-facebook-scale.html">Live Video Streaming At Facebook Scale</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html">A Beginner’s Guide To Scaling To 11 Million+ Users On Amazon’s AWS</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2015/12/16/how-does-the-use-of-docker-effect-latency.html">How Does The Use Of Docker Effect Latency?</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2015/11/9/a-360-degree-view-of-the-entire-netflix-stack.html">A 360 Degree View Of The Entire Netflix Stack</a></li>
+<li>[ ] <a href="http://highscalability.com/latency-everywhere-and-it-costs-you-sales-how-crush-it">Latency Is Everywhere And It Costs You Sales - How To Crush It</a></li>
+<li>[ ] <a href="http://martinfowler.com/articles/serverless.html">Serverless (very long, just need the gist)</a></li>
+<li>[ ] <a href="http://instagram-engineering.tumblr.com/post/13649370142/what-powers-instagram-hundreds-of-instances">What Powers Instagram: Hundreds of Instances, Dozens of Technologies</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2012/7/16/cinchcast-architecture-producing-1500-hours-of-audio-every-d.html">Cinchcast Architecture - Producing 1,500 Hours Of Audio Every Day</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html">Justin.Tv’s Live Video Broadcasting Architecture</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2010/9/21/playfishs-social-gaming-architecture-50-million-monthly-user.html">Playfish’s Social Gaming Architecture - 50 Million Monthly Users And Growing</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2011/6/27/tripadvisor-architecture-40m-visitors-200m-dynamic-page-view.html">TripAdvisor Architecture - 40M Visitors, 200M Dynamic Page Views, 30TB Data</a></li>
+<li>[ ] <a href="http://highscalability.com/plentyoffish-architecture">PlentyOfFish Architecture</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2013/9/23/salesforce-architecture-how-they-handle-13-billion-transacti.html">Salesforce Architecture - How They Handle 1.3 Billion Transactions A Day</a></li>
+<li>[ ] <a href="http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html">ESPN’s Architecture At Scale - Operating At 100,000 Duh Nuh Nuhs Per Second</a></li>
+<li>[ ] See “Messaging, Serialization, and Queueing Systems” way below for info on some of the technologies that can glue services together</li>
+<li>[ ] Twitter:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5cKTP36HVgI">O’Reilly MySQL CE 2011: Jeremy Cole, “Big and Small Data at <span class="citation" data-cites="Twitter">@Twitter</span>” (វីដេអូ)</a></li>
+<li><a href="https://www.infoq.com/presentations/Twitter-Timeline-Scalability">Timelines at Scale</a></li>
+</ul></li>
+<li>មេីលបន្ធែម “Mining Massive Datasets” video series in the <a href="#video-series">វីដេអូ</a> section</li>
+</ul></li>
+<li>[ ] ការអនុវត្តដំណើរការរចនាប្រព័ន្ធ៖ នេះគឺជាគំនិតមួយចំនួនដើម្បីព្យាយាមធ្វើការលើក្រដាសនីមួយៗដោយមានឯកសារមួយចំនួនស្តីពីវិធីដែលត្រូវបានដោះស្រាយនៅក្នុងពិភពពិត៖
+<ul>
+<li>ពិនិត្យឡើងវិញ: <a href="https://github.com/donnemartin/system-design-primer">The System Design Primer</a></li>
+<li><a href="http://www.hiredintech.com/system-design/">System Design from HiredInTech</a></li>
+<li><a href="https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/system-design.pdf">cheat sheet</a></li>
+<li>flow:
+<ol type="1">
+<li>ស្វែងយល់ពីបញ្ហានិងវិសាលភាព
+<ul>
+<li>កំណត់ករណីប្រើប្រាស់ដោយមានជំនួយពីអ្នកសម្ភាសន៍</li>
+<li>ស្នើលក្ខណៈបន្ថែម</li>
+<li>ដកចេញលក្ខណៈដែលអ្នកសម្ភាសន៍គិតថាលើស</li>
+<li>សន្មតថាភាពអាចរកបានខ្ពស់ត្រូវបានទាមទារបន្ថែមជាករណីប្រើប្រាស់</li>
+</ul></li>
+<li>គិតអំពីឧបសគ្គ៖
+<ul>
+<li>សួរថាតើមានប៉ុន្មានសំណើរប៉ុន្មានក្នុងមួយខែ</li>
+<li>សួរថាតើមានសំណូមពរប៉ុន្មានក្នុងមួយវិនាទី (ពួកគេអាចស្ម័គ្រចិត្តឬធ្វើឱ្យអ្នកធ្វើគណនា)</li>
+<li>ប៉ាន់ស្មានអាននឹងសរសេរជាភាគរយ</li>
+<li>ចងចាំបទបញ្ជា ៨០/២០ ក្នុងពេលធ្វើការប៉ាន់ស្មាន</li>
+<li>តើទិន្នន័យប៉ុន្មានត្រូវបានសរសេរក្នុងមួយវិនាទី</li>
+<li>ការផ្ទុកសរុបត្រូវការក្នុងរយៈពេល ៥ ឆ្នាំ</li>
+<li>តើទិន្នន័យត្រូវអានប៉ុន្មានដងក្នុងមួយវិនាទី</li>
+</ul></li>
+<li>ការរចនាអរូបី៖
+<ul>
+<li>ស្រទាប់ (សេវាកម្ម ទិន្នន័យ ឃ្លាំងសម្ងាត់ (cache) )</li>
+<li>ហេដ្ឋារចនាសម្ព័ន្ធ៖ ផ្ទុកតុល្យភាព(load balacing), សារ<br />
+</li>
+<li>ទិដ្ឋភាពទូទៅរដុបនៃក្បួនដោះស្រាយគន្លឹះណាមួយដែលជំរុញសេវាកម្ម</li>
+<li>ពិចារណាការរាំងស្ទះនិងកំណត់ដំណោះស្រាយ</li>
+</ul></li>
+</ol></li>
+<li>លំហាត់:
+<ul>
+<li><a href="https://kilthub.cmu.edu/articles/Globally_distributed_content_delivery/6605972">Design a CDN network: old article</a></li>
+<li><a href="https://blog.twitter.com/2010/announcing-snowflake">Design a random unique ID generation system</a></li>
+<li><a href="http://www.indieflashblog.com/how-to-create-an-asynchronous-multiplayer-game.html">Design an online multiplayer card game</a></li>
+<li><a href="http://www.slideshare.net/dvirsky/introduction-to-redis">Design a key-value database</a></li>
+<li><a href="http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html">Design a picture sharing system</a></li>
+<li><a href="http://ijcai13.org/files/tutorial_slides/td3.pdf">Design a recommendation system</a></li>
+<li><a href="http://www.hiredintech.com/system-design/the-system-design-process/">Design a URL-shortener system: copied from above</a></li>
+<li><a href="https://www.adayinthelifeof.nl/2011/02/06/memcache-internals/">Design a cache system</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="final-review-ការពិនិត្យចុងក្រោយ">Final Review (ការពិនិត្យចុងក្រោយ)</h2>
+<pre><code>ផ្នែកនេះនឹងមានវីដេអូខ្លីៗដែលអ្នកអាចមើលបានយ៉ាងរហ័សដើម្បីពិនិត្យឡើងវិញនូវគោលគំនិតសំខាន់ៗ។ វាល្អណាស់ប្រសិនបើអ្នកចង់ធ្វើឱ្យស្រស់ជាងមុន។</code></pre>
+<ul>
+<li>[ ] Series of 2-3 minutes short subject videos (23 វីដេអូ)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=r4r1DZcx1cM&amp;list=PLmVb1OknmNJuC5POdcDv5oCS7_OUkDgpj&amp;index=22">វីដេអូ</a></li>
+</ul></li>
+<li>[ ] Series of 2-5 minutes short subject videos - Michael Sambol (18 វីដេអូ):
+<ul>
+<li><a href="https://www.youtube.com/channel/UCzDJwLWoYCUQowF_nG3m5OQ">វីដេអូ</a></li>
+</ul></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part1">វីដេអូ Sedgewick - Algorithms I</a></li>
+<li>[ ] <a href="https://www.coursera.org/learn/algorithms-part2">វីដេអូ Sedgewick - Algorithms II</a></li>
+</ul>
+<hr />
+<h2 id="coding-question-practice-ការអនុវត្តសំណួរសរសេរកូដ">Coding Question Practice (ការអនុវត្តសំណួរសរសេរកូដ)</h2>
+<p>ឥឡូវអ្នកដឹងពីប្រធានបទវិទ្យាសាស្ត្រកុំព្យូទ័រទាំងអស់ខាងលើ វាដល់ពេលត្រូវអនុវត្តការឆ្លើយសំនួរបញ្ហា។</p>
+<p><strong>ការអនុវត្តសំណួរសរសេរកូដមិនមែនអំពីការទន្ទេញចម្លើយចំពោះបញ្ហាសរសេរកម្មវិធីទេ។</strong></p>
+<p>មូលហេតុដែលអ្នកត្រូវអនុវត្តធ្វើបញ្ហាសរសេរកម្មវិធី៖ - ការទទួលស្គាល់បញ្ហានិងកន្លែងដែលរចនាសម្ព័ន្ធទិន្នន័យត្រឹមត្រូវនិងក្បួនដោះស្រាយត្រូវគ្នា - ការប្រមូលផ្តុំតម្រូវការសម្រាប់បញ្ហា - និយាយពីបញ្ហាដូចជាអ្នកនឹងជួបអ្នកសម្ភាសន៍ដែរ - សរសេរកូដនៅលើក្តារខៀនឬក្រដាសមិនមែនកុំព្យូទ័រទេ - មានពេលវេលានិងចន្លោះស្មុគស្មាញសម្រាប់ដំណោះស្រាយរបស់អ្នក - សាកល្បងតេសដំណោះស្រាយរបស់អ្នក</p>
+<p>មានការណែនាំដ៏ល្អសំរាប់វិធីសាស្រ្តដោះស្រាយបញ្ហាដែលមានលក្ខណៈជាបញ្ហាក្នុងការសំភាសន៍។ អ្នកនឹងទទួលបានពីកម្មវិធីសៀវភៅសំភាសន៍ផងដែរប៉ុន្តែខ្ញុំបានរកឃើញថាលេចធ្លោនេះ៖ <a href="http://www.hiredintech.com/algorithm-design/">Algorithm design canvas</a></p>
+<p>គ្មានក្តារខៀននៅផ្ទះទេ? ខ្ញុំជាមនុស្សចំលែកនិងមានក្តារខៀនធំ។ ជំនួសឱ្យក្តារខៀន សូមរើសយកផ្ទាំងគំនូរធំ ៗ ពីហាងសិល្បៈ។ អ្នកអាចអង្គុយលើសាឡុងនិងអនុវត្តបាន។ នេះគឺជា “សាឡុងក្តារចុច” របស់ខ្ញុំ។ ខ្ញុំបានបន្ថែមប៊ិចនៅក្នុងរូបថតសម្រាប់ខ្នាត។ ប្រសិនបើអ្នកប្រើប៊ិចអ្នកនឹងចង់លុបចោល។ ឆាប់រញ៉េរញ៉ៃ។ ខ្ញុំប្រើខ្មៅដៃនិងជ័រលុប។</p>
+<figure>
+<img src="https://d3j2pkmjtin6ou.cloudfront.net/art_board_sm_2.jpg" alt="my sofa whiteboard" /><figcaption>my sofa whiteboard</figcaption>
+</figure>
+<p>បន្ថែម:</p>
+<ul>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/mathematics-for-topcoders/">Mathematics for Topcoders</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/dynamic-programming-from-novice-to-advanced/">Dynamic Programming – From Novice to Advanced</a></li>
+<li><a href="https://web.archive.org/web/20160906124824/http://courses.csail.mit.edu/iap/interview/materials.php">MIT Interview Materials</a></li>
+<li><a href="http://exercism.io/languages">Exercises for getting better at a given language</a></li>
+</ul>
+<p><strong>អាននិងធ្វើបញ្ហាកម្មវិធី (តាមលំដាប់លំដោយ):</strong></p>
+<ul>
+<li>[ ] <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-047012167X.html">Programming Interviews Exposed: Secrets to Landing Your Next Job, 2nd Edition</a>
+<ul>
+<li>ចម្លើយជា C, C++ និង Java</li>
+</ul></li>
+<li>[ ] <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/">Cracking the Coding Interview, 6th Edition</a>
+<ul>
+<li>ចម្លើយជា Java</li>
+</ul></li>
+</ul>
+<p>មេីលសៀភៅ <a href="#book-list">Book List above</a></p>
+<h2 id="coding-exerciseschallenges">Coding exercises/challenges</h2>
+<p>នៅពេលដែលអ្នកបានរៀនខួរក្បាលរបស់អ្នកហើយ សូមដាក់ខួរក្បាលទាំងនោះឱ្យដំណើរការ។ យកបញ្ហាប្រឈមនៃការសរសេរកូដជារៀងរាល់ថ្ងៃតាមដែលអ្នកអាចធ្វើបាន។</p>
+<ul>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/how-to-find-a-solution/">How to Find a Solution</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/how-to-dissect-a-topcoder-problem-statement/">How to Dissect a Topcoder Problem Statement</a></li>
+</ul>
+<p>វីឌីអូសំភាសន៍ការសរសេរកូដ: - <a href="https://www.youtube.com/watch?v=NBcqBddFbZw&amp;list=PLamzFoFxwoNjPfxzaWqs7cZGsPYy0x_gI">IDeserve (88 វីដេអូ)</a> - <a href="https://www.youtube.com/user/tusharroy2525/playlists?shelf_id=2&amp;view=50&amp;sort=dd">Tushar Roy (5 playlists)</a> - Super for walkthroughs of problem solutions - <a href="https://www.youtube.com/playlist?list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-">Nick White - LeetCode Solutions (187 វីដេអូ)</a> - ការពន្យល់ល្អអំពីដំណោះស្រាយនិងលេខកូដ - អ្នកអាចមើលបានច្រើនក្នុងរយៈពេលដ៏ខ្លី - <a href="https://youtube.com/FisherCoder">FisherCoder - LeetCode Solutions</a></p>
+<p>គេហទំព័រប្រកួតប្រជែង: - <a href="https://leetcode.com/">LeetCode</a> - គេហទំព័របញ្ហាសរសេរកូដដែលខ្ញុំចូលចិត្តបំផុត។ វាមានតម្លៃសម្រាប់ការជាវប្រាក់សម្រាប់រយៈពេល 1-2 ខែដែលអ្នកទំនងជានឹងរៀបចំ - <a href="https://github.com/fishercoder1534/Leetcode">LeetCode solutions from FisherCoder</a> - សូមមើលវីដេអូស Nick ខាងលើសម្រាប់លេខកូដខ្លី - <a href="https://www.hackerrank.com/">HackerRank</a> - <a href="https://www.topcoder.com/">TopCoder</a> - <a href="https://www.interviewcake.com/">InterviewCake</a> - <a href="http://www.geeksforgeeks.org/">Geeks for Geeks</a> - <a href="https://www.interviewbit.com/invite/icjf">InterviewBit</a> - <a href="https://projecteuler.net/index.php?section=problems">Project Euler (math-focused)</a> - <a href="https://code-exercises.com">Code Exercises</a></p>
+<p>គេហទំព័រសិក្សាភាសាដែលមានបញ្ហាប្រឈម៖ - <a href="http://www.codewars.com">Codewars</a> - <a href="https://codility.com/programmers/">Codility</a> - <a href="https://www.hackerearth.com/">HackerEarth</a> - <a href="http://www.spoj.com/">Sphere Online Judge (spoj)</a> - <a href="https://www.codechef.com/">Codechef</a></p>
+<p>Challenge repos: - <a href="https://github.com/donnemartin/interactive-coding-challenges">Interactive Coding Interview Challenges in Python</a></p>
+<p>Mock Interviews: - <a href="http://www.gainlo.co/">Gainlo.co: Mock interviewers from big companies</a> - I used this and it helped me relax for the phone screen and on-site interview - <a href="https://www.pramp.com/">Pramp: Mock interviews from/with peers</a> - peer-to-peer model of practice interviews - <a href="https://refdash.com/">Refdash: Mock interviews and expedited interviews</a> - also help candidates fast track by skipping multiple interviews with tech companies - <a href="https://interviewing.io">interviewing.io: Practice mock interview with senior engineers</a> - anonymous algorithmic/systems design interviews with senior engineers from FAANG anonymously.</p>
+<h2 id="នៅពេលអ្នកជិតដល់ការសម្ភាសន៍">នៅពេលអ្នកជិតដល់ការសម្ភាសន៍</h2>
+<ul>
+<li>Cracking The Coding Interview Set 2 (វីដេអូ):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=4NIb9l3imAo">Cracking The Code Interview</a></li>
+<li><a href="https://www.youtube.com/watch?v=Eg5-tdAwclo">Cracking the Coding Interview - Fullstack Speaker Series</a></li>
+</ul></li>
+</ul>
+<h2 id="ប្រវត្តិរូបសង្ខេបរបស់អ្នក">ប្រវត្តិរូបសង្ខេបរបស់អ្នក</h2>
+<ul>
+<li>មើលបន្តការរៀបចំរបស់នៅក្នុង Cracking The Coding Interview និង back of Programming Interviews Exposed</li>
+</ul>
+<h2 id="ត្រូវគិតអំពីពេលសម្ភាសន៍មកដល់">ត្រូវគិតអំពីពេលសម្ភាសន៍មកដល់</h2>
+<p>គិតអំពីសំណួរសំភាសន៍ចំនួន 20 ដែលអ្នកនឹងទទួលបានរួមជាមួយធាតុខាងក្រោម។ មានចម្លើយ ២-៣ សម្រាប់ចម្លើយនីមួយៗ។ មានរឿងរ៉ាវមិនមែនគ្រាន់តែទិន្នន័យអំពីអ្វីដែលអ្នកបានសំរេចនោះទេ។</p>
+<ul>
+<li>ហេតុអ្វីបានជាអ្នកចង់បានការងារនេះ?</li>
+<li>តើអ្វីជាបញ្ហាដ៏លំបាកដែលអ្នកបានដោះស្រាយ?</li>
+<li>បញ្ហាធំ ៗ ដែលប្រឈមមុខ?</li>
+<li>ការរចនាម៉ូដណាដែលល្អបំផុត / អាក្រក់បំផុត?</li>
+<li>គំនិតសម្រាប់កែលម្អផលិតផលដែលមានស្រាប់</li>
+<li>តើអ្នកធ្វើការបានល្អបំផុតដោយរបៀបណាក្នុងនាមជាបុគ្គលនិងជាក្រុម?</li>
+<li>ជំនាញឬបទពិសោធន៍ណាមួយរបស់អ្នកដែលជាទ្រព្យសម្បត្តិនៅក្នុងតួនាទីហើយហេតុអ្វី?</li>
+<li>តើអ្វីដែលអ្នកពេញចិត្តបំផុតនៅ [ការងារ x / គម្រោង y]?</li>
+<li>តើអ្វីជាបញ្ហាប្រឈមដ៏ធំបំផុតដែលអ្នកបានប្រឈមនៅ [ការងារ x / គម្រោង y]?</li>
+<li>តើអ្វីទៅជាកំហុសដ៏លំបាកបំផុតដែលអ្នកបានជួបប្រទះនៅ [ការងារ x / គម្រោង y]?</li>
+<li>តើអ្នកបានរៀនអ្វីខ្លះនៅ [ការងារ x / គំរោង y]? តើអ្នកនឹងធ្វើអ្វីបានល្អជាងនៅ [ការងារ x / គំរោង y]?</li>
+</ul>
+<h2 id="have-questions-for-the-interviewer-មានសំណួរសម្រាប់អ្នកសម្ភាសន៍">Have questions for the interviewer (មានសំណួរសម្រាប់អ្នកសម្ភាសន៍)</h2>
+<pre><code>សំនួរខ្លះរបស់ខ្ញុំ (ខ្ញុំប្រហែលជាដឹងចម្លើយរួចហើយប៉ុន្តែចង់បានយោបល់ឬទស្សនៈក្រុមរបស់ពួកគេ)</code></pre>
+<ul>
+<li>តើក្រុមរបស់អ្នកមានទំហំប៉ុនណា?</li>
+<li>តើវដ្ដ dev របស់អ្នកមើលទៅដូចអ្វី? តើអ្នកធ្វើទឹកជ្រោះទឹកពន្លក / ឆាប់រហ័សទេ?</li>
+<li>តើប្រញាប់ប្រញាល់ដល់ពេលវេលាកំណត់ទេ? ឬមានភាពបត់បែន?</li>
+<li>តើការសម្រេចចិត្តត្រូវបានធ្វើឡើងនៅក្នុងក្រុមរបស់អ្នកយ៉ាងដូចម្តេច?</li>
+<li>តើអ្នកមានការប្រជុំប៉ុន្មានដងក្នុងមួយសប្តាហ៍?</li>
+<li>តើអ្នកមានអារម្មណ៍ថាបរិយាកាសការងាររបស់អ្នកជួយអ្នកក្នុងការផ្តោតអារម្មណ៍ទេ?</li>
+<li>តើអ្នកកំពុងធ្វើអ្វី?</li>
+<li>តើអ្នកចូលចិត្តអ្វី?</li>
+<li>ជីវិតការងារដូចជាអ្វី?</li>
+<li>តើការងារ / ជីវិតមានតុល្យភាពយ៉ាងដូចម្តេច?</li>
+</ul>
+<h2 id="once-youve-got-the-job-នៅពេលដែលអ្នកមានការងារធ្វើ">Once You’ve Got The Job (នៅពេលដែលអ្នកមានការងារធ្វើ)</h2>
+<p>សូមអបអរសាទរ!</p>
+<p>បន្តរៀន។</p>
+<p>រៀនមិនចេះចប់។</p>
+<hr />
+<pre><code>*****************************************************************************************************
+*****************************************************************************************************
+
+អ្វីគ្រប់យ៉ាងនៅខាងក្រោមចំណុចនេះគឺស្រេចចិត្តបេីចង់មេីល។
+តាមរយៈការសិក្សាទាំងនេះ អ្នកនឹងទទួលបានការយល់ដឹងកាន់តែច្រើនពីគំនិតវិទ្យាសាស្ត្រកុំព្យូទ័រ ហើយអ្នកនឹងត្រូវបានរៀបចំខ្លួនឱ្យកាន់តែប្រសើរ
+ការងារវិស្វកម្មផ្នែកទន់ណាមួយ។ អ្នកនឹងក្លាយជាវិស្វករផ្នែកទន់ដែលមានចំេនះពេញលេញ។
+
+*****************************************************************************************************
+*****************************************************************************************************</code></pre>
+<hr />
+<h2 id="additional-books-សៀវភៅបន្ថែម">Additional Books (សៀវភៅបន្ថែម)</h2>
+<pre><code>ទាំងនេះគឺនៅទីនេះដូច្នេះអ្នកអាចចូលទៅក្នុងប្រធានបទដែលអ្នកចាប់អារម្មណ៍។ </code></pre>
+<ul>
+<li><a href="https://www.amazon.com/dp/013937681X">The Unix Programming Environment</a>
+<ul>
+<li>ចាស់តែល្អ</li>
+</ul></li>
+<li><a href="https://www.amazon.com/dp/1593273894/">The Linux Command Line: A Complete Introduction</a>
+<ul>
+<li>ជម្រើសទំនើប</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/TCP/IP_Illustrated">TCP/IP Illustrated Series</a></li>
+<li><a href="https://www.amazon.com/gp/product/0596007124/">Head First Design Patterns</a>
+<ul>
+<li>ការណែនាំ design patterns</li>
+</ul></li>
+<li><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612">Design Patterns: Elements of Reusable Object-Oriente​d Software</a>
+<ul>
+<li>AKA the “Gang Of Four” book, or GOF</li>
+<li>The canonical design patterns book</li>
+</ul></li>
+<li><a href="https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0134277554/">UNIX and Linux System Administration Handbook, 5th Edition</a></li>
+<li><a href="http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202">Algorithm Design Manual</a> (Skiena)
+<ul>
+<li>ជាការពិនិត្យឡើងវិញនិងការទទួលស្គាល់បញ្ហា</li>
+<li>ផ្នែកកាតាឡុកក្បួនដោះស្រាយគឺហួសពីវិសាលភាពនៃការពិបាកដែលអ្នកនឹងជួបសម្ភាសន៍</li>
+<li>សៀវភៅនេះមានពីរផ្នែក៖
+<ul>
+<li>សៀវភៅសិក្សាថ្នាក់ស្តីពីរចនាសម្ព័ន្ធទិន្នន័យនិងក្បួនដោះស្រាយ
+<ul>
+<li>គុណសម្បត្តិ:
+<ul>
+<li>គឺជាការពិនិត្យឡើងវិញដ៏ល្អមួយដែលជាសៀវភៅក្បួនដោះស្រាយណាមួយ</li>
+<li>រឿងល្អ ៗ ពីបទពិសោធន៍របស់គាត់ដោះស្រាយបញ្ហានៅក្នុងឧស្សាហកម្មនិងបណ្ឌិតសភា</li>
+<li>ឧទាហរណ៍កូដនៅក្នុង C</li>
+</ul></li>
+<li>គុណវិបត្តិ:
+<ul>
+<li>Can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects</li>
+<li>Chapters 7, 8, 9 can be painful to try to follow, as some items are not explained well or require more brain than I have</li>
+<li>Don’t get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material</li>
+</ul></li>
+</ul></li>
+<li>Algorithm catalog:
+<ul>
+<li>នេះជាហេតុផលពិតប្រាកដដែលអ្នកទិញសៀវភៅនេះ</li>
+<li>ហៀបនឹងចូលដល់ផ្នែកនេះ។ នឹងធ្វើបច្ចុប្បន្នភាពនៅទីនេះនៅពេលដែលខ្ញុំបានឆ្លងកាត់វា</li>
+</ul></li>
+</ul></li>
+<li>អាចជួលវានៅលើ Kindle</li>
+<li>ចម្លើយ:
+<ul>
+<li><a href="http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition)">ដំណោះស្រាយ</a></li>
+<li><a href="http://blog.panictank.net/category/algorithmndesignmanualsolutions/page/2/">ដំណោះស្រាយ</a></li>
+</ul></li>
+<li><a href="http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata">Errata</a></li>
+</ul></li>
+<li><a href="https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038">Write Great Code: Volume 1: Understanding the Machine</a>
+<ul>
+<li>សៀវភៅនេះត្រូវបានបោះពុម្ពផ្សាយក្នុងឆ្នាំ ២០០៤ ហើយវាហួសសម័យបន្តិចប៉ុន្តែវាជាធនធានដ៏អស្ចារ្យសម្រាប់ការស្វែងយល់អំពីកុំព្យូទ័រដោយសង្ខេប</li>
+<li>The author invented <a href="https://en.wikipedia.org/wiki/High_Level_Assembly">HLA</a>, so take mentions and examples in HLA with a grain of salt. Not widely used, but decent examples of what assembly looks like</li>
+<li>ជំពូកទាំងនេះពិតជាមានប្រយោជន៍ក្នុងការអានដើម្បីផ្តល់ឱ្យអ្នកនូវគ្រឹះដ៏ល្អមួយ:
+<ul>
+<li>Chapter 2 - Numeric Representation</li>
+<li>Chapter 3 - Binary Arithmetic and Bit Operations</li>
+<li>Chapter 4 - Floating-Point Representation</li>
+<li>Chapter 5 - Character Representation</li>
+<li>Chapter 6 - Memory Organization and Access</li>
+<li>Chapter 7 - Composite Data Types and Memory Objects</li>
+<li>Chapter 9 - CPU Architecture</li>
+<li>Chapter 10 - Instruction Set Architecture</li>
+<li>Chapter 11 - Memory Architecture and Organization</li>
+</ul></li>
+</ul></li>
+<li><a href="https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844">Introduction to Algorithms</a>
+<ul>
+<li><strong>សំខាន់ៈ</strong> ការអានសៀវភៅនេះនឹងមានតម្លៃតែប៉ុណ្ណោះ។ សៀវភៅនេះគឺជាការពិនិត្យឡើងវិញដ៏អស្ចារ្យនៃក្បួនដោះស្រាយនិងរចនាសម្ព័ន្ធទិន្នន័យប៉ុន្តែនឹងមិនបង្រៀនអ្នកពីរបៀបសរសេរកូដល្អទេ។ អ្នកត្រូវតែចេះសរសេរកូដដំណោះស្រាយប្រកបដោយប្រសិទ្ធភាព</li>
+<li>AKA CLR, sometimes CLRS, because Stein was late to the game</li>
+</ul></li>
+<li><a href="https://www.amazon.com/dp/0128119055">Computer Architecture, Sixth Edition: A Quantitative Approach</a>
+<ul>
+<li>For a richer, more up-to-date (2017), but longer treatment</li>
+</ul></li>
+<li><a href="http://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880">Programming Pearls</a>
+<ul>
+<li>ជំពូកដំបូង បង្ហាញនូវដំណោះស្រាយដ៏ឆ្លាតវៃចំពោះបញ្ហាសរសេរកម្មវិធី (ខ្លះចាស់ដោយប្រើខ្សែអាត់ទិន្នន័យ) ប៉ុន្តែនោះគ្រាន់តែជាការណែនាំប៉ុណ្ណោះ។ សៀវភៅណែនាំស្តីពីការរចនាកម្មវិធីនិងស្ថាបត្យកម្ម</li>
+</ul></li>
+</ul>
+<h2 id="additional-learning">Additional Learning</h2>
+<pre><code>ខ្ញុំបានបន្ថែមពួកគេដើម្បីជួយអ្នកឱ្យក្លាយជាវិស្វករផ្នែកទន់ដែលមានមានចំេណះពេញលេញហើយត្រូវដឹងច្បាស់បច្ចេកវិទ្យានិងក្បួនដោះស្រាយដូច្នេះអ្នកនឹងមានប្រអប់ឧបករណ៍ធំជាងមុន។</code></pre>
+<ul>
+<li><h3 id="compilers">Compilers</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=IhC7sdYe-Jg">How a Compiler Works in ~1 minute (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=CSZLNYF4Klo">Harvard CS50 - Compilers (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=twodd1KFfGk">C++ (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=FnGCDLhaxKU">Understanding Compiler Optimization (C++) (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="emacs-and-vim">Emacs and vi(m)</h3>
+<ul>
+<li>រៀនពី unix-based code editor</li>
+<li>vi(m):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5givLEMcINQ&amp;index=1&amp;list=PL13bz4SHGmRxlZVmWQ9DvXo1fEg4UdGkr">Editing With vim 01 - Installation, Setup, and The Modes (វីដេអូ)</a></li>
+<li><a href="http://vim-adventures.com/">VIM Adventures</a></li>
+<li>ឈុត ៤ (វីដេអូ):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SI8TeVMX8pk">The vi/vim editor - មេរៀន 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=F3OO7ZIOaJE">The vi/vim editor - មេរៀន 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZYEccA_nMaI">The vi/vim editor - មេរៀន 3</a></li>
+<li><a href="https://www.youtube.com/watch?v=1lYD5gwgZIA">The vi/vim editor - មេរៀន 4</a></li>
+</ul></li>
+<li><a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Using_Vi_instead_of_Emacs">Using Vi Instead of Emacs</a></li>
+</ul></li>
+<li>emacs:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hbmV1bnQ-i0">Basics Emacs Tutorial (វីដេអូ)</a></li>
+<li>ឈុត ៣ (វីដេអូ):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ujODL7MD04Q">Emacs Tutorial (Beginners) -Part 1- File commands, cut/copy/paste, cursor commands</a></li>
+<li><a href="https://www.youtube.com/watch?v=XWpsRupJ4II">Emacs Tutorial (Beginners) -Part 2- Buffer management, search, M-x grep and rgrep modes</a></li>
+<li><a href="https://www.youtube.com/watch?v=paSgzPso-yc">Emacs Tutorial (Beginners) -Part 3- Expressions, Statements, ~/.emacs file and packages</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc">Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs (វីដេអូ)</a></li>
+<li><a href="http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html#Writing_C_programs_with_Emacs">Writing C Programs With Emacs</a></li>
+<li><a href="https://www.youtube.com/watch?v=nsGYet02bEk">(maybe) Org Mode In Depth: Managing Structure (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="unix-command-line-tools">Unix command line tools</h3>
+<ul>
+<li>ខ្ញុំបានបំពេញក្នុងបញ្ជីខាងក្រោមពីឧបករណ៍ល្អ ៗ.</li>
+<li>bash</li>
+<li>cat</li>
+<li>grep</li>
+<li>sed</li>
+<li>awk</li>
+<li>curl or wget</li>
+<li>sort</li>
+<li>tr</li>
+<li>uniq</li>
+<li><a href="https://en.wikipedia.org/wiki/Strace">strace</a></li>
+<li><a href="https://danielmiessler.com/study/tcpdump/">tcpdump</a></li>
+</ul></li>
+<li><h3 id="information-theory-វីដេអូ">Information theory (វីដេអូ)</h3>
+<ul>
+<li><a href="https://www.khanacademy.org/computing/computer-science/informationtheory">Khan Academy</a></li>
+<li>បន្ថែមទៀតអំពី Markov processes:
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/waxgx/core-markov-text-generation">Core Markov Text Generation</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/gZhiC/core-implementing-markov-text-generation">Core Implementing Markov Text Generation</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/EUjrq/project-markov-text-generation-walk-through">Project = Markov Text Generation Walk Through</a></li>
+</ul></li>
+<li>សូមមើលបន្ថែមនៅ MIT 6.050J Information និង Entropy series</li>
+</ul></li>
+<li><h3 id="parity-hamming-code-វីដេអូ">Parity &amp; Hamming Code (វីដេអូ)</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=q-3BctoUpHE">Intro</a></li>
+<li><a href="https://www.youtube.com/watch?v=DdMcAUlxh1M">Parity</a></li>
+<li>Hamming Code:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1A_NcXxdoCc">Error detection</a></li>
+<li><a href="https://www.youtube.com/watch?v=JAMLuxdHH8o">Error correction</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=wbH2VxzmoZk">Error Checking</a></li>
+</ul></li>
+<li><h3 id="entropy">Entropy</h3>
+<ul>
+<li>សូមមើលវីដេអូខាងក្រោមផង</li>
+<li>ត្រូវប្រាកដថាមើលវីដេអូទ្រឹស្តីព័ត៌មានជាមុន</li>
+<li><a href="https://youtu.be/JnJq3Py0dyM?t=176">Information Theory, Claude Shannon, Entropy, Redundancy, Data Compression &amp; Bits (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="cryptography">Cryptography</h3>
+<ul>
+<li>សូមមើលវីដេអូខាងក្រោមផង</li>
+<li>ត្រូវប្រាកដថាមើលវីដេអូទ្រឹស្តីព័ត៌មានជាមុន</li>
+<li><a href="https://www.khanacademy.org/computing/computer-science/cryptography">Khan Academy Series</a></li>
+<li><a href="https://www.youtube.com/watch?v=KqqOXndnvic&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=30">Cryptography: Hash Functions</a></li>
+<li><a href="https://www.youtube.com/watch?v=9TNI2wHmaeI&amp;index=31&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Cryptography: Encryption</a></li>
+</ul></li>
+<li><h3 id="compression">Compression</h3>
+<ul>
+<li>ត្រូវប្រាកដថាមើលវីដេអូទ្រឹស្តីព័ត៌មានជាមុន</li>
+<li>Computerphile (វីដេអូ):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Lto-ajuqW3w">Compression</a></li>
+<li><a href="https://www.youtube.com/watch?v=M5c_RFKVkko">Entropy in Compression</a></li>
+<li><a href="https://www.youtube.com/watch?v=umTbivyJoiI">Upside Down Trees (Huffman Trees)</a></li>
+<li><a href="https://www.youtube.com/watch?v=DV8efuB3h2g">EXTRA BITS/TRITS - Huffman Trees</a></li>
+<li><a href="https://www.youtube.com/watch?v=goOa3DGezUA">Elegant Compression in Text (The LZ 77 Method)</a></li>
+<li><a href="https://www.youtube.com/watch?v=cCDCfoHTsaU">Text Compression Meets Probabilities</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H">វីដេអូ Compressor Head</a></li>
+<li><a href="https://www.youtube.com/watch?v=whGwm0Lky2s">(optional) Google Developers Live: GZIP is not enough!</a></li>
+</ul></li>
+<li><h3 id="computer-security">Computer Security</h3>
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">MIT (23 វីដេអូ)</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GqmQg-cszw4&amp;index=1&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Introduction, Threat Models</a></li>
+<li><a href="https://www.youtube.com/watch?v=6bwzNg5qQ0o&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&amp;index=2">Control Hijacking Attacks</a></li>
+<li><a href="https://www.youtube.com/watch?v=drQyrzRoRiA&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&amp;index=3">Buffer Overflow Exploits and Defenses</a></li>
+<li><a href="https://www.youtube.com/watch?v=6SIJmoE9L9g&amp;index=4&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Privilege Separation</a></li>
+<li><a href="https://www.youtube.com/watch?v=8VqTSY-11F4&amp;index=5&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Capabilities</a></li>
+<li><a href="https://www.youtube.com/watch?v=VEV74hwASeU&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh&amp;index=6">Sandboxing Native Code</a></li>
+<li><a href="https://www.youtube.com/watch?v=chkFBigodIw&amp;index=7&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Web Security Model</a></li>
+<li><a href="https://www.youtube.com/watch?v=EBQIGy1ROLY&amp;index=8&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Securing Web Applications</a></li>
+<li><a href="https://www.youtube.com/watch?v=yRVZPvHYHzw&amp;index=9&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Symbolic Execution</a></li>
+<li><a href="https://www.youtube.com/watch?v=SIEVvk3NVuk&amp;index=11&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Network Security</a></li>
+<li><a href="https://www.youtube.com/watch?v=QOtA76ga_fY&amp;index=12&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Network Protocols</a></li>
+<li><a href="https://www.youtube.com/watch?v=PuVMkSEcPiI&amp;index=15&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">Side-Channel Attacks</a></li>
+</ul></li>
+</ul></li>
+<li><h3 id="garbage-collection">Garbage collection</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=iHVs_HkjdmI">GC in Python (វីដេអូ)</a></li>
+<li><a href="https://www.infoq.com/presentations/garbage-collection-benefits">Deep Dive Java: Garbage Collection is Good!</a></li>
+<li><a href="https://www.youtube.com/watch?v=P-8Z0-MhdQs&amp;list=PLdzf4Clw0VbOEWOS_sLhT_9zaiQDrS5AR&amp;index=3">Deep Dive Python: Garbage Collection in CPython (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="parallel-programming">Parallel Programming</h3>
+<ul>
+<li><a href="https://www.coursera.org/learn/parprog1/home/week/1">Coursera (Scala)</a></li>
+<li><a href="https://www.youtube.com/watch?v=uY85GkaYzBk">Efficient Python for High Performance Parallel Computing (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="messaging-serialization-and-queueing-systems">Messaging, Serialization, and Queueing Systems</h3>
+<ul>
+<li><a href="https://thrift.apache.org/">Thrift</a>
+<ul>
+<li><a href="http://thrift-tutorial.readthedocs.io/en/latest/intro.html">ការបង្រៀន</a></li>
+</ul></li>
+<li><a href="https://developers.google.com/protocol-buffers/">Protocol Buffers</a>
+<ul>
+<li><a href="https://developers.google.com/protocol-buffers/docs/tutorials">ការបង្រៀន</a></li>
+</ul></li>
+<li><a href="http://www.grpc.io/">gRPC</a>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5tmPvSe7xXQ&amp;list=PLcTqM9n_dieN0k1nSeN36Z_ppKnvMJoly&amp;index=1">gRPC 101 for Java Developers (វីដេអូ)</a></li>
+</ul></li>
+<li><a href="http://redis.io/">Redis</a>
+<ul>
+<li><a href="http://try.redis.io/">ការបង្រៀន</a></li>
+</ul></li>
+<li><a href="https://aws.amazon.com/sqs/">Amazon SQS (queue)</a></li>
+<li><a href="https://aws.amazon.com/sns/">Amazon SNS (pub-sub)</a></li>
+<li><a href="https://www.rabbitmq.com/">RabbitMQ</a>
+<ul>
+<li><a href="https://www.rabbitmq.com/getstarted.html">ចាប់ផ្តើម</a></li>
+</ul></li>
+<li><a href="http://www.celeryproject.org/">Celery</a>
+<ul>
+<li><a href="http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html">ជំហានដំបូងជាមួយ Celery</a></li>
+</ul></li>
+<li><a href="http://zeromq.org/">ZeroMQ</a>
+<ul>
+<li><a href="http://zeromq.org/intro:read-the-manual">Intro - Read The Manual</a></li>
+</ul></li>
+<li><a href="http://activemq.apache.org/">ActiveMQ</a></li>
+<li><a href="http://kafka.apache.org/documentation.html#introduction">Kafka</a></li>
+<li><a href="http://msgpack.org/index.html">MessagePack</a></li>
+<li><a href="https://avro.apache.org/">Avro</a></li>
+</ul></li>
+<li><h3 id="a">A*</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A Search Algorithm</a></li>
+<li><a href="https://www.youtube.com/watch?v=KNXfSOx4eEE">A* Pathfinding Tutorial (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=-L-WgKMFuhE">A* Pathfinding (E01: algorithm explanation) (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="fast-fourier-transform">Fast Fourier Transform</h3>
+<ul>
+<li><a href="https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/">An Interactive Guide To The Fourier Transform</a></li>
+<li><a href="http://www.askamathematician.com/2012/09/q-what-is-a-fourier-transform-what-is-it-used-for/">What is a Fourier transform? What is it used for?</a></li>
+<li><a href="https://www.youtube.com/watch?v=Xxut2PN-V8Q">What is the Fourier Transform? (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iTMn0Kt18tg&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=4">Divide &amp; Conquer: FFT (វីដេអូ)</a></li>
+<li><a href="http://jakevdp.github.io/blog/2013/08/28/understanding-the-fft/">Understanding The FFT</a></li>
+</ul></li>
+<li><h3 id="bloom-filter">Bloom Filter</h3>
+<ul>
+<li>ចំពោះBloom filterមួយដែលមាន m bits និង មុខងារhasing k, ទាំងការបញ្ចូលនិងការធ្វើតេស្តសមាជិកភាពគឺO(k)</li>
+<li><a href="https://www.youtube.com/watch?v=-SuTGoFYjZs">Bloom Filters (video)</a></li>
+<li><a href="https://www.youtube.com/watch?v=qBTdukbzc78">Bloom Filters | Mining of Massive Datasets | Stanford University (វីដេអូ)</a></li>
+<li><a href="http://billmill.org/bloomfilter-tutorial/">Tutorial</a></li>
+<li><a href="http://blog.michaelschmatz.com/2016/04/11/how-to-write-a-bloom-filter-cpp/">How To Write A Bloom Filter App</a></li>
+</ul></li>
+<li><h3 id="hyperloglog">HyperLogLog</h3>
+<ul>
+<li><a href="http://highscalability.com/blog/2012/4/5/big-data-counting-how-to-count-a-billion-distinct-objects-us.html">How To Count A Billion Distinct Objects Using Only 1.5KB Of Memory</a></li>
+</ul></li>
+<li><h3 id="locality-sensitive-hashing">Locality-Sensitive Hashing</h3>
+<ul>
+<li>ប្រើដើម្បីកំណត់ភាពស្រដៀងគ្នានៃឯកសារ</li>
+<li>ការផ្ទុយមកពី MD5 ឬ SHA ដែលត្រូវបានប្រើដើម្បីកំណត់ថាតើឯកសារ ឬ ខ្សែអក្សរចំនួន ២ ពិតជាដូចគ្នា</li>
+<li><a href="http://ferd.ca/simhashing-hopefully-made-simple.html">Simhashing (hopefully) made simple</a></li>
+</ul></li>
+<li><h3 id="van-emde-boas-trees">van Emde Boas Trees</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hmReJCupbNU&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=6">Divide &amp; Conquer: van Emde Boas Trees (វីដេអូ)</a></li>
+<li><a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2012/lecture-notes/MIT6_046JS12_lec15.pdf">MIT Lecture Notes</a></li>
+</ul></li>
+<li><h3 id="augmented-data-structures">Augmented Data Structures</h3>
+<ul>
+<li><a href="https://archive.org/details/ucberkeley_webcast_zksIj9O8_jc">CS 61B Lecture 39: Augmenting Data Structures</a></li>
+</ul></li>
+<li><h3 id="balanced-search-trees">Balanced search trees</h3>
+<ul>
+<li>ស្គាល់យ៉ាងហោចណាស់មែកធាងគោលពីរដែលមានតុល្យភាព (balanced binary tree) (និងដឹងពីរបៀបដែលវាត្រូវបានអនុវត្ត)៖</li>
+<li>“ ក្នុងចំណោមដើមឈើស្វែងរកដែលមានតុល្យភាពដើម (balanced binary tree) AVL និងដើមឈើ ២/៣មិនពេញនិយមទេ៕ red-black trees ហាក់ដូចជាមានប្រជាប្រិយភាពជាង។ រចនាសម្ពន្ធ័ទិន្នន័យរៀបចំដោយខ្លួនឯងដែលគួរឱ្យចាប់អារម្មណ៍ជាពិសេសគឺមែកឈើsplay tree ដែលប្រើការបង្វិល ដើម្បីផ្លាស់ទីកូនសោណាដែលបានចូលទៅកាន់ឬស។ "- ស្គីណា (Skiena)</li>
+<li>ក្នុងចំណោមទាំងនេះខ្ញុំបានជ្រើសរើសអនុវត្តមែកឈើ splay tree ។ ពីអ្វីដែលខ្ញុំបានអានអ្នកនឹងមិនអនុវត្តទេនៅមែកធាងស្វែងរកមានតុល្យភាពនៅក្នុងបទសម្ភាសន៍របស់អ្នក។ ប៉ុន្តែខ្ញុំចង់បង្ហាញលេខកូដ ហើយប្រឈមមុខនឹងវា ។ ខ្ញុំបានអានលេខកូដred-black treeច្រើន
+<ul>
+<li>Splay tree: បញ្ចូល, ស្វែងរក, លុប ប្រសិនបើអ្នកអនុវត្តដើមឈើក្រហម / ខ្មៅសាកល្បងទាំងនេះ៖</li>
+<li>មុខងារស្វែងរក និង ការបញ្ចូល ការរំលងលុប</li>
+</ul></li>
+<li>ខ្ញុំចង់រៀនបន្ថែមទៀតអំពី B-Tree ចាប់តាំងពីវាត្រូវបានគេប្រើយ៉ាងទូលំទូលាយជាមួយសំណុំទិន្នន័យធំ ៗ</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree">Self-balancing binary search tree</a></p></li>
+<li><strong>AVL trees</strong>
+<ul>
+<li><p>ក្នុងការអនុវត្ត ៖ តាមអ្វីដែលខ្ញុំអាចប្រាប់បាន អ្វីៗទាំងនេះមិនត្រូវបានគេប្រើច្រើនទេនៅក្នុងការអនុវត្តប៉ុន្តែខ្ញុំអាចមើលឃើញកន្លែងដែលពួកគេប្រីវា៖ AVL Tree គឺជារចនាសម្ព័នមួយផ្សេងទៀតដែលគាំទ្រដល់ការស្វែងរក (បញ្ចូល n) ការបញ្ចូល និង ការដកយកចេញ។ វាកាន់តែម៉ឺងម៉ាត់ មានតុល្យភាពជាងដើមឈើខ្មៅក្រហម (red-black tree) ដែលមានការបញ្ចូលយឺត និង ដកចេញយឺត ប៉ុន្តែការទាញមកវិញលឿនជាងមុន។ នេះធ្វើឱ្យវា មានភាពទាក់ទាញសម្រាប់រចនាសម្ព័ន្ធទិន្នន័យដែលអាចត្រូវបានសាងសង់ម្តងហើយផ្ទុកដោយមិនមានការកសាងឡើងវិញដូចជាភាសា វចនានុក្រម (ឬវចនានុក្រមកម្មវិធីដូចជា opcodes របស់ assembler ឬ interpreter)</p></li>
+<li><a href="https://www.youtube.com/watch?v=FNeL18KsWPc&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=6">MIT AVL Trees / AVL Sort (វីដេអូ)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/Qq5E0/avl-trees">AVL Trees (វីដេអូ)</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation">AVL Tree Implementation (វីដេអូ)</a></li>
+<li><p><a href="https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge">Split And Merge</a></p></li>
+</ul></li>
+<li><strong>Splay trees</strong>
+<ul>
+<li>ក្នុងការអនុវត្ត ៖ Splay trees ត្រូវបានប្រើជាធម្មតាក្នុងការអនុវត្ត caches, memory allocators, routers, garbage collectors, data compression, ropes (ការជំនួស string ដែលប្រើសម្រាប់ long text strings), ក្នុង Windows NT (ក្នុង virtual memory, networking និង file system code) ជាដេីម</li>
+<li><a href="https://archive.org/details/ucberkeley_webcast_G5QIXywcJlY">CS 61B: Splay Trees (វីដេអូ)</a></li>
+<li>MIT Lecture: Splay Trees:
+<ul>
+<li>វាមានគណិតច្រេីន តែអាចមេីល១០ នាទីចុងក្រោយបាន</li>
+<li><a href="https://www.youtube.com/watch?v=QnPl_Y6EqMo">វីដេអូ</a></li>
+</ul></li>
+</ul></li>
+<li><strong>Red/black trees</strong>
+<ul>
+<li>នេះជាការពិពណ៌នាអំពីដេីមឈេី 2-3 (មើលខាងក្រោម).</li>
+<li>ក្នុងការអនុវត្ត ៖ Red–black trees ផ្តល់ជូនការធានាករណីអាក្រក់បំផុតសម្រាប់ពេលវេលាបញ្ចូល ពេលវេលាលុប និង ពេលវេលាស្វែងរក។ វាមិនត្រឹមតែធ្វើឱ្យពួកគេល្អនៅក្នុងកម្មវិធីដែលត្រូវការពេលវេលាប៉ុណ្ណោះទេ ដូចជាកម្មវិធីជាក់ស្តែង ប៉ុន្តែវាធ្វើឱ្យពួកគេប្លុកមានតម្លៃនៅក្នុងរចនាសម្ព័ន្ធទិន្នន័យផ្សេងទៀតដែលផ្តល់នូវការធានាករណីអាក្រក់បំផុត។ ឧទាហរណ៍រចនាសម្ព័ន្ធទិន្នន័យជាច្រើនដែលត្រូវបានប្រើក្នុងធរណីមាត្រគណនាអាចផ្អែកលើដើមឈើ red–black និង Completely Fair Scheduler ដែលប្រើនៅក្នុងខឺណែលលីនុចបច្ចុប្បន្នប្រើដើមឈើred–black ។ នៅក្នុងកំណែ ៨ នៃចាវ៉ា ការប្រមូលHashMapត្រូវបានកែប្រែហើយដើមឈើ Red-Black ត្រូវបានប្រើ ជំនួសឱ្យការប្រើLinkedListដើម្បីផ្ទុកធាតុដូចគ្នាបេះបិទទៅនឹងhashcodes មិនល្អ</li>
+<li><a href="https://youtu.be/1W3x0f_RmUo?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3871">Aduni - Algorithms - Lecture 4 (តំណភ្ជាប់លោតទៅចំណុចចាប់ផ្តើម) (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=hm2GHwyKF1o&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=5">Aduni - Algorithms - Lecture 5 (វីដេអូ)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Red%E2%80%93black_tree">Red-Black Tree</a></li>
+<li><a href="https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-binary-search-and-red-black-trees/">An Introduction To Binary Search And Red Black Tree</a></li>
+</ul></li>
+<li><strong>2-3 search trees</strong>
+<ul>
+<li>ក្នុងការអនុវត្ត ៖ 2-3 trees មានការបញ្ចូលលឿនជាងមុននៅក្នុងការចំណាយនៃការស្វែងរកយឺត (ដោយសារកំពស់ខ្ពស់ជាងបេីប្រៀបទៅ AVL trees).</li>
+<li>អ្នកអាចនឹងកំរប្រេី 2-3 tree ដោយសារតែការអនុវត្តរបស់វាទាក់ទងនឹងប្រភេទផ្សេងៗគ្នានៃថ្នាំង. ជំនួសវិញយេីងប្រេី Red Black trees.</li>
+<li><a href="https://www.youtube.com/watch?v=C3SsdUqasD4&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&amp;index=2">23-Tree Intuition និង និយមន័យ (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=iYvBtGKsqSg&amp;index=3&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Binary View of 23-Tree</a></li>
+<li><a href="https://www.youtube.com/watch?v=TOb1tuEZ2X4&amp;index=5&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">2-3 Trees (student recitation) (វីដេអូ)</a></li>
+</ul></li>
+<li><strong>2-3-4 Trees (aka 2-4 trees)</strong>
+<ul>
+<li>ក្នុងការអនុវត្ត៖ សម្រាប់រាល់ 2-4 tree, វាមាន red–black trees ជាមួយ data elements ដែលមានលំដាប់ដូចគ្នា. ការបញ្ចូលនិងការលុប ប្រតិបត្ដិការនៅលើដើមឈើ 2-4 គឺស្មើទៅនឹងត្រឡប់ពណ៌និងការបង្វិលនៅក្នុងដើមឈើខ្មៅក្រហម. នេះធ្វើឱ្យដើមឈើ 2-4 ដើម ឧបករណ៍សំខាន់សម្រាប់ការស្វែងយល់ពីតក្កវិជ្ជានៅពីក្រោយដើមឈើក្រហម - ក្រហមហើយនេះជាមូលហេតុដែលអត្ថបទណែនាំជាច្រើននៃក្បួនដោះស្រាយណែនាំ ដើមឈើ ២-៤ ដើមមុនដើមឈើក្រហម - ក្រហមទោះបី ** ដើមឈើ ២-៤ ក៏មិនត្រូវបានប្រើក្នុងការអនុវត្តជាក់ស្តែងដែរ ** ។</li>
+<li><a href="https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q">CS 61B មេរៀនទី 26: Balanced Search Trees (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=DQdMYevEyE4&amp;index=4&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">Bottom Up 234-Trees (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2679VQ26Fp4&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&amp;index=5">Top Down 234-Trees (វីដេអូ)</a></li>
+</ul></li>
+<li><strong>N-ary (K-ary, M-ary) trees</strong>
+<ul>
+<li>ចំណាំ: the N ឬ K ជា branching factor (max branches)</li>
+<li>binary trees គឺជា 2-ary tree មួយ, ដែលមាន branching factor = 2</li>
+<li>2-3 trees គឺជា 3-ary</li>
+<li><a href="https://en.wikipedia.org/wiki/K-ary_tree">K-Ary Tree</a></li>
+</ul></li>
+<li><strong>B-Trees</strong>
+<ul>
+<li>ការពិត: វាជាអាថ៌កំបាំង, តែ B អាចជា Boeing, Balanced, ឬ Bayer (co-inventor).</li>
+<li>ក្នុងការអនុវត្ត: B-Trees ត្រូវបានប្រើយ៉ាងទូលំទូលាយនៅក្នុង databases. filesystems ទំនើបបំផុតភាគច្រេីនប្រេី B-trees (ឬ Variants). បន្ថែមពីលើ ការប្រើប្រាស់របស់វានៅក្នុង databases, B-tree ក៏ត្រូវបានប្រើនៅក្នុង filesystems ដើម្បីអនុញ្ញាតឱ្យចូលទៅកាន់ quick random access ទៅ arbitrary block មួយ ក្នុងឯកសារជាក់លាក់មួយ. បញ្ហាមូលដ្ឋានគឺការប្រែក្លាយបណ្តុំឯកសារអាយទៅជាប្លុកឌីស (ឬ ប្រហែលជាអាសយដ្ឋាន cylinder-head-sector)</li>
+<li><a href="https://en.wikipedia.org/wiki/B-tree">B-Tree</a></li>
+<li><a href="http://btechsmartclass.com/data_structures/b-trees.html">B-Tree Datastructure</a></li>
+<li><a href="https://www.youtube.com/watch?v=I22wEC1tTGo&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&amp;index=6">សេចក្តីផ្តើមទៅ B-Trees (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=s3bCdZGrgpA&amp;index=7&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">និយមន័យ B-Tree និង Insertion (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=svfnVhJOfMc&amp;index=8&amp;list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6">ការលុប B-Tree (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=V3omVLzI0WE&amp;index=7&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf">MIT 6.851 - Memory Hierarchy Models (វីដេអូ)</a> - រៀនពី cache-oblivious B-Trees, data structures - ៣៧ នាទីដំបូងគឺបច្ចេកទេសហើយប្រហែលជាអាចរំលងចោល (B is block size, cache line size)</li>
+</ul></li>
+</ul></li>
+<li><h3 id="k-d-trees">k-D Trees</h3>
+<ul>
+<li>ល្អសម្រាប់ការស្វែងរកចំនួនចំនុចក្នុងចតុកោណកែងឬវត្ថុវិមាត្រខ្ពស់</li>
+<li>ល្អសំរាប់ k-nearest neighbors</li>
+<li><a href="https://www.youtube.com/watch?v=W94M9D_yXKk">Kd Trees (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Y4ZgLlDfKDg">kNN K-d tree algorithm (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="skip-lists">Skip lists</h3>
+<ul>
+<li>“These are somewhat of a cult data structure” - Skiena</li>
+<li><a href="https://www.youtube.com/watch?v=2g9OSRKJuzM&amp;index=10&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">Randomization: Skip Lists (វីដេអូ)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Skip_list">សម្រាប់ចលនានិងលម្អិតបន្ថែមទៀត</a></li>
+</ul></li>
+<li><h3 id="network-flows">Network Flows</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Tl90tNtKvxs">Ford-Fulkerson in 5 minutes — Step by step example (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=v1VgJmkEJW0">Ford-Fulkerson Algorithm (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2vhN4Ice5jI">Network Flows (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="disjoint-sets-union-find">Disjoint Sets &amp; Union Find</h3>
+<ul>
+<li><a href="https://archive.org/details/ucberkeley_webcast_MAEGXTwmUsI">UCB 61B - Disjoint Sets; Sorting &amp; selection (វីដេអូ)</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-part1/home/week/1">Sedgewick Algorithms - Union-Find (6 videos)</a></li>
+</ul></li>
+<li><h3 id="math-for-fast-processing">Math for Fast Processing</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=eCaXlAaN2uE&amp;index=11&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">Integer Arithmetic, Karatsuba Multiplication (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ru7mWZJlRQg">The Chinese Remainder Theorem (ប្រេីក្នុង cryptography) (វីដេអូ)</a></li>
+</ul></li>
+<li><h3 id="treap">Treap</h3>
+<ul>
+<li>ការរួមបញ្ចូលគ្នានៃ binary search tree និង a heap</li>
+<li><a href="https://en.wikipedia.org/wiki/Treap">Treap</a></li>
+<li><a href="https://www.youtube.com/watch?v=6podLUYinH8">Data Structures: Treaps explained (វីដេអូ)</a></li>
+<li><a href="https://www.cs.cmu.edu/~scandal/papers/treaps-spaa98.pdf">Applications in set operations</a></li>
+</ul></li>
+<li><h3 id="linear-programming-វីដេអូ">Linear Programming (វីដេអូ)</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=M4K6HYLHREQ">Linear Programming</a></li>
+<li><a href="https://www.youtube.com/watch?v=2ACJ9ewUC6U">Finding minimum cost</a></li>
+<li><a href="https://www.youtube.com/watch?v=8AA_81xI3ik">Finding maximum value</a></li>
+<li><a href="https://www.youtube.com/watch?v=44pAWI7v5Zk">Solve Linear Equations with Python - Simplex Algorithm</a></li>
+</ul></li>
+<li><h3 id="geometry-convex-hull-វីដេអូ">Geometry, Convex hull (វីដេអូ)</h3>
+<ul>
+<li><a href="https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;t=3164">Graph Alg. IV: Intro to geometric algorithms - មេរៀនទី 9</a></li>
+<li><a href="https://www.youtube.com/watch?v=J5aJEcOr6Eo&amp;index=10&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm">Geometric Algorithms: Graham &amp; Jarvis - មេរៀនទី 10</a></li>
+<li><a href="https://www.youtube.com/watch?v=EzeYI7p9MjU&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=2">Divide &amp; Conquer: Convex Hull, Median Finding</a></li>
+</ul></li>
+<li><h3 id="discrete-math">Discrete math</h3>
+<ul>
+<li>សូមមើលវីដេអូខាងក្រោម</li>
+</ul></li>
+<li><h3 id="machine-learning">Machine Learning</h3>
+<ul>
+<li>ហេតុអ្វី ML?
+<ul>
+<li><a href="https://backchannel.com/how-google-is-remaking-itself-as-a-machine-learning-first-company-ada63defcb70">Google ធ្វេីខ្លួនជាក្រុមហ៊ុន Machine Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=QSaZGT4-6EY">Large-Scale Deep Learning for Intelligent Computer Systems (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=X769cyzBNVw">Deep Learning and Understandability versus Software Engineering and Verification ដោយ Peter Norvig</a></li>
+</ul></li>
+<li><a href="https://www.youtube.com/watch?v=Ja2hxBAwG_0">Google’s Cloud Machine learning tools (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsIIuiBfYad6rFYQU_jL2ryal">Google Developers’ Machine Learning Recipes (Scikit Learn &amp; Tensorflow) (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=oZikw5k_2FM">Tensorflow (វីដេអូ)</a></li>
+<li><a href="https://www.tensorflow.org/versions/r0.11/tutorials/index.html">Tensorflow Tutorials</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2016/04/neural-networks-python-theano/">Practical Guide to implementing Neural Networks in Python (using Theano)</a></li>
+<li>វគ្គសិក្សា:
+<ul>
+<li><a href="https://www.coursera.org/learn/machine-learning">វគ្គចាប់ផ្តើមដ៏អស្ចារ្យ: Machine Learning</a> - <a href="https://www.youtube.com/playlist?list=PLZ9qNFMHZ-A4rycgrgOYma6zxF4BZGGPW">វីដេអូ</a> - មេីលវីដេអូ 12-18 សំរាប់ linear algebra (14 និង 15 ដូចគ្នា)</li>
+<li><a href="https://www.coursera.org/learn/neural-networks">Neural Networks for Machine Learning</a></li>
+<li><a href="https://www.udacity.com/course/deep-learning--ud730">Google’s Deep Learning Nanodegree</a></li>
+<li><a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree-by-google--nd009">Google/Kaggle Machine Learning Engineer Nanodegree</a></li>
+<li><a href="https://www.udacity.com/drive">Self-Driving Car Engineer Nanodegree</a></li>
+<li><a href="http://www.thisismetis.com/explore-data-science">Metis Online Course ($99 សំរាប់ 2 ខែ)</a></li>
+</ul></li>
+<li>ធនធាន:
+<ul>
+<li>សៀវភៅ:
+<ul>
+<li><a href="https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/">Python Machine Learning</a></li>
+<li><a href="https://www.amazon.com/Data-Science-Scratch-Principles-Python/dp/149190142X">Data Science from Scratch: First Principles with Python</a></li>
+<li><a href="https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413/">Introduction to Machine Learning with Python</a></li>
+</ul></li>
+<li><a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">Machine Learning សម្រាប់វិស្វករ Software</a></li>
+<li>Data School: http://www.dataschool.io/</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="additional-detail-on-some-subjects">Additional Detail on Some Subjects</h2>
+<h2 id="ពត៌មានលំអិតបន្ថែមលើមុខវិជ្ជាមួយចំនួន">ពត៌មានលំអិតបន្ថែមលើមុខវិជ្ជាមួយចំនួន</h2>
+<pre><code>ខ្ញុំបានបន្ថែមគំនិតទាំងនេះដើម្បីពង្រឹងគំនិតមួយចំនួនដែលបានបង្ហាញខាងលើប៉ុន្តែខ្ញុំមិនចង់បញ្ចូលវាខាងលើព្រោះវាច្រើនពេក។ វាងាយស្រួលក្នុងការធ្វើឱ្យវាហួសប្រមាណលើប្រធានបទ។
+អ្នកចង់ទទួលបានការងារនៅសតវត្សនេះមែនទេ? </code></pre>
+<ul>
+<li><strong>SOLID</strong>
+<ul>
+<li>[ ] <a href="https://www.youtube.com/watch?v=TMuno5RZNeE">Bob Martin SOLID Principles of Object Oriented and Agile Design (វីដេអូ)</a></li>
+<li>[ ] S - <a href="http://www.oodesign.com/single-responsibility-principle.html">Single Responsibility Principle</a> | <a href="http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html">Single responsibility to each Object</a>
+<ul>
+<li><a href="https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk">ប្រភេទផ្សេងទៀត</a></li>
+</ul></li>
+<li>[ ] O - <a href="http://www.oodesign.com/open-close-principle.html">Open/Closed Principal</a> | <a href="https://en.wikipedia.org/wiki/Open/closed_principle">On production level Objects are ready for extension but not for modification</a>
+<ul>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgN2M5MTkwM2EtNWFkZC00ZTI3LWFjZTUtNTFhZGZiYmUzODc1&amp;hl=en">ប្រភេទផ្សេងទៀត</a></li>
+</ul></li>
+<li>[ ] L - <a href="http://www.oodesign.com/liskov-s-substitution-principle.html">Liskov Substitution Principal</a> | <a href="http://stackoverflow.com/questions/56860/what-is-the-liskov-substitution-principle">Base Class and Derived class follow ‘IS A’ principal</a>
+<ul>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgNzAzZjA5ZmItNjU3NS00MzQ5LTkwYjMtMDJhNDU5ZTM0MTlh&amp;hl=en">ប្រភេទផ្សេងទៀត</a></li>
+</ul></li>
+<li>[ ] I - <a href="http://www.oodesign.com/interface-segregation-principle.html">Interface segregation principle</a> | clients should not be forced to implement interfaces they don’t use
+<ul>
+<li><a href="https://www.youtube.com/watch?v=3CtAfl7aXAQ">គោលការណ៍នៃ Interface Segregation ក្នុងរយៈពេល 5 នាទី (វីដេអូ)</a></li>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgOTViYjJhYzMtMzYxMC00MzFjLWJjMzYtOGJiMDc5N2JkYmJi&amp;hl=en">ប្រភេទផ្សេងទៀត</a></li>
+</ul></li>
+<li>[ ] D -<a href="http://www.oodesign.com/dependency-inversion-principle.html">Dependency Inversion principle</a> | Reduce the dependency In composition of objects.
+<ul>
+<li><a href="http://stackoverflow.com/questions/62539/what-is-the-dependency-inversion-principle-and-why-is-it-important">ហេតុអ្វីបានជា The Dependency Inversion Principle និងហេតុអ្វីវាសំខាន់</a></li>
+<li><a href="http://docs.google.com/a/cleancoder.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&amp;hl=en">ប្រភេទផ្សេងទៀត</a></li>
+</ul></li>
+</ul></li>
+<li><strong>Union-Find</strong>
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/JssSY/overview">Overview</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/EM5D0/naive-implementations">Naive Implementation</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/Mxu0w/trees">Trees</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/qb4c2/union-by-rank">Union By Rank</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/Q9CVI/path-compression">Path Compression</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/GQQLN/analysis-optional">Analysis Options</a></li>
+</ul></li>
+<li><strong>More Dynamic Programming</strong> (វីដេអូ)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=OQ5jsbhAv_M&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=19">6.006: Dynamic Programming I: Fibonacci, Shortest Paths</a></li>
+<li><a href="https://www.youtube.com/watch?v=ENyox7kNKeY&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=20">6.006: Dynamic Programming II: Text Justification, Blackjack</a></li>
+<li><a href="https://www.youtube.com/watch?v=ocZMDMZwhCY&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=21">6.006: DP III: Parenthesization, Edit Distance, Knapsack</a></li>
+<li><a href="https://www.youtube.com/watch?v=tp4_UXaVyx8&amp;index=22&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb">6.006: DP IV: Guitar Fingering, Tetris, Super Mario Bros.</a></li>
+<li><a href="https://www.youtube.com/watch?v=Tw1k46ywN6E&amp;index=14&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">6.046: Dynamic Programming &amp; Advanced DP</a></li>
+<li><a href="https://www.youtube.com/watch?v=NzgFUwOaoIw&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=15">6.046: Dynamic Programming: All-Pairs Shortest Paths</a></li>
+<li><a href="https://www.youtube.com/watch?v=krZI60lKPek&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=12">6.046: Dynamic Programming (student recitation)</a></li>
+</ul></li>
+<li><strong>Advanced Graph Processing</strong> (វីដេអូ)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=mUBmcbbJNf4&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=27">Synchronous Distributed Algorithms: Symmetry-Breaking. Shortest-Paths Spanning Trees</a></li>
+<li><a href="https://www.youtube.com/watch?v=kQ-UQAzcnzA&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&amp;index=28">Asynchronous Distributed Algorithms: Shortest-Paths Spanning Trees</a></li>
+</ul></li>
+<li>MIT <strong>Probability</strong> ប្រូបាប (គណិតវិទ្យា បងៀនយឹតល្អ) (វីដេអូ):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SmFwFdESMHI&amp;index=18&amp;list=PLB7540DEDD482705B">MIT 6.042J - Probability Introduction</a></li>
+<li><a href="https://www.youtube.com/watch?v=E6FbvM-FGZ8&amp;index=19&amp;list=PLB7540DEDD482705B">MIT 6.042J - Conditional Probability</a></li>
+<li><a href="https://www.youtube.com/watch?v=l1BCv3qqW4A&amp;index=20&amp;list=PLB7540DEDD482705B">MIT 6.042J - Independence</a></li>
+<li><a href="https://www.youtube.com/watch?v=MOfhhFaQdjw&amp;list=PLB7540DEDD482705B&amp;index=21">MIT 6.042J - Random Variables</a></li>
+<li><a href="https://www.youtube.com/watch?v=gGlMSe7uEkA&amp;index=22&amp;list=PLB7540DEDD482705B">MIT 6.042J - Expectation I</a></li>
+<li><a href="https://www.youtube.com/watch?v=oI9fMUqgfxY&amp;index=23&amp;list=PLB7540DEDD482705B">MIT 6.042J - Expectation II</a></li>
+<li><a href="https://www.youtube.com/watch?v=q4mwO2qS2z4&amp;index=24&amp;list=PLB7540DEDD482705B">MIT 6.042J - Large Deviations</a></li>
+<li><a href="https://www.youtube.com/watch?v=56iFMY8QW2k&amp;list=PLB7540DEDD482705B&amp;index=25">MIT 6.042J - Random Walks</a></li>
+</ul></li>
+<li><p><a href="https://www.youtube.com/watch?v=oDniZCmNmNw&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=19">Simonson: Approximation Algorithms (video)</a></p></li>
+<li><strong>String Matching</strong>
+<ul>
+<li>Rabin-Karp (វីដេអូ):
+<ul>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/c0Qkw/rabin-karps-algorithm">Rabin Karps Algorithm</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation">Precomputing</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures/lecture/h4ZLc/optimization-implementation-and-analysis">Optimization: Implementation and Analysis</a></li>
+<li><a href="https://www.youtube.com/watch?v=BRO7mVIFt08&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=9">Table Doubling, Karp-Rabin</a></li>
+<li><a href="https://www.youtube.com/watch?v=w6nuXg0BISo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;index=32">Rolling Hashes, Amortized Analysis</a></li>
+</ul></li>
+<li>Knuth-Morris-Pratt (KMP):
+<ul>
+<li><a href="https://www.youtube.com/watch?v=5i7oKodCRJo">TThe Knuth-Morris-Pratt (KMP) String Matching Algorithm</a></li>
+</ul></li>
+<li>Boyer–Moore string search algorithm
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string_search_algorithm">Boyer-Moore String Search Algorithm</a></li>
+<li><a href="https://www.youtube.com/watch?v=QDZpzctPf10">Advanced String Searching Boyer-Moore-Horspool Algorithms (វីដេអូ)</a></li>
+</ul></li>
+<li><a href="https://www.coursera.org/learn/algorithms-on-strings/home/week/1">Coursera: Algorithms អំពី Strings</a>
+<ul>
+<li>ចាប់ផ្តើមល្អ ប៉ុន្តែដល់ពេលហួស KMP វាកាន់តែស្មុគស្មាញ</li>
+<li>ការពន្យល់ដ៏ល្អនៃការព្យាយាម</li>
+<li>អាចរំលងបាន</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Sorting</strong></p>
+<ul>
+<li>Stanford lectures on sorting:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ENp00xylP7c&amp;index=15&amp;list=PLFE6E58F856038C69">មេរៀនទី 15 | Programming Abstractions (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=y4M9IVgrVKo&amp;index=16&amp;list=PLFE6E58F856038C69">មេរៀនទី 16 | Programming Abstractions (វីដេអូ)</a></li>
+</ul></li>
+<li>Shai Simonson, <a href="http://www.aduni.org/">Aduni.org</a>:
+<ul>
+<li><a href="https://www.youtube.com/watch?v=odNJmw5TOEE&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=2">Algorithms - Sorting - មេរៀនទី 2 (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=hj8YKFTFKEE&amp;list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&amp;index=3">Algorithms - Sorting II - មេរៀនទី 3 (វីដេអូ)</a></li>
+</ul></li>
+<li>ការបង្រៀនរបស់ Steven Skiena អំពី sorting:
+<ul>
+<li><a href="https://youtu.be/ute-pmMkyuk?list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;t=1600">មេរៀនចាប់ផ្តេីមពី 26:46 (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=yLvp-pB8mak&amp;index=8&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">មេរៀនចាប់ផ្តេីមពី 27:40 (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=q7K9otnzlfE&amp;index=9&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b">មេរៀនចាប់ផ្តេីមពី 35:00 (វីដេអូ)</a></li>
+<li><a href="https://www.youtube.com/watch?v=TvqIGu9Iupw&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=10">មេរៀនចាប់ផ្តេីមពី 23:50 (វីដេអូ)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="video-series">Video Series</h2>
+<h2 id="ស៊េរីវីដេអូ">ស៊េរីវីដេអូ</h2>
+<p>រីករាយជាមួយវិដេអូរខាងក្រោម</p>
+<ul>
+<li><p><a href="https://www.youtube.com/playlist?list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr">List of individual Dynamic Programming problems (each is short)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL038BE01D3BAEFDB0">x86 Architecture, Assembly, Applications (11 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8">MIT 18.06 Linear Algebra, Spring 2005 (35 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL3B08AE665AB9002A">Excellent - MIT Calculus Revisited: Single Variable Calculus</a></p></li>
+<li><p><a href="http://www.infocobuild.com/education/audio-video-courses/computer-science/cs70-spring2015-berkeley.html">Computer Science 70, 001 - Spring 2015 - Discrete Mathematics and Probability Theory</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL3o9D4Dl2FJ9q0_gtFXPh_H4POI5dK0yG">Discrete Mathematics ដោយ Shai Simonson (19 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLGxuz-nmYlQPOc4w1Kp2MZrdqOOm4Jxeo">Discrete Mathematics Part 1 by Sarada Herke (5 វីដេអូ)</a></p></li>
+<li>CSE373 - Analysis of Algorithms (25 វីដេអូ)
+<ul>
+<li><a href="https://www.youtube.com/watch?v=ZFjhkohHdAA&amp;list=PLOtl7M3yp-DV69F32zdK7YJcNXpTunF2b&amp;index=1">ការបង្រៀនរបស់ Skiena ពី Algorithm Design Manual</a></li>
+</ul></li>
+<li><p><a href="https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iAlnI-BQr9hjqADPBtujFJd">UC Berkeley 61B (Spring 2014): Data Structures (25 វីដេអូ)</a></p></li>
+<li><p><a href="https://archive.org/details/ucberkeley-webcast-PL4BBB74C7D2A1049C">UC Berkeley 61B (Fall 2006): Data Structures (39 វីដេអូ)</a></p></li>
+<li><p><a href="https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iCl2-D-FS5mk0jFF6cYSJs_">UC Berkeley 61C: Machine Structures (26 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLJ9pm_Rc9HesnkwKlal_buSIHA-jTZMpO">OOSE: Software Dev Using UML and Java (21 វីដេអូ)</a></p></li>
+<li><p><del><a href="https://www.youtube.com/watch?v=UH0QYvtP7Rk&amp;index=20&amp;list=PLkFD6_40KJIwEiwQx1dACXwh-2Fuo32qr">UC Berkeley CS 152: Computer Architecture and Engineering (20 videos)</a></del></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLDSlqjcPpoL64CJdF0Qee5oWqGS6we_Yu">MIT 6.004: Computation Structures (49 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL5PHm2jkkXmi5CxxI7b3JCL1TWybTDtKq">Carnegie Mellon - Computer Architecture Lectures (39 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=HtSuA80QTyo&amp;list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;nohtml5=False">MIT 6.006: Intro to Algorithms (47 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=zm2VP0kHl1M&amp;list=PL6535748F59DCA484">MIT 6.033: Computer System Engineering (22 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi">MIT 6.034 Artificial Intelligence, Fall 2010 (30 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=L3LMbpZIKhQ&amp;list=PLB7540DEDD482705B">MIT 6.042J: Mathematics for Computer Science, Fall 2010 (25 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=2P-yW7LQr08&amp;list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp">MIT 6.046: Design and Analysis of Algorithms (34 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=phxsQrZQupo&amp;list=PL_2Bwul6T-A7OldmhGODImZL8KEVE38X7">MIT 6.050J: Information and Entropy, Spring 2008 (19 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=T0yzrZL1py0&amp;list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&amp;index=1">MIT 6.851: Advanced Data Structures (22 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c">MIT 6.854: Advanced Algorithms, Spring 2016 (24 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf">Harvard COMPSCI 224: Advanced Algorithms (25 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=GqmQg-cszw4&amp;index=1&amp;list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh">MIT 6.858 Computer Systems Security, Fall 2014</a></p></li>
+<li><p><a href="https://www.youtube.com/view_play_list?p=9D558D49CA734A02">Stanford: Programming Paradigms (27 វីដេអូ)</a></p></li>
+<li><a href="https://www.youtube.com/playlist?list=PL6N5qY2nvvJE8X75VkXglSrVhLv1tVcfy">Introduction to Cryptography by Christof Paar</a>
+<ul>
+<li><a href="http://www.crypto-textbook.com/">Course Website along with Slides and Problem Sets</a></li>
+</ul></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV">Mining Massive Datasets - Stanford University (94 វីដេអូ)</a></p></li>
+<li><p><a href="https://www.youtube.com/user/DrSaradaHerke/playlists?shelf_id=5&amp;view=50&amp;sort=dd">Graph Theory by Sarada Herke (67 វីដេអូ)</a></p></li>
+</ul>
+<h2 id="computer-science-courses">Computer Science Courses</h2>
+<h2 id="វគ្គសិក្សាវិទ្យាសាស្ត្រកុំព្យូទ័រ">វគ្គសិក្សាវិទ្យាសាស្ត្រកុំព្យូទ័រ</h2>
+<ul>
+<li><a href="https://github.com/open-source-society/computer-science">Directory of Online CS Courses</a></li>
+<li><a href="https://github.com/prakhar1989/awesome-courses">Directory of CS Courses (ភាគច្រើនជាមួយការបង្រៀនតាមអ៊ិនធរណេត)</a></li>
+</ul>
+<h2 id="papers">Papers</h2>
+<h2 id="អត្ថបទ">អត្ថបទ</h2>
+<ul>
+<li><a href="https://www.cs.cmu.edu/~crary/819-f09/">Love classic papers?</a></li>
+<li><a href="http://spinroot.com/courses/summer/Papers/hoare_1978.pdf">1978: Communicating Sequential Processes</a>
+<ul>
+<li><a href="https://godoc.org/github.com/thomas11/csp">implemented in Go</a></li>
+</ul></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf">2003: The Google File System</a>
+<ul>
+<li>ជំនួសដោយ Colossus ក្នុងឆ្នាំ 2012</li>
+</ul></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf">2004: MapReduce: Simplified Data Processing on Large Clusters</a>
+<ul>
+<li>ជំនួសដោយ Cloud Dataflow?</li>
+</ul></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf">2006: Bigtable: A Distributed Storage System for Structured Data</a>
+<ul>
+<li><a href="https://cloud.google.com/files/BigQueryTechnicalWP.pdf">An Inside Look at Google BigQuery</a></li>
+</ul></li>
+<li><a href="https://research.google.com/archive/chubby-osdi06.pdf">2006: The Chubby Lock Service for Loosely-Coupled Distributed Systems</a></li>
+<li><a href="http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf">2007: Dynamo: Amazon’s Highly Available Key-value Store</a>
+<ul>
+<li>អត្ថបទ Dynamo ចាប់ផ្តេីមអោយមាន NoSQL</li>
+</ul></li>
+<li><a href="https://www.akkadia.org/drepper/cpumemory.pdf">2007: What Every Programmer Should Know About Memory (very long, and the author encourages skipping of some sections)</a></li>
+<li><a href="https://research.google.com/pubs/archive/36356.pdf">2010: Dapper, a Large-Scale Distributed Systems Tracing Infrastructure</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf">2010: Dremel: Interactive Analysis of Web-Scale Datasets</a></li>
+<li><a href="https://www.wired.com/2012/07/google-colossus/">2012: Google’s Colossus</a>
+<ul>
+<li>មិនមាន អត្ថបទ</li>
+</ul></li>
+<li>2012: AddressSanitizer: A Fast Address Sanity Checker:
+<ul>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/37752.pdf">អត្ថបទ</a></li>
+<li><a href="https://www.usenix.org/conference/atc12/technical-sessions/presentation/serebryany">វីដេអូ</a></li>
+</ul></li>
+<li>2013: Spanner: Google’s Globally-Distributed Database:
+<ul>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf">អត្ថបទ</a></li>
+<li><a href="https://www.usenix.org/node/170855">វីដេអូ</a></li>
+</ul></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf">2014: Machine Learning: The High-Interest Credit Card of Technical Debt</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43790.pdf">2015: Continuous Pipelines at Google</a></li>
+<li><a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44686.pdf">2015: High-Availability at Massive Scale: Building Google’s Data Infrastructure for Ads</a></li>
+<li><a href="http://download.tensorflow.org/paper/whitepaper2015.pdf">2015: TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43835.pdf">2015: How Developers Search for Code: A Case Study</a></li>
+<li><a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/44843.pdf">2016: Borg, Omega, and Kubernetes</a></li>
+</ul>
+<h2 id="license">LICENSE</h2>
+<h2 id="សាលាកប័រត">សាលាកប័រត</h2>
+<p><a href="./LICENSE.txt">CC-BY-SA-4.0</a></p>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>monotonic_stack</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h3 id="how-to-solve-problems-with-a-monotonic-stack">How to solve problems with a monotonic stack</h3>
+<p><strong>Translator: <a href="https://github.com/nettee">nettee</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>Stack is a very simple data structure, with a logical order of last-in-first-out (LIFO). Stack conform to the characteristics of some problems, such as function call stacks.</p>
+<p>A monotonic stack is just a stack essentially. However, with some tricks, it keeps the elements in the stack orderly (either increasing or decreasing) whenever new elements are pushed on.</p>
+<p>Sounds a bit like a heap? No, it’s not a heap. Monotonic stack has restricted applications. It deals with a typical problem called <em>Next Greater Element</em> only. This article is going to solve such problems using the algorithm template that solves monotonic queue problems, and discuss the strategy to deal with “circular arrays”.</p>
+<p>First, let’s talk about the original problem of Next Greater Element. You are given an array of integers. Find the next greater elements for each number in the array. You should return an array with the same size containing the next greater elements. If there is no greater elements, output -1 for this number. For example:</p>
+<ul>
+<li>Input: <code>[2,1,2,4,3]</code></li>
+<li>Output: <code>[4,2,4,-1,-1]</code></li>
+<li>Explanation:
+<ul>
+<li>For number 2, the next greater number is 4.</li>
+<li>For number 1, the next greater number is 2.</li>
+<li>For the second 2, the next greater number is 4.</li>
+<li>For number 4, there is no greater numbers, so output -1.</li>
+<li>For number 3, there is no greater numbers after it, so output -1.</li>
+</ul></li>
+</ul>
+<p>It is easy to come up with a naive solution. For each number in the array, scan the elements after it, and find the first larger element. However, the time complexity of this naive solution is O(n^2).</p>
+<p>You can think of this problem in such an abstract way: imagine the elements of the array as people standing in a line, and the value of the elements as the height of each person. You stand facing this line of people. How to find the Next Greater Number of element “2”? It’s easy. If you could see the element “2”, then the fist person visible behind him is the Next Greater Number of “2”, as the elements less than “2” are not tall enough and are blocked by “2”.</p>
+<figure>
+<img src="../pictures/monotonic_stack/1.png" alt="ink-image" /><figcaption>ink-image</figcaption>
+</figure>
+<p>Easy to understand! With this abstract scenario, let’s take a look at the code.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1">vector&lt;<span class="dt">int</span>&gt; nextGreaterElement(vector&lt;<span class="dt">int</span>&gt;&amp; nums) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    vector&lt;<span class="dt">int</span>&gt; ans(nums.size()); <span class="co">// the result array</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    stack&lt;<span class="dt">int</span>&gt; s;</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="cf">for</span> (<span class="dt">int</span> i = nums.size() - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i--) { <span class="co">// push onto the stack backward</span></a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="cf">while</span> (!s.empty() &amp;&amp; s.top() &lt;= nums[i]) { <span class="co">// comparing the height</span></a>
+<a class="sourceLine" id="cb1-6" title="6">            s.pop(); <span class="co">// fuck off the shorter ones, you are already blocked...</span></a>
+<a class="sourceLine" id="cb1-7" title="7">        }</a>
+<a class="sourceLine" id="cb1-8" title="8">        ans[i] = s.empty() ? -<span class="dv">1</span> : s.top(); <span class="co">// the next greater taller element</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        s.push(nums[i]); <span class="co">// join the line and accept the height comparison!</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    }</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb1-12" title="12">}</a></code></pre></div>
+<p>THIS is the template for monotonic stacks to solve problem. The for loop should scan elements from back to front, because as we are using a stack, pushing onto the stack backwards means popping from the stack forwards. The while loop is to emit the elements between two “tall people”, because they have no meaning to exist. With a “taller” element standing in front, they can never become the Next Greater Number of the subsequent coming elements.</p>
+<p>The time complexity of this algorithm is not so intuitive. You may think the algorithm to run in O(n^2), as a for loop is nested in a while loop. However, this algorithm takes only O(n) time actually.</p>
+<p>To analyze its time complexity, we need to consider in a whole. There are n elements in total, and each elements is pushed onto the stack once, and popped at most once, without any redundant operations. Thus, the total computing scale is proportional to the element scale n, which is the complexity of O(n).</p>
+<p>Now, you have mastered the use of monotonic stacks. Let’s take a simple variant of this problem to deepen your understanding.</p>
+<p>You are given an array T = [73, 74, 75, 71, 69, 72, 76, 73], the list of daily temperatures. You should return an array that, for each day in the input, how many days you would have to wait until a warmer temperature. If there is no such future day, put 0 instead.</p>
+<p>For example, given T = [73, 74, 75, 71, 69, 72, 76, 73], your output should be [1, 1, 4, 2, 1, 1, 0, 0].</p>
+<p>Explanation: The temperature is 73 at the first day, and 74 at the second day, which is larger than 73. So for the first day, you only need to wait for one day for a warmer temperature. It is similar for the other days.</p>
+<p>You are already a little sensitive to this kind of Next Greater Number problem. This problem is essentially looking for Next Greater Numbers, but instead of what the Next Greater Number is, you are asked the distance from the Next Greater Number.</p>
+<p>So this is a problem with the same type and the same idea. You can use the template of monotonic stack directly with some slight change in code. Let’s show the code.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" title="1">vector&lt;<span class="dt">int</span>&gt; dailyTemperatures(vector&lt;<span class="dt">int</span>&gt;&amp; T) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    vector&lt;<span class="dt">int</span>&gt; ans(T.size());</a>
+<a class="sourceLine" id="cb2-3" title="3">    stack&lt;<span class="dt">int</span>&gt; s; <span class="co">// store index of elements, instead of element itself</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="cf">for</span> (<span class="dt">int</span> i = T.size() - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i--) {</a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="cf">while</span> (!s.empty() &amp;&amp; T[s.top()] &lt;= T[i]) {</a>
+<a class="sourceLine" id="cb2-6" title="6">            s.pop();</a>
+<a class="sourceLine" id="cb2-7" title="7">        }</a>
+<a class="sourceLine" id="cb2-8" title="8">        ans[i] = s.empty() ? <span class="dv">0</span> : (s.top() - i); <span class="co">// calculate the distance of indexes</span></a>
+<a class="sourceLine" id="cb2-9" title="9">        s.push(i); <span class="co">// push the index instead of element</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    }</a>
+<a class="sourceLine" id="cb2-11" title="11">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb2-12" title="12">}</a></code></pre></div>
+<p>That’s all for the explanation of monotonic stack. Next, we will talk about another important topic: how to deal with “circular arrays”.</p>
+<p>Now suppose the same Next Greater Number problem, with the array arranging in a ring. How to deal with it?</p>
+<p>Given an array [2,1,2,4,3], you should output array [4,2,4,-1,4]. On a ring, the last element 3 travels a round and find an element 4 larger than itself.</p>
+<figure>
+<img src="../pictures/monotonic_stack/2.png" alt="ink-image" /><figcaption>ink-image</figcaption>
+</figure>
+<p>First, the storage in computer is linear, and there are actually no circular array. But we can simulate the effect of circular arrays. Usually we obtain this effect by the modulus (remainder) operation and the % operator:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">int</span>[] arr = {<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>};</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="dt">int</span> n = arr.<span class="fu">length</span>, index = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">while</span> (<span class="kw">true</span>) {</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="fu">print</span>(arr[index % n]);</a>
+<a class="sourceLine" id="cb3-5" title="5">    index++;</a>
+<a class="sourceLine" id="cb3-6" title="6">}</a></code></pre></div>
+<p>Let’s back to the Next Greater Number problem. In the case of ring, the difficulty of the problem is that, “next” not only refer to the right side of the current element, but also the left side of the current element, as shown in the example above.</p>
+<p>The problem is half solved by identifying it. We can consider the idea of “doubling” the original array, that is, putting a same array right behind it. In this way, following the previous process of “comparing the height”, each element can be compared to not only the elements on its right, but also the elements on its left.</p>
+<figure>
+<img src="../pictures/monotonic_stack/3.png" alt="ink-image (2)" /><figcaption>ink-image (2)</figcaption>
+</figure>
+<p>How to implement this idea? You can of course construct this double-length array and then apply the algorithm template. However, we can just use the tricks of circular array to simulate the double-length array. Let’s look at the code:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" title="1">vector&lt;<span class="dt">int</span>&gt; nextGreaterElements(vector&lt;<span class="dt">int</span>&gt;&amp; nums) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="dt">int</span> n = nums.size();</a>
+<a class="sourceLine" id="cb4-3" title="3">    vector&lt;<span class="dt">int</span>&gt; res(n); <span class="co">// the result array</span></a>
+<a class="sourceLine" id="cb4-4" title="4">    stack&lt;<span class="dt">int</span>&gt; s;</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="co">// pretend that the length of the array is doubled</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">2</span> * n - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i--) {</a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="cf">while</span> (!s.empty() &amp;&amp; s.top() &lt;= nums[i % n])</a>
+<a class="sourceLine" id="cb4-8" title="8">            s.pop();</a>
+<a class="sourceLine" id="cb4-9" title="9">        res[i % n] = s.empty() ? -<span class="dv">1</span> : s.top();</a>
+<a class="sourceLine" id="cb4-10" title="10">        s.push(nums[i % n]);</a>
+<a class="sourceLine" id="cb4-11" title="11">    }</a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb4-13" title="13">}</a></code></pre></div>
+<p>Now you have mastered the design and code template of monotonic stacks, the solutions to Next Greater Number, and how to deal with circular arrays.</p>
+</body>
+</html>

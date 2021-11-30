@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>w3d4-b</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="behavioral">Behavioral</h2>
+<ul>
+<li>Describe a situation in which you met a major obstacle in order to complete a project. How did you deal with it? What steps did you take?</li>
+<li>Tell me about a time you had to work on several projects at once. How did you handle this?</li>
+<li>Give an example of a time when you didn’t agree with other programmer. Did you stand up for something that you believed was right?</li>
+</ul>
+<h2 id="question-1">Question 1</h2>
+<h3 id="reverse-a-linked-list">Reverse a Linked List</h3>
+<p>You are given the pointer to the head node of a linked list. Your goal is to reverse this list. A linked list is implemented using just a <code>Node</code> class, which you will be given. The <code>Node</code> class is defined as:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">function</span> <span class="at">Node</span>(data<span class="op">,</span> next <span class="op">=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-2" title="2">  <span class="kw">this</span>.<span class="at">data</span> <span class="op">=</span> data<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="kw">this</span>.<span class="at">next</span> <span class="op">=</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="op">}</span></a></code></pre></div>
+<p>Your function should take in just the <strong>head node</strong>, reverse the list, and return the <em>new</em> head node (which would be the <em>old</em> tail node). Remember that an empty linked list is still a valid linked list. If <code>null</code> is passed into your function, your function should return <code>null</code>.</p>
+<p>Note that this class does not have a <code>previous</code> attribute. Make sure your partner is using a Node object similar to the one above!</p>
+<p><strong>Constraints:</strong></p>
+<ul>
+<li>Your function must run in <code>O(n)</code> time and <code>O(1)</code> space</li>
+</ul>
+<h3 id="solution">Solution</h3>
+<p><strong>Overview:</strong> All we want to do here is flip the <code>next</code> attribute on each node until we’ve gotten to the end. We could do this iteratively with a <code>while</code> loop.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">function</span> <span class="at">Node</span>(data<span class="op">,</span> next <span class="op">=</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-2" title="2">  <span class="kw">this</span>.<span class="at">data</span> <span class="op">=</span> data<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-3" title="3">  <span class="kw">this</span>.<span class="at">next</span> <span class="op">=</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="op">}</span></a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="kw">function</span> <span class="at">reverse</span>(head) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-7" title="7">  <span class="kw">let</span> prev <span class="op">=</span> <span class="kw">null</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-8" title="8">  <span class="kw">let</span> current <span class="op">=</span> head<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-9" title="9">  <span class="kw">let</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-10" title="10"></a>
+<a class="sourceLine" id="cb2-11" title="11">  <span class="cf">while</span> (current <span class="op">!==</span> <span class="kw">null</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb2-12" title="12">    next <span class="op">=</span> <span class="va">current</span>.<span class="at">next</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="va">current</span>.<span class="at">next</span> <span class="op">=</span> prev<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    prev <span class="op">=</span> current<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-15" title="15">    current <span class="op">=</span> next<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-16" title="16">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb2-17" title="17"></a>
+<a class="sourceLine" id="cb2-18" title="18">  <span class="cf">return</span> prev<span class="op">;</span></a>
+<a class="sourceLine" id="cb2-19" title="19"><span class="op">}</span></a></code></pre></div>
+<h2 id="question-2">Question 2</h2>
+<h3 id="cycle-detective">Cycle Detective</h3>
+<p>A linked list is said to contain a cycle if any node is visited more than once while traversing the list.</p>
+<p>Complete the function provided for you in your editor. It has one parameter: a pointer to a Node object named <code>head</code> that points to the head of a linked list. Your function must return a boolean denoting whether or not there is a cycle in the list. If there is a cycle, return true; otherwise, return false.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">const</span> node3 <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="dv">3</span><span class="op">,</span> <span class="kw">null</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">const</span> node2 <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="dv">2</span><span class="op">,</span> node3)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">const</span> node1 <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="dv">1</span><span class="op">,</span> node2)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5"><span class="co">/* This creates the following list:</span></a>
+<a class="sourceLine" id="cb3-6" title="6"><span class="co">   1-&gt;2-&gt;3-&gt;null</span></a>
+<a class="sourceLine" id="cb3-7" title="7"><span class="co">*/</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="at">detectCycle</span>(node1) <span class="co">// Output: False</span></a>
+<a class="sourceLine" id="cb3-10" title="10"></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="kw">const</span> cycleNode3 <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="dv">3</span><span class="op">,</span> <span class="kw">null</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="kw">const</span> cycleNode2 <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="dv">2</span><span class="op">,</span> cycleNode3)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="kw">const</span> cycleNode1 <span class="op">=</span> <span class="kw">new</span> <span class="at">Node</span>(<span class="dv">1</span><span class="op">,</span> cycleNode2)<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-14" title="14"></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="co">// reassign `next` attribute to create cycle</span></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="va">cycleNode3</span>.<span class="at">next</span> <span class="op">=</span> cycleNode2<span class="op">;</span></a>
+<a class="sourceLine" id="cb3-17" title="17"></a>
+<a class="sourceLine" id="cb3-18" title="18"><span class="co">/* Our list now looks like this:</span></a>
+<a class="sourceLine" id="cb3-19" title="19"><span class="co">   1-&gt;2-&gt;3-&gt;2-&gt;3-&gt;2 ... etc.  </span></a>
+<a class="sourceLine" id="cb3-20" title="20"><span class="co">*/</span></a>
+<a class="sourceLine" id="cb3-21" title="21"><span class="at">hasCycle</span>(node1) <span class="co">// Output: true</span></a></code></pre></div>
+<h3 id="solution-1---use-hashing">Solution 1 - Use Hashing</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">function</span> <span class="at">hasCycle</span>(head) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-2" title="2">  <span class="kw">const</span> seen <span class="op">=</span> <span class="op">{};</span></a>
+<a class="sourceLine" id="cb4-3" title="3"></a>
+<a class="sourceLine" id="cb4-4" title="4">  <span class="kw">let</span> temp <span class="op">=</span> head<span class="op">;</span></a>
+<a class="sourceLine" id="cb4-5" title="5"></a>
+<a class="sourceLine" id="cb4-6" title="6">  <span class="cf">while</span> (temp) <span class="op">{</span></a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="cf">if</span> (seen[temp]) <span class="cf">return</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-8" title="8"></a>
+<a class="sourceLine" id="cb4-9" title="9">    seen[temp] <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-10" title="10"></a>
+<a class="sourceLine" id="cb4-11" title="11">    temp <span class="op">=</span> <span class="va">temp</span>.<span class="at">next</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-12" title="12">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb4-13" title="13"></a>
+<a class="sourceLine" id="cb4-14" title="14">  <span class="cf">return</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb4-15" title="15"><span class="op">}</span></a></code></pre></div>
+<p>Can you do this in O(1) space?</p>
+<h3 id="solution-2-improved">Solution 2 (Improved)</h3>
+<p>This is the fastest method. Traverse linked list using two pointers. Move one pointer by one and other pointer by two. If these pointers meet at some node then there is a loop. If pointers do not meet then linked list doesn’t have loop.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">function</span> <span class="at">hasCycle</span>(head) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="kw">let</span> hasCycle <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-3" title="3"></a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="cf">if</span> (<span class="op">!</span>head)</a>
+<a class="sourceLine" id="cb5-5" title="5">      hasCycle <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-6" title="6"></a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="kw">let</span> slow <span class="op">=</span> head<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="kw">let</span> fast <span class="op">=</span> head<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-9" title="9"></a>
+<a class="sourceLine" id="cb5-10" title="10">    <span class="cf">while</span> (slow <span class="op">&amp;&amp;</span> fast) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-11" title="11">        slow <span class="op">=</span> <span class="va">slow</span>.<span class="at">next</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-12" title="12">        fast <span class="op">=</span> <span class="va">fast</span>.<span class="va">next</span>.<span class="at">next</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-13" title="13"></a>
+<a class="sourceLine" id="cb5-14" title="14">        <span class="cf">if</span> (fast <span class="op">==</span> slow) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-15" title="15">            hasCycle <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-16" title="16">            <span class="cf">break</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb5-17" title="17">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-18" title="18">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-19" title="19"></a>
+<a class="sourceLine" id="cb5-20" title="20">    <span class="cf">return</span> hasCycle<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-21" title="21"><span class="op">}</span></a></code></pre></div>
+</body>
+</html>
