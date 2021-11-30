@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>check_palindromic_linkedlist</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<p><strong>Translator: <a href="https://github.com/natsunoyoru97">natsunoyoru97</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>There are two previous articles mentioned the problems about palindromic strings and palindromic sequences.</p>
+<p>The core concept to <strong>FIND</strong> the palindromic strings is expanding from the middle to the edges:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1">string palindrome(string&amp; s, <span class="dt">int</span> l, <span class="dt">int</span> r) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    <span class="co">// to prevent the indexes from getting out of range</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">while</span> (l &gt;= <span class="dv">0</span> &amp;&amp; r &lt; s.size()</a>
+<a class="sourceLine" id="cb1-4" title="4">            &amp;&amp; s[l] == s[r]) {</a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="co">// expand to two edges</span></a>
+<a class="sourceLine" id="cb1-6" title="6">        l--; r++;</a>
+<a class="sourceLine" id="cb1-7" title="7">    }</a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="co">// return the longest palindromic in which the middle</span></a>
+<a class="sourceLine" id="cb1-9" title="9">    <span class="co">// are both s[l] and s[r]</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    <span class="cf">return</span> s.substr(l + <span class="dv">1</span>, r - l - <span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb1-11" title="11">}</a></code></pre></div>
+<p>The length of the palindromic strings can be either odd or even: when the length is odd there is only one middle pivot, and when the length is even there are two middle pivots. So the function above needs to parse the arguments <code>l</code> and <code>r</code> in.</p>
+<p>But to <strong>CHECK</strong> a palindromic string is much easier. Regardless of its length, we only need to do the double pointers trick, and move from two edges to the middle:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" title="1"><span class="dt">bool</span> isPalindrome(string s) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    <span class="dt">int</span> left = <span class="dv">0</span>, right = s.length - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb2-3" title="3">    <span class="cf">while</span> (left &lt; right) {</a>
+<a class="sourceLine" id="cb2-4" title="4">        <span class="cf">if</span> (s[left] != s[right])</a>
+<a class="sourceLine" id="cb2-5" title="5">            <span class="cf">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb2-6" title="6">        left++; right--;</a>
+<a class="sourceLine" id="cb2-7" title="7">    }</a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="cf">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb2-9" title="9">}</a></code></pre></div>
+<p>So the code is cleaner and much easier to understand. <strong>The palindromic strings are SYMMETRIC so it is same to write it in normal order as in reverse order, which is the key to solve the problems of the palindromic strings.</strong></p>
+<p>We make expansion from this simple scenario, and try to solve the problem: how to check a palindromic singly linked list.</p>
+<h3 id="check-a-palindromic-singly-linked-list">1. Check A Palindromic Singly Linked List</h3>
+<p>Given the head node of a singly linked list, and check if the values are palindromic:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="co">/**</span></a>
+<a class="sourceLine" id="cb3-2" title="2"> <span class="co">*</span> The definition of nodes in a singly linked list<span class="co">:</span></a>
+<a class="sourceLine" id="cb3-3" title="3"> <span class="co">*</span> public class ListNode <span class="co">{</span></a>
+<a class="sourceLine" id="cb3-4" title="4"> <span class="co">*</span>     int val<span class="co">;</span></a>
+<a class="sourceLine" id="cb3-5" title="5"> <span class="co">*</span>     ListNode next<span class="co">;</span></a>
+<a class="sourceLine" id="cb3-6" title="6"> <span class="co">*</span> <span class="co">}</span></a>
+<a class="sourceLine" id="cb3-7" title="7"> <span class="co">*/</span></a>
+<a class="sourceLine" id="cb3-8" title="8"></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="dt">boolean</span> <span class="fu">isPalindrome</span>(ListNode head);</a>
+<a class="sourceLine" id="cb3-10" title="10"></a>
+<a class="sourceLine" id="cb3-11" title="11">Input: <span class="dv">1</span>-&gt;<span class="dv">2</span>-&gt;<span class="kw">null</span></a>
+<a class="sourceLine" id="cb3-12" title="12">Output: <span class="kw">false</span></a>
+<a class="sourceLine" id="cb3-13" title="13"></a>
+<a class="sourceLine" id="cb3-14" title="14">Input: <span class="dv">1</span>-&gt;<span class="dv">2</span>-&gt;<span class="dv">2</span>-&gt;<span class="dv">1</span>-&gt;<span class="kw">null</span></a>
+<a class="sourceLine" id="cb3-15" title="15">Output: <span class="kw">true</span></a></code></pre></div>
+<p>The two pointers DON’T do the trick because we can’t traverse a singly linked list in reverse. The most straightforward way is to store the existed linked list in a new linked list REVERSELY, then to compare whether these two linked lists are the same. If you have no idea about how to reverse a linked list, you can look at <em><a href="https://github.com/labuladong/fucking-algorithm/blob/english/data_structure/reverse_part_of_a_linked_list_via_recursion.md">Reverse Part of a Linked List via Recusion</a></em>.</p>
+<p>But <strong>similar to the postorder traversal in a binary tree, we can traverse a linked list reversely without doing the actual reverse</strong>.</p>
+<p>We are familiar with the ways to traverse a binary tree:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">void</span> <span class="fu">traverse</span>(<span class="bu">TreeNode</span> root) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="co">// code to traverse in preorder</span></a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="fu">traverse</span>(root.<span class="fu">left</span>);</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="co">// code to traverse in inorder</span></a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="fu">traverse</span>(root.<span class="fu">right</span>);</a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="co">// code to traverse in postorder</span></a>
+<a class="sourceLine" id="cb4-7" title="7">}</a></code></pre></div>
+<p>As mentioned in <em>The Thinking Patterns in Data Structure</em>, the linked list is recursive and it is the derivation of the trees ADT. Thus, <strong>the linked list also has preorder traversal and postorder traversal</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">void</span> <span class="fu">traverse</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="co">// code to traverse in preorder</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="fu">traverse</span>(head.<span class="fu">next</span>);</a>
+<a class="sourceLine" id="cb5-4" title="4">    <span class="co">// code to traverse in postorder</span></a>
+<a class="sourceLine" id="cb5-5" title="5">}</a></code></pre></div>
+<p>How do we apply such a pattern? If I want to print the value of <code>val</code> in a linked list in normal order, I will write the code in the position of preorder traversal; Meanwhile, if I want to print the value in reverse order, I will make the code in the position of postorder traversal:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb6-1" title="1"><span class="co">/* print the values in a linked list reversely */</span></a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="dt">void</span> <span class="fu">traverse</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">if</span> (head == <span class="kw">null</span>) <span class="kw">return</span>;</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="fu">traverse</span>(head.<span class="fu">next</span>);</a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="co">// code to traverse in postorder</span></a>
+<a class="sourceLine" id="cb6-6" title="6">    <span class="fu">print</span>(head.<span class="fu">val</span>);</a>
+<a class="sourceLine" id="cb6-7" title="7">}</a></code></pre></div>
+<p>We can also make a slight modification to imitate the two pointers to check the palindromes:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb7-1" title="1"><span class="co">// The left pointer</span></a>
+<a class="sourceLine" id="cb7-2" title="2">ListNode left;</a>
+<a class="sourceLine" id="cb7-3" title="3"></a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="dt">boolean</span> <span class="fu">isPalindrome</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb7-5" title="5">    left = head;</a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="kw">return</span> <span class="fu">traverse</span>(head);</a>
+<a class="sourceLine" id="cb7-7" title="7">}</a>
+<a class="sourceLine" id="cb7-8" title="8"></a>
+<a class="sourceLine" id="cb7-9" title="9"><span class="dt">boolean</span> <span class="fu">traverse</span>(ListNode right) {</a>
+<a class="sourceLine" id="cb7-10" title="10">    <span class="kw">if</span> (right == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">true</span>;</a>
+<a class="sourceLine" id="cb7-11" title="11">    <span class="dt">boolean</span> res = <span class="fu">traverse</span>(right.<span class="fu">next</span>);</a>
+<a class="sourceLine" id="cb7-12" title="12">    <span class="co">// code to traverse in postorder</span></a>
+<a class="sourceLine" id="cb7-13" title="13">    res = res &amp;&amp; (right.<span class="fu">val</span> == left.<span class="fu">val</span>);</a>
+<a class="sourceLine" id="cb7-14" title="14">    left = left.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb7-15" title="15">    <span class="kw">return</span> res;</a>
+<a class="sourceLine" id="cb7-16" title="16">}</a></code></pre></div>
+<p>What is the essence of this way? It is all about <strong>pushing the nodes in the linked list into a stack and then popping them out. At this time the elements are in reverse.</strong> What we make in use is the queues and stacks in recursion.</p>
+<p><img src="../pictures/palindromic_linkedlist/1.gif" /></p>
+<p>Of course, both the time complexity and the space complexity are O(N) no matter you construct a reversed linked list or use postorder traversal. Can we solve it without using extra spaces?</p>
+<h3 id="optimizing-the-space-complexity">2. Optimizing the Space Complexity</h3>
+<p>Here is how to optimize:</p>
+<p><strong>2.1 Find the node in the middle by the fast and slow pointers</strong>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb8-1" title="1">ListNode slow, fast;</a>
+<a class="sourceLine" id="cb8-2" title="2">slow = fast = head;</a>
+<a class="sourceLine" id="cb8-3" title="3"><span class="kw">while</span> (fast != <span class="kw">null</span> &amp;&amp; fast.<span class="fu">next</span> != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb8-4" title="4">    slow = slow.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb8-5" title="5">    fast = fast.<span class="fu">next</span>.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb8-6" title="6">}</a>
+<a class="sourceLine" id="cb8-7" title="7"><span class="co">// the slow pointer now points to the middle point</span></a></code></pre></div>
+<p><img src="../pictures/palindromic_linkedlist/1.jpg" /></p>
+<p><strong>2.2 If the <code>fast</code> pointer doesn’t point to <code>null</code>, the length of this linked list is odd, which means the <code>slow</code> pointer needs to forward one more step</strong>:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb9-1" title="1"><span class="kw">if</span> (fast != <span class="kw">null</span>)</a>
+<a class="sourceLine" id="cb9-2" title="2">    slow = slow.<span class="fu">next</span>;</a></code></pre></div>
+<p><img src="../pictures/palindromic_linkedlist/2.jpg" /></p>
+<p><strong>2.3 Reverse the right half of the linked list and compare palindromes</strong>:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb10-1" title="1">ListNode left = head;</a>
+<a class="sourceLine" id="cb10-2" title="2">ListNode right = <span class="fu">reverse</span>(slow);</a>
+<a class="sourceLine" id="cb10-3" title="3"></a>
+<a class="sourceLine" id="cb10-4" title="4"><span class="kw">while</span> (right != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb10-5" title="5">    <span class="kw">if</span> (left.<span class="fu">val</span> != right.<span class="fu">val</span>)</a>
+<a class="sourceLine" id="cb10-6" title="6">        <span class="kw">return</span> <span class="kw">false</span>;</a>
+<a class="sourceLine" id="cb10-7" title="7">    left = left.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb10-8" title="8">    right = right.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb10-9" title="9">}</a>
+<a class="sourceLine" id="cb10-10" title="10"><span class="kw">return</span> <span class="kw">true</span>;</a></code></pre></div>
+<p><img src="../pictures/palindromic_linkedlist/3.jpg" /></p>
+<p>Till now, we only need to merge these 3 parts of code to cope with this problem. The <code>reverse</code> function is easy to build:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb11-1" title="1">ListNode <span class="fu">reverse</span>(ListNode head) {</a>
+<a class="sourceLine" id="cb11-2" title="2">    ListNode pre = <span class="kw">null</span>, cur = head;</a>
+<a class="sourceLine" id="cb11-3" title="3">    <span class="kw">while</span> (cur != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb11-4" title="4">        ListNode next = cur.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb11-5" title="5">        cur.<span class="fu">next</span> = pre;</a>
+<a class="sourceLine" id="cb11-6" title="6">        pre = cur;</a>
+<a class="sourceLine" id="cb11-7" title="7">        cur = next;</a>
+<a class="sourceLine" id="cb11-8" title="8">    }</a>
+<a class="sourceLine" id="cb11-9" title="9">    <span class="kw">return</span> pre;</a>
+<a class="sourceLine" id="cb11-10" title="10">}</a></code></pre></div>
+<p><img src="../pictures/kgroup/8.gif" /></p>
+<p>The time complexity of this algorithm is O(N) and the space complexity is O(1), which is fully optimized.</p>
+<p>I know some readers may ask: It is efficient but it broke the structure of the linked list. Can we remain the structure in origin?</p>
+<p>It is easy to deal with, and the key is to get the positions of the pointers <code>p, q</code>:</p>
+<p><img src="../pictures/palindromic_linkedlist/4.jpg" /></p>
+<p>We only need to add one line before the return function to get the original order of the linked list.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb12-1" title="1">p.<span class="fu">next</span> = <span class="fu">reverse</span>(q);</a></code></pre></div>
+<p>To avoid being wordy, my words will stop here. Readers can have a try by yourselves.</p>
+<h3 id="summing-up">3. Summing Up</h3>
+<p>First, by extending <strong>from the middle to the two edges</strong> to FIND the palindromic strings, meanwhile by shrinking <strong>from the middle to the two edges</strong> to CHECK the palindromic strings. Traversing in reverse doesn’t work for a singly linked list, the two alternatives are: to construct a new reversed linked list instead, or to apply the stack ADT.</p>
+<p>Due to the feature of palindromes (they are SYMMETRIC), we can optimize the space complexity to O(1) by only <strong>reversing half of the linked list</strong>.</p>
+</body>
+</html>

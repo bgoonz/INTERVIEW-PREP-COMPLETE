@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>w3d4-a</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="behavioral">Behavioral</h2>
+<ul>
+<li><p>Tell me about a time when you had a disagreement with other programmer. How did you handle the situation? Were you able to reach a mutually beneficial resolution to that conflict? If not, why were you and your co-worker unable to reach a mutually beneficial resolution? If you knew then what you know now, what would you have done differently to either prevent the conflict, or to resolve it?</p></li>
+<li><p>What is a new technology you are especially excited about?</p></li>
+<li><p>Give me an example of a time you had to take a creative and unusual approach to solve coding problem. How did this idea come to your mind? Why do you think it was unusual?</p></li>
+</ul>
+<h1 id="question-1">Question 1</h1>
+<h2 id="second-largest-node">Second Largest Node</h2>
+<p>Write an algorithm that, given a Binary Search Tree, will find the second largest node in the tree. Assume you already have a bst <code>Node</code> class with an insert method.</p>
+<p><strong>Example:</strong></p>
+<pre><code>        _10_
+      _/    \_          
+     5        15
+    / \       / \
+   3   8     12  20
+  /     \         \
+ 2       4        30
+
+Output: 20
+
+
+     10
+    /  
+   5
+  / \
+ 3   7
+
+Output: 7</code></pre>
+<h1 id="solution">Solution</h1>
+<p>If there is no right node, the second largest is the right most left subtree:</p>
+<pre><code>   10
+   /  
+  5
+ / \
+3   7</code></pre>
+<p>If there is a right node and the right node has children, recurse to that right child:</p>
+<pre><code>        _10_
+      _/    \_          
+     5        15
+    / \       / \
+   3   8     12  20
+  /     \         \
+ 2       4        30</code></pre>
+<p>Eventually we’ll get to the following scenario:</p>
+<pre><code> 20
+  \
+   30</code></pre>
+<p>If the right node has no children, the second largest is the current node.</p>
+<p>Complexity:</p>
+<p>Time: O(h) Space: O(h), where h is the height of the tree</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">function</span> <span class="at">findSecondLargest</span>(head) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-2" title="2">  <span class="cf">if</span> (<span class="va">head</span>.<span class="at">right</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="cf">if</span> (<span class="va">head</span>.<span class="va">right</span>.<span class="at">left</span> <span class="op">||</span> <span class="va">head</span>.<span class="va">right</span>.<span class="at">right</span>)</a>
+<a class="sourceLine" id="cb5-4" title="4">      <span class="cf">return</span> <span class="at">findSecondLargest</span>(<span class="va">head</span>.<span class="at">right</span>)</a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="cf">else</span></a>
+<a class="sourceLine" id="cb5-6" title="6">      <span class="cf">return</span> head<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-7" title="7">  <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="cf">return</span> <span class="at">findRightMostNode</span>(<span class="va">head</span>.<span class="at">left</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-9" title="9">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-10" title="10"><span class="op">}</span></a>
+<a class="sourceLine" id="cb5-11" title="11"></a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="kw">function</span> <span class="at">findRightMostNode</span>(node) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-13" title="13">  <span class="cf">if</span> (<span class="va">node</span>.<span class="at">right</span>) <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-14" title="14">    <span class="cf">return</span> <span class="at">findRightMostNode</span>(<span class="va">node</span>.<span class="at">right</span>)<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-15" title="15">  <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb5-16" title="16">    <span class="cf">return</span> node<span class="op">;</span></a>
+<a class="sourceLine" id="cb5-17" title="17">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb5-18" title="18"><span class="op">}</span></a></code></pre></div>
+<h1 id="question-2">Question 2</h1>
+<h2 id="backwards-addition">Backwards Addition</h2>
+<p>Write a method that adds two numbers where the digits are store inside of a linked list in reverse order. The return value should also be a linked list in reverse order.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input 1: 6-&gt;5-&gt;null
+Input 2: 9-&gt;8-&gt;7
+Result: 5-&gt;4-&gt;8
+
+56 + 789 = 548</code></pre>
+<h2 id="solution-1">Solution</h2>
+<p>We could solve this with an iterative or a recursive algorithm, both are well suited for this exercise. We’ll use a recursive algorithm for practice with recursion. Note this takes an extra space of O(m) where m is the recursion depth.</p>
+<p>Base case: * If first and second lists are null AND carry is zero * Return null</p>
+<p>Recursive case: * Set value to carry * Add both nodes’ data to value * Set the carry to 1 if value &gt;= 10, else 0 * Set the remainder to value % 10 * Create a node with the remainder * Set node.next to a recursive call on the next nodes, passing in the carry * Return node</p>
+<p>Complexity:</p>
+<p>Time: O(n) Space: O(m), extra space for result and recursion depth</p>
+<p><strong>Notes</strong>:</p>
+<ul>
+<li>Careful with adding if the lists differ
+<ul>
+<li>Only add if a node is not None</li>
+<li>Alternatively, we could add trailing zeroes to the smaller list</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">class</span> <span class="dt">Node</span></a>
+<a class="sourceLine" id="cb7-2" title="2">  <span class="ot">attr_reader</span> <span class="st">:data</span></a>
+<a class="sourceLine" id="cb7-3" title="3">  <span class="ot">attr_accessor</span> <span class="st">:next</span></a>
+<a class="sourceLine" id="cb7-4" title="4"></a>
+<a class="sourceLine" id="cb7-5" title="5">  <span class="kw">def</span> initialize(data, <span class="kw">next</span> = <span class="dv">nil</span>)</a>
+<a class="sourceLine" id="cb7-6" title="6">    <span class="ot">@data</span> = data</a>
+<a class="sourceLine" id="cb7-7" title="7">    <span class="ot">@next</span> = <span class="kw">next</span></a>
+<a class="sourceLine" id="cb7-8" title="8">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb7-9" title="9"><span class="kw">end</span></a>
+<a class="sourceLine" id="cb7-10" title="10"></a>
+<a class="sourceLine" id="cb7-11" title="11"><span class="kw">def</span> add_reverse(first_node, second_node, carry)</a>
+<a class="sourceLine" id="cb7-12" title="12">  <span class="kw">if</span> first_node.nil? &amp;&amp; second_node.nil? &amp;&amp; carry.zero?</a>
+<a class="sourceLine" id="cb7-13" title="13">    <span class="kw">return</span> <span class="dv">nil</span></a>
+<a class="sourceLine" id="cb7-14" title="14">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb7-15" title="15"></a>
+<a class="sourceLine" id="cb7-16" title="16">  value = carry</a>
+<a class="sourceLine" id="cb7-17" title="17">  value += first_node.nil? <span class="dv">0</span> : first_node.data</a>
+<a class="sourceLine" id="cb7-18" title="18">  value += second_node.nil? <span class="dv">0</span> : second_node.data</a>
+<a class="sourceLine" id="cb7-19" title="19"></a>
+<a class="sourceLine" id="cb7-20" title="20">  carry = value &gt;= <span class="dv">10</span> ? <span class="dv">1</span> : <span class="dv">0</span></a>
+<a class="sourceLine" id="cb7-21" title="21"></a>
+<a class="sourceLine" id="cb7-22" title="22">  value %= <span class="dv">10</span></a>
+<a class="sourceLine" id="cb7-23" title="23">  node = <span class="dt">Node</span>.new(value)</a>
+<a class="sourceLine" id="cb7-24" title="24">  node.next = add_reverse(first_node&amp;.next, second_node&amp;.next, carry)</a>
+<a class="sourceLine" id="cb7-25" title="25"></a>
+<a class="sourceLine" id="cb7-26" title="26">  <span class="kw">return</span> node </a>
+<a class="sourceLine" id="cb7-27" title="27"><span class="kw">end</span></a></code></pre></div>
+</body>
+</html>

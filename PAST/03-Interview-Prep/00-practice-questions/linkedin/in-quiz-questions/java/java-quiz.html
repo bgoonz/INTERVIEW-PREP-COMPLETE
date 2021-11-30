@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>java-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="java-assessment">Java Assessment</h2>
+<h4 id="q1.-given-the-string-strawberries-saved-in-a-variable-called-fruit-what-would-fruit.substring2-5-return">Q1. Given the string “strawberries” saved in a variable called fruit, what would “fruit.substring(2, 5)” return?</h4>
+<ul>
+<li>[ ] rawb</li>
+<li>[X] raw</li>
+<li>[ ] awb</li>
+<li>[ ] traw</li>
+</ul>
+<p>Reasoning: The substring method is accepting two arugments. The first argument being the index to start(includes that char at 2) and the second the index of the string to end the substring(excludes the char at 5). Strings in Java are like arrays of chars. Therefore the method will return “raw” as those are the chars in indexs 2,3, and 4. You can also take the ending index and subtract the beginning index from it, to determine how many chars will be included in the substring (5-2=3).</p>
+<h4 id="q2.-how-can-you-achieve-runtime-polymorphism-in-java">Q2. How can you achieve runtime polymorphism in Java?</h4>
+<ul>
+<li>[ ] method overloading</li>
+<li>[ ] method overrunning</li>
+<li>[X] method overriding</li>
+<li>[ ] method calling</li>
+</ul>
+<h4 id="q3.-given-the-following-definitions-which-of-these-expression-will-not-evaluate-to-true">Q3. Given the following definitions, which of these expression will NOT evaluate to true?</h4>
+<pre><code>boolean b1 = true, b2 = false; int i1 = 1, i2 = 2;</code></pre>
+<ul>
+<li>[ ] (i1 | i2) == 3</li>
+<li>[X] i2 &amp;&amp; b1</li>
+<li>[ ] b1 || !b2</li>
+<li>[ ] (i1 ^ i2) &lt; 4</li>
+</ul>
+<h4 id="q4.-what-can-you-use-to-create-new-instances-in-java">Q4. What can you use to create new instances in Java?</h4>
+<ul>
+<li>[X] constructor</li>
+<li>[ ] another instance</li>
+<li>[ ] field</li>
+<li>[ ] private method</li>
+</ul>
+<h4 id="q5.-what-is-the-output-of-this-code">Q5. What is the output of this code?</h4>
+<p><code>shell script 1: class Main { 2:   public static void main (String[] args) { 3:     int array[] = {1, 2, 3, 4}; 4:     for (int i = 0; i &lt; array.size(); i++) { 5:        System.out.print(array[i]);        }      }    }</code></p>
+<ul>
+<li>[X] It will not compile because of line 4.</li>
+<li>[ ] It will not compile because of line 3.</li>
+<li>[ ] 123</li>
+<li>[ ] 1234</li>
+</ul>
+<h4 id="q6.-which-of-the-following-can-replace-the-code-snippet-to-make-the-code-below-print-hello-world">Q6. Which of the following can replace the CODE SNIPPET to make the code below print “Hello World”?</h4>
+<pre><code>}
+interface Interface2 {
+    static void print() {
+        System.out.print(&quot;World!&quot;);
+    }
+}</code></pre>
+<ul>
+<li>[ ] super1.print(); super2.print();</li>
+<li>[ ] this.print();</li>
+<li>[ ] super.print();</li>
+<li>[ ] Interface1.print(); Interface2.print();</li>
+</ul>
+<h4 id="q7.-what-does-the-following-code-print">Q7. What does the following code print?</h4>
+<pre><code>String str = &quot;&quot;abcde&quot;&quot;;
+str.trim();
+str.toUpperCase();
+str.substring(3, 4);
+System.out.println(str);</code></pre>
+<ul>
+<li>[ ] CD</li>
+<li>[ ] CDE</li>
+<li>[ ] D</li>
+<li>[X] “abcde”</li>
+</ul>
+<h4 id="q8.-what-is-the-result-of-this-code">Q8. What is the result of this code?</h4>
+<pre><code>1: class Main {
+2:   public static void main (String[] args){
+3:     System.out.println(print(1));
+4:   }
+5:   static Exception print(int i){
+6:       if (i&gt;0) {
+7:          return new Exception();
+8:       } else {
+9:          throw new RuntimeException();
+10:      }
+11:  }
+12: }</code></pre>
+<ul>
+<li>[ ] It will show a stack trace with a runtime exception.</li>
+<li>[X] “java.lang.Exception”</li>
+<li>[ ] It will run and throw an exception.</li>
+<li>[ ] It will not compile.</li>
+</ul>
+<h4 id="q9.-which-class-can-compile-given-these-declarations">Q9. Which class can compile given these declarations?</h4>
+<pre><code>1: interface One {
+2:      default void method() {
+3:          System.out.println(&quot;&quot;One&quot;&quot;);
+4:      }   }
+5: interface Two {
+6:      default void method () {
+7:          System.out.println(&quot;&quot;One&quot;&quot;);
+8:      }   }</code></pre>
+<ul>
+<li>[ ]</li>
+</ul>
+<pre><code>  class Three implements One, Two {
+    publc void method() {
+        super.One.method();
+  } }</code></pre>
+<ul>
+<li>[ ]</li>
+</ul>
+<pre><code>  class Three implements One, Two {
+    publc void method() {
+        One.method();
+  } }</code></pre>
+<ul>
+<li>[ ]</li>
+</ul>
+<pre><code>class Three implements One, Two {
+}</code></pre>
+<ul>
+<li>[X]</li>
+</ul>
+<pre><code>  class Three implements One, Two {
+    publc void method() {
+        One.super.method();
+  } }</code></pre>
+<h4 id="q10.-what-is-the-output-of-this-code">Q10. What is the output of this code?</h4>
+<pre><code>1: class Main {
+2:  public static void main (String[] args) {
+3:      List list = new ArrayList();
+4:      list.add(&quot;hello&quot;);
+5:      list.add(2);
+6:      System.out.print(list.get(0) instanceof Object);
+7:      System.out.print(list.get(1) instanceof Integer);
+8:  }
+9: }</code></pre>
+<ul>
+<li>[ ] The code does not compile.</li>
+<li>[ ] truefalse</li>
+<li>[X] truetrue</li>
+<li>[ ] falsetrue</li>
+</ul>
+<h4 id="q11.-given-the-following-two-classes-what-will-be-the-output-of-the-main-class">Q11. Given the following two classes, what will be the output of the Main class?</h4>
+<pre><code>package mypackage;
+public class Math {
+    public static int abs(int num){
+        return num&lt;0?-num:num;
+    }
+}
+package mypackage.elementary;
+public class Math {
+    public static int abs (int num) {
+        return -num;
+    }
+}
+1: import mypackage.Math;
+2: import mypackage.elementary.*;
+
+3: class Main {
+4:  public static void main (String args[]){
+5:      System.out.println(Math.abs(123));
+6:  }
+7: }</code></pre>
+<ul>
+<li>[ ] Lines 1 and 2 generate compiler erros due to class name conflicts.</li>
+<li>[ ] “-123”</li>
+<li>[ ] It will throw an exception on line 5.</li>
+<li>[X] “123”<br />
+// The answer is “123”. The abs() method evaluates to the one inside mypackage.Math class.</li>
+</ul>
+<h4 id="q12.-what-is-the-result-of-this-code">Q12. What is the result of this code?</h4>
+<pre><code>1: class MainClass {
+2:  final String message(){
+3:      return &quot;Hello!&quot;;
+4:  }
+5: }
+
+6: class Main extends MainClass {
+7:  public static void main(String[] args) {
+8:      System.out.println(message());
+9:  }
+
+10: String message(){
+11:     return &quot;World!&quot;;
+12:  }
+13: }</code></pre>
+<ul>
+<li>[X] It will not compile because of line 10.</li>
+<li>[ ] “Hello!”</li>
+<li>[ ] It will not compile because of line 2.</li>
+<li>[ ] “World!”</li>
+</ul>
+<h4 id="q13.-given-this-code-which-command-will-output-2">Q13. Given this code, which command will output “2”?</h4>
+<pre><code>class Main {
+    public static void main(String[] args) {
+        System.out.println(args[2]);
+    }
+}</code></pre>
+<ul>
+<li>[ ] java Main 1 2 “3 4” 5</li>
+<li>[X] java Main 1 “2” “2” 5</li>
+<li>[ ] java Main.class 1 “2” 2 5</li>
+<li>[ ] java Main 1 “2” “3 4” 5</li>
+</ul>
+<h4 id="q14.-what-is-the-output-of-this-code">Q14. What is the output of this code?</h4>
+<pre><code>class Main {
+    public static void main(String[] args){
+        int a = 123451234512345;
+        System.out.println(a);
+    }
+}</code></pre>
+<ul>
+<li>[ ] “123451234512345”</li>
+<li>[X] Nothing - this will not compile.</li>
+<li>[ ] a negative integer value</li>
+<li>[ ] “12345100000”</li>
+</ul>
+<p>Reasoning: The int type in Java can be used to represent any whole number from -2147483648 to 2147483647. Therefore this code will not compile as the number assigned to ‘a’ is larger than the int type can hold.</p>
+<h4 id="q15.-what-is-the-output-of-this-code">Q15. What is the output of this code?</h4>
+<pre><code>class Main {
+    public static void main (String[] args) {
+        String message = &quot;Hello world!&quot;;
+        String newMessage = message.substring(6, 12)
+            + message.substring(12, 6);
+        System.out.println(newMessage);
+    }
+}</code></pre>
+<ul>
+<li>[ ] The code does not compile.</li>
+<li>[X] A runtime exception is thrown</li>
+<li>[ ] “world!!world”</li>
+<li>[ ] “world!world!”</li>
+</ul>
+<pre><code>String m = &quot;Hello world!&quot;;
+String n = m.substring(6,12) + m.substring(12,6);
+System.out.println(n);</code></pre>
+<h4 id="q16.-how-do-you-write-a-foreach-loop-that-will-iterate-over-arraylistpencilpencilcase">Q16. How do you write a foreach loop that will iterate over ArrayList&lt;Pencil&gt;pencilCase?</h4>
+<ul>
+<li>[X] for (Pencil pencil : pencilCase) {}</li>
+<li>[ ] for (pencilCase.next()) {}</li>
+<li>[ ] for (Pencil pencil : pencilCase.iterator()) {}</li>
+<li>[ ] for (pencil in pencilCase) {}</li>
+</ul>
+<h4 id="q17.-fill-in-the-blanks">Q17. Fill in the blanks?</h4>
+<ul>
+<li>Object-oriented programming (OOP) is a programming language model that organizes software design around (objects), rather than (actions).</li>
+</ul>
+<h4 id="q18.-what-code-would-you-use-to-tell-if-schwifty-is-of-type-string">Q18. What code would you use to tell if “schwifty” is of type String?</h4>
+<ul>
+<li>[ ] “schwifty”.getType() == String</li>
+<li>[ ] “schwifty”.getClass().getsimpleName() == “String”</li>
+<li>[ ] “schwifty”.getType().equals(“String”)</li>
+<li>[X] “schwifty” instanceof String</li>
+</ul>
+<h4 id="q19.-correct-output-of-apple.comparetobanana">Q19. Correct output of <code>"apple".compareTo("banana")</code></h4>
+<ul>
+<li>[ ] 0</li>
+<li>[ ] positive number</li>
+<li>[X] negative number</li>
+<li>[ ] compilation error</li>
+</ul>
+<h4 id="q20.-you-have-an-arraylist-of-names-that-you-want-to-sort-alphabetically.-which-approach-would-not-work">Q20. You have an ArrayList of names that you want to sort alphabetically. Which approach would NOT work?</h4>
+<ul>
+<li>[ ] names.sort(Comparator.comparing(String::toString))</li>
+<li>[ ] Collections.sort(names)</li>
+<li>[X] names.sort(List.DESCENDING) &lt;&lt;&lt;— Correct</li>
+<li>[ ] names.stream().sorted((s1, s2) -&gt; s1.compareTo(s2)).collect(Collectors.toList())</li>
+</ul>
+<h4 id="q21.-by-implementing-encapsulation-you-cannot-directly-access-the-classs-_-properties-unless-you-are-writing-code-inside-the-class-itself.">Q21. By implementing encapsulation, you cannot directly access the class’s <strong>_</strong> properties unless you are writing code inside the class itself.</h4>
+<ul>
+<li>[X] private</li>
+<li>[ ] protected</li>
+<li>[ ] no-modifier</li>
+<li>[ ] public</li>
+</ul>
+<h4 id="q22.-which-is-the-most-up-to-date-way-to-instantiate-the-current-date">Q22. Which is the most up-to-date way to instantiate the current date?</h4>
+<ul>
+<li>[ ] new SimpleDateFormat(“yyyy-MM-dd”).format(new Date())</li>
+<li>[ ] new Date(System.currentTimeMillis())</li>
+<li>[ ] LocalDate.now()</li>
+<li>[X] Calender.getInstance().getTime()</li>
+</ul>
+<h4 id="q23.-fill-in-the-blank-to-create-a-piece-of-code-that-will-tell-wether-int0-is-divisible-by-5">Q23. Fill in the blank to create a piece of code that will tell wether int0 is divisible by 5:</h4>
+<pre><code>boolean isDivisibleBy5 = _____</code></pre>
+<ul>
+<li>[ ] int0 / 5 ? true: false</li>
+<li>[X] int0 % 5 == 0</li>
+<li>[ ] int0 % 5 != 5</li>
+<li>[ ] Math.isDivisible(int0, 5)</li>
+</ul>
+<h4 id="q24.-how-many-time-will-this-code-print-hello-world">Q24. How many time will this code print “Hello World!”?</h4>
+<pre><code>Class Main {
+    public static void main(String[] args){
+        for (int i=0; i&lt;10; i=i++){
+            i+=1;
+            System.out.println(&quot;Hello World!&quot;);
+        }
+    }
+}</code></pre>
+<ul>
+<li>[X] 10 times</li>
+<li>[ ] 9 times</li>
+<li>[ ] 5 times</li>
+<li>[ ] infinite number of times</li>
+</ul>
+<p>Reason : Observe the loop increment. It’s not an increment, it’s an assignment(post).</p>
+<h4 id="q25.-the-runtime-system-starts-your-program-by-calling-which-function-first">Q25. The runtime system starts your program by calling which function first?</h4>
+<ul>
+<li>[ ] print</li>
+<li>[ ] iterative</li>
+<li>[ ] hello</li>
+<li>[X] main</li>
+</ul>
+<h4 id="q26.-what-is-the-result-of-this-code">Q26. What is the result of this code?</h4>
+<pre><code>try{
+    System.out.print(&quot;Hello World&quot;);
+}catch(Exception e){
+    System.out.println(&quot;e&quot;);
+}catch(ArithmeticException e){
+    System.out.println(&quot;e&quot;);
+}finally{
+    System.out.println(&quot;!&quot;)
+}</code></pre>
+<ul>
+<li>[ ] It will throw a runtime exception</li>
+<li>[X] It will not compile</li>
+<li>[ ] Hello World!</li>
+<li>[ ] Hello World</li>
+</ul>
+<h4 id="q27.-which-statement-is-not-true">Q27. Which statement is NOT true?</h4>
+<ul>
+<li>An anonymous class may specify an abstract base class as its base type.</li>
+<li>An anonymous class does not require a zero-argument constructor. &lt;&lt;&lt;&lt;—Correct</li>
+<li>An anonymous class may specify an interface as its base type.</li>
+<li>An anonymous class may specify both an abstract class and interface as base types</li>
+</ul>
+<h4 id="q28.-what-will-this-program-print-out-to-the-console-when-executed">Q28. What will this program print out to the console when executed?</h4>
+<pre><code>public class Main {
+    public static void main(String[] args){
+       LinkedList&lt;Integer&gt; list = new LinkedList&lt;&gt;();
+       list.add(5);
+       list.add(1);
+       list.add(10);
+       System.out.println(list);
+    }
+}</code></pre>
+<ul>
+<li>[X] [5, 1, 10]</li>
+<li>[ ] [10, 5, 1]</li>
+<li>[ ] [1, 5, 10]</li>
+<li>[ ] [10, 1, 5]</li>
+</ul>
+<h4 id="q29.-what-is-the-output-of-this-code">Q29. What is the output of this code?</h4>
+<pre><code>class Main {
+    public static void main(String[] args){
+       String message = &quot;Hello&quot;;
+       for (int i = 0; i&lt;message.length(); i++){
+          System.out.print(message.charAt(i+1));
+       }
+    }
+}</code></pre>
+<ul>
+<li>[ ] “Hello”</li>
+<li>[X] A untime exception is thrown.</li>
+<li>[ ] The code does not compile.</li>
+<li>[ ] “ello”</li>
+</ul>
+<h4 id="q30.-object-oriented-programming-is-a-style-of-programming-where-you-organize-your-program-around-__-rather-than-__-and-data-rather-than-logic.">Q30. Object-oriented programming is a style of programming where you organize your program around _<strong>_ rather than __</strong> and data rather than logic.</h4>
+<ul>
+<li>[ ] functions; actions</li>
+<li>[X] objects; actions</li>
+<li>[ ] actions; functions</li>
+<li>[ ] actions; objects</li>
+</ul>
+<h4 id="q31.-what-statement-returns-true-if-nifty-is-of-type-string">Q31. What statement returns true if “nifty” is of type String?</h4>
+<ul>
+<li>[ ] “nifty”.getType().equals(“String”)</li>
+<li>[ ] “nifty”.getType() == String</li>
+<li>[ ] “nifty”.getClass().getSimpleName() == “String”</li>
+<li>[X] “nifty” instanceof String</li>
+</ul>
+<h4 id="q32.-what-is-the-output-of-this-code">Q32. What is the output of this code?</h4>
+<pre><code>import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        List&lt;Boolean&gt; list = new ArrayList&lt;&gt;();
+        list.add(true);
+        list.add(Boolean.parseBoolean(&quot;FalSe&quot;));
+        list.add(Boolean.TRUE);
+        System.out.print(list.size());
+        System.out.print(list.get(1) instanceof Boolean);
+    }
+}</code></pre>
+<ul>
+<li>[ ] A runtime exception is thrown.</li>
+<li>[ ] 3false</li>
+<li>[ ] 2true</li>
+<li>[X] 3true</li>
+</ul>
+<h4 id="q33.-what-is-the-result-of-this-code">Q33. What is the result of this code?</h4>
+<pre><code>1: class Main {
+2:      Object message(){
+3:          return &quot;Hello!&quot;;
+4:      }
+5:      public static void main(String[] args) {
+6:          System.out.print(new Main().message());
+7:          System.out.print(new Main2().message());
+8:      }
+9: }
+10: class Main2 extends Main {
+11:     String message(){
+12:         return &quot;World!&quot;;
+13:     }
+14: }</code></pre>
+<ul>
+<li>[ ] It will not compile because of line 7.</li>
+<li>[ ] Hello!Hello!</li>
+<li>[X] Hello!World!</li>
+<li>[ ] It will not compile because of line 11.</li>
+</ul>
+<h4 id="q34.-what-method-can-be-used-to-create-a-new-instance-of-an-object">Q34. What method can be used to create a new instance of an object?</h4>
+<ul>
+<li>[ ] another instance</li>
+<li>[ ] field</li>
+<li>[X] constructor</li>
+<li>[ ] private method</li>
+</ul>
+<h4 id="q35.-which-is-the-most-reliable-expression-for-testing-whether-the-values-of-two-string-variables-are-the-same">Q35. Which is the most reliable expression for testing whether the values of two string variables are the same?</h4>
+<ul>
+<li>[ ] string1 == string2</li>
+<li>[ ] string1 = string2</li>
+<li>[ ] string1.matches(string2)</li>
+<li>[X] string1.equals(string2)</li>
+</ul>
+<h4 id="q36.-which-letters-will-print-when-this-code-is-run">Q36. Which letters will print when this code is run?</h4>
+<pre><code>public static void main(String[] args) {
+    try {
+        System.out.println(&quot;A&quot;);
+        badMethod();
+        System.out.println(&quot;B&quot;);
+    } catch (Exception ex) {
+        System.out.println(&quot;C&quot;);
+    } finally {
+        System.out.println(&quot;D&quot;);
+    }
+}
+public static void badMethod() {
+    throw new Error();
+}</code></pre>
+<ul>
+<li>[ ] A, B, and D</li>
+<li>[ ] A, C, and D</li>
+<li>[ ] C and D</li>
+<li>[X] A and D</li>
+</ul>
+<h4 id="q37.-what-is-the-output-of-this-code">Q37. What is the output of this code?</h4>
+<pre><code>class Main {
+    static int count = 0;
+    public static void main(String[] args) {
+        if (count &lt; 3) {
+            count++;
+            main(null);
+        } else {
+            return;
+        }
+        System.out.println(&quot;Hello World!&quot;);
+    }
+}</code></pre>
+<ul>
+<li>[ ] It will throw a runtime exception.</li>
+<li>[ ] It will not compile.</li>
+<li>[X] It will print “Hello World!” three times.</li>
+<li>[ ] It will run forever.</li>
+</ul>
+<h4 id="q38.-what-is-the-output-of-this-code">Q38. What is the output of this code?</h4>
+<pre><code>import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String[] array = {&quot;abc&quot;, &quot;2&quot;, &quot;10&quot;, &quot;0&quot;};
+        List&lt;String&gt; list = Arrays.asList(array);
+        Collections.sort(list);
+        System.out.println(Arrays.toString(array));
+    }
+}</code></pre>
+<ul>
+<li>[ ] [abc, 0, 2, 10]</li>
+<li>[ ] The code does not compile.</li>
+<li>[ ] [abc, 2, 10, 0]</li>
+<li>[X] [0, 10, 2, abc]</li>
+</ul>
+<h4 id="q39.-what-is-the-output-of-this-code">Q39. What is the output of this code?</h4>
+<pre><code>class Main {
+    public static void main(String[] args) {
+        String message = &quot;Hello&quot;;
+        print(message);
+        message += &quot;World!&quot;;
+        print(message);
+    }
+    static void print(String message){
+        System.out.print(message);
+        message += &quot; &quot;;
+    }
+}</code></pre>
+<ul>
+<li>[ ] Hello World!</li>
+<li>[X] HelloHelloWorld!</li>
+<li>[ ] Hello Hello World!</li>
+<li>[ ] Hello HelloWorld!</li>
+</ul>
+<h4 id="q40.-what-is-displayed-when-this-code-is-compiled-and-executed">Q40. What is displayed when this code is compiled and executed?</h4>
+<pre><code>public class Main {
+    public static void main(String[] args) {
+        int x = 5;
+        x = 10;
+        System.out.println(x);
+    }
+}</code></pre>
+<ul>
+<li>[ ] x</li>
+<li>[ ] null</li>
+<li>[X] 10</li>
+<li>[ ] 5</li>
+</ul>
+<h4 id="q41.-which-approach-cannot-be-used-to-iterate-over-a-list-named-thelist">Q41. Which approach cannot be used to iterate over a List named <em>theList</em>?</h4>
+<ul>
+<li>[ ]</li>
+</ul>
+<pre><code> for (int i = 0; i &lt; theList.size(); i++) {
+     System.out.println(theList.get(i));
+ }</code></pre>
+<ul>
+<li>[ ]</li>
+</ul>
+<pre><code>  for (Object object : theList) {
+      System.out.println(object);
+  }</code></pre>
+<ul>
+<li>[ ]</li>
+</ul>
+<pre><code> Iterator it = theList.iterator();
+ for (it.hasNext()) {
+     System.out.println(it.next());
+ }</code></pre>
+<ul>
+<li>[X]</li>
+</ul>
+<pre><code>  theList.forEach(System.out::println);</code></pre>
+<h4 id="q42.-what-method-signature-will-work-with-this-code">Q42. What method signature will work with this code?</h4>
+<pre><code>boolean healthyOrNot = isHealthy(&quot;avocado&quot;);</code></pre>
+<ul>
+<li>[ ] public void isHealthy(String avocado)</li>
+<li>[X] boolean isHealthy(String string)</li>
+<li>[ ] public isHealthy(“avocado”)</li>
+<li>[ ] private String isHealthy(String food)</li>
+</ul>
+<h4 id="q43.-which-are-valid-keywords-in-a-java-module-descriptor-module-infojava">Q43. Which are valid keywords in a Java module descriptor (module-infoJava)?</h4>
+<ul>
+<li>[ ] provides, employs</li>
+<li>[ ] imports, exports</li>
+<li>[ ] consumes, supplies</li>
+<li>[X] requires, exports</li>
+</ul>
+<h4 id="q44.-which-type-of-variable-keeps-a-constant-value-once-it-is-assigned">Q44. Which type of variable keeps a constant value once it is assigned?</h4>
+<ul>
+<li>[ ] non-static</li>
+<li>[ ] static</li>
+<li>[X] final</li>
+<li>[ ] private</li>
+</ul>
+<h4 id="q45.-how-does-the-keyword-volatile-affect-how-a-variable-is-handled">Q45. How does the keyword <em>volatile</em> affect how a variable is handled?</h4>
+<ul>
+<li>[ ] It will be read by only one thread at a time.</li>
+<li>[ ] It will be stored on the hard drive.</li>
+<li>[X] It will never be cached by the CPU.</li>
+<li>[ ] It will be preferentially garbage collected.</li>
+</ul>
+<h4 id="q46.-what-is-the-result-of-this-code">Q46. What is the result of this code?</h4>
+<pre><code>char smooch = &#39;x&#39;;
+System.out.println((int) smooch);</code></pre>
+<ul>
+<li>[ ] an alphanumeric character</li>
+<li>[ ] a negative number</li>
+<li>[X] a positive number</li>
+<li>[ ] a ClassCastException</li>
+</ul>
+<h4 id="q47.-you-get-a-nullpointerexception.-what-is-the-most-likely-cause">Q47. You get a NullPointerException. What is the most likely cause?</h4>
+<ul>
+<li>[ ] A file that needs to be opened cannot be found.</li>
+<li>[ ] A network connection has been lost in the middle of communications.</li>
+<li>[ ] Your code has used up all available memory.</li>
+<li>[X] The object you are using has not been instantiated.</li>
+</ul>
+<h4 id="q48.-how-would-you-fix-this-code-so-that-it-compiles">Q48. How would you fix this code so that it compiles?</h4>
+<pre><code>public class Nosey {
+    int age;
+    public static void main(String[] args) {
+        System.out.println(&quot;Your age is: &quot; + age);
+    }
+}</code></pre>
+<ul>
+<li>[X] Make age static.</li>
+<li>[ ] Make age global.</li>
+<li>[ ] Make age public.</li>
+<li>[ ] Initialize age to a number.</li>
+</ul>
+<h4 id="q49.-add-a-duck-called-waddles-to-the-arraylist-ducks.">Q49. Add a Duck called “Waddles” to the ArrayList <em>ducks</em>.</h4>
+<pre><code>public class Duck {
+    private String name;
+    Duck(String name) {}
+}</code></pre>
+<ul>
+<li>[ ] Duck waddles = new Duck(); ducks.add(waddles);</li>
+<li>[ ] Duck duck = new Duck(“waddles”); ducks.add(wadd1es);</li>
+<li>[X] ducks.add(new Duck(“waddles”));</li>
+<li>[ ] ducks.add(new Waddles());</li>
+</ul>
+<h4 id="q50.-if-you-encounter-unsupportedclassversionerror-it-means-the-code-was-_-on-a-newer-version-of-java-than-the-jre-_-it.">Q50. If you encounter <code>UnsupportedClassVersionError</code> it means the code was <strong>_</strong> on a newer version of Java than the JRE <strong>_</strong> it.</h4>
+<ul>
+<li>[ ] executed; interpreting</li>
+<li>[ ] executed; compiling</li>
+<li>[X] compiled; executing</li>
+<li>[ ] compiled, translating</li>
+</ul>
+<h4 id="q51.-given-this-class-how-would-you-make-the-code-compile">Q51. Given this class, how would you make the code compile?</h4>
+<div class="sourceCode" id="cb37"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">public</span> <span class="kw">class</span> TheClass {</a>
+<a class="sourceLine" id="cb37-2" title="2">    <span class="kw">private</span> <span class="dt">final</span> <span class="dt">int</span> x;</a>
+<a class="sourceLine" id="cb37-3" title="3">}</a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb38"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb38-1" title="1"> <span class="kw">public</span> <span class="fu">TheClass</span>() {</a>
+<a class="sourceLine" id="cb38-2" title="2">   x += <span class="dv">77</span>;</a>
+<a class="sourceLine" id="cb38-3" title="3"> }</a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb39"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb39-1" title="1"> <span class="kw">public</span> <span class="fu">TheClass</span>() {</a>
+<a class="sourceLine" id="cb39-2" title="2">   x = <span class="kw">null</span>;</a>
+<a class="sourceLine" id="cb39-3" title="3"> }</a></code></pre></div>
+<ul>
+<li>[ ]</li>
+</ul>
+<div class="sourceCode" id="cb40"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb40-1" title="1"> <span class="kw">public</span> <span class="fu">TheClass</span>() {</a>
+<a class="sourceLine" id="cb40-2" title="2">   x = <span class="dv">77</span>;</a>
+<a class="sourceLine" id="cb40-3" title="3"> }</a></code></pre></div>
+<ul>
+<li>[X]</li>
+</ul>
+<div class="sourceCode" id="cb41"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb41-1" title="1">  <span class="kw">private</span> <span class="dt">void</span> <span class="fu">setX</span>(<span class="dt">int</span> x) {</a>
+<a class="sourceLine" id="cb41-2" title="2">    <span class="kw">this</span>.<span class="fu">x</span> = x;</a>
+<a class="sourceLine" id="cb41-3" title="3">  }</a>
+<a class="sourceLine" id="cb41-4" title="4">  <span class="kw">public</span> <span class="fu">TheClass</span>() {</a>
+<a class="sourceLine" id="cb41-5" title="5">    <span class="fu">setX</span>(<span class="dv">77</span>);</a>
+<a class="sourceLine" id="cb41-6" title="6">  }</a></code></pre></div>
+<h4 id="q52.-how-many-times-f-will-be-printed">Q52. How many times f will be printed?</h4>
+<pre><code>public class Solution {
+    public static void main(String[] args) {
+        for (int i = 44; i &gt; 40; i--) {
+            System.out.println(&quot;f&quot;);
+        }
+    }
+}</code></pre>
+<ul>
+<li>[X] 4</li>
+<li>[ ] 3</li>
+<li>[ ] 5</li>
+<li>[ ] A Runtime exception will be thrown</li>
+</ul>
+<h4 id="q53.-which-statements-about-abstract-classes-are-true">Q53. Which statements about <code>abstract</code> classes are true?</h4>
+<ol type="1">
+<li>They can be instantiated.</li>
+<li>They allow member variables and methods to be inherited by subclasses.</li>
+<li>They can contain constructors.</li>
+</ol>
+<ul>
+<li>[ ] 1, 2, and 3</li>
+<li>[ ] only 3</li>
+<li>[X] 2 and 3</li>
+<li>[ ] only 2</li>
+</ul>
+<h4 id="q54.-which-keyword-lets-you-call-the-constructor-of-a-parent-class">Q54. Which keyword lets you call the constructor of a parent class?</h4>
+<ul>
+<li>[ ] parent</li>
+<li>[X] super</li>
+<li>[ ] this</li>
+<li>[ ] new</li>
+</ul>
+<h4 id="q55.-what-is-the-result-of-this-code">Q55. What is the result of this code?</h4>
+<div class="sourceCode" id="cb43"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb43-1" title="1">  <span class="dv">1</span>: <span class="dt">int</span> a = <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb43-2" title="2">  <span class="dv">2</span>: <span class="dt">int</span> b = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb43-3" title="3">  <span class="dv">3</span>: <span class="dt">int</span> c = a/b;</a>
+<a class="sourceLine" id="cb43-4" title="4">  <span class="dv">4</span>: <span class="bu">System</span>.<span class="fu">out</span>.<span class="fu">println</span>(c);</a></code></pre></div>
+<ul>
+<li>[X] It will throw an ArithmeticException.</li>
+<li>[ ] It will run and output 0.</li>
+<li>[ ] It will not compile because of line 3.</li>
+<li>[ ] It will run and output infinity.</li>
+</ul>
+<h4 id="q56.-normally-to-access-a-static-member-of-a-class-such-as-math.pi-you-would-need-to-specify-the-class-math.-what-would-be-the-best-way-to-allow-you-to-use-simply-pi-in-your-code">Q56. Normally, to access a static member of a class such as Math.PI, you would need to specify the class “Math”. What would be the best way to allow you to use simply “PI” in your code?</h4>
+<ul>
+<li>[X] Add a static import.</li>
+<li>[ ] Declare local copies of the constant in your code.</li>
+<li>[ ] This cannot be done. You must always qualify references to static members with the class form which they came from.</li>
+<li>[ ] Put the static members in an interface and inherit from that interface.</li>
+</ul>
+</body>
+</html>

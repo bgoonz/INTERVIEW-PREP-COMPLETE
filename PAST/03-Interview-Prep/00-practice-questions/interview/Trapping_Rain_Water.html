@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Trapping_Rain_Water</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="detailed-analysis-of-the-trapping-rain-water-problem">Detailed analysis of the trapping rain water problem</h1>
+<p><strong>Translator: <a href="https://github.com/Iruze">Iruze</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>The trapping rain water problem is very interesting and preforms frequently in interviews. So this paper will show how to solve the problem and explain how to optimize the solution step by step.</p>
+<p>First of all, let’s have a view on the problem:</p>
+<p><img src="../pictures/trapping_rain_water/title.jpg" /></p>
+<p>In a word, an array represents an elevation map and hope you calculate how much rain water the elevation map can hold at most.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="dt">int</span> <span class="fu">trap</span>(<span class="dt">int</span>[] height);</a></code></pre></div>
+<p>Now I will explain three approaches from shallow to deep: Brute force -&gt; Using memorandum -&gt; Using two pointers, and finally solve the problem with O(1) space complexity and O(N) time complexity.</p>
+<h3 id="i.-core-idea">I. Core idea</h3>
+<p>When I saw this problem for the first time, I had no idea at all. I believe that many friends have the same experience. As for this kind of problem, we should not consider from the whole, but from the part; Just as the previous articles that talk about how to handle the string problem, don’t consider how to handle the whole string. Instead, you should focus on how to handle each character among the string.</p>
+<p>Therefore, we find that the thought of this problem is sample. Specifically, just for the position <code>i</code> as below, how much water can it hold?</p>
+<p><img src="../pictures/trapping_rain_water/0.jpg" /></p>
+<p>Position <code>i</code> occupies 2 grids for holding water. Why it happens to hold 2 grids of water? Because the height of <code>height[i]</code> is 0, and <code>height[i]</code> can hold up to 2 grids of water, therefore there exists 2 - 0 = 2.</p>
+<p>But why the position <code>i</code> can hold 2 grids of water at most? Because the height of water column at position <code>i</code> depends on both the hightest water column on the left and the highest water column on the right. We describe the height of the two highest water columns as <code>l_max</code> and <code>r_max</code> respectively. <strong>Thus the height at position <code>i</code> is <code>min(l_max, r_max)</code></strong>.</p>
+<p>Further more, as for the position <code>i</code>, how much water it holds can be demonstrated as:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" title="1">water[i] <span class="op">=</span> <span class="bu">min</span>(</a>
+<a class="sourceLine" id="cb2-2" title="2">               <span class="co"># the highest column on the left</span></a>
+<a class="sourceLine" id="cb2-3" title="3">               <span class="bu">max</span>(height[<span class="dv">0</span>..i]),  </a>
+<a class="sourceLine" id="cb2-4" title="4">               <span class="co"># the highest column on the right</span></a>
+<a class="sourceLine" id="cb2-5" title="5">               <span class="bu">max</span>(height[i..end]) </a>
+<a class="sourceLine" id="cb2-6" title="6">            ) <span class="op">-</span> height[i]</a></code></pre></div>
+<p><img src="../pictures/trapping_rain_water/1.jpg" /></p>
+<p><img src="../pictures/trapping_rain_water/2.jpg" /></p>
+<p>This is the core idea of the problem, so we can program a simple brute approach:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">int</span> trap(vector&lt;<span class="dt">int</span>&gt;&amp; height) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="dt">int</span> n = height.size();</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="dt">int</span> ans = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">1</span>; i &lt; n - <span class="dv">1</span>; i++) {</a>
+<a class="sourceLine" id="cb3-5" title="5">        <span class="dt">int</span> l_max = <span class="dv">0</span>, r_max = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-6" title="6">        <span class="co">// find the highest column on the right</span></a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="cf">for</span> (<span class="dt">int</span> j = i; j &lt; n; j++)</a>
+<a class="sourceLine" id="cb3-8" title="8">            r_max = max(r_max, height[j]);</a>
+<a class="sourceLine" id="cb3-9" title="9">        <span class="co">// find the highest column on the right</span></a>
+<a class="sourceLine" id="cb3-10" title="10">        <span class="cf">for</span> (<span class="dt">int</span> j = i; j &gt;= <span class="dv">0</span>; j--)</a>
+<a class="sourceLine" id="cb3-11" title="11">            l_max = max(l_max, height[j]);</a>
+<a class="sourceLine" id="cb3-12" title="12">        <span class="co">// if the position i itself is the highest column</span></a>
+<a class="sourceLine" id="cb3-13" title="13">        <span class="co">// l_max == r_max == height[i]</span></a>
+<a class="sourceLine" id="cb3-14" title="14">        ans += min(l_max, r_max) - height[i];</a>
+<a class="sourceLine" id="cb3-15" title="15">    }</a>
+<a class="sourceLine" id="cb3-16" title="16">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb3-17" title="17">}</a></code></pre></div>
+<p>According to the previous thought, the above approach seems very direct and brute. The time complexity is O(N^2) and the space complexity is O(1). However, it is obvious that the way of calculating <code>r_max</code> and <code>l_max</code> is very clumsy, which the memorandum is generally introduced to optimize the way.</p>
+<h3 id="ii.-memorandum-optimization">II. Memorandum Optimization</h3>
+<p>In the previous brute approach, the <code>r_max</code> and <code>l_max</code> are calculated at every position <code>i</code>. So we can cache that calculation results, which avoids the stupid traversal at every time. Thus the time complexity will reasonably decline.</p>
+<p>Here two arrays <code>r_max</code> and <code>l_max</code> are used to act the memo. <code>l_max[i]</code> represents the highest column on the left of position <code>i</code> and <code>r_max[i]</code> represents the highest column on the right of position <code>i</code>. These two arrays are calculated in advance to avoid duplicated calculation.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">int</span> trap(vector&lt;<span class="dt">int</span>&gt;&amp; height) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="cf">if</span> (height.empty()) <span class="cf">return</span> <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="dt">int</span> n = height.size();</a>
+<a class="sourceLine" id="cb4-4" title="4">    <span class="dt">int</span> ans = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="co">// arrays act the memo</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    vector&lt;<span class="dt">int</span>&gt; l_max(n), r_max(n);</a>
+<a class="sourceLine" id="cb4-7" title="7">    <span class="co">// initialize base case</span></a>
+<a class="sourceLine" id="cb4-8" title="8">    l_max[<span class="dv">0</span>] = height[<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb4-9" title="9">    r_max[n - <span class="dv">1</span>] = height[n - <span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb4-10" title="10">    <span class="co">// calculate l_max from left to right</span></a>
+<a class="sourceLine" id="cb4-11" title="11">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">1</span>; i &lt; n; i++)</a>
+<a class="sourceLine" id="cb4-12" title="12">        l_max[i] = max(height[i], l_max[i - <span class="dv">1</span>]);</a>
+<a class="sourceLine" id="cb4-13" title="13">    <span class="co">// calculate r_max from right to left</span></a>
+<a class="sourceLine" id="cb4-14" title="14">    <span class="cf">for</span> (<span class="dt">int</span> i = n - <span class="dv">2</span>; i &gt;= <span class="dv">0</span>; i--) </a>
+<a class="sourceLine" id="cb4-15" title="15">        r_max[i] = max(height[i], r_max[i + <span class="dv">1</span>]);</a>
+<a class="sourceLine" id="cb4-16" title="16">    <span class="co">// calculate the final result</span></a>
+<a class="sourceLine" id="cb4-17" title="17">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">1</span>; i &lt; n - <span class="dv">1</span>; i++) </a>
+<a class="sourceLine" id="cb4-18" title="18">        ans += min(l_max[i], r_max[i]) - height[i];</a>
+<a class="sourceLine" id="cb4-19" title="19">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb4-20" title="20">}</a></code></pre></div>
+<p>Actually, the memo optimization has not much difference from the above brute approach, except that it avoids repeat calculation and reduces the time complexity to O(N). Although time complexity O(N) is already the best, but the space complexity is still O(N). So let’s look at a more subtle approach that can reduce the space complexity to O(1).</p>
+<h3 id="iii.-two-pointers">III. Two pointers</h3>
+<p>The thought of this approach is exactly the same, but it is very ingenious in the way of implementation. We won’t use the memo to cache calculation results in advance this time. Instead, we use two pointers to calculate during traversal and the space complexity will decline as a result.</p>
+<p>First, look at some of the code:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">int</span> trap(vector&lt;<span class="dt">int</span>&gt;&amp; height) {</a>
+<a class="sourceLine" id="cb5-2" title="2">    <span class="dt">int</span> n = height.size();</a>
+<a class="sourceLine" id="cb5-3" title="3">    <span class="dt">int</span> left = <span class="dv">0</span>, right = n - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb5-4" title="4">    </a>
+<a class="sourceLine" id="cb5-5" title="5">    <span class="dt">int</span> l_max = height[<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb5-6" title="6">    <span class="dt">int</span> r_max = height[n - <span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb5-7" title="7">    </a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="cf">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb5-9" title="9">        l_max = max(l_max, height[left]);</a>
+<a class="sourceLine" id="cb5-10" title="10">        r_max = max(r_max, height[right]);</a>
+<a class="sourceLine" id="cb5-11" title="11">        left++; right--;</a>
+<a class="sourceLine" id="cb5-12" title="12">    }</a>
+<a class="sourceLine" id="cb5-13" title="13">}</a></code></pre></div>
+<p>In the above code, what’s the meaning of <code>l_max</code> and <code>r_max</code> respectively?</p>
+<p>It is easy to understand that <strong><code>l_max</code> represents the highest column among <code>height[0..left]</code> and <code>r_max</code> represents the highest column among <code>height[right..end]</code></strong>.</p>
+<p>With that in mind, look directly at the approach:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb6-1" title="1"><span class="dt">int</span> trap(vector&lt;<span class="dt">int</span>&gt;&amp; height) {</a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="cf">if</span> (height.empty()) <span class="cf">return</span> <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="dt">int</span> n = height.size();</a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="dt">int</span> left = <span class="dv">0</span>, right = n - <span class="dv">1</span>;</a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="dt">int</span> ans = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb6-6" title="6">    </a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="dt">int</span> l_max = height[<span class="dv">0</span>];</a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="dt">int</span> r_max = height[n - <span class="dv">1</span>];</a>
+<a class="sourceLine" id="cb6-9" title="9">    </a>
+<a class="sourceLine" id="cb6-10" title="10">    <span class="cf">while</span> (left &lt;= right) {</a>
+<a class="sourceLine" id="cb6-11" title="11">        l_max = max(l_max, height[left]);</a>
+<a class="sourceLine" id="cb6-12" title="12">        r_max = max(r_max, height[right]);</a>
+<a class="sourceLine" id="cb6-13" title="13">        </a>
+<a class="sourceLine" id="cb6-14" title="14">        <span class="co">// ans += min(l_max, r_max) - height[i]</span></a>
+<a class="sourceLine" id="cb6-15" title="15">        <span class="cf">if</span> (l_max &lt; r_max) {</a>
+<a class="sourceLine" id="cb6-16" title="16">            ans += l_max - height[left];</a>
+<a class="sourceLine" id="cb6-17" title="17">            left++; </a>
+<a class="sourceLine" id="cb6-18" title="18">        } <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb6-19" title="19">            ans += r_max - height[right];</a>
+<a class="sourceLine" id="cb6-20" title="20">            right--;</a>
+<a class="sourceLine" id="cb6-21" title="21">        }</a>
+<a class="sourceLine" id="cb6-22" title="22">    }</a>
+<a class="sourceLine" id="cb6-23" title="23">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb6-24" title="24">}</a></code></pre></div>
+<p>The core idea of the approach is the same as before, which is just like old wine in new bottle. However, a careful reader may find that the approach is slightly different in details from the previous ones:</p>
+<p>In the memo optimization approach, <code>l_max[i]</code> and <code>r_max[i]</code> represent the highest column of <code>height[0..i]</code> and <code>height[i..end]</code> respectively.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb7-1" title="1">ans += min(l_max[i], r_max[i]) - height[i];</a></code></pre></div>
+<p><img src="../pictures/trapping_rain_water/3.jpg" /></p>
+<p>But in two pointers approach, <code>l_max</code> and <code>r_max</code> represent the highest column of <code>height[0..left]</code> and <code>height[right..end]</code> respectively. Take the below code as an example:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb8-1" title="1"><span class="cf">if</span> (l_max &lt; r_max) {</a>
+<a class="sourceLine" id="cb8-2" title="2">    ans += l_max - height[left];</a>
+<a class="sourceLine" id="cb8-3" title="3">    left++; </a>
+<a class="sourceLine" id="cb8-4" title="4">} </a></code></pre></div>
+<p><img src="../pictures/trapping_rain_water/4.jpg" /></p>
+<p>At this time, <code>l_max</code> represents the highest column on the left of <code>left</code> pointer, but <code>r_max</code> is not always the highest column on the right of <code>left</code> pointer. Under the circumstances, can this approach really get the right answer?</p>
+<p>In fact, we need to think about it in this way: we just focus on <code>min(l_max, r_max)</code>. In the above elevation map, we have known <code>l_max &lt; r_max</code>, so it is doesn’t matter whether the <code>r_max</code> is the highest column on the right. The key is that water capacity in <code>height[i]</code> just depends on <code>l_max</code>.</p>
+<p><img src="../pictures/trapping_rain_water/5.jpg" /></p>
+<p><strong><em>Tip:</em></strong><br />
+Adhere to the original high-quality articles and strive to make the algorithm clear. Welcome to my Wechat official account: <strong>labuladong</strong> to get the latest articles.</p>
+</body>
+</html>

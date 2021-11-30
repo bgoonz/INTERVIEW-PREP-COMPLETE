@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>objective-c_quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="objective-c-assessment">Objective-C Assessment</h2>
+<h4 id="q1.-what-is-the-value-of-s">Q1. What is the value of s?</h4>
+<pre class="objc"><code>NSMutableString *s = [NSMutableString stringWithString: @&quot;123&quot;];
+[s appendString: @&quot;456&quot;];</code></pre>
+<ul>
+<li>123456 &lt;&lt;&lt;&lt;—Correct</li>
+<li>123</li>
+<li>456</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q2.-whats-the-value-of-i-after-these-statements">Q2. What’s the value of i after these statements?</h4>
+<pre class="objc"><code>NSString *str = nil;
+NSInteger i = str.integerValue;</code></pre>
+<ul>
+<li>nil &lt;&lt;&lt;&lt;—Correct</li>
+<li>0</li>
+<li>-1</li>
+<li>This code crashes.</li>
+</ul>
+<h4 id="q3.-what-value-is-in-str-after-this-line-in-executed">Q3. What value is in str after this line in executed?</h4>
+<pre class="objc"><code>NSString str = &quot;test&quot; + &quot; &quot; + &quot;more&quot;;</code></pre>
+<ul>
+<li>This code contains an error &lt;&lt;&lt;&lt;—Correct</li>
+<li>test</li>
+<li>nil</li>
+<li>test more</li>
+</ul>
+<h4 id="q4.-what-does-this-code-print">Q4. What does this code print?</h4>
+<pre class="objc"><code>NSPredicate *p2 = [NSPredicate predicateWithBlock:^BOOL(NSString*  evaluatedObject, NSDictionary&lt;NSString *,id&gt; * _Nullable bindings) {
+  return evaluatedObject.intValue % 2 == 0;
+}];
+NSArray *vals = @[@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;];
+NSArray *n2 = [vals filteredArrayUsingPredicate:p2];
+NSLog(@&quot;%@&quot;, n2.firstObject);</code></pre>
+<ul>
+<li>2 &lt;&lt;&lt;&lt;—Correct</li>
+<li>1,2,3</li>
+<li>1,2</li>
+<li>Nothing, since this code contains an error.</li>
+</ul>
+<h4 id="q5.-property-defaults-include-___">Q5. Property defaults include <strong>___</strong>?</h4>
+<ul>
+<li>atomic/strong &lt;&lt;&lt;&lt;—Correct</li>
+<li>atomic/weak</li>
+<li>nonatomic/weak</li>
+<li>nonatomic/strong</li>
+</ul>
+<h4 id="q6.-what-is-the-key-difference-between-nsdictionary-and-nsmutabledictionary">Q6. What is the key difference between NSDictionary and NSMutableDictionary?</h4>
+<ul>
+<li>NSMutableDictionary’s values can change &lt;&lt;&lt;&lt;—Correct</li>
+<li>NSMutableDictionary has not initializers.</li>
+<li>NSDictionary can’t be copied.</li>
+<li>NSDictionary’s values can change.</li>
+</ul>
+<h4 id="q7.-what-is-foo">Q7. What is foo?</h4>
+<pre class="objc"><code>-(float)foo;</code></pre>
+<ul>
+<li>A function with a return type of float. &lt;&lt;&lt;&lt;—Correct</li>
+<li>This code contains an error.</li>
+<li>A variable declaration of type float.</li>
+<li>A property of type float.</li>
+</ul>
+<h4 id="q8.-what-can-you-glean-from-this-line">Q8. What can you glean from this line?</h4>
+<pre class="objc"><code>#import &quot;NSString+NameHelper.h&quot;</code></pre>
+<ul>
+<li>NameHelper is a category of NSString. &lt;&lt;&lt;&lt;—Correct</li>
+<li>NameHelper is a subclass of NSString.</li>
+<li>NSString implements the NameHelper protocol.</li>
+<li>NSString has a helper class.</li>
+</ul>
+<h4 id="q9.-whats-wrong-with-this-code">Q9. What’s wrong with this code?</h4>
+<pre class="objc"><code>float x = 5.;</code></pre>
+<ul>
+<li>Nothing is wrong with this code. &lt;&lt;&lt;&lt;—Correct</li>
+<li>Declarations do not need semicolons.</li>
+<li>x=5 is an invalid float.</li>
+<li>Variables can’t be declared and initialized in the same state.</li>
+</ul>
+<h4 id="q10.-how-many-times-with-this-loop-be-executed">Q10. How many times with this loop be executed?</h4>
+<pre class="objc"><code>for (int x=0; x&lt;100; x++) {
+  x = x + 1;
+}</code></pre>
+<ul>
+<li>50 &lt;&lt;&lt;&lt;—Correct</li>
+<li>99</li>
+<li>100</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q11.-what-is-this-code-an-example-of">Q11. What is this code an example of?</h4>
+<pre class="objc"><code>[self addObserver: self forKeyPath: @&quot;val&quot; options:0 context: nil];</code></pre>
+<ul>
+<li>Key-Value Observing</li>
+<li>Class Value Observing</li>
+<li>Key-Data Observing</li>
+<li>KeyPath Observing</li>
+</ul>
+<h4 id="q12.-what-does-arc-stand-for">Q12. What does ARC stand for?</h4>
+<ul>
+<li>Automatic Reference Counting &lt;&lt;&lt;&lt;—Correct</li>
+<li>Automatic Retain Checking</li>
+<li>Async Retain Cycles</li>
+<li>Automatic Release Code</li>
+</ul>
+<h4 id="q13.-what-is-printed-for-this-code">Q13. What is printed for this code?</h4>
+<pre class="objc"><code>int val = 0;
+val = 1.5;
+printf(&quot;%d&quot;, val);</code></pre>
+<ul>
+<li>1 &lt;&lt;&lt;&lt;—Correct</li>
+<li>2</li>
+<li>0</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q14.-what-best-describes-class-inheritance-in-objective-c">Q14. What best describes class inheritance in Objective-C?</h4>
+<ul>
+<li>single inheritance but multiple protocol implementation</li>
+<li>Objective-C doesn’t support inheritance</li>
+<li>dual class inheritance</li>
+<li>unlimited class inheritance and protocol adherence</li>
+</ul>
+<h4 id="q15.-how-many-keys-does-this-nsdictionary-have-after-this-code-is-executed">Q15. How many keys does this NSDictionary have after this code is executed?</h4>
+<pre class="objc"><code>NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys: @&quot;b&quot;, @&quot;e&quot;, @&quot;a&quot;, @&quot;r&quot;, nil];</code></pre>
+<ul>
+<li>2 &lt;&lt;&lt;&lt;—Correct</li>
+<li>4</li>
+<li>5</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q16.-what-is-wrong-with-this-code">Q16. What is wrong with this code?</h4>
+<pre class="objc"><code>NSMutableDictionary *dict1 = [NSMutableDictionary dictionaryWithCapacity:5];
+[dict1 setValue:@&quot;key&quot; forKey:@&quot;value&quot;];</code></pre>
+<ul>
+<li>The key and value items are mixed &lt;&lt;&lt;&lt;—Correct</li>
+<li>Nothing is wrong with it</li>
+<li>You can’t set the capacity of a dictionary</li>
+<li>NSMutableDictionary doesn’t have a :setValue:forKey function.</li>
+</ul>
+<h4 id="q17.-what-is-printed-from-this-code">Q17. What is printed from this code?</h4>
+<pre class="objc"><code>NSData *data = [@&quot;print&quot; dataUsingEncoding:NSASCIIStringEncoding];
+NSLog(@&quot;%@&quot;, [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);</code></pre>
+<ul>
+<li>print &lt;&lt;&lt;&lt;—Correct</li>
+<li>This code is invalid</li>
+<li>Nothing is printed from this code.</li>
+<li>nil</li>
+</ul>
+<h4 id="q18.-what-is-different-about-this-function">Q18. What is different about this function?</h4>
+<pre class="objc"><code>+(void)doSomething;</code></pre>
+<ul>
+<li>It is static &lt;&lt;&lt;&lt;—Correct</li>
+<li>It is abstract.</li>
+<li>It is inline.</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q19.-structs-can-have-___">Q19. Structs can have <strong>___</strong>?</h4>
+<ul>
+<li>functions &lt;&lt;&lt;&lt;—Correct</li>
+<li>initializers</li>
+<li>fields</li>
+<li>all of these answers</li>
+</ul>
+<h4 id="q20.-what-is-wrong-with-this-code">Q20. What is wrong with this code?</h4>
+<pre class="objc"><code>@interface MyClass : NSObject
+    @property (strong, nonatomic, readonly) NSString *name;
+  @end</code></pre>
+<ul>
+<li>There is nothing wrong with this code. &lt;&lt;&lt;&lt;—Correct</li>
+<li>There is not read-only directive.</li>
+<li>MyClass doesn’t implement NSObject.</li>
+<li>Properties are declared in the implementation.</li>
+</ul>
+<h4 id="q21.-what-is-wrong-with-this-code">Q21. What is wrong with this code?</h4>
+<pre class="objc"><code>NSArray *vals = @[@&quot;1&quot;, @&quot;2&quot;, @&quot;3&quot;];
+NSPredicate *pred = [NSPredicate predicateWithFormat:@&quot;SELF.intValue &gt; 1&quot;];
+NSArray *newValues = [vals filteredArrayUsingPredicate:pred];</code></pre>
+<ul>
+<li>2,3 &lt;&lt;&lt;&lt;—Correct</li>
+<li>nil</li>
+<li>2,“3”</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q22.-what-is-an-enums-base-type-for-the-code-below">Q22. What is an enums base type for the code below?</h4>
+<pre class="objc"><code>typedef enum { Foo1, Foo2} Foo;</code></pre>
+<ul>
+<li>There is no base type. &lt;&lt;&lt;&lt;—Correct</li>
+<li>NSObject</li>
+<li>int</li>
+<li>NSNumber</li>
+</ul>
+<h4 id="q23.-if-you-want-to-store-a-small-amount-of-information-e.g.-user-settings-whats-the-best-built-in-way-to-go">Q23. If you want to store a small amount of information (e.g., user settings), whats the best, built-in way to go?</h4>
+<ul>
+<li>UserDefaults &lt;&lt;&lt;&lt;—Correct</li>
+<li>plist file</li>
+<li>CoreData</li>
+<li>TextFile</li>
+</ul>
+<h4 id="q24.-what-are-categories-used-for">Q24. What are categories used for?</h4>
+<ul>
+<li>to extend other classes &lt;&lt;&lt;&lt;—Correct</li>
+<li>to manage access control</li>
+<li>to coordinate objects</li>
+<li>to group classes</li>
+</ul>
+<h4 id="q25.-what-is-this-objective-c-code-checking">Q25. What is this Objective-C code checking?</h4>
+<pre class="objc"><code>if ([keyPath isInstanceOf:[NSString class]]) {
+}</code></pre>
+<ul>
+<li>This code contains an error &lt;&lt;&lt;&lt;—Correct</li>
+<li>if keyPath is an instance of NSString</li>
+<li>if keyPath’s baseclass is the same as NSString’s baseclass</li>
+<li>if keyPath implements the same methods as NSString</li>
+</ul>
+<h4 id="q26.-what-is-this-a-declaration-of">Q26. What is this a declaration of?</h4>
+<pre class="objc"><code>int(^foo)(int);</code></pre>
+<ul>
+<li>an Extension</li>
+<li>a Generic</li>
+<li>a block of code</li>
+<li>an abstract class</li>
+</ul>
+<h4 id="q27.-for-observing-changes-to-a-property-which-of-these-two-statements-cause-the-related-method-to-be-called-and-why">Q27. For observing changes to a property, which of these two statements cause the related method to be called and why?</h4>
+<pre class="objc"><code>1. _val = 1;
+2. self.val= 100;</code></pre>
+<ul>
+<li>Statement 2, since it calls the auto-created setter on the property.</li>
+<li>Statement 1, since it uses the property directly.</li>
+<li>Statement 2, since it specifies the class instance to use.</li>
+<li>Statement 1, since it calls the auto-created setter on the property.</li>
+</ul>
+<h4 id="q28.-what-is-wrong-with-this-code">Q28. What is wrong with this code?</h4>
+<pre class="objc"><code>float x = 2.0;
+int(^foo)(int) = ^(int n1) {
+  return (int)(n1*x);
+};
+foo(5);</code></pre>
+<ul>
+<li>Ints and floats can’t be multiplied.</li>
+<li>The parameter isn’t declared correctly.</li>
+<li>x is not in the right scope.</li>
+<li>Nothing is wrong with this code.</li>
+</ul>
+<h4 id="q29.-whats-the-difference-between-an-array-and-a-set">Q29. What’s the difference between an array and a set?</h4>
+<ul>
+<li>Arrays are ordered, non-unique values.</li>
+<li>Arrays are stored sorted.</li>
+<li>Sets are ordered, unique values.</li>
+<li>Sets can contain nils.</li>
+</ul>
+<h4 id="q30.-dot-notation-can-be-used-for-___">Q30. Dot notation can be used for <strong>___</strong>?</h4>
+<ul>
+<li>nothing, as they’re never used in Objective-C</li>
+<li>function calls only</li>
+<li>property getter/setter</li>
+<li>parameter delimiters</li>
+</ul>
+<h4 id="q31.-what-is-the-value-of-newvals-after-this-code-is-executed">Q31. What is the value of newVals after this code is executed?</h4>
+<p>NSArray <em>vals = @[@“1”, @“2”, @“3”]; NSPredicate </em>pred = [NSPredicate predicateWithFormat:@“SELF.intValue &gt; 1”]; NSArray *newVals = [vals filteredArrayUsingPredicate:pred];</p>
+<ul>
+<li>2,3 &lt;&lt;&lt;&lt;— Picked this one</li>
+<li>nil</li>
+<li>This code contains an error</li>
+<li>2,“3”</li>
+</ul>
+<h4 id="q32.-how-would-this-funciton-be-called">Q32. How would this funciton be called?</h4>
+<p>-(int)foo:(int)a b:(int)c;</p>
+<ul>
+<li>self.foo(5, b:10);</li>
+<li>This code contains an error.</li>
+<li>[self foo:5:10:20];</li>
+<li>[self foo:5 b:10];</li>
+</ul>
+<h4 id="q33.-what-is-the-type-of-the-error-return-value-stored-in-json">Q33. What is the type of the error return value stored in json?</h4>
+<p>NSERROR <em>error; NSData </em>data; id json = [NSJSONSerialization JSONObjectWithData:data opetions:NSJSONReadingAllowFragments error:&amp;error];</p>
+<ul>
+<li>NSString</li>
+<li>NSArray</li>
+<li>id</li>
+<li>NSDictionary</li>
+</ul>
+</body>
+</html>

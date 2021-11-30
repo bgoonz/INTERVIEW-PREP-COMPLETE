@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>w1d1-a</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="behavioral">Behavioral</h2>
+<ul>
+<li>Tell me about yourself</li>
+<li>What are some of your professional development goals?</li>
+<li>Tell me about a goal that you set that took a long time to achieve or that you are still working towards. How do you keep focused on the goal given the other priorities you have?</li>
+</ul>
+<h2 id="easy">Easy</h2>
+<p>Initially, there is a Robot at position (0, 0). Given a sequence of its moves, judge if this robot makes a circle, which means it moves back to the original place.</p>
+<p>The move sequence is represented by a string. And each move is represent by a character. The valid robot moves are R (Right), L (Left), U (Up) and D (down). The output should be true or false representing whether the robot makes a circle.</p>
+<h3 id="example">Example</h3>
+<pre><code>Input: &quot;UD&quot;
+Output: true
+Example 2:
+Input: &quot;LL&quot;
+Output: false</code></pre>
+<h3 id="solution">Solution</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">def</span> judge_circle(moves)</a>
+<a class="sourceLine" id="cb2-2" title="2">  x = <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-3" title="3">  y = <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-4" title="4">  moves.each_char <span class="kw">do</span> |move|</a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="kw">case</span> move</a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">when</span> <span class="st">&quot;U&quot;</span></a>
+<a class="sourceLine" id="cb2-7" title="7">      y += <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">when</span> <span class="st">&quot;D&quot;</span></a>
+<a class="sourceLine" id="cb2-9" title="9">      y -= <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    <span class="kw">when</span> <span class="st">&quot;R&quot;</span></a>
+<a class="sourceLine" id="cb2-11" title="11">      x += <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-12" title="12">    <span class="kw">when</span> <span class="st">&quot;L&quot;</span></a>
+<a class="sourceLine" id="cb2-13" title="13">      x -= <span class="dv">1</span></a>
+<a class="sourceLine" id="cb2-14" title="14">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb2-15" title="15">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb2-16" title="16">  <span class="kw">return</span> x === <span class="dv">0</span> &amp;&amp; y === <span class="dv">0</span></a>
+<a class="sourceLine" id="cb2-17" title="17"><span class="kw">end</span></a></code></pre></div>
+<h2 id="medium">Medium</h2>
+<p>A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because <code>128 % 1 == 0, 128 % 2 == 0</code>,and <code>128 % 8 == 0</code>.</p>
+<p>Also, a self-dividing number is not allowed to contain the digit zero.</p>
+<p>Given a lower and upper number bound, output a list of every possible self dividing number, including the bounds if possible.</p>
+<h3 id="example-1">Example</h3>
+<ul>
+<li>Input: <code>left = 1, right = 22</code></li>
+<li>Output: <code>[1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 22]</code></li>
+</ul>
+<h3 id="solution-1">Solution</h3>
+<p>For each number in the given range, we will directly test if that number is self-dividing.</p>
+<p>By definition, we want to test each whether each digit is non-zero and divides the number. For example, with 128, we want to test <code>d != 0 &amp;&amp; 128 % d == 0</code> for <code>d = 1, 2, 8</code>. To do that, we need to iterate over each digit of the number.</p>
+<p>A straightforward approach to that problem would be to convert the number into a character array (string in Python), and then convert back to integer to perform the modulo operation when checking n % d == 0.</p>
+<p>We could also continually divide the number by 10 and peek at the last digit. That is shown as a variation in a comment.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby"><code class="sourceCode ruby"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">def</span> self_dividing_number(left, right)</a>
+<a class="sourceLine" id="cb3-2" title="2">  result = []</a>
+<a class="sourceLine" id="cb3-3" title="3">  i = left</a>
+<a class="sourceLine" id="cb3-4" title="4"></a>
+<a class="sourceLine" id="cb3-5" title="5">  <span class="kw">while</span> i &lt;= right</a>
+<a class="sourceLine" id="cb3-6" title="6">    str = i.to_s</a>
+<a class="sourceLine" id="cb3-7" title="7">    j = <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-8" title="8">    c = <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-9" title="9"></a>
+<a class="sourceLine" id="cb3-10" title="10">    <span class="kw">while</span> j &lt; str.length</a>
+<a class="sourceLine" id="cb3-11" title="11">      <span class="kw">if</span> str[j].to_i == <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-12" title="12">        <span class="kw">break</span></a>
+<a class="sourceLine" id="cb3-13" title="13">      <span class="kw">elsif</span> i % str[j].to_i == <span class="dv">0</span></a>
+<a class="sourceLine" id="cb3-14" title="14">        c+=<span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-15" title="15">      <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-16" title="16"></a>
+<a class="sourceLine" id="cb3-17" title="17">      j+=<span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-18" title="18">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-19" title="19"></a>
+<a class="sourceLine" id="cb3-20" title="20">    <span class="kw">if</span> c == str.length</a>
+<a class="sourceLine" id="cb3-21" title="21">      result.push(i)</a>
+<a class="sourceLine" id="cb3-22" title="22">    <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-23" title="23"></a>
+<a class="sourceLine" id="cb3-24" title="24">    i+=<span class="dv">1</span></a>
+<a class="sourceLine" id="cb3-25" title="25">  <span class="kw">end</span></a>
+<a class="sourceLine" id="cb3-26" title="26">  <span class="kw">return</span> result</a>
+<a class="sourceLine" id="cb3-27" title="27"><span class="kw">end</span></a></code></pre></div>
+<h3 id="time-complexity-od-where-d-is-the-number-of-integers-in-the-range-left-right">Time complexity: <code>O(D)</code>, where D is the number of integers in the range [left, right]</h3>
+<h2 id="hard">Hard</h2>
+<p>In a 2 dimensional array grid, each value <code>grid[i][j]</code> represents the height of a building located there. We are allowed to increase the height of any number of buildings, by any amount (the amounts can be different for different buildings). Height 0 is considered to be a building as well.</p>
+<p>At the end, the “skyline” when viewed from all four directions of the grid, i.e. top, bottom, left, and right, must be the same as the skyline of the original grid. A city’s skyline is the outer contour of the rectangles formed by all the buildings when viewed from a distance. See the following example.</p>
+<p>What is the maximum total sum that the height of the buildings can be increased?</p>
+<h3 id="example-2">Example</h3>
+<ul>
+<li>Input: <code>grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]</code></li>
+<li>Output: <code>35</code></li>
+</ul>
+<h3 id="explanation">Explanation</h3>
+<p>The grid is:</p>
+<pre><code>[ [3, 0, 8, 4], 
+  [2, 4, 5, 7],
+  [9, 2, 6, 3],
+  [0, 3, 1, 0] ]</code></pre>
+<p>The skyline viewed from top or bottom is: <code>[9, 4, 8, 7]</code> The skyline viewed from left or right is: <code>[8, 7, 9, 3]</code></p>
+<p>The grid after increasing the height of buildings without affecting skylines is:</p>
+<pre><code>gridNew = [ [8, 4, 8, 7],
+            [7, 4, 7, 7],
+            [9, 4, 8, 7],
+            [3, 3, 3, 3] ]</code></pre>
+<h3 id="solution-2">Solution</h3>
+<p>For <code>grid[i][j]</code>, it can’t be higher than the maximun of its row nor the maximum of its col. So the maximum increasing height for a building at (i, j) is <code>min(row[i], col[j]) - grid[i][j]</code></p>
+<h4 id="code">Code</h4>
+<p>row: maximum for every row col: maximum for every col</p>
+<p>The first loop of grid calculate maximum for every row and every col</p>
+<p>The second loop calculate the maximum increasing height for every building</p>
+<h4 id="time-complexity">Time Complexity</h4>
+<p><code>O(N^2)</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">const</span> maxIncreaseKeepingSkyline <span class="op">=</span> grid <span class="kw">=&gt;</span> <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-2" title="2">    <span class="kw">const</span> maxXArr <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-3" title="3">    <span class="kw">const</span> maxYArr <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-4" title="4">    <span class="kw">const</span> length <span class="op">=</span> <span class="va">grid</span>.<span class="at">length</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-5" title="5">    <span class="kw">let</span> maxIncrease <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-6" title="6">    </a>
+<a class="sourceLine" id="cb6-7" title="7">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> length<span class="op">;</span> <span class="op">++</span>i) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-8" title="8">        <span class="kw">let</span> rowMax <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-9" title="9">        <span class="kw">let</span> colMax <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb6-10" title="10">        </a>
+<a class="sourceLine" id="cb6-11" title="11">        <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> length<span class="op">;</span> <span class="op">++</span>j) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-12" title="12">            <span class="kw">const</span> row <span class="op">=</span> grid[i][j]<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-13" title="13">            <span class="kw">const</span> col <span class="op">=</span> grid[j][i]<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-14" title="14">            </a>
+<a class="sourceLine" id="cb6-15" title="15">            rowMax <span class="op">=</span> row <span class="op">&gt;</span> rowMax <span class="op">?</span> row : rowMax<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-16" title="16">            colMax <span class="op">=</span> col <span class="op">&gt;</span> colMax <span class="op">?</span> col : colMax<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-17" title="17">        <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-18" title="18">        </a>
+<a class="sourceLine" id="cb6-19" title="19">        <span class="va">maxXArr</span>.<span class="at">push</span>(rowMax)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-20" title="20">        <span class="va">maxYArr</span>.<span class="at">push</span>(colMax)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-21" title="21">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-22" title="22">    </a>
+<a class="sourceLine" id="cb6-23" title="23">    <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> length <span class="op">*</span> length<span class="op">;</span> <span class="op">++</span>i) <span class="op">{</span></a>
+<a class="sourceLine" id="cb6-24" title="24">        <span class="kw">const</span> x <span class="op">=</span> i <span class="op">%</span> length<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-25" title="25">        <span class="kw">const</span> y <span class="op">=</span> <span class="va">Math</span>.<span class="at">floor</span>(i / length)<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-26" title="26">        </a>
+<a class="sourceLine" id="cb6-27" title="27">        <span class="kw">const</span> minMaxHeight <span class="op">=</span> <span class="va">Math</span>.<span class="at">min</span>(maxXArr[y]<span class="op">,</span> maxYArr[x])<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-28" title="28">        </a>
+<a class="sourceLine" id="cb6-29" title="29">        maxIncrease <span class="op">+=</span> minHeight <span class="op">-</span> grid[x][y]<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-30" title="30">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb6-31" title="31">    </a>
+<a class="sourceLine" id="cb6-32" title="32">    <span class="cf">return</span> maxIncrease<span class="op">;</span></a>
+<a class="sourceLine" id="cb6-33" title="33"><span class="op">};</span></a></code></pre></div>
+</body>
+</html>

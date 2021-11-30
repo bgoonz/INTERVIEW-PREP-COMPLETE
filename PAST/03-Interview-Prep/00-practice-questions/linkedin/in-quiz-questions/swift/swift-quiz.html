@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>swift-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h2 id="swift-assessment">Swift Assessment</h2>
+<h4 id="q1.-what-is-this-code-an-example-of">Q1. What is this code an example of?</h4>
+<pre class="swift"><code>let val = (Double)6</code></pre>
+<ul>
+<li>an error &lt;&lt;&lt;&lt;—Correct</li>
+<li>typecasting</li>
+<li>assignment</li>
+<li>initialization</li>
+</ul>
+<h4 id="q2.-what-is-the-error-in-this-code">Q2. What is the error in this code?</h4>
+<pre class="swift"><code>let x = 5
+guard x == 5 { return }</code></pre>
+<ul>
+<li>The guard is missing the else. &lt;&lt;&lt;&lt;—Correct</li>
+<li>Nothing is wrong.</li>
+<li>The guard is missing a then.</li>
+<li>The comparison is wrong.</li>
+</ul>
+<h4 id="q3.-what-is-the-rawunderlying-type-of-this-enum">Q3. What is the raw/underlying type of this enum?</h4>
+<pre class="swift"><code>enum Direction {
+  case north, south, east, west
+}</code></pre>
+<ul>
+<li>There is none. &lt;&lt;&lt;&lt;—Correct</li>
+<li>String</li>
+<li>Any</li>
+<li>Int</li>
+</ul>
+<h4 id="q4.-why-is-dispatchgroup-used-in-certain-situations">Q4. Why is dispatchGroup used in certain situations?</h4>
+<ul>
+<li>It allows multiple synchronous or asynchronous operations to run on different queues. &lt;&lt;&lt;&lt;—Suspected Correct</li>
+<li>It allows track and control execution of multiple operations together.</li>
+<li>It allows operations to wait for each other as desired.</li>
+<li>all of these answers.</li>
+</ul>
+<h4 id="q5.-what-is-this-code-an-example-of">Q5. What is this code an example of?</h4>
+<pre class="swift"><code>let val = 5
+print(&quot;value is: \(val)&quot;)</code></pre>
+<ul>
+<li>string interpolation &lt;&lt;&lt;&lt;—Correct</li>
+<li>string compilation</li>
+<li>method chaining</li>
+<li>string concatenation</li>
+</ul>
+<h4 id="q6.-what-are-the-contents-of-vals-after-this-code-is-executed">Q6. What are the contents of vals after this code is executed?</h4>
+<pre class="swift"><code>var vals = [10, 2]
+vals.sort { (s1, s2) -&gt; Bool in
+  s1 &gt; s2
+}</code></pre>
+<ul>
+<li>[10, 2] &lt;&lt;&lt;&lt;—Correct</li>
+<li>[2, 10]</li>
+<li>nil</li>
+<li>This code contains an error</li>
+</ul>
+<h4 id="q7.-what-does-this-code-print">Q7. What does this code print?</h4>
+<pre class="swift"><code>typealias Thing = [String, Any]
+var stuff: Thing
+print(type(of: stuff))</code></pre>
+<ul>
+<li>Dictionary&lt;String, Any&gt; (To print this than code in question has to be <code>typealias Thing = [String: Any]</code>)</li>
+<li>Dictionary</li>
+<li>ERROR &lt;&lt;&lt;&lt;—Correct (If code in question is really like that.)</li>
+<li>Thing</li>
+</ul>
+<h4 id="q8.-what-is-the-value-of-y">Q8. What is the value of y?</h4>
+<pre class="swift"><code>let x = [&quot;1&quot;, &quot;2&quot;].dropFirst()
+let y = x[0]</code></pre>
+<ul>
+<li>This code contains an error &lt;&lt;&lt;&lt;—Correct</li>
+<li>1</li>
+<li>2</li>
+<li>nil</li>
+</ul>
+<h4 id="q9.-what-is-the-value-of-test-in-this-code">Q9. What is the value of test in this code?</h4>
+<pre class="swift"><code>var test = 1 == 1</code></pre>
+<ul>
+<li>TRUE &lt;&lt;&lt;&lt;—Correct</li>
+<li>YES</li>
+<li>1</li>
+<li>This code contains an error</li>
+</ul>
+<h4 id="q10.-what-is-the-value-of-y">Q10. What is the value of y?</h4>
+<pre class="swift"><code>var x: Int?
+let y = x ?? 5</code></pre>
+<ul>
+<li>5 &lt;&lt;&lt;&lt;—Correct</li>
+<li>0</li>
+<li>nil</li>
+<li>This code contains an error</li>
+</ul>
+<h4 id="q11.-what-is-the-type-of-this-function">Q11. What is the type of this function?</h4>
+<pre class="swift"><code>func add(a: Int, b: Int) -&gt; Int { return a+b }</code></pre>
+<ul>
+<li>Int</li>
+<li>(Int, Int) -&gt; Int &lt;&lt;&lt;&lt;—Correct</li>
+<li>Int<Optional></li>
+<li>Functions don’t have types.</li>
+</ul>
+<h4 id="q12.-what-is-the-correct-was-to-call-this-function">Q12. What is the correct was to call this function?</h4>
+<pre class="swift"><code>func myFunc(_ a: Int, b: Int) -&gt; Int {
+  return a + b
+}</code></pre>
+<ul>
+<li>myFunc(5, b: 6) &lt;&lt;&lt;&lt;—Correct</li>
+<li>myFunc(5, 6)</li>
+<li>myFunc(a: 5, b: 6)</li>
+<li>myFunc(a, b)</li>
+</ul>
+<h4 id="q13.-the-codable-protocol-is-_">Q13. The Codable protocol is *<strong>*_**</strong>?</h4>
+<ul>
+<li>a combination of Encodable and Decodable &lt;&lt;&lt;&lt;—Correct</li>
+<li>not a true protocol &lt;&lt;&lt;&lt;—Possibly correct as it’s a typealias of Encodable and Decodable</li>
+<li>required of all classes</li>
+<li>automatically included in all classes</li>
+</ul>
+<h4 id="q13.-what-is-the-type-of-value1-in-this-code">Q13. What is the type of value1 in this code?</h4>
+<pre class="swift"><code>let value1 = &quot;\(&quot;test&quot;.count)&quot;</code></pre>
+<ul>
+<li>String &lt;&lt;&lt;&lt;—Correct</li>
+<li>Int</li>
+<li>null</li>
+<li>test.count</li>
+</ul>
+<h4 id="q14.-when-a-function-takes-a-closure-as-a-parameter-when-do-you-want-to-mark-is-as-escaping">Q14. When a function takes a closure as a parameter, when do you want to mark is as escaping?</h4>
+<ul>
+<li>when it’s executed after the function returns &lt;&lt;&lt;&lt;—Correct</li>
+<li>when it’s scope is undefined</li>
+<li>when is’s lazy loaded</li>
+<li>all of these answers</li>
+</ul>
+<h4 id="q15.-whats-wrong-with-this-code">Q15. What’s wrong with this code?</h4>
+<pre class="swift"><code>class Person {
+  var name: String
+  var address: String
+}</code></pre>
+<ul>
+<li>Person has no initializers. &lt;&lt;&lt;&lt;—Correct</li>
+<li>Person has no base class.</li>
+<li>var name is not formatted corrrectly.</li>
+<li>address is a keyword.</li>
+</ul>
+<h4 id="q16.-what-is-the-value-of-names-after-this-code-is-executed">Q16. What is the value of names after this code is executed?</h4>
+<pre class="swift"><code>let names = [&quot;Bear&quot;, &quot;Joe&quot;, &quot;Clark&quot;]
+names.map { (s) -&gt; String in
+  return s.uppercased()
+}</code></pre>
+<ul>
+<li>[“BEAR”, “JOE”, “CLARK”]</li>
+<li>[“B”, “J”, “C”]</li>
+<li>[“Bear”, “Joe”, “Clark”] &lt;&lt;&lt;&lt;—Correct</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q17.-what-describes-this-line-of-code">Q17. What describes this line of code?</h4>
+<pre class="swift"><code>let val = 5</code></pre>
+<ul>
+<li>a constant named val of type Int &lt;&lt;&lt;&lt;—Correct</li>
+<li>a variable named val of type item</li>
+<li>a constant named val of type Number</li>
+<li>a variable named val of type Int</li>
+</ul>
+<h4 id="q18.-what-is-the-error-in-this-code">Q18. What is the error in this code?</h4>
+<pre class="swift"><code>extension String {
+  var firstLetter: Character = &quot;c&quot; {
+    didSet {
+      print(&quot;new value&quot;)
+    }
+  }
+}</code></pre>
+<ul>
+<li>Extensions can’t add properties. &lt;&lt;&lt;&lt;—Correct, although extensions technically can’t contain stored properties</li>
+<li>Nothing is wrong with it.</li>
+<li>didSet takes a parameter.</li>
+<li>c is not a character.</li>
+</ul>
+<h4 id="q19.-didset-and-willset-are-examples-of-_">Q19. didSet and willSet are examples of *<strong>*_**</strong>?</h4>
+<ul>
+<li>property observers &lt;&lt;&lt;&lt;—Correct</li>
+<li>key properties</li>
+<li>all of these answers</li>
+<li>newOld value calls</li>
+</ul>
+<h4 id="q20.-what-is-wrong-with-this-code">Q20. What is wrong with this code?</h4>
+<pre class="swift"><code>self.callback = {
+  self.attempts += 1
+  self.downloadFailed()
+}</code></pre>
+<ul>
+<li>Use of self inside the closure causes retain cycle. &lt;&lt;&lt;&lt;—Correct</li>
+<li>You cannot assign a value to closure in this manner.</li>
+<li>You need to define the type of closure explicitly.</li>
+<li>There is nothing wrong with this code.</li>
+</ul>
+<h4 id="q21.-how-many-values-does-vals-have-after-this-code-is-executed">Q21. How many values does vals have after this code is executed?</h4>
+<pre class="swift"><code>var vals = Set&lt;String&gt; = [&quot;4&quot;, &quot;5&quot;, &quot;6&quot;]
+vals.insert(&quot;5&quot;)</code></pre>
+<ul>
+<li>three &lt;&lt;&lt;&lt;—Correct</li>
+<li>four</li>
+<li>eight</li>
+<li>This code contains an error.</li>
+</ul>
+<h4 id="q22.-how-can-you-avoid-a-strong-reference-cycle-in-a-closure">Q22. How can you avoid a strong reference cycle in a closure?</h4>
+<ul>
+<li>Use a capture list to set class instances of weak or unowned. &lt;&lt;&lt;&lt;—Correct</li>
+<li>You can’t, there will always be a danger of strong reference cycles inside a closure.</li>
+<li>Initialize the closure as read-only.</li>
+<li>Declare the closure variable as lazy.</li>
+</ul>
+<h4 id="q23.-how-can-you-avoid-a-strong-reference-cycle-in-a-closure">Q23. How can you avoid a strong reference cycle in a closure?</h4>
+<ul>
+<li>an instance of any class &lt;&lt;&lt;&lt;—Correct</li>
+<li>all of these answers</li>
+<li>an instance of an optional type</li>
+<li>an instance of function type</li>
+</ul>
+<h4 id="q24.-what-is-wrong-with-this-code">Q24. What is wrong with this code?</h4>
+<pre class="swift"><code>if let s = String.init(&quot;some string&quot;) {
+  print(s)
+}</code></pre>
+<ul>
+<li>This String initializer does not return an optional. &lt;&lt;&lt;&lt;—Correct</li>
+<li>String does not have an initializer that can take a String.</li>
+<li>= is not a comparison.</li>
+<li>Nothing is wrong with this code.</li>
+</ul>
+<h4 id="q25.-which-code-snippet-correctly-creates-a-typealias-closure">Q25. Which code snippet correctly creates a typealias closure?</h4>
+<ul>
+<li>typealias CustomClosure: () -&gt; () &lt;&lt;&lt;&lt;—Correct</li>
+<li>typealias CustomClosure { () -&gt; () }</li>
+<li>typealias CustomClosure -&gt; () -&gt; ()</li>
+<li>typealias CustomClosure -&gt; () {}</li>
+</ul>
+<h4 id="q26.-how-do-you-reference-class-members-from-within-a-class">Q26. How do you reference class members from within a class?</h4>
+<ul>
+<li>self &lt;&lt;&lt;&lt;—Correct</li>
+<li>instance</li>
+<li>class</li>
+<li>this</li>
+</ul>
+<h4 id="q27.-all-value-types-in-swift-are-_-under-the-hood">Q27. All value types in Swift are *<strong>*_**</strong> under the hood?</h4>
+<ul>
+<li>structs &lt;&lt;&lt;&lt;—Correct</li>
+<li>classes</li>
+<li>optionals</li>
+<li>generics</li>
+</ul>
+<h4 id="q28.-what-is-the-correct-was-to-ass-a-value-to-this-array">Q28. What is the correct was to ass a value to this array?</h4>
+<pre class="swift"><code>var strings = [1, 2, 3]</code></pre>
+<ul>
+<li>all of these answers &lt;&lt;&lt;&lt;—Correct</li>
+<li>strings.append(4)</li>
+<li>strings.insert(5, at: 1)</li>
+<li>strings += [5]</li>
+</ul>
+<h4 id="q29.-how-many-times-will-this-loop-be-executed">Q29. How many times will this loop be executed?</h4>
+<pre class="swift"><code>for i in 0...100 {
+    print(i)
+}</code></pre>
+<ul>
+<li>0</li>
+<li>101 &lt;&lt;&lt;&lt;—Correct</li>
+<li>99</li>
+<li>100</li>
+</ul>
+<h4 id="q30.-what-can-anyobject-represent">Q30. What can AnyObject represent?</h4>
+<ul>
+<li>an instance of any class &lt;&lt;&lt;&lt;—Correct</li>
+<li>an instance of an optional type</li>
+<li>an instance of a function type</li>
+<li>all of these answers</li>
+</ul>
+<h4 id="q31.-what-does-this-code-print">Q31. What does this code print?</h4>
+<pre class="swift"><code>typealias Thing = [String:Any]
+var stuff : Thing
+print(type(of:stuff))</code></pre>
+<ul>
+<li>Dictionary</li>
+<li>ERROR</li>
+<li>Thing</li>
+<li>Dictionary&lt;String, Any&gt; &lt;&lt;&lt;&lt;—Correct</li>
+</ul>
+<h4 id="q32.-what-is-the-value-of-test-in-this-code">Q32. What is the value of test in this code?</h4>
+<pre class="swift"><code>var test = 1 == 1</code></pre>
+<ul>
+<li>TRUE &lt;&lt;&lt;&lt;—Correct</li>
+<li>1</li>
+<li>This code contains an error.</li>
+<li>YES</li>
+</ul>
+<h4 id="q33.-what-is-the-value-of-y">Q33. What is the value of y?</h4>
+<pre class="swift"><code>var x : Int?
+let y = x ?? 5</code></pre>
+<ul>
+<li>0</li>
+<li>nil</li>
+<li>This code contains an error.</li>
+<li>5 &lt;&lt;&lt;&lt;—Correct</li>
+</ul>
+<h4 id="q34.-what-is-the-value-of-y">Q34. What is the value of y?</h4>
+<pre class="swift"><code>let x = [&quot;1&quot;,&quot;2&quot;].dropFirst()
+let y = x[0]</code></pre>
+<ul>
+<li>1</li>
+<li>nil</li>
+<li>This code contains an error. &lt;&lt;&lt;&lt;—Correct</li>
+<li>2</li>
+</ul>
+<h4 id="q35.-what-is-the-value-of-t-after-this-code-is-executed">Q35. What is the value of t after this code is executed?</h4>
+<pre class="swift"><code>let names = [&quot;Larry&quot;,&quot;Sven&quot;,&quot;Bear&quot;]
+let t = names.enumerated().first().offset</code></pre>
+<ul>
+<li>This code is invalid. &lt;&lt;&lt;&lt;—Correct</li>
+<li>0</li>
+<li>1</li>
+<li>Larry</li>
+</ul>
+<h4 id="q36.-what-is-the-value-of-test-after-this-code-executes">Q36. What is the value of test after this code executes?</h4>
+<pre class="swift"><code>let vt = (name: &quot;ABC&quot;, val: 5)
+let test = vt.0</code></pre>
+<ul>
+<li>ABC &lt;&lt;&lt;&lt;—Correct</li>
+<li>0</li>
+<li>5</li>
+<li>name</li>
+</ul>
+<h4 id="q37.-what-is-the-base-class-in-this-code">Q37. What is the base class in this code?</h4>
+<pre class="swift"><code>class LSN : MMM {
+}</code></pre>
+<ul>
+<li>MMM &lt;&lt;&lt;&lt;—Correct</li>
+<li>LSN</li>
+<li>There is no base class.</li>
+<li>This code is invalid.</li>
+</ul>
+<h4 id="q38.-what-does-this-code-print-to-the-console">Q38. What does this code print to the console?</h4>
+<pre class="swift"><code>var userLocation: String = &quot;Home&quot; {
+  willSet(newValue) {
+  print(&quot;About to set userLocation to \(newValue)...&quot;)
+  }
+
+  didSet {
+  if userLocation != oldValue {
+  print(&quot;userLocation updated with new value!&quot;)
+  } else {
+  print(&quot;userLocation already set to that value...&quot;)
+  }
+  }
+ }
+
+ userLocation = &quot;Work&quot;</code></pre>
+<ul>
+<li>About to set userLocation to Work… userLocation updated to new value!</li>
+<li>About to set userLocation to Work… userLocation already set to that value…</li>
+<li>About to set userLocation to Home… userLocation updated to new value!</li>
+<li>ERROR</li>
+</ul>
+<h4 id="q39.-what-must-a-convenience-initializer-call">Q39. What must a convenience initializer call?</h4>
+<ul>
+<li>a base class convenience initializer</li>
+<li>either a designated or another convenience initializer</li>
+<li>a designated initializer &lt;&lt;&lt;&lt;—Correct</li>
+<li>none of these answers</li>
+</ul>
+<h4 id="q40.-which-object-allows-you-access-to-specify-that-a-block-of-code-runs-in-a-background-thread">Q40. Which object allows you access to specify that a block of code runs in a background thread?</h4>
+<ul>
+<li><code>DispatchQueue.visible</code></li>
+<li><code>DispatchQueue.global</code> &lt;&lt;&lt;&lt;— Correct</li>
+<li><code>errorExample</code> need to be labeled as <code>throws</code>.</li>
+<li><code>DispatchQueue.background</code></li>
+</ul>
+<h4 id="q41.-what-is-the-inferred-type-of-x">Q41. What is the inferred type of x?</h4>
+<pre class="swift"><code>let x = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]</code></pre>
+<ul>
+<li><code>String[]</code></li>
+<li><code>Array&lt;String&gt;</code> &lt;&lt;&lt;&lt;— Correct</li>
+<li><code>Set&lt;String&gt;</code></li>
+<li><code>Array&lt;Character&gt;</code></li>
+</ul>
+<h4 id="q42.-what-is-the-value-of-othings-after-this-code-is-executed">Q42. What is the value of <code>oThings</code> after this code is executed?</h4>
+<pre class="swift"><code>let nThings: [Any] = [1, &quot;2&quot;, &quot;three&quot;]
+let oThings = nThings.reduce(&quot;&quot;) { &quot;\($0)\($1)&quot; }</code></pre>
+<ul>
+<li><code>11212three</code></li>
+<li><code>115</code></li>
+<li><code>12three</code> &lt;&lt;&lt;&lt;— Correct</li>
+<li>Nothing, this code is invalid.</li>
+</ul>
+<h4 id="q43.-how-would-you-call-a-function-that-throws-errors-and-also-returns-a-value">Q43. How would you call a function that throws errors and also returns a value?</h4>
+<ul>
+<li><code>!try</code></li>
+<li><code>try?</code> &lt;&lt;&lt;&lt;— Correct</li>
+<li><code>try!</code></li>
+<li><code>?try</code></li>
+</ul>
+<h4 id="q44.-what-is-wrong-with-this-code">Q44. What is wrong with this code?</h4>
+<pre class="swift"><code>protocol TUI {
+    func add(x1 : Int, x2 : Int) -&gt; Int {
+        return x1 + x2
+    }
+}</code></pre>
+<ul>
+<li>Protocol functions cannot have return types.</li>
+<li>Protocol functions cannot have implementations. &lt;&lt;&lt;&lt;— Correct.</li>
+<li>Nothing is wrong with it.</li>
+<li><code>add</code> is a reserved keyword.</li>
+</ul>
+<h4 id="q45.-in-this-code-what-are-wheels-and-doors-examples-of">Q45. In this code, what are <code>wheels</code> and <code>doors</code> examples of?</h4>
+<pre class="swift"><code>class Car {
+    var wheels: Int = 4
+    let doors = 4
+}</code></pre>
+<ul>
+<li>class members</li>
+<li>This code is invalid.</li>
+<li>class fields</li>
+<li>class properties &lt;&lt;&lt;&lt;— Correct</li>
+</ul>
+<h4 id="q46.-what-is-the-value-of-t-after-this-code-is-executed">Q46. What is the value of <code>t</code> after this code is executed?</h4>
+<pre class="swift"><code>let names = [&quot;Larry&quot;, &quot;Sven&quot;, &quot;Bear&quot;]
+let t = names.enumerated().first().offset</code></pre>
+<ul>
+<li>This code does not compile. &lt;&lt;&lt;&lt;— Correct</li>
+<li><code>0</code></li>
+<li><code>1</code></li>
+<li><code>Larry</code></li>
+</ul>
+<h4 id="q47.-how-do-you-designate-a-failable-initializer">Q47. How do you designate a failable initializer?</h4>
+<ul>
+<li><code>init?</code></li>
+<li><code>deinit</code></li>
+<li><code>init</code> &lt;&lt;&lt;&lt;— Correct</li>
+<li>You can’t.</li>
+</ul>
+<h4 id="q48.-what-is-printed-when-this-code-is-executed">Q48. What is printed when this code is executed?</h4>
+<pre class="swift"><code>let dbl = Double.init(&quot;5a&quot;)
+print(dbl ?? &quot;.asString()&quot;)</code></pre>
+<ul>
+<li><code>five</code></li>
+<li><code>5a</code></li>
+<li><code>.asString()</code> &lt;&lt;&lt;&lt;— Correct</li>
+<li><code>5</code></li>
+</ul>
+</body>
+</html>

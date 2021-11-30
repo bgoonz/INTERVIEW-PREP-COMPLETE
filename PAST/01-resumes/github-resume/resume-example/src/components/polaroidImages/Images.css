@@ -1,0 +1,71 @@
+.images-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 8em;
+  position: relative;
+  top: 20px;
+}
+
+.images-section .image-wrapper {
+  margin: 0 3em;
+  opacity: 0;
+  transform: scale3d(0.8,0.8,0.8);
+  font: 400 18px/1 'Kaushan Script', cursive;
+  max-width: 400px;
+}
+
+.images-section .image-wrapper p {
+  background: white;
+  margin-top: -20px;
+  padding: 10px 20px;
+  text-align: center;
+  color: #888;
+  line-height: 1.2;
+  font-size: 20px;
+  min-height: 55px;
+}
+
+.images-section img {
+  border: 20px solid #fff;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  transition: rotate 1s;
+}
+
+.images-section .image-wrapper:hover {
+  transform: rotate(0deg);
+}
+@media only screen and (max-width: 1200px) {
+  .images-section img {
+    min-width: 320px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .images-section img {
+    border: 15px solid #fff;
+    min-width: 240px;
+  }
+
+  .images-section {
+    padding: 1em 0 2em;
+    justify-content: flex-start;
+  }
+
+  .images-section .image-wrapper {
+    margin: 0 20px 0 0;
+  }
+
+  .images-section .image-wrapper p {
+    margin-top: -4px;
+    padding: 0 15px 10px;
+    line-height: 1;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .images-section .image-wrapper {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+  }
+}

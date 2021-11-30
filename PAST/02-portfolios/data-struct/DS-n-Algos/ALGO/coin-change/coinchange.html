@@ -1,0 +1,87 @@
+<p>There are only two ways to make change for 6 cents, but f(6) = 3. f gives the number of ways of making 5 cents and adding a penny, plus the number of ways of making 1 cent and adding a nickel. When changing money, we would like “1 penny, l nickel” and “l nickel, l penny” to be considered as just one way of making change for 6 cents. We can fix this by adding each type of coin in turn; we will not be able to count different orderings twice if there are no different orderings. By increasing the dimension of the recurrence relation. we keep track of enough information to actually solve the problem.</p>
+<hr />
+<blockquote>
+<p>The boundary cases assert that there is exactly one way to make change for 0 cents using a positive number of coins. but there are no ways to make change for negative amounts, or using no coins.</p>
+</blockquote>
+<hr />
+<p>In the non-boundary case. the number of ways of making change using the first k types of coin is the number of ways that don’t use that coin, together with the number of ways that do.</p>
+<p>First. the number of ways of making change using only the first type of coin. (which is always assumed to be I in this sort of problem so that change can be made for any integral amount). is always exactly 1.</p>
+<hr />
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><a class="sourceLine" id="cb1-1" title="1"></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw">function</span> <span class="at">waysToReturnChange</span> ( denominations<span class="op">,</span> numOfCoins<span class="op">,</span> amount ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="cf">if</span> ( amount <span class="op">===</span> <span class="dv">0</span> ) <span class="cf">return</span> <span class="dv">1</span><span class="op">;</span> <span class="co">// Perfect!</span></a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="cf">if</span> ( amount <span class="op">&lt;</span> <span class="dv">0</span> ) <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span> <span class="co">// No solution exists for negative amount</span></a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="cf">if</span> ( numOfCoins <span class="op">&lt;</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span> amount <span class="op">&gt;</span> <span class="dv">0</span> ) <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span> <span class="co">// We don&#39;t have coins left!</span></a>
+<a class="sourceLine" id="cb1-6" title="6">  <span class="va">console</span>.<span class="at">log</span>( <span class="vs">`checking ways to make </span><span class="sc">${</span> amount <span class="sc">}</span><span class="vs"> with </span><span class="sc">${</span> <span class="va">denominations</span>.<span class="at">slice</span>( numOfCoins ) <span class="sc">}</span><span class="vs">`</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-7" title="7">  <span class="cf">return</span> <span class="at">waysToReturnChange</span>( denominations<span class="op">,</span> numOfCoins<span class="op">,</span> amount <span class="op">-</span> denominations[ numOfCoins ] ) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="at">waysToReturnChange</span>( denominations<span class="op">,</span> numOfCoins <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> amount )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="kw">function</span> <span class="at">waysToReturnMemoize</span> ( amount<span class="op">,</span> denominations ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-11" title="11">  <span class="co">// intialize an array of zeros with indices up to amount</span></a>
+<a class="sourceLine" id="cb1-12" title="12">  <span class="kw">var</span> waysOfDoingNcents <span class="op">=</span> []<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-13" title="13">  <span class="cf">for</span> ( <span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;=</span> amount<span class="op">;</span> i<span class="op">++</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-14" title="14">    waysOfDoingNcents[ i ] <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-15" title="15">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-16" title="16">  <span class="co">// there is 1 way to renturn 0 cents</span></a>
+<a class="sourceLine" id="cb1-17" title="17">  waysOfDoingNcents[ <span class="dv">0</span> ] <span class="op">=</span> <span class="dv">1</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-18" title="18">  <span class="cf">for</span> ( <span class="kw">var</span> j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> <span class="va">denominations</span>.<span class="at">length</span><span class="op">;</span> j<span class="op">++</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-19" title="19">    <span class="co">//  can only start returning change with coins in our denominations</span></a>
+<a class="sourceLine" id="cb1-20" title="20">    <span class="kw">var</span> coin <span class="op">=</span> denominations[ j ]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-21" title="21">    <span class="co">//  start bottom up, each time reducing change amout with curr coin.</span></a>
+<a class="sourceLine" id="cb1-22" title="22">    <span class="cf">for</span> ( <span class="kw">var</span> higherAmount <span class="op">=</span> coin<span class="op">;</span> higherAmount <span class="op">&lt;=</span> amount<span class="op">;</span> higherAmount<span class="op">++</span> ) <span class="op">{</span></a>
+<a class="sourceLine" id="cb1-23" title="23">      <span class="kw">var</span> higherAmountRemainder <span class="op">=</span> higherAmount <span class="op">-</span> coin<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-24" title="24">      <span class="co">// ways to create change is equivalent to reducing the problem to a known problem</span></a>
+<a class="sourceLine" id="cb1-25" title="25">      <span class="co">// and gaining all the ways to solve for smaller problems</span></a>
+<a class="sourceLine" id="cb1-26" title="26">      waysOfDoingNcents[ higherAmount ] <span class="op">+=</span> waysOfDoingNcents[ higherAmountRemainder ]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-27" title="27">    <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-28" title="28">  <span class="op">}</span></a>
+<a class="sourceLine" id="cb1-29" title="29">  <span class="cf">return</span> waysOfDoingNcents[ amount ]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-30" title="30"><span class="op">}</span></a>
+<a class="sourceLine" id="cb1-31" title="31"><span class="kw">var</span> denominations <span class="op">=</span> [ <span class="dv">1</span><span class="op">,</span> <span class="dv">2</span><span class="op">,</span> <span class="dv">3</span> ]<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-32" title="32"><span class="kw">var</span> amount <span class="op">=</span> <span class="dv">4</span><span class="op">;</span></a>
+<a class="sourceLine" id="cb1-33" title="33"><span class="va">console</span>.<span class="at">time</span>( <span class="st">&quot;answer time&quot;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-34" title="34"><span class="va">console</span>.<span class="at">log</span>( <span class="at">waysToReturnChange</span>( denominations<span class="op">,</span> <span class="va">denominations</span>.<span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">,</span> amount ) )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-35" title="35"><span class="va">console</span>.<span class="at">timeEnd</span>( <span class="st">&quot;answer time&quot;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-36" title="36"><span class="va">console</span>.<span class="at">time</span>( <span class="st">&quot;answer time1&quot;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-37" title="37"><span class="va">console</span>.<span class="at">log</span>( <span class="at">waysToReturnMemoize</span>( amount<span class="op">,</span> denominations ) )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-38" title="38"><span class="va">console</span>.<span class="at">timeEnd</span>( <span class="st">&quot;answer time1&quot;</span> )<span class="op">;</span></a>
+<a class="sourceLine" id="cb1-39" title="39"><span class="co">/*</span></a>
+<a class="sourceLine" id="cb1-40" title="40"><span class="co">node memo-coin-change.js</span></a>
+<a class="sourceLine" id="cb1-41" title="41"><span class="co">checking ways to make 4 with 3</span></a>
+<a class="sourceLine" id="cb1-42" title="42"><span class="co">checking ways to make 1 with 3</span></a>
+<a class="sourceLine" id="cb1-43" title="43"><span class="co">checking ways to make 1 with 2,3</span></a>
+<a class="sourceLine" id="cb1-44" title="44"><span class="co">checking ways to make 1 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-45" title="45"><span class="co">checking ways to make 4 with 2,3</span></a>
+<a class="sourceLine" id="cb1-46" title="46"><span class="co">checking ways to make 2 with 2,3</span></a>
+<a class="sourceLine" id="cb1-47" title="47"><span class="co">checking ways to make 2 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-48" title="48"><span class="co">checking ways to make 1 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-49" title="49"><span class="co">node memo-coin-change.js</span></a>
+<a class="sourceLine" id="cb1-50" title="50"><span class="co">checking ways to make 4 with 3</span></a>
+<a class="sourceLine" id="cb1-51" title="51"><span class="co">checking ways to make 1 with 3</span></a>
+<a class="sourceLine" id="cb1-52" title="52"><span class="co">checking ways to make 1 with 2,3</span></a>
+<a class="sourceLine" id="cb1-53" title="53"><span class="co">checking ways to make 1 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-54" title="54"><span class="co">checking ways to make 4 with 2,3</span></a>
+<a class="sourceLine" id="cb1-55" title="55"><span class="co">checking ways to make 2 with 2,3</span></a>
+<a class="sourceLine" id="cb1-56" title="56"><span class="co">checking ways to make 2 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-57" title="57"><span class="co">checking ways to make 1 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-58" title="58"><span class="co">checking ways to make 4 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-59" title="59"><span class="co">checking ways to make 3 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-60" title="60"><span class="co">checking ways to make 2 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-61" title="61"><span class="co">checking ways to make 1 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-62" title="62"><span class="co">4</span></a>
+<a class="sourceLine" id="cb1-63" title="63"><span class="co">answer time: 24.948ms</span></a>
+<a class="sourceLine" id="cb1-64" title="64"><span class="co">4</span></a>
+<a class="sourceLine" id="cb1-65" title="65"><span class="co">answer time1: 0.386ms</span></a>
+<a class="sourceLine" id="cb1-66" title="66"><span class="co">\___________________________________________________</span></a>
+<a class="sourceLine" id="cb1-67" title="67"><span class="co">bryan_dir:coinchange-memoized_exitstatus:0 ====&gt;</span></a>
+<a class="sourceLine" id="cb1-68" title="68"><span class="co">checking ways to make 4 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-69" title="69"><span class="co">checking ways to make 3 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-70" title="70"><span class="co">checking ways to make 2 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-71" title="71"><span class="co">checking ways to make 1 with 1,2,3</span></a>
+<a class="sourceLine" id="cb1-72" title="72"><span class="co">4</span></a>
+<a class="sourceLine" id="cb1-73" title="73"><span class="co">answer time: 24.948ms</span></a>
+<a class="sourceLine" id="cb1-74" title="74"><span class="co">4</span></a>
+<a class="sourceLine" id="cb1-75" title="75"><span class="co">answer time1: 0.386ms</span></a>
+<a class="sourceLine" id="cb1-76" title="76"><span class="co">\___________________________________________________</span></a>
+<a class="sourceLine" id="cb1-77" title="77"><span class="co">bryan_dir:coinchange-memoized_exitstatus:0 ====&gt;</span></a>
+<a class="sourceLine" id="cb1-78" title="78"><span class="co">*/</span></a></code></pre></div>

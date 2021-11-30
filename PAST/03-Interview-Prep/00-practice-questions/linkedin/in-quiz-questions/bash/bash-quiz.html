@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>bash-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="bash-assessment">Bash Assessment</h2>
+<h4 id="q1.-which-of-the-three-methods-will-copy-the-directory-named-photo-dir-recursively-from-the-users-home-directory-to-backups">Q1. Which of the three methods will copy the directory named “photo dir” recursively from the user’s home directory to /backups?</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">cp</span> -R <span class="st">&quot;~/photo dir&quot;</span> /backups <span class="co">#method1</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="fu">cp</span> -R ~<span class="st">&quot;/photo dir&quot;</span> /backups <span class="co">#method2</span></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="fu">cp</span> -R ~/<span class="st">&quot;photo dir&quot;</span> /backups <span class="co">#method3</span></a></code></pre></div>
+<ul>
+<li>[ ] None of the three methods will expand to the user’s home directory. Only using <code>"$HOME/photo dir"</code>will be successful.</li>
+<li>[ ] Only method 1 will expand <code>"~/"</code> to the user’s home directory and then append the quoted directory name that includes a space.</li>
+<li>[ ] Only method 2 will expand <code>"~/"</code> to the user’s home directory and then append the quoted directory name that includes a space.</li>
+<li>[x] Only method 3 will expand <code>"~/"</code> to the user’s home directory and then append the quoted directory name that includes a space.</li>
+</ul>
+<h4 id="q2.-if-script.sh-is-run-in-the-current-directory-it-will-fail.-why">Q2. If script.sh is run in the current directory, it will fail. Why?</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1">$ <span class="fu">ls</span> -1</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="ex">Beach</span> photo1.jpg</a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="ex">Photo1.jpg</span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="ex">Photo2.jpg</span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="ex">Script.sh</span></a>
+<a class="sourceLine" id="cb2-6" title="6"></a>
+<a class="sourceLine" id="cb2-7" title="7">$ <span class="fu">cat</span> script.sh</a>
+<a class="sourceLine" id="cb2-8" title="8"><span class="kw">for</span> <span class="ex">i</span> in <span class="va">$(</span><span class="fu">ls</span> *.jpg<span class="va">)</span><span class="kw">;</span> <span class="kw">do</span></a>
+<a class="sourceLine" id="cb2-9" title="9">    <span class="fu">mv</span> <span class="va">$i</span> <span class="va">${i}</span>.bak</a>
+<a class="sourceLine" id="cb2-10" title="10"><span class="kw">done</span></a></code></pre></div>
+<ul>
+<li>[ ] ls: cannot access nonexistentfile: No such file or directory</li>
+<li>[x] The for loop will split on word boundaries and Beach photo1.jpg has a space in it.</li>
+<li>[ ] The mv command will fail because the curly bracket is a special character in Bash and cannot be used in the names of files.</li>
+<li>[ ] Running script.sh will be successful as the ls command builds a list of files in the current directory and for loops through that list renaming files with a .bak extension.</li>
+</ul>
+<h4 id="q3.-to-run-a-copy-command-in-a-subshell-which-syntax-would-you-use">Q3. To run a copy command in a subshell, which syntax would you use?</h4>
+<ul>
+<li>[x] <code>( command )</code></li>
+<li>[ ] <code>sh command</code></li>
+<li>[ ] <code>{ command; }</code></li>
+<li>[ ] <code>(( command ))</code></li>
+</ul>
+<h4 id="q4.-using-awk-what-would-the-output-of-this-command-string-be">Q4. Using “awk”, what would the output of this command string be?</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="bu">echo</span> <span class="st">&quot;1 2 3&quot;</span> <span class="kw">|</span> <span class="fu">awk</span> <span class="st">&#39;{for (i=1; i&lt;=NF; i++) s=s+$i};END {print s}&#39;</span></a></code></pre></div>
+<ul>
+<li>[x] 6</li>
+<li>[ ] 123</li>
+<li>[ ] 3</li>
+<li>[ ] 600</li>
+</ul>
+<h4 id="q5.-the-command-below-will-search-the-root-filesystem-for-files-named-finance.db.-in-this-context-what-information-is-being-sent-to-devnull">Q5. The command below will search the root filesystem for files named “finance.db”. In this context, what information is being sent to /dev/null?</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="fu">find</span> / -name <span class="st">&quot;finance.db&quot;</span> <span class="op">1&gt;</span>results.txt <span class="op">2&gt;</span>/dev/null</a></code></pre></div>
+<ul>
+<li>[ ] the names of files that do not match finance.db</li>
+<li>[x] information sent to the standard error-for example, errors that the find command displays as it runs</li>
+<li>[ ] the names of files that match finance.db</li>
+<li>[ ] information sent to the standard output-that is, the path to files the find command has located</li>
+</ul>
+<h4 id="q6.-to-permanently-remove-empty-lines-from-a-file-called-textfile-which-command-could-you-use">Q6. To permanently remove empty lines from a file called textfile, which command could you use?</h4>
+<ul>
+<li>[x] <code>sed -i '/^$/d' textfile</code></li>
+<li>[ ] <code>sed '/^$/d' textfile</code></li>
+<li>[ ] <code>cat textfile | sed '/^$/d</code></li>
+<li>[ ] <code>sed -i 's/^$//' textfile</code></li>
+</ul>
+<h4 id="q7.-assuming-that-user1-existed-what-would-be-the-result-of-this-command-string">Q7. Assuming that user1 existed, what would be the result of this command string?</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="fu">awk</span> -F: <span class="st">&#39;/user1/{print $1 &quot;-&quot; $3 &quot;-&quot; $6}&#39;</span> /etc/passwd</a></code></pre></div>
+<ul>
+<li>[ ] It would show the username, UID, and home directory of user1 separated by colons.</li>
+<li>[ ] It would print the UID, GID, and home directory of user1 separated by hyphens.</li>
+<li>[ ] It would print the UID, comment, and home directory of user1 separated by hyphens.</li>
+<li>[x] It would show the username, UID, and home directory of user1 separated by hyphens.</li>
+</ul>
+<h4 id="q8.-what-happens-if-you-use-the-set--e-in-a-bash-script">Q8. What happens if you use the <code>"set -e"</code> in a Bash script?</h4>
+<ul>
+<li>[ ] It will cause Bash to exit if a function or subshell returns a nonzero status code.</li>
+<li>[ ] It will cause Bash to exit if a conditional returns a non-zero status code.</li>
+<li>[ ] It will cause Bash to exit if local, declare, or typeset assignments return a nonzero status code.</li>
+<li>[x] It will cause Bash to exit if a command, list of commands, compound command, or potentially a pipeline returns a nonzero status code.</li>
+</ul>
+<h4 id="q9.-the-__-keyword-pauses-the-script-to-get-input-from-standard-input.">Q9. The <strong>__</strong> keyword pauses the script to get input from standard input.</h4>
+<ul>
+<li>[ ] get</li>
+<li>[ ] argument</li>
+<li>[x] read</li>
+<li>[ ] input</li>
+</ul>
+<h4 id="q10.-if-file.sql-holds-sql-statements-to-be-executed-what-will-be-in-file.txt">Q10. If file.sql holds SQL statements to be executed, what will be in file.txt?</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">mysql</span> <span class="op">&lt;</span> file.sql <span class="op">&gt;</span> file.txt</a></code></pre></div>
+<ul>
+<li>[ ] a copy of the contents of file.sql</li>
+<li>[ ] an error indicating that this is invalid syntax</li>
+<li>[ ] the error output of the MySQL command</li>
+<li>[x] the non-error output of the MySQL command</li>
+</ul>
+<h4 id="q11.-how-does-the-suid-or-setuid-affect-executable-commands">Q11. How does the SUID or setuid affect executable commands?</h4>
+<ul>
+<li>[ ] When the command creates files, they will be owned by the group owner of the command.</li>
+<li>[ ] The SUID bit allows anyone to execute the command no matter what other permissions are set.</li>
+<li>[x] When the command is executed, its running privileges elevate to the user owner of the command.</li>
+<li>[ ] When the command is executed, its running privileges elevate to the group owner of the command.</li>
+</ul>
+<h4 id="q12.-in-order-to-extract-text-from-the-first-column-of-file-called-textfile-which-command-would-you-use">Q12. In order to extract text from the first column of file called textfile, which command would you use?</h4>
+<ul>
+<li>[ ] <code>cat {$1,textfile}</code></li>
+<li>[ ] <code>cat textfile | awk [print $1]</code></li>
+<li>[x] <code>cat textfile | awk '{print $1}'</code></li>
+<li>[ ] <code>awk textfile {print $1}</code></li>
+</ul>
+<h4 id="q13.-what-is-the-keyboard-shortcut-to-call-up-the-bash-history-search-as-shown-below">Q13. What is the keyboard shortcut to call up the Bash history search as shown below?</h4>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">(</span><span class="ex">reverse-i-search</span><span class="kw">)`</span><span class="st">&#39;:</span></a></code></pre></div>
+<ul>
+<li>[ ] Esc + R</li>
+<li>[ ] Ctrl + H</li>
+<li>[x] Ctrl + R</li>
+<li>[ ] Alt + R</li>
+</ul>
+<h4 id="q14.-which-arithmetic-expression-will-give-the-most-precise-answer">Q14. Which arithmetic expression will give the most precise answer?</h4>
+<ul>
+<li>[ ] <code>var=$( expr 10 / 8 )</code></li>
+<li>[ ] <code>(( var= 10 /8 ))</code></li>
+<li>[ ] <code>var=$(( 10 / 8 ))</code></li>
+<li>[x] <code>var=$(echo 'scale=2; 10 / 8' | bc)</code></li>
+</ul>
+<h4 id="q15.-what-is-the-result-of-this-script">Q15. What is the result of this script?</h4>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="va">txt=</span>Penguins</a>
+<a class="sourceLine" id="cb8-2" title="2"><span class="kw">[[</span> <span class="va">$txt</span> =~ [a-z]<span class="dt">{8}</span><span class="kw"> ]]</span>; <span class="bu">echo</span> <span class="va">$?</span></a></code></pre></div>
+<ul>
+<li>[ ] 0, representing ‘true’, because the variable “txt” contains eight letters</li>
+<li>[ ] 0, representing ‘true’, because everybody loves penguins!</li>
+<li>[ ] 1, representing ‘false’, because the variable “txt” is longer than eight characters</li>
+<li>[x] 1, representing ‘false’, because the variable “txt” does not contain eight lowercase letters between a and z</li>
+</ul>
+<h4 id="q16.-how-would-you-change-your-bash-shell-prompt-to-the-following">Q16. How would you change your Bash shell prompt to the following?</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">HAL</span><span class="op">&gt;</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>SHELL="HAL\&gt;"</code></li>
+<li>[ ] <code>SHELL="HAL&gt;"</code></li>
+<li>[x] <code>export PS1="HAL&gt;"</code></li>
+<li>[ ] <code>PS1="HAL\&gt;"</code></li>
+</ul>
+<h4 id="q17.-what-is-the-output-of-this-code">Q17. What is the output of this code?</h4>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="va">VAR=</span><span class="st">&quot;/var/www/html/website.com/html/&quot;</span></a>
+<a class="sourceLine" id="cb10-2" title="2"><span class="bu">echo</span> <span class="st">&quot;</span><span class="va">${VAR#</span>*/html<span class="va">}</span><span class="st">&quot;</span></a></code></pre></div>
+<ul>
+<li>[x] <code>/website.com/html/</code></li>
+<li>[ ] <code>/html/website.com/html/</code></li>
+<li>[ ] <code>/var/www/html/website.com/</code></li>
+<li>[ ] Nothing will be echoed on the screen.</li>
+</ul>
+<h4 id="q18.-if-prompted-for-text-at-the-standard-input-you-can-tell-the-command-youre-done-entering-text-with-what-key-combination">Q18. If prompted for text at the standard input, you can tell the command you’re done entering text with what key combination?</h4>
+<ul>
+<li>[ ] Ctrl + A (Windows) or Command + A (Mac)</li>
+<li>[ ] Ctrl + E (Windows) or Command + E (Mac)</li>
+<li>[x] Ctrl + D (Windows) or Command + D (Mac)</li>
+<li>[ ] Ctrl + Z (Windows) or Command + Z (Mac)</li>
+</ul>
+<h4 id="q19.-in-order-for-a-bash-script-to-be-executed-like-an-os-command-it-should-start-with-a-shebang-line.-what-does-this-look-like">Q19. In order for a Bash script to be executed like an OS command, it should start with a shebang line. What does this look like?</h4>
+<ul>
+<li>[x] <code>#!/usr/bin/env bash</code></li>
+<li>[ ] <code>~/usr/bin/env bash</code></li>
+<li>[ ] <code>'$!/usr/bin/env bash</code></li>
+<li>[ ] <code>#/usr/bin/env bash</code></li>
+</ul>
+<h4 id="q20.-what-line-of-bash-script-probably-produced-the-output-shown-below">Q20. What line of Bash script probably produced the output shown below?</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb11-1" title="1"><span class="ex">The</span> date is: Sun Mar 24 12:30:06 CST 2019!</a></code></pre></div>
+<ul>
+<li>[ ] <code>echo "The date is: !"</code></li>
+<li>[ ] <code>echo "The date is: date!"</code></li>
+<li>[ ] <code>echo "The date is: (date)!"</code></li>
+<li>[x] <code>echo "The date is: $(date)!"</code></li>
+</ul>
+<h4 id="q21.-suppose-your-current-working-directory-is-your-home-directory.-how-could-you-run-the-script-demo.sh-that-is-located-in-your-home-directory-find-three-correct-answers.">Q21. Suppose your current working directory is your home directory. How could you run the script demo.sh that is located in your home directory? Find three correct answers.</h4>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb12-1" title="1"><span class="ex">A.</span> /home/demo.sh</a>
+<a class="sourceLine" id="cb12-2" title="2"><span class="ex">B.</span> ./demo.sh</a>
+<a class="sourceLine" id="cb12-3" title="3"><span class="ex">C.</span> ~/demo.sh</a>
+<a class="sourceLine" id="cb12-4" title="4"><span class="ex">D.</span> bash /home/demo.sh</a>
+<a class="sourceLine" id="cb12-5" title="5"><span class="ex">E.</span> bash demo.sh</a></code></pre></div>
+<ul>
+<li>[x] B, C, E</li>
+<li>[ ] A, B, C</li>
+<li>[ ] C, D, E</li>
+<li>[ ] B, D, E</li>
+</ul>
+<h4 id="q22.-how-could-you-get-a-list-of-all-.html-files-in-your-tree">Q22. How could you get a list of all .html files in your tree?</h4>
+<h4 id="idk-both-of-them-work">Idk both of them work</h4>
+<ul>
+<li>[ ] <code>find . -type html</code></li>
+<li>[x] <code>find . -name *.html</code></li>
+<li>[ ] <code>find *.html</code></li>
+<li>[x] <code>find . -name \*.html -print</code></li>
+</ul>
+<h4 id="q23.-what-would-be-in-out.txt">Q23. What would be in out.txt?</h4>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb13-1" title="1"><span class="fu">cat</span> <span class="op">&lt;</span> in.txt <span class="op">&gt;</span> out.txt</a></code></pre></div>
+<ul>
+<li>[ ] The output from the command line. By default STDIN comes from the keyboard.</li>
+<li>[ ] Nothing because you can’t redirect from file (in.txt) to another file (out.txt). You can only redirect from a command to a file.</li>
+<li>[x] It would be the contents of in.txt.</li>
+<li>[ ] Nothing. The redirect will create a new empty file but there will not be any output from the cat command to redirect.</li>
+</ul>
+<h4 id="q24.-what-does-this-bash-statement-do">Q24. What does this bash statement do?</h4>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb14-1" title="1"><span class="kw">((</span> <span class="va">$a</span> == <span class="va">$b</span> <span class="kw">))</span></a>
+<a class="sourceLine" id="cb14-2" title="2"><span class="bu">echo</span> <span class="va">$?</span></a></code></pre></div>
+<ul>
+<li>[ ] It loops between the values of <code>$a</code> and <code>$b</code>.</li>
+<li>[x] It tests whether the values of variables <code>$a</code> and <code>$b</code> are equal.</li>
+<li>[ ] It returns <code>$b</code> if it is larger than <code>$a</code>.</li>
+<li>[ ] It returns <code>$a</code> if it is larger than <code>$b</code>.</li>
+</ul>
+<h4 id="q25.-what-do-you-use-in-a-case-statement-to-tell-bash-that-youre-done-with-a-specific-test">Q25. What do you use in a case statement to tell Bash that you’re done with a specific test?</h4>
+<ul>
+<li>[x] <code>; ;</code></li>
+<li>[ ] <code>: :</code></li>
+<li>[ ] <code>done</code></li>
+<li>[ ] <code>$$</code></li>
+</ul>
+<h4 id="q26.-what-does-the-asterisk-represent-in-this-statement">Q26. What does the asterisk represent in this statement?</h4>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb15-1" title="1"><span class="op">&lt;</span><span class="ex">em</span><span class="op">&gt;</span>#!/usr/bin/env bash<span class="op">&lt;</span>/em<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb15-2" title="2"><span class="kw">case</span> <span class="va">$num</span><span class="kw"> in</span></a>
+<a class="sourceLine" id="cb15-3" title="3">    1<span class="kw">)</span></a>
+<a class="sourceLine" id="cb15-4" title="4">    <span class="bu">echo</span> <span class="st">&quot;one&quot;</span></a>
+<a class="sourceLine" id="cb15-5" title="5">    ; ;</a>
+<a class="sourceLine" id="cb15-6" title="6">    <span class="ex">2</span>)</a>
+<a class="sourceLine" id="cb15-7" title="7">    <span class="bu">echo</span> <span class="st">&quot;two&quot;</span></a>
+<a class="sourceLine" id="cb15-8" title="8">    ; ;</a>
+<a class="sourceLine" id="cb15-9" title="9">    <span class="ex">*</span>)</a>
+<a class="sourceLine" id="cb15-10" title="10">    <span class="bu">echo</span> <span class="st">&quot;a mystery&quot;</span></a>
+<a class="sourceLine" id="cb15-11" title="11">    ; ;</a>
+<a class="sourceLine" id="cb15-12" title="12"><span class="kw">esac</span></a></code></pre></div>
+<ul>
+<li>[x] a case that matches any value, providing a default option if nothing else catches that value</li>
+<li>[ ] a case only for what happens when the asterisk character is passed into the script</li>
+<li>[ ] the action of all of the other cases combined together</li>
+<li>[ ] an action that is taken for any input, even if it matches a specified condition</li>
+</ul>
+<h4 id="q27.-what-bash-script-will-correctly-create-these-files">Q27. What Bash script will correctly create these files?</h4>
+<ul>
+<li>[ ] <code>touch file{1+10}.txt</code></li>
+<li>[ ] <code>touch file{1-10}.txt</code></li>
+<li>[x] <code>touch file{1..10}.txt</code></li>
+<li>[ ] <code>touch file(1..10).txt</code></li>
+</ul>
+<h4 id="q28.-which-variable-would-you-check-to-verify-that-the-last-command-executed-successfully">Q28. Which variable would you check to verify that the last command executed successfully?</h4>
+<ul>
+<li>[ ] <code>$$</code></li>
+<li>[x] <code>$?</code></li>
+<li>[ ] <code>$!</code></li>
+<li>[ ] <code>$@</code></li>
+</ul>
+<p>#WARNING! Start from this question and to Q40 I have a lot of doubts about answers because in real assessment I get these 12 question + 3 from Q1 to Q28, and I select other answers in Q29, Q31, Q32, Q35, Q36, Q37, Q39, Q40 and pass it</p>
+<h4 id="q29.-what-is-the-output-of-this-script">Q29. What is the output of this script?</h4>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb16-1" title="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb16-2" title="2"><span class="va">fname=</span>john</a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="va">john=</span>thomas</a>
+<a class="sourceLine" id="cb16-4" title="4"><span class="bu">echo</span> <span class="va">${!fname}</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>john</code></li>
+<li>[x] <code>thomas</code></li>
+<li>[ ] <code>Syntax error</code></li>
+<li>[ ] <code>blank</code></li>
+</ul>
+<h4 id="q30.-what-will-be-the-output-of-this-script">Q30. What will be the output of this script?</h4>
+<figure>
+<img src="questionimages/Q30/question.png" alt="question" /><figcaption>question</figcaption>
+</figure>
+<ul>
+<li>[ ] <code>A</code> <img src="questionimages/Q30/A.png" alt="A" /></li>
+<li>[ ] <code>B</code> <img src="questionimages/Q30/B.png" alt="B" /></li>
+<li>[x] <code>C</code> <img src="questionimages/Q30/C.png" alt="C" /></li>
+<li>[ ] <code>D</code> <img src="questionimages/Q30/D.png" alt="D" /></li>
+</ul>
+<p>Here a text based version of Q.30:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb17-1" title="1"><span class="ex">ll</span></a>
+<a class="sourceLine" id="cb17-2" title="2"><span class="ex">-rw-r--r--</span> 1 frankmolev staff 374 Jun 3 19:30 .</a>
+<a class="sourceLine" id="cb17-3" title="3"><span class="ex">-rw-r--r--</span> 1 frankmolev staff 1666 Jun 3 19:30 ..</a>
+<a class="sourceLine" id="cb17-4" title="4"><span class="ex">-rw-r--r--</span> 1 frankmolev staff 0 Jun 3 19:30 file1.txt</a>
+<a class="sourceLine" id="cb17-5" title="5"><span class="ex">-rw-r--r--</span> 1 frankmolev staff 0 Jun 3 19:30 file2.txt</a>
+<a class="sourceLine" id="cb17-6" title="6"><span class="ex">..</span></a>
+<a class="sourceLine" id="cb17-7" title="7"></a>
+<a class="sourceLine" id="cb17-8" title="8"><span class="ex">ll</span> <span class="kw">|</span> <span class="fu">sed</span> -e <span class="st">&#39;s,file,text,g&#39;</span></a></code></pre></div>
+<ul>
+<li>[ ] A</li>
+</ul>
+<pre><code>  -rw-r--r-- 1 frankmolev staff 374 Jun 3 19:30 .
+  -rw-r--r-- 1 frankmolev staff 1666 Jun 3 19:30 ..
+  -rw-r--r-- 1 frankmolev staff 0 Jun 3 19:30 file1.file
+  -rw-r--r-- 1 frankmolev staff 0 Jun 3 19:30 file2.file
+  ..</code></pre>
+<ul>
+<li>[ ] B</li>
+</ul>
+<pre><code>  -rw-r--r-- 1 frankmolev staff 374 Jun 3 19:30 .
+  -rw-r--r-- 1 frankmolev staff 1666 Jun 3 19:30 ..
+  -rw-r--r-- 1 frankmolev staff 0 Jun 3 19:30 file1.txt
+  -rw-r--r-- 1 frankmolev staff 0 Jun 3 19:30 file2.txt
+  ..</code></pre>
+<ul>
+<li>[ ] C</li>
+</ul>
+<pre><code>  -rw-r--r-- 1 frankmolev staff 68 Jun 3 19:30 .
+  -rw-r--r-- 1 frankmolev staff 1666 Jun 3 19:30 ..</code></pre>
+<ul>
+<li>[x] D</li>
+</ul>
+<pre><code>-rw-r--r-- 1 frankmolev staff 374 Jun 3 19:30 .
+-rw-r--r-- 1 frankmolev staff 1666 Jun 3 19:30 ..
+-rw-r--r-- 1 frankmolev staff 0 Jun 3 19:30 text1.txt
+-rw-r--r-- 1 frankmolev staff 0 Jun 3 19:30 text.txt
+..</code></pre>
+<h4 id="q31.-what-is-wrong-with-this-script">Q31. What is wrong with this script?</h4>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb22-1" title="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb22-2" title="2"><span class="bu">read</span> -p <span class="st">&quot;Enter your pet type.&quot;</span> <span class="va">PET</span></a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="kw">if</span><span class="bu"> [</span> <span class="va">$PET</span> <span class="ot">=</span> dog<span class="bu"> ]</span> ;<span class="kw">then</span></a>
+<a class="sourceLine" id="cb22-4" title="4">    <span class="bu">echo</span> <span class="st">&quot;You have a dog&quot;</span></a>
+<a class="sourceLine" id="cb22-5" title="5"><span class="kw">fi</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>If the value of PET doesn't match dog, the script will return a nonzero status code.</code></li>
+<li>[ ] <code>There is nothing wrong with it. The condition checks the value of PET perfectly.</code></li>
+<li>[x] <code>It will fail if the user hits the Enter (Return) key without entering a pet name when prompted.</code></li>
+<li>[ ] <code>The then statement needs to be on a separate line.</code></li>
+</ul>
+<h4 id="q32.-how-can-you-gather-history-together-for-multiple-terminals">Q32. How can you gather history together for multiple terminals?</h4>
+<ul>
+<li>[ ] <code>It just works by default.</code></li>
+<li>[ ] <code>history --shared</code></li>
+<li>[ ] <code>history --combined</code></li>
+<li>[x] <code>shopt -s histappend</code></li>
+</ul>
+<h4 id="q33.-what-is-the-difference-between-the-and-variables">Q33. What is the difference between the $@ and $* variables?</h4>
+<ul>
+<li>[x] <code>$@ treats each quoted argument as a separate entity. $* treats the entire argument string as one entity.</code></li>
+<li>[ ] <code>$* treats each quoted argument as a separate entity. $@ treats the entire argument string as one entity.</code></li>
+<li>[ ] <code>$* is used to count the arguments passed to a script, $@ provides all arguments in one string.</code></li>
+<li>[ ] <code>$* is the wildcard that includes all arguments with word splitting, $@ holds the same data but in an array.</code></li>
+</ul>
+<h4 id="q34.-which-command-is-being-run-in-this-script-to-check-if-file.txt-exists">Q34. Which command is being run in this script to check if file.txt exists?</h4>
+<div class="sourceCode" id="cb23"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb23-1" title="1"><span class="kw">if</span><span class="bu"> [</span> <span class="ot">-f</span> file.txt<span class="bu"> ]</span>; <span class="kw">then</span></a>
+<a class="sourceLine" id="cb23-2" title="2">    <span class="bu">echo</span> <span class="st">&quot;file.txt exists&quot;</span></a>
+<a class="sourceLine" id="cb23-3" title="3"><span class="kw">fi</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>/usr/bin/test</code></li>
+<li>[ ] <code>/usr/bin/[</code></li>
+<li>[x] <code>the built-in [ command</code></li>
+<li>[ ] <code>/usr/bin/[[</code></li>
+</ul>
+<h4 id="q35.-what-will-be-the-output-of-this-script">Q35. What will be the output of this script?</h4>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb24-1" title="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb24-2" title="2"><span class="va">Linux=(</span><span class="st">&#39;Debian&#39;</span> <span class="st">&#39;Redhat&#39;</span> <span class="st">&#39;Ubuntu&#39;</span> <span class="st">&#39;Android&#39;</span> <span class="st">&#39;Fedora&#39;</span> <span class="st">&#39;Suse&#39;</span><span class="va">)</span></a>
+<a class="sourceLine" id="cb24-3" title="3"><span class="va">x=</span>3</a>
+<a class="sourceLine" id="cb24-4" title="4"></a>
+<a class="sourceLine" id="cb24-5" title="5"><span class="va">Linux=(${Linux[@]:0:$x}</span> <span class="va">${Linux[@]:$(($x</span> + 1<span class="va">))})</span></a>
+<a class="sourceLine" id="cb24-6" title="6"><span class="bu">echo</span> <span class="st">&quot;</span><span class="va">${Linux[@]}</span><span class="st">&quot;</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>Debian Redhat Ubuntu Android Fedora Suse</code></li>
+<li>[ ] <code>Android</code></li>
+<li>[ ] <code>Fedora Suse</code></li>
+<li>[x] <code>Debian Redhat Ubuntu Fedora Suse</code></li>
+</ul>
+<h4 id="q36.-which-file-allows-you-to-save-modifications-to-the-shell-environment-across-sessions">Q36. Which file allows you to save modifications to the shell environment across sessions?</h4>
+<ul>
+<li>[ ] <code>/etc/bash.conf</code></li>
+<li>[x] <code>~/.profile</code></li>
+<li>[ ] <code>/etc/bashprofile</code></li>
+<li>[ ] <code>~/profile</code></li>
+</ul>
+<h4 id="q37.-given-the-listed-permissions-on-data.txt-is-it-possible-that-user2-could-have-read-write-and-execute-permissions-on-data.txt">Q37. Given the listed permissions on data.txt is it possible that user2 could have read, write, and execute permissions on data.txt?</h4>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb25-1" title="1">$ <span class="fu">ls</span> -l</a>
+<a class="sourceLine" id="cb25-2" title="2"><span class="ex">total</span> 0</a>
+<a class="sourceLine" id="cb25-3" title="3"><span class="ex">-rwx------+</span> 1 user1 user1 0 Oct 27 10:54 data.txt</a></code></pre></div>
+<ul>
+<li>[ ] <code>No, it's clear that user2 does not have read, write, and execute permissions.</code></li>
+<li>[x] <code>Yes, the + at the end of the 10-digit permission string signifies there's an access control list. This could possibly give user2 permissions not visible by ls -l.</code></li>
+<li>[ ] <code>It's possible that SELinux provides read, write, and execute permissions for user2 which are not visible with ls -l.</code></li>
+<li>[ ] <code>Yes, the + at the end of the 10-digit permission string signifies there's an extended attribute set. This could give user2 permissions to read, write, and execute data.txt.</code></li>
+</ul>
+<h4 id="q38.-what-does-this-script-accomplish">Q38. What does this script accomplish?</h4>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb26-1" title="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb26-2" title="2"><span class="bu">declare</span> -A <span class="va">ARRAY=([user1]=</span>bob <span class="va">[user2]=</span>ted <span class="va">[user3]=</span>sally<span class="va">)</span></a>
+<a class="sourceLine" id="cb26-3" title="3"><span class="va">KEYS=(${!ARRAY[@]})</span></a>
+<a class="sourceLine" id="cb26-4" title="4"></a>
+<a class="sourceLine" id="cb26-5" title="5"><span class="kw">for</span> <span class="kw">((</span> i=0; <span class="va">$i</span> &lt; <span class="va">${#ARRAY[@]}</span>; i+=1 <span class="kw">))</span>;<span class="kw">do</span></a>
+<a class="sourceLine" id="cb26-6" title="6">        <span class="bu">echo</span> <span class="va">${KEYS[$i]}</span> - <span class="va">${ARRAY[${KEYS[$i]}]}</span></a>
+<a class="sourceLine" id="cb26-7" title="7"><span class="kw">done</span></a></code></pre></div>
+<ul>
+<li>[ ] <code>It sorts the associative array named ARRAY and stores the results in an indexed array named KEYS. It then uses this sorted array to loop through the associative array ARRAY.</code></li>
+<li>[x] <code>Using a C-style for loop, it loops through the associative array named ARRAY using the associative array's keys and outputs both the key and values for each item.</code></li>
+<li>[ ] <code>It creates an indexed array of the associative array named ARRAY. It then uses a C-style for loop and the indexed array to loop through all items in the associative array, outputting the key and value of each array item using the index number.</code></li>
+<li>[ ] <code>It creates an associative array named ARRAY, which it loops through using a C-style for loop and the index numbers of each item in the associative array's keys, outputting the value of each item.</code></li>
+</ul>
+<h4 id="q39.-what-file-would-match-the-code-below">Q39. What file would match the code below?</h4>
+<div class="sourceCode" id="cb27"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb27-1" title="1"><span class="fu">ls</span> Hello[[.vertical-line.]]World</a></code></pre></div>
+<p>It’s matches also <code>Hello[[.vertical-line.]]World</code> file but if we have this and <code>Hello|World</code> file will always be matched last one</p>
+<ul>
+<li>[ ] <code>Nothing, this is an invalid file glob.</code></li>
+<li>[ ] <code>Hello.vertical-line.World</code></li>
+<li>[ ] <code>Hello[[.vertical-line.]]World</code></li>
+<li>[x] <code>Hello|World</code></li>
+</ul>
+<h4 id="q40.-what-will-be-in-out.txt">Q40. What will be in out.txt?</h4>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb28-1" title="1"><span class="fu">ls</span> nonexistentfile <span class="kw">|</span> <span class="fu">grep</span> <span class="st">&quot;No such file&quot;</span> <span class="op">&gt;</span> out.txt</a></code></pre></div>
+<ul>
+<li>[ ] <code>No such file</code></li>
+<li>[ ] <code>ls: cannot access nonexistentfile: No such file or directory</code></li>
+<li>[x] <code>Nothing, out.txt will be empty.</code></li>
+<li>[ ] <code>It will be the contents of nonexistentfile.</code></li>
+</ul>
+<h4 id="q41.-for-the-script-to-print-is-numeric-on-screen-what-would-the-user-have-to-enter-when-prompted">Q41. For the script to print “Is numeric” on screen, what would the user have to enter when prompted?</h4>
+<div class="sourceCode" id="cb29"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb29-1" title="1"><span class="co">#!/bin/bash</span></a>
+<a class="sourceLine" id="cb29-2" title="2"><span class="bu">read</span> -p <span class="st">&quot;Enter text &quot;</span> <span class="va">var</span></a>
+<a class="sourceLine" id="cb29-3" title="3"><span class="kw">if [[</span> <span class="st">&quot;</span><span class="va">$var</span><span class="st">&quot;</span> =~ <span class="st">&quot;^[0-9]+$&quot;</span><span class="kw"> ]]</span>;<span class="kw">then</span></a>
+<a class="sourceLine" id="cb29-4" title="4">    <span class="bu">echo</span> <span class="st">&quot;Is numeric&quot;</span></a>
+<a class="sourceLine" id="cb29-5" title="5"><span class="kw">else</span></a>
+<a class="sourceLine" id="cb29-6" title="6">    <span class="bu">echo</span> <span class="st">&quot;Is not numeric&quot;</span></a>
+<a class="sourceLine" id="cb29-7" title="7"><span class="kw">fi</span></a></code></pre></div>
+<ul>
+<li>[x] Any sequence of characters that includes an integer</li>
+<li>[ ] The user would have to enter the character sequence of <code>^[0-9]]+$</code> Only this will prove to be true and “Is numeric” would be printed on the screen due to incorrect syntax. By encapsulating the regular expression in double quotes every match will fail except the text string <code>^[0-9]+$</code></li>
+<li>[ ] One or more characters that only includes integers</li>
+<li>[ ] Due to a syntax error it is impossible to get the script to print “Is numeric”</li>
+</ul>
+<h4 id="q42.-what-will-be-the-difference-between-the-output-on-the-screen-and-the-contents-of-out.txt">Q42. What will be the difference between the output on the screen and the contents of out.txt</h4>
+<div class="sourceCode" id="cb30"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb30-1" title="1"><span class="ex">mysql</span> <span class="op">&lt;</span> file.sql <span class="op">&gt;</span> out.txt</a></code></pre></div>
+<ul>
+<li>[ ] The output on the screen will be identical to out.txt</li>
+<li>[x] There will be no output on the screen as it’s being redirected to out.txt.</li>
+<li>[ ] The output on the screen will be identical to out.txt plus line numbers.</li>
+<li>[ ] The out.txt file will hold STDERR and STDOUT will go to the screen.</li>
+</ul>
+<h4 id="q43.-how-would-you-find-the-last-copy-command-run-in-your-history">Q43. How would you find the last copy command run in your history?</h4>
+<ul>
+<li>[ ] history | find cp</li>
+<li>[x] history | grep cp</li>
+<li>[ ] grep cp history</li>
+<li>[ ] cp history</li>
+</ul>
+<h4 id="q44.-in-order-to-write-a-script-that-iterates-through-the-files-in-a-directory-which-of-the-following-could-you-use">Q44. In order to write a script that iterates through the files in a directory, which of the following could you use?</h4>
+<ul>
+<li>[ ] <code>bash for i in $(ls); do ... done</code></li>
+<li>[ ] <code>bash for $(ls); do ... done</code></li>
+<li>[x] <code>bash for i in $ls; do ... done</code></li>
+<li>[ ] <code>bash for $ls; do ... done</code></li>
+</ul>
+<h4 id="q45-when-executing-a-command-and-passing-the-output-of-that-command-to-another-command-which-character-allows-you-to-chain-these-commands-together">Q45 When executing a command and passing the output of that command to another command, which character allows you to chain these commands together?</h4>
+<ul>
+<li>[x] |</li>
+<li>[ ] -&gt;</li>
+<li>[ ] #</li>
+<li>[ ] @</li>
+</ul>
+<h4 id="q46.-in-the-script-shown-below-what-is-greeting">Q46. In the script shown below, what is <strong>greeting</strong>?</h4>
+<div class="sourceCode" id="cb31"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb31-1" title="1"><span class="op">&lt;</span><span class="ex">em</span><span class="op">&gt;</span>#!/usr/bin/env bash<span class="op">&lt;</span>/em<span class="op">&gt;</span></a>
+<a class="sourceLine" id="cb31-2" title="2"><span class="va">greeting=</span><span class="st">&quot;Hello&quot;</span></a>
+<a class="sourceLine" id="cb31-3" title="3"><span class="bu">echo</span> <span class="va">$greeting</span>, everybody!</a></code></pre></div>
+<ul>
+<li>[ ] a command</li>
+<li>[ ] a loop</li>
+<li>[ ] a parameter</li>
+<li>[x] a vairable</li>
+</ul>
+<h4 id="q47.-which-statement-checks-whether-the-variable-num-is-greater-than-five">Q47. Which statement checks whether the variable num is greater than five?</h4>
+<ul>
+<li>[ ] (( $num -gt 5 ))</li>
+<li>[ ] [[$num -lt 5]]</li>
+<li>[x] (( $num &gt; 5 ))</li>
+<li>[ ] $num &gt; 5</li>
+</ul>
+<h4 id="q48.-using-bash-extended-globbing-what-will-be-the-output-of-this-command">Q48. Using Bash extended globbing, what will be the output of this command?</h4>
+<div class="sourceCode" id="cb32"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb32-1" title="1">$ <span class="fu">ls</span> -l</a>
+<a class="sourceLine" id="cb32-2" title="2"><span class="ex">apple</span></a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="ex">banana</span></a>
+<a class="sourceLine" id="cb32-4" title="4"><span class="ex">bananapple</span></a>
+<a class="sourceLine" id="cb32-5" title="5"><span class="ex">banapple</span></a>
+<a class="sourceLine" id="cb32-6" title="6"><span class="ex">pineapple</span></a>
+<a class="sourceLine" id="cb32-7" title="7"><span class="ex">strawberry</span></a>
+<a class="sourceLine" id="cb32-8" title="8">$ <span class="bu">shopt</span> -s extglob</a>
+<a class="sourceLine" id="cb32-9" title="9">$ <span class="fu">ls</span> -l @(ba*(na)<span class="kw">|</span><span class="ex">a+</span>(p)<span class="ex">le</span>)</a></code></pre></div>
+<ul>
+<li>[x] a</li>
+</ul>
+<div class="sourceCode" id="cb33"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb33-1" title="1"><span class="ex">apple</span></a>
+<a class="sourceLine" id="cb33-2" title="2"><span class="ex">banana</span></a></code></pre></div>
+<ul>
+<li>[ ] b</li>
+</ul>
+<div class="sourceCode" id="cb34"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb34-1" title="1"><span class="ex">apple</span></a>
+<a class="sourceLine" id="cb34-2" title="2"><span class="ex">banana</span></a>
+<a class="sourceLine" id="cb34-3" title="3"><span class="ex">bananapple</span></a>
+<a class="sourceLine" id="cb34-4" title="4"><span class="ex">banapple</span></a>
+<a class="sourceLine" id="cb34-5" title="5"><span class="ex">pineapple</span></a>
+<a class="sourceLine" id="cb34-6" title="6"><span class="ex">strawberry</span></a></code></pre></div>
+<ul>
+<li>[ ] c</li>
+</ul>
+<div class="sourceCode" id="cb35"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb35-1" title="1"><span class="ex">apple</span></a>
+<a class="sourceLine" id="cb35-2" title="2"><span class="ex">banana</span></a>
+<a class="sourceLine" id="cb35-3" title="3"><span class="ex">bananappple</span></a>
+<a class="sourceLine" id="cb35-4" title="4"><span class="ex">banapple</span></a>
+<a class="sourceLine" id="cb35-5" title="5"><span class="ex">pineapple</span></a></code></pre></div>
+<ul>
+<li>[ ] d</li>
+</ul>
+<div class="sourceCode" id="cb36"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb36-1" title="1"><span class="ex">apple</span></a>
+<a class="sourceLine" id="cb36-2" title="2"><span class="ex">banana</span></a>
+<a class="sourceLine" id="cb36-3" title="3"><span class="ex">bananapple</span></a>
+<a class="sourceLine" id="cb36-4" title="4"><span class="ex">banapple</span></a>
+<a class="sourceLine" id="cb36-5" title="5"><span class="ex">pineapple</span></a></code></pre></div>
+<h4 id="q49.-when-used-from-within-a-script-which-variable-contains-the-name-of-the-script">Q49. When used from within a script, which variable contains the name of the script?</h4>
+<ul>
+<li>[x] $0</li>
+<li>[ ] $# // number of positional parameters</li>
+<li>[ ] $$ // pid of the current shell</li>
+<li>[ ] $@ // array-like construct of all positional parameters</li>
+</ul>
+<h4 id="q50.-what-does-the-signify-at-the-end-of-the-10-digit-file-permissions-on-data.txt">Q50. What does the + signify at the end of the 10-digit file permissions on data.txt?</h4>
+<div class="sourceCode" id="cb37"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb37-1" title="1"><span class="fu">ls</span> -l</a>
+<a class="sourceLine" id="cb37-2" title="2"><span class="ex">-rwx------+</span> 1 user1 u1 0 Oct 1 10:00 data.txt</a></code></pre></div>
+<ul>
+<li>[ ] There is an SELinux security context</li>
+<li>[ ] The sticky bit is set and the file will stay in RAM for speed</li>
+<li>[x] There is an access control list</li>
+<li>[ ] There is an extended attribute such as immutable set</li>
+</ul>
+<h4 id="q51.-in-bash-what-does-the-comment-below-do">Q51. In Bash, what does the comment below do?</h4>
+<div class="sourceCode" id="cb38"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb38-1" title="1"><span class="bu">cd</span> -</a></code></pre></div>
+<ul>
+<li>[x] It moves you to the directory you were previously in.</li>
+<li>[ ] It moves you to your home folder (whatever your current working directory happens to be).</li>
+<li>[ ] It deletes the current directory</li>
+<li>[ ] It moves you one directory above your current working directory.</li>
+</ul>
+<p>Training questions</p>
+<h4 id="q1.-what-does-this-command-do">Q1. What does this command do?</h4>
+<div class="sourceCode" id="cb39"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb39-1" title="1"><span class="fu">cat</span> <span class="op">&gt;</span> notes -</a></code></pre></div>
+<ul>
+<li>[x] Accepts text from standard input and places it in “notes”</li>
+<li>[ ] Creates “notes” and exits</li>
+<li>[ ] Outputs the content of notes and deletes it</li>
+<li>[ ] Appends text to the existing “notes”</li>
+</ul>
+<h4 id="q2.-what-is-the-output-of">Q2. What is the output of:</h4>
+<div class="sourceCode" id="cb40"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb40-1" title="1"><span class="va">VAR=</span><span class="st">&quot;This old man came rolling&quot;</span></a>
+<a class="sourceLine" id="cb40-2" title="2"><span class="bu">echo</span> <span class="st">&quot;</span><span class="dt">\$</span><span class="st">{VAR//man/rolling}&quot;</span></a></code></pre></div>
+<ul>
+<li>[x] This old rolling came rolling</li>
+<li>[ ] This old man came man</li>
+<li>[ ] This old man came rolling</li>
+<li>[ ] This old came</li>
+</ul>
+</body>
+</html>

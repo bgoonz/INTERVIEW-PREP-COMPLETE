@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MonotonicStack</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h3 id="how-to-use-monotonic-stack-to-solve-problems">How to use Monotonic Stack to solve problems<a href="#如何使用单调栈解题"></a></h3>
+<blockquote>
+<p>原文地址：<a href="https://github.com/labuladong/fucking-algorithm/blob/master/数据结构系列/单调栈.md">https://github.com/labuladong/fucking-algorithm/blob/master/数据结构系列/单调栈.md</a></p>
+</blockquote>
+<p><strong>Translator: <a href="https://github.com/miaoxiaozui2017">miaoxiaozui2017</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p><code>Stack</code> is a very simple data structure. The logical sequence of first in and last out conforms to the characteristics of some problems, such as function call stack.</p>
+<p><code>Monotonic stack</code> is actually a stack. It just uses some ingenious logic to keep the elements in the stack orderly (monotone increasing or monotone decreasing) after each new element putting into the stack.</p>
+<p>Well,sounds like a heap? No, monotonic stack is not widely used. It only deals with one typical problem, which is called <code>Next Greater Element</code>. In this paper, the algorithm template of monotonic queue is used to solve this kind of problem, and the strategy of dealing with “cyclic array” will be discussed.</p>
+<p>First, explain the original problem of <code>Next Greater Number</code>: give you an array,and return an array of equal length.The corresponding index stores the next larger element, if there is no larger element, store <code>-1</code>. It’s not easy to explain clearly in words. Let’s take a direct example:</p>
+<p>Give you an array <code>[2,1,2,4,3]</code>,and you return an array <code>[4,2,4,-1,-1]</code>.</p>
+<h3 id="explanation">Explanation</h3>
+<p>The number that is larger than <code>2</code> after <code>the first 2</code> is <code>4</code>.The number that is larger than <code>1</code> after <code>the first 1</code> is <code>2</code>. The number that is larger than <code>2</code> after <code>the second 2</code> is <code>4</code>.There is no number that is larger than <code>4</code> after <code>the fourth</code>,so fill in <code>-1</code>.There is no number that is larger than <code>3</code> after <code>the third</code>,so fill in <code>-1</code>.</p>
+<p>It’s a good idea for the violent solution of this problem.It scans the back of each element to find the first larger element. But the time complexity of the violent solution is <code>O (n^2)</code>.</p>
+<p>This problem can be thought abstractly: think of the elements in the array as people standing side by side, and the size of the elements as the height of an adult. These people stand in line before you. How to find the <code>Next Greater Number</code> of element <code>"2"</code>? Very simply, if you can see the element <code>"2"</code>, then the first person you can see behind him is the <code>Next Greater Number</code> of <code>"2"</code>. Because the element smaller than <code>"2"</code> is not tall enough and it is blocked by <code>"2"</code>,the first one not being blocked is the answer.</p>
+<figure>
+<img src="../pictures/MonotonicStack/1.png" alt="ink-image" /><figcaption>ink-image</figcaption>
+</figure>
+<p>This is a very understandable situation,huh? With this abstract scenario in mind, let’s look at the code first.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1-1" title="1">vector&lt;<span class="dt">int</span>&gt; nextGreaterElement(vector&lt;<span class="dt">int</span>&gt;&amp; nums) {</a>
+<a class="sourceLine" id="cb1-2" title="2">    vector&lt;<span class="dt">int</span>&gt; ans(nums.size()); <span class="co">// array to store answer</span></a>
+<a class="sourceLine" id="cb1-3" title="3">    stack&lt;<span class="dt">int</span>&gt; s;</a>
+<a class="sourceLine" id="cb1-4" title="4">    <span class="cf">for</span> (<span class="dt">int</span> i = nums.size() - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i--) { <span class="co">// put it into the stack back to front</span></a>
+<a class="sourceLine" id="cb1-5" title="5">        <span class="cf">while</span> (!s.empty() &amp;&amp; s.top() &lt;= nums[i]) { <span class="co">// determine by height</span></a>
+<a class="sourceLine" id="cb1-6" title="6">            s.pop(); <span class="co">// short one go away while blocked</span></a>
+<a class="sourceLine" id="cb1-7" title="7">        }</a>
+<a class="sourceLine" id="cb1-8" title="8">        ans[i] = s.empty() ? -<span class="dv">1</span> : s.top(); <span class="co">// the first tall behind this element</span></a>
+<a class="sourceLine" id="cb1-9" title="9">        s.push(nums[i]); <span class="co">// get into the queue and wait for later height determination</span></a>
+<a class="sourceLine" id="cb1-10" title="10">    }</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb1-12" title="12">}</a></code></pre></div>
+<p>This is the template for monotonic queue solving problem. The <code>for</code> loop scans elements from the back to the front,and while we use the stack structure and enter the stack back to front, we are actually going to exit the stack front to back. The <code>while</code> loop is to rule out the elements between the two “tall” elements.Their existence has no meaning, because there is a “taller” element in front of them and they cannot be considered as the <code>Next Great Number</code> of the subsequent elements.</p>
+<p>The time complexity of this algorithm is not so intuitive. If you see <code>for</code> loop nesting with <code>while</code> loop, you may think that the complexity of this algorithm is <code>O(n^2)</code>, but in fact the complexity of this algorithm is only <code>O(n)</code>.</p>
+<p>To analyze its time complexity, we need to look at it on a whole: There are <code>n</code> elements in total, each element is pushed into the stack once, and it will be pop once at most, without any redundant operation. So the total calculation scale is proportional to the element scale <code>n</code>, which is the complexity of <code>O(n)</code>.</p>
+<p>Now that you have mastered the technique of using monotonic stack, and take a simple transformation to deepen your understanding.</p>
+<p>Give you an array <code>T = [73, 74, 75, 71, 69, 72, 76, 73]</code>, which stores the weather temperature in recent days(Is it in teppanyaki? No, it’s in Fahrenheit). You return an array to calculate: for each day, how many days do you have to wait for a warmer temperature;and if you can’t wait for that day, fill in <code>0</code>.</p>
+<h3 id="example">Example</h3>
+<p>Give you <code>T = [73, 74, 75, 71, 69, 72, 76, 73]</code>, and you return <code>[1, 1, 4, 2, 1, 1, 0, 0]</code>.<br />
+<strong>Explanation</strong><br />
+The first day is 73 degrees Fahrenheit, and the next day is 74 degrees Fahrenheit, which is higher than 73 degrees Fahrenheit.So for the first day, you can wait for a warmer temperature just one day. The same goes for the latter.</p>
+<p>You are already sensitive to the typical problem like <code>Next Greater Number</code>.In essence, this problem is also to find the <code>Next Greater Number</code>. Instead of just answering what the <code>Next Greater Number</code> is, now you need to know the current distance from the <code>Next Greater Number</code>.</p>
+<p>For the same type of problem using the same idea, directly call the algorithm template of monotonic stack with a little change.Directly go to the code.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb2-1" title="1">vector&lt;<span class="dt">int</span>&gt; dailyTemperatures(vector&lt;<span class="dt">int</span>&gt;&amp; T) {</a>
+<a class="sourceLine" id="cb2-2" title="2">    vector&lt;<span class="dt">int</span>&gt; ans(T.size());</a>
+<a class="sourceLine" id="cb2-3" title="3">    stack&lt;<span class="dt">int</span>&gt; s; <span class="co">// here for element index，not element</span></a>
+<a class="sourceLine" id="cb2-4" title="4">    <span class="cf">for</span> (<span class="dt">int</span> i = T.size() - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i--) {</a>
+<a class="sourceLine" id="cb2-5" title="5">        <span class="cf">while</span> (!s.empty() &amp;&amp; T[s.top()] &lt;= T[i]) {</a>
+<a class="sourceLine" id="cb2-6" title="6">            s.pop();</a>
+<a class="sourceLine" id="cb2-7" title="7">        }</a>
+<a class="sourceLine" id="cb2-8" title="8">        ans[i] = s.empty() ? <span class="dv">0</span> : (s.top() - i); <span class="co">// get index spacing</span></a>
+<a class="sourceLine" id="cb2-9" title="9">        s.push(i); <span class="co">// add index，not element</span></a>
+<a class="sourceLine" id="cb2-10" title="10">    }</a>
+<a class="sourceLine" id="cb2-11" title="11">    <span class="cf">return</span> ans;</a>
+<a class="sourceLine" id="cb2-12" title="12">}</a></code></pre></div>
+<p>The monotonic stack is explained. Let’s start with another important point: how to deal with “circular array”.</p>
+<p>It’s also <code>Next Greater Number</code>. Now suppose the array given to you is a ring and how to deal with it?</p>
+<p>Give you an array <code>[2,1,2,4,3]</code>,and you return an array <code>[4,2,4,-1,4]</code>. With the ring attribute, the last element <code>3</code> goes around and finds the element <code>4</code> larger than itself.</p>
+<figure>
+<img src="../pictures/MonotonicStack/2.png" alt="ink-image" /><figcaption>ink-image</figcaption>
+</figure>
+<p>First of all, the memory of the computer is linear, and there is no real ring array. However, we can simulate the effect of ring array. Generally, we use the <code>%</code> operator to calculate the modulus (remainder) to get the ring effect:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="dt">int</span>[] arr = {<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>};</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="dt">int</span> n = arr.<span class="fu">length</span>, index = <span class="dv">0</span>;</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">while</span> (<span class="kw">true</span>) {</a>
+<a class="sourceLine" id="cb3-4" title="4">    <span class="fu">print</span>(arr[index % n]);</a>
+<a class="sourceLine" id="cb3-5" title="5">    index++;</a>
+<a class="sourceLine" id="cb3-6" title="6">}</a></code></pre></div>
+<p>Back to the problem of <code>Next Greater Number</code>. After adding the ring attribute, the difficulty lies in that the meaning of <code>Next</code> is not only the right side of the current element, but also the left side of the current element (as shown in the above example).</p>
+<p>If we are clear about the problem, it will be half solved. We can think about like this: “Double” the original array,or in another word,to connect another original array at the back. In this way, according to the previous “height comparison” process, each element can not only compare with the elements on its right, but also the elements on its left.</p>
+<figure>
+<img src="../pictures/MonotonicStack/3.png" alt="ink-image (2)" /><figcaption>ink-image (2)</figcaption>
+</figure>
+<p>How do you achieve it? Of course, you can construct this double length array and apply the algorithm template. However, instead of constructing a new array, we can use the technique of <code>circular array</code> to simulate. Just look at the code:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb4-1" title="1">vector&lt;<span class="dt">int</span>&gt; nextGreaterElements(vector&lt;<span class="dt">int</span>&gt;&amp; nums) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="dt">int</span> n = nums.size();</a>
+<a class="sourceLine" id="cb4-3" title="3">    vector&lt;<span class="dt">int</span>&gt; res(n); <span class="co">// store result</span></a>
+<a class="sourceLine" id="cb4-4" title="4">    stack&lt;<span class="dt">int</span>&gt; s;</a>
+<a class="sourceLine" id="cb4-5" title="5">    <span class="co">// pretend that this array is doubled in length</span></a>
+<a class="sourceLine" id="cb4-6" title="6">    <span class="cf">for</span> (<span class="dt">int</span> i = <span class="dv">2</span> * n - <span class="dv">1</span>; i &gt;= <span class="dv">0</span>; i--) {</a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="cf">while</span> (!s.empty() &amp;&amp; s.top() &lt;= nums[i % n])</a>
+<a class="sourceLine" id="cb4-8" title="8">            s.pop();</a>
+<a class="sourceLine" id="cb4-9" title="9">        res[i % n] = s.empty() ? -<span class="dv">1</span> : s.top();</a>
+<a class="sourceLine" id="cb4-10" title="10">        s.push(nums[i % n]);</a>
+<a class="sourceLine" id="cb4-11" title="11">    }</a>
+<a class="sourceLine" id="cb4-12" title="12">    <span class="cf">return</span> res;</a>
+<a class="sourceLine" id="cb4-13" title="13">}</a></code></pre></div>
+<p>Till now,you have caught up with the design method and code template for <code>Monotonic Stack</code>，learned to solve the problem of <code>Next Greater Number</code> ,and can deal with <code>circular array</code>.</p>
+</body>
+</html>

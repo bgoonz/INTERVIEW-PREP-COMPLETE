@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>reverse-nodes-in-k-group</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="how-to-reverse-nodes-in-k-group">How to reverse nodes in k-group</h1>
+<p><strong>Translator: <a href="https://github.com/Justin-YGG">Justin</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>We talked about the way how to reverse the part of linked list recursively in <a href="..算法思维系列/学习数据结构和算法的框架思维.md">previous article</a>. Some readers may wonder how to reverse the whole linked list. We also need to use the function of linked list reversion in this article, so we might as well use the recursive method to solve it.</p>
+<p>The problem we need to solve is <a href="https://leetcode.com/problems/reverse-nodes-in-k-group/">Reverse Nodes in k-Group</a>. It’s easy to understand what that means.</p>
+<blockquote>
+<p>Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.</p>
+</blockquote>
+<blockquote>
+<p>k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.</p>
+</blockquote>
+<blockquote>
+<p>Example:</p>
+</blockquote>
+<blockquote>
+<p>Given this linked list: <code>1-&gt;2-&gt;3-&gt;4-&gt;5</code> For k = 2, you should return: <code>2-&gt;1-&gt;4-&gt;3-&gt;5</code> For k = 3, you should return: <code>3-&gt;2-&gt;1-&gt;4-&gt;5</code></p>
+</blockquote>
+<p>We may often encounter this problem in interview and its difficulty is <strong>Hard</strong> on LeetCode. But is it really so tough?</p>
+<p>Actually, the problems of basic data structure are not difficult. We can solve them by splitting the big problem into the small one step by step. I will show you how to do that below.</p>
+<h3 id="analysis">Analysis</h3>
+<p>As mentioned in the previous article <a href="../算法思维系列/学习数据结构和算法的框架思维.md">the thinking framework of learning data structure</a>, linked list is a kind of data structure with recursion and iteration. On second thought, we can find that this problem can be solved by recursion.</p>
+<p>What does recursion mean? We can try to understand it with the help of the example below.</p>
+<p>We call <code>reverseKGroup(head, 2)</code> on the linked list so that we can reverse the linked list with 2 nodes as a group.</p>
+<p><img src="../pictures/kgroup/1.jpg" /></p>
+<p>What should we do next to deal with the remaining nodes after reversing the first two nodes？The remaining nodes also form a linked list but it’s shorter than origin linked list.It turns out to be a subproblem of primal problem.</p>
+<p><img src="../pictures/kgroup/2.jpg" /></p>
+<p>We can call <code>reverseKGroup(cur, 2)</code> recursively because there is the same structure between primal problem and subproblem. So, this is so called recursion.</p>
+<p>We can find out the basic procedure of algorithm to solve the problem after understand recursion.</p>
+<p><strong>1.Reverse the first k nodes</strong></p>
+<p><img src="../pictures/kgroup/3.jpg" /></p>
+<p><strong>2. Reverse list with k+1 node as head by calling reverseKGroup recursively</strong></p>
+<p><img src="../pictures/kgroup/4.jpg" /></p>
+<p><strong>3. Merge the results of above two steps</strong></p>
+<p><img src="../pictures/kgroup/5.jpg" /></p>
+<p>Note, there usually is a base case in recursion function. The base case of this problem is <strong>If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is</strong>. I will emphasize it in code.</p>
+<h3 id="coding">Coding</h3>
+<p>First, we need to implement a <code>reverse</code> function to reverse the elements in a interval. Before that, let’s simplify the problem and consider that how to reverse the linked list with a given head node.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// reverse the linked list with node a as head</span></a>
+<a class="sourceLine" id="cb1-2" title="2">ListNode <span class="fu">reverse</span>(ListNode a) {</a>
+<a class="sourceLine" id="cb1-3" title="3">    ListNode pre, cur, nxt;</a>
+<a class="sourceLine" id="cb1-4" title="4">    pre = <span class="kw">null</span>; cur = a; nxt = a;</a>
+<a class="sourceLine" id="cb1-5" title="5">    <span class="kw">while</span> (cur != <span class="kw">null</span>) {</a>
+<a class="sourceLine" id="cb1-6" title="6">        nxt = cur.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb1-7" title="7">        <span class="co">// reverse node one by one</span></a>
+<a class="sourceLine" id="cb1-8" title="8">        cur.<span class="fu">next</span> = pre;</a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="co">// update pointer</span></a>
+<a class="sourceLine" id="cb1-10" title="10">        pre = cur;</a>
+<a class="sourceLine" id="cb1-11" title="11">        cur = nxt;</a>
+<a class="sourceLine" id="cb1-12" title="12">    }</a>
+<a class="sourceLine" id="cb1-13" title="13">    <span class="co">// return head node of the reversed linked list</span></a>
+<a class="sourceLine" id="cb1-14" title="14">    <span class="kw">return</span> pre;</a>
+<a class="sourceLine" id="cb1-15" title="15">}</a></code></pre></div>
+<p><img src="../pictures/kgroup/8.gif" /></p>
+<p>It’s easy to understand the iteration with the help of animation above.</p>
+<p>When we reverse the linked list with node <code>a</code> as head, indeed, we reverse nodes between node <code>a</code> and <code>null</code>.</p>
+<p>How should we do to reverse nodes between node <code>a</code> and <code>b</code>?</p>
+<p>Just change the function signature and change <code>null</code> to<code>b</code> in the above code</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="co">/**</span> reverse the nodes of interval <span class="co">[</span>a<span class="co">,</span> b<span class="co">),</span> which is left<span class="co">-</span>closed and right<span class="co">-</span>open <span class="co">*/</span></a>
+<a class="sourceLine" id="cb2-2" title="2">ListNode <span class="fu">reverse</span>(ListNode a, ListNode b) {</a>
+<a class="sourceLine" id="cb2-3" title="3">    ListNode pre, cur, nxt;</a>
+<a class="sourceLine" id="cb2-4" title="4">    pre = <span class="kw">null</span>; cur = a; nxt = a;</a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="co">// just change the condition of quit</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">while</span> (cur != b) {</a>
+<a class="sourceLine" id="cb2-7" title="7">        nxt = cur.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb2-8" title="8">        cur.<span class="fu">next</span> = pre;</a>
+<a class="sourceLine" id="cb2-9" title="9">        pre = cur;</a>
+<a class="sourceLine" id="cb2-10" title="10">        cur = nxt;</a>
+<a class="sourceLine" id="cb2-11" title="11">    }</a>
+<a class="sourceLine" id="cb2-12" title="12">    <span class="co">// return head node of the reversed linked list</span></a>
+<a class="sourceLine" id="cb2-13" title="13">    <span class="kw">return</span> pre;</a>
+<a class="sourceLine" id="cb2-14" title="14">}</a></code></pre></div>
+<p>So far, we have finished the function of reversing the part of the linked list. Next, we will work on the function of <code>reverseKGroup</code> according to the previous design.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1">ListNode <span class="fu">reverseKGroup</span>(ListNode head, <span class="dt">int</span> k) {</a>
+<a class="sourceLine" id="cb3-2" title="2">    <span class="kw">if</span> (head == <span class="kw">null</span>) <span class="kw">return</span> <span class="kw">null</span>;</a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="co">// interval [a, b) includes k nodes to be reversed</span></a>
+<a class="sourceLine" id="cb3-4" title="4">    ListNode a, b;</a>
+<a class="sourceLine" id="cb3-5" title="5">    a = b = head;</a>
+<a class="sourceLine" id="cb3-6" title="6">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; k; i++) {</a>
+<a class="sourceLine" id="cb3-7" title="7">        <span class="co">// base case</span></a>
+<a class="sourceLine" id="cb3-8" title="8">        <span class="kw">if</span> (b == <span class="kw">null</span>) <span class="kw">return</span> head;</a>
+<a class="sourceLine" id="cb3-9" title="9">        b = b.<span class="fu">next</span>;</a>
+<a class="sourceLine" id="cb3-10" title="10">    }</a>
+<a class="sourceLine" id="cb3-11" title="11">    <span class="co">// reverse first k nodes</span></a>
+<a class="sourceLine" id="cb3-12" title="12">    ListNode newHead = <span class="fu">reverse</span>(a, b);</a>
+<a class="sourceLine" id="cb3-13" title="13">    <span class="co">// merge all reversed internals</span></a>
+<a class="sourceLine" id="cb3-14" title="14">    a.<span class="fu">next</span> = <span class="fu">reverseKGroup</span>(b, k);</a>
+<a class="sourceLine" id="cb3-15" title="15">    <span class="kw">return</span> newHead;</a>
+<a class="sourceLine" id="cb3-16" title="16">}</a></code></pre></div>
+<p>Note that the interval of <code>reverse</code> function is <code>[a, b)</code>.</p>
+<p><img src="../pictures/kgroup/6.jpg" /></p>
+<p>We will not give more details about the recursive part again. The result fully meets the meaning of the question:</p>
+<p><img src="../pictures/kgroup/7.jpg" /></p>
+<h3 id="more">More</h3>
+<p>Only a few people read the algorithm articles related to basic data structure according to the page view. Most of people tend to read the articles related to dynamic programming because they often show up in interview. But what I want to share is basic data structure and algorithm matter a lot and all complicated problems evolve from simple problems.</p>
+<p>By the way, remember that <strong>practice makes perfect</strong>.</p>
+<p><a href="../interview/The%20Longest%20Palindromic%20Substring.md.md">previous：how to find the longest palindromicsubstring</a></p>
+<p><a href="../interview/合法括号判定.md">next：how to valid parentheses</a></p>
+<p><a href="../README.md#目录">catalog</a></p>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Shuffle_Algorithm</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="shuffle-algorithm">Shuffle Algorithm</h1>
+<p><strong>Translator: <a href="https://github.com/realism0331">realism0331</a></strong></p>
+<p><strong>Author: <a href="https://github.com/labuladong">labuladong</a></strong></p>
+<p>I know people have all kinds of fancy sorting algorithms, but if you had to scramble an array, would you be able to do that? Even if you come up with an algorithm, how do you prove that your algorithm is correct? An unordered algorithm is not like a sorting algorithm, the only result is easy to check. But there are many different kinds of “unordered” , so, how can you prove that your algorithm is “really unordered” ?</p>
+<p>So we have two problems: 1. What’s the meaning of “real mess” ? 2. What algorithms are designed to disrupt arrays in order to achieve “true chaos” ?</p>
+<p>This algorithm is called a random shuffle algorithm or a shuffle algorithm.</p>
+<p>This paper is divided into two parts, the first part of the most commonly used shuffle algorithm. Because the details of the Algorithm is error-prone, and there are several variants, although there are subtle differences but are correct, so this article to introduce a simple general idea to ensure that you write a correct shuffle algorithm. The second part explains the use of “Monte Carlo method” to test whether our disruption is real. Monte Carlo Method’s ideas are not difficult, but they have their own characteristics.</p>
+<h3 id="shuffle-algorithm-1">1. Shuffle Algorithm</h3>
+<p>Such algorithms rely on the exchange of randomly selected elements to obtain randomness, directly look at the code (pseudo-code) , the algorithm has four forms, both of them are correct:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb1-1" title="1"><span class="co">// A random integer in the closed interval [min, Max] is obtained</span></a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="dt">int</span> <span class="fu">randInt</span>(<span class="dt">int</span> min, <span class="dt">int</span> max);</a>
+<a class="sourceLine" id="cb1-3" title="3"></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">// First case</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="dt">void</span> <span class="fu">shuffle</span>(<span class="dt">int</span>[] arr) {</a>
+<a class="sourceLine" id="cb1-6" title="6">    <span class="dt">int</span> n = arr.<span class="fu">length</span>();</a>
+<a class="sourceLine" id="cb1-7" title="7">    <span class="co">/***</span> The only difference is these two lines <span class="co">***/</span></a>
+<a class="sourceLine" id="cb1-8" title="8">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span> ; i &lt; n; i++) {</a>
+<a class="sourceLine" id="cb1-9" title="9">        <span class="co">// Randomly select an element from i to the last</span></a>
+<a class="sourceLine" id="cb1-10" title="10">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(i, n - <span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb1-11" title="11">    <span class="co">/*********************************************/</span></a>
+<a class="sourceLine" id="cb1-12" title="12">        <span class="fu">swap</span>(arr[i], arr[rand]);</a>
+<a class="sourceLine" id="cb1-13" title="13">    }</a>
+<a class="sourceLine" id="cb1-14" title="14">}</a>
+<a class="sourceLine" id="cb1-15" title="15"></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="co">// Second case</span></a>
+<a class="sourceLine" id="cb1-17" title="17">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span> ; i &lt; n - <span class="dv">1</span>; i++)</a>
+<a class="sourceLine" id="cb1-18" title="18">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(i, n - <span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="co">// Third cse</span></a>
+<a class="sourceLine" id="cb1-21" title="21">    <span class="kw">for</span> (<span class="dt">int</span> i = n - <span class="dv">1</span> ; i &gt;= <span class="dv">0</span>; i--)</a>
+<a class="sourceLine" id="cb1-22" title="22">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(<span class="dv">0</span>, i);</a>
+<a class="sourceLine" id="cb1-23" title="23"></a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="co">// Forth case</span></a>
+<a class="sourceLine" id="cb1-25" title="25">    <span class="kw">for</span> (<span class="dt">int</span> i = n - <span class="dv">1</span> ; i &gt; <span class="dv">0</span>; i--)</a>
+<a class="sourceLine" id="cb1-26" title="26">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(<span class="dv">0</span>, i);</a></code></pre></div>
+<p><strong>To analyze the correctness of the shuffle algorithm: The result must have n! possibilities , or it’s a mistake. </strong>This is easy to explain, because an array of length n has a full permutation of n! possibilities. That is to say, the total number of disruption results are n! possibilities . The Algorithm must be able to reflect this fact in order to be correct.</p>
+<p>Let’s use this rule to analyze the correctness of <strong>the first one</strong>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb2-1" title="1"><span class="co">// Suppose an arr is passed in like this</span></a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="dt">int</span>[] arr = {<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>};</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="dt">void</span> <span class="fu">shuffle</span>(<span class="dt">int</span>[] arr) {</a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="dt">int</span> n = arr.<span class="fu">length</span>(); <span class="co">// 5</span></a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span> ; i &lt; n; i++) {</a>
+<a class="sourceLine" id="cb2-7" title="7">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(i, n - <span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb2-8" title="8">        <span class="fu">swap</span>(arr[i], arr[rand]);</a>
+<a class="sourceLine" id="cb2-9" title="9">    }</a>
+<a class="sourceLine" id="cb2-10" title="10">}</a></code></pre></div>
+<p>At the first iteration of the for loop, <code>i=0</code>, the range of <code>rand</code> is <code>[0,4]</code>, and there are five possible values.</p>
+<figure>
+<img src="../pictures/Shuffle_Algorithm/1.png" alt="第一次" /><figcaption>第一次</figcaption>
+</figure>
+<p>On the second iteration of the for loop, <code>i=1</code>,the range of <code>rand</code> is <code>[1,4]</code>, and there are four possible values.</p>
+<figure>
+<img src="../pictures/Shuffle_Algorithm/2.png" alt="第二次" /><figcaption>第二次</figcaption>
+</figure>
+<p>And so on, until the last iteration, <code>i=4</code>, and the range of <code>rand</code> is <code>[4,4]</code>, and only one possible value.</p>
+<figure>
+<img src="../pictures/Shuffle_Algorithm/3.png" alt="最后一次" /><figcaption>最后一次</figcaption>
+</figure>
+<p>As you can see, all the possible outcomes of this process is <code>n! = 5! = 5*4*3*2*1</code> ，so the algorithm is correct.</p>
+<p>In <strong>the second case</strong>, the previous iterations are the same, with only one iteration missing. So on the last iteration<code>i = 3</code>，the range of <code>rand</code> is <code>[3,4]</code>, and there are two possible values.。</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb3-1" title="1"><span class="co">// Second case</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="co">// arr = {1,3,5,7,9}, n = 5</span></a>
+<a class="sourceLine" id="cb3-3" title="3">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span> ; i &lt; n - <span class="dv">1</span>; i++)</a>
+<a class="sourceLine" id="cb3-4" title="4">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(i, n - <span class="dv">1</span>);</a></code></pre></div>
+<p>So all the possible outcomes of the whole process are still <code>5*4*3*2 = 5! = n!</code> ，because multiplying by one is optional. So that’s correct.</p>
+<p>If you understand all of the above, you’ll see that <strong>the third way</strong> is the first way, just iterating the array from back to front; <strong>the fourth way</strong> is the second way which is also iterating the array from back to front. So they’re both correct.</p>
+<p>If the reader had thought about the Shuffle Algorithm, he might have come up with the following, but <strong>that would be a mistake</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb4-1" title="1"><span class="dt">void</span> <span class="fu">shuffle</span>(<span class="dt">int</span>[] arr) {</a>
+<a class="sourceLine" id="cb4-2" title="2">    <span class="dt">int</span> n = arr.<span class="fu">length</span>();</a>
+<a class="sourceLine" id="cb4-3" title="3">    <span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span> ; i &lt; n; i++) {</a>
+<a class="sourceLine" id="cb4-4" title="4">        <span class="co">// Every time, elements are randomly selected from </span></a>
+<a class="sourceLine" id="cb4-5" title="5">        <span class="co">//the closed interval [0, n-1] for exchange </span></a>
+<a class="sourceLine" id="cb4-6" title="6"></a>
+<a class="sourceLine" id="cb4-7" title="7">        <span class="dt">int</span> rand = <span class="fu">randInt</span>(<span class="dv">0</span>, n - <span class="dv">1</span>);</a>
+<a class="sourceLine" id="cb4-8" title="8">        <span class="fu">swap</span>(arr[i], arr[rand]);</a>
+<a class="sourceLine" id="cb4-9" title="9">    }</a>
+<a class="sourceLine" id="cb4-10" title="10">}</a></code></pre></div>
+<p>Now you can see why this is wrong. Because all the possible outcomes of this notation are $n ^ n $, not <span class="math inline"><em>N</em>!</span> and <span class="math inline"><em>n</em><sup><em>n</em></sup></span> can’t be <span class="math inline"><em>N</em>!</span> integral multiples of $.</p>
+<p>So, for example <code>arr = {1,2,3}</code>，the correct result should be<span class="math inline">3! = 6</span> , but there are a total of $3 ^ 3 = 27 $possible results. Since 27 can not be divisible by 6, there must be some cases that are “biased,” meaning that some cases are more likely to occur, so the disruption is not really chaotic.</p>
+<p>we explained the correct criteria of shuffle algorithm through our intuition， there is no mathematical proof, I think we do not bother to prove. For probability problems, we can use the Monte Carlo Method for simple verification.</p>
+<h3 id="monte-carlo-method">2. Monte Carlo method</h3>
+<p><strong>The measure of the correctness</strong> of a shuffle algorithm, or a random shuffle algorithm, is that <strong>the probabilities of each possible outcome must be equal, that is, random enough.</strong></p>
+<p>If probability equality is not strictly proved mathematically, it is possible to use the Monte Carlo method approximation to estimate whether the probability is equal and whether the result is sufficiently random.</p>
+<p>In high school, I had remembered there was a math problem: randomly dot a square with a circle inside it, tell you the total number of dots and the number of dots falling in the circle, let you calculate Pi.</p>
+<figure>
+<img src="../pictures/Shuffle_Algorithm/4.png" alt="正方形" /><figcaption>正方形</figcaption>
+</figure>
+<p>The trick is to use Monte Carlo method: When you hit enough dots, the number of dots can be approximated to the area of the graph. By the area formula, Pi can be easily deduced from the area ratio of a square to a circle. Of course, the more points played, the more accurate the calculation of Pi, fully reflects the truth of the miracle of force.</p>
+<p>Similarly, we can shuffle the same array one million times, counting the number of various results, regrading the frequency as the probability, it is easy to see whether the shuffle algorithm is correct. The overall idea is very simple, but there are some skills to implement, the following are brief analysis of several implementation ideas.</p>
+<p><strong>The first idea</strong> is to enumerate all the permutations of the Array arr and make a histogram (assuming <code>arr = {1,2,3}</code>) :</p>
+<figure>
+<img src="../pictures/Shuffle_Algorithm/5.jpg" alt="直方图" /><figcaption>直方图</figcaption>
+</figure>
+<p>After each shuffle algorithm, add one to the frequency corresponding to the disruption result, repeat 1 million times, if the total number of each result is almost the same, that each result should be the same probability. Write pseudo code for this idea:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb5-1" title="1"><span class="dt">void</span> <span class="fu">shuffle</span>(<span class="dt">int</span>[] arr);</a>
+<a class="sourceLine" id="cb5-2" title="2"></a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="co">// Monte Carlo</span></a>
+<a class="sourceLine" id="cb5-4" title="4"><span class="dt">int</span> N = <span class="dv">1000000</span>;</a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="bu">HashMap</span> count; <span class="co">// As histogram</span></a>
+<a class="sourceLine" id="cb5-6" title="6"><span class="kw">for</span> (i = <span class="dv">0</span>; i &lt; N; i++) {</a>
+<a class="sourceLine" id="cb5-7" title="7">    <span class="dt">int</span>[] arr = {<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>};</a>
+<a class="sourceLine" id="cb5-8" title="8">    <span class="fu">shuffle</span>(arr);</a>
+<a class="sourceLine" id="cb5-9" title="9">    <span class="co">// At this time, arr has been disrupted </span></a>
+<a class="sourceLine" id="cb5-10" title="10">    count[arr] += <span class="dv">1</span>；</a>
+<a class="sourceLine" id="cb5-11" title="11">}</a>
+<a class="sourceLine" id="cb5-12" title="12"><span class="kw">for</span> (<span class="dt">int</span> feq : count.<span class="fu">values</span>()) </a>
+<a class="sourceLine" id="cb5-13" title="13">    <span class="fu">print</span>(feq / N + <span class="st">&quot; &quot;</span>); <span class="co">// frequency</span></a></code></pre></div>
+<p>This test is possible, though one might ask, the whole array of arr is n! Species (n is the length of arr) , if n is larger, isn’t that the explosion of space complexity?</p>
+<p>Yes, but as a verification method, we don’t need n too big, so we’ll just try arr of length 5 or 6, because we just want to compare the probabilities to see if it’s correct.</p>
+<p><strong>The second way</strong> to think about there is only one 1 in the arr array,others are all 0 . So we’re going to mess up the Arr a million times, and we’re going to record the number of occurrences of 1 per index, and if the number of per index is about the same, then we’re going to say that the probability of any kind of mess is equal.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java"><code class="sourceCode java"><a class="sourceLine" id="cb6-1" title="1"><span class="dt">void</span> <span class="fu">shuffle</span>(<span class="dt">int</span>[] arr);</a>
+<a class="sourceLine" id="cb6-2" title="2"></a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="co">// Monte Carlo method</span></a>
+<a class="sourceLine" id="cb6-4" title="4"><span class="dt">int</span> N = <span class="dv">1000000</span>;    </a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="dt">int</span>[] arr = {<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>};</a>
+<a class="sourceLine" id="cb6-6" title="6"><span class="dt">int</span>[] count = <span class="kw">new</span> <span class="dt">int</span>[arr.<span class="fu">length</span>];</a>
+<a class="sourceLine" id="cb6-7" title="7"><span class="kw">for</span> (<span class="dt">int</span> i = <span class="dv">0</span>; i &lt; N; i++) {</a>
+<a class="sourceLine" id="cb6-8" title="8">    <span class="fu">shuffle</span>(arr); <span class="co">// disrupt arr</span></a>
+<a class="sourceLine" id="cb6-9" title="9">    <span class="kw">for</span> (<span class="dt">int</span> j = <span class="dv">0</span>; j &lt; arr.<span class="fu">length</span>; j++) </a>
+<a class="sourceLine" id="cb6-10" title="10">        <span class="kw">if</span> (arr[j] == <span class="dv">1</span>) {</a>
+<a class="sourceLine" id="cb6-11" title="11">            count[j]++;</a>
+<a class="sourceLine" id="cb6-12" title="12">            <span class="kw">break</span>;</a>
+<a class="sourceLine" id="cb6-13" title="13">        }</a>
+<a class="sourceLine" id="cb6-14" title="14">}</a>
+<a class="sourceLine" id="cb6-15" title="15"><span class="kw">for</span> (<span class="dt">int</span> feq : count) </a>
+<a class="sourceLine" id="cb6-16" title="16">    <span class="fu">print</span>(feq / N + <span class="st">&quot; &quot;</span>); <span class="co">// frequency</span></a></code></pre></div>
+<figure>
+<img src="../pictures/Shuffle_Algorithm/6.png" alt="直方图" /><figcaption>直方图</figcaption>
+</figure>
+<p>This idea is also feasible, and to avoid the space complexity of factorial level, but more nested for loop, time complexity a little higher. However, since our test data volume will not be very large, these problems can be ignored.</p>
+<p>In addition, the careful reader may notice that the two lines of thought above state that Arr is in a different position, one inside the for loop and the other outside the for loop. Actually, the effect is the same, because our algorithm always messes the Arr, so the order of Arr doesn’t matter, as long as the elements stay the same.</p>
+<h3 id="final-summary">3. Final summary</h3>
+<p>In the first part of this paper, the Shuffle Algorithm (random scrambling algorithm) is introduced. Through a simple analysis technique, four correct forms of the algorithm are proved, and a common wrong writing method is analyzed, I’m sure you’ll be able to write the right Shuffle Algorithm.</p>
+<p>In the second part, I write the criterion of the correctness of the Shuffle Algorithm, that is, the probability of each kind of random result must be equal. If we don’t use rigorous mathematical proof, we can use Monte Carlo method to perform miracles, roughly verifying that the algorithm is correct. The Monte Carlo method has different approaches, but it doesn’t have to be strict, because we’re just looking for a simple validation.</p>
+</body>
+</html>

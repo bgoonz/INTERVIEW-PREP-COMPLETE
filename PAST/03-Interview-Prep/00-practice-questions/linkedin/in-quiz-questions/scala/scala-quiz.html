@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>scala-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="scala-assessment">Scala Assessment</h2>
+<h4 id="q1.-scala-bytecode-can-run-on-top-of-java-vm.-what-is-the-fundamental-difference-between-java-object.clone-and-scala-object.copy">Q1. Scala bytecode can run on top of Java VM. What is the fundamental difference between Java object.clone() and Scala object.copy()?</h4>
+<ul>
+<li>[ ] One is a Java object, the other is a Scala object.</li>
+<li>[ ] clone() will copy class structures but not the data, while copy() will also copy data into new objects.</li>
+<li>[ ] There is no difference.</li>
+<li>[x] copy() allows you to change values during the copying process; clone() does not.</li>
+</ul>
+<h4 id="q2.-what-value-does-this-code-return">Q2. What value does this code return?</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">val</span> m1 = Map(<span class="st">&quot;a&quot;</span>-&gt;<span class="dv">1</span>,<span class="st">&quot;b&quot;</span>-&gt;<span class="dv">2</span>,<span class="st">&quot;c&quot;</span>-&gt;<span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="fu">m1</span>(<span class="st">&quot;a&quot;</span>)</a></code></pre></div>
+<ul>
+<li>[ ] a</li>
+<li>[ ] 2</li>
+<li>[ ] b</li>
+<li>[x] 1</li>
+</ul>
+<h4 id="q3.-what-is-one-way-to-avoid-low-level-parallelization-details">Q3. What is one way to avoid low-level parallelization details?</h4>
+<ul>
+<li>[ ] monads</li>
+<li>[ ] literal functions</li>
+<li>[ ] partially applied functions</li>
+<li>[x] parallel collections</li>
+</ul>
+<h4 id="q4.-what-do-you-use-in-scalatest-to-see-a-detailed-diagram-of-error-messages-when-a-test-fails">Q4. What do you use in ScalaTest to see a detailed diagram of error messages when a test fails?</h4>
+<ul>
+<li>[ ] ArgumentExceptions</li>
+<li>[ ] AssertionException</li>
+<li>[x] DiagrammedAssertions</li>
+<li>[ ] JUnit</li>
+</ul>
+<h4 id="q5.-what-data-type-would-you-use-to-store-an-immutable-collection-of-objects-that-contain-a-fixed-number-of-varying-types">Q5. What data type would you use to store an immutable collection of objects that contain a fixed number of varying types?</h4>
+<ul>
+<li>[ ] Array</li>
+<li>[ ] ImmutableCollection</li>
+<li>[ ] List</li>
+<li>[x] Tuple</li>
+</ul>
+<h4 id="q6.-after-defining-a-function-in-the-interpreter-scala-returns-the-following.-what-does-the">Q6. After defining a function in the interpreter, Scala returns the following. What does the</h4>
+<div class="sourceCode" id="cb2"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb2-1" title="1">myfnc: ()Unit</a></code></pre></div>
+<ul>
+<li>[ ] The function has no side effects.</li>
+<li>[ ] The function takes no parameters.</li>
+<li>[x] The function returns no value.</li>
+<li>[ ] Returning unit types to the function is a closures.</li>
+</ul>
+<h4 id="q7.-what-type-of-number-is-1234.e5">Q7. What type of number is 1234.e5?</h4>
+<ul>
+<li>[ ] hexadecimal</li>
+<li>[ ] short</li>
+<li>[x] floating point</li>
+<li>[ ] long</li>
+</ul>
+<h4 id="q8.-when-you-convert-a-map-to-a-list-using-the-tolist-method-of-the-map-the-result-will-be-of-which-type">Q8. When you convert a map to a list using the toList method of the map, the result will be of which type?</h4>
+<ul>
+<li>[ ] List[(String, String)]</li>
+<li>[ ] List[(Array, Array)]</li>
+<li>[ ] List[(Array, Array)]</li>
+<li>[x] List</li>
+</ul>
+<h4 id="q9.-what-type-of-object-does-this-code-create">Q9. What type of object does this code create?</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">val</span> x = (<span class="dv">1234</span>, <span class="st">&quot;Active&quot;</span>)</a></code></pre></div>
+<ul>
+<li>[ ] List</li>
+<li>[ ] Map</li>
+<li>[x] Tuple</li>
+<li>[ ] Array</li>
+</ul>
+<h4 id="q10.-which-is-a-subclass-of-all-classes">Q10. Which is a subclass of all classes?</h4>
+<ul>
+<li>[ ] AnyVal</li>
+<li>[ ] AnyRef</li>
+<li>[ ] Method</li>
+<li>[x] Null NOT SURE</li>
+</ul>
+<h4 id="q11.-for-the-for-yield-construct-is-the-scope-separate-between-for-body-and-yield-body">Q11. For the for-yield construct, is the scope separate between for-body and yield-body?</h4>
+<ul>
+<li>[x] Yes and no. It is different depending on the for construct and what it does. NOT SURE</li>
+<li>[ ] Yes, because the for section does not expose its scope.</li>
+<li>[ ] No, because for-yield shares the same scope, even though they are within separate curly braces.</li>
+<li>[ ] Yes, because they are within different curly braces.</li>
+</ul>
+<h4 id="q12.-what-is-one-way-to-implement-pattern-matching-on-methods">Q12. What is one way to implement pattern matching on methods?</h4>
+<ul>
+<li>[ ] using regex</li>
+<li>[ ] using monads</li>
+<li>[x] using string matching</li>
+<li>[ ] using case classes</li>
+</ul>
+<h4 id="q13.-what-is-the-value-of-z-after-executing-this-code">Q13. What is the value of z after executing this code?</h4>
+<div class="sourceCode" id="cb4"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">val</span> y = List(<span class="ch">&#39;a&#39;</span>,<span class="ch">&#39;b&#39;</span>)</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">val</span> z = y::List(<span class="ch">&#39;c&#39;</span>)</a></code></pre></div>
+<ul>
+<li>[ ] List(a,b,c)</li>
+<li>[x] List(List(a, b), c)</li>
+<li>[ ] List(c,a,b)</li>
+<li>[ ] List(c,List(a,b))</li>
+</ul>
+<h4 id="q14.-what-term-is-used-to-specify-a-precondition">Q14. What term is used to specify a precondition?</h4>
+<ul>
+<li>[x] assert</li>
+<li>[ ] require</li>
+<li>[ ] precondition</li>
+<li>[ ] mustHave</li>
+</ul>
+<h4 id="q15.-which-scala-type-may-throw-an-exception-or-a-successfully-computed-value-and-is-commonly-used-to-trap-and-propagate-errors">Q15. Which Scala type may throw an exception or a successfully computed value, and is commonly used to trap and propagate errors?</h4>
+<h5 id="answers-missing">answers missing</h5>
+<p>Answer should be Option: Some or None</p>
+<h4 id="q16.-what-is-the-data-type-of-y-after-this-code-is-executed">Q16. What is the data type of y after this code is executed?</h4>
+<div class="sourceCode" id="cb5"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">val</span> y = (math floor <span class="fl">3.1415</span> * <span class="dv">2</span>)</a></code></pre></div>
+<ul>
+<li>[ ] short</li>
+<li>[x] double</li>
+<li>[ ] int</li>
+<li>[ ] bigInt</li>
+</ul>
+<h4 id="q17.-when-using-pattern-matching-which-character-matches-on-any-object">Q17. When using pattern matching, which character matches on any object?</h4>
+<ul>
+<li>[ ] %</li>
+<li>[ ] _</li>
+<li>[ ] ^</li>
+<li>[x] -</li>
+</ul>
+<h4 id="q18.-you-have-created-an-array-using-val.-can-you-change-the-value-of-any-element-of-the-arrayand-why-or-why-not">Q18. You have created an array using val. Can you change the value of any element of the array—and why or why not?</h4>
+<ul>
+<li>[ ] Yes, the reference to the array is immutable, so the location that the array points to is immutable. The values in the array are mutable.</li>
+<li>[ ] The 0th element is immutable and cannot be modified. All other elements can be modified.</li>
+<li>[x] Yes, val does not make arrays immutable.</li>
+<li>[ ] No, val makes the array and values of the array immutable.</li>
+</ul>
+<h4 id="q19.-what-is-the-output-of-this-function">Q19. What is the output of this function?</h4>
+<div class="sourceCode" id="cb6"><pre class="sourceCode scala"><code class="sourceCode scala"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">def</span> <span class="fu">main</span> () {</a>
+<a class="sourceLine" id="cb6-2" title="2">     <span class="kw">var</span> a = <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-3" title="3">     <span class="kw">for</span> (a&lt;-<span class="dv">1</span> until <span class="dv">5</span>){<span class="fu">println</span>(a)}</a></code></pre></div>
+<ul>
+<li>[ ] 1,2,3,4,5</li>
+<li>[ ] 0,1,2,3,4</li>
+<li>[x] 1,2,3,4</li>
+<li>[ ] 2,3,4,5</li>
+</ul>
+<h4 id="q20.-what-do-you-call-objects-with-immutable-state">Q20. What do you call objects with immutable state?</h4>
+<ul>
+<li>[x] singletons</li>
+<li>[ ] stationary objects</li>
+<li>[ ] functional objects</li>
+<li>[ ] fixed objects</li>
+</ul>
+<h4 id="q21.-you-have-written-a-scala-script.-how-would-you-access-command-line-arguments-in-the-script">Q21. You have written a Scala script. How would you access command-line arguments in the script?</h4>
+<ul>
+<li>[x] use array named args</li>
+<li>[ ] use tuple named args</li>
+<li>[ ] use numbered variables with a _ prefix for example _ 1, _ 2, _ 3</li>
+<li>[ ] use numbered variables with a $ prefix - for example $1, $2, $3</li>
+</ul>
+<h4 id="q22.-what-does-this-code-return-val-x-3-if-x-2-x-4-else-x-x2">Q22. What does this code return? val x = 3; if (x &gt;2) x = 4 else x = x*2</h4>
+<ul>
+<li>[ ] 4</li>
+<li>[x] an error</li>
+<li>[ ] 6</li>
+<li>[ ] 3</li>
+</ul>
+<h4 id="q23.-which-statement-returns-a-success-or-a-failure-indicator-when-you-execute-this-code">Q23. Which statement returns a success or a failure indicator when you execute this code?</h4>
+<p>val MyFuture = Future {runBackgroundFunction() }</p>
+<ul>
+<li>[x] myFuture.onComplete</li>
+<li>[ ] myFuture(status)</li>
+<li>[ ] myFuture.Finished</li>
+<li>[ ] complete(myFuture)</li>
+</ul>
+<h4 id="q24.-to-denote-a-parameter-that-may-be-repeated-what-should-you-place-after-type">Q24. To denote a parameter that may be repeated, what should you place after type?</h4>
+<ul>
+<li>[ ] %</li>
+<li>[ ] &amp;</li>
+<li>[ ] _</li>
+<li>[x] -</li>
+</ul>
+<h4 id="q25.-what-is-called-when-a-superclass-has-more-than-one-subclass-in-scala">Q25. What is called when a superclass has more than one subclass in Scala?</h4>
+<ul>
+<li>[ ] polyinheritance</li>
+<li>[ ] multilevel inheritance</li>
+<li>[ ] multimode inheritance</li>
+<li>[x] hierarchical inheritance</li>
+</ul>
+</body>
+</html>

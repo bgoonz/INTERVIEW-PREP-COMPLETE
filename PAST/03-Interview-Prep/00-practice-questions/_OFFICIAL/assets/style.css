@@ -1,0 +1,760 @@
+body {
+  background-color: #f6f6f6;
+  line-height: 1.6;
+  font-size: 16px;
+
+}
+
+
+.btn:visited {
+  background-color: lightgrey;
+}
+
+
+.btn {
+  display: grid;
+  border: 1px solid black;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: lightgrey;
+  color: black !important;
+  border-radius: 2px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 12px 15px;
+  height: 48px;
+  text-align: center;
+  white-space: normal;
+  margin: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  outline: 0;
+}
+
+.btn::before {
+  border-radius: 2px;
+}
+
+#home-link2 {
+  margin: auto;
+  background-color: rgba(0, 102, 255, 0.248);
+  color: white;
+  padding: 0.3em 0.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: 250px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  background-color: black;
+  border-radius: 1 c;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.sub-section {
+  background-color: #f2b379;
+  border-radius: 1pc;
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.inner-sub-section {
+  background-color: 🧮;
+  border-radius: 1pc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 85%;
+  border-radius: 1pc;
+}
+
+.image-box {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 500%;
+  background-color: white;
+  background-color: transparent;
+  border-radius: 1pc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  text-align: center;
+  font-size: 250%;
+  background-color: #f7d7a6;
+  border-radius: 1pc;
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+  text-align: center;
+  font-size: 200%;
+}
+
+ul {
+  background-color: white;
+  border-radius: 1pc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style-position: inside;
+}
+
+.quote {
+  background-color: #f7d7a6;
+  border-radius: 1pc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  border: dashed;
+  border-width: 2px 4px;
+  border-radius: 40px;
+  background-color: white;
+  border-radius: 1pc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#lo-9-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgba(93, 107, 143, 0.112);
+  border: 1px solid rgba(65, 56, 56, 0.851);
+  border-radius: 7px;
+  padding: .5em .7em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8),
+    inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6),
+    inset 0 -9px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8),
+    inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6),
+    inset 0 -9px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.8),
+    inset 0 2px 0 rgba(255, 255, 255, 0.5), inset 0 -7px 0 rgba(0, 0, 0, 0.6),
+    inset 0 -9px 0 rgba(255, 255, 255, 0.3);
+  /*-webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  */
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+a {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 132, 0, 0.502);
+  color: white;
+  padding: 0.2em 0.2em;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+a:active {
+  background-color: black;
+}
+
+a:visited {
+  background-color: #ccc;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: auto;
+  padding: 8px;
+}
+
+.container {
+  background-color: black;
+  border-radius: 1 c;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 40px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+
+}
+
+.question {
+  text-align: center;
+  font-size: 250%;
+  background-color: #dddddd;
+  border-radius: 1pc;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.answer {
+  text-align: center;
+  font-size: 100%;
+  background-color: #dddddd;
+  border-radius: 1pc;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+code pre {
+  border-radius: 3pc;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  position: sticky;
+  margin-bottom: 25px;
+  -webkit-border-radius: 3pc;
+  -moz-border-radius: 3pc;
+  -ms-border-radius: 3pc;
+  -o-border-radius: 3pc;
+}
+
+code {
+  color: black;
+  margin: left;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+#quiz {
+
+  border-radius: 1pc;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* PrismJS 1.22.0
+https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+clike+javascript+http+pug+python&plugins=line-highlight+show-language+toolbar */
+/**
+ * prism.js Twilight theme
+ * Based (more or less) on the Twilight theme originally of Textmate fame.
+ * @author Remy Bach
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: white;
+  background: none;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"],
+:not(pre)>code[class*="language-"] {
+  background: hsl(0, 0%, 8%);
+  /* #141414 */
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+
+  /*#282A2B*/
+  margin: 0.5em 0;
+  overflow: auto;
+  padding: 1em;
+
+}
+
+pre[class*="language-"]::-moz-selection {
+  /* Firefox */
+  background: hsl(200, 4%, 16%);
+  /* #282A2B */
+}
+
+pre[class*="language-"]::selection {
+  /* Safari */
+  background: hsl(200, 4%, 16%);
+  /* #282A2B */
+}
+
+/* Text Selection colour */
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 93%, 0.15);
+  /* #EDEDED */
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: hsla(0, 0%, 93%, 0.15);
+  /* #EDEDED */
+}
+
+/* Inline code */
+:not(pre)>code[class*="language-"] {
+
+  /* #545454 */
+
+  padding: 0.15em 0.2em 0.05em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: hsl(0, 0%, 47%);
+  /* #777777 */
+}
+
+.token.punctuation {
+  opacity: 0.7;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.deleted {
+  color: hsl(14, 58%, 55%);
+  /* #CF6A4C */
+}
+
+.token.keyword,
+.token.property,
+.token.selector,
+.token.constant,
+.token.symbol,
+.token.builtin {
+  color: hsl(53, 89%, 79%);
+  /* #F9EE98 */
+}
+
+.token.attr-name,
+.token.attr-value,
+.token.string,
+.token.char,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable,
+.token.inserted {
+  color: hsl(76, 21%, 52%);
+  /* #8F9D6A */
+}
+
+.token.atrule {
+  color: hsl(218, 22%, 55%);
+  /* #7587A6 */
+}
+
+.token.regex,
+.token.important {
+  color: hsl(42, 75%, 65%);
+  /* #E9C062 */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[data-line] {
+  padding: 1em 0 1em 3em;
+  position: relative;
+}
+
+/* Markup */
+.language-markup .token.tag,
+.language-markup .token.attr-name,
+.language-markup .token.punctuation {
+  color: hsl(33, 33%, 52%);
+  /* #AC885B */
+}
+
+/* Make the tokens sit above the line highlight so the colours don't look faded. */
+.token {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight {
+  background: hsla(0, 0%, 33%, 0.25);
+  /* #545454 */
+  background: linear-gradient(to right,
+      hsla(0, 0%, 33%, 0.1) 70%,
+      hsla(0, 0%, 33%, 0));
+  /* #545454 */
+  border-bottom: 1px dashed hsl(0, 0%, 33%);
+  /* #545454 */
+  border-top: 1px dashed hsl(0, 0%, 33%);
+  /* #545454 */
+  left: 0;
+  line-height: inherit;
+  margin-top: 0.75em;
+  /* Same as .prism’s padding-top */
+  padding: inherit 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  white-space: pre;
+  z-index: 0;
+}
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  background-color: hsl(215, 15%, 59%);
+  /* #8794A6 */
+  border-radius: 999px;
+  box-shadow: 0 1px white;
+  color: hsl(24, 20%, 95%);
+  /* #F5F2F0 */
+  content: attr(data-start);
+  font: bold 65%/1.5 sans-serif;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0 0.5em;
+  position: absolute;
+  text-align: center;
+  text-shadow: none;
+  top: 0.4em;
+  vertical-align: 0.3em;
+}
+
+.line-highlight[data-end]:after {
+  bottom: 0.4em;
+  content: attr(data-end);
+  top: auto;
+}
+
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+
+  background: hsla(24, 20%, 50%, 0.08);
+  background: linear-gradient(to right,
+      hsla(24, 20%, 50%, 0.1) 70%,
+      hsla(24, 20%, 50%, 0));
+
+  pointer-events: none;
+
+  line-height: inherit;
+  white-space: pre;
+}
+
+#home-link2 {
+  margin: auto;
+}
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: 0.4em;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0 0.5em;
+  background-color: hsla(24, 20%, 50%, 0.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: 0.3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+
+.line-numbers .line-highlight:before,
+.line-numbers .line-highlight:after {
+  content: none;
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows {
+  pointer-events: all;
+}
+
+pre[id].linkable-line-numbers span.line-numbers-rows>span:before {
+  cursor: pointer;
+}
+
+/* pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
+  background-color: rgba(128, 128, 128, 0.2);
+} */
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar>.toolbar {
+  position: absolute;
+  top: 0.3em;
+  right: 0.2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover>.toolbar {
+  opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within>.toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar>.toolbar .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar>.toolbar a {
+  cursor: pointer;
+}
+
+div.code-toolbar>.toolbar button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar>.toolbar a,
+div.code-toolbar>.toolbar button,
+div.code-toolbar>.toolbar span {
+
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  background: #f5f2f0;
+
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+.section-button {
+  display: inline;
+}
+
+div.code-toolbar>.toolbar a:hover,
+div.code-toolbar>.toolbar a:focus,
+div.code-toolbar>.toolbar button:hover,
+div.code-toolbar>.toolbar button:focus,
+div.code-toolbar>.toolbar span:hover,
+div.code-toolbar>.toolbar span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+#btn-div-wrapper {
+  display: inline;
+  border: 2px dashed #444;
+  height: 125px;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  /* just for demo */
+  min-width: 612px;
+}
+
+#redirect-btn-div {
+  background: linear-gradient(to bottom right, #30273a, #8d78a5);
+  padding: 5px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  resize: none;
+  border: 1px solid #30273a;
+  box-shadow: 0 0 10px #8d78a5;
+  border-radius: 15px 15px 15px 15px;
+  display: inline;
+  justify-content: space-around;
+}
+
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}

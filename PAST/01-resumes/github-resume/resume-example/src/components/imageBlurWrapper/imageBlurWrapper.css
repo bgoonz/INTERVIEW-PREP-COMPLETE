@@ -1,0 +1,227 @@
+.image-blur--container,
+.image-blur--container .extend {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  padding-bottom: 100px;
+}
+
+.image-blur--canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  transition: visibility 0s linear 0.5s, opacity 0.1s 0.4s;
+}
+
+.image-blur--image {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: all 3s;
+}
+
+.image-blur--image--hide {
+  visibility: hidden;
+  opacity: 0;
+  backface-visibility: hidden;
+}
+
+.image-blur--image--show {
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.4s, visibility 0s linear, opacity 0.4s 0s;
+}
+
+.image-blur--wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-blur--wrapper p {
+  font-size: 20px;
+}
+
+.even,
+.odd {
+  width: 50%;
+  padding: 0 25px;
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+}
+
+a .even,
+a .odd {
+  width: initial;
+}
+
+.even img.image-blur--image,
+.odd img.image-blur--image {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.4s;
+}
+
+.even img:hover,
+.odd img:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.image-blur--wrapper-image {
+  transition: transform 0.4s;
+  overflow: hidden;
+  transform: scale3d(1, 1, 1);
+  position: relative;
+}
+
+.even .image-blur--wrapper-image:hover,
+.odd .image-blur--wrapper-image:hover {
+  overflow: hidden;
+  transform: scale3d(0.98, 0.98, 0.98);
+}
+
+.image-blur--wrapper-image img {
+  height: 100%;
+  cursor: pointer;
+}
+
+.even:nth-child(1),
+.odd:nth-child(2) {
+  padding: 0 25px;
+}
+
+.even:nth-child(2),
+.odd:nth-child(1) {
+  padding: 100px 25px 0;
+}
+
+.image-blur--wrapper-overlay {
+  background-image: linear-gradient(
+    45deg,
+    rgba(226, 60, 99, 0.7),
+    rgba(145, 58, 252, 0.7),
+    rgba(16, 11, 192, 0.7)
+  );
+  padding: 3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.even:hover .image-blur--wrapper-overlay,
+.odd:hover .image-blur--wrapper-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-blur--wrapper-overlay h2 {
+  text-align: left;
+  width: 100%;
+  font-size: 3em;
+  margin: 0;
+  color: white;
+  transform: translate3d(0, 80px, 0);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.even:hover .image-blur--wrapper-overlay h2,
+.odd:hover .image-blur--wrapper-overlay h2 {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.image-blur--wrapper-overlay p {
+  margin: 1em 0 0 0;
+  font-size: 0.85em;
+  letter-spacing: 0.15em;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  transform: translate3d(0, 80px, 0);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.even:hover .image-blur--wrapper-overlay p,
+.odd:hover .image-blur--wrapper-overlay p {
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .even,
+  .odd {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .image-blur--wrapper-overlay {
+    padding: 1em;
+  }
+  .image-blur--wrapper-overlay h2 {
+    font-size: 2em;
+  }
+  .image-blur--wrapper-overlay p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .text-section {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .even,
+  .odd,
+  .even:nth-child(1),
+  .odd:nth-child(2) {
+    padding: 0 10px;
+  }
+  .even:nth-child(2),
+  .odd:nth-child(1) {
+    padding: 70px 10px 0;
+  }
+  .image-blur--container {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .image-blur--wrapper {
+    max-width: initial;
+    margin-bottom: 30px;
+  }
+  .even,
+  .odd {
+    padding: 0 !important;
+    width: 100%;
+  }
+  .image-blur--container,
+  .image-blur--container .extend {
+    flex-flow: column;
+  }
+  .text-section {
+    padding: 0;
+  }
+}

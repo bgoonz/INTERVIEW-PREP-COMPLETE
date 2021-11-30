@@ -1,0 +1,412 @@
+Date: Mon, 30 Nov 2020 13:22:14 +0000 (UTC)
+Message-ID: <232417374.37.1606742534698@f26044d63e7c>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_36_300641175.1606742534698"
+
+------=_Part_36_300641175.1606742534698
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Graph Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Graph Problems</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p><code>DijkstraShortestPath</code></p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class DijkstraShortestPath
+{
+    static class Vertex implements Comparable&lt;Vertex&gt;
+    {
+        String name;
+        List&lt;Edge&gt; adjacencyList =3D new ArrayList&lt;&gt;();
+        boolean visited;
+        Vertex predecessor;
+        int distance =3D Integer.MAX_VALUE;
+
+        Vertex(String name)
+        {
+            this.name =3D name;
+        }
+
+        void addNeighbor(Edge edge)
+        {
+            adjacencyList.add(edge);
+        }
+
+        @Override
+        public int compareTo(Vertex o)
+        {
+            return Integer.compare(distance, o.distance);
+        }
+
+        @Override
+        public String toString()
+        {
+            return "Vertex{" +
+                    "name=3D'" + name + '\'' +
+                    '}';
+        }
+    }
+
+    static class Edge
+    {
+        int weight;
+        Vertex fromVertex;
+        Vertex toVertex;
+
+        Edge(int weight, Vertex fromVertex, Vertex toVertex)
+        {
+            this.weight =3D weight;
+            this.fromVertex =3D fromVertex;
+            this.toVertex =3D toVertex;
+
+            fromVertex.addNeighbor(this);
+        }
+    }
+
+    static private void computePathFrom(Vertex sourceVertex)
+    {
+        sourceVertex.distance =3D 0;
+
+        PriorityQueue&lt;Vertex&gt; pq =3D new PriorityQueue&lt;&gt;();
+        pq.add(sourceVertex);
+        while(!pq.isEmpty())
+        {
+            Vertex vertex =3D pq.poll();
+            if(!vertex.visited)
+            {
+                vertex.visited =3D true;
+                for(Edge edge : vertex.adjacencyList)
+                {
+                    Vertex targetVertex =3D edge.toVertex;
+                    int distance =3D vertex.distance + edge.weight;
+                    if(targetVertex.distance &gt; distance)
+                    {
+                        targetVertex.distance =3D distance;
+                        targetVertex.predecessor =3D vertex;
+                        pq.add(targetVertex);
+                    }
+                }
+            }
+        }
+    }
+
+    private static int getShortestPath(Vertex targetVertex, List&lt;Vertex&=
+gt; result)
+    {
+        for(Vertex vertex =3D targetVertex; vertex !=3D null; vertex =3D ve=
+rtex.predecessor)
+        {
+            result.add(vertex);
+        }
+        int distance =3D result.get(0).distance;
+        Collections.reverse(result);
+        return distance;
+    }
+
+    static int getShortestPath(Vertex fromVertex, Vertex toVertex, List&lt;=
+Vertex&gt; path)
+    {
+        computePathFrom(fromVertex);
+        return getShortestPath(toVertex, path);
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Vertex a =3D new Vertex("A");
+    Vertex b =3D new Vertex("B");
+    Vertex c =3D new Vertex("C");
+    Vertex d =3D new Vertex("D");
+    Vertex e =3D new Vertex("E");
+    Vertex f =3D new Vertex("F");
+    Vertex g =3D new Vertex("G");
+    Vertex h =3D new Vertex("H");
+    new Edge(5, a, b);
+    new Edge(8, a, h);
+    new Edge(9, a, e);
+    new Edge(5, e, h);
+    new Edge(4, e, f);
+    new Edge(20, e, g);
+    new Edge(15, b, d);
+    new Edge(12, b, c);
+    new Edge(4, b, h);
+    new Edge(6, h, f);
+    new Edge(7, h, c);
+    new Edge(1, f, c);
+    new Edge(13, f, g);
+    new Edge(9, d, g);
+    new Edge(11, c, g);
+    List&lt;Vertex&gt; path =3D new ArrayList&lt;&gt;();
+    int distance =3D getShortestPath(a, g, path);
+    boolean check =3D distance =3D=3D 25;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D path.get(0).name.equals("A") &amp;&amp; path.get(1).name.equa=
+ls("E") &amp;&amp;
+            path.get(2).name.equals("F") &amp;&amp; path.get(3).name.equals=
+("C") &amp;&amp;
+            path.get(4).name.equals("G");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_36_300641175.1606742534698--

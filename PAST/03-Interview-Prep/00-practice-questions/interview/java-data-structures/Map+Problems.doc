@@ -1,0 +1,1010 @@
+Date: Mon, 30 Nov 2020 13:21:38 +0000 (UTC)
+Message-ID: <1251011265.5.1606742498495@69e5e3800cf4>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_4_2144238551.1606742498494"
+
+------=_Part_4_2144238551.1606742498494
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Map Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Map Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 1544.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>BestAverage</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd"><p>See <code>functional.BestAverage</code><br></=
+p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ClosingPrices</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class ClosingPrices
+{
+    /*
+    We need to process a feed. Each line in the feed is either a ticker or =
+a price.
+    For each ticker, we need to report the last (i.e. closing price)
+    For example:
+            "007000AA\n" +
+            "15.47\n" +
+            "15.48\n" +
+            "15.49\n" +
+            "008000BB\n" +
+            "45.13\n" +
+            "45.14\n" +
+            "009000CC\n" +
+            "89.10\n";
+     */
+
+    private Map&lt;String, Double&gt; closingPrices =3D new HashMap&lt;&gt;=
+();
+    private enum EntryType {CUSIP, PRICE, ERROR};
+
+    public ClosingPrices(BufferedReader reader) throws IOException
+    {
+        readInput(reader);
+    }
+
+    private void readInput(BufferedReader reader) throws IOException
+    {
+
+        String line;
+        String lastCusip =3D "";
+        while((line =3D reader.readLine()) !=3D null)
+        {
+            line.trim();
+            if(StringUtils.isBlank(line))
+            {
+                continue;
+            }
+
+            EntryType entryType =3D entryType(line);
+            if(entryType =3D=3D EntryType.CUSIP)
+            {
+                if(!line.equals(lastCusip))
+                {
+                    lastCusip =3D line;
+                    closingPrices.put(line, null);
+                }
+            }
+            else if(entryType =3D=3D EntryType.PRICE)
+            {
+                closingPrices.put(lastCusip, Double.parseDouble(line));
+            }
+        }
+    }
+
+    double getClosingPrice(String ticker)
+    {
+        return closingPrices.get(ticker);
+    }
+
+    private EntryType entryType(String line)
+    {
+        if(line.matches("[a-zA-Z0-9]{8}"))
+        {
+            return EntryType.CUSIP;
+        }
+        else if(line.matches("\\d+\\.?\\d+"))
+        {
+            return EntryType.PRICE;
+        }
+        else
+        {
+            return EntryType.ERROR;
+        }
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass() throws IOException
+{
+    String input =3D  "007000AA\n" +
+                    "15.47\n" +
+                    "15.48\n" +
+                    "15.49\n" +
+                    "008000BB\n" +
+                    "45.13\n" +
+                    "45.14\n" +
+                    "009000CC\n" +
+                    "89.10\n";
+    BufferedReader reader =3D new BufferedReader(new StringReader(input));
+    ClosingPrices closingPrices =3D new ClosingPrices(reader);
+    boolean check =3D closingPrices.getClosingPrice("007000AA") =3D=3D 15.4=
+9 &amp;&amp;=20
+            closingPrices.getClosingPrice("008000BB") =3D=3D 45.14;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ConstructItinerary</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;String,String&gt; itinerary(Map&lt;String,String&gt; trips)
+{
+/*
+    Consider trips
+    From: To:               Itinerary
+    ---------               ---------
+    B  -&gt; C                 A  -&gt; B
+    D  -&gt; E                 B  -&gt; C
+    A  -&gt; B                 C  -&gt; D
+    C  -&gt; D                 D  -&gt; E
+*/
+    //  Reverse input map
+    Map&lt;String,String&gt; reveredMap =3D trips.entrySet().stream().colle=
+ct(
+            Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
+    //  Starting point will be the key not found in reversed map
+    Set&lt;String&gt; startPoint =3D new HashSet&lt;&gt;(trips.keySet());
+    startPoint.removeAll(reveredMap.keySet());
+    if(startPoint.size() !=3D 1)
+    {
+        return null;
+    }
+    String start =3D startPoint.iterator().next();
+    String end;
+    Map&lt;String,String&gt; result =3D new HashMap&lt;&gt;();
+    while((end =3D trips.get(start)) !=3D null)
+    {
+        result.put(start, end);
+        start =3D end;
+    }
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Map&lt;String,String&gt; trips =3D new HashMap&lt;String,String&gt;() {=
+{
+        put("B", "C");
+        put("D", "E");
+        put("A", "B");
+        put("C", "D");
+    }};
+    Map&lt;String, String&gt; result =3D itinerary(trips);
+    boolean check =3D result.get("A").equals("B") &amp;&amp;=20
+                    result.get("B").equals("C") &amp;&amp;=20
+                    result.get("C").equals("D") &amp;&amp;=20
+                    result.get("D").equals("E");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 643.0px;">
+<col style=3D"width: 901.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>ConversionsWithStreams</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static&=
+lt;T&gt; Map&lt;T, T&gt; reverseKeysValues(Map&lt;T, T&gt; map)
+{
+    return map.entrySet().stream().collect(
+            Collectors.toMap(Map.Entry::getValue, Map.Entry::getKey));
+}</pre>=20
+</div>
+</div><p><br></p></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Map&lt;String,String&gt; result =3D reverseKeysValues(new HashMap&lt;St=
+ring,String&gt;() {{
+        put("one", "1");
+        put("two", "2");
+        put("three", "3");
+    }});
+    boolean check =3D result.get("1").equals("one") &amp;&amp;
+                    result.get("2").equals("two") &amp;&amp;
+                    result.get("3").equals("three");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 896.0px;">
+<col style=3D"width: 648.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>DictionaryWordCount</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;String,Integer&gt; wordCountWithMerge(String dictionary)
+{
+    String[] words =3D dictionary.split("\\s+");
+    return Arrays.stream(words).collect(
+            HashMap::new,
+            (m, i) -&gt; m.merge(i, 1, Integer::sum),
+            HashMap::putAll);
+}
+
+
+static List&lt;String&gt; mostFrequentWord(String dictionary)
+{
+    Map&lt;String,Integer&gt; map =3D wordCountWithMerge(dictionary);
+    int mostUsedCount =3D map.values().stream().mapToInt(x -&gt;x).max().ge=
+tAsInt();
+    return map.entrySet().stream()
+            .filter(e -&gt; e.getValue() =3D=3D mostUsedCount)
+            .map(Map.Entry::getKey)
+            .collect(Collectors.toList());
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+Map&lt;String,Long&gt; wordCountWithCounting(String dictionary)
+{
+    String[] words =3D dictionary.split("\\s+");
+    return Arrays.stream(words).collect(Collectors.groupingBy(Function.iden=
+tity(), Collectors.counting()));
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    Map&lt;String,Long&gt; result1 =3D wordCountWithCounting("one two one t=
+hree two one one");
+    boolean check =3D result1.get("one") =3D=3D 4 &amp;&amp; result1.get("t=
+wo") =3D=3D 2 &amp;&amp; result1.get("three") =3D=3D=20
+    if(!check)
+    {
+        return false;
+    }
+    Map&lt;String,Integer&gt; result2 =3D wordCountWithMerge("one two one t=
+hree two one one");
+    check =3D result2.get("one") =3D=3D 4 &amp;&amp; result2.get("two") =3D=
+=3D 2 &amp;&amp; result2.get("three") =3D=3D 1;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D mostFrequentWord("one two one three two one one").get(0).equa=
+ls("one");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>FractionToDecimal</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String fractionToDecimal(int n, int d)
+{
+    //  Numerator =3D 1, Denominator =3D 2 -&gt; "0.5"
+    //  Numerator =3D 2, Denominator =3D 1 -&gt; "2"
+    //  Numerator =3D 2, Denominator =3D 3 -&gt; "0.(6)"
+/*
+Consider: 2/3
+                    map
+rem     result  key     value
+20      0.      20      2
+*/
+    if(n =3D=3D 0)
+    {
+        return "0";
+    }
+    if(d =3D=3D 0)
+    {
+        return "";
+    }
+    String result =3D "";
+    if((n &lt; 0) ^ (d &lt; 0))
+    {
+        result +=3D "-";
+    }
+    n =3D Math.abs(n);
+    d =3D Math.abs(d);
+    result +=3D n / d;
+    //  Remainder
+    int rem =3D n % d * 10;
+    if(rem =3D=3D 0)
+    {
+        return result;
+    }
+    result +=3D ".";
+    Map&lt;Integer, Integer&gt; map =3D new HashMap&lt;&gt;();
+    while(rem !=3D 0)
+    {
+        if(map.containsKey(rem))
+        {
+            int beg =3D map.get(rem);
+            String part1 =3D result.substring(0, beg);
+            String part2 =3D result.substring(beg);
+            result =3D part1 + "(" + part2 + ")";
+            return result;
+        }
+        map.put(rem, result.length());
+        result +=3D rem / d;
+        rem =3D rem % d * 10;
+    }
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D fractionToDecimal(1, 2).equals("0.5");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D fractionToDecimal(2, 1).equals("2");
+    if(!check)
+    {
+        return false;
+    }
+    check =3D fractionToDecimal(2, 3).equals("0.(6)");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>LengthOfCycle</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int lengthOfCycle(int[] a, int startIndex)
+{
+//    You are given an integer array of size N.
+//    Every element of the array is greater than or equal to 0.
+//    Starting from arr[startIndex], follow each element to the index it po=
+ints to.
+//    Continue to do this until you find a cycle.
+//    Return the length of the cycle. If no cycle is found return -1
+//
+//    Examples:
+//    countLengthOfCycle([1, 0], 0) =3D=3D 2
+//    countLengthOfCycle([1, 2, 0], 0) =3D=3D 3
+    Map&lt;Integer, Integer&gt; visitedMap =3D new HashMap&lt;&gt;();
+    int count =3D 1;
+    int index =3D startIndex;
+    while(!visitedMap.containsKey(index))
+    {
+        if(a[index] &gt; a.length)
+        {
+            return -1;
+        }
+        visitedMap.put(index, count++);
+        index =3D a[index];
+    }
+    return count - visitedMap.get(index);
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D lengthOfCycle(new int[] {1, 2, 0}, 0) =3D=3D 3;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 664.0px;">
+<col style=3D"width: 880.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>LongestString</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+int lengthLongestSubstringLengthWithNUnique(String s, int n)
+{
+    // "abcbbbbcccbdddadacb", 2 -&gt; "bcbbbbcccb"
+    int max =3D 0, start =3D 0;
+    Map&lt;Character,Integer&gt; map =3D new HashMap&lt;&gt;();
+    for(int i =3D 0; i &lt; s.length(); ++i)
+    {
+        char c =3D s.charAt(i);
+        map.merge(c, 1, Integer::sum);
+        if(map.size() &gt; n)
+        {
+            max =3D Math.max(max, i - start);
+            while(map.size() &gt; n)
+            {
+                c =3D s.charAt(start);
+                int count =3D map.get(c);
+                if(count &gt; 1)
+                {
+                    map.put(c, count - 1);
+                }
+                else
+                {
+                    map.remove(c);
+                }
+                start++;
+            }
+        }
+    }
+    return Math.max(max, s.length() - start);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+String longestSubstringLengthWithNUnique(String s, int n)
+{
+    // "abcbbbbcccbdddadacb", 2 -&gt; "bcbbbbcccb"
+    int max =3D 0, start =3D 0;
+    String maxStr =3D "";
+    Map&lt;Character,Integer&gt; map =3D new HashMap&lt;&gt;();
+    for(int i =3D 0; i &lt; s.length(); ++i)
+    {
+        char c =3D s.charAt(i);
+        map.merge(c, 1, Integer::sum);
+        if(map.size() &gt; n)
+        {
+            if(i - start &gt; max)
+            {
+                max =3D i - start;
+                maxStr =3D s.substring(start, i);
+            }
+            max =3D Math.max(max, i - start);
+            while(map.size() &gt; n)
+            {
+                c =3D s.charAt(start);
+                int count =3D map.get(c);
+                if(count &gt; 1)
+                {
+                    map.put(c, count - 1);
+                }
+                else
+                {
+                    map.remove(c);
+                }
+                start++;
+            }
+        }
+    }
+    if(s.length() - start &gt; max)
+    {
+        max =3D s.length() - start;
+        maxStr =3D s.substring(start, start + max);
+    }
+    return maxStr;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    boolean check =3D lengthLongestSubstringLengthWithNUnique("abcbbbbcccbd=
+ddadacb", 2) =3D=3D 10;
+    if(!check)
+    {
+        return false;
+    }
+    check =3D longestSubstringLengthWithNUnique("abcbbbbcccbdddadacb", 2).e=
+quals("bcbbbbcccb");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 772.0px;">
+<col style=3D"width: 772.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>SortLogFile</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+List&lt;String&gt; sortMessages(String[] messages)
+{
+/*
+    Message is preceded by ID.
+    Messages containing text should come before messages containing all num=
+bers
+    If two messages are same, they should be ordered by their ID
+    Unsorted                    Sorted
+    --------                    ------
+    "A3 one two three";         "A2 hello world";
+    "A2 hello world";           "A4 hello world";
+    "B2 3 5 8 12";              "A1 one two three";
+    "A1 one two three";         "A3 one two three";
+    "B1 5 2 19";                "B2 3 5 8 12";
+    "A4 hello world";           "B1 5 2 19";
+*/
+    Map&lt;String, SortedSet&lt;String&gt;&gt; stringMessageMap =3D new Tre=
+eMap&lt;&gt;();
+    Map&lt;String, SortedSet&lt;String&gt;&gt; numberMessageMap =3D new Tre=
+eMap&lt;&gt;();
+    for(String s : messages)
+    {
+        String[] a =3D s.split("\\s+");
+        String id =3D a[0];
+        String message =3D s.substring(id.length()).trim();
+        if(message.matches("^[\\d ]*$"))
+        {
+            numberMessageMap.computeIfAbsent(message, x -&gt; new TreeSet&l=
+t;&gt;()).add(id);
+        }
+        else
+        {
+            stringMessageMap.computeIfAbsent(message, x -&gt; new TreeSet&l=
+t;&gt;()).add(id);
+        }
+    }
+    List&lt;String&gt; result =3D new ArrayList&lt;&gt;();
+    for(String message : stringMessageMap.keySet())
+    {
+        SortedSet&lt;String&gt; ids =3D stringMessageMap.get(message);
+        for(String id : ids)
+        {
+            result.add(id + " " + message);
+        }
+    }
+    for(String message : numberMessageMap.keySet())
+    {
+        SortedSet&lt;String&gt; ids =3D numberMessageMap.get(message);
+        for(String id : ids)
+        {
+            result.add(id + " " + message);
+        }
+    }
+    return result;
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    String [] data =3D new String[] {
+            "A3 one two three",
+            "A2 hello world",
+            "B2 3 5 8 12",
+            "A1 one two three",
+            "B1 5 2 19",
+            "A4 hello world"
+    };
+    List&lt;String&gt; sorted =3D sortMessages(data);
+    boolean check =3D sorted.get(0).equals("A2 hello world") &amp;&amp;=20
+                    sorted.get(1).equals("A4 hello world") &amp;&amp;
+                    sorted.get(2).equals("A1 one two three") &amp;&amp;=20
+                    sorted.get(3).equals("A3 one two three") &amp;&amp;
+                    sorted.get(4).equals("B2 3 5 8 12") &amp;&amp;=20
+                    sorted.get(5).equals("B1 5 2 19");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_4_2144238551.1606742498494--

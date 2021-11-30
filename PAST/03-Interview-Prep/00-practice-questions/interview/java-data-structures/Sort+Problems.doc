@@ -1,0 +1,525 @@
+Date: Mon, 30 Nov 2020 13:21:52 +0000 (UTC)
+Message-ID: <1807546537.3.1606742512459@b55f0f78acfc>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_2_1175547730.1606742512456"
+
+------=_Part_2_1175547730.1606742512456
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Sort Problems</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Sort Problems</h1>
+    <div class=3D"Section1">
+        <div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 887.0px;">
+<col style=3D"width: 655.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>RadixSort</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">public =
+class RadixSort
+{
+/*
+  Use LSD (least significant digit) method by repeatedly sorting digits by =
+single digit from right to left
+  Given: { 170, 45, 75, 90, 802, 2, 66 }
+  Treat all values as having same number of digits:
+  Given: { 170, 045, 075, 090, 802, 002, 066 }
+  1st Pass: { 170, 090, 802, 002, 045, 075, 066 }
+  2nd Pass: { 802, 002, 045, 066, 170, 075, 090 }
+  3rd Pass: { 002, 045, 066, 075, 090, 170, 802 }
+*/
+
+    static void sort(int [] a)
+    {
+        //  Determine number of digits
+        int max =3D Arrays.stream(a).max().getAsInt();
+        int digits =3D (int)Math.log10(max) + 1;
+        for(int exp =3D 0; exp &lt; digits; ++exp)
+        {
+            countSort(a, (int)Math.pow(10, exp));
+        }
+    }
+
+    private static void countSort(int[] a, int exp)
+    {
+        //  Considering input as: { 170, 45, 75, 90, 802, 2, 66 }
+        int[] count =3D new int[10];
+
+        for(int i =3D 0; i &lt; a.length; ++i)
+        {
+            count[a[i] / exp % 10]++;
+        }
+        //  Count
+        //  Index:  0 1 2 3 4 5 6 7 8 9
+        //  1st:    2 0 2 0 0 2 1 0 0 0
+        //  2nd:
+
+        for(int i =3D 1; i &lt; 10; ++i)
+        {
+            count[i] +=3D count[i - 1];
+        }
+        //  Count
+        //  Index:  0 1 2 3 4 5 6 7 8 9
+        //  1st:    2 2 4 4 4 4 6 7 7 7
+        //  2nd:
+
+        int[] result =3D new int[a.length];
+        for(int i =3D a.length - 1; i &gt;=3D 0; --i)
+        {
+            result[count[a[i] / exp % 10] - 1] =3D a[i];
+            count[a[i] / exp % 10]--;
+        }
+        //  Index;  0 1 2 3 4 5 6 7 8 9
+        //  Result:
+
+        System.arraycopy(result, 0, a, 0, a.length);
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] data =3D { 170, 45, 75, 90, 802, 2, 66 };
+    sort(data);
+    boolean check =3D Arrays.equals(new int[] {2, 45, 66, 75, 90, 170, 802}=
+, data);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<div class=3D"table-wrap">
+<table data-layout=3D"full-width" class=3D"confluenceTable">
+<colgroup>
+<col style=3D"width: 771.0px;">
+<col style=3D"width: 771.0px;">
+</colgroup>
+<tbody>
+<tr>
+<th class=3D"confluenceTh"><p>Sort</p></th>
+<th class=3D"confluenceTh"><p>Tests</p></th>
+</tr>
+<tr>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void bubbleSort(int[] a)
+{
+    boolean swapped;
+    do
+    {
+        swapped =3D false;
+        for(int i =3D 1; i &lt; a.length; ++i)
+        {
+            if(a[i - 1] &gt; a[i])
+            {
+                swapped =3D true;
+                swap(a, i, i - 1);
+            }
+        }
+    } while(swapped);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">private=
+ static int partition(int[] a, int left, int right)
+{
+    int pivot =3D a[(left + right) / 2];
+    while(left &lt;=3D right)
+    {
+        while(a[left] &lt; pivot) left++;
+        while(a[right] &gt; pivot) right--;
+        if(left &lt;=3D right)
+        {
+            swap(a, left++, right--);
+        }
+    }
+    return left;
+}
+
+
+private static void quickSort(int[] a, int left, int right)
+{
+    int idx =3D partition(a, left, right);
+    if(left &lt; idx - 1)
+    {
+        quickSort(a, left, idx - 1);
+    }
+    if(idx &lt; right)
+    {
+        quickSort(a, idx, right);
+    }
+}
+
+
+static void quickSort(int[] a)
+{
+    quickSort(a, 0, a.length - 1);
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void mergeSort(int[] a)
+{
+    if(a.length &lt; 2)
+    {
+        return;
+    }
+    int mid =3D a.length / 2;
+    int[] left =3D new int[mid];
+    int[] right =3D new int[a.length - mid];
+    System.arraycopy(a, 0, left, 0, left.length);
+    System.arraycopy(a, mid, right, 0, right.length);
+    mergeSort(left);
+    mergeSort(right);
+    merge(a, left, right);
+}
+
+
+private static void merge(int[] dst, int[] left, int[] right)
+{
+    int dstPos =3D 0, leftPos =3D 0, rightPos =3D 0;
+    while(leftPos &lt; left.length &amp;&amp; rightPos &lt; right.length)
+    {
+        if(left[leftPos] &lt; right[rightPos])
+        {
+            dst[dstPos++] =3D left[leftPos++];
+        }
+        else
+        {
+            dst[dstPos++] =3D right[rightPos++];
+        }
+    }
+    while(leftPos &lt; left.length)
+    {
+        dst[dstPos++] =3D left[leftPos++];
+    }
+    while(rightPos &lt; right.length)
+    {
+        dst[dstPos++] =3D right[rightPos++];
+    }
+}</pre>=20
+</div>
+</div>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+void insertionSort(int[] a)
+{
+    for(int i =3D 1; i &lt; a.length; ++i)
+    {
+        for(int j =3D i; j &gt; 0; --j)
+        {
+            if(a[j] &lt; a[j - 1])
+            {
+                swap(a, j, j - 1);
+            }
+        }
+    }
+}</pre>=20
+</div>
+</div></td>
+<td class=3D"confluenceTd">
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">=20
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: java; gutter: false; theme: Confluence" data-theme=3D"Confluence">static =
+boolean testsPass()
+{
+    int[] data =3D {5, 1, 4, 9, 6, 2, 7, 3, 8};
+    bubbleSort(data);
+    boolean check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, =
+data);
+    if(!check)
+    {
+        return false;
+    }
+    data =3D new int[]{5, 1, 4, 9, 6, 2, 7, 3, 8};
+    quickSort(data);
+    check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, data);
+    if(!check)
+    {
+        return false;
+    }
+    data =3D new int[]{5, 1, 4, 9, 6, 2, 7, 3, 8};
+    mergeSort(data);
+    check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, data);
+    if(!check)
+    {
+        return false;
+    }
+    data =3D new int[]{5, 1, 4, 9, 6, 2, 7, 3, 8};
+    insertionSort(data);
+    check =3D Arrays.equals(new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9}, data);
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>=20
+</div>
+</div><p><br></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_2_1175547730.1606742512456--

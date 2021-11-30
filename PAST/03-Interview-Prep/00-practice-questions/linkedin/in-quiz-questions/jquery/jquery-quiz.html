@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>jquery-quiz</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h2 id="jquery-assessment">jQuery Assessment</h2>
+<h4 id="q1.-whats-the-difference-between-these-two-snippets">Q1. What’s the difference between these two snippets?</h4>
+<p><code>$('button').on('click', function(){ alert('you clicked the button!'); }); $('button').click(function(){ alert('you clicked the button!'); });</code></p>
+<ul>
+<li>Only the second one will work; jQuery does not have a function called .on.</li>
+<li>The second snippet will not function.</li>
+<li>Nothing - .click(function) is shorter way to write .on(‘click’, function) &lt;&lt;&lt;&lt;—Correct</li>
+<li>The first snippet will execute for every button on the page, the second will only apply to the first button</li>
+</ul>
+<h4 id="q2.-what-does-the-following-line-of-code-do">Q2. What does the following line of code do?</h4>
+<p><code>jQuery('p')</code></p>
+<ul>
+<li>Loads a paragraph tag from a remote server using AJAX</li>
+<li>Aliases jQuery to a variable p</li>
+<li>Selects all paragraphs on the page &lt;&lt;&lt;&lt;—Correct</li>
+<li>Creates a new paragraph tag and inserts it into the body tag</li>
+</ul>
+<h4 id="q3.-give-the-following-html-how-could-we-use-one-line-to-hide-or-show-the-button">Q3. Give the following HTML, how could we use one line to hide or show the button?</h4>
+<p><code>&lt;button class="btn btn-primary" type="submit"&gt;Continue to checkout&lt;/button&gt;</code></p>
+<ul>
+<li>$(‘.btn-primary’).toggle(); &lt;&lt;&lt;&lt;—Correct</li>
+<li>$(‘.btn-primary’).showHide();</li>
+<li>$(‘.btn-primary’).not(‘:visible’).show();</li>
+<li>$(‘.btn-primary’).css({ display: ‘block’});</li>
+</ul>
+<h4 id="q4.-working-with-ajax-we-may-run-into-situations-where-a-piece-of-code-should-not-be-run-until-after-multiple-ajax-calls-have-completed-successfully.-say-we-need-to-call-two-external-services-for-json-data-a-list-of-students-and-a-list-of-classes.-and-only-after-retrieving-those-data-will-we-perform-some-manipulations-on-a-page.-what-is-the-preferred-way-for-dealing-with-this-scenario">Q4. Working with AJAX, we may run into situations where a piece of code should not be run until after multiple AJAX, calls have completed successfully. Say we need to call two external services for JSON data (a list of students, and a list of classes). And only after retrieving those data will we perform some manipulations on a page. What is the preferred way for dealing with this scenario?</h4>
+<p><a href="https://example.com/json-api/students%20https://example.com/json-api/classes">https://example.com/json-api/students https://example.com/json-api/classes</a></p>
+<ul>
+<li><code>$.get([ 'https://example.com/json-api/students', 'https://example.com/json-api/classes' ], function(studentRequest, classRequest) { // the rest of the code goes here });</code></li>
+<li><code>$.when( $.get('https://example.com/json-api/students'), $.get('https://example.com/json-api/classes') ).done(function(studentRequest, classRequest) { // the rest of the code goes here });</code></li>
+<li><code>$.bind( $.get('https://example.com/json-api/students'), $.get('https://example.com/json-api/classes') ).done(function(studentRequest, classRequest) { // the rest of the code goes here });</code></li>
+<li><code>$.ajax('https://example.com/json-api/students', { success: function(studentRequest) { $.ajax('https://example.com/json-api/classes', { success: function(classRequest) { // the rest of the code goes here } }); } });</code> &lt;&lt;&lt;&lt;&lt;-CORRECT !</li>
+</ul>
+<h4 id="q5.-given-the-snippet-of-html-below-what-is-the-difference-between-the-two-lines-that-follow-it">Q5. Given the snippet of HTML below, what is the difference between the two lines that follow it?</h4>
+<ul>
+<li>
+Item 1
+</li>
+<li>
+Item 2
+</li>
+<li>
+Item 3
+</li>
+<li>
+Item 4
+</li>
+</ul>
+<p>===================</p>
+<p>$(‘ul’).find(‘li’).get(2); $(‘ul’).find(‘li’).eq(2);</p>
+<ul>
+<li>.get() retrieves a DOM element, and can’t be chained, eq() retrieves a jQuery object, and can be chained.</li>
+<li>.get() retrieves a jQuery object, and can’t be chained, eq() retrieves a DOM element, and can be chained. &lt;– Correct</li>
+<li>.get() retrieves a jQuery object, and is zero-indexed, eq() retrieves a DOM element, and is 1-indexed.</li>
+<li>.get() retrieves a DOM element, and is zero-indexed, eq() retrieves a jQuery object, and is 1-indexed.</li>
+</ul>
+<h4 id="q6.-suppose-we-want-to-have-an-ball-created-from-an-html-element-idball-move-down-and-to-the-right-from-its-original-location-when-clicked-and-move-back-into-its-original-place-when-finished.-given-a-starting-point-of-this-which-of-these-snippets-would-accomplish-that-goal">Q6. Suppose we want to have an ball created from an HTML element (id=ball) move down and to the right from its original location when clicked, and move back into its original place when finished. Given a starting point of this, which of these snippets would accomplish that goal?</h4>
+<p>$(‘#ball’).click(function() { // Our code goes here });</p>
+<ul>
+<li><p><code>$(this).animate({ top: '+=100', left: '+=100', }, { duration: 600, complete: function() { $(this).animate({ top: '-=100', left: '-=100', }, 600) } });</code> &lt;– Correct</p></li>
+<li><code>$(this).animate({ top: '-=100', left: '-=100', }, 600, function() { $(this).animate({ top: '+=100', left: '+=100', }, 600) } });</code></li>
+<li><p><code>$(this).animate({ top: '=100', left: '=100', }, { duration: 600, complete: function() { $(this).animate({ top: 0, left: 0, }, 600) } });</code></p></li>
+<li><p><code>$(this).animate({ top: '100', left: '100', }, 600, function() { $(this).animate({ top: 0, left: 0, }, 600) } });</code></p></li>
+</ul>
+<h4 id="q7.-given-the-following-css-and-html-codes-below-how-could-you-apply-the-success-class-to-the-feedback-div">Q7. Given the following CSS and HTML codes below, how could you apply the success class to the feedback div?</h4>
+<p>.success { color: green; background: #ddffdd; }</p>
+<div class="feedback">
+<pre><code>    Thank you for answering this survey.</code></pre>
+</div>
+<ul>
+<li><code>$('.feedback').hasClass('.success');</code></li>
+<li><code>$.css('.feedback', '.success')</code>;</li>
+<li><code>$('.feedback').addClass('.success');</code> &lt;&lt;&lt;&lt;—Correct (you can only have class name without dot in-front of it)</li>
+<li><code>$('.feedback').css('.success');</code></li>
+</ul>
+<h4 id="q8.-below-an-example-page-snippet-that-includes-a-couple-of-messages-in-a-list-and-a-code-snippet-that-retrieves-a-few-hundred-messages-from-a-api-endpoints-using-ajax.-how-might-we-add-these-items-to-the-page-snippet-in-a-way-that-avoids-performance-problems-with-dom-insertions">Q8. Below an example page snippet that includes a couple of messages in a list, and a code snippet that retrieves a few hundred messages from a API endpoints using AJAX. How might we add these items to the page snippet in a way that avoids performance problems with DOM insertions?</h4>
+<div class="message-area">
+<pre><code>&lt;ul class=&quot;message-area--list&quot;&gt;
+    &lt;li&gt;Existing message 1&lt;/li&gt;
+    &lt;li&gt;Existing message 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+<p>$.get(‘//example.com/api/v1/message’) .done(function(data) { var tonsOfItems = data.messages; // add all these messages to a large page });</p>
+<ul>
+<li><p><code>tonsOfItems.map(function(item) { $('.message-area--list').append('&lt;li&gt;'+item+'&lt;/li&gt;'); });</code> &lt;&lt;&lt;&lt;—Correct</p></li>
+<li><p><code>var tonsOfListItems = tonsOfItems.map(function(itme)) { return '&lt;li&gt;'+item+'&lt;/li&gt;'; }); $('.message-area--list').append(tonsOfListItems.join(''));</code></p></li>
+<li><p><code>Removing the event handlers with JavaScript will be slower than removing them $.each(tonsOfItems, function(idx, item) { $('&lt;li&gt;'+item+'&lt;/li&gt;').appendTo($messageList); });</code></p></li>
+<li><p><code>$.each(tonsOfItems, function(idx, item) { $('.message-area--list').append('&lt;li&gt;'+item+'&lt;/li&gt;'); });</code></p></li>
+</ul>
+<h4 id="q9.-what-is-jquery">Q9. What is jQuery?</h4>
+<ul>
+<li>jQuery is a bridge between Java and Javascript that makes native apps easier to write.</li>
+<li>jQuery is a plugin for JavaScript that makes database queries easier to write.</li>
+<li>jQuery is a collection of JavaScript functions that makes finding and manipulating elements on a page, AJAX, and other things easier. &lt;&lt;&lt;&lt;—CORRECT !</li>
+<li>jQuery is a Chrome extension that allows users to create their own extensions with just a few lines of JavaScript.</li>
+</ul>
+<h4 id="q10.-we-want-to-create-a-new-jquery-plugin-called-linkupdater-that-can-be-chained-onto-other-jquery-selector-like-a-normal-plugin.-it-should-updates-all-the-links-in-the-referenced-collection-so-they-open-in-new-windows-or-tabs.-below-is-the-first-cut.-what-is-one-problem-with-this-plugin">Q10. We want to create a new jQuery plugin called linkUpdater that can be chained onto other jQuery selector like a normal plugin. It should updates all the links in the referenced collection so they open in new windows or tabs. Below is the first cut. What is one problem with this plugin?</h4>
+<p>“user strict”; $.linkUpdater = function() { this.find(‘a’).attr(‘target’, ‘_blank’); } ) )( jQuery );</p>
+<ul>
+<li>this needs to be wrapped, like $(this), in order to be chained in a plugin.</li>
+<li>jQuery plugins can’t be safety authored in strict mode.</li>
+<li>In order to be used by other code, plugins need to be added to the global namespace, not wrapped in function expression.</li>
+<li>Our plugin should extend jQuery.fn, not jQuery itself. &lt;&lt;&lt;—CORRECT !</li>
+</ul>
+<h4 id="q11.-generally-speaking-when-used-on-a-web-page-how-should-jquery-be-installed-and-why">Q11. Generally speaking, when used on a web page, how should jQuery be installed, and why?</h4>
+<ul>
+<li>Just before the closing body tag, because we want to avoid blocking other resources from loading, and we use the ready method to make sure our code fires after the DOM is ready &lt;&lt;&lt;&lt;—CORRECT!</li>
+<li>Using the highest version number possible because only jQuery 3 and up are compatible with Internet Explorer 7</li>
+<li>In the head tag because we want jQuery available as soon as possible</li>
+<li>From a CDN because we want to be able to use jQuery online or offline</li>
+</ul>
+<h4 id="q12.-given-the-following-html-how-could-we-make-this-button-disappear-from-the-page-using-jquery">Q12. Given the following HTML, How could we make this button disappear from the page using jQuery?</h4>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">&lt;button&gt;</span>class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Continue to checkout<span class="kw">&lt;/button&gt;</span></a></code></pre></div>
+<ul>
+<li>$(‘.btn-primary’).hide(); &lt;&lt;&lt;—CORRECT</li>
+<li>$(‘.btn-primary:visible’).not();</li>
+<li>$(‘.btn-primary’).visibility(false);</li>
+<li>$(‘.btn-primary’).show(false);</li>
+</ul>
+<h4 id="q13.-what-is-the-difference-between-header.html-and-header.text">Q13. What is the difference between $(‘header’).html() and $(‘header’).text()?</h4>
+<ul>
+<li>$(‘header’).html() returns the inner HTML of the header. $(‘header’).text() returns only the text &lt;&lt;&lt;&lt;–CORRECT</li>
+<li>$(‘header’).html() returns only the HTML tags used, without the text. $(‘header’).text() returns only the text</li>
+<li>$(‘header’).html() strips all HTML from the header. $(‘header’).text() always returns an empty string.</li>
+<li>$(‘header’).html() returns all headers in an HTML document. $(‘header’).text() the first line of a text file.</li>
+</ul>
+<h4 id="q14.-when-writing-jquery-plugins-we-often-provide-default-options-that-may-be-overridden-by-the-end-user.-what-jquery-function-is-most-useful-for-this-purpose">Q14. When writing jQuery plugins, we often provide default options that may be overridden by the end user. What jQuery function is most useful for this purpose?</h4>
+<ul>
+<li>$.extend &lt;– Correct</li>
+<li>$.clone</li>
+<li>$.fn.extend</li>
+<li>$.merge</li>
+</ul>
+<h4 id="q15.-there-are-times-when-you-might-want-to-programmatically-trigger-an-event-instead-of-simply-reacting-to-user-input-directly.-given-this-markup-which-choice-will-not-cause-a-click-event-to-the-select-box-when-the-button-is-clicked">Q15. There are times when you might want to programmatically trigger an event, instead of simply reacting to user input directly. Given this markup, Which choice will NOT cause a click event to the select box when the button is clicked?</h4>
+<article>
+<div>
+<pre><code>  Here&#39;s a button you can click: &lt;button class=&quot;btn&quot;&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;   
+&lt;form&gt;
+    &lt;p&gt;
+        Further down the page, there&#39;s a select box.
+    &lt;/p&gt;
+    &lt;select&gt;
+        &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;One&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;One&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;One&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;    </code></pre>
+</article>
+<ul>
+<li><p><code>$('button').on('click.myApp', (function() { $('input[type=select]').trigger('click'); });</code> &lt;&lt;&lt;&lt;&lt;—-CORRECT ! ***see option 3</p></li>
+<li><p><code>$('button').on('click', (function() { $('input[type=select]').click()); });</code></p></li>
+<li><p><code>$('button').trigger(function() { $('input[type=select]').click(); });</code> &lt;– I think this may be more correct https://api.jquery.com/trigger/</p></li>
+<li><p><code>$('button').click(function() { $('input[type=select]').click(); });</code></p></li>
+</ul>
+<h4 id="q16.-you-have-an-absolutely-positioned-element-inside-a-relatively-positioned-parent-element-and-you-want-to-animate-that-element-within-its-parent-element.-what-jquery-function-is-most-useful-for-finding-the-initial-coordinates-of-the-.animate-me">Q16. You have an absolutely positioned element inside a relatively positioned parent element, and you want to animate that element within its parent element. What jQuery function is most useful for finding the initial coordinates of the .animate-me?</h4>
+<pre class="jquery"><code>&lt;style&gt;
+  .parent {
+    position: relative;
+    top: 3em;
+    width: 50%;
+    min-height: 50vh;
+    margin: 0 auto;
+  }
+
+  .animate-me {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+&lt;/style&gt;
+
+&lt;div class=&quot;parent&quot;&gt;
+  &lt;div class=&quot;animate-me&quot;&gt;
+    This box will move!
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<ul>
+<li><code>$('.animate-me').offset();</code>&lt;– Correct relative to Document</li>
+<li><code>$('.animate-me').each();</code></li>
+<li><code>$('.animate-me').position();</code> &lt;– WRONG relative to parent</li>
+<li><code>$('.animate-me').offsetParent();</code></li>
+</ul>
+<h4 id="q17.-you-want-to-work-with-ajax-using-a-promise-like-interface-instead-of-nested-callback-functions.-what-jquery-api-should-you-use">Q17. You want to work with AJAX using a Promise-like interface instead of nested callback functions. What jQuery API should you use?</h4>
+<ul>
+<li><code>jQuery.sub</code></li>
+<li><code>jQuery.ajaxTransport</code></li>
+<li><code>jQuery.Deferred</code> &lt;– Correct</li>
+<li><code>jQuery.proxy</code></li>
+</ul>
+<h4 id="q18.-what-is-tricky-about-jquerys-nth--filters-nth-child-nth-of-type-etc.-relative-to-other-filters">Q18. What is tricky about jQuery’s nth- filters (:nth-child, :nth-of-type, etc.) relative to other filters?</h4>
+<ul>
+<li>Referring to lists of items, they are 1-indexed (like CSS), not 0-indexed (like JavaScript). &lt;– Correct</li>
+<li>They don’t return the jQuery object, and cannot be chained.</li>
+<li>They can return the wrong items if the DOM was recently manipulated.</li>
+<li>They are not part of CSS, so they don’t get the performance benefits of passing through the document.querySelectorAll.</li>
+</ul>
+<h4 id="q19.-jquerys-ajax-functions-return-objects-that-implement-the-promise-api.-as-a-result-you-can-chain-promises-and-avoid-nested-callbacks.-what-does-that-look-like">Q19. jQuery’s AJAX functions return objects that implement the Promise API. As a result, you can chain promises and avoid nested callbacks. What does that look like?</h4>
+<ul>
+<li>Option 1 &lt;– Correct</li>
+</ul>
+<pre class="jquery"><code>$.get(&#39;hhttp://httpbin.org/delay/2&#39;)
+  .then(function(response) {
+    // Data from first GET is here as &#39;response&#39;
+    return $.get(&#39;http://httpbin.org/delay/2&#39;);
+  })
+  .then(function(response) {
+    // Data from second GET is here as &#39;response&#39;
+  });</code></pre>
+<ul>
+<li>Option 2</li>
+</ul>
+<pre class="jquery"><code>$.get(&#39;hhttp://httpbin.org/delay/2&#39;)
+  .catch(function(response) {
+    // Data from first GET is here as &#39;response&#39;
+    return $.get(&#39;http://httpbin.org/delay/2&#39;);
+  })
+  .done(function(response) {
+    // Data from second GET is here as &#39;response&#39;
+  });</code></pre>
+<ul>
+<li>Option 3</li>
+</ul>
+<pre class="jquery"><code>$.get(&#39;hhttp://httpbin.org/delay/2&#39;, function(response1) {
+  // Data from first GET is here as &#39;response1&#39;
+
+  $.get(&#39;http://httpbin.org/delay/2&#39;, function(response2) {
+    // Data from second GET is here as &#39;response2&#39;
+  });
+});</code></pre>
+<ul>
+<li>Option 4</li>
+</ul>
+<pre class="jquery"><code>$.get(&#39;hhttp://httpbin.org/delay/2&#39;)
+  .then(function(response) {
+    // Data from first GET is here as &#39;response&#39;
+    return response;
+  })
+  .get(&#39;http://httpbin.org/delay/2&#39;, function(response) {
+    // Data from second GET is here as &#39;response&#39;
+  });</code></pre>
+<h4 id="q20.-you-want-to-have-a-ball-that-is-created-from-an-html-element-idball-move-down-and-to-the-right-of-its-original-location-when-clicked-and-move-back-to-its-original-place-when-finished.-what-snippet-added-to-the-code-below-would-do-this">Q20. You want to have a ball that is created from an HTML element (id=ball) move down and to the right of its original location when clicked, and move back to its original place when finished. What snippet, added to the code below, would do this?</h4>
+<pre class="jquery"><code>$(&#39;#ball&#39;).click(function() {
+  // Our code goes here
+});</code></pre>
+<ul>
+<li>Option 1</li>
+</ul>
+<pre class="jquery"><code>$(this).animate({
+  top: &#39;-=100&#39;,
+  left: &#39;-=100&#39;,
+}, 600, function() {
+  $(this).animate({
+  top:  &#39;+=100&#39;,
+  left: &#39;+=100&#39;,
+  }, 600)
+});</code></pre>
+<ul>
+<li>Option 2 &lt;– Correct</li>
+</ul>
+<pre class="jquery"><code>$(this).animate({
+  top: &#39;+=100&#39;,
+  left: &#39;+=100&#39;,
+}, {
+  duration: 600,
+  complete: function() {
+  $(this).animate({
+  top:  &#39;-=100&#39;,
+  left: &#39;-=100&#39;,
+  }, 600)
+  }
+});</code></pre>
+<ul>
+<li>Option 3</li>
+</ul>
+<pre class="jquery"><code>$(this).animate({
+  top: 100,
+  left: 100,
+}, 600, function() {
+  $(this).animate({
+  top:  0,
+  left: 0,
+  }, 600)
+});</code></pre>
+<ul>
+<li>Option 4</li>
+</ul>
+<pre class="jquery"><code>$(this).animate({
+  top: 100,
+  left: 100,
+}, {
+  duration: 600,
+  complete: function() {
+  $(this).animate({
+  top:  0,
+  left: 0,
+  }, 600)
+  }
+});</code></pre>
+<h4 id="q21.-the-way-.wrap-works-is-sometimes-missunderstood.-given-the-dom-and-jquery-snippets-below-what-does-the-modified-dom-snippet-look-like">Q21. The way <code>.wrap()</code> works is sometimes missunderstood. Given the DOM and jQuery snippets below, what does the modified DOM snippet look like?</h4>
+<pre class="jquery"><code>&lt;div id=&quot;container&quot;&gt;
+  &lt;div class=&quot;item&quot;&gt;Here&#39;s an item&lt;/div&gt;
+&lt;/div&gt;
+
+$(&#39;#container&#39;).wrap(&#39;&lt;div class=&quot;wrapper&quot;&gt;&lt;/div&gt;&#39;).css(&#39;border&#39;, &#39;2px solid red&#39;);</code></pre>
+<ul>
+<li>Option 1</li>
+</ul>
+<pre class="jquery"><code>&lt;div class=&quot;wrapper&quot; style=&quot;border: 2px solid red;&quot;&gt;
+  &lt;div id=&quot;container&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Here&#39;s an item&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<ul>
+<li>Option 2 &lt;– Correct</li>
+</ul>
+<pre class="jquery"><code>&lt;div class=&quot;wrapper&quot;&gt;
+  &lt;div id=&quot;container&quot; style=&quot;border: 2px solid red;&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Here&#39;s an item&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<ul>
+<li>Option 3</li>
+</ul>
+<pre class="jquery"><code>&lt;div id=&quot;container&quot; style=&quot;border: 2px solid red;&quot;&gt;
+  &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Here&#39;s an item&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<ul>
+<li>Option 4</li>
+</ul>
+<pre class="jquery"><code>&lt;div id=&quot;container&quot;&gt;
+  &lt;div class=&quot;wrapper&quot; style=&quot;border: 2px solid red;&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Here&#39;s an item&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<h4 id="q22.-how-can-you-select-the-following-blockquote-and-the-list-in-a-single-call-to-jquery-without-chaining">Q22. How can you select the following blockquote AND the list in a single call to jQuery() without chaining?</h4>
+<pre class="jquery"><code>&lt;div class=&quot;quotes&quot;&gt;
+  &lt;blockquote data-favorite=&quot;false&quot;&gt;A quote&lt;/blockquote&gt;
+  &lt;blockquote data-favorite=&quot;false&quot;&gt;A favorite&lt;/blockquote&gt;
+  &lt;blockquote data-favorite=&quot;false&quot;&gt;A quote&lt;/blockquote&gt;
+  &lt;blockquote data-favorite=&quot;false&quot;&gt;A quote&lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;ul class=&quot;menu-first&quot;&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+  &lt;li&gt;Item 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<ul>
+<li><code>$('.quotes + .menu-first')</code></li>
+<li><code>$('.quotes .menu-first')</code></li>
+<li><code>$('.quotes, .menu-first')</code> &lt;– correct</li>
+<li><code>$('.quotes' + '.menu-first')</code></li>
+</ul>
+<h4 id="q23.-given-the-css-and-html-code-below-how-could-you-apply-the-success-class-to-the-feedback-div">Q23. Given the CSS and HTML code below, how could you apply the success class to the feedback div?</h4>
+<pre class="jquery"><code>.succes {
+  colour: green;
+  background: #ddffdd
+}
+
+&lt;div class=&quot;feedback&quot;&gt;
+  Thank you for answering this survey.
+&lt;/div&gt;</code></pre>
+<ul>
+<li><code>$('.feedback').hasClass('.success');</code></li>
+<li><code>$('.feedback').addClass('.success');</code> &lt;– most correct however it should be (‘success’)</li>
+<li><code>$.css('.feedback', '.success');</code></li>
+<li><code>$('.feedback').css('.success');</code></li>
+</ul>
+<h4 id="q24.-effects-like-show-hide-fadin-and-fadeout-can-be-called-with-no-arguments-but-can-also-take-arguments-for-how-long-they-should-last.-which-is-not-a-duration-argument-supported-by-these-functions">Q24. Effects like show, hide, fadIn, and fadeOut can be called with no arguments, but can also take arguments for how long they should last. Which is NOT a duration argument supported by these functions?</h4>
+<ul>
+<li>[ ] “fast”</li>
+<li>[x] “extreme” &lt;– Correct</li>
+<li>[ ] 2000</li>
+<li>[ ] “slow”</li>
+</ul>
+<h4 id="q25.-though-jquery-offers-visual-effects-it-is-considered-a-best-practice-to-use-css-to-se-up-different-states-triggered-by-classes-where-it-makes-sense.-whats-the-easiest-way-to-enable-and-disable-a-class-bounce-on-an-element-with-the-id-dialog">Q25. Though jQuery offers visual effects, it is considered a best practice to use CSS to se up different states triggered by classes, where it makes sense. What’s the easiest way to enable and disable a class bounce on an element with the ID dialog?</h4>
+<ul>
+<li>[ ] <code>$('#dialog').classToggle('bounce')</code></li>
+<li>[ ] <code>$('#dialog.bounce').removeClass().addClass()</code></li>
+<li>[ ] <code>$(#dialog').addOrRemoveClass('bounce')</code></li>
+<li>[x] <code>$(#dialog').toggleClass('bounce') &lt;-- Correct</code></li>
+</ul>
+<h4 id="q26.-what-is-the-main-difference-between-selectors-and-filters">Q26. What is the main difference between selectors and filters?</h4>
+<ul>
+<li>[ ] Selectors are used to refine the content that filters have been applied to.</li>
+<li>[x] Selectors are used to find and select content in a page. Filters are used to refine the results of selectors. &lt;– Correct</li>
+<li>[ ] Filters are used to remove content from the page. Selectors are used to add content to the page</li>
+<li>[ ] There is no real difference. They are both used to build up lists of page content.</li>
+</ul>
+<h4 id="q27.-you-want-to-create-a-custom-right-click-menu.-how-might-you-start-the-code">Q27. You want to create a custom right-click menu. How might you start the code?</h4>
+<ul>
+<li>[ ] <code>$('#canvas').on('click.right', function(){ console.log('Handled a right-click') });</code></li>
+<li>[ ] <code>$('#canvas').on('contextual', function(){ console.log('Handled a right-click') });</code></li>
+<li>[x] <code>$('#canvas').on('contextmenu', function(){ console.log('Handled a right-click') });</code></li>
+<li>[ ] <code>$('#canvas').on('rightclick', function(){ console.log('Handled a right-click') });</code></li>
+</ul>
+<h4 id="q28.-what-is-the-correct-way-to-check-how-many-paragraphs-exist-on-a-page-using-jquery">Q28. What is the correct way to check how many paragraphs exist on a page using jQuery?</h4>
+<ul>
+<li>[ ] <code>$('p').count()</code></li>
+<li>[x] <code>$('p').length</code> &lt;– Correct</li>
+<li>[ ] <code>$('*').find('p')</code></li>
+<li>[ ] <code>$('p').length()</code></li>
+</ul>
+<h2 id="jquery-assessment-1">jQuery Assessment</h2>
+<h2 id="this-is-only-for-informational-purpose.">### This is only for informational purpose.</h2>
+<table>
+<thead>
+<tr class="header">
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><br> <br><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/1.png" width="90%" height="50%"> )<br><br></td>
+<td><br> <br><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/2.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+<tr class="even">
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/3.png" width="90%" height="50%"> )<br><br></td>
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/4.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+<tr class="odd">
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/5.png" width="90%" height="50%"> )<br><br></td>
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/6.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+<tr class="even">
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/7.png" width="90%" height="50%"> )<br><br></td>
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/8.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+<tr class="odd">
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/9.png" width="90%" height="50%"> )<br><br></td>
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/10.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+<tr class="even">
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/11.png" width="90%" height="50%"> )<br><br></td>
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/12.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+<tr class="odd">
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/13.png" width="90%" height="50%"> )<br><br></td>
+<td><img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/14.png" width="90%" height="50%"> )<br><br></td>
+</tr>
+</tbody>
+</table>
+<h4 id="q1.-whats-the-difference-between-these-two-snippets-1">Q1. What’s the difference between these two snippets?</h4>
+<p><code>$('button').on('click', function(){      alert('you clicked the button!');  });  $('button').click(function(){      alert('you clicked the button!');  });</code></p>
+<ul>
+<li>Only the second one will work; jQuery does not have a function called .on. &lt;&lt;&lt;&lt;—Correct</li>
+<li>The second snippet will not function.</li>
+<li>Nothing - .click(function) is shorter way to write .on(‘click’, function)</li>
+<li>The first snippet will execute for every button on the page, the second will only apply to the first button</li>
+</ul>
+<h4 id="q2.-what-does-the-following-line-of-code-do-1">Q2. What does the following line of code do?</h4>
+<p><code>jQuery('p')</code></p>
+<ul>
+<li>Loads a paragraph tag from a remote server using AJAX</li>
+<li>Aliases jQuery to a variable p</li>
+<li>Selects all paragraphs on the page &lt;&lt;&lt;&lt;—Correct</li>
+<li>Creates a new paragraph tag and inserts it into the body tag</li>
+</ul>
+<h4 id="q3.-give-the-following-html-how-could-we-use-one-line-to-hide-or-show-the-button-1">Q3. Give the following HTML, how could we use one line to hide or show the button?</h4>
+<p><code>&lt;button class="btn btn-primary" type="submit"&gt;Continue to checkout&lt;/button&gt;</code></p>
+<ul>
+<li>$(‘.btn-primary’).toggle(); ???? // toggle(true); &amp; toggle(false);</li>
+<li>$(‘.btn-primary’).showHide();</li>
+<li>$(‘.btn-primary’).not(‘:visible’).show();</li>
+<li>$(‘.btn-primary’).css({ display: ‘block’}); &lt;&lt;&lt;&lt;—Correct // ({ display: ‘none’});</li>
+</ul>
+<h4 id="q4.-working-with-ajax-we-may-run-into-situations-where-a-piece-of-code-should-not-be-run-until-after-multiple-ajax">Q4. Working with AJAX, we may run into situations where a piece of code should not be run until after multiple AJAX,</h4>
+<h4 id="calls-have-completed-successfully.-say-we-need-to-call-two-external-services-for-json-data-a-list-of-students-and">calls have completed successfully. Say we need to call two external services for JSON data (a list of students, and</h4>
+<h4 id="a-list-of-classes.-and-only-after-retrieving-those-data-will-we-perform-some-manipulations-on-a-page.-what-is-the">a list of classes). And only after retrieving those data will we perform some manipulations on a page. What is the</h4>
+<h4 id="preferred-way-for-dealing-with-this-scenario">preferred way for dealing with this scenario?</h4>
+<h4 id="httpsexample.comjson-apistudents-httpsexample.comjson-apiclasses">https://example.com/json-api/students https://example.com/json-api/classes</h4>
+<ul>
+<li><p><code>$.get([     'https://example.com/json-api/students',     'https://example.com/json-api/classes'  ], function(studentRequest, classRequest) {     // the rest of the code goes here });</code> &lt;&lt;&lt;&lt;&lt;-CORRECT !</p></li>
+<li><p><code>$.when(     $.get('https://example.com/json-api/students'),     $.get('https://example.com/json-api/classes')  ).done(function(studentRequest, classRequest) {     // the rest of the code goes here });</code></p></li>
+<li><p><code>$.bind(     $.get('https://example.com/json-api/students'),     $.get('https://example.com/json-api/classes')  ).done(function(studentRequest, classRequest) {     // the rest of the code goes here });</code></p></li>
+<li><p><code>$.ajax('https://example.com/json-api/students', {  success: function(studentRequest) {       $.ajax('https://example.com/json-api/classes', {           success: function(classRequest) {             // the rest of the code goes here             }       });  } });</code></p></li>
+</ul>
+<h4 id="q5.-given-the-snippet-of-html-below-what-is-the-difference-between-the-two-lines-that-follow-it-1">Q5. Given the snippet of HTML below, what is the difference between the two lines that follow it?</h4>
+<ul>
+<li>
+Item 1
+</li>
+<li>
+Item 2
+</li>
+<li>
+Item 3
+</li>
+<li>
+Item 4
+</li>
+</ul>
+<p>===================</p>
+<p>$(‘ul’).find(‘li’).get(2); $(‘ul’).find(‘li’).eq(2);</p>
+<ul>
+<li>.get() retrieves a DOM element, and can’t be chained, eq() retrieves a jQuery object, and can be chained.</li>
+<li>.get() retrieves a jQuery object, and can’t be chained, eq() retrieves a DOM element, and can be chained.</li>
+<li>.get() retrieves a jQuery object, and is zero-indexed, eq() retrieves a DOM element, and is 1-indexed.</li>
+<li>.get() retrieves a DOM element, and is zero-indexed, eq() retrieves a jQuery object, and is 1-indexed. &lt;&lt;&lt;&lt;–Correct !</li>
+</ul>
+<h4 id="q6.-suppose-we-want-to-have-an-ball-created-from-an-html-element-idball-move-down-and-to-the-right">Q6. Suppose we want to have an ball created from an HTML element (id=ball) move down and to the right</h4>
+<h4 id="from-its-original-location-when-clicked-and-move-back-into-its-original-place-when-finished.-given-a-starting">from its original location when clicked, and move back into its original place when finished. Given a starting</h4>
+<h4 id="point-of-this-which-of-these-snippets-would-accomplish-that-goal">point of this, which of these snippets would accomplish that goal?</h4>
+<p>$(‘#ball’).click(function() { // Our code goes here });</p>
+<ul>
+<li><p><code>$(this).animate({   top: '+=100',   left: '+=100', }, {   duration: 600,   complete: function() {       $(this).animate({           top: '-=100',           left: '-=100',       }, 600)   } });</code></p></li>
+<li><p><code>$(this).animate({   top: '-=100',   left: '-=100', }, 600, function() {       $(this).animate({           top: '+=100',           left: '+=100',       }, 600)   } });</code> &lt;&lt;&lt;&lt;—-CORRECT !</p></li>
+<li><p><code>$(this).animate({   top: '=100',   left: '=100', }, {   duration: 600,   complete: function() {       $(this).animate({           top: 0,           left: 0,       }, 600)   } });</code></p></li>
+<li><p><code>$(this).animate({   top: '100',   left: '100', }, 600, function() {       $(this).animate({           top: 0,           left: 0,       }, 600)   } });</code></p></li>
+</ul>
+<h4 id="q7.-given-the-following-css-and-html-codes-below-how-could-you-apply-the-success-class-to-the-feedback-div-1">Q7. Given the following CSS and HTML codes below, how could you apply the success class to the feedback div?</h4>
+<p>.success { color: green; background: #ddffdd; }</p>
+<div class="feedback">
+<pre><code>    Thank you for answering this survey.</code></pre>
+</div>
+<ul>
+<li><code>$('.feedback').hasClass('.success');</code></li>
+<li><code>$.css('.feedback', '.success')</code>;</li>
+<li><code>$('.feedback').addClass('.success');</code> &lt;&lt;&lt;&lt;—Correct ?</li>
+<li><code>$('.feedback').css('.success');</code></li>
+</ul>
+<h4 id="q8.-below-an-example-page-snippet-that-includes-a-couple-of-messages-in-a-list-and-a-code-snippet-that">Q8. Below an example page snippet that includes a couple of messages in a list, and a code snippet that</h4>
+<h4 id="retrieves-a-few-hundred-messages-from-a-api-endpoints-using-ajax.-how-might-we-add-these-items-to-the">retrieves a few hundred messages from a API endpoints using AJAX. How might we add these items to the</h4>
+<h4 id="page-snippet-in-a-way-that-avoids-performance-problems-with-dom-insertions">page snippet in a way that avoids performance problems with DOM insertions?</h4>
+<div class="message-area">
+<pre><code>&lt;ul class=&quot;message-area--list&quot;&gt;
+    &lt;li&gt;Existing message 1&lt;/li&gt;
+    &lt;li&gt;Existing message 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>
+<p>$.get(‘//example.com/api/v1/message’) .done(function(data) { var tonsOfItems = data.messages; // add all these messages to a large page });</p>
+<ul>
+<li><p><code>tonsOfItems.map(function(item) {    $('.message-area--list').append('&lt;li&gt;'+item+'&lt;/li&gt;'); });</code></p></li>
+<li><p><code>var tonsOfListItems = tonsOfItems.map(function(itme))  {    return '&lt;li&gt;'+item+'&lt;/li&gt;'; }); $('.message-area--list').append(tonsOfListItems.join(''));</code></p></li>
+<li><p><code>Removing the event handlers with JavaScript will be slower than removing them  $.each(tonsOfItems, function(idx, item) {   $('&lt;li&gt;'+item+'&lt;/li&gt;').appendTo($messageList); });</code></p></li>
+<li><p><code>$.each(tonsOfItems, function(idx, item) {   $('.message-area--list').append('&lt;li&gt;'+item+'&lt;/li&gt;'); });</code></p></li>
+</ul>
+<h4 id="q9.-what-is-jquery-1">Q9. What is jQuery?</h4>
+<ul>
+<li>jQuery is a bridge between Java and Javascript that makes native apps easier to write.</li>
+<li>jQuery is a plugin for JavaScript that makes database queries easier to write.</li>
+<li>jQuery is a collection of JavaScript functions that makes finding and manipulating elements on a page, AJAX, and other things easier. &lt;&lt;&lt;&lt;—CORRECT !</li>
+<li>jQuery is a Chrome extension that allows users to create their own extensions with just a few lines of JavaScript.</li>
+</ul>
+<h4 id="q10.-we-want-to-create-a-new-jquery-plugin-called-linkupdater-that-can-be-chained-onto-other-jquery">Q10. We want to create a new jQuery plugin called linkUpdater that can be chained onto other jQuery</h4>
+<h4 id="selector-like-a-normal-plugin.-it-should-updates-all-the-links-in-the-referenced-collection-so-they-open">selector like a normal plugin. It should updates all the links in the referenced collection so they open</h4>
+<h4 id="in-new-windows-or-tabs.-below-is-the-first-cut.-what-is-one-problem-with-this-plugin">in new windows or tabs. Below is the first cut. What is one problem with this plugin?</h4>
+<p>“user strict”; $.linkUpdater = function() { this.find(‘a’).attr(‘target’, ’_blank’); } ) )( jQuery );</p>
+<ul>
+<li>this needs to be wrapped, like $(this), in order to be chained in a plugin.</li>
+<li>jQuery plugins can’t be safety authored in strict mode.</li>
+<li>In order to be used by other code, plugins need to be added to the global namespace, not wrapped in function expression. &lt;&lt;&lt;—CORRECT !</li>
+<li>Our plugin should extend jQuery.fn, not jQuery itself.</li>
+</ul>
+<h4 id="q11.-generally-speaking-when-used-on-a-web-page-how-should-jquery-be-installed-and-why-1">Q11. Generally speaking, when used on a web page, how should jQuery be installed, and why?</h4>
+<ul>
+<li>Just before the closing body tag, because we want to avoid blocking other resources from loading, and we use the ready method to make sure our code fires after the DOM is ready &lt;&lt;&lt;&lt;—CORRECT!</li>
+<li><p>Using the highest version number possible because only jQuery 3 and up are compatible with Internet Explorer 7</p></li>
+<li>In the head tag because we want jQuery available as soon as possible</li>
+<li><p>From a CDN because we want to be able to use jQuery online or offline</p></li>
+</ul>
+<h4 id="q12.-given-the-following-html-how-could-we-make-this-button-disappear-from-the-page-using-jquery-1">Q12. Given the following HTML, How could we make this button disappear from the page using jQuery?</h4>
+<button>
+class=“btn btn-primary” type=“submit”&gt;Continue to checkout
+</button>
+<ul>
+<li>$(‘.btn-primary’).hide(); &lt;&lt;&lt;—CORRECT</li>
+<li>$(‘.btn-primary:visible’).not();</li>
+<li>$(‘.btn-primary’).visibility(false);</li>
+<li>$(‘.btn-primary’).show(false);</li>
+</ul>
+<h4 id="q13.-what-is-the-difference-between-header.html-and-header.text-1">Q13. What is the difference between $(‘header’).html() and $(‘header’).text()?</h4>
+<ul>
+<li>$(‘header’).html() returns the inner HTML of the header. $(‘header’).text() returns only the text &lt;&lt;&lt;&lt;–CORRECT</li>
+<li>$(‘header’).html() returns only the HTML tags used, without the text. $(‘header’).text() returns only the text</li>
+<li>$(‘header’).html() strips all HTML from the header. $(‘header’).text() always returns an empty string.</li>
+<li>$(‘header’).html() returns all headers in an HTML document. $(‘header’).text() the first line of a text file.</li>
+</ul>
+<h4 id="q14.-when-writing-jquery-plugins-we-often-provide-default-options-that-may-be-overridden-by-the-end-user.">Q14. When writing jQuery plugins, we often provide default options that may be overridden by the end user.</h4>
+<h4 id="what-jquery-function-is-most-useful-for-this-purpose">What jQuery function is most useful for this purpose?</h4>
+<ul>
+<li>$.extend &lt;&lt;&lt;&lt;—CORRECT</li>
+<li>$.clone</li>
+<li>$.fn.extend</li>
+<li>$.merge</li>
+</ul>
+<h4 id="q15.-there-are-times-when-you-might-want-to-programmatically-trigger-an-event-instead-of-simply-reacting-to-user">Q15. There are times when you might want to programmatically trigger an event, instead of simply reacting to user</h4>
+<h4 id="input-directly.-given-this-markup-which-choice-will-not-cause-a-click-event-to-the-select-box-when">input directly. Given this markup, Which choice will NOT cause a click event to the select box when</h4>
+<h4 id="the-button-is-clicked">the button is clicked?</h4>
+<article>
+<div>
+<pre><code>  Here&#39;s a button you can click: &lt;button class=&quot;btn&quot;&gt;Click Me&lt;/button&gt;
+&lt;/div&gt;   
+
+&lt;form&gt;
+    &lt;p&gt;
+        Further down the page, there&#39;s a select box.
+    &lt;/p&gt;
+    &lt;select&gt;
+        &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;One&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;One&lt;/option&gt;
+        &lt;option value=&quot;4&quot;&gt;One&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/form&gt;    </code></pre>
+</article>
+<ul>
+<li><p><code>$('button').on('click.myApp', (function() {       $('input[type=select]').trigger('click'); });</code> &lt;&lt;&lt;&lt;&lt;—-CORRECT !</p></li>
+<li><p><code>$('button').on('click', (function() {       $('input[type=select]').click()); });</code></p></li>
+<li><p><code>$('button').trigger(function() {       $('input[type=select]').click(); });</code></p></li>
+<li><p><code>$('button').click(function() {       $('input[type=select]').click(); });</code> <br><br><br> <img src="https://github.com/avs-abhishek123/Linkedin-Skill-Assessment-test-Questions/blob/master/JQuery/JQueryImages/15.png" width="80%" height="40%"> <br><br></p></li>
+</ul>
+</body>
+</html>

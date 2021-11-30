@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://nickguner.atlassian.net/wiki/plugins/viewsource/viewpagesrc.action?pageId=875560984 -->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>View Source</title>
+  <link rel="canonical" href="https://nickguner.atlassian.net/wiki/pages/viewpage.action?pageId=$action.page.id">
+  <script>
+        window.WRM = window.WRM || {}; window.WRM._unparsedData = window.WRM._unparsedData || {}; window.WRM._unparsedErrors = window.WRM._unparsedErrors || {};
+        WRM._unparsedData[ "com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path" ] = "\"/wiki\"";
+        WRM._unparsedData[ "com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources" ] = "false";
+        if ( window.WRM._dataArrived ) window.WRM._dataArrived();</script>
+      <link type="text/css" rel="stylesheet" href="./strings_files/aui-reset.css" data-wrm-external=""
+        data-wrm-key="com.atlassian.auiplugin:aui-reset" data-wrm-batch-type="resource" media="all">
+      <link type="text/css" rel="stylesheet" href="./strings_files/aui-page-typography.css" data-wrm-external=""
+        data-wrm-key="com.atlassian.auiplugin:aui-page-typography" data-wrm-batch-type="resource" media="all">
+      <link type="text/css" rel="stylesheet" href="./strings_files/batch.css" data-wrm-key="_super"
+        data-wrm-batch-type="context" media="all">
+      <link type="text/css" rel="stylesheet" href="./strings_files/batch(1).css" data-wrm-key="plugin.viewsource,-_super"
+        data-wrm-batch-type="context" media="all">
+      <link type="text/css" rel="stylesheet" href="./strings_files/batch(2).css" data-wrm-key="page,-_super"
+        data-wrm-batch-type="context" media="all">
+      <link type="text/css" rel="stylesheet" href="./strings_files/batch(3).css" media="print" data-wrm-key="page,-_super"
+        data-wrm-batch-type="context">
+      <link type="text/css" rel="stylesheet" href="./strings_files/batch(4).css" data-wrm-key="editor-content,-_super"
+        data-wrm-batch-type="context" media="all">
+  <!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="//d2cyaw4z41y1zi.cloudfront.net/nickguner.atlassian.net/wiki/s/d41d8cd98f00b204e9800998ecf8427e-CDN/264105304/h/d4e4e19c4669223aa75450869203638e/_/download/contextbatch/css/editor-content,-_super/batch.css?conditionalComment=lte+IE+9&amp;confluence.table.resizable=true&amp;externals=__local-default__&amp;relative-url=true" data-wrm-key="editor-content,-_super" data-wrm-batch-type="context" media="all">
+<![endif]-->
+  <link type="text/css" rel="stylesheet" href="./strings_files/colors.css" media="all">
+
+</head>
+
+<body class="mceContentBody aui-theme-default wiki-content fullsize">
+  <p>&nbsp;</p> <img class="editor-inline-macro" src="./strings_files/macro" data-macro-name="toc"
+    data-macro-id="3c151771-4246-49e5-8668-1944356df023" data-macro-schema-version="1">
+  <h2>Anagrams</h2>
+  <h3><code>isAnagram</code></h3>
+  <h3><code>isAnagramWithSort</code></h3>
+  <h3><code>groupAnagrams</code></h3>
+  <h3><code>groupAnagramsWithStreams</code><br></h3>
+  <table data-layout="full-width" class="confluenceTable">
+    <colgroup>
+      <col style="width: 924.0px;">
+      <col style="width: 697.0px;">
+    </colgroup>
+    <tbody>
+      <tr>
+        <th class="confluenceTh">
+          <p>Anagrams</p>
+        </th>
+        <th class="confluenceTh">
+          <p>Tests</p>
+        </th>
+      </tr>
+      <tr>
+        <td class="confluenceTd">
+          <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a7be850f-3046-4dfe-90c4-ae7972dcfe63"
+            data-macro-schema-version="1"
+            style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+            data-macro-body-type="PLAIN_TEXT">
+            <tbody>
+              <tr>
+                <td class="wysiwyg-macro-body">
+                  <pre>static boolean isAnagram(String s1, String s2)
+{
+    if(s1.length() != s2.length())
+    {
+        return false;
+    }
+    int[] check = new int[256];
+    for(char c : s1.toCharArray())
+    {
+        check[c]++;
+    }
+    for(char c : s2.toCharArray())
+    {
+        if(--check[c] &lt; 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3bda8a87-fb53-4c88-90d5-ca203c7a2478"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static boolean isAnagramWithSort(String s1, String s2)
+{
+    if(s1.length() != s2.length())
+    {
+        return false;
+    }
+    char[] a1 = s1.toCharArray();
+    char[] a2 = s2.toCharArray();
+    Arrays.sort(a1);
+    Arrays.sort(a2);
+    return Arrays.equals(a1, a2);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3e9d69ca-00d0-459f-bae7-bf6906016e16"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static Map&lt;String, Set&lt;String&gt;&gt; groupAnagrams(String[] a)
+{
+    Map&lt;String, Set&lt;String&gt;&gt; result = new HashMap&lt;&gt;();
+    for(String s : a)
+    {
+        String sortedString = sortString(s);
+        result.computeIfAbsent(sortedString, x -&gt; new HashSet&lt;&gt;()).add(s);
+    }
+    return result;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="be40630c-2924-4dbc-8ed4-b25d027a8549"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static Map&lt;String, Set&lt;String&gt;&gt; groupAnagramsWithStreams(String[] a)
+{
+    return Arrays.stream(a).collect(
+            Collectors.groupingBy(x -&gt; sortString(x), Collectors.toSet()));
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="059c8b78-a991-4417-bacb-6cbabc9b3583"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String s1 = "abcdefg", s2 = "gafbedc", s3 = "abcgfee";
+    boolean check = isAnagram(s1, s2);
+    if(!check)
+    {
+        return false;
+    }
+    check = isAnagram(s1, s3);
+    if(check)
+    {
+        return false;
+    }
+    check = isAnagramWithSort(s1, s2);
+    if(!check)
+    {
+        return false;
+    }
+    check = isAnagramWithSort(s1, s3);
+    if(check)
+    {
+        return false;
+    }
+    String[] strs = {"abc", "acb", "bca", "xyz", "zyx", "yxz"};
+    Map&lt;String, Set&lt;String&gt;&gt; anagrams = groupAnagrams(strs);
+    Set&lt;String&gt; s = anagrams.get("abc");
+    if(s.size() != 3 || !(s.contains("abc") &amp;&amp; s.contains("acb") &amp;&amp; s.contains("bca")))
+    {
+        return false;
+    }
+    s = anagrams.get("xyz");
+    if(s.size() != 3 || !(s.contains("xyz") &amp;&amp; s.contains("zyx") &amp;&amp; s.contains("yxz")))
+    {
+        return false;
+    }
+    anagrams = groupAnagramsWithStreams(strs);
+    s = anagrams.get("abc");
+    if(s.size() != 3 || !(s.contains("abc") &amp;&amp; s.contains("acb") &amp;&amp; s.contains("bca")))
+    {
+        return false;
+    }
+    s = anagrams.get("xyz");
+    if(s.size() != 3 || !(s.contains("xyz") &amp;&amp; s.contains("zyx") &amp;&amp; s.contains("yxz")))
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>CompareVersions</h2>
+<h3><code>compareVersions</code><br></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 814.0px;">
+    <col style="width: 807.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>CompareVersions</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6a63eada-8238-468e-baa8-7ad8bf79ba24"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static int compareVersions(String v1, String v2)
+{
+    String[] a1 = v1.split("\\.");
+    String[] a2 = v2.split("\\.");
+    int i = 0;
+    while(i &lt; a1.length || i &lt; a2.length)
+    {
+        if(i &lt; a1.length &amp;&amp; i &lt; a2.length)
+        {
+            int v = Integer.parseInt(a1[i]) - Integer.parseInt(a2[i]);
+            if (v &gt; 0)
+            {
+                return 1;
+            }
+            if (v &lt; 0)
+            {
+                return -1;
+            }
+        }
+        else if(i &lt; a1.length)
+        {
+            if(Integer.parseInt(a1[i]) &gt; 0)
+            {
+                return 1;
+            }
+        }
+        else if(i &lt; a2.length)
+        {
+            if(Integer.parseInt(a2[i]) &gt; 0)
+            {
+                return -1;
+            }
+        }
+        i++;
+    }
+    return 0;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="ce8a1340-0950-4810-aebd-a18ec12e5f73"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    boolean check = compareVersions("1.1.2.0", "1.1.2") == 0;
+    if(!check)
+    {
+        return false;
+    }
+    check = compareVersions("1.1.2.0.4", "1.1.2.1") == -1;
+    if(!check)
+    {
+        return false;
+    }
+    check = compareVersions("1.1.2.3.4", "1.1.2.3") == 1;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>CountAndSay</h2>
+<h3><code>countAndSay</code><br></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 1016.0px;">
+    <col style="width: 605.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>CountAndSay</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="f215de02-5dfc-4a09-a10c-63d68427f6c7"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static String countAndSay(int n)
+{
+    String s = String.valueOf(n);
+    char[] a = s.toCharArray();
+    StringBuilder sb = new StringBuilder();
+    int count = 1;
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        if(a[i] == a[i - 1])
+        {
+            count++;
+        }
+        else
+        {
+            sb.append(count);
+            sb.append(a[i - 1]);
+            count = 1;
+        }
+    }
+    sb.append(count);
+    sb.append(a[a.length - 1]);
+    return sb.toString();
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="95946c71-0129-499b-827a-bac55c0709c9"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    boolean check = countAndSay(121).equals("111211");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>CountWords</h2>
+<h3><code>countWordsSeparatedMyMultiplesSpaces</code></h3>
+<h3><code>countWordsWithSplit</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 814.0px;">
+    <col style="width: 807.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>CountWords</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8ed2d556-0975-4fa5-8004-aa03572592f9"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static int countWordsSeparatedMyMultiplesSpaces(String s)
+{
+    int count = 0;
+    boolean lastSpace = false;
+    for(char c : s.toCharArray())
+    {
+        if(Character.isWhitespace(c))
+        {
+            lastSpace = true;
+        }
+        else
+        {
+            if(lastSpace)
+            {
+                count++;
+            }
+            lastSpace = false;
+        }
+    }
+    if(!lastSpace)
+    {
+        count++;
+    }
+    return count;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8cc438d0-4746-4b94-a008-74d253b074c5"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static int countWordsWithSplit(String s)
+{
+    return s.split("\\s+").length;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4c7c7252-406d-41b6-a3ea-62d34fcf4ed4"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String test = "this  is   a t es   t";
+    boolean check = countWordsSeparatedMyMultiplesSpaces(test) == 6;
+    if(!check)
+    {
+        return false;
+    }
+    check = countWordsWithSplit(test) == 6;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>Encode</h2>
+<h3><code>encode</code></h3>
+<h3><code>decode</code></h3>
+<h3><code>encodeLength</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 814.0px;">
+    <col style="width: 807.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>Encode</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="f08e0c3c-ca3c-45a9-8fcc-ac0d9ccc5479"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static String encode(String s)
+{
+    //  aaabbbbbcdddd -&gt; a3b5c1d4
+    if(encodeLength(s) &gt;= s.length())
+    {
+        return s;
+    }
+    char[] a = s.toCharArray();
+    char last = a[0];
+    int count = 1;
+    StringBuilder sb = new StringBuilder();
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        if(a[i] == last)
+        {
+            count++;
+        }
+        else
+        {
+            sb.append(last);
+            sb.append(count);
+            count = 1;
+            last = a[i];
+        }
+    }
+    sb.append(last);
+    sb.append(count);
+    return sb.toString();
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2da4138e-c7b4-415e-b5f2-a071868c9c11"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String decode(String s)
+{
+    //  a3b12c2 -&gt; aaabbbbbbbbbbbbcc
+    String[] letters = s.split("[1-9]+");
+    String[] numbers = s.split("[a-zA-Z]+");
+    //  numbers need to be shifted by 1
+    numbers = Arrays.copyOfRange(numbers, 1, numbers.length);
+    StringBuilder sb = new StringBuilder();
+    for(int i = 0; i &lt; letters.length; ++i)
+    {
+        int n = Integer.parseInt(numbers[i]);
+        char[] a = new char[n];
+        Arrays.fill(a, letters[i].charAt(0));
+        sb.append(a);
+    }
+    return sb.toString();
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="8b07b285-3607-460e-b483-291db018548b"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>private static int encodeLength(String s)
+{
+    char[] a = s.toCharArray();
+    char last = a[0];
+    int count = 1, size = 0;
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        if(a[i] == last)
+        {
+            count++;
+        }
+        else
+        {
+            size += 1 + String.valueOf(count).length();
+            count = 1;
+            last = a[i];
+        }
+    }
+    size += 1 + String.valueOf(count).length();
+    return size;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2f26a1b0-5e3e-4e5b-9d72-84ad85454600"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    boolean check = encode("aaabbbbbcdddd").equals("a3b5c1d4");
+    if(!check)
+    {
+        return false;
+    }
+    check = decode("a3b5c1d4").equals("aaabbbbbcdddd");
+    if(!check)
+    {
+        return false;
+    }
+    check = encodeLength("aaabbbbbbbbbbbbcc") == 7;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>Longest</h2>
+<h3><code>longestUniformSubstring</code></h3>
+<h3><code>longestWordWithAllLetters</code></h3>
+<h3><code>longestWordWithAllLettersWithStreams</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 889.0px;">
+    <col style="width: 732.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p><strong>Longest</strong></p>
+      </th>
+      <th class="confluenceTh">
+        <p></p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="24bae813-9dd8-41f2-b9d2-f0a5e40835c6"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static int[] longestUniformSubstring(String s)
+{
+    //  for the input: "abbbccda" the longest uniform substring is "bbb"
+    char lastChar = s.charAt(0);
+    int count = 1, start = 0, max = 1;
+    for(int i = 1; i &lt; s.length(); ++i)
+    {
+        if(s.charAt(i) == lastChar)
+        {
+            count++;
+        }
+        else
+        {
+            if(count &gt; max)
+            {
+                max = count;
+                start = i - count;
+            }
+            count = 1;
+            lastChar = s.charAt(i);
+        }
+    }
+    if(count &gt; max)
+    {
+        return new int[] {s.length() - count, count};
+    }
+    return new int[] {start, max};
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="e8613fef-7ad4-4645-a6e8-e3dfb182f2d0"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String longestWordWithAllLetters(String letters, String[] dictionary)
+{
+    int max = 0;
+    String longest = "";
+    for(String s : dictionary)
+    {
+        boolean check = true;
+        for(char c : s.toCharArray())
+        {
+            if(letters.indexOf(c) == -1)
+            {
+                check = false;
+                break;
+            }
+        }
+        if(check &amp;&amp; s.length() &gt; max)
+        {
+            max = s.length();
+            longest = s;
+        }
+    }
+    return longest;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4cb60255-8386-4e79-92b7-a5ac04934569"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String longestWordWithAllLettersWithStreams(String letters, String[] dictionary)
+{
+    Map&lt;Boolean, List&lt;String&gt;&gt; map = Arrays.stream (dictionary)
+            .collect(Collectors.partitioningBy(s -&gt; s.chars().allMatch(c -&gt; letters.indexOf(c) != -1)));
+    Pair&lt;String,Integer&gt; longestPair = map.get(true).stream()
+            .map(s -&gt; Pair.of(s, s.length())).max(Comparator.comparing(Pair::getRight)).get();
+    return longestPair.getLeft();
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="353f4cb3-4b98-4002-bdbb-19570b60d9fd"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    boolean check = Arrays.equals(new int[] {1, 3}, longestUniformSubstring("abbbccda")) &amp;&amp;
+            Arrays.equals(new int[] {29, 8}, longestUniformSubstring("1000011010101110110100010010011111111"));
+    if(!check)
+    {
+        return false;
+    }
+    check = longestWordWithAllLetters("oet",
+            new String[] {"to", "toe", "tooeet", "toes"}).equals("tooeet");
+    if(!check)
+    {
+        return false;
+    }
+    check = longestWordWithAllLettersWithStreams("oet",
+            new String[] {"to", "toe", "tooeet", "toes"}).equals("tooeet");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br><br>Palindrome</h2>
+<h3><code>isPalindrome</code></h3>
+<h3><code>lengthOfLongestPalindrome</code></h3>
+<h3><code>longestPalindrome</code></h3>
+<h3><code>makeShortestPalindrome</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 810.0px;">
+    <col style="width: 811.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>Palindrome</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="bd398104-d54a-4557-ad3e-ccf5fc62bff4"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static boolean isPalindrome(String s)
+{
+    char[] a = s.toCharArray();
+    int left = 0, right = a.length -1;
+    while(left &lt; right)
+    {
+        if(a[left++] != a[right--])
+        {
+            return false;
+        }
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0a4a187c-4c06-46c5-9327-8defd22dfb05"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static int lengthOfLongestPalindrome(String s)
+{
+    int max = 1;
+    for(int i = 0; i &lt; s.length(); ++i)
+    {
+        for(int j = s.length(); j &gt; i; --j)
+        {
+            String subStr = s.substring(i, j);
+            if(isPalindrome(subStr) &amp;&amp; subStr.length() &gt; max)
+            {
+                max = subStr.length();
+            }
+        }
+    }
+    return max;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="81be126f-86ca-405f-a6d3-55852c87a52f"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String longestPalindrome(String s)
+{
+    String longest = "";
+    for(int i = 0; i &lt; s.length(); ++i)
+    {
+        for(int j = s.length(); j &gt; i; --j)
+        {
+            String subStr = s.substring(i, j);
+            if(isPalindrome(subStr) &amp;&amp; subStr.length() &gt; longest.length())
+            {
+                longest = subStr;
+            }
+        }
+    }
+    return longest;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="fcb54fe4-1279-4b95-873d-a36d036e25c2"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>Consider string "abcd"
+Shortest palindrome would be "dcbabcd"
+Where:
+//  "bcd" is the suffix
+//  "dcb" is the prefix (reverse of the suffix)
+// and "a" is the character at the left position</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="172596e7-fdbd-46ae-9be5-f29c2f16f140"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String makeShortestPalindrome(String s)
+{
+    int start = 0, end = s.length() - 1;
+    while(start &lt; end)
+    {
+        if(s.charAt(start) == s.charAt(end))
+        {
+            start++;
+            end--;
+        }
+        else
+        {
+            end--;
+        }
+    }
+    if(start == s.length() / 2)
+    {
+        return s;
+    }
+    String suffix = s.substring(start + 1);
+    String prefix = new StringBuilder(suffix).reverse().toString();
+    return prefix + s.charAt(start) + suffix;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="44ea50ee-1b6a-4e76-92ff-66cfda206397"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String s1 = "abcddcba", s2 = "abcdcba", s3 = "abcdba";
+    boolean check = isPalindrome(s1);
+    if(!check)
+    {
+        return false;
+    }
+    check = isPalindrome(s2);
+    if(!check)
+    {
+        return false;
+    }
+    check = isPalindrome(s3);
+    if(check)
+    {
+        return false;
+    }
+    check = lengthOfLongestPalindrome("dfrabcdedcbaprewsg") == 9;
+    if(!check)
+    {
+        return false;
+    }
+    check = longestPalindrome("dfrabcdedcbaprewsg").equals("abcdedcba");
+    if(!check)
+    {
+        return false;
+    }
+    check = makeShortestPalindrome("cdcba").equals("abcdcba");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>Pangram</h2>
+<h3><code>missingLetters</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 924.0px;">
+    <col style="width: 697.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>Pangram</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="ba4250b9-f044-49fc-83ce-1a068dc66ad6"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>The sentence "The quick brown fox jumps over the lazy dog" contains
+every single letter in the alphabet. Such sentences are called pangrams.
+Write a function findMissingLetters, which takes a String `sentence`,
+and returns all the letters it is missing (which prevent it from being a pangram).</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="dedfb630-2434-40e9-81a5-15170bd1c719"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>private static String ALPHABET = "abcdefghijklmnopqrstuvwxyz";
+
+static String missingLetters(String s)
+{
+    Set&lt;Character&gt; set = new HashSet&lt;&gt;(ALPHABET.chars().mapToObj(c -&gt; (char)c).collect(Collectors.toSet()));
+    return set.stream().filter(c -&gt; s.indexOf(c) == -1).map(String::valueOf).collect(Collectors.joining());
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="ab4b143b-d781-4839-a1ce-96d8e9a4198b"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    boolean check = "".equals(missingLetters("The quick brown fox jumps over the lazy dog")) &amp;&amp;
+            "abcdefghijklmnopqrstuvwxyz".equals(missingLetters(""));
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>PatternMatch</h2>
+<h3><code>patternMatch</code></h3>
+<h3><code>subsequenceMatch</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 762.0px;">
+    <col style="width: 859.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>PatternMatch</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="7c3834d7-1e91-4d1d-833e-6ad49ae32206"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static boolean patternMatch(String s, String pattern)
+{
+    int strLen = s.length(), patLen = pattern.length();
+    if(strLen &lt; patLen)
+    {
+        return false;
+    }
+    if(strLen == patLen)
+    {
+        return s.equals(pattern);
+    }
+    for(int i = 0; i &lt; strLen - patLen; ++i)
+    {
+        if(s.charAt(i) == pattern.charAt(0))
+        {
+            int j;
+            for(j = 0; j &lt; patLen; ++j)
+            {
+                if(s.charAt(i + j) != pattern.charAt(j))
+                {
+                    break;
+                }
+            }
+            if(patLen == j)
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="4e58d5d2-9f4c-4702-858f-4adccb8b2755"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>Following cases will match:
+String          Pattern
+"abcxdefyzlmn"  "xyz"
+"abcxdefxyzlmn" "xyz"</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="e8cb5160-0b8e-428a-ac1b-9343cf948cec"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static boolean subsequenceMatch(String s, String pat)
+{
+    int patIdx = 0;
+    for(int i = 0; i &lt; s.length() &amp;&amp;  patIdx &lt; pat.length(); ++i)
+    {
+        if(s.charAt(i) == pat.charAt(patIdx))
+        {
+            if(++patIdx == pat.length())
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="be1e1fcc-d018-4ab3-8a5f-fc4dd7343a3a"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String test = "Hello world", pat1 = "o wo", pat2 = "owo";
+    boolean check = patternMatch(test, pat1);
+    if(!check)
+    {
+        return false;
+    }
+    check = patternMatch(test, pat2);
+    if(check)
+    {
+        return false;
+    }
+    check = subsequenceMatch("abcxdefyzlmn", "xyz");
+    if(!check)
+    {
+        return false;
+    }
+    check = subsequenceMatch("abcxdefxyzlmn", "xyz");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>Remove</h2>
+<h3><code>removeChars</code></h3>
+<h3><code>removeCharsWithStreams</code></h3>
+<h3><code>removeStringFromArrayWithStreams</code></h3>
+<h3><code>removeDups</code></h3>
+<h3><code>removeDupsWithStreams</code></h3>
+<h3><code>removeAdjacentDups</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 814.0px;">
+    <col style="width: 807.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>Remove</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2bb9299a-447b-45a4-b0de-affccb4a83b8"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static String removeChars(String s, String remove)
+{
+    boolean[] charsToRemove = new boolean[256];
+    for(char c : remove.toCharArray())
+    {
+        charsToRemove[c] = true;
+    }
+    int pos = 0;
+    char[] a = s.toCharArray();
+    for(char c : a)
+    {
+        if(!charsToRemove[c])
+        {
+            a[pos++] = c;
+        }
+    }
+    return new String(a, 0, pos);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="0af4f57e-aa6e-4123-b955-f434f80a71fa"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String removeCharsWithStreams(String s, String remove)
+{
+    return s.chars().filter(x -&gt; remove.indexOf(x) == -1)
+            .mapToObj(c -&gt; (char)c).map(String::valueOf).collect(Collectors.joining());
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2fa34634-fd02-437b-a123-a0f0a61256b4"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String[] removeStringFromArrayWithStreams(String[] input, String value)
+{
+    return Arrays.stream(input).filter(e -&gt; !e.equals(value)).toArray(String[]::new);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="218c8858-15a3-4b0c-a571-1ae27e6af28b"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String removeDups(String s)
+{
+    if(s == null || s.length() &lt; 2)
+    {
+        return s;
+    }
+    char[] a = s.toCharArray();
+    int pos = 1;
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        int j;
+        for(j = 0; j &lt; pos; ++j)
+        {
+            if(a[i] == a[j])
+            {
+                break;
+            }
+        }
+        if(j == pos)
+        {
+            a[pos++] = a[i];
+        }
+    }
+    return new String(a, 0, pos);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="232ee053-c14e-4697-b62f-4ac448988d47"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String removeDupsWithStreams(String s)
+{
+    return s.chars().mapToObj(c -&gt; (char)c).distinct()
+            .map(String::valueOf).collect(Collectors.joining());
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="140486e9-a297-4f08-8769-99be6abe03d1"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String removeAdjacentDups(String s)
+{
+    char[] a = s.toCharArray();
+    int pos = 1;
+    for(int i = 1; i &lt; a.length; ++i)
+    {
+        if(a[i] != a[i - 1])
+        {
+            a[pos++] = a[i];
+        }
+    }
+    return new String(a, 0, pos);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="90662328-bc6b-4b1e-8296-18946515ae3b"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String s = "Kill all vowels";
+    String remove = "aeiou ";
+    String result = removeChars(s,remove);
+    boolean check = result.equals("Kllllvwls");
+    if(!check)
+    {
+        return false;
+    }
+    result = removeCharsWithStreams(s,remove);
+    check = result.equals("Kllllvwls");
+    if(!check)
+    {
+        return false;
+    }
+    String [] input = {"a", "b", "c", "d", "e", "f", "g", "h", "i"};
+    String[] output = removeStringFromArrayWithStreams(input, "e");
+    check = Arrays.equals(output, new String[] {"a", "b", "c", "d", "f", "g", "h", "i"});
+    if(!check)
+    {
+        return false;
+    }
+    check = removeDups("abcdacbdabcd").equals("abcd");
+    if(!check)
+    {
+        return false;
+    }
+    check = removeDupsWithStreams("abcdacbdabcd").equals("abcd");
+    if(!check)
+    {
+        return false;
+    }
+    check = removeAdjacentDups("aaabbbbcccb").equals("abcb");
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Notes:</p>
+<p>In <code>removeAdjacentDups</code> note setting <code>pos = 1</code> and comparing with the previous (not next)
+  value in order to account for last character.</p>
+<h2>ReverseWords</h2>
+<h3><code>reverseWords</code></h3>
+<h3><code>reverseWordsBruteForce</code><br></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 962.0px;">
+    <col style="width: 659.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>ReverseWords</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="2af7e513-2f64-44cf-8fd8-0924fe098610"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static String reverseWords(String sentence)
+{
+    //  1. "one two three" -&gt;  "eerht owt eno"
+    //  2. "eerht owt eno" -&gt;  "eno owt eerht"
+    StringBuilder sb = new StringBuilder(sentence);
+    String reversed = sb.reverse().toString();
+    String[] parts = reversed.split("\\s+");
+    reverse(parts);
+    return Arrays.stream(parts).collect(Collectors.joining(" "));
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="9185cd33-13be-4b55-a43f-9731c25ab389"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static String reverseWordsBruteForce(String sentence)
+{
+    StringBuilder sb = new StringBuilder();
+    String[] a = sentence.split("\\s+");
+    for(String s : a)
+    {
+        Character[] chars = s.chars().mapToObj(c -&gt; (char)c).toArray(Character[]::new);
+        reverse(chars);
+        String reversedWord = Arrays.stream(chars).map(String::valueOf).collect(Collectors.joining());
+        sb.append(reversedWord).append(" ");
+    }
+    return sb.toString().trim();
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="6daae5ef-fd78-4c76-bbec-23c38269b1ec"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String s = "one two three";
+    return reverseWords(s).equals("eno owt eerht");
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h2><br>Rotation</h2>
+<h3><code>isRotation</code></h3>
+<table data-layout="wide" class="confluenceTable">
+  <colgroup>
+    <col style="width: 480.0px;">
+    <col style="width: 480.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>Rotation</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="5352d5d2-940d-431b-ab10-8fd188c72306"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static boolean isRotation(String s1, String s2)
+{
+    if(s1.length() != s2.length())
+    {
+        return false;
+    }
+    String s3 = s1 + s1;
+    return s3.contains(s2);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="33236565-ac44-4b99-983e-bef6115410e7"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String s1 = "abcdefgh";
+    String s2 = "cdefghab";
+    String s3 = "hgfedcba";
+    boolean check = isRotation(s1, s2);
+    if(!check)
+    {
+        return false;
+    }
+    check = isRotation(s2, s1);
+    if(!check)
+    {
+        return false;
+    }
+    check = isRotation(s1, s3);
+    if(check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>Unique</h2>
+<h3><code>isAllUnique</code></h3>
+<h3><code>isAllUniqueWithStreams</code></h3>
+<h3><code>lengthOfLongestUniqueSubstr</code></h3>
+<h3><code>firstUnique</code></h3>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 811.0px;">
+    <col style="width: 810.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p><strong>Unique</strong></p>
+      </th>
+      <th class="confluenceTh">
+        <p><strong>Tests</strong></p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="7003840e-5d2a-438e-8dee-fdfc6c2a7e51"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>static boolean isAllUnique(String s)
+{
+    boolean[] check = new boolean[256];
+    for(char c : s.toCharArray())
+    {
+        if(check[c])
+        {
+            return false;
+        }
+        check[c] = true;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="1d7b6a32-60d7-4d27-a39f-0d14f66fbb00"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static boolean isAllUniqueWithStreams(String s)
+{
+    long distinctCount = s.chars().distinct().count();
+    return distinctCount == s.length();
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="676506af-ae5f-4f42-b175-8c51748c28e4"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static int lengthOfLongestUniqueSubstr(String s)
+{
+    int max = Integer.MIN_VALUE;
+    for(int i = 0; i &lt; s.length(); ++i)
+    {
+        for(int j = s.length(); j &gt;= i; j--)
+        {
+            String subString = s.substring(i, j);
+            if(isAllUnique(subString) &amp;&amp; subString.length() &gt; max)
+            {
+                max = subString.length();
+            }
+        }
+    }
+    return max;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="82800ae0-db7f-4139-b9db-272fe8bb7469"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static char firstUnique(String s)
+{
+    Map&lt;Character, Long&gt; map = s.chars()
+            .mapToObj(c -&gt; (char)c)
+            .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+    for(char c : s.toCharArray())
+    {
+        if(map.get(c) == 1)
+        {
+            return c;
+        }
+    }
+    return 0;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="a20e7769-9db8-465a-85da-dc3066c3cb2b"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    String allUnique = "abcdefghijklmnopq";
+    String notAllUnique = "abcdefghidjklm";
+    boolean check = isAllUnique(allUnique);
+    if(!check)
+    {
+        return false;
+    }
+    check = isAllUnique(notAllUnique);
+    if(check)
+    {
+        return false;
+    }
+    check = isAllUniqueWithStreams(allUnique);
+    if(!check)
+    {
+        return false;
+    }
+    check = isAllUniqueWithStreams(notAllUnique);
+    if(check)
+    {
+        return false;
+    }
+    String test = "qwertyuiopqazxcvbnm";
+    check = lengthOfLongestUniqueSubstr(test) == 18;
+    if(!check)
+    {
+        return false;
+    }
+    check = firstUnique("abcdabc") == 'd';
+    if(!check)
+    {
+        return false;
+    }
+    check = firstUnique("abcdefg") == 'a';
+    if(!check)
+    {
+        return false;
+    }
+    check = firstUnique("abcddcba") == 0;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h2>WordDistance</h2>
+<table data-layout="full-width" class="confluenceTable">
+  <colgroup>
+    <col style="width: 728.0px;">
+    <col style="width: 893.0px;">
+  </colgroup>
+  <tbody>
+    <tr>
+      <th class="confluenceTh">
+        <p>WordDistance</p>
+      </th>
+      <th class="confluenceTh">
+        <p>Tests</p>
+      </th>
+    </tr>
+    <tr>
+      <td class="confluenceTd">
+        <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="754f06a6-8fa9-4008-ba10-346802e9e986"
+          data-macro-schema-version="1"
+          style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+          data-macro-body-type="PLAIN_TEXT">
+          <tbody>
+            <tr>
+              <td class="wysiwyg-macro-body">
+                <pre>words:  ["one", "two", "three", "four", "five"]
+word1 = "two", word2 = "five" ==&gt; distance = 3
+word1 = "four", word2 = "two" ==&gt; distance = 2</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="wysiwyg-macro" data-macro-name="code" data-macro-id="3ff16f5e-a7e7-4394-af10-b4aecdf50f68"
+  data-macro-schema-version="1"
+  style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+  data-macro-body-type="PLAIN_TEXT">
+  <tbody>
+    <tr>
+      <td class="wysiwyg-macro-body">
+        <pre>static int wordDistance(String[] words, String word1, String word2)
+{
+    int firstWordPos = -1, secondWordPos = -1;
+    for(int i = 0; i &lt; words.length; ++i)
+    {
+        if(firstWordPos == -1 &amp;&amp; words[i].equals(word1))
+        {
+            firstWordPos = i;
+        }
+        if(secondWordPos == -1 &amp;&amp; words[i].equals(word2))
+        {
+            secondWordPos = i;
+        }
+        if(firstWordPos != -1 &amp;&amp; secondWordPos != -1)
+        {
+            break;
+        }
+    }
+    return Math.abs(secondWordPos - firstWordPos);
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class="confluenceTd">
+  <table class="wysiwyg-macro" data-macro-name="code" data-macro-id="34992200-8469-4da1-9dc6-29df72b1c802"
+    data-macro-schema-version="1"
+    style="background-image: url(https://nickguner.atlassian.net/wiki/plugins/servlet/confluence/placeholder/macro-heading?definition=e2NvZGV9&amp;locale=en_US&amp;version=2); background-repeat: no-repeat;"
+    data-macro-body-type="PLAIN_TEXT">
+    <tbody>
+      <tr>
+        <td class="wysiwyg-macro-body">
+          <pre>static boolean testsPass()
+{
+    boolean check = wordDistance(new String[]{"one", "two", "three", "four", "five"},
+            "two", "five") == 3;
+    if(!check)
+    {
+        return false;
+    }
+    check = wordDistance(new String[]{"one", "two", "three", "four", "five"}, "four", "two") == 2;
+    if(!check)
+    {
+        return false;
+    }
+    return true;
+}</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+  <p>&nbsp;</p>
+
+
+
+  <div id="recorder_overlay"
+    style="position: fixed; width: 100%; height: 100%; top: 0; display: none; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 9999999; cursor: pointer; "
+    onclick="this.style.display=&#39;none&#39;"></div>
+  </body>
+  
+  </html>
