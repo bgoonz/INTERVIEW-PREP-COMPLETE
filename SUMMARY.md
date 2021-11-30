@@ -14,6 +14,7 @@
   * [Links](resources/links.md)
   * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
   * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
+* [Jobs To Keep Track Of](jobs-to-keep-track-of.md)
 
 ## Resume
 
@@ -73,13 +74,13 @@
   * [37-Essential-Js-Questions](interview-prep/technical-interview-practice/37-essential-js-questions.md)
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
 * [Resources](interview-prep/resources.md)
-  * [FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS](interview-prep/resources/full-stack-developer-interview-questions-and-answers.md)
   * [List of List](interview-prep/resources/list-of-list.md)
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
 * [Overview](interview-prep/overview/README.md)
   * [Data-Structures Q & A](interview-prep/overview/general-web-dev-questions.md)
 * [Front End Interview](interview-prep/front-end-interview.md)
-* [Web Dev Interview Questions](interview-prep/web-dev-interview-questions.md)
+* [Web Dev Interview Questions](interview-prep/web-dev-interview-questions/README.md)
+  * [FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS](interview-prep/web-dev-interview-questions/full-stack-developer-interview-questions-and-answers.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions..md)
 * [Qualitative Questions](interview-prep/qualitative-questions/README.md)
   * [Cheat Sheets](interview-prep/qualitative-questions/cheat-sheets/README.md)
@@ -155,3 +156,8 @@
 ## QUIZES
 
 * [Page 1](quizes/page-1.md)
+
+## Networking
+
+* [Networking](networking-1/networking/README.md)
+  * [a/A Email List](networking-1/networking/a-a-email-list.md)
