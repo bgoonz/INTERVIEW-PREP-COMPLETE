@@ -233,13 +233,7 @@ Though there is much more to be said on the topic, the short and most important 
 
 JavaScript is perhaps one of the most misunderstood and underestimated programming languages in existence today. The more one peels the JavaScript onion, the more one realizes what is possible. JavaScript is versatile enough to be used by front-end and back-end developers. Accordingly, finding true masters of the language for full-time or part-time roles in the United States or abroad is a challenge. We hope you find the questions presented in this post to be a useful foundation for “separating the wheat from the chaff” in your quest for the “elite few” among the best JavaScript developers to add to your development team.
 
-
-
-
-
-
-
-## Interview tips for all roles&#x20;
+## Interview tips for all roles
 
 \
 If advancing in the process, the next interview steps vary based on the role you're applying for. Be prepared to demonstrate how you meet the qualifications of the job by sharing specific examples from your past or ideas about how you would accomplish a specific task. Be sure to share how skills you have gained throughout your career will translate to the role for which you are interviewing. For some of our openings you may be asked to write code, share a creative portfolio, or provide examples of your work in other ways. You’ll meet with a few people—some potential teammates and some cross-functional colleagues—for up to an hour each. The hiring team gets a chance to get to know you—and you get a chance to get to know the team. Post-interview, your recruiter can help you understand the specific timeline of when you can expect to hear back regarding the hiring decision.​\
@@ -253,4 +247,4 @@ Do your researchDon't stop at understanding the position you’re interviewing f
 ### During your interview
 
 Be yourselfDemonstrate your thinking and curiosity We want to see not only what you know, but also how you think. Be prepared to share your thought process and explain the rationale behind your decisions. When asked to solve a problem or develop code, ask clarifying questions, state your assumptions, and be prepared to share your opinions or explain your choices.\
-Throughout the assessment process, we aspire to assess fundamental knowledge, capability, and learning potential. We don’t expect you to know everything. When you get stuck or don’t have experience with the subject matter, we encourage you to ask clarifying questions that show your integrity, collaboration, and ability to be resourceful.Be specific&#x20;
+Throughout the assessment process, we aspire to assess fundamental knowledge, capability, and learning potential. We don’t expect you to know everything. When you get stuck or don’t have experience with the subject matter, we encourage you to ask clarifying questions that show your integrity, collaboration, and ability to be resourceful.Be specific

@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/green-spruce.png
+cover: ../.gitbook/assets/green-spruce.png
 coverY: 311.0943396226415
 ---
 
@@ -13,7 +13,7 @@ Compiled languages are converted to machine code to execute directly on the CPU.
 
 _\[Technically any language could be compiled or interpreted, but there are some languages that typically get compiled (Go, C, C++, etc.) and some that typically get interpreted (Java, Python, JavaScript, etc.)]_
 
-![](../../.gitbook/assets/chrome\_HV3eZo0edG.png)
+![](../.gitbook/assets/chrome\_HV3eZo0edG.png)
 
 \_\_
 
@@ -25,7 +25,7 @@ When a program executes, the stack is used to hold local variables and function 
 
 The heap is used for longer-term storage. Objects that were allocated with new or dynamically allocated another way go on the heap. Constant strings and global variables go there, as well.
 
-![](../../.gitbook/assets/chrome\_HV3eZo0edG.png)
+![](../.gitbook/assets/chrome\_HV3eZo0edG.png)
 
 ### Recursion
 
@@ -87,7 +87,7 @@ class Singleton:
 
 * [https://en.wikipedia.org/wiki/Factory\_(object-oriented\_programming)](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\))
 
-![](../../.gitbook/assets/chrome\_HV3eZo0edG.png)
+![](../.gitbook/assets/chrome\_HV3eZo0edG.png)
 
 ## Factory (object-oriented programming) <a href="#firstheading" id="firstheading"></a>
 

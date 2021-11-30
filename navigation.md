@@ -71,8 +71,8 @@ coverY: 0
 [custom-outreach-message-generator](tutorials/custom-outreach-message-generator/)
 {% endcontent-ref %}
 
-{% content-ref url="interview-prep/ds_algo-practice/python-subpage.md" %}
-[python-subpage.md](interview-prep/ds\_algo-practice/python-subpage.md)
+{% content-ref url="interview-prep/behavorial/python-subpage.md" %}
+[python-subpage.md](interview-prep/behavorial/python-subpage.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference/" %}
@@ -87,8 +87,8 @@ coverY: 0
 [broken-reference](broken-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="interview-prep/qualitative-questions/common-knowledge-questions.md" %}
-[common-knowledge-questions.md](interview-prep/qualitative-questions/common-knowledge-questions.md)
+{% content-ref url="interview-prep/common-knowledge-questions.md" %}
+[common-knowledge-questions.md](interview-prep/common-knowledge-questions.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference/" %}
