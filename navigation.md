@@ -87,8 +87,8 @@ coverY: 0
 [broken-reference](broken-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="interview-prep/common-knowledge-questions.md" %}
-[common-knowledge-questions.md](interview-prep/common-knowledge-questions.md)
+{% content-ref url="interview-prep/qualitative-questions/common-knowledge-questions.md" %}
+[common-knowledge-questions.md](interview-prep/qualitative-questions/common-knowledge-questions.md)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference/" %}

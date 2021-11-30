@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/green-spruce.png
+cover: ../../.gitbook/assets/green-spruce.png
 coverY: 311.0943396226415
 ---
 
@@ -13,9 +13,9 @@ Compiled languages are converted to machine code to execute directly on the CPU.
 
 _\[Technically any language could be compiled or interpreted, but there are some languages that typically get compiled (Go, C, C++, etc.) and some that typically get interpreted (Java, Python, JavaScript, etc.)]_
 
-![](../.gitbook/assets/chrome\_HV3eZo0edG.png)
+![](../../.gitbook/assets/chrome\_HV3eZo0edG.png)
 
-__
+\_\_
 
 ### Stack vs heap
 
@@ -25,7 +25,7 @@ When a program executes, the stack is used to hold local variables and function 
 
 The heap is used for longer-term storage. Objects that were allocated with new or dynamically allocated another way go on the heap. Constant strings and global variables go there, as well.
 
-![](../.gitbook/assets/chrome\_HV3eZo0edG.png)
+![](../../.gitbook/assets/chrome\_HV3eZo0edG.png)
 
 ### Recursion
 
@@ -34,8 +34,6 @@ Recursion is when a function calls itself.
 It typically keeps calling itself until a _base case_ is met that causes it to no longer call itself. (i.e. when the work is done.)
 
 Problems that are composed of identical independent subproblems are good candidates for recursive solutions. (e.g a binary search tree is made up of smaller binary search trees, so traversing them has a nice recursive solution.)
-
-
 
 ### Object oriented design
 
@@ -77,8 +75,6 @@ In essence, the singleton pattern forces it to be responsible for ensuring that 
 
 [Logging](https://en.wikipedia.org/wiki/Log\_file) is a classic example of a singleton.[\[4\]](https://en.wikipedia.org/wiki/Singleton\_pattern#cite\_note-rainsberger-4)
 
-
-
 ```python
 class Singleton:
     __instance = None
@@ -91,17 +87,15 @@ class Singleton:
 
 * [https://en.wikipedia.org/wiki/Factory\_(object-oriented\_programming)](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\))
 
-![](../.gitbook/assets/chrome\_HV3eZo0edG.png)
+![](../../.gitbook/assets/chrome\_HV3eZo0edG.png)
 
-
-
-## Factory (object-oriented programming) <a href="firstheading" id="firstheading"></a>
+## Factory (object-oriented programming) <a href="#firstheading" id="firstheading"></a>
 
 From Wikipedia, the free encyclopedia[Jump to navigation](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\)#mw-head)[Jump to search](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\)#searchInput)"Factory pattern" redirects here. For the GoF design patterns using factories, see [factory method pattern](https://en.wikipedia.org/wiki/Factory\_method\_pattern) and [abstract factory pattern](https://en.wikipedia.org/wiki/Abstract\_factory\_pattern).[![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Factory\_Method\_pattern\_in\_LePUS3.png/300px-Factory\_Method\_pattern\_in\_LePUS3.png)](https://en.wikipedia.org/wiki/File:Factory\_Method\_pattern\_in\_LePUS3.png)Factory Method in [LePUS3](https://en.wikipedia.org/wiki/LePUS3)
 
 In [object-oriented programming (OOP)](https://en.wikipedia.org/wiki/Object-oriented\_programming), a **factory** is an [object](https://en.wikipedia.org/wiki/Object\_\(computer\_science\)) for [creating other objects](https://en.wikipedia.org/wiki/Object\_creation) – formally a factory is a function or method that returns objects of a varying prototype or class[\[1\]](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\)#cite\_note-1) from some method call, which is assumed to be "new".[\[a\]](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\)#cite\_note-2) More broadly, a [subroutine](https://en.wikipedia.org/wiki/Subroutine) that returns a "new" object may be referred to as a "factory", as in _factory method_ or _factory function_. This is a basic concept in OOP, and forms the basis for a number of related [software design patterns](https://en.wikipedia.org/wiki/Software\_design\_pattern).
 
-### Contents <a href="mw-toc-heading" id="mw-toc-heading"></a>
+### Contents <a href="#mw-toc-heading" id="mw-toc-heading"></a>
 
 * [1Motivation](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\)#Motivation)
 * [2Terminology](https://en.wikipedia.org/wiki/Factory\_\(object-oriented\_programming\)#Terminology)
@@ -216,10 +210,6 @@ Factory methods are used in [test-driven development](https://en.wikipedia.org/w
 
 * [https://en.wikipedia.org/wiki/SOLID\_(object-oriented\_design)](https://en.wikipedia.org/wiki/SOLID\_\(object-oriented\_design\))
 
-
-
-
-
 ### Web Developer Job Interview Questions
 
 #### 1. DESCRIBE A WEB DEVELOPMENT PROJECT YOU WORKED ON FROM START TO FINISH. WHAT APPROACH DID YOU TAKE, WHAT CHALLENGES DID YOU FACE, AND HOW WERE YOU SUCCESSFUL?
@@ -281,14 +271,6 @@ Factory methods are used in [test-driven development](https://en.wikipedia.org/w
 #### 15. GIVE AN EXAMPLE OF A NON-CODING/WEB DEVELOPMENT PROBLEM THAT YOU’VE SOLVED, AND WHAT YOUR PROBLEM SOLVING PROCESS INVOLVED.
 
 **Tip:** Yes, you’re interviewing for a web developer job, but remember to look to other experiences in your life for inspiration. Examples like the time you helped improve the ordering system at the cafe you worked at or put together a volunteer fundraising effort to save the music program at your kids’ school all speak to the breadth of your problem solving abilities and experiences.
-
-
-
-
-
-
-
-
 
 ### Web Developer Job Interview Questions
 
