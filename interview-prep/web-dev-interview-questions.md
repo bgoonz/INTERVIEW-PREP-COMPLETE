@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/240_F_288222154_cKptkuFiB0jjSLlfGrKqHU7qve113JKW.jpg
+cover: ../.gitbook/assets/240_F_288222154_cKptkuFiB0jjSLlfGrKqHU7qve113JKW.jpg
 coverY: 0
 ---
 
