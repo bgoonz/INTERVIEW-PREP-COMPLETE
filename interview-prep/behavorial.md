@@ -1,4 +1,4 @@
-# Behavioral
+# Behavorial
 
 With the average hiring process consisting of[ three interviews](https://careersidekick.com/interviews-per-job/) (some going up to six), it’s important to remember that finding a job is a marathon, not a sprint. That’s why we like to break down the experience into smaller, achievable goals so you can laser in on what will make you successful for each stage.
 
@@ -50,25 +50,25 @@ _**Example:** I graduated with a business degree and I knew I wanted a job where
 
 Because the hiring manager will be your direct supervisor they will want to know how you will fit into the team and their management style. In general, you want to highlight both independent and collaborative traits so they know you can get your work down on your own but are open to feedback.
 
-_**Example: **I think of myself as an independent collaborator. What I mean by that is I own my own work but I understand how it fits into the big picture. My goal is always for the project to come together on time in a way that exceeds expectations, if that means asking for or offering help, that’s what I’ll do. For example, I was recently part of a team launching a new product. We didn’t have a project manager so I made sure to set up a timeline and automatic reminders to keep us all accountable._
+_\*\*Example: \*\*I think of myself as an independent collaborator. What I mean by that is I own my own work but I understand how it fits into the big picture. My goal is always for the project to come together on time in a way that exceeds expectations, if that means asking for or offering help, that’s what I’ll do. For example, I was recently part of a team launching a new product. We didn’t have a project manager so I made sure to set up a timeline and automatic reminders to keep us all accountable._
 
 * **Why do you want this role?**
 
 Hiring managers want to see a strong reason why you want this role, it shows you will be a motivated and positive team member. You want to explain your career goals and how this job is a stepping stone and why you like the company culture.
 
-_**Example: **For the last few years I’ve been working in PR agencies, so I’ve gotten the opportunity to get to know a lot of brands and have a good overview of the industry. Now, I really want to go deeper into one brand and create long-term goals and results. I thought your company would be the perfect place to do that because of your reputation as an innovator in the field. When I read how sustainability is one of the company’s values, it really spoke to me on a personal level and inspired me to apply._
+_\*\*Example: \*\*For the last few years I’ve been working in PR agencies, so I’ve gotten the opportunity to get to know a lot of brands and have a good overview of the industry. Now, I really want to go deeper into one brand and create long-term goals and results. I thought your company would be the perfect place to do that because of your reputation as an innovator in the field. When I read how sustainability is one of the company’s values, it really spoke to me on a personal level and inspired me to apply._
 
 * **What’s your greatest strength?**
 
 This is a hard question because you don’t want to sound braggy or overconfident so the key is relaying examples and framing strengths as the feedback you’ve received from managers/teachers/colleagues. Be sure to mention how the positive feedback motivated you.
 
-_**Example: **In my last review, my manager said she appreciated how I was always finding things to do and pick up the slack. That meant a lot to me because I really try to be proactive about my job and motivated me to do even more. For example, I noticed that Sundays are slow in the morning so I always take that time to clean the windows and organize menus._
+_\*\*Example: \*\*In my last review, my manager said she appreciated how I was always finding things to do and pick up the slack. That meant a lot to me because I really try to be proactive about my job and motivated me to do even more. For example, I noticed that Sundays are slow in the morning so I always take that time to clean the windows and organize menus._
 
 * **What’s your greatest weakness?**
 
 Your hiring manager wants to know that you are self-aware and willing to work on your weaknesses. Choose a weakness that isn’t related to the core competencies of the job and share what steps you have taken to work on it.
 
-_**Example: **I’m glad you asked this question because I think it’s important to recognize and work on areas of weakness. As a data scientist, I am really comfortable communicating one on one, but I get nervous when I’m presenting in front of big groups. It’s something I’ve wanted to improve so I decided to sign up for an improv class to help me feel more comfortable speaking in front of crowds. We started two weeks ago and I already felt more confident sharing learnings in last week’s all-hands marketing meeting._
+_\*\*Example: \*\*I’m glad you asked this question because I think it’s important to recognize and work on areas of weakness. As a data scientist, I am really comfortable communicating one on one, but I get nervous when I’m presenting in front of big groups. It’s something I’ve wanted to improve so I decided to sign up for an improv class to help me feel more comfortable speaking in front of crowds. We started two weeks ago and I already felt more confident sharing learnings in last week’s all-hands marketing meeting._
 
 ### Common questions asked by executives?
 
@@ -86,13 +86,13 @@ Executives tend to ask more thought leadership questions, they want to know how 
 
 It’s unlikely that the executive has been intimately involved in the hiring process so they don’t know your specific resume and qualifications. They want to know you have the core competencies and that you can carry yourself well to make a good impression for the company.
 
-_**Example: **Having worked in construction and project management for five years, both independently and, more recently, as part of a company I’ve learned all the ins and outs of the job. Beyond the basic know-how for this role, this experience has given me the opportunity to build a strong network in the industry. I think these relationships are invaluable in this business and really make me stand out as a candidate. _
+\_\*\*Example: \*\*Having worked in construction and project management for five years, both independently and, more recently, as part of a company I’ve learned all the ins and outs of the job. Beyond the basic know-how for this role, this experience has given me the opportunity to build a strong network in the industry. I think these relationships are invaluable in this business and really make me stand out as a candidate. \_
 
 * **How does this job fit into your five-year plan?**
 
 Executives take the long view, and they want to understand how you could fit into the company not just now but going into the future. This is a good time for you to demonstrate some industry knowledge as well.
 
-_**Example: **My long-term goal is to be a plant manager. I want to get to know how the factory works from the ground up. I worked on the production line for a year before moving up to shift manager and then assistant floor manager. Now, as the night manager, I will build on the responsibilities I already have but be acting with more independence. I think my knowledge of the plant will be really invaluable to this role and I’m excited about taking this next step towards my end goal._
+_\*\*Example: \*\*My long-term goal is to be a plant manager. I want to get to know how the factory works from the ground up. I worked on the production line for a year before moving up to shift manager and then assistant floor manager. Now, as the night manager, I will build on the responsibilities I already have but be acting with more independence. I think my knowledge of the plant will be really invaluable to this role and I’m excited about taking this next step towards my end goal._
 
 * **What’s been your biggest career challenge so far?**
 
@@ -104,7 +104,7 @@ _**Example:** During the pandemic, my team went remote, and it was a big challen
 
 Motivation plays a big role in performance and productivity. The executive wants to know two things: 1) If what drives you fits in with the company culture. 2) If you have the awareness to self-motivate or communicate your needs to your manager
 
-_**Example: **I’m project-oriented so I like to see how my work has contributed to the bigger picture and goals are super important to me. I always feel a big boost of energy after a department meeting, because I get to see how the work from all the teams come together to push us to our goal. When I read your company website and it said one of your values was collaboration, I knew that it was going to be a place where I could thrive because to me, working together is how people accomplish big things._
+_\*\*Example: \*\*I’m project-oriented so I like to see how my work has contributed to the bigger picture and goals are super important to me. I always feel a big boost of energy after a department meeting, because I get to see how the work from all the teams come together to push us to our goal. When I read your company website and it said one of your values was collaboration, I knew that it was going to be a place where I could thrive because to me, working together is how people accomplish big things._
 
 * **What are you most looking forward to about this job?**
 

@@ -1,7 +1,5 @@
 # DS\_&\_ALGO\_STUDY\_GUIDE
 
-
-
 Trying to make a short, complete and realistic DSA study guide for coding interviews as well as competitive programming. Studying for competitive programming is quite vast, so we will try to focus more on coding interviews as well as some overlapping study materials for competitive programming. Study materials depend mostly on the position you are looking for, say for example, i have seen people been asked on rope data structure, hopcroft-karp algorithm, max-flow algorithm, hungarian algorithm etc. others non trivial stuffs. Though those are for L4 or L5 positions and DSA matters less there(System design does). So it depends. In this study materials guide we will be writing for mostly entry level or at most 1 or 2 level up from entry (FAANG mostly).
 
 I won't give a massive list of video links for each topic rather it will be short and concise with some tips, so that one can finish this guide within a reasonable amount of time. And i will try to categorize topics so that one can find his/her weakness easily and use this guide to work on it. And remember Only Practice can give you a _sense of completeness_ for a specific topic. And Don't Rush. Enjoy the journey. Try to be a natural problem solver not a interview acing problem solver. And you are not alone! Keep moving mate, never ever dare to give up. Hard work is going to pay you off very soon.
@@ -11,8 +9,7 @@ _N.B: CI = Coding Interview, CP = Competitive Programming, DSA = Data Structure 
 Here is a Straightforward Study Guide PDF if you don't have time to read whole article. PDF contains only links to study materials. But i will highly recommned you to study the article first and then use the PDF.
 
 > Link for PDF: [Comprehensive Data Structure and Algorithm Study Guide PDF Format](https://raw.githubusercontent.com/aminPial/Competitive-Programming-Library/master/Cpp/CI\_DSA\_study\_guide.pdf)\
-> Preview of the Study Guide:\
->
+> Preview of the Study Guide:\\
 
 ![](https://raw.githubusercontent.com/aminPial/Competitive-Programming-Library/master/Cpp/final.png)
 
@@ -40,7 +37,7 @@ Here is a Straightforward Study Guide PDF if you don't have time to read whole a
 4. Math(Number theory, Computational Geometry, Combinatorics, Linear Algebra etc.)
 5. Others(String Processing, Bit Manipulation etc.)
 
-> #### Implementation Problems
+> **Implementation Problems**
 >
 > Practice, Practice and Practice! Besides LC try to do some problems on other platforms for this. Again for this type, only practice can guarantee success. And that's it.
 
@@ -71,7 +68,7 @@ Now, this is a huge deal for all of us, right?. So many topics to cover. But if 
 >
 > Study Video no.63 to no.71 from [Abdul Bari Algorithm's Playlist](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs\_O). This topic is the key ingredient to solve Dynamic Programming questions.
 
-> #### Dynamic Programming😭
+> **Dynamic Programming😭**
 >
 > The big guy enters! After watching some top problem solver's code i get too much frustrated. They came up with all this sub problem based formula and solves it like a beginner question(Just kidding! they don't. It's because of their years of practice to recognize the pattern/formula for a dp problem). Say for example: A String based DP problem involves a 2D matrix where \[i]\[j] generally refers to the solution for index i to j of the String and etc. Here is what you should do, try to understand backtracking very well as that will be the key in solving DP. After getting a backtracking solution you can memoize the previous solutions and reduce solutions to 2/3 Degree Polynomial Time. By the way, there is a good news for Pythonistas. After you just come up with a 2N backtracking solution just use functools.lru\_cache(maxsize=None) decorator and you will have a dp solution(almost 90% time). _More info here at:-_\
 > \
@@ -95,7 +92,7 @@ Now, this is a huge deal for all of us, right?. So many topics to cover. But if 
 
 ***
 
-> #### Graph Theory
+> **Graph Theory**
 >
 > [Graph Theory Easy to Advanced Course - Full Tutorial from a Google Engineer and ACM ICPC World Finalist](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P)\
 > \
@@ -103,7 +100,7 @@ Now, this is a huge deal for all of us, right?. So many topics to cover. But if 
 
 ***
 
-> #### Math
+> **Math**
 >
 > Math is fun, Math is everywhere and Math can win you any war from coding interview to WW2(Remember Alan Turing and enigma!). Math problems are more common to competitive programming environment. Sometimes interviewers will ask you for proof by induction or contradiction for a problem. And even if they don't and you can show the proof it will be a huge boost to your success. _The best material to study:-_\
 > \
@@ -117,7 +114,7 @@ Now, this is a huge deal for all of us, right?. So many topics to cover. But if 
 >
 > ***
 
-> #### Others
+> **Others**
 >
 > 1\. String Processing: Follow the string section from [CP Algorithms Site.](http://cp-algorithms.com)\
 > 2\. Bit Manipulation: Follow [HackerEarth Bit Manipulation Tutorial](https://www.hackerearth.com/practice/basic-programming/bit-manipulation/basics-of-bit-manipulation/tutorial/) and also [Fun with Bits Tutorial.](https://www.\*\*\*.com/community/competitive-programming/tutorials/a-bit-of-fun-fun-with-bits/)\
@@ -144,10 +141,6 @@ Now, this is a huge deal for all of us, right?. So many topics to cover. But if 
 * [Great guideline on acing interviews and what to study?](https://medium.com/@nick.ciubotariu/ace-the-coding-interview-every-time-d169ce1fd3fc)
 * [DSA for CP guys(CI guys should also try if you have time)](http://cp-algorithms.com)
 
-
-
-
-
 ## Introduction
 
 This section dives deep into practical tips for specific topics of algorithms and data structures which appear frequently in coding questions. Many algorithm questions involve techniques that can be applied to questions of similar nature. The more techniques you have in your arsenal, the higher the chances of passing the interview. They may lead you to discover corner cases you might have missed out or even lead you towards the optimal approach!
@@ -156,7 +149,7 @@ For each topic, study links are recommended to help you master the topic. There 
 
 If you are interested in how data structures are implemented, check out [Lago](https://github.com/yangshun/lago), a Data Structures and Algorithms library for JavaScript. It is pretty much still WIP but I intend to make it into a library that is able to be used in production and also a reference resource for revising Data Structures and Algorithms.
 
-### General tips[​](https://techinterviewhandbook.org/algorithms/introduction/#general-tips) <a href="general-tips" id="general-tips"></a>
+### General tips[​](https://techinterviewhandbook.org/algorithms/introduction/#general-tips) <a href="#general-tips" id="general-tips"></a>
 
 Clarify any assumptions you made subconsciously. Many questions are under-specified on purpose.
 

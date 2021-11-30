@@ -1,7 +1,5 @@
 # 💸 React Tips
 
-
-
 * React CheatSheet
   * Creating a new React App
     * Using Create React App
@@ -119,7 +117,7 @@ const content = 'Hello World'
 <div id={myId}>{content}</div>
 ```
 
-**You can't use `if`, or `for` loops inside JSX, they are not **_**expressions**_
+**You can't use `if`, or `for` loops inside JSX, they are not \_expressions**\_
 
 ```jsx
 <div>{ if (true) "Hello World" }</div>

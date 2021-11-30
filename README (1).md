@@ -182,15 +182,15 @@ Calendar
 ### 🖋 Interview Prep
 
 * [⁉ Interview Questions.](interview-prep/interview-questions.)
-  * [Cheat Sheets](interview-prep/interview-questions./cheat-sheets/)
-* [Python-VS-JS Cheat Sheet](interview-prep/interview-questions./cheat-sheets/python-vs-js-cheat-sheet.md)
-* [Common Knowledge Questions](interview-prep/common-knowledge-questions.md)
-* [Types Of Data Structures](interview-prep/ds\_algo-practice/types-of-data-structures.md)
-* [👨💻 Leetcode:](interview-prep/technical-interview-practice/)
-* [Hash Tables](interview-prep/ds\_algo-practice/hash-tables.md)
+  * [Cheat Sheets](interview-prep/resources/cheat-sheets/)
+* [Python-VS-JS Cheat Sheet](interview-prep/resources/cheat-sheets/python-vs-js-cheat-sheet.md)
+* [Common Knowledge Questions](interview-prep/qualitative-questions/common-knowledge-questions.md)
+* [Types Of Data Structures](interview-prep/types-of-data-structures.md)
+* [👨💻 Leetcode:](interview-prep/interview-questions./technical-interview-practice.md)
+* [Hash Tables](interview-prep/hash-tables.md)
 * [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/)
   * [Python Subpage](interview-prep/ds\_algo-practice/python-subpage.md)
-* [🐍 Python](interview-prep/interview-questions./cheat-sheets/python.md)
+* [🐍 Python](interview-prep/resources/cheat-sheets/python.md)
 * [More Practice:](interview-prep/more-practice.md)
 
 ### Tutorials

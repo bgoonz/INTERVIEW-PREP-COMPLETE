@@ -1,4 +1,10 @@
-# 👨💻 Technical Interview Practice
+---
+description: leetcode
+---
+
+# 👨💻 Leetcode
+
+
 
 {% embed url="https://codesandbox.io/s/leetcode-egdpt?file=%2Findex.html" %}
 
