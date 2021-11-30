@@ -1,5 +1,11 @@
 # 📋 Filling Out Forms
 
+{% embed url="https://onedrive.live.com/embed?AllowTyping=True&authkey=%21AFR6pjGJXrKONSw&em=2&resid=D21009FDD967A241%21700687&wdDownloadButton=True&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True" %}
+
+{% embed url="https://onedrive.live.com/embed?resid=D21009FDD967A241" %}
+
+{% embed url="https://docs.google.com/spreadsheets/d/1DUrLBMgc8BuVEQzfpuy0wxgZF2zwOBE-W8M-NXFh_zI/edit?usp=sharing" %}
+
 
 
 | <h3>Name</h3>                                                                                 | Bryan Guner                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
