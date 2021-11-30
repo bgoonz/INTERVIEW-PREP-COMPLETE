@@ -169,7 +169,7 @@ Calendar
 
 ### 📈 Slack\&Lambda
 
-* [📍 Pinned Items:](slack-and-lambda/pinned-items.md)
+* [📍 Pinned Items:](broken-reference)
 * [📌 Pinned Messages:](broken-reference)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
@@ -196,7 +196,7 @@ Calendar
 ### Tutorials
 
 * [Job Search Guide](tutorials/custom-outreach-message-generator/)
-  * [Common Questions](tutorials/custom-outreach-message-generator/page-2.md)
+  * [Common Questions](interview-prep/behavorial/page-2.md)
   * [Self Introduction](tutorials/custom-outreach-message-generator/page-2-1.md)
 
 ***
@@ -239,4 +239,4 @@ Calendar
 ### 🖨 Interviewing
 
 * [General](interviewing/general.md)
-* [🖥 JS](interviewing/js.md)
+* [🖥 JS](broken-reference)

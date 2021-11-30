@@ -142,31 +142,11 @@
 
 ## Notes
 
+* [Interview Navigation](notes/page-2.md)
 * [Notes](notes/notes.md)
+* [CSS Interview Prep Quiz](notes/css-interview-prep-quiz.md)
 
 ## 🖨 Interviewing
 
 * [General](interviewing/general.md)
 * [Inspiration](interviewing/inspiration.md)
-* [🖥 General](interviewing/js.md)
-  * [Interview Navigation](interviewing/js/page-2.md)
-  * [Solutions For Beginners](interviewing/js/solutions-for-beginners.md)
-  * [Adding CSS To Your HTML](interviewing/js/adding-css-to-your-html.md)
-  * [Most Common Javascript Errors](interviewing/js/most-common-javascript-errors.md)
-  * [CSS Interview Prep Quiz](interviewing/js/css-interview-prep-quiz.md)
-  * [Modules in Javascript](interviewing/js/modules-in-javascript.md)
-  * [Cheatsheet Compilation](interviewing/js/cheatsheet-compilation.md)
-  * [The ExpressJS Way To Write APIs](interviewing/js/the-expressjs-way-to-write-apis.md)
-  * [Resources)](interviewing/js/resources.md)
-  * [scrap](interviewing/js/scrap.md)
-  * [Machine Learner](interviewing/js/machine-learner.md)
-  * [The Penultimate Web Developer’s Cheat Sheet](interviewing/js/the-penultimate-web-developers-cheat-sheet.md)
-  * [Here’s the expanded list:](interviewing/js/heres-the-expanded-list.md)
-  * [The Complete JavaScript Reference Guide](interviewing/js/the-complete-javascript-reference-guide.md)
-  * [This is really cool!](interviewing/js/this-is-really-cool.md)
-  * [Solutions For Beginners](interviewing/js/solutions-for-beginners-1.md)
-  * [Job Boards and The Hunt](interviewing/js/job-boards-and-the-hunt.md)
-  * [Libraries](interviewing/js/libraries.md)
-  * [Machine Learner](interviewing/js/machine-learner-1.md)
-  * [Here’s the expanded list:](interviewing/js/heres-the-expanded-list-1.md)
-  * [The Complete JavaScript Reference Guide](interviewing/js/the-complete-javascript-reference-guide-1.md)
