@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/240_F_288222154_cKptkuFiB0jjSLlfGrKqHU7qve113JKW.jpg
+cover: ../../.gitbook/assets/240_F_288222154_cKptkuFiB0jjSLlfGrKqHU7qve113JKW.jpg
 coverY: 0
 ---
 
@@ -34,7 +34,7 @@ The hiring manager here wants to make sure that you have experience with a bread
 * Provide a basic overview of push technology. What are its benefits and drawbacks?
 * How can Page Visibility API be useful?
 
-### List of Web Development Interview Questions: Technical Questions <a href="list-of-web-development-interview-questions-technical-questions" id="list-of-web-development-interview-questions-technical-questions"></a>
+### List of Web Development Interview Questions: Technical Questions <a href="#list-of-web-development-interview-questions-technical-questions" id="list-of-web-development-interview-questions-technical-questions"></a>
 
 Technical interview questions put your web development knowledge to the test. In these questions, you need to explain how you would apply your skills for various problems or tasks.
 
@@ -64,7 +64,7 @@ There are many different ways you can reduce the page load time, including clean
 * What user interface and security principles do you consider when building a website or online application?
 * Give an example of a website or web application that you don’t like. What would you change?
 
-### List of Web Development Interview Questions: Personal Questions <a href="list-of-web-development-interview-questions-personal-questions" id="list-of-web-development-interview-questions-personal-questions"></a>
+### List of Web Development Interview Questions: Personal Questions <a href="#list-of-web-development-interview-questions-personal-questions" id="list-of-web-development-interview-questions-personal-questions"></a>
 
 A Web Developer often has to collaborate with other departments, so employers are seeking candidates that would be a good overall fit with the company.
 
@@ -86,7 +86,7 @@ You need to show your interviewer that you are passionate about the development 
 * What are your favorite types of projects to work on?
 * Are there any particular projects at our company that you are excited about?
 
-### List of Web Development Interview Questions: Leadership and Communication <a href="list-of-web-development-interview-questions-leadership-and-communication" id="list-of-web-development-interview-questions-leadership-and-communication"></a>
+### List of Web Development Interview Questions: Leadership and Communication <a href="#list-of-web-development-interview-questions-leadership-and-communication" id="list-of-web-development-interview-questions-leadership-and-communication"></a>
 
 At any stage of your Web Developer career, leadership and communication skills are two important qualities to have. To assess your leadership and communication abilities, employers may ask questions such as:
 
@@ -101,7 +101,7 @@ JavaScript is a programming language that is used for dynamic content, which ref
 * Do you like working as part of a team while you’re coding? What do you think contributes to a successful team?
 * How do you help your team members improve their coding skills?
 
-### List of Web Development Interview Questions: Behavioral <a href="list-of-web-development-interview-questions-behavioral" id="list-of-web-development-interview-questions-behavioral"></a>
+### List of Web Development Interview Questions: Behavioral <a href="#list-of-web-development-interview-questions-behavioral" id="list-of-web-development-interview-questions-behavioral"></a>
 
 With behavioral interview questions, employers are seeking to understand how your past behavior may translate into the current position. Focus on explaining the situation or problem, how you handled it, and the result or outcome of your actions.
 
@@ -120,7 +120,7 @@ Even an entry-level Web Developer has likely faced criticism at some point. The 
 * Has your team ever failed to meet a deadline? What went wrong and how did you address the situation?
 * How do you handle conflicts on your team?
 
-### List of Web Development Interview Questions From Top Companies (Amazon, Google, Facebook, Microsoft) <a href="list-of-web-development-interview-questions-from-top-companies-amazon-google-facebook-microsoft" id="list-of-web-development-interview-questions-from-top-companies-amazon-google-facebook-microsoft"></a>
+### List of Web Development Interview Questions From Top Companies (Amazon, Google, Facebook, Microsoft) <a href="#list-of-web-development-interview-questions-from-top-companies-amazon-google-facebook-microsoft" id="list-of-web-development-interview-questions-from-top-companies-amazon-google-facebook-microsoft"></a>
 
 To give you an idea of the range of questions that may come up during your interview, we have put together a few examples of Web Developer interview questions from some of the top tech companies.
 
