@@ -55,20 +55,19 @@
 
 ## 📈 Slack\&Lambda
 
-* [Pinned Items:](slack-and-lambda/pinned-items.md)
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 * [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 
 ## Aux-Resources
 
 * [Youtube](aux-resources/youtube.md)
-* [👨🏫 Guidance](aux-resources/guidance.md)
+* [👨🏫 👨🏫 Guidance](aux-resources/guidance.md)
 
 ## 🖋 Interview Prep
 
-* [👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
+* [👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
   * [37-Essential-Js-Questions](interview-prep/technical-interview-practice/37-essential-js-questions.md)
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
 * [Resources](interview-prep/resources.md)
