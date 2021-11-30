@@ -150,3 +150,7 @@
 
 * [General](interviewing/general.md)
 * [Inspiration](interviewing/inspiration.md)
+
+## QUIZES
+
+* [Page 1](quizes/page-1.md)
