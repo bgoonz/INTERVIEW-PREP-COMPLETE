@@ -1,5 +1,7 @@
 # Resources
 
+{% embed url="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/manipulate-arrays-with-unshift" %}
+
 {% embed url="https://replit.com/@bgoonz/interview-2#index.js" %}
 
 | **File**                                                                                                                                   | **File**                                                                                                                                                               | **File**                                                                                                                                                 | **File**                                                                                                                               | **File**                                                                                                                                                           | **File**                                                                                                                                             |

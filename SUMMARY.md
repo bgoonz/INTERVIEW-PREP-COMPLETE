@@ -8,6 +8,7 @@
   * [🍢 My Stack](skills/my-stack.md)
 * [📋 Filling Out Forms](filling-out-forms.md)
 * [📖 Resources](resources/README.md)
+  * [Linkedin Cheat Shee](resources/linkedin-cheat-shee.md)
   * [Job Search Advice](resources/job-search-advice.md)
   * [Orientation:](resources/orientation.md)
   * [Links](resources/links.md)
