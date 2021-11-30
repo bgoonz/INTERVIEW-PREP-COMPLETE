@@ -6,6 +6,7 @@
 * [📥 Useful Downloads](useful-downloads.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
+* [📋 Filling Out Forms](filling-out-forms.md)
 * [📖 Resources](resources/README.md)
   * [Job Search Advice](resources/job-search-advice.md)
   * [Orientation:](resources/orientation.md)
@@ -22,20 +23,20 @@
 
 ## Applications & Job Postings
 
+* [Job Boards](applications-and-job-postings/job-boards.md)
 * [📮 Postings:](applications-and-job-postings/postings.md)
   * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
   * [Amazon](applications-and-job-postings/amazon.md)
   * [My Applications](applications-and-job-postings/my-applications.md)
     * [Application Info](applications-and-job-postings/my-applications/application-info.md)
     * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
-  * [Jobs To Apply To:](job-postings/jobs-to-apply-to.md)
+  * [First Round Of Applications](job-postings/jobs-to-apply-to.md)
 * [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
   * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
     * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
     * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
   * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
   * [Remote Positions](job-postings/remote-positions.md)
-* [Job Boards](applications-and-job-postings/job-boards.md)
 
 ## Cover Letter
 
