@@ -1,5 +1,5 @@
 ---
-cover: ../.gitbook/assets/skills (1).png
+cover: ../.gitbook/assets/skills.png
 coverY: 0
 ---
 
@@ -12,8 +12,10 @@ coverY: 0
 {% embed url="https://codesandbox.io/s/dropbox-8xyxx?file=%2Findex.html" %}
 
 {% embed url="https://www.dropbox.com/s/pkwmb529a3k5pfo/comfortably.mp4?dl=0" %}
-Performed using our own proprietary guitar distortion effect created in pure data.
+Performed using our own proprietary guitar distortion effect created in pure data.&#x20;
 {% endembed %}
+
+
 
 {% embed url="https://docs.google.com/presentation/d/e/2PACX-1vSFvsw5kPGzq0D5KrRQoKTQI05sjeMbsMKqGvLwZA6ZFfDP6mAQD9dRubOeennDOP-UZmOJegN1IxKs/pub?delayms=3000&loop=false&start=false" %}
 
