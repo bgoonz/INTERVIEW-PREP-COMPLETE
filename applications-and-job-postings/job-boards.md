@@ -1,8 +1,39 @@
 # Job Boards
 
+### REMOTE JOB SITES
 
+**16.** [**FlexJobs(opens in a new tab)**](http://www.flexjobs.com)\
+FlexJobs has remote, or telecommuting, job listings _only_. FlexJobs has a ton of job types featured at varying levels, from junior to executive. To job hunt on FlexJobs, though, you need to create an account. And it will cost you from $14.95/month to $49.95/year. However, it may be worth the little extra because FlexJobs screens all of their job listings—which can save you time in the long run. (And as we all know, time is money!)
 
-### Table of Contents
+**17.** [**PowerToFly (opens in a new tab)**](https://www.powertofly.com/jobs)\
+This job site is designed to match women in tech with remote jobs. You must create a profile to get started. Then, you get vetted, and later matched to a perfect company. Think of it like a matchmaking service, but for remote tech jobs! Even better, you get a _paid_ working trial to see if the company is a good fit.
+
+**18.** [**Working Nomads (opens in a new tab)**](http://www.workingnomads.co/jobs)\
+Working Nomads is a job site that aggregates remote listings from across the web. Most come from sites like StackOverflow. They showcase jobs in several categories (Design, Marketing, SysAdmin, etc.). But without a doubt their development section is the most thriving. Moreover, Working Nomads has a newsletter so that you can get daily or weekly job opening updates straight to your inbox.
+
+**19.** [**We Work Remotely(opens in a new tab)**](https://weworkremotely.com)\
+This entirely remote job site is brought to you by [37 Signals(opens in a new tab)](https://37signals.com), creators of the book [_Remote_(opens in a new tab)](https://37signals.com/remote/), which as you can guess, is all about working remotely. The best way to search for jobs on We Work Remotely is by keyword or skill, like “JavaScript.” There is no need to sign up or create an account to start searching.
+
+#### MOBILE DEVELOPMENT JOB SITES
+
+**20.** [**Android Jobs(opens in a new tab)**](https://androidjobs.io)\
+As the name suggests, the job site features Android-only jobs. All of the listings are aggregated, mostly coming from StackOverflow, and updated hourly. You can also sign up for weekly Android job updates.
+
+**21.** [**Core Intuition (opens in a new tab)**](http://jobs.coreint.org)\
+This site features strictly jobs for iOS and Mac Cocoa developers. Jobs listed are truly top-notch, at companies like Apple, Expedia, Desk.com and more. This may not be the best place for total beginners to search, given that number of listings are few and mostly senior level. But if you’re hoping to become an iOS developer, this is a great site to check out.
+
+#### RUBY ON RAILS JOB SITES
+
+**22.** [**Ruby Inside(opens in a new tab)**](http://jobs.rubyinside.com/a/jobs/list/)\
+The popular Ruby Inside blog also has a jobs site with Ruby on Rails jobs. All of the jobs have been aggregated from SimplyHired. There are plenty of filters you can choose from to find positions best for you. This includes an “experience” filter where you can look for listings that only require 0-2 years.
+
+**23.** [**RubyNow (opens in a new tab)**](http://jobs.rubynow.com)\
+RubyNow is a site with RoR job listings only. While the list is typically on the shorter side, they also have a job alert system where you can get notified if a new RoR listing comes to your city.
+
+#### WORDPRESS JOB SITES
+
+**24.** [**WordPress Jobs(opens in a new tab)**](http://jobs.wordpress.net)\
+The official WordPress job board—hosted by WordPress.org itself. Sort by position type, like:Table of Contents
 
 * [General](https://github.com/bgoonz/awesome-job-boards#general)
 * [Data Science](https://github.com/bgoonz/awesome-job-boards#data-science)
@@ -23,31 +54,62 @@
 * [arbeitnow](https://www.arbeitnow.com)
 * [4 day week](https://4dayweek.io)
 
-### Data Science
 
-* [DataJobs.com](https://datajobs.com)
-* [Data Elixir](https://jobs.dataelixir.com)
-* [AI Jobs](https://ai-jobs.net)
-* [Machine learning jobs](https://jobhunt.ai)
-* [Kaggle jobs](https://www.kaggle.com/jobs)
-* [icrunchdata](https://icrunchdata.com)
-* [KDnuggets](https://www.kdnuggets.com/jobs/index.html)
-* [Data Yoshi](https://www.datayoshi.com)
-* [Opendatascience Jobs](https://jobs.opendatascience.com)
-* [AnalyticsVidhya Jobs](https://jobsnew.analyticsvidhya.com/jobs/all)
-* [Jobs for New Data Scientists](https://www.jobsfornewdatascientists.com)
-* [BigDataJobs](https://www.bigdatajobs.com)
-* [StatsJobs](https://www.statsjobs.com)
-* [Big Cloud](https://bigcloud.global/find-a-job/)
-* [Microprediction jobs](https://www.microprediction.com/jobs)
 
-### Blockchain
 
-* [Blocktribe](https://blocktribe.com)
-* [Crypto Jobs List](https://cryptojobslist.com)
-* [CryptoJobs](https://crypto.jobs)
-* [Blockew](https://blockew.com)
-* [Cryptocurrency Jobs](https://cryptocurrencyjobs.co)
+
+
+
+### 25 Job Sites for Finding Your First Developer Job
+
+#### GENERAL JOB SITES
+
+**1.** [**Authentic Jobs(opens in a new tab)**](https://authenticjobs.com)\
+Authentic Jobs is a site for those who want to work on the web. Their gorgeous interface makes it simple to search full-time, part-time, remote jobs, internships, and more. They even have listings in fields outside of web development, like content strategy and UI design.
+
+**2.** [**GitHub(opens in a new tab)**](https://jobs.github.com)\
+GitHub, the most popular Git repository hosting service with 9 million users, has its own job board. Here you can search openings by keyword (like “Ruby on Rails” or “front end” or, better yet, “entry level”) and location. They feature mostly full-time jobs. And, of course, all listings are for positions in the web dev space or related ones.
+
+**3.** [**Indeed(opens in a new tab)**](http://www.indeed.com)\
+Indeed is one of the largest job sites out there, with tons of postings culled from around the internet. Chances are you’ve probably already used Indeed in your job search—web development related or otherwise. Type in your desired location and a keyword that encapsulates what you want to do (e.g. “WordPress development”) and let the search begin.
+
+**4.** [**Jobbatical(opens in a new tab)**](https://jobbatical.com/explore)\
+Jobbatical is based on the concept of a “sabbatical”, AKA a period of paid leave (most common with professors). Basically, Jobbatical features paid international job placements, mostly at startups. The openings—which are predominantly tech-based—are for short periods of time: typically between 2 – 12 months. Jobbatical is a perfect job site for globetrotters, or those who want to live in a new country for a few months…and get paid while doing so!
+
+**5.** [**Krop(opens in a new tab)**](http://www.krop.com)\
+Krop is a job site for web creatives—including web developers. You can easily browse job openings by “tag”, or key term. Most of the listings are for full-time employment. Even more: Krop gives you the ability to build a portfolio and showcase your work—unlike others on the list.
+
+**6.** [**Mashable(opens in a new tab)**](http://jobs.mashable.com/jobs/search/results)\
+The popular site Mashable also has a job board, where all listings pertain to tech and/or the media. No account required to apply to positions. However, you can also post your resume and cover letter to the site—and you need an account to do that.
+
+**7.** [**The Muse(opens in a new tab)**](https://www.themuse.com/jobs)\
+If you haven’t stumbled upon The Muse’s blog yet…where have you been!?! The site also has an awesome job board where it is easy to search by level, type, and the company. Even better, they provide easy-to-digest company profiles. (And all the companies who list openings on The Muse seem cool, too!)
+
+**8.** [**Smashing Magazine(opens in a new tab)**](http://jobs.smashingmagazine.com)\
+Like Mashable, Smashing Magazine is a website that also has a job board. However, jobs listed on Smashing Magazine are in the design and programming space only. Smashing Magazine also makes it simple to search full-time and/or freelance gigs.
+
+**9.** [**Stack Overflow(opens in a new tab)**](https://careers.stackoverflow.com/jobs)\
+The popular site where people post programming-related questions also has a thriving job board. Search openings by full-time, remote, and more. They even have an option where you can search based on visa sponsorship. (Something I haven’t seen anywhere else.) Most of the listings relate to engineering and development jobs. If you’re just starting out, make sure to add “junior” or “entry level” into your search query to avoid all the senior listings and go straight to the entry level developer jobs.
+
+**10.** [**Tuts+(opens in a new tab)**](https://jobs.tutsplus.com)\
+The popular Tuts+ blog and online learning portal also has a job board where you can find developer and design related openings. Even better, the Tuts+ job board has international listings. You may be thinking that the list is short, but it is updated often. And you don’t need an account to apply.
+
+#### JOBS AT STARTUPS
+
+**11.** [**AngelList(opens in a new tab)**](https://angel.co/jobs)\
+Want to work at a startup? Then AngelList is a perfect place to search for entry level developer jobs at your favorite up-and-coming startups. With AngelList, you must create an account as well as profile before you start searching for your dream job. Luckily, you can autocomplete your profile by uploading your resume. This may seem like extra work. But, on the bright side, this barrier to entry (taking time to fill out a profile) may keep out the masses.
+
+**12.** [**Product Hunt(opens in a new tab)**](https://www.producthunt.com/jobs)\
+Another site we know and love with a job board is Product Hunt. At first glance, you may think the list of openings is small. But I assure you, it is updated regularly: from what I have noticed, at least once a day if not more. And all the listings are at cool companies or organizations. For instance, I spotted a few openings at Hillary Clinton’s campaign recently.
+
+**13.** [**Startupers (opens in a new tab)**](https://www.startupers.com)\
+Another awesome site to find startup-specific openings. Job types range from marketing to data analysis, but there is a heavy emphasis on dev and engineering roles. You don’t need an account to search jobs. But, if you want to post your resume for others to find \*you\*, you do need to sign up.
+
+**14.** [**StartUpHire (opens in a new tab)**](http://www.startuphire.com)\
+StartUpHire is another startup job listing site. Here, there is no account required to apply for positions; you can simply apply on their site. You can even save listings as a “favorite” and revisit them later. _Yes, without an account!_ However, if you _will_ need an account if you want to create a profile on their site so that employers can more easily find you.
+
+**15.** [**Y Combinator(opens in a new tab)**](https://news.ycombinator.com/jobs)\
+Want to work at a YC-backed startup? If yes, this is your go-to place because it _only_ features YC companies. Some of the positions are at brand new YC companies, others at established. You’ll notice that there is not a huge list to choose from. But if you want to work at a selective YC-backed company, this is where you should look.
 
 ### Design
 
