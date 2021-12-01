@@ -2,6 +2,8 @@
 
 ![](../../.gitbook/assets/profile.png)
 
+[https://www.dice.com/dashboard/profiles/active](https://www.dice.com/dashboard/profiles/active)
+
 ## Bryan Guner
 
 ### full stack web developer

@@ -39,6 +39,7 @@
     * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
   * [First Round Of Applications](job-postings/jobs-to-apply-to.md)
   * [Jobs To Keep Track Of](applications-and-job-postings/postings/jobs-to-keep-track-of.md)
+  * [Recommended Jobs](applications-and-job-postings/postings/recommended-jobs.md)
 
 ## Cover Letter
 
@@ -52,7 +53,6 @@
 
 ## Portfolio
 
-* [Showcase](portfolio/showcase.md)
 * [💾 Git Repo](portfolio/git-repo.md)
 * [🖼 Portfolio](portfolio/page-11.md)
 
@@ -61,7 +61,6 @@
 * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
-* [Recommended Jobs](slack-and-lambda/recommended-jobs.md)
 
 ## Aux-Resources
 
@@ -153,10 +152,6 @@
 
 * [General](interviewing/general.md)
 * [Inspiration](interviewing/inspiration.md)
-
-## QUIZES
-
-* [Page 1](quizes/page-1.md)
 
 ## Networking
 
