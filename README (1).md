@@ -68,6 +68,17 @@ coverY: 0
 
 
 
+| [Untitled](https://www.notion.so/a72b1f7e6e8641d39f492a51b6bdf39e) | [Replit](https://repl.it/@bgoonz/)                                                                  | [Quora](https://www.quora.com/q/webdevresourcehub?invite\_code=qwZOqbpAhgQ6hjjGl8NN) | [Redit](https://www.reddit.com/user/bgoonz1)      | [webcomponents.dev](https://webcomponents.dev/user/bgoonz)                | [dev.to](https://dev.to/bgoonz)                                              |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| [Untitled](https://www.notion.so/fb2232371cba4f4aa5d95b37f3a8ec69) | [runkit](https://runkit.com/bgoonz)                                                                 | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)                 | [npm](https://www.npmjs.com/\~bgoonz11)           | [stack-exchange](https://meta.stackexchange.com/users/936785/bryan-guner) | [Observable Notebooks](https://observablehq.com/@bgoonz?tab=profile)         |
+| [Untitled](https://www.notion.so/773f803e676341a5818807382401c1da) | [Upwork](https://www.upwork.com/freelancers/\~01bb1a3627e1e9c630?viewMode=1\&s=1110580755057594368) | [Notion](https://www.notion.so/5d88b0bc9a73422a9be1481d599a56ba)                     | [AngelList](https://angel.co/u/bryan-guner)       | [StackShare](https://stackshare.io/bryanguner)                            | [Plunk](http://plnkr.co/account/plunks)                                      |
+| [Untitled](https://www.notion.so/ec6f3a55b79740da904c2f61452d136f) | [giphy](https://giphy.com/channel/bryanguner)                                                       | [kofi](https://ko-fi.com/bgoonz)                                                     | [Codewars](https://www.codewars.com/users/bgoonz) | [Dribble](https://dribbble.com/bgoonz4242?onboarding=true)                | [Glitch](https://glitch.com/@bgoonz)                                         |
+| [Untitled](https://www.notion.so/7837b7925ddb42e48da081db0a66946e) | [contentful](https://app.contentful.com/spaces/lelpu0ihaz11/assets?id=MocOPmmNliLn6PPv)             | [Netlify](https://app.netlify.com/user/settings#profile)                             | [Stackblitz](https://stackblitz.com/@bgoonz)      | [Vercel](https://vercel.com/bgoonz)                                       | [Youtube](https://www.youtube.com/channel/UC9-rYyUMsnEBK8G8fCyrXXA/featured) |
+| [Untitled](https://www.notion.so/0db9be82dad0419f8a11f4b69f6c3acb) | [wordpress](https://web-dev-hub.com)                                                                | [Edabit](https://edabit.com/user/dsRcx6yCwAgYwZbRB)                                  | [Vinmeo](https://vimeo.com/user128661018)         | [js fiddle](https://jsfiddle.net/user/bgoonz/)                            |                                                                              |
+| [Untitled](https://www.notion.so/67da4ec811e44e52b166c1339ce3aa84) | [Google Developer Profile](https://developers.google.com/profile/u/100803355943326309646)           | [Gittee](https://gitee.com/bgoonz)                                                   | [Wakatime](https://wakatime.com/@bgoonz42)        | [Hubpages](https://hubpages.com/@bryanguner)                              | [Free Code Camp](https://www.freecodecamp.org/bgoonz)                        |
+
+
+
 
 
 * \------------------------------------------------------------------------------------------------
@@ -108,7 +119,7 @@ coverY: 0
 
 {% embed url="https://codesandbox.io/s/badge-wf3yh" %}
 
-<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7).png" alt=""></td><td><img src=".gitbook/assets/image (1) (1).png" alt=""></td><td><img src=".gitbook/assets/image (5) (1).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
+<table><thead><tr><th></th><th></th><th></th><th></th><th data-type="select"></th></tr></thead><tbody><tr><td><img src=".gitbook/assets/image (7) (1).png" alt=""></td><td><img src=".gitbook/assets/image (1) (1).png" alt=""></td><td><img src=".gitbook/assets/image (5) (1).png" alt=""></td><td><img src=".gitbook/assets/image (8) (1).png" alt=""></td><td></td></tr><tr><td><a href="https://bgoonz-blog.netlify.app">https://bgoonz-blog.netlify.app/</a></td><td><a href="https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg">https://1drv.ms/b/s!AkGiZ9n9CRDSqYFWqvfOsOE6EIknkg</a></td><td><a href="https://github.com/bgoonz?tab=repositories">https://github.com/bgoonz?tab=repositories</a></td><td><a href="https://www.linkedin.com/in/bryan-guner-046199128/">https://www.linkedin.com/in/bryan-guner-046199128/</a></td><td></td></tr></tbody></table>
 
 ### Social:
 
@@ -231,11 +242,11 @@ Calendar
 
 * [👔 Postings:](applications-and-job-postings/postings.md)
 * [My Applications](applications-and-job-postings/my-applications.md)
-* [😅 Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/)
-  * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/)
-    * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
-    * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
-  * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
+* [😅 Jobs I Really Want](broken-reference)
+  * [Stackbit](broken-reference)
+    * [Developer Advocate (Remote)](broken-reference)
+    * [Page 4](broken-reference)
+  * [Emails](broken-reference)
 
 ### Job Boards
 

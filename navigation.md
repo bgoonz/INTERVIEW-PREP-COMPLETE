@@ -27,12 +27,12 @@ coverY: 0
 [resume](resume/resume/)
 {% endcontent-ref %}
 
-{% content-ref url="applications-and-job-postings/jobs-i-really-want/" %}
-[jobs-i-really-want](applications-and-job-postings/jobs-i-really-want/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="applications-and-job-postings/jobs-i-really-want/" %}
-[jobs-i-really-want](applications-and-job-postings/jobs-i-really-want/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="job-boards/job-boards/list-of-boards.md" %}
@@ -55,8 +55,8 @@ coverY: 0
 [broken-reference](broken-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md" %}
-[developer-advocate-remote.md](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference/" %}

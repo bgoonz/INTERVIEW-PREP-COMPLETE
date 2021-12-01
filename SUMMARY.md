@@ -4,6 +4,8 @@
 * [🏡 Home](<README (1).md>)
 * [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
+* [TO DO](to-do.md)
+* [Jobs To Apply To](jobs-to-apply-to.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
 * [📋 Filling Out Forms](filling-out-forms.md)
@@ -14,7 +16,7 @@
   * [Links](resources/links.md)
   * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
   * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
-* [Jobs To Keep Track Of](jobs-to-keep-track-of.md)
+* [Linkedin](linkedin.md)
 
 ## Resume
 
@@ -22,6 +24,9 @@
   * [Certificate (Lambda)](resume/resume/certificate-lambda.md)
   * [Examples](resume/resume/examples.md)
   * [Advice](resume/resume/advice.md)
+  * [Dice](resume/resume/dice.md)
+  * [Linkedin Resume](resume/resume/linkedin-resume.md)
+  * [Indeed Resume](resume/resume/indeed-resume.md)
 
 ## Applications & Job Postings
 
@@ -33,12 +38,7 @@
     * [Application Info](applications-and-job-postings/my-applications/application-info.md)
     * [In Progress](applications-and-job-postings/my-applications/in-progress.md)
   * [First Round Of Applications](job-postings/jobs-to-apply-to.md)
-* [Jobs I Really Want](applications-and-job-postings/jobs-i-really-want/README.md)
-  * [Stackbit](applications-and-job-postings/jobs-i-really-want/stackbit/README.md)
-    * [Developer Advocate (Remote)](applications-and-job-postings/jobs-i-really-want/stackbit/developer-advocate-remote.md)
-    * [Page 4](applications-and-job-postings/jobs-i-really-want/stackbit/page-4.md)
-  * [Emails](applications-and-job-postings/jobs-i-really-want/emails.md)
-  * [Remote Positions](job-postings/remote-positions.md)
+  * [Jobs To Keep Track Of](applications-and-job-postings/postings/jobs-to-keep-track-of.md)
 
 ## Cover Letter
 
@@ -70,6 +70,7 @@
 
 ## 🖋 Interview Prep
 
+* [INTERVIEW](interview-prep/interview.md)
 * [👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
   * [37-Essential-Js-Questions](interview-prep/technical-interview-practice/37-essential-js-questions.md)
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
