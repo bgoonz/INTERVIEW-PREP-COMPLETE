@@ -14,6 +14,13 @@
 
 
 
+| Name:            | Company /Relationship                               | Phone        | Email                                                   | Linkedin                                                                                                                   |
+| ---------------- | --------------------------------------------------- | ------------ | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Ashalesh Tilawat | Family Promise / Supervisor & Release Manager       | 551-689-4865 | [ashtilawat23@gmail.com](mailto:ashtilawat23@gmail.com) |                                                                                                                            |
+| Devin Jefferson  | Supervisor / The Boys & girls Club of Hudson County | 804-335-8237 | ?                                                       | [https://www.linkedin.com/in/devin-jefferson-capm-720159130/](https://www.linkedin.com/in/devin-jefferson-capm-720159130/) |
+
+
+
 
 
 {% embed url="https://docs.google.com/spreadsheets/d/1DUrLBMgc8BuVEQzfpuy0wxgZF2zwOBE-W8M-NXFh_zI/edit?usp=sharing" %}
