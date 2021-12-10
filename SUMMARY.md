@@ -4,8 +4,8 @@
 * [🏡 Home](<README (1).md>)
 * [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
-* [TO DO](to-do/README.md)
-  * [Meetings:](to-do/meetings.md)
+* [TO DO](to-do.md)
+  * [Meetings:](lambda-guidance-and-meetings/meetings.md)
 * [Jobs To Apply To](jobs-to-apply-to.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
@@ -165,4 +165,4 @@
 ## 📓 ARCHIVE
 
 * [Archive](archive/archive/README.md)
-  * [❇ Slack Announcements](archive/archive/slack-announcements.md)
+  * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
