@@ -10,6 +10,7 @@
 * [Jobs To Apply To](jobs-to-apply-to.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
+  * [E-Engineering](skills/e-engineering.md)
 * [📋 Filling Out Forms](filling-out-forms.md)
 * [📖 Resources](resources/README.md)
   * [Linkedin Cheat Shee](resources/linkedin-cheat-shee.md)
