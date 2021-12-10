@@ -16,7 +16,9 @@
   * [Links](resources/links.md)
   * [Running List Of MISC Resources:](resources/running-list-of-misc-resources.md)
   * [❄ Cold Outreach Generator](resources/cold-outreach-generator.md)
+* [Profiles](profiles.md)
 * [Linkedin](linkedin.md)
+* [Examples](examples.md)
 
 ## Resume
 
@@ -30,7 +32,8 @@
 
 ## Applications & Job Postings
 
-* [Job Boards](applications-and-job-postings/job-boards.md)
+* [Job Boards](applications-and-job-postings/job-boards/README.md)
+  * [More Job Boards](applications-and-job-postings/job-boards/more-job-boards.md)
 * [📮 Postings:](applications-and-job-postings/postings.md)
   * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
   * [Amazon](applications-and-job-postings/amazon.md)
@@ -75,6 +78,7 @@
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
 * [Resources](interview-prep/resources.md)
   * [List of List](interview-prep/resources/list-of-list.md)
+  * [Cheat-Sheet](interview-prep/resources/cheat-sheet.md)
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
 * [Overview](interview-prep/overview/README.md)
   * [Data-Structures Q & A](interview-prep/overview/general-web-dev-questions.md)
