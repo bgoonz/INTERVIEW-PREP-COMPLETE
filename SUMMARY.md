@@ -4,7 +4,8 @@
 * [🏡 Home](<README (1).md>)
 * [🗺 Navigation](navigation.md)
 * [📥 Useful Downloads](useful-downloads.md)
-* [TO DO](to-do.md)
+* [TO DO](to-do/README.md)
+  * [Meetings:](to-do/meetings.md)
 * [Jobs To Apply To](jobs-to-apply-to.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
@@ -32,7 +33,7 @@
 
 ## Applications & Job Postings
 
-* [Job Boards](applications-and-job-postings/job-boards/README.md)
+* [Job Boards](applications-and-job-postings/job-boards.md)
   * [More Job Boards](applications-and-job-postings/job-boards/more-job-boards.md)
 * [📮 Postings:](applications-and-job-postings/postings.md)
   * [Avid / Pro Tools](applications-and-job-postings/postings/avid-pro-tools.md)
@@ -61,7 +62,6 @@
 
 ## 📈 Slack\&Lambda
 
-* [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 
@@ -79,6 +79,7 @@
 * [Resources](interview-prep/resources.md)
   * [List of List](interview-prep/resources/list-of-list.md)
   * [Cheat-Sheet](interview-prep/resources/cheat-sheet.md)
+* [Cheat-Sheet-Raw](interview-prep/cheat-sheet-raw.md)
 * [General Advice & Tips](interview-prep/general-advice-and-tips.md)
 * [Overview](interview-prep/overview/README.md)
   * [Data-Structures Q & A](interview-prep/overview/general-web-dev-questions.md)
@@ -139,8 +140,6 @@
 
 ## Lambda Guidance & Meetings
 
-* [Meetings:](lambda-guidance-and-meetings/meetings.md)
-
 ## MISC
 
 * [Articles To Read](misc/articles-to-read.md)
@@ -161,3 +160,9 @@
 
 * [Networking](networking-1/networking/README.md)
   * [a/A Email List](networking-1/networking/a-a-email-list.md)
+* [Page 1](networking-1/page-1.md)
+
+## 📓 ARCHIVE
+
+* [Archive](archive/archive/README.md)
+  * [❇ Slack Announcements](archive/archive/slack-announcements.md)
