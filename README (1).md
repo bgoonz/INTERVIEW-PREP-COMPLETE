@@ -206,7 +206,7 @@ Calendar
 
 * [📍 Pinned Items:](broken-reference)
 * [📌 Pinned Messages:](broken-reference)
-* [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
+* [❇ Slack Announcements](archive/archive/slack-announcements.md)
 * [📺 Recordings](slack-and-lambda/recordings.md)
 * [🧑🤝🧑 People](slack-and-lambda/people.md)
 
@@ -260,7 +260,7 @@ Calendar
 
 ### Lambda Guidance & Meetings
 
-* [📥 Meetings:](lambda-guidance-and-meetings/meetings.md)
+* [📥 Meetings:](to-do/meetings.md)
 
 ### MISC
 
