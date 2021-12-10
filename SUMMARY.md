@@ -33,6 +33,10 @@
   * [Linkedin Resume](resume/resume/linkedin-resume.md)
   * [Indeed Resume](resume/resume/indeed-resume.md)
 
+## Applications
+
+* [🖱 TRACKING\_APPLICATIONS](applications/tracking\_applications.md)
+
 ## Applications & Job Postings
 
 * [Job Boards](applications-and-job-postings/job-boards.md)
