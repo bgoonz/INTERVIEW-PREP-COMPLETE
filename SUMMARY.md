@@ -6,6 +6,7 @@
 * [📥 Useful Downloads](useful-downloads.md)
 * [TO DO](to-do.md)
   * [Meetings:](lambda-guidance-and-meetings/meetings.md)
+  * [Take Home Assignments](to-do/take-home-assignments.md)
 * [Jobs To Apply To](jobs-to-apply-to.md)
 * [🛠 Skills](skills/README.md)
   * [🍢 My Stack](skills/my-stack.md)
@@ -63,17 +64,17 @@
 ## 📈 Slack\&Lambda
 
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 
 ## Aux-Resources
 
 * [Youtube](aux-resources/youtube.md)
-* [👨🏫 👨🏫 Guidance](aux-resources/guidance.md)
+* [👨🏫 👨🏫 👨🏫 Guidance](aux-resources/guidance.md)
 
 ## 🖋 Interview Prep
 
 * [INTERVIEW](interview-prep/interview.md)
-* [👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
+* [👨💻 👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
   * [37-Essential-Js-Questions](interview-prep/technical-interview-practice/37-essential-js-questions.md)
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
 * [Resources](interview-prep/resources.md)
@@ -137,8 +138,6 @@
 ## Networking
 
 * [🗓 Events](networking/events.md)
-
-## Lambda Guidance & Meetings
 
 ## MISC
 
