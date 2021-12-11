@@ -223,7 +223,7 @@ Calendar
 * [Types Of Data Structures](interview-prep/behavorial/types-of-data-structures.md)
 * [👨💻 Leetcode:](interview-prep/technical-interview-practice/)
 * [Hash Tables](interview-prep/behavorial/hash-tables.md)
-* [DS\_ALGO Practice:](interview-prep/ds\_algo-practice.md)
+* [DS\_ALGO Practice:](interview-prep/ds\_algo-practice/)
   * [Python Subpage](interview-prep/behavorial/python-subpage.md)
 * [🐍 Python](interview-prep/qualitative-questions/cheat-sheets/python.md)
 * [More Practice:](interview-prep/more-practice.md)
@@ -231,7 +231,7 @@ Calendar
 ### Tutorials
 
 * [Job Search Guide](tutorials/custom-outreach-message-generator/)
-  * [Common Questions](interview-prep/behavorial/page-2.md)
+  * [Common Questions](tutorials/custom-outreach-message-generator/page-2.md)
   * [Self Introduction](tutorials/custom-outreach-message-generator/page-2-1.md)
 
 ***

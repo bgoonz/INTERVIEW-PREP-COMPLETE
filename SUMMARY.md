@@ -36,6 +36,7 @@
 ## Applications
 
 * [🖱 TRACKING\_APPLICATIONS](applications/tracking\_applications.md)
+* [Amazon](applications/amazon.md)
 
 ## Applications & Job Postings
 
@@ -69,17 +70,17 @@
 ## 📈 Slack\&Lambda
 
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
 
 ## Aux-Resources
 
 * [Youtube](aux-resources/youtube.md)
-* [👨🏫 👨🏫 👨🏫 Guidance](aux-resources/guidance.md)
+* [👨🏫 👨🏫 👨🏫 👨🏫 Guidance](aux-resources/guidance.md)
 
 ## 🖋 Interview Prep
 
 * [INTERVIEW](interview-prep/interview.md)
-* [👨💻 👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
+* [👨💻 👨💻 👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
   * [37-Essential-Js-Questions](interview-prep/technical-interview-practice/37-essential-js-questions.md)
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
 * [Resources](interview-prep/resources.md)
@@ -90,7 +91,6 @@
   * [Phone Interview Advice](interview-prep/general-advice-and-tips/phone-interview-advice.md)
 * [Overview](interview-prep/overview/README.md)
   * [Data-Structures Q & A](interview-prep/overview/general-web-dev-questions.md)
-* [Front End Interview](interview-prep/front-end-interview.md)
 * [Web Dev Interview Questions](interview-prep/web-dev-interview-questions.md)
   * [FULL-STACK DEVELOPER INTERVIEW QUESTIONS AND ANSWERS](interview-prep/resources/full-stack-developer-interview-questions-and-answers.md)
 * [⁉ Interview Questions.](interview-prep/interview-questions..md)
@@ -101,7 +101,9 @@
   * [React Interview](interview-prep/qualitative-questions/react-interview/README.md)
     * [React Questions:](interview-prep/qualitative-questions/react-interview/react-questions.md)
   * [Front End Questions](interview-prep/qualitative-questions/front-end-questions.md)
-* [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice.md)
+* [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
+  * [DS\_ALGO\_NOTES](interview-prep/ds\_algo-practice/ds\_algo\_notes/README.md)
+    * [The queue data structure (JS)(PY)](interview-prep/ds\_algo-practice/ds\_algo\_notes/the-queue-data-structure-js-py.md)
 * [Behavorial](interview-prep/behavorial/README.md)
   * [Python Subpage](interview-prep/behavorial/python-subpage.md)
   * [DS\_&\_ALGO\_STUDY\_GUIDE](interview-prep/behavorial/ds\_and\_algo\_study\_guide.md)
@@ -160,6 +162,7 @@
 
 * [General](interviewing/general.md)
 * [Inspiration](interviewing/inspiration.md)
+* [Front End Interview](interviewing/front-end-interview.md)
 
 ## Networking
 
@@ -171,3 +174,4 @@
 
 * [Archive](archive/archive/README.md)
   * [❇ Slack Announcements](slack-and-lambda/slack-announcements.md)
+* [Projects](archive/projects.md)
