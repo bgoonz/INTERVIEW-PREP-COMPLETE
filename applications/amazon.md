@@ -186,6 +186,25 @@ To prepare for your interview, we suggest reviewing our [Leadership Principles](
 {% tab title="About" %}
 
 {% endtab %}
+
+{% tab title="Tracking" %}
+### Hi Bryan,
+
+Thank you for your interest in [Software Development Engineer](https://9n3bwgl2.r.us-west-2.awstrack.me/L0/https:%2F%2Famazon.jobs%2Fjobs%2F1499454/1/02010000599psvug-n7v3g7j3-k2k9-rh26-lhda-g8i0b4fom2o0-000000/gE4S0yWzw8bqxTBdf90U33hdeSM=248) (ID: 1499454).
+
+**If you have completed the application:**\
+Great! You can now check the application status [here](https://9n3bwgl2.r.us-west-2.awstrack.me/L0/https:%2F%2Faccount.amazon.jobs%2Fcandidate%2Fdashboard%2Fapplications/1/02010000599psvug-n7v3g7j3-k2k9-rh26-lhda-g8i0b4fom2o0-000000/5sCUGt7AdQZ4ugKfXepUkxSSpoI=248).
+
+**If you are still working on the application:**\
+Don't worry! You can complete it [here](https://9n3bwgl2.r.us-west-2.awstrack.me/L0/https:%2F%2Faccount.amazon.jobs%2Fjobs%2F1499454%2Fapply/1/02010000599psvug-n7v3g7j3-k2k9-rh26-lhda-g8i0b4fom2o0-000000/IgGaw33dVhkeY1\_nGlF3i58fkm0=248) when you're ready.
+
+If you'd like to learn more about our culture and peculiar ways, visit [amazon.jobs](https://9n3bwgl2.r.us-west-2.awstrack.me/L0/https:%2F%2Famazon.jobs/1/02010000599psvug-n7v3g7j3-k2k9-rh26-lhda-g8i0b4fom2o0-000000/LKc7SNxJ8ajBMnhE1fy4seSh4Vw=248). Or you can get the latest Amazon news and stories by following our [Day One blog](https://9n3bwgl2.r.us-west-2.awstrack.me/L0/https:%2F%2Fblog.aboutamazon.com%2F/1/02010000599psvug-n7v3g7j3-k2k9-rh26-lhda-g8i0b4fom2o0-000000/4x7JVfLE8ivf5bqPBsT1TGGdFlM=248).
+
+Best regards,\
+Amazon Recruiting Team
+
+Please do not reply to this email - we are unable to review or respond to messages at this address.
+{% endtab %}
 {% endtabs %}
 
 ## Software development topics | Amazon.jobs
