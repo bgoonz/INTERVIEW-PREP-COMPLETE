@@ -103,6 +103,7 @@
     * [React Questions:](interview-prep/qualitative-questions/react-interview/react-questions.md)
   * [Front End Questions](interview-prep/qualitative-questions/front-end-questions.md)
 * [🧮 DS\_ALGO Practice:](interview-prep/ds\_algo-practice/README.md)
+  * [Exampes](interview-prep/ds\_algo-practice/exampes.md)
   * [DS\_ALGO\_NOTES](interview-prep/ds\_algo-practice/ds\_algo\_notes/README.md)
     * [The queue data structure (JS)(PY)](interview-prep/ds\_algo-practice/ds\_algo\_notes/the-queue-data-structure-js-py.md)
 * [Behavorial](interview-prep/behavorial/README.md)
