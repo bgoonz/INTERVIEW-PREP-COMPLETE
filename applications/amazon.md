@@ -2,9 +2,10 @@
 
 {% tabs %}
 {% tab title="FAQ" %}
+
 ### Applying and interviewing at Amazon
 
-***
+---
 
 #### Where do I go to learn more about Amazon's interview process?
 
@@ -59,7 +60,7 @@ An application is considered active as long as a final decision has not yet been
 
 ### Benefits
 
-***
+---
 
 #### Do you offer benefits?
 
@@ -69,7 +70,7 @@ Benefits for Fulfillment / Warehouse Associates can vary by location, the number
 
 ### Accommodations
 
-***
+---
 
 #### Do you offer accommodations?
 
@@ -79,11 +80,11 @@ For more information visit our [Accommodations page.](https://www.amazon.jobs/di
 
 ### General questions
 
-***
+---
 
 #### Where can I view the equal employment opportunity poster?
 
-You can view the poster by clicking the links here: [EEO is the Law](https://www.eeoc.gov/sites/default/files/migrated\_files/employers/poster\_screen\_reader\_optimized.pdf) and [Supplement](https://www.eeoc.gov/sites/default/files/migrated\_files/employers/eeoc\_gina\_supplement.pdf).
+You can view the poster by clicking the links here: [EEO is the Law](https://www.eeoc.gov/sites/default/files/migrated_files/employers/poster_screen_reader_optimized.pdf) and [Supplement](https://www.eeoc.gov/sites/default/files/migrated_files/employers/eeoc_gina_supplement.pdf).
 
 #### Do I have to move to Seattle to work at Amazon?
 
@@ -91,7 +92,7 @@ No, we have Amazon offices all around the world. Learn more on our [Seattle head
 
 #### Is it true you hire people to work from home as Customer Service Associates?
 
-Yes. View our current [opportunities.](https://www.amazon.jobs/teams/customer-service-associates?offset=0\&result\_limit=10\&sort=relevant\&category\_type=Work%20from%20Home\&distanceType=Mi\&radius=24km\&latitude=\&longitude=\&loc\_group\_id=\&loc\_query=\&base\_query=\&city=\&country=\&region=\&county=\&query\_options=&)
+Yes. View our current [opportunities.](https://www.amazon.jobs/teams/customer-service-associates?offset=0&result_limit=10&sort=relevant&category_type=Work%20from%20Home&distanceType=Mi&radius=24km&latitude=&longitude=&loc_group_id=&loc_query=&base_query=&city=&country=&region=&county=&query_options=&)
 
 #### Do you hire people to write Amazon reviews?
 
@@ -107,7 +108,7 @@ The Amazon group of companies participates in E-Verify. E-Verify is a web-based 
 
 #### Does Amazon or its approved recruiting partners charge any fee for employment?
 
-We do not charge any fee for employment and the same applies to the Recruitment Partners who we work with. Amazon is an equal opportunity employer. Employment decisions are based on merit.  Additionally, we do not ask for any refundable security deposit to be paid in bank accounts for employment purposes. We request candidates to be cautious of misleading communications and not pay any fee/ deposit to individuals/ agencies/ employment portals on the pretext of attending Amazon interview process or seeking employment with us. These would be fraudulent in nature. Anyone dealing with such individuals/ agencies / employment portals will be doing so at his/her own risk and Amazon will not be held responsible for such loss or damage suffered directly or indirectly. Such fake job offers and appointment letters shall not be treated as any kind of offer or representation by Amazon. Please note, Amazon does not send offer letters from Hotmail, Yahoo, Gmail or any other public email accounts or demand a fee in lieu of an employment offer / interview. If you receive such e-mails, please do not pay any fee or deposit. We request that you report such offers to recruiting-feedback@amazon.com. If you have already made a payment, please log a complaint with the local police for necessary legal action to be taken.
+We do not charge any fee for employment and the same applies to the Recruitment Partners who we work with. Amazon is an equal opportunity employer. Employment decisions are based on merit. Additionally, we do not ask for any refundable security deposit to be paid in bank accounts for employment purposes. We request candidates to be cautious of misleading communications and not pay any fee/ deposit to individuals/ agencies/ employment portals on the pretext of attending Amazon interview process or seeking employment with us. These would be fraudulent in nature. Anyone dealing with such individuals/ agencies / employment portals will be doing so at his/her own risk and Amazon will not be held responsible for such loss or damage suffered directly or indirectly. Such fake job offers and appointment letters shall not be treated as any kind of offer or representation by Amazon. Please note, Amazon does not send offer letters from Hotmail, Yahoo, Gmail or any other public email accounts or demand a fee in lieu of an employment offer / interview. If you receive such e-mails, please do not pay any fee or deposit. We request that you report such offers to recruiting-feedback@amazon.com. If you have already made a payment, please log a complaint with the local police for necessary legal action to be taken.
 
 #### How do I determine if I am restricted from seeking employment or having employment discussions with Amazon or its subsidiaries?
 
@@ -115,15 +116,15 @@ You may be restricted from having employment discussions with Amazon or its subs
 
 #### Where can I view the equal employment opportunity poster?
 
-You can view the equal employment opportunity poster at [EEO is the Law](https://www.eeoc.gov/employers/upload/poster\_screen\_reader\_optimized.pdf) or [Supplement.](https://www1.eeoc.gov/employers/upload/eeoc\_gina\_supplement.pdf)
+You can view the equal employment opportunity poster at [EEO is the Law](https://www.eeoc.gov/employers/upload/poster_screen_reader_optimized.pdf) or [Supplement.](https://www1.eeoc.gov/employers/upload/eeoc_gina_supplement.pdf)
 
 #### I am a government employee working on a procurement involving a large government contract. One of the competitors for the contract is Amazon. May I apply for a job opening with Amazon?
 
-Certain government employees who work on procurements for government contracts are required to file a written disqualification memorandum if the employee commences to seek employment.  According to the U.S. Federal Government rules, the employee is also required to provide written notice of employment contacts even if the employee or contractor rejects the possibility of employment.  Please consult your employer’s ethics officer for advice on your specific situation.
+Certain government employees who work on procurements for government contracts are required to file a written disqualification memorandum if the employee commences to seek employment. According to the U.S. Federal Government rules, the employee is also required to provide written notice of employment contacts even if the employee or contractor rejects the possibility of employment. Please consult your employer’s ethics officer for advice on your specific situation.
 
 #### I formerly worked for a current government customer of Amazon and while there I served as a technical advisor overseeing decisions concerning one of Amazon’s contracts. If employed by Amazon, could I meet with employees of my former Federal Government agency to discuss issues pertaining to the Amazon contract?
 
-You may not meet with employees of the government client to discuss the contract with which you were closely involved during your time with the government.  Please consult your employer’s ethics officer for advice on your specific situation.
+You may not meet with employees of the government client to discuss the contract with which you were closely involved during your time with the government. Please consult your employer’s ethics officer for advice on your specific situation.
 
 #### Do the government restrictions on seeking employment apply to merely sending my resume to Amazon?
 
@@ -139,7 +140,7 @@ Please be cautious of common scams that offer unauthorized Amazon employment opp
 
 ### Student Questions
 
-***
+---
 
 #### Where can I learn about opportunities for students?
 
@@ -172,7 +173,7 @@ For MBA internships and full-time opportunities in Europe (Launch program), Amaz
 
 #### Where can I find the status of my application? When will I hear back from Amazon?
 
-You can see the status of your application in the candidate portal. If you applied for a tech role in North America, including SDE and non-SDE tech, aside from tech eng hardware, check the status of your application [here](https://www.amazonuniversity.jobs/communitylogin). To check the status of your application for all other roles, including tech eng hardware, check the status of your application [here](https://account.amazon.jobs/en-US/check\_application\_status). We review applications throughout the year on a rolling basis and will contact you directly if we are interested in moving forward with your candidacy.
+You can see the status of your application in the candidate portal. If you applied for a tech role in North America, including SDE and non-SDE tech, aside from tech eng hardware, check the status of your application [here](https://www.amazonuniversity.jobs/communitylogin). To check the status of your application for all other roles, including tech eng hardware, check the status of your application [here](https://account.amazon.jobs/en-US/check_application_status). We review applications throughout the year on a rolling basis and will contact you directly if we are interested in moving forward with your candidacy.
 
 #### I was referred for a specific role by a current Amazonian – what do I do now?
 
@@ -248,7 +249,7 @@ Have more questions?
 
 EXPLORE INTERVIEWING AT AMAZON. CHECK OUT OUR FAQS. LEARN ABOUT OUR BENEFITS. EXPLORE OUR LOCATIONS.
 
-***
+---
 
 Before you dig into the technical topics you may be asked about during your interview, connect with your recruiting point of contact to understand the subjects/skills you’ll most likely be discussing and demonstrating. In general, our technical interviews typically require you to perform coding and system design white boarding exercises. Also keep in mind that invention is in our DNA, and technology is the fundamental tool we wield to evolve and improve every aspect of the experience we provide our customers. When reviewing the below topics, keep the customer top of mind.
 
@@ -305,17 +306,15 @@ You should have a working knowledge of a few common and useful design patterns, 
 
 \
 
-
 **Three coding competencies**
 
 This is your chance to show off your knowledge and understanding of computer science fundamentals (e.g., hash maps, arrays, binary trees, algorithms). Your evaluation will include three areas of coding: data structures and algorithms, logical and maintainable, and problem-solving.&#x20;
 
 \
 
-
 While this guide covers each coding competency individually, your response should consider all three as an integrated approach. In other words, when you're responding to a coding question, you should always consider data structures and algorithms, logical and maintainable, and problem-solving together in your approach to solve the problem.
 
-![0PV3ItPB-jc0rOLy-Competencies.jpg](https://duaa2xs5z3ldn.cloudfront.net/assets/ElbWCvXjMLyFf\_ux\_CrFIz1N-smNGgcUQ.jpg)
+![0PV3ItPB-jc0rOLy-Competencies.jpg](https://duaa2xs5z3ldn.cloudfront.net/assets/ElbWCvXjMLyFf_ux_CrFIz1N-smNGgcUQ.jpg)
 
 ###
 
@@ -328,7 +327,6 @@ Setting the stage+Responding to questions+Interview apps–
 **Amazon Chime:** Your interview is virtual and you'll need to download Amazon Chime, our tool for video conferencing ([found here](https://aws.amazon.com/chime/download-chime/)). You'll most likely be presenting at some point in your interview so you'll need to download Chime to your desktop. The meeting ID# will be emailed to you by your recruiting point of contact. For optimal sound quality, use a headset with a microphone.
 
 \
-
 
 **Technical applications:** You will be provided access to coding and virtual whiteboarding web applications. The coding application will allow you to live code with your interviewer in your preferred coding language and offers syntax highlighting.
 

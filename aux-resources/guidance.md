@@ -4,7 +4,7 @@
 
 Jobs are like people. They’re both unique and have their own special characteristics. As part of your interview preparation, take stock of your strengths, weaknesses and skills. Identify how they align with the organization. Highlight specific skill sets that are mentioned in the job description and cite examples of how you best performed those skills. Have good answers for any job requirements that you don’t meet. Be honest. If you don’t know how to use certain programs or machinery, be proactive and say you’ve already begun learning and if hired, you’ll be ready to go.
 
-![soft skills](https://f.hubspotusercontent00.net/hubfs/3803452/RUSA%20Assets/Career%20Resources/CR\_Article%20Call%20Out%20Images/Group%2072.svg)
+![soft skills](https://f.hubspotusercontent00.net/hubfs/3803452/RUSA%20Assets/Career%20Resources/CR_Article%20Call%20Out%20Images/Group%2072.svg)
 
 highlight specific skill sets that are mentioned in the job description and cite examples in which you demonstrate those skills.
 
@@ -22,7 +22,7 @@ You want to look like you belong at the company when it's time for your intervie
 
 #### 5. ask smart questions, listen smarter
 
-![magnifying glass](https://f.hubspotusercontent00.net/hubfs/3803452/RUSA%20Assets/Career%20Resources/CR\_Article%20Call%20Out%20Images/Group%2015-1.svg)
+![magnifying glass](https://f.hubspotusercontent00.net/hubfs/3803452/RUSA%20Assets/Career%20Resources/CR_Article%20Call%20Out%20Images/Group%2015-1.svg)
 
 this is your chance to find out everything you can about the position. approach your interview like a reporter or detective.
 
@@ -34,14 +34,8 @@ Ask if they have any concerns with your experience and provide solutions to alle
 
 Got it all down pat? Good! In that case, you should be all set to succeed. Plus, if you want to find out about new opportunities the moment they become available, be sure to sign up for Randstad's [job alerts](https://www.randstadusa.com/jobs/job-notifications). Just tell us the kind of position you want, and we'll email you when we find it.
 
-
-
-
-
 ![](<../.gitbook/assets/devider (1).png>)
 
-
-
 ### 1. how to find online job postings
 
 For all too many job seekers, trying to navigate the online job sites for a job is like trying to find a needle in a haystack. This is especially true when searching using simple, non-specific keywords like “[engineer](https://www.randstadusa.com/jobs/search/randstad-engineering/)” or “[software developer](https://www.randstadusa.com/jobs/search/q-software-developer/).” The result is a return of thousands of results, many of which are completely irrelevant to the job opportunities you are seeking. There is a better way!
@@ -88,10 +82,10 @@ Job seekers aren’t the only ones using job boards. Many recruiters frequent re
 
 If you choose to post [your resume](https://www.randstadusa.com/jobs/career-resources/resumes/), consider the following:
 
-* Use a dedicated email address for your job search.
-* Focus on niche job boards for your location, industry or position type.
-* Use a Microsoft Word version of your document named with your target job title(s).
-* Refresh your resume weekly so that it remains at the top of search results.
+- Use a dedicated email address for your job search.
+- Focus on niche job boards for your location, industry or position type.
+- Use a Microsoft Word version of your document named with your target job title(s).
+- Refresh your resume weekly so that it remains at the top of search results.
 
 If you really want to make sure you're posting a resume that has all the right components, then check out our complimentary [resume builder](https://www.randstadusa.com/resume-builder/) which can put together a polished document for you that checks all the right boxes.
 
@@ -147,10 +141,10 @@ Job seekers aren’t the only ones using job boards. Many recruiters frequent re
 
 If you choose to post [your resume](https://www.randstadusa.com/jobs/career-resources/resumes/), consider the following:
 
-* Use a dedicated email address for your job search.
-* Focus on niche job boards for your location, industry or position type.
-* Use a Microsoft Word version of your document named with your target job title(s).
-* Refresh your resume weekly so that it remains at the top of search results.
+- Use a dedicated email address for your job search.
+- Focus on niche job boards for your location, industry or position type.
+- Use a Microsoft Word version of your document named with your target job title(s).
+- Refresh your resume weekly so that it remains at the top of search results.
 
 If you really want to make sure you're posting a resume that has all the right components, then check out our complimentary [resume builder](https://www.randstadusa.com/resume-builder/) which can put together a polished document for you that checks all the right boxes.
 
@@ -159,10 +153,6 @@ If you really want to make sure you're posting a resume that has all the right c
 Job boards may be the only way to find work for a while, so it's a good idea to get comfortable using them. Try experimenting with various search strings, following the tips we've outlined, to see which work best for you. Once you have identified the appropriate search strings, you can also set job search alerts and tweak your search parameters so you can receive emails when new jobs are posted that meet your criteria. Finally, if you find a position that interests you, be sure to review our tips and [best practices for submitting applications](https://www.randstadusa.com/workforce360/jobs-the-economy/how-to-stand-out-in-the-sea-of-online-applications/355/) before you click "submit."&#x20;
 
 Find out the moment opportunities become available by signing up for Randstad's [job alerts](https://www.randstadusa.com/join-randstad/). Just tell us the kind of position you want, and we'll email you when we find it.
-
-
-
-
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
@@ -172,37 +162,37 @@ Checking company information doesn't have to be hard — at least as long as you
 
 #### 1. why you should research using company websites
 
-* What do you know about a company? A natural place to start is with their website. Specifically, look for a section titled "About Us," "Our Mission," "Who We Are" or similar. That should give you some basic — but valuable — information about an organization’s history, mission statement and culture.
-* For example, in the [About section on Randstad’s homepage](https://www.randstadusa.com/about/) you can find press releases, leadership bios and corporate social responsibility links. All of these should give you an indication of our values, the behaviors we reward and so on.
+- What do you know about a company? A natural place to start is with their website. Specifically, look for a section titled "About Us," "Our Mission," "Who We Are" or similar. That should give you some basic — but valuable — information about an organization’s history, mission statement and culture.
+- For example, in the [About section on Randstad’s homepage](https://www.randstadusa.com/about/) you can find press releases, leadership bios and corporate social responsibility links. All of these should give you an indication of our values, the behaviors we reward and so on.
 
 #### 2. why you should research using company websites
 
-* Many of these websites are now highlighting additional company information, such as reviews from employees and job seekers and salary information.
-* Some even include videos which will provide an inside look at the company culture at your target organization.
-* One of the best job boards to use in your research is [Monster](https://www.monster.com/company/?intcid=skr\_companyCTA1\_www\_company).
-* Two reputable rating sites you should use are [Kununu](https://www.kununu.com/us) and [Google My Business](https://www.google.com/business/).
+- Many of these websites are now highlighting additional company information, such as reviews from employees and job seekers and salary information.
+- Some even include videos which will provide an inside look at the company culture at your target organization.
+- One of the best job boards to use in your research is [Monster](https://www.monster.com/company/?intcid=skr_companyCTA1_www_company).
+- Two reputable rating sites you should use are [Kununu](https://www.kununu.com/us) and [Google My Business](https://www.google.com/business/).
 
 #### 3. why you should research using paid services
 
-* These services will search the internet and return information about a company’s finances, executives, press releases and more.
-* Most of these services will offer you a free trial, but then you’ll have to pay after your introductory period ends.
-* In terms of paid services, two of the best-known options are [Hoovers](http://www.hoovers.com) and [ZoomInfo](http://www.zoominfo.com).
+- These services will search the internet and return information about a company’s finances, executives, press releases and more.
+- Most of these services will offer you a free trial, but then you’ll have to pay after your introductory period ends.
+- In terms of paid services, two of the best-known options are [Hoovers](http://www.hoovers.com) and [ZoomInfo](http://www.zoominfo.com).
 
 #### 4. why you should research using news reports and industry publications
 
-* News reports and industry publications will provide you with outside perspectives on companies, or inform you of any positive or negative press that organization has received.
-* Enter the company’s name in the text box on [Google](https://www.google.com) and filter by News, and you’ll see links to published reports from news organizations and industry publications.
-* Results are often filtered by relevance, so you might have to scroll through a few pages to find the most recent stories.
-* Pay attention to the source of the results. You’ll find information from large established news organizations here, as well as smaller independent companies, so you may find differing opinions about certain events or stories.
+- News reports and industry publications will provide you with outside perspectives on companies, or inform you of any positive or negative press that organization has received.
+- Enter the company’s name in the text box on [Google](https://www.google.com) and filter by News, and you’ll see links to published reports from news organizations and industry publications.
+- Results are often filtered by relevance, so you might have to scroll through a few pages to find the most recent stories.
+- Pay attention to the source of the results. You’ll find information from large established news organizations here, as well as smaller independent companies, so you may find differing opinions about certain events or stories.
 
 ![notification](https://f.hubspotusercontent00.net/hubfs/3803452/Group%2035.svg)you can also set up [Google Alerts](https://www.google.com/alerts) for the company or any of its executives, and you’ll receive a notification when they're mentioned in the news.
 
 #### 5. why you should research using social media
 
-* Follow the company and some of its key employees and recruiters on [LinkedIn](https://www.randstadusa.com/jobs/career-resources/personal-brand/7-ways-you-can-improve-your-linkedin-profile/361/), [Facebook](https://www.randstadusa.com/jobs/career-resources/personal-brand/five-steps-to-creating-a-professional-facebook-profile/324/) and [Twitter](https://www.randstadusa.com/jobs/career-resources/personal-brand/5-steps-to-build-your-personal-brand-on-twitter/363/).
-* In terms of what you look for in the company, monitor how it interacts in the social community and responds to criticisms or questions from customers and the general public.
-* Take note of any trends or recurring issues so you can cater your resume to showcase skills that might help solve these problems.
-* If you’re looking for firsthand information about the company, reach out to any employees that you might be connected with on LinkedIn and see if they’ll be willing to answer questions you may have.
+- Follow the company and some of its key employees and recruiters on [LinkedIn](https://www.randstadusa.com/jobs/career-resources/personal-brand/7-ways-you-can-improve-your-linkedin-profile/361/), [Facebook](https://www.randstadusa.com/jobs/career-resources/personal-brand/five-steps-to-creating-a-professional-facebook-profile/324/) and [Twitter](https://www.randstadusa.com/jobs/career-resources/personal-brand/5-steps-to-build-your-personal-brand-on-twitter/363/).
+- In terms of what you look for in the company, monitor how it interacts in the social community and responds to criticisms or questions from customers and the general public.
+- Take note of any trends or recurring issues so you can cater your resume to showcase skills that might help solve these problems.
+- If you’re looking for firsthand information about the company, reach out to any employees that you might be connected with on LinkedIn and see if they’ll be willing to answer questions you may have.
 
 ### how to put your valuable research into practice
 
@@ -222,8 +212,6 @@ However you approach the job-application process, don't underestimate the import
 
 Ready to start writing the resume? Check out the next installment in our resume tips series: [resume tips (part 2): how to format your resume.](https://www.randstadusa.com/jobs/career-resources/resumes/how-to-write-a-resume-resume-format/428/)
 
-
-
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
 ### what’s the best resume format?
@@ -232,16 +220,14 @@ There’s no one answer to this question, unfortunately. That said, you don’t 
 
 **two resume formats are by far the most common:**
 
-* reverse-chronological resumes
-* skills-based (or functional) resumes
+- reverse-chronological resumes
+- skills-based (or functional) resumes
 
 \
-
 
 Both have strengths and weaknesses — but those strengths and weaknesses ultimately depend on the companies you’re interested in as well as your previous work experience. For greater clarity about how to format your resume, let’s dig into this more closely.
 
 \
-
 
 ### how to make a reverse-chronological resume format
 
@@ -251,13 +237,13 @@ Generally, a reverse-chronological resume format is most effective when you have
 
 To stand out from the pack, make sure your reverse-chronological resume includes the following information:
 
-* your name and contact information
-* your career objective
-* your complete professional experience
-* your education
-* your skill set
-* relevant business associations, memberships or volunteer work
-* references (optional)
+- your name and contact information
+- your career objective
+- your complete professional experience
+- your education
+- your skill set
+- relevant business associations, memberships or volunteer work
+- references (optional)
 
 ### how to make a skills-based resume format
 
@@ -267,21 +253,21 @@ A skills-based resume format — sometimes referred to as a “functional resume
 
 Eager to develop a skills-based resume? Make sure you don’t omit any of the following:
 
-* your name and contact information
-* your career objective
-* a clearly defined list of your skills together with bulleted highlights of instances in which you put those skills to use
-* an overview of your professional experience, include all relevant employers
-* your skill set
-* testimonials from clients or employers (optional)
+- your name and contact information
+- your career objective
+- a clearly defined list of your skills together with bulleted highlights of instances in which you put those skills to use
+- an overview of your professional experience, include all relevant employers
+- your skill set
+- testimonials from clients or employers (optional)
 
 ### best practices for formatting a resume
 
 Whatever approach you decide is right for you, there are a few universals — or best practices — that hold true for all resumes. So be sure to keep the following guidance in mind as you put together your resume.
 
-* Length: Keep it to one or two pages maximum (depending on years of experience), unless you’re applying for a highly technical position that requires additional explanation.
-* Borders: Common resume borders are usually one inch on each side. The default borders on Microsoft Word should suffice.
-* Font type: The most common font is Times New Roman, but Arial, Century Gothic, Garamond and Georgia are also popular. Make sure you select a font that’s easy to read.
-* Font size: The most commonly used font size is 12-point font; however, you may need to slightly increase or reduce this size to fit all of your information on one or two pages.
+- Length: Keep it to one or two pages maximum (depending on years of experience), unless you’re applying for a highly technical position that requires additional explanation.
+- Borders: Common resume borders are usually one inch on each side. The default borders on Microsoft Word should suffice.
+- Font type: The most common font is Times New Roman, but Arial, Century Gothic, Garamond and Georgia are also popular. Make sure you select a font that’s easy to read.
+- Font size: The most commonly used font size is 12-point font; however, you may need to slightly increase or reduce this size to fit all of your information on one or two pages.
 
 ### key takeaways
 
@@ -292,8 +278,6 @@ Whatever approach you decide is right for you, there are a few universals — or
 If you have plenty of previous professional experience in the industry or space, a reverse-chronological format is probably the safest bet. If, on the other hand, you’re a relative newcomer, a skills-based resume might be the right approach. Either way, you should be sure to deploy the best practices we’ve outlined in this article. Put it all together and you should be able to craft the perfect resume in no time.
 
 Finally, check out the next installment in our comprehensive resume-writing series: [resume tips (part 3): contact information](https://www.randstadusa.com/jobs/career-resources/resumes/how-to-write-a-resume-contact-information/429/).
-
-
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
@@ -311,13 +295,11 @@ If you decide to include your address on your resume, list your full mailing add
 
 Looking for additional resume advice? Head on to the next installment in our series of resuming-writing guidance: step 4: qualifications and highlights.
 
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ### how to format your accomplishments on your resume
 
@@ -328,7 +310,7 @@ Looking for additional resume advice? Head on to the next installment in our ser
 5. Listing your resume highlights in bullets works well if you have lots of qualifications or relevant work experience.
 6. Bullets allow you to choose the most important pieces of information based upon the position for which you are applying.
 
-![resume](https://f.hubspotusercontent00.net/hubfs/3803452/RUSA%20Assets/Career%20Resources/CR\_Article%20Call%20Out%20Images/Group%2015.svg)your resume qualifications section should go at the top of your resume, regardless of format.
+![resume](https://f.hubspotusercontent00.net/hubfs/3803452/RUSA%20Assets/Career%20Resources/CR_Article%20Call%20Out%20Images/Group%2015.svg)your resume qualifications section should go at the top of your resume, regardless of format.
 
 ### example of career highlights paragraph
 
@@ -340,172 +322,55 @@ Experienced manager with over two years’ experience leading a sales team. Prov
 
 You want **key qualifications** on your resume to stand out and catch the eye, and bullet points are the best tool to use for accomplishing that goal. If you have a significant amount of work experience, consider formatting your qualifications section like this:
 
-* Nationally recognized and award-winning designer and UX developer.
-* 15 years’ experience leading data development department.
-* Guided and managed 30+ clients through two major corporate mergers.
-* Expertise in 10+ data development systems and servers.
+- Nationally recognized and award-winning designer and UX developer.
+- 15 years’ experience leading data development department.
+- Guided and managed 30+ clients through two major corporate mergers.
+- Expertise in 10+ data development systems and servers.
 
 ![glasses](https://f.hubspotusercontent00.net/hubfs/3803452/glasses.svg)a great resume is all about readability: use bullet points to help your accomplishments stand out.
 
 ### don't forget about keywords
 
-* Find [keywords](https://www.randstadusa.com/jobs/career-resources/resumes/3-ways-to-use-resume-keywords/322/) by seeing which qualification or experience words appear most often in the job descriptions.
-* Incorporate these keywords throughout your resume. Computers and recruiters quickly scanning your resume will detect these buzzwords and phrases.
-* Use synonyms for those keywords as well, because your resume must still read well to hiring managers.
+- Find [keywords](https://www.randstadusa.com/jobs/career-resources/resumes/3-ways-to-use-resume-keywords/322/) by seeing which qualification or experience words appear most often in the job descriptions.
+- Incorporate these keywords throughout your resume. Computers and recruiters quickly scanning your resume will detect these buzzwords and phrases.
+- Use synonyms for those keywords as well, because your resume must still read well to hiring managers.
 
 It's easy to get overwhelmed when writing your resume, but if you break it down into steps, and follow the directions above, you'll have all you need to create a great career summary section that displays your **resume qualifications** in the best light.
 
 Need more resume-writing help? Check out the next installment in our resume-writing series, which focuses on [how to write and organize skills on your resume](https://www.randstadusa.com/jobs/career-resources/resumes/how-to-write-a-resume-job-skills/446/).
 
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* \------------------------------------------------------------------------------------------------
+- \------------------------------------------------------------------------------------------------
 
 ![](<../.gitbook/assets/devider (1) (1).png>)
 
-* \------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
+- \------------------------------------------------------------------------------------------------

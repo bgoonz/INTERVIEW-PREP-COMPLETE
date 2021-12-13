@@ -50,7 +50,7 @@ Zimri’s irreverent personality injects a lot of humor into each of his videos 
 
 He’s a frenetic YouTuber more akin to the likes of PewDiePie than what you’d expect from a design tutorial channel—and that’s exactly what makes him great.
 
-#### 5. [Sketch Together](https://www.youtube.com/channel/UCZHkx\_OyRXHb1D3XTqOidRw)
+#### 5. [Sketch Together](https://www.youtube.com/channel/UCZHkx_OyRXHb1D3XTqOidRw)
 
 ![](https://s3.amazonaws.com/www-inside-design/uploads/2019/08/sketchtogetheryoutube.jpg)
 
@@ -84,7 +84,7 @@ Along with providing insights into their design processes, Google Design also up
 
 \*\*Subject: \*\*UX design and career advice
 
-\*\*Suggested video: \*\*[Getting started in UX design in 2019](https://youtu.be/3fX2PNZ\_PWg)
+\*\*Suggested video: \*\*[Getting started in UX design in 2019](https://youtu.be/3fX2PNZ_PWg)
 
 Product designer and educator Mike Locke teaches his viewers the principles behind UX design. Though the topic can be pretty confusing to even the most seasoned designer, Mike breaks it down in an easy-to-digest way. He also offers an [online course](http://www.mlwebco.com/training/) for anyone who wants to get a handle on UI/UX concepts.
 
@@ -98,7 +98,7 @@ Product designer and educator Mike Locke teaches his viewers the principles behi
 
 \*\*Suggested video: \*\*[How to design a modern logo](https://www.youtube.com/watch?v=UsB6MV56fLo)
 
-Will Paterson created his YouTube channel in 2012 and has since become one of the platform’s biggest names in graphic design. His channel offers great and informative videos on everything from [hand lettering tutorials](https://www.youtube.com/watch?v=7B\_HClBBDF8) to [how to make passive income as a designer](https://www.youtube.com/watch?v=idyuIF1PYvI).
+Will Paterson created his YouTube channel in 2012 and has since become one of the platform’s biggest names in graphic design. His channel offers great and informative videos on everything from [hand lettering tutorials](https://www.youtube.com/watch?v=7B_HClBBDF8) to [how to make passive income as a designer](https://www.youtube.com/watch?v=idyuIF1PYvI).
 
 Will’s not afraid to inject his personality into each video and teaching skills that you may never have even thought existed—like [creating logos with coffee beans](https://www.youtube.com/watch?v=TFMRZTLOYKQ).
 
@@ -124,13 +124,13 @@ His videos help you get started using motion graphic software. If you’re inter
 
 \*\*Subject: \*\*Design career advice
 
-\*\*Suggested video: \*\*[How to Start & Run a Design Business: Pricing & Estimating Creative Design Jobs](https://www.youtube.com/watch?v=wd0ejVP\_g78)
+\*\*Suggested video: \*\*[How to Start & Run a Design Business: Pricing & Estimating Creative Design Jobs](https://www.youtube.com/watch?v=wd0ejVP_g78)
 
 Founded by Emmy-winning director Chris Do, the Futur dedicates itself to teaching creatives how to be successful entrepreneurs. Along with lessons such as [how to charge more for a logo](https://www.youtube.com/watch?v=b2wSN1w5QH4) and [how to build a brand](https://www.youtube.com/watch?v=mxgOY2Ms-YI), The Futur also gives great lessons on design concepts like [UX design](https://www.youtube.com/watch?v=CJnfAXlBRTE) and [typography tips](https://www.youtube.com/watch?v=atS36kzr8zg).
 
 For those interested in diving even deeper, their website also has a [robust catalog of courses](https://academy.thefutur.com) to help you jump start your design career.
 
-#### 11. [Flux](https://www.youtube.com/channel/UCN7dywl5wDxTu1RM3eJ\_h9Q)
+#### 11. [Flux](https://www.youtube.com/channel/UCN7dywl5wDxTu1RM3eJ_h9Q)
 
 ![](https://s3.amazonaws.com/www-inside-design/uploads/2019/08/fluxyoutube.jpg)
 
@@ -138,9 +138,9 @@ For those interested in diving even deeper, their website also has a [robust cat
 
 \*\*Subject: \*\*Vlog, design tutorials, and freelance/business advice
 
-\*\*Suggested video: \*\*[How to price your first freelance project](https://www.youtube.com/watch?v=HyLXp6q\_4UA)
+\*\*Suggested video: \*\*[How to price your first freelance project](https://www.youtube.com/watch?v=HyLXp6q_4UA)
 
-Ran Segall is a designer and startup founder who created a channel to share their design work, freelance stories, and work process. He uploads a video every day of the week (!) for his 88k subscribers and they’re rarely longer than thirty minutes—though he’s also known for teaming up with other designers for [interviews](https://www.youtube.com/watch?v=s1jW1cownzE) and [#deeptalks](https://www.youtube.com/watch?v=dRgaxIL\_pKs).
+Ran Segall is a designer and startup founder who created a channel to share their design work, freelance stories, and work process. He uploads a video every day of the week (!) for his 88k subscribers and they’re rarely longer than thirty minutes—though he’s also known for teaming up with other designers for [interviews](https://www.youtube.com/watch?v=s1jW1cownzE) and [#deeptalks](https://www.youtube.com/watch?v=dRgaxIL_pKs).
 
 #### 12. [CharliMarieTV](https://www.youtube.com/user/charlimarieTV)
 
@@ -152,7 +152,7 @@ Ran Segall is a designer and startup founder who created a channel to share thei
 
 \*\*Suggested video: \*\*[The three types of design jobs](https://www.youtube.com/watch?v=hxnMza79dB0)
 
-Charli Prangley is a digital nomad, entrepreneur, and designer for ConvertKit — not to mention the creator of one of the most popular design channels on YouTube. Her videos cover the gamut of design topics such as [how to design a website](https://www.youtube.com/watch?v=-Dwo-UOjDuw), [how to get paid on time](https://www.youtube.com/watch?v=fy7zY-onp6k), and [what it’s like to work from home as a designer](https://www.youtube.com/watch?v=oF7LBvJC\_nE).
+Charli Prangley is a digital nomad, entrepreneur, and designer for ConvertKit — not to mention the creator of one of the most popular design channels on YouTube. Her videos cover the gamut of design topics such as [how to design a website](https://www.youtube.com/watch?v=-Dwo-UOjDuw), [how to get paid on time](https://www.youtube.com/watch?v=fy7zY-onp6k), and [what it’s like to work from home as a designer](https://www.youtube.com/watch?v=oF7LBvJC_nE).
 
 #### 13. [Vox](https://www.youtube.com/user/voxdotcom)
 
@@ -162,7 +162,7 @@ Charli Prangley is a digital nomad, entrepreneur, and designer for ConvertKit �
 
 \*\*Subject: \*\*Explainers on culture, politics, art, music, design, and pretty much everything else.
 
-\*\*Suggested video: \*\*[Their entire “By Design” playlist](https://www.youtube.com/watch?v=5v13wrVEQ2M\&list=PLJ8cMiYb3G5eD0M1Bfm6lvHy5BR6hoY8X)
+\*\*Suggested video: \*\*[Their entire “By Design” playlist](https://www.youtube.com/watch?v=5v13wrVEQ2M&list=PLJ8cMiYb3G5eD0M1Bfm6lvHy5BR6hoY8X)
 
 Vox is famous for its video explainers and articles breaking down complicated news in a digestible way. While any one of their videos can be a great font of inspiration, designers will love their “By Design” series where they take a look at “the intersection of design and technology.” It’s a fantastic resource for design history and a deep look at why certain designs are the way they are.
 
@@ -178,7 +178,7 @@ Vox is famous for its video explainers and articles breaking down complicated ne
 
 TED Talks gives viewers a look into the thoughts of some of the foremost innovators and thought leaders in the world. They also have a host of great talks on design—more than 300 of them in fact. If you don’t have time to watch all 300, be sure to read [our article on the ones you should watch](https://www.invisionapp.com/inside-design/7-ted-talks-every-designer-should-watch/).
 
-#### 15. [Jesse Showalter](https://www.youtube.com/channel/UCvBGFeXbBrq3W9\_0oNLJREQ)
+#### 15. [Jesse Showalter](https://www.youtube.com/channel/UCvBGFeXbBrq3W9_0oNLJREQ)
 
 ![](https://s3.amazonaws.com/www-inside-design/uploads/2019/08/jesseshowalteryoutube.jpg)
 
@@ -200,6 +200,6 @@ Jesse Showalter’s channel gives his 10K+ subscribers a look into his life as a
 
 \*\*Suggested video: \*\*[What is the UX design process?](https://www.youtube.com/watch?v=Um3BhY0oS2c)
 
-You didn’t think we’d go the entire list and not shout out our channel did you? That’d be crazy—especially since our channel contains great videos breaking down exactly how to use the InVision app for your design process. Along with helpful tutorials on InVision Studio and Sketch, you’ll also get great interviews with leading designers in our [DesignBetter.co podcast](https://www.youtube.com/watch?v=l9VlpXUOrwU\&list=PLeWHfyz6lrQWhL\_ix2GpchrW4TyOe0Cfb) videos and our [Design Talks series](https://www.youtube.com/watch?v=pFEaxd1OgII\&list=PLeWHfyz6lrQV9fKdy6UGgQqcfPor\_ktMo).
+You didn’t think we’d go the entire list and not shout out our channel did you? That’d be crazy—especially since our channel contains great videos breaking down exactly how to use the InVision app for your design process. Along with helpful tutorials on InVision Studio and Sketch, you’ll also get great interviews with leading designers in our [DesignBetter.co podcast](https://www.youtube.com/watch?v=l9VlpXUOrwU&list=PLeWHfyz6lrQWhL_ix2GpchrW4TyOe0Cfb) videos and our [Design Talks series](https://www.youtube.com/watch?v=pFEaxd1OgII&list=PLeWHfyz6lrQV9fKdy6UGgQqcfPor_ktMo).
 
 [![](https://s3.amazonaws.com/www-inside-design/uploads/2018/07/Collaborate2x.png)](https://projects.invisionapp.com/d/signup)\\

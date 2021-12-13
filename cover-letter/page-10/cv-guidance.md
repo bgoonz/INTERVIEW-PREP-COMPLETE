@@ -2,7 +2,7 @@
 
 **What are cover letters and why write them?**
 
-A cover letter is a document you include with your application materials, typically the first page, that provides a brief overview of your background, interest in the position, experience,and  relevant skills. Think of them as a “first impression.” Good ones offer a synthesis of your qualifications and entice hiring managers to read your application in further detail. Bad ones send your application straight to the trash bin. Think of them as a professional advertisement for your job candidacy.&#x20;
+A cover letter is a document you include with your application materials, typically the first page, that provides a brief overview of your background, interest in the position, experience,and relevant skills. Think of them as a “first impression.” Good ones offer a synthesis of your qualifications and entice hiring managers to read your application in further detail. Bad ones send your application straight to the trash bin. Think of them as a professional advertisement for your job candidacy.&#x20;
 
 Ultimately, cover letters should address two questions:
 
@@ -13,14 +13,14 @@ Ultimately, cover letters should address two questions:
 
 A cover letter does more than just list relevant information. Effective cover letters are succinct, well-organized, and engaging. Even the most qualified applications may not be able to overcome a bad cover letter. So what makes a great one? Here are some derived from the career center at [Harvard](https://ocs.fas.harvard.edu/files/ocs/files/hes-resume-cover-letter-guide.pdf).&#x20;
 
-* NO MORE THAN ONE PAGE: Keep your letters concise, succinct and factual. Now isn’t the time to wax poetic about all of your unique characteristics.&#x20;
-* Address your letter to a specific person--the hiring manager, preferably.
-* Research the company you’re applying to and tailor your letter accordingly.&#x20;
-* Make sure each skill comes with an example. Remember, claims need proof.
-* Think like the reader. Would you interview you? If not, you need to keep working on your letter.
-* Sell yourself with action verbs
-* Speak to the job description. Make clear how you fit each of the criteria listed.
-* Be consistent. Make sure your letter uses the same font as the rest of your materials, especially your resume.&#x20;
+- NO MORE THAN ONE PAGE: Keep your letters concise, succinct and factual. Now isn’t the time to wax poetic about all of your unique characteristics.&#x20;
+- Address your letter to a specific person--the hiring manager, preferably.
+- Research the company you’re applying to and tailor your letter accordingly.&#x20;
+- Make sure each skill comes with an example. Remember, claims need proof.
+- Think like the reader. Would you interview you? If not, you need to keep working on your letter.
+- Sell yourself with action verbs
+- Speak to the job description. Make clear how you fit each of the criteria listed.
+- Be consistent. Make sure your letter uses the same font as the rest of your materials, especially your resume.&#x20;
 
 **Cover letter structures**
 

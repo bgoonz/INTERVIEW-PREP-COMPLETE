@@ -10,7 +10,7 @@ function recHelper(sortedArray, left, right) {
     return null;
   }
 
-  const midpoint = (math.floor((right - left)) / 2) + left;
+  const midpoint = math.floor(right - left) / 2 + left;
   const root = new BinaryTreeNode(sortedArray[midpoint]);
 
   root.left = recHelper(sortedArray, left, midpoint - 1);
@@ -47,7 +47,9 @@ function findBSTMaxHeight(node) {
     return 0;
   }
 
-  return 1 + Math.max(findBSTMaxHeight(node.left), findBSTMaxHeight(node.right));
+  return (
+    1 + Math.max(findBSTMaxHeight(node.left), findBSTMaxHeight(node.right))
+  );
 }
 
 function isBSTMinHeight(root, N) {
@@ -79,4 +81,3 @@ bst = createMinHeightBST(sortedArray);
 
 console.log(isBST(bst, -Infinity, Infinity));
 console.log(isBSTMinHeight(bst, sortedArray.length));
-

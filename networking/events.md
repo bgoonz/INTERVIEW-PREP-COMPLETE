@@ -19,4 +19,3 @@
 {% embed url="https://www.meetup.com/TechYesBayArea" %}
 
 {% embed url="https://techqueria.org" %}
-

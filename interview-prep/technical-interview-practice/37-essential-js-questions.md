@@ -8,13 +8,13 @@ Therefore, the following code will, to the surprise of most developers, log `tru
 
 ```
 var bar = null;
-console.log(typeof bar === "object");  
+console.log(typeof bar === "object");
 ```
 
 As long as one is aware of this, the problem can easily be avoided by also checking if `bar` is `null`:
 
 ```
-console.log((bar !== null) && (typeof bar === "object"));  
+console.log((bar !== null) && (typeof bar === "object"));
 ```
 
 To be entirely thorough in our answer, there are two other things worth noting:
@@ -85,7 +85,7 @@ b defined? true
 
 But how can `b` be defined _outside_ of the scope of the enclosing function? Well, since the statement `var a = b = 3;` is shorthand for the statements `b = 3;` and `var a = b;`, `b` ends up being a global variable (since it is not preceded by the `var` keyword) and is therefore still in scope even outside of the enclosing function.
 
-Note that, in strict mode (i.e., with [`use strict`](http://www.w3schools.com/js/js\_strict.asp)), the statement `var a = b = 3;` will generate a runtime error of `ReferenceError: b is not defined`, thereby avoiding any headfakes/bugs that might othewise result. (Yet another prime example of why you should use `use strict` as a matter of course in your code!)
+Note that, in strict mode (i.e., with [`use strict`](http://www.w3schools.com/js/js_strict.asp)), the statement `var a = b = 3;` will generate a runtime error of `ReferenceError: b is not defined`, thereby avoiding any headfakes/bugs that might othewise result. (Yet another prime example of why you should use `use strict` as a matter of course in your code!)
 
 What will the code below output to the console and why?
 
@@ -140,13 +140,13 @@ The short and most important answer here is that `use strict` is a way to volunt
 
 Some of the key benefits of strict mode include:
 
-* **Makes debugging easier.** Code errors that would otherwise have been ignored or would have failed silently will now generate errors or throw exceptions, alerting you sooner to problems in your code and directing you more quickly to their source.
-* **Prevents accidental globals.** Without strict mode, assigning a value to an undeclared variable automatically creates a global variable with that name. This is one of the most common errors in JavaScript. In strict mode, attempting to do so throws an error.
-* **Eliminates `this` coercion**. Without strict mode, a reference to a `this` value of null or undefined is automatically coerced to the global. This can cause many headfakes and pull-out-your-hair kind of bugs. In strict mode, referencing a a `this` value of null or undefined throws an error.
-* **Disallows duplicate parameter values.** Strict mode throws an error when it detects a duplicate named argument for a function (e.g., `function foo(val1, val2, val1){}`), thereby catching what is almost certainly a bug in your code that you might otherwise have wasted lots of time tracking down.
-  * Note: It used to be (in ECMAScript 5) that strict mode would disallow duplicate property names (e.g. `var object = {foo: "bar", foo: "baz"};`) but [as of ECMAScript 2015](https://stackoverflow.com/questions/30617139/whats-the-purpose-of-allowing-duplicate-property-names) this is no longer the case.
-* **Makes eval() safer.** There are some differences in the way `eval()` behaves in strict mode and in non-strict mode. Most significantly, in strict mode, variables and functions declared inside of an `eval()` statement are _not_ created in the containing scope (they _are_ created in the containing scope in non-strict mode, which can also be a common source of problems).
-* **Throws error on invalid usage of `delete`.** The `delete` operator (used to remove properties from objects) cannot be used on non-configurable properties of the object. Non-strict code will fail silently when an attempt is made to delete a non-configurable property, whereas strict mode will throw an error in such a case.
+- **Makes debugging easier.** Code errors that would otherwise have been ignored or would have failed silently will now generate errors or throw exceptions, alerting you sooner to problems in your code and directing you more quickly to their source.
+- **Prevents accidental globals.** Without strict mode, assigning a value to an undeclared variable automatically creates a global variable with that name. This is one of the most common errors in JavaScript. In strict mode, attempting to do so throws an error.
+- **Eliminates `this` coercion**. Without strict mode, a reference to a `this` value of null or undefined is automatically coerced to the global. This can cause many headfakes and pull-out-your-hair kind of bugs. In strict mode, referencing a a `this` value of null or undefined throws an error.
+- **Disallows duplicate parameter values.** Strict mode throws an error when it detects a duplicate named argument for a function (e.g., `function foo(val1, val2, val1){}`), thereby catching what is almost certainly a bug in your code that you might otherwise have wasted lots of time tracking down.
+  - Note: It used to be (in ECMAScript 5) that strict mode would disallow duplicate property names (e.g. `var object = {foo: "bar", foo: "baz"};`) but [as of ECMAScript 2015](https://stackoverflow.com/questions/30617139/whats-the-purpose-of-allowing-duplicate-property-names) this is no longer the case.
+- **Makes eval() safer.** There are some differences in the way `eval()` behaves in strict mode and in non-strict mode. Most significantly, in strict mode, variables and functions declared inside of an `eval()` statement are _not_ created in the containing scope (they _are_ created in the containing scope in non-strict mode, which can also be a common source of problems).
+- **Throws error on invalid usage of `delete`.** The `delete` operator (used to remove properties from objects) cannot be used on non-configurable properties of the object. Non-strict code will fail silently when an attempt is made to delete a non-configurable property, whereas strict mode will throw an error in such a case.
 
 Consider the two functions below. Will they both return the same thing? Why or why not?
 
@@ -182,7 +182,7 @@ will yield:
 foo1 returns:
 Object {bar: "hello"}
 foo2 returns:
-undefined 
+undefined
 ```
 
 Not only is this surprising, but what makes this particularly gnarly is that `foo2()` returns undefined without any error being thrown.
@@ -222,9 +222,9 @@ In what order will the numbers 1-4 be logged to the console when the code below 
 
 ```
 (function() {
-    console.log(1); 
-    setTimeout(function(){console.log(2)}, 1000); 
-    setTimeout(function(){console.log(3)}, 0); 
+    console.log(1);
+    setTimeout(function(){console.log(2)}, 1000);
+    setTimeout(function(){console.log(3)}, 0);
     console.log(4);
 })();
 ```
@@ -240,8 +240,8 @@ The values will be logged in the following order:
 
 Let’s first explain the parts of this that are presumably more obvious:
 
-* `1` and `4` are displayed first since they are logged by simple calls to `console.log()` without any delay
-* `2` is displayed after `3` because `2` is being logged after a delay of 1000 msecs (i.e., 1 second) whereas `3` is being logged after a delay of 0 msecs.
+- `1` and `4` are displayed first since they are logged by simple calls to `console.log()` without any delay
+- `2` is displayed after `3` because `2` is being logged after a delay of 1000 msecs (i.e., 1 second) whereas `3` is being logged after a delay of 0 msecs.
 
 OK, fine. But if `3` is being logged after a delay of 0 msecs, doesn’t that mean that it is being logged right away? And, if so, shouldn’t it be logged _before_ `4`, since `4` is being logged by a later line of code?
 
@@ -267,16 +267,16 @@ function isPalindrome(str) {
 For example:
 
 ```
-console.log(isPalindrome("level"));                 
-console.log(isPalindrome("levels"));                
-console.log(isPalindrome("A car, a man, a maraca"));  
+console.log(isPalindrome("level"));
+console.log(isPalindrome("levels"));
+console.log(isPalindrome("A car, a man, a maraca"));
 ```
 
 Write a `sum` method which will work properly when invoked using either syntax below.
 
 ```
-console.log(sum(2,3));   
-console.log(sum(2)(3));  
+console.log(sum(2,3));
+console.log(sum(2)(3));
 ```
 
 There are (at least) two ways to do this:
@@ -416,13 +416,13 @@ The logged output will be:
 
 `arr1` and `arr2` are the same (i.e. `['n','h','o','j', ['j','o','n','e','s'] ]`) after the above code is executed for the following reasons:
 
-* Calling an array object’s `reverse()` method doesn’t only _return_ the array in reverse order, it also reverses the order of the array _itself_ (i.e., in this case, `arr1`).
-* The `reverse()` method returns a reference to the array itself (i.e., in this case, `arr1`). As a result, `arr2` is simply a reference to (rather than a copy of) `arr1`. Therefore, when anything is done to `arr2` (i.e., when we invoke `arr2.push(arr3);`), `arr1` will be affected as well since `arr1` and `arr2` are simply references to the same object.
+- Calling an array object’s `reverse()` method doesn’t only _return_ the array in reverse order, it also reverses the order of the array _itself_ (i.e., in this case, `arr1`).
+- The `reverse()` method returns a reference to the array itself (i.e., in this case, `arr1`). As a result, `arr2` is simply a reference to (rather than a copy of) `arr1`. Therefore, when anything is done to `arr2` (i.e., when we invoke `arr2.push(arr3);`), `arr1` will be affected as well since `arr1` and `arr2` are simply references to the same object.
 
 And a couple of side points here that can sometimes trip someone up in answering this question:
 
-* Passing an array to the `push()` method of another array pushes that _entire_ array as a _single_ element onto the end of the array. As a result, the statement `arr2.push(arr3);` adds `arr3` in its entirety as a single element to the end of `arr2` (i.e., it does _not_ concatenate the two arrays, that’s what the `concat()` method is for).
-* Like Python, JavaScript honors negative subscripts in calls to array methods like `slice()` as a way of referencing elements at the end of the array; e.g., a subscript of -1 indicates the last element in the array, and so on.
+- Passing an array to the `push()` method of another array pushes that _entire_ array as a _single_ element onto the end of the array. As a result, the statement `arr2.push(arr3);` adds `arr3` in its entirety as a single element to the end of `arr2` (i.e., it does _not_ concatenate the two arrays, that’s what the `concat()` method is for).
+- Like Python, JavaScript honors negative subscripts in calls to array methods like `slice()` as a way of referencing elements at the end of the array; e.g., a subscript of -1 indicates the last element in the array, and so on.
 
 What will the code below output to the console and why ?
 
@@ -471,7 +471,7 @@ var nextListItem = function() {
     var item = list.pop();
 
     if (item) {
-      
+
         nextListItem();
     }
 };
@@ -486,7 +486,7 @@ var nextListItem = function() {
     var item = list.pop();
 
     if (item) {
-      
+
         setTimeout( nextListItem, 0);
     }
 };
@@ -505,17 +505,17 @@ var globalVar = "xyz";
 
 (function outerFunc(outerArg) {
     var outerVar = 'a';
-  
+
     (function innerFunc(innerArg) {
     var innerVar = 'b';
-  
+
     console.log(
         "outerArg = " + outerArg + "\n" +
         "innerArg = " + innerArg + "\n" +
         "outerVar = " + outerVar + "\n" +
         "innerVar = " + innerVar + "\n" +
         "globalVar = " + globalVar);
-  
+
     })(456);
 })(123);
 ```
@@ -673,17 +673,17 @@ Create a function that, given a DOM Element on the page, will visit the element 
 
 The arguments to the function should be:
 
-* a DOM element
-* a callback function (that takes a DOM element as its argument)
+- a DOM element
+- a callback function (that takes a DOM element as its argument)
 
-Visiting all elements in a tree (DOM) is a classic [Depth-First-Search algorithm](https://en.wikipedia.org/wiki/Depth-first\_search) application. Here’s an example solution:
+Visiting all elements in a tree (DOM) is a classic [Depth-First-Search algorithm](https://en.wikipedia.org/wiki/Depth-first_search) application. Here’s an example solution:
 
 ```
 function Traverse(p_element,p_callback) {
    p_callback(p_element);
    var list = p_element.children;
    for (var i = 0; i < list.length; i++) {
-       Traverse(list[i],p_callback);  
+       Traverse(list[i],p_callback);
    }
 }
 ```
@@ -753,12 +753,12 @@ undefined
 
 ```
 (function () {
-    var x, y; 
+    var x, y;
     try {
         throw new Error();
     } catch (x ) {
-        x = 1; 
-        y = 2; 
+        x = 1;
+        y = 2;
         console.log(x );
     }
     console.log(x);
@@ -810,7 +810,7 @@ How do you add an element at the begining of an array? How do you add one at the
 var myArray = ['a', 'b', 'c', 'd'];
 myArray.push('end');
 myArray.unshift('start');
-console.log(myArray); 
+console.log(myArray);
 ```
 
 With ES6, one can use the spread operator:
@@ -851,8 +851,8 @@ b) Here, `a[6]` will output `undefined`, but the slot still remains empty rather
 ```
 var b = [undefined];
 b[2] = 1;
-console.log(b);           
-console.log(b.map(e => 7)); 
+console.log(b);
+console.log(b.map(e => 7));
 ```
 
 What is the value of `typeof undefined == typeof NULL`?
@@ -897,7 +897,7 @@ for (var i = 0; i < 5; i++) {
 
 This will produce the presumably desired result of logging 0, 1, 2, 3, and 4 to the console.
 
-[In an ES2015 context](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Creating\_closures\_in\_loops\_A\_common\_mistake), you can simply use `let` instead of `var` in the original code:
+[In an ES2015 context](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures#Creating_closures_in_loops_A_common_mistake), you can simply use `let` instead of `var` in the original code:
 
 ```
 for (let i = 0; i < 5; i++) {
@@ -914,18 +914,18 @@ While this seems straightforward enough, there are a couple of somewhat surprisi
 For one thing, although `NaN` means “not a number”, its type is, believe it or not, `Number`:
 
 ```
-console.log(typeof NaN === "number");  
+console.log(typeof NaN === "number");
 ```
 
 Additionally, `NaN` compared to anything – even itself! – is false:
 
 ```
-console.log(NaN === NaN);  
+console.log(NaN === NaN);
 ```
 
-A _semi-reliable_ way to test whether a number is equal to NaN is with the built-in function `isNaN()`, but even using [`isNaN()` is an imperfect solution](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/isNaN#Confusing\_special-case\_behavior).
+A _semi-reliable_ way to test whether a number is equal to NaN is with the built-in function `isNaN()`, but even using [`isNaN()` is an imperfect solution](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN#Confusing_special-case_behavior).
 
-A better solution would either be to use `value !== value`, which would _only_ produce true if the value is equal to NaN. Also, ES6 offers a new [`Number.isNaN()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Number/isNaN) function, which is a different and more reliable than the old global `isNaN()` function.
+A better solution would either be to use `value !== value`, which would _only_ produce true if the value is equal to NaN. Also, ES6 offers a new [`Number.isNaN()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN) function, which is a different and more reliable than the old global `isNaN()` function.
 
 What will the following code output and why?
 
@@ -951,10 +951,10 @@ Furthermore, due to hoisting the code in inner will be interpreted as follows:
 
 ```
 function inner () {
-    var b; 
-    b++; 
-    b = 3; 
-    console.log(b); 
+    var b;
+    b++;
+    b = 3;
+    console.log(b);
 }
 ```
 
@@ -967,7 +967,7 @@ The issue is that, in the ECMAScript specification, integers only exist conceptu
 With that in mind, the _simplest and cleanest_ pre-ECMAScript-6 solution (which is also sufficiently robust to return `false` even if a non-numeric value such as a string or `null` is passed to the function) would be the following use of the bitwise XOR operator:
 
 ```
-function isInteger(x) { return (x ^ 0) === x; } 
+function isInteger(x) { return (x ^ 0) === x; }
 ```
 
 The following solution would also work, although not as elegant as the one above:
@@ -1031,8 +1031,8 @@ var objclone = Object.assign({},obj);
 console.log('objclone: ', objclone);
 
 obj.c.age = 45;
-console.log('After Change - obj: ', obj);         
-console.log('After Change - objclone: ', objclone); 
+console.log('After Change - obj: ', obj);
+console.log('After Change - objclone: ', objclone);
 ```
 
 There is more to interviewing than tricky technical questions, so these are intended merely as a guide. Not every “A” candidate worth hiring will be able to answer them all, nor does answering them all guarantee an “A” candidate. At the end of the day, [hiring remains an art, a science — and a lot of work](https://www.toptal.com/freelance/in-search-of-the-elite-few-finding-and-hiring-the-best-developers-in-the-industry).

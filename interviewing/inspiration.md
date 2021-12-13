@@ -2,19 +2,19 @@
 
 #### 1) [Alertbox: Current Issues in Web Usability](http://www.useit.com/alertbox/)
 
-_Alertbox _is [Jakob Nielsen’s](http://www.useit.com/jakob/) bi-weekly column that discusses web usability. I’ve been a fan of his for almost as long as I’ve been professionally developing websites. Most of his recommendations makes sense and is backed by real-world studies and carefully-constructed surveys.
+\_Alertbox \_is [Jakob Nielsen’s](http://www.useit.com/jakob/) bi-weekly column that discusses web usability. I’ve been a fan of his for almost as long as I’ve been professionally developing websites. Most of his recommendations makes sense and is backed by real-world studies and carefully-constructed surveys.
 
 His columns cover topics such as the [merits of breadcrumb navigation](http://www.useit.com/alertbox/breadcrumbs.html) to [Top-10 Application-Design Mistakes](http://www.useit.com/alertbox/application-mistakes.html). A great link to provide people when you’re asked about optimal web page design is the column on Screen Resolution and Page Layout.
 
 #### 2) [TheBestDesigns.com](http://www.thebestdesigns.com)
 
-On days when your creative juices don’t seem to be flowing as it should, it often helps to look at other people’s work to help inspire you. _TheBestDesigns.com_ is a gallery site to visit on such days. TBD has a few things that distinguish them from other web design galleries — among them are: choosing _quality _over _quantity_, showcasing flash-based as well as CSS-based layouts, and tagging each design with relevant keywords so that users can conveniently find similar designs.
+On days when your creative juices don’t seem to be flowing as it should, it often helps to look at other people’s work to help inspire you. _TheBestDesigns.com_ is a gallery site to visit on such days. TBD has a few things that distinguish them from other web design galleries — among them are: choosing _quality \_over \_quantity_, showcasing flash-based as well as CSS-based layouts, and tagging each design with relevant keywords so that users can conveniently find similar designs.
 
 They showcase truly innovative and skillfully-crafted designs and they abstain from showcasing the “yet another recycled web 2.0 look” websites. It might not be updated with hundreds of websites everyday, but having a strict guideline on what gets displayed on TBD ensures that you don’t have to filter out the noise to get to the signal.
 
 #### 3) [A List Apart](http://www.alistapart.com)
 
-_A List Apart_ inspired me to become a proponent of web-standards and semantic code. Starting out, most of us probably didn’t care about capitalized, unclosed html tags (… _that won’t validate with a strict doctype_) or understood the _real value _of accessibility in web pages.
+_A List Apart_ inspired me to become a proponent of web-standards and semantic code. Starting out, most of us probably didn’t care about capitalized, unclosed html tags (… _that won’t validate with a strict doctype_) or understood the \_real value \_of accessibility in web pages.
 
 One of the major influences in my views on web-standards, best practices, accessibility, and usability can be attributed to a significant part… to A List Apart. ALA articles are high-quality and they only come out with two articles a month, but they are worth the wait. Articles are written by some of the leading experts in the industry, and their staff include well-renowned pro’s such as Eric Meyer and Jeffrey Zeldman.
 
@@ -22,7 +22,7 @@ One of the major influences in my views on web-standards, best practices, access
 
 “_Getting Real_” is a book that’s available online, written by 37 Signals. It’s about creating web-based applications in a productive and successful way. The book covers topics ranging from philosophies that help push out quality products to views on hiring the right people to do the job.
 
-Favorite topics covered in the book are: [asking users what they _don’t_ want](http://gettingreal.37signals.com/ch05\_Hold\_the\_Mayo.php) and [dealing with problems only when there is one](http://gettingreal.37signals.com/ch04\_Its\_a\_Problem\_When\_Its\_a\_Problem.php).
+Favorite topics covered in the book are: [asking users what they _don’t_ want](http://gettingreal.37signals.com/ch05_Hold_the_Mayo.php) and [dealing with problems only when there is one](http://gettingreal.37signals.com/ch04_Its_a_Problem_When_Its_a_Problem.php).
 
 #### 5) Digg / Technology
 
@@ -32,19 +32,19 @@ Other social-bookmarking sites that will help you stay sharp and current, and th
 
 #### 6) Web Design from Scratch
 
-_Web Design from Scratc_h is a website run by Ben Hunt, that’s about (_s_traight from the front page) “_A complete guide to designing web sites that work_“. It caters primarily to web builders just starting out, but it’s always good to “go back to the basics” and get a refresher on things that you’ve taken for granted.
+_Web Design from Scratc_h is a website run by Ben Hunt, that’s about (\_s_traight from the front page) “\_A complete guide to designing web sites that work_“. It caters primarily to web builders just starting out, but it’s always good to “go back to the basics” and get a refresher on things that you’ve taken for granted.
 
 The section on Copy Writing taught me that web developers shouldn’t be limited to the coding part or the design part of the project; writing effective copy comes naturally with the experience we’ve had with developing websites that succeed and fail.
 
 #### 7) mootools
 
-_mootools_ is a lightweight framework that simplifies the way you write JavaScript and provides you with powerful AJAX classes, effects, and fuctions. It’s helped with the development of complex web pages in a _rapid _and _elegant _way.
+_mootools_ is a lightweight framework that simplifies the way you write JavaScript and provides you with powerful AJAX classes, effects, and fuctions. It’s helped with the development of complex web pages in a \_rapid \_and \_elegant \_way.
 
 There are other JavaScript frameworks similar to mootools, and you can’t go wrong with any of the popular ones, but a developer’s got to choose his or her favorite — and for me, mootools is the one I’ve come to love and use.
 
 #### 8) ReadWriteWeb
 
-_ReadWriteWeb_ is a long-standing (five years and counting) weblog about web technology news. It caters to web professionals that have a need for knowing what’s up _right _now. It was founded by Richard MacManus, who also co-founded the [Web 2.0 Workgroup](http://web20workgroup.com) – a network of blogs that cover the Web 2.0 generation.
+_ReadWriteWeb_ is a long-standing (five years and counting) weblog about web technology news. It caters to web professionals that have a need for knowing what’s up \_right \_now. It was founded by Richard MacManus, who also co-founded the [Web 2.0 Workgroup](http://web20workgroup.com) – a network of blogs that cover the Web 2.0 generation.
 
 It’s a website that allows you to keep your knowledge up-to-date, and is a source I consistently cite when talking about current web technologies with colleagues and fellow developers.
 
@@ -104,7 +104,7 @@ Eric Meyer is one of the key influential people that I truly find to be talented
 
 _456 Berea Street_ is the creation of Roger Johansson, a web professional from Sweden. His writing is a primary inspiration for starting up of _Six Revisions_. Topics include book reviews, written work about CSS and XHTML, and web development news and events.
 
-Some pages worth bookmarking are [Efficient CSS with shorthand properties](http://www.456bereastreet.com/archive/200502/efficient\_css\_with\_shorthand\_properties/) (which can be used as a reference to writing “shorthand” CSS – reducing file size and page length) [The CSS and XHTML Lab](http://www.456bereastreet.com/lab/) (which features some demonstrations as well as a list of works translated into other languages) and Accessibility myths and misconceptions (a helpful resource to link to when asked about the value of accessibility in web pages).
+Some pages worth bookmarking are [Efficient CSS with shorthand properties](http://www.456bereastreet.com/archive/200502/efficient_css_with_shorthand_properties/) (which can be used as a reference to writing “shorthand” CSS – reducing file size and page length) [The CSS and XHTML Lab](http://www.456bereastreet.com/lab/) (which features some demonstrations as well as a list of works translated into other languages) and Accessibility myths and misconceptions (a helpful resource to link to when asked about the value of accessibility in web pages).
 
 #### 18) [The Web Standards Project](http://www.webstandards.org)
 

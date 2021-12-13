@@ -1,7 +1,7 @@
 /* Recursive implementation */
 function recursiveDepthFirstForEach(node, cb) {
   cb(node.value);
-  
+
   if (node.left) {
     recursiveDepthFirstForEach(node.left, cb);
   }
@@ -19,7 +19,7 @@ function iterativeDepthFirstForEach(node, cb) {
 
   while (stack.length > 0) {
     const current = stack.pop();
-    // in order to achieve a left-to-right depth-first 
+    // in order to achieve a left-to-right depth-first
     // ordering, the right node needs to be pushed
     // to the stack first
     if (current.right) {
@@ -60,15 +60,15 @@ root.right.insertRight(89);
 
 const cb = (x) => console.log(x);
 
-recursiveDepthFirstForEach(root, cb);  // should print 6 10 9 18 89
+recursiveDepthFirstForEach(root, cb); // should print 6 10 9 18 89
 console.log();
-iterativeDepthFirstForEach(root, cb);  // should print 6 10 9 18 89
+iterativeDepthFirstForEach(root, cb); // should print 6 10 9 18 89
 console.log();
 
 root.left.insertRight(15);
 root.right.insertLeft(0);
 
-recursiveDepthFirstForEach(root, cb);  // should print 6 10 9 15 18 0 89 
+recursiveDepthFirstForEach(root, cb); // should print 6 10 9 15 18 0 89
 console.log();
-iterativeDepthFirstForEach(root, cb);  // should print 6 10 9 15 18 0 89  
+iterativeDepthFirstForEach(root, cb); // should print 6 10 9 15 18 0 89
 console.log();

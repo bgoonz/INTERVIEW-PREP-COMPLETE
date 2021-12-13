@@ -12,15 +12,15 @@ Feel free to (re)use my code in any way you wish, but bare in mind that the sour
 
 #### local machine
 
-* download and install the latest version of [Anaconda](https://www.continuum.io/downloads) distribution
-* clone the repo: `git clone https://github.com/coells/100days.git`
-* open terminal and run Jupyter notebook: `jupyter notebook`
-* open [localhost:8888](http://localhost:8888/tree) in your browser
+- download and install the latest version of [Anaconda](https://www.continuum.io/downloads) distribution
+- clone the repo: `git clone https://github.com/coells/100days.git`
+- open terminal and run Jupyter notebook: `jupyter notebook`
+- open [localhost:8888](http://localhost:8888/tree) in your browser
 
 #### notes
 
-* the codebase was developed using `Python 3.6` and `Anaconda 4.3.1`
-* notebooks containing [Bokeh](http://bokeh.pydata.org/en/latest/) plots are not directly supported by Github; you better clone the repo a run notebooks locally
+- the codebase was developed using `Python 3.6` and `Anaconda 4.3.1`
+- notebooks containing [Bokeh](http://bokeh.pydata.org/en/latest/) plots are not directly supported by Github; you better clone the repo a run notebooks locally
 
 #### alternate repository
 

@@ -2,7 +2,7 @@ class TempTracker {
   constructor() {
     // for mode
     // populate occurrences array with 0s from 0 to 140
-    // 140 being the max temperature 
+    // 140 being the max temperature
     this.occurrences = Array(140).fill(0);
     this.maxOccurrences = 0;
     this.mode = null;
@@ -37,7 +37,7 @@ class TempTracker {
       this.maxTemp = temp;
     }
     if (this.minTemp === null || temp < this.minTemp) {
-        this.minTemp = temp;
+      this.minTemp = temp;
     }
   }
 
@@ -62,20 +62,20 @@ class TempTracker {
 const tracker = new TempTracker();
 tracker.insert(32);
 
-console.log("mean: ", tracker.getMean());   // should print 32
-console.log("min: ", tracker.getMin());     // should print 32
-console.log("max: ", tracker.getMax());     // should print 32
-console.log("mode: ", tracker.getMode());   // should print 32
+console.log("mean: ", tracker.getMean()); // should print 32
+console.log("min: ", tracker.getMin()); // should print 32
+console.log("max: ", tracker.getMax()); // should print 32
+console.log("mode: ", tracker.getMode()); // should print 32
 
 tracker.insert(135);
 
-console.log("mean: ", tracker.getMean());   // should print 83.5
-console.log("min: ", tracker.getMin());     // should print 32
-console.log("max: ", tracker.getMax());     // should print 135
+console.log("mean: ", tracker.getMean()); // should print 83.5
+console.log("min: ", tracker.getMin()); // should print 32
+console.log("max: ", tracker.getMax()); // should print 135
 
 tracker.insert(135);
 
-console.log("mean: ", tracker.getMean());   // should print 100.66666666666667
-console.log("min: ", tracker.getMin());     // should print 32
-console.log("max: ", tracker.getMax());     // should print 135
-console.log("mode: ", tracker.getMode());   // should print 135
+console.log("mean: ", tracker.getMean()); // should print 100.66666666666667
+console.log("min: ", tracker.getMin()); // should print 32
+console.log("max: ", tracker.getMax()); // should print 135
+console.log("mode: ", tracker.getMode()); // should print 135

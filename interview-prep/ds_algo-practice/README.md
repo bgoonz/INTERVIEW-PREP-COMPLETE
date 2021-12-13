@@ -1,4 +1,4 @@
-# 🧮 DS\_ALGO Practice:
+# 🧮 DS_ALGO Practice:
 
 {% embed url="https://github.com/bgoonz/Leetcode-JS-PY-MD" %}
 
@@ -6,6 +6,7 @@
 
 {% tabs %}
 {% tab title="JS" %}
+
 ``````javascript
 /**
  * ███████████████═╗ ███████████████═╗   █████████████═╗ █████═╗   █████═╗
@@ -84,8 +85,8 @@
  *   - Manage complexity and make your programs easier to follow.
  *   - Build high-performance, memory-efficient programs.
  *
- * I believe that the former is more important. Using the right 
- * data structure can drastically simplify what would otherwise 
+ * I believe that the former is more important. Using the right
+ * data structure can drastically simplify what would otherwise
  * be complicated logic.
  *
  * The latter is important too. If performance or memory matters then
@@ -226,7 +227,7 @@
  *     O(2 ^ N)       32           1024           1,048,576      1,073,741,824
  *     O(N!)          120          3,628,800      2,432,902,0... 265,252,859,812,191,058,636,308,480,000,000
  *
- * As you can see, even for relatively small sets of data you could do 
+ * As you can see, even for relatively small sets of data you could do
  * a **lot** of extra work.
  *
  * With data structures, you can perform 4 primary types of actions:
@@ -326,7 +327,6 @@
  */
 
 class List {
-
   /**
    * We start with an empty block of memory which we are going to represent
    * with a normal JavaScript array and we'll store the length of the list.
@@ -527,7 +527,6 @@ class List {
  */
 
 class HashTable {
-
   /**
    * Again we're going to use a plain JavaScript array to represent our memory.
    */
@@ -573,7 +572,7 @@ class HashTable {
     for (let index = 0; index < key.length; index++) {
       // Oh look– magic.
       let code = key.charCodeAt(index);
-      hash = ((hash << 5) - hash) + code | 0;
+      hash = ((hash << 5) - hash + code) | 0;
     }
     return hash;
   }
@@ -675,7 +674,6 @@ class HashTable {
  */
 
 class Stack {
-
   /**
    * We're going to again be backed by a JavaScript array, but this time it
    * represents a list like we implemented before rather than memory.
@@ -757,7 +755,6 @@ class Stack {
  */
 
 class Queue {
-
   /**
    * Again, our queue is using a JavaScript array as a list rather than memory.
    */
@@ -884,7 +881,6 @@ class Queue {
  */
 
 class Graph {
-
   /**
    * We'll hold onto all of our nodes in a regular JavaScript array. Not
    * because there is any particular order to the nodes but because we need a
@@ -903,7 +899,7 @@ class Graph {
   addNode(value) {
     return this.nodes.push({
       value,
-      lines: []
+      lines: [],
     });
   }
 
@@ -918,7 +914,7 @@ class Graph {
    */
 
   find(value) {
-    return this.nodes.find(node => {
+    return this.nodes.find((node) => {
       return node.value === value;
     });
   }
@@ -934,7 +930,7 @@ class Graph {
 
     // Freak out if we didn't find one or the other.
     if (!startNode || !endNode) {
-      throw new Error('Both nodes need to exist');
+      throw new Error("Both nodes need to exist");
     }
 
     // And add a reference to the endNode from the startNode.
@@ -1008,7 +1004,6 @@ class Graph {
  */
 
 class LinkedList {
-
   /**
    * Unlike a graph, a linked list has a single node that starts off the entire
    * chain. This is known as the "head" of the linked list.
@@ -1031,7 +1026,7 @@ class LinkedList {
   get(position) {
     // Throw an error if position is greater than the length of the LinkedList
     if (position >= this.length) {
-      throw new Error('Position outside of list range');
+      throw new Error("Position outside of list range");
     }
 
     // Start with the head of the list.
@@ -1057,7 +1052,7 @@ class LinkedList {
     // First create a node to hold our value.
     let node = {
       value,
-      next: null
+      next: null,
     };
 
     // We need to have a special case for nodes being inserted at the head.
@@ -1092,7 +1087,7 @@ class LinkedList {
   remove(position) {
     // We should not be able to remove from an empty list
     if (!this.head) {
-      throw new Error('Removing from empty list')
+      throw new Error("Removing from empty list");
     }
     // If we're removing the first node we simply need to set the head to the
     // next node in the chain
@@ -1204,7 +1199,6 @@ class LinkedList {
  */
 
 class Tree {
-
   /**
    * The tree has to start with a single parent, the "root" of the tree.
    */
@@ -1239,7 +1233,7 @@ class Tree {
   add(value, parentValue) {
     let newNode = {
       value,
-      children: []
+      children: [],
     };
 
     // If there is no root, just set it to the new node.
@@ -1250,7 +1244,7 @@ class Tree {
 
     // Otherwise traverse the entire tree and find a node with a matching value
     // and add the new node to its children.
-    this.traverse(node => {
+    this.traverse((node) => {
       if (node.value === parentValue) {
         node.children.push(newNode);
       }
@@ -1329,7 +1323,6 @@ class Tree {
  */
 
 class BinarySearchTree {
-
   /**
    * Same as the previous Tree, we need to have a "root" of the binary search
    * tree.
@@ -1351,7 +1344,6 @@ class BinarySearchTree {
     // We're going to keep running as long as we have another node to visit.
     // If we reach a `left` or `right` that is `null` then this loop ends.
     while (current) {
-
       // If the value is greater than the current.value we move to the right
       if (value > current.value) {
         current = current.right;
@@ -1384,7 +1376,7 @@ class BinarySearchTree {
     let node = {
       value: value,
       left: null,
-      right: null
+      right: null,
     };
 
     // Special case for when there isn't any root node and we just need to add
@@ -1400,10 +1392,8 @@ class BinarySearchTree {
     // We're going to loop until we've either added our item or discovered it
     // already exists in the tree.
     while (true) {
-
       // If the value is greater than the current.value we move to the right.
       if (value > current.value) {
-
         // If `right` does not exist, set it to our node, and stop traversing.
         if (!current.right) {
           current.right = node;
@@ -1415,7 +1405,6 @@ class BinarySearchTree {
 
         // If the value is less than the current.value we move to the left.
       } else if (value < current.value) {
-
         // If `left` does not exist, set it to our node, and stop traversing.
         if (!current.left) {
           current.left = node;
@@ -1470,9 +1459,10 @@ module.exports = {
   Graph,
   LinkedList,
   Tree,
-  BinarySearchTree
+  BinarySearchTree,
 };
 ``````
+
 {% endtab %}
 
 {% tab title="Second Tab" %}

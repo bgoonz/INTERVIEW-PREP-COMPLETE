@@ -22,19 +22,11 @@ The diagram below shows another example of a simple weighted digraph. Formally w
 
 $$V = \left\{ V0,V1,V2,V3,V4,V5 \right\}$$
 
-
-
-
-
-
-
-
-
 and the set of nine edges:
 
-$$$
+$$
 (v0,v5,2),(v5,v4,8),(v3,v5,3),(v5,v2,1) \end{array} \right\}$$ ![A simple example of a directed graph](figures/digraph.png) The example above helps illustrate two other key graph terms: **Path** A path in a graph is a sequence of vertices that are connected by edges. Formally we would define a path as $$w_1, w_2, ..., w_n$$ such that $$(w_i, w_{i+1}) \in E$$ for all $$1 \le i \le n-1$$. The unweighted path length is the number of edges in the path, specifically $$n-1$$. The weighted path length is the sum of the weights of all the edges in the path. For example in the above graph the path from $$V3$$ to $$V1$$ is the sequence of vertices $$(V3,V4,V0,V1)$$. The edges are $$\left\{(v3,v4,7),(v4,v0,1),(v0,v1,5) \right\}$$. **Cycle** A cycle in a directed graph is a path that starts and ends at the same vertex. For example, in the above graph the path $$(V5,V2,V3,V5)$$ is a cycle. A graph with no cycles is called an **acyclic graph**. A directed graph with no cycles is called a **directed acyclic graph** or a **DAG**. We will see that we can solve several important problems if the problem can be represented as a DAG. The Graph Abstract Data Type --- The graph abstract data type (ADT) is defined as follows: - `Graph()` creates a new, empty graph. - `add_vertex(vertex)` adds an instance of `Vertex` to the graph. - `add_edge(from_vertex, to_vertex)` Adds a new, directed edge to the graph that connects two vertices. - `add_edge(from_vertex, to_vertex, weight)` Adds a new, weighted, directed edge to the graph that connects two vertices. - `get_vertex(key)` finds the vertex in the graph named `key`. - `get_vertices()` returns the list of all vertices in the graph. - `in` returns `True` for a statement of the form `vertex in graph`, if the given vertex is in the graph, `False` otherwise. Beginning with the formal definition for a graph there are several ways we can implement the graph ADT in Python. We will see that there are trade-offs in using different representations to implement the ADT described above. There are two well-known implementations of a graph, the **adjacency matrix** and the **adjacency list**. We will explain both of these options, and then implement one as a Python class.
-$$$
+$$
 
 For our last graph algorithm let’s consider a problem that online game designers and Internet radio providers face. The problem is that they want to efficiently transfer a piece of information to anyone and everyone who may be listening. This is important in gaming so that all the players know the very latest position of every other player. This is important for Internet radio so that all the listeners that are tuned in are getting all the data they need to reconstruct the song they are listening to. This diagram illustrates the broadcast problem:
 

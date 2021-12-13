@@ -50,7 +50,7 @@ Reversing a list is $$O(n)$$ since we must reposition each element.
 
 #### Sorting
 
-Finally (and least intuitively), [sorting in Python](http://svn.python.org/view/python/trunk/Objects/listsort.txt?revision=69846\&view=markup) is $$O(n\log{n})$$ and [beyond the scope of this book](https://en.wikipedia.org/wiki/Timsort) to demonstrate.
+Finally (and least intuitively), [sorting in Python](http://svn.python.org/view/python/trunk/Objects/listsort.txt?revision=69846&view=markup) is $$O(n\log{n})$$ and [beyond the scope of this book](https://en.wikipedia.org/wiki/Timsort) to demonstrate.
 
 For reference, we’ve summarized the performance characteristics of Python's list operations in the table below:
 
@@ -101,6 +101,6 @@ We’ve summarized the efficencies of all dictionary operations in the table bel
 
 The efficiences provided in the above tables are performances in the _average case_. In rare cases, “contains”, “get item” and “set item” can degenerate into $$O(n)$$ performance but, again, we’ll discuss that when we talk about different ways of implementing a dictionary.
 
-***
+---
 
 Python is still an evolving language, which means that the above tables could be subject to change. The latest information on the performance of Python data types can be found on the Python website. As of this writing, the Python wiki has a nice time complexity page that can be found at the [Time Complexity Wiki](http://wiki.python.org/moin/TimeComplexity).

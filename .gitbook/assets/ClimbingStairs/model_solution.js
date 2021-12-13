@@ -12,7 +12,11 @@ function naiveClimbStairs(n) {
   else if (n == 0) return 1;
   // move towards our base case
   else {
-    return naiveClimbStairs(n-1) + naiveClimbStairs(n-2) + naiveClimbStairs(n-3);
+    return (
+      naiveClimbStairs(n - 1) +
+      naiveClimbStairs(n - 2) +
+      naiveClimbStairs(n - 3)
+    );
   }
 }
 
@@ -31,16 +35,17 @@ function memoizedClimbStairs(n, cache) {
   else if (n == 0) return 1;
   else if (cache[n] > 1) return cache[n];
   else {
-    cache[n] = memoizedClimbStairs(n-1, cache) +
-               memoizedClimbStairs(n-2, cache) +
-               memoizedClimbStairs(n-3, cache);
+    cache[n] =
+      memoizedClimbStairs(n - 1, cache) +
+      memoizedClimbStairs(n - 2, cache) +
+      memoizedClimbStairs(n - 3, cache);
     return cache[n];
   }
 }
 
 /* Some console.log tests */
-console.log(naiveClimbStairs(10));  // should print 274
-console.log(naiveClimbStairs(30));  // should print 53798080
+console.log(naiveClimbStairs(10)); // should print 274
+console.log(naiveClimbStairs(30)); // should print 53798080
 
 // console.log(memoizedClimbStairs(30, Array(30)));  // should also print 53798080, though must quicker than the naive implementation
 // console.log(memoizedClimbStairs(50, Array(50)));  // should print 10562230626642
