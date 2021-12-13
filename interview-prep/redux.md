@@ -10,7 +10,6 @@ In this video Dan shows how the state of a Todo app changes over time as data is
 
 \
 
-
 **2. Describing State Changes with Actions (**_**Principal #2**_**)**
 
 > Video: https://egghead.io/lessons/javascript-redux-describing-state-changes-with-actions
@@ -20,7 +19,6 @@ The **second principal** of Redux is that the **state tree** is _**read-only**_;
 > "_Any data that gets into your Redux Application gets there by actions_"
 
 \
-
 
 **3. **_**Pure**_** and **_**Impure**_** Functions**
 
@@ -42,7 +40,6 @@ Inside any Redux app there is one function that takes the state of the whole app
 
 \
 
-
 **5. Writing a Counter Reducer with Tests**
 
 This video walks through creating a basic counter in Redux.
@@ -56,35 +53,27 @@ Before writing any code, we write a few assertions (_tests_) using [**Michael Ja
 We assert that when the state of the counter is zero and you pass an `INCREMENT` action, it should return 1.
 
 ```js
-expect (
-  counter(0, { type: 'INCREMENT' })
-).toEqual(1);
+expect(counter(0, { type: "INCREMENT" })).toEqual(1);
 ```
 
 And similarly when the counter is 1 and we `INCREMENT` it should return 2.
 
 ```js
-expect (
-  counter(1, { type: 'INCREMENT' })
-).toEqual(2);
+expect(counter(1, { type: "INCREMENT" })).toEqual(2);
 
 // We add a test that check how `DECREMENT` works; from 2 to 1 and from 1 to zero:
 
-expect (
-  counter(2, { type: 'DECREMENT' })
-).toEqual(1);
+expect(counter(2, { type: "DECREMENT" })).toEqual(1);
 
-expect (
-  counter(1, { type: 'DECREMENT' })
-).toEqual(0);
+expect(counter(1, { type: "DECREMENT" })).toEqual(0);
 ```
 
 If we run these tests \[_in the browser_], they will fail because we have not even _begun_ to implement the reducer. We are going to start by checking the action type. If the action type is `INCREMENT` we are going to `return state + 1` (_state plus one_) If the type is `DECREMENT` we are going to `return state - 1` (_state minus one_)
 
 ```js
-if (action.type === 'INCREMENT') {
+if (action.type === "INCREMENT") {
   return state + 1;
-} else if (action.type === 'DECREMENT') {
+} else if (action.type === "DECREMENT") {
   return state - 1;
 }
 ```
@@ -96,17 +85,15 @@ If you run the tests, you will find that that this is enough to get them to pass
 However, there are still some flaws in our implementation of the counter reducer. If we dispatch an action that it \[_the reducer_] does not understand, it should return the current state of the application.
 
 ```js
-expect (
-  counter(1, { type: 'SOMETHING_ELSE' })
-).toEqual(1);
+expect(counter(1, { type: "SOMETHING_ELSE" })).toEqual(1);
 ```
 
 However if we check for that, we will see that this test fails because we currently don't handle unknown actions. So I'm going to add an `else` clause that returns the current state and the tests pass now.
 
 ```js
-if (action.type === 'INCREMENT') {
+if (action.type === "INCREMENT") {
   return state + 1;
-} else if (action.type === 'DECREMENT') {
+} else if (action.type === "DECREMENT") {
   return state - 1;
 } else {
   return state;
@@ -127,16 +114,16 @@ The convention in Redux is that if the reducer receives `undefined` as the `stat
 
 ```js
 switch (action.type) {
-  case 'INCREMENT':
+  case "INCREMENT":
     return state + 1;
-  case 'DECREMENT':
+  case "DECREMENT":
     return state - 1;
   default:
     return state;
 }
 ```
 
-_However_ Dan _also_ makes a couple of changes which are _not_ just "_cosmetic_": changing the reducer function to be an **ES6** [`Arrow Function`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow\_functions) and also includes an **ES6** [`default parameter`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/default\_parameters) syntax to specify what the state should be if its undefined.
+_However_ Dan _also_ makes a couple of changes which are _not_ just "_cosmetic_": changing the reducer function to be an **ES6** [`Arrow Function`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and also includes an **ES6** [`default parameter`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/default_parameters) syntax to specify what the state should be if its undefined.
 
 The reducer function written in ES5 (_Works in_ _**ALL Browsers**_):
 
@@ -152,24 +139,23 @@ is re-written using ES6 features: (_**Only Chrome**_ _fully-supports both these 
 ```js
 const counter = (state = 0, action) => {
   /* reducer code here */
-}
+};
 ```
 
-_**Arrow functions**_ can be fewer characters to type but are [_**not supported**_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow\_functions#Browser\_compatibility) in **Safari** _or_ **Internet Explorer** \[_at the time of writing_] ... ![ES6-arrow-functions-not-supported-in-safari-or-internet-explorer](https://cloud.githubusercontent.com/assets/194400/12050430/5800888c-aeed-11e5-91fb-0bb8ff2ae4a4.png)
+_**Arrow functions**_ can be fewer characters to type but are [_**not supported**_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Browser_compatibility) in **Safari** _or_ **Internet Explorer** \[_at the time of writing_] ... ![ES6-arrow-functions-not-supported-in-safari-or-internet-explorer](https://cloud.githubusercontent.com/assets/194400/12050430/5800888c-aeed-11e5-91fb-0bb8ff2ae4a4.png)
 
-_**Default parameters**_ are a _nice_ addition to JavaScript (ECMAScript 2015) because they make it clear what the default value of the parameter should be if its unset, however they are [_**not supported**_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/default\_parameters#Browser\_compatibility) in **Internet Explorer**, **Safari** _or_ **Opera** \[_at the time of writing_] ... ![es6-default\_parameters-browser\_compatibility](https://cloud.githubusercontent.com/assets/194400/12050412/095e590c-aeed-11e5-8dae-a8a4105715fb.png)
+_**Default parameters**_ are a _nice_ addition to JavaScript (ECMAScript 2015) because they make it clear what the default value of the parameter should be if its unset, however they are [_**not supported**_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/default_parameters#Browser_compatibility) in **Internet Explorer**, **Safari** _or_ **Opera** \[_at the time of writing_] ... ![es6-default_parameters-browser_compatibility](https://cloud.githubusercontent.com/assets/194400/12050412/095e590c-aeed-11e5-8dae-a8a4105715fb.png)
 
-These browsers still account for between 30%-50% of people using the internet in December 2015 (_depending on the age/geography of the people using your app... see_: https://en.wikipedia.org/wiki/Usage\_share\_of\_web\_browsers ) And considering that _most_ people take _ages_ to upgrade to the latest browser Microsoft _**Internet Explorer 8**_ _still has_ [_**10%**_ _market share_!](https://www.netmarketshare.com/browser-market-share.aspx?qprid=2\&qpcustomd=0) and is [still available](https://www.microsoft.com/en-us/download/internet-explorer-8-details.aspx) to be downloaded.
+These browsers still account for between 30%-50% of people using the internet in December 2015 (_depending on the age/geography of the people using your app... see_: https://en.wikipedia.org/wiki/Usage\_share\_of\_web\_browsers ) And considering that _most_ people take _ages_ to upgrade to the latest browser Microsoft _**Internet Explorer 8**_ _still has_ [_**10%**_ _market share_!](https://www.netmarketshare.com/browser-market-share.aspx?qprid=2&qpcustomd=0) and is [still available](https://www.microsoft.com/en-us/download/internet-explorer-8-details.aspx) to be downloaded.
 
 using ES6 features has two implications:
 
-* If you want to run the code in a browser you need Google Chrome _**Canary**_.
-* And/Or, You need to "_transpile_" (_convert_) your code using _**Babel**_ before running it in browsers.
+- If you want to run the code in a browser you need Google Chrome _**Canary**_.
+- And/Or, You need to "_transpile_" (_convert_) your code using _**Babel**_ before running it in browsers.
 
 We will come back to Babel later...
 
 \
-
 
 **6. Store Methods: getState(), dispatch(), and subscribe()**
 
@@ -183,10 +169,10 @@ Dan starts off by showing how to include Redux (_from CDN JS_) in a client-side 
 
 In this tutorial we are using a single function from Redux called `createStore`.
 
-Using **ES6** [**destructuring assignment**](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring\_assignment) syntax to extract the `createStore` method from Redux:
+Using **ES6** [**destructuring assignment**](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) syntax to extract the `createStore` method from Redux:
 
 ```js
-const { createStore } = Redux;  // 6 fewer characters to type. OMG! what will we do with all that extra free time?!
+const { createStore } = Redux; // 6 fewer characters to type. OMG! what will we do with all that extra free time?!
 // this is equivalent to:
 var createStore = Redux.createStore;
 ```
@@ -195,9 +181,9 @@ var createStore = Redux.createStore;
 
 Redux Store has **3** (_important_) **methods**:
 
-* `getState` - retrieves the current state of the Redux store. In the case of our counter the initial state is Zero.
-* `dispatch` - lets you dispatch actions to change the state of your application. if we log the state of the application after dispatching an action (e.g: `INCREMENT`), we see that the state has changed to 1. (_the most commonly used method_)
-* `subscribe` - lets you register a callback that the Redux store will call any time an action has been dispatched. so you can update the UI of your application to reflect the current application state.
+- `getState` - retrieves the current state of the Redux store. In the case of our counter the initial state is Zero.
+- `dispatch` - lets you dispatch actions to change the state of your application. if we log the state of the application after dispatching an action (e.g: `INCREMENT`), we see that the state has changed to 1. (_the most commonly used method_)
+- `subscribe` - lets you register a callback that the Redux store will call any time an action has been dispatched. so you can update the UI of your application to reflect the current application state.
 
 The code at the end of video #6 looks like this: (_explanatory comments added_)
 
@@ -265,19 +251,20 @@ const createStore = (reducer) => {
 
   const dispatch = (action) => {
     state = reducer(state, action);
-    listeners.forEach(listener => listener());
+    listeners.forEach((listener) => listener());
   };
   const subscribe = (listener) => {
     listeners.push(listener);
-    return () => { // removing the listener from the array to unsubscribe listener
-      listeners = listeners.filter(l => l !== listener);
+    return () => {
+      // removing the listener from the array to unsubscribe listener
+      listeners = listeners.filter((l) => l !== listener);
     };
   };
 
   dispatch({});
 
   return { getState, dispatch, subscribe };
-}
+};
 ```
 
 "Because the subscribe function can be called many times, we need to keep track of all the changed listeners. And any time it is called we want to push the new listener into the (`listeners`) array. Dispatching an action is the only way to change the internal state. in order to calculate the new state we call the reducer with the state and the action being dispatched. And after the state is updated we need to notify every change listener by calling it. 1:44 - There is an important missing piece here: we have not provided a way to unsubscribe a listener. But instead of adding a dedicated `unsubscribe` method, we will just return a function from the subscribe method that removes this listener from the `listeners` array. 2:03 - Finally by the time the store is returned we want it to have the initial state populated. so we are going to dispatch a dummy action just to get the reducer to return the initial value. 2:18 - this implementation of the Redux store is (_apart from a few minor details and edge cases_) is the `createStore` we ship with Redux."
@@ -285,7 +272,6 @@ const createStore = (reducer) => {
 > Once you have watched the video, checkout the source code for Redux.createStore on Github: https://github.com/rackt/redux/blob/master/src/createStore.js
 
 \
-
 
 **8. React Counter Example**
 
@@ -305,14 +291,12 @@ I'm adding two scripts to the `<head>` corresponding to React and [React-DOM](ht
 So now I can call `ReactDOM.render` with my root component. The render function is called any time the store state changes, so I can safely pass the sate of the store as a `prop` to my root component.
 
 ```js
-const Counter = ({ value }) => (
-  <h1>{value}</h1>
-);
+const Counter = ({ value }) => <h1>{value}</h1>;
 
 const render = () => {
   ReactDOM.render(
-    <Counter value={store.getState()}/>,
-    document.getElementById('root')
+    <Counter value={store.getState()} />,
+    document.getElementById("root")
   );
 };
 ```
@@ -383,20 +367,18 @@ const addCounter = (list) => {
 
 const testAddCounter = () => {
   const listBefore = [];
-  const listAfter  = [0];
+  const listAfter = [0];
 
   deepFreeze(listBefore);
 
-  expect(
-    addCounter(listBefore)
-  ).toEqual(listAfter);
-}
+  expect(addCounter(listBefore)).toEqual(listAfter);
+};
 
 testAddCounter();
-console.log('All tests passed.');
+console.log("All tests passed.");
 ```
 
-At first I use the [`Array.push()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Array/push) method to add an item at the end of the `Array`, and it works.
+At first I use the [`Array.push()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/push) method to add an item at the end of the `Array`, and it works.
 
 > Snapshot of code for [Video 9 @ 0:36](https://github.com/nelsonic/learn-redux/blob/65fd87d59a91ca1b12fb8b3a3d1e5516ee520174/index.html#L17-L20)
 
@@ -410,7 +392,7 @@ const addCounter = (list) => {
 
 Now the tests pass without _mutations_.
 
-And I can also use the new **ES6** [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator) to write the code in a more concise way:
+And I can also use the new **ES6** [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) to write the code in a more concise way:
 
 ```js
 const addCounter = (list) => {
@@ -418,7 +400,7 @@ const addCounter = (list) => {
 };
 ```
 
-> **Note**: _Again_, (at the time of writing) You will need to be running [**Chrome**](https://www.google.co.uk/chrome/browser/canary.html) or [**Firefox**](https://www.mozilla.org/en-GB/firefox/developer/) for this example to work because the [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator) is still [_**not**_ _(yet)_ _**supported**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator#Browser\_compatibility) in _all_ browsers ... even though it is a _Standard_ ...
+> **Note**: _Again_, (at the time of writing) You will need to be running [**Chrome**](https://www.google.co.uk/chrome/browser/canary.html) or [**Firefox**](https://www.mozilla.org/en-GB/firefox/developer/) for this example to work because the [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) is still [_**not**_ _(yet)_ _**supported**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator#Browser_compatibility) in _all_ browsers ... even though it is a _Standard_ ...
 
 The next function is `removeCounter` and it accepts two arguments: `list` (_an `Array` of `Numbers`_) and `index` the `Number` to _skip_ from the `Array`.
 
@@ -427,10 +409,8 @@ So if I've got three numbers and I'm passing 1 as the second argument, I expect 
 ```js
 const testRemoveCounter = () => {
   const listBefore = [0, 10, 20];
-  const listAfter  = [0, 20];
-  expect(
-    removeCounter(listBefore, 1)
-  ).toEqual(listAfter);
+  const listAfter = [0, 20];
+  expect(removeCounter(listBefore, 1)).toEqual(listAfter);
 };
 ```
 
@@ -438,20 +418,15 @@ _Usually_ to `delete` an item from an `Array` I would use the `splice` method. H
 
 ```js
 const removeCounter = (list, index) => {
-  return list
-    .slice(0, index)
-    .concat(list.slice(index+1));
+  return list.slice(0, index).concat(list.slice(index + 1));
 };
 ```
 
-Finally, instead of writing it as a method chain with `concat` calls, I can use the **ES6** [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator) to write it more concisely:
+Finally, instead of writing it as a method chain with `concat` calls, I can use the **ES6** [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) to write it more concisely:
 
 ```js
 const removeCounter = (list, index) => {
-  return [
-    ...list.slice(0, index),
-    ...list.slice(index + 1)
-  ];
+  return [...list.slice(0, index), ...list.slice(index + 1)];
 };
 ```
 
@@ -460,20 +435,15 @@ const removeCounter = (list, index) => {
 Now that we have implemented adding and removing counters, lets implement _incrementing_ the counter:
 
 ```js
-incrementCounter = (list, index) => {
-
-};
+incrementCounter = (list, index) => {};
 
 // write a test/assertion before implementing the function:
 testIncrementCounter = () => {
   const listBefore = [0, 10, 20];
-  const listAfter  = [0, 11, 20];
+  const listAfter = [0, 11, 20];
 
-  expect(
-    incrementCounter(listBefore, 1)
-  ).toEqual(listAfter);
-
-}
+  expect(incrementCounter(listBefore, 1)).toEqual(listAfter);
+};
 ```
 
 The `incrementCounter` function takes two arguments: `list` - the `Array` (_of all our counters_) and `index` - the counter that should be incremented. So the returned value (`Array`) has the same count of items but one of them is incremented.
@@ -484,24 +454,20 @@ So _how_ do we _replace_ a single value in the array _**without mutating**_ it? 
 
 ```js
 incrementCounter = (list, index) => {
- return list
-   .slice(0, index)
-   .concat(list[index] + 1)
-   .concat(list.slice(index + 1));
+  return list
+    .slice(0, index)
+    .concat(list[index] + 1)
+    .concat(list.slice(index + 1));
 };
 ```
 
 We want to take a slice _before_ the `index` and `concat` it with a single item `Array` with a _new_ value and then `concat` it with the _rest_ of the original `Array`.
 
-Finally with the **ES6** [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator) we can spread over the left part of the `Array` _specify_ the _new_ item, and then _spread_ over the right part of the _original_ `Array` and this _looks_ much nicer ...
+Finally with the **ES6** [_**spread operator**_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) we can spread over the left part of the `Array` _specify_ the _new_ item, and then _spread_ over the right part of the _original_ `Array` and this _looks_ much nicer ...
 
 ```js
 incrementCounter = (list, index) => {
-  return [
-    ...list.slice(0, index),
-    list[index] + 1,
-    ...list.slice(index + 1)
-  ];
+  return [...list.slice(0, index), list[index] + 1, ...list.slice(index + 1)];
 };
 ```
 
@@ -511,7 +477,6 @@ In this lesson you learned how to use the `concat` method _or_ the _spread opera
 
 \
 
-
 **10. Avoiding Object Mutations with Object.assign() and ...spread**
 
 > Video: https://egghead.io/lessons/javascript-redux-avoiding-object-mutations-with-object-assign-and-spread
@@ -519,25 +484,21 @@ In this lesson you learned how to use the `concat` method _or_ the _spread opera
 Like in the previous example I use `expect` and `deepFreeze` libraries from NPM to make test assertions. And this time I'm testing a function called `toggleTodo` that takes a todo `Object` and _flips_ its "_completed_" field. So if `completed` was `false` it should be `true` in the returned value or if it was `true` it should be `false`
 
 ```js
-const toggleTodo = (todo) => {
-
-};
+const toggleTodo = (todo) => {};
 
 const testToggleTodo = () => {
   const todoBefore = {
     id: 0,
-    text: 'Learn Redux',
-    completed: false
-  }
-  const todoAfter  = {
+    text: "Learn Redux",
+    completed: false,
+  };
+  const todoAfter = {
     id: 0,
-    text: 'Learn Redux',
-    completed: true
-  }
-  expect(
-    toggleTodo(todoBefore)
-  ).toEqual(todoAfter);
-}
+    text: "Learn Redux",
+    completed: true,
+  };
+  expect(toggleTodo(todoBefore)).toEqual(todoAfter);
+};
 
 testToggleTodo(); // run the test
 ```
@@ -548,7 +509,7 @@ Just like in the last lesson, I'm going to start by writing a _mutating_ version
 const toggleTodo = (todo) => {
   todo.completed = !todo.completed;
   return todo;
-}
+};
 ```
 
 And while it works, we know that _mutations_ are _**not allowed**_ in Redux. So to _enforce_ this, I'm calling `deepFreeze` on my `todo` Object (_in the case of the test `todoBefore`_) and I'm _not allowed_ to change its `completed` field anymore.
@@ -560,39 +521,39 @@ const toggleTodo = (todo) => {
   return {
     id: todo.id,
     text: todo.text,
-    completed: !todo.completed
-  }
-}
+    completed: !todo.completed,
+  };
+};
 ```
 
 However if we later add new properties to the `todo` object, we might _forget_ to update this piece of code to include them.
 
-This is why I suggest that you use the **ES6** [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Object/assign) method which is _new_ to **ES6** and it lets you `assign` properties of _several_ objects onto the target object. Note how the `Object.assign` order corresponds to that of the JavaScript assignment operator. The left (_first_) argument is the one who's properties are going to be assigned, so its going to be _mutated_. This is why we are passing an _empty_ `Object` as the _first_ argument so we don't _mutate_ any _existing_ data. Every further argument to `Object.assign` will be considered a "_source_" `Object` who's properties will be copied to the target object.
+This is why I suggest that you use the **ES6** [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) method which is _new_ to **ES6** and it lets you `assign` properties of _several_ objects onto the target object. Note how the `Object.assign` order corresponds to that of the JavaScript assignment operator. The left (_first_) argument is the one who's properties are going to be assigned, so its going to be _mutated_. This is why we are passing an _empty_ `Object` as the _first_ argument so we don't _mutate_ any _existing_ data. Every further argument to `Object.assign` will be considered a "_source_" `Object` who's properties will be copied to the target object.
 
 It is _**important**_ that if several _sources_ specify different values for the _same_ property, the _**last**_ one "_wins_". and this is what we use to _overwrite_ the `completed` field despite what the original object says.
 
 ```js
 const toggleTodo = (todo) => {
   return Object.assign({}, todo, {
-    completed: !todo.completed
+    completed: !todo.completed,
   });
 };
 ```
 
-_Finally_ you need to _remember_ that [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global\_Objects/Object/assign) is a _new_ method in **ES6** so it is _not natively available_ in all the Browsers (_specifically not supported in Internet Explorer_).
+_Finally_ you need to _remember_ that [`Object.assign`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) is a _new_ method in **ES6** so it is _not natively available_ in all the Browsers (_specifically not supported in Internet Explorer_).
 
 ![object assign-browser-compatibility](https://cloud.githubusercontent.com/assets/194400/12080810/6fbc745c-b25f-11e5-9e58-ed860ea2872a.png)
 
 You should use a "_polyfill_" either the one that ships with _**Babel**_ or a _standalone_ polyfill to use it (`Object.assign`) without risking crashing your website.
 
-Another option that does not require a polyfill is use the new [`Object` _**spread**_ operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator) which is _**not part of ES6**_ however it is _proposed_ for **ES7** it is "_fairly popular_" and it is _enabled_ in Babel if you use the "_stage 2 preset_":
+Another option that does not require a polyfill is use the new [`Object` _**spread**_ operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator) which is _**not part of ES6**_ however it is _proposed_ for **ES7** it is "_fairly popular_" and it is _enabled_ in Babel if you use the "_stage 2 preset_":
 
 ```js
 const toggleTodo = (todo) => {
   return {
     ...todo,
-    completed: !todo.completed
-  }
+    completed: !todo.completed,
+  };
 };
 ```
 
@@ -601,7 +562,6 @@ const toggleTodo = (todo) => {
 > **Note**: we have _not_ used the `Object` spread operator in our code because it does not run in _any_ browser!!
 
 \
-
 
 **11. Writing a Todo List Reducer (Adding a Todo)**
 
@@ -650,8 +610,8 @@ console.log('All tests passed.');
 
 I'm declaring two variables:
 
-* `stateBefore` - the state before, which is an _empty_ `Array`
-* `action` - the action being dispatched - which is an action describing a user adding a new todo with some `id` and a `text` (_fields_).
+- `stateBefore` - the state before, which is an _empty_ `Array`
+- `action` - the action being dispatched - which is an action describing a user adding a new todo with some `id` and a `text` (_fields_).
 
 I am also declaring the _state_ I `expect` _after_ calling the reducer. and like `stateBefore` it is an `Array`, but this time it has a _single element_ representing the Todo that was just added; so it has the same `id` and `text` as the action `Object`. and it _also_ has an _additional_ field called `completed` that I want to be _initialized_ to be `false`
 
@@ -670,14 +630,14 @@ Finally I add a `default` case to my `switch` statement because _every_ reducer 
 ```js
 const todos = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case "ADD_TODO":
       return [
         ...state,
         {
           id: action.id,
           text: action.text,
-          completed: false
-        }
+          completed: false,
+        },
       ];
     default:
       return state;
@@ -692,7 +652,6 @@ Lets **recap** the _data flow_ in this example to see why first I create the sta
 > Code snapshot for the end of Video 11: [`index.html`](https://github.com/nelsonic/learn-redux/blob/278a17be1fafe2e0f354aa431e0ad4fc776bbc41/index.html#L15-L56)
 
 \
-
 
 **12. Writing a Todo List Reducer (Toggling a Todo)**
 
@@ -713,42 +672,40 @@ const testToggleTodo = () => {
   const stateBefore = [
     {
       id: 0,
-      text: 'Learn Redux',
-      completed: false
-  },
-  {
-    id: 1,
-    text: 'Go shopping',
-    completed: false
-  }
+      text: "Learn Redux",
+      completed: false,
+    },
+    {
+      id: 1,
+      text: "Go shopping",
+      completed: false,
+    },
   ];
   const action = {
-    type: 'TOGGLE_TODO',
-    id: 1
+    type: "TOGGLE_TODO",
+    id: 1,
   };
   const stateAfter = [
     {
       id: 0,
-      text: 'Learn Redux',
-      completed: false
-  },
-  {
-    id: 1,
-    text: 'Go shopping',
-    completed: true
-  }
+      text: "Learn Redux",
+      completed: false,
+    },
+    {
+      id: 1,
+      text: "Go shopping",
+      completed: true,
+    },
   ];
 
   deepFreeze(stateBefore);
   deepFreeze(action);
 
-  expect(
-    todos(stateBefore, action)
-  ).toEqual(stateAfter);
-}
+  expect(todos(stateBefore, action)).toEqual(stateAfter);
+};
 
 testToggleTodo();
-console.log('All tests passed.')
+console.log("All tests passed.");
 ```
 
 the reducer _must_ be a "_pure function_" so at a matter of _precaution_ I call `deepFreeze` on the `state` and the `action`
@@ -757,28 +714,28 @@ _Finally_, just like in the previous lesson, I'm asserting that the result of ca
 
 Now, my test is a function so I need to call it at the end of the file And if I run it, it fails because I have not _implemented_ handling this action yet.
 
-I'm adding a new `switch case` to my reducer and I remember that I should not change the original `Array` so I'm using the [`Array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map) method to produce a _new_ `Array` the function I pass as an argument will be called for _every_ todo so if its _not_ the todo I'm looking for, I don't want to change it, so I just `return` it as is. _However_ if the todo _is_ the one we want to toggle I'm going to `return` a _new_ `Object` that _all_ the properties of the _original_ todo `Object` thanks to the `Object` spread operator but _also_ an _inverted_ value of the `completed` field:
+I'm adding a new `switch case` to my reducer and I remember that I should not change the original `Array` so I'm using the [`Array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) method to produce a _new_ `Array` the function I pass as an argument will be called for _every_ todo so if its _not_ the todo I'm looking for, I don't want to change it, so I just `return` it as is. _However_ if the todo _is_ the one we want to toggle I'm going to `return` a _new_ `Object` that _all_ the properties of the _original_ todo `Object` thanks to the `Object` spread operator but _also_ an _inverted_ value of the `completed` field:
 
 ```js
 const todos = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case "ADD_TODO":
       return [
         ...state,
         {
           id: action.id,
           text: action.text,
-          completed: false
-        }
+          completed: false,
+        },
       ];
-    case 'TOGGLE_TODO':
-      return state.map(todo => {
-        if(todo.id !== action.id){
+    case "TOGGLE_TODO":
+      return state.map((todo) => {
+        if (todo.id !== action.id) {
           return todo;
         }
         return {
           ...todo,
-          completed: !todo.completed
+          completed: !todo.completed,
         };
       });
     default:
@@ -791,7 +748,7 @@ Now both of our tests run successfully... And we have an implementation of the r
 
 > Code at the end of Video 12: [`index.html`](https://github.com/nelsonic/learn-redux/blob/92b9a312678ba26ca90050f17d796b26f992de63/index.html#L31-L33) (_using `Object` spread_)
 
-> _**Note**_: While the [_spread operator_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread\_operator#Browser\_compatibility) is an **ES6** _Standard_ for `Array`, its only a _**Draft**_ for `Object` proposed for **ES7** which means it is **not** yet **available** in _**any**_ **Browser**! As such I have modified Dan's code to use `Object.assign` (\*see Video #10) which (_at least_) works in Chrome...:
+> _**Note**_: While the [_spread operator_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator#Browser_compatibility) is an **ES6** _Standard_ for `Array`, its only a _**Draft**_ for `Object` proposed for **ES7** which means it is **not** yet **available** in _**any**_ **Browser**! As such I have modified Dan's code to use `Object.assign` (\*see Video #10) which (_at least_) works in Chrome...:
 
 ```js
 
@@ -830,7 +787,6 @@ We can _probably_ _**all**_ agree that the code is more _elegant_ with the ES7 O
 
 \
 
-
 **13. Reducer Composition with Arrays**
 
 > Video: https://egghead.io/lessons/javascript-redux-reducer-composition-with-arrays
@@ -842,33 +798,31 @@ In this case I decided that creating and updating a todo in response to an `acti
 ```js
 const todo = (state, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case "ADD_TODO":
       return {
         id: action.id,
         text: action.text,
-        completed: false
-      }
-    case 'TOGGLE_TODO':
+        completed: false,
+      };
+    case "TOGGLE_TODO":
       if (state.id !== action.id) {
         return state;
       }
-      return Object.assign({}, state, { // see: https://git.io/vuBzV
-        completed: !state.completed     // here state is the individual todo
+      return Object.assign({}, state, {
+        // see: https://git.io/vuBzV
+        completed: !state.completed, // here state is the individual todo
       });
     default:
       return state;
   }
-}
+};
 
 const todos = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
-      return [
-        ...state,
-        todo(undefined, action)
-      ];
-    case 'TOGGLE_TODO':
-      return state.map(t => todo(t, action));
+    case "ADD_TODO":
+      return [...state, todo(undefined, action)];
+    case "TOGGLE_TODO":
+      return state.map((t) => todo(t, action));
     default:
       return state;
   }
@@ -891,7 +845,6 @@ Different reducers specify how different parts of the `state` tree are updated i
 
 \
 
-
 **14. Reducer Composition with Objects**
 
 Tip: This tutorial builds upon the code written in Video/Lesson 13. If you skipped it, or left a break between watching the videos, go back and re-acquaint yourself before proceeding.
@@ -903,45 +856,44 @@ In the _previous_ lesson we established the _pattern_ of "\*Reducer Composition"
 > The new code not in the previous tutorial is:
 
 ```js
-
-const { createStore } =  Redux;
+const { createStore } = Redux;
 const store = createStore(todos);
 
-console.log('Initial state:');
+console.log("Initial state:");
 console.log(store.getState());
-console.log('--------------');
+console.log("--------------");
 
-console.log('Dispatching ADD_TODO.'); // first todo
+console.log("Dispatching ADD_TODO."); // first todo
 store.dispatch({
-  type: 'ADD_TODO',
+  type: "ADD_TODO",
   id: 0,
-  text: 'Learn Redux'
+  text: "Learn Redux",
 });
 
-console.log('Current state:');
+console.log("Current state:");
 console.log(store.getState());
-console.log('--------------');
+console.log("--------------");
 
-console.log('Dispatching ADD_TODO.'); // second todo
+console.log("Dispatching ADD_TODO."); // second todo
 store.dispatch({
-  type: 'ADD_TODO',
+  type: "ADD_TODO",
   id: 1,
-  text: 'Go shopping'
+  text: "Go shopping",
 });
 
-console.log('Current state:');
+console.log("Current state:");
 console.log(store.getState());
-console.log('--------------');
+console.log("--------------");
 
-console.log('Dispatching TOGGLE_TODO.'); // toggle first todo
+console.log("Dispatching TOGGLE_TODO."); // toggle first todo
 store.dispatch({
-  type: 'TOGGLE_TODO',
-  id: 0
+  type: "TOGGLE_TODO",
+  id: 0,
 });
 
-console.log('Current state:');
+console.log("Current state:");
 console.log(store.getState());
-console.log('--------------');
+console.log("--------------");
 ```
 
 > or you can run: [`index.html`](https://github.com/nelsonic/learn-redux/blob/33a46dbc0eb733f6494fdb8de89d91dde58c1731/index.html#L50-L87) (Code Snapshot for Video 14 @ 0:40) which has the following developer console _output_:
@@ -952,11 +904,11 @@ Representing the _whole_ `state` of the application as an `Array` of todos works
 
 ```js
 const visibilityFilter = (
-  state = 'SHOW_ALL', // default state
+  state = "SHOW_ALL", // default state
   action
 ) => {
   switch (action.type) {
-    case 'SET_VISIBILITY_FILTER':
+    case "SET_VISIBILITY_FILTER":
       return action.filter;
     default:
       return state;
@@ -969,14 +921,8 @@ The `state` of the `visibilityFilter` is a _simple_ `String` representing the _c
 ```js
 const todoApp = (state = {}, action) => {
   return {
-    todos: todos(
-      state.todos,
-      action
-    ),
-    visibilityFilter: visibilityFilter(
-      state.visibilityFilter,
-      action
-    )
+    todos: todos(state.todos, action),
+    visibilityFilter: visibilityFilter(state.visibilityFilter, action),
   };
 };
 ```
@@ -990,20 +936,20 @@ When an `action` comes in, it calls the reducers with the parts of the `state` t
 The _initial_ `state` of the _combined_ reducer now contains the _initial_ `state` of the _independent_ reducers and any time an `action` comes in those reducers handle the action _independently_ this pattern helps _scale_ Redux development because different people on the team can work on different reducers handling the _same_ actions without running into each other and causing merge conflicts.
 
 ```js
-console.log('Dispatching SET_VISIBILITY_FILTER');
+console.log("Dispatching SET_VISIBILITY_FILTER");
 store.dispatch({
-  type: 'SET_VISIBILITY_FILTER',
-  filter: 'SHOW_COMPLETED'
+  type: "SET_VISIBILITY_FILTER",
+  filter: "SHOW_COMPLETED",
 });
 
-console.log('Current state:');
+console.log("Current state:");
 console.log(store.getState());
-console.log('--------------');
+console.log("--------------");
 ```
 
 > Note: This `action` is merely setting the `visibilityFilter` _property_ of the `store` `Object`
 
-![console-log-output-for-set\_visibility\_filter](https://cloud.githubusercontent.com/assets/194400/12123718/753f2a92-b3da-11e5-982a-17be0a075f1b.png)
+![console-log-output-for-set_visibility_filter](https://cloud.githubusercontent.com/assets/194400/12123718/753f2a92-b3da-11e5-982a-17be0a075f1b.png)
 
 > _**NOTE**_: this code does not actually do anything to the \***UI** _yet_. (_be patient that's next..._)
 
@@ -1012,7 +958,6 @@ _Finally_ I'm dispatching the `SET_VISIBILITY_FILTER` `action` and you can see t
 > Code Snapshot for _End_ of Video 14: [`index.html`](https://github.com/nelsonic/learn-redux/blob/9702c1c858b4a22fff85339c55cf914ae3969666/index.html#L115-L123)
 
 \
-
 
 **15. Reducer Composition with `combineReducers`()**
 
@@ -1026,7 +971,7 @@ The _only_ argument to `combineReducers` is an `Object` and this `Object` lets m
 const { combineReducers } = Redux;
 const todoApp = combineReducers({
   todos: todos,
-  visibilityFilter: visibilityFilter
+  visibilityFilter: visibilityFilter,
 });
 ```
 
@@ -1057,7 +1002,7 @@ _Finally_ I will establish a _useful_ convention: I will _always_ name my reduce
 const { combineReducers } = Redux;
 const todoApp = combineReducers({
   todos,
-  visibilityFilter
+  visibilityFilter,
 });
 ```
 
@@ -1067,8 +1012,8 @@ In this lesson you learned how to _generate_ a single reducer that calls many re
 
 **Read more about ES6 Object Literal **_**Shorthand**_** Notation**
 
-* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object\_initializer#New\_notations\_in\_ECMAScript\_2015
-* Good examples: https://eslint.org/docs/rules/object-shorthand.html (_by Nicholas C. Zakas_)
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object\_initializer#New\_notations\_in\_ECMAScript\_2015
+- Good examples: https://eslint.org/docs/rules/object-shorthand.html (_by Nicholas C. Zakas_)
 
 > _**NOTE**_: as _usual_, while **ES6** Object Literal _Shorthand_ Notation is a _Standard_ it is _still_ not implemented in the _majority_ of web browsers:
 
@@ -1077,7 +1022,6 @@ In this lesson you learned how to _generate_ a single reducer that calls many re
 > _I have a_ _**strong bias**_ _towards_ _**explicitly**_ _typing the_ _**Values**_ _in an `Object` literal for clarity_. _But given the_ _**naming convention**_ _in Redux_, _its pretty safe to omit them in this case_.
 
 \
-
 
 **16. Implementing combineReducers() from Scratch**
 
@@ -1095,10 +1039,7 @@ const combineReducers = (reducers) => {
   return (state = {}, action) => {
     return Object.keys(reducers).reduce(
       (nextState, key) => {
-        nextState[key] = reducers[key](
-          state[key],
-          action
-        );
+        nextState[key] = reducers[key](state[key], action);
         return nextState;
       },
       {} // empty initial nextState
@@ -1107,7 +1048,7 @@ const combineReducers = (reducers) => {
 };
 ```
 
-The returned value is supposed to be a reducer itself so this is a function that returns another function and the signature of the returned function is a reducer signature it has the `state` and the `action` now I'm calling the [`Object.keys` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Object/keys) (_IE9+_) which gives me all the `keys` of the `reducers` `Object` in our example this is `todos` and `visibilityFilter` next I am calling the (Array) `reduce` method on the `keys` because I want to produce a _single_ value such as the `nextState` by _accumulating_ over every reducer `key` and calling the _corresponding_ reducer each reducer passed to the combined reducers function is only responsible for updating a _part_ of the `state` this is why I'm saying that the `nextState` by the given `key` can be calculated by calling the _corresponding_ reducer by the _given_ `key` with the _current_ `state` by the _given_ `key` and the `action` the `Array.reduce` wants me to `return` the _next_ accumulated value from the callback so I am returning the `nextState` and I'm also specifying an _empty_ `Object` as the _initial_ `nextState` _before_ all the `keys` are processed. And there we have it this is a _working_ re-implementation of `combineReducers` utility from Redux
+The returned value is supposed to be a reducer itself so this is a function that returns another function and the signature of the returned function is a reducer signature it has the `state` and the `action` now I'm calling the [`Object.keys` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) (_IE9+_) which gives me all the `keys` of the `reducers` `Object` in our example this is `todos` and `visibilityFilter` next I am calling the (Array) `reduce` method on the `keys` because I want to produce a _single_ value such as the `nextState` by _accumulating_ over every reducer `key` and calling the _corresponding_ reducer each reducer passed to the combined reducers function is only responsible for updating a _part_ of the `state` this is why I'm saying that the `nextState` by the given `key` can be calculated by calling the _corresponding_ reducer by the _given_ `key` with the _current_ `state` by the _given_ `key` and the `action` the `Array.reduce` wants me to `return` the _next_ accumulated value from the callback so I am returning the `nextState` and I'm also specifying an _empty_ `Object` as the _initial_ `nextState` _before_ all the `keys` are processed. And there we have it this is a _working_ re-implementation of `combineReducers` utility from Redux
 
 Lets briefly _recap_ how it works. I'm calling `combineReducers` with an `Object` who's values are the reducer functions and keys are the `state` fields they manage inside the _generated_ reducer I'm retrieving all the keys of the reducers I passed to `combineReducers` which is an `Array` of `Strings` (_specifically_) `todos` and `visibilityFilter` (_in our example_). I'm starting with an _empty_ `Object` for my `nextState` and I'm using the `Reduce` operation over these `keys` to fill it _gradually_. Notice that I am _mutating_ the `nextState` `Object` on every iteration this is not a problem because it is an `Object` I created _inside_ the reducer it is not something passed from _outside_ so reducer stays a "_pure_" function. To calculate the `nextState` for a given `key` it calls the corresponding reducer function such as `todos` or `visibilityFilter` the _generated_ reducer will pass to the _child_ reducer only a _part_ of its `state` by the `key` so if its `state` is a _single_ `Object` its only going to pass the _relevant_ part such as `todos` or `visibilityFilter` depending on the _current_ `key` and save the result in the `nextState` by the same `key`
 
@@ -1116,7 +1057,6 @@ _Finally_ we use the `Array.reduce` operation (_method_) with the _empty_ `Objec
 In this lesson you learned how to implement the `combineReducers` utility that comes with Redux from _scratch_ it is not _essential_ to use in Redux so it is _fine_ if you don't fully understand how it works _yet_ however it is a _good_ \[_great_!] idea to _practice_ functional programming and _understand_ that functions can take other functions and `return` other functions because knowing this will help you get more productive in Redux in the long term.
 
 \
-
 
 **17. React Todo List Example (Adding a Todo)**
 
@@ -1136,7 +1076,7 @@ I'm adding **React** and [React-DOM](https://facebook.github.io/react/docs/gloss
 Similar to the React _Counter_ example from the 8th Lesson I declare a `render` function that is going to update the DOM in response to the _current_ application `state` and I'm going to `subscribe` to the `store` changes and call `render` when ever the `store` changes and _once_ to `render` the _initial_ state:
 
 ```js
-const { createStore } =  Redux;
+const { createStore } = Redux;
 const store = createStore(todoApp);
 
 const render = () => {
@@ -1155,14 +1095,11 @@ React provides a "_base_" `Class` for all components so I'm grabbing it from the
 const { Component } = React;
 
 class TodoAPP extends Component {
-// filled out below ...
+  // filled out below ...
 }
 
 const render = () => {
-  ReactDOM.render(
-    <TodoApp />,
-    document.getElementById('root')
-  );
+  ReactDOM.render(<TodoApp />, document.getElementById("root"));
 };
 ```
 
@@ -1179,21 +1116,21 @@ class TodoApp extends Component {
   render() {
     return (
       <div>
-        <button onClick={() => {
-          store.dispatch({
-            type: 'ADD_TODO',
-            text: 'Test',
-            id: nextTodoId++
-          });
-        }}>
+        <button
+          onClick={() => {
+            store.dispatch({
+              type: "ADD_TODO",
+              text: "Test",
+              id: nextTodoId++,
+            });
+          }}
+        >
           Add Todo
         </button>
         <ul>
-          {this.props.todos.map(todo =>
-            <li key={todo.id}>
-              {todo.text}
-            </li>
-          )}
+          {this.props.todos.map((todo) => (
+            <li key={todo.id}>{todo.text}</li>
+          ))}
         </ul>
       </div>
     );
@@ -1203,7 +1140,7 @@ class TodoApp extends Component {
 const render = () => {
   ReactDOM.render(
     <TodoApp todos={store.getState().todos} />,
-    document.getElementById('root')
+    document.getElementById("root")
   );
 };
 ```
@@ -1236,7 +1173,6 @@ Which should look like this: (_when you open it in Chrome Canary_)
 
 \
 
-
 **18. React Todo List Example (Toggling a Todo)**
 
 > https://egghead.io/lessons/javascript-redux-react-todo-list-example-toggling-a-todo
@@ -1249,24 +1185,22 @@ The event handler _knows_ which todo it corresponds to so it is able to pass its
 
 ```js
 <ul>
-  {this.props.todos.map(todo =>
-    <li key={todo.id}
-     onClick={() => {
-      store.dispatch({
-        type: 'TOGGLE_TODO',
-        id: todo.id
-      });
-     }}
-     style={{
-      textDecoration:
-        todo.completed ?
-          'line-through' :
-          'none'
-     }}
-     >
+  {this.props.todos.map((todo) => (
+    <li
+      key={todo.id}
+      onClick={() => {
+        store.dispatch({
+          type: "TOGGLE_TODO",
+          id: todo.id,
+        });
+      }}
+      style={{
+        textDecoration: todo.completed ? "line-through" : "none",
+      }}
+    >
       {todo.text}
     </li>
-  )}
+  ))}
 </ul>
 ```
 
@@ -1288,7 +1222,6 @@ _Finally_ the (CSS) `style` of the `<li>` depends on the `todo.completed` field 
 
 \
 
-
 **19. React Todo List Example (Filtering Todos)**
 
 > Video: https://egghead.io/lessons/javascript-redux-react-todo-list-example-filtering-todos
@@ -1303,25 +1236,9 @@ Just below the todo list I'm adding a paragraph where I'm going to offer the use
 
 ```js
 <p>
-  Show:
-  {' '}
-  <FilterLink
-    filter='SHOW_ALL'
-  >
-  All
-  </FilterLink>
-  {' '}
-  <FilterLink
-    filter='SHOW_ACTIVE'
-  >
-  Active
-  </FilterLink>
-  {' '}
-  <FilterLink
-    filter='SHOW_COMPLETED'
-  >
-  Completed
-  </FilterLink>
+  Show: <FilterLink filter="SHOW_ALL">All</FilterLink>{" "}
+  <FilterLink filter="SHOW_ACTIVE">Active</FilterLink>{" "}
+  <FilterLink filter="SHOW_COMPLETED">Completed</FilterLink>
 </p>
 ```
 
@@ -1330,23 +1247,16 @@ So I'm _copy-pasting_ the `FilterLink` and I'm changing the labels and the filte
 I'm creating a _new_ function that is going to help me filter the todos according to the the filter value, its called `getVisibleTodos` it accepts two arguments: the `todos` and the `filter` and it _switches_ on the _current_ `filter` value so if the `filter` is `SHOW_ALL` its going to `return` all of the todos but if the `filter` is `SHOW_COMPLETED` its going to call `todos.filter()` (_that is the `Array.filter` method_) to only return those todos that have `completed` set to `true` and `SHOW_ACTIVE` is going to be the _opposite_ of that its going to `return` _only_ those todos that where `completed` field is `false`.
 
 ```js
-const getVisibleTodos = (
-  todos,
-  filter
-) => {
+const getVisibleTodos = (todos, filter) => {
   switch (filter) {
-    case 'SHOW_ALL':
+    case "SHOW_ALL":
       return todos;
-    case 'SHOW_COMPLETED':
-      return todos.filter(
-        t => t.completed
-      );
-    case 'SHOW_ACTIVE':
-      return todos.filter(
-        t => !t.completed
-      );
+    case "SHOW_COMPLETED":
+      return todos.filter((t) => t.completed);
+    case "SHOW_ACTIVE":
+      return todos.filter((t) => !t.completed);
   }
-}
+};
 ```
 
 Now I need to _call_ this function to `filter` the todos _before_ rendering them so in the `render` function of the `TodoApp` Component I get the `visibleTodos` by calling the `getVisibleTodos` with the `todos` and the `visibilityFilter` _values_ from my props and I'm going to _use_ the `visibleTodos` _instead_ of `this.props.todos` when I enumerate them for rendering.
@@ -1357,19 +1267,17 @@ _Finally_ I now use the `visibilityFilter` inside my `TodoApp` Component so I ne
 
 The links look all the same right now but we want to highlight the _chosen_ one. To _implement_ this, we're going to need the `visibilityFilter` prop which says which is the _current_ one. I'm changing the _beginning_ of the `render` method to "_destructure_" the `todos` and `visibilityFilter` from the props so I can access them _directly_ without typing `this.props` every time.
 
-> _**NOTE**_: [**ES6** _**Destructuring assignment**_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring\_assignment) is _**not supported**_ in Chrome yet, so I'm not using this in the code example. so Instead of:
+> _**NOTE**_: [**ES6** _**Destructuring assignment**_](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) is _**not supported**_ in Chrome yet, so I'm not using this in the code example. so Instead of:
 
 ```js
-const {
-  todos,
-  visibilityFilter
-} = this.props; // destructuring assignment
+const { todos, visibilityFilter } = this.props; // destructuring assignment
 ```
 
 I'm using:
 
 ```js
-const todos = this.props.tods, visibilityFilter = this.props.visibilityFilter
+const todos = this.props.tods,
+  visibilityFilter = this.props.visibilityFilter;
 ```
 
 and I'm going to pass the `visibilityFilter` to every `FilterLink` so it can _know_ which `filter` is the _current_ one and _apply_ different styling if the `currentFilter` matches the `FilterLink`'s _own_ filter.
@@ -1384,7 +1292,6 @@ The `return` value is the `Array` of `visibleTodos` and it is used in the `rende
 
 \
 
-
 **20. Extracting Presentational Components (Todo, TodoList)**
 
 > Video: https://egghead.io/lessons/javascript-redux-extracting-presentational-components-todo-todolist
@@ -1396,22 +1303,15 @@ The first Component I want to _extract_ from the `TodoApp` Component is the `Tod
 The first thing I am doing is _removing_ the special `key` property because it's only needed when I am enumerating an `Array` and I will use it _later_ when enumerating _many_ todos. One of my goals with this refactoring is to make every Component as flexible as it is _reasonable_. Right now I have _hard-coded_ that _clicking_ a todo always causes the `TOGGLE_TODO` `action` and this is perfectly fine to do in your app however I prefer to have a bunch of Components that don't specify any _behaviors_ and that are _only_ concerned with how things _look_ or how they `render` and I call such Components the "_presentational_" Components I would like to keep `Todo` a "_Presentational_" Component so I _remove_ the `onClick` handler and I promote it to be a prop so that anyone who uses the `Todo` Component can specify what happens on the _click_ and you don't _have_ to do this in your Redux apps but I find it to be a very _convenient_ pattern. _Finally_ while it does not make a lot of difference, I prefer to keep it explicit what is the `data` that the Component needs to `render` so instead of passing a `todo` `Object` I pass `completed` and `text` fields as _separate_ props. note: how the `Todo` Component is now a _purely_ "_Presentational_" Component and does not specify _any_ behavior but it _knows_ how to `render` a todo.
 
 ```js
-const Todo = ({
-  onClick,
-  completed,
-  text
-}) => (
-<li
-  onClick={onClick}
-  style={{
-  textDecoration:
-    completed ?
-      'line-through' :
-      'none'
-  }}
- >
-  {text}
-</li>
+const Todo = ({ onClick, completed, text }) => (
+  <li
+    onClick={onClick}
+    style={{
+      textDecoration: completed ? "line-through" : "none",
+    }}
+  >
+    {text}
+  </li>
 );
 ```
 
@@ -1438,12 +1338,13 @@ In this case the top-level `TodoApp` Component acts as a "_Container_" Component
 ```js
 <TodoList
   todos={visibleTodos}
-  onTodoClick={id =>
+  onTodoClick={(id) =>
     store.dispatch({
-      type: 'TOGGLE_TODO',
-      id
+      type: "TOGGLE_TODO",
+      id,
     })
-  } />
+  }
+/>
 ```
 
 Let's recap again how this works: The `TodoApp` Component renders a `TodoList` and it passes a function to it that can dispatch an `action` the `TodoList` Component renders the `Todo` Component and passes `onClick` prop which calls `onTodoClick` the `Todo` Component uses the `onClick` prop it receives and binds it to the `<li>` `onClick` this way when its called the `onTodoClick` is called and this dispatches the `action` and updates the `visibleTodos` because the `action` updates the `store`.
@@ -1451,7 +1352,6 @@ Let's recap again how this works: The `TodoApp` Component renders a `TodoList` a
 > Complete Code at the _end_ of Video 20: [`index.html`](https://github.com/nelsonic/learn-redux/blob/3014d077563b3a7a195596d17bf2040d49a06ddb/index.html)
 
 \
-
 
 **21. Extracting Presentational Components (AddTodo, Footer, FilterLink)**
 
@@ -1463,22 +1363,26 @@ In the previous lesson I extracted the `Todo` and `TodoList` Components from the
 const AddTodo = () => {
   return (
     <div>
-      <input ref={node => {
-        this.input = node;
-      }} />
-      <button onClick={() => {
-        store.dispatch({
-          type: 'ADD_TODO',
-          text: this.input.value,
-          id: nextTodoId++
-        });
-        this.input.value = '';
-      }}>
+      <input
+        ref={(node) => {
+          this.input = node;
+        }}
+      />
+      <button
+        onClick={() => {
+          store.dispatch({
+            type: "ADD_TODO",
+            text: this.input.value,
+            id: nextTodoId++,
+          });
+          this.input.value = "";
+        }}
+      >
         Add Todo
       </button>
     </div>
   );
-}
+};
 ```
 
 The _Functional_ Components don't have instances however instead of using `this`, I can use a _local_ variable called `input` that I'm going to "_close over_" so that I can write to it in the callback ref and I can read from it in the event handler. Like previously I want it to be a "_Presentational_" Component and not specify behavior so I'm just calling a function called `onAddClick` passing the _current_ `input` value and I make `onAddClick` a prop so that the Component that _uses_ `AddTodo` can specify what happens when `Add` button is clicked.
@@ -1488,35 +1392,29 @@ Again, the `TodoApp` Component acts as a "_Container_" Component for the `AddTod
 The _last_ Component I want to extract is the _footer_ which contains all these three `FilterLink`. I'm creating a _new_ "_Functional_" Component called `footer` and I'm not sure which props it needs so I skip them and I _paste_ the markup. It seems that the `FilterLink` need the `visbilityFilter` so I add it as a prop. I would like the `Footer` and the `FilterLink` to be "_Presentational_" Components however the `FilterLink` currently includes a `store.dispatch` call. I'm replacing it with an `onClick` call and I pass the `filter` as the single parameter for the calling Component's convenience I add `onClick` to the props and now I need to specify it every time `FilterLink` is used so I add `onFilterClick` to the `Footer` and I pass `onClick={onFilterClick}` for every link in the `Footer` so what ever we pass to the `Footer` as `onFilterClick` prop is going to end up in the `FilterLink` as `onClick`.
 
 ```js
-const Footer = ({
-  visibilityFilter,
-  onFilterClick
-}) => (
+const Footer = ({ visibilityFilter, onFilterClick }) => (
   <p>
-    Show:
-    {' '}
+    Show:{" "}
     <FilterLink
-      filter='SHOW_ALL'
+      filter="SHOW_ALL"
       currentFilter={visibilityFilter}
       onClick={onFilterClick}
     >
-    All
-    </FilterLink>
-    {' '}
+      All
+    </FilterLink>{" "}
     <FilterLink
-      filter='SHOW_ACTIVE'
+      filter="SHOW_ACTIVE"
       currentFilter={visibilityFilter}
       onClick={onFilterClick}
     >
-    Active
-    </FilterLink>
-    {' '}
+      Active
+    </FilterLink>{" "}
     <FilterLink
-      filter='SHOW_COMPLETED'
+      filter="SHOW_COMPLETED"
       currentFilter={visibilityFilter}
       onClick={onFilterClick}
     >
-    Completed
+      Completed
     </FilterLink>
   </p>
 );
@@ -1527,15 +1425,15 @@ Now I can use the `Footer` Component I just defined inside my `TodoApp` Componen
 ```js
 // inside the TodoApp Component:
 
-  <Footer
-    visibilityFilter={visibilityFilter}
-    onFilterClick={filter =>
-      store.dispatch({
-        type: 'SET_VISIBILITY_FILTER',
-        filter
-      })
-    }
-  />
+<Footer
+  visibilityFilter={visibilityFilter}
+  onFilterClick={(filter) =>
+    store.dispatch({
+      type: "SET_VISIBILITY_FILTER",
+      filter,
+    })
+  }
+/>
 
 // see index.html for full TodoApp
 ```
@@ -1566,7 +1464,6 @@ This approach also has _downsides_ such as that you have to thread a lot of prop
 
 \
 
-
 **22. Extracting Container Components (FilterLink)**
 
 > Video: https://egghead.io/lessons/javascript-redux-extracting-container-components-filterlink
@@ -1580,25 +1477,9 @@ The _first_ Component I'm going to re-factor is the `Footer` Component and _curr
 ```js
 const Footer = () => (
   <p>
-    Show:
-    {' '}
-    <FilterLink
-      filter='SHOW_ALL'
-    >
-    All
-    </FilterLink>
-    {' '}
-    <FilterLink
-      filter='SHOW_ACTIVE'
-    >
-    Active
-    </FilterLink>
-    {' '}
-    <FilterLink
-      filter='SHOW_COMPLETED'
-    >
-    Completed
-    </FilterLink>
+    Show: <FilterLink filter="SHOW_ALL">All</FilterLink>{" "}
+    <FilterLink filter="SHOW_ACTIVE">Active</FilterLink>{" "}
+    <FilterLink filter="SHOW_COMPLETED">Completed</FilterLink>
   </p>
 );
 ```
@@ -1608,18 +1489,15 @@ I'm removing the props definition and I'm removing these props from the `FilterL
 The `FilterLink` does not _currently_ specify the behavior for clicking on the link it also needs the `currentFilter` to tell whether it should be rendered as _active_ therefore its a bit "_dishonest_" to say that `FilterLink` is a "_Presentational_" Component because it is inseparable from its _behavior_ the only _reasonable_ reaction to clicking on it is setting the `visibilityFilter` by dispatching an `action` this is why I am changing it to a _different_ "_Presentational_" Component I'm going to call `Link` and I will create another `FilterLink` Component as a Container that uses it for rendering.
 
 ```js
-const Link = ({
-  active,
-  children,
-  onClick
-}) => {
+const Link = ({ active, children, onClick }) => {
   if (active) {
     return <span>{children}</span>;
   }
 
   return (
-    <a href='#'
-      onClick={e => {
+    <a
+      href="#"
+      onClick={(e) => {
         e.preventDefault();
         onClick();
       }}
@@ -1640,14 +1518,11 @@ class FilterLink extends Component {
 
     return (
       <Link
-        active={
-          props.filter ===
-          state.visibilityFilter
-        }
+        active={props.filter === state.visibilityFilter}
         onClick={() =>
           store.dispatch({
-            type: 'SET_VISIBILITY_FILTER',
-            filter: props.filter
+            type: "SET_VISIBILITY_FILTER",
+            filter: props.filter,
           })
         }
       >
@@ -1665,9 +1540,7 @@ Currently we re-render the _whole_ application when the `state` changes however 
 ```js
 class FilterLink extends Component {
   componentDidMount() {
-    this.unsubscribe = store.subscribe(() =>
-      this.forceUpdate()
-    );
+    this.unsubscribe = store.subscribe(() => this.forceUpdate());
   }
 
   componentWillUnmount() {
@@ -1680,14 +1553,11 @@ class FilterLink extends Component {
 
     return (
       <Link
-        active={
-          props.filter ===
-          state.visibilityFilter
-        }
+        active={props.filter === state.visibilityFilter}
         onClick={() =>
           store.dispatch({
-            type: 'SET_VISIBILITY_FILTER',
-            filter: props.filter
+            type: "SET_VISIBILITY_FILTER",
+            filter: props.filter,
           })
         }
       >
@@ -1711,7 +1581,6 @@ The `FilterLink` is a "_Container_" Component so it is completely self-sufficien
 > Code at the _end_ of Video 22: [`index.html`](https://github.com/nelsonic/learn-redux/blob/4572cb33f575567687b2683dfe20b22cfda8b16e/index.html)
 
 \
-
 
 **23. Extracting Container Components (VisibleTodoList, AddTodo)**
 
@@ -1774,12 +1643,9 @@ const TodoApp = () => (
     <VisibleTodoList />
     <Footer />
   </div>
-)
-
-ReactDOM.render(
-  <TodoApp />,
-  document.getElementById('root')
 );
+
+ReactDOM.render(<TodoApp />, document.getElementById("root"));
 ```
 
 Lets re-cap the data flow after separating the _Presentational_ and the _Container_ Components.
@@ -1796,7 +1662,6 @@ Separating the _Container_ and the _Presentational_ Components is often a good i
 
 \
 
-
 **24. Passing the Store Down Explicitly via Props**
 
 > Video: https://egghead.io/lessons/javascript-redux-passing-the-store-down-explicitly-via-props
@@ -1812,13 +1677,13 @@ const TodoApp = ({ store }) => (
     <VisibleTodoList store={store} />
     <Footer store={store} />
   </div>
-)
+);
 
-const { createStore } =  Redux;
+const { createStore } = Redux;
 
 ReactDOM.render(
   <TodoApp store={createStore(todoApp)} />,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 
@@ -1837,7 +1702,6 @@ In the _future_ lessons we will see how to pass the `store` down to the _Contain
 > Code at the _end_ of **Video 24**: [`index.html`](https://github.com/nelsonic/learn-redux/blob/c1379e656bd213573136611fc9307bb56918f38b/index.html)
 
 \
-
 
 **25. Passing the Store Down Implicitly via Context**
 
@@ -1878,8 +1742,8 @@ _Finally_ the _Context_ is "_Opt In_" for the _receiving_ Components _too_ so yo
 
 ```js
 VisibleTodoList.contextTypes = {
-  store: React.PropTypes.object
-}
+  store: React.PropTypes.object,
+};
 ```
 
 If you _forget_ to declare the `contextTypes` the Component will _not_ receive the relevant Context so it is _**essential**_ to remember to declare them.
@@ -1888,8 +1752,8 @@ What about the _functional_ Components that don't have [`this`](https://develope
 
 ```js
 AddTodo.contextTypes = {
-  store: React.PropTypes.object
-}
+  store: React.PropTypes.object,
+};
 ```
 
 So, its _important_ to _remember_ to declare them any time you _use_ the _Context_. _Finally_ I'm replacing the `props` with the `context` when getting the `store` for the `FilterLink` and I'm adding the `contextTypes` declaration to the `FilterLink` so it receives the relevant _Context_ from the `Provider`. Now that the `FilterLink` receives the `store` by `context` I no longer need to pass it as a `prop` so I'm removing its usage (_from the `Footer` Component_) and I'm also removing the `store` prop from the `Footer` because it doesn't need to pass it down anymore.
@@ -1927,7 +1791,6 @@ _Finally_ the Context API is _**NOT Stable**_ in React! It has changed before an
 
 \
 
-
 **26. Passing the Store Down with \<Provider> from React Redux**
 
 > Video: https://egghead.io/lessons/javascript-redux-passing-the-store-down-with-provider-from-react-redux
@@ -1949,13 +1812,13 @@ const { Provider } = ReactRedux;
 _**or**_ if you use `Babel` and something like `npm` you can:
 
 ```js
-import { Provider } from 'react-redux';
+import { Provider } from "react-redux";
 ```
 
 with the braces because it is a _named_ `export` from the `react-redux` package. Or if you write **ES5** code, you can write:
 
 ```js
-var Provider = require('react-redux').Provider;
+var Provider = require("react-redux").Provider;
 ```
 
 Just like the `Provider` we wrote _before_, the `Provider` that comes with `ReactRedux` exposes the `store` you pass to it as a `prop` on the `context` so the Components can specify the `contextTypes` and then use `this.context.store` to `subscribe` to the `store` updates and `dispatch` _actions_.
@@ -1963,7 +1826,6 @@ Just like the `Provider` we wrote _before_, the `Provider` that comes with `Reac
 > Code at the _end_ of **Video 26**: [`index.html`](https://github.com/nelsonic/learn-redux/blob/bbc303a0a689d0c99daa71c6b0a8ead5ccc5484e/index.html)
 
 \
-
 
 **27. Generating Containers with `connect()` from React Redux (VisibleTodoList)**
 
@@ -1976,10 +1838,7 @@ I'm going to write this Component in a _different_ way now: and I'll declare a f
 ```js
 const mapStateToProps = (state) => {
   return {
-    todos: getVisibleTodos(
-      state.todos,
-      state.visibilityFilter
-    )
+    todos: getVisibleTodos(state.todos, state.visibilityFilter),
   };
 };
 ```
@@ -1993,12 +1852,12 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onTodoClick: (id) => {
       dispatch({
-        type: 'TOGGLE_TODO',
-        id
-      })
-    }
+        type: "TOGGLE_TODO",
+        id,
+      });
+    },
   };
-}
+};
 ```
 
 Now I've got two different functions: The _first_ one _maps_ the Redux `store` `state` to the `props` of the `TodoList` Component that are _related_ to the _data_ from the Redux `store` the _second_ function maps the `dispatch` method of the `store` to the callback `props` of the `TodoList` Component it specifies the _behavior_ that is which callback `prop` dispatches which `action`.
@@ -2012,7 +1871,7 @@ const { connect } = ReactRedux;
 If you use `npm` and `Babel` you will likely _import_ it like _this_ instead:
 
 ```js
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 ```
 
 "_and don't forget the curly braces_..." \[_destructuring assignment of the `connect` method from the `react-redux` package_]
@@ -2020,10 +1879,7 @@ import { connect } from 'react-redux';
 Now, instead of declaring a `class` I'm going to declare a `variable` and I will call the `connect` method to _obtain_ it. I'm passing `mapStateToProps` as the _first_ argument, and `mapDispatchToProps` as the _second_ argument. And notice that this is a ["_curried_"](https://github.com/iteles/Javascript-the-Good-Parts-notes#curry) function so I have to call it once _again_ and this time I pass the _Presentational_ Component that I want it to _wrap_ and pass the `props` to.
 
 ```js
-const VisibleTodoList = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(TodoList);
+const VisibleTodoList = connect(mapStateToProps, mapDispatchToProps)(TodoList);
 ```
 
 The `connect` function will _generate_ the Component will _generate_ the Component just like the one I _previously_ wrote by _hand_ so I don't want you to write the _code_ to `subscribe` to the `store` or to _specify_ the `contextTypes` because the `connect` function takes care of that.
@@ -2040,7 +1896,6 @@ To create a _Container_ Component from them, I _import_ `connect` from the `Reac
 
 \
 
-
 **28. Generating Containers with connect() from React Redux (AddTodo)**
 
 > Video: https://egghead.io/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-addtodo
@@ -2049,8 +1904,8 @@ In the _previous_ lesson we used the `connect` function from `ReactRedux` bindin
 
 _Normally_ I would keep these functions called `mapStateToProps` and `mapDispatchToProps`, but I'm working in a _single_ file right now and I need to write these functions for a few _other_ _Container_ Components so I'm going to _re-name_ them to something more _specific_:
 
-* `mapStateToProps` becomes `mapStateToTodoListProps`
-* `mapDispatchToProps` becomes `mapDispatchToTodoListProps`
+- `mapStateToProps` becomes `mapStateToTodoListProps`
+- `mapDispatchToProps` becomes `mapDispatchToTodoListProps`
 
 Which you don't _have_ to do in your code, if you keep each Component in its _own_ file (which is considered to be a best practise).
 
@@ -2061,22 +1916,19 @@ Final Code (_after re-naming_):
 ```js
 const mapStateToTodoListProps = (state) => {
   return {
-    todos: getVisibleTodos(
-      state.todos,
-      state.visibilityFilter
-    )
+    todos: getVisibleTodos(state.todos, state.visibilityFilter),
   };
 };
 const mapDispatchToTodoListProps = (dispatch) => {
   return {
     onTodoClick: (id) => {
       dispatch({
-        type: 'TOGGLE_TODO',
-        id
-      })
-    }
+        type: "TOGGLE_TODO",
+        id,
+      });
+    },
   };
-}
+};
 const { connect } = ReactRedux;
 const VisibleTodoList = connect(
   mapStateToTodoListProps,
@@ -2098,27 +1950,31 @@ let AddTodo = ({ dispatch }) => {
 
   return (
     <div>
-      <input ref={node => {
-        input = node;
-      }} />
-      <button onClick={() => {
-        dispatch({
-          type: 'ADD_TODO',
-          id: nextTodoId++,
-          text: input.value
-        })
-        input.value = '';
-      }}>
+      <input
+        ref={(node) => {
+          input = node;
+        }}
+      />
+      <button
+        onClick={() => {
+          dispatch({
+            type: "ADD_TODO",
+            id: nextTodoId++,
+            text: input.value,
+          });
+          input.value = "";
+        }}
+      >
         Add Todo
       </button>
     </div>
   );
-}
+};
 AddTodo = connect(
-  state => {
+  (state) => {
     return {};
   },
-  dispatch => {
+  (dispatch) => {
     return { dispatch };
   }
 )(AddTodo);
@@ -2142,7 +1998,6 @@ The _second_ `connect` call returns the _generated_ _Container_ Component and I'
 
 \
 
-
 **29. Generating Containers with connect() from React Redux (FooterLink)**
 
 > Video: https://egghead.io/lessons/javascript-redux-generating-containers-with-connect-from-react-redux-footerlink
@@ -2150,60 +2005,47 @@ The _second_ `connect` call returns the _generated_ _Container_ Component and I'
 _Finally_ let's take a look at the `FilterLink` _Container_ Component that renders a `Link` with an `active` property and a _click_ handler. _First_ I will write the `mapStateToProps` function which I will call `mapStateToLinkProp` because I have everything in a _single_ file. And it's going to accept the `state` of the Redux `store` and `return` the `props` that should be passed to the `Link` and we only have a _single_ such `prop` called `active` that determines whether the link displays the _current_ `visiblityFilter`. When I _paste_ this _expression_ from the `render` method I see that it references the `filter` prop of the `FilterLink` Component. To tell whether a link is _active_ we need to compare this `prop` with with the `visibilityFilter` from the Redux `store` `state` it is fairly common to use the _Container_ `props` when calculating the _Child_ `props` so this is why `props` are passed as a _second_ argument to `mapStateToProps` \[_or in this example `mapStateToLinkProps`_] I will re-name it \[_the `mapStateToLinkProps` second argument_] to `ownProps` to make it clear that we are talking about the _Container_ Component's _own_ `props` and not the `props` that are _passed_ to the _Child_ which is the `return` value of `mapStateToLinkProps`
 
 ```js
-const mapStateToLinkProps = (
-  state,
-  ownProps
-) => {
+const mapStateToLinkProps = (state, ownProps) => {
   return {
-    active:
-      ownProps.filter ===
-      state.visibilityFilter
-  }
-}
+    active: ownProps.filter === state.visibilityFilter,
+  };
+};
 ```
 
 The second function I'm writing here is `mapDispatchToProps` or to avoid name clashes in the JSBin \[_single file app_] `mapDispatchToLinkProps`. The only argument so far is the `dispatch` function and I'm going to need to look at the _Container_ Component I wrote by hand to see what `props` depend on the `dispatch` function. In this case this is just the `onClick` handler where I `dispatch` the `SET_VISIBILITY_FILTER` `action`. the only `prop` I'm passing down is called `onClick` and I declare it as an **ES6** _**Arrow Function**_ with no arguments and I _paste_ the `dispatch` call.
 
 ```js
-const mapDispatchToLinkProps = (
-  dispatch
-) => {
+const mapDispatchToLinkProps = (dispatch) => {
   return {
     onClick: () => {
       dispatch({
-        type: 'SET_VISIBILITY_FILTER',
-        filter: props.filter
+        type: "SET_VISIBILITY_FILTER",
+        filter: props.filter,
       });
-    }
+    },
   };
-}
+};
 ```
 
 But it references the `props` _again_, so I need to add `ownProps` as an _argument_ the _second_ argument to `mapDispatchToLinkProps` function thus:
 
 ```js
-const mapDispatchToLinkProps = (
-  dispatch,
-  ownProps
-) => {
+const mapDispatchToLinkProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
       dispatch({
-        type: 'SET_VISIBILITY_FILTER',
-        filter: ownProps.filter
+        type: "SET_VISIBILITY_FILTER",
+        filter: ownProps.filter,
       });
-    }
+    },
   };
-}
+};
 ```
 
 _Finally_ I will call the `connect` function from `ReactRedux` Library to generate the `FilterLink` _Container_ Component I pass the relevant `mapStateToProps` function as the _first_ argument \[_in our case `mapStateToLinkProps`_] the `mapDispatchToProps` as the _second_ argument \[_or `mapDispatchToLinkProps` in our case_] and I call the function _again_ with the `Link` Component which should be _rendered_:
 
 ```js
-const FilterLink = connect(
-  mapStateToLinkProps,
-  mapDispatchToLinkProps
-)(Link);
+const FilterLink = connect(mapStateToLinkProps, mapDispatchToLinkProps)(Link);
 ```
 
 Now I can _remove_ the "_old_" `FilterLink` implementation.
@@ -2213,7 +2055,6 @@ Let's re-cap the _data flow_ in this example: the `Footer` Component renders **3
 > Complete Code at the _end_ of **Video 29**: [`index.html`](https://github.com/nelsonic/learn-redux/blob/f3c0a045b0694714e0ac7060cb1c77efae7d7baa/index.html)
 
 \
-
 
 **30. Extracting Action Creators**
 
@@ -2227,11 +2068,11 @@ Let's consider the following example: I `dispatch` the `ADD_TODO` `action` from 
 let nextTodoId = 0;
 const addTodo = (text) => {
   return {
-    type: 'ADD_TODO',
+    type: "ADD_TODO",
     id: nextTodoId++,
-    text // implied value from function argument
-  }
-}
+    text, // implied value from function argument
+  };
+};
 ```
 
 Although extracting such function is not required it is a very common pattern in Redux applications to keep them _maintainable_ so we call these functions `action` _Creators_ and we usually place them separately from Components or from _Reducers_.
@@ -2241,10 +2082,10 @@ I will now _extract_ other `action` _Creators_ from the Components and I see tha
 ```js
 const setVisibilityFilter = (filter) => {
   return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter // implied value from argument
-  }
-}
+    type: "SET_VISIBILITY_FILTER",
+    filter, // implied value from argument
+  };
+};
 ```
 
 You might think that this kind of code is "_boiler plate_" and you would rather `dispatch` the `action` in-line inside the Component however don't _underestimate_ how `action` _Creators_ _document_ your software because they tell your _team_ what kinds of _actions_ the Components can `dispatch` and this kind of information can be _invaluable_ in _large_ applications.
@@ -2256,8 +2097,8 @@ I'm now scrolling up to my `action` _Creators_ and I will add a new one that I c
 ```js
 const toggleTodo = (id) => {
   return {
-    type: 'TOGGLE_TODO',
-    id // inferred value from argument
+    type: "TOGGLE_TODO",
+    id, // inferred value from argument
   };
 };
 ```

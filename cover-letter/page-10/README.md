@@ -2,15 +2,11 @@
 
 ## Cover Letter
 
-* A short introduction describing who you are and what you're looking for
-* What projects have you enjoyed working on?
-* Which have you disliked? What motivates you?
-* Links to online profiles you use (GitHub, Twitter, etc)
-* A description of your work history (whether as a resume, LinkedIn profile, or prose)
-
-
-
-
+- A short introduction describing who you are and what you're looking for
+- What projects have you enjoyed working on?
+- Which have you disliked? What motivates you?
+- Links to online profiles you use (GitHub, Twitter, etc)
+- A description of your work history (whether as a resume, LinkedIn profile, or prose)
 
 To whom it may concern,
 
@@ -18,7 +14,7 @@ I would like to take this opportunity to express my interest in an \[] position 
 
 &#x20;
 
-I have a bachelor’s degree in electrical engineering from TCNJ, and I am an exceedingly creative and passionate engineer. I genuinely enjoy and excel in interpersonal communication, and as such, in collaborative settings, I often assume a hybrid role between creative design and leadership.  I have an innate knack for solving and simplifying novel problems, as well as tinkering with electronics until my vision has materialized. I am confident my unique combination of skills, disposition and experience make me the ideal candidate to work with your team as a \[job title].
+I have a bachelor’s degree in electrical engineering from TCNJ, and I am an exceedingly creative and passionate engineer. I genuinely enjoy and excel in interpersonal communication, and as such, in collaborative settings, I often assume a hybrid role between creative design and leadership. I have an innate knack for solving and simplifying novel problems, as well as tinkering with electronics until my vision has materialized. I am confident my unique combination of skills, disposition and experience make me the ideal candidate to work with your team as a \[job title].
 
 &#x20;
 

@@ -2,21 +2,23 @@
 
 ### Contact Info
 
-*   **Location**
+- **Location**
 
-    Weehawken NJ
-*   **Email**
+  Weehawken NJ
 
-    [bryan.guner@gmail.com](mailto:bryan.guner@gmail.com)
+- **Email**
+
+  [bryan.guner@gmail.com](mailto:bryan.guner@gmail.com)
 
 ### Student Info
 
-*   **Cohort**
+- **Cohort**
 
-    WEB44
-*   **Start Date**
+  WEB44
 
-    4/4/2021
+- **Start Date**
+
+  4/4/2021
 
 ### Experience
 
@@ -80,12 +82,12 @@ Relational Databases
 
 **Roles I'm interested in**
 
-* \[Web] Front End (Javascript, React, HTML, CSS)
-* \[Web] Back End (node.js, Python)
-* \[Web] Full Stack (Javascript, React, Node)
-* \[Web] Product Manager
-* \[Web] Developer Advocate
-* \[Web] UX/UI Engineer
+- \[Web] Front End (Javascript, React, HTML, CSS)
+- \[Web] Back End (node.js, Python)
+- \[Web] Full Stack (Javascript, React, Node)
+- \[Web] Product Manager
+- \[Web] Developer Advocate
+- \[Web] UX/UI Engineer
 
 **Industry interests**
 

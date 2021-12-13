@@ -5,13 +5,13 @@ Alma - [Data Engineer](https://angel.co/company/alma-14/jobs/1169661-data-engine
 Shoprunner - [Data Engineer, Data Platforms](https://builtin.com/job/data/data-engineer-data-platform/71736) (Remote)\
 Paylocity -[ Data Engineer](https://www.paylocity.com/careers/career-opportunities/all-listings/?jobId=7374) (Remote)\
 TaskRabbit - [Data Engineer ](https://boards.greenhouse.io/taskrabbit/jobs/3523067)(Remote)\
-Homeward - [Data Engineer ](https://www.homeward.com/jobs?gh\_jid=4915619002)(Remote)\
-Revantage - [Data Engineer](https://careers-revantage.icims.com/jobs/3157/data-engineer---remote/job?mobile=false\&width=1482\&height=500\&bga=true\&needsRedirect=false\&jan1offset=-300\&jun1offset=-240) (Remote)\
-Tempus - [Data Platform Engineer](https://www.tempus.com/careers/job/?gh\_jid=4262179002) (Chicago)\
+Homeward - [Data Engineer ](https://www.homeward.com/jobs?gh_jid=4915619002)(Remote)\
+Revantage - [Data Engineer](https://careers-revantage.icims.com/jobs/3157/data-engineer---remote/job?mobile=false&width=1482&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240) (Remote)\
+Tempus - [Data Platform Engineer](https://www.tempus.com/careers/job/?gh_jid=4262179002) (Chicago)\
 Route - [Junior Software Engineer- Data Parsing](https://route.com/careers#junior-software-engineer-data-parsing-team-ut) (CA or UT)\
 fm:sysems - [Data Engineer](https://fmsystems.applytojob.com/apply/yAHW3sbsMx/Data-Engineer) (Remote)
 
-***
+---
 
 ## **FULL STACK DEVELOPER:**
 
@@ -25,7 +25,7 @@ Feedback Loop - [Full Stack Engineer](https://angel.co/company/feedbackloopcom/j
 ReadMe - [Full Stack Engineer](https://angel.co/company/readme/jobs/1730772-full-stack-engineer) (CA)\
 Divvy Homes - [Full Stack Engineer](https://angel.co/company/divvy-homes/jobs/1735652-full-stack-engineer-chicago-remote-okay) (Remote)
 
-***
+---
 
 **Sourcing Tip of the Day:** [Builtin.com](http://builtin.com) is one of my favorite sites for sourcing jobs. You can filter by role type, remote, tech hub location, and more. Pro Tip: Use multiple years-of-experience filters so you can see a variety of roles that may actually be a fit for you!
 
@@ -39,9 +39,9 @@ Datafold | [Customer Engineer](https://jobs.lever.co/datafold/9e3e19cd-54ee-469b
 Talend | [Technical Support Engineer](https://jobs.lever.co/talend/1024d514-a403-468d-bdd5-8be5a0aed142) | Multiple Locations\
 Kraken | [Low-Code Engineer ](https://jobs.lever.co/kraken/4e2f2551-0c06-474d-a779-e5bbbdeec810?ref=web3.career)| Remote\
 OpenX | [Sales Engineer](https://jobs.lever.co/openx/1f2aa5eb-be81-4c73-acbf-3762bcf9cb0a) | NYC or Remote\
-![:bar\_chart:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f4ca%402x.png) Grafana Labs | [Solutions Engineer ](https://jobs.lever.co/grafana/e19b12bd-9a6b-4b53-bac0-38dd89fa49a4)| NYC or Remote\
+![:bar_chart:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f4ca%402x.png) Grafana Labs | [Solutions Engineer ](https://jobs.lever.co/grafana/e19b12bd-9a6b-4b53-bac0-38dd89fa49a4)| NYC or Remote\
 Solid | [Sales Engineer](https://jobs.ashbyhq.com/solid/11226104-a4bb-4fe8-9532-a86fc94f7a95) | Remote\
-![:bar\_chart:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f4ca%402x.png) Preset | [Sales Engineer ](https://angel.co/company/preset-1/jobs/1751391-sales-engineer)| Remote\
+![:bar_chart:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f4ca%402x.png) Preset | [Sales Engineer ](https://angel.co/company/preset-1/jobs/1751391-sales-engineer)| Remote\
 Energy Solutions | [Support Engineer](https://www.techjobsforgood.com/jobs/10785/) | Oakland, CA or Remote\
 Thorn | [Support Engineer](https://www.techjobsforgood.com/jobs/10665/) | Remote
 
@@ -51,10 +51,10 @@ Covetrus | [Email Developer](https://tarta.ai/j/jHqq03wBPV406l6XwvN0-email-devel
 SGA | [Technical Writer](https://www.linkedin.com/jobs/view/technical-writer-remote-at-software-guidance-assistance-inc-sga-inc-2777958395/) | Remote\
 Datadog | [Technical Writer ](https://www.linkedin.com/jobs/view/2783679795/)| Remote\
 Bounteous | [Email Developer](https://jobs.lever.co/bounteous/702d7a59-b033-4ba4-8cee-ff3147cec794) | Remote\
-Horizen Labs | [Technical Writer ](https://horizenlabs.io/careers/job/?gh\_jid=4136435004)| Remote
+Horizen Labs | [Technical Writer ](https://horizenlabs.io/careers/job/?gh_jid=4136435004)| Remote
 
 **DEVELOPER ADVOCACY + PRODUCT MANAGEMENT ROLES**\
-Grouparoo | [Developer Advocate ](https://jobs.lever.co/grouparoo/5e1531b4-7ec8-4c10-8e52-fc23f8aa8452?lever-origin=applied\&lever-source%5B%5D=KeyValues)| Remote\
+Grouparoo | [Developer Advocate ](https://jobs.lever.co/grouparoo/5e1531b4-7ec8-4c10-8e52-fc23f8aa8452?lever-origin=applied&lever-source%5B%5D=KeyValues)| Remote\
 Nylas | [Product Manager](https://jobs.lever.co/nylas/b44dd0f8-cbea-4d03-bc34-6c41061a9812) | Remote\
 The Internet Archive | [Manager - Patron Services](https://app.trinethire.com/companies/32967-internet-archive/jobs/42679-manager-patron-services-remote-n-america) | Remote\
 Zoom | [Developer Advocate, Marketplace](https://www.builtinsf.com/job/engineer/marketplace-specialist-developer-advocate/67297) | Remote\
@@ -74,19 +74,19 @@ Today
 
 **THURSDAY'S LIVE PROGRAMMING:**
 
-* \*\* 1:45-2:45PST Technical Office Hours\*\*
-* \*\* 3pm-4pm PST Job Search Office Hours\*\*
-* \*\* 7pm-8:30pmPST Job Search Office Hours\*\*
+- \*\* 1:45-2:45PST Technical Office Hours\*\*
+- \*\* 3pm-4pm PST Job Search Office Hours\*\*
+- \*\* 7pm-8:30pmPST Job Search Office Hours\*\*
 
-![:microphone:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png) ![:minion-dance:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fminion-dance%2Fb2e045cfc2a978bd.gif) **JOB DROP COMING TODAY FROM THE INCREDIBLE **[**@Shelby Schisler**](https://lambda-students.slack.com/team/U0259NF2NTZ)**!** Keep ![:eyes:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f440%402x.png) here! Let's keep working towards those 10+ apps logged in [Job Tracker](https://careers.lambdaschool.com/jobtracker) ![:minion-dance:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fminion-dance%2Fb2e045cfc2a978bd.gif) ![:microphone:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png) (edited)
+![:microphone:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png) ![:minion-dance:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fminion-dance%2Fb2e045cfc2a978bd.gif) **JOB DROP COMING TODAY FROM THE INCREDIBLE **[**@Shelby Schisler**](https://lambda-students.slack.com/team/U0259NF2NTZ)**!** Keep ![:eyes:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f440%402x.png) here! Let's keep working towards those 10+ apps logged in [Job Tracker](https://careers.lambdaschool.com/jobtracker) ![:minion-dance:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fminion-dance%2Fb2e045cfc2a978bd.gif) ![:microphone:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png) (edited)
 
-![:star-struck:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-small%2F1f929%402x.png)2![:yes-party:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fyes-party%2F5a6b27fa5f16c01f.gif)1![:partyfrog:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fpartyfrog%2Fe3dbae2b11156f0a.gif)1![:partycat:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fpartycat%2Fe3dbae2b11156f0a.gif)1![:celebrate1:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fcelebrate1%2Fd113a8dc93ae956c.gif)1![:muscle::skin-tone-3:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-small%2F1f4aa-1f3fc%402x.png)1![:carlton:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fcarlton%2Fb0052e6693eb0b13.gif)1
+![:star-struck:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-small%2F1f929%402x.png)2![:yes-party:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fyes-party%2F5a6b27fa5f16c01f.gif)1![:partyfrog:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fpartyfrog%2Fe3dbae2b11156f0a.gif)1![:partycat:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fpartycat%2Fe3dbae2b11156f0a.gif)1![:celebrate1:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fcelebrate1%2Fd113a8dc93ae956c.gif)1![:muscle::skin-tone-3:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-small%2F1f4aa-1f3fc%402x.png)1![:carlton:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fcarlton%2Fb0052e6693eb0b13.gif)1
 
 ![](https://ca.slack-edge.com/ESZCHB482-U0259NF2NTZ-71effe5c424a-48)
 
 [Shelby Schisler](https://app.slack.com/team/U0259NF2NTZ) [1:04 PM](https://lambda-students.slack.com/archives/GJQ1VTZ7U/p1636045495159100)
 
-![:blob-wave:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fblob-wave%2F4cb29be0b3bb0729.gif) Hey Job Search Crew, hope you took advantage of the amazing job drops over the last couple of days!! Now it's Shelby here with your...![:microphone:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png) DAILY JOB DROP![:microphone:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png)Today's drop will have \*\*Python Based Analyst and Software Engineer roles. Apply to any/all that interest you, log in Job Tracker and submit it to the \*\*[\*\*Custom Outreach Generator \*\*](https://lambda-alumni.slack.com/archives/GJQ1VTZ7U/p1632239925188100)**today. Remember, if you apply and track 10 roles in Job Tracker this week, you will be eligible for a Lambda School **![:party-dj:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fparty-dj%2Ff059a960cf5746ef.gif)** SWAG raffle **![:party-dj:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fparty-dj%2Ff059a960cf5746ef.gif)**. If over 100 people log that many apps then there will be 2 raffle winners.SOFTWARE ENGINEER ROLES**\
+![:blob-wave:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fblob-wave%2F4cb29be0b3bb0729.gif) Hey Job Search Crew, hope you took advantage of the amazing job drops over the last couple of days!! Now it's Shelby here with your...![:microphone:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png) DAILY JOB DROP![:microphone:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Fa.slack-edge.com%2Fproduction-standard-emoji-assets%2F13.0%2Fgoogle-medium%2F1f3a4%402x.png)Today's drop will have \*\*Python Based Analyst and Software Engineer roles. Apply to any/all that interest you, log in Job Tracker and submit it to the \*\*[\*\*Custom Outreach Generator \*\*](https://lambda-alumni.slack.com/archives/GJQ1VTZ7U/p1632239925188100)**today. Remember, if you apply and track 10 roles in Job Tracker this week, you will be eligible for a Lambda School **![:party-dj:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fparty-dj%2Ff059a960cf5746ef.gif)** SWAG raffle **![:party-dj:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Fparty-dj%2Ff059a960cf5746ef.gif)**. If over 100 people log that many apps then there will be 2 raffle winners.SOFTWARE ENGINEER ROLES**\
 **Seed Fi I **[**Software Engineer - Full Stack**](https://jobs.lever.co/SeedFi/a06eef60-1ac8-47a7-9b35-15ca8abb99e7)** I NY**\
 **Truework I **[**Software Engineer**](https://boards.greenhouse.io/truework/jobs/4791568003)** I Remote**\
 **Asana I **[**Software Engineer, Performance**](https://boards.greenhouse.io/asana/jobs/3407336?t=e25d12871us)** I SF**\
@@ -110,9 +110,9 @@ Today
 **Cover Genius I **[**Customer Insights Analyst**](https://jobs.lever.co/covergenius/9456e124-db23-482e-b020-532690f83c97)** I SF**\
 **Gopuff I **[**Product Analyst**](https://jobs.lever.co/gopuff/516652e3-8f42-473c-aa02-0c6d6498487f)** I Remote**\
 **Human Security I **[**Data Operations Analyst, Fraud Intelligence**](https://jobs.lever.co/humansecurity/dd20766a-46a9-4d57-b2fc-055fefd7cbc4)** I Remote**\
-**Addepar I **[**Data Analyst**](https://boards.greenhouse.io/addepar1/jobs/5638374002)** I NY**![:alphabet-white-exclamation:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Falphabet-white-exclamation%2F08739f73a93a0d2c.png)**\*\* Sourcing Tip of the Day \*\***![:alphabet-white-exclamation:](https://slack-imgs.com/?c=1\&o1=gu\&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Falphabet-white-exclamation%2F08739f73a93a0d2c.png)** A trick I love if you are hitting walls with common job boards is to search 3rd party applicant tracking systems using Google.**\
+**Addepar I **[**Data Analyst**](https://boards.greenhouse.io/addepar1/jobs/5638374002)** I NY**![:alphabet-white-exclamation:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Falphabet-white-exclamation%2F08739f73a93a0d2c.png)**\*\* Sourcing Tip of the Day \*\***![:alphabet-white-exclamation:](https://slack-imgs.com/?c=1&o1=gu&url=https%3A%2F%2Femoji.slack-edge.com%2FTSZCHB482%2Falphabet-white-exclamation%2F08739f73a93a0d2c.png)** A trick I love if you are hitting walls with common job boards is to search 3rd party applicant tracking systems using Google.**\
 **\_The below are examples of search terms that you can copy/paste directly into Google to return roles from career sites directly.**\_\
-"react" "remote" site:[https://jobs.lever.co/\*](https://jobs.lever.co/\*)\
-"python" "junior" site:[https://apply.workable.com/\*](https://apply.workable.com/\*)\
-"Data analyst" site:[https://boards.greenhouse.io/\*](https://boards.greenhouse.io/\*)\
-kotlin OR java site:[https://jobs.jobvite.com/\*/job/\*](https://jobs.jobvite.com/\*/job/\*)
+"react" "remote" site:[https://jobs.lever.co/\*](https://jobs.lever.co/*)\
+"python" "junior" site:[https://apply.workable.com/\*](https://apply.workable.com/*)\
+"Data analyst" site:[https://boards.greenhouse.io/\*](https://boards.greenhouse.io/*)\
+kotlin OR java site:[https://jobs.jobvite.com/\*/job/\*](https://jobs.jobvite.com/*/job/*)

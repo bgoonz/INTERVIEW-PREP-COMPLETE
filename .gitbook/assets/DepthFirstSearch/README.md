@@ -1,8 +1,9 @@
 # Depth-First Search
 
-Implement a function `depthFirstForEach`, once as a recursive function, and then again in an iterative fashion. Your functions should receive a callback and invoke that callback on each node as it is traversing in depth-first fashion. Your functions should also receive a tree node so that it can begin traversing. 
+Implement a function `depthFirstForEach`, once as a recursive function, and then again in an iterative fashion. Your functions should receive a callback and invoke that callback on each node as it is traversing in depth-first fashion. Your functions should also receive a tree node so that it can begin traversing.
 
 Here is an example tree class:
+
 ```js
 class BinaryTreeNode {
   constructor(value) {
@@ -32,6 +33,7 @@ For example, given a tree like the following
                 9           89
 
 and the following callback function
+
 ```js
 const cb = (x) => console.log(x);
 ```

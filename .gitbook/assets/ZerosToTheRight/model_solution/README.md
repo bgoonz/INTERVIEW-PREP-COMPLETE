@@ -4,14 +4,14 @@
 
 This problem is relatively straightforward to understand. Any 0s that
 aren't on the right side of the input array need to get to the right
-side of the array. Ok, we can do that pretty easily. 
+side of the array. Ok, we can do that pretty easily.
 
 One question we'd want to address first before we start sketching out a
 strategy is whether we'd want to mutate the input array or whether we
 should instead create a new array. Well, we'll definitely want to
 iterate along the array, and if we opt to mutate the input array, that's
 going to make iterating along the array a lot trickier since the array
-is going to be changing with each iteration step. 
+is going to be changing with each iteration step.
 
 ## A First Pass Strategy
 
@@ -28,7 +28,7 @@ Since we've been counting the number of 0s we've been seeing as we've
 been traversing through the array, to figure out the number of non-0
 integers, we can simply subtract the length of the entire array by the
 number of 0s we've seen. So our first pass implementation might look
-something like this: 
+something like this:
 
 ```python
 def zeros_to_the_right(arr):
@@ -43,7 +43,7 @@ def zeros_to_the_right(arr):
 
     for _ in range(n_zeros):
         output.append(0)
-    
+
     return len(output) - n_zeros
 ```
 
@@ -53,9 +53,9 @@ This implementation works as expected. Hooray! Now it's time to figure
 out the time and space complexity of this implementation. We have a
 single traversal over our input array, and we only perform O(1)
 operations inside this loop, so the for loop incurs an O(n) runtime
-cost. 
+cost.
 
-The second for loop incurs a runtime cost proportional to the number 
+The second for loop incurs a runtime cost proportional to the number
 of elements we are adding to the output array. In the worst case this
 would never be more than the length of the entire input array (like in
 the case that our function receives an input array of all 0s). So as far
@@ -70,7 +70,7 @@ So the next question we should ask ourselves is, can we do better than
 this? As far time complexity is concerned, we've _technically_ achieved a
 linear runtime. It's not possible to achieve a runtime faster than
 linear since we can't get away with not inspecting each array element at
-least once to see whether an element is a 0 or a non-0 integer value. 
+least once to see whether an element is a 0 or a non-0 integer value.
 
 That being said, our first pass solution achieves an O(2n) runtime. Even
 though this theoretically simplifies down to an O(n) runtime, in
@@ -78,13 +78,13 @@ practice, actually eliminating unnecessary linear passes does yield
 significant performance improvements when the input size is very large.
 So if we're able to get our implementation down to the point where it
 only performs one loop through the data, then we should aim for that as
-our next goal. 
+our next goal.
 
 Similarly, the extra memory usage is also not desirable unless we
 _absolutely_ need it. Let's think about whether we can get away with not
 incurring that extra memory cost. So we're going to see if we can
 achieve an implementation that only performs _one_ pass through the
-input data and doesn't require any extra memory. 
+input data and doesn't require any extra memory.
 
 ## Improving Upon our First Pass Implementation
 
@@ -92,14 +92,14 @@ If we're not looking to incur any extra memory, then we'll have to
 directly mutate the input array. If we're looking to do that, then we'll
 not want to remove elements from the input array since it makes iterating
 through the array tricky, along with the fact that removing elements
-from an array incurs an O(n) runtime in the worst case. 
+from an array incurs an O(n) runtime in the worst case.
 
 As an alternative to removing from the array, we can instead swap two
 elements in the array, which is an O(1) operation. So if the question
 becomes "which elements are we looking to swap as we're iterating along
 the array?", the answer to that would be that we want to swap 0s on the
 left side of the array with non-0 values that are on the right side of
-the array. 
+the array.
 
 Given that, we can keep track of two indices, one that starts at the
 left end of the array, the other that starts at the right end. These
@@ -119,7 +119,7 @@ def zeros_to_the_right(arr):
             # swap them
             arr[left], arr[right] = arr[right], arr[left]
             # move the left and right indices towards the middle
-            # of the array so that we make progress 
+            # of the array so that we make progress
             left += 1
             right -= 1
 ```
@@ -127,7 +127,7 @@ def zeros_to_the_right(arr):
 Ok, so what about when the left index is a non-0 and/or the right index
 is a 0? What do we do in those cases? As it stands, this code will very
 likely not terminate because it will just hang forever on the while
-loop. 
+loop.
 
 Well, in a vacuum, when do we want the left index to be incremented?
 Again, we're looking to swap 0s on the left with non-0s on the right. So
@@ -147,7 +147,7 @@ def zeros_to_the_right(arr):
             left += 1
             right -= 1
         # we're already handling incrementing the left and right
-        # indices when we're swapping, so we need to stick the 
+        # indices when we're swapping, so we need to stick the
         # new iteration logic in an else statement
         else:
             if arr[left] != 0:
@@ -159,7 +159,7 @@ def zeros_to_the_right(arr):
 With that logic added, we've ensured that the while loop will terminate
 and that the input array will be mutated to the desired state with 0s on
 the right and non-0 values on the left. But we aren't done yet, since
-our function needs to return the number of non-0 values in the array. 
+our function needs to return the number of non-0 values in the array.
 
 At this point, we could perform another walk through the array and count
 the number of non-0 values we see along the way, but we're trying to
@@ -169,7 +169,7 @@ how many non-0 values exist in the array?
 
 Sure, we can simply increment a counter of non-0 values we encounter as
 we're performing our initial traversal through the array. We don't need
-to perform a whole other traversal in this case. 
+to perform a whole other traversal in this case.
 
 ```python
 def zeros_to_the_right(arr):
@@ -206,4 +206,4 @@ def zeros_to_the_right(arr):
 Lo and behold, we've implemented a working solution that only performs
 _one_ traversal through the array that also only allocates a constant
 amount of extra space! We're not going to be able to do better than that,
-so we'll consider this problem thoroughly solved. 
+so we'll consider this problem thoroughly solved.

@@ -2,6 +2,7 @@
 
 {% tabs %}
 {% tab title="anagram.js" %}
+
 ```javascript
 /*
 Solution 1: Checking Off
@@ -18,28 +19,28 @@ can be checked against the characters in the list and if found, checked off by
 replacement. An implementation of this strategy may look like this:
 */
 
-function anagramCheckingOff (string1, string2) {
-  if (string1.length !== string2.length) return false
+function anagramCheckingOff(string1, string2) {
+  if (string1.length !== string2.length) return false;
 
-  const string2ToCheckOff = string2.split('')
+  const string2ToCheckOff = string2.split("");
 
   for (let i = 0; i < string1.length; i++) {
-    let letterFound = false
+    let letterFound = false;
     for (let j = 0; j < string2ToCheckOff.length; j++) {
       if (string1[i] === string2ToCheckOff[j]) {
-        string2ToCheckOff[j] = null
-        letterFound = true
-        break
+        string2ToCheckOff[j] = null;
+        letterFound = true;
+        break;
       }
     }
-    if (!letterFound) return false
+    if (!letterFound) return false;
   }
 
-  return true
+  return true;
 }
 
-assert.equal(true, anagramCheckingOff('abcd', 'dcba'))
-assert.equal(false, anagramCheckingOff('abcd', 'abcc'))
+assert.equal(true, anagramCheckingOff("abcd", "dcba"));
+assert.equal(false, anagramCheckingOff("abcd", "abcc"));
 
 /*
 To analyze this algorithm, we need to note that each of the `n`
@@ -76,21 +77,21 @@ loop through the first string, checking to make sure that both strings contain
 the same letter at every index.
 */
 
-function anagramSortAndCompare (string1, string2) {
-  if (string1.length !== string2.length) return false
+function anagramSortAndCompare(string1, string2) {
+  if (string1.length !== string2.length) return false;
 
-  const sortedString1 = string1.split('').sort()
-  const sortedString2 = string2.split('').sort()
+  const sortedString1 = string1.split("").sort();
+  const sortedString2 = string2.split("").sort();
 
   for (let i = 0; i < sortedString1.length; i++) {
-    if (sortedString1[i] !== sortedString2[i]) return false
+    if (sortedString1[i] !== sortedString2[i]) return false;
   }
 
-  return true
+  return true;
 }
 
-assert.equal(true, anagramSortAndCompare('abcde', 'edcba'))
-assert.equal(false, anagramSortAndCompare('abcde', 'abcd'))
+assert.equal(true, anagramSortAndCompare("abcde", "edcba"));
+assert.equal(false, anagramSortAndCompare("abcde", "abcd"));
 
 /*
 At first glance you may be tempted to think that this algorithm is
@@ -137,36 +138,35 @@ anagrams. Here is a possible implementation of the strategy:
 
 */
 
-function anagramCountCompare (string1, string2) {
-
-  function getLetterPosition (letter) {
-    return letter.charCodeAt() - 'a'.charCodeAt()
+function anagramCountCompare(string1, string2) {
+  function getLetterPosition(letter) {
+    return letter.charCodeAt() - "a".charCodeAt();
   }
 
-  const string1LetterCounts = new Array(26).fill(0)
-  const string2LetterCounts = new Array(26).fill(0)
+  const string1LetterCounts = new Array(26).fill(0);
+  const string2LetterCounts = new Array(26).fill(0);
 
   for (let i = 0; i < string1.length; i++) {
-    const letterPosition = getLetterPosition(string1[i])
-    string1LetterCounts[letterPosition]++
+    const letterPosition = getLetterPosition(string1[i]);
+    string1LetterCounts[letterPosition]++;
   }
 
   for (let i = 0; i < string2.length; i++) {
-    const letterPosition = getLetterPosition(string2[i])
-    string2LetterCounts[letterPosition]++
+    const letterPosition = getLetterPosition(string2[i]);
+    string2LetterCounts[letterPosition]++;
   }
 
   for (let i = 0; i < string1LetterCounts.length; i++) {
     if (string1LetterCounts[i] !== string2LetterCounts[i]) {
-      return false
+      return false;
     }
   }
 
-  return true
+  return true;
 }
 
-assert.equal(true, anagramCountCompare('apple', 'pleap'))
-assert.equal(false, anagramCountCompare('apple', 'applf'))
+assert.equal(true, anagramCountCompare("apple", "pleap"));
+assert.equal(false, anagramCountCompare("apple", "applf"));
 
 /*
 Again, the solution has a number of iterations. However, unlike the
@@ -185,32 +185,30 @@ since our dictionary comparison loop will not account for string2 having
 additional characters.
 */
 
-function anagramCountCompareWithReduce (string1, string2) {
-
-  function letterCountReducer (letterCounts, letter) {
+function anagramCountCompareWithReduce(string1, string2) {
+  function letterCountReducer(letterCounts, letter) {
     if (letterCounts[letter]) {
-      letterCounts[letter]++
+      letterCounts[letter]++;
     } else {
-      letterCounts[letter] = 1
+      letterCounts[letter] = 1;
     }
-    return letterCounts
+    return letterCounts;
   }
 
-  const string1LetterCounts = string1.split('').reduce(letterCountReducer, {})
-  const string2LetterCounts = string2.split('').reduce(letterCountReducer, {})
-
+  const string1LetterCounts = string1.split("").reduce(letterCountReducer, {});
+  const string2LetterCounts = string2.split("").reduce(letterCountReducer, {});
 
   for (let letter in string1LetterCounts) {
     if (string1LetterCounts[letter] !== string2LetterCounts[letter]) {
-      return false
+      return false;
     }
   }
 
-  return string1.length === string2.length
+  return string1.length === string2.length;
 }
 
-assert.equal(true, anagramCountCompareWithReduce('apple', 'pleap'))
-assert.equal(false, anagramCountCompareWithReduce('apple', 'applf'))
+assert.equal(true, anagramCountCompareWithReduce("apple", "pleap"));
+assert.equal(false, anagramCountCompareWithReduce("apple", "applf"));
 
 /*
 It is worth noting that `anagramCounterCompareWithReduce` is also $$O(n)$$, but
@@ -231,8 +229,8 @@ engineer, when given a choice of algorithms, it will be up to you to
 determine the best use of computing resources given a particular
 problem.
 */
-
 ```
+
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -240,21 +238,11 @@ problem.
 {% endtab %}
 {% endtabs %}
 
-
-
 To explore different orders of magnitude, let’s consider four different solutions to the problem of detecting if a string is an anagram. One string is an anagram of another if the second is a rearrangement of the letters in the first. For example, `'heart'` and `'earth'` are anagrams.
 
 For the sake of simplicity, let’s assume that the two strings in question use symbols from the set of 26 lowercase alphabetic characters. Our goal is to write a boolean function that will take two strings and return whether they are anagrams.
 
-
-
-
-
-
-
 ## Big O
-
-
 
 An algorithm is little more than a series of steps required to perform some task. If we treat each step as a basic unit of computation, then an algorithm’s execution time can be expressed as the _number of steps required to solve the problem_.
 
@@ -331,12 +319,6 @@ The diagram below shows a few of the common big O functions as they compare with
 
 Note that $$T(n)$$ is initially larger than the cubic function but, as $$n$$ grows, $$T(n)$$ cannot compete with the rapid growth of the cubic function. Instead, it heads in the same direction as the quadratic function as $$n$$ continues to grow.
 
-
-
-
-
-
-
 What makes one computer program better than another?
 
 Take a moment to answer this for yourself 🙂. If you were given two programs that solve the same problem, how would you decide between them?
@@ -357,12 +339,12 @@ Beyond this, the exact time and space that your program uses will also depend on
 
 Here are some:
 
-* How long it takes your computer to execute every instruction
-* Your computer’s “Instruction Set Architecture”, for instance ARM or Intel x86
-* How many cores of your machine the program uses
-* What language your program is written in
-* How your operating system chooses to schedule processes
-* What other programs are running at the same time
+- How long it takes your computer to execute every instruction
+- Your computer’s “Instruction Set Architecture”, for instance ARM or Intel x86
+- How many cores of your machine the program uses
+- What language your program is written in
+- How your operating system chooses to schedule processes
+- What other programs are running at the same time
 
 … and there are many more.
 
@@ -457,7 +439,7 @@ Mathematically, the formula is:
 
 $$\sum_{i=1}^{n} i = \frac {n(n+1)}{2}$$
 
-If you don’t quite understand this formula, take a moment to explore [one of these visual explanations](https://artofproblemsolving.com/wiki/index.php?title=Proofs\_without\_words).
+If you don’t quite understand this formula, take a moment to explore [one of these visual explanations](https://artofproblemsolving.com/wiki/index.php?title=Proofs_without_words).
 
 How would we implement this as a Python function, again with our timing code?
 

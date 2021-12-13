@@ -9,6 +9,7 @@ array, the function should return [-1, -1].
 
 Sample input:
 45,
+
 ```
 [
     [1, 4, 7, 12, 15, 997, 999],

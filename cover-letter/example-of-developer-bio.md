@@ -12,7 +12,7 @@ From January 2010 to November 2011, I was part of the team responsible for the w
 
 Before Sueddeutsche, I worked for Yahoo! on their equally massive European news sites. My team and I took `news.yahoo.com`’s solid codebase, and made it localizable for distinct markets and languages: we were directly responsible for building and maintaining Yahoo!’s news sites in the UK, France, Germany, Spain, and Italy, relaunching all five within a year. We laid the foundation for further work that expanded the platform’s scope to include Singapore and beyond. We did _good_ work while understaffed and under pressure, and I’m proud of our accomplishments.
 
-In addition to my in-house work, I’ve written a variety of articles on development for publications such as [DigitalWeb](http://www.digital-web.com/about/contributors/mike\_west/), [A List Apart](http://www.alistapart.com/authors/w/mikewest), and Opera’s [Web Standards Curriculum](http://www.opera.com/company/education/curriculum/). I enjoy what I do, and I enjoy sharing tidbits with others.
+In addition to my in-house work, I’ve written a variety of articles on development for publications such as [DigitalWeb](http://www.digital-web.com/about/contributors/mike_west/), [A List Apart](http://www.alistapart.com/authors/w/mikewest), and Opera’s [Web Standards Curriculum](http://www.opera.com/company/education/curriculum/). I enjoy what I do, and I enjoy sharing tidbits with others.
 
 A more complete resume is available at [mikewest.org/resume](http://mikewest.org/resume), with a more socially annotated version at [linkedin.com/in/mikewestorg](http://www.linkedin.com/in/mikewestorg).
 

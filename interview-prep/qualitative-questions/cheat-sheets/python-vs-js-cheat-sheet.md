@@ -2,26 +2,26 @@
 
 ### Contents
 
-* Versions
-* Development Environments
-* Running Programs
-* Comments
-* Semicolons
-* Whitespace, Blocks
-* Functions
-* Arithmetic Operators
-* Variables
-* Data Types
-* Arrays/Lists
-* Slices
-* Objects/Dicts
-* String Formatting
-* Booleans and Conditionals
-* `for` Loops
-* `while` Loops
-* `switch` Statement
-* `if` Conditionals
-* Classes
+- Versions
+- Development Environments
+- Running Programs
+- Comments
+- Semicolons
+- Whitespace, Blocks
+- Functions
+- Arithmetic Operators
+- Variables
+- Data Types
+- Arrays/Lists
+- Slices
+- Objects/Dicts
+- String Formatting
+- Booleans and Conditionals
+- `for` Loops
+- `while` Loops
+- `switch` Statement
+- `if` Conditionals
+- Classes
 
 ### Versions
 
@@ -90,7 +90,7 @@ Single line:
 
 ```javascript
 // Anything after two forward slashes is a comment
-print(2);  // prints 2
+print(2); // prints 2
 ```
 
 Multi-line comments:
@@ -132,7 +132,8 @@ Javascript ends statements with semicolons, usually at the end of the line. I ca
 ```javascript
 console.log("Hello, world!");
 
-let x = 10; console.log(x);
+let x = 10;
+console.log(x);
 ```
 
 Javascript interpreters will let you get away without using semicolons at ends of lines, but you should use them.
@@ -153,12 +154,12 @@ Whitespace has no special meaning. Blocks are declared with squirrely braces `{`
 
 ```javascript
 if (x == 2) {
-  console.log("x must be 2")
+  console.log("x must be 2");
 } else {
   if (x == 3) {
-    console.log("x must be 3")
+    console.log("x must be 3");
   } else {
-    console.log("x must be something else")
+    console.log("x must be something else");
   }
 }
 ```
@@ -196,15 +197,15 @@ An alternate syntax for functions is growing increasingly common, called _arrow 
 let hello = () => {
   console.log("hello");
   console.log("world");
-}
+};
 
 hello(); // prints hello, then world
 
 // Arrow functions with single parameters don't
 // need parens around the parameter:
-let printNum = x => {
+let printNum = (x) => {
   console.log(x);
-}
+};
 
 // If you don't explicitly return a value, the value
 // of the last expression in the function is used.
@@ -299,12 +300,12 @@ x = 10
 #### JavaScript
 
 ```javascript
-let a = 12;        // number
-let b = 1.2;       // number
-let c = 'hello';   // string
-let d = "world";   // string 
-let e = true;      // boolean
-let f = null;      // null value
+let a = 12; // number
+let b = 1.2; // number
+let c = "hello"; // string
+let d = "world"; // string
+let e = true; // boolean
+let f = null; // null value
 let g = undefined; // undefined value
 ```
 
@@ -325,9 +326,9 @@ console.log(`x is ${x}`); // prints "x is 12"
 JS is _weakly typed_ so it supports operations on multiple types of data at once.
 
 ```javascript
-"2" + 4;           // string "24"
+"2" + 4; // string "24"
 parseInt("2") + 4; // number 6
-Number("2") + 4;   // number 6
+Number("2") + 4; // number 6
 ```
 
 #### Python
@@ -374,19 +375,19 @@ Arrays are zero-based.
 Creating lists:
 
 ```javascript
-let a1 = new Array();   // Empty array
+let a1 = new Array(); // Empty array
 let a2 = new Array(10); // Array of 10 elements
-let a3 = [];            // Empty array
-let a4 = [10, 20, 30];  // Array of 3 elements
-let a5 = [1, 2, "b"];   // No problem
+let a3 = []; // Empty array
+let a4 = [10, 20, 30]; // Array of 3 elements
+let a5 = [1, 2, "b"]; // No problem
 ```
 
 Accessing:
 
 ```javascript
-console.log(a4[1]);  // prints 20
+console.log(a4[1]); // prints 20
 
-a4[0] = 5;   // change from 10 to 5
+a4[0] = 5; // change from 10 to 5
 a4[20] = 99; // OK, makes a new element at index 20
 ```
 
@@ -483,21 +484,22 @@ _Objects_ hold data which can be found by a specific key called a _property_.
 Creation:
 
 ```javascript
-let o1 = {};           // empty object
-let o2 = {"x": 12};    // one property
-let o3 = {y: "hello"}; // property quotes optional
+let o1 = {}; // empty object
+let o2 = { x: 12 }; // one property
+let o3 = { y: "hello" }; // property quotes optional
 
-let o4 = {  // common multiline format
-  "a": 20,
-  "b": 1.2,
-  "foo": "hello"
+let o4 = {
+  // common multiline format
+  a: 20,
+  b: 1.2,
+  foo: "hello",
 };
 ```
 
 Access:
 
 ```javascript
-console.log(o2.x);      // prints 12
+console.log(o2.x); // prints 12
 console.log(o4["foo"]); // prints hello
 ```
 
@@ -541,27 +543,27 @@ Converting to different number bases:
 ```javascript
 let x = 237;
 let x_binary = x.toString(2); // string '11101101'
-let x_hex = x.toString(16);   // string 'ed'
+let x_hex = x.toString(16); // string 'ed'
 ```
 
 Controlling floating point precision:
 
 ```javascript
 let x = 3.1415926535;
-let y = x.toFixed(2);  // string '3.14'
+let y = x.toFixed(2); // string '3.14'
 ```
 
 Padding and justification:
 
 ```javascript
 let s = "Hello!";
-let t = s.padStart(10, ' '); // string '    Hello!' 
-let u = s.padEnd(10, ' ');   // string 'Hello!    '
+let t = s.padStart(10, " "); // string '    Hello!'
+let u = s.padEnd(10, " "); // string 'Hello!    '
 
-let v = s.padStart(10, '*'); // string '****Hello!' 
+let v = s.padStart(10, "*"); // string '****Hello!'
 
 // Pad with leading zeroes
-(12).toString(2).padStart(8, '0'); // string '00001100'
+(12).toString(2).padStart(8, "0"); // string '00001100'
 ```
 
 Parameterized strings:
@@ -572,7 +574,9 @@ let y = "Hello";
 let z = 67;
 
 // 'x is 3.14, y is "Hello", z is 01000011'
-let s = `x is ${x.toFixed(2)}, y is "${y}", z is ${z.toString(2).padStart(8, '0')}`
+let s = `x is ${x.toFixed(2)}, y is "${y}", z is ${z
+  .toString(2)
+  .padStart(8, "0")}`;
 ```
 
 #### Python
@@ -612,14 +616,14 @@ Boolean operators:
 The concept of strict equality/inequality applies to items that might normally be converted into a compatible type. The strict tests will consider if the types themselves are the same.
 
 ```javascript
-0 == "0";  // true
+0 == "0"; // true
 0 === "0"; // false
 
-0 == [];   // true
-0 === [];  // false
+0 == []; // true
+0 === []; // false
 
-0 == 0;    // true
-0 === 0;   // true
+0 == 0; // true
+0 === 0; // true
 ```
 
 Logical operators:
@@ -633,12 +637,12 @@ Logical operators:
 The not operator `!` can be used to test whether or not a value is "truthy".
 
 ```javascript
-!0;    // true
-!!0;   // false
-!1;    // false
+!0; // true
+!!0; // false
+!1; // false
 !null; // true
-!"0";  // false, perhaps unexpectedly
-!"x";  // false
+!"0"; // false, perhaps unexpectedly
+!"x"; // false
 ```
 
 Example:
@@ -813,7 +817,7 @@ while x >= 0:
 JS can switch on various data types:
 
 ```javascript
-switch(x) {
+switch (x) {
   case "foo":
     console.log("x is foo, all right");
     break;
@@ -913,7 +917,7 @@ Goat.prototype.jump = function () {
 };
 
 g = new Goat("red");
-g.type;   // "mammal", since Goat inherits from Creature
+g.type; // "mammal", since Goat inherits from Creature
 g.jump(); // "I'm jumping! Yay!"
 ```
 
@@ -939,7 +943,7 @@ class Goat extends Creature {
 }
 
 g = new Goat("orange");
-g.type;   // "mammal"
+g.type; // "mammal"
 g.jump(); // "I'm jumping! Yay!"
 ```
 
@@ -961,7 +965,7 @@ class Goat(Creature):
     # call super constructor
     Creature.__init__(self, "mammal")
     self.color = color
-  
+
   def jump(self):
     print("I'm jumping! Yay!")
 
@@ -982,7 +986,7 @@ class Goat(Creature):
     # call super constructor
     super().__init__("mammal")  # <-- Nicer!
     self.color = color
-  
+
   def jump(self):
     print("I'm jumping! Yay!")
 

@@ -1,83 +1,75 @@
 # 📮 Postings:
 
-
-
-
-
-
-
-* Soundhound❌
-* Shazam❌
-* [Pro Too](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25199\&siteid=5286\&PageType=JobDetails\&jobid=1542200#Applications)ls✔️ &#x20;
-* Apple✔️ &#x20;
-* _Amazon_✔️ &#x20;
-* _Microsoft_✔️ &#x20;
-* _Adobe_
-* _Oracle_
-* _Google_
-* _Facebook_
-* _Bloomberg_
-* _Uber_
-* _eBay_
-* _LinkedIn_
-* _VMware_
-* _Yahoo_
-* _Salesforce_
-* _Snapchat_
-* _Twitter_
-* _Paypal_
-* _Walmart Labs_
-* _Cisco_
-* _Citadel_
-* _Yandex_
-* _Flip kart_
-* _Atlassian_
-* _Nutanix_
-* _Nvidia_
-* _Airbnb_
-* _Zillow_
-* _tiktok_
-* _Intuit_
-* _Expedia_
-* _wish_
-* _Visa_
-* _Roblox_
-* _Door Dash_
-* _Samsung_
-* _JPMorgan_
-* _MorganStanley_
-* _Mathworks_
-* _Capital One_
-* _Pinterest_
-* _Wayfair_
-* _Shopee_
-* _Yelp_
-* _Splunk_
-* _Citrix_
-* _Robinhood_
-* _Docusign_
-* _Databricks_
-* _Dropbox_
-* _Intel_
-* _Infosys_
-* _Zenefits_
-* _Qualcomm_
-* _American Express_
-* _Rubrik_
-* _Indeed_
-* _Twitch_
-* _Two Sigma_
-* _Zoho_
-* _Dunzo_
-* _GoDaddy_
-* _Sprinklr_
-* _Black Rock_
-* _Code nation_
-* _Huawei_
-* _Netflix_
-* _Coursera_
-
-
+- Soundhound❌
+- Shazam❌
+- [Pro Too](https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?partnerid=25199&siteid=5286&PageType=JobDetails&jobid=1542200#Applications)ls✔️ &#x20;
+- Apple✔️ &#x20;
+- *Amazon*✔️ &#x20;
+- *Microsoft*✔️ &#x20;
+- _Adobe_
+- _Oracle_
+- _Google_
+- _Facebook_
+- _Bloomberg_
+- _Uber_
+- _eBay_
+- _LinkedIn_
+- _VMware_
+- _Yahoo_
+- _Salesforce_
+- _Snapchat_
+- _Twitter_
+- _Paypal_
+- _Walmart Labs_
+- _Cisco_
+- _Citadel_
+- _Yandex_
+- _Flip kart_
+- _Atlassian_
+- _Nutanix_
+- _Nvidia_
+- _Airbnb_
+- _Zillow_
+- _tiktok_
+- _Intuit_
+- _Expedia_
+- _wish_
+- _Visa_
+- _Roblox_
+- _Door Dash_
+- _Samsung_
+- _JPMorgan_
+- _MorganStanley_
+- _Mathworks_
+- _Capital One_
+- _Pinterest_
+- _Wayfair_
+- _Shopee_
+- _Yelp_
+- _Splunk_
+- _Citrix_
+- _Robinhood_
+- _Docusign_
+- _Databricks_
+- _Dropbox_
+- _Intel_
+- _Infosys_
+- _Zenefits_
+- _Qualcomm_
+- _American Express_
+- _Rubrik_
+- _Indeed_
+- _Twitch_
+- _Two Sigma_
+- _Zoho_
+- _Dunzo_
+- _GoDaddy_
+- _Sprinklr_
+- _Black Rock_
+- _Code nation_
+- _Huawei_
+- _Netflix_
+- _Coursera_
 
 **» Why your organization should have a professional website?**
 
@@ -1285,37 +1277,38 @@ Ask for updates on the process and ensure that the hired companies know exactly 
 
 Pay on time to ensure that there is no delay from your side. Understand that some details are going to change based on implementation decisions. Accommodate for unexpected issues and have a working relationship between the companies and yourself to handle post-launch issues.
 
+- ![](https://res.cloudinary.com/indysigner/image/upload/v1629896403/joblogos/dephion.png)[JavaScript Developer](https://jobs.smashingmagazine.com/jobs/2021-08-25-javascript-developer-gelen/#main)
 
+  Always wanted work that makes a difference? Our international team of super-nerds, creatives and scientists craft high-end products and services to make people healthier. If you are a developer with a talent for JavaScript, you should join us to …
 
+  [Details →](https://jobs.smashingmagazine.com/jobs/2021-08-25-javascript-developer-gelen/#main)32.0 - 40.0 HOURSRemote — Geleen
 
+- ![](https://res.cloudinary.com/indysigner/image/upload/v1629303669/joblogos/1535048362878_gqqj5d.jpg)[UX & DesignOps Manager](https://jobs.smashingmagazine.com/jobs/2021-08-18-ux-designops-manager-remote/#main)
 
-*   ![](https://res.cloudinary.com/indysigner/image/upload/v1629896403/joblogos/dephion.png)[JavaScript Developer](https://jobs.smashingmagazine.com/jobs/2021-08-25-javascript-developer-gelen/#main)
+  Gravity Works is looking for a UX \&amp; DesignOps Manager to join our collaborative, communicative team. We are excited to find skilled candidates who enjoy the work they do on the web, who are ready to lead and grow a creative team, and who see …
 
-    Always wanted work that makes a difference? Our international team of super-nerds, creatives and scientists craft high-end products and services to make people healthier. If you are a developer with a talent for JavaScript, you should join us to …
+  [Details →](https://jobs.smashingmagazine.com/jobs/2021-08-18-ux-designops-manager-remote/#main)FULL-TIMERemote — Anywhere
 
-    [Details →](https://jobs.smashingmagazine.com/jobs/2021-08-25-javascript-developer-gelen/#main)32.0 - 40.0 HOURSRemote — Geleen
-*   ![](https://res.cloudinary.com/indysigner/image/upload/v1629303669/joblogos/1535048362878\_gqqj5d.jpg)[UX & DesignOps Manager](https://jobs.smashingmagazine.com/jobs/2021-08-18-ux-designops-manager-remote/#main)
+- ![](https://res.cloudinary.com/indysigner/image/upload/v1629186197/joblogos/kinsta-favicon_nbsnsw.png)[Product Designer](https://jobs.smashingmagazine.com/jobs/2021-08-17-product-designer-us-ca/#main)
 
-    Gravity Works is looking for a UX \&amp; DesignOps Manager to join our collaborative, communicative team. We are excited to find skilled candidates who enjoy the work they do on the web, who are ready to lead and grow a creative team, and who see …
+  Kinsta is a modern cloud hosting company focused on WordPress hosting. We run our services on cutting-edge technology and we are proud of the level of support we offer to our customers. Our talented and motivated team is scattered across the globe …
 
-    [Details →](https://jobs.smashingmagazine.com/jobs/2021-08-18-ux-designops-manager-remote/#main)FULL-TIMERemote — Anywhere
-*   ![](https://res.cloudinary.com/indysigner/image/upload/v1629186197/joblogos/kinsta-favicon\_nbsnsw.png)[Product Designer](https://jobs.smashingmagazine.com/jobs/2021-08-17-product-designer-us-ca/#main)
+  [Details →](https://jobs.smashingmagazine.com/jobs/2021-08-17-product-designer-us-ca/#main)FULL-TIMERemote — United States, Canada
 
-    Kinsta is a modern cloud hosting company focused on WordPress hosting. We run our services on cutting-edge technology and we are proud of the level of support we offer to our customers. Our talented and motivated team is scattered across the globe …
+- ![](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c21cf819-edf3-4a01-a63a-e72f24a461d1/dmgt-logo-opt.png)[Web Engineer](https://jobs.smashingmagazine.com/jobs/2021-07-30-web-engineer-new-york/#main)
 
-    [Details →](https://jobs.smashingmagazine.com/jobs/2021-08-17-product-designer-us-ca/#main)FULL-TIMERemote — United States, Canada
-*   ![](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c21cf819-edf3-4a01-a63a-e72f24a461d1/dmgt-logo-opt.png)[Web Engineer](https://jobs.smashingmagazine.com/jobs/2021-07-30-web-engineer-new-york/#main)
+  A new division of DMGT is looking for an experienced web engineer who can build a world-class web application and wants to recruit/grow the team to make them even better. Backed by a mature and profitable media company, we are seeking to become the …
 
-    A new division of DMGT is looking for an experienced web engineer who can build a world-class web application and wants to recruit/grow the team to make them even better. Backed by a mature and profitable media company, we are seeking to become the …
+  [Details →](https://jobs.smashingmagazine.com/jobs/2021-07-30-web-engineer-new-york/#main)FULL-TIMENew York, NYC
 
-    [Details →](https://jobs.smashingmagazine.com/jobs/2021-07-30-web-engineer-new-york/#main)FULL-TIMENew York, NYC
-*   ![](https://res.cloudinary.com/indysigner/image/upload/v1627455455/joblogos/justfix-logo-opt.png)[UX/UI Designer](https://jobs.smashingmagazine.com/jobs/2021-07-27-uxui-designer-los-angeles-usa/#main)
+- ![](https://res.cloudinary.com/indysigner/image/upload/v1627455455/joblogos/justfix-logo-opt.png)[UX/UI Designer](https://jobs.smashingmagazine.com/jobs/2021-07-27-uxui-designer-los-angeles-usa/#main)
 
-    About the Position JustFix.nyc is seeking a UX/UI Designer contractor with 3+ years of relevant experience, with an ambitious entrepreneurial spirit and a passion for tenant rights to join us on our mission to co-create tools with tenants, …
+  About the Position JustFix.nyc is seeking a UX/UI Designer contractor with 3+ years of relevant experience, with an ambitious entrepreneurial spirit and a passion for tenant rights to join us on our mission to co-create tools with tenants, …
 
-    [Details →](https://jobs.smashingmagazine.com/jobs/2021-07-27-uxui-designer-los-angeles-usa/#main)20-30H (TEMPORARY)Los Angeles, CA
-*   ![](https://res.cloudinary.com/indysigner/image/upload/v1627323193/joblogos/1600199780273\_rs7xyz.jpg)[UX Strategist](https://jobs.smashingmagazine.com/jobs/2021-07-26-ux-strategist-remote/#main)
+  [Details →](https://jobs.smashingmagazine.com/jobs/2021-07-27-uxui-designer-los-angeles-usa/#main)20-30H (TEMPORARY)Los Angeles, CA
 
-    We are looking for a talented Freelance UX Strategist to join our website team. As a UX Strategist, you will work closely with designers, developers, writers and marketing team members to drive user research and design best-in-class UX architecture …
+- ![](https://res.cloudinary.com/indysigner/image/upload/v1627323193/joblogos/1600199780273_rs7xyz.jpg)[UX Strategist](https://jobs.smashingmagazine.com/jobs/2021-07-26-ux-strategist-remote/#main)
 
-    [Details →](https://jobs.smashingmagazine.com/jobs/2021-07-26-ux-strategist-remote/#main)
+  We are looking for a talented Freelance UX Strategist to join our website team. As a UX Strategist, you will work closely with designers, developers, writers and marketing team members to drive user research and design best-in-class UX architecture …
+
+  [Details →](https://jobs.smashingmagazine.com/jobs/2021-07-26-ux-strategist-remote/#main)

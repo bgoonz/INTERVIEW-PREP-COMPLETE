@@ -1,6 +1,7 @@
 # Sort a Stack
 
 Given a Stack class like the following:
+
 ```js
 class Stack {
   constructor() {
@@ -16,7 +17,7 @@ class Stack {
   }
 
   peek() {
-    return this.storage[this.storage.length-1];
+    return this.storage[this.storage.length - 1];
   }
 
   isEmpty() {
@@ -24,14 +25,15 @@ class Stack {
   }
 
   printContents() {
-    this.storage.forEach(elem => console.log(elem));
+    this.storage.forEach((elem) => console.log(elem));
   }
 }
 ```
 
-Write a function `sortStack` that receives a stack of integers and returns another stack containing those same integers in sorted order. You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure. 
+Write a function `sortStack` that receives a stack of integers and returns another stack containing those same integers in sorted order. You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure.
 
 Example:
+
 ```js
 const s = new Stack();
 s.push(4);
@@ -43,7 +45,7 @@ s.push(6);
 
 const sortedStack = sortStack(s); // sortedStack is also a Stack instance
 
-sortedStack.printContents();  // should print 1, 4, 5, 6, 8, 10
+sortedStack.printContents(); // should print 1, 4, 5, 6, 8, 10
 ```
 
 Analyze the time and space complexity of your solution.

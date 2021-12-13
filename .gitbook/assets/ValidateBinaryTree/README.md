@@ -1,6 +1,7 @@
 # Validate a Binary Tree
 
 Given a binary tree like the following:
+
 ```js
 class BinaryTreeNode {
   constructor(value) {
@@ -24,15 +25,16 @@ class BinaryTreeNode {
 Write a function that accepts a binary tree node and returns true if the tree rooted at that node forms a valid binary search tree.
 
 Example:
+
 ```js
 const root = new BinaryTreeNode(10);
 root.insertLeft(5);
 root.insertRight(15);
 
-isBinarySearchTree(root);   // should return true
+isBinarySearchTree(root); // should return true
 ```
 
-Keep in mind that it isn't enough to check that nodes in the left subtree are always descending as we traverse down. Conversely, it isn't enough to simply check that all the nodes in the right subtee are ascending. 
+Keep in mind that it isn't enough to check that nodes in the left subtree are always descending as we traverse down. Conversely, it isn't enough to simply check that all the nodes in the right subtee are ascending.
 
 We might have a tree that looks like this:
 

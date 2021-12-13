@@ -2,8 +2,6 @@
 
 {% embed url="https://jsfiddle.net/bgoonz/8kLv015j/embedded/js/dark" %}
 
-
-
 ### The queue data structure <a href="#1-the-queue-data-structure" id="1-the-queue-data-structure"></a>
 
 If you enjoy traveling (like I do), most likely you passed the check-in process at the airport. If there are a lot of travelers willing to check-in, naturally a queue of people is formed at the check-in desk.
@@ -90,7 +88,7 @@ Let's look at a possible implementation of the queue data structure while mainta
 class Queue {  constructor() {    this.items = {};    this.headIndex = 0;    this.tailIndex = 0;  }  enqueue(item) {    this.items[this.tailIndex] = item;    this.tailIndex++;  }  dequeue() {    const item = this.items[this.headIndex];    delete this.items[this.headIndex];    this.headIndex++;    return item;  }  peek() {    return this.items[this.headIndex];  }  get length() {    return this.tailIndex - this.headIndex;  }}const queue = new Queue();queue.enqueue(7);queue.enqueue(2);queue.enqueue(6);queue.enqueue(4);queue.dequeue(); // => 7queue.peek();    // => 2queue.length;    // => 3
 ```
 
-[Try the demo.](https://jsfiddle.net/dmitri\_pavlutin/g6pd4hqb/2/)
+[Try the demo.](https://jsfiddle.net/dmitri_pavlutin/g6pd4hqb/2/)
 
 `const queue = new Queue()` is how you create an instance of a queue.
 
@@ -106,8 +104,8 @@ _**Queue**_** methods complexity**
 
 `queue()`, `dequeue()`, `peek()` and `length()` methods of the `Queue` class use only:
 
-* Property accessors (e.g. `this.items[this.headIndex]`),
-* Or perform aritmetical operations (e.g. `this.headIndex++`)
+- Property accessors (e.g. `this.items[this.headIndex]`),
+- Or perform aritmetical operations (e.g. `this.headIndex++`)
 
 Thus the time complexity of these methods is constant time `O(1)`.
 

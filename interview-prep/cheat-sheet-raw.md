@@ -1,7 +1,5 @@
 # Cheat-Sheet-Raw
 
-
-
 ## Vanilla JS
 
 > Global object: properties
@@ -10,7 +8,7 @@
 Object.length(obj);
 ```
 
-***
+---
 
 #### length is a property of a function object, and indicates how many arguments the function expects, i.e. the number of formal parameters. This number does not include the rest parameter. Has a value of 1
 
@@ -18,7 +16,7 @@ Object.length(obj);
 Object.prototype;
 ```
 
-***
+---
 
 #### Represents the Object prototype object and allows to add new properties and methods to all objects of type Object
 
@@ -28,7 +26,7 @@ Object.prototype;
 Object.assign(target, ...sources);
 ```
 
-***
+---
 
 #### Copies the values of all enumerable own properties from one or more source objects to a target object. method is used to copy the values of all enumerable own properties from one or more source objects to a target object. It will return the target object
 
@@ -36,7 +34,7 @@ Object.assign(target, ...sources);
 Object.create(MyObject);
 ```
 
-***
+---
 
 #### Creates a new object with the specified prototype object and properties. The object which should be the prototype of the newly-created object
 
@@ -44,7 +42,7 @@ Object.create(MyObject);
 Object.defineProperty(obj, prop, descriptor);
 ```
 
-***
+---
 
 #### Adds the named property described by a given descriptor to an object
 
@@ -52,7 +50,7 @@ Object.defineProperty(obj, prop, descriptor);
 Object.defineProperties(obj, props);
 ```
 
-***
+---
 
 #### Adds the named properties described by the given descriptors to an object
 
@@ -60,7 +58,7 @@ Object.defineProperties(obj, props);
 Object.entries(obj);
 ```
 
-***
+---
 
 #### Returns an array containing all of the \[key, value] pairs of a given object's own enumerable string properties
 
@@ -68,7 +66,7 @@ Object.entries(obj);
 Object.freeze(obj);
 ```
 
-***
+---
 
 #### Freezes an object: other code can't delete or change any properties
 
@@ -76,7 +74,7 @@ Object.freeze(obj);
 Object.getOwnPropertyDescriptor(obj, prop);
 ```
 
-***
+---
 
 #### Returns a property descriptor for a named property on an object
 
@@ -84,7 +82,7 @@ Object.getOwnPropertyDescriptor(obj, prop);
 Object.getOwnPropertyDescriptors(obj);
 ```
 
-***
+---
 
 #### Returns an object containing all own property descriptors for an object
 
@@ -92,7 +90,7 @@ Object.getOwnPropertyDescriptors(obj);
 Object.getOwnPropertyNames(obj);
 ```
 
-***
+---
 
 #### Returns an array containing the names of all of the given object's own enumerable and non-enumerable properties
 
@@ -100,7 +98,7 @@ Object.getOwnPropertyNames(obj);
 Object.getOwnPropertySymbols(obj);
 ```
 
-***
+---
 
 #### Returns an array of all symbol properties found directly upon a given object
 
@@ -108,7 +106,7 @@ Object.getOwnPropertySymbols(obj);
 Object.getPrototypeOf(obj);
 ```
 
-***
+---
 
 #### Returns the prototype of the specified object
 
@@ -116,7 +114,7 @@ Object.getPrototypeOf(obj);
 Object.is(value1, value2);
 ```
 
-***
+---
 
 #### Compares if two values are the same value. Equates all NaN values (which differs from both Abstract Equality Comparison and Strict Equality Comparison)
 
@@ -124,7 +122,7 @@ Object.is(value1, value2);
 Object.isExtensible(obj);
 ```
 
-***
+---
 
 #### Determines if extending of an object is allowed
 
@@ -132,7 +130,7 @@ Object.isExtensible(obj);
 Object.isFrozen(obj);
 ```
 
-***
+---
 
 #### Determines if an object was frozen
 
@@ -140,7 +138,7 @@ Object.isFrozen(obj);
 Object.isSealed(obj);
 ```
 
-***
+---
 
 #### Determines if an object is sealed
 
@@ -148,7 +146,7 @@ Object.isSealed(obj);
 Object.keys(obj);
 ```
 
-***
+---
 
 #### Returns an array containing the names of all of the given object's own enumerable string properties
 
@@ -156,7 +154,7 @@ Object.keys(obj);
 Object.preventExtensions(obj);
 ```
 
-***
+---
 
 #### Prevents any extensions of an object
 
@@ -164,7 +162,7 @@ Object.preventExtensions(obj);
 Object.seal(obj);
 ```
 
-***
+---
 
 #### Prevents other code from deleting properties of an object
 
@@ -172,7 +170,7 @@ Object.seal(obj);
 Object.setPrototypeOf(obj, prototype);
 ```
 
-***
+---
 
 #### Sets the prototype (i.e., the internal \[\[Prototype]] property)
 
@@ -180,7 +178,7 @@ Object.setPrototypeOf(obj, prototype);
 Object.values(obj);
 ```
 
-***
+---
 
 #### Returns an array containing the values that correspond to all of a given object's own enumerable string properties
 
@@ -190,7 +188,7 @@ Object.values(obj);
 obj.constructor;
 ```
 
-***
+---
 
 #### Specifies the function that creates an object's prototype
 
@@ -198,7 +196,7 @@ obj.constructor;
 obj.__proto__;
 ```
 
-***
+---
 
 #### Points to the object which was used as prototype when the object was instantiated
 
@@ -208,7 +206,7 @@ obj.__proto__;
 obj.hasOwnProperty(prop);
 ```
 
-***
+---
 
 #### Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain
 
@@ -216,7 +214,7 @@ obj.hasOwnProperty(prop);
 prototypeObj.isPrototypeOf(object);
 ```
 
-***
+---
 
 #### Returns a boolean indicating whether the object this method is called upon is in the prototype chain of the specified object
 
@@ -224,7 +222,7 @@ prototypeObj.isPrototypeOf(object);
 obj.propertyIsEnumerable(prop);
 ```
 
-***
+---
 
 #### Returns a boolean indicating if the internal ECMAScript \[\[Enumerable]] attribute is set
 
@@ -232,7 +230,7 @@ obj.propertyIsEnumerable(prop);
 obj.toLocaleString();
 ```
 
-***
+---
 
 #### Calls toString()
 
@@ -240,7 +238,7 @@ obj.toLocaleString();
 obj.toString();
 ```
 
-***
+---
 
 #### Returns a string representation of the object
 
@@ -248,7 +246,7 @@ obj.toString();
 object.valueOf();
 ```
 
-***
+---
 
 #### Returns the primitive value of the specified object
 
@@ -258,7 +256,7 @@ object.valueOf();
 Array.length;
 ```
 
-***
+---
 
 #### Reflects the number of elements in an array
 
@@ -266,7 +264,7 @@ Array.length;
 Array.prototype;
 ```
 
-***
+---
 
 #### Represents the prototype for the Array constructor and allows to add new properties and methods to all Array objects
 
@@ -276,7 +274,7 @@ Array.prototype;
 Array.from(arrayLike[, mapFn[, thisArg]]);
 ```
 
-***
+---
 
 #### Creates a new Array instance from an array-like or iterable object
 
@@ -284,7 +282,7 @@ Array.from(arrayLike[, mapFn[, thisArg]]);
 Array.isArray(obj);
 ```
 
-***
+---
 
 #### Returns true if a variable is an array, if not false
 
@@ -293,7 +291,7 @@ Array.isArray(obj);
 Array.of(element0[, element1[, ...[, elementN]]]);
 ```
 
-***
+---
 
 #### Creates a new Array instance with a variable number of arguments, regardless of number or type of the arguments
 
@@ -303,7 +301,7 @@ Array.of(element0[, element1[, ...[, elementN]]]);
 arr.length;
 ```
 
-***
+---
 
 #### Reflects the number of elements in an array
 
@@ -313,7 +311,7 @@ arr.length;
 arr.copyWithin(target, start, end);
 ```
 
-***
+---
 
 #### Copies a sequence of array elements within the array
 
@@ -321,7 +319,7 @@ arr.copyWithin(target, start, end);
 arr.fill(value, start, end);
 ```
 
-***
+---
 
 #### Fills all the elements of an array from a start index to an end index with a static value
 
@@ -329,7 +327,7 @@ arr.fill(value, start, end);
 arr.pop();
 ```
 
-***
+---
 
 #### Removes the last element from an array and returns that element
 
@@ -338,7 +336,7 @@ arr.pop();
 arr.push([element1[, ...[, elementN]]]);
 ```
 
-***
+---
 
 #### Adds one or more elements to the end of an array and returns the new length of the array
 
@@ -346,7 +344,7 @@ arr.push([element1[, ...[, elementN]]]);
 arr.reverse();
 ```
 
-***
+---
 
 #### Reverses the order of the elements of an array in place — the first becomes the last, and the last becomes the first
 
@@ -354,7 +352,7 @@ arr.reverse();
 arr.shift();
 ```
 
-***
+---
 
 #### Removes the first element from an array and returns that element
 
@@ -362,7 +360,7 @@ arr.shift();
 arr.sort();
 ```
 
-***
+---
 
 #### Sorts the elements of an array in place and returns the array
 
@@ -373,14 +371,14 @@ array.splice(start, deleteCount, item1, item2, ...)
 
 > Adds and/or removes elements from an array.
 
-***
+---
 
 ```js
 
 arr.unshift([element1[, ...[, elementN]]]);
 ```
 
-***
+---
 
 #### Adds one or more elements to the front of an array and returns the new length of the array
 
@@ -391,7 +389,7 @@ arr.unshift([element1[, ...[, elementN]]]);
 arr.concat(value1[, value2[, ...[, valueN]]]);
 ```
 
-***
+---
 
 #### Returns a new array comprised of this array joined with other array(s) and/or value(s)
 
@@ -399,7 +397,7 @@ arr.concat(value1[, value2[, ...[, valueN]]]);
 arr.includes(searchElement, fromIndex);
 ```
 
-***
+---
 
 #### Determines whether an array contains a certain element, returning true or false as appropriate
 
@@ -408,7 +406,7 @@ arr.includes(searchElement, fromIndex);
 arr.indexOf(searchElement[, fromIndex]);
 ```
 
-***
+---
 
 #### Returns the first (least) index of an element within the array equal to the specified value, or -1 if none is found
 
@@ -416,7 +414,7 @@ arr.indexOf(searchElement[, fromIndex]);
 arr.join(separator);
 ```
 
-***
+---
 
 #### Joins all elements of an array into a string
 
@@ -424,7 +422,7 @@ arr.join(separator);
 arr.lastIndexOf(searchElement, fromIndex);
 ```
 
-***
+---
 
 #### Returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found
 
@@ -432,7 +430,7 @@ arr.lastIndexOf(searchElement, fromIndex);
 arr.slice(begin, end);
 ```
 
-***
+---
 
 #### Extracts a section of an array and returns a new array
 
@@ -440,7 +438,7 @@ arr.slice(begin, end);
 arr.toString();
 ```
 
-***
+---
 
 #### Returns a string representing the array and its elements. Overrides the Object.prototype.toString() method
 
@@ -448,7 +446,7 @@ arr.toString();
 arr.toLocaleString(locales, options);
 ```
 
-***
+---
 
 #### Returns a localized string representing the array and its elements. Overrides the Object.prototype.toLocaleString() method
 
@@ -458,7 +456,7 @@ arr.toLocaleString(locales, options);
 arr.entries();
 ```
 
-***
+---
 
 #### Returns a new Array Iterator object that contains the key/value pairs for each index in the array
 
@@ -467,7 +465,7 @@ arr.entries();
 arr.every(callback[, thisArg]);
 ```
 
-***
+---
 
 #### Returns true if every element in this array satisfies the provided testing function
 
@@ -476,7 +474,7 @@ arr.every(callback[, thisArg]);
 arr.filter(callback[, thisArg]);
 ```
 
-***
+---
 
 #### Creates a new array with all of the elements of this array for which the provided filtering function returns true
 
@@ -485,7 +483,7 @@ arr.filter(callback[, thisArg]);
 arr.find(callback[, thisArg]);
 ```
 
-***
+---
 
 #### Returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found
 
@@ -494,7 +492,7 @@ arr.find(callback[, thisArg]);
 arr.findIndex(callback[, thisArg]);
 ```
 
-***
+---
 
 #### Returns the found index in the array, if an element in the array satisfies the provided testing function or -1 if not found
 
@@ -503,7 +501,7 @@ arr.findIndex(callback[, thisArg]);
 arr.forEach(callback[, thisArg]);
 ```
 
-***
+---
 
 #### Calls a function for each element in the array
 
@@ -511,7 +509,7 @@ arr.forEach(callback[, thisArg]);
 arr.keys();
 ```
 
-***
+---
 
 #### Returns a new Array Iterator that contains the keys for each index in the array
 
@@ -520,7 +518,7 @@ arr.keys();
 arr.map(callback[, initialValue]);
 ```
 
-***
+---
 
 #### Creates a new array with the results of calling a provided function on every element in this array
 
@@ -529,7 +527,7 @@ arr.map(callback[, initialValue]);
 arr.reduce(callback[, initialValue]);
 ```
 
-***
+---
 
 #### Apply a function against an accumulator and each value of the array (from left-to-right) as to reduce it to a single value
 
@@ -538,7 +536,7 @@ arr.reduce(callback[, initialValue]);
 arr.reduceRight(callback[, initialValue]);
 ```
 
-***
+---
 
 #### Apply a function against an accumulator and each value of the array (from right-to-left) as to reduce it to a single value
 
@@ -547,7 +545,7 @@ arr.reduceRight(callback[, initialValue]);
 arr.some(callback[, initialValue]);
 ```
 
-***
+---
 
 #### Returns true if at least one element in this array satisfies the provided testing function
 
@@ -555,35 +553,35 @@ arr.some(callback[, initialValue]);
 arr.values();
 ```
 
-***
+---
 
 #### Returns a new Array Iterator object that contains the values for each index in the array
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## NodeJS
 
-***
+---
 
 ```js
 let http = require("http");
 ```
 
-***
+---
 
 #### An example of a web server written with Node which responds with 'Hello World'
 
 > To run the server, put the code into a file called example.js and execute it with the node program.
 
-***
+---
 
 ```js
 http
@@ -597,7 +595,7 @@ console.log("Server running at http://127.0.0.1:8124/");
 
 ### GLOBAL OBJECTS
 
-***
+---
 
 #### In browsers, the top-level scope is the global scope
 
@@ -605,15 +603,15 @@ console.log("Server running at http://127.0.0.1:8124/");
 
 > In Node this is different. The top-level scope is not the global scope; let something inside a Node module will be local to that module.
 
-***
+---
 
 ```js
 __filename;
 ```
 
-***
+---
 
-***
+---
 
 #### The filename of the code being executed. (absolute path)
 
@@ -628,9 +626,9 @@ __filename;
 module;
 ```
 
-***
+---
 
-***
+---
 
 #### A reference to the current module. In particular module.exports is used for defining what a module exports and makes available through require()
 
@@ -638,9 +636,9 @@ module;
 exports;
 ```
 
-***
+---
 
-***
+---
 
 #### A reference to the module.exports that is shorter to type
 
@@ -648,9 +646,9 @@ exports;
 process;
 ```
 
-***
+---
 
-***
+---
 
 #### The process object is a global object and can be accessed from anywhere. It is an instance of EventEmitter
 
@@ -658,9 +656,9 @@ process;
 Buffer;
 ```
 
-***
+---
 
-***
+---
 
 #### The Buffer class is a global type for dealing with binary data directly
 
@@ -669,9 +667,9 @@ Buffer;
 console.log([data], [...]);
 ```
 
-***
+---
 
-***
+---
 
 #### Prints to stdout with newline
 
@@ -682,16 +680,16 @@ console.info([data], [...]);
 
 > Same as console.log.
 
-***
+---
 
 ```js
 
 console.error([data], [...]);
 ```
 
-***
+---
 
-***
+---
 
 #### Same as console.log but prints to stderr
 
@@ -700,9 +698,9 @@ console.error([data], [...]);
 console.warn([data], [...]);
 ```
 
-***
+---
 
-***
+---
 
 #### Same as console.error
 
@@ -710,7 +708,7 @@ console.warn([data], [...]);
 console.dir(obj);
 ```
 
-***
+---
 
 #### Uses util.inspect on obj and prints resulting string to stdout
 
@@ -718,9 +716,9 @@ console.dir(obj);
 console.time(label);
 ```
 
-***
+---
 
-***
+---
 
 #### Mark a time
 
@@ -728,7 +726,7 @@ console.time(label);
 console.timeEnd(label);
 ```
 
-***
+---
 
 #### Finish timer, record output
 
@@ -736,9 +734,9 @@ console.timeEnd(label);
 console.trace(label);
 ```
 
-***
+---
 
-***
+---
 
 #### Print a stack trace to stderr of the current position
 
@@ -746,9 +744,9 @@ console.trace(label);
 console.assert(expression, [message]);
 ```
 
-***
+---
 
-***
+---
 
 #### Same as assert.ok() where if the expression evaluates as false throw an AssertionError with message
 
@@ -757,7 +755,7 @@ console.assert(expression, [message]);
 setTimeout(callback, delay, [arg], [...]);
 ```
 
-***
+---
 
 #### To schedule execution of a one-time callback after delay milliseconds. Optionally you can also pass arguments to the callback
 
@@ -765,7 +763,7 @@ setTimeout(callback, delay, [arg], [...]);
 clearTimeout(t);
 ```
 
-***
+---
 
 #### Stop a timer that was previously created with setTimeout()
 
@@ -774,9 +772,9 @@ clearTimeout(t);
 setInterval(callback, delay, [arg], [...]);
 ```
 
-***
+---
 
-***
+---
 
 #### To schedule the repeated execution of callback every delay milliseconds. Optionally you can also pass arguments to the callback
 
@@ -784,7 +782,7 @@ setInterval(callback, delay, [arg], [...]);
 clearInterval(t);
 ```
 
-***
+---
 
 #### Stop a timer that was previously created with setInterval()
 
@@ -793,7 +791,7 @@ clearInterval(t);
 setImmediate(callback, [arg], [...]);
 ```
 
-***
+---
 
 #### To schedule the "immediate" execution of callback after I/O events callbacks and before setTimeout and setInterval
 
@@ -801,7 +799,7 @@ setImmediate(callback, [arg], [...]);
 clearImmediate(immediateObject);
 ```
 
-***
+---
 
 #### Stop a timer that was previously created with setImmediate()
 
@@ -809,7 +807,7 @@ clearImmediate(immediateObject);
 unref();
 ```
 
-***
+---
 
 #### Allow you to create a timer that is active but if it is the only item left in the event loop, node won't keep the program running
 
@@ -817,7 +815,7 @@ unref();
 ref();
 ```
 
-***
+---
 
 #### If you had previously unref()d a timer you can call ref() to explicitly request the timer hold the program open
 
@@ -825,23 +823,23 @@ ref();
 
 > Loads the module module.js in the same directory.
 
-***
+---
 
 ```js
 module.require("./another_module.js");
 ```
 
-***
+---
 
-***
+---
 
-#### load another\_module as if require() was called from the module itself
+#### load another_module as if require() was called from the module itself
 
 ```js
 module.id;
 ```
 
-***
+---
 
 #### The identifier for the module. Typically this is the fully resolved filename
 
@@ -849,9 +847,9 @@ module.id;
 module.filename;
 ```
 
-***
+---
 
-***
+---
 
 #### The fully resolved filename to the module
 
@@ -859,7 +857,7 @@ module.filename;
 module.loaded;
 ```
 
-***
+---
 
 #### Whether or not the module is done loading, or is in the process of loading
 
@@ -867,7 +865,7 @@ module.loaded;
 module.parent;
 ```
 
-***
+---
 
 #### The module that required this one
 
@@ -875,9 +873,9 @@ module.parent;
 module.children;
 ```
 
-***
+---
 
-***
+---
 
 #### The module objects required by this one
 
@@ -887,13 +885,13 @@ exports.area = function (r) {
 };
 ```
 
-***
+---
 
 #### If you want the root of your module's export to be a function (such as a constructor)
 
 > or if you want to export a complete object in one assignment instead of building it one property at a time, assign it to module.exports instead of exports.
 
-***
+---
 
 ```js
 module.exports = function (width) {
@@ -905,13 +903,13 @@ module.exports = function (width) {
 };
 ```
 
-***
+---
 
 ```js
 process.on("exit", function (code) {});
 ```
 
-***
+---
 
 #### Emitted when the process is about to exit
 
@@ -919,7 +917,7 @@ process.on("exit", function (code) {});
 > process.on('uncaughtException', function(err) {});
 ```
 
-***
+---
 
 > Emitted when an exception bubbles all the way back to the event loop. (should not be used)
 
@@ -927,7 +925,7 @@ process.on("exit", function (code) {});
 process.stdout;
 ```
 
-***
+---
 
 #### A writable stream to stdout
 
@@ -935,7 +933,7 @@ process.stdout;
 process.stderr;
 ```
 
-***
+---
 
 #### A writable stream to stderr
 
@@ -943,9 +941,9 @@ process.stderr;
 process.stdin;
 ```
 
-***
+---
 
-***
+---
 
 #### A readable stream for stdin
 
@@ -953,7 +951,7 @@ process.stdin;
 process.argv;
 ```
 
-***
+---
 
 #### An array containing the command line arguments
 
@@ -961,7 +959,7 @@ process.argv;
 process.env;
 ```
 
-***
+---
 
 #### An object containing the user environment
 
@@ -969,7 +967,7 @@ process.env;
 process.execPath;
 ```
 
-***
+---
 
 #### This is the absolute pathname of the executable that started the process
 
@@ -977,7 +975,7 @@ process.execPath;
 process.execArgv;
 ```
 
-***
+---
 
 #### This is the set of node-specific command line options from the executable that started the process
 
@@ -985,7 +983,7 @@ process.execArgv;
 process.arch;
 ```
 
-***
+---
 
 #### What processor architecture you're running on: 'arm', 'ia32', or 'x64'
 
@@ -993,7 +991,7 @@ process.arch;
 process.config;
 ```
 
-***
+---
 
 #### An Object containing the JavaScript representation of the configure options that were used to compile the current node executable
 
@@ -1001,7 +999,7 @@ process.config;
 process.pid;
 ```
 
-***
+---
 
 #### The PID of the process
 
@@ -1009,7 +1007,7 @@ process.pid;
 process.platform;
 ```
 
-***
+---
 
 #### What platform you're running on: 'darwin', 'freebsd', 'linux', 'sunos' or 'win32'
 
@@ -1017,9 +1015,9 @@ process.platform;
 process.title;
 ```
 
-***
+---
 
-***
+---
 
 #### Getter/setter to set what is displayed in 'ps'
 
@@ -1027,19 +1025,19 @@ process.title;
 process.version;
 ```
 
-***
+---
 
 #### A compiled-in property t
 
-> hat exposes NODE\_VERSION.
+> hat exposes NODE_VERSION.
 
-***
+---
 
 ```js
 process.versions;
 ```
 
-***
+---
 
 #### A property exposing version strings of node and its dependencies
 
@@ -1048,7 +1046,7 @@ process.versions;
 > process.abort();
 ```
 
-***
+---
 
 #### This causes node to emit an abort. This will cause node to exit and generate a core file
 
@@ -1056,7 +1054,7 @@ process.versions;
 process.chdir(dir);
 ```
 
-***
+---
 
 #### Changes the current working directory of the process or throws an exception if that fails
 
@@ -1064,22 +1062,22 @@ process.chdir(dir);
 process.cwd();
 ```
 
-***
+---
 
-***
+---
 
 #### Returns the current working directory of the process
 
 > ?process.exit(\[code]);\
 > Ends the process with the specified code. If omitted, exit uses the 'success' code 0.
 
-***
+---
 
 ```js
 process.getgid();
 ```
 
-***
+---
 
 #### Gets the group identity of the process
 
@@ -1087,7 +1085,7 @@ process.getgid();
 process.setgid(id);
 ```
 
-***
+---
 
 #### Sets the group identity of the process
 
@@ -1095,7 +1093,7 @@ process.setgid(id);
 process.getuid();
 ```
 
-***
+---
 
 #### Gets the user identity of the process
 
@@ -1103,7 +1101,7 @@ process.getuid();
 process.setuid(id);
 ```
 
-***
+---
 
 #### Sets the user identity of the process
 
@@ -1111,9 +1109,9 @@ process.setuid(id);
 process.getgroups();
 ```
 
-***
+---
 
-***
+---
 
 #### Returns an array with the supplementary group IDs
 
@@ -1121,9 +1119,9 @@ process.getgroups();
 process.setgroups(grps);
 ```
 
-***
+---
 
-***
+---
 
 #### Sets the supplementary group IDs
 
@@ -1131,9 +1129,9 @@ process.setgroups(grps);
 process.initgroups(user, extra_grp);
 ```
 
-***
+---
 
-***
+---
 
 #### Reads /etc/group and initializes the group access list, using all groups of which the user is a member
 
@@ -1141,7 +1139,7 @@ process.initgroups(user, extra_grp);
 process.kill(pid, [signal]);
 ```
 
-***
+---
 
 #### Send a signal to a process. pid is the process id and signal is the string describing the signal to send
 
@@ -1149,7 +1147,7 @@ process.kill(pid, [signal]);
 process.memoryUsage();
 ```
 
-***
+---
 
 #### Returns an object describing the memory usage of the Node process measured in bytes
 
@@ -1157,7 +1155,7 @@ process.memoryUsage();
 process.nextTick(callback);
 ```
 
-***
+---
 
 #### On the next loop around the event loop call this callback
 
@@ -1165,7 +1163,7 @@ process.nextTick(callback);
 process.maxTickDepth;
 ```
 
-***
+---
 
 #### Callbacks passed to process.nextTick will usually be called at the end of the current flow of execution, and are thus approximately as fast as calling a function synchronously
 
@@ -1173,7 +1171,7 @@ process.maxTickDepth;
 process.umask([mask]);
 ```
 
-***
+---
 
 #### Sets or reads the process's file mode creation mask
 
@@ -1181,7 +1179,7 @@ process.umask([mask]);
 process.uptime();
 ```
 
-***
+---
 
 #### Number of seconds Node has been running
 
@@ -1189,21 +1187,21 @@ process.uptime();
 process.hrtime();
 ```
 
-***
+---
 
 #### Returns the current high-resolution real time in a \[seconds, nanoseconds] tuple Array
 
-> Node provides a tri-directional popen facility through the child\_process module.
+> Node provides a tri-directional popen facility through the child_process module.
 
 > It is possible to stream data through a child's stdin, stdout, and stderr in a fully non-blocking way.
 
-***
+---
 
 ```js
 ChildProcess;
 ```
 
-***
+---
 
 #### Class. ChildProcess is an EventEmitter
 
@@ -1211,7 +1209,7 @@ ChildProcess;
 child.stdin;
 ```
 
-***
+---
 
 #### A Writable Stream that represents the child process's stdin
 
@@ -1226,7 +1224,7 @@ child.stdin;
 child.stderr;
 ```
 
-***
+---
 
 #### A Readable Stream that represents the child process's stderr
 
@@ -1234,7 +1232,7 @@ child.stderr;
 child.pid;
 ```
 
-***
+---
 
 #### The PID of the child process
 
@@ -1249,7 +1247,7 @@ child.pid;
 child.kill([signal]);
 ```
 
-***
+---
 
 #### Send a signal to the child process
 
@@ -1257,17 +1255,17 @@ child.kill([signal]);
 > child.send(message, [sendHandle]);
 ```
 
-***
+---
 
-#### When using child\_process.fork() you can write to the child using child.send(message, \[sendHandle]) and messages are received by a 'message' event on the child
+#### When using child_process.fork() you can write to the child using child.send(message, \[sendHandle]) and messages are received by a 'message' event on the child
 
-***
+---
 
 ```js
 child.disconnect();
 ```
 
-***
+---
 
 #### Close the IPC channel between parent and child, allowing the child to exit gracefully once there are no other connections keeping it alive
 
@@ -1275,7 +1273,7 @@ child.disconnect();
 child_process.spawn(command, [args], [options]);
 ```
 
-***
+---
 
 #### Launches a new process with the given command, with command line arguments in args. If omitted, args defaults to an empty Array
 
@@ -1283,7 +1281,7 @@ child_process.spawn(command, [args], [options]);
 child_process.exec(command, [options], callback);
 ```
 
-***
+---
 
 #### Runs a command in a shell and buffers the output
 
@@ -1291,9 +1289,9 @@ child_process.exec(command, [options], callback);
 child_process.execFile(file, [args], [options], [callback]);
 ```
 
-***
+---
 
-***
+---
 
 #### Runs a command in a shell and buffers the output
 
@@ -1301,30 +1299,30 @@ child_process.execFile(file, [args], [options], [callback]);
 child_process.fork(modulePath, [args], [options]);
 ```
 
-***
+---
 
-***
+---
 
 #### This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in
 
 > These functions are in the module 'util'. Use require('util') to access them.
 
-***
+---
 
 ```js
 
 util.format(format, [...]);
 ```
 
-***
+---
 
 #### Returns a formatted string using the first argument as a printf-like format. (%s, %d, %j)
 
 > util.debug(string);
 
-***
+---
 
-***
+---
 
 #### A synchronous output function. Will block the process and output string immediately to stderr
 
@@ -1333,7 +1331,7 @@ util.format(format, [...]);
 util.error([...]);
 ```
 
-***
+---
 
 #### Same as util.debug() except this will output all arguments immediately to stderr
 
@@ -1342,7 +1340,7 @@ util.error([...]);
 util.puts([...]);
 ```
 
-***
+---
 
 #### A synchronous output function. Will block the process and output all arguments to stdout with newlines after each argument
 
@@ -1351,7 +1349,7 @@ util.puts([...]);
 util.print([...]);
 ```
 
-***
+---
 
 #### A synchronous output function. Will block the process, cast each argument to a string then output to stdout. (no newlines)
 
@@ -1359,15 +1357,15 @@ util.print([...]);
 
 > Output with timestamp on stdout.
 
-***
+---
 
 ```js
 util.inspect(object, [opts]);
 ```
 
-***
+---
 
-***
+---
 
 #### Return a string representation of object, which is useful for debugging. (options: showHidden, depth, colors, customInspect)
 
@@ -1375,13 +1373,13 @@ util.inspect(object, [opts]);
 
 > Returns true if the given "object" is an Array. false otherwise.
 
-***
+---
 
 ```js
 util.isRegExp(object);
 ```
 
-***
+---
 
 #### Returns true if the given "object" is a RegExp. false otherwise
 
@@ -1389,7 +1387,7 @@ util.isRegExp(object);
 util.isDate(object);
 ```
 
-***
+---
 
 #### Returns true if the given "object" is a Date. false otherwise
 
@@ -1397,7 +1395,7 @@ util.isDate(object);
 util.isError(object);
 ```
 
-***
+---
 
 #### Returns true if the given "object" is an Error. false otherwise
 
@@ -1405,7 +1403,7 @@ util.isError(object);
 util.promisify(fn);
 ```
 
-***
+---
 
 #### Takes a function whose last argument is a callback and returns a version that returns promises
 
@@ -1413,31 +1411,31 @@ util.promisify(fn);
 util.inherits(constructor, superConstructor);
 ```
 
-***
+---
 
-***
+---
 
 #### Inherit the prototype methods from one constructor into another
 
-***
+---
 
 ## EVENTS
 
 > All objects which emit events are instances of events.EventEmitter. You can access this module by doing: require("events");
 
-***
+---
 
 #### To access the EventEmitter class, require('events').EventEmitter
 
 > All EventEmitters emit the event 'newListener' when new listeners are added and 'removeListener' when a listener is removed.
 
-***
+---
 
 ```js
 emitter.addListener(event, listener);
 ```
 
-***
+---
 
 #### Adds a listener to the end of the listeners array for the specified event
 
@@ -1445,7 +1443,7 @@ emitter.addListener(event, listener);
 emitter.on(event, listener);
 ```
 
-***
+---
 
 #### Same as emitter.addListener()
 
@@ -1455,13 +1453,13 @@ emitter.once(event, listener);
 
 > Adds a one time listener for the event. This listener is invoked only the next time the event is fired, after which it is removed.
 
-***
+---
 
 ```js
 emitter.removeListener(event, listener);
 ```
 
-***
+---
 
 #### Remove a listener from the listener array for the specified event
 
@@ -1469,7 +1467,7 @@ emitter.removeListener(event, listener);
 emitter.removeAllListeners([event]);
 ```
 
-***
+---
 
 #### Removes all listeners, or those of the specified event
 
@@ -1477,7 +1475,7 @@ emitter.removeAllListeners([event]);
 emitter.setMaxListeners(n);
 ```
 
-***
+---
 
 #### By default EventEmitters will print a warning if more than 10 listeners are added for a particular event
 
@@ -1485,7 +1483,7 @@ emitter.setMaxListeners(n);
 emitter.listeners(event);
 ```
 
-***
+---
 
 #### Returns an array of listeners for the specified event
 
@@ -1494,9 +1492,9 @@ emitter.listeners(event);
 emitter.emit(event, [arg1], [arg2], [...]);
 ```
 
-***
+---
 
-***
+---
 
 #### Execute each of the listeners in order with the supplied arguments. Returns true if event had listeners, false otherwise
 
@@ -1504,9 +1502,9 @@ emitter.emit(event, [arg1], [arg2], [...]);
 EventEmitter.listenerCount(emitter, event);
 ```
 
-***
+---
 
-***
+---
 
 #### Return the number of listeners for a given event
 
@@ -1522,14 +1520,14 @@ EventEmitter.listenerCount(emitter, event);
 
 > Examples of readable streams include: http responses on the client, http requests on the server, fs read streams zlib streams, crypto streams, tcp sockets, child process stdout and stderr, process.stdin.
 
-***
+---
 
 ```js
 let readable = getReadableStreamSomehow();
 readable.on("readable", function () {});
 ```
 
-***
+---
 
 #### When a chunk of data can be read from the stream, it will emit a 'readable' event
 
@@ -1537,9 +1535,9 @@ readable.on("readable", function () {});
 readable.on("data", function (chunk) {});
 ```
 
-***
+---
 
-***
+---
 
 #### If you attach a data event listener, then it will switch the stream into flowing mode, and data will be passed to your handler as soon as it is available
 
@@ -1547,7 +1545,7 @@ readable.on("data", function (chunk) {});
 readable.on("end", function () {});
 ```
 
-***
+---
 
 #### This event fires when there will be no more data to read
 
@@ -1555,9 +1553,9 @@ readable.on("end", function () {});
 readable.on("close", function () {});
 ```
 
-***
+---
 
-***
+---
 
 #### Emitted when the underlying resource (for example, the backing file descriptor) has been closed. Not all streams will emit this
 
@@ -1565,9 +1563,9 @@ readable.on("close", function () {});
 readable.on("error", function () {});
 ```
 
-***
+---
 
-***
+---
 
 #### Emitted if there was an error receiving data
 
@@ -1575,14 +1573,14 @@ readable.on("error", function () {});
 
 > This method should only be called in non-flowing mode. In flowing-mode, this method is called automatically until the internal buffer is drained.
 
-***
+---
 
 ```js
 readable.read([size]);
 readable.setEncoding(encoding);
 ```
 
-***
+---
 
 #### Call this function to cause the stream to return strings of the specified encoding instead of Buffer objects
 
@@ -1590,7 +1588,7 @@ readable.setEncoding(encoding);
 readable.resume();
 ```
 
-***
+---
 
 #### This method will cause the readable stream to resume emitting data events
 
@@ -1598,7 +1596,7 @@ readable.resume();
 readable.pause();
 ```
 
-***
+---
 
 #### This method will cause a stream in flowing-mode to stop emitting data events
 
@@ -1606,7 +1604,7 @@ readable.pause();
 readable.pipe(destination, [options]);
 ```
 
-***
+---
 
 #### This method pulls all the data out of a readable stream, and writes it to the supplied destination, automatically managing the flow so that the destination is not overwhelmed by a fast readable stream
 
@@ -1614,7 +1612,7 @@ readable.pipe(destination, [options]);
 readable.unpipe([destination]);
 ```
 
-***
+---
 
 #### This method will remove the hooks set up for a previous pipe() call. If the destination is not specified, then all pipes are removed
 
@@ -1622,7 +1620,7 @@ readable.unpipe([destination]);
 readable.unshift(chunk);
 ```
 
-***
+---
 
 #### This is useful in certain cases where a stream is being consumed by a parser, which needs to "un-consume" some data that it has optimistically pulled out of the source, so that the stream can be passed on to some other party
 
@@ -1630,16 +1628,16 @@ readable.unshift(chunk);
 
 > Examples of writable streams include: http requests on the client, http responses on the server, fs write streams, zlib streams, crypto streams, tcp sockets, child process stdin, process.stdout, process.stderr.
 
-***
+---
 
 ```js
 let writer = getWritableStreamSomehow();
 writable.write(chunk, [encoding], [callback]);
 ```
 
-***
+---
 
-***
+---
 
 #### This method writes some data to the underlying system, and calls the supplied callback once the data has been fully handled
 
@@ -1647,7 +1645,7 @@ writable.write(chunk, [encoding], [callback]);
 writer.once("drain", write);
 ```
 
-***
+---
 
 #### If a writable.write(chunk) call returns false, then the drain event will indicate when it is appropriate to begin writing more data to the stream
 
@@ -1655,9 +1653,9 @@ writer.once("drain", write);
 writable.end([chunk], [encoding], [callback]);
 ```
 
-***
+---
 
-***
+---
 
 #### Call this method when no more data will be written to the stream
 
@@ -1665,7 +1663,7 @@ writable.end([chunk], [encoding], [callback]);
 writer.on("finish", function () {});
 ```
 
-***
+---
 
 #### When the end() method has been called, and all data has been flushed to the underlying system, this event is emitted
 
@@ -1673,9 +1671,9 @@ writer.on("finish", function () {});
 writer.on("pipe", function (src) {});
 ```
 
-***
+---
 
-***
+---
 
 #### This is emitted whenever the pipe() method is called on a readable stream, adding this writable to its set of destinations
 
@@ -1683,7 +1681,7 @@ writer.on("pipe", function (src) {});
 writer.on("unpipe", function (src) {});
 ```
 
-***
+---
 
 #### This is emitted whenever the unpipe() method is called on a readable stream, removing this writable from its set of destinations
 
@@ -1691,7 +1689,7 @@ writer.on("unpipe", function (src) {});
 writer.on("error", function (src) {});
 ```
 
-***
+---
 
 #### Emitted if there was an error when writing or piping data
 
@@ -1703,27 +1701,27 @@ writer.on("error", function (src) {});
 
 > Examples of Transform streams include: zlib streams, crypto streams.
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## To use this module do require('fs')
 
 > All the methods have asynchronous and synchronous forms.
 
-***
+---
 
 ```js
 fs.rename(oldPath, newPath, callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Asynchronous rename. No arguments other than a possible exception are given to the completion callback.Asynchronous ftruncate. No arguments other than a possible exception are given to the completion callback
 
@@ -1731,7 +1729,7 @@ fs.rename(oldPath, newPath, callback);
 fs.renameSync(oldPath, newPath);
 ```
 
-***
+---
 
 #### Synchronous rename
 
@@ -1739,7 +1737,7 @@ fs.renameSync(oldPath, newPath);
 fs.ftruncate(fd, len, callback);
 ```
 
-***
+---
 
 #### Asynchronous ftruncate. No arguments other than a possible exception are given to the completion callback
 
@@ -1747,7 +1745,7 @@ fs.ftruncate(fd, len, callback);
 fs.ftruncateSync(fd, len);
 ```
 
-***
+---
 
 #### Synchronous ftruncate
 
@@ -1755,7 +1753,7 @@ fs.ftruncateSync(fd, len);
 fs.truncate(path, len, callback);
 ```
 
-***
+---
 
 #### Asynchronous truncate. No arguments other than a possible exception are given to the completion callback
 
@@ -1763,7 +1761,7 @@ fs.truncate(path, len, callback);
 fs.truncateSync(path, len);
 ```
 
-***
+---
 
 #### Synchronous truncate
 
@@ -1771,7 +1769,7 @@ fs.truncateSync(path, len);
 fs.chown(path, uid, gid, callback);
 ```
 
-***
+---
 
 #### Asynchronous chown. No arguments other than a possible exception are given to the completion callback
 
@@ -1779,7 +1777,7 @@ fs.chown(path, uid, gid, callback);
 fs.chownSync(path, uid, gid);
 ```
 
-***
+---
 
 #### Synchronous chown
 
@@ -1787,9 +1785,9 @@ fs.chownSync(path, uid, gid);
 fs.fchown(fd, uid, gid, callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Asynchronous fchown. No arguments other than a possible exception are given to the completion callback
 
@@ -1797,9 +1795,9 @@ fs.fchown(fd, uid, gid, callback);
 fs.fchownSync(fd, uid, gid);
 ```
 
-***
+---
 
-***
+---
 
 #### Synchronous fchown
 
@@ -1807,7 +1805,7 @@ fs.fchownSync(fd, uid, gid);
 fs.lchown(path, uid, gid, callback);
 ```
 
-***
+---
 
 #### Asynchronous lchown. No arguments other than a possible exception are given to the completion callback
 
@@ -1815,7 +1813,7 @@ fs.lchown(path, uid, gid, callback);
 fs.lchownSync(path, uid, gid);
 ```
 
-***
+---
 
 #### Synchronous lchown
 
@@ -1823,7 +1821,7 @@ fs.lchownSync(path, uid, gid);
 fs.chmod(path, mode, callback);
 ```
 
-***
+---
 
 #### Asynchronous chmod. No arguments other than a possible exception are given to the completion callback
 
@@ -1831,7 +1829,7 @@ fs.chmod(path, mode, callback);
 fs.chmodSync(path, mode);
 ```
 
-***
+---
 
 #### Synchronous chmod
 
@@ -1839,7 +1837,7 @@ fs.chmodSync(path, mode);
 fs.fchmod(fd, mode, callback);
 ```
 
-***
+---
 
 #### Asynchronous fchmod. No arguments other than a possible exception are given to the completion callback
 
@@ -1847,7 +1845,7 @@ fs.fchmod(fd, mode, callback);
 fs.fchmodSync(fd, mode);
 ```
 
-***
+---
 
 #### Synchronous fchmod
 
@@ -1855,7 +1853,7 @@ fs.fchmodSync(fd, mode);
 fs.lchmod(path, mode, callback);
 ```
 
-***
+---
 
 #### Asynchronous lchmod. No arguments other than a possible exception are given to the completion callback
 
@@ -1863,7 +1861,7 @@ fs.lchmod(path, mode, callback);
 fs.lchmodSync(path, mode);
 ```
 
-***
+---
 
 #### Synchronous lchmod
 
@@ -1871,7 +1869,7 @@ fs.lchmodSync(path, mode);
 fs.stat(path, callback);
 ```
 
-***
+---
 
 #### Asynchronous stat. The callback gets two arguments (err, stats) where stats is a fs.Stats object
 
@@ -1879,7 +1877,7 @@ fs.stat(path, callback);
 fs.statSync(path);
 ```
 
-***
+---
 
 #### Synchronous stat. Returns an instance of fs.Stats
 
@@ -1887,7 +1885,7 @@ fs.statSync(path);
 fs.lstat(path, callback);
 ```
 
-***
+---
 
 #### Asynchronous lstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. lstat() is identical to stat(), except that if path is a symbolic link, then the link itself is stat-ed, not the file that it refers to
 
@@ -1895,7 +1893,7 @@ fs.lstat(path, callback);
 fs.lstatSync(path);
 ```
 
-***
+---
 
 #### Synchronous lstat. Returns an instance of fs.Stats
 
@@ -1903,7 +1901,7 @@ fs.lstatSync(path);
 fs.fstat(fd, callback);
 ```
 
-***
+---
 
 #### Asynchronous fstat. The callback gets two arguments (err, stats) where stats is a fs.Stats object. fstat() is identical to stat(), except that the file to be stat-ed is specified by the file descriptor fd
 
@@ -1911,9 +1909,9 @@ fs.fstat(fd, callback);
 fs.fstatSync(fd);
 ```
 
-***
+---
 
-***
+---
 
 #### Synchronous fstat. Returns an instance of fs.Stats
 
@@ -1921,7 +1919,7 @@ fs.fstatSync(fd);
 fs.link(srcpath, dstpath, callback);
 ```
 
-***
+---
 
 #### Asynchronous link. No arguments other than a possible exception are given to the completion callback
 
@@ -1929,7 +1927,7 @@ fs.link(srcpath, dstpath, callback);
 fs.linkSync(srcpath, dstpath);
 ```
 
-***
+---
 
 #### Synchronous link
 
@@ -1937,9 +1935,9 @@ fs.linkSync(srcpath, dstpath);
 fs.symlink(srcpath, dstpath, [type], callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Asynchronous symlink. No arguments other than a possible exception are given to the completion callback. The type argument can be set to 'dir', 'file', or 'junction' (default is 'file') and is only available on Windows (ignored on other platforms)
 
@@ -1947,7 +1945,7 @@ fs.symlink(srcpath, dstpath, [type], callback);
 fs.symlinkSync(srcpath, dstpath, [type]);
 ```
 
-***
+---
 
 #### Synchronous symlink
 
@@ -1955,7 +1953,7 @@ fs.symlinkSync(srcpath, dstpath, [type]);
 fs.readlink(path, callback);
 ```
 
-***
+---
 
 #### Asynchronous readlink. The callback gets two arguments (err, linkString)
 
@@ -1963,9 +1961,9 @@ fs.readlink(path, callback);
 fs.readlinkSync(path);
 ```
 
-***
+---
 
-***
+---
 
 #### Synchronous readlink. Returns the symbolic link's string value
 
@@ -1973,9 +1971,9 @@ fs.readlinkSync(path);
 fs.unlink(path, callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Asynchronous unlink. No arguments other than a possible exception are given to the completion callback
 
@@ -1983,7 +1981,7 @@ fs.unlink(path, callback);
 fs.unlinkSync(path);
 ```
 
-***
+---
 
 #### Synchronous unlink
 
@@ -1991,7 +1989,7 @@ fs.unlinkSync(path);
 fs.realpath(path, [cache], callback);
 ```
 
-***
+---
 
 #### Asynchronous realpath. The callback gets two arguments (err, resolvedPath)
 
@@ -1999,7 +1997,7 @@ fs.realpath(path, [cache], callback);
 fs.realpathSync(path, [cache]);
 ```
 
-***
+---
 
 ## Synchronous realpath. Returns the resolved path
 
@@ -2007,7 +2005,7 @@ fs.realpathSync(path, [cache]);
 fs.rmdir(path, callback);
 ```
 
-***
+---
 
 #### Asynchronous rmdir. No arguments other than a possible exception are given to the completion callback
 
@@ -2015,9 +2013,9 @@ fs.rmdir(path, callback);
 fs.rmdirSync(path);
 ```
 
-***
+---
 
-***
+---
 
 #### Synchronous rmdir
 
@@ -2025,7 +2023,7 @@ fs.rmdirSync(path);
 fs.mkdir(path, [mode], callback);
 ```
 
-***
+---
 
 #### Asynchronous mkdir. No arguments other than a possible exception are given to the completion callback. mode defaults to 0777
 
@@ -2033,7 +2031,7 @@ fs.mkdir(path, [mode], callback);
 fs.mkdirSync(path, [mode]);
 ```
 
-***
+---
 
 #### Synchronous mkdir
 
@@ -2041,7 +2039,7 @@ fs.mkdirSync(path, [mode]);
 fs.readdir(path, callback);
 ```
 
-***
+---
 
 #### Asynchronous readdir. Reads the contents of a directory. The callback gets two arguments (err, files) where files is an array of the names of the files in the directory excluding '.' and '..'
 
@@ -2049,7 +2047,7 @@ fs.readdir(path, callback);
 fs.readdirSync(path);
 ```
 
-***
+---
 
 #### Synchronous readdir. Returns an array of filenames excluding '.' and '..'
 
@@ -2057,7 +2055,7 @@ fs.readdirSync(path);
 fs.close(fd, callback);
 ```
 
-***
+---
 
 #### Asynchronous close. No arguments other than a possible exception are given to the completion callback
 
@@ -2065,7 +2063,7 @@ fs.close(fd, callback);
 fs.closeSync(fd);
 ```
 
-***
+---
 
 #### Synchronous close
 
@@ -2073,7 +2071,7 @@ fs.closeSync(fd);
 fs.open(path, flags, [mode], callback);
 ```
 
-***
+---
 
 #### Asynchronous file open
 
@@ -2081,7 +2079,7 @@ fs.open(path, flags, [mode], callback);
 fs.openSync(path, flags, [mode]);
 ```
 
-***
+---
 
 #### Synchronous version of fs.open()
 
@@ -2089,9 +2087,9 @@ fs.openSync(path, flags, [mode]);
 fs.utimes(path, atime, mtime, callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Change file timestamps of the file referenced by the supplied path
 
@@ -2099,7 +2097,7 @@ fs.utimes(path, atime, mtime, callback);
 fs.utimesSync(path, atime, mtime);
 ```
 
-***
+---
 
 #### Synchronous version of fs.utimes()
 
@@ -2107,7 +2105,7 @@ fs.utimesSync(path, atime, mtime);
 fs.futimes(fd, atime, mtime, callback);
 ```
 
-***
+---
 
 #### Change the file timestamps of a file referenced by the supplied file descriptor
 
@@ -2115,7 +2113,7 @@ fs.futimes(fd, atime, mtime, callback);
 fs.futimesSync(fd, atime, mtime);
 ```
 
-***
+---
 
 #### Synchronous version of fs.futimes()
 
@@ -2123,7 +2121,7 @@ fs.futimesSync(fd, atime, mtime);
 fs.fsync(fd, callback);
 ```
 
-***
+---
 
 #### Asynchronous fsync. No arguments other than a possible exception are given to the completion callback
 
@@ -2131,7 +2129,7 @@ fs.fsync(fd, callback);
 fs.fsyncSync(fd);
 ```
 
-***
+---
 
 #### Synchronous fsync
 
@@ -2139,9 +2137,9 @@ fs.fsyncSync(fd);
 fs.write(fd, buffer, offset, length, position, callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Write buffer to the file specified by fd
 
@@ -2149,7 +2147,7 @@ fs.write(fd, buffer, offset, length, position, callback);
 fs.writeSync(fd, buffer, offset, length, position);
 ```
 
-***
+---
 
 #### Synchronous version of fs.write(). Returns the number of bytes written
 
@@ -2157,7 +2155,7 @@ fs.writeSync(fd, buffer, offset, length, position);
 fs.read(fd, buffer, offset, length, position, callback);
 ```
 
-***
+---
 
 #### Read data from the file specified by fd
 
@@ -2165,7 +2163,7 @@ fs.read(fd, buffer, offset, length, position, callback);
 fs.readSync(fd, buffer, offset, length, position);
 ```
 
-***
+---
 
 #### Synchronous version of fs.read. Returns the number of bytesRead
 
@@ -2173,7 +2171,7 @@ fs.readSync(fd, buffer, offset, length, position);
 fs.readFile(filename, [options], callback);
 ```
 
-***
+---
 
 #### Asynchronously reads the entire contents of a file
 
@@ -2181,7 +2179,7 @@ fs.readFile(filename, [options], callback);
 fs.readFileSync(filename, [options]);
 ```
 
-***
+---
 
 #### Synchronous version of fs.readFile. Returns the contents of the filename. If the encoding option is specified then this function returns a string. Otherwise it returns a buffer
 
@@ -2189,7 +2187,7 @@ fs.readFileSync(filename, [options]);
 fs.writeFile(filename, data, [options], callback);
 ```
 
-***
+---
 
 #### Asynchronously writes data to a file, replacing the file if it already exists. data can be a string or a buffer
 
@@ -2197,7 +2195,7 @@ fs.writeFile(filename, data, [options], callback);
 fs.writeFileSync(filename, data, [options]);
 ```
 
-***
+---
 
 #### The synchronous version of fs.writeFile
 
@@ -2205,9 +2203,9 @@ fs.writeFileSync(filename, data, [options]);
 fs.appendFile(filename, data, [options], callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Asynchronously append data to a file, creating the file if it not yet exists. data can be a string or a buffer
 
@@ -2215,7 +2213,7 @@ fs.appendFile(filename, data, [options], callback);
 fs.appendFileSync(filename, data, [options]);
 ```
 
-***
+---
 
 #### The synchronous version of fs.appendFile
 
@@ -2223,7 +2221,7 @@ fs.appendFileSync(filename, data, [options]);
 fs.watch(filename, [options], [listener]);
 ```
 
-***
+---
 
 #### Watch for changes on filename, where filename is either a file or a directory. The returned object is a fs.FSWatcher. The listener callback gets two arguments (event, filename). event is either 'rename' or 'change', and filename is the name of the file which triggered the event
 
@@ -2231,9 +2229,9 @@ fs.watch(filename, [options], [listener]);
 fs.exists(path, callback);
 ```
 
-***
+---
 
-***
+---
 
 #### Test whether or not the given path exists by checking with the file system. Then call the callback argument with either true or false. (should not be used)
 
@@ -2243,7 +2241,7 @@ fs.exists(path, callback);
 
 > Synchronous version of fs.exists. (should not be used) fs.Stats: objects returned from fs.stat(), fs.lstat() and fs.fstat() and their synchronous counterparts are of this type.
 
-***
+---
 
 ```js
 
@@ -2258,7 +2256,7 @@ stats.isSocket()
 fs.createReadStream(path, [options]);
 ```
 
-***
+---
 
 #### Returns a new ReadStream object
 
@@ -2266,9 +2264,9 @@ fs.createReadStream(path, [options]);
 fs.createWriteStream(path, [options]);
 ```
 
-***
+---
 
-***
+---
 
 #### Returns a new WriteStream object
 
@@ -2280,13 +2278,13 @@ fs.createWriteStream(path, [options]);
 
 > The file system is not consulted to check whether paths are valid.
 
-***
+---
 
 ```js
 path.normalize(p);
 ```
 
-***
+---
 
 #### Normalize a string path, taking care of '..' and '.' parts
 
@@ -2295,7 +2293,7 @@ path.normalize(p);
 path.join([path1], [path2], [...]);
 ```
 
-***
+---
 
 #### Join all arguments together and normalize the resulting path
 
@@ -2304,7 +2302,7 @@ path.join([path1], [path2], [...]);
 path.resolve([from ...], to);
 ```
 
-***
+---
 
 #### Resolves 'to' to an absolute path
 
@@ -2312,7 +2310,7 @@ path.resolve([from ...], to);
 path.relative(from, to);
 ```
 
-***
+---
 
 #### Solve the relative path from 'from' to 'to'
 
@@ -2320,7 +2318,7 @@ path.relative(from, to);
 path.dirname(p);
 ```
 
-***
+---
 
 #### Return the directory name of a path. Similar to the Unix dirname command
 
@@ -2330,15 +2328,15 @@ path.basename(p, [ext]);
 
 > Return the last portion of a path. Similar to the Unix basename command.
 
-***
+---
 
 ```js
 path.extname(p);
 ```
 
-***
+---
 
-***
+---
 
 #### Return the extension of the path, from the last '.' to end of string in the last portion of the path
 
@@ -2346,9 +2344,9 @@ path.extname(p);
 path.sep;
 ```
 
-***
+---
 
-***
+---
 
 #### The platform-specific file separator. '\\' or '/'
 
@@ -2356,21 +2354,21 @@ path.sep;
 path.delimiter;
 ```
 
-***
+---
 
-***
+---
 
 #### The platform-specific path delimiter, ';' or ':'
 
 > To use the HTTP server and client one must require('http').
 
-***
+---
 
 ```js
 http.STATUS_CODES;
 ```
 
-***
+---
 
 #### A collection of all the standard HTTP response status codes, and the short description of each
 
@@ -2378,17 +2376,17 @@ http.STATUS_CODES;
 http.request(options, [callback]);
 ```
 
-***
+---
 
 > This function allows one to transparently issue requests.
 
-***
+---
 
 ```js
 http.get(options, [callback]);
 ```
 
-***
+---
 
 #### Set the method to GET and calls req.end() automatically
 
@@ -2396,9 +2394,9 @@ http.get(options, [callback]);
 server = http.createServer([requestListener]);
 ```
 
-***
+---
 
-***
+---
 
 #### Returns a new web server object. The requestListener is a function which is automatically added to the 'request' event
 
@@ -2406,7 +2404,7 @@ server = http.createServer([requestListener]);
 server.listen(port, [hostname], [backlog], [callback]);
 ```
 
-***
+---
 
 #### Begin accepting connections on the specified port and hostname
 
@@ -2414,7 +2412,7 @@ server.listen(port, [hostname], [backlog], [callback]);
 server.listen(path, [callback]);
 ```
 
-***
+---
 
 #### Start a UNIX socket server listening for connections on the given path
 
@@ -2422,7 +2420,7 @@ server.listen(path, [callback]);
 server.listen(handle, [callback]);
 ```
 
-***
+---
 
 #### The handle object can be set to either a server or socket (anything with an underlying \_handle member), or a {fd: } object
 
@@ -2430,7 +2428,7 @@ server.listen(handle, [callback]);
 server.close([callback]);
 ```
 
-***
+---
 
 #### Stops the server from accepting new connections
 
@@ -2438,7 +2436,7 @@ server.close([callback]);
 server.setTimeout(msecs, callback);
 ```
 
-***
+---
 
 #### Sets the timeout value for sockets, and emits a 'timeout' event on the Server object, passing the socket as an argument, if a timeout occurs
 
@@ -2446,9 +2444,9 @@ server.setTimeout(msecs, callback);
 server.maxHeadersCount;
 ```
 
-***
+---
 
-***
+---
 
 #### Limits maximum incoming headers count, equal to 1000 by default. If set to 0 - no limit will be applied
 
@@ -2456,7 +2454,7 @@ server.maxHeadersCount;
 server.timeout;
 ```
 
-***
+---
 
 #### The number of milliseconds of inactivity before a socket is presumed to have timed out
 
@@ -2464,7 +2462,7 @@ server.timeout;
 server.on("request", function (request, response) {});
 ```
 
-***
+---
 
 #### Emitted each time there is a request
 
@@ -2472,7 +2470,7 @@ server.on("request", function (request, response) {});
 server.on("connection", function (socket) {});
 ```
 
-***
+---
 
 #### When a new TCP stream is established
 
@@ -2480,9 +2478,9 @@ server.on("connection", function (socket) {});
 server.on("close", function () {});
 ```
 
-***
+---
 
-***
+---
 
 #### Emitted when the server closes
 
@@ -2490,9 +2488,9 @@ server.on("close", function () {});
 server.on("checkContinue", function (request, response) {});
 ```
 
-***
+---
 
-***
+---
 
 #### Emitted each time a request with an http Expect: 100-continue is received
 
@@ -2500,7 +2498,7 @@ server.on("checkContinue", function (request, response) {});
 server.on("connect", function (request, socket, head) {});
 ```
 
-***
+---
 
 #### Emitted each time a client requests a http CONNECT method
 
@@ -2508,7 +2506,7 @@ server.on("connect", function (request, socket, head) {});
 server.on("upgrade", function (request, socket, head) {});
 ```
 
-***
+---
 
 #### Emitted each time a client requests a http upgrade
 
@@ -2516,7 +2514,7 @@ server.on("upgrade", function (request, socket, head) {});
 server.on("clientError", function (exception, socket) {});
 ```
 
-***
+---
 
 #### If a client connection emits an 'error' event - it will forwarded here
 
@@ -2524,7 +2522,7 @@ server.on("clientError", function (exception, socket) {});
 request.write(chunk, [encoding]);
 ```
 
-***
+---
 
 #### Sends a chunk of the body
 
@@ -2532,7 +2530,7 @@ request.write(chunk, [encoding]);
 request.end([data], [encoding]);
 ```
 
-***
+---
 
 #### Finishes sending the request. If any parts of the body are unsent, it will flush them to the stream
 
@@ -2540,7 +2538,7 @@ request.end([data], [encoding]);
 request.abort();
 ```
 
-***
+---
 
 #### Aborts a request
 
@@ -2548,9 +2546,9 @@ request.abort();
 request.setTimeout(timeout, [callback]);
 ```
 
-***
+---
 
-***
+---
 
 #### Once a socket is assigned to this request and is connected socket.setTimeout() will be called
 
@@ -2558,7 +2556,7 @@ request.setTimeout(timeout, [callback]);
 request.setNoDelay([noDelay]);
 ```
 
-***
+---
 
 #### Once a socket is assigned to this request and is connected socket.setNoDelay() will be called
 
@@ -2566,7 +2564,7 @@ request.setNoDelay([noDelay]);
 request.setSocketKeepAlive([enable], [initialDelay]);
 ```
 
-***
+---
 
 #### Once a socket is assigned to this request and is connected socket.setKeepAlive() will be called
 
@@ -2574,7 +2572,7 @@ request.setSocketKeepAlive([enable], [initialDelay]);
 request.on("response", function (response) {});
 ```
 
-***
+---
 
 #### Emitted when a response is received to this request. This event is emitted only once
 
@@ -2582,7 +2580,7 @@ request.on("response", function (response) {});
 request.on("socket", function (socket) {});
 ```
 
-***
+---
 
 #### Emitted after a socket is assigned to this request
 
@@ -2590,7 +2588,7 @@ request.on("socket", function (socket) {});
 request.on("connect", function (response, socket, head) {});
 ```
 
-***
+---
 
 #### Emitted each time a server responds to a request with a CONNECT method. If this event isn't being listened for, clients receiving a CONNECT method will have their connections closed
 
@@ -2598,7 +2596,7 @@ request.on("connect", function (response, socket, head) {});
 request.on("upgrade", function (response, socket, head) {});
 ```
 
-***
+---
 
 #### Emitted each time a server responds to a request with an upgrade. If this event isn't being listened for, clients receiving an upgrade header will have their connections closed
 
@@ -2606,7 +2604,7 @@ request.on("upgrade", function (response, socket, head) {});
 request.on("continue", function () {});
 ```
 
-***
+---
 
 #### Emitted when the server sends a '100 Continue' HTTP response, usually because the request contained 'Expect: 100-continue'. This is an instruction that the client should send the request body
 
@@ -2614,7 +2612,7 @@ request.on("continue", function () {});
 response.write(chunk, [encoding]);
 ```
 
-***
+---
 
 #### This sends a chunk of the response body. If this merthod is called and response.writeHead() has not been called, it will switch to implicit header mode and flush the implicit headers
 
@@ -2622,7 +2620,7 @@ response.write(chunk, [encoding]);
 response.writeContinue();
 ```
 
-***
+---
 
 #### Sends a HTTP/1.1 100 Continue message to the client, indicating that the request body should be sent
 
@@ -2630,7 +2628,7 @@ response.writeContinue();
 response.writeHead(statusCode, [reasonPhrase], [headers]);
 ```
 
-***
+---
 
 #### Sends a response header to the request
 
@@ -2638,7 +2636,7 @@ response.writeHead(statusCode, [reasonPhrase], [headers]);
 response.setTimeout(msecs, callback);
 ```
 
-***
+---
 
 #### Sets the Socket's timeout value to msecs. If a callback is provided, then it is added as a listener on the 'timeout' event on the response object
 
@@ -2646,7 +2644,7 @@ response.setTimeout(msecs, callback);
 response.setHeader(name, value);
 ```
 
-***
+---
 
 #### Sets a single header value for implicit headers. If this header already exists in the to-be-sent headers, its value will be replaced. Use an array of strings here if you need to send multiple headers with the same name
 
@@ -2654,7 +2652,7 @@ response.setHeader(name, value);
 response.getHeader(name);
 ```
 
-***
+---
 
 #### Reads out a header that's already been queued but not sent to the client. Note that the name is case insensitive
 
@@ -2662,7 +2660,7 @@ response.getHeader(name);
 response.removeHeader(name);
 ```
 
-***
+---
 
 #### Removes a header that's queued for implicit sending
 
@@ -2670,7 +2668,7 @@ response.removeHeader(name);
 response.addTrailers(headers);
 ```
 
-***
+---
 
 #### This method adds HTTP trailing headers (a header but at the end of the message) to the response
 
@@ -2678,7 +2676,7 @@ response.addTrailers(headers);
 response.end([data], [encoding]);
 ```
 
-***
+---
 
 #### This method signals to the server that all of the response headers and body have been sent; that server should consider this message complete. The method, response.end(), MUST be called on each response
 
@@ -2686,7 +2684,7 @@ response.end([data], [encoding]);
 response.statusCode;
 ```
 
-***
+---
 
 #### When using implicit headers (not calling response.writeHead() explicitly), this property controls the status code that will be sent to the client when the headers get flushed
 
@@ -2694,7 +2692,7 @@ response.statusCode;
 response.headersSent;
 ```
 
-***
+---
 
 #### Boolean (read-only). True if headers were sent, false otherwise
 
@@ -2702,7 +2700,7 @@ response.headersSent;
 response.sendDate;
 ```
 
-***
+---
 
 #### When true, the Date header will be automatically generated and sent in the response if it is not already present in the headers. Defaults to true
 
@@ -2710,9 +2708,9 @@ response.sendDate;
 response.on("close", function () {});
 ```
 
-***
+---
 
-***
+---
 
 #### Indicates that the underlying connection was terminated before response.end() was called or able to flush
 
@@ -2720,9 +2718,9 @@ response.on("close", function () {});
 response.on("finish", function () {});
 ```
 
-***
+---
 
-***
+---
 
 #### Emitted when the response has been sent
 
@@ -2730,7 +2728,7 @@ response.on("finish", function () {});
 message.httpVersion;
 ```
 
-***
+---
 
 #### In case of server request, the HTTP version sent by the client. In the case of client response, the HTTP version of the connected-to server
 
@@ -2738,7 +2736,7 @@ message.httpVersion;
 message.headers;
 ```
 
-***
+---
 
 #### The request/response headers object
 
@@ -2746,9 +2744,9 @@ message.headers;
 message.trailers;
 ```
 
-***
+---
 
-***
+---
 
 #### The request/response trailers object. Only populated after the 'end' event
 
@@ -2756,7 +2754,7 @@ message.trailers;
 message.method;
 ```
 
-***
+---
 
 #### The request method as a string. Read only. Example: 'GET', 'DELETE'
 
@@ -2764,7 +2762,7 @@ message.method;
 message.url;
 ```
 
-***
+---
 
 #### Request URL string. This contains only the URL that is present in the actual HTTP request
 
@@ -2774,13 +2772,13 @@ message.statusCode;
 
 > The 3-digit HTTP response status code. E.G. 404.
 
-***
+---
 
 ```js
 message.socket;
 ```
 
-***
+---
 
 #### The net.Socket object associated with the connection
 
@@ -2788,21 +2786,21 @@ message.socket;
 message.setTimeout(msecs, callback);
 ```
 
-***
+---
 
 #### Calls message.connection.setTimeout(msecs, callback)
 
 > This module has utilities for URL resolution and parsing. Call require('url') to use it.
 
-***
+---
 
 ```js
 url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);
 ```
 
-***
+---
 
-***
+---
 
 #### Take a URL string, and return an object
 
@@ -2810,7 +2808,7 @@ url.parse(urlStr, [parseQueryString], [slashesDenoteHost]);
 url.format(urlObj);
 ```
 
-***
+---
 
 #### Take a parsed URL object, and return a formatted URL string
 
@@ -2818,17 +2816,17 @@ url.format(urlObj);
 url.resolve(from, to);
 ```
 
-***
+---
 
 #### Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## This module provides utilities for dealing with query strings. Call require('querystring') to use it
 
@@ -2836,7 +2834,7 @@ url.resolve(from, to);
 querystring.stringify(obj, [sep], [eq]);
 ```
 
-***
+---
 
 #### Serialize an object to a query string. Optionally override the default separator ('&') and assignment ('=') characters
 
@@ -2844,21 +2842,21 @@ querystring.stringify(obj, [sep], [eq]);
 querystring.parse(str, [sep], [eq], [options]);
 ```
 
-***
+---
 
-***
+---
 
 #### Deserialize a query string to an object. Optionally override the default separator ('&') and assignment ('=') characters
 
 > This module is used for writing unit tests for your applications, you can access it with require('assert').
 
-***
+---
 
 ```js
 assert.fail(actual, expected, message, operator);
 ```
 
-***
+---
 
 #### Throws an exception that displays the values for actual and expected separated by the provided operator
 
@@ -2867,9 +2865,9 @@ assert(value, message);
 assert.ok(value, [message]);
 ```
 
-***
+---
 
-***
+---
 
 #### Tests if value is truthy, it is equivalent to assert.equal(true, !!value, message)
 
@@ -2877,9 +2875,9 @@ assert.ok(value, [message]);
 assert.equal(actual, expected, [message]);
 ```
 
-***
+---
 
-***
+---
 
 #### Tests shallow, coercive equality with the equal comparison operator ( == )
 
@@ -2887,7 +2885,7 @@ assert.equal(actual, expected, [message]);
 assert.notEqual(actual, expected, [message]);
 ```
 
-***
+---
 
 #### Tests shallow, coercive non-equality with the not equal comparison operator ( != )
 
@@ -2895,7 +2893,7 @@ assert.notEqual(actual, expected, [message]);
 assert.deepEqual(actual, expected, [message]);
 ```
 
-***
+---
 
 #### Tests for deep equality
 
@@ -2903,7 +2901,7 @@ assert.deepEqual(actual, expected, [message]);
 assert.notDeepEqual(actual, expected, [message]);
 ```
 
-***
+---
 
 #### Tests for any deep inequality
 
@@ -2911,9 +2909,9 @@ assert.notDeepEqual(actual, expected, [message]);
 assert.strictEqual(actual, expected, [message]);
 ```
 
-***
+---
 
-***
+---
 
 #### Tests strict equality, as determined by the strict equality operator ( === )
 
@@ -2921,7 +2919,7 @@ assert.strictEqual(actual, expected, [message]);
 assert.notStrictEqual(actual, expected, [message]);
 ```
 
-***
+---
 
 #### Tests strict non-equality, as determined by the strict not equal operator ( !== )
 
@@ -2929,7 +2927,7 @@ assert.notStrictEqual(actual, expected, [message]);
 assert.throws(block, [error], [message]);
 ```
 
-***
+---
 
 #### Expects block to throw an error. error can be constructor, RegExp or validation function
 
@@ -2937,7 +2935,7 @@ assert.throws(block, [error], [message]);
 assert.doesNotThrow(block, [message]);
 ```
 
-***
+---
 
 #### Expects block not to throw an error, see assert.throws for details
 
@@ -2945,7 +2943,7 @@ assert.doesNotThrow(block, [message]);
 assert.ifError(value);
 ```
 
-***
+---
 
 #### Tests if value is not a false value, throws if it is a true value. Useful when testing the first argument, error in callbacks
 
@@ -2953,13 +2951,13 @@ assert.ifError(value);
 
 > Use require('os') to access this module.
 
-***
+---
 
 ```js
 os.tmpdir();
 ```
 
-***
+---
 
 #### Returns the operating system's default directory for temp files
 
@@ -2967,7 +2965,7 @@ os.tmpdir();
 os.endianness();
 ```
 
-***
+---
 
 #### Returns the endianness of the CPU. Possible values are "BE" or "LE"
 
@@ -2975,7 +2973,7 @@ os.endianness();
 os.hostname();
 ```
 
-***
+---
 
 #### Returns the hostname of the operating system
 
@@ -2983,7 +2981,7 @@ os.hostname();
 os.type();
 ```
 
-***
+---
 
 #### Returns the operating system name
 
@@ -2991,7 +2989,7 @@ os.type();
 os.platform();
 ```
 
-***
+---
 
 #### Returns the operating system platform
 
@@ -2999,7 +2997,7 @@ os.platform();
 os.arch();
 ```
 
-***
+---
 
 #### Returns the operating system CPU architecture
 
@@ -3007,9 +3005,9 @@ os.arch();
 os.release();
 ```
 
-***
+---
 
-***
+---
 
 #### Returns the operating system release
 
@@ -3017,7 +3015,7 @@ os.release();
 os.uptime();
 ```
 
-***
+---
 
 #### Returns the system uptime in seconds
 
@@ -3025,9 +3023,9 @@ os.uptime();
 os.loadavg();
 ```
 
-***
+---
 
-***
+---
 
 #### Returns an array containing the 1, 5, and 15 minute load averages
 
@@ -3035,7 +3033,7 @@ os.loadavg();
 os.totalmem();
 ```
 
-***
+---
 
 #### Returns the total amount of system memory in bytes
 
@@ -3043,9 +3041,9 @@ os.totalmem();
 os.freemem();
 ```
 
-***
+---
 
-***
+---
 
 #### Returns the amount of free system memory in bytes
 
@@ -3053,7 +3051,7 @@ os.freemem();
 os.cpus();
 ```
 
-***
+---
 
 #### Returns an array of objects containing information about each CPU/core installed: model, speed (in MHz), and times (an object containing the number of milliseconds the CPU/core spent in: user, nice, sys, idle, and irq)
 
@@ -3061,9 +3059,9 @@ os.cpus();
 os.networkInterfaces();
 ```
 
-***
+---
 
-***
+---
 
 #### Get a list of network interfaces
 
@@ -3071,7 +3069,7 @@ os.networkInterfaces();
 os.EOL;
 ```
 
-***
+---
 
 #### A constant defining the appropriate End-of-line marker for the operating system
 
@@ -3081,7 +3079,7 @@ os.EOL;
 Buffer.from(size);
 ```
 
-***
+---
 
 #### Allocates a new buffer of size octets
 
@@ -3089,7 +3087,7 @@ Buffer.from(size);
 Buffer.from(array);
 ```
 
-***
+---
 
 #### Allocates a new buffer using an array of octets
 
@@ -3097,7 +3095,7 @@ Buffer.from(array);
 Buffer.from(str, [encoding]);
 ```
 
-***
+---
 
 #### Allocates a new buffer containing the given str. encoding defaults to 'utf8'
 
@@ -3105,7 +3103,7 @@ Buffer.from(str, [encoding]);
 Buffer.isEncoding(encoding);
 ```
 
-***
+---
 
 #### Returns true if the encoding is a valid encoding argument, or false otherwise
 
@@ -3113,7 +3111,7 @@ Buffer.isEncoding(encoding);
 Buffer.isBuffer(obj);
 ```
 
-***
+---
 
 #### Tests if obj is a Buffer
 
@@ -3121,7 +3119,7 @@ Buffer.isBuffer(obj);
 Buffer.concat(list, [totalLength]);
 ```
 
-***
+---
 
 #### Returns a buffer which is the result of concatenating all the buffers in the list together
 
@@ -3129,7 +3127,7 @@ Buffer.concat(list, [totalLength]);
 Buffer.byteLength(string, [encoding]);
 ```
 
-***
+---
 
 #### Gives the actual byte length of a string
 
@@ -3137,23 +3135,23 @@ Buffer.byteLength(string, [encoding]);
 buf.write(string, [offset], [length], [encoding]);
 ```
 
-***
+---
 
 #### Writes string to the buffer at offset using the given encoding
 
 > buf.toString(\[encoding], \[start], \[end]);
 
-***
+---
 
 > Decodes and returns a string from buffer data encoded with encoding (defaults to 'utf8') beginning at start (defaults to 0) and ending at end (defaults to buffer.length).
 
-***
+---
 
 ```js
 buf.toJSON();
 ```
 
-***
+---
 
 #### Returns a JSON-representation of the Buffer instance, which is identical to the output for JSON Arrays
 
@@ -3161,9 +3159,9 @@ buf.toJSON();
 buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);
 ```
 
-***
+---
 
-***
+---
 
 #### Does copy between buffers. The source and target regions can be overlapped
 
@@ -3171,7 +3169,7 @@ buf.copy(targetBuffer, [targetStart], [sourceStart], [sourceEnd]);
 buf.slice([start], [end]);
 ```
 
-***
+---
 
 #### Returns a new buffer which references the same memory as the old, but offset and cropped by the start (defaults to 0) and end (defaults to buffer.length) indexes. Negative indexes start from the end of the buffer
 
@@ -3179,7 +3177,7 @@ buf.slice([start], [end]);
 buf.fill(value, [offset], [end]);
 ```
 
-***
+---
 
 #### Fills the buffer with the specified value
 
@@ -3187,7 +3185,7 @@ buf.fill(value, [offset], [end]);
 buf[index];
 ```
 
-***
+---
 
 #### Get and set the octet at index
 
@@ -3195,7 +3193,7 @@ buf[index];
 buf.length;
 ```
 
-***
+---
 
 #### The size of the buffer in bytes, Note that this is not necessarily the size of the contents
 
@@ -3203,24 +3201,25 @@ buf.length;
 buffer.INSPECT_MAX_BYTES;
 ```
 
-***
+---
 
 #### How many bytes will be returned when buffer.inspect() is called. This can be overridden by user modules
 
 ```js
+
 ```
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## ReactJS
 
-***
+---
 
 ```bash
 
@@ -3244,7 +3243,7 @@ npm install --save prop-types
 
 > Code written with JSX will be converted to use React.createElement().
 
-***
+---
 
 **You will not typically invoke React.createElement() directly if you are using JSX**
 
@@ -3252,19 +3251,19 @@ npm install --save prop-types
 React.createElement(type, [props], [...children]);
 ```
 
-***
+---
 
 #### Clone and return a new React element using element as the starting point
 
 > The resulting element will have the original element's props with the new props merged in shallowly.
 
-***
+---
 
 ```js
 React.cloneElement(element, [props], [...children]);
 ```
 
-***
+---
 
 #### Verifies the object is a React element. Returns true or false
 
@@ -3272,20 +3271,20 @@ React.cloneElement(element, [props], [...children]);
 React.isValidElement(object);
 ```
 
-***
+---
 
 #### React.Children> provides utilities for dealing with the this.props.children opaque data structure
 
 > Invokes a function on every immediate child contained within children with this set to thisArg.
 
-***
+---
 
 ```js
 
 React.Children.map(children, function[(thisArg)]);
 ```
 
-***
+---
 
 #### Like React.Children.map() but does not return an array
 
@@ -3294,7 +3293,7 @@ React.Children.map(children, function[(thisArg)]);
 React.Children.forEach(children, function[(thisArg)]);
 ```
 
-***
+---
 
 #### Returns the total number of components in children, equal to the number of times that a callback passed to map or forEach would be invoked
 
@@ -3302,35 +3301,35 @@ React.Children.forEach(children, function[(thisArg)]);
 React.Children.count(children);
 ```
 
-***
+---
 
 #### Verifies that children has only one child (a React element) and returns it
 
 > Otherwise this method throws an error.
 
-***
+---
 
 ```js
 React.Children.only(children);
 ```
 
-***
+---
 
 #### Returns the children opaque data structure as a flat array with keys assigned to each child
 
 > Useful if you want to manipulate collections of children in your render methods, especially if you want to reorder or slice this.props.children before passing it down.
 
-***
+---
 
 ```js
 React.Children.toArray(children);
 ```
 
-***
+---
 
 #### The React.Fragment component lets you return multiple elements in a render() method without creating an additional DOM element
 
-***
+---
 
 **You can also use it with the shorthand <>\</> syntax**
 
@@ -3352,7 +3351,7 @@ class Component extends React.Component {
 this.method = this.method.bind(this);
 ```
 
-***
+---
 
 #### The constructor is the right place to initialize state
 
@@ -3362,7 +3361,7 @@ this.method = this.method.bind(this);
     active: true,
 ```
 
-***
+---
 
 #### In rare cases, it's okay to initialize state based on props
 
@@ -3370,7 +3369,7 @@ this.method = this.method.bind(this);
 
 > If you "fork" props by using them for state, you might also want to implement componentWillReceiveProps(nextProps) to keep the state up-to-date with them. But lifting state up is often easier and less bug-prone.
 
-***
+---
 
 ```js
 
@@ -3387,7 +3386,7 @@ this.method = this.method.bind(this);
 
 > Instead, use componentDidUpdate or a setState callback.
 
-***
+---
 
 **You may optionally pass an object as the first argument to setState() instead of a function**
 
@@ -3400,7 +3399,7 @@ setState(updater[, callback]) { }
 
 > This is the only lifecycle hook called on server rendering.
 
-***
+---
 
 ```js
 
@@ -3415,7 +3414,7 @@ componentWillMount() { }
 
 > This method is a good place to set up any subscriptions. If you do that, don't forget to unsubscribe in componentWillUnmount().
 
-***
+---
 
 ```js
 
@@ -3426,20 +3425,20 @@ componentDidMount() { }
 
 > If you need to update the state in response to prop changes (for example, to reset it), you may compare this.props and nextProps and perform state transitions using this.setState() in this method.
 
-***
+---
 
 ```js
 
 componentWillReceiveProps(nextProps) { }
 ```
 
-***
+---
 
 #### ^^^^ Let React know if a component's output is not affected by the current change in state or props
 
 > The default behavior is to re-render on every state change, and in the vast majority of cases you should rely on the default behavior.
 
-***
+---
 
 #### shouldComponentUpdate() is invoked before rendering when new props or state are being received. Defaults to true
 
@@ -3447,7 +3446,7 @@ componentWillReceiveProps(nextProps) { }
 
 > Returning false does not prevent child components from re-rendering when their state changes.
 
-***
+---
 
 ```js
 
@@ -3464,7 +3463,7 @@ shouldComponentUpdate(nextProps, nextState) { }
 
 > If you need to update state in response to props changes, use componentWillReceiveProps() instead.
 
-***
+---
 
 ```js
 componentWillUpdate(nextProps, nextState) { }
@@ -3476,7 +3475,7 @@ componentWillUpdate(nextProps, nextState) { }
 
 > This is also a good place to do network requests as long as you compare the current props to previous props (e.g. a network request may not be necessary if the props have not changed).
 
-***
+---
 
 ```js
 
@@ -3487,7 +3486,7 @@ componentDidUpdate(prevProps, prevState) { }
 
 > Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any subscriptions that were created in componentDidMount().
 
-***
+---
 
 ```js
 
@@ -3498,7 +3497,7 @@ componentWillUnmount() { }
 
 > Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them.
 
-***
+---
 
 ```js
 
@@ -3513,7 +3512,7 @@ componentDidCatch() { }
 
 > It must return one of the following types: react elements, string and numbers, portals, null or booleans.
 
-***
+---
 
 ```js
 
@@ -3522,13 +3521,13 @@ render() {
 
 > Contains the props that were defined by the caller of this component.
 
-***
+---
 
 ```js
 console.log(this.props);
 ```
 
-***
+---
 
 #### Contains data specific to this component that may change over time
 
@@ -3542,7 +3541,7 @@ console.log(this.props);
 
 > Treat this.state as if it were immutable.
 
-***
+---
 
 ```js
 
@@ -3557,13 +3556,13 @@ console.log(this.props);
 }
 ```
 
-***
+---
 
 > Can be defined as a property on the component class itself, to set the default props for the class.
 
 > This is used for undefined props, but not for null props.
 
-***
+---
 
 ```js
 Component.defaultProps = {
@@ -3572,7 +3571,7 @@ Component.defaultProps = {
 component = new Component();
 ```
 
-***
+---
 
 #### By default, when your component's state or props change, your component will re-render
 
@@ -3580,51 +3579,51 @@ component = new Component();
 
 > Normally you should try to avoid all uses of forceUpdate() and only read from this.props and this.state in render().
 
-***
+---
 
 ```js
 component.forceUpdate(callback);
 ```
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## REACT.DOM
 
-* The react-dom package provides DOM-specific methods that can be used at the top level of
-* your app and as an escape hatch to get outside of the React model if you need to.
-* Most of your components should not need to use this module.
+- The react-dom package provides DOM-specific methods that can be used at the top level of
+- your app and as an escape hatch to get outside of the React model if you need to.
+- Most of your components should not need to use this module.
 
 > Render a React element into the DOM in the supplied container and return a reference
 
 > to the component (or returns null for stateless components).
 
-***
+---
 
 ```js
 
 ReactDOM.render(element, container[, callback]);
 ```
 
-***
+---
 
 #### Same as render(), but is used to hydrate a container whose HTML contents were rendered
 
 > by ReactDOMServer. React will attempt to attach event listeners to the existing markup.
 
-***
+---
 
 ```js
 
 ReactDOM.hydrate(element, container[, callback]);
 ```
 
-***
+---
 
 #### Remove a mounted React component from the DOM and clean up its event handlers and state
 
@@ -3632,13 +3631,13 @@ ReactDOM.hydrate(element, container[, callback]);
 
 > Returns true if a component was unmounted and false if there was no component to unmount.
 
-***
+---
 
 ```js
 ReactDOM.unmountComponentAtNode(container);
 ```
 
-***
+---
 
 #### If this component has been mounted into the DOM, this returns the corresponding native browser
 
@@ -3648,53 +3647,53 @@ ReactDOM.unmountComponentAtNode(container);
 
 > using findDOMNode at all.
 
-***
+---
 
 ```js
 ReactDOM.findDOMNode(component);
 ```
 
-***
+---
 
 #### Creates a portal. Portals provide a way to render children into a DOM node that exists outside
 
 > the hierarchy of the DOM component.
 
-***
+---
 
-***
+---
 
 ```js
 ReactDOM.createPortal(child, container);
 ```
 
-***
+---
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## REACTDOMSERVER
 
-* The ReactDOMServer object enables you to render components to static markup.
+- The ReactDOMServer object enables you to render components to static markup.
 
 > Render a React element to its initial HTML. React will return an HTML string.
 
-***
+---
 
 **You can use this method to generate HTML on the server and send the markup down on the initial**
 
 > request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
 
-***
+---
 
 ```js
 ReactDOMServer.renderToString(element);
 ```
 
-***
+---
 
 #### Similar to renderToString, except this doesn't create extra DOM attributes that React uses
 
@@ -3702,31 +3701,31 @@ ReactDOMServer.renderToString(element);
 
 > page generator, as stripping away the extra attributes can save some bytes.
 
-***
+---
 
 ```js
 ReactDOMServer.renderToStaticMarkup(element);
 ```
 
-***
+---
 
 #### Render a React element to its initial HTML. Returns a Readable stream that outputs an HTML string
 
 > The HTML output by this stream is exactly equal to what ReactDOMServer.renderToString would return.
 
-***
+---
 
 **You can use this method to generate HTML on the server and send the markup down on the initial**
 
 > request for faster page loads and to allow search engines to crawl your pages for SEO purposes.
 
-***
+---
 
 ```js
 ReactDOMServer.renderToNodeStream(element);
 ```
 
-***
+---
 
 #### Similar to renderToNodeStream, except this doesn't create extra DOM attributes that React uses
 
@@ -3734,7 +3733,7 @@ ReactDOMServer.renderToNodeStream(element);
 
 > page generator, as stripping away the extra attributes can save some bytes.
 
-***
+---
 
 ```js
 
@@ -3744,7 +3743,7 @@ import PropTypes from 'prop-types';
 MyComponent.propTypes = {
 ```
 
-***
+---
 
 **You can declare that a prop is a specific JS type. By default, these are all optional**
 
@@ -3759,13 +3758,13 @@ optionalString: PropTypes.string,
 optionalSymbol: PropTypes.symbol,  Anything that can be rendered: numbers, strings, elements or an array
 ```
 
-***
+---
 
 #### (or fragment) containing these types
 
 optionalNode: PropTypes.node, A React element.
 
-***
+---
 
 #### optionalElement: PropTypes.element, You can also declare that a prop is an instance of a class. This uses
 
@@ -3775,7 +3774,7 @@ optionalMessage: PropTypes.instanceOf(Message), You can ensure that your prop is
 
 > it as an enum.
 
-***
+---
 
 ```js
 
@@ -3794,18 +3793,18 @@ optionalObjectWithShape: PropTypes.shape({
 
 ```
 
-***
+---
 
 #### is shown if the prop isn't provided
 
-* requiredFunc: PropTypes.func.isRequired, A value of any data type
-* requiredAny: PropTypes.any.isRequired, You can also specify a custom validator. It should return an Error
+- requiredFunc: PropTypes.func.isRequired, A value of any data type
+- requiredAny: PropTypes.any.isRequired, You can also specify a custom validator. It should return an Error
 
 > object if the validation fails. Don't `console.warn` or throw, as this
 
 > won't work inside `oneOfType`.
 
-***
+---
 
 ```js
 
@@ -3820,7 +3819,7 @@ customProp: function(props, propName, componentName) {
 
 ```
 
-***
+---
 
 #### You can also supply a custom validator to `arrayOf` and `objectOf`
 
@@ -3832,7 +3831,7 @@ customProp: function(props, propName, componentName) {
 
 > current item's key.
 
-***
+---
 
 ```js
 

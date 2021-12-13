@@ -13,7 +13,6 @@ Example phone interview questions (more super useful [practice questions](https:
 — Describe a project or position you held where you used python.\
 — Describe a project where you collaborated with other people/teams. What was your biggest hurdle?\
 
-
 #### 3. **Make a brag list.**
 
 In addition to rounding up examples of your work, you should make a list of all of the results and projects you’re most proud of. Talking about how and why you are good at what you do can feel awkward and overzealous. This will help remind you to highlight your successes and also, by documenting your wins, keep them top of mind.
@@ -56,7 +55,6 @@ Make sure you have an upbeat tone to your voice, which can be accomplished by si
 
 Have your resume and the job description in front of you during the call. Other helpful information you might want closeby: The company’s About Us page, the interviewer’s LinkedIn profile, and the company’s Crunchbase or Glassdoor profile.\
 
-
 #### **12. Take notes.**
 
 These will help you retain the information and ideas discussed, and will likely come in handy when you’re writing your follow-up thank you notes.
@@ -89,7 +87,6 @@ A: My strengths are that I’ve worked as a frontend and backend engineer making
 #### **17. Send a ‘thank you’ email.**
 
 Include the person and/or people who interviewed you right after the interview or before the end of that working day. It’s important to [thank](https://www.thebalance.com/thank-you-email-messages-for-a-phone-interview-example-2063996) them for their time, and an opportunity to reiterate why you’re excited about the position.\
-
 
 #### **18. Do a post-mortem.**
 

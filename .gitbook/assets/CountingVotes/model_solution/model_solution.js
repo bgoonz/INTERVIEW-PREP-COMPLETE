@@ -5,9 +5,9 @@
 function countVotes(arr) {
   const counts = {};
   let maxVotes = 0;
-  let winner = '';
+  let winner = "";
   // Iterate over entire array
-  arr.forEach(vote => {
+  arr.forEach((vote) => {
     // If name doesnt exist in counts yet, add it with a value of 0
     if (!counts[vote]) counts[vote] = 0;
 
@@ -33,31 +33,31 @@ function countVotes(arr) {
 
 console.log(
   countVotes([
-    'veronica',
-    'mary',
-    'alex',
-    'james',
-    'mary',
-    'michael',
-    'alex',
-    'michael',
+    "veronica",
+    "mary",
+    "alex",
+    "james",
+    "mary",
+    "michael",
+    "alex",
+    "michael",
   ])
 ); // should print 'michael'
 
 console.log(
   countVotes([
-    'john',
-    'johnny',
-    'jackie',
-    'johnny',
-    'john',
-    'jackie',
-    'jamie',
-    'jamie',
-    'john',
-    'johnny',
-    'jamie',
-    'johnny',
-    'john',
+    "john",
+    "johnny",
+    "jackie",
+    "johnny",
+    "john",
+    "jackie",
+    "jamie",
+    "jamie",
+    "john",
+    "johnny",
+    "jamie",
+    "johnny",
+    "john",
   ])
 ); // should print 'johnny'

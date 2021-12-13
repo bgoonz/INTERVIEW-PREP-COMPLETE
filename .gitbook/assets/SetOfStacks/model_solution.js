@@ -29,16 +29,16 @@ class SetOfStacks {
     }
     return this.stacks[this.currentStackIndex].pop();
   }
-  
+
   // There are a couple of ways this `popAt` function could be implemented
   // We could simply pop from the stack at the given index and call it a day
   // However, this might lead to tricky situations later on if someone
   // assumes that all stacks other than the last one operate at full capacity.
 
-  // The alternative is to pop from the stack at the given index, and then 
+  // The alternative is to pop from the stack at the given index, and then
   // roll over an item from the next stack, which would get us into a chain
   // reaction of having to roll over an item from every stack to the previous
-  // stack until we reach the last stack. 
+  // stack until we reach the last stack.
 
   // There are signicant time complexity tradeoffs between these two approaches
   // Be sure to discuss these tradeoffs with your interviewee.
@@ -72,13 +72,13 @@ const stacks = new SetOfStacks(3);
 stacks.push(6);
 stacks.push(8);
 stacks.push(3);
-console.log(stacks.length);   // should print 1
+console.log(stacks.length); // should print 1
 
 stacks.push(4);
-console.log(stacks.length);   // should print 2
+console.log(stacks.length); // should print 2
 
 console.log(stacks.popAt(0)); // should print 3
 
-console.log(stacks.pop());    // should print 4
-console.log(stacks.pop());    // should print 8
-console.log(stacks.length);   // should print 1
+console.log(stacks.pop()); // should print 4
+console.log(stacks.pop()); // should print 8
+console.log(stacks.length); // should print 1

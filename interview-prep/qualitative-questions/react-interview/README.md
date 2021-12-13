@@ -1,7 +1,5 @@
 # React Interview
 
-
-
 ### **React JS Developer Responsibilities** <a href="react-js-developer-responsibilities" id="react-js-developer-responsibilities"></a>
 
 When you hire a React developer, pay attention to his responsibilities.
@@ -86,7 +84,7 @@ If the developer answers the general questions well, you can move on to the next
 
 Q1. What is the name of transforming JSX to JS?
 
-A1. Transpilation.  Transpilers take the source code and convert it into another language. Transpile JSX to JS is performed using Babel/TypeScript. Packages of all the modules in your application into one or more bundles are done via Webpack.
+A1. Transpilation. Transpilers take the source code and convert it into another language. Transpile JSX to JS is performed using Babel/TypeScript. Packages of all the modules in your application into one or more bundles are done via Webpack.
 
 Q2. What does null mean in Javascript? What is the difference between undefined and null?
 
@@ -118,11 +116,11 @@ Q3. There is a project that has performance drop on a certain event (for example
 
 Q4. setTimeout(function cb() {
 
-&#x20;           console.log(‘1’);
+&#x20; console.log(‘1’);
 
-&#x20;           }, 0);
+&#x20; }, 0);
 
-&#x20;           console.log(‘2’);
+&#x20; console.log(‘2’);
 
 Why is 2 and then 1 output at the beginning of the console (setTimeout is set to 0 ms)? In what case is 1 output after 2 in the console? Give an example of code that can be written below the current one (the current one cannot be changed) that delays the output of 1 for 1 second. What happens on the website when such code drops into a real project?
 

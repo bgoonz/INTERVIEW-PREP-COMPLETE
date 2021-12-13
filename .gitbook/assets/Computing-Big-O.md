@@ -2,8 +2,8 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 ## Steps to compute Big O
 
-* Things in sequence that _aren't_ loops add together
-* A single thing inside a loop gets multiplied by the loop
+- Things in sequence that _aren't_ loops add together
+- A single thing inside a loop gets multiplied by the loop
 
 1. Go a line at a time, only looking at lines that are executable
 2. Add all the things in sequence that you can first
@@ -14,26 +14,26 @@ Goal: determine how runtime/number of operations scales up as the input scales u
 
 ## Hints
 
-* If you have something that's `O(number_of_elements_in_the_data)`, we use `n` as shorthand for `number_of_elements_in_the_data`, so `O(n)`.
-* Individual statements tend to be `O(1)`.
-* Loop statements tend to be `O(how-many-times-they-loop)`.
-* Anything that doubles the runtime each step is `O(2^n)` (e.g. naive Fibonacci).
-* Anything that triples the runtime each step is `O(3^n)`.
-* Anything that halves the runtime each step is `O(log n)` (e.g. binary search).
-* By _dominant term_ we mean, "thing which is largest given some large value of _n_, like 10000". `O(n)` dominates `O(1)`. `O(n^2)` dominates `O(n)` and `O(1)`.
-* Loops that iterate over entire lists are `O(n)`, where `n` is the size of the list.
-* But loops that binary search over a list are `O(log n)`!
+- If you have something that's `O(number_of_elements_in_the_data)`, we use `n` as shorthand for `number_of_elements_in_the_data`, so `O(n)`.
+- Individual statements tend to be `O(1)`.
+- Loop statements tend to be `O(how-many-times-they-loop)`.
+- Anything that doubles the runtime each step is `O(2^n)` (e.g. naive Fibonacci).
+- Anything that triples the runtime each step is `O(3^n)`.
+- Anything that halves the runtime each step is `O(log n)` (e.g. binary search).
+- By _dominant term_ we mean, "thing which is largest given some large value of _n_, like 10000". `O(n)` dominates `O(1)`. `O(n^2)` dominates `O(n)` and `O(1)`.
+- Loops that iterate over entire lists are `O(n)`, where `n` is the size of the list.
+- But loops that binary search over a list are `O(log n)`!
 
 ## Recursion
 
-* Recursive functions are like loops, where the body of the function is the body of the loop.
-* You need to figure out how many times the function will call itself, and that's the Big O that you need to multiply against the Big O of the function body.
-* Keep in mind that recursion comes with an inherent memory cost that loops don't incur, since each recursive call adds an additional execution frame to the stack; in other words, calling a function is not free!
+- Recursive functions are like loops, where the body of the function is the body of the loop.
+- You need to figure out how many times the function will call itself, and that's the Big O that you need to multiply against the Big O of the function body.
+- Keep in mind that recursion comes with an inherent memory cost that loops don't incur, since each recursive call adds an additional execution frame to the stack; in other words, calling a function is not free!
 
 ## Gotchas
 
-* Built in functions might incur significant Big O without you noticing. Python's list `.copy()` might seem like just a simple `O(1)` line, but [it's `O(n)` under the hood](https://wiki.python.org/moin/TimeComplexity).
-* Beware of loops that modify their index in weird ways.
+- Built in functions might incur significant Big O without you noticing. Python's list `.copy()` might seem like just a simple `O(1)` line, but [it's `O(n)` under the hood](https://wiki.python.org/moin/TimeComplexity).
+- Beware of loops that modify their index in weird ways.
 
 ## Example
 
@@ -81,7 +81,6 @@ def foo(n):
 
 Try to add things in sequence, but remember that loops interrupt sequences!
 
-
 ```python
 def foo(n):
     # O(2)    -- was O(1) + O(1)
@@ -115,7 +114,6 @@ def foo(n):
 ```
 
 Let's try to add any sequences again.
-
 
 ```python
 def foo(n):
@@ -244,7 +242,7 @@ Again, think loop on steroids. `fib()` calls itself... but it calls itself _two_
 
 We call it `1` time, it calls itself `2` times. Those `2` times call it `4` times, which call it `8` times, which call it `16` times, etc. If you recognize those numbers, you'll know those are powers of 2. `2^0=1`, `2^1=2`, `2^2=4`, `2^3=8`, and all the way up to `2^n`.
 
-This is an `O(2^n)` recursive  call. (With an `O(1)` body.)
+This is an `O(2^n)` recursive call. (With an `O(1)` body.)
 
 Sure, `fib(n-2)` only calls it `1/2 * n` times, but we chuck that constant for Big O.
 

@@ -1,10 +1,6 @@
 # Avid / Pro Tools
 
-
-
 {% embed url="https://sjobs.brassring.com/TGnewUI/Search/home/HomeWithPreLoad?PageType=JobDetails&jobid=1542200&partnerid=25199&siteid=5286#Applications" %}
-
-
 
 First name Bryan
 
@@ -34,86 +30,88 @@ Web address https://bgoonz-blog.netlify.app/
 
 #### Work experience
 
-* **cembre**
-* Product Development Engineer
-* 2019 - 2020
-* Responsibilities ● Converted clients product needs into technical specs to be sent to the development team in Italy.\
+- **cembre**
+- Product Development Engineer
+- 2019 - 2020
+- Responsibilities ● Converted clients product needs into technical specs to be sent to the development team in Italy.\
   ● Reorganized internal file server structure and conducted system integration and product demonstrations.\
   ● Presided over internal and end user software trainings in addition to producing the corresponding documentation.\
   ● Conducted electrical conductivity & tensile testing of electrical components and connectors.\
   ● Served as the primary point of contact for troubleshooting railroad hardware and software in North America.
-* **Family Promise**
-* Full Stack Web Developer
-*   2021 - 2021
+- **Family Promise**
+- Full Stack Web Developer
+- 2021 - 2021
 
-    Most Recent
-*   Responsibilities Family Promise Service Tracker
+  Most Recent
 
-    React | ExpressJS | Figma | Okta
+- Responsibilities Family Promise Service Tracker
 
-    An app built to helps local communities provide services to address the root causes of family homelessness
+  React | ExpressJS | Figma | Okta
 
-    ● Collaborated on state management using Redux to handle application state and middleware using redux-promise & redux-thunk.
+  An app built to helps local communities provide services to address the root causes of family homelessness
 
-    ● Built two graphic visuals of the user hierarchy and the scope of their permissions as well as maintained the team's docs.
+  ● Collaborated on state management using Redux to handle application state and middleware using redux-promise & redux-thunk.
 
-    ● Created Figma UI mockups for possible future developments, such as displaying metrics data and map pinpoint functionality.
+  ● Built two graphic visuals of the user hierarchy and the scope of their permissions as well as maintained the team's docs.
+
+  ● Created Figma UI mockups for possible future developments, such as displaying metrics data and map pinpoint functionality.
 
 #### Skills
 
-* AJAX,
-* Ant,
-* Bash,
-* C++,
-* Confluence,
-* CSS3,
-* Data Structures,
-* Excel,
-* ExpressJS,
-* Figma,
-* Git,
-* GitHub,
-* Google Analytics,
-* GraphQL,
-* GUI,
-* Guitar,
-* Heroku,
-* HTML5,
-* interactive content,
-* JavaScript,
-* Jira,
-* jQuery,
-* json,
-* Linux,
-* MATLAB,
-* middleware,
-* mockups,
-* MongoDB,
-* PostgreSQL,
-* Python,
-* Sequelize,
-* software development,
-* SQL,
-* SQlite3,
-* system integration,
-* troubleshooting,
-* video conferencing,
-* Web Development
+- AJAX,
+- Ant,
+- Bash,
+- C++,
+- Confluence,
+- CSS3,
+- Data Structures,
+- Excel,
+- ExpressJS,
+- Figma,
+- Git,
+- GitHub,
+- Google Analytics,
+- GraphQL,
+- GUI,
+- Guitar,
+- Heroku,
+- HTML5,
+- interactive content,
+- JavaScript,
+- Jira,
+- jQuery,
+- json,
+- Linux,
+- MATLAB,
+- middleware,
+- mockups,
+- MongoDB,
+- PostgreSQL,
+- Python,
+- Sequelize,
+- software development,
+- SQL,
+- SQlite3,
+- system integration,
+- troubleshooting,
+- video conferencing,
+- Web Development
 
 #### Education history
 
-* **Lambda School**
-*   Graduation year 2021
+- **Lambda School**
+- Graduation year 2021
 
-    Most Recent
-* Major area of study Web Development
-* Degree Certificate
-* GPA 3.8
-* **The College of New Jersey**
-* Graduation year 2019
-* Major area of study Electrical Engineering
-* Degree Bachelor's degree
-* GPA 2.9
+  Most Recent
+
+- Major area of study Web Development
+- Degree Certificate
+- GPA 3.8
+- **The College of New Jersey**
+- Graduation year 2019
+- Major area of study Electrical Engineering
+- Degree Bachelor's degree
+- GPA 2.9
 
 [Edit Questions](https://sjobs.brassring.com/#)
 
@@ -245,7 +243,7 @@ Professional Relationship: CEO
 
 I hereby acknowledge that I have read the BELOW statement and understand it.
 
-* Yes
+- Yes
 
 Applicant's Signature Bryan Guner
 

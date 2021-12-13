@@ -1,6 +1,6 @@
 # ⁉ Interview Questions.
 
-***
+---
 
 {% embed url="https://replit.com/@bgoonz/interview-2#index.js" %}
 
@@ -15,26 +15,27 @@
 As a general rule, relative units can be used as the default for responsive sites. This can help you avoid having to update styles for different screen sizes.
 
 ```css
-@media (max-width:500px) {
-    /* title section style mobile */
-    .title-container div,.title-container hr { 
-        width: 100%;
-    }
-    
-    /* artists section style mobile */
-    .artists-container {
-        flex-direction: column;
-        align-content:center;
-    }
-    .artist {
-        width: 100%;
-    }
+@media (max-width: 500px) {
+  /* title section style mobile */
+  .title-container div,
+  .title-container hr {
+    width: 100%;
+  }
 
-    .artist img {
-        object-fit: scale-down;
-        height: auto;
-        width: 60%;
-    }
+  /* artists section style mobile */
+  .artists-container {
+    flex-direction: column;
+    align-content: center;
+  }
+  .artist {
+    width: 100%;
+  }
+
+  .artist img {
+    object-fit: scale-down;
+    height: auto;
+    width: 60%;
+  }
 }
 ```
 
@@ -42,7 +43,7 @@ As a general rule, relative units can be used as the default for responsive site
 
 > 2.)
 
-***
+---
 
 #### Q2. Explain the importance of accessibility and how you would integrate that into websites or applications.
 
@@ -78,7 +79,7 @@ Story 1Story 2Story 3
 
 https://www.freecodecamp.org/news/semantic-html5-elements/
 
-***
+---
 
 #### Q3. Find an example of a higher order function and a callback function in your project. Compare and contrast the two functions.
 
@@ -112,16 +113,16 @@ Edit this document to include your answers after each question. Make sure to lea
 
 ```js
 const bankAccount = (initialBalance) => {
- const balance = initialBalance;
- return {
-   getBalance: function() {
-     return balance;
-   },
-   deposit: function(amount) {
-     balance += amount;
-     return balance;
-   },
- };
+  const balance = initialBalance;
+  return {
+    getBalance: function () {
+      return balance;
+    },
+    deposit: function (amount) {
+      balance += amount;
+      return balance;
+    },
+  };
 };
 const account = bankAccount(100);
 account.getBalance(); // 100
@@ -143,7 +144,7 @@ account.deposit(10); // 110
 
 > In essence the super keyword tells us to use the parent's properties and methods with a this context that belongs to the extended child class. In a child class, you use super() to call its parent's constructor and super. to access its parent's methods.
 
-***
+---
 
 #### Q4. Show me in your Client-side App where you made an API call and how you retrieved the data from that call.
 
@@ -182,7 +183,7 @@ account.deposit(10); // 110
 export { Card, cardAppender }
 ```
 
-***
+---
 
 #### Q5. Where in your Client-side application did you implement route management? Explain the logic.
 
@@ -192,7 +193,7 @@ Student can use and explain switch tags as important to force page to render one
 
 Not only are standard network request techniques employed, the code is organized in such a fashion that the student demonstrated proper use of container vs presentational components or other industry standards, conventions or patterns.
 
-***
+---
 
 #### Q6. In your client-side app, can you show a form component and explain how the state for the form is managed? Do you have form validation in place?
 
@@ -204,7 +205,7 @@ Student performs CRUD operations on components in any capacity
 
 Open/save/exit/edit/cancel work how they should
 
-***
+---
 
 #### Q7. Explain your state management system and why you decided to use this system for state management.
 
@@ -292,15 +293,15 @@ But what if we prefer a more decentralized approach to state management? Maybe w
 
 Or, maybe we need a good way to derive data from our state and compute if efficiently and robustly on the client. And what if we want to achieve all of this without sacrificing the ability to have app-wide state observation? Enter Recoil.
 
-***
+---
 
 #### Q8. Explain how you interact with an external data source/ service/ API and point to an example in your code.
 
-***
+---
 
 #### Q9. Can you show me an example where you defined unique routes for API resources? Why was it necessary to build your API this way?
 
-***
+---
 
 #### Q10. Describe your database organization in plain language. Include details about table schema, datatypes, constraints, and relationships between tables.
 
@@ -308,7 +309,7 @@ Student designs a highly detailed, scalable database. Student can relate design 
 
 Student migrated from SQLite3 to use a server RDBMS, like Postgres or MySQL and migrations and data access code continues to work without changes.
 
-***
+---
 
 #### Q11.
 
@@ -325,7 +326,7 @@ The reason I think browser `localStorage` and `sessionStorage` do not provide en
 1. If XSS occurs, the malicious script can easily read the tokens from there and send them to a remote server. There on-wards the remote server or attacker would have no problem in impersonating the victim user.
 2. `localStorage` and `sessionStorage` are not shared across sub-domains. So, if we have two SPA running on different sub-domains, we won't get the SSO functionality because the token stored by one app won't be available to the other app within the organization. There are some solutions using `iframe`, but those look more like workarounds rather than a good solution. And when the response header `X-Frame-Options` is used to avoid clickjacking attacks with `iframe`, any solution with `iframe` is out of question.
 
-These risks can, however, be mitigated by using a fingerprint (as mentioned in [OWASP JWT Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/JSON\_Web\_Token\_for\_Java\_Cheat\_Sheet.md#token-sidejacking)) which again in turn requires a cookie.
+These risks can, however, be mitigated by using a fingerprint (as mentioned in [OWASP JWT Cheat Sheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.md#token-sidejacking)) which again in turn requires a cookie.
 
 The idea of fingerprint is, generate a cryptographically strong random string of bytes. The Base64 string of the raw string will then be stored in a `HttpOnly`, `Secure`, `SameSite` cookie with name prefix `__Secure-`. Proper values for Domain and Path attributes should be used as per business requirement. A SHA256 hash of the string will also be passed in a claim of JWT. Thus even if an XSS attack sends the JWT access token to an attacker controlled remote server, it cannot send the original string in cookie and as a result the server can reject the request based on the absence of the cookie. The cookie being `HttpOnly` cannot be read by XSS scripts.
 
@@ -344,7 +345,7 @@ It may be also worth mentioning that XSS and script injection can be further mit
 3. TRACE HTTP method should be blocked in the server as this can be used to read the `httpOnly` cookie.
 4. Also, set the header Strict-Transport-Security: max-age=; includeSubDomains​ to allow only secured connections to prevent any man-in-the-middle overwrite the CSRF cookies from a sub-domain.
 
-***
+---
 
 #### Q12. How did you handle token authentication in your client-side App?
 
@@ -354,68 +355,68 @@ Student explains client side treats token minimally and synchronization with ser
 
 Student's app can clear tokens on logout but not close as to keep access channels open.
 
-* Explain event delegation.
-* Explain how `this` works in JavaScript.
-* Can you give an example of one of the ways that working with `this` has changed in ES6?
-* Explain how prototypal inheritance works.
-* What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
-* What is a closure, and how/why would you use one?
-* What language constructions do you use for iterating over object properties and array items?
-* Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
-* What's a typical use case for anonymous functions?
-* What's the difference between host objects and native objects?
-* Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
-* Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
-* Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?
-* Explain `Function.prototype.bind`.
-* What's the difference between feature detection, feature inference, and using the UA string?
-* Explain "hoisting".
-* Describe event bubbling.
-* Describe event capturing.
-* What's the difference between an "attribute" and a "property"?
-* What are the pros and cons of extending built-in JavaScript objects?
-* What is the difference between `==` and `===`?
-* Explain the same-origin policy with regards to JavaScript.
-* Why is it called a Ternary operator, what does the word "Ternary" indicate?
-* What is strict mode? What are some of the advantages/disadvantages of using it?
-* What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
-* What tools and techniques do you use debugging JavaScript code?
-* Explain the difference between mutable and immutable objects.
-  * What is an example of an immutable object in JavaScript?
-  * What are the pros and cons of immutability?
-  * How can you achieve immutability in your own code?
-* Explain the difference between synchronous and asynchronous functions.
-* What is event loop?
-  * What is the difference between call stack and task queue?
-* What are the differences between variables created using `let`, `var` or `const`?
-* What are the differences between ES6 class and ES5 function constructors?
-* Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
-* What advantage is there for using the arrow syntax for a method in a constructor?
-* What is the definition of a higher-order function?
-* Can you give an example for destructuring an object or an array?
-* Can you give an example of generating a string with ES6 Template Literals?
-* Can you give an example of a curry function and why this syntax offers an advantage?
-* What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
-* How can you share code between files?
-* Why you might want to create static class members?
-* What is the difference between `while` and `do-while` loops in JavaScript?
-* What is a promise? Where and how would you use promise?
+- Explain event delegation.
+- Explain how `this` works in JavaScript.
+- Can you give an example of one of the ways that working with `this` has changed in ES6?
+- Explain how prototypal inheritance works.
+- What's the difference between a variable that is: `null`, `undefined` or undeclared?
+  - How would you go about checking for any of these states?
+- What is a closure, and how/why would you use one?
+- What language constructions do you use for iterating over object properties and array items?
+- Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
+- What's a typical use case for anonymous functions?
+- What's the difference between host objects and native objects?
+- Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+- Explain the differences on the usage of `foo` between `function foo() {}` and `var foo = function() {}`
+- Can you explain what `Function.call` and `Function.apply` do? What's the notable difference between the two?
+- Explain `Function.prototype.bind`.
+- What's the difference between feature detection, feature inference, and using the UA string?
+- Explain "hoisting".
+- Describe event bubbling.
+- Describe event capturing.
+- What's the difference between an "attribute" and a "property"?
+- What are the pros and cons of extending built-in JavaScript objects?
+- What is the difference between `==` and `===`?
+- Explain the same-origin policy with regards to JavaScript.
+- Why is it called a Ternary operator, what does the word "Ternary" indicate?
+- What is strict mode? What are some of the advantages/disadvantages of using it?
+- What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+- What tools and techniques do you use debugging JavaScript code?
+- Explain the difference between mutable and immutable objects.
+  - What is an example of an immutable object in JavaScript?
+  - What are the pros and cons of immutability?
+  - How can you achieve immutability in your own code?
+- Explain the difference between synchronous and asynchronous functions.
+- What is event loop?
+  - What is the difference between call stack and task queue?
+- What are the differences between variables created using `let`, `var` or `const`?
+- What are the differences between ES6 class and ES5 function constructors?
+- Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
+- What advantage is there for using the arrow syntax for a method in a constructor?
+- What is the definition of a higher-order function?
+- Can you give an example for destructuring an object or an array?
+- Can you give an example of generating a string with ES6 Template Literals?
+- Can you give an example of a curry function and why this syntax offers an advantage?
+- What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
+- How can you share code between files?
+- Why you might want to create static class members?
+- What is the difference between `while` and `do-while` loops in JavaScript?
+- What is a promise? Where and how would you use promise?
 
 ### Coding questions
 
-* Make this work:
+- Make this work:
 
 ```
 duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
 ```
 
-* Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
-* What will be returned by each of these?
+- Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
+- What will be returned by each of these?
 
 ```
 console.log("hello" || "world")
 console.log("foo" && "bar")
 ```
 
-* Write an immediately invoked function expression (IIFE)
+- Write an immediately invoked function expression (IIFE)

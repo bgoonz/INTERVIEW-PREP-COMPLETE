@@ -13,10 +13,10 @@ function sortStack(s) {
   while (!s.isEmpty()) {
     const temp = s.pop();
     // while our output stack still has elements
-    // and the top element is larger than the 
+    // and the top element is larger than the
     // value in the temp variable
     while (!r.isEmpty() && r.peek() > temp) {
-      // pop off our output stack back into 
+      // pop off our output stack back into
       // the input stack
       s.push(r.pop());
     }
@@ -26,7 +26,6 @@ function sortStack(s) {
 
   return r;
 }
-
 
 class Stack {
   constructor() {
@@ -42,7 +41,7 @@ class Stack {
   }
 
   peek() {
-    return this.storage[this.storage.length-1];
+    return this.storage[this.storage.length - 1];
   }
 
   isEmpty() {
@@ -50,7 +49,7 @@ class Stack {
   }
 
   printContents() {
-    this.storage.forEach(elem => console.log(elem));
+    this.storage.forEach((elem) => console.log(elem));
   }
 }
 
@@ -60,7 +59,7 @@ s.push(10);
 s.push(4);
 
 let sortedStack = sortStack(s); // sortedStack is also a Stack instance
-sortedStack.printContents();    // should print 4, 10
+sortedStack.printContents(); // should print 4, 10
 
 // print a newline
 console.log();
@@ -73,4 +72,4 @@ s.push(19);
 s.push(4);
 
 sortedStack = sortStack(s);
-sortedStack.printContents();  // should print 1, 4, 5, 6, 8, 19
+sortedStack.printContents(); // should print 1, 4, 5, 6, 8, 19

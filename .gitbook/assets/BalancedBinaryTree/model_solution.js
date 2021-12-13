@@ -14,9 +14,9 @@ const checkBalanced = (rootNode) => {
   const maxDepth = (node) => {
     if (!node) return 0;
     return 1 + Math.max(maxDepth(node.left), maxDepth(node.right));
-  }
-  
-  return (maxDepth(rootNode) - minDepth(rootNode) === 0);
+  };
+
+  return maxDepth(rootNode) - minDepth(rootNode) === 0;
 };
 
 /* Some console.log tests */
@@ -39,10 +39,10 @@ class BinaryTreeNode {
 }
 
 const root = new BinaryTreeNode(5);
-console.log(checkBalanced(root));   // should print true
+console.log(checkBalanced(root)); // should print true
 
 root.insertLeft(10);
-console.log(checkBalanced(root));   // should print false
+console.log(checkBalanced(root)); // should print false
 
 root.insertRight(11);
-console.log(checkBalanced(root));   // should print true;
+console.log(checkBalanced(root)); // should print true;

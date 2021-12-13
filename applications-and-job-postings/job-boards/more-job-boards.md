@@ -1,10 +1,8 @@
 # More Job Boards
 
-
-
 ### The 5 Best Job Search Websites
 
-\| Top 5 Job boards |      Upload resume | Post Jobs | | _ZipRecruiter_ |      Yes |     Yes | | _Indeed_ |      Yes |     Yes | | _Monster_ |      Yes |     Yes | | _Careerbuilder_ |      Yes |     Yes | | _LinkedIn_ |      Yes |     Yes |
+\| Top 5 Job boards | Upload resume | Post Jobs | | _ZipRecruiter_ | Yes | Yes | | _Indeed_ | Yes | Yes | | _Monster_ | Yes | Yes | | _Careerbuilder_ | Yes | Yes | | _LinkedIn_ | Yes | Yes |
 
 ### The 47 Top Job Search Websites
 
@@ -204,25 +202,25 @@ Launched in 2001 they have job listings for mechanical, electrical, civil, chemi
 
 ### Top Niche Job Search Websites
 
-* [Clearancejobs.com](https://www.clearancejobs.com) Interested in jobs that require a security clearance? Clearance jobs mention it's the largest career network for professionals with federal government security clearance.
-* [Energyjobshop.com](https://www.energyjobshop.com) This is a great site to check out when looking for a job in the Oil & Gas fields. New jobs are listed daily.
-* [Accounting jobs today](http://www.accountingjobstoday.com) With over 6,000 jobs currently listed this is an excellent resource for job seekers being one of the best job search sites in the accounting sector.
-* [iHireAccounting](https://www.ihireaccounting.com) An accounting job board adding over 2,000 new jobs daily. This job search site is one to keep an eye on.
-* [Accountingcrossing.com](https://www.accountingcrossing.com) Currently they have close to 100,000 jobs posted in the accounting field.
-* [Jobsinlogistics.com ](https://www.jobsinlogistics.com)If you're looking for a job in the supply chain or logistics field this job search site is a good place to start.
-* [Idealist](https://www.apollotechnical.com/best-job-search-websites/#1200a3) is a job board for openings related to the nonprofit sector.
-* [mediabistro](https://www.mediabistro.com) is a job search site for PR, advertising, and journalist professionals. They also offer online courses and freelance tools.
-* [College Recruiter](https://www.collegerecruiter.com) Looking for your first entry-level job or summer internship? This job search site is the place to look.
-* [Behance](https://www.behance.net/joblist)  You can find jobs in the UI/UX design fields as well as other creative designer related jobs on Behance.
-* [Dribble ](https://dribbble.com/jobs)A website that has product designer, UI/UX jobs, graphic artist, and other creative professional type jobs.
-* [Lawjobs](https://lawjobs.com) A job search website for legal professionals including paralegals, attorneys, and legal secretaries it's small but growing.
-* [Fairygodboss](https://fairygodboss.com) A website for empowering women and finding great jobs as well.
-* [RecruitMilitary](https://recruitmilitary.com) A job website for military veterans entering the civilian workforce with over 150,000 active jobs.
-* [NurseFly](https://www.nursefly.com/travel-nursing-jobs/) A great job board for traveling nursing jobs currently listing over 70,000 jobs at medical facilities, hospitals, and clinics around the world.
-* [Health eCareers](https://www.healthecareers.com)  A job board for medical professionals including physicians, nursing, PAs, NPs, CRNA, and pharmaceutical job openings. This one one of the top job search sites for medical-related jobs.
-* [Healthjobsnationwide](https://www.healthjobsnationwide.com) This is a job search site for healthcare industry professionals offering job alerts and having over 1,000,000 job board listings.
-* [Medjobcafe](https://www.medjobcafe.com) You can search for jobs and post your resume and receive job alerts for openings in the medical field.
-* [Hospital Careers ](https://www.hospitalcareers.com)Job search site for over 20,000 healthcare jobs and they partner directly with over 30 state Hospital Associations.
-* [Problogger](https://problogger.com/jobs/) If your looking for a writing job short term or long term this site has many job openings for creating blog articles.
-* [Mashable](https://jobs.mashable.com) has a job board section on their website with over 50,000 jobs posted in many different fields and industries
-* [Fiverr.com](https://www.fiverr.com) Not a job board in the traditional sense but if you're looking for freelance work this is the perfect place to sell your services for businesses seeking skills such as writing, content marketing, graphic design, video production, and more.
+- [Clearancejobs.com](https://www.clearancejobs.com) Interested in jobs that require a security clearance? Clearance jobs mention it's the largest career network for professionals with federal government security clearance.
+- [Energyjobshop.com](https://www.energyjobshop.com) This is a great site to check out when looking for a job in the Oil & Gas fields. New jobs are listed daily.
+- [Accounting jobs today](http://www.accountingjobstoday.com) With over 6,000 jobs currently listed this is an excellent resource for job seekers being one of the best job search sites in the accounting sector.
+- [iHireAccounting](https://www.ihireaccounting.com) An accounting job board adding over 2,000 new jobs daily. This job search site is one to keep an eye on.
+- [Accountingcrossing.com](https://www.accountingcrossing.com) Currently they have close to 100,000 jobs posted in the accounting field.
+- [Jobsinlogistics.com ](https://www.jobsinlogistics.com)If you're looking for a job in the supply chain or logistics field this job search site is a good place to start.
+- [Idealist](https://www.apollotechnical.com/best-job-search-websites/#1200a3) is a job board for openings related to the nonprofit sector.
+- [mediabistro](https://www.mediabistro.com) is a job search site for PR, advertising, and journalist professionals. They also offer online courses and freelance tools.
+- [College Recruiter](https://www.collegerecruiter.com) Looking for your first entry-level job or summer internship? This job search site is the place to look.
+- [Behance](https://www.behance.net/joblist) You can find jobs in the UI/UX design fields as well as other creative designer related jobs on Behance.
+- [Dribble ](https://dribbble.com/jobs)A website that has product designer, UI/UX jobs, graphic artist, and other creative professional type jobs.
+- [Lawjobs](https://lawjobs.com) A job search website for legal professionals including paralegals, attorneys, and legal secretaries it's small but growing.
+- [Fairygodboss](https://fairygodboss.com) A website for empowering women and finding great jobs as well.
+- [RecruitMilitary](https://recruitmilitary.com) A job website for military veterans entering the civilian workforce with over 150,000 active jobs.
+- [NurseFly](https://www.nursefly.com/travel-nursing-jobs/) A great job board for traveling nursing jobs currently listing over 70,000 jobs at medical facilities, hospitals, and clinics around the world.
+- [Health eCareers](https://www.healthecareers.com) A job board for medical professionals including physicians, nursing, PAs, NPs, CRNA, and pharmaceutical job openings. This one one of the top job search sites for medical-related jobs.
+- [Healthjobsnationwide](https://www.healthjobsnationwide.com) This is a job search site for healthcare industry professionals offering job alerts and having over 1,000,000 job board listings.
+- [Medjobcafe](https://www.medjobcafe.com) You can search for jobs and post your resume and receive job alerts for openings in the medical field.
+- [Hospital Careers ](https://www.hospitalcareers.com)Job search site for over 20,000 healthcare jobs and they partner directly with over 30 state Hospital Associations.
+- [Problogger](https://problogger.com/jobs/) If your looking for a writing job short term or long term this site has many job openings for creating blog articles.
+- [Mashable](https://jobs.mashable.com) has a job board section on their website with over 50,000 jobs posted in many different fields and industries
+- [Fiverr.com](https://www.fiverr.com) Not a job board in the traditional sense but if you're looking for freelance work this is the perfect place to sell your services for businesses seeking skills such as writing, content marketing, graphic design, video production, and more.
