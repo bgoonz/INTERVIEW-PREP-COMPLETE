@@ -1,5 +1,66 @@
 # General Advice & Tips
 
+### 50+ Tips for Job Search Success
+
+| #  | Tip                                                                                                                                                                                     |
+| -- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    | **Research**                                                                                                                                                                            |
+| 1  | Identify which career field you want to work in. Go to open days, take sample courses, and speak to others in the industry to help you know what you want.                              |
+| 2  | Consider your skills and qualifications. Do you need to improve them?                                                                                                                   |
+| 3  | Educate yourself on the different job levels, from entry level to senior level. Some companies offer better progression than others.                                                    |
+| 4  | Create a list of your wants and needs. This will help you understand what you want to gain from your career.                                                                            |
+| 5  | If you're searching for a career change, you can take a career aptitude test to find out which career best fits your personality.                                                       |
+| 6  | Find out what employers look for in prospective employees. A company's culture page is a great place to start.                                                                          |
+|    | **Update Your Resume and Cover Letter**                                                                                                                                                 |
+| 7  | Update your resume with your latest qualifications and skills.                                                                                                                          |
+| 8  | Use LinkedIn, YouTube, and resume building apps for resume format samples.                                                                                                              |
+| 9  | Ensure your contact information is up-to-date. Consider including a photo of yourself, if you think it's suitable for the job type.                                                     |
+| 10 | Include your work history that is relevant to the job you're applying for.                                                                                                              |
+| 11 | Make sure your resume has references, or note that they're available on request.                                                                                                        |
+| 12 | Use tools like Jobscan to optimize your resume. This way, you'll find out where your resume needs improvement.                                                                          |
+| 13 | Use simple language. You won't impress anyone by swallowing a thesaurus.                                                                                                                |
+| 14 | Use a grammar tool like LanguageTool to proofread your cover letter. Typos and mistakes will stick out like a sore thumb.                                                               |
+| 15 | Keep it concise. Don't add unnecessary information. Assume the employer is busy and skim-reading, so cut to the chase.                                                                  |
+| 16 | Get someone else to proofread your resume. A fresh set of eyes will always see things you can't.                                                                                        |
+| 17 | Don't spam your resume; make sure you customize your resume and cover letter for each job application.                                                                                  |
+| 18 | Employers often state exactly what they are looking for in the job description. You can use that as an indication on what to include in your resume and cover letter.                   |
+| 19 | Make sure you research the company before applying; look for their website and consume their content. This way, you'll know how to grab the recruiter's attention in your cover letter. |
+|    | **Use Online Resources**                                                                                                                                                                |
+| 20 | Engage with experts on LinkedIn for advice.                                                                                                                                             |
+| 21 | Gain skills by taking free courses on LinkedIn, Google, and Coursera.                                                                                                                   |
+| 22 | Create an Excel spreadsheet to keep track of the jobs you have applied for. This can help you see when you might need to follow up with an employer.                                    |
+| 23 | Manage your alerts on job search platforms so you can stay updated on the latest vacancies. The job market is competitive, so you need to act quickly.                                  |
+| 24 | Use job search websites to filter out irrelevant jobs. You can make your search as specific as possible.                                                                                |
+|    | **Actively Search for Jobs**                                                                                                                                                            |
+| 25 | Plan ahead and set measurable goals for your job search. You can set a weekly goal on how many jobs you want to apply for.                                                              |
+| 26 | Set an alarm and spend time everyday looking for jobs you can apply for. Seeking employment is a job in itself.                                                                         |
+| 27 | Be organized and work out how many hours you'll spend job hunting every day. Don't get burnt out.                                                                                       |
+| 28 | Create accounts on job search platforms and upload your resume so that you can apply with ease.                                                                                         |
+| 29 | Use social media to network with professionals in your field. They might know about jobs which aren't publicly advertised.                                                              |
+| 30 | Look for job ads on Facebook. Employers often use this to connect with a different audience.                                                                                            |
+| 31 | Post and engage regularly on LinkedIn to gain recognition. Ask your existing connections to praise you.                                                                                 |
+| 32 | Don't restrict yourself to jobs in one location. You can also search for jobs in surrounding areas, if you're able to travel.                                                           |
+| 33 | Don't restrict your search to specific platforms. You can find jobs on underrated job search websites, or only on the company's website.                                                |
+| 34 | Don't doubt yourself. Apply for the jobs you think you don't qualify for. The worst that can happen is "no".                                                                            |
+| 35 | Go the extra mile by reaching out to hiring managers. They'll appreciate you being proactive.                                                                                           |
+| 36 | Watch out for scams by thoroughly analyzing the job post. Never give over your bank details or money.                                                                                   |
+| 37 | Be patient; finding a job might take longer than you expect, and don't rush into something you won't enjoy.                                                                             |
+|    | **Interview Preparation**                                                                                                                                                               |
+| 38 | Prepare for your interview by researching the company and the interviewer.                                                                                                              |
+| 39 | Dress appropriately for the job. If you're unsure, go smart.                                                                                                                            |
+| 40 | Be punctual for your interview. You don't want to keep anyone waiting.                                                                                                                  |
+| 41 | Have multiple copies of your resume; one for you, the rest for the interview panel.                                                                                                     |
+| 42 | If you're going to have a digital interview, make sure your internet connection is stable. Test it and your webcam and microphone beforehand.                                           |
+| 43 | Pay attention to your body language. Sit up straight and maintain eye contact.                                                                                                          |
+| 44 | Be ready to answer challenging questions. If you're unsure, don't fumble through an answer; be honest.                                                                                  |
+| 45 | Use interview guides online to rehearse commonly asked questions.                                                                                                                       |
+| 46 | Be prepared to take a test, though this usually happens during the second or third round.                                                                                               |
+| 47 | Don't drag out your answers. When practicing, you can use a timer or voice recorder to help you keep your answers short.                                                                |
+| 48 | Be prepared to discuss your salary expectations. Do not undervalue yourself.                                                                                                            |
+| 49 | Take a mock interview on websites like Pramp or My Interview Practice.                                                                                                                  |
+| 50 | Remain calm and be confident. Take a deep breath before answering and ask for some water if you need it.                                                                                |
+| 51 | Ask the interviewer questions about the job and the company. Even if you already know the answer, it can help you look engaged and invested.                                            |
+
 #### The Challenge
 
 In today’s technology landscape, JavaScript has essentially become synonymous with client-side web development and now, with the advent of technologies and JavaScript frameworks like Node.js, Vue.js, and React.js, JavaScript is becoming a dominant server side technology as well.
