@@ -32,9 +32,9 @@ print(z)
 and JS:
 
 ```javascript
-function foo(a=[]) {
-    a.push(1);
-    return a;
+function foo(a = []) {
+  a.push(1);
+  return a;
 }
 
 let x = foo();

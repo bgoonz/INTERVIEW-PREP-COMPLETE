@@ -10,9 +10,9 @@ Before we begin, it's useful to know what repos are at play and how they interac
 
 There are three, and we're going to give them all names:
 
-* `origin`: this is your fork on GitHub (of the original repo on GitHub, the `upstream`)
-* `local`: this is your clone on your local computer (of your fork on GitHub, the `origin`)
-* `upstream`: this is the original repo on GitHub that you forked
+- `origin`: this is your fork on GitHub (of the original repo on GitHub, the `upstream`)
+- `local`: this is your clone on your local computer (of your fork on GitHub, the `origin`)
+- `upstream`: this is the original repo on GitHub that you forked
 
 When we bring our `origin` into sync with the `upstream`, there are two possible approaches:
 
@@ -34,7 +34,7 @@ For example, if I have a local repo that's a clone of one of my forks, I can see
 
 ```bash
 $ git clone git@github.com:MyName/My-Forked-Repo.git
-[...cloning output...] 
+[...cloning output...]
 
 $ git remote -v
 origin	git@github.com:MyName/My-Forked-Repo.git (fetch)
@@ -68,7 +68,6 @@ As shown in the diagram up above, we're going to grab commits from `upstream`, m
 `git fetch` is like `git pull`, except it doesn't merge. It goes and grabs all the new commits from the named remote and puts them in your local repo, but doesn't update anything in your working directory. The commits are just sitting there in git's local database.
 
 > Fun fact: `git pull` is shorthand for `git fetch` followed by `git merge`.
-
 
 Fetch the new commits from the original repo, `upstream`, like so:
 
@@ -117,8 +116,8 @@ This is the _interesting_ part since it's the only place you can get into troubl
 If you don't see anything about conflicts on the merge output, you're good to go. Otherwise [resolve them](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) before proceeding to the next step.
 
 A useful [gitconfig alias](https://git-scm.com/docs/git-config), `git up`:
->    
->    `up = "!git remote update -p; git merge --ff-only `[`@{u}`](https://git-scm.com/docs/gitrevisions)`"`
+
+> `up = "!git remote update -p; git merge --ff-only `[`@{u}`](https://git-scm.com/docs/gitrevisions)`"`
 
 Using this lets you more or less forget how to properly use `git pull` -- you still have to `git merge` if you're on a different branch, but can just do `git up` for master/any collaborative branch where there are commits from others.
 
@@ -135,8 +134,8 @@ And then you should be in sync!
 
 ## References
 
-* [GitHub help on syncing a fork](https://help.github.com/articles/syncing-a-fork/)
-* [GitHub help on setting a remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-* [Perpetual GitHub feature request to get this in their UI](https://github.com/isaacs/github/issues/121)
-* [Resolving merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-* [`git stash`](https://git-scm.com/book/en/v1/Git-Tools-Stashing)
+- [GitHub help on syncing a fork](https://help.github.com/articles/syncing-a-fork/)
+- [GitHub help on setting a remote](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+- [Perpetual GitHub feature request to get this in their UI](https://github.com/isaacs/github/issues/121)
+- [Resolving merge conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+- [`git stash`](https://git-scm.com/book/en/v1/Git-Tools-Stashing)

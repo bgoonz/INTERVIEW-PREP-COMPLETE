@@ -1,7 +1,7 @@
 A very common task for software devs is to read and comprehend other people's code and project specifications. This is not a particularly easy thing to do, and requires a different type of focus than regular pleasure reading.
 
-* [Reading Code](#reading-code)
-* [Reading Specifications](#reading-specifications)
+- [Reading Code](#reading-code)
+- [Reading Specifications](#reading-specifications)
 
 ## Reading Code
 
@@ -13,25 +13,24 @@ This map might be a physical drawing. Lots of us use whiteboards to do this.
 
 Some pointers:
 
-* Be ready to take lots of notes. Have a notebook, whether virtual or real.
+- Be ready to take lots of notes. Have a notebook, whether virtual or real.
 
-* Draw diagrams.
+- Draw diagrams.
 
-* Identify the starting point of the program or module that you're working on.
+- Identify the starting point of the program or module that you're working on.
 
-  * What is the code that gets called first?
-  * Which code calls it?
+  - What is the code that gets called first?
+  - Which code calls it?
 
-* Figure out which functions and modules call which other functions and modules.
+- Figure out which functions and modules call which other functions and modules.
 
-  * For these calls, figure out what data is passed.
+  - For these calls, figure out what data is passed.
 
-* Identify the most important functions. Also identify "helper" functions that are more stand-alone.
+- Identify the most important functions. Also identify "helper" functions that are more stand-alone.
 
-* Figure out which functions and modules are responsible for what.
+- Figure out which functions and modules are responsible for what.
 
-* Be comfortable not knowing some of the codebase. Learn what you need to learn first; leave the rest for another day.
-
+- Be comfortable not knowing some of the codebase. Learn what you need to learn first; leave the rest for another day.
 
 ## Reading Specifications
 
@@ -53,26 +52,25 @@ You might notice that the latter, in additional to being relatively more boring,
 
 This is a sentence that has to be read _very_ slowly in order to comprehend it. Probably several times. If you find it slow going, it doesn't mean you're bad at it. This information is _meant to be read and comprehended slowly_.
 
-
 Here are some pointers for getting through this kind of reading:
 
-* Read very slowly.
+- Read very slowly.
 
-* Read even slower than that.
+- Read even slower than that.
 
-* After you finish a couple sentences or a paragraph, quickly summarize them to yourself. Not only does this verify understanding, but also helps cement it.
+- After you finish a couple sentences or a paragraph, quickly summarize them to yourself. Not only does this verify understanding, but also helps cement it.
 
-* Make note of things the sentence says that you don't know. E.g., what does "simple path" mean?
+- Make note of things the sentence says that you don't know. E.g., what does "simple path" mean?
 
-  * Sometimes you can keep reading past, trusting later context to give it meaning.
+  - Sometimes you can keep reading past, trusting later context to give it meaning.
 
-  * Other times, it prevents further understanding and must be clarified on the spot.
+  - Other times, it prevents further understanding and must be clarified on the spot.
 
-  * If it can wait until later, make note of it and look it up later.
+  - If it can wait until later, make note of it and look it up later.
 
-* Make a written outline or summary of what you're reading.
+- Make a written outline or summary of what you're reading.
 
-* Draw sample diagrams to test your understanding.
+- Draw sample diagrams to test your understanding.
 
 Lastly, here is an excerpt from [RFC 739](https://tools.ietf.org/html/rfc793), the spec for the Transmission Control Protocol, more commonly known as _TCP_ (of TCP/IP fame):
 
