@@ -11,6 +11,7 @@ int main(void)
    return 0;
 }
 ```
+
 Pages written in markdown.
 
 Can clone the wiki and edit markdown in the editor of your choice.
@@ -53,7 +54,6 @@ There's a general-purpose [`wiki-images` subdirectory](https://github.com/Lambda
 
 The page titled "Home" has special meaning as your root page. Things work better if you don't rename "Home".
 
-
 ## References
 
 [GitHub wiki help](https://help.github.com/articles/about-github-wikis/)
@@ -67,5 +67,3 @@ The page titled "Home" has special meaning as your root page. Things work better
 [Viewing wiki change history](https://help.github.com/articles/viewing-a-wiki-s-history-of-changes/)
 
 [Cloning wiki repo via ssh](https://stackoverflow.com/questions/42493135/is-it-possible-to-access-a-github-wiki-via-ssh)
-
-

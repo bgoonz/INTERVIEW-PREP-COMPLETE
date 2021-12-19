@@ -20,7 +20,7 @@ While in the Planning phase, write comments in the editor and then turn them int
 
 If hiring managers ask you to complete a code challenge, they will grade you partially on how well-commented your code is.
 
-That doesn't mean "tons of comments". It means "good, concise comments in the right places". 
+That doesn't mean "tons of comments". It means "good, concise comments in the right places".
 
 ## Use Whitespace
 
@@ -32,10 +32,10 @@ It will help you keep the rust off.
 
 ## Remember the time complexities of various data structures
 
-|Time Complexity to Access|Python|Swift|Obj-C|Kotlin|Java|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|`O(1)`|`dict`, `set`|`Dictionary`, `Set`|`NSDictionary`, `NSSet`|`HashMap`, `Array`|`HashMap`, `ArrayList`|
-|`O(n)`|`list`|`Array`|`NSArray`|`LinkedList`|`LinkedList`|
+| Time Complexity to Access |    Python     |        Swift        |          Obj-C          |       Kotlin       |          Java          |
+| :-----------------------: | :-----------: | :-----------------: | :---------------------: | :----------------: | :--------------------: |
+|          `O(1)`           | `dict`, `set` | `Dictionary`, `Set` | `NSDictionary`, `NSSet` | `HashMap`, `Array` | `HashMap`, `ArrayList` |
+|          `O(n)`           |    `list`     |       `Array`       |        `NSArray`        |    `LinkedList`    |      `LinkedList`      |
 
 Just because `O(1)` is performant doesn't mean it's always the right tool for the job. Use the right tool for the job!
 
@@ -43,7 +43,7 @@ Just because `O(1)` is performant doesn't mean it's always the right tool for th
 
 This is a sticking point for many students. HackerRank has an interesting UI and it takes some getting used to. Their tests also have a consistent format and structure that you should explore and take the time to get familiar with.
 
-* [Click here for a short HackerRank demo video](https://youtu.be/hWrxLqwplkc)
+- [Click here for a short HackerRank demo video](https://youtu.be/hWrxLqwplkc)
 
 ### Function input and output
 
@@ -57,7 +57,7 @@ Your function won't be tested on anything it `print()`s. Usefully, however, prin
 
 If you're having trouble figuring out exactly what your function gets passed to it, try this:
 
-* Add a line of code to your function to print the parameter(s)
-* Put the given sample case into the `custom input` box
-* Run the program
-* Check the output in the `Debugging Output` in the section at the bottom
+- Add a line of code to your function to print the parameter(s)
+- Put the given sample case into the `custom input` box
+- Run the program
+- Check the output in the `Debugging Output` in the section at the bottom

@@ -1,8 +1,8 @@
 **NOTE: pipenv is _optional_! We don't use it in CS.** But it's a neat package manager if you get into more complex Python projects. It can be a headache of an install for some people. You can safely ignore anything about pipenv below if you don't want to mess with it.
 
-We'll want to install Python 3 (version 3.x), which is the runtime for the language itself. The runtime is what allows you to execute Python code and files by typing `python [file_or_code_to_execute]` in your terminal. You can also open up a Python REPL (Read-Eval-Print Loop) to quickly and easily mess around with Python code once you've gotten the runtime installed. If you recall how Node let's you execute and run JavaScript code locally on your machine instead of having to rely on the browser, the Python runtime pretty much let's you do the same thing but with Python code. 
+We'll want to install Python 3 (version 3.x), which is the runtime for the language itself. The runtime is what allows you to execute Python code and files by typing `python [file_or_code_to_execute]` in your terminal. You can also open up a Python REPL (Read-Eval-Print Loop) to quickly and easily mess around with Python code once you've gotten the runtime installed. If you recall how Node let's you execute and run JavaScript code locally on your machine instead of having to rely on the browser, the Python runtime pretty much let's you do the same thing but with Python code.
 
-Additionally, we'll be talking about how to install the (optional) pipenv virtual environment manager. Think of it as the `npm` of Python (though pipenv is also capable of performing a bunch of other tasks as well, most notably running your Python projects in an isolated virtual environment). 
+Additionally, we'll be talking about how to install the (optional) pipenv virtual environment manager. Think of it as the `npm` of Python (though pipenv is also capable of performing a bunch of other tasks as well, most notably running your Python projects in an isolated virtual environment).
 
 ## Note for Anaconda users
 
@@ -16,6 +16,7 @@ If you can run `python` or `python3` and see a 3.7 or later version, you're good
 $ python3 --version
 Python 3.6.5
 ```
+
 or on some systems, Python 3 is just `python`:
 
 ```
@@ -46,7 +47,7 @@ brew install python pipenv
 
 ## Windows
 
-_**Note**:_ Git Bash doesn't seem to cooperate if you're trying to install Python on Windows. Try another terminal like Powershell. 
+_**Note**:_ Git Bash doesn't seem to cooperate if you're trying to install Python on Windows. Try another terminal like Powershell.
 
 Recommend updating Windows to the latest version.
 
@@ -130,32 +131,33 @@ Also in Windows Explorer, you can put `\\wsl$` in the URL bar to see your Ubuntu
 If you run into trouble with the above, try the following:
 
 1. Open cmd.exe as an administrator and start bash with `bash`
-    1. Type `Python -V' and 'Python3 -V`
-        1. If one of these responds with `Python 3.6.8` use that command from now on
-        2. If neither response is `Python 3.6.8` but one is a higher version of Python, this means one of two things
-            1. If you have manually installed a higher version of Python, we recommend uninstalling it
-            2. If you have not, it is possible that Microsoft has updated WSL and you will need to adjust these instructions to accommodate
-        3. Otherwise, update Ubuntu:
-            1. `sudo apt-get update`
-            2. `sudo apt-get upgrade`
-    2. Repeat 2.1 above to determine if you should use `Python` or `Python3` when using Python.  *Note:* inside the shell, you will always use *Python* as the command.
-2. Make sure pip is installed for *Python 3*
-    1. `pip --version` and `pip3 --version`. One of these needs to respond with a version that has a version of Python 3 at the end of the line.
-    2. If you only have it for 2.7, you will need to install for 3 with:
-        1. `sudo apt update && sudo apt upgrade`
-        2. `sudo apt install python3-pip`
-    3. Check versions and commands again. You will likely need to use `pip3` for the next step, but it's possible it may be just `pip`. Use the one with the version associated with Python 3.6.8
+   1. Type `Python -V' and 'Python3 -V`
+      1. If one of these responds with `Python 3.6.8` use that command from now on
+      2. If neither response is `Python 3.6.8` but one is a higher version of Python, this means one of two things
+         1. If you have manually installed a higher version of Python, we recommend uninstalling it
+         2. If you have not, it is possible that Microsoft has updated WSL and you will need to adjust these instructions to accommodate
+      3. Otherwise, update Ubuntu:
+         1. `sudo apt-get update`
+         2. `sudo apt-get upgrade`
+   2. Repeat 2.1 above to determine if you should use `Python` or `Python3` when using Python. _Note:_ inside the shell, you will always use _Python_ as the command.
+2. Make sure pip is installed for _Python 3_
+   1. `pip --version` and `pip3 --version`. One of these needs to respond with a version that has a version of Python 3 at the end of the line.
+   2. If you only have it for 2.7, you will need to install for 3 with:
+      1. `sudo apt update && sudo apt upgrade`
+      2. `sudo apt install python3-pip`
+   3. Check versions and commands again. You will likely need to use `pip3` for the next step, but it's possible it may be just `pip`. Use the one with the version associated with Python 3.6.8
 3. Make sure pipenv is installed for Python 3 `python3 -m pipenv --version`
-    1. If not, install pipenv:
-        1. `sudo apt update && sudo apt upgrade` (if you didn't just do this above)
-        2. `pip3 install --user pipenv`
-    2. Check the version again
+   1. If not, install pipenv:
+      1. `sudo apt update && sudo apt upgrade` (if you didn't just do this above)
+      2. `pip3 install --user pipenv`
+   2. Check the version again
 4. Try `pipenv shell`. If this fails, make sure that every reference in the error refers to Python 3.6. If not, review the above steps
-    1. If the error does refer to 3.6:
-        1. Confirm that `python --version` refers to 2.7.something
-        2. Confirm that `/usr/bin/python3 --version` refers to 3.6.8
-        3. `pipenv --three --python=`which python3`` *NOTE* that there are backticks (`) around *which python3*
-        4. This should create the shell forcing it to use 3.6.8
+   1. If the error does refer to 3.6:
+      1. Confirm that `python --version` refers to 2.7.something
+      2. Confirm that `/usr/bin/python3 --version` refers to 3.6.8
+      3. `pipenv --three --python=`which python3`` *NOTE* that there are backticks (`) around _which python3_
+      4. This should create the shell forcing it to use 3.6.8
 
 ## Linux
+
 Consult the documentation for your distribution.
