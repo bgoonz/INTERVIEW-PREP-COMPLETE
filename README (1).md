@@ -231,7 +231,7 @@ Calendar
 ### Tutorials
 
 * [Job Search Guide](tutorials/custom-outreach-message-generator/)
-  * [Common Questions](tutorials/custom-outreach-message-generator/page-2.md)
+  * [Common Questions](broken-reference)
   * [Self Introduction](tutorials/custom-outreach-message-generator/page-2-1.md)
 
 ***

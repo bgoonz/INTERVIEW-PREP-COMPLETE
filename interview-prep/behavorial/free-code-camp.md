@@ -2,11 +2,11 @@
 
 ## How to Use JavaScript Collections – Map and Set
 
-> ### Excerpt
+> #### Excerpt
 >
 > In JavaScript, objects are used to store multiple values as a complex data structure. An object is created with curly braces {…} and a list of properties. A property is a key-value pair where the key must be a string and the value can be of any type. On the other
 
----
+***
 
 ![How to Use JavaScript Collections – Map and Set](https://www.freecodecamp.org/news/content/images/size/w2000/2020/09/cover-5.png)
 
@@ -20,10 +20,10 @@ Until ES6 (ECMAScript 2015), JavaScript `objects` and `arrays` were the most imp
 
 However, there were a few shortcomings,
 
-- Object keys can only be of type `string`.
-- Objects don't maintain the order of the elements inserted into them.
-- Objects lack some useful methods, which makes them difficult to use in some situations. For example, you can't compute the size (`length`) of an object easily. Also, enumerating an object is not that straightforward.
-- Arrays are collections of elements that allow duplicates. Supporting arrays that only have distinct elements requires extra logic and code.
+* Object keys can only be of type `string`.
+* Objects don't maintain the order of the elements inserted into them.
+* Objects lack some useful methods, which makes them difficult to use in some situations. For example, you can't compute the size (`length`) of an object easily. Also, enumerating an object is not that straightforward.
+* Arrays are collections of elements that allow duplicates. Supporting arrays that only have distinct elements requires extra logic and code.
 
 With the introduction of ES6, we got two new data structures that address the shortcomings mentioned above: `Map` and `Set`. In this article, we will look at both closely and understand how to use them in different situations.
 
@@ -33,8 +33,8 @@ With the introduction of ES6, we got two new data structures that address the sh
 
 In other words, `Map` has characteristics of both `Object` and `Array`:
 
-- Like an object, it supports the key-value pair structure.
-- Like an array, it remembers the insertion order.
+* Like an object, it supports the key-value pair structure.
+* Like an array, it remembers the insertion order.
 
 #### **How to Create and Initialize a Map in JavaScript**
 
@@ -73,7 +73,6 @@ To add value to a Map, use the `set(key, value)` method.
 The `set(key, value)` method takes two parameters, `key` and `value`, where the key and value can be of any type, a primitive (`boolean`, `string`, `number`, etc.) or an object:
 
 ```
-
 const map = new Map();
 
 
@@ -91,7 +90,6 @@ Map(3) {"name" => "freeCodeCamp", "type" => "blog", "writer" => "Tapas Adhikary"
 Please note, if you use the same key to add a value to a `Map` multiple times, it'll always replace the previous value:
 
 ```
-
 map.set('writer', 'Someone else!');
 ```
 
@@ -115,7 +113,6 @@ map.get('name');
 `Map` keys can be of any type, a primitive, or an object. This is one of the major differences between `Map` and regular JavaScript objects where the key can only be a string:
 
 ```
-
 const funMap = new Map();
 
 funMap.set(360, 'My House Number');
@@ -141,7 +138,6 @@ Map(3)
 A regular JavaScript object always treats the key as a string. Even when you pass it a primitive or object, it internally converts the key into a string:
 
 ```
-
 const funObj = {};
 
 
@@ -155,17 +151,16 @@ console.log(funObj[360] === funObj['360']);
 
 JavaScript's `Map` has in-built properties and methods that make it easy to use. Here are some of the common ones:
 
-- Use the `size` property to know how many elements are in a `Map`:
-- Search an element with the `has(key)` method:
-- Remove an element with the `delete(key)` method:
-- Use the `clear()` method to remove all the elements from the `Map` at once:
+* Use the `size` property to know how many elements are in a `Map`:
+* Search an element with the `has(key)` method:
+* Remove an element with the `delete(key)` method:
+* Use the `clear()` method to remove all the elements from the `Map` at once:
 
 ```
 console.log('size of the map is', map.size);
 ```
 
 ```
-
 console.log(map.has('John'));
 
 
@@ -178,7 +173,6 @@ map.delete('Sam');
 ```
 
 ```
-
 map.clear();
 
 map.size
@@ -199,25 +193,22 @@ const ageMap = new Map([
 ]);
 ```
 
-- Get all the keys:
-- Get all the values:
-- Get all the entries (key-value pairs):
+* Get all the keys:
+* Get all the values:
+* Get all the entries (key-value pairs):
 
 ```
 console.log(ageMap.keys());
-
 
 ```
 
 ```
 console.log(ageMap.values());
 
-
 ```
 
 ```
 console.log(ageMap.entries());
-
 
 ```
 
@@ -226,7 +217,6 @@ console.log(ageMap.entries());
 You can use either the `forEach` or `for-of` loop to iterate over a `Map`:
 
 ```
-
 ageMap.forEach((value, key) => {
    console.log(`${key} is ${value} years old!`);
 });
@@ -272,8 +262,8 @@ Object.fromEntries(map)
 
 There are a couple of ways to convert a map into an array:
 
-- Using `Array.from(map)`:
-- Using the spread operator:
+* Using `Array.from(map)`:
+* Using the spread operator:
 
 ```
 const map = new Map();
@@ -296,14 +286,14 @@ The similarity with objects ends here though. As you've seen, `Map` is different
 
 Use `Map` when:
 
-- Your needs are not that simple. You may want to create keys that are non-strings. Storing an object as a key is a very powerful approach. `Map` gives you this ability by default.
-- You need a data structure where elements can be ordered. Regular objects do not maintain the order of their entries.
-- You are looking for flexibility without relying on an external library like lodash. You may end up using a library like lodash because we do not find methods like has(), values(), delete(), or a property like size with a regular object. Map makes this easy for you by providing all these methods by default.
+* Your needs are not that simple. You may want to create keys that are non-strings. Storing an object as a key is a very powerful approach. `Map` gives you this ability by default.
+* You need a data structure where elements can be ordered. Regular objects do not maintain the order of their entries.
+* You are looking for flexibility without relying on an external library like lodash. You may end up using a library like lodash because we do not find methods like has(), values(), delete(), or a property like size with a regular object. Map makes this easy for you by providing all these methods by default.
 
 Use an object when:
 
-- You do not have any of the needs listed above.
-- You rely on `JSON.parse()` as a `Map` cannot be parsed with it.
+* You do not have any of the needs listed above.
+* You rely on `JSON.parse()` as a `Map` cannot be parsed with it.
 
 ### Set in JavaScript
 
@@ -343,15 +333,14 @@ Set(4) {"🍉", "🍎", "🍈", "🍏"}
 
 `Set` has methods to add an element to it, delete elements from it, check if an element exists in it, and to clear it completely:
 
-- Use the `size` property to know the size of the `Set`. It returns the number of elements in it:
-- Use the `add(element)` method to add an element to the `Set`:
+* Use the `size` property to know the size of the `Set`. It returns the number of elements in it:
+* Use the `add(element)` method to add an element to the `Set`:
 
 ```
 set.size
 ```
 
 ```
-
 const saladSet = new Set();
 
 
@@ -361,7 +350,6 @@ saladSet.add('🥕');
 saladSet.add('🥒');
 
 console.log(saladSet);
-
 
 
 ```
@@ -377,11 +365,10 @@ console.log(saladSet);
 
 The output is the same as before – nothing got added to the `saladSet`.
 
-- Use the `has(element)` method to search if we have a carrot (🥕) or broccoli (🥦) in the `Set`:
-- Use the `delete(element)` method to remove the avocado(🥑) from the `Set`:
+* Use the `has(element)` method to search if we have a carrot (🥕) or broccoli (🥦) in the `Set`:
+* Use the `delete(element)` method to remove the avocado(🥑) from the `Set`:
 
 ```
-
 console.log('Does the salad have a carrot?', saladSet.has('🥕'));
 
 
@@ -399,7 +386,7 @@ Now our salad `Set` is as follows:
 Set(3) {"🍅", "🥕", "🥒"}
 ```
 
-- Use the `clear()` method to remove all elements from a `Set`:
+* Use the `clear()` method to remove all elements from a `Set`:
 
 ```
 saladSet.clear();
@@ -410,7 +397,6 @@ saladSet.clear();
 `Set` has a method called `values()` which returns a `SetIterator` to get all its values:
 
 ```
-
 const houseNos = new Set([360, 567, 101]);
 
 
@@ -432,14 +418,12 @@ As `Set` doesn't have keys, the `keys()` method returns a `SetIterator` to retri
 ```
 console.log(houseNos.keys());
 
-
 ```
 
 With `Map`, the `entries()` method returns an iterator to retrieve key-value pairs. Again there are no keys in a `Set`, so `entries()` returns a `SetIterator` to retrieve the value-value pairs:
 
 ```
 console.log(houseNos.entries());
-
 
 ```
 
@@ -448,7 +432,6 @@ console.log(houseNos.entries());
 We can enumerate over a Set using `forEach` and `for-of` loops:
 
 ```
-
 
 houseNos.forEach((value) => {
    console.log(value);
@@ -492,7 +475,6 @@ console.log(arr);
 Creating a `Set` is a really easy way to remove duplicate values from an array:
 
 ```
-
 const mixedFruit = ['🍉', '🍎', '🍉', '🍈', '🍏', '🍎', '🍈'];
 
 
@@ -512,7 +494,6 @@ Set(4) {"🍉", "🍎", "🍈", "🍏"}
 A `Set` can have elements of any type, even objects:
 
 ```
-
 const person = {
    'name': 'Alex',
    'age': 32
@@ -533,7 +514,6 @@ No surprise here – the `Set` contains one element that is an object.
 Let's change a property of the object and add it to the set again:
 
 ```
-
 person.name = 'Bob';
 
 
@@ -559,28 +539,28 @@ Here is a GitHub repository to find all the source code used in this article. If
 
 You may also like some of my other articles:
 
-- [My Favorite JavaScript Tips and Tricks](https://blog.greenroots.info/my-favorite-javascript-tips-and-tricks-ckd60i4cq011em8s16uobcelc)
-- [JavaScript equality and similarity with ==, === and Object.is()](https://blog.greenroots.info/javascript-equality-comparison-with-and-objectis-ckdpt2ryk01vel9s186ft8cwl)
+* [My Favorite JavaScript Tips and Tricks](https://blog.greenroots.info/my-favorite-javascript-tips-and-tricks-ckd60i4cq011em8s16uobcelc)
+* [JavaScript equality and similarity with ==, === and Object.is()](https://blog.greenroots.info/javascript-equality-comparison-with-and-objectis-ckdpt2ryk01vel9s186ft8cwl)
 
 If this article was useful, please share it so others can read it as well. You can @ me on Twitter ([@tapasadhikary](https://twitter.com/tapasadhikary)) with comments, or feel free to follow me.
 
----
+***
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Best Books for Data Structures and Algorithms in JavaScript
 
-> ### Excerpt
+> #### Excerpt
 >
 > If you're trying to learn about data structures or algorithms, you're in luck - there are a lot of resources out there. Here are a few book recommendations - along with some other resources at the end - to get you started. Books about data structures and algorithmsData Structures in
 
----
+***
 
 ![Best Books for Data Structures and Algorithms in JavaScript](https://cdn-media-2.freecodecamp.org/w1280/5f9c9e61740569d1a4ca3cce.jpg)
 
@@ -592,31 +572,31 @@ Here are a few book recommendations - along with some other resources at the end
 
 _Data Structures in JavaScript_
 
-- Free book which covers Data Structures in JavaScript (you can find the [GitBook](https://www.gitbook.com/book/pmary/data-structure-in-javascript/details) here).
+* Free book which covers Data Structures in JavaScript (you can find the [GitBook](https://www.gitbook.com/book/pmary/data-structure-in-javascript/details) here).
 
 _Learning JavaScript Data Structures and Algorithms - Second Edition,_ by Loiane Groner
 
-- Covers object oriented programming, prototypal inheritance, sorting & searching algorithms, quicksort, mergesort, binary search trees and advanced algorithm concepts
+* Covers object oriented programming, prototypal inheritance, sorting & searching algorithms, quicksort, mergesort, binary search trees and advanced algorithm concepts
 
 _Data Structures and Algorithms with JavaScript: Bringing classic computing approaches to the Web_ by Michael McMillan
 
-- Covers recursion, sorting and searching algorithms, linked lists and binary search trees.
+* Covers recursion, sorting and searching algorithms, linked lists and binary search trees.
 
 _Data Structures_ by Seymour Lipschutz
 
-- A machine and language agnostic book which explains data structures in a clear and straightforward way. Includes examples, diagrams, and pseudo-code.
+* A machine and language agnostic book which explains data structures in a clear and straightforward way. Includes examples, diagrams, and pseudo-code.
 
 _Introduction to Algorithms_ by Thomas H Cormen et al
 
-- Another language agnostic book, contains examples in pseudo-code. Appropriate for both teaching and professional environments. Each chapter covers an algorithm - you don't have to read the whole book straight through from beginning to end.
+* Another language agnostic book, contains examples in pseudo-code. Appropriate for both teaching and professional environments. Each chapter covers an algorithm - you don't have to read the whole book straight through from beginning to end.
 
 _Data Structures in C_, by Noel Kalicharan
 
-- Covers the basics and makes data structures seem easier than other books manage to do. Teaches introductory concepts like linked lists, stacks, sorting, binary trees, and searching. Great beginner's book, but useful to more advanced students as well.
+* Covers the basics and makes data structures seem easier than other books manage to do. Teaches introductory concepts like linked lists, stacks, sorting, binary trees, and searching. Great beginner's book, but useful to more advanced students as well.
 
 _Algorithms in C_, by Robert Sedgewick
 
-- Focuses on implementations of algorithms in C in areas of sorting, searching, string processing, graph, geometric, and mathematical algorithms. Discusses why certain algorithms are more effective than others. Numerous figures throughout the book help illustrate how these algorithms work.
+* Focuses on implementations of algorithms in C in areas of sorting, searching, string processing, graph, geometric, and mathematical algorithms. Discusses why certain algorithms are more effective than others. Numerous figures throughout the book help illustrate how these algorithms work.
 
 Please feel free to add more that you have found useful!
 
@@ -630,21 +610,21 @@ Please feel free to add more that you have found useful!
 
 [Algorithm basics and other book recommendations](https://www.freecodecamp.org/news/my-software-engineering-bookshelf/)
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Data Structures - freeCodeCamp.org
 
-> ### Excerpt
+> #### Excerpt
 >
 > Browse thousands of programming tutorials written by experts. Learn Web Development, Data Science, DevOps, Security, and get developer career advice.
 
----
+***
 
 freeCodeCamp is a donor-supported tax-exempt 501(c)(3) nonprofit organization (United States Federal Tax Identification Number: 82-0779546)
 
@@ -654,17 +634,17 @@ Donations to freeCodeCamp go toward our education initiatives and help pay for s
 
 You can [make a tax-deductible donation here](https://www.freecodecamp.org/donate/).
 
----
+***
 
----
+***
 
 ## Binary Search Trees: BST Explained with Examples
 
-> ### Excerpt
+> #### Excerpt
 >
 > What is a Binary Search Tree?A tree is a data structure composed of nodes that has the following characteristics: Each tree has a root node at the top (also known as Parent Node) containing some value (can be any datatype).The root node has zero or more child nodes.
 
----
+***
 
 ![Binary Search Trees: BST Explained with Examples](https://cdn-media-2.freecodecamp.org/w1280/5f9c9f48740569d1a4ca41c4.jpg)
 
@@ -687,13 +667,13 @@ The BST is built on the idea of the [binary search](https://guide.freecodecamp.o
 
 #### Basic operations on a BST
 
-- Create: creates an empty tree.
-- Insert: insert a node in the tree.
-- Search: Searches for a node in the tree.
-- Delete: deletes a node from the tree.
-- Inorder: in-order traversal of the tree.
-- Preorder: pre-order traversal of the tree.
-- Postorder: post-order traversal of the tree.
+* Create: creates an empty tree.
+* Insert: insert a node in the tree.
+* Search: Searches for a node in the tree.
+* Delete: deletes a node from the tree.
+* Inorder: in-order traversal of the tree.
+* Preorder: pre-order traversal of the tree.
+* Postorder: post-order traversal of the tree.
 
 **Create**
 
@@ -735,21 +715,21 @@ Successors can be described as the node that would come right after the the curr
 
 #### Special types of BT
 
-- Heap
-- Red-black tree
-- B-tree
-- Splay tree
-- N-ary tree
-- Trie (Radix tree)
+* Heap
+* Red-black tree
+* B-tree
+* Splay tree
+* N-ary tree
+* Trie (Radix tree)
 
 #### Runtime
 
 **Data structure: BST**
 
-- Worst-case performance: `O(n)`
-- Best-case performance: `O(1)`
-- Average performance: `O(log n)`
-- Worst-case space complexity: `O(1)`
+* Worst-case performance: `O(n)`
+* Best-case performance: `O(1)`
+* Average performance: `O(log n)`
+* Worst-case space complexity: `O(1)`
 
 Where `n` is the number of nodes in the BST. Worst case is O(n) since BST can be unbalanced.
 
@@ -887,8 +867,8 @@ void deleteNode(struct node* root, int data){
 
 Binary search trees (BSTs) also give us quick access to predecessors and successors. Predecessors can be described as the node that would come right before the node you are currently at.
 
-- To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
-- To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
+* To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
+* To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
 
 #### Let's look at a couple of procedures operating on trees.
 
@@ -896,9 +876,9 @@ Since trees are recursively defined, it's very common to write routines that ope
 
 So for instance, if we want to calculate the height of a tree, that is the height of a root node, We can go ahead and recursively do that, going through the tree. So we can say:
 
-- For instance, if we have a nil tree, then its height is a 0.
-- Otherwise, We're 1 plus the maximum of the left child tree and the right child tree.
-- So if we look at a leaf for example, that height would be 1 because the height of the left child is nil, is 0, and the height of the nil right child is also 0. So the max of that is 0, then 1 plus 0.
+* For instance, if we have a nil tree, then its height is a 0.
+* Otherwise, We're 1 plus the maximum of the left child tree and the right child tree.
+* So if we look at a leaf for example, that height would be 1 because the height of the left child is nil, is 0, and the height of the nil right child is also 0. So the max of that is 0, then 1 plus 0.
 
 **Height(tree) algorithm**
 
@@ -934,8 +914,8 @@ int maxDepth(struct node* node)
 
 We could also look at calculating the size of a tree that is the number of nodes.
 
-- Again, if we have a nil tree, we have zero nodes.
-- Otherwise, we have the number of nodes in the left child plus 1 for ourselves plus the number of nodes in the right child. So 1 plus the size of the left tree plus the size of the right tree.
+* Again, if we have a nil tree, we have zero nodes.
+* Otherwise, we have the number of nodes in the left child plus 1 for ourselves plus the number of nodes in the right child. So 1 plus the size of the left tree plus the size of the right tree.
 
 **Size(tree) algorithm**
 
@@ -1069,21 +1049,21 @@ While augmenting the tree, we should keep in mind, that we should be able to mai
 
 Since, we know that the value of x.left.size will give us the number of nodes which proceed x in the order traversal of the tree. Thus, `x.left.size + 1` is the rank of x within the subtree rooted at x.
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## How to Implement a Linked List in JavaScript
 
-> ### Excerpt
+> #### Excerpt
 >
 > If you are learning data structures, a linked list is one data structure you should know. If you do not really understand it or how it is implemented in JavaScript, this article is here to help you. In this article, we will discuss what a linked list is, how it
 
----
+***
 
 If you are learning data structures, a linked list is one data structure you should know. If you do not really understand it or how it is implemented in JavaScript, this article is here to help you.
 
@@ -1095,7 +1075,7 @@ A linked list is a linear data structure similar to an array. However, unlike ar
 
 Each element (commonly called nodes) contains two items: the data stored and a link to the next node. The data can be any valid data type. You can see this illustrated in the diagram below.
 
-![Image of a linked list](https://res.cloudinary.com/dvj2hbywq/image/upload/v1590572188/Group_14_5_bvpwu0.png)
+![Image of a linked list](https://res.cloudinary.com/dvj2hbywq/image/upload/v1590572188/Group\_14\_5\_bvpwu0.png)
 
 The entry point to a linked list is called the head. The head is a reference to the first node in the linked list. The last node on the list points to null. If a list is empty, the head is a null reference.
 
@@ -1122,20 +1102,20 @@ const list = {
 
 ### An advantage of Linked Lists
 
-- Nodes can easily be removed or added from a linked list without reorganizing the entire data structure. This is one advantage it has over arrays.
+* Nodes can easily be removed or added from a linked list without reorganizing the entire data structure. This is one advantage it has over arrays.
 
 ### Disadvantages of Linked Lists
 
-- Search operations are slow in linked lists. Unlike arrays, random access of data elements is not allowed. Nodes are accessed sequentially starting from the first node.
-- It uses more memory than arrays because of the storage of the pointers.
+* Search operations are slow in linked lists. Unlike arrays, random access of data elements is not allowed. Nodes are accessed sequentially starting from the first node.
+* It uses more memory than arrays because of the storage of the pointers.
 
 ### Types of Linked Lists
 
 There are three types of linked lists:
 
-- **Singly Linked Lists**: Each node contains only one pointer to the next node. This is what we have been talking about so far.
-- **Doubly Linked Lists**: Each node contains two pointers, a pointer to the next node and a pointer to the previous node.
-- **Circular Linked Lists**: Circular linked lists are a variation of a linked list in which the last node points to the first node or any other node before it, thereby forming a loop.
+* **Singly Linked Lists**: Each node contains only one pointer to the next node. This is what we have been talking about so far.
+* **Doubly Linked Lists**: Each node contains two pointers, a pointer to the next node and a pointer to the previous node.
+* **Circular Linked Lists**: Circular linked lists are a variation of a linked list in which the last node points to the first node or any other node before it, thereby forming a loop.
 
 ### Implementing a List Node in JavaScript
 
@@ -1255,17 +1235,17 @@ _Want to get notified when I publish a new article?_ [_Click here_](https://mail
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## How to Learn Tree Data Structures the Codeless Way
 
-> ### Excerpt
+> #### Excerpt
 >
 > The tree data structure can form some of the most useful and complex data structures in all of programming. In fact the tree is so powerful that I can make the bold claim: Once you understand trees you'll be able to understand many other data structures and algorithms with ease.
 
----
+***
 
 The tree data structure can form some of the most useful and complex data structures in all of programming. In fact the tree is so powerful that I can make the bold claim:
 
@@ -1341,7 +1321,7 @@ The first type of tree we need to know about is the general tree. The general tr
 
 Trees are hierarchical in the way they store data. Whereas simpler data structures may store data in a linear manner (think an array), trees are non-linear.
 
-The general tree is the embodiment of a hierarchical tree structure as it has no restrictions on how many children each node can have, and has no restraint imposed on the hierarchy of the tree. &#x20;
+The general tree is the embodiment of a hierarchical tree structure as it has no restrictions on how many children each node can have, and has no restraint imposed on the hierarchy of the tree.
 
 ![](https://www.freecodecamp.org/news/content/images/2020/03/image-29.png)
 
@@ -1425,17 +1405,17 @@ Armstrong SuberoSearch Menu Cart V Your cart is currently empty. Login AccountBo
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Big O Notation Explained with Examples
 
-> ### Excerpt
+> #### Excerpt
 >
 > Big O notation is a way to describe the speed or complexity of a given algorithm. If your current project demands a predefined algorithm, it's important to understand how fast or slow it is compared to other options. What is Big O notation and how does it work?Simply put,
 
----
+***
 
 Big O notation is a way to describe the speed or complexity of a given algorithm. If your current project demands a predefined algorithm, it's important to understand how fast or slow it is compared to other options.
 
@@ -1511,24 +1491,23 @@ Now you know enough to be dangerous with Big O notation. Get out there and start
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Python Dictionary Data Structure Explained
 
-> ### Excerpt
+> #### Excerpt
 >
 > Dictionary is one of the most used data structures in Python. A dictionary is an unordered collection of items and we usually have keys and values stored in a dictionary. Let us look at a few examples for how the dictionary is usually used. # dictionary declaration 1 dict1 = dict() # dictionary
 
----
+***
 
 ![Python Dictionary Data Structure Explained](https://cdn-media-2.freecodecamp.org/w1280/5f9c9e33740569d1a4ca3bdc.jpg)
 
 Dictionary is one of the most used data structures in Python. A dictionary is an unordered collection of items and we usually have keys and values stored in a dictionary. Let us look at a few examples for how the dictionary is usually used.
 
 ```
-
 dict1 = dict()
 
 
@@ -1548,7 +1527,6 @@ dict1[key] = dict2
 Let’s now look at some retrieval ways.
 
 ```
-
 value = dict1[key]
 
 
@@ -1578,7 +1556,6 @@ else:
 A lot of times we are ok getting a default value when the key doesn’t exist. For e.g. when building a counter. There is a better way to get default values from the dictionary in case of missing keys rather than relying on standard `if-else`.
 
 ```
-
 arr = [1,2,3,1,2,3,4,1,2,1,4,1,2,3,1]
 
 freq = {}
@@ -1655,37 +1632,37 @@ print(list_dict_, set_dict_, int_dict_)
 
 [Official Docs](https://docs.python.org/2/library/collections.html)
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Sign in to freeCodeCamp.org | freeCodeCamp.org
 
-> ### Excerpt
+> #### Excerpt
 >
 > Authentication landing page for freecodecamp.org
 
----
+***
 
 #### or
 
 freeCodeCamp is free and your account is private by default. We use your email address to store your curriculum progress. By continuing, you indicate that you have read and agree to freeCodeCamp.org's [Terms of Service](https://www.freecodecamp.org/terms) and [Privacy Policy](https://www.freecodecamp.org/privacy).
 
----
+***
 
----
+***
 
 ## JavaScript Hash Table – Associative Array Hashing in JS
 
-> ### Excerpt
+> #### Excerpt
 >
 > Hash Tables are a data structure that allow you to create a list of paired values. You can then retrieve a certain value by using the key for that value, which you put into the table beforehand. A Hash Table transforms a key into an integer index using a hash
 
----
+***
 
 ![JavaScript Hash Table – Associative Array Hashing in JS](https://www.freecodecamp.org/news/content/images/size/w2000/2021/05/JavaScript-Hash-Table.png)
 
@@ -1695,7 +1672,7 @@ A Hash Table transforms a key into an integer index using a hash function, and t
 
 ![](https://www.freecodecamp.org/news/content/images/2021/05/g983.jpg)
 
-Hash table for storing phone books (from [Wikipedia](https://en.wikipedia.org/wiki/Hash_table))
+Hash table for storing phone books (from [Wikipedia](https://en.wikipedia.org/wiki/Hash\_table))
 
 You'll commonly use a Hash Table because of its fast search, insertion, and delete operations:
 
@@ -1731,7 +1708,7 @@ O(1)
 
 O(n)
 
-Source from [Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
+Source from [Wikipedia](https://en.wikipedia.org/wiki/Hash\_table)
 
 This tutorial will help you understand Hash Table implementation in JavaScript as well as how you can build your own Hash Table class.
 
@@ -1754,8 +1731,8 @@ JavaScript object is an example of Hash Table implementation
 
 But JavaScript's `Object` type is a special kind of Hash Table implementation for two reasons:
 
-- It has properties added by the `Object` class. Keys you input may conflict and overwrite default properties inherited from the class.
-- The size of the Hash Table is not tracked. You need to manually count how many properties are defined by the programmer instead of inherited from the prototype.
+* It has properties added by the `Object` class. Keys you input may conflict and overwrite default properties inherited from the class.
+* The size of the Hash Table is not tracked. You need to manually count how many properties are defined by the programmer instead of inherited from the prototype.
 
 For example, the `Object` prototype has the `hasOwnProperty()` method which allows you to check if a property is not inherited:
 
@@ -1837,9 +1814,9 @@ Although JavaScript already has two Hash Table implementations, writing your own
 
 You can implement a Hash Table in JavaScript in three steps:
 
-- Create a `HashTable` class with `table` and `size` initial properties
-- Add a `hash()` function to transform keys into indices
-- Add the `set()` and `get()` methods for adding and retrieving key/value pairs from the table.
+* Create a `HashTable` class with `table` and `size` initial properties
+* Add a `hash()` function to transform keys into indices
+* Add the `set()` and `get()` methods for adding and retrieving key/value pairs from the table.
 
 Alright, let's start with creating the `HashTable` class. The code below will create a `table` of buckets with the size of `127`:
 
@@ -1892,9 +1869,9 @@ Now that you have the `_hash()` method completed, it's time to write the `set()`
 
 To set the key/value pair in your Hash Table, you need to write a `set()` method that accepts `(key, value)` as its parameters:
 
-- The `set()` method will call the `_hash()` method to get the `index` value.
-- The `[key, value]` pair will be assigned to the `table` at the specified `index`
-- Then, the `size` property will be incremented by one
+* The `set()` method will call the `_hash()` method to get the `index` value.
+* The `[key, value]` pair will be assigned to the `table` at the specified `index`
+* Then, the `size` property will be incremented by one
 
 ```
 set(key, value) {
@@ -1910,8 +1887,8 @@ Now that the `set()` method is complete, let's write the `get()` method to retri
 
 To get a certain value from the Hash Table, you need to write a `get()` method that accepts a `key` value as its parameter:
 
-- The method will call the `_hash()` method to once again retrieve the table `index`
-- Return the value stored at `table[index]`
+* The method will call the `_hash()` method to once again retrieve the table `index`
+* Return the value stored at `table[index]`
 
 ```
 get(key) {
@@ -1928,9 +1905,9 @@ So far so good. Let's add another method to delete key/value pair from the Hash 
 
 To delete a key/value pair from the Hash Table, you need to write a `remove()` method that accepts a `key` value as its parameter:
 
-- Retrieve the right `index` using the `_hash()` method
-- Check if the `table[index]` has a truthy value and the `length` property is greater than zero. Assign the `undefined` value to the right `index` and decrement the `size` property by one if it is.
-- If not, simply return `false`
+* Retrieve the right `index` using the `_hash()` method
+* Check if the `table[index]` has a truthy value and the `length` property is greater than zero. Assign the `undefined` value to the right `index` and decrement the `size` property by one if it is.
+* If not, simply return `false`
 
 ```
 remove(key) {
@@ -2036,7 +2013,7 @@ console.log(ht.get("Spain"));
 console.log(ht.get("ǻ"));
 ```
 
-Hash Table index collision&#x20;
+Hash Table index collision
 
 Oops! Looks like we got into some trouble here. 😨
 
@@ -2071,11 +2048,11 @@ To handle the `index` number collision, you need to store the key/value pair in 
 
 To create the second array, you need to update the `set()` method so that it will:
 
-- Look to the `table[index]` and loop over the array values.
-- If the key at one of the arrays is equal to the `key` passed to the method, replace the value at index `1` and stop any further execution with the `return` statement.
-- If no matching `key` is found, push a new array of key and value to the second array.
-- Else, initialize a new array and push the key/value pair to the specified `index`
-- Whenever a `push()` method is called, increment the `size` property by one.
+* Look to the `table[index]` and loop over the array values.
+* If the key at one of the arrays is equal to the `key` passed to the method, replace the value at index `1` and stop any further execution with the `return` statement.
+* If no matching `key` is found, push a new array of key and value to the second array.
+* Else, initialize a new array and push the key/value pair to the specified `index`
+* Whenever a `push()` method is called, increment the `size` property by one.
 
 The complete `set()` method code will be as follows:
 
@@ -2262,23 +2239,23 @@ If you want to learn more about JavaScript, you may want to check out my site at
 
 The tutorials include String manipulation, Date manipulation, Array and Object methods, JavaScript algorithm solutions, and many more.
 
----
+***
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Binary Search Tree Data Structure Explained with Examples
 
-> ### Excerpt
+> #### Excerpt
 >
 > A tree is a data structure composed of nodes that has the following characteristics: Each tree has a root node (at the top) having some value.The root node has zero or more child nodes.Each child node has zero or more child nodes, and so on. This create a
 
----
+***
 
 ![Binary Search Tree Data Structure Explained with Examples](https://cdn-media-2.freecodecamp.org/w1280/5f9c9e86740569d1a4ca3d95.jpg)
 
@@ -2301,10 +2278,10 @@ However, some times the worst case can happen, when the tree isn’t balanced an
 
 ### **Basic operations on a BST**
 
-- Create: creates an empty tree.
-- Insert: insert a node in the tree.
-- Search: Searches for a node in the tree.
-- Delete: deletes a node from the tree.
+* Create: creates an empty tree.
+* Insert: insert a node in the tree.
+* Search: Searches for a node in the tree.
+* Delete: deletes a node from the tree.
 
 #### Create
 
@@ -2338,21 +2315,21 @@ Successors can be described as the node that would come right after the node you
 
 ### **Special types of BT**
 
-- Heap
-- Red-black tree
-- B-tree
-- Splay tree
-- N-ary tree
-- Trie (Radix tree)
+* Heap
+* Red-black tree
+* B-tree
+* Splay tree
+* N-ary tree
+* Trie (Radix tree)
 
 ### Runtime
 
 #### **Data structure: Array**
 
-- Worst-case performance: `O(log n)`
-- Best-case performance: `O(1)`
-- Average performance: `O(log n)`
-- Worst-case space complexity: `O(1)`
+* Worst-case performance: `O(log n)`
+* Best-case performance: `O(1)`
+* Average performance: `O(log n)`
+* Worst-case space complexity: `O(1)`
 
 Where `n` is the number of nodes in the BST.
 
@@ -2450,8 +2427,8 @@ void insert(int data) {
 
 Binary search trees (BSTs) also give us quick access to predecessors and successors. Predecessors can be described as the node that would come right before the node you are currently at.
 
-- To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
-- To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
+* To find the predecessor of the current node, look at the rightmost/largest leaf node in the left subtree. Successors can be described as the node that would come right after the node you are currently at.
+* To find the successor of the current node, look at the leftmost/smallest leaf node in the right subtree.
 
 ### Let’s look at a couple of procedures operating on trees.
 
@@ -2459,8 +2436,8 @@ Since trees are recursively defined, it’s very common to write routines that o
 
 So for instance, if we want to calculate the height of a tree, that is the height of a root node, We can go ahead and recursively do that, going through the tree. So we can say:
 
-- For instance, if we have a nil tree, then its height is a 0.
-- Otherwise, We’re 1 plus the maximum of the left child tree and the right child tree.
+* For instance, if we have a nil tree, then its height is a 0.
+* Otherwise, We’re 1 plus the maximum of the left child tree and the right child tree.
 
 So if we look at a leaf for example, that height would be 1 because the height of the left child is nil, is 0, and the height of the nil right child is also 0. So the max of that is 0, then 1 plus 0.
 
@@ -2498,7 +2475,7 @@ int maxDepth(struct node* node)
 
 We could also look at calculating the size of a tree that is the number of nodes.
 
-- Again, if we have a nil tree, we have zero nodes.
+* Again, if we have a nil tree, we have zero nodes.
 
 Otherwise, we have the number of nodes in the left child plus 1 for ourselves plus the number of nodes in the right child. So 1 plus the size of the left tree plus the size of the right tree.
 
@@ -2524,8 +2501,8 @@ int treeSize(struct node* node)
 
 #### **Relevant videos on freeCodeCamp YouTube channel**
 
-- [Binary Search Tree](https://youtu.be/5cU1ILGy6dM)
-- [Binary Search Tree: Traversal and Height](https://youtu.be/Aagf3RyK3Lw)
+* [Binary Search Tree](https://youtu.be/5cU1ILGy6dM)
+* [Binary Search Tree: Traversal and Height](https://youtu.be/Aagf3RyK3Lw)
 
 ### Following are common types of Binary Trees:
 
@@ -2553,23 +2530,23 @@ Complete Binary Tree: A Binary Tree is complete Binary Tree if all levels are co
 8   7  9
 ```
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Learn Data Structures from a Google Engineer - A Free 8-hour Course
 
-> ### Excerpt
+> #### Excerpt
 >
 > Learn and master the most common data structures in this free 8-hour video course from Google engineer William Fiset. This course teaches data structures using animations to represent the data structures visually. And it's designed with beginners in mind. You'll learn how to code various data structures and combine them
 
----
+***
 
-[![freeCodeCamp.org](https://www.freecodecamp.org/news/content/images/2019/11/fcc_primary_large_24X210.svg)](https://www.freecodecamp.org/news)
+[![freeCodeCamp.org](https://www.freecodecamp.org/news/content/images/2019/11/fcc\_primary\_large\_24X210.svg)](https://www.freecodecamp.org/news)
 
 \[
 
@@ -2589,36 +2566,36 @@ Each data structure comes with working source code to help solidify your underst
 
 You will learn about these data structures:
 
-- Static and dynamic arrays
-- Singly and doubly linked lists
-- Stacks
-- Queues
-- Heaps/Priority Queues
-- Binary Trees/Binary Search Trees
-- Union find/Disjoint Set
-- Hash tables
-- Fenwick trees
-- AVL trees
+* Static and dynamic arrays
+* Singly and doubly linked lists
+* Stacks
+* Queues
+* Heaps/Priority Queues
+* Binary Trees/Binary Search Trees
+* Union find/Disjoint Set
+* Hash tables
+* Fenwick trees
+* AVL trees
 
 You can watch the [full video on the freeCodeCamp.org YouTube channel](https://www.youtube.com/watch?v=RBSGKlAvoiM) (8 hour watch). As always, it's free, and there are no ads to interrupt you.
 
----
+***
 
----
+***
 
 Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. [Get started](https://www.freecodecamp.org/learn/)
 
----
+***
 
----
+***
 
 ## Data Structures Explained with Examples - Linked List
 
-> ### Excerpt
+> #### Excerpt
 >
 > Just like a garland is made with flowers, a linked list is made up of nodes. We call every flower on this particular garland to be a node. And each of the node points to the next node in this list as well as it has data (here it is
 
----
+***
 
 Just like a garland is made with flowers, a linked list is made up of nodes. We call every flower on this particular garland to be a node. And each of the node points to the next node in this list as well as it has data (here it is type of flower).
 
@@ -2685,17 +2662,17 @@ To add a new element to the list.
 
 Insertion at the beginning:
 
-- Create a new node with given data.
-- Point new node’s `next` to old `head`.
-- Point `head` to this new node.
+* Create a new node with given data.
+* Point new node’s `next` to old `head`.
+* Point `head` to this new node.
 
 Insertion in the middle/end.
 
 Insertion after node X.
 
-- Create a new node with given data.
-- Point new node’s `next` to old X’s `next`.
-- Point X’s `next` to this new node.
+* Create a new node with given data.
+* Point new node’s `next` to old X’s `next`.
+* Point X’s `next` to this new node.
 
 **Time Complexity: O(1)**
 
@@ -2705,17 +2682,17 @@ To delete existing element from the list.
 
 Deletion at the beginning
 
-- Get the node pointed by `head` as Temp.
-- Point `head` to Temp’s `next`.
-- Free memory used by Temp node.
+* Get the node pointed by `head` as Temp.
+* Point `head` to Temp’s `next`.
+* Free memory used by Temp node.
 
 Deletion in the middle/end.
 
 Deletion after node X.
 
-- Get the node pointed by `X` as Temp.
-- Point X’s `next` to Temp’s `next`.
-- Free memory used by Temp node.
+* Get the node pointed by `X` as Temp.
+* Point X’s `next` to Temp’s `next`.
+* Free memory used by Temp node.
 
 **Time Complexity: O(1)**
 
@@ -2725,9 +2702,9 @@ To travel across the list.
 
 Traversal
 
-- Get the node pointed by `head` as Current.
-- Check if Current is not null and display it.
-- Point Current to Current’s `next` and move to above step.
+* Get the node pointed by `head` as Current.
+* Check if Current is not null and display it.
+* Point Current to Current’s `next` and move to above step.
 
 **Time Complexity: O(n) // Here n is size of link-list**
 
