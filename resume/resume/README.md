@@ -2,11 +2,19 @@
 
 {% embed url="https://drive.google.com/file/d/1iC14v6dYWZQjQmB9SeY5A-hPc4J-6VW4/view?usp=sharing" %}
 
+****
+
+****
+
+****
+
+****
+
 ## **Bryan** **Guner**
 
 ### _551-254-5505 |_ [_bryan.guner@gmail.com_](mailto:bryan.guner@gmail.com)
 
-### ⦿===➤Skills
+### ⦿➤Skills
 
 | Languages:              | JavaScript ES-6, NodeJS, HTML5, CSS3, SCSS, Bash Shell, SQL, MATLAB, Python, C++, Mathematica, JSON                        |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------- |
