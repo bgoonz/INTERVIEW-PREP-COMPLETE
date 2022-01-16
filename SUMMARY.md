@@ -71,12 +71,12 @@
 ## 📈 Slack\&Lambda
 
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 🧑🤝🧑 People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑People](slack-and-lambda/people.md)
 
 ## Aux-Resources
 
 * [Youtube](aux-resources/youtube.md)
-* [👨🏫 👨🏫 👨🏫 👨🏫 👨🏫 👨🏫 Guidance](aux-resources/guidance.md)
+* [👨🏫 👨Guidance](aux-resources/guidance.md)
 
 ## 🖋 Interview Prep
 
