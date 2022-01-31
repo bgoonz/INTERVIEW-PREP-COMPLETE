@@ -68,7 +68,7 @@
 **Software Development**
 
 - [Honeypot.io](https://www.honeypot.io/pages/for_employers)
-- [GitHub](https://jobs.github.com)
+- [DevITJobs.us](https://devitjobs.us/) / [DevITJobs.uk](https://devitjobs.uk/)
 - [BlablaDev](https://blabladev.eu)
 - [Smashing **Magazine**](http://jobs.smashingmagazine.com)
 - [arstechnica](http://jobs.arstechnica.com)
