@@ -71,17 +71,17 @@
 ## 📈 Slack\&Lambda
 
 * [📺 Recordings](slack-and-lambda/recordings.md)
-* [🧑🤝🧑 🧑People](slack-and-lambda/people.md)
+* [🧑🤝🧑 🧑🤝🧑 🧑People](slack-and-lambda/people.md)
 
 ## Aux-Resources
 
 * [Youtube](aux-resources/youtube.md)
-* [👨🏫 👨Guidance](aux-resources/guidance.md)
+* [👨🏫 👨🏫 👨Guidance](aux-resources/guidance.md)
 
 ## 🖋 Interview Prep
 
 * [INTERVIEW](interview-prep/interview.md)
-* [👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
+* [👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 👨💻 Leetcode](interview-prep/technical-interview-practice/README.md)
   * [37-Essential-Js-Questions](interview-prep/technical-interview-practice/37-essential-js-questions.md)
   * [📈 Rubric](interview-prep/technical-interview-practice/rubric.md)
 * [Resources](interview-prep/resources.md)
