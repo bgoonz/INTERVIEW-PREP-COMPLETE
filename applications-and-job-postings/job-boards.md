@@ -524,6 +524,7 @@ Want to work at a YC-backed startup? If yes, this is your go-to place because it
 - [CryptoJobs](https://crypto.jobs)
 - [Blockew](https://blockew.com)
 - [Cryptocurrency Jobs](https://cryptocurrencyjobs.co)
+- [Next Crypto Jobs](https://nextcryptojobs.com/)
 
 ### Design
 
