@@ -32,7 +32,7 @@ model==0.6.0
 newspaper==0.1.0.7
 nltk==3.5
 notebook==6.4.1
-numpy==1.19.1
+numpy==1.22.0
 opencv-python==4.3.0.36
 pandas==1.0.5
 pathlib==1.0.1
