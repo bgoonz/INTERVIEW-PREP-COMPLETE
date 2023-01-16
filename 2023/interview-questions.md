@@ -1,5 +1,15 @@
 1.  Functional vs Class Components
->
+>a functional component is just a plain JavaScript function that returns JSX. 
+>A class component is a JavaScript class that extends React.Component which has a render method.
+```js
+import React from "react";
+ 
+const FunctionalComponent = () => {
+ return <h1>Hello, world</h1>;
+};
+```
+
+
 
 
 2.  What is "conditional" rendering?
