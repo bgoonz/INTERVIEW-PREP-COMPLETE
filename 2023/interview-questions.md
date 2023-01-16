@@ -8,12 +8,31 @@ const FunctionalComponent = () => {
  return <h1>Hello, world</h1>;
 };
 ```
+ - a functional component is a function that returns JSX
+
+> <script src="https://gist.github.com/bgoonz/db79f9b772562a702642741c8e9f657d.js"></script>
+ - 
 
 
 
 
-2.  What is "conditional" rendering?
-3.  Understand two most important hooks for functional components: useState and useEffect.
+
+1.  What is "conditional" rendering?
+Conditional rendering is the practice of using a conditional to evaluate what to render on a component to the user. for instance a webite with a login feature may evaluate whether the visitor has logged in and what to display based on the state of their login status. 
+
+2.  Understand two most important hooks for functional components: useState and useEffect.
+
+<iframe src="https://codesandbox.io/embed/modest-swanson-15v4i7?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="use-state-counter"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+
+
+
+
 4.  What are the multiple uses of useEffect? When does the useEffect hook get triggered?
 5.  What are the common ways to pass data between components?
 
