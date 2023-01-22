@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
+import './child';
+import { ParentComponent } from './child';
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+          </header>
+          <ParentComponent></ParentComponent>
     </div>
   );
 }
