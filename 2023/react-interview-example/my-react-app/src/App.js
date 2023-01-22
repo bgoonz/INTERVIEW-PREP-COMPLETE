@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect, useState } from "react";
 
 function App() {
-    useEffect( () => {
-        fetch( "https://jsonplaceholder.typicode.com/users" ).then( ( response ) => response.json() ).then( ( json ) => console.log( json ) )
-    }, [] );
-    return (
-        <div className="App">
-            <h1>Users</h1>
-            <div className="card">
-                <div className="card-inner">
-                    <p>Bryan</p>
-                    <p>Bryan 777</p>
-                </div>
-            </div>
-            
-            
-            
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((response) => response.json())
+      .then((json) =>setUsers(json));
+  }, []);
+  return (
+    <div className="App">
+      <h1>Users</h1>
+      <div className="card">
+        {users.map((user) => (
+            <div>
+                    <div className="card-inner">
+                    <p>{user.name }</p>
+          <p>{user.userName}</p>
         </div>
-    )
+            </div>
+        ))}
+
+      </div>
+    </div>
+  );
 }
 
 export default App;
