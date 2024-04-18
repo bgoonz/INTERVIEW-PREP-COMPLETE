@@ -153,6 +153,7 @@
 - [JavaScript Jobs](https://jobs.date-fns.org)
 - [Jobs in JS](https://jobsinjs.com)
 - [R-users](https://www.r-users.com)
+- [JavaProHire](https://javaprohire.com)
 
 ## Remote
 
